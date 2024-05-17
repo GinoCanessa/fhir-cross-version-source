@@ -1,0 +1,407 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Condition-R4B-Condition",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4B/ConceptMap/R5-Condition-R4B-Condition",
+  "name": "R5-Condition-R4B-Condition",
+  "title": "Concept map to convert a FHIR R5 Condition into FHIR R4B",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Condition|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Condition|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Condition",
+      "target": "http://hl7.org/fhir/StructureDefinition/Condition",
+      "element": [
+        {
+          "code": "Condition",
+          "display": "Detailed information about conditions, problems or diagnoses",
+          "target": [
+            {
+              "code": "Condition",
+              "display": "Detailed information about conditions, problems or diagnoses",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Condition\u0060 maps as Equivalent to R4B \u0060Condition\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.abatement[x]",
+          "display": "When in resolution/remission",
+          "target": [
+            {
+              "code": "Condition.abatement[x]",
+              "display": "When in resolution/remission",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.abatement[x]\u0060 maps as Equivalent to R4B \u0060Condition.abatement[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.bodySite",
+          "display": "Anatomical location, if relevant",
+          "target": [
+            {
+              "code": "Condition.bodySite",
+              "display": "Anatomical location, if relevant",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.bodySite\u0060 maps as Equivalent to R4B \u0060Condition.bodySite\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.category",
+          "display": "problem-list-item | encounter-diagnosis",
+          "target": [
+            {
+              "code": "Condition.category",
+              "display": "problem-list-item | encounter-diagnosis",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.category\u0060 maps as RelatedTo to R4B \u0060Condition.category\u0060 - category changed the binding strength from Preferred to Extensible"
+            }
+          ]
+        },
+        {
+          "code": "Condition.clinicalStatus",
+          "display": "active | recurrence | relapse | inactive | remission | resolved | unknown",
+          "target": [
+            {
+              "code": "Condition.clinicalStatus",
+              "display": "active | recurrence | relapse | inactive | remission | resolved",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.clinicalStatus\u0060 maps as Equivalent to R4B \u0060Condition.clinicalStatus\u0060 - clinicalStatus has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/condition-clinical|5.0.0 and http://hl7.org/fhir/ValueSet/condition-clinical|4.3.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Condition.code",
+          "display": "Identification of the condition, problem or diagnosis",
+          "target": [
+            {
+              "code": "Condition.code",
+              "display": "Identification of the condition, problem or diagnosis",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.code\u0060 maps as Equivalent to R4B \u0060Condition.code\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Condition.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.contained\u0060 maps as Equivalent to R4B \u0060Condition.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.encounter",
+          "display": "The Encounter during which this Condition was created",
+          "target": [
+            {
+              "code": "Condition.encounter",
+              "display": "Encounter created as part of",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.encounter\u0060 maps as Equivalent to R4B \u0060Condition.encounter\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.evidence",
+          "display": "Supporting evidence for the verification status",
+          "target": [
+            {
+              "code": "Condition.evidence",
+              "display": "Supporting evidence",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.evidence\u0060 maps as RelatedTo to R4B \u0060Condition.evidence\u0060 - evidence removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; evidence has change due to type change: R5 evidence CodeableReference has no equivalent or mapped type in R4B evidence"
+            }
+          ]
+        },
+        {
+          "code": "Condition.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Condition.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.extension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Condition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Condition.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Condition.id\u0060 maps as Equivalent to R4B \u0060Condition.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.identifier",
+          "display": "External Ids for this condition",
+          "target": [
+            {
+              "code": "Condition.identifier",
+              "display": "External Ids for this condition",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.identifier\u0060 maps as Equivalent to R4B \u0060Condition.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Condition.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Condition.implicitRules\u0060 maps as Equivalent to R4B \u0060Condition.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Condition.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.language\u0060 maps as RelatedTo to R4B \u0060Condition.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "Condition.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Condition.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Condition.meta\u0060 maps as Equivalent to R4B \u0060Condition.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Condition.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Condition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.note",
+          "display": "Additional information about the Condition",
+          "target": [
+            {
+              "code": "Condition.note",
+              "display": "Additional information about the Condition",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.note\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Condition.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060note\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.onset[x]",
+          "display": "Estimated or actual date,  date-time, or age",
+          "target": [
+            {
+              "code": "Condition.onset[x]",
+              "display": "Estimated or actual date,  date-time, or age",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.onset[x]\u0060 maps as Equivalent to R4B \u0060Condition.onset[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.participant",
+          "display": "Who or what participated in the activities related to the condition and how they were involved",
+          "noMap": true
+        },
+        {
+          "code": "Condition.participant.actor",
+          "display": "Who or what participated in the activities related to the condition",
+          "noMap": true
+        },
+        {
+          "code": "Condition.participant.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Condition.participant.function",
+          "display": "Type of involvement",
+          "noMap": true
+        },
+        {
+          "code": "Condition.participant.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Condition.participant.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Condition.recordedDate",
+          "display": "Date condition was first recorded",
+          "target": [
+            {
+              "code": "Condition.recordedDate",
+              "display": "Date record was first recorded",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.recordedDate\u0060 maps as Equivalent to R4B \u0060Condition.recordedDate\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.severity",
+          "display": "Subjective severity of condition",
+          "target": [
+            {
+              "code": "Condition.severity",
+              "display": "Subjective severity of condition",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.severity\u0060 maps as Equivalent to R4B \u0060Condition.severity\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage",
+          "display": "Stage/grade, usually assessed formally",
+          "target": [
+            {
+              "code": "Condition.stage",
+              "display": "Stage/grade, usually assessed formally",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage\u0060 maps as Equivalent to R4B \u0060Condition.stage\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.assessment",
+          "display": "Formal record of assessment",
+          "target": [
+            {
+              "code": "Condition.stage.assessment",
+              "display": "Formal record of assessment",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.assessment\u0060 maps as Equivalent to R4B \u0060Condition.stage.assessment\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Condition.stage.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.extension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Condition.stage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Condition.stage.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.id\u0060 maps as Equivalent to R4B \u0060Condition.stage.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Condition.stage.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Condition.stage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.summary",
+          "display": "Simple summary (disease specific)",
+          "target": [
+            {
+              "code": "Condition.stage.summary",
+              "display": "Simple summary (disease specific)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.summary\u0060 maps as Equivalent to R4B \u0060Condition.stage.summary\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.stage.type",
+          "display": "Kind of staging",
+          "target": [
+            {
+              "code": "Condition.stage.type",
+              "display": "Kind of staging",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.stage.type\u0060 maps as Equivalent to R4B \u0060Condition.stage.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.subject",
+          "display": "Who has the condition?",
+          "target": [
+            {
+              "code": "Condition.subject",
+              "display": "Who has the condition?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.subject\u0060 maps as Equivalent to R4B \u0060Condition.subject\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Condition.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.text\u0060 maps as Equivalent to R4B \u0060Condition.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Condition.verificationStatus",
+          "display": "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error",
+          "target": [
+            {
+              "code": "Condition.verificationStatus",
+              "display": "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Condition.verificationStatus\u0060 maps as Equivalent to R4B \u0060Condition.verificationStatus\u0060 - verificationStatus has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/condition-ver-status|5.0.0 and http://hl7.org/fhir/ValueSet/condition-ver-status|4.3.0 (Equivalent)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

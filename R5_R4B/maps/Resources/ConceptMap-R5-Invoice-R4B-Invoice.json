@@ -1,0 +1,464 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Invoice-R4B-Invoice",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4B/ConceptMap/R5-Invoice-R4B-Invoice",
+  "name": "R5-Invoice-R4B-Invoice",
+  "title": "Concept map to convert a FHIR R5 Invoice into FHIR R4B",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Invoice|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Invoice|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Invoice",
+      "target": "http://hl7.org/fhir/StructureDefinition/Invoice",
+      "element": [
+        {
+          "code": "Invoice",
+          "display": "Invoice containing ChargeItems from an Account",
+          "target": [
+            {
+              "code": "Invoice",
+              "display": "Invoice containing ChargeItems from an Account",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Invoice\u0060 maps as Equivalent to R4B \u0060Invoice\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.account",
+          "display": "Account that is being balanced",
+          "target": [
+            {
+              "code": "Invoice.account",
+              "display": "Account that is being balanced",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.account\u0060 maps as Equivalent to R4B \u0060Invoice.account\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.cancelledReason",
+          "display": "Reason for cancellation of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.cancelledReason",
+              "display": "Reason for cancellation of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.cancelledReason\u0060 maps as Equivalent to R4B \u0060Invoice.cancelledReason\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Invoice.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.contained\u0060 maps as Equivalent to R4B \u0060Invoice.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.creation",
+          "display": "When posted",
+          "noMap": true
+        },
+        {
+          "code": "Invoice.date",
+          "display": "DEPRICATED",
+          "target": [
+            {
+              "code": "Invoice.date",
+              "display": "Invoice date / posting date",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.date\u0060 maps as Equivalent to R4B \u0060Invoice.date\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Invoice.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.extension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Invoice.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Invoice.id\u0060 maps as Equivalent to R4B \u0060Invoice.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.identifier",
+          "display": "Business Identifier for item",
+          "target": [
+            {
+              "code": "Invoice.identifier",
+              "display": "Business Identifier for item",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.identifier\u0060 maps as Equivalent to R4B \u0060Invoice.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Invoice.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Invoice.implicitRules\u0060 maps as Equivalent to R4B \u0060Invoice.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.issuer",
+          "display": "Issuing Organization of Invoice",
+          "target": [
+            {
+              "code": "Invoice.issuer",
+              "display": "Issuing Organization of Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.issuer\u0060 maps as Equivalent to R4B \u0060Invoice.issuer\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Invoice.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.language\u0060 maps as RelatedTo to R4B \u0060Invoice.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem",
+          "display": "Line items of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.lineItem",
+              "display": "Line items of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem\u0060 maps as Equivalent to R4B \u0060Invoice.lineItem\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.chargeItem[x]",
+          "display": "Reference to ChargeItem containing details of this line item or an inline billing code",
+          "target": [
+            {
+              "code": "Invoice.lineItem.chargeItem[x]",
+              "display": "Reference to ChargeItem containing details of this line item or an inline billing code",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.chargeItem[x]\u0060 maps as Equivalent to R4B \u0060Invoice.lineItem.chargeItem[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Invoice.lineItem.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.lineItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Invoice.lineItem.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.id\u0060 maps as Equivalent to R4B \u0060Invoice.lineItem.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Invoice.lineItem.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.lineItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.priceComponent",
+          "display": "Components of total line item price",
+          "target": [
+            {
+              "code": "Invoice.lineItem.priceComponent",
+              "display": "Components of total line item price",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.priceComponent\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.lineItem.priceComponent\u0060 - priceComponent has change due to type change: R5 type MonetaryComponent does not exist in R4B"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.sequence",
+          "display": "Sequence number of line item",
+          "target": [
+            {
+              "code": "Invoice.lineItem.sequence",
+              "display": "Sequence number of line item",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.lineItem.sequence\u0060 maps as Equivalent to R4B \u0060Invoice.lineItem.sequence\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.lineItem.serviced[x]",
+          "display": "Service data or period",
+          "noMap": true
+        },
+        {
+          "code": "Invoice.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Invoice.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Invoice.meta\u0060 maps as Equivalent to R4B \u0060Invoice.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Invoice.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.note",
+          "display": "Comments made about the invoice",
+          "target": [
+            {
+              "code": "Invoice.note",
+              "display": "Comments made about the invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.note\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060note\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant",
+          "display": "Participant in creation of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.participant",
+              "display": "Participant in creation of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant\u0060 maps as Equivalent to R4B \u0060Invoice.participant\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant.actor",
+          "display": "Individual who was involved",
+          "target": [
+            {
+              "code": "Invoice.participant.actor",
+              "display": "Individual who was involved",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant.actor\u0060 maps as Equivalent to R4B \u0060Invoice.participant.actor\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Invoice.participant.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant.extension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.participant.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Invoice.participant.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant.id\u0060 maps as Equivalent to R4B \u0060Invoice.participant.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Invoice.participant.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4B \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.participant.role",
+          "display": "Type of involvement in creation of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.participant.role",
+              "display": "Type of involvement in creation of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.participant.role\u0060 maps as Equivalent to R4B \u0060Invoice.participant.role\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.paymentTerms",
+          "display": "Payment details",
+          "target": [
+            {
+              "code": "Invoice.paymentTerms",
+              "display": "Payment details",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.paymentTerms\u0060 maps as Equivalent to R4B \u0060Invoice.paymentTerms\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.period[x]",
+          "display": "Billing date or period",
+          "noMap": true
+        },
+        {
+          "code": "Invoice.recipient",
+          "display": "Recipient of this invoice",
+          "target": [
+            {
+              "code": "Invoice.recipient",
+              "display": "Recipient of this invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.recipient\u0060 maps as Equivalent to R4B \u0060Invoice.recipient\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.status",
+          "display": "draft | issued | balanced | cancelled | entered-in-error",
+          "target": [
+            {
+              "code": "Invoice.status",
+              "display": "draft | issued | balanced | cancelled | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.status\u0060 maps as Equivalent to R4B \u0060Invoice.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/invoice-status|5.0.0 and http://hl7.org/fhir/ValueSet/invoice-status|4.3.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.subject",
+          "display": "Recipient(s) of goods and services",
+          "target": [
+            {
+              "code": "Invoice.subject",
+              "display": "Recipient(s) of goods and services",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.subject\u0060 maps as Equivalent to R4B \u0060Invoice.subject\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Invoice.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.text\u0060 maps as Equivalent to R4B \u0060Invoice.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.totalGross",
+          "display": "Gross total of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.totalGross",
+              "display": "Gross total of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.totalGross\u0060 maps as RelatedTo to R4B \u0060Invoice.totalGross\u0060 - totalGross has change due to type change: R5 \u0060totalGross\u0060 \u0060Money\u0060 maps as RelatedTo for R4B \u0060totalGross\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.totalNet",
+          "display": "Net total of this Invoice",
+          "target": [
+            {
+              "code": "Invoice.totalNet",
+              "display": "Net total of this Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.totalNet\u0060 maps as RelatedTo to R4B \u0060Invoice.totalNet\u0060 - totalNet has change due to type change: R5 \u0060totalNet\u0060 \u0060Money\u0060 maps as RelatedTo for R4B \u0060totalNet\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.totalPriceComponent",
+          "display": "Components of Invoice total",
+          "target": [
+            {
+              "code": "Invoice.totalPriceComponent",
+              "display": "Components of Invoice total",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.totalPriceComponent\u0060 maps as SourceIsBroaderThanTarget to R4B \u0060Invoice.totalPriceComponent\u0060 - totalPriceComponent has change due to type change: R5 type MonetaryComponent does not exist in R4B"
+            }
+          ]
+        },
+        {
+          "code": "Invoice.type",
+          "display": "Type of Invoice",
+          "target": [
+            {
+              "code": "Invoice.type",
+              "display": "Type of Invoice",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Invoice.type\u0060 maps as Equivalent to R4B \u0060Invoice.type\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

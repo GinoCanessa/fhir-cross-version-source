@@ -1,0 +1,149 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ConceptMapEquivalence-R5-ConceptMapRelationship",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.equivalence-cmd.gr.el.ta.relationship-4bto5"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r4b-r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-ConceptMapEquivalence-R5-ConceptMapRelationship",
+  "name": "R4B-ConceptMapEquivalence-R5-ConceptMapRelationship",
+  "title": "Concept map to convert a FHIR R4B ConceptMapEquivalence into a FHIR R5 ConceptMapRelationship",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-equivalence|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-relationship|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/concept-map-equivalence",
+      "target": "http://hl7.org/fhir/concept-map-relationship",
+      "element": [
+        {
+          "code": "disjoint",
+          "display": "Disjoint",
+          "target": [
+            {
+              "code": "not-related-to",
+              "display": "Not Related To",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060disjoint\u0060 is equivalent to R5 \u0060not-related-to\u0060."
+            }
+          ]
+        },
+        {
+          "code": "equal",
+          "display": "Equal",
+          "target": [
+            {
+              "code": "equivalent",
+              "display": "Equivalent",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060equal\u0060 is narrower than R5 \u0060equivalent\u0060 and is compatible. \u0060equivalent\u0060 is mapped from \u0060equal\u0060 and \u0060equivalent\u0060."
+            }
+          ]
+        },
+        {
+          "code": "equivalent",
+          "display": "Equivalent",
+          "target": [
+            {
+              "code": "equivalent",
+              "display": "Equivalent",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060equivalent\u0060 is narrower than R5 \u0060equivalent\u0060 and is compatible. \u0060equivalent\u0060 is mapped from \u0060equal\u0060 and \u0060equivalent\u0060."
+            }
+          ]
+        },
+        {
+          "code": "inexact",
+          "display": "Inexact",
+          "target": [
+            {
+              "code": "related-to",
+              "display": "Related To",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060inexact\u0060 is narrower than R5 \u0060related-to\u0060 and is compatible. \u0060related-to\u0060 is mapped from \u0060inexact\u0060 and \u0060relatedto\u0060."
+            }
+          ]
+        },
+        {
+          "code": "narrower",
+          "display": "Narrower",
+          "target": [
+            {
+              "code": "source-is-broader-than-target",
+              "display": "Source Is Broader Than Target",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060narrower\u0060 is narrower than R5 \u0060source-is-broader-than-target\u0060 and is compatible. \u0060source-is-broader-than-target\u0060 is mapped from \u0060narrower\u0060 and \u0060subsumes\u0060."
+            }
+          ]
+        },
+        {
+          "code": "relatedto",
+          "display": "Related To",
+          "target": [
+            {
+              "code": "related-to",
+              "display": "Related To",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060relatedto\u0060 is narrower than R5 \u0060related-to\u0060 and is compatible. \u0060related-to\u0060 is mapped from \u0060inexact\u0060 and \u0060relatedto\u0060."
+            }
+          ]
+        },
+        {
+          "code": "specializes",
+          "display": "Specializes",
+          "target": [
+            {
+              "code": "source-is-narrower-than-target",
+              "display": "Source Is Narrower Than Target",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060specializes\u0060 is narrower than R5 \u0060source-is-narrower-than-target\u0060 and is compatible. \u0060source-is-narrower-than-target\u0060 is mapped from \u0060specializes\u0060 and \u0060wider\u0060."
+            }
+          ]
+        },
+        {
+          "code": "subsumes",
+          "display": "Subsumes",
+          "target": [
+            {
+              "code": "source-is-broader-than-target",
+              "display": "Source Is Broader Than Target",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060subsumes\u0060 is narrower than R5 \u0060source-is-broader-than-target\u0060 and is compatible. \u0060source-is-broader-than-target\u0060 is mapped from \u0060narrower\u0060 and \u0060subsumes\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unmatched",
+          "display": "Unmatched",
+          "noMap": true
+        },
+        {
+          "code": "wider",
+          "display": "Wider",
+          "target": [
+            {
+              "code": "source-is-narrower-than-target",
+              "display": "Source Is Narrower Than Target",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060wider\u0060 is narrower than R5 \u0060source-is-narrower-than-target\u0060 and is compatible. \u0060source-is-narrower-than-target\u0060 is mapped from \u0060specializes\u0060 and \u0060wider\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

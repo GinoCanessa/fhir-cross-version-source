@@ -1,0 +1,89 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-ConsentState-R5-ConsentState",
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-ConsentState-R5-ConsentState",
+  "name": "R4B-ConsentState-R5-ConsentState",
+  "title": "Concept map to convert a FHIR R4B ConsentState into FHIR R5",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-state-codes|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/consent-state-codes|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/consent-state-codes",
+      "target": "http://hl7.org/fhir/consent-state-codes",
+      "element": [
+        {
+          "code": "active",
+          "display": "Active",
+          "target": [
+            {
+              "code": "active",
+              "display": "Active",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060active\u0060 is equivalent to R5 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "display": "Pending",
+          "target": [
+            {
+              "code": "draft",
+              "display": "Pending",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060draft\u0060 is equivalent to R5 \u0060draft\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "Entered in Error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "Entered in Error",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060entered-in-error\u0060 is equivalent to R5 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "display": "Inactive",
+          "target": [
+            {
+              "code": "inactive",
+              "display": "Inactive",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060inactive\u0060 is equivalent to R5 \u0060inactive\u0060."
+            }
+          ]
+        },
+        {
+          "code": "proposed",
+          "display": "Proposed",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060proposed\u0060 is equivalent to R5 \u0060unknown\u0060."
+            }
+          ]
+        },
+        {
+          "code": "rejected",
+          "display": "Rejected",
+          "target": [
+            {
+              "code": "not-done",
+              "display": "Abandoned",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060rejected\u0060 maps as SourceIsNarrowerThanTarget to the target R5 \u0060not-done\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

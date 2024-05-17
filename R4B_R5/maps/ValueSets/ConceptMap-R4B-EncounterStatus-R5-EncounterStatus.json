@@ -1,0 +1,151 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-EncounterStatus-R5-EncounterStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/enc.status-4bto5"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r4b-r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-EncounterStatus-R5-EncounterStatus",
+  "name": "R4B-EncounterStatus-R5-EncounterStatus",
+  "title": "Concept map to convert a FHIR R4B EncounterStatus into a FHIR R5 EncounterStatus",
+  "status": "active",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-status|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/encounter-status|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/encounter-status",
+      "target": "http://hl7.org/fhir/encounter-status",
+      "element": [
+        {
+          "code": "arrived",
+          "display": "Arrived",
+          "target": [
+            {
+              "code": "planned",
+              "display": "Planned",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060arrived\u0060 is narrower than R5 \u0060planned\u0060 and is compatible. \u0060planned\u0060 is mapped from \u0060arrived\u0060 and \u0060planned\u0060."
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "display": "Cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "display": "Cancelled",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060cancelled\u0060 is equivalent to R5 \u0060cancelled\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "Entered in Error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "Entered in Error",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060entered-in-error\u0060 is equivalent to R5 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "finished",
+          "display": "Finished",
+          "target": [
+            {
+              "code": "completed",
+              "display": "Completed",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060finished\u0060 is equivalent to R5 \u0060completed\u0060."
+            },
+            {
+              "code": "discharged",
+              "display": "Discharged",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060finished\u0060 is equivalent to R5 \u0060discharged\u0060."
+            }
+          ]
+        },
+        {
+          "code": "in-progress",
+          "display": "In Progress",
+          "target": [
+            {
+              "code": "in-progress",
+              "display": "In Progress",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060in-progress\u0060 is narrower than R5 \u0060in-progress\u0060 and is compatible. \u0060in-progress\u0060 is mapped from \u0060in-progress\u0060 and \u0060triaged\u0060."
+            }
+          ]
+        },
+        {
+          "code": "onleave",
+          "display": "On Leave",
+          "target": [
+            {
+              "code": "on-hold",
+              "display": "On Hold",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060onleave\u0060 is equivalent to R5 \u0060on-hold\u0060."
+            }
+          ]
+        },
+        {
+          "code": "planned",
+          "display": "Planned",
+          "target": [
+            {
+              "code": "planned",
+              "display": "Planned",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060planned\u0060 is narrower than R5 \u0060planned\u0060 and is compatible. \u0060planned\u0060 is mapped from \u0060arrived\u0060 and \u0060planned\u0060."
+            }
+          ]
+        },
+        {
+          "code": "triaged",
+          "display": "Triaged",
+          "target": [
+            {
+              "code": "in-progress",
+              "display": "In Progress",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R4B \u0060triaged\u0060 is narrower than R5 \u0060in-progress\u0060 and is compatible. \u0060in-progress\u0060 is mapped from \u0060in-progress\u0060 and \u0060triaged\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060unknown\u0060 is equivalent to R5 \u0060unknown\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

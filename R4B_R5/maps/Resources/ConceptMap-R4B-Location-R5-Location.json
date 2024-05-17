@@ -1,0 +1,445 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-Location-R5-Location",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r4b-r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-Location-R5-Location",
+  "name": "R4B-Location-R5-Location",
+  "title": "Concept map to convert a FHIR R4B Location into FHIR R5",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Location|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Location|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Location",
+      "target": "http://hl7.org/fhir/StructureDefinition/Location",
+      "element": [
+        {
+          "code": "Location.physicalType",
+          "target": [
+            {
+              "code": "Location.form",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Location",
+      "target": "http://hl7.org/fhir/StructureDefinition/Location",
+      "element": [
+        {
+          "code": "Location",
+          "display": "Details and position information for a physical place",
+          "target": [
+            {
+              "code": "Location",
+              "display": "Details and position information for a place",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Location\u0060 maps as Equivalent to R5 \u0060Location\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.address",
+          "display": "Physical location",
+          "target": [
+            {
+              "code": "Location.address",
+              "display": "Physical location",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.address\u0060 maps as Equivalent to R5 \u0060Location.address\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.alias",
+          "display": "A list of alternate names that the location is known as, or was known as, in the past",
+          "target": [
+            {
+              "code": "Location.alias",
+              "display": "A list of alternate names that the location is known as, or was known as, in the past",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.alias\u0060 maps as Equivalent to R5 \u0060Location.alias\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.availabilityExceptions",
+          "display": "Description of availability exceptions",
+          "noMap": true
+        },
+        {
+          "code": "Location.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Location.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.contained\u0060 maps as Equivalent to R5 \u0060Location.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.description",
+          "display": "Additional details about the location that could be displayed as further information to identify the location beyond its name",
+          "target": [
+            {
+              "code": "Location.description",
+              "display": "Additional details about the location that could be displayed as further information to identify the location beyond its name",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.description\u0060 maps as SourceIsBroaderThanTarget to R5 \u0060Location.description\u0060 - description has change due to type change: R4B description string has no equivalent or mapped type in R5 description"
+            }
+          ]
+        },
+        {
+          "code": "Location.endpoint",
+          "display": "Technical endpoints providing access to services operated for the location",
+          "target": [
+            {
+              "code": "Location.endpoint",
+              "display": "Technical endpoints providing access to services operated for the location",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.endpoint\u0060 maps as Equivalent to R5 \u0060Location.endpoint\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Location.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.extension\u0060 maps as RelatedTo to R5 \u0060Location.extension\u0060 - extension has change due to type change: R4B \u0060extension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.hoursOfOperation",
+          "display": "What days/times during a week is this location usually open",
+          "target": [
+            {
+              "code": "Location.hoursOfOperation",
+              "display": "What days/times during a week is this location usually open (including exceptions)",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.hoursOfOperation\u0060 maps as SourceIsBroaderThanTarget to R5 \u0060Location.hoursOfOperation\u0060 - hoursOfOperation has change due to type change: R4B hoursOfOperation BackboneElement has no equivalent or mapped type in R5 hoursOfOperation"
+            }
+          ]
+        },
+        {
+          "code": "Location.hoursOfOperation.allDay",
+          "display": "The Location is open all day",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.closingTime",
+          "display": "Time that the Location closes",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.daysOfWeek",
+          "display": "mon | tue | wed | thu | fri | sat | sun",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Location.hoursOfOperation.openingTime",
+          "display": "Time that the Location opens",
+          "noMap": true
+        },
+        {
+          "code": "Location.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Location.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Location.id\u0060 maps as Equivalent to R5 \u0060Location.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.identifier",
+          "display": "Unique code or number identifying the location to its users",
+          "target": [
+            {
+              "code": "Location.identifier",
+              "display": "Unique code or number identifying the location to its users",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.identifier\u0060 maps as Equivalent to R5 \u0060Location.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Location.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Location.implicitRules\u0060 maps as Equivalent to R5 \u0060Location.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Location.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.language\u0060 maps as RelatedTo to R5 \u0060Location.language\u0060 - language made the binding required (from Preferred) for http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+            }
+          ]
+        },
+        {
+          "code": "Location.managingOrganization",
+          "display": "Organization responsible for provisioning and upkeep",
+          "target": [
+            {
+              "code": "Location.managingOrganization",
+              "display": "Organization responsible for provisioning and upkeep",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.managingOrganization\u0060 maps as Equivalent to R5 \u0060Location.managingOrganization\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Location.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Location.meta\u0060 maps as Equivalent to R5 \u0060Location.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.mode",
+          "display": "instance | kind",
+          "target": [
+            {
+              "code": "Location.mode",
+              "display": "instance | kind",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.mode\u0060 maps as Equivalent to R5 \u0060Location.mode\u0060 - mode has compatible required binding for code type: http://hl7.org/fhir/ValueSet/location-mode|4.3.0 and http://hl7.org/fhir/ValueSet/location-mode|5.0.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Location.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Location.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.modifierExtension\u0060 maps as RelatedTo to R5 \u0060Location.modifierExtension\u0060 - modifierExtension has change due to type change: R4B \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.name",
+          "display": "Name of the location as used by humans",
+          "target": [
+            {
+              "code": "Location.name",
+              "display": "Name of the location as used by humans",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.name\u0060 maps as Equivalent to R5 \u0060Location.name\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.operationalStatus",
+          "display": "The operational status of the location (typically only for a bed/room)",
+          "target": [
+            {
+              "code": "Location.operationalStatus",
+              "display": "The operational status of the location (typically only for a bed/room)",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.operationalStatus\u0060 maps as Equivalent to R5 \u0060Location.operationalStatus\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.partOf",
+          "display": "Another Location this one is physically a part of",
+          "target": [
+            {
+              "code": "Location.partOf",
+              "display": "Another Location this one is physically a part of",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.partOf\u0060 maps as Equivalent to R5 \u0060Location.partOf\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.physicalType",
+          "display": "Physical form of the location",
+          "noMap": true
+        },
+        {
+          "code": "Location.position",
+          "display": "The absolute geographic location",
+          "target": [
+            {
+              "code": "Location.position",
+              "display": "The absolute geographic location",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position\u0060 maps as Equivalent to R5 \u0060Location.position\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.altitude",
+          "display": "Altitude with WGS84 datum",
+          "target": [
+            {
+              "code": "Location.position.altitude",
+              "display": "Altitude with WGS84 datum",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.altitude\u0060 maps as Equivalent to R5 \u0060Location.position.altitude\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Location.position.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.extension\u0060 maps as RelatedTo to R5 \u0060Location.position.extension\u0060 - extension has change due to type change: R4B \u0060extension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Location.position.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.id\u0060 maps as Equivalent to R5 \u0060Location.position.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.latitude",
+          "display": "Latitude with WGS84 datum",
+          "target": [
+            {
+              "code": "Location.position.latitude",
+              "display": "Latitude with WGS84 datum",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.latitude\u0060 maps as Equivalent to R5 \u0060Location.position.latitude\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.longitude",
+          "display": "Longitude with WGS84 datum",
+          "target": [
+            {
+              "code": "Location.position.longitude",
+              "display": "Longitude with WGS84 datum",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.longitude\u0060 maps as Equivalent to R5 \u0060Location.position.longitude\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.position.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Location.position.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.position.modifierExtension\u0060 maps as RelatedTo to R5 \u0060Location.position.modifierExtension\u0060 - modifierExtension has change due to type change: R4B \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.status",
+          "display": "active | suspended | inactive",
+          "target": [
+            {
+              "code": "Location.status",
+              "display": "active | suspended | inactive",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.status\u0060 maps as Equivalent to R5 \u0060Location.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/location-status|4.3.0 and http://hl7.org/fhir/ValueSet/location-status|5.0.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Location.telecom",
+          "display": "Contact details of the location",
+          "noMap": true
+        },
+        {
+          "code": "Location.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Location.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.text\u0060 maps as Equivalent to R5 \u0060Location.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Location.type",
+          "display": "Type of function performed",
+          "target": [
+            {
+              "code": "Location.type",
+              "display": "Type of function performed",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Location.type\u0060 maps as Equivalent to R5 \u0060Location.type\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

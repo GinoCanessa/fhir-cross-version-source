@@ -1,0 +1,57 @@
+Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4b.core#4.3.0
+Generated at Wednesday, May 15, 2024 11:14:36 PM
+
+| Side | Name | Title | Description | Snapshot | Differential |
+| --- | --- | --- | --- | --- | --- |
+| Source | ClinicalImpression |  | A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter,  but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score. | 33 | 22 |
+| Target | ClinicalImpression |  | A record of a clinical assessment performed to determine what problem(s) may affect the patient and before planning the treatments or management strategies that are best to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter,  but this varies greatly depending on the clinical workflow. This resource is called "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording of assessment tools such as Apgar score. | 40 | 26 |
+
+
+Comparison Result: RelatedTo
+
+
+### Mapping details
+
+| Status | Count |
+| ------ | ----- |
+DoesNotExistInTarget | 3 |
+Equivalent | 4 |
+RelatedTo | 26 |
+
+
+| Source | Target | Status | Message |
+| ------ | ------ | ------ | ------- |
+| ClinicalImpression | ClinicalImpression | Equivalent | R5 `ClinicalImpression` maps as Equivalent to R4B `ClinicalImpression` |
+| ClinicalImpression.changePattern | - | DoesNotExistInTarget | R5 `ClinicalImpression.changePattern` does not appear in the target and has no mapping for `ClinicalImpression`. |
+| ClinicalImpression.contained | ClinicalImpression.contained | Equivalent | R5 `ClinicalImpression.contained` maps as Equivalent to R4B `ClinicalImpression.contained` |
+| ClinicalImpression.date | ClinicalImpression.date | Equivalent | R5 `ClinicalImpression.date` maps as Equivalent to R4B `ClinicalImpression.date` |
+| ClinicalImpression.description | ClinicalImpression.description | Equivalent | R5 `ClinicalImpression.description` maps as Equivalent to R4B `ClinicalImpression.description` |
+| ClinicalImpression.effective[x] | ClinicalImpression.effective[x] | Equivalent | R5 `ClinicalImpression.effective[x]` maps as Equivalent to R4B `ClinicalImpression.effective[x]` |
+| ClinicalImpression.encounter | ClinicalImpression.encounter | Equivalent | R5 `ClinicalImpression.encounter` maps as Equivalent to R4B `ClinicalImpression.encounter` |
+| ClinicalImpression.extension | ClinicalImpression.extension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.extension` maps as SourceIsBroaderThanTarget to R4B `ClinicalImpression.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4B `extension` |
+| ClinicalImpression.finding | ClinicalImpression.finding | Equivalent | R5 `ClinicalImpression.finding` maps as Equivalent to R4B `ClinicalImpression.finding` |
+| ClinicalImpression.finding.basis | ClinicalImpression.finding.basis | Equivalent | R5 `ClinicalImpression.finding.basis` maps as Equivalent to R4B `ClinicalImpression.finding.basis` |
+| ClinicalImpression.finding.extension | ClinicalImpression.finding.extension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.finding.extension` maps as SourceIsBroaderThanTarget to R4B `ClinicalImpression.finding.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4B `extension` |
+| ClinicalImpression.finding.id | ClinicalImpression.finding.id | Equivalent | R5 `ClinicalImpression.finding.id` maps as Equivalent to R4B `ClinicalImpression.finding.id` |
+| ClinicalImpression.finding.item | - | DoesNotExistInTarget | R5 `ClinicalImpression.finding.item` does not appear in the target and has no mapping for `ClinicalImpression`. |
+| ClinicalImpression.finding.modifierExtension | ClinicalImpression.finding.modifierExtension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.finding.modifierExtension` maps as SourceIsBroaderThanTarget to R4B `ClinicalImpression.finding.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4B `modifierExtension` |
+| ClinicalImpression.id | ClinicalImpression.id | Equivalent | R5 `ClinicalImpression.id` maps as Equivalent to R4B `ClinicalImpression.id` |
+| ClinicalImpression.identifier | ClinicalImpression.identifier | Equivalent | R5 `ClinicalImpression.identifier` maps as Equivalent to R4B `ClinicalImpression.identifier` |
+| ClinicalImpression.implicitRules | ClinicalImpression.implicitRules | Equivalent | R5 `ClinicalImpression.implicitRules` maps as Equivalent to R4B `ClinicalImpression.implicitRules` |
+| ClinicalImpression.language | ClinicalImpression.language | RelatedTo | R5 `ClinicalImpression.language` maps as RelatedTo to R4B `ClinicalImpression.language` - language changed the binding strength from Required to Preferred |
+| ClinicalImpression.meta | ClinicalImpression.meta | Equivalent | R5 `ClinicalImpression.meta` maps as Equivalent to R4B `ClinicalImpression.meta` |
+| ClinicalImpression.modifierExtension | ClinicalImpression.modifierExtension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.modifierExtension` maps as SourceIsBroaderThanTarget to R4B `ClinicalImpression.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4B `modifierExtension` |
+| ClinicalImpression.note | ClinicalImpression.note | SourceIsBroaderThanTarget | R5 `ClinicalImpression.note` maps as SourceIsBroaderThanTarget to R4B `ClinicalImpression.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4B `note` |
+| ClinicalImpression.performer | - | DoesNotExistInTarget | R5 `ClinicalImpression.performer` does not appear in the target and has no mapping for `ClinicalImpression`. |
+| ClinicalImpression.previous | ClinicalImpression.previous | Equivalent | R5 `ClinicalImpression.previous` maps as Equivalent to R4B `ClinicalImpression.previous` |
+| ClinicalImpression.problem | ClinicalImpression.problem | Equivalent | R5 `ClinicalImpression.problem` maps as Equivalent to R4B `ClinicalImpression.problem` |
+| ClinicalImpression.prognosisCodeableConcept | ClinicalImpression.prognosisCodeableConcept | Equivalent | R5 `ClinicalImpression.prognosisCodeableConcept` maps as Equivalent to R4B `ClinicalImpression.prognosisCodeableConcept` |
+| ClinicalImpression.prognosisReference | ClinicalImpression.prognosisReference | Equivalent | R5 `ClinicalImpression.prognosisReference` maps as Equivalent to R4B `ClinicalImpression.prognosisReference` |
+| ClinicalImpression.protocol | ClinicalImpression.protocol | Equivalent | R5 `ClinicalImpression.protocol` maps as Equivalent to R4B `ClinicalImpression.protocol` |
+| ClinicalImpression.status | ClinicalImpression.status | Equivalent | R5 `ClinicalImpression.status` maps as Equivalent to R4B `ClinicalImpression.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/event-status|5.0.0 and http://hl7.org/fhir/ValueSet/clinicalimpression-status|4.3.0 (Equivalent) |
+| ClinicalImpression.statusReason | ClinicalImpression.statusReason | Equivalent | R5 `ClinicalImpression.statusReason` maps as Equivalent to R4B `ClinicalImpression.statusReason` |
+| ClinicalImpression.subject | ClinicalImpression.subject | Equivalent | R5 `ClinicalImpression.subject` maps as Equivalent to R4B `ClinicalImpression.subject` |
+| ClinicalImpression.summary | ClinicalImpression.summary | Equivalent | R5 `ClinicalImpression.summary` maps as Equivalent to R4B `ClinicalImpression.summary` |
+| ClinicalImpression.supportingInfo | ClinicalImpression.supportingInfo | Equivalent | R5 `ClinicalImpression.supportingInfo` maps as Equivalent to R4B `ClinicalImpression.supportingInfo` |
+| ClinicalImpression.text | ClinicalImpression.text | Equivalent | R5 `ClinicalImpression.text` maps as Equivalent to R4B `ClinicalImpression.text` |
+

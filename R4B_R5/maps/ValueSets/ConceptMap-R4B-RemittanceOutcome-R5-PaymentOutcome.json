@@ -1,0 +1,84 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-RemittanceOutcome-R5-PaymentOutcome",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/pmr.outcome-4bto5"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r4b-r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-RemittanceOutcome-R5-PaymentOutcome",
+  "name": "R4B-RemittanceOutcome-R5-PaymentOutcome",
+  "title": "Concept map to convert a FHIR R4B RemittanceOutcome into a FHIR R5 PaymentOutcome",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/payment-outcome|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/remittance-outcome",
+      "target": "http://hl7.org/fhir/payment-outcome",
+      "element": [
+        {
+          "code": "complete",
+          "display": "Complete",
+          "target": [
+            {
+              "code": "complete",
+              "display": "Processing Complete",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060complete\u0060 is equivalent to R5 \u0060complete\u0060."
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "display": "Error",
+          "target": [
+            {
+              "code": "error",
+              "display": "Error",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060error\u0060 is equivalent to R5 \u0060error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "display": "Partial",
+          "target": [
+            {
+              "code": "partial",
+              "display": "Partial Processing",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060partial\u0060 is equivalent to R5 \u0060partial\u0060."
+            }
+          ]
+        },
+        {
+          "code": "queued",
+          "display": "Queued",
+          "target": [
+            {
+              "code": "queued",
+              "display": "Queued",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060queued\u0060 is equivalent to R5 \u0060queued\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

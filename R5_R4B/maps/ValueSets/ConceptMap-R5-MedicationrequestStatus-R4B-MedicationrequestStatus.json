@@ -1,0 +1,144 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MedicationrequestStatus-R4B-MedicationrequestStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-5to4b"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4B/ConceptMap/R5-MedicationrequestStatus-R4B-MedicationrequestStatus",
+  "name": "R5-MedicationrequestStatus-R4B-MedicationrequestStatus",
+  "title": "Concept map to convert a FHIR R5 MedicationrequestStatus into a FHIR R4B MedicationrequestStatus",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medicationrequest-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medicationrequest-status|4.3.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "target": "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "Active",
+          "target": [
+            {
+              "code": "active",
+              "display": "Active",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4B \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "display": "Cancelled",
+          "target": [
+            {
+              "code": "cancelled",
+              "display": "Cancelled",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060cancelled\u0060 is equivalent to R4B \u0060cancelled\u0060."
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "display": "Completed",
+          "target": [
+            {
+              "code": "completed",
+              "display": "Completed",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060completed\u0060 is narrower than R4B \u0060completed\u0060 and is compatible. \u0060completed\u0060 is mapped from \u0060completed\u0060 and \u0060ended\u0060."
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "display": "Draft",
+          "target": [
+            {
+              "code": "draft",
+              "display": "Draft",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060draft\u0060 is equivalent to R4B \u0060draft\u0060."
+            }
+          ]
+        },
+        {
+          "code": "ended",
+          "display": "Ended",
+          "target": [
+            {
+              "code": "completed",
+              "display": "Completed",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ended\u0060 is narrower than R4B \u0060completed\u0060 and is compatible. \u0060completed\u0060 is mapped from \u0060completed\u0060 and \u0060ended\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "Entered in Error",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "Entered in Error",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4B \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "display": "On Hold",
+          "target": [
+            {
+              "code": "on-hold",
+              "display": "On Hold",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060on-hold\u0060 is equivalent to R4B \u0060on-hold\u0060."
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "display": "Stopped",
+          "target": [
+            {
+              "code": "stopped",
+              "display": "Stopped",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060stopped\u0060 is equivalent to R4B \u0060stopped\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "Unknown",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "Unknown",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060unknown\u0060 is equivalent to R4B \u0060unknown\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

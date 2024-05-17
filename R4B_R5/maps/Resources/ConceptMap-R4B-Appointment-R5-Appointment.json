@@ -1,0 +1,505 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R4B-Appointment-R5-Appointment",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r4b-r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R4B-R5/ConceptMap/R4B-Appointment-R5-Appointment",
+  "name": "R4B-Appointment-R5-Appointment",
+  "title": "Concept map to convert a FHIR R4B Appointment into FHIR R5",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Appointment|4.3.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Appointment|5.0.0",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Appointment",
+      "target": "http://hl7.org/fhir/StructureDefinition/Appointment",
+      "element": [
+        {
+          "code": "Appointment.cancelationReason",
+          "target": [
+            {
+              "code": "Appointment.cancellationReason",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.reasonCode",
+          "target": [
+            {
+              "code": "Appointment.reason",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.comment",
+          "target": [
+            {
+              "code": "Appointment.note",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Appointment",
+      "target": "http://hl7.org/fhir/StructureDefinition/Appointment",
+      "element": [
+        {
+          "code": "Appointment",
+          "display": "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)",
+          "target": [
+            {
+              "code": "Appointment",
+              "display": "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Appointment\u0060 maps as Equivalent to R5 \u0060Appointment\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.appointmentType",
+          "display": "The style of appointment or patient that has been booked in the slot (not service type)",
+          "target": [
+            {
+              "code": "Appointment.appointmentType",
+              "display": "The style of appointment or patient that has been booked in the slot (not service type)",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.appointmentType\u0060 maps as Equivalent to R5 \u0060Appointment.appointmentType\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.basedOn",
+          "display": "The service request this appointment is allocated to assess",
+          "target": [
+            {
+              "code": "Appointment.basedOn",
+              "display": "The request this appointment is allocated to assess",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.basedOn\u0060 maps as SourceIsNarrowerThanTarget to R5 \u0060Appointment.basedOn\u0060 - basedOn has change due to type change: R4B \u0060basedOn\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R5 \u0060basedOn\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.cancelationReason",
+          "display": "The coded reason for the appointment being cancelled",
+          "noMap": true
+        },
+        {
+          "code": "Appointment.comment",
+          "display": "Additional comments",
+          "noMap": true
+        },
+        {
+          "code": "Appointment.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Appointment.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.contained\u0060 maps as Equivalent to R5 \u0060Appointment.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.created",
+          "display": "The date that this appointment was initially created",
+          "target": [
+            {
+              "code": "Appointment.created",
+              "display": "The date that this appointment was initially created",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.created\u0060 maps as Equivalent to R5 \u0060Appointment.created\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.description",
+          "display": "Shown on a subject line in a meeting request, or appointment list",
+          "target": [
+            {
+              "code": "Appointment.description",
+              "display": "Shown on a subject line in a meeting request, or appointment list",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.description\u0060 maps as Equivalent to R5 \u0060Appointment.description\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.end",
+          "display": "When appointment is to conclude",
+          "target": [
+            {
+              "code": "Appointment.end",
+              "display": "When appointment is to conclude",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.end\u0060 maps as Equivalent to R5 \u0060Appointment.end\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Appointment.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.extension\u0060 maps as RelatedTo to R5 \u0060Appointment.extension\u0060 - extension has change due to type change: R4B \u0060extension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Appointment.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Appointment.id\u0060 maps as Equivalent to R5 \u0060Appointment.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.identifier",
+          "display": "External Ids for this item",
+          "target": [
+            {
+              "code": "Appointment.identifier",
+              "display": "External Ids for this item",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.identifier\u0060 maps as Equivalent to R5 \u0060Appointment.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Appointment.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Appointment.implicitRules\u0060 maps as Equivalent to R5 \u0060Appointment.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Appointment.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.language\u0060 maps as RelatedTo to R5 \u0060Appointment.language\u0060 - language made the binding required (from Preferred) for http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Appointment.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R4B \u0060Appointment.meta\u0060 maps as Equivalent to R5 \u0060Appointment.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.minutesDuration",
+          "display": "Can be less than start/end (e.g. estimate)",
+          "target": [
+            {
+              "code": "Appointment.minutesDuration",
+              "display": "Can be less than start/end (e.g. estimate)",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.minutesDuration\u0060 maps as Equivalent to R5 \u0060Appointment.minutesDuration\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Appointment.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.modifierExtension\u0060 maps as RelatedTo to R5 \u0060Appointment.modifierExtension\u0060 - modifierExtension has change due to type change: R4B \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant",
+          "display": "Participants involved in appointment",
+          "target": [
+            {
+              "code": "Appointment.participant",
+              "display": "Participants involved in appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant\u0060 maps as Equivalent to R5 \u0060Appointment.participant\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.actor",
+          "display": "Person, Location/HealthcareService or Device",
+          "target": [
+            {
+              "code": "Appointment.participant.actor",
+              "display": "The individual, device, location, or service participating in the appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.actor\u0060 maps as SourceIsNarrowerThanTarget to R5 \u0060Appointment.participant.actor\u0060 - actor has change due to type change: R4B \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R5 \u0060actor\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Appointment.participant.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.extension\u0060 maps as RelatedTo to R5 \u0060Appointment.participant.extension\u0060 - extension has change due to type change: R4B \u0060extension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Appointment.participant.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.id\u0060 maps as Equivalent to R5 \u0060Appointment.participant.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Appointment.participant.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.modifierExtension\u0060 maps as RelatedTo to R5 \u0060Appointment.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R4B \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as RelatedTo for R5 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.period",
+          "display": "Participation period of the actor",
+          "target": [
+            {
+              "code": "Appointment.participant.period",
+              "display": "Participation period of the actor",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.period\u0060 maps as Equivalent to R5 \u0060Appointment.participant.period\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.required",
+          "display": "required | optional | information-only",
+          "target": [
+            {
+              "code": "Appointment.participant.required",
+              "display": "The participant is required to attend (optional when false)",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.required\u0060 maps as RelatedTo to R5 \u0060Appointment.participant.required\u0060 - required removed a binding requirement - Required http://hl7.org/fhir/ValueSet/participantrequired|4.3.0; required has change due to type change: R4B required code has no equivalent or mapped type in R5 required"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.status",
+          "display": "accepted | declined | tentative | needs-action",
+          "target": [
+            {
+              "code": "Appointment.participant.status",
+              "display": "accepted | declined | tentative | needs-action",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.status\u0060 maps as Equivalent to R5 \u0060Appointment.participant.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/participationstatus|4.3.0 and http://hl7.org/fhir/ValueSet/participationstatus|5.0.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.participant.type",
+          "display": "Role of participant in the appointment",
+          "target": [
+            {
+              "code": "Appointment.participant.type",
+              "display": "Role of participant in the appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.participant.type\u0060 maps as Equivalent to R5 \u0060Appointment.participant.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.patientInstruction",
+          "display": "Detailed information and instructions for the patient",
+          "target": [
+            {
+              "code": "Appointment.patientInstruction",
+              "display": "Detailed information and instructions for the patient",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.patientInstruction\u0060 maps as RelatedTo to R5 \u0060Appointment.patientInstruction\u0060 - patientInstruction changed from scalar to array (max cardinality from 1 to *); patientInstruction has change due to type change: R4B patientInstruction string has no equivalent or mapped type in R5 patientInstruction"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.priority",
+          "display": "Used to make informed decisions if needing to re-prioritize",
+          "target": [
+            {
+              "code": "Appointment.priority",
+              "display": "Used to make informed decisions if needing to re-prioritize",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.priority\u0060 maps as RelatedTo to R5 \u0060Appointment.priority\u0060 - priority added a binding requirement - Example http://terminology.hl7.org/ValueSet/v3-ActPriority; priority has change due to type change: R4B priority unsignedInt has no equivalent or mapped type in R5 priority"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.reasonCode",
+          "display": "Coded reason this appointment is scheduled",
+          "noMap": true
+        },
+        {
+          "code": "Appointment.reasonReference",
+          "display": "Reason the appointment is to take place (resource)",
+          "noMap": true
+        },
+        {
+          "code": "Appointment.requestedPeriod",
+          "display": "Potential date/time interval(s) requested to allocate the appointment within",
+          "target": [
+            {
+              "code": "Appointment.requestedPeriod",
+              "display": "Potential date/time interval(s) requested to allocate the appointment within",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.requestedPeriod\u0060 maps as Equivalent to R5 \u0060Appointment.requestedPeriod\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.serviceCategory",
+          "display": "A broad categorization of the service that is to be performed during this appointment",
+          "target": [
+            {
+              "code": "Appointment.serviceCategory",
+              "display": "A broad categorization of the service that is to be performed during this appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.serviceCategory\u0060 maps as Equivalent to R5 \u0060Appointment.serviceCategory\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.serviceType",
+          "display": "The specific service that is to be performed during this appointment",
+          "target": [
+            {
+              "code": "Appointment.serviceType",
+              "display": "The specific service that is to be performed during this appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.serviceType\u0060 maps as SourceIsBroaderThanTarget to R5 \u0060Appointment.serviceType\u0060 - serviceType has change due to type change: R4B serviceType CodeableConcept has no equivalent or mapped type in R5 serviceType"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.slot",
+          "display": "The slots that this appointment is filling",
+          "target": [
+            {
+              "code": "Appointment.slot",
+              "display": "The slots that this appointment is filling",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.slot\u0060 maps as Equivalent to R5 \u0060Appointment.slot\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.specialty",
+          "display": "The specialty of a practitioner that would be required to perform the service requested in this appointment",
+          "target": [
+            {
+              "code": "Appointment.specialty",
+              "display": "The specialty of a practitioner that would be required to perform the service requested in this appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.specialty\u0060 maps as Equivalent to R5 \u0060Appointment.specialty\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.start",
+          "display": "When appointment is to take place",
+          "target": [
+            {
+              "code": "Appointment.start",
+              "display": "When appointment is to take place",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.start\u0060 maps as Equivalent to R5 \u0060Appointment.start\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.status",
+          "display": "proposed | pending | booked | arrived | fulfilled | cancelled | noshow | entered-in-error | checked-in | waitlist",
+          "target": [
+            {
+              "code": "Appointment.status",
+              "display": "proposed | pending | booked | arrived | fulfilled | cancelled | noshow | entered-in-error | checked-in | waitlist",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.status\u0060 maps as Equivalent to R5 \u0060Appointment.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/appointmentstatus|4.3.0 and http://hl7.org/fhir/ValueSet/appointmentstatus|5.0.0 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.supportingInformation",
+          "display": "Additional information to support the appointment",
+          "target": [
+            {
+              "code": "Appointment.supportingInformation",
+              "display": "Additional information to support the appointment",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.supportingInformation\u0060 maps as Equivalent to R5 \u0060Appointment.supportingInformation\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Appointment.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R4B \u0060Appointment.text\u0060 maps as Equivalent to R5 \u0060Appointment.text\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
