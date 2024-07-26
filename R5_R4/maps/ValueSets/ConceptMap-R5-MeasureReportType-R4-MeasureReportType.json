@@ -1,0 +1,86 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MeasureReportType-R4-MeasureReportType",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/mrp.type-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-MeasureReportType-R4-MeasureReportType",
+  "name": "R5-MeasureReportType-R4-MeasureReportType",
+  "title": "Concept map to convert a FHIR R5 MeasureReportType into a FHIR R4 MeasureReportType",
+  "experimental": false,
+  "description": "Mapping for MeasureReport.type from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/measure-report-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/measure-report-type",
+      "target": "http://hl7.org/fhir/measure-report-type",
+      "element": [
+        {
+          "code": "data-exchange",
+          "display": "A data exchange report that contains data-of-interest for the measure (i.e. data that is needed to calculate the measure)",
+          "target": [
+            {
+              "code": "data-collection",
+              "display": "A data collection report that contains data-of-interest for the measure.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060data-exchange\u0060 is equivalent to R4 \u0060data-collection\u0060."
+            }
+          ]
+        },
+        {
+          "code": "individual",
+          "display": "An individual report that provides information on the performance for a given measure with respect to a single subject.",
+          "target": [
+            {
+              "code": "individual",
+              "display": "An individual report that provides information on the performance for a given measure with respect to a single subject.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060individual\u0060 is equivalent to R4 \u0060individual\u0060."
+            }
+          ]
+        },
+        {
+          "code": "subject-list",
+          "display": "A subject list report that includes a listing of subjects that satisfied each population criteria in the measure.",
+          "target": [
+            {
+              "code": "subject-list",
+              "display": "A subject list report that includes a listing of subjects that satisfied each population criteria in the measure.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060subject-list\u0060 is equivalent to R4 \u0060subject-list\u0060."
+            }
+          ]
+        },
+        {
+          "code": "summary",
+          "display": "A summary report that returns the number of members in each population criteria for the measure.",
+          "target": [
+            {
+              "code": "summary",
+              "display": "A summary report that returns the number of members in each population criteria for the measure.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060summary\u0060 is equivalent to R4 \u0060summary\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

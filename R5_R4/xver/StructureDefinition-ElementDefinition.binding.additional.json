@@ -1,0 +1,681 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ElementDefinition.binding.additional",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional",
+  "name": "XVerExtensionElementDefinition.binding.additional",
+  "title": "Cross-Version Extension for FHIR R5:ElementDefinition.binding.additional compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "R5 `ElementDefinition.binding.additional` does not appear in the target and has no mapping for `ElementDefinition`.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ElementDefinition.binding"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "Additional Bindings - more rules about the binding",
+        "definition": "Additional bindings that help applications implementing this element. Additional bindings do not replace the main binding but provide more information and/or context.",
+        "comment": "R5 `ElementDefinition.binding.additional` does not appear in the target and has no mapping for `ElementDefinition`.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:purpose",
+        "path": "Extension.extension:purpose",
+        "short": "maximum | minimum | required | extensible | candidate | current | preferred | ui | starter | component",
+        "definition": "The use of this additional binding.",
+        "comment": "Conformance bindings are in addition to the base binding, not instead of it.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:purpose",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:valueSet",
+        "path": "Extension.extension:valueSet",
+        "short": "The value set for the additional binding",
+        "definition": "The valueSet that is being bound for the purpose.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:valueSet",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:documentation",
+        "path": "Extension.extension:documentation",
+        "short": "Documentation of the purpose of use of the binding",
+        "definition": "Documentation of the purpose of use of the bindingproviding additional information about how it is intended to be used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:documentation",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:shortDoco",
+        "path": "Extension.extension:shortDoco",
+        "short": "Concise documentation - for summary tables",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:shortDoco",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:usage",
+        "path": "Extension.extension:usage",
+        "short": "Qualifies the usage - jurisdiction, gender, workflow status etc.",
+        "definition": "Qualifies the usage of the binding. Typically bindings are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling.",
+        "comment": "This specification does not define exactly how the context is determined for the usage; typically, this will be described in implementation guides.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:usage",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:any",
+        "path": "Extension.extension:any",
+        "short": "Whether binding can applies to all repeats, or just one",
+        "definition": "Whether the binding applies to all repeats, or just to any one of them. This is only relevant for elements that can repeat.",
+        "comment": "A common pattern is to make a conformance binding to all repeats, and then make a binding that one of the repeats must conform to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:any",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Additional Bindings - more rules about the binding",
+        "definition": "Additional bindings that help applications implementing this element. Additional bindings do not replace the main binding but provide more information and/or context.",
+        "comment": "R5 `ElementDefinition.binding.additional` does not appear in the target and has no mapping for `ElementDefinition`.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:purpose",
+        "short": "maximum | minimum | required | extensible | candidate | current | preferred | ui | starter | component",
+        "definition": "The use of this additional binding.",
+        "comment": "Conformance bindings are in addition to the base binding, not instead of it.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:purpose.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:purpose.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:purpose.url",
+        "fixedUri": "purpose"
+      },
+      {
+        "path": "Extension.extension:valueSet",
+        "short": "The value set for the additional binding",
+        "definition": "The valueSet that is being bound for the purpose.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:valueSet.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:valueSet.extension:canonical",
+        "sliceName": "canonical",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:valueSet.url",
+        "fixedUri": "valueSet"
+      },
+      {
+        "path": "Extension.extension:documentation",
+        "short": "Documentation of the purpose of use of the binding",
+        "definition": "Documentation of the purpose of use of the bindingproviding additional information about how it is intended to be used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:documentation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:documentation.extension:markdown",
+        "sliceName": "markdown",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:documentation.url",
+        "fixedUri": "documentation"
+      },
+      {
+        "path": "Extension.extension:shortDoco",
+        "short": "Concise documentation - for summary tables",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:shortDoco.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:shortDoco.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:shortDoco.url",
+        "fixedUri": "shortDoco"
+      },
+      {
+        "path": "Extension.extension:usage",
+        "short": "Qualifies the usage - jurisdiction, gender, workflow status etc.",
+        "definition": "Qualifies the usage of the binding. Typically bindings are qualified by jurisdiction, but they may also be qualified by gender, workflow status, clinical domain etc. The information to decide whether a usege context applies is usually outside the resource, determined by context, and this might present challenges for validation tooling.",
+        "comment": "This specification does not define exactly how the context is determined for the usage; typically, this will be described in implementation guides.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:usage.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:usage.extension:UsageContext",
+        "sliceName": "UsageContext",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-UsageContext"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:usage.url",
+        "fixedUri": "usage"
+      },
+      {
+        "path": "Extension.extension:any",
+        "short": "Whether binding can applies to all repeats, or just one",
+        "definition": "Whether the binding applies to all repeats, or just to any one of them. This is only relevant for elements that can repeat.",
+        "comment": "A common pattern is to make a conformance binding to all repeats, and then make a binding that one of the repeats must conform to.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:any.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:any.extension:boolean",
+        "sliceName": "boolean",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:any.url",
+        "fixedUri": "any"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional"
+      }
+    ]
+  }
+}

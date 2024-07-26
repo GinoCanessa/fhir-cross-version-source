@@ -1,0 +1,1341 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MedicationKnowledge-R4-MedicationKnowledge",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-MedicationKnowledge-R4-MedicationKnowledge",
+  "name": "R5-MedicationKnowledge-R4-MedicationKnowledge",
+  "title": "Concept map to convert a FHIR R5 MedicationKnowledge into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge",
+      "target": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge",
+      "element": [
+        {
+          "code": "MedicationKnowledge.clinicalUseIssue",
+          "target": [
+            {
+              "code": "MedicationKnowledge.contraindication",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.cost[x]",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.cost",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional",
+          "target": [
+            {
+              "code": "MedicationKnowledge",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.doseForm",
+          "target": [
+            {
+              "code": "MedicationKnowledge.doseForm",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic",
+          "target": [
+            {
+              "code": "MedicationKnowledge.drugCharacteristic",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.type",
+          "target": [
+            {
+              "code": "MedicationKnowledge.drugCharacteristic.type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.value[x]",
+          "target": [
+            {
+              "code": "MedicationKnowledge.drugCharacteristic.value[x]",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient",
+          "target": [
+            {
+              "code": "MedicationKnowledge.ingredient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.item",
+          "target": [
+            {
+              "code": "MedicationKnowledge.ingredient.item[x]",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.strength[x]",
+          "target": [
+            {
+              "code": "MedicationKnowledge.ingredient.strength",
+              "relationship": "source-is-broader-than-target",
+              "comment": "re-org"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional.intendedRoute",
+          "target": [
+            {
+              "code": "MedicationKnowledge.intendedRoute",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.dosage",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.dosage.dosage",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.dosage.type",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.patientCharacteristics",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value[x]",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.patientCharacteristics.characteristic[x]",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.indication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.administrationGuidelines.indication[x]",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.name",
+          "target": [
+            {
+              "code": "MedicationKnowledge.synonym",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.schedule",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.schedule.schedule",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge",
+      "target": "http://hl7.org/fhir/StructureDefinition/MedicationKnowledge",
+      "element": [
+        {
+          "code": "MedicationKnowledge",
+          "display": "Definition of Medication Knowledge",
+          "target": [
+            {
+              "code": "MedicationKnowledge",
+              "display": "Definition of Medication Knowledge",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationKnowledge\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.associatedMedication",
+          "display": "The set of medication resources that are associated with this medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.associatedMedication",
+              "display": "A medication resource that is associated with this medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.associatedMedication\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.associatedMedication\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.author",
+          "display": "Creator or owner of the knowledge or information about the medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.clinicalUseIssue",
+          "display": "Potential clinical issue with or between medication(s)",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.code",
+          "display": "Code that identifies this medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.code",
+              "display": "Code that identifies this medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.code\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.code\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "MedicationKnowledge.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.contained\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost",
+          "display": "The pricing of the medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost",
+              "display": "The pricing of the medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.cost\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.cost[x]",
+          "display": "The price or category of the cost of the medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.cost.effectiveDate",
+          "display": "The date range for which the cost is effective",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.cost.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.cost.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.cost.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.cost.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.source",
+          "display": "The source or owner for the price information",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.source",
+              "display": "The source or owner for the price information",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost.source\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.cost.source\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.cost.type",
+          "display": "The category of the cost information",
+          "target": [
+            {
+              "code": "MedicationKnowledge.cost.type",
+              "display": "The category of the cost information",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.cost.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.cost.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.definitional",
+          "display": "Minimal definition information about the medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.definition",
+          "display": "Definitional resources that provide more information about this medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.doseForm",
+          "display": "powder | tablets | capsule \u002B",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic",
+          "display": "Specifies descriptive properties of the medicine",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.type",
+          "display": "Code specifying the type of characteristic of medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.drugCharacteristic.value[x]",
+          "display": "Description of the characteristic",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient",
+          "display": "Active or inactive ingredient",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.item",
+          "display": "Substances contained in the medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.strength[x]",
+          "display": "Quantity of ingredient present",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.ingredient.type",
+          "display": "A code that defines the type of ingredient, active, base, etc",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.intendedRoute",
+          "display": "The intended or approved route of administration",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.definitional.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "MedicationKnowledge.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationKnowledge.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.identifier",
+          "display": "Business identifier for this medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "MedicationKnowledge.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationKnowledge.implicitRules\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline",
+          "display": "Guidelines or protocols for administration of the medication for an indication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline",
+          "display": "Guidelines for dosage of the medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.administrationTreatment",
+          "display": "Type of treatment the guideline applies to",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage",
+          "display": "Dosage for the medication for the specific guidelines",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.dosage",
+          "display": "Dosage for the medication for the specific guidelines",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.dosage.type",
+          "display": "Category of dosage for a medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic",
+          "display": "Characteristics of the patient that are relevant to the administration guidelines",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.type",
+          "display": "Categorization of specific characteristic that is relevant to the administration guideline",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.patientCharacteristic.value[x]",
+          "display": "The specific characteristic",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.dosingGuideline.treatmentIntent",
+          "display": "Intention of the treatment",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.indication",
+          "display": "Indication for use that applies to the specific administration guideline",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.indicationGuideline.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.intendedJurisdiction",
+          "display": "Codes that identify the different jurisdictions for which the information of this resource was created",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "MedicationKnowledge.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.language\u0060 maps as RelatedTo to R4 \u0060MedicationKnowledge.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification",
+          "display": "Categorization of the medication within a formulary or classification system",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification",
+              "display": "Categorization of the medication within a formulary or classification system",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.medicineClassification\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.classification",
+          "display": "Specific category assigned to the medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification.classification",
+              "display": "Specific category assigned to the medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification.classification\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.medicineClassification.classification\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.medicineClassification.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.medicineClassification.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.medicineClassification.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.source[x]",
+          "display": "The source of the classification",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.medicineClassification.type",
+          "display": "The type of category for the medication (for example, therapeutic classification, therapeutic sub-classification)",
+          "target": [
+            {
+              "code": "MedicationKnowledge.medicineClassification.type",
+              "display": "The type of category for the medication (for example, therapeutic classification, therapeutic sub-classification)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.medicineClassification.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.medicineClassification.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "MedicationKnowledge.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationKnowledge.meta\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "MedicationKnowledge.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram",
+          "display": "Program under which a medication is reviewed",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram",
+              "display": "Program under which a medication is reviewed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monitoringProgram\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.monitoringProgram.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monitoringProgram.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.monitoringProgram.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram.name",
+          "display": "Name of the reviewing program",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram.name",
+              "display": "Name of the reviewing program",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram.name\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monitoringProgram.name\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monitoringProgram.type",
+          "display": "Type of program under which the medication is monitored",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monitoringProgram.type",
+              "display": "Type of program under which the medication is monitored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monitoringProgram.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monitoringProgram.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph",
+          "display": "Associated documentation about the medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph",
+              "display": "Associated documentation about the medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monograph\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.monograph.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monograph.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.monograph.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph.source",
+          "display": "Associated documentation about the medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph.source",
+              "display": "Associated documentation about the medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph.source\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationKnowledge.monograph.source\u0060 - source has change due to type change: R5 \u0060source\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060source\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.monograph.type",
+          "display": "The category of medication document",
+          "target": [
+            {
+              "code": "MedicationKnowledge.monograph.type",
+              "display": "The category of medication document",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.monograph.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.monograph.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.name",
+          "display": "A name associated with the medication being described",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.packaging",
+          "display": "Details about packaged medications",
+          "target": [
+            {
+              "code": "MedicationKnowledge.packaging",
+              "display": "Details about packaged medications",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.packaging\u0060 maps as RelatedTo to R4 \u0060MedicationKnowledge.packaging\u0060 - packaging changed from array to scalar (max cardinality from * to 1)"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.packaging.cost",
+          "display": "Cost of the packaged medication",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.packaging.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.packaging.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.packaging.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.packaging.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.packaging.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.packaging.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.packaging.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.packaging.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.packaging.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.packaging.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.packaging.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.packaging.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.packaging.packagedProduct",
+          "display": "The packaged medication that is being priced",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.preparationInstruction",
+          "display": "The instructions for preparing the medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.preparationInstruction",
+              "display": "The instructions for preparing the medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.preparationInstruction\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.preparationInstruction\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.productType",
+          "display": "Category of the medication or product",
+          "target": [
+            {
+              "code": "MedicationKnowledge.productType",
+              "display": "Category of the medication or product",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.productType\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.productType\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory",
+          "display": "Regulatory information about a medication",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory",
+              "display": "Regulatory information about a medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense",
+          "display": "The maximum number of units of the medication that can be dispensed in a period",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense",
+              "display": "The maximum number of units of the medication that can be dispensed in a period",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.maxDispense\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.maxDispense.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.maxDispense.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.maxDispense.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense.period",
+          "display": "The period that applies to the maximum number of units",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense.period",
+              "display": "The period that applies to the maximum number of units",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense.period\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.maxDispense.period\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.maxDispense.quantity",
+          "display": "The maximum number of units of the medication that can be dispensed",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.maxDispense.quantity",
+              "display": "The maximum number of units of the medication that can be dispensed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.maxDispense.quantity\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.maxDispense.quantity\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.regulatoryAuthority",
+          "display": "Specifies the authority of the regulation",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.regulatoryAuthority",
+              "display": "Specifies the authority of the regulation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.regulatoryAuthority\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.regulatoryAuthority\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.schedule",
+          "display": "Specifies the schedule of a medication in jurisdiction",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.schedule",
+              "display": "Specifies the schedule of a medication in jurisdiction",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.schedule\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.schedule\u0060 - schedule has change due to type change: R5 schedule CodeableConcept has no equivalent or mapped type in R4 schedule"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution",
+          "display": "Specifies if changes are allowed when dispensing a medication from a regulatory perspective",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution",
+              "display": "Specifies if changes are allowed when dispensing a medication from a regulatory perspective",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.substitution\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution.allowed",
+          "display": "Specifies if regulation allows for changes in the medication when dispensing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution.allowed",
+              "display": "Specifies if regulation allows for changes in the medication when dispensing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution.allowed\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.substitution.allowed\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.substitution.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.substitution.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.regulatory.substitution.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.regulatory.substitution.type",
+          "display": "Specifies the type of substitution allowed",
+          "target": [
+            {
+              "code": "MedicationKnowledge.regulatory.substitution.type",
+              "display": "Specifies the type of substitution allowed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.regulatory.substitution.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.regulatory.substitution.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge",
+          "display": "Associated or related medication information",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge",
+              "display": "Associated or related medication information",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge.id\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge.reference",
+          "display": "Associated documentation about the associated medication knowledge",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge.reference",
+              "display": "Associated documentation about the associated medication knowledge",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge.reference\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge.reference\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.relatedMedicationKnowledge.type",
+          "display": "Category of medicationKnowledge",
+          "target": [
+            {
+              "code": "MedicationKnowledge.relatedMedicationKnowledge.type",
+              "display": "Category of medicationKnowledge",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.relatedMedicationKnowledge.type\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.relatedMedicationKnowledge.type\u0060"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.status",
+          "display": "active | entered-in-error | inactive",
+          "target": [
+            {
+              "code": "MedicationKnowledge.status",
+              "display": "active | inactive | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.status\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medicationknowledge-status|5.0.0 and http://hl7.org/fhir/ValueSet/medicationknowledge-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline",
+          "display": "How the medication should be stored",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting",
+          "display": "Setting or value of environment for adequate storage",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting.type",
+          "display": "Categorization of the setting",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.environmentalSetting.value[x]",
+          "display": "Value of the setting",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.note",
+          "display": "Additional storage notes",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.reference",
+          "display": "Reference to additional information",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.storageGuideline.stabilityDuration",
+          "display": "Duration remains stable",
+          "noMap": true
+        },
+        {
+          "code": "MedicationKnowledge.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "MedicationKnowledge.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationKnowledge.text\u0060 maps as Equivalent to R4 \u0060MedicationKnowledge.text\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SubscriptionStatusCodes-R4-SubscriptionStatus",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-SubscriptionStatusCodes-R4-SubscriptionStatus",
+  "name": "R5-SubscriptionStatusCodes-R4-SubscriptionStatus",
+  "title": "Concept map to convert a FHIR R5 SubscriptionStatusCodes into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/subscription-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/subscription-status",
+      "target": "http://hl7.org/fhir/subscription-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "The subscription is active.",
+          "target": [
+            {
+              "code": "active",
+              "display": "The subscription is active.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "This subscription has been flagged as incorrect.",
+          "noMap": true
+        },
+        {
+          "code": "error",
+          "display": "The server has an error executing the notification.",
+          "target": [
+            {
+              "code": "error",
+              "display": "The server has an error executing the notification.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060error\u0060 is equivalent to R4 \u0060error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "display": "Too many errors have occurred or the subscription has expired.",
+          "target": [
+            {
+              "code": "off",
+              "display": "Too many errors have occurred or the subscription has expired.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060off\u0060 is equivalent to R4 \u0060off\u0060."
+            }
+          ]
+        },
+        {
+          "code": "requested",
+          "display": "The client has requested the subscription, and the server has not yet set it up.",
+          "target": [
+            {
+              "code": "requested",
+              "display": "The client has requested the subscription, and the server has not yet set it up.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060requested\u0060 is equivalent to R4 \u0060requested\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-AdverseEvent-R4-AdverseEvent",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-AdverseEvent-R4-AdverseEvent",
+  "name": "R5-AdverseEvent-R4-AdverseEvent",
+  "title": "Concept map to convert a FHIR R5 AdverseEvent into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/AdverseEvent|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/AdverseEvent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
+      "target": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
+      "element": [
+        {
+          "code": "AdverseEvent.code",
+          "target": [
+            {
+              "code": "AdverseEvent.event",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.occurrence[x]",
+          "target": [
+            {
+              "code": "AdverseEvent.date",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.resultingEffect",
+          "target": [
+            {
+              "code": "AdverseEvent.resultingCondition",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.supportingInfo",
+          "target": [
+            {
+              "code": "AdverseEvent",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.supportingInfo.item[x]",
+          "target": [
+            {
+              "code": "AdverseEvent.subjectMedicalHistory",
+              "relationship": "source-is-broader-than-target",
+              "comment": "re-org"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.entityRelatedness",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.productRelatedness",
+              "relationship": "equivalent",
+              "comment": "re-org"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.instance[x]",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.instance",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
+      "target": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
+      "element": [
+        {
+          "code": "AdverseEvent",
+          "display": "An event that may be related to unintended effects on a patient or research participant",
+          "target": [
+            {
+              "code": "AdverseEvent",
+              "display": "Medical care, research study or other healthcare event causing physical injury",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent\u0060 maps as Equivalent to R4 \u0060AdverseEvent\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.actuality",
+          "display": "actual | potential",
+          "target": [
+            {
+              "code": "AdverseEvent.actuality",
+              "display": "actual | potential",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.actuality\u0060 maps as Equivalent to R4 \u0060AdverseEvent.actuality\u0060 - actuality has compatible required binding for code type: http://hl7.org/fhir/ValueSet/adverse-event-actuality|5.0.0 and http://hl7.org/fhir/ValueSet/adverse-event-actuality|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.category",
+          "display": "wrong-patient | procedure-mishap | medication-mishap | device | unsafe-physical-environment | hospital-aquired-infection | wrong-body-site",
+          "target": [
+            {
+              "code": "AdverseEvent.category",
+              "display": "product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.category\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.category\u0060 - category changed the binding strength from Example to Extensible"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.code",
+          "display": "Event or incident that occurred or was averted",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "AdverseEvent.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.contained\u0060 maps as Equivalent to R4 \u0060AdverseEvent.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.contributingFactor",
+          "display": "Contributing factors suspected to have increased the probability or severity of the adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.contributingFactor.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.contributingFactor.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.contributingFactor.item[x]",
+          "display": "Item suspected to have increased the probability or severity of the adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.contributingFactor.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.detected",
+          "display": "When the event was detected",
+          "target": [
+            {
+              "code": "AdverseEvent.detected",
+              "display": "When the event was detected",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.detected\u0060 maps as Equivalent to R4 \u0060AdverseEvent.detected\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.encounter",
+          "display": "The Encounter associated with the start of the AdverseEvent",
+          "target": [
+            {
+              "code": "AdverseEvent.encounter",
+              "display": "Encounter created as part of",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.encounter\u0060 maps as Equivalent to R4 \u0060AdverseEvent.encounter\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.expectedInResearchStudy",
+          "display": "Considered likely or probable or anticipated in the research study",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "AdverseEvent.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "AdverseEvent.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent.id\u0060 maps as Equivalent to R4 \u0060AdverseEvent.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.identifier",
+          "display": "Business identifier for the event",
+          "target": [
+            {
+              "code": "AdverseEvent.identifier",
+              "display": "Business identifier for the event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.identifier\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.identifier\u0060 - identifier changed from array to scalar (max cardinality from * to 1)"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "AdverseEvent.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent.implicitRules\u0060 maps as Equivalent to R4 \u0060AdverseEvent.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "AdverseEvent.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.language\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.location",
+          "display": "Location where adverse event occurred",
+          "target": [
+            {
+              "code": "AdverseEvent.location",
+              "display": "Location where adverse event occurred",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.location\u0060 maps as Equivalent to R4 \u0060AdverseEvent.location\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "AdverseEvent.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent.meta\u0060 maps as Equivalent to R4 \u0060AdverseEvent.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.mitigatingAction",
+          "display": "Ameliorating actions taken after the adverse event occured in order to reduce the extent of harm",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.mitigatingAction.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.mitigatingAction.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.mitigatingAction.item[x]",
+          "display": "Ameliorating action taken after the adverse event occured in order to reduce the extent of harm",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.mitigatingAction.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "AdverseEvent.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.note",
+          "display": "Comment on adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.occurrence[x]",
+          "display": "When the event occurred",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.outcome",
+          "display": "Type of outcome from the adverse event",
+          "target": [
+            {
+              "code": "AdverseEvent.outcome",
+              "display": "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.outcome\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.outcome\u0060 - outcome changed from array to scalar (max cardinality from * to 1); outcome made the binding required (from Example) for http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.participant",
+          "display": "Who was involved in the adverse event or the potential adverse event and what they did",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.participant.actor",
+          "display": "Who was involved in the adverse event or the potential adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.participant.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.participant.function",
+          "display": "Type of involvement",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.participant.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.participant.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.preventiveAction",
+          "display": "Preventive actions that contributed to avoiding the adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.preventiveAction.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.preventiveAction.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.preventiveAction.item[x]",
+          "display": "Action that contributed to avoiding the adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.preventiveAction.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.recordedDate",
+          "display": "When the event was recorded",
+          "target": [
+            {
+              "code": "AdverseEvent.recordedDate",
+              "display": "When the event was recorded",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.recordedDate\u0060 maps as Equivalent to R4 \u0060AdverseEvent.recordedDate\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.recorder",
+          "display": "Who recorded the adverse event",
+          "target": [
+            {
+              "code": "AdverseEvent.recorder",
+              "display": "Who recorded the adverse event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.recorder\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.recorder\u0060 - recorder has change due to type change: R5 \u0060recorder\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060recorder\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.resultingEffect",
+          "display": "Effect on the subject due to this event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.seriousness",
+          "display": "Seriousness or gravity of the event",
+          "target": [
+            {
+              "code": "AdverseEvent.seriousness",
+              "display": "Seriousness of the event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.seriousness\u0060 maps as Equivalent to R4 \u0060AdverseEvent.seriousness\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.status",
+          "display": "in-progress | completed | entered-in-error | unknown",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.study",
+          "display": "Research study that the subject is enrolled in",
+          "target": [
+            {
+              "code": "AdverseEvent.study",
+              "display": "AdverseEvent.study",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.study\u0060 maps as Equivalent to R4 \u0060AdverseEvent.study\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.subject",
+          "display": "Subject impacted by event",
+          "target": [
+            {
+              "code": "AdverseEvent.subject",
+              "display": "Subject impacted by event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.supportingInfo",
+          "display": "Supporting information relevant to the event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.supportingInfo.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.supportingInfo.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.supportingInfo.item[x]",
+          "display": "Subject medical history or document relevant to this adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.supportingInfo.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.suspectEntity",
+          "display": "The suspected agent causing the adverse event",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity",
+              "display": "The suspected agent causing the adverse event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality",
+          "display": "Information on the possible cause of the event",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality",
+              "display": "Information on the possible cause of the event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.suspectEntity.causality\u0060 - causality changed from scalar to array (max cardinality from 1 to *)"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.assessmentMethod",
+          "display": "Method of evaluating the relatedness of the suspected entity to the event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.author",
+          "display": "Author of the information on the possible cause of the event",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.author",
+              "display": "AdverseEvent.suspectEntity.causalityAuthor",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.author\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.author\u0060 - author has change due to type change: R5 \u0060author\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060author\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.entityRelatedness",
+          "display": "Result of the assessment regarding the relatedness of the suspected entity to the event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.id\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity.causality.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.causality.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.id\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.instance[x]",
+          "display": "Refers to the specific entity that caused the adverse event",
+          "noMap": true
+        },
+        {
+          "code": "AdverseEvent.suspectEntity.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "AdverseEvent.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "AdverseEvent.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.text\u0060 maps as Equivalent to R4 \u0060AdverseEvent.text\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ActionGroupingBehavior-R4-ActionGroupingBehavior",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/pdf.ac.groupingBehavior-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.ac.groupingBehavior-rgp.ac.groupingBehavior-5to4"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ActionGroupingBehavior-R4-ActionGroupingBehavior",
+  "name": "R5-ActionGroupingBehavior-R4-ActionGroupingBehavior",
+  "title": "Concept map to convert a FHIR R5 ActionGroupingBehavior into a FHIR R4 ActionGroupingBehavior",
+  "experimental": false,
+  "description": "Mapping for PlanDefinition.action.groupingBehavior from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/action-grouping-behavior|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/action-grouping-behavior|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/action-grouping-behavior",
+      "target": "http://hl7.org/fhir/action-grouping-behavior",
+      "element": [
+        {
+          "code": "logical-group",
+          "display": "A group with this behavior logically groups its sub-elements, and may be shown as a visual group to the end user, but it is not required to do so.",
+          "target": [
+            {
+              "code": "logical-group",
+              "display": "A group with this behavior logically groups its sub-elements, and may be shown as a visual group to the end user, but it is not required to do so.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060logical-group\u0060 is equivalent to R4 \u0060logical-group\u0060."
+            }
+          ]
+        },
+        {
+          "code": "sentence-group",
+          "display": "A group of related alternative actions is a sentence group if the target referenced by the action is the same in all the actions and each action simply constitutes a different variation on how to specify the details for the target. For example, two actions that could be in a SentenceGroup are \u0022aspirin, 500 mg, 2 times per day\u0022 and \u0022aspirin, 300 mg, 3 times per day\u0022. In both cases, aspirin is the target referenced by the action, and the two actions represent different options for how aspirin might be ordered for the patient. Note that a SentenceGroup would almost always have an associated selection behavior of \u0022AtMostOne\u0022, unless it\u0027s a required action, in which case, it would be \u0022ExactlyOne\u0022.",
+          "target": [
+            {
+              "code": "sentence-group",
+              "display": "A group of related alternative actions is a sentence group if the target referenced by the action is the same in all the actions and each action simply constitutes a different variation on how to specify the details for the target. For example, two actions that could be in a SentenceGroup are \u0022aspirin, 500 mg, 2 times per day\u0022 and \u0022aspirin, 300 mg, 3 times per day\u0022. In both cases, aspirin is the target referenced by the action, and the two actions represent different options for how aspirin might be ordered for the patient. Note that a SentenceGroup would almost always have an associated selection behavior of \u0022AtMostOne\u0022, unless it\u0027s a required action, in which case, it would be \u0022ExactlyOne\u0022.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060sentence-group\u0060 is equivalent to R4 \u0060sentence-group\u0060."
+            }
+          ]
+        },
+        {
+          "code": "visual-group",
+          "display": "Any group marked with this behavior should be displayed as a visual group to the end user.",
+          "target": [
+            {
+              "code": "visual-group",
+              "display": "Any group marked with this behavior should be displayed as a visual group to the end user.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060visual-group\u0060 is equivalent to R4 \u0060visual-group\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

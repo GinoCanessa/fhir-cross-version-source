@@ -1,0 +1,416 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Goal-R4-Goal",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-Goal-R4-Goal",
+  "name": "R5-Goal-R4-Goal",
+  "title": "Concept map to convert a FHIR R5 Goal into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Goal|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Goal|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Goal",
+      "target": "http://hl7.org/fhir/StructureDefinition/Goal",
+      "element": [
+        {
+          "code": "Goal.outcome.concept",
+          "target": [
+            {
+              "code": "Goal.outcomeCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Goal.outcome.reference",
+          "target": [
+            {
+              "code": "Goal.outcomeReference",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Goal.source",
+          "target": [
+            {
+              "code": "Goal.expressedBy",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Goal",
+      "target": "http://hl7.org/fhir/StructureDefinition/Goal",
+      "element": [
+        {
+          "code": "Goal",
+          "display": "Describes the intended objective(s) for a patient, group or organization",
+          "target": [
+            {
+              "code": "Goal",
+              "display": "Describes the intended objective(s) for a patient, group or organization",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Goal\u0060 maps as Equivalent to R4 \u0060Goal\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.achievementStatus",
+          "display": "in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable",
+          "target": [
+            {
+              "code": "Goal.achievementStatus",
+              "display": "in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.achievementStatus\u0060 maps as Equivalent to R4 \u0060Goal.achievementStatus\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.addresses",
+          "display": "Issues addressed by this goal",
+          "target": [
+            {
+              "code": "Goal.addresses",
+              "display": "Issues addressed by this goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.addresses\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.addresses\u0060 - addresses has change due to type change: R5 \u0060addresses\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060addresses\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.category",
+          "display": "E.g. Treatment, dietary, behavioral, etc",
+          "target": [
+            {
+              "code": "Goal.category",
+              "display": "E.g. Treatment, dietary, behavioral, etc.",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.category\u0060 maps as Equivalent to R4 \u0060Goal.category\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Goal.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.contained\u0060 maps as Equivalent to R4 \u0060Goal.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.continuous",
+          "display": "After meeting the goal, ongoing activity is needed to sustain the goal objective",
+          "noMap": true
+        },
+        {
+          "code": "Goal.description",
+          "display": "Code or text describing goal",
+          "target": [
+            {
+              "code": "Goal.description",
+              "display": "Code or text describing goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.description\u0060 maps as Equivalent to R4 \u0060Goal.description\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Goal.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Goal.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Goal.id\u0060 maps as Equivalent to R4 \u0060Goal.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.identifier",
+          "display": "External Ids for this goal",
+          "target": [
+            {
+              "code": "Goal.identifier",
+              "display": "External Ids for this goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.identifier\u0060 maps as Equivalent to R4 \u0060Goal.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Goal.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Goal.implicitRules\u0060 maps as Equivalent to R4 \u0060Goal.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Goal.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.language\u0060 maps as RelatedTo to R4 \u0060Goal.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "Goal.lifecycleStatus",
+          "display": "proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
+          "target": [
+            {
+              "code": "Goal.lifecycleStatus",
+              "display": "proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.lifecycleStatus\u0060 maps as Equivalent to R4 \u0060Goal.lifecycleStatus\u0060 - lifecycleStatus has compatible required binding for code type: http://hl7.org/fhir/ValueSet/goal-status|5.0.0 and http://hl7.org/fhir/ValueSet/goal-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Goal.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Goal.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Goal.meta\u0060 maps as Equivalent to R4 \u0060Goal.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Goal.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.note",
+          "display": "Comments about the goal",
+          "target": [
+            {
+              "code": "Goal.note",
+              "display": "Comments about the goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.outcome",
+          "display": "What result was achieved regarding the goal?",
+          "noMap": true
+        },
+        {
+          "code": "Goal.priority",
+          "display": "high-priority | medium-priority | low-priority",
+          "target": [
+            {
+              "code": "Goal.priority",
+              "display": "high-priority | medium-priority | low-priority",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.priority\u0060 maps as Equivalent to R4 \u0060Goal.priority\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.source",
+          "display": "Who\u0027s responsible for creating Goal?",
+          "noMap": true
+        },
+        {
+          "code": "Goal.start[x]",
+          "display": "When goal pursuit begins",
+          "target": [
+            {
+              "code": "Goal.start[x]",
+              "display": "When goal pursuit begins",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.start[x]\u0060 maps as Equivalent to R4 \u0060Goal.start[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.statusDate",
+          "display": "When goal status took effect",
+          "target": [
+            {
+              "code": "Goal.statusDate",
+              "display": "When goal status took effect",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.statusDate\u0060 maps as Equivalent to R4 \u0060Goal.statusDate\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.statusReason",
+          "display": "Reason for current status",
+          "target": [
+            {
+              "code": "Goal.statusReason",
+              "display": "Reason for current status",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.statusReason\u0060 maps as Equivalent to R4 \u0060Goal.statusReason\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.subject",
+          "display": "Who this goal is intended for",
+          "target": [
+            {
+              "code": "Goal.subject",
+              "display": "Who this goal is intended for",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.subject\u0060 maps as Equivalent to R4 \u0060Goal.subject\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target",
+          "display": "Target outcome for the goal",
+          "target": [
+            {
+              "code": "Goal.target",
+              "display": "Target outcome for the goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target\u0060 maps as Equivalent to R4 \u0060Goal.target\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.detail[x]",
+          "display": "The target value to be achieved",
+          "target": [
+            {
+              "code": "Goal.target.detail[x]",
+              "display": "The target value to be achieved",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.detail[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.detail[x]\u0060 - detail[x] has change due to type change: R5 \u0060detail[x]\u0060 \u0060Ratio\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060detail[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.due[x]",
+          "display": "Reach goal on or before",
+          "target": [
+            {
+              "code": "Goal.target.due[x]",
+              "display": "Reach goal on or before",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.due[x]\u0060 maps as Equivalent to R4 \u0060Goal.target.due[x]\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Goal.target.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Goal.target.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.id\u0060 maps as Equivalent to R4 \u0060Goal.target.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.measure",
+          "display": "The parameter whose value is being tracked",
+          "target": [
+            {
+              "code": "Goal.target.measure",
+              "display": "The parameter whose value is being tracked",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.measure\u0060 maps as Equivalent to R4 \u0060Goal.target.measure\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.target.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Goal.target.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.target.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Goal.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Goal.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.text\u0060 maps as Equivalent to R4 \u0060Goal.text\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

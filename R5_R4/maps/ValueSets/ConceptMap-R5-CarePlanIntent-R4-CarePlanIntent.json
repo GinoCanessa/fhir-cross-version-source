@@ -1,0 +1,106 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-CarePlanIntent-R4-CarePlanIntent",
+  "meta": {
+    "tag": [
+      {
+        "system": "http://something",
+        "code": "review-needed"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.intent-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-CarePlanIntent-R4-CarePlanIntent",
+  "name": "R5-CarePlanIntent-R4-CarePlanIntent",
+  "title": "Concept map to convert a FHIR R5 CarePlanIntent into a FHIR R4 CarePlanIntent",
+  "experimental": false,
+  "description": "Mapping for CarePlan.intent from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-intent",
+      "target": "http://hl7.org/fhir/request-intent",
+      "element": [
+        {
+          "code": "directive",
+          "display": "The request represents a legally binding instruction authored by a Patient or RelatedPerson.",
+          "target": [
+            {
+              "code": "directive",
+              "display": "",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060directive\u0060 is equivalent to R4 \u0060directive\u0060."
+            }
+          ]
+        },
+        {
+          "code": "option",
+          "display": "The request represents a component or option for a RequestOrchestration that establishes timing, conditionality and/or other constraints among a set of requests.  Refer to [[[RequestOrchestration]]] for additional information on how this status is used.",
+          "target": [
+            {
+              "code": "option",
+              "display": "The request represents a component or option for a RequestGroup that establishes timing, conditionality and/or other constraints among a set of requests.  Refer to [[[RequestGroup]]] for additional information on how this status is used.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060option\u0060 is equivalent to R4 \u0060option\u0060."
+            }
+          ]
+        },
+        {
+          "code": "order",
+          "display": "The request represents a request/demand and authorization for action by the requestor.",
+          "target": [
+            {
+              "code": "order",
+              "display": "The request represents a request/demand and authorization for action by a Practitioner.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060order\u0060 is equivalent to R4 \u0060order\u0060."
+            }
+          ]
+        },
+        {
+          "code": "plan",
+          "display": "The request represents an intention to ensure something occurs without providing an authorization for others to act.",
+          "target": [
+            {
+              "code": "plan",
+              "display": "The request represents an intention to ensure something occurs without providing an authorization for others to act.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060plan\u0060 is equivalent to R4 \u0060plan\u0060."
+            }
+          ]
+        },
+        {
+          "code": "proposal",
+          "display": "The request is a suggestion made by someone/something that does not have an intention to ensure it occurs and without providing an authorization to act.",
+          "target": [
+            {
+              "code": "proposal",
+              "display": "The request is a suggestion made by someone/something that does not have an intention to ensure it occurs and without providing an authorization to act.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060proposal\u0060 is equivalent to R4 \u0060proposal\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ImagingStudyStatus-R4-ImagingStudyStatus",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ImagingStudyStatus-R4-ImagingStudyStatus",
+  "name": "R5-ImagingStudyStatus-R4-ImagingStudyStatus",
+  "title": "Concept map to convert a FHIR R5 ImagingStudyStatus into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/imagingstudy-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/imagingstudy-status",
+      "target": "http://hl7.org/fhir/imagingstudy-status",
+      "element": [
+        {
+          "code": "available",
+          "display": "At least one instance has been associated with this imaging study.",
+          "target": [
+            {
+              "code": "available",
+              "display": "At least one instance has been associated with this imaging study.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060available\u0060 is equivalent to R4 \u0060available\u0060."
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "display": "The imaging study is unavailable because the imaging study was not started or not completed (also sometimes called \u0022aborted\u0022).",
+          "target": [
+            {
+              "code": "cancelled",
+              "display": "The imaging study is unavailable because the imaging study was not started or not completed (also sometimes called \u0022aborted\u0022).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060cancelled\u0060 is equivalent to R4 \u0060cancelled\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The imaging study has been withdrawn following a previous final release.  This electronic record should never have existed, though it is possible that real-world decisions were based on it. (If real-world activity has occurred, the status should be \u0022cancelled\u0022 rather than \u0022entered-in-error\u0022.).",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "The imaging study has been withdrawn following a previous final release.  This electronic record should never have existed, though it is possible that real-world decisions were based on it. (If real-world activity has occurred, the status should be \u0022cancelled\u0022 rather than \u0022entered-in-error\u0022.).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "display": "The existence of the imaging study is registered, but there is nothing yet available.",
+          "target": [
+            {
+              "code": "registered",
+              "display": "The existence of the imaging study is registered, but there is nothing yet available.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060registered\u0060 is equivalent to R4 \u0060registered\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "The system does not know which of the status values currently applies for this request. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, it\u0027s just not known which one.",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "The system does not know which of the status values currently applies for this request. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, it\u0027s just not known which one.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060unknown\u0060 is equivalent to R4 \u0060unknown\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

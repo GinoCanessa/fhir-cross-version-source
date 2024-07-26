@@ -1,0 +1,888 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Availability",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability",
+  "name": "XVerExtensionAvailability",
+  "title": "Cross-Version Extension for FHIR R5:Availability compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "Availability does not exist in target and has no mapping",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "Availability data for an {item}",
+        "definition": "Availability does not exist in target and has no mapping",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableTime",
+        "path": "Extension.extension:availableTime",
+        "short": "Times the {item} is available",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:availableTime",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:daysOfWeek",
+        "path": "Extension.extension:daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:daysOfWeek",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:allDay",
+        "path": "Extension.extension:allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:allDay",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:availableStartTime",
+        "path": "Extension.extension:availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:availableStartTime",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:availableEndTime",
+        "path": "Extension.extension:availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:availableEndTime",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:notAvailableTime",
+        "path": "Extension.extension:notAvailableTime",
+        "short": "Not available during this time due to provided reason",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:notAvailableTime",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "The reason will generally be provided to give the textual reason for displaying when the {item} is not available, e.g. 'Closed public holidays' or 'Independence Day'. In cases such as this, the `during` might not be included and local knowledge would be required in such cases (as don't desire to keep updating when the holiday occurs each year).\n\ne.g.2: 'Closed for maintenance over the summer' for this example you would want to include the `during` period, unless this was a university hospital and the \"summer\" period was well known, but would recommend its inclusion anyway.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:during",
+        "path": "Extension.extension:during",
+        "short": "Service not available during this period",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:during",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Availability data for an {item}",
+        "definition": "Availability does not exist in target and has no mapping",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime",
+        "short": "Times the {item} is available",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:daysOfWeek.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:daysOfWeek.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:daysOfWeek.url",
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:allDay.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:allDay.extension:boolean",
+        "sliceName": "boolean",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:allDay.url",
+        "fixedUri": "allDay"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableStartTime.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableStartTime.extension:time",
+        "sliceName": "time",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-time"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableStartTime.url",
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableEndTime.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableEndTime.extension:time",
+        "sliceName": "time",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-time"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableTime.extension:availableEndTime.url",
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "path": "Extension.extension:availableTime.url",
+        "fixedUri": "availableTime"
+      },
+      {
+        "path": "Extension.extension:daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:daysOfWeek.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:daysOfWeek.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:daysOfWeek.url",
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "path": "Extension.extension:allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:allDay.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:allDay.extension:boolean",
+        "sliceName": "boolean",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:allDay.url",
+        "fixedUri": "allDay"
+      },
+      {
+        "path": "Extension.extension:availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableStartTime.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableStartTime.extension:time",
+        "sliceName": "time",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-time"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableStartTime.url",
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "path": "Extension.extension:availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:availableEndTime.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:availableEndTime.extension:time",
+        "sliceName": "time",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-time"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:availableEndTime.url",
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "path": "Extension.extension:notAvailableTime",
+        "short": "Not available during this time due to provided reason",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "The reason will generally be provided to give the textual reason for displaying when the {item} is not available, e.g. 'Closed public holidays' or 'Independence Day'. In cases such as this, the `during` might not be included and local knowledge would be required in such cases (as don't desire to keep updating when the holiday occurs each year).\n\ne.g.2: 'Closed for maintenance over the summer' for this example you would want to include the `during` period, unless this was a university hospital and the \"summer\" period was well known, but would recommend its inclusion anyway.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:description.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:description.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:during",
+        "short": "Service not available during this period",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:during.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:during.extension:Period",
+        "sliceName": "Period",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.extension:during.url",
+        "fixedUri": "during"
+      },
+      {
+        "path": "Extension.extension:notAvailableTime.url",
+        "fixedUri": "notAvailableTime"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "The reason will generally be provided to give the textual reason for displaying when the {item} is not available, e.g. 'Closed public holidays' or 'Independence Day'. In cases such as this, the `during` might not be included and local knowledge would be required in such cases (as don't desire to keep updating when the holiday occurs each year).\n\ne.g.2: 'Closed for maintenance over the summer' for this example you would want to include the `during` period, unless this was a university hospital and the \"summer\" period was well known, but would recommend its inclusion anyway.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:description.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:during",
+        "short": "Service not available during this period",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:during.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:during.extension:Period",
+        "sliceName": "Period",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:during.url",
+        "fixedUri": "during"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ListStatus-R4-ListStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/lst.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ListStatus-R4-ListStatus",
+  "name": "R5-ListStatus-R4-ListStatus",
+  "title": "Concept map to convert a FHIR R5 ListStatus into a FHIR R4 ListStatus",
+  "experimental": false,
+  "description": "Mapping for List.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/list-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/list-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/list-status",
+      "target": "http://hl7.org/fhir/list-status",
+      "element": [
+        {
+          "code": "current",
+          "display": "The list is considered to be an active part of the patient\u0027s record.",
+          "target": [
+            {
+              "code": "current",
+              "display": "The list is considered to be an active part of the patient\u0027s record.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060current\u0060 is equivalent to R4 \u0060current\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The list was never accurate.  It is retained for medico-legal purposes only.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "The list was never accurate.  It is retained for medico-legal purposes only.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "retired",
+          "display": "The list is \u0022old\u0022 and should no longer be considered accurate or relevant.",
+          "target": [
+            {
+              "code": "retired",
+              "display": "The list is \u0022old\u0022 and should no longer be considered accurate or relevant.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060retired\u0060 is equivalent to R4 \u0060retired\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

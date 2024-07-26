@@ -1,0 +1,103 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-DiscriminatorType-R4-DiscriminatorType",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/eld.sl.di.type-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-DiscriminatorType-R4-DiscriminatorType",
+  "name": "R5-DiscriminatorType-R4-DiscriminatorType",
+  "title": "Concept map to convert a FHIR R5 DiscriminatorType into a FHIR R4 DiscriminatorType",
+  "experimental": false,
+  "description": "Mapping for ElementDefinition.slicing.discriminator.type from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/discriminator-type|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/discriminator-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/discriminator-type",
+      "target": "http://hl7.org/fhir/discriminator-type",
+      "element": [
+        {
+          "code": "exists",
+          "display": "The slices are differentiated by the presence or absence of the nominated element. There SHALL be no more than two slices. The slices are differentiated by the fact that one must have a max of 0 and the other must have a min of 1 (or more).  The order in which the slices are declared doesn\u0027t matter.",
+          "target": [
+            {
+              "code": "exists",
+              "display": "The slices are differentiated by the presence or absence of the nominated element.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060exists\u0060 is equivalent to R4 \u0060exists\u0060."
+            }
+          ]
+        },
+        {
+          "code": "pattern",
+          "display": "The slices have different values in the nominated element, as determined by the applicable fixed value, pattern, or required ValueSet binding. This has the same meaning as \u0027value\u0027 and is deprecated.",
+          "target": [
+            {
+              "code": "pattern",
+              "display": "The slices have different values in the nominated element, as determined by testing them against the applicable ElementDefinition.pattern[x].",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060pattern\u0060 is equivalent to R4 \u0060pattern\u0060."
+            }
+          ]
+        },
+        {
+          "code": "position",
+          "display": "The slices are differentiated by their index. This is only possible if all but the last slice have min=max cardinality, and the (optional) last slice contains other undifferentiated elements.",
+          "noMap": true
+        },
+        {
+          "code": "profile",
+          "display": "The slices are differentiated by conformance of the nominated element to a specified profile. Note that if the path specifies .resolve() then the profile is the target profile on the reference. In this case, validation by the possible profiles is required to differentiate the slices.",
+          "target": [
+            {
+              "code": "profile",
+              "display": "The slices are differentiated by conformance of the nominated element to a specified profile. Note that if the path specifies .resolve() then the profile is the target profile on the reference. In this case, validation by the possible profiles is required to differentiate the slices.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060profile\u0060 is equivalent to R4 \u0060profile\u0060."
+            }
+          ]
+        },
+        {
+          "code": "type",
+          "display": "The slices are differentiated by type of the nominated element.",
+          "target": [
+            {
+              "code": "type",
+              "display": "The slices are differentiated by type of the nominated element.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060type\u0060 is equivalent to R4 \u0060type\u0060."
+            }
+          ]
+        },
+        {
+          "code": "value",
+          "display": "The slices have different values in the nominated element, as determined by the applicable fixed value, pattern, or required ValueSet binding.",
+          "target": [
+            {
+              "code": "value",
+              "display": "The slices have different values in the nominated element.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060value\u0060 is equivalent to R4 \u0060value\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

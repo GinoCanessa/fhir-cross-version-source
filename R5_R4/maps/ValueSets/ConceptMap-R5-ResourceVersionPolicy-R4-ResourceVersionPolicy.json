@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ResourceVersionPolicy-R4-ResourceVersionPolicy",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ResourceVersionPolicy-R4-ResourceVersionPolicy",
+  "name": "R5-ResourceVersionPolicy-R4-ResourceVersionPolicy",
+  "title": "Concept map to convert a FHIR R5 ResourceVersionPolicy into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/versioning-policy|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/versioning-policy|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/versioning-policy",
+      "target": "http://hl7.org/fhir/versioning-policy",
+      "element": [
+        {
+          "code": "no-version",
+          "display": "VersionId meta-property is not supported (server) or used (client).",
+          "target": [
+            {
+              "code": "no-version",
+              "display": "VersionId meta-property is not supported (server) or used (client).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060no-version\u0060 is equivalent to R4 \u0060no-version\u0060."
+            }
+          ]
+        },
+        {
+          "code": "versioned",
+          "display": "VersionId meta-property is supported (server) or used (client).",
+          "target": [
+            {
+              "code": "versioned",
+              "display": "VersionId meta-property is supported (server) or used (client).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060versioned\u0060 is equivalent to R4 \u0060versioned\u0060."
+            }
+          ]
+        },
+        {
+          "code": "versioned-update",
+          "display": "Supports version-aware updates (server) or will be specified (If-match header) for updates (client).",
+          "target": [
+            {
+              "code": "versioned-update",
+              "display": "VersionId must be correct for updates (server) or will be specified (If-match header) for updates (client).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060versioned-update\u0060 is equivalent to R4 \u0060versioned-update\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

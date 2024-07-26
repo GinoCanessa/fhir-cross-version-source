@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ResponseType-R4-ResponseType",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ResponseType-R4-ResponseType",
+  "name": "R5-ResponseType-R4-ResponseType",
+  "title": "Concept map to convert a FHIR R5 ResponseType into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/response-code|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/response-code|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/response-code",
+      "target": "http://hl7.org/fhir/response-code",
+      "element": [
+        {
+          "code": "fatal-error",
+          "display": "The message was rejected because of a problem with the content. There is no point in re-sending without change. The response narrative SHALL describe the issue.",
+          "target": [
+            {
+              "code": "fatal-error",
+              "display": "The message was rejected because of a problem with the content. There is no point in re-sending without change. The response narrative SHALL describe the issue.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060fatal-error\u0060 is equivalent to R4 \u0060fatal-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "ok",
+          "display": "The message was accepted and processed without error.",
+          "target": [
+            {
+              "code": "ok",
+              "display": "The message was accepted and processed without error.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ok\u0060 is equivalent to R4 \u0060ok\u0060."
+            }
+          ]
+        },
+        {
+          "code": "transient-error",
+          "display": "Some internal unexpected error occurred - wait and try again. Note - this is usually used for things like database unavailable, which may be expected to resolve, though human intervention may be required.",
+          "target": [
+            {
+              "code": "transient-error",
+              "display": "Some internal unexpected error occurred - wait and try again. Note - this is usually used for things like database unavailable, which may be expected to resolve, though human intervention may be required.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060transient-error\u0060 is equivalent to R4 \u0060transient-error\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

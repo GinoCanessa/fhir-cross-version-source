@@ -1,0 +1,444 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-EpisodeOfCare-R4-EpisodeOfCare",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-EpisodeOfCare-R4-EpisodeOfCare",
+  "name": "R5-EpisodeOfCare-R4-EpisodeOfCare",
+  "title": "Concept map to convert a FHIR R5 EpisodeOfCare into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+      "target": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+      "element": [
+        {
+          "code": "EpisodeOfCare.careTeam",
+          "target": [
+            {
+              "code": "EpisodeOfCare.team",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.use",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.role",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+      "target": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+      "element": [
+        {
+          "code": "EpisodeOfCare",
+          "display": "An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility",
+          "target": [
+            {
+              "code": "EpisodeOfCare",
+              "display": "An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.account",
+          "display": "The set of accounts that may be used for billing for this EpisodeOfCare",
+          "target": [
+            {
+              "code": "EpisodeOfCare.account",
+              "display": "The set of accounts that may be used for billing for this EpisodeOfCare",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.account\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.account\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.careManager",
+          "display": "Care manager/care coordinator for the patient",
+          "target": [
+            {
+              "code": "EpisodeOfCare.careManager",
+              "display": "Care manager/care coordinator for the patient",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.careManager\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.careManager\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.careTeam",
+          "display": "Other practitioners facilitating this episode of care",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "EpisodeOfCare.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.contained\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis",
+          "display": "The list of medical conditions that were addressed during the episode of care",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis",
+              "display": "The list of diagnosis relevant to this episode of care",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.diagnosis\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.condition",
+          "display": "The medical condition that was addressed during the episode of care",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.condition",
+              "display": "Conditions/problems/diagnoses this episode of care is for",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis.condition\u0060 maps as RelatedTo to R4 \u0060EpisodeOfCare.diagnosis.condition\u0060 - condition made the element mandatory; condition increased the minimum cardinality from 0 to 1; condition changed from array to scalar (max cardinality from * to 1); condition removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; condition has change due to type change: R5 condition CodeableReference has no equivalent or mapped type in R4 condition"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.diagnosis.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis.id\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.diagnosis.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.diagnosis.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.diagnosis.use",
+          "display": "Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge \u2026)",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "EpisodeOfCare.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "EpisodeOfCare.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare.id\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.identifier",
+          "display": "Business Identifier(s) relevant for this EpisodeOfCare",
+          "target": [
+            {
+              "code": "EpisodeOfCare.identifier",
+              "display": "Business Identifier(s) relevant for this EpisodeOfCare",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.identifier\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "EpisodeOfCare.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare.implicitRules\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "EpisodeOfCare.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.language\u0060 maps as RelatedTo to R4 \u0060EpisodeOfCare.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.managingOrganization",
+          "display": "Organization that assumes responsibility for care coordination",
+          "target": [
+            {
+              "code": "EpisodeOfCare.managingOrganization",
+              "display": "Organization that assumes care",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.managingOrganization\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.managingOrganization\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "EpisodeOfCare.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare.meta\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "EpisodeOfCare.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.patient",
+          "display": "The patient who is the focus of this episode of care",
+          "target": [
+            {
+              "code": "EpisodeOfCare.patient",
+              "display": "The patient who is the focus of this episode of care",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.patient\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.patient\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.period",
+          "display": "Interval during responsibility is assumed",
+          "target": [
+            {
+              "code": "EpisodeOfCare.period",
+              "display": "Interval during responsibility is assumed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.period\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.period\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.reason",
+          "display": "The list of medical reasons that are expected to be addressed during the episode of care",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.reason.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.reason.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.reason.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.reason.use",
+          "display": "What the reason value should be used for/as",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.reason.value",
+          "display": "Medical reason to be addressed",
+          "noMap": true
+        },
+        {
+          "code": "EpisodeOfCare.referralRequest",
+          "display": "Originating Referral Request(s)",
+          "target": [
+            {
+              "code": "EpisodeOfCare.referralRequest",
+              "display": "Originating Referral Request(s)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.referralRequest\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.referralRequest\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.status",
+          "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
+          "target": [
+            {
+              "code": "EpisodeOfCare.status",
+              "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.status\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/episode-of-care-status|5.0.0 and http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory",
+          "display": "Past list of status codes (the current status may be included to cover the start date of the status)",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory",
+              "display": "Past list of status codes (the current status may be included to cover the start date of the status)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.statusHistory.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory.id\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.statusHistory.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory.period",
+          "display": "Duration the EpisodeOfCare was in the specified status",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory.period",
+              "display": "Duration the EpisodeOfCare was in the specified status",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory.period\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.period\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.statusHistory.status",
+          "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
+          "target": [
+            {
+              "code": "EpisodeOfCare.statusHistory.status",
+              "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.statusHistory.status\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/episode-of-care-status|5.0.0 and http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "EpisodeOfCare.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.text\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "EpisodeOfCare.type",
+          "display": "Type/class  - e.g. specialist referral, disease management",
+          "target": [
+            {
+              "code": "EpisodeOfCare.type",
+              "display": "Type/class  - e.g. specialist referral, disease management",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EpisodeOfCare.type\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.type\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

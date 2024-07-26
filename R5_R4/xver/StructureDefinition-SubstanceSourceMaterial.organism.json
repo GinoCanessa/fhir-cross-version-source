@@ -1,0 +1,1102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SubstanceSourceMaterial.organism",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism",
+  "name": "XVerExtensionSubstanceSourceMaterial.organism",
+  "title": "Cross-Version Extension for FHIR R5:SubstanceSourceMaterial.organism compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "R5 `SubstanceSourceMaterial.organism` maps as Equivalent to R4 `SubstanceSourceMaterial.organism`",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "SubstanceSourceMaterial.organism"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "This subclause describes the organism which the substance is derived from. For vaccines, the parent organism shall be specified based on these subclause elements. As an example, full taxonomy will be described for the Substance Name: ., Leaf",
+        "definition": "R5 `SubstanceSourceMaterial.organism` maps as Equivalent to R4 `SubstanceSourceMaterial.organism`",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:family",
+        "path": "Extension.extension:family",
+        "short": "The family of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:family",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:genus",
+        "path": "Extension.extension:genus",
+        "short": "The genus of an organism shall be specified; refers to the Latin epithet of the genus element of the plant/animal scientific name; it is present in names for genera, species and infraspecies",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:genus",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:species",
+        "path": "Extension.extension:species",
+        "short": "The species of an organism shall be specified; refers to the Latin epithet of the species of the plant/animal; it is present in names for species and infraspecies",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:species",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:intraspecificType",
+        "path": "Extension.extension:intraspecificType",
+        "short": "The Intraspecific type of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:intraspecificType",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:intraspecificDescription",
+        "path": "Extension.extension:intraspecificDescription",
+        "short": "The intraspecific description of an organism shall be specified based on a controlled vocabulary. For Influenza Vaccine, the intraspecific description shall contain the syntax of the antigen in line with the WHO convention",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:intraspecificDescription",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:author",
+        "path": "Extension.extension:author",
+        "short": "4.9.13.6.1 Author type (Conditional)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:author",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:authorType",
+        "path": "Extension.extension:authorType",
+        "short": "The type of author of an organism species shall be specified. The parenthetical author of an organism species refers to the first author who published the plant/animal name (of any rank). The primary author of an organism species refers to the first author(s), who validly published the plant/animal name",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:authorType",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:authorDescription",
+        "path": "Extension.extension:authorDescription",
+        "short": "The author of an organism species shall be specified. The author year of an organism shall also be specified when applicable; refers to the year in which the first author(s) published the infraspecific plant/animal name (of any rank)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:authorDescription",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:hybrid",
+        "path": "Extension.extension:hybrid",
+        "short": "4.9.13.8.1 Hybrid species maternal organism ID (Optional)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:hybrid",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:maternalOrganismId",
+        "path": "Extension.extension:maternalOrganismId",
+        "short": "The identifier of the maternal species constituting the hybrid organism shall be specified based on a controlled vocabulary. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:maternalOrganismId",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:maternalOrganismName",
+        "path": "Extension.extension:maternalOrganismName",
+        "short": "The name of the maternal species constituting the hybrid organism shall be specified. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:maternalOrganismName",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:paternalOrganismId",
+        "path": "Extension.extension:paternalOrganismId",
+        "short": "The identifier of the paternal species constituting the hybrid organism shall be specified based on a controlled vocabulary",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:paternalOrganismId",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:paternalOrganismName",
+        "path": "Extension.extension:paternalOrganismName",
+        "short": "The name of the paternal species constituting the hybrid organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:paternalOrganismName",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:hybridType",
+        "path": "Extension.extension:hybridType",
+        "short": "The hybrid type of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:hybridType",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:organismGeneral",
+        "path": "Extension.extension:organismGeneral",
+        "short": "4.9.13.7.1 Kingdom (Conditional)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:organismGeneral",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:kingdom",
+        "path": "Extension.extension:kingdom",
+        "short": "The kingdom of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:kingdom",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:phylum",
+        "path": "Extension.extension:phylum",
+        "short": "The phylum of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:phylum",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:class",
+        "path": "Extension.extension:class",
+        "short": "The class of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:class",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:order",
+        "path": "Extension.extension:order",
+        "short": "The order of an organism shall be specified,",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:order",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "This subclause describes the organism which the substance is derived from. For vaccines, the parent organism shall be specified based on these subclause elements. As an example, full taxonomy will be described for the Substance Name: ., Leaf",
+        "definition": "R5 `SubstanceSourceMaterial.organism` maps as Equivalent to R4 `SubstanceSourceMaterial.organism`",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:family",
+        "short": "The family of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:family.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:family.url",
+        "fixedUri": "family"
+      },
+      {
+        "path": "Extension.extension:genus",
+        "short": "The genus of an organism shall be specified; refers to the Latin epithet of the genus element of the plant/animal scientific name; it is present in names for genera, species and infraspecies",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:genus.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:genus.url",
+        "fixedUri": "genus"
+      },
+      {
+        "path": "Extension.extension:species",
+        "short": "The species of an organism shall be specified; refers to the Latin epithet of the species of the plant/animal; it is present in names for species and infraspecies",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:species.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:species.url",
+        "fixedUri": "species"
+      },
+      {
+        "path": "Extension.extension:intraspecificType",
+        "short": "The Intraspecific type of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:intraspecificType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:intraspecificType.url",
+        "fixedUri": "intraspecificType"
+      },
+      {
+        "path": "Extension.extension:intraspecificDescription",
+        "short": "The intraspecific description of an organism shall be specified based on a controlled vocabulary. For Influenza Vaccine, the intraspecific description shall contain the syntax of the antigen in line with the WHO convention",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:intraspecificDescription.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:intraspecificDescription.url",
+        "fixedUri": "intraspecificDescription"
+      },
+      {
+        "path": "Extension.extension:author",
+        "short": "4.9.13.6.1 Author type (Conditional)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:author.extension:authorType",
+        "short": "The type of author of an organism species shall be specified. The parenthetical author of an organism species refers to the first author who published the plant/animal name (of any rank). The primary author of an organism species refers to the first author(s), who validly published the plant/animal name",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:author.extension:authorType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:author.extension:authorType.url",
+        "fixedUri": "authorType"
+      },
+      {
+        "path": "Extension.extension:author.extension:authorDescription",
+        "short": "The author of an organism species shall be specified. The author year of an organism shall also be specified when applicable; refers to the year in which the first author(s) published the infraspecific plant/animal name (of any rank)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:author.extension:authorDescription.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:author.extension:authorDescription.url",
+        "fixedUri": "authorDescription"
+      },
+      {
+        "path": "Extension.extension:author.url",
+        "fixedUri": "author"
+      },
+      {
+        "path": "Extension.extension:authorType",
+        "short": "The type of author of an organism species shall be specified. The parenthetical author of an organism species refers to the first author who published the plant/animal name (of any rank). The primary author of an organism species refers to the first author(s), who validly published the plant/animal name",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:authorType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:authorType.url",
+        "fixedUri": "authorType"
+      },
+      {
+        "path": "Extension.extension:authorDescription",
+        "short": "The author of an organism species shall be specified. The author year of an organism shall also be specified when applicable; refers to the year in which the first author(s) published the infraspecific plant/animal name (of any rank)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:authorDescription.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:authorDescription.url",
+        "fixedUri": "authorDescription"
+      },
+      {
+        "path": "Extension.extension:hybrid",
+        "short": "4.9.13.8.1 Hybrid species maternal organism ID (Optional)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismId",
+        "short": "The identifier of the maternal species constituting the hybrid organism shall be specified based on a controlled vocabulary. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismId.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismId.url",
+        "fixedUri": "maternalOrganismId"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismName",
+        "short": "The name of the maternal species constituting the hybrid organism shall be specified. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismName.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:maternalOrganismName.url",
+        "fixedUri": "maternalOrganismName"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismId",
+        "short": "The identifier of the paternal species constituting the hybrid organism shall be specified based on a controlled vocabulary",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismId.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismId.url",
+        "fixedUri": "paternalOrganismId"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismName",
+        "short": "The name of the paternal species constituting the hybrid organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismName.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:paternalOrganismName.url",
+        "fixedUri": "paternalOrganismName"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:hybridType",
+        "short": "The hybrid type of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:hybridType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybrid.extension:hybridType.url",
+        "fixedUri": "hybridType"
+      },
+      {
+        "path": "Extension.extension:hybrid.url",
+        "fixedUri": "hybrid"
+      },
+      {
+        "path": "Extension.extension:maternalOrganismId",
+        "short": "The identifier of the maternal species constituting the hybrid organism shall be specified based on a controlled vocabulary. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:maternalOrganismId.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:maternalOrganismId.url",
+        "fixedUri": "maternalOrganismId"
+      },
+      {
+        "path": "Extension.extension:maternalOrganismName",
+        "short": "The name of the maternal species constituting the hybrid organism shall be specified. For plants, the parents aren’t always known, and it is unlikely that it will be known which is maternal and which is paternal",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:maternalOrganismName.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:maternalOrganismName.url",
+        "fixedUri": "maternalOrganismName"
+      },
+      {
+        "path": "Extension.extension:paternalOrganismId",
+        "short": "The identifier of the paternal species constituting the hybrid organism shall be specified based on a controlled vocabulary",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:paternalOrganismId.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:paternalOrganismId.url",
+        "fixedUri": "paternalOrganismId"
+      },
+      {
+        "path": "Extension.extension:paternalOrganismName",
+        "short": "The name of the paternal species constituting the hybrid organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:paternalOrganismName.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:paternalOrganismName.url",
+        "fixedUri": "paternalOrganismName"
+      },
+      {
+        "path": "Extension.extension:hybridType",
+        "short": "The hybrid type of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:hybridType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:hybridType.url",
+        "fixedUri": "hybridType"
+      },
+      {
+        "path": "Extension.extension:organismGeneral",
+        "short": "4.9.13.7.1 Kingdom (Conditional)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:kingdom",
+        "short": "The kingdom of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:kingdom.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:kingdom.url",
+        "fixedUri": "kingdom"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:phylum",
+        "short": "The phylum of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:phylum.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:phylum.url",
+        "fixedUri": "phylum"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:class",
+        "short": "The class of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:class.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:class.url",
+        "fixedUri": "class"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:order",
+        "short": "The order of an organism shall be specified,",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:order.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.extension:order.url",
+        "fixedUri": "order"
+      },
+      {
+        "path": "Extension.extension:organismGeneral.url",
+        "fixedUri": "organismGeneral"
+      },
+      {
+        "path": "Extension.extension:kingdom",
+        "short": "The kingdom of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:kingdom.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:kingdom.url",
+        "fixedUri": "kingdom"
+      },
+      {
+        "path": "Extension.extension:phylum",
+        "short": "The phylum of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:phylum.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:phylum.url",
+        "fixedUri": "phylum"
+      },
+      {
+        "path": "Extension.extension:class",
+        "short": "The class of an organism shall be specified",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:class.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:class.url",
+        "fixedUri": "class"
+      },
+      {
+        "path": "Extension.extension:order",
+        "short": "The order of an organism shall be specified,",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:order.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:order.url",
+        "fixedUri": "order"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial.organism"
+      }
+    ]
+  }
+}

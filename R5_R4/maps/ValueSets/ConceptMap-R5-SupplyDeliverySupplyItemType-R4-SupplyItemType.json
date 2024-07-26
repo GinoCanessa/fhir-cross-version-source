@@ -1,0 +1,46 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-SupplyDeliverySupplyItemType-R4-SupplyItemType",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-SupplyDeliverySupplyItemType-R4-SupplyItemType",
+  "name": "R5-SupplyDeliverySupplyItemType-R4-SupplyItemType",
+  "title": "Concept map to convert a FHIR R5 SupplyDeliverySupplyItemType into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-supplyitemtype|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/supplydelivery-type|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/supplydelivery-supplyitemtype",
+      "target": "http://terminology.hl7.org/CodeSystem/supply-item-type",
+      "element": [
+        {
+          "code": "biologicallyderivedproduct",
+          "display": "Supply is a kind of biologically derived product.",
+          "noMap": true
+        },
+        {
+          "code": "device",
+          "display": "What is supplied (or requested) is a device.",
+          "target": [
+            {
+              "code": "device",
+              "display": "What is supplied (or requested) is a device.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060device\u0060 is equivalent to R4 \u0060device\u0060."
+            }
+          ]
+        },
+        {
+          "code": "medication",
+          "display": "Supply is a kind of medication.",
+          "target": [
+            {
+              "code": "medication",
+              "display": "Supply is a kind of medication.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060medication\u0060 is equivalent to R4 \u0060medication\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

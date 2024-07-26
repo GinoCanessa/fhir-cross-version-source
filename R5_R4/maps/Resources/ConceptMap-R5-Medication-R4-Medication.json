@@ -1,0 +1,371 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Medication-R4-Medication",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-Medication-R4-Medication",
+  "name": "R5-Medication-R4-Medication",
+  "title": "Concept map to convert a FHIR R5 Medication into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Medication|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Medication|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Medication",
+      "target": "http://hl7.org/fhir/StructureDefinition/Medication",
+      "element": [
+        {
+          "code": "Medication.doseForm",
+          "target": [
+            {
+              "code": "Medication.form",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.item",
+          "target": [
+            {
+              "code": "Medication.ingredient.item[x]",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.strength[x]",
+          "target": [
+            {
+              "code": "Medication.ingredient.strength",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Medication",
+      "target": "http://hl7.org/fhir/StructureDefinition/Medication",
+      "element": [
+        {
+          "code": "Medication",
+          "display": "Definition of a Medication",
+          "target": [
+            {
+              "code": "Medication",
+              "display": "Definition of a Medication",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication\u0060 maps as Equivalent to R4 \u0060Medication\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch",
+          "display": "Details about packaged medications",
+          "target": [
+            {
+              "code": "Medication.batch",
+              "display": "Details about packaged medications",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch\u0060 maps as Equivalent to R4 \u0060Medication.batch\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch.expirationDate",
+          "display": "When batch will expire",
+          "target": [
+            {
+              "code": "Medication.batch.expirationDate",
+              "display": "When batch will expire",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch.expirationDate\u0060 maps as Equivalent to R4 \u0060Medication.batch.expirationDate\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Medication.batch.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.batch.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Medication.batch.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch.id\u0060 maps as Equivalent to R4 \u0060Medication.batch.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch.lotNumber",
+          "display": "Identifier assigned to batch",
+          "target": [
+            {
+              "code": "Medication.batch.lotNumber",
+              "display": "Identifier assigned to batch",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch.lotNumber\u0060 maps as Equivalent to R4 \u0060Medication.batch.lotNumber\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.batch.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Medication.batch.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.batch.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.batch.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.code",
+          "display": "Codes that identify this medication",
+          "target": [
+            {
+              "code": "Medication.code",
+              "display": "Codes that identify this medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.code\u0060 maps as Equivalent to R4 \u0060Medication.code\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Medication.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.contained\u0060 maps as Equivalent to R4 \u0060Medication.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.definition",
+          "display": "Knowledge about this medication",
+          "noMap": true
+        },
+        {
+          "code": "Medication.doseForm",
+          "display": "powder | tablets | capsule \u002B",
+          "noMap": true
+        },
+        {
+          "code": "Medication.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Medication.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Medication.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication.id\u0060 maps as Equivalent to R4 \u0060Medication.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.identifier",
+          "display": "Business identifier for this medication",
+          "target": [
+            {
+              "code": "Medication.identifier",
+              "display": "Business identifier for this medication",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.identifier\u0060 maps as Equivalent to R4 \u0060Medication.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Medication.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication.implicitRules\u0060 maps as Equivalent to R4 \u0060Medication.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient",
+          "display": "Active or inactive ingredient",
+          "target": [
+            {
+              "code": "Medication.ingredient",
+              "display": "Active or inactive ingredient",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient\u0060 maps as Equivalent to R4 \u0060Medication.ingredient\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Medication.ingredient.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.ingredient.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Medication.ingredient.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.id\u0060 maps as Equivalent to R4 \u0060Medication.ingredient.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.isActive",
+          "display": "Active ingredient indicator",
+          "target": [
+            {
+              "code": "Medication.ingredient.isActive",
+              "display": "Active ingredient indicator",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.isActive\u0060 maps as Equivalent to R4 \u0060Medication.ingredient.isActive\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.item",
+          "display": "The ingredient (substance or medication) that the ingredient.strength relates to",
+          "noMap": true
+        },
+        {
+          "code": "Medication.ingredient.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Medication.ingredient.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.ingredient.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.ingredient.strength[x]",
+          "display": "Quantity of ingredient present",
+          "noMap": true
+        },
+        {
+          "code": "Medication.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Medication.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.language\u0060 maps as RelatedTo to R4 \u0060Medication.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "Medication.marketingAuthorizationHolder",
+          "display": "Organization that has authorization to market medication",
+          "noMap": true
+        },
+        {
+          "code": "Medication.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Medication.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication.meta\u0060 maps as Equivalent to R4 \u0060Medication.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Medication.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.status",
+          "display": "active | inactive | entered-in-error",
+          "target": [
+            {
+              "code": "Medication.status",
+              "display": "active | inactive | entered-in-error",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.status\u0060 maps as Equivalent to R4 \u0060Medication.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medication-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Medication.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Medication.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.text\u0060 maps as Equivalent to R4 \u0060Medication.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Medication.totalVolume",
+          "display": "When the specified product code does not infer a package size, this is the specific amount of drug in the product",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

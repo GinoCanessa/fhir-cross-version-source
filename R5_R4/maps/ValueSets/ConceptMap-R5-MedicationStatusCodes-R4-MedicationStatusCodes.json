@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MedicationStatusCodes-R4-MedicationStatusCodes",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-MedicationStatusCodes-R4-MedicationStatusCodes",
+  "name": "R5-MedicationStatusCodes-R4-MedicationStatusCodes",
+  "title": "Concept map to convert a FHIR R5 MedicationStatusCodes into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medication-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medication-status",
+      "target": "http://hl7.org/fhir/CodeSystem/medication-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "The medication record is current and is appropriate for reference in new instances.",
+          "target": [
+            {
+              "code": "active",
+              "display": "The medication is available for use.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The medication record was created erroneously and is not appropriated for reference in new instances.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "The medication was entered in error.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "display": "The medication record is not current and is not is appropriate for reference in new instances.",
+          "target": [
+            {
+              "code": "inactive",
+              "display": "The medication is not available for use.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060inactive\u0060 is equivalent to R4 \u0060inactive\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

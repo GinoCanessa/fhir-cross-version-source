@@ -1,0 +1,861 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Requirements.statement",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement",
+  "name": "XVerExtensionRequirements.statement",
+  "title": "Cross-Version Extension for FHIR R5:Requirements.statement compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "Requirements.statement does not exist in target and has no mapping",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "Actual statement as markdown",
+        "definition": "The actual statement of requirement, in markdown format.",
+        "comment": "Requirements.statement does not exist in target and has no mapping",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:key",
+        "path": "Extension.extension:key",
+        "short": "Key that identifies this statement",
+        "definition": "Key that identifies this statement (unique within this resource).",
+        "comment": "Refer directly to the statement by {url}#{key}",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:key",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:label",
+        "path": "Extension.extension:label",
+        "short": "Short Human label for this statement",
+        "definition": "A short human usable label for this statement.",
+        "comment": "The key is intended for computers, while this is intended for humans. In its absence, the key should be convenient for a human to say (e.g. not a UUID)",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:label",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:conformance",
+        "path": "Extension.extension:conformance",
+        "short": "SHALL | SHOULD | MAY | SHOULD-NOT",
+        "definition": "A short human usable label for this statement.",
+        "comment": "The conformance code is extracted from the requirement to make indexing and display easier. The requirement needs to express the conformance verbs directly in the markdown content. It's not unusual to mix verbs in a single sentence (e.g. System SHALL do X and SHOULD do Y)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:conformance",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:conditionality",
+        "path": "Extension.extension:conditionality",
+        "short": "Set to true if requirements statement is conditional",
+        "definition": "This boolean flag is set to true of the text of the requirement is conditional on something e.g. it includes lanauage like 'if x then y'. This conditionality flag is introduced for purposes of filtering and colour highlighting etc.",
+        "comment": "There is no intent that the conditional statement by evaluatable",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:conditionality",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:requirement",
+        "path": "Extension.extension:requirement",
+        "short": "The actual requirement",
+        "definition": "The actual requirement for human consumption.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:requirement",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:derivedFrom",
+        "path": "Extension.extension:derivedFrom",
+        "short": "Another statement this clarifies/restricts ([url#]key)",
+        "definition": "Another statement on one of the requirements that this requirement clarifies or restricts.",
+        "comment": "This can be just a key, if there is only one matching statement in the requirements statements referenced in Requirements.derivedFrom. If there is more than one, it should be in the format ```url#key```",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:derivedFrom",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:parent",
+        "path": "Extension.extension:parent",
+        "short": "A larger requirement that this requirement helps to refine and enable",
+        "definition": "Follows the same convention as statement.derivedFrom, where a reference is the canonical of the Requirements followed by '#' and the 'key' of the specific requirement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:parent",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:satisfiedBy",
+        "path": "Extension.extension:satisfiedBy",
+        "short": "Design artifact that satisfies this requirement",
+        "definition": "A reference to another artifact that satisfies this requirement. This could be a Profile, extension, or an element in one of those, or a CapabilityStatement, OperationDefinition, SearchParameter, CodeSystem(/code), ValueSet, Libary etc.",
+        "comment": "This is for use when the requirement is met be a pre-existing artifact e.g. a rule that's met by the base FHIR spec, or a national implementation guide.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:satisfiedBy",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension:reference",
+        "short": "External artifact (rule/document etc. that) created this requirement",
+        "definition": "A reference to another artifact that created this requirement. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:reference",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:source",
+        "path": "Extension.extension:source",
+        "short": "Who asked for this statement",
+        "definition": "Who asked for this statement to be a requirement. By default, it's assumed that the publisher knows who it is if it matters.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:source",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Actual statement as markdown",
+        "definition": "The actual statement of requirement, in markdown format.",
+        "comment": "Requirements.statement does not exist in target and has no mapping",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:key",
+        "short": "Key that identifies this statement",
+        "definition": "Key that identifies this statement (unique within this resource).",
+        "comment": "Refer directly to the statement by {url}#{key}",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:key.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:key.extension:id",
+        "sliceName": "id",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:key.url",
+        "fixedUri": "key"
+      },
+      {
+        "path": "Extension.extension:label",
+        "short": "Short Human label for this statement",
+        "definition": "A short human usable label for this statement.",
+        "comment": "The key is intended for computers, while this is intended for humans. In its absence, the key should be convenient for a human to say (e.g. not a UUID)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:label.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:label.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:label.url",
+        "fixedUri": "label"
+      },
+      {
+        "path": "Extension.extension:conformance",
+        "short": "SHALL | SHOULD | MAY | SHOULD-NOT",
+        "definition": "A short human usable label for this statement.",
+        "comment": "The conformance code is extracted from the requirement to make indexing and display easier. The requirement needs to express the conformance verbs directly in the markdown content. It's not unusual to mix verbs in a single sentence (e.g. System SHALL do X and SHOULD do Y)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:conformance.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:conformance.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:conformance.url",
+        "fixedUri": "conformance"
+      },
+      {
+        "path": "Extension.extension:conditionality",
+        "short": "Set to true if requirements statement is conditional",
+        "definition": "This boolean flag is set to true of the text of the requirement is conditional on something e.g. it includes lanauage like 'if x then y'. This conditionality flag is introduced for purposes of filtering and colour highlighting etc.",
+        "comment": "There is no intent that the conditional statement by evaluatable",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:conditionality.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:conditionality.extension:boolean",
+        "sliceName": "boolean",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:conditionality.url",
+        "fixedUri": "conditionality"
+      },
+      {
+        "path": "Extension.extension:requirement",
+        "short": "The actual requirement",
+        "definition": "The actual requirement for human consumption.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:requirement.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:requirement.extension:markdown",
+        "sliceName": "markdown",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:requirement.url",
+        "fixedUri": "requirement"
+      },
+      {
+        "path": "Extension.extension:derivedFrom",
+        "short": "Another statement this clarifies/restricts ([url#]key)",
+        "definition": "Another statement on one of the requirements that this requirement clarifies or restricts.",
+        "comment": "This can be just a key, if there is only one matching statement in the requirements statements referenced in Requirements.derivedFrom. If there is more than one, it should be in the format ```url#key```",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:derivedFrom.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:derivedFrom.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:derivedFrom.url",
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "path": "Extension.extension:parent",
+        "short": "A larger requirement that this requirement helps to refine and enable",
+        "definition": "Follows the same convention as statement.derivedFrom, where a reference is the canonical of the Requirements followed by '#' and the 'key' of the specific requirement.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:parent.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:parent.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:parent.url",
+        "fixedUri": "parent"
+      },
+      {
+        "path": "Extension.extension:satisfiedBy",
+        "short": "Design artifact that satisfies this requirement",
+        "definition": "A reference to another artifact that satisfies this requirement. This could be a Profile, extension, or an element in one of those, or a CapabilityStatement, OperationDefinition, SearchParameter, CodeSystem(/code), ValueSet, Libary etc.",
+        "comment": "This is for use when the requirement is met be a pre-existing artifact e.g. a rule that's met by the base FHIR spec, or a national implementation guide.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:satisfiedBy.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:satisfiedBy.extension:url",
+        "sliceName": "url",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:satisfiedBy.url",
+        "fixedUri": "satisfiedBy"
+      },
+      {
+        "path": "Extension.extension:reference",
+        "short": "External artifact (rule/document etc. that) created this requirement",
+        "definition": "A reference to another artifact that created this requirement. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:reference.extension:url",
+        "sliceName": "url",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reference.url",
+        "fixedUri": "reference"
+      },
+      {
+        "path": "Extension.extension:source",
+        "short": "Who asked for this statement",
+        "definition": "Who asked for this statement to be a requirement. By default, it's assumed that the publisher knows who it is if it matters.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:source.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:source.extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:source.url",
+        "fixedUri": "source"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+      }
+    ]
+  }
+}

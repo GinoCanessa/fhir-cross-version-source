@@ -1,0 +1,1188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExampleScenario.instance",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance",
+  "name": "XVerExtensionExampleScenario.instance",
+  "title": "Cross-Version Extension for FHIR R5:ExampleScenario.instance compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "R5 `ExampleScenario.instance` maps as Equivalent to R4 `ExampleScenario.instance`",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ExampleScenario.instance"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "Data used in the scenario",
+        "definition": "A single data collection that is shared as part of the scenario.",
+        "comment": "R5 `ExampleScenario.instance` maps as Equivalent to R4 `ExampleScenario.instance`",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:key",
+        "path": "Extension.extension:key",
+        "short": "ID or acronym of the instance",
+        "definition": "A unique string within the scenario that is used to reference the instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:key",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:structureType",
+        "path": "Extension.extension:structureType",
+        "short": "Data structure for example",
+        "definition": "A code indicating the kind of data structure (FHIR resource or some other standard) this is an instance of.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:structureType",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:structureVersion",
+        "path": "Extension.extension:structureVersion",
+        "short": "E.g. 4.0.1",
+        "definition": "Conveys the version of the data structure instantiated.  I.e. what release of FHIR, X12, OpenEHR, etc. is instance compliant with.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:structureVersion",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:structureProfile[x]",
+        "path": "Extension.extension:structureProfile[x]",
+        "short": "Rules instance adheres to",
+        "definition": "Refers to a profile, template or other ruleset the instance adheres to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:structureProfile[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension:title",
+        "short": "Label for instance",
+        "definition": "A short descriptive label the instance to be used in tables or diagrams.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:title",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Human-friendly description of the instance",
+        "definition": "An explanation of what the instance contains and what it's for.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:content",
+        "path": "Extension.extension:content",
+        "short": "Example instance data",
+        "definition": "Points to an instance (typically an example) that shows the data that would corespond to this instance.",
+        "comment": "If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:content",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension:version",
+        "short": "Snapshot of instance that changes",
+        "definition": "Represents the instance as it was at a specific time-point.",
+        "comment": "Not used if an instance doesn't change",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:version",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:key",
+        "path": "Extension.extension:key",
+        "short": "ID or acronym of the version",
+        "definition": "A unique string within the instance that is used to reference the version of the instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:key",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension:title",
+        "short": "Label for instance version",
+        "definition": "A short descriptive label the version to be used in tables or diagrams.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:title",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Details about version",
+        "definition": "An explanation of what this specific version of the instance contains and represents.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:content",
+        "path": "Extension.extension:content",
+        "short": "Example instance version data",
+        "definition": "Points to an instance (typically an example) that shows the data that would flow at this point in the scenario.",
+        "comment": "If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:content",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:containedInstance",
+        "path": "Extension.extension:containedInstance",
+        "short": "Resources contained in the instance",
+        "definition": "References to other instances that can be found within this instance (e.g. the observations contained in a bundle).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:containedInstance",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:instanceReference",
+        "path": "Extension.extension:instanceReference",
+        "short": "Key of contained instance",
+        "definition": "A reference to the key of an instance found within this one.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:instanceReference",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:versionReference",
+        "path": "Extension.extension:versionReference",
+        "short": "Key of contained instance version",
+        "definition": "A reference to the key of a specific version of an instance in this instance.",
+        "comment": "Required if the referenced instance has versions",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:versionReference",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Data used in the scenario",
+        "definition": "A single data collection that is shared as part of the scenario.",
+        "comment": "R5 `ExampleScenario.instance` maps as Equivalent to R4 `ExampleScenario.instance`",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:key",
+        "short": "ID or acronym of the instance",
+        "definition": "A unique string within the scenario that is used to reference the instance.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:key.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:key.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:key.url",
+        "fixedUri": "key"
+      },
+      {
+        "path": "Extension.extension:structureType",
+        "short": "Data structure for example",
+        "definition": "A code indicating the kind of data structure (FHIR resource or some other standard) this is an instance of.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:structureType.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:structureType.extension:Coding",
+        "sliceName": "Coding",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:structureType.url",
+        "fixedUri": "structureType"
+      },
+      {
+        "path": "Extension.extension:structureVersion",
+        "short": "E.g. 4.0.1",
+        "definition": "Conveys the version of the data structure instantiated.  I.e. what release of FHIR, X12, OpenEHR, etc. is instance compliant with.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:structureVersion.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:structureVersion.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:structureVersion.url",
+        "fixedUri": "structureVersion"
+      },
+      {
+        "path": "Extension.extension:structureProfile[x]",
+        "short": "Rules instance adheres to",
+        "definition": "Refers to a profile, template or other ruleset the instance adheres to.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:structureProfile[x].value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:structureProfile[x].extension:canonical",
+        "sliceName": "canonical",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:structureProfile[x].extension:uri",
+        "sliceName": "uri",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-uri"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:structureProfile[x].url",
+        "fixedUri": "structureProfile%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:title",
+        "short": "Label for instance",
+        "definition": "A short descriptive label the instance to be used in tables or diagrams.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:title.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:title.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Human-friendly description of the instance",
+        "definition": "An explanation of what the instance contains and what it's for.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:content",
+        "short": "Example instance data",
+        "definition": "Points to an instance (typically an example) that shows the data that would corespond to this instance.",
+        "comment": "If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:content.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:content.extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:content.url",
+        "fixedUri": "content"
+      },
+      {
+        "path": "Extension.extension:version",
+        "short": "Snapshot of instance that changes",
+        "definition": "Represents the instance as it was at a specific time-point.",
+        "comment": "Not used if an instance doesn't change",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.extension:key",
+        "short": "ID or acronym of the version",
+        "definition": "A unique string within the instance that is used to reference the version of the instance.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.extension:key.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:version.extension:key.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:version.extension:key.url",
+        "fixedUri": "key"
+      },
+      {
+        "path": "Extension.extension:version.extension:title",
+        "short": "Label for instance version",
+        "definition": "A short descriptive label the version to be used in tables or diagrams.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.extension:title.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:version.extension:title.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:version.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:version.extension:description",
+        "short": "Details about version",
+        "definition": "An explanation of what this specific version of the instance contains and represents.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.extension:description.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:version.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:version.extension:content",
+        "short": "Example instance version data",
+        "definition": "Points to an instance (typically an example) that shows the data that would flow at this point in the scenario.",
+        "comment": "If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.extension:content.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:version.extension:content.extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:version.extension:content.url",
+        "fixedUri": "content"
+      },
+      {
+        "path": "Extension.extension:version.url",
+        "fixedUri": "version"
+      },
+      {
+        "path": "Extension.extension:key",
+        "short": "ID or acronym of the version",
+        "definition": "A unique string within the instance that is used to reference the version of the instance.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:key.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:key.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:key.url",
+        "fixedUri": "key"
+      },
+      {
+        "path": "Extension.extension:title",
+        "short": "Label for instance version",
+        "definition": "A short descriptive label the version to be used in tables or diagrams.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:title.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:title.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Details about version",
+        "definition": "An explanation of what this specific version of the instance contains and represents.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:content",
+        "short": "Example instance version data",
+        "definition": "Points to an instance (typically an example) that shows the data that would flow at this point in the scenario.",
+        "comment": "If not conveying FHIR data or not using the same version of FHIR as this ExampleScenario instance, the reference must be to a Binary.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:content.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:content.extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:content.url",
+        "fixedUri": "content"
+      },
+      {
+        "path": "Extension.extension:containedInstance",
+        "short": "Resources contained in the instance",
+        "definition": "References to other instances that can be found within this instance (e.g. the observations contained in a bundle).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:instanceReference",
+        "short": "Key of contained instance",
+        "definition": "A reference to the key of an instance found within this one.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:instanceReference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:instanceReference.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:instanceReference.url",
+        "fixedUri": "instanceReference"
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:versionReference",
+        "short": "Key of contained instance version",
+        "definition": "A reference to the key of a specific version of an instance in this instance.",
+        "comment": "Required if the referenced instance has versions",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:versionReference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:versionReference.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:containedInstance.extension:versionReference.url",
+        "fixedUri": "versionReference"
+      },
+      {
+        "path": "Extension.extension:containedInstance.url",
+        "fixedUri": "containedInstance"
+      },
+      {
+        "path": "Extension.extension:instanceReference",
+        "short": "Key of contained instance",
+        "definition": "A reference to the key of an instance found within this one.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instanceReference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:instanceReference.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instanceReference.url",
+        "fixedUri": "instanceReference"
+      },
+      {
+        "path": "Extension.extension:versionReference",
+        "short": "Key of contained instance version",
+        "definition": "A reference to the key of a specific version of an instance in this instance.",
+        "comment": "Required if the referenced instance has versions",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:versionReference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:versionReference.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:versionReference.url",
+        "fixedUri": "versionReference"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance"
+      }
+    ]
+  }
+}

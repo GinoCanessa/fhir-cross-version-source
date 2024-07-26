@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-PublicationStatus-R4-ResearchStudyStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/rst.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-PublicationStatus-R4-ResearchStudyStatus",
+  "name": "R5-PublicationStatus-R4-ResearchStudyStatus",
+  "title": "Concept map to convert a FHIR R5 PublicationStatus into a FHIR R4 ResearchStudyStatus",
+  "experimental": false,
+  "description": "Mapping for ResearchStudy.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/publication-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/research-study-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/publication-status",
+      "target": "http://hl7.org/fhir/research-study-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "This resource is ready for normal use.",
+          "target": [
+            {
+              "code": "active",
+              "display": "Study is opened for accrual.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "display": "This resource is still under development and is not yet considered to be ready for normal use.",
+          "noMap": true
+        },
+        {
+          "code": "retired",
+          "display": "This resource has been withdrawn or superseded and should no longer be used.",
+          "noMap": true
+        },
+        {
+          "code": "unknown",
+          "display": "The authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, it\u0027s just not known which one.",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

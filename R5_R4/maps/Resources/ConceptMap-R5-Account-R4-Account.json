@@ -1,0 +1,611 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-Account-R4-Account",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-Account-R4-Account",
+  "name": "R5-Account-R4-Account",
+  "title": "Concept map to convert a FHIR R5 Account into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Account|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/StructureDefinition/Account|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Account",
+      "target": "http://hl7.org/fhir/StructureDefinition/Account",
+      "element": [
+        {
+          "code": "Account.relatedAccount",
+          "target": [
+            {
+              "code": "Account",
+              "relationship": "source-is-narrower-than-target"
+            }
+          ]
+        },
+        {
+          "code": "Account.relatedAccount.account",
+          "target": [
+            {
+              "code": "Account.partOf",
+              "relationship": "source-is-broader-than-target",
+              "comment": "re-org"
+            }
+          ]
+        },
+        {
+          "code": "Account.relatedAccount.account",
+          "target": [
+            {
+              "code": "Account.relatedAccount.partOf",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://hl7.org/fhir/StructureDefinition/Account",
+      "target": "http://hl7.org/fhir/StructureDefinition/Account",
+      "element": [
+        {
+          "code": "Account",
+          "display": "Tracks balance, charges, for patient or cost center",
+          "target": [
+            {
+              "code": "Account",
+              "display": "Tracks balance, charges, for patient or cost center",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Account\u0060 maps as Equivalent to R4 \u0060Account\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.balance",
+          "display": "Calculated account balance(s)",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.aggregate",
+          "display": "Who is expected to pay this part of the balance",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.amount",
+          "display": "Calculated amount",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.estimate",
+          "display": "Estimated balance",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Account.balance.term",
+          "display": "current | 30 | 60 | 90 | 120",
+          "noMap": true
+        },
+        {
+          "code": "Account.billingStatus",
+          "display": "Tracks the lifecycle of the account through the billing process",
+          "noMap": true
+        },
+        {
+          "code": "Account.calculatedAt",
+          "display": "Time the balance amount was calculated",
+          "noMap": true
+        },
+        {
+          "code": "Account.contained",
+          "display": "Contained, inline Resources",
+          "target": [
+            {
+              "code": "Account.contained",
+              "display": "Contained, inline Resources",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.contained\u0060 maps as Equivalent to R4 \u0060Account.contained\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage",
+          "display": "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account",
+          "target": [
+            {
+              "code": "Account.coverage",
+              "display": "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage\u0060 maps as Equivalent to R4 \u0060Account.coverage\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage.coverage",
+          "display": "The party(s), such as insurances, that may contribute to the payment of this account",
+          "target": [
+            {
+              "code": "Account.coverage.coverage",
+              "display": "The party(s), such as insurances, that may contribute to the payment of this account",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage.coverage\u0060 maps as Equivalent to R4 \u0060Account.coverage.coverage\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Account.coverage.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.coverage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Account.coverage.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage.id\u0060 maps as Equivalent to R4 \u0060Account.coverage.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Account.coverage.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.coverage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.coverage.priority",
+          "display": "The priority of the coverage in the context of this account",
+          "target": [
+            {
+              "code": "Account.coverage.priority",
+              "display": "The priority of the coverage in the context of this account",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.coverage.priority\u0060 maps as Equivalent to R4 \u0060Account.coverage.priority\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.currency",
+          "display": "The base or default currency",
+          "noMap": true
+        },
+        {
+          "code": "Account.description",
+          "display": "Explanation of purpose/use",
+          "target": [
+            {
+              "code": "Account.description",
+              "display": "Explanation of purpose/use",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
+            }
+          ]
+        },
+        {
+          "code": "Account.diagnosis",
+          "display": "The list of diagnoses relevant to this account",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.condition",
+          "display": "The diagnosis relevant to the account",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.dateOfDiagnosis",
+          "display": "Date of the diagnosis (when coded diagnosis)",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.onAdmission",
+          "display": "Diagnosis present on Admission",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.packageCode",
+          "display": "Package Code specific for billing",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.sequence",
+          "display": "Ranking of the diagnosis (for each type)",
+          "noMap": true
+        },
+        {
+          "code": "Account.diagnosis.type",
+          "display": "Type that this diagnosis has relevant to the account (e.g. admission, billing, discharge \u2026)",
+          "noMap": true
+        },
+        {
+          "code": "Account.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Account.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor",
+          "display": "The parties ultimately responsible for balancing the Account",
+          "target": [
+            {
+              "code": "Account.guarantor",
+              "display": "The parties ultimately responsible for balancing the Account",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor\u0060 maps as Equivalent to R4 \u0060Account.guarantor\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.extension",
+          "display": "Additional content defined by implementations",
+          "target": [
+            {
+              "code": "Account.guarantor.extension",
+              "display": "Additional content defined by implementations",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.guarantor.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.id",
+          "display": "Unique id for inter-element referencing",
+          "target": [
+            {
+              "code": "Account.guarantor.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.id\u0060 maps as Equivalent to R4 \u0060Account.guarantor.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "target": [
+            {
+              "code": "Account.guarantor.modifierExtension",
+              "display": "Extensions that cannot be ignored even if unrecognized",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.guarantor.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.onHold",
+          "display": "Credit or other hold applied",
+          "target": [
+            {
+              "code": "Account.guarantor.onHold",
+              "display": "Credit or other hold applied",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.onHold\u0060 maps as Equivalent to R4 \u0060Account.guarantor.onHold\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.party",
+          "display": "Responsible entity",
+          "target": [
+            {
+              "code": "Account.guarantor.party",
+              "display": "Responsible entity",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.party\u0060 maps as Equivalent to R4 \u0060Account.guarantor.party\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.guarantor.period",
+          "display": "Guarantee account during",
+          "target": [
+            {
+              "code": "Account.guarantor.period",
+              "display": "Guarantee account during",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.guarantor.period\u0060 maps as Equivalent to R4 \u0060Account.guarantor.period\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.id",
+          "display": "Logical id of this artifact",
+          "target": [
+            {
+              "code": "Account.id",
+              "display": "Logical id of this artifact",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Account.id\u0060 maps as Equivalent to R4 \u0060Account.id\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.identifier",
+          "display": "Account number",
+          "target": [
+            {
+              "code": "Account.identifier",
+              "display": "Account number",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.identifier\u0060 maps as Equivalent to R4 \u0060Account.identifier\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.implicitRules",
+          "display": "A set of rules under which this content was created",
+          "target": [
+            {
+              "code": "Account.implicitRules",
+              "display": "A set of rules under which this content was created",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Account.implicitRules\u0060 maps as Equivalent to R4 \u0060Account.implicitRules\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.language",
+          "display": "Language of the resource content",
+          "target": [
+            {
+              "code": "Account.language",
+              "display": "Language of the resource content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.language\u0060 maps as RelatedTo to R4 \u0060Account.language\u0060 - language changed the binding strength from Required to Preferred"
+            }
+          ]
+        },
+        {
+          "code": "Account.meta",
+          "display": "Metadata about the resource",
+          "target": [
+            {
+              "code": "Account.meta",
+              "display": "Metadata about the resource",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Account.meta\u0060 maps as Equivalent to R4 \u0060Account.meta\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.modifierExtension",
+          "display": "Extensions that cannot be ignored",
+          "target": [
+            {
+              "code": "Account.modifierExtension",
+              "display": "Extensions that cannot be ignored",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.name",
+          "display": "Human-readable label",
+          "target": [
+            {
+              "code": "Account.name",
+              "display": "Human-readable label",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.name\u0060 maps as Equivalent to R4 \u0060Account.name\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.owner",
+          "display": "Entity managing the Account",
+          "target": [
+            {
+              "code": "Account.owner",
+              "display": "Entity managing the Account",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.owner\u0060 maps as Equivalent to R4 \u0060Account.owner\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.procedure",
+          "display": "The list of procedures relevant to this account",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.code",
+          "display": "The procedure relevant to the account",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.dateOfService",
+          "display": "Date of the procedure (when coded procedure)",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.device",
+          "display": "Any devices that were associated with the procedure",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.packageCode",
+          "display": "Package Code specific for billing",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.sequence",
+          "display": "Ranking of the procedure (for each type)",
+          "noMap": true
+        },
+        {
+          "code": "Account.procedure.type",
+          "display": "How this procedure value should be used in charging the account",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount",
+          "display": "Other associated accounts related to this account",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount.account",
+          "display": "Reference to an associated Account",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount.extension",
+          "display": "Additional content defined by implementations",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount.id",
+          "display": "Unique id for inter-element referencing",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount.modifierExtension",
+          "display": "Extensions that cannot be ignored even if unrecognized",
+          "noMap": true
+        },
+        {
+          "code": "Account.relatedAccount.relationship",
+          "display": "Relationship of the associated Account",
+          "noMap": true
+        },
+        {
+          "code": "Account.servicePeriod",
+          "display": "Transaction window",
+          "target": [
+            {
+              "code": "Account.servicePeriod",
+              "display": "Transaction window",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.servicePeriod\u0060 maps as Equivalent to R4 \u0060Account.servicePeriod\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.status",
+          "display": "active | inactive | entered-in-error | on-hold | unknown",
+          "target": [
+            {
+              "code": "Account.status",
+              "display": "active | inactive | entered-in-error | on-hold | unknown",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.status\u0060 maps as Equivalent to R4 \u0060Account.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/account-status|5.0.0 and http://hl7.org/fhir/ValueSet/account-status|4.0.1 (Equivalent)"
+            }
+          ]
+        },
+        {
+          "code": "Account.subject",
+          "display": "The entity that caused the expenses",
+          "target": [
+            {
+              "code": "Account.subject",
+              "display": "The entity that caused the expenses",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.subject\u0060 maps as Equivalent to R4 \u0060Account.subject\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.text",
+          "display": "Text summary of the resource, for human interpretation",
+          "target": [
+            {
+              "code": "Account.text",
+              "display": "Text summary of the resource, for human interpretation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.text\u0060 maps as Equivalent to R4 \u0060Account.text\u0060"
+            }
+          ]
+        },
+        {
+          "code": "Account.type",
+          "display": "E.g. patient, expense, depreciation",
+          "target": [
+            {
+              "code": "Account.type",
+              "display": "E.g. patient, expense, depreciation",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.type\u0060 maps as Equivalent to R4 \u0060Account.type\u0060"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-EndpointStatus-R4-EndpointStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/enp.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-EndpointStatus-R4-EndpointStatus",
+  "name": "R5-EndpointStatus-R4-EndpointStatus",
+  "title": "Concept map to convert a FHIR R5 EndpointStatus into a FHIR R4 EndpointStatus",
+  "experimental": false,
+  "description": "Mapping for Endpoint.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/endpoint-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/endpoint-status",
+      "target": "http://hl7.org/fhir/endpoint-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "This endpoint is expected to be active and can be used.",
+          "target": [
+            {
+              "code": "active",
+              "display": "This endpoint is expected to be active and can be used.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "This instance should not have been part of this patient\u0027s medical record.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "This instance should not have been part of this patient\u0027s medical record.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "display": "This endpoint has exceeded connectivity thresholds and is considered in an error state and should no longer be attempted to connect to until corrective action is taken.",
+          "target": [
+            {
+              "code": "error",
+              "display": "This endpoint has exceeded connectivity thresholds and is considered in an error state and should no longer be attempted to connect to until corrective action is taken.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060error\u0060 is equivalent to R4 \u0060error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "off",
+          "display": "This endpoint is no longer to be used.",
+          "target": [
+            {
+              "code": "off",
+              "display": "This endpoint is no longer to be used.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060off\u0060 is equivalent to R4 \u0060off\u0060."
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "display": "This endpoint is temporarily unavailable.",
+          "target": [
+            {
+              "code": "suspended",
+              "display": "This endpoint is temporarily unavailable.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060suspended\u0060 is equivalent to R4 \u0060suspended\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

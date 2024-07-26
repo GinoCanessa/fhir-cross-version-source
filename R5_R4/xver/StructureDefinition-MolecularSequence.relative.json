@@ -1,0 +1,1433 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MolecularSequence.relative",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative",
+  "name": "XVerExtensionMolecularSequence.relative",
+  "title": "Cross-Version Extension for FHIR R5:MolecularSequence.relative compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "R5 `MolecularSequence.relative` does not appear in the target and has no mapping for `MolecularSequence`.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MolecularSequence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "A sequence defined relative to another sequence",
+        "definition": "R5 `MolecularSequence.relative` does not appear in the target and has no mapping for `MolecularSequence`.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:coordinateSystem",
+        "path": "Extension.extension:coordinateSystem",
+        "short": "Ways of identifying nucleotides or amino acids within a sequence",
+        "definition": "These are different ways of identifying nucleotides or amino acids within a sequence. Different databases and file types may use different systems. For detail definitions, see https://loinc.org/92822-6/ for more detail.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:coordinateSystem",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:ordinalPosition",
+        "path": "Extension.extension:ordinalPosition",
+        "short": "Indicates the order in which the sequence should be considered when putting multiple 'relative' elements together",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:ordinalPosition",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:sequenceRange",
+        "path": "Extension.extension:sequenceRange",
+        "short": "Indicates the nucleotide range in the composed sequence when multiple 'relative' elements are used together",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:sequenceRange",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:startingSequence",
+        "path": "Extension.extension:startingSequence",
+        "short": "A sequence used as starting sequence",
+        "definition": "A sequence that is used as a starting sequence to describe variants that are present in a sequence analyzed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:startingSequence",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:genomeAssembly",
+        "path": "Extension.extension:genomeAssembly",
+        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:genomeAssembly",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:chromosome",
+        "path": "Extension.extension:chromosome",
+        "short": "Chromosome Identifier",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:chromosome",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:sequence[x]",
+        "path": "Extension.extension:sequence[x]",
+        "short": "The reference sequence that represents the starting sequence",
+        "definition": "A starting sequence may be represented in one of three ways:\n  1.  CodeableConcept, using NCBI, LRG or other appropriate code systems\n  1.  a simple string of IUPAC codes\n  1.  a reference to another MolecularSequence resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:sequence[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:windowStart",
+        "path": "Extension.extension:windowStart",
+        "short": "Start position of the window on the starting sequence",
+        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:windowStart",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:windowEnd",
+        "path": "Extension.extension:windowEnd",
+        "short": "End position of the window on the starting sequence",
+        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:windowEnd",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:orientation",
+        "path": "Extension.extension:orientation",
+        "short": "sense | antisense",
+        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:orientation",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:strand",
+        "path": "Extension.extension:strand",
+        "short": "watson | crick",
+        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:strand",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:edit",
+        "path": "Extension.extension:edit",
+        "short": "Changes in sequence from the starting sequence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:edit",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:start",
+        "path": "Extension.extension:start",
+        "short": "Start position of the edit on the starting sequence",
+        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:start",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:end",
+        "path": "Extension.extension:end",
+        "short": "End position of the edit on the starting sequence",
+        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:end",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:replacementSequence",
+        "path": "Extension.extension:replacementSequence",
+        "short": "Allele that was observed",
+        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:replacementSequence",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:replacedSequence",
+        "path": "Extension.extension:replacedSequence",
+        "short": "Allele in the starting sequence",
+        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:replacedSequence",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "A sequence defined relative to another sequence",
+        "definition": "R5 `MolecularSequence.relative` does not appear in the target and has no mapping for `MolecularSequence`.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:coordinateSystem",
+        "short": "Ways of identifying nucleotides or amino acids within a sequence",
+        "definition": "These are different ways of identifying nucleotides or amino acids within a sequence. Different databases and file types may use different systems. For detail definitions, see https://loinc.org/92822-6/ for more detail.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:coordinateSystem.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:coordinateSystem.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:coordinateSystem.url",
+        "fixedUri": "coordinateSystem"
+      },
+      {
+        "path": "Extension.extension:ordinalPosition",
+        "short": "Indicates the order in which the sequence should be considered when putting multiple 'relative' elements together",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:ordinalPosition.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:ordinalPosition.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:ordinalPosition.url",
+        "fixedUri": "ordinalPosition"
+      },
+      {
+        "path": "Extension.extension:sequenceRange",
+        "short": "Indicates the nucleotide range in the composed sequence when multiple 'relative' elements are used together",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:sequenceRange.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:sequenceRange.extension:Range",
+        "sliceName": "Range",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:sequenceRange.url",
+        "fixedUri": "sequenceRange"
+      },
+      {
+        "path": "Extension.extension:startingSequence",
+        "short": "A sequence used as starting sequence",
+        "definition": "A sequence that is used as a starting sequence to describe variants that are present in a sequence analyzed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:genomeAssembly",
+        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:genomeAssembly.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:genomeAssembly.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:genomeAssembly.url",
+        "fixedUri": "genomeAssembly"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:chromosome",
+        "short": "Chromosome Identifier",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:chromosome.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:chromosome.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:chromosome.url",
+        "fixedUri": "chromosome"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x]",
+        "short": "The reference sequence that represents the starting sequence",
+        "definition": "A starting sequence may be represented in one of three ways:\n  1.  CodeableConcept, using NCBI, LRG or other appropriate code systems\n  1.  a simple string of IUPAC codes\n  1.  a reference to another MolecularSequence resource.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x].value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:sequence[x].url",
+        "fixedUri": "sequence%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowStart",
+        "short": "Start position of the window on the starting sequence",
+        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowStart.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowStart.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowStart.url",
+        "fixedUri": "windowStart"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowEnd",
+        "short": "End position of the window on the starting sequence",
+        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowEnd.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowEnd.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:windowEnd.url",
+        "fixedUri": "windowEnd"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:orientation",
+        "short": "sense | antisense",
+        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:orientation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:orientation.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:orientation.url",
+        "fixedUri": "orientation"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:strand",
+        "short": "watson | crick",
+        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:strand.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:strand.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startingSequence.extension:strand.url",
+        "fixedUri": "strand"
+      },
+      {
+        "path": "Extension.extension:startingSequence.url",
+        "fixedUri": "startingSequence"
+      },
+      {
+        "path": "Extension.extension:genomeAssembly",
+        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:genomeAssembly.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:genomeAssembly.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:genomeAssembly.url",
+        "fixedUri": "genomeAssembly"
+      },
+      {
+        "path": "Extension.extension:chromosome",
+        "short": "Chromosome Identifier",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:chromosome.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:chromosome.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:chromosome.url",
+        "fixedUri": "chromosome"
+      },
+      {
+        "path": "Extension.extension:sequence[x]",
+        "short": "The reference sequence that represents the starting sequence",
+        "definition": "A starting sequence may be represented in one of three ways:\n  1.  CodeableConcept, using NCBI, LRG or other appropriate code systems\n  1.  a simple string of IUPAC codes\n  1.  a reference to another MolecularSequence resource.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:sequence[x].value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:sequence[x].extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:sequence[x].extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:sequence[x].extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:sequence[x].url",
+        "fixedUri": "sequence%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:windowStart",
+        "short": "Start position of the window on the starting sequence",
+        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:windowStart.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:windowStart.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:windowStart.url",
+        "fixedUri": "windowStart"
+      },
+      {
+        "path": "Extension.extension:windowEnd",
+        "short": "End position of the window on the starting sequence",
+        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:windowEnd.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:windowEnd.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:windowEnd.url",
+        "fixedUri": "windowEnd"
+      },
+      {
+        "path": "Extension.extension:orientation",
+        "short": "sense | antisense",
+        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:orientation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:orientation.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:orientation.url",
+        "fixedUri": "orientation"
+      },
+      {
+        "path": "Extension.extension:strand",
+        "short": "watson | crick",
+        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:strand.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:strand.extension:code",
+        "sliceName": "code",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:strand.url",
+        "fixedUri": "strand"
+      },
+      {
+        "path": "Extension.extension:edit",
+        "short": "Changes in sequence from the starting sequence",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:edit.extension:start",
+        "short": "Start position of the edit on the starting sequence",
+        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:edit.extension:start.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:edit.extension:start.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:edit.extension:start.url",
+        "fixedUri": "start"
+      },
+      {
+        "path": "Extension.extension:edit.extension:end",
+        "short": "End position of the edit on the starting sequence",
+        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:edit.extension:end.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:edit.extension:end.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:edit.extension:end.url",
+        "fixedUri": "end"
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacementSequence",
+        "short": "Allele that was observed",
+        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacementSequence.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacementSequence.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacementSequence.url",
+        "fixedUri": "replacementSequence"
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacedSequence",
+        "short": "Allele in the starting sequence",
+        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacedSequence.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacedSequence.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:edit.extension:replacedSequence.url",
+        "fixedUri": "replacedSequence"
+      },
+      {
+        "path": "Extension.extension:edit.url",
+        "fixedUri": "edit"
+      },
+      {
+        "path": "Extension.extension:start",
+        "short": "Start position of the edit on the starting sequence",
+        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:start.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:start.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:start.url",
+        "fixedUri": "start"
+      },
+      {
+        "path": "Extension.extension:end",
+        "short": "End position of the edit on the starting sequence",
+        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:end.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:end.extension:integer",
+        "sliceName": "integer",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:end.url",
+        "fixedUri": "end"
+      },
+      {
+        "path": "Extension.extension:replacementSequence",
+        "short": "Allele that was observed",
+        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:replacementSequence.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:replacementSequence.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:replacementSequence.url",
+        "fixedUri": "replacementSequence"
+      },
+      {
+        "path": "Extension.extension:replacedSequence",
+        "short": "Allele in the starting sequence",
+        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:replacedSequence.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:replacedSequence.extension:string",
+        "sliceName": "string",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:replacedSequence.url",
+        "fixedUri": "replacedSequence"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative"
+      }
+    ]
+  }
+}

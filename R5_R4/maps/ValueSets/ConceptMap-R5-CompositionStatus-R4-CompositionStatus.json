@@ -1,0 +1,146 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-CompositionStatus-R4-CompositionStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cmp.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/dcr.docStatus-5to4"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-CompositionStatus-R4-CompositionStatus",
+  "name": "R5-CompositionStatus-R4-CompositionStatus",
+  "title": "Concept map to convert a FHIR R5 CompositionStatus into a FHIR R4 CompositionStatus",
+  "experimental": false,
+  "description": "Mapping for Composition.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/composition-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/composition-status",
+      "target": "http://hl7.org/fhir/composition-status",
+      "element": [
+        {
+          "code": "amended",
+          "display": "The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as \u0022final\u0022 and the composition is complete and verified by an authorized person.",
+          "target": [
+            {
+              "code": "amended",
+              "display": "The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as \u0022final\u0022 and the composition is complete and verified by an authorized person.",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060amended\u0060 is narrower than R4 \u0060amended\u0060 and is compatible. \u0060amended\u0060 is mapped from \u0060amended\u0060 and \u0060appended\u0060 and \u0060corrected\u0060."
+            }
+          ]
+        },
+        {
+          "code": "appended",
+          "display": "Subsequent to being final, the composition content has been modified by adding new content. The existing content is unchanged.",
+          "target": [
+            {
+              "code": "amended",
+              "display": "The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as \u0022final\u0022 and the composition is complete and verified by an authorized person.",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060appended\u0060 is narrower than R4 \u0060amended\u0060 and is compatible. \u0060amended\u0060 is mapped from \u0060amended\u0060 and \u0060appended\u0060 and \u0060corrected\u0060."
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "display": "The composition is unavailable because the measurement was not started or not completed (also sometimes called \u0022aborted\u0022).",
+          "noMap": true
+        },
+        {
+          "code": "corrected",
+          "display": "Subsequent to being final, the composition content has been modified to correct an error in the composition or referenced results.",
+          "target": [
+            {
+              "code": "amended",
+              "display": "The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as \u0022final\u0022 and the composition is complete and verified by an authorized person.",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060corrected\u0060 is narrower than R4 \u0060amended\u0060 and is compatible. \u0060amended\u0060 is mapped from \u0060amended\u0060 and \u0060appended\u0060 and \u0060corrected\u0060."
+            }
+          ]
+        },
+        {
+          "code": "deprecated",
+          "display": "This composition has been withdrawn or superseded and should no longer be used.",
+          "noMap": true
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "final",
+          "display": "This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.",
+          "target": [
+            {
+              "code": "final",
+              "display": "This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060final\u0060 is equivalent to R4 \u0060final\u0060."
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "display": "This is a partial (e.g. initial, interim or preliminary) composition: data in the composition may be incomplete or unverified.",
+          "target": [
+            {
+              "code": "preliminary",
+              "display": "This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060partial\u0060 is narrower than R4 \u0060preliminary\u0060 and is compatible. \u0060preliminary\u0060 is mapped from \u0060partial\u0060 and \u0060preliminary\u0060."
+            }
+          ]
+        },
+        {
+          "code": "preliminary",
+          "display": "Verified early results are available, but not all results are final.",
+          "target": [
+            {
+              "code": "preliminary",
+              "display": "This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified.",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060preliminary\u0060 is narrower than R4 \u0060preliminary\u0060 and is compatible. \u0060preliminary\u0060 is mapped from \u0060partial\u0060 and \u0060preliminary\u0060."
+            }
+          ]
+        },
+        {
+          "code": "registered",
+          "display": "The existence of the composition is registered, but there is nothing yet available.",
+          "noMap": true
+        },
+        {
+          "code": "unknown",
+          "display": "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.",
+          "noMap": true
+        }
+      ]
+    }
+  ]
+}

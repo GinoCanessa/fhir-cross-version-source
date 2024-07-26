@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-FHIRDeviceStatus-R4-FHIRDeviceStatus",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-FHIRDeviceStatus-R4-FHIRDeviceStatus",
+  "name": "R5-FHIRDeviceStatus-R4-FHIRDeviceStatus",
+  "title": "Concept map to convert a FHIR R5 FHIRDeviceStatus into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/device-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/device-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/device-status",
+      "target": "http://hl7.org/fhir/device-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "The device record is current and is appropriate for reference in new instances.",
+          "target": [
+            {
+              "code": "active",
+              "display": "The device is available for use.  Note: For *implanted devices*  this means that the device is implanted in the patient.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The device record is not current and is not appropriate for reference in new instances.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "The device was entered in error and voided.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "display": "The device record is not current and is not appropriate for reference in new instances.",
+          "target": [
+            {
+              "code": "inactive",
+              "display": "The device is no longer available for use (e.g. lost, expired, damaged).  Note: For *implanted devices*  this means that the device has been removed from the patient.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060inactive\u0060 is equivalent to R4 \u0060inactive\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

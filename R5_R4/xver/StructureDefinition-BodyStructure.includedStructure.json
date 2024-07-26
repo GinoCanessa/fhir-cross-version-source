@@ -1,0 +1,1125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "BodyStructure.includedStructure",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure",
+  "name": "XVerExtensionBodyStructure.includedStructure",
+  "title": "Cross-Version Extension for FHIR R5:BodyStructure.includedStructure compared to FHIR R4",
+  "status": "draft",
+  "experimental": true,
+  "description": "R5 `BodyStructure.includedStructure` does not appear in the target and has no mapping for `BodyStructure`.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "BodyStructure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
+        "path": "Extension",
+        "short": "Included anatomic location(s)",
+        "definition": "The anatomical location(s) or region(s) of the specimen, lesion, or body structure.",
+        "comment": "R5 `BodyStructure.includedStructure` does not appear in the target and has no mapping for `BodyStructure`.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a,N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "integer64"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Availability"
+          },
+          {
+            "code": "ExtendedContactDetail"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "condition": [
+          "ext-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure",
+        "path": "Extension.extension:structure",
+        "short": "Code that represents the included structure",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:structure",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:laterality",
+        "path": "Extension.extension:laterality",
+        "short": "Code that represents the included structure laterality",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:laterality",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation",
+        "path": "Extension.extension:bodyLandmarkOrientation",
+        "short": "Landmark relative location",
+        "definition": "Body locations in relation to a specific body landmark (tatoo, scar, other body structure).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:bodyLandmarkOrientation",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:landmarkDescription",
+        "path": "Extension.extension:landmarkDescription",
+        "short": "Body ]andmark description",
+        "definition": "A description of a landmark on the body used as a reference to locate something else.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:landmarkDescription",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:clockFacePosition",
+        "path": "Extension.extension:clockFacePosition",
+        "short": "Clockface orientation",
+        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:clockFacePosition",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:distanceFromLandmark",
+        "path": "Extension.extension:distanceFromLandmark",
+        "short": "Landmark relative location",
+        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:distanceFromLandmark",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension:device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:device",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension:value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:value",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:surfaceOrientation",
+        "path": "Extension.extension:surfaceOrientation",
+        "short": "Relative landmark surface orientation",
+        "definition": "The surface area a body location is in relation to a landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:surfaceOrientation",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:spatialReference",
+        "path": "Extension.extension:spatialReference",
+        "short": "Cartesian reference for structure",
+        "definition": "XY or XYZ-coordinate orientation for structure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:spatialReference",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:qualifier",
+        "path": "Extension.extension:qualifier",
+        "short": "Code that represents the included structure qualifier",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:qualifier",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Included anatomic location(s)",
+        "definition": "The anatomical location(s) or region(s) of the specimen, lesion, or body structure.",
+        "comment": "R5 `BodyStructure.includedStructure` does not appear in the target and has no mapping for `BodyStructure`.",
+        "min": 1,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:structure",
+        "short": "Code that represents the included structure",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:structure.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:structure.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:structure.url",
+        "fixedUri": "structure"
+      },
+      {
+        "path": "Extension.extension:laterality",
+        "short": "Code that represents the included structure laterality",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:laterality.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:laterality.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:laterality.url",
+        "fixedUri": "laterality"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation",
+        "short": "Landmark relative location",
+        "definition": "Body locations in relation to a specific body landmark (tatoo, scar, other body structure).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription",
+        "short": "Body ]andmark description",
+        "definition": "A description of a landmark on the body used as a reference to locate something else.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.url",
+        "fixedUri": "landmarkDescription"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition",
+        "short": "Clockface orientation",
+        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.url",
+        "fixedUri": "clockFacePosition"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark",
+        "short": "Landmark relative location",
+        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.extension:Quantity",
+        "sliceName": "Quantity",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.url",
+        "fixedUri": "distanceFromLandmark"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:value.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:value.extension:Quantity",
+        "sliceName": "Quantity",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation",
+        "short": "Relative landmark surface orientation",
+        "definition": "The surface area a body location is in relation to a landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.url",
+        "fixedUri": "surfaceOrientation"
+      },
+      {
+        "path": "Extension.extension:bodyLandmarkOrientation.url",
+        "fixedUri": "bodyLandmarkOrientation"
+      },
+      {
+        "path": "Extension.extension:landmarkDescription",
+        "short": "Body ]andmark description",
+        "definition": "A description of a landmark on the body used as a reference to locate something else.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:landmarkDescription.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:landmarkDescription.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:landmarkDescription.url",
+        "fixedUri": "landmarkDescription"
+      },
+      {
+        "path": "Extension.extension:clockFacePosition",
+        "short": "Clockface orientation",
+        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:clockFacePosition.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:clockFacePosition.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:clockFacePosition.url",
+        "fixedUri": "clockFacePosition"
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark",
+        "short": "Landmark relative location",
+        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:value.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:value.extension:Quantity",
+        "sliceName": "Quantity",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:distanceFromLandmark.url",
+        "fixedUri": "distanceFromLandmark"
+      },
+      {
+        "path": "Extension.extension:device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:value.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:value.extension:Quantity",
+        "sliceName": "Quantity",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:surfaceOrientation",
+        "short": "Relative landmark surface orientation",
+        "definition": "The surface area a body location is in relation to a landmark.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:surfaceOrientation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:surfaceOrientation.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:surfaceOrientation.url",
+        "fixedUri": "surfaceOrientation"
+      },
+      {
+        "path": "Extension.extension:spatialReference",
+        "short": "Cartesian reference for structure",
+        "definition": "XY or XYZ-coordinate orientation for structure.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:spatialReference.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:spatialReference.extension:Reference",
+        "sliceName": "Reference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:spatialReference.url",
+        "fixedUri": "spatialReference"
+      },
+      {
+        "path": "Extension.extension:qualifier",
+        "short": "Code that represents the included structure qualifier",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:qualifier.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:qualifier.extension:CodeableConcept",
+        "sliceName": "CodeableConcept",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:qualifier.url",
+        "fixedUri": "qualifier"
+      },
+      {
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-IssueSeverity-R4-IssueSeverity",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/opo.is.severity-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-IssueSeverity-R4-IssueSeverity",
+  "name": "R5-IssueSeverity-R4-IssueSeverity",
+  "title": "Concept map to convert a FHIR R5 IssueSeverity into a FHIR R4 IssueSeverity",
+  "experimental": false,
+  "description": "Mapping for OperationOutcome.issue.severity from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/issue-severity|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/issue-severity|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/issue-severity",
+      "target": "http://hl7.org/fhir/issue-severity",
+      "element": [
+        {
+          "code": "error",
+          "display": "The issue is sufficiently important to cause the action to fail.",
+          "target": [
+            {
+              "code": "error",
+              "display": "The issue is sufficiently important to cause the action to fail.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060error\u0060 is equivalent to R4 \u0060error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "fatal",
+          "display": "The issue caused the action to fail and no further checking could be performed.",
+          "target": [
+            {
+              "code": "fatal",
+              "display": "The issue caused the action to fail and no further checking could be performed.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060fatal\u0060 is equivalent to R4 \u0060fatal\u0060."
+            }
+          ]
+        },
+        {
+          "code": "information",
+          "display": "The issue has no relation to the degree of success of the action.",
+          "target": [
+            {
+              "code": "information",
+              "display": "The issue has no relation to the degree of success of the action.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060information\u0060 is equivalent to R4 \u0060information\u0060."
+            }
+          ]
+        },
+        {
+          "code": "success",
+          "display": "The operation completed successfully.",
+          "noMap": true
+        },
+        {
+          "code": "warning",
+          "display": "The issue is not important enough to cause the action to fail but may cause it to be performed suboptimally or in a way that is not as desired.",
+          "target": [
+            {
+              "code": "warning",
+              "display": "The issue is not important enough to cause the action to fail but may cause it to be performed suboptimally or in a way that is not as desired.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060warning\u0060 is equivalent to R4 \u0060warning\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

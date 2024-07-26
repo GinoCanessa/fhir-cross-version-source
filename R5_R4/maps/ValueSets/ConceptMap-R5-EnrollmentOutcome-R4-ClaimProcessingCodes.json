@@ -1,0 +1,65 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-EnrollmentOutcome-R4-ClaimProcessingCodes",
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-EnrollmentOutcome-R4-ClaimProcessingCodes",
+  "name": "R5-EnrollmentOutcome-R4-ClaimProcessingCodes",
+  "title": "Concept map to convert a FHIR R5 EnrollmentOutcome into FHIR R4",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/enrollment-outcome|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/enrollment-outcome",
+      "target": "http://hl7.org/fhir/remittance-outcome",
+      "element": [
+        {
+          "code": "complete",
+          "display": "The processing has completed without errors",
+          "target": [
+            {
+              "code": "complete",
+              "display": "The processing has completed without errors",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060complete\u0060 is equivalent to R4 \u0060complete\u0060."
+            }
+          ]
+        },
+        {
+          "code": "error",
+          "display": "One or more errors have been detected in the Claim",
+          "target": [
+            {
+              "code": "error",
+              "display": "One or more errors have been detected in the Claim",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060error\u0060 is equivalent to R4 \u0060error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "partial",
+          "display": "No errors have been detected in the Claim and some of the adjudication has been performed.",
+          "target": [
+            {
+              "code": "partial",
+              "display": "No errors have been detected in the Claim and some of the adjudication has been performed.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060partial\u0060 is equivalent to R4 \u0060partial\u0060."
+            }
+          ]
+        },
+        {
+          "code": "queued",
+          "display": "The Claim/Pre-authorization/Pre-determination has been received but processing has not begun.",
+          "target": [
+            {
+              "code": "queued",
+              "display": "The Claim/Pre-authorization/Pre-determination has been received but processing has not begun.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060queued\u0060 is equivalent to R4 \u0060queued\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

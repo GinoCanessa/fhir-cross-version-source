@@ -1,0 +1,98 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cmd.gr.el.ta.relationship-cmd.gr.el.ta.equivalence-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "name": "R5-ConceptMapRelationship-R4-ConceptMapEquivalence",
+  "title": "Concept map to convert a FHIR R5 ConceptMapRelationship into a FHIR R4 ConceptMapEquivalence",
+  "experimental": false,
+  "description": "Mapping for ConceptMap.group.element.target.relationship/ConceptMap.group.element.target.equivalence from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-relationship|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/concept-map-equivalence|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/concept-map-relationship",
+      "target": "http://hl7.org/fhir/concept-map-equivalence",
+      "element": [
+        {
+          "code": "equivalent",
+          "display": "The definitions of the concepts mean the same thing.",
+          "target": [
+            {
+              "code": "equivalent",
+              "display": "The definitions of the concepts mean the same thing (including when structural implications of meaning are considered) (i.e. extensionally identical).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060equivalent\u0060 is equivalent to R4 \u0060equivalent\u0060."
+            }
+          ]
+        },
+        {
+          "code": "not-related-to",
+          "display": "This is an explicit assertion that the target concept is not related to the source concept.",
+          "target": [
+            {
+              "code": "disjoint",
+              "display": "This is an explicit assertion that there is no mapping between the source and target concept.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060not-related-to\u0060 is equivalent to R4 \u0060disjoint\u0060."
+            }
+          ]
+        },
+        {
+          "code": "related-to",
+          "display": "The concepts are related to each other, but the exact relationship is not known.",
+          "target": [
+            {
+              "code": "inexact",
+              "display": "The target mapping overlaps with the source concept, but both source and target cover additional meaning, or the definitions are imprecise and it is uncertain whether they have the same boundaries to their meaning. The sense in which the mapping is inexact SHALL be described in the comments in this case, and applications should be careful when attempting to use these mappings operationally.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060related-to\u0060 is equivalent to R4 \u0060inexact\u0060."
+            }
+          ]
+        },
+        {
+          "code": "source-is-broader-than-target",
+          "display": "The source concept is broader in meaning than the target concept.",
+          "target": [
+            {
+              "code": "narrower",
+              "display": "The target mapping is narrower in meaning than the source concept. The sense in which the mapping is narrower SHALL be described in the comments in this case, and applications should be careful when attempting to use these mappings operationally.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060source-is-broader-than-target\u0060 is equivalent to R4 \u0060narrower\u0060."
+            }
+          ]
+        },
+        {
+          "code": "source-is-narrower-than-target",
+          "display": "The source concept is narrower in meaning than the target concept.",
+          "target": [
+            {
+              "code": "wider",
+              "display": "The target mapping is wider in meaning than the source concept.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060source-is-narrower-than-target\u0060 is equivalent to R4 \u0060wider\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

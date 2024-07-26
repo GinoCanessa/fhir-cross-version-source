@@ -1,0 +1,142 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-RequestStatus-R4-RequestStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cmr.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/cpl.status-5to4"
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/dur.status-5to4"
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/nor.status-5to4"
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/rqo.status-rgp.status-5to4"
+    },
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/srq.status-5to4"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-RequestStatus-R4-RequestStatus",
+  "name": "R5-RequestStatus-R4-RequestStatus",
+  "title": "Concept map to convert a FHIR R5 RequestStatus into a FHIR R4 RequestStatus",
+  "experimental": false,
+  "description": "Mapping for CommunicationRequest.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/request-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/request-status",
+      "target": "http://hl7.org/fhir/request-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "The request is in force and ready to be acted upon.",
+          "target": [
+            {
+              "code": "active",
+              "display": "The request is in force and ready to be acted upon.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "display": "The activity described by the request has been fully performed.  No further activity will occur.",
+          "target": [
+            {
+              "code": "completed",
+              "display": "The activity described by the request has been fully performed.  No further activity will occur.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060completed\u0060 is equivalent to R4 \u0060completed\u0060."
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "display": "The request has been created but is not yet complete or ready for action.",
+          "target": [
+            {
+              "code": "draft",
+              "display": "The request has been created but is not yet complete or ready for action.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060draft\u0060 is equivalent to R4 \u0060draft\u0060."
+            }
+          ]
+        },
+        {
+          "code": "entered-in-error",
+          "display": "This request should never have existed and should be considered \u0027void\u0027.  (It is possible that real-world decisions were based on it.  If real-world activity has occurred, the status should be \u0022revoked\u0022 rather than \u0022entered-in-error\u0022.).",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "This request should never have existed and should be considered \u0027void\u0027.  (It is possible that real-world decisions were based on it.  If real-world activity has occurred, the status should be \u0022revoked\u0022 rather than \u0022entered-in-error\u0022.).",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "display": "The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.",
+          "target": [
+            {
+              "code": "on-hold",
+              "display": "The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060on-hold\u0060 is equivalent to R4 \u0060on-hold\u0060."
+            }
+          ]
+        },
+        {
+          "code": "revoked",
+          "display": "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions.  No further activity should occur.",
+          "target": [
+            {
+              "code": "revoked",
+              "display": "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions.  No further activity should occur.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060revoked\u0060 is equivalent to R4 \u0060revoked\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "The authoring/source system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "The authoring/source system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060unknown\u0060 is equivalent to R4 \u0060unknown\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

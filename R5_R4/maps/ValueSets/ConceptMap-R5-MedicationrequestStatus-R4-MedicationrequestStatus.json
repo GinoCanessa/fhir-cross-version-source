@@ -1,0 +1,139 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "R5-MedicationrequestStatus-R4-MedicationrequestStatus",
+  "extension": [
+    {
+      "url": "http://ginoc.io/fhir/StructureDefinition/conceptmap-additional-urls",
+      "valueUrl": "http://hl7.org/fhir/uv/xver/ConceptMap/mps.status-5to4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ]
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-MedicationrequestStatus-R4-MedicationrequestStatus",
+  "name": "R5-MedicationrequestStatus-R4-MedicationrequestStatus",
+  "title": "Concept map to convert a FHIR R5 MedicationrequestStatus into a FHIR R4 MedicationrequestStatus",
+  "experimental": false,
+  "description": "Mapping for MedicationRequest.status from 5.0.0 to 4.0.1",
+  "sourceScopeCanonical": "http://hl7.org/fhir/ValueSet/medicationrequest-status|5.0.0",
+  "targetScopeCanonical": "http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "target": "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "element": [
+        {
+          "code": "active",
+          "display": "The request is \u0027actionable\u0027, but not all actions that are implied by it have occurred yet.",
+          "target": [
+            {
+              "code": "active",
+              "display": "The prescription is \u0027actionable\u0027, but not all actions that are implied by it have occurred yet.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060active\u0060 is equivalent to R4 \u0060active\u0060."
+            }
+          ]
+        },
+        {
+          "code": "cancelled",
+          "display": "The request has been withdrawn before any administrations have occurred",
+          "target": [
+            {
+              "code": "cancelled",
+              "display": "The prescription has been withdrawn before any administrations have occurred",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060cancelled\u0060 is equivalent to R4 \u0060cancelled\u0060."
+            }
+          ]
+        },
+        {
+          "code": "completed",
+          "display": "All actions that are implied by the request have occurred.",
+          "target": [
+            {
+              "code": "completed",
+              "display": "All actions that are implied by the prescription have occurred.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060completed\u0060 is equivalent to R4 \u0060completed\u0060."
+            }
+          ]
+        },
+        {
+          "code": "draft",
+          "display": "The request is not yet \u0027actionable\u0027, e.g. it is a work in progress, requires sign-off, verification\u00A0or\u00A0needs to be run through decision support process.",
+          "target": [
+            {
+              "code": "draft",
+              "display": "The prescription is not yet \u0027actionable\u0027, e.g. it is a work in progress, requires sign-off, verification\u00A0or\u00A0needs to be run through decision support process.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060draft\u0060 is equivalent to R4 \u0060draft\u0060."
+            }
+          ]
+        },
+        {
+          "code": "ended",
+          "display": "The request is no longer active and the subject should no longer be taking the medication.",
+          "noMap": true
+        },
+        {
+          "code": "entered-in-error",
+          "display": "The request was recorded against the wrong patient or for some reason should not have been recorded (e.g. wrong medication, wrong dose, etc.). Some of the actions that are implied by the medication request may have occurred. For example, the medication may have been dispensed and the patient may have taken some of the medication.",
+          "target": [
+            {
+              "code": "entered-in-error",
+              "display": "Some of the actions that are implied by the medication request may have occurred.  For example, the medication may have been dispensed and the patient may have taken some of the medication.  Clinical decision support systems should take this status into account",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060entered-in-error\u0060 is equivalent to R4 \u0060entered-in-error\u0060."
+            }
+          ]
+        },
+        {
+          "code": "on-hold",
+          "display": "Actions implied by the request are to be temporarily halted. The request might or might not be resumed. May also be called \u0027suspended\u0027.",
+          "target": [
+            {
+              "code": "on-hold",
+              "display": "Actions implied by the prescription are to be temporarily halted, but are expected to continue later.  May also be called \u0027suspended\u0027.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060on-hold\u0060 is equivalent to R4 \u0060on-hold\u0060."
+            }
+          ]
+        },
+        {
+          "code": "stopped",
+          "display": "Actions implied by the request are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error",
+          "target": [
+            {
+              "code": "stopped",
+              "display": "Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060stopped\u0060 is equivalent to R4 \u0060stopped\u0060."
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "display": "The authoring/source system does not know which of the status values currently applies for this request. Note: This concept is not to be used for \u0027other\u0027 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.",
+          "target": [
+            {
+              "code": "unknown",
+              "display": "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \u0027other\u0027 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060unknown\u0060 is equivalent to R4 \u0060unknown\u0060."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
