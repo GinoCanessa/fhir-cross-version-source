@@ -457,20 +457,23 @@
       },
       {
         "path": "Extension.extension:state.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:state.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchStudyStudyStatus"
+            }
+          ],
+          "strength": "extensible",
+          "description": "defn.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-study-status"
+        }
       },
       {
         "path": "Extension.extension:state.url",
@@ -486,18 +489,10 @@
       },
       {
         "path": "Extension.extension:actual.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:actual.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -514,18 +509,10 @@
       },
       {
         "path": "Extension.extension:period.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:period.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },

@@ -203,10 +203,11 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "short": "A fixed quantity (no comparator)",
+        "definition": "The comparator is not used on a SimpleQuantity",
+        "comment": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +215,10 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
           }
         ],
         "condition": [
@@ -386,6 +231,20 @@
             "human": "All FHIR elements must have a @value or children",
             "expression": "hasValue() or (children().count() > id.count())",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "qty-3",
+            "severity": "error",
+            "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Quantity"
+          },
+          {
+            "key": "sqty-1",
+            "severity": "error",
+            "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
+            "source": "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
           }
         ],
         "isModifier": false,
@@ -394,60 +253,14 @@
           {
             "identity": "rim",
             "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Quantity:Quantity",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
           },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Quantity"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
           {
             "identity": "rim",
-            "map": "n/a,N/A"
+            "map": "n/a,PQ, IVL<PQ>, MO, CO, depending on the values"
+          },
+          {
+            "identity": "v2",
+            "map": "SN (see also Range) or CQ"
           }
         ]
       },
@@ -474,17 +287,12 @@
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
+            "code": "Quantity",
             "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
         ]

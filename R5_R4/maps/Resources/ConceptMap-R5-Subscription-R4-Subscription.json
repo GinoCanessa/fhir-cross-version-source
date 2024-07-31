@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Subscription",
       "element": [
         {
-          "code": "Subscription.channelType",
-          "target": [
-            {
-              "code": "Subscription.channel.type",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Subscription.contentType",
-          "target": [
-            {
-              "code": "Subscription.channel.payload",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Subscription.endpoint",
-          "target": [
-            {
-              "code": "Subscription.channel.endpoint",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Subscription",
-      "target": "http://hl7.org/fhir/StructureDefinition/Subscription",
-      "element": [
-        {
           "code": "Subscription",
           "display": "Notification about a SubscriptionTopic",
           "target": [
@@ -74,8 +41,14 @@
         },
         {
           "code": "Subscription.channelType",
-          "display": "Channel type for notifications",
-          "noMap": true
+          "target": [
+            {
+              "code": "Subscription.channel.type",
+              "display": "rest-hook | websocket | email | sms | message",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Subscription.channelType\u0060 maps as RelatedTo to R4 \u0060Subscription.channel.type\u0060 - type made the binding required (from Extensible) for http://hl7.org/fhir/ValueSet/subscription-channel-type|4.0.1; type has change due to type change: R5 channelType Coding has no equivalent or mapped type in R4 type"
+            }
+          ]
         },
         {
           "code": "Subscription.contact",
@@ -84,7 +57,7 @@
             {
               "code": "Subscription.contact",
               "display": "Contact details for source (e.g. troubleshooting)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Subscription.contact\u0060 maps as Equivalent to R4 \u0060Subscription.contact\u0060"
             }
           ]
@@ -96,7 +69,7 @@
             {
               "code": "Subscription.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Subscription.contained\u0060 maps as Equivalent to R4 \u0060Subscription.contained\u0060"
             }
           ]
@@ -108,8 +81,14 @@
         },
         {
           "code": "Subscription.contentType",
-          "display": "MIME type to send, or omit for no payload",
-          "noMap": true
+          "target": [
+            {
+              "code": "Subscription.channel.payload",
+              "display": "MIME type to send, or omit for no payload",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Subscription.contentType\u0060 maps as Equivalent to R4 \u0060Subscription.channel.payload\u0060 - payload using http://hl7.org/fhir/ValueSet/mimetypes is exempted and assumed equivalent"
+            }
+          ]
         },
         {
           "code": "Subscription.end",
@@ -118,15 +97,21 @@
             {
               "code": "Subscription.end",
               "display": "When to automatically delete the subscription",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Subscription.end\u0060 maps as Equivalent to R4 \u0060Subscription.end\u0060"
             }
           ]
         },
         {
           "code": "Subscription.endpoint",
-          "display": "Where the channel points to",
-          "noMap": true
+          "target": [
+            {
+              "code": "Subscription.channel.endpoint",
+              "display": "Where the channel points to",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Subscription.endpoint\u0060 maps as Equivalent to R4 \u0060Subscription.channel.endpoint\u0060"
+            }
+          ]
         },
         {
           "code": "Subscription.extension",
@@ -135,7 +120,7 @@
             {
               "code": "Subscription.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Subscription.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Subscription.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -226,8 +211,8 @@
             {
               "code": "Subscription.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Subscription.language\u0060 maps as RelatedTo to R4 \u0060Subscription.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Subscription.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Subscription.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -260,7 +245,7 @@
             {
               "code": "Subscription.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Subscription.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Subscription.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -319,7 +304,7 @@
             {
               "code": "Subscription.status",
               "display": "requested | active | error | off",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Subscription.status\u0060 maps as Equivalent to R4 \u0060Subscription.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/subscription-status|5.0.0 and http://hl7.org/fhir/ValueSet/subscription-status|4.0.1 (Equivalent)"
             }
           ]
@@ -331,7 +316,7 @@
             {
               "code": "Subscription.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Subscription.text\u0060 maps as Equivalent to R4 \u0060Subscription.text\u0060"
             }
           ]

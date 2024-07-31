@@ -28,48 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Account",
       "element": [
         {
-          "code": "Account.relatedAccount",
-          "target": [
-            {
-              "code": "Account",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "Account.relatedAccount.account",
-          "target": [
-            {
-              "code": "Account.partOf",
-              "relationship": "source-is-broader-than-target",
-              "comment": "re-org"
-            }
-          ]
-        },
-        {
-          "code": "Account.relatedAccount.account",
-          "target": [
-            {
-              "code": "Account.relatedAccount.partOf",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Account",
-      "target": "http://hl7.org/fhir/StructureDefinition/Account",
-      "element": [
-        {
           "code": "Account",
           "display": "Tracks balance, charges, for patient or cost center",
           "target": [
             {
               "code": "Account",
               "display": "Tracks balance, charges, for patient or cost center",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060Account\u0060 maps as Equivalent to R4 \u0060Account\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Account\u0060 is narrower than R4 \u0060Account\u0060 and is compatible. \u0060Account\u0060 is mapped from \u0060Account\u0060 and \u0060Account.relatedAccount\u0060."
             }
           ]
         },
@@ -130,7 +96,7 @@
             {
               "code": "Account.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.contained\u0060 maps as Equivalent to R4 \u0060Account.contained\u0060"
             }
           ]
@@ -142,7 +108,7 @@
             {
               "code": "Account.coverage",
               "display": "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.coverage\u0060 maps as Equivalent to R4 \u0060Account.coverage\u0060"
             }
           ]
@@ -154,7 +120,7 @@
             {
               "code": "Account.coverage.coverage",
               "display": "The party(s), such as insurances, that may contribute to the payment of this account",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.coverage.coverage\u0060 maps as Equivalent to R4 \u0060Account.coverage.coverage\u0060"
             }
           ]
@@ -166,7 +132,7 @@
             {
               "code": "Account.coverage.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.coverage.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.coverage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -178,7 +144,7 @@
             {
               "code": "Account.coverage.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.coverage.id\u0060 maps as Equivalent to R4 \u0060Account.coverage.id\u0060"
             }
           ]
@@ -190,7 +156,7 @@
             {
               "code": "Account.coverage.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.coverage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.coverage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -202,7 +168,7 @@
             {
               "code": "Account.coverage.priority",
               "display": "The priority of the coverage in the context of this account",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.coverage.priority\u0060 maps as Equivalent to R4 \u0060Account.coverage.priority\u0060"
             }
           ]
@@ -219,7 +185,7 @@
             {
               "code": "Account.description",
               "display": "Explanation of purpose/use",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
@@ -281,7 +247,7 @@
             {
               "code": "Account.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -293,7 +259,7 @@
             {
               "code": "Account.guarantor",
               "display": "The parties ultimately responsible for balancing the Account",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.guarantor\u0060 maps as Equivalent to R4 \u0060Account.guarantor\u0060"
             }
           ]
@@ -305,7 +271,7 @@
             {
               "code": "Account.guarantor.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.guarantor.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.guarantor.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -317,7 +283,7 @@
             {
               "code": "Account.guarantor.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.guarantor.id\u0060 maps as Equivalent to R4 \u0060Account.guarantor.id\u0060"
             }
           ]
@@ -329,7 +295,7 @@
             {
               "code": "Account.guarantor.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.guarantor.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.guarantor.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -341,7 +307,7 @@
             {
               "code": "Account.guarantor.onHold",
               "display": "Credit or other hold applied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.guarantor.onHold\u0060 maps as Equivalent to R4 \u0060Account.guarantor.onHold\u0060"
             }
           ]
@@ -353,7 +319,7 @@
             {
               "code": "Account.guarantor.party",
               "display": "Responsible entity",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.guarantor.party\u0060 maps as Equivalent to R4 \u0060Account.guarantor.party\u0060"
             }
           ]
@@ -365,7 +331,7 @@
             {
               "code": "Account.guarantor.period",
               "display": "Guarantee account during",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.guarantor.period\u0060 maps as Equivalent to R4 \u0060Account.guarantor.period\u0060"
             }
           ]
@@ -389,7 +355,7 @@
             {
               "code": "Account.identifier",
               "display": "Account number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.identifier\u0060 maps as Equivalent to R4 \u0060Account.identifier\u0060"
             }
           ]
@@ -413,8 +379,8 @@
             {
               "code": "Account.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Account.language\u0060 maps as RelatedTo to R4 \u0060Account.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Account.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Account.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -437,7 +403,7 @@
             {
               "code": "Account.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Account.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -449,7 +415,7 @@
             {
               "code": "Account.name",
               "display": "Human-readable label",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.name\u0060 maps as Equivalent to R4 \u0060Account.name\u0060"
             }
           ]
@@ -461,7 +427,7 @@
             {
               "code": "Account.owner",
               "display": "Entity managing the Account",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.owner\u0060 maps as Equivalent to R4 \u0060Account.owner\u0060"
             }
           ]
@@ -518,13 +484,31 @@
         },
         {
           "code": "Account.relatedAccount",
-          "display": "Other associated accounts related to this account",
-          "noMap": true
+          "target": [
+            {
+              "code": "Account",
+              "display": "Tracks balance, charges, for patient or cost center",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Account.relatedAccount\u0060 maps as RelatedTo to R4 \u0060Account\u0060 - Account has change due to type change: R5 relatedAccount BackboneElement has no equivalent or mapped type in R4 Account"
+            }
+          ]
         },
         {
           "code": "Account.relatedAccount.account",
-          "display": "Reference to an associated Account",
-          "noMap": true
+          "target": [
+            {
+              "code": "Account.partOf",
+              "display": "Reference to a parent Account",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Account.relatedAccount.account\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.partOf\u0060"
+            },
+            {
+              "code": "Account.partOf",
+              "display": "Reference to a parent Account",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Account.relatedAccount.account\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Account.partOf\u0060"
+            }
+          ]
         },
         {
           "code": "Account.relatedAccount.extension",
@@ -553,7 +537,7 @@
             {
               "code": "Account.servicePeriod",
               "display": "Transaction window",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.servicePeriod\u0060 maps as Equivalent to R4 \u0060Account.servicePeriod\u0060"
             }
           ]
@@ -565,7 +549,7 @@
             {
               "code": "Account.status",
               "display": "active | inactive | entered-in-error | on-hold | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.status\u0060 maps as Equivalent to R4 \u0060Account.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/account-status|5.0.0 and http://hl7.org/fhir/ValueSet/account-status|4.0.1 (Equivalent)"
             }
           ]
@@ -577,7 +561,7 @@
             {
               "code": "Account.subject",
               "display": "The entity that caused the expenses",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.subject\u0060 maps as Equivalent to R4 \u0060Account.subject\u0060"
             }
           ]
@@ -589,7 +573,7 @@
             {
               "code": "Account.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.text\u0060 maps as Equivalent to R4 \u0060Account.text\u0060"
             }
           ]
@@ -601,7 +585,7 @@
             {
               "code": "Account.type",
               "display": "E.g. patient, expense, depreciation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Account.type\u0060 maps as Equivalent to R4 \u0060Account.type\u0060"
             }
           ]

@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 27 |
+DoesNotExistInTarget | 3 |
+Equivalent | 21 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 9 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -39,7 +41,7 @@ RelatedTo | 27 |
 | DetectedIssue.identifier | DetectedIssue.identifier | Equivalent | R5 `DetectedIssue.identifier` maps as Equivalent to R4 `DetectedIssue.identifier` |
 | DetectedIssue.implicated | DetectedIssue.implicated | Equivalent | R5 `DetectedIssue.implicated` maps as Equivalent to R4 `DetectedIssue.implicated` |
 | DetectedIssue.implicitRules | DetectedIssue.implicitRules | Equivalent | R5 `DetectedIssue.implicitRules` maps as Equivalent to R4 `DetectedIssue.implicitRules` |
-| DetectedIssue.language | DetectedIssue.language | RelatedTo | R5 `DetectedIssue.language` maps as RelatedTo to R4 `DetectedIssue.language` - language changed the binding strength from Required to Preferred |
+| DetectedIssue.language | DetectedIssue.language | SourceIsNarrowerThanTarget | R5 `DetectedIssue.language` maps as SourceIsNarrowerThanTarget to R4 `DetectedIssue.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | DetectedIssue.meta | DetectedIssue.meta | Equivalent | R5 `DetectedIssue.meta` maps as Equivalent to R4 `DetectedIssue.meta` |
 | DetectedIssue.mitigation | DetectedIssue.mitigation | Equivalent | R5 `DetectedIssue.mitigation` maps as Equivalent to R4 `DetectedIssue.mitigation` |
 | DetectedIssue.mitigation.action | DetectedIssue.mitigation.action | Equivalent | R5 `DetectedIssue.mitigation.action` maps as Equivalent to R4 `DetectedIssue.mitigation.action` |
@@ -52,7 +54,7 @@ RelatedTo | 27 |
 | DetectedIssue.modifierExtension | DetectedIssue.modifierExtension | SourceIsBroaderThanTarget | R5 `DetectedIssue.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `DetectedIssue.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | DetectedIssue.reference | DetectedIssue.reference | Equivalent | R5 `DetectedIssue.reference` maps as Equivalent to R4 `DetectedIssue.reference` |
 | DetectedIssue.severity | DetectedIssue.severity | Equivalent | R5 `DetectedIssue.severity` maps as Equivalent to R4 `DetectedIssue.severity` - severity has compatible required binding for code type: http://hl7.org/fhir/ValueSet/detectedissue-severity|5.0.0 and http://hl7.org/fhir/ValueSet/detectedissue-severity|4.0.1 (Equivalent) |
-| DetectedIssue.status | DetectedIssue.status | RelatedTo | R5 `DetectedIssue.status` maps as RelatedTo to R4 `DetectedIssue.status` - (status failed to compare required binding of http://hl7.org/fhir/ValueSet/detectedissue-status|5.0.0 and http://hl7.org/fhir/ValueSet/observation-status|4.0.1) |
-| DetectedIssue.subject | - | DoesNotExistInTarget | R5 `DetectedIssue.subject` does not appear in the target and has no mapping for `DetectedIssue`. |
+| DetectedIssue.status | DetectedIssue.status | RelatedTo | R5 `DetectedIssue.status` maps as RelatedTo to R4 `DetectedIssue.status` - (status failed to compare required binding of http://hl7.org/fhir/ValueSet/detectedissue-status|5.0.0 and http://hl7.org/fhir/ValueSet/observation-status|4.0.1); status has change due to type change: R5 `status` `code` maps as RelatedTo for R4 `status` |
+| DetectedIssue.subject | DetectedIssue.patient | SourceIsBroaderThanTarget | R5 `DetectedIssue.subject` maps as SourceIsBroaderThanTarget to R4 `DetectedIssue.patient` - patient has change due to type change: R5 `subject` `Reference` maps as SourceIsBroaderThanTarget for R4 `patient` |
 | DetectedIssue.text | DetectedIssue.text | Equivalent | R5 `DetectedIssue.text` maps as Equivalent to R4 `DetectedIssue.text` |
 

@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Goal",
       "element": [
         {
-          "code": "Goal.outcome.concept",
-          "target": [
-            {
-              "code": "Goal.outcomeCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Goal.outcome.reference",
-          "target": [
-            {
-              "code": "Goal.outcomeReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Goal.source",
-          "target": [
-            {
-              "code": "Goal.expressedBy",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Goal",
-      "target": "http://hl7.org/fhir/StructureDefinition/Goal",
-      "element": [
-        {
           "code": "Goal",
           "display": "Describes the intended objective(s) for a patient, group or organization",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "Goal.achievementStatus",
               "display": "in-progress | improving | worsening | no-change | achieved | sustaining | not-achieved | no-progress | not-attainable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.achievementStatus\u0060 maps as Equivalent to R4 \u0060Goal.achievementStatus\u0060"
             }
           ]
@@ -91,7 +58,7 @@
             {
               "code": "Goal.addresses",
               "display": "Issues addressed by this goal",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.addresses\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.addresses\u0060 - addresses has change due to type change: R5 \u0060addresses\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060addresses\u0060"
             }
           ]
@@ -103,7 +70,7 @@
             {
               "code": "Goal.category",
               "display": "E.g. Treatment, dietary, behavioral, etc.",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.category\u0060 maps as Equivalent to R4 \u0060Goal.category\u0060"
             }
           ]
@@ -115,7 +82,7 @@
             {
               "code": "Goal.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.contained\u0060 maps as Equivalent to R4 \u0060Goal.contained\u0060"
             }
           ]
@@ -132,7 +99,7 @@
             {
               "code": "Goal.description",
               "display": "Code or text describing goal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.description\u0060 maps as Equivalent to R4 \u0060Goal.description\u0060"
             }
           ]
@@ -144,7 +111,7 @@
             {
               "code": "Goal.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -168,7 +135,7 @@
             {
               "code": "Goal.identifier",
               "display": "External Ids for this goal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.identifier\u0060 maps as Equivalent to R4 \u0060Goal.identifier\u0060"
             }
           ]
@@ -192,8 +159,8 @@
             {
               "code": "Goal.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Goal.language\u0060 maps as RelatedTo to R4 \u0060Goal.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Goal.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Goal.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -204,7 +171,7 @@
             {
               "code": "Goal.lifecycleStatus",
               "display": "proposed | planned | accepted | active | on-hold | completed | cancelled | entered-in-error | rejected",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.lifecycleStatus\u0060 maps as Equivalent to R4 \u0060Goal.lifecycleStatus\u0060 - lifecycleStatus has compatible required binding for code type: http://hl7.org/fhir/ValueSet/goal-status|5.0.0 and http://hl7.org/fhir/ValueSet/goal-status|4.0.1 (Equivalent)"
             }
           ]
@@ -228,7 +195,7 @@
             {
               "code": "Goal.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -240,15 +207,45 @@
             {
               "code": "Goal.note",
               "display": "Comments about the goal",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
         },
         {
           "code": "Goal.outcome",
-          "display": "What result was achieved regarding the goal?",
-          "noMap": true
+          "target": [
+            {
+              "code": "Goal.outcomeCode",
+              "display": "What result was achieved regarding the goal?",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Goal.outcome\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.outcomeCode\u0060 - outcomeCode has change due to type change: R5 outcome CodeableReference has no equivalent or mapped type in R4 outcomeCode"
+            },
+            {
+              "code": "Goal.outcomeReference",
+              "display": "Observation that resulted from goal",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Goal.outcome\u0060 maps as RelatedTo to R4 \u0060Goal.outcomeReference\u0060 - outcomeReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; outcomeReference has change due to type change: R5 outcome CodeableReference has no equivalent or mapped type in R4 outcomeReference"
+            }
+          ]
+        },
+        {
+          "code": "Goal.outcome.concept",
+          "target": [
+            {
+              "code": "Goal.outcomeCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Goal.outcome.reference",
+          "target": [
+            {
+              "code": "Goal.outcomeReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Goal.priority",
@@ -257,15 +254,21 @@
             {
               "code": "Goal.priority",
               "display": "high-priority | medium-priority | low-priority",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.priority\u0060 maps as Equivalent to R4 \u0060Goal.priority\u0060"
             }
           ]
         },
         {
           "code": "Goal.source",
-          "display": "Who\u0027s responsible for creating Goal?",
-          "noMap": true
+          "target": [
+            {
+              "code": "Goal.expressedBy",
+              "display": "Who\u0027s responsible for creating Goal?",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Goal.source\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.expressedBy\u0060 - expressedBy has change due to type change: R5 \u0060source\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060expressedBy\u0060"
+            }
+          ]
         },
         {
           "code": "Goal.start[x]",
@@ -274,7 +277,7 @@
             {
               "code": "Goal.start[x]",
               "display": "When goal pursuit begins",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.start[x]\u0060 maps as Equivalent to R4 \u0060Goal.start[x]\u0060"
             }
           ]
@@ -286,7 +289,7 @@
             {
               "code": "Goal.statusDate",
               "display": "When goal status took effect",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.statusDate\u0060 maps as Equivalent to R4 \u0060Goal.statusDate\u0060"
             }
           ]
@@ -298,7 +301,7 @@
             {
               "code": "Goal.statusReason",
               "display": "Reason for current status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.statusReason\u0060 maps as Equivalent to R4 \u0060Goal.statusReason\u0060"
             }
           ]
@@ -310,7 +313,7 @@
             {
               "code": "Goal.subject",
               "display": "Who this goal is intended for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.subject\u0060 maps as Equivalent to R4 \u0060Goal.subject\u0060"
             }
           ]
@@ -322,7 +325,7 @@
             {
               "code": "Goal.target",
               "display": "Target outcome for the goal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.target\u0060 maps as Equivalent to R4 \u0060Goal.target\u0060"
             }
           ]
@@ -334,7 +337,7 @@
             {
               "code": "Goal.target.detail[x]",
               "display": "The target value to be achieved",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.target.detail[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.detail[x]\u0060 - detail[x] has change due to type change: R5 \u0060detail[x]\u0060 \u0060Ratio\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060detail[x]\u0060"
             }
           ]
@@ -346,7 +349,7 @@
             {
               "code": "Goal.target.due[x]",
               "display": "Reach goal on or before",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.target.due[x]\u0060 maps as Equivalent to R4 \u0060Goal.target.due[x]\u0060"
             }
           ]
@@ -358,7 +361,7 @@
             {
               "code": "Goal.target.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.target.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -370,7 +373,7 @@
             {
               "code": "Goal.target.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.target.id\u0060 maps as Equivalent to R4 \u0060Goal.target.id\u0060"
             }
           ]
@@ -382,7 +385,7 @@
             {
               "code": "Goal.target.measure",
               "display": "The parameter whose value is being tracked",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.target.measure\u0060 maps as Equivalent to R4 \u0060Goal.target.measure\u0060"
             }
           ]
@@ -394,7 +397,7 @@
             {
               "code": "Goal.target.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Goal.target.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Goal.target.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -406,7 +409,7 @@
             {
               "code": "Goal.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Goal.text\u0060 maps as Equivalent to R4 \u0060Goal.text\u0060"
             }
           ]

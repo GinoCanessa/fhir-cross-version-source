@@ -28,38 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
       "element": [
         {
-          "code": "BodyStructure.includedStructure",
-          "target": [
-            {
-              "code": "BodyStructure",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "BodyStructure.includedStructure.qualifier",
-          "target": [
-            {
-              "code": "BodyStructure.locationQualifier",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
-      "target": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
-      "element": [
-        {
           "code": "BodyStructure",
           "display": "Specific and identified anatomical structure",
           "target": [
             {
               "code": "BodyStructure",
               "display": "Specific and identified anatomical structure",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060BodyStructure\u0060 maps as Equivalent to R4 \u0060BodyStructure\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060BodyStructure\u0060 is narrower than R4 \u0060BodyStructure\u0060 and is compatible. \u0060BodyStructure\u0060 is mapped from \u0060BodyStructure\u0060 and \u0060BodyStructure.includedStructure\u0060."
             }
           ]
         },
@@ -70,7 +46,7 @@
             {
               "code": "BodyStructure.active",
               "display": "Whether this record is in active use",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.active\u0060 maps as Equivalent to R4 \u0060BodyStructure.active\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "BodyStructure.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.contained\u0060 maps as Equivalent to R4 \u0060BodyStructure.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "BodyStructure.description",
               "display": "Text description",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BodyStructure.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BodyStructure.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
@@ -111,7 +87,7 @@
             {
               "code": "BodyStructure.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BodyStructure.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BodyStructure.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -135,7 +111,7 @@
             {
               "code": "BodyStructure.identifier",
               "display": "Bodystructure identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.identifier\u0060 maps as Equivalent to R4 \u0060BodyStructure.identifier\u0060"
             }
           ]
@@ -166,8 +142,14 @@
         },
         {
           "code": "BodyStructure.includedStructure",
-          "display": "Included anatomic location(s)",
-          "noMap": true
+          "target": [
+            {
+              "code": "BodyStructure",
+              "display": "Specific and identified anatomical structure",
+              "relationship": "related-to",
+              "comment": "R5 \u0060BodyStructure.includedStructure\u0060 maps as RelatedTo to R4 \u0060BodyStructure\u0060 - BodyStructure has change due to type change: R5 includedStructure BackboneElement has no equivalent or mapped type in R4 BodyStructure"
+            }
+          ]
         },
         {
           "code": "BodyStructure.includedStructure.bodyLandmarkOrientation",
@@ -256,8 +238,14 @@
         },
         {
           "code": "BodyStructure.includedStructure.qualifier",
-          "display": "Code that represents the included structure qualifier",
-          "noMap": true
+          "target": [
+            {
+              "code": "BodyStructure.locationQualifier",
+              "display": "Body site modifier",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060BodyStructure.includedStructure.qualifier\u0060 maps as Equivalent to R4 \u0060BodyStructure.locationQualifier\u0060"
+            }
+          ]
         },
         {
           "code": "BodyStructure.includedStructure.spatialReference",
@@ -276,8 +264,8 @@
             {
               "code": "BodyStructure.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060BodyStructure.language\u0060 maps as RelatedTo to R4 \u0060BodyStructure.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060BodyStructure.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060BodyStructure.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -300,7 +288,7 @@
             {
               "code": "BodyStructure.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BodyStructure.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BodyStructure.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -312,7 +300,7 @@
             {
               "code": "BodyStructure.morphology",
               "display": "Kind of Structure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.morphology\u0060 maps as Equivalent to R4 \u0060BodyStructure.morphology\u0060"
             }
           ]
@@ -324,7 +312,7 @@
             {
               "code": "BodyStructure.patient",
               "display": "Who this is about",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.patient\u0060 maps as Equivalent to R4 \u0060BodyStructure.patient\u0060"
             }
           ]
@@ -336,7 +324,7 @@
             {
               "code": "BodyStructure.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BodyStructure.text\u0060 maps as Equivalent to R4 \u0060BodyStructure.text\u0060"
             }
           ]

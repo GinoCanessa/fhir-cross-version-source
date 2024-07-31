@@ -1,7 +1,23 @@
 {
   "resourceType": "ConceptMap",
   "id": "R5-EvidenceVariable-R4-EvidenceVariable",
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueString": "hl7.fhir.uv.xver.r5-r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/xver/R5-R4/ConceptMap/R5-EvidenceVariable-R4-EvidenceVariable",
+  "version": "0.0.1",
   "name": "R5-EvidenceVariable-R4-EvidenceVariable",
   "title": "Concept map to convert a FHIR R5 EvidenceVariable into FHIR R4",
   "sourceScopeCanonical": "http://hl7.org/fhir/StructureDefinition/EvidenceVariable|5.0.0",
@@ -35,7 +51,7 @@
             {
               "code": "EvidenceVariable.approvalDate",
               "display": "When the evidence variable was approved by publisher",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.approvalDate\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.approvalDate\u0060"
             }
           ]
@@ -47,7 +63,7 @@
             {
               "code": "EvidenceVariable.author",
               "display": "Who authored the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.author\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.author\u0060"
             }
           ]
@@ -176,18 +192,36 @@
         },
         {
           "code": "EvidenceVariable.characteristic.definitionCanonical",
-          "display": "Defines the characteristic (without using type and value) by a Canonical",
-          "noMap": true
+          "target": [
+            {
+              "code": "EvidenceVariable.characteristic.definition[x]",
+              "display": "What code or expression defines members?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EvidenceVariable.characteristic.definitionCanonical\u0060 maps as RelatedTo to R4 \u0060EvidenceVariable.characteristic.definition[x]\u0060 - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 \u0060definitionCanonical\u0060 \u0060canonical\u0060 maps as RelatedTo for R4 \u0060definition[x]\u0060"
+            }
+          ]
         },
         {
           "code": "EvidenceVariable.characteristic.definitionCodeableConcept",
-          "display": "Defines the characteristic (without using type and value) by a CodeableConcept",
-          "noMap": true
+          "target": [
+            {
+              "code": "EvidenceVariable.characteristic.definition[x]",
+              "display": "What code or expression defines members?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EvidenceVariable.characteristic.definitionCodeableConcept\u0060 maps as RelatedTo to R4 \u0060EvidenceVariable.characteristic.definition[x]\u0060 - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1"
+            }
+          ]
         },
         {
           "code": "EvidenceVariable.characteristic.definitionExpression",
-          "display": "Defines the characteristic (without using type and value) by an expression",
-          "noMap": true
+          "target": [
+            {
+              "code": "EvidenceVariable.characteristic.definition[x]",
+              "display": "What code or expression defines members?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EvidenceVariable.characteristic.definitionExpression\u0060 maps as RelatedTo to R4 \u0060EvidenceVariable.characteristic.definition[x]\u0060 - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 \u0060definitionExpression\u0060 \u0060Expression\u0060 maps as RelatedTo for R4 \u0060definition[x]\u0060"
+            }
+          ]
         },
         {
           "code": "EvidenceVariable.characteristic.definitionId",
@@ -196,8 +230,14 @@
         },
         {
           "code": "EvidenceVariable.characteristic.definitionReference",
-          "display": "Defines the characteristic (without using type and value) by a Reference",
-          "noMap": true
+          "target": [
+            {
+              "code": "EvidenceVariable.characteristic.definition[x]",
+              "display": "What code or expression defines members?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060EvidenceVariable.characteristic.definitionReference\u0060 maps as RelatedTo to R4 \u0060EvidenceVariable.characteristic.definition[x]\u0060 - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 \u0060definitionReference\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060definition[x]\u0060"
+            }
+          ]
         },
         {
           "code": "EvidenceVariable.characteristic.description",
@@ -206,7 +246,7 @@
             {
               "code": "EvidenceVariable.characteristic.description",
               "display": "Natural language description of the characteristic",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.characteristic.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.characteristic.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
@@ -223,7 +263,7 @@
             {
               "code": "EvidenceVariable.characteristic.exclude",
               "display": "Whether the characteristic includes or excludes members",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.characteristic.exclude\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.characteristic.exclude\u0060"
             }
           ]
@@ -235,7 +275,7 @@
             {
               "code": "EvidenceVariable.characteristic.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.characteristic.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.characteristic.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -247,7 +287,7 @@
             {
               "code": "EvidenceVariable.characteristic.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.characteristic.id\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.characteristic.id\u0060"
             }
           ]
@@ -269,7 +309,7 @@
             {
               "code": "EvidenceVariable.characteristic.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.characteristic.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.characteristic.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -331,7 +371,7 @@
             {
               "code": "EvidenceVariable.contact",
               "display": "Contact details for the publisher",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.contact\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.contact\u0060"
             }
           ]
@@ -343,7 +383,7 @@
             {
               "code": "EvidenceVariable.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.contained\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.contained\u0060"
             }
           ]
@@ -355,7 +395,7 @@
             {
               "code": "EvidenceVariable.copyright",
               "display": "Use and/or publishing restrictions",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.copyright\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.copyright\u0060"
             }
           ]
@@ -372,7 +412,7 @@
             {
               "code": "EvidenceVariable.date",
               "display": "Date last changed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.date\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.date\u0060"
             }
           ]
@@ -384,7 +424,7 @@
             {
               "code": "EvidenceVariable.description",
               "display": "Natural language description of the evidence variable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.description\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.description\u0060"
             }
           ]
@@ -396,7 +436,7 @@
             {
               "code": "EvidenceVariable.editor",
               "display": "Who edited the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.editor\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.editor\u0060"
             }
           ]
@@ -408,7 +448,7 @@
             {
               "code": "EvidenceVariable.effectivePeriod",
               "display": "When the evidence variable is expected to be used",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.effectivePeriod\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.effectivePeriod\u0060"
             }
           ]
@@ -420,7 +460,7 @@
             {
               "code": "EvidenceVariable.endorser",
               "display": "Who endorsed the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.endorser\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.endorser\u0060"
             }
           ]
@@ -437,7 +477,7 @@
             {
               "code": "EvidenceVariable.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -466,7 +506,7 @@
             {
               "code": "EvidenceVariable.identifier",
               "display": "Additional identifier for the evidence variable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.identifier\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.identifier\u0060"
             }
           ]
@@ -490,8 +530,8 @@
             {
               "code": "EvidenceVariable.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060EvidenceVariable.language\u0060 maps as RelatedTo to R4 \u0060EvidenceVariable.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060EvidenceVariable.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060EvidenceVariable.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -502,7 +542,7 @@
             {
               "code": "EvidenceVariable.lastReviewDate",
               "display": "When the evidence variable was last reviewed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.lastReviewDate\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.lastReviewDate\u0060"
             }
           ]
@@ -526,7 +566,7 @@
             {
               "code": "EvidenceVariable.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -538,7 +578,7 @@
             {
               "code": "EvidenceVariable.name",
               "display": "Name for this evidence variable (computer friendly)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.name\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.name\u0060"
             }
           ]
@@ -550,7 +590,7 @@
             {
               "code": "EvidenceVariable.note",
               "display": "Used for footnotes or explanatory notes",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EvidenceVariable.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -562,7 +602,7 @@
             {
               "code": "EvidenceVariable.publisher",
               "display": "Name of the publisher (organization or individual)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.publisher\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.publisher\u0060"
             }
           ]
@@ -579,8 +619,8 @@
             {
               "code": "EvidenceVariable.relatedArtifact",
               "display": "Additional documentation, citations, etc.",
-              "relationship": "related-to",
-              "comment": "R5 \u0060EvidenceVariable.relatedArtifact\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.relatedArtifact\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060EvidenceVariable.relatedArtifact\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EvidenceVariable.relatedArtifact\u0060 - relatedArtifact has change due to type change: R5 \u0060relatedArtifact\u0060 \u0060RelatedArtifact\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060relatedArtifact\u0060"
             }
           ]
         },
@@ -591,7 +631,7 @@
             {
               "code": "EvidenceVariable.reviewer",
               "display": "Who reviewed the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.reviewer\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.reviewer\u0060"
             }
           ]
@@ -603,7 +643,7 @@
             {
               "code": "EvidenceVariable.shortTitle",
               "display": "Title for use in informal contexts",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.shortTitle\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.shortTitle\u0060"
             }
           ]
@@ -615,7 +655,7 @@
             {
               "code": "EvidenceVariable.status",
               "display": "draft | active | retired | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.status\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent)"
             }
           ]
@@ -627,7 +667,7 @@
             {
               "code": "EvidenceVariable.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.text\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.text\u0060"
             }
           ]
@@ -639,7 +679,7 @@
             {
               "code": "EvidenceVariable.title",
               "display": "Name for this evidence variable (human friendly)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.title\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.title\u0060"
             }
           ]
@@ -651,7 +691,7 @@
             {
               "code": "EvidenceVariable.url",
               "display": "Canonical identifier for this evidence variable, represented as a URI (globally unique)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.url\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.url\u0060"
             }
           ]
@@ -663,7 +703,7 @@
             {
               "code": "EvidenceVariable.useContext",
               "display": "The context that the content is intended to support",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.useContext\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.useContext\u0060"
             }
           ]
@@ -675,7 +715,7 @@
             {
               "code": "EvidenceVariable.version",
               "display": "Business version of the evidence variable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EvidenceVariable.version\u0060 maps as Equivalent to R4 \u0060EvidenceVariable.version\u0060"
             }
           ]

@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/PaymentNotice",
       "element": [
         {
-          "code": "PaymentNotice.reporter",
-          "target": [
-            {
-              "code": "PaymentNotice.provider",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/PaymentNotice",
-      "target": "http://hl7.org/fhir/StructureDefinition/PaymentNotice",
-      "element": [
-        {
           "code": "PaymentNotice",
           "display": "PaymentNotice request",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "PaymentNotice.amount",
               "display": "Monetary amount of the payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.amount\u0060 maps as Equivalent to R4 \u0060PaymentNotice.amount\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "PaymentNotice.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.contained\u0060 maps as Equivalent to R4 \u0060PaymentNotice.contained\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "PaymentNotice.created",
               "display": "Creation date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.created\u0060 maps as Equivalent to R4 \u0060PaymentNotice.created\u0060"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "PaymentNotice.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentNotice.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentNotice.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -121,7 +106,7 @@
             {
               "code": "PaymentNotice.identifier",
               "display": "Business Identifier for the payment noctice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.identifier\u0060 maps as Equivalent to R4 \u0060PaymentNotice.identifier\u0060"
             }
           ]
@@ -145,8 +130,8 @@
             {
               "code": "PaymentNotice.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PaymentNotice.language\u0060 maps as RelatedTo to R4 \u0060PaymentNotice.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PaymentNotice.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PaymentNotice.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -169,7 +154,7 @@
             {
               "code": "PaymentNotice.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentNotice.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentNotice.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -181,7 +166,7 @@
             {
               "code": "PaymentNotice.payee",
               "display": "Party being paid",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.payee\u0060 maps as Equivalent to R4 \u0060PaymentNotice.payee\u0060"
             }
           ]
@@ -205,7 +190,7 @@
             {
               "code": "PaymentNotice.paymentDate",
               "display": "Payment or clearing date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.paymentDate\u0060 maps as Equivalent to R4 \u0060PaymentNotice.paymentDate\u0060"
             }
           ]
@@ -217,7 +202,7 @@
             {
               "code": "PaymentNotice.paymentStatus",
               "display": "Issued or cleared Status of the payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.paymentStatus\u0060 maps as Equivalent to R4 \u0060PaymentNotice.paymentStatus\u0060"
             }
           ]
@@ -229,15 +214,21 @@
             {
               "code": "PaymentNotice.recipient",
               "display": "Party being notified",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.recipient\u0060 maps as Equivalent to R4 \u0060PaymentNotice.recipient\u0060"
             }
           ]
         },
         {
           "code": "PaymentNotice.reporter",
-          "display": "Responsible practitioner",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentNotice.provider",
+              "display": "Responsible practitioner",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentNotice.reporter\u0060 maps as Equivalent to R4 \u0060PaymentNotice.provider\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentNotice.request",
@@ -246,7 +237,7 @@
             {
               "code": "PaymentNotice.request",
               "display": "Request reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.request\u0060 maps as Equivalent to R4 \u0060PaymentNotice.request\u0060"
             }
           ]
@@ -258,7 +249,7 @@
             {
               "code": "PaymentNotice.response",
               "display": "Response reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.response\u0060 maps as Equivalent to R4 \u0060PaymentNotice.response\u0060"
             }
           ]
@@ -270,7 +261,7 @@
             {
               "code": "PaymentNotice.status",
               "display": "active | cancelled | draft | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.status\u0060 maps as Equivalent to R4 \u0060PaymentNotice.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent)"
             }
           ]
@@ -282,7 +273,7 @@
             {
               "code": "PaymentNotice.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentNotice.text\u0060 maps as Equivalent to R4 \u0060PaymentNotice.text\u0060"
             }
           ]

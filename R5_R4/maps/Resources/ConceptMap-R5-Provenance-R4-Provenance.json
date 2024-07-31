@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Provenance",
       "element": [
         {
-          "code": "Provenance.authorization",
-          "target": [
-            {
-              "code": "Provenance.reason",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Provenance",
-      "target": "http://hl7.org/fhir/StructureDefinition/Provenance",
-      "element": [
-        {
           "code": "Provenance",
           "display": "Who, What, When for a set of resources",
           "target": [
@@ -61,8 +46,8 @@
             {
               "code": "Provenance.activity",
               "display": "Activity that occurred",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Provenance.activity\u0060 maps as RelatedTo to R4 \u0060Provenance.activity\u0060 - activity changed the binding strength from Example to Extensible"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Provenance.activity\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.activity\u0060 - activity changed the binding strength from Example to Extensible; activity has change due to type change: R5 \u0060activity\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060activity\u0060"
             }
           ]
         },
@@ -73,7 +58,7 @@
             {
               "code": "Provenance.agent",
               "display": "Actor involved",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.agent\u0060 maps as Equivalent to R4 \u0060Provenance.agent\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "Provenance.agent.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.agent.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.agent.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "Provenance.agent.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.agent.id\u0060 maps as Equivalent to R4 \u0060Provenance.agent.id\u0060"
             }
           ]
@@ -109,7 +94,7 @@
             {
               "code": "Provenance.agent.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.agent.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.agent.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -133,7 +118,7 @@
             {
               "code": "Provenance.agent.role",
               "display": "What the agents role was",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.agent.role\u0060 maps as Equivalent to R4 \u0060Provenance.agent.role\u0060"
             }
           ]
@@ -145,8 +130,8 @@
             {
               "code": "Provenance.agent.type",
               "display": "How the agent participated",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Provenance.agent.type\u0060 maps as RelatedTo to R4 \u0060Provenance.agent.type\u0060 - type changed the binding strength from Example to Extensible"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Provenance.agent.type\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.agent.type\u0060 - type changed the binding strength from Example to Extensible; type has change due to type change: R5 \u0060type\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060type\u0060"
             }
           ]
         },
@@ -157,15 +142,21 @@
             {
               "code": "Provenance.agent.who",
               "display": "Who participated",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.agent.who\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.agent.who\u0060 - who has change due to type change: R5 \u0060who\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060who\u0060"
             }
           ]
         },
         {
           "code": "Provenance.authorization",
-          "display": "Authorization (purposeOfUse) related to the event",
-          "noMap": true
+          "target": [
+            {
+              "code": "Provenance.reason",
+              "display": "Reason the activity is occurring",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Provenance.authorization\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.reason\u0060 - reason changed the binding strength from Example to Extensible; reason has change due to type change: R5 authorization CodeableReference has no equivalent or mapped type in R4 reason"
+            }
+          ]
         },
         {
           "code": "Provenance.basedOn",
@@ -179,7 +170,7 @@
             {
               "code": "Provenance.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.contained\u0060 maps as Equivalent to R4 \u0060Provenance.contained\u0060"
             }
           ]
@@ -196,7 +187,7 @@
             {
               "code": "Provenance.entity",
               "display": "An entity used in this activity",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.entity\u0060 maps as Equivalent to R4 \u0060Provenance.entity\u0060"
             }
           ]
@@ -208,7 +199,7 @@
             {
               "code": "Provenance.entity.agent",
               "display": "Entity is attributed to this agent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.entity.agent\u0060 maps as Equivalent to R4 \u0060Provenance.entity.agent\u0060"
             }
           ]
@@ -220,7 +211,7 @@
             {
               "code": "Provenance.entity.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.entity.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.entity.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -232,7 +223,7 @@
             {
               "code": "Provenance.entity.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.entity.id\u0060 maps as Equivalent to R4 \u0060Provenance.entity.id\u0060"
             }
           ]
@@ -244,7 +235,7 @@
             {
               "code": "Provenance.entity.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.entity.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.entity.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -256,7 +247,7 @@
             {
               "code": "Provenance.entity.role",
               "display": "derivation | revision | quotation | source | removal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.entity.role\u0060 maps as Equivalent to R4 \u0060Provenance.entity.role\u0060 - role has compatible required binding for code type: http://hl7.org/fhir/ValueSet/provenance-entity-role|5.0.0 and http://hl7.org/fhir/ValueSet/provenance-entity-role|4.0.1 (Equivalent)"
             }
           ]
@@ -268,7 +259,7 @@
             {
               "code": "Provenance.entity.what",
               "display": "Identity of entity",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.entity.what\u0060 maps as Equivalent to R4 \u0060Provenance.entity.what\u0060"
             }
           ]
@@ -280,7 +271,7 @@
             {
               "code": "Provenance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -316,8 +307,8 @@
             {
               "code": "Provenance.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Provenance.language\u0060 maps as RelatedTo to R4 \u0060Provenance.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Provenance.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Provenance.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -328,7 +319,7 @@
             {
               "code": "Provenance.location",
               "display": "Where the activity occurred, if relevant",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.location\u0060 maps as Equivalent to R4 \u0060Provenance.location\u0060"
             }
           ]
@@ -352,7 +343,7 @@
             {
               "code": "Provenance.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Provenance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Provenance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -364,7 +355,7 @@
             {
               "code": "Provenance.occurred[x]",
               "display": "When the activity occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.occurred[x]\u0060 maps as Equivalent to R4 \u0060Provenance.occurred[x]\u0060"
             }
           ]
@@ -381,7 +372,7 @@
             {
               "code": "Provenance.policy",
               "display": "Policy or plan the activity was defined by",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.policy\u0060 maps as Equivalent to R4 \u0060Provenance.policy\u0060"
             }
           ]
@@ -417,7 +408,7 @@
             {
               "code": "Provenance.target",
               "display": "Target Reference(s) (usually version specific)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.target\u0060 maps as Equivalent to R4 \u0060Provenance.target\u0060"
             }
           ]
@@ -429,7 +420,7 @@
             {
               "code": "Provenance.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Provenance.text\u0060 maps as Equivalent to R4 \u0060Provenance.text\u0060"
             }
           ]

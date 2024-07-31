@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/GuidanceResponse",
       "element": [
         {
-          "code": "GuidanceResponse.reason.concept",
-          "target": [
-            {
-              "code": "GuidanceResponse.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "GuidanceResponse.reason.reference",
-          "target": [
-            {
-              "code": "GuidanceResponse.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/GuidanceResponse",
-      "target": "http://hl7.org/fhir/StructureDefinition/GuidanceResponse",
-      "element": [
-        {
           "code": "GuidanceResponse",
           "display": "The formal response to a guidance request",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "GuidanceResponse.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.contained\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "GuidanceResponse.encounter",
               "display": "Encounter during which the response was returned",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.encounter\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.encounter\u0060"
             }
           ]
@@ -106,8 +82,8 @@
             {
               "code": "GuidanceResponse.evaluationMessage",
               "display": "Messages resulting from the evaluation of the artifact or artifacts",
-              "relationship": "related-to",
-              "comment": "R5 \u0060GuidanceResponse.evaluationMessage\u0060 maps as RelatedTo to R4 \u0060GuidanceResponse.evaluationMessage\u0060 - evaluationMessage changed from scalar to array (max cardinality from 1 to *)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060GuidanceResponse.evaluationMessage\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060GuidanceResponse.evaluationMessage\u0060 - evaluationMessage changed from scalar to array (max cardinality from 1 to *)"
             }
           ]
         },
@@ -118,7 +94,7 @@
             {
               "code": "GuidanceResponse.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060GuidanceResponse.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060GuidanceResponse.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -142,7 +118,7 @@
             {
               "code": "GuidanceResponse.identifier",
               "display": "Business identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.identifier\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.identifier\u0060"
             }
           ]
@@ -166,8 +142,8 @@
             {
               "code": "GuidanceResponse.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060GuidanceResponse.language\u0060 maps as RelatedTo to R4 \u0060GuidanceResponse.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060GuidanceResponse.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060GuidanceResponse.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -190,7 +166,7 @@
             {
               "code": "GuidanceResponse.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060GuidanceResponse.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060GuidanceResponse.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -202,8 +178,8 @@
             {
               "code": "GuidanceResponse.module[x]",
               "display": "What guidance was requested",
-              "relationship": "related-to",
-              "comment": "R5 \u0060GuidanceResponse.module[x]\u0060 maps as RelatedTo to R4 \u0060GuidanceResponse.module[x]\u0060 - module[x] removed a binding requirement - Example http://hl7.org/fhir/ValueSet/guidance-module-code"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060GuidanceResponse.module[x]\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060GuidanceResponse.module[x]\u0060 - module[x] removed a binding requirement - Example http://hl7.org/fhir/ValueSet/guidance-module-code; module[x] has change due to type change: R5 \u0060module[x]\u0060 \u0060uri\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060module[x]\u0060; module[x] has change due to type change: R5 \u0060module[x]\u0060 \u0060canonical\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060module[x]\u0060; module[x] has change due to type change: R5 \u0060module[x]\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060module[x]\u0060"
             }
           ]
         },
@@ -214,7 +190,7 @@
             {
               "code": "GuidanceResponse.note",
               "display": "Additional notes about the response",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060GuidanceResponse.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060GuidanceResponse.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -226,7 +202,7 @@
             {
               "code": "GuidanceResponse.occurrenceDateTime",
               "display": "When the guidance response was processed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.occurrenceDateTime\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.occurrenceDateTime\u0060"
             }
           ]
@@ -238,7 +214,7 @@
             {
               "code": "GuidanceResponse.outputParameters",
               "display": "The output parameters of the evaluation, if any",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.outputParameters\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.outputParameters\u0060"
             }
           ]
@@ -250,15 +226,45 @@
             {
               "code": "GuidanceResponse.performer",
               "display": "Device returning the guidance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.performer\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.performer\u0060"
             }
           ]
         },
         {
           "code": "GuidanceResponse.reason",
-          "display": "Why guidance is needed",
-          "noMap": true
+          "target": [
+            {
+              "code": "GuidanceResponse.reasonCode",
+              "display": "Why guidance is needed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060GuidanceResponse.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060GuidanceResponse.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "GuidanceResponse.reasonReference",
+              "display": "Why guidance is needed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060GuidanceResponse.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060GuidanceResponse.reasonReference\u0060 - reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "GuidanceResponse.reason.concept",
+          "target": [
+            {
+              "code": "GuidanceResponse.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "GuidanceResponse.reason.reference",
+          "target": [
+            {
+              "code": "GuidanceResponse.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "GuidanceResponse.requestIdentifier",
@@ -267,7 +273,7 @@
             {
               "code": "GuidanceResponse.requestIdentifier",
               "display": "The identifier of the request associated with this response, if any",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.requestIdentifier\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.requestIdentifier\u0060"
             }
           ]
@@ -291,7 +297,7 @@
             {
               "code": "GuidanceResponse.status",
               "display": "success | data-requested | data-required | in-progress | failure | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.status\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/guidance-response-status|5.0.0 and http://hl7.org/fhir/ValueSet/guidance-response-status|4.0.1 (Equivalent)"
             }
           ]
@@ -303,7 +309,7 @@
             {
               "code": "GuidanceResponse.subject",
               "display": "Patient the request was performed for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.subject\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.subject\u0060"
             }
           ]
@@ -315,7 +321,7 @@
             {
               "code": "GuidanceResponse.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060GuidanceResponse.text\u0060 maps as Equivalent to R4 \u0060GuidanceResponse.text\u0060"
             }
           ]

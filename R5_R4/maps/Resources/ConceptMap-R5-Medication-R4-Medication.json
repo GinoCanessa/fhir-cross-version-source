@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Medication",
       "element": [
         {
-          "code": "Medication.doseForm",
-          "target": [
-            {
-              "code": "Medication.form",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Medication.ingredient.item",
-          "target": [
-            {
-              "code": "Medication.ingredient.item[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Medication.ingredient.strength[x]",
-          "target": [
-            {
-              "code": "Medication.ingredient.strength",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Medication",
-      "target": "http://hl7.org/fhir/StructureDefinition/Medication",
-      "element": [
-        {
           "code": "Medication",
           "display": "Definition of a Medication",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "Medication.batch",
               "display": "Details about packaged medications",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.batch\u0060 maps as Equivalent to R4 \u0060Medication.batch\u0060"
             }
           ]
@@ -91,7 +58,7 @@
             {
               "code": "Medication.batch.expirationDate",
               "display": "When batch will expire",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.batch.expirationDate\u0060 maps as Equivalent to R4 \u0060Medication.batch.expirationDate\u0060"
             }
           ]
@@ -103,7 +70,7 @@
             {
               "code": "Medication.batch.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.batch.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.batch.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -115,7 +82,7 @@
             {
               "code": "Medication.batch.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.batch.id\u0060 maps as Equivalent to R4 \u0060Medication.batch.id\u0060"
             }
           ]
@@ -127,7 +94,7 @@
             {
               "code": "Medication.batch.lotNumber",
               "display": "Identifier assigned to batch",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.batch.lotNumber\u0060 maps as Equivalent to R4 \u0060Medication.batch.lotNumber\u0060"
             }
           ]
@@ -139,7 +106,7 @@
             {
               "code": "Medication.batch.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.batch.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.batch.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -151,7 +118,7 @@
             {
               "code": "Medication.code",
               "display": "Codes that identify this medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.code\u0060 maps as Equivalent to R4 \u0060Medication.code\u0060"
             }
           ]
@@ -163,7 +130,7 @@
             {
               "code": "Medication.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.contained\u0060 maps as Equivalent to R4 \u0060Medication.contained\u0060"
             }
           ]
@@ -175,8 +142,14 @@
         },
         {
           "code": "Medication.doseForm",
-          "display": "powder | tablets | capsule \u002B",
-          "noMap": true
+          "target": [
+            {
+              "code": "Medication.form",
+              "display": "powder | tablets | capsule \u002B",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication.doseForm\u0060 maps as Equivalent to R4 \u0060Medication.form\u0060"
+            }
+          ]
         },
         {
           "code": "Medication.extension",
@@ -185,7 +158,7 @@
             {
               "code": "Medication.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -209,7 +182,7 @@
             {
               "code": "Medication.identifier",
               "display": "Business identifier for this medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.identifier\u0060 maps as Equivalent to R4 \u0060Medication.identifier\u0060"
             }
           ]
@@ -233,7 +206,7 @@
             {
               "code": "Medication.ingredient",
               "display": "Active or inactive ingredient",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.ingredient\u0060 maps as Equivalent to R4 \u0060Medication.ingredient\u0060"
             }
           ]
@@ -245,7 +218,7 @@
             {
               "code": "Medication.ingredient.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.ingredient.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.ingredient.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -257,7 +230,7 @@
             {
               "code": "Medication.ingredient.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.ingredient.id\u0060 maps as Equivalent to R4 \u0060Medication.ingredient.id\u0060"
             }
           ]
@@ -269,15 +242,21 @@
             {
               "code": "Medication.ingredient.isActive",
               "display": "Active ingredient indicator",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.ingredient.isActive\u0060 maps as Equivalent to R4 \u0060Medication.ingredient.isActive\u0060"
             }
           ]
         },
         {
           "code": "Medication.ingredient.item",
-          "display": "The ingredient (substance or medication) that the ingredient.strength relates to",
-          "noMap": true
+          "target": [
+            {
+              "code": "Medication.ingredient.item[x]",
+              "display": "The actual ingredient or content",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.item\u0060 maps as RelatedTo to R4 \u0060Medication.ingredient.item[x]\u0060 - item[x] removed a binding requirement - Example http://hl7.org/fhir/ValueSet/medication-codes; item[x] has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 item[x]"
+            }
+          ]
         },
         {
           "code": "Medication.ingredient.modifierExtension",
@@ -286,15 +265,21 @@
             {
               "code": "Medication.ingredient.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.ingredient.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.ingredient.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "Medication.ingredient.strength[x]",
-          "display": "Quantity of ingredient present",
-          "noMap": true
+          "target": [
+            {
+              "code": "Medication.ingredient.strength",
+              "display": "Quantity of ingredient present",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Medication.ingredient.strength[x]\u0060 maps as RelatedTo to R4 \u0060Medication.ingredient.strength\u0060 - strength removed a binding requirement - Preferred http://hl7.org/fhir/ValueSet/medication-ingredientstrength; strength has change due to type change: R5 \u0060strength[x]\u0060 \u0060Ratio\u0060 maps as RelatedTo for R4 \u0060strength\u0060; strength has change due to type change: R5 strength[x] CodeableConcept has no equivalent or mapped type in R4 strength; strength has change due to type change: R5 strength[x] Quantity has no equivalent or mapped type in R4 strength"
+            }
+          ]
         },
         {
           "code": "Medication.language",
@@ -303,15 +288,21 @@
             {
               "code": "Medication.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Medication.language\u0060 maps as RelatedTo to R4 \u0060Medication.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Medication.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Medication.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "Medication.marketingAuthorizationHolder",
-          "display": "Organization that has authorization to market medication",
-          "noMap": true
+          "target": [
+            {
+              "code": "Medication.manufacturer",
+              "display": "Manufacturer of the item",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Medication.marketingAuthorizationHolder\u0060 maps as Equivalent to R4 \u0060Medication.manufacturer\u0060"
+            }
+          ]
         },
         {
           "code": "Medication.meta",
@@ -332,7 +323,7 @@
             {
               "code": "Medication.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Medication.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -344,7 +335,7 @@
             {
               "code": "Medication.status",
               "display": "active | inactive | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.status\u0060 maps as Equivalent to R4 \u0060Medication.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medication-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-status|4.0.1 (Equivalent)"
             }
           ]
@@ -356,15 +347,21 @@
             {
               "code": "Medication.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Medication.text\u0060 maps as Equivalent to R4 \u0060Medication.text\u0060"
             }
           ]
         },
         {
           "code": "Medication.totalVolume",
-          "display": "When the specified product code does not infer a package size, this is the specific amount of drug in the product",
-          "noMap": true
+          "target": [
+            {
+              "code": "Medication.amount",
+              "display": "Amount of drug in package",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Medication.totalVolume\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Medication.amount\u0060 - amount has change due to type change: R5 totalVolume Quantity has no equivalent or mapped type in R4 amount"
+            }
+          ]
         }
       ]
     }

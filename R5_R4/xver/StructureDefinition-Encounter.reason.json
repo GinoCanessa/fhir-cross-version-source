@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:Encounter.reason compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Encounter.reason` does not appear in the target and has no mapping for `Encounter`.",
+  "description": "R5 `Encounter.reason` maps as SourceIsBroaderThanTarget to R4 `Encounter.reasonCode` - reasonCode added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/encounter-reason; reasonCode has change due to type change: R5 reason BackboneElement has no equivalent or mapped type in R4 reasonCode",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Encounter"
+      "expression": "Encounter.reasonCode"
     }
   ],
   "type": "Extension",
@@ -35,7 +35,7 @@
         ],
         "path": "Extension",
         "short": "The list of medical reasons that are expected to be addressed during the episode of care",
-        "definition": "R5 `Encounter.reason` does not appear in the target and has no mapping for `Encounter`.",
+        "definition": "R5 `Encounter.reason` maps as SourceIsBroaderThanTarget to R4 `Encounter.reasonCode` - reasonCode added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/encounter-reason; reasonCode has change due to type change: R5 reason BackboneElement has no equivalent or mapped type in R4 reasonCode",
         "comment": "The reason communicates what medical problem the patient has that should be addressed during the episode of care.  This reason could be patient reported complaint, a clinical indication that was determined in a previous encounter or episode of care, or some planned care such as an immunization recommendation.  In the case where you have a primary reason, but are expecting to also address other problems, you can list the primary reason with a use code of 'Chief Complaint', while the other problems being addressed would have a use code of 'Reason for Visit'.\r\rExamples:\r * pregnancy would use HealthcareService or a coding as the reason\r * patient home monitoring could use Condition as the reason",
         "min": 0,
         "max": "*",
@@ -432,7 +432,7 @@
       {
         "path": "Extension",
         "short": "The list of medical reasons that are expected to be addressed during the episode of care",
-        "definition": "R5 `Encounter.reason` does not appear in the target and has no mapping for `Encounter`.",
+        "definition": "R5 `Encounter.reason` maps as SourceIsBroaderThanTarget to R4 `Encounter.reasonCode` - reasonCode added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/encounter-reason; reasonCode has change due to type change: R5 reason BackboneElement has no equivalent or mapped type in R4 reasonCode",
         "comment": "The reason communicates what medical problem the patient has that should be addressed during the episode of care.  This reason could be patient reported complaint, a clinical indication that was determined in a previous encounter or episode of care, or some planned care such as an immunization recommendation.  In the case where you have a primary reason, but are expecting to also address other problems, you can list the primary reason with a use code of 'Chief Complaint', while the other problems being addressed would have a use code of 'Reason for Visit'.\r\rExamples:\r * pregnancy would use HealthcareService or a coding as the reason\r * patient home monitoring could use Condition as the reason",
         "min": 0,
         "max": "*",
@@ -448,20 +448,22 @@
       },
       {
         "path": "Extension.extension:use.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:use.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "reason-use"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/encounter-reason-use"
+        }
       },
       {
         "path": "Extension.extension:use.url",

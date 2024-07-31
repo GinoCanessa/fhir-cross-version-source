@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 3 |
-Equivalent | 4 |
-RelatedTo | 32 |
+Equivalent | 26 |
+SourceIsBroaderThanTarget | 9 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -31,7 +32,7 @@ RelatedTo | 32 |
 | Invoice.identifier | Invoice.identifier | Equivalent | R5 `Invoice.identifier` maps as Equivalent to R4 `Invoice.identifier` |
 | Invoice.implicitRules | Invoice.implicitRules | Equivalent | R5 `Invoice.implicitRules` maps as Equivalent to R4 `Invoice.implicitRules` |
 | Invoice.issuer | Invoice.issuer | Equivalent | R5 `Invoice.issuer` maps as Equivalent to R4 `Invoice.issuer` |
-| Invoice.language | Invoice.language | RelatedTo | R5 `Invoice.language` maps as RelatedTo to R4 `Invoice.language` - language changed the binding strength from Required to Preferred |
+| Invoice.language | Invoice.language | SourceIsNarrowerThanTarget | R5 `Invoice.language` maps as SourceIsNarrowerThanTarget to R4 `Invoice.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Invoice.lineItem | Invoice.lineItem | Equivalent | R5 `Invoice.lineItem` maps as Equivalent to R4 `Invoice.lineItem` |
 | Invoice.lineItem.chargeItem[x] | Invoice.lineItem.chargeItem[x] | Equivalent | R5 `Invoice.lineItem.chargeItem[x]` maps as Equivalent to R4 `Invoice.lineItem.chargeItem[x]` |
 | Invoice.lineItem.extension | Invoice.lineItem.extension | SourceIsBroaderThanTarget | R5 `Invoice.lineItem.extension` maps as SourceIsBroaderThanTarget to R4 `Invoice.lineItem.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |

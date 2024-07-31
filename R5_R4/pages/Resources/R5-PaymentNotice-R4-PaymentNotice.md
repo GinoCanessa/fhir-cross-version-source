@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 16 |
+Equivalent | 17 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 2 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -28,7 +29,7 @@ RelatedTo | 16 |
 | PaymentNotice.id | PaymentNotice.id | Equivalent | R5 `PaymentNotice.id` maps as Equivalent to R4 `PaymentNotice.id` |
 | PaymentNotice.identifier | PaymentNotice.identifier | Equivalent | R5 `PaymentNotice.identifier` maps as Equivalent to R4 `PaymentNotice.identifier` |
 | PaymentNotice.implicitRules | PaymentNotice.implicitRules | Equivalent | R5 `PaymentNotice.implicitRules` maps as Equivalent to R4 `PaymentNotice.implicitRules` |
-| PaymentNotice.language | PaymentNotice.language | RelatedTo | R5 `PaymentNotice.language` maps as RelatedTo to R4 `PaymentNotice.language` - language changed the binding strength from Required to Preferred |
+| PaymentNotice.language | PaymentNotice.language | SourceIsNarrowerThanTarget | R5 `PaymentNotice.language` maps as SourceIsNarrowerThanTarget to R4 `PaymentNotice.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | PaymentNotice.meta | PaymentNotice.meta | Equivalent | R5 `PaymentNotice.meta` maps as Equivalent to R4 `PaymentNotice.meta` |
 | PaymentNotice.modifierExtension | PaymentNotice.modifierExtension | SourceIsBroaderThanTarget | R5 `PaymentNotice.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `PaymentNotice.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | PaymentNotice.payee | PaymentNotice.payee | Equivalent | R5 `PaymentNotice.payee` maps as Equivalent to R4 `PaymentNotice.payee` |
@@ -36,7 +37,7 @@ RelatedTo | 16 |
 | PaymentNotice.paymentDate | PaymentNotice.paymentDate | Equivalent | R5 `PaymentNotice.paymentDate` maps as Equivalent to R4 `PaymentNotice.paymentDate` |
 | PaymentNotice.paymentStatus | PaymentNotice.paymentStatus | Equivalent | R5 `PaymentNotice.paymentStatus` maps as Equivalent to R4 `PaymentNotice.paymentStatus` |
 | PaymentNotice.recipient | PaymentNotice.recipient | Equivalent | R5 `PaymentNotice.recipient` maps as Equivalent to R4 `PaymentNotice.recipient` |
-| PaymentNotice.reporter | - | DoesNotExistInTarget | R5 `PaymentNotice.reporter` does not appear in the target and has no mapping for `PaymentNotice`. |
+| PaymentNotice.reporter | PaymentNotice.provider | Equivalent | R5 `PaymentNotice.reporter` maps as Equivalent to R4 `PaymentNotice.provider` |
 | PaymentNotice.request | PaymentNotice.request | Equivalent | R5 `PaymentNotice.request` maps as Equivalent to R4 `PaymentNotice.request` |
 | PaymentNotice.response | PaymentNotice.response | Equivalent | R5 `PaymentNotice.response` maps as Equivalent to R4 `PaymentNotice.response` |
 | PaymentNotice.status | PaymentNotice.status | Equivalent | R5 `PaymentNotice.status` maps as Equivalent to R4 `PaymentNotice.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent) |

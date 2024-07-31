@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
       "element": [
         {
-          "code": "ServiceRequest.location.concept",
-          "target": [
-            {
-              "code": "ServiceRequest.locationCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ServiceRequest.reason.concept",
-          "target": [
-            {
-              "code": "ServiceRequest.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ServiceRequest.reason.reference",
-          "target": [
-            {
-              "code": "ServiceRequest.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-      "target": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-      "element": [
-        {
           "code": "ServiceRequest",
           "display": "A request for a service to be performed",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "ServiceRequest.asNeeded[x]",
               "display": "Preconditions for service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.asNeeded[x]\u0060 maps as Equivalent to R4 \u0060ServiceRequest.asNeeded[x]\u0060"
             }
           ]
@@ -91,7 +58,7 @@
             {
               "code": "ServiceRequest.authoredOn",
               "display": "Date request signed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.authoredOn\u0060 maps as Equivalent to R4 \u0060ServiceRequest.authoredOn\u0060"
             }
           ]
@@ -103,7 +70,7 @@
             {
               "code": "ServiceRequest.basedOn",
               "display": "What request fulfills",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.basedOn\u0060 maps as Equivalent to R4 \u0060ServiceRequest.basedOn\u0060"
             }
           ]
@@ -115,7 +82,7 @@
             {
               "code": "ServiceRequest.bodySite",
               "display": "Location on Body",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.bodySite\u0060 maps as Equivalent to R4 \u0060ServiceRequest.bodySite\u0060"
             }
           ]
@@ -132,7 +99,7 @@
             {
               "code": "ServiceRequest.category",
               "display": "Classification of service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.category\u0060 maps as Equivalent to R4 \u0060ServiceRequest.category\u0060"
             }
           ]
@@ -144,7 +111,7 @@
             {
               "code": "ServiceRequest.code",
               "display": "What is being requested/ordered",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.code\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.code\u0060 - code has change due to type change: R5 code CodeableReference has no equivalent or mapped type in R4 code"
             }
           ]
@@ -156,7 +123,7 @@
             {
               "code": "ServiceRequest.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.contained\u0060 maps as Equivalent to R4 \u0060ServiceRequest.contained\u0060"
             }
           ]
@@ -168,7 +135,7 @@
             {
               "code": "ServiceRequest.doNotPerform",
               "display": "True if service/procedure should not be performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.doNotPerform\u0060 maps as Equivalent to R4 \u0060ServiceRequest.doNotPerform\u0060"
             }
           ]
@@ -180,7 +147,7 @@
             {
               "code": "ServiceRequest.encounter",
               "display": "Encounter in which the request was created",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.encounter\u0060 maps as Equivalent to R4 \u0060ServiceRequest.encounter\u0060"
             }
           ]
@@ -192,7 +159,7 @@
             {
               "code": "ServiceRequest.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -221,7 +188,7 @@
             {
               "code": "ServiceRequest.identifier",
               "display": "Identifiers assigned to this order",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.identifier\u0060 maps as Equivalent to R4 \u0060ServiceRequest.identifier\u0060"
             }
           ]
@@ -245,7 +212,7 @@
             {
               "code": "ServiceRequest.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060ServiceRequest.instantiatesCanonical\u0060"
             }
           ]
@@ -257,7 +224,7 @@
             {
               "code": "ServiceRequest.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.instantiatesUri\u0060 maps as Equivalent to R4 \u0060ServiceRequest.instantiatesUri\u0060"
             }
           ]
@@ -269,7 +236,7 @@
             {
               "code": "ServiceRequest.insurance",
               "display": "Associated insurance coverage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.insurance\u0060 maps as Equivalent to R4 \u0060ServiceRequest.insurance\u0060"
             }
           ]
@@ -281,7 +248,7 @@
             {
               "code": "ServiceRequest.intent",
               "display": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.intent\u0060 maps as Equivalent to R4 \u0060ServiceRequest.intent\u0060 - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-intent|5.0.0 and http://hl7.org/fhir/ValueSet/request-intent|4.0.1 (Equivalent)"
             }
           ]
@@ -293,15 +260,36 @@
             {
               "code": "ServiceRequest.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ServiceRequest.language\u0060 maps as RelatedTo to R4 \u0060ServiceRequest.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ServiceRequest.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ServiceRequest.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "ServiceRequest.location",
-          "display": "Requested location",
-          "noMap": true
+          "target": [
+            {
+              "code": "ServiceRequest.locationCode",
+              "display": "Requested location",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ServiceRequest.location\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.locationCode\u0060 - locationCode has change due to type change: R5 location CodeableReference has no equivalent or mapped type in R4 locationCode"
+            },
+            {
+              "code": "ServiceRequest.locationReference",
+              "display": "Requested location",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ServiceRequest.location\u0060 maps as RelatedTo to R4 \u0060ServiceRequest.locationReference\u0060 - locationReference removed a binding requirement - Example http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType; locationReference has change due to type change: R5 location CodeableReference has no equivalent or mapped type in R4 locationReference"
+            }
+          ]
+        },
+        {
+          "code": "ServiceRequest.location.concept",
+          "target": [
+            {
+              "code": "ServiceRequest.locationCode",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ServiceRequest.meta",
@@ -322,7 +310,7 @@
             {
               "code": "ServiceRequest.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -334,7 +322,7 @@
             {
               "code": "ServiceRequest.note",
               "display": "Comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -346,7 +334,7 @@
             {
               "code": "ServiceRequest.occurrence[x]",
               "display": "When service should occur",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.occurrence[x]\u0060 maps as Equivalent to R4 \u0060ServiceRequest.occurrence[x]\u0060"
             }
           ]
@@ -358,8 +346,8 @@
             {
               "code": "ServiceRequest.orderDetail",
               "display": "Additional order information",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ServiceRequest.orderDetail\u0060 maps as RelatedTo to R4 \u0060ServiceRequest.orderDetail\u0060 - orderDetail added a binding requirement - Example http://hl7.org/fhir/ValueSet/servicerequest-orderdetail; orderDetail has change due to type change: R5 orderDetail BackboneElement has no equivalent or mapped type in R4 orderDetail"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ServiceRequest.orderDetail\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.orderDetail\u0060 - orderDetail added a binding requirement - Example http://hl7.org/fhir/ValueSet/servicerequest-orderdetail; orderDetail has change due to type change: R5 orderDetail BackboneElement has no equivalent or mapped type in R4 orderDetail"
             }
           ]
         },
@@ -420,8 +408,8 @@
             {
               "code": "ServiceRequest.patientInstruction",
               "display": "Patient or consumer-oriented instructions",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ServiceRequest.patientInstruction\u0060 maps as RelatedTo to R4 \u0060ServiceRequest.patientInstruction\u0060 - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ServiceRequest.patientInstruction\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.patientInstruction\u0060 - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction"
             }
           ]
         },
@@ -452,7 +440,7 @@
             {
               "code": "ServiceRequest.performer",
               "display": "Requested performer",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.performer\u0060 maps as Equivalent to R4 \u0060ServiceRequest.performer\u0060"
             }
           ]
@@ -464,7 +452,7 @@
             {
               "code": "ServiceRequest.performerType",
               "display": "Performer role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.performerType\u0060 maps as Equivalent to R4 \u0060ServiceRequest.performerType\u0060"
             }
           ]
@@ -476,7 +464,7 @@
             {
               "code": "ServiceRequest.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.priority\u0060 maps as Equivalent to R4 \u0060ServiceRequest.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
@@ -488,15 +476,45 @@
             {
               "code": "ServiceRequest.quantity[x]",
               "display": "Service amount",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.quantity[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.quantity[x]\u0060 - quantity[x] has change due to type change: R5 \u0060quantity[x]\u0060 \u0060Ratio\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060quantity[x]\u0060"
             }
           ]
         },
         {
           "code": "ServiceRequest.reason",
-          "display": "Explanation/Justification for procedure or service",
-          "noMap": true
+          "target": [
+            {
+              "code": "ServiceRequest.reasonCode",
+              "display": "Explanation/Justification for procedure or service",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ServiceRequest.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "ServiceRequest.reasonReference",
+              "display": "Explanation/Justification for service or service",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ServiceRequest.reason\u0060 maps as RelatedTo to R4 \u0060ServiceRequest.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/procedure-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "ServiceRequest.reason.concept",
+          "target": [
+            {
+              "code": "ServiceRequest.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ServiceRequest.reason.reference",
+          "target": [
+            {
+              "code": "ServiceRequest.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ServiceRequest.relevantHistory",
@@ -505,7 +523,7 @@
             {
               "code": "ServiceRequest.relevantHistory",
               "display": "Request provenance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.relevantHistory\u0060 maps as Equivalent to R4 \u0060ServiceRequest.relevantHistory\u0060"
             }
           ]
@@ -517,7 +535,7 @@
             {
               "code": "ServiceRequest.replaces",
               "display": "What request replaces",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.replaces\u0060 maps as Equivalent to R4 \u0060ServiceRequest.replaces\u0060"
             }
           ]
@@ -529,7 +547,7 @@
             {
               "code": "ServiceRequest.requester",
               "display": "Who/what is requesting service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.requester\u0060 maps as Equivalent to R4 \u0060ServiceRequest.requester\u0060"
             }
           ]
@@ -541,7 +559,7 @@
             {
               "code": "ServiceRequest.requisition",
               "display": "Composite Request ID",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.requisition\u0060 maps as Equivalent to R4 \u0060ServiceRequest.requisition\u0060"
             }
           ]
@@ -553,7 +571,7 @@
             {
               "code": "ServiceRequest.specimen",
               "display": "Procedure Samples",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.specimen\u0060 maps as Equivalent to R4 \u0060ServiceRequest.specimen\u0060"
             }
           ]
@@ -565,7 +583,7 @@
             {
               "code": "ServiceRequest.status",
               "display": "draft | active | on-hold | revoked | completed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.status\u0060 maps as Equivalent to R4 \u0060ServiceRequest.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-status|5.0.0 and http://hl7.org/fhir/ValueSet/request-status|4.0.1 (Equivalent)"
             }
           ]
@@ -577,7 +595,7 @@
             {
               "code": "ServiceRequest.subject",
               "display": "Individual or Entity the service is ordered for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.subject\u0060 maps as Equivalent to R4 \u0060ServiceRequest.subject\u0060"
             }
           ]
@@ -589,7 +607,7 @@
             {
               "code": "ServiceRequest.supportingInfo",
               "display": "Additional clinical information",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ServiceRequest.supportingInfo\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ServiceRequest.supportingInfo\u0060 - supportingInfo has change due to type change: R5 supportingInfo CodeableReference has no equivalent or mapped type in R4 supportingInfo"
             }
           ]
@@ -601,7 +619,7 @@
             {
               "code": "ServiceRequest.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ServiceRequest.text\u0060 maps as Equivalent to R4 \u0060ServiceRequest.text\u0060"
             }
           ]

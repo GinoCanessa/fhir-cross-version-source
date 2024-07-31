@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Substance",
       "element": [
         {
-          "code": "Substance.expiry",
-          "target": [
-            {
-              "code": "Substance.instance.expiry",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Substance.quantity",
-          "target": [
-            {
-              "code": "Substance.instance.quantity",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Substance",
-      "target": "http://hl7.org/fhir/StructureDefinition/Substance",
-      "element": [
-        {
           "code": "Substance",
           "display": "A homogeneous material with a definite composition",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "Substance.category",
               "display": "What class/type of substance this is",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.category\u0060 maps as Equivalent to R4 \u0060Substance.category\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "Substance.code",
               "display": "What substance this is",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.code\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.code\u0060 - code has change due to type change: R5 code CodeableReference has no equivalent or mapped type in R4 code"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "Substance.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.contained\u0060 maps as Equivalent to R4 \u0060Substance.contained\u0060"
             }
           ]
@@ -106,15 +82,21 @@
             {
               "code": "Substance.description",
               "display": "Textual description of the substance, comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
         },
         {
           "code": "Substance.expiry",
-          "display": "When no longer valid to use",
-          "noMap": true
+          "target": [
+            {
+              "code": "Substance.instance.expiry",
+              "display": "When no longer valid to use",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Substance.expiry\u0060 maps as Equivalent to R4 \u0060Substance.instance.expiry\u0060"
+            }
+          ]
         },
         {
           "code": "Substance.extension",
@@ -123,7 +105,7 @@
             {
               "code": "Substance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -147,7 +129,7 @@
             {
               "code": "Substance.identifier",
               "display": "Unique identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.identifier\u0060 maps as Equivalent to R4 \u0060Substance.identifier\u0060"
             }
           ]
@@ -171,7 +153,7 @@
             {
               "code": "Substance.ingredient",
               "display": "Composition information about the substance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.ingredient\u0060 maps as Equivalent to R4 \u0060Substance.ingredient\u0060"
             }
           ]
@@ -183,7 +165,7 @@
             {
               "code": "Substance.ingredient.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.ingredient.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.ingredient.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -195,7 +177,7 @@
             {
               "code": "Substance.ingredient.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.ingredient.id\u0060 maps as Equivalent to R4 \u0060Substance.ingredient.id\u0060"
             }
           ]
@@ -207,7 +189,7 @@
             {
               "code": "Substance.ingredient.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.ingredient.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.ingredient.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -219,7 +201,7 @@
             {
               "code": "Substance.ingredient.quantity",
               "display": "Optional amount (concentration)",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.ingredient.quantity\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.ingredient.quantity\u0060 - quantity has change due to type change: R5 \u0060quantity\u0060 \u0060Ratio\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060quantity\u0060"
             }
           ]
@@ -231,7 +213,7 @@
             {
               "code": "Substance.ingredient.substance[x]",
               "display": "A component of the substance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.ingredient.substance[x]\u0060 maps as Equivalent to R4 \u0060Substance.ingredient.substance[x]\u0060"
             }
           ]
@@ -255,8 +237,8 @@
             {
               "code": "Substance.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Substance.language\u0060 maps as RelatedTo to R4 \u0060Substance.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Substance.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Substance.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -279,15 +261,21 @@
             {
               "code": "Substance.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Substance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Substance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "Substance.quantity",
-          "display": "Amount of substance in the package",
-          "noMap": true
+          "target": [
+            {
+              "code": "Substance.instance.quantity",
+              "display": "Amount of substance in the package",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Substance.quantity\u0060 maps as Equivalent to R4 \u0060Substance.instance.quantity\u0060"
+            }
+          ]
         },
         {
           "code": "Substance.status",
@@ -296,7 +284,7 @@
             {
               "code": "Substance.status",
               "display": "active | inactive | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.status\u0060 maps as Equivalent to R4 \u0060Substance.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/substance-status|5.0.0 and http://hl7.org/fhir/ValueSet/substance-status|4.0.1 (Equivalent)"
             }
           ]
@@ -308,7 +296,7 @@
             {
               "code": "Substance.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Substance.text\u0060 maps as Equivalent to R4 \u0060Substance.text\u0060"
             }
           ]

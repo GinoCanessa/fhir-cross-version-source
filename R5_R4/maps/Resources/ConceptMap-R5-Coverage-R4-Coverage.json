@@ -28,29 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Coverage",
       "element": [
         {
-          "code": "Coverage.insurer",
-          "target": [
-            {
-              "code": "Coverage.payor",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Coverage",
-      "target": "http://hl7.org/fhir/StructureDefinition/Coverage",
-      "element": [
-        {
           "code": "Coverage",
           "display": "Insurance or medical plan or a payment agreement",
           "target": [
             {
               "code": "Coverage",
               "display": "Insurance or medical plan or a payment agreement",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060Coverage\u0060 maps as Equivalent to R4 \u0060Coverage\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Coverage\u0060 is narrower than R4 \u0060Coverage\u0060 and is compatible. \u0060Coverage\u0060 is mapped from \u0060Coverage\u0060 and \u0060Coverage.subscriberId\u0060."
             }
           ]
         },
@@ -61,7 +46,7 @@
             {
               "code": "Coverage.beneficiary",
               "display": "Plan beneficiary",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.beneficiary\u0060 maps as Equivalent to R4 \u0060Coverage.beneficiary\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "Coverage.class",
               "display": "Additional coverage classifications",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.class\u0060 maps as Equivalent to R4 \u0060Coverage.class\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "Coverage.class.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.class.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.class.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "Coverage.class.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.class.id\u0060 maps as Equivalent to R4 \u0060Coverage.class.id\u0060"
             }
           ]
@@ -109,7 +94,7 @@
             {
               "code": "Coverage.class.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.class.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.class.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -121,7 +106,7 @@
             {
               "code": "Coverage.class.name",
               "display": "Human readable description of the type and value",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.class.name\u0060 maps as Equivalent to R4 \u0060Coverage.class.name\u0060"
             }
           ]
@@ -133,7 +118,7 @@
             {
               "code": "Coverage.class.type",
               "display": "Type of class such as \u0027group\u0027 or \u0027plan\u0027",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.class.type\u0060 maps as Equivalent to R4 \u0060Coverage.class.type\u0060"
             }
           ]
@@ -145,7 +130,7 @@
             {
               "code": "Coverage.class.value",
               "display": "Value associated with the type",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.class.value\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.class.value\u0060 - value has change due to type change: R5 value Identifier has no equivalent or mapped type in R4 value"
             }
           ]
@@ -157,7 +142,7 @@
             {
               "code": "Coverage.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.contained\u0060 maps as Equivalent to R4 \u0060Coverage.contained\u0060"
             }
           ]
@@ -169,7 +154,7 @@
             {
               "code": "Coverage.contract",
               "display": "Contract details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.contract\u0060 maps as Equivalent to R4 \u0060Coverage.contract\u0060"
             }
           ]
@@ -181,7 +166,7 @@
             {
               "code": "Coverage.costToBeneficiary",
               "display": "Patient payments for services/products",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary\u0060"
             }
           ]
@@ -198,7 +183,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception",
               "display": "Exceptions for patient payments",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.exception\u0060"
             }
           ]
@@ -210,7 +195,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.costToBeneficiary.exception.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -222,7 +207,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception.id\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.exception.id\u0060"
             }
           ]
@@ -234,7 +219,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.costToBeneficiary.exception.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -246,7 +231,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception.period",
               "display": "The effective period of the exception",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception.period\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.exception.period\u0060"
             }
           ]
@@ -258,7 +243,7 @@
             {
               "code": "Coverage.costToBeneficiary.exception.type",
               "display": "Exception category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.exception.type\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.exception.type\u0060"
             }
           ]
@@ -270,7 +255,7 @@
             {
               "code": "Coverage.costToBeneficiary.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.costToBeneficiary.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.costToBeneficiary.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -282,7 +267,7 @@
             {
               "code": "Coverage.costToBeneficiary.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.id\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.id\u0060"
             }
           ]
@@ -294,7 +279,7 @@
             {
               "code": "Coverage.costToBeneficiary.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.costToBeneficiary.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.costToBeneficiary.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -316,7 +301,7 @@
             {
               "code": "Coverage.costToBeneficiary.type",
               "display": "Cost category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.costToBeneficiary.type\u0060 maps as Equivalent to R4 \u0060Coverage.costToBeneficiary.type\u0060"
             }
           ]
@@ -345,7 +330,7 @@
             {
               "code": "Coverage.dependent",
               "display": "Dependent number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.dependent\u0060 maps as Equivalent to R4 \u0060Coverage.dependent\u0060"
             }
           ]
@@ -357,7 +342,7 @@
             {
               "code": "Coverage.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -381,7 +366,7 @@
             {
               "code": "Coverage.identifier",
               "display": "Business Identifier for the coverage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.identifier\u0060 maps as Equivalent to R4 \u0060Coverage.identifier\u0060"
             }
           ]
@@ -405,8 +390,14 @@
         },
         {
           "code": "Coverage.insurer",
-          "display": "Issuer of the policy",
-          "noMap": true
+          "target": [
+            {
+              "code": "Coverage.payor",
+              "display": "Issuer of the policy",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Coverage.insurer\u0060 maps as RelatedTo to R4 \u0060Coverage.payor\u0060 - payor made the element mandatory; payor increased the minimum cardinality from 0 to 1; payor changed from scalar to array (max cardinality from 1 to *); payor has change due to type change: R5 \u0060insurer\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060payor\u0060"
+            }
+          ]
         },
         {
           "code": "Coverage.kind",
@@ -420,8 +411,8 @@
             {
               "code": "Coverage.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Coverage.language\u0060 maps as RelatedTo to R4 \u0060Coverage.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Coverage.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Coverage.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -444,7 +435,7 @@
             {
               "code": "Coverage.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Coverage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -456,7 +447,7 @@
             {
               "code": "Coverage.network",
               "display": "Insurer network",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.network\u0060 maps as Equivalent to R4 \u0060Coverage.network\u0060"
             }
           ]
@@ -468,7 +459,7 @@
             {
               "code": "Coverage.order",
               "display": "Relative order of the coverage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.order\u0060 maps as Equivalent to R4 \u0060Coverage.order\u0060"
             }
           ]
@@ -510,7 +501,7 @@
             {
               "code": "Coverage.period",
               "display": "Coverage start and end dates",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.period\u0060 maps as Equivalent to R4 \u0060Coverage.period\u0060"
             }
           ]
@@ -522,7 +513,7 @@
             {
               "code": "Coverage.policyHolder",
               "display": "Owner of the policy",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.policyHolder\u0060 maps as Equivalent to R4 \u0060Coverage.policyHolder\u0060"
             }
           ]
@@ -534,7 +525,7 @@
             {
               "code": "Coverage.relationship",
               "display": "Beneficiary relationship to the subscriber",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.relationship\u0060 maps as Equivalent to R4 \u0060Coverage.relationship\u0060"
             }
           ]
@@ -546,7 +537,7 @@
             {
               "code": "Coverage.status",
               "display": "active | cancelled | draft | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.status\u0060 maps as Equivalent to R4 \u0060Coverage.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent)"
             }
           ]
@@ -558,7 +549,7 @@
             {
               "code": "Coverage.subrogation",
               "display": "Reimbursement to insurer",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.subrogation\u0060 maps as Equivalent to R4 \u0060Coverage.subrogation\u0060"
             }
           ]
@@ -570,20 +561,19 @@
             {
               "code": "Coverage.subscriber",
               "display": "Subscriber to the policy",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.subscriber\u0060 maps as Equivalent to R4 \u0060Coverage.subscriber\u0060"
             }
           ]
         },
         {
           "code": "Coverage.subscriberId",
-          "display": "ID assigned to the subscriber",
           "target": [
             {
-              "code": "Coverage.subscriberId",
-              "display": "ID assigned to the subscriber",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Coverage.subscriberId\u0060 maps as RelatedTo to R4 \u0060Coverage.subscriberId\u0060 - subscriberId changed from array to scalar (max cardinality from * to 1); subscriberId has change due to type change: R5 subscriberId Identifier has no equivalent or mapped type in R4 subscriberId"
+              "code": "Coverage",
+              "display": "Insurance or medical plan or a payment agreement",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Coverage.subscriberId\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Coverage\u0060 - Coverage has change due to type change: R5 subscriberId Identifier has no equivalent or mapped type in R4 Coverage"
             }
           ]
         },
@@ -594,7 +584,7 @@
             {
               "code": "Coverage.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.text\u0060 maps as Equivalent to R4 \u0060Coverage.text\u0060"
             }
           ]
@@ -606,7 +596,7 @@
             {
               "code": "Coverage.type",
               "display": "Coverage category such as medical or accident",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Coverage.type\u0060 maps as Equivalent to R4 \u0060Coverage.type\u0060"
             }
           ]

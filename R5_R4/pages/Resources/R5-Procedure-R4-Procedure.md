@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 8 |
-Equivalent | 4 |
-RelatedTo | 37 |
+DoesNotExistInTarget | 5 |
+Equivalent | 29 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -23,7 +25,7 @@ RelatedTo | 37 |
 | Procedure | Procedure | Equivalent | R5 `Procedure` maps as Equivalent to R4 `Procedure` |
 | Procedure.basedOn | Procedure.basedOn | Equivalent | R5 `Procedure.basedOn` maps as Equivalent to R4 `Procedure.basedOn` |
 | Procedure.bodySite | Procedure.bodySite | Equivalent | R5 `Procedure.bodySite` maps as Equivalent to R4 `Procedure.bodySite` |
-| Procedure.category | Procedure.category | RelatedTo | R5 `Procedure.category` maps as RelatedTo to R4 `Procedure.category` - category changed from array to scalar (max cardinality from * to 1) |
+| Procedure.category | Procedure.category | SourceIsBroaderThanTarget | R5 `Procedure.category` maps as SourceIsBroaderThanTarget to R4 `Procedure.category` - category changed from array to scalar (max cardinality from * to 1) |
 | Procedure.code | Procedure.code | Equivalent | R5 `Procedure.code` maps as Equivalent to R4 `Procedure.code` |
 | Procedure.complication | Procedure.complication | SourceIsBroaderThanTarget | R5 `Procedure.complication` maps as SourceIsBroaderThanTarget to R4 `Procedure.complication` - complication has change due to type change: R5 complication CodeableReference has no equivalent or mapped type in R4 complication |
 | Procedure.contained | Procedure.contained | Equivalent | R5 `Procedure.contained` maps as Equivalent to R4 `Procedure.contained` |
@@ -42,12 +44,12 @@ RelatedTo | 37 |
 | Procedure.implicitRules | Procedure.implicitRules | Equivalent | R5 `Procedure.implicitRules` maps as Equivalent to R4 `Procedure.implicitRules` |
 | Procedure.instantiatesCanonical | Procedure.instantiatesCanonical | Equivalent | R5 `Procedure.instantiatesCanonical` maps as Equivalent to R4 `Procedure.instantiatesCanonical` |
 | Procedure.instantiatesUri | Procedure.instantiatesUri | Equivalent | R5 `Procedure.instantiatesUri` maps as Equivalent to R4 `Procedure.instantiatesUri` |
-| Procedure.language | Procedure.language | RelatedTo | R5 `Procedure.language` maps as RelatedTo to R4 `Procedure.language` - language changed the binding strength from Required to Preferred |
+| Procedure.language | Procedure.language | SourceIsNarrowerThanTarget | R5 `Procedure.language` maps as SourceIsNarrowerThanTarget to R4 `Procedure.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Procedure.location | Procedure.location | Equivalent | R5 `Procedure.location` maps as Equivalent to R4 `Procedure.location` |
 | Procedure.meta | Procedure.meta | Equivalent | R5 `Procedure.meta` maps as Equivalent to R4 `Procedure.meta` |
 | Procedure.modifierExtension | Procedure.modifierExtension | SourceIsBroaderThanTarget | R5 `Procedure.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Procedure.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Procedure.note | Procedure.note | SourceIsBroaderThanTarget | R5 `Procedure.note` maps as SourceIsBroaderThanTarget to R4 `Procedure.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
-| Procedure.occurrence[x] | - | DoesNotExistInTarget | R5 `Procedure.occurrence[x]` does not appear in the target and has no mapping for `Procedure`. |
+| Procedure.occurrence[x] | Procedure.performed[x] | SourceIsBroaderThanTarget | R5 `Procedure.occurrence[x]` maps as SourceIsBroaderThanTarget to R4 `Procedure.performed[x]` - performed[x] has change due to type change: R5 occurrence[x] Timing has no equivalent or mapped type in R4 performed[x] |
 | Procedure.outcome | Procedure.outcome | Equivalent | R5 `Procedure.outcome` maps as Equivalent to R4 `Procedure.outcome` |
 | Procedure.partOf | Procedure.partOf | Equivalent | R5 `Procedure.partOf` maps as Equivalent to R4 `Procedure.partOf` |
 | Procedure.performer | Procedure.performer | Equivalent | R5 `Procedure.performer` maps as Equivalent to R4 `Procedure.performer` |
@@ -58,7 +60,8 @@ RelatedTo | 37 |
 | Procedure.performer.modifierExtension | Procedure.performer.modifierExtension | SourceIsBroaderThanTarget | R5 `Procedure.performer.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Procedure.performer.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Procedure.performer.onBehalfOf | Procedure.performer.onBehalfOf | Equivalent | R5 `Procedure.performer.onBehalfOf` maps as Equivalent to R4 `Procedure.performer.onBehalfOf` |
 | Procedure.performer.period | - | DoesNotExistInTarget | R5 `Procedure.performer.period` does not appear in the target and has no mapping for `Procedure`. |
-| Procedure.reason | - | DoesNotExistInTarget | R5 `Procedure.reason` does not appear in the target and has no mapping for `Procedure`. |
+| Procedure.reason | Procedure.reasonCode | SourceIsBroaderThanTarget | R5 `Procedure.reason` maps as SourceIsBroaderThanTarget to R4 `Procedure.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| Procedure.reason | Procedure.reasonReference | RelatedTo | R5 `Procedure.reason` maps as RelatedTo to R4 `Procedure.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/procedure-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | Procedure.recorded | - | DoesNotExistInTarget | R5 `Procedure.recorded` does not appear in the target and has no mapping for `Procedure`. |
 | Procedure.recorder | Procedure.recorder | Equivalent | R5 `Procedure.recorder` maps as Equivalent to R4 `Procedure.recorder` |
 | Procedure.report | Procedure.report | Equivalent | R5 `Procedure.report` maps as Equivalent to R4 `Procedure.report` |
@@ -68,5 +71,6 @@ RelatedTo | 37 |
 | Procedure.subject | Procedure.subject | SourceIsBroaderThanTarget | R5 `Procedure.subject` maps as SourceIsBroaderThanTarget to R4 `Procedure.subject` - subject has change due to type change: R5 `subject` `Reference` maps as SourceIsBroaderThanTarget for R4 `subject` |
 | Procedure.supportingInfo | - | DoesNotExistInTarget | R5 `Procedure.supportingInfo` does not appear in the target and has no mapping for `Procedure`. |
 | Procedure.text | Procedure.text | Equivalent | R5 `Procedure.text` maps as Equivalent to R4 `Procedure.text` |
-| Procedure.used | - | DoesNotExistInTarget | R5 `Procedure.used` does not appear in the target and has no mapping for `Procedure`. |
+| Procedure.used | Procedure.usedCode | SourceIsBroaderThanTarget | R5 `Procedure.used` maps as SourceIsBroaderThanTarget to R4 `Procedure.usedCode` - usedCode has change due to type change: R5 used CodeableReference has no equivalent or mapped type in R4 usedCode |
+| Procedure.used | Procedure.usedReference | RelatedTo | R5 `Procedure.used` maps as RelatedTo to R4 `Procedure.usedReference` - usedReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-type; usedReference has change due to type change: R5 used CodeableReference has no equivalent or mapped type in R4 usedReference |
 

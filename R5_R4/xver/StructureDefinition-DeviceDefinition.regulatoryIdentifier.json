@@ -473,20 +473,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceRegulatoryIdentifierType"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/devicedefinition-regulatory-identifier-type|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-devicedefinition-regulatory-identifier-type|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -501,18 +504,10 @@
       },
       {
         "path": "Extension.extension:deviceIdentifier.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:deviceIdentifier.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -529,18 +524,10 @@
       },
       {
         "path": "Extension.extension:issuer.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:issuer.extension:uri",
-        "sliceName": "uri",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-uri"
-            ]
+            "code": "uri"
           }
         ]
       },
@@ -557,18 +544,10 @@
       },
       {
         "path": "Extension.extension:jurisdiction.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:jurisdiction.extension:uri",
-        "sliceName": "uri",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-uri"
-            ]
+            "code": "uri"
           }
         ]
       },

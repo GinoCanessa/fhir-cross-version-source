@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
       "element": [
         {
-          "code": "MeasureReport.group.measureScore[x]",
-          "target": [
-            {
-              "code": "MeasureReport.group.measureScore",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MeasureReport.group.stratifier.stratum.component.value[x]",
-          "target": [
-            {
-              "code": "MeasureReport.group.stratifier.stratum.component.value",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MeasureReport.group.stratifier.stratum.measureScore[x]",
-          "target": [
-            {
-              "code": "MeasureReport.group.stratifier.stratum.measureScore",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MeasureReport.group.stratifier.stratum.value[x]",
-          "target": [
-            {
-              "code": "MeasureReport.group.stratifier.stratum.value",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
-      "target": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
-      "element": [
-        {
           "code": "MeasureReport",
           "display": "Results of a measure evaluation",
           "target": [
@@ -88,7 +46,7 @@
             {
               "code": "MeasureReport.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.contained\u0060 maps as Equivalent to R4 \u0060MeasureReport.contained\u0060"
             }
           ]
@@ -105,7 +63,7 @@
             {
               "code": "MeasureReport.date",
               "display": "When the report was generated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.date\u0060 maps as Equivalent to R4 \u0060MeasureReport.date\u0060"
             }
           ]
@@ -117,7 +75,7 @@
             {
               "code": "MeasureReport.evaluatedResource",
               "display": "What data was used to calculate the measure score",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.evaluatedResource\u0060 maps as Equivalent to R4 \u0060MeasureReport.evaluatedResource\u0060"
             }
           ]
@@ -129,7 +87,7 @@
             {
               "code": "MeasureReport.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -141,7 +99,7 @@
             {
               "code": "MeasureReport.group",
               "display": "Measure results for each group",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group\u0060 maps as Equivalent to R4 \u0060MeasureReport.group\u0060"
             }
           ]
@@ -153,8 +111,8 @@
             {
               "code": "MeasureReport.group.code",
               "display": "Meaning of the group",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MeasureReport.group.code\u0060 maps as RelatedTo to R4 \u0060MeasureReport.group.code\u0060 - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-group-example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MeasureReport.group.code\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MeasureReport.group.code\u0060 - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-group-example; code has change due to type change: R5 \u0060code\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060code\u0060"
             }
           ]
         },
@@ -165,7 +123,7 @@
             {
               "code": "MeasureReport.group.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -177,7 +135,7 @@
             {
               "code": "MeasureReport.group.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.id\u0060"
             }
           ]
@@ -189,8 +147,14 @@
         },
         {
           "code": "MeasureReport.group.measureScore[x]",
-          "display": "What score this group achieved",
-          "noMap": true
+          "target": [
+            {
+              "code": "MeasureReport.group.measureScore",
+              "display": "What score this group achieved",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MeasureReport.group.measureScore[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.measureScore\u0060 - measureScore has change due to type change: R5 measureScore[x] dateTime has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] CodeableConcept has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Period has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Range has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Duration has no equivalent or mapped type in R4 measureScore"
+            }
+          ]
         },
         {
           "code": "MeasureReport.group.modifierExtension",
@@ -199,7 +163,7 @@
             {
               "code": "MeasureReport.group.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -211,7 +175,7 @@
             {
               "code": "MeasureReport.group.population",
               "display": "The populations in the group",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.population\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.population\u0060"
             }
           ]
@@ -223,7 +187,7 @@
             {
               "code": "MeasureReport.group.population.code",
               "display": "initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.population.code\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.population.code\u0060"
             }
           ]
@@ -235,7 +199,7 @@
             {
               "code": "MeasureReport.group.population.count",
               "display": "Size of the population",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.population.count\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.population.count\u0060"
             }
           ]
@@ -247,7 +211,7 @@
             {
               "code": "MeasureReport.group.population.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.population.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.population.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -259,7 +223,7 @@
             {
               "code": "MeasureReport.group.population.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.population.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.population.id\u0060"
             }
           ]
@@ -276,7 +240,7 @@
             {
               "code": "MeasureReport.group.population.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.population.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.population.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -293,7 +257,7 @@
             {
               "code": "MeasureReport.group.population.subjectResults",
               "display": "For subject-list reports, the subject results in this population",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.population.subjectResults\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.population.subjectResults\u0060"
             }
           ]
@@ -310,7 +274,7 @@
             {
               "code": "MeasureReport.group.stratifier",
               "display": "Stratification results",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier\u0060"
             }
           ]
@@ -322,8 +286,8 @@
             {
               "code": "MeasureReport.group.stratifier.code",
               "display": "What stratifier of the group",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MeasureReport.group.stratifier.code\u0060 maps as RelatedTo to R4 \u0060MeasureReport.group.stratifier.code\u0060 - code changed from scalar to array (max cardinality from 1 to *); code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MeasureReport.group.stratifier.code\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MeasureReport.group.stratifier.code\u0060 - code changed from scalar to array (max cardinality from 1 to *); code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example; code has change due to type change: R5 \u0060code\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060code\u0060"
             }
           ]
         },
@@ -334,7 +298,7 @@
             {
               "code": "MeasureReport.group.stratifier.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -346,7 +310,7 @@
             {
               "code": "MeasureReport.group.stratifier.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.id\u0060"
             }
           ]
@@ -363,7 +327,7 @@
             {
               "code": "MeasureReport.group.stratifier.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -375,7 +339,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum",
               "display": "Stratum results, one for each unique value, or set of values, in the stratifier, or stratifier components",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum\u0060"
             }
           ]
@@ -387,7 +351,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.component",
               "display": "Stratifier component values",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.component\u0060"
             }
           ]
@@ -399,8 +363,8 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.component.code",
               "display": "What stratifier component of the group",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.code\u0060 maps as RelatedTo to R4 \u0060MeasureReport.group.stratifier.stratum.component.code\u0060 - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.code\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.component.code\u0060 - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example; code has change due to type change: R5 \u0060code\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060code\u0060"
             }
           ]
         },
@@ -411,7 +375,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.component.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.component.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -423,7 +387,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.component.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.component.id\u0060"
             }
           ]
@@ -440,15 +404,21 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.component.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.component.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "MeasureReport.group.stratifier.stratum.component.value[x]",
-          "display": "The stratum component value, e.g. male",
-          "noMap": true
+          "target": [
+            {
+              "code": "MeasureReport.group.stratifier.stratum.component.value",
+              "display": "The stratum component value, e.g. male",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.component.value[x]\u0060 maps as RelatedTo to R4 \u0060MeasureReport.group.stratifier.stratum.component.value\u0060 - value removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measurereport-stratifier-value-example; value has change due to type change: R5 \u0060value[x]\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060value\u0060; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value"
+            }
+          ]
         },
         {
           "code": "MeasureReport.group.stratifier.stratum.extension",
@@ -457,7 +427,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -469,15 +439,21 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.id\u0060"
             }
           ]
         },
         {
           "code": "MeasureReport.group.stratifier.stratum.measureScore[x]",
-          "display": "What score this stratum achieved",
-          "noMap": true
+          "target": [
+            {
+              "code": "MeasureReport.group.stratifier.stratum.measureScore",
+              "display": "What score this stratum achieved",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.measureScore[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.measureScore\u0060 - measureScore has change due to type change: R5 measureScore[x] dateTime has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] CodeableConcept has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Period has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Range has no equivalent or mapped type in R4 measureScore; measureScore has change due to type change: R5 measureScore[x] Duration has no equivalent or mapped type in R4 measureScore"
+            }
+          ]
         },
         {
           "code": "MeasureReport.group.stratifier.stratum.modifierExtension",
@@ -486,7 +462,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -498,7 +474,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population",
               "display": "Population results in this stratum",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.population\u0060"
             }
           ]
@@ -510,7 +486,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.code",
               "display": "initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.code\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.population.code\u0060"
             }
           ]
@@ -522,7 +498,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.count",
               "display": "Size of the population",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.count\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.population.count\u0060"
             }
           ]
@@ -534,7 +510,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.population.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -546,7 +522,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.id\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.population.id\u0060"
             }
           ]
@@ -563,7 +539,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.group.stratifier.stratum.population.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -580,7 +556,7 @@
             {
               "code": "MeasureReport.group.stratifier.stratum.population.subjectResults",
               "display": "For subject-list reports, the subject results in this population",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.population.subjectResults\u0060 maps as Equivalent to R4 \u0060MeasureReport.group.stratifier.stratum.population.subjectResults\u0060"
             }
           ]
@@ -592,8 +568,14 @@
         },
         {
           "code": "MeasureReport.group.stratifier.stratum.value[x]",
-          "display": "The stratum value, e.g. male",
-          "noMap": true
+          "target": [
+            {
+              "code": "MeasureReport.group.stratifier.stratum.value",
+              "display": "The stratum value, e.g. male",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MeasureReport.group.stratifier.stratum.value[x]\u0060 maps as RelatedTo to R4 \u0060MeasureReport.group.stratifier.stratum.value\u0060 - value removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measurereport-stratifier-value-example; value has change due to type change: R5 \u0060value[x]\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060value\u0060; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value"
+            }
+          ]
         },
         {
           "code": "MeasureReport.group.subject",
@@ -619,7 +601,7 @@
             {
               "code": "MeasureReport.identifier",
               "display": "Additional identifier for the MeasureReport",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.identifier\u0060 maps as Equivalent to R4 \u0060MeasureReport.identifier\u0060"
             }
           ]
@@ -643,7 +625,7 @@
             {
               "code": "MeasureReport.improvementNotation",
               "display": "increase | decrease",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.improvementNotation\u0060 maps as Equivalent to R4 \u0060MeasureReport.improvementNotation\u0060 - improvementNotation has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/measure-improvement-notation|5.0.0 and http://hl7.org/fhir/ValueSet/measure-improvement-notation|4.0.1 (Equivalent)"
             }
           ]
@@ -660,8 +642,8 @@
             {
               "code": "MeasureReport.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MeasureReport.language\u0060 maps as RelatedTo to R4 \u0060MeasureReport.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MeasureReport.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MeasureReport.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -701,7 +683,7 @@
             {
               "code": "MeasureReport.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -713,7 +695,7 @@
             {
               "code": "MeasureReport.period",
               "display": "What period the report covers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.period\u0060 maps as Equivalent to R4 \u0060MeasureReport.period\u0060"
             }
           ]
@@ -747,7 +729,7 @@
             {
               "code": "MeasureReport.status",
               "display": "complete | pending | error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.status\u0060 maps as Equivalent to R4 \u0060MeasureReport.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/measure-report-status|5.0.0 and http://hl7.org/fhir/ValueSet/measure-report-status|4.0.1 (Equivalent)"
             }
           ]
@@ -759,7 +741,7 @@
             {
               "code": "MeasureReport.subject",
               "display": "What individual(s) the report is for",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MeasureReport.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MeasureReport.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
             }
           ]
@@ -776,7 +758,7 @@
             {
               "code": "MeasureReport.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.text\u0060 maps as Equivalent to R4 \u0060MeasureReport.text\u0060"
             }
           ]
@@ -788,7 +770,7 @@
             {
               "code": "MeasureReport.type",
               "display": "individual | subject-list | summary | data-collection",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MeasureReport.type\u0060 maps as Equivalent to R4 \u0060MeasureReport.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/measure-report-type|5.0.0 and http://hl7.org/fhir/ValueSet/measure-report-type|4.0.1 (Equivalent)"
             }
           ]

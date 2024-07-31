@@ -30,7 +30,7 @@
             {
               "code": "Condition.abatement[x]",
               "display": "When in resolution/remission",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.abatement[x]\u0060 maps as Equivalent to R4 \u0060Condition.abatement[x]\u0060"
             }
           ]
@@ -42,7 +42,7 @@
             {
               "code": "Condition.bodySite",
               "display": "Anatomical location, if relevant",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.bodySite\u0060 maps as Equivalent to R4 \u0060Condition.bodySite\u0060"
             }
           ]
@@ -54,8 +54,8 @@
             {
               "code": "Condition.category",
               "display": "problem-list-item | encounter-diagnosis",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Condition.category\u0060 maps as RelatedTo to R4 \u0060Condition.category\u0060 - category changed the binding strength from Preferred to Extensible"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Condition.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.category\u0060 - category changed the binding strength from Preferred to Extensible; category has change due to type change: R5 \u0060category\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060category\u0060"
             }
           ]
         },
@@ -66,7 +66,7 @@
             {
               "code": "Condition.clinicalStatus",
               "display": "active | recurrence | relapse | inactive | remission | resolved",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.clinicalStatus\u0060 maps as Equivalent to R4 \u0060Condition.clinicalStatus\u0060 - clinicalStatus has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/condition-clinical|5.0.0 and http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1 (Equivalent)"
             }
           ]
@@ -78,7 +78,7 @@
             {
               "code": "Condition.code",
               "display": "Identification of the condition, problem or diagnosis",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.code\u0060 maps as Equivalent to R4 \u0060Condition.code\u0060"
             }
           ]
@@ -90,7 +90,7 @@
             {
               "code": "Condition.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.contained\u0060 maps as Equivalent to R4 \u0060Condition.contained\u0060"
             }
           ]
@@ -102,7 +102,7 @@
             {
               "code": "Condition.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.encounter\u0060 maps as Equivalent to R4 \u0060Condition.encounter\u0060"
             }
           ]
@@ -126,7 +126,7 @@
             {
               "code": "Condition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Condition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -150,7 +150,7 @@
             {
               "code": "Condition.identifier",
               "display": "External Ids for this condition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.identifier\u0060 maps as Equivalent to R4 \u0060Condition.identifier\u0060"
             }
           ]
@@ -174,8 +174,8 @@
             {
               "code": "Condition.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Condition.language\u0060 maps as RelatedTo to R4 \u0060Condition.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Condition.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Condition.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -198,7 +198,7 @@
             {
               "code": "Condition.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Condition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -210,7 +210,7 @@
             {
               "code": "Condition.note",
               "display": "Additional information about the Condition",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Condition.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -222,7 +222,7 @@
             {
               "code": "Condition.onset[x]",
               "display": "Estimated or actual date,  date-time, or age",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.onset[x]\u0060 maps as Equivalent to R4 \u0060Condition.onset[x]\u0060"
             }
           ]
@@ -264,7 +264,7 @@
             {
               "code": "Condition.recordedDate",
               "display": "Date record was first recorded",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.recordedDate\u0060 maps as Equivalent to R4 \u0060Condition.recordedDate\u0060"
             }
           ]
@@ -276,7 +276,7 @@
             {
               "code": "Condition.severity",
               "display": "Subjective severity of condition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.severity\u0060 maps as Equivalent to R4 \u0060Condition.severity\u0060"
             }
           ]
@@ -288,7 +288,7 @@
             {
               "code": "Condition.stage",
               "display": "Stage/grade, usually assessed formally",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.stage\u0060 maps as Equivalent to R4 \u0060Condition.stage\u0060"
             }
           ]
@@ -300,7 +300,7 @@
             {
               "code": "Condition.stage.assessment",
               "display": "Formal record of assessment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.stage.assessment\u0060 maps as Equivalent to R4 \u0060Condition.stage.assessment\u0060"
             }
           ]
@@ -312,7 +312,7 @@
             {
               "code": "Condition.stage.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Condition.stage.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.stage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -324,7 +324,7 @@
             {
               "code": "Condition.stage.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.stage.id\u0060 maps as Equivalent to R4 \u0060Condition.stage.id\u0060"
             }
           ]
@@ -336,7 +336,7 @@
             {
               "code": "Condition.stage.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Condition.stage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Condition.stage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -348,7 +348,7 @@
             {
               "code": "Condition.stage.summary",
               "display": "Simple summary (disease specific)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.stage.summary\u0060 maps as Equivalent to R4 \u0060Condition.stage.summary\u0060"
             }
           ]
@@ -360,7 +360,7 @@
             {
               "code": "Condition.stage.type",
               "display": "Kind of staging",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.stage.type\u0060 maps as Equivalent to R4 \u0060Condition.stage.type\u0060"
             }
           ]
@@ -372,7 +372,7 @@
             {
               "code": "Condition.subject",
               "display": "Who has the condition?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.subject\u0060 maps as Equivalent to R4 \u0060Condition.subject\u0060"
             }
           ]
@@ -384,7 +384,7 @@
             {
               "code": "Condition.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.text\u0060 maps as Equivalent to R4 \u0060Condition.text\u0060"
             }
           ]
@@ -396,7 +396,7 @@
             {
               "code": "Condition.verificationStatus",
               "display": "unconfirmed | provisional | differential | confirmed | refuted | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Condition.verificationStatus\u0060 maps as Equivalent to R4 \u0060Condition.verificationStatus\u0060 - verificationStatus has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/condition-ver-status|5.0.0 and http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1 (Equivalent)"
             }
           ]

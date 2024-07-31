@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 12 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -32,7 +33,7 @@ RelatedTo | 13 |
 | Linkage.item.modifierExtension | Linkage.item.modifierExtension | SourceIsBroaderThanTarget | R5 `Linkage.item.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Linkage.item.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Linkage.item.resource | Linkage.item.resource | Equivalent | R5 `Linkage.item.resource` maps as Equivalent to R4 `Linkage.item.resource` |
 | Linkage.item.type | Linkage.item.type | Equivalent | R5 `Linkage.item.type` maps as Equivalent to R4 `Linkage.item.type` - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/linkage-type|5.0.0 and http://hl7.org/fhir/ValueSet/linkage-type|4.0.1 (Equivalent) |
-| Linkage.language | Linkage.language | RelatedTo | R5 `Linkage.language` maps as RelatedTo to R4 `Linkage.language` - language changed the binding strength from Required to Preferred |
+| Linkage.language | Linkage.language | SourceIsNarrowerThanTarget | R5 `Linkage.language` maps as SourceIsNarrowerThanTarget to R4 `Linkage.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Linkage.meta | Linkage.meta | Equivalent | R5 `Linkage.meta` maps as Equivalent to R4 `Linkage.meta` |
 | Linkage.modifierExtension | Linkage.modifierExtension | SourceIsBroaderThanTarget | R5 `Linkage.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Linkage.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Linkage.text | Linkage.text | Equivalent | R5 `Linkage.text` maps as Equivalent to R4 `Linkage.text` |

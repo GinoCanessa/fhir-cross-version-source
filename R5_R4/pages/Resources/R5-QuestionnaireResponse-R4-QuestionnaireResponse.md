@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 29 |
+Equivalent | 23 |
+SourceIsBroaderThanTarget | 9 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -27,7 +28,7 @@ RelatedTo | 29 |
 | QuestionnaireResponse.encounter | QuestionnaireResponse.encounter | Equivalent | R5 `QuestionnaireResponse.encounter` maps as Equivalent to R4 `QuestionnaireResponse.encounter` |
 | QuestionnaireResponse.extension | QuestionnaireResponse.extension | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.extension` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | QuestionnaireResponse.id | QuestionnaireResponse.id | Equivalent | R5 `QuestionnaireResponse.id` maps as Equivalent to R4 `QuestionnaireResponse.id` |
-| QuestionnaireResponse.identifier | QuestionnaireResponse.identifier | RelatedTo | R5 `QuestionnaireResponse.identifier` maps as RelatedTo to R4 `QuestionnaireResponse.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
+| QuestionnaireResponse.identifier | QuestionnaireResponse.identifier | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.identifier` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
 | QuestionnaireResponse.implicitRules | QuestionnaireResponse.implicitRules | Equivalent | R5 `QuestionnaireResponse.implicitRules` maps as Equivalent to R4 `QuestionnaireResponse.implicitRules` |
 | QuestionnaireResponse.item | QuestionnaireResponse.item | Equivalent | R5 `QuestionnaireResponse.item` maps as Equivalent to R4 `QuestionnaireResponse.item` |
 | QuestionnaireResponse.item.answer | QuestionnaireResponse.item.answer | Equivalent | R5 `QuestionnaireResponse.item.answer` maps as Equivalent to R4 `QuestionnaireResponse.item.answer` |
@@ -35,7 +36,7 @@ RelatedTo | 29 |
 | QuestionnaireResponse.item.answer.id | QuestionnaireResponse.item.answer.id | Equivalent | R5 `QuestionnaireResponse.item.answer.id` maps as Equivalent to R4 `QuestionnaireResponse.item.answer.id` |
 | QuestionnaireResponse.item.answer.item | QuestionnaireResponse.item.answer.item | Equivalent | R5 `QuestionnaireResponse.item.answer.item` maps as Equivalent to R4 `QuestionnaireResponse.item.answer.item` |
 | QuestionnaireResponse.item.answer.modifierExtension | QuestionnaireResponse.item.answer.modifierExtension | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.item.answer.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.item.answer.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| QuestionnaireResponse.item.answer.value[x] | QuestionnaireResponse.item.answer.value[x] | RelatedTo | R5 `QuestionnaireResponse.item.answer.value[x]` maps as RelatedTo to R4 `QuestionnaireResponse.item.answer.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 `value[x]` `Quantity` maps as SourceIsBroaderThanTarget for R4 `value[x]` |
+| QuestionnaireResponse.item.answer.value[x] | QuestionnaireResponse.item.answer.value[x] | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.item.answer.value[x]` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.item.answer.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 `value[x]` `Quantity` maps as SourceIsBroaderThanTarget for R4 `value[x]` |
 | QuestionnaireResponse.item.definition | QuestionnaireResponse.item.definition | Equivalent | R5 `QuestionnaireResponse.item.definition` maps as Equivalent to R4 `QuestionnaireResponse.item.definition` |
 | QuestionnaireResponse.item.extension | QuestionnaireResponse.item.extension | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.item.extension` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.item.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | QuestionnaireResponse.item.id | QuestionnaireResponse.item.id | Equivalent | R5 `QuestionnaireResponse.item.id` maps as Equivalent to R4 `QuestionnaireResponse.item.id` |
@@ -43,7 +44,7 @@ RelatedTo | 29 |
 | QuestionnaireResponse.item.linkId | QuestionnaireResponse.item.linkId | Equivalent | R5 `QuestionnaireResponse.item.linkId` maps as Equivalent to R4 `QuestionnaireResponse.item.linkId` |
 | QuestionnaireResponse.item.modifierExtension | QuestionnaireResponse.item.modifierExtension | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.item.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.item.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | QuestionnaireResponse.item.text | QuestionnaireResponse.item.text | Equivalent | R5 `QuestionnaireResponse.item.text` maps as Equivalent to R4 `QuestionnaireResponse.item.text` |
-| QuestionnaireResponse.language | QuestionnaireResponse.language | RelatedTo | R5 `QuestionnaireResponse.language` maps as RelatedTo to R4 `QuestionnaireResponse.language` - language changed the binding strength from Required to Preferred |
+| QuestionnaireResponse.language | QuestionnaireResponse.language | SourceIsNarrowerThanTarget | R5 `QuestionnaireResponse.language` maps as SourceIsNarrowerThanTarget to R4 `QuestionnaireResponse.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | QuestionnaireResponse.meta | QuestionnaireResponse.meta | Equivalent | R5 `QuestionnaireResponse.meta` maps as Equivalent to R4 `QuestionnaireResponse.meta` |
 | QuestionnaireResponse.modifierExtension | QuestionnaireResponse.modifierExtension | SourceIsBroaderThanTarget | R5 `QuestionnaireResponse.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `QuestionnaireResponse.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | QuestionnaireResponse.partOf | QuestionnaireResponse.partOf | Equivalent | R5 `QuestionnaireResponse.partOf` maps as Equivalent to R4 `QuestionnaireResponse.partOf` |

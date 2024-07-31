@@ -519,18 +519,10 @@
       },
       {
         "path": "Extension.extension:title.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:title.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -548,18 +540,10 @@
       },
       {
         "path": "Extension.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:description.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
+            "code": "markdown"
           }
         ]
       },
@@ -585,20 +569,23 @@
       },
       {
         "path": "Extension.extension:option.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:option.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ActivityParticipantType"
+            }
+          ],
+          "strength": "required",
+          "description": "The type of participant in the activity.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-type|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:option.extension:type.url",
@@ -614,17 +601,12 @@
       },
       {
         "path": "Extension.extension:option.extension:typeCanonical.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:option.extension:typeCanonical.extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
             ]
           }
         ]
@@ -644,17 +626,23 @@
       },
       {
         "path": "Extension.extension:option.extension:typeReference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:option.extension:typeReference.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
+              "http://hl7.org/fhir/StructureDefinition/Endpoint",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
         ]
@@ -673,20 +661,22 @@
       },
       {
         "path": "Extension.extension:option.extension:role.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:option.extension:role.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ActionParticipantRole"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/action-participant-role"
+        }
       },
       {
         "path": "Extension.extension:option.extension:role.url",
@@ -706,20 +696,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ActivityParticipantType"
+            }
+          ],
+          "strength": "required",
+          "description": "The type of participant in the activity.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-type|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -735,17 +728,12 @@
       },
       {
         "path": "Extension.extension:typeCanonical.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:typeCanonical.extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
             ]
           }
         ]
@@ -765,17 +753,23 @@
       },
       {
         "path": "Extension.extension:typeReference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:typeReference.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
+              "http://hl7.org/fhir/StructureDefinition/Endpoint",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
             ]
           }
         ]
@@ -794,20 +788,22 @@
       },
       {
         "path": "Extension.extension:role.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:role.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ActionParticipantRole"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/action-participant-role"
+        }
       },
       {
         "path": "Extension.extension:role.url",

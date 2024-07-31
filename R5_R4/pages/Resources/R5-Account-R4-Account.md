@@ -13,14 +13,16 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 37 |
-Equivalent | 4 |
-RelatedTo | 26 |
+DoesNotExistInTarget | 35 |
+Equivalent | 21 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
-| Account | Account | Equivalent | R5 `Account` maps as Equivalent to R4 `Account` |
+| Account | Account | SourceIsNarrowerThanTarget | R5 `Account` is narrower than R4 `Account` and is compatible. `Account` is mapped from `Account` and `Account.relatedAccount`. |
 | Account.balance | - | DoesNotExistInTarget | R5 `Account.balance` does not appear in the target and has no mapping for `Account`. |
 | Account.balance.aggregate | - | DoesNotExistInTarget | R5 `Account.balance.aggregate` does not appear in the target and has no mapping for `Account`. |
 | Account.balance.amount | - | DoesNotExistInTarget | R5 `Account.balance.amount` does not appear in the target and has no mapping for `Account`. |
@@ -61,7 +63,7 @@ RelatedTo | 26 |
 | Account.id | Account.id | Equivalent | R5 `Account.id` maps as Equivalent to R4 `Account.id` |
 | Account.identifier | Account.identifier | Equivalent | R5 `Account.identifier` maps as Equivalent to R4 `Account.identifier` |
 | Account.implicitRules | Account.implicitRules | Equivalent | R5 `Account.implicitRules` maps as Equivalent to R4 `Account.implicitRules` |
-| Account.language | Account.language | RelatedTo | R5 `Account.language` maps as RelatedTo to R4 `Account.language` - language changed the binding strength from Required to Preferred |
+| Account.language | Account.language | SourceIsNarrowerThanTarget | R5 `Account.language` maps as SourceIsNarrowerThanTarget to R4 `Account.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Account.meta | Account.meta | Equivalent | R5 `Account.meta` maps as Equivalent to R4 `Account.meta` |
 | Account.modifierExtension | Account.modifierExtension | SourceIsBroaderThanTarget | R5 `Account.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Account.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Account.name | Account.name | Equivalent | R5 `Account.name` maps as Equivalent to R4 `Account.name` |
@@ -76,8 +78,9 @@ RelatedTo | 26 |
 | Account.procedure.packageCode | - | DoesNotExistInTarget | R5 `Account.procedure.packageCode` does not appear in the target and has no mapping for `Account`. |
 | Account.procedure.sequence | - | DoesNotExistInTarget | R5 `Account.procedure.sequence` does not appear in the target and has no mapping for `Account`. |
 | Account.procedure.type | - | DoesNotExistInTarget | R5 `Account.procedure.type` does not appear in the target and has no mapping for `Account`. |
-| Account.relatedAccount | - | DoesNotExistInTarget | R5 `Account.relatedAccount` does not appear in the target and has no mapping for `Account`. |
-| Account.relatedAccount.account | - | DoesNotExistInTarget | R5 `Account.relatedAccount.account` does not appear in the target and has no mapping for `Account`. |
+| Account.relatedAccount | Account | RelatedTo | R5 `Account.relatedAccount` maps as RelatedTo to R4 `Account` - Account has change due to type change: R5 relatedAccount BackboneElement has no equivalent or mapped type in R4 Account |
+| Account.relatedAccount.account | Account.partOf | SourceIsBroaderThanTarget | R5 `Account.relatedAccount.account` maps as SourceIsBroaderThanTarget to R4 `Account.partOf` |
+| Account.relatedAccount.account | Account.partOf | SourceIsBroaderThanTarget | R5 `Account.relatedAccount.account` maps as SourceIsBroaderThanTarget to R4 `Account.partOf` |
 | Account.relatedAccount.extension | - | DoesNotExistInTarget | R5 `Account.relatedAccount.extension` does not appear in the target and has no mapping for `Account`. |
 | Account.relatedAccount.id | - | DoesNotExistInTarget | R5 `Account.relatedAccount.id` does not appear in the target and has no mapping for `Account`. |
 | Account.relatedAccount.modifierExtension | - | DoesNotExistInTarget | R5 `Account.relatedAccount.modifierExtension` does not appear in the target and has no mapping for `Account`. |

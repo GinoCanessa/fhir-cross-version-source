@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:DocumentReference.docStatus compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1",
+  "description": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; docStatus has change due to type change: R5 `docStatus` `code` maps as RelatedTo for R4 `docStatus`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "registered | partial | preliminary | final | amended | corrected | appended | cancelled | entered-in-error | deprecated | unknown",
         "definition": "The status of the underlying document.",
-        "comment": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1\nThe document that is pointed to might be in various lifecycle states.",
+        "comment": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; docStatus has change due to type change: R5 `docStatus` `code` maps as RelatedTo for R4 `docStatus`\nThe document that is pointed to might be in various lifecycle states.",
         "min": 0,
         "max": "1",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
             "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -390,6 +231,17 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ReferredDocumentStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/composition-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-composition-status|1.0.0"
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -413,14 +265,30 @@
         "path": "Extension",
         "short": "registered | partial | preliminary | final | amended | corrected | appended | cancelled | entered-in-error | deprecated | unknown",
         "definition": "The status of the underlying document.",
-        "comment": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1\nThe document that is pointed to might be in various lifecycle states.",
+        "comment": "R5 `DocumentReference.docStatus` maps as RelatedTo to R4 `DocumentReference.docStatus` - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; docStatus has change due to type change: R5 `docStatus` `code` maps as RelatedTo for R4 `docStatus`\nThe document that is pointed to might be in various lifecycle states.",
         "min": 0,
         "max": "1",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ReferredDocumentStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/composition-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-composition-status|1.0.0"
+        }
       },
       {
         "path": "Extension.url",

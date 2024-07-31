@@ -479,20 +479,22 @@
       },
       {
         "path": "Extension.extension:decision.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:decision.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdjudicationDecision"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/claim-decision"
+        }
       },
       {
         "path": "Extension.extension:decision.url",
@@ -508,20 +510,22 @@
       },
       {
         "path": "Extension.extension:reason.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reason.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdjudicationDecisionReason"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/claim-decision-reason"
+        }
       },
       {
         "path": "Extension.extension:reason.url",
@@ -538,18 +542,10 @@
       },
       {
         "path": "Extension.extension:preAuthRef.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:preAuthRef.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -567,18 +563,10 @@
       },
       {
         "path": "Extension.extension:preAuthPeriod.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:preAuthPeriod.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },

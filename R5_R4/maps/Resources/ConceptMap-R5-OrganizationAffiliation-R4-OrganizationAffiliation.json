@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
       "element": [
         {
-          "code": "OrganizationAffiliation.contact.telecom",
-          "target": [
-            {
-              "code": "OrganizationAffiliation.telecom",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
-      "target": "http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation",
-      "element": [
-        {
           "code": "OrganizationAffiliation",
           "display": "Defines an affiliation/association/relationship between 2 distinct organizations, that is not a part-of relationship/sub-division relationship",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "OrganizationAffiliation.active",
               "display": "Whether this organization affiliation record is in active use",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.active\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.active\u0060"
             }
           ]
@@ -73,15 +58,30 @@
             {
               "code": "OrganizationAffiliation.code",
               "display": "Definition of the role the participatingOrganization plays",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.code\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.code\u0060"
             }
           ]
         },
         {
           "code": "OrganizationAffiliation.contact",
-          "display": "Official contact details at the participatingOrganization relevant to this Affiliation",
-          "noMap": true
+          "target": [
+            {
+              "code": "OrganizationAffiliation.telecom",
+              "display": "Contact details at the participatingOrganization relevant to this Affiliation",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060OrganizationAffiliation.contact\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OrganizationAffiliation.telecom\u0060 - telecom has change due to type change: R5 contact ExtendedContactDetail has no equivalent or mapped type in R4 telecom"
+            }
+          ]
+        },
+        {
+          "code": "OrganizationAffiliation.contact.telecom",
+          "target": [
+            {
+              "code": "OrganizationAffiliation.telecom",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "OrganizationAffiliation.contained",
@@ -90,7 +90,7 @@
             {
               "code": "OrganizationAffiliation.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.contained\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.contained\u0060"
             }
           ]
@@ -102,7 +102,7 @@
             {
               "code": "OrganizationAffiliation.endpoint",
               "display": "Technical endpoints providing access to services operated for this role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.endpoint\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.endpoint\u0060"
             }
           ]
@@ -114,7 +114,7 @@
             {
               "code": "OrganizationAffiliation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OrganizationAffiliation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OrganizationAffiliation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -126,7 +126,7 @@
             {
               "code": "OrganizationAffiliation.healthcareService",
               "display": "Healthcare services provided through the role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.healthcareService\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.healthcareService\u0060"
             }
           ]
@@ -150,7 +150,7 @@
             {
               "code": "OrganizationAffiliation.identifier",
               "display": "Business identifiers that are specific to this role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.identifier\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.identifier\u0060"
             }
           ]
@@ -174,8 +174,8 @@
             {
               "code": "OrganizationAffiliation.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060OrganizationAffiliation.language\u0060 maps as RelatedTo to R4 \u0060OrganizationAffiliation.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060OrganizationAffiliation.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060OrganizationAffiliation.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -186,7 +186,7 @@
             {
               "code": "OrganizationAffiliation.location",
               "display": "The location(s) at which the role occurs",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.location\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.location\u0060"
             }
           ]
@@ -210,7 +210,7 @@
             {
               "code": "OrganizationAffiliation.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OrganizationAffiliation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OrganizationAffiliation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -222,7 +222,7 @@
             {
               "code": "OrganizationAffiliation.network",
               "display": "Health insurance provider network in which the participatingOrganization provides the role\u0027s services (if defined) at the indicated locations (if defined)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.network\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.network\u0060"
             }
           ]
@@ -234,7 +234,7 @@
             {
               "code": "OrganizationAffiliation.organization",
               "display": "Organization where the role is available",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.organization\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.organization\u0060"
             }
           ]
@@ -246,7 +246,7 @@
             {
               "code": "OrganizationAffiliation.participatingOrganization",
               "display": "Organization that provides/performs the role (e.g. providing services or is a member of)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.participatingOrganization\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.participatingOrganization\u0060"
             }
           ]
@@ -258,7 +258,7 @@
             {
               "code": "OrganizationAffiliation.period",
               "display": "The period during which the participatingOrganization is affiliated with the primary organization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.period\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.period\u0060"
             }
           ]
@@ -270,7 +270,7 @@
             {
               "code": "OrganizationAffiliation.specialty",
               "display": "Specific specialty of the participatingOrganization in the context of the role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.specialty\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.specialty\u0060"
             }
           ]
@@ -282,7 +282,7 @@
             {
               "code": "OrganizationAffiliation.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OrganizationAffiliation.text\u0060 maps as Equivalent to R4 \u0060OrganizationAffiliation.text\u0060"
             }
           ]

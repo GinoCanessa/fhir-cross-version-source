@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 75 |
-Equivalent | 4 |
-RelatedTo | 25 |
+Equivalent | 24 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -48,7 +49,7 @@ RelatedTo | 25 |
 | Evidence.id | Evidence.id | Equivalent | R5 `Evidence.id` maps as Equivalent to R4 `Evidence.id` |
 | Evidence.identifier | Evidence.identifier | Equivalent | R5 `Evidence.identifier` maps as Equivalent to R4 `Evidence.identifier` |
 | Evidence.implicitRules | Evidence.implicitRules | Equivalent | R5 `Evidence.implicitRules` maps as Equivalent to R4 `Evidence.implicitRules` |
-| Evidence.language | Evidence.language | RelatedTo | R5 `Evidence.language` maps as RelatedTo to R4 `Evidence.language` - language changed the binding strength from Required to Preferred |
+| Evidence.language | Evidence.language | SourceIsNarrowerThanTarget | R5 `Evidence.language` maps as SourceIsNarrowerThanTarget to R4 `Evidence.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Evidence.lastReviewDate | Evidence.lastReviewDate | Equivalent | R5 `Evidence.lastReviewDate` maps as Equivalent to R4 `Evidence.lastReviewDate` |
 | Evidence.meta | Evidence.meta | Equivalent | R5 `Evidence.meta` maps as Equivalent to R4 `Evidence.meta` |
 | Evidence.modifierExtension | Evidence.modifierExtension | SourceIsBroaderThanTarget | R5 `Evidence.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Evidence.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -56,7 +57,7 @@ RelatedTo | 25 |
 | Evidence.note | Evidence.note | SourceIsBroaderThanTarget | R5 `Evidence.note` maps as SourceIsBroaderThanTarget to R4 `Evidence.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
 | Evidence.publisher | Evidence.publisher | Equivalent | R5 `Evidence.publisher` maps as Equivalent to R4 `Evidence.publisher` |
 | Evidence.purpose | - | DoesNotExistInTarget | R5 `Evidence.purpose` does not appear in the target and has no mapping for `Evidence`. |
-| Evidence.relatedArtifact | Evidence.relatedArtifact | Equivalent | R5 `Evidence.relatedArtifact` maps as Equivalent to R4 `Evidence.relatedArtifact` |
+| Evidence.relatedArtifact | Evidence.relatedArtifact | SourceIsBroaderThanTarget | R5 `Evidence.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `Evidence.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | Evidence.reviewer | Evidence.reviewer | Equivalent | R5 `Evidence.reviewer` maps as Equivalent to R4 `Evidence.reviewer` |
 | Evidence.statistic | - | DoesNotExistInTarget | R5 `Evidence.statistic` does not appear in the target and has no mapping for `Evidence`. |
 | Evidence.statistic.attributeEstimate | - | DoesNotExistInTarget | R5 `Evidence.statistic.attributeEstimate` does not appear in the target and has no mapping for `Evidence`. |

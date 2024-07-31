@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ProductShelfLife",
       "element": [
         {
-          "code": "ProductShelfLife.period[x]",
-          "target": [
-            {
-              "code": "ProductShelfLife.period",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ProductShelfLife",
-      "target": "http://hl7.org/fhir/StructureDefinition/ProductShelfLife",
-      "element": [
-        {
           "code": "ProductShelfLife",
           "display": "The shelf-life and storage information for a medicinal product item or container can be described using this class",
           "target": [
@@ -92,8 +77,14 @@
         },
         {
           "code": "ProductShelfLife.period[x]",
-          "display": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
-          "noMap": true
+          "target": [
+            {
+              "code": "ProductShelfLife.period",
+              "display": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ProductShelfLife.period[x]\u0060 maps as RelatedTo to R4 \u0060ProductShelfLife.period\u0060 - period made the element mandatory; period increased the minimum cardinality from 0 to 1; period has change due to type change: R5 period[x] Duration has no equivalent or mapped type in R4 period; period has change due to type change: R5 period[x] string has no equivalent or mapped type in R4 period"
+            }
+          ]
         },
         {
           "code": "ProductShelfLife.specialPrecautionsForStorage",
@@ -102,7 +93,7 @@
             {
               "code": "ProductShelfLife.specialPrecautionsForStorage",
               "display": "Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ProductShelfLife.specialPrecautionsForStorage\u0060 maps as Equivalent to R4 \u0060ProductShelfLife.specialPrecautionsForStorage\u0060"
             }
           ]

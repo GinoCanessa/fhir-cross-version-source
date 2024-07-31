@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 11 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -29,7 +30,7 @@ RelatedTo | 13 |
 | Schedule.id | Schedule.id | Equivalent | R5 `Schedule.id` maps as Equivalent to R4 `Schedule.id` |
 | Schedule.identifier | Schedule.identifier | Equivalent | R5 `Schedule.identifier` maps as Equivalent to R4 `Schedule.identifier` |
 | Schedule.implicitRules | Schedule.implicitRules | Equivalent | R5 `Schedule.implicitRules` maps as Equivalent to R4 `Schedule.implicitRules` |
-| Schedule.language | Schedule.language | RelatedTo | R5 `Schedule.language` maps as RelatedTo to R4 `Schedule.language` - language changed the binding strength from Required to Preferred |
+| Schedule.language | Schedule.language | SourceIsNarrowerThanTarget | R5 `Schedule.language` maps as SourceIsNarrowerThanTarget to R4 `Schedule.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Schedule.meta | Schedule.meta | Equivalent | R5 `Schedule.meta` maps as Equivalent to R4 `Schedule.meta` |
 | Schedule.modifierExtension | Schedule.modifierExtension | SourceIsBroaderThanTarget | R5 `Schedule.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Schedule.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Schedule.name | - | DoesNotExistInTarget | R5 `Schedule.name` does not appear in the target and has no mapping for `Schedule`. |

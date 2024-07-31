@@ -13,14 +13,16 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 13 |
-Equivalent | 4 |
-RelatedTo | 38 |
+DoesNotExistInTarget | 12 |
+Equivalent | 29 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
-| Coverage | Coverage | Equivalent | R5 `Coverage` maps as Equivalent to R4 `Coverage` |
+| Coverage | Coverage | SourceIsNarrowerThanTarget | R5 `Coverage` is narrower than R4 `Coverage` and is compatible. `Coverage` is mapped from `Coverage` and `Coverage.subscriberId`. |
 | Coverage.beneficiary | Coverage.beneficiary | Equivalent | R5 `Coverage.beneficiary` maps as Equivalent to R4 `Coverage.beneficiary` |
 | Coverage.class | Coverage.class | Equivalent | R5 `Coverage.class` maps as Equivalent to R4 `Coverage.class` |
 | Coverage.class.extension | Coverage.class.extension | SourceIsBroaderThanTarget | R5 `Coverage.class.extension` maps as SourceIsBroaderThanTarget to R4 `Coverage.class.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -53,9 +55,9 @@ RelatedTo | 38 |
 | Coverage.identifier | Coverage.identifier | Equivalent | R5 `Coverage.identifier` maps as Equivalent to R4 `Coverage.identifier` |
 | Coverage.implicitRules | Coverage.implicitRules | Equivalent | R5 `Coverage.implicitRules` maps as Equivalent to R4 `Coverage.implicitRules` |
 | Coverage.insurancePlan | - | DoesNotExistInTarget | R5 `Coverage.insurancePlan` does not appear in the target and has no mapping for `Coverage`. |
-| Coverage.insurer | - | DoesNotExistInTarget | R5 `Coverage.insurer` does not appear in the target and has no mapping for `Coverage`. |
+| Coverage.insurer | Coverage.payor | RelatedTo | R5 `Coverage.insurer` maps as RelatedTo to R4 `Coverage.payor` - payor made the element mandatory; payor increased the minimum cardinality from 0 to 1; payor changed from scalar to array (max cardinality from 1 to *); payor has change due to type change: R5 `insurer` `Reference` maps as SourceIsNarrowerThanTarget for R4 `payor` |
 | Coverage.kind | - | DoesNotExistInTarget | R5 `Coverage.kind` does not appear in the target and has no mapping for `Coverage`. |
-| Coverage.language | Coverage.language | RelatedTo | R5 `Coverage.language` maps as RelatedTo to R4 `Coverage.language` - language changed the binding strength from Required to Preferred |
+| Coverage.language | Coverage.language | SourceIsNarrowerThanTarget | R5 `Coverage.language` maps as SourceIsNarrowerThanTarget to R4 `Coverage.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Coverage.meta | Coverage.meta | Equivalent | R5 `Coverage.meta` maps as Equivalent to R4 `Coverage.meta` |
 | Coverage.modifierExtension | Coverage.modifierExtension | SourceIsBroaderThanTarget | R5 `Coverage.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Coverage.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Coverage.network | Coverage.network | Equivalent | R5 `Coverage.network` maps as Equivalent to R4 `Coverage.network` |
@@ -72,7 +74,7 @@ RelatedTo | 38 |
 | Coverage.status | Coverage.status | Equivalent | R5 `Coverage.status` maps as Equivalent to R4 `Coverage.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent) |
 | Coverage.subrogation | Coverage.subrogation | Equivalent | R5 `Coverage.subrogation` maps as Equivalent to R4 `Coverage.subrogation` |
 | Coverage.subscriber | Coverage.subscriber | Equivalent | R5 `Coverage.subscriber` maps as Equivalent to R4 `Coverage.subscriber` |
-| Coverage.subscriberId | Coverage.subscriberId | RelatedTo | R5 `Coverage.subscriberId` maps as RelatedTo to R4 `Coverage.subscriberId` - subscriberId changed from array to scalar (max cardinality from * to 1); subscriberId has change due to type change: R5 subscriberId Identifier has no equivalent or mapped type in R4 subscriberId |
+| Coverage.subscriberId | Coverage | SourceIsBroaderThanTarget | R5 `Coverage.subscriberId` maps as SourceIsBroaderThanTarget to R4 `Coverage` - Coverage has change due to type change: R5 subscriberId Identifier has no equivalent or mapped type in R4 Coverage |
 | Coverage.text | Coverage.text | Equivalent | R5 `Coverage.text` maps as Equivalent to R4 `Coverage.text` |
 | Coverage.type | Coverage.type | Equivalent | R5 `Coverage.type` maps as Equivalent to R4 `Coverage.type` |
 

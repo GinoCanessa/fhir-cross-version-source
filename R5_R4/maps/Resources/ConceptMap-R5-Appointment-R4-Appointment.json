@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Appointment",
       "element": [
         {
-          "code": "Appointment.cancellationReason",
-          "target": [
-            {
-              "code": "Appointment.cancelationReason",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Appointment.note",
-          "target": [
-            {
-              "code": "Appointment.comment",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Appointment.reason.concept",
-          "target": [
-            {
-              "code": "Appointment.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Appointment.reason.reference",
-          "target": [
-            {
-              "code": "Appointment.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Appointment",
-      "target": "http://hl7.org/fhir/StructureDefinition/Appointment",
-      "element": [
-        {
           "code": "Appointment",
           "display": "A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)",
           "target": [
@@ -93,7 +51,7 @@
             {
               "code": "Appointment.appointmentType",
               "display": "The style of appointment or patient that has been booked in the slot (not service type)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.appointmentType\u0060 maps as Equivalent to R4 \u0060Appointment.appointmentType\u0060"
             }
           ]
@@ -105,7 +63,7 @@
             {
               "code": "Appointment.basedOn",
               "display": "The service request this appointment is allocated to assess",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.basedOn\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.basedOn\u0060 - basedOn has change due to type change: R5 \u0060basedOn\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060basedOn\u0060"
             }
           ]
@@ -117,8 +75,14 @@
         },
         {
           "code": "Appointment.cancellationReason",
-          "display": "The coded reason for the appointment being cancelled",
-          "noMap": true
+          "target": [
+            {
+              "code": "Appointment.cancelationReason",
+              "display": "The coded reason for the appointment being cancelled",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Appointment.cancellationReason\u0060 maps as Equivalent to R4 \u0060Appointment.cancelationReason\u0060"
+            }
+          ]
         },
         {
           "code": "Appointment.class",
@@ -132,7 +96,7 @@
             {
               "code": "Appointment.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.contained\u0060 maps as Equivalent to R4 \u0060Appointment.contained\u0060"
             }
           ]
@@ -144,7 +108,7 @@
             {
               "code": "Appointment.created",
               "display": "The date that this appointment was initially created",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.created\u0060 maps as Equivalent to R4 \u0060Appointment.created\u0060"
             }
           ]
@@ -156,7 +120,7 @@
             {
               "code": "Appointment.description",
               "display": "Shown on a subject line in a meeting request, or appointment list",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.description\u0060 maps as Equivalent to R4 \u0060Appointment.description\u0060"
             }
           ]
@@ -168,7 +132,7 @@
             {
               "code": "Appointment.end",
               "display": "When appointment is to conclude",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.end\u0060 maps as Equivalent to R4 \u0060Appointment.end\u0060"
             }
           ]
@@ -180,7 +144,7 @@
             {
               "code": "Appointment.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -204,7 +168,7 @@
             {
               "code": "Appointment.identifier",
               "display": "External Ids for this item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.identifier\u0060 maps as Equivalent to R4 \u0060Appointment.identifier\u0060"
             }
           ]
@@ -228,8 +192,8 @@
             {
               "code": "Appointment.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Appointment.language\u0060 maps as RelatedTo to R4 \u0060Appointment.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Appointment.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Appointment.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -252,7 +216,7 @@
             {
               "code": "Appointment.minutesDuration",
               "display": "Can be less than start/end (e.g. estimate)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.minutesDuration\u0060 maps as Equivalent to R4 \u0060Appointment.minutesDuration\u0060"
             }
           ]
@@ -264,15 +228,21 @@
             {
               "code": "Appointment.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "Appointment.note",
-          "display": "Additional comments",
-          "noMap": true
+          "target": [
+            {
+              "code": "Appointment.comment",
+              "display": "Additional comments",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Appointment.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.comment\u0060 - comment changed from array to scalar (max cardinality from * to 1); comment has change due to type change: R5 note Annotation has no equivalent or mapped type in R4 comment"
+            }
+          ]
         },
         {
           "code": "Appointment.occurrenceChanged",
@@ -291,7 +261,7 @@
             {
               "code": "Appointment.participant",
               "display": "Participants involved in appointment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.participant\u0060 maps as Equivalent to R4 \u0060Appointment.participant\u0060"
             }
           ]
@@ -303,7 +273,7 @@
             {
               "code": "Appointment.participant.actor",
               "display": "Person, Location/HealthcareService or Device",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.participant.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.participant.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -315,7 +285,7 @@
             {
               "code": "Appointment.participant.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.participant.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.participant.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -327,7 +297,7 @@
             {
               "code": "Appointment.participant.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.participant.id\u0060 maps as Equivalent to R4 \u0060Appointment.participant.id\u0060"
             }
           ]
@@ -339,7 +309,7 @@
             {
               "code": "Appointment.participant.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.participant.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -351,7 +321,7 @@
             {
               "code": "Appointment.participant.period",
               "display": "Participation period of the actor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.participant.period\u0060 maps as Equivalent to R4 \u0060Appointment.participant.period\u0060"
             }
           ]
@@ -375,7 +345,7 @@
             {
               "code": "Appointment.participant.status",
               "display": "accepted | declined | tentative | needs-action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.participant.status\u0060 maps as Equivalent to R4 \u0060Appointment.participant.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/participationstatus|5.0.0 and http://hl7.org/fhir/ValueSet/participationstatus|4.0.1 (Equivalent)"
             }
           ]
@@ -387,7 +357,7 @@
             {
               "code": "Appointment.participant.type",
               "display": "Role of participant in the appointment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.participant.type\u0060 maps as Equivalent to R4 \u0060Appointment.participant.type\u0060"
             }
           ]
@@ -399,8 +369,8 @@
             {
               "code": "Appointment.patientInstruction",
               "display": "Detailed information and instructions for the patient",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Appointment.patientInstruction\u0060 maps as RelatedTo to R4 \u0060Appointment.patientInstruction\u0060 - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction CodeableReference has no equivalent or mapped type in R4 patientInstruction"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Appointment.patientInstruction\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.patientInstruction\u0060 - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction CodeableReference has no equivalent or mapped type in R4 patientInstruction"
             }
           ]
         },
@@ -423,8 +393,32 @@
         },
         {
           "code": "Appointment.reason",
-          "display": "Reason this appointment is scheduled",
-          "noMap": true
+          "target": [
+            {
+              "code": "Appointment.reasonCode",
+              "display": "Coded reason this appointment is scheduled",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Appointment.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.reason.concept",
+          "target": [
+            {
+              "code": "Appointment.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Appointment.reason.reference",
+          "target": [
+            {
+              "code": "Appointment.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Appointment.recurrenceId",
@@ -623,7 +617,7 @@
             {
               "code": "Appointment.requestedPeriod",
               "display": "Potential date/time interval(s) requested to allocate the appointment within",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.requestedPeriod\u0060 maps as Equivalent to R4 \u0060Appointment.requestedPeriod\u0060"
             }
           ]
@@ -635,7 +629,7 @@
             {
               "code": "Appointment.serviceCategory",
               "display": "A broad categorization of the service that is to be performed during this appointment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.serviceCategory\u0060 maps as Equivalent to R4 \u0060Appointment.serviceCategory\u0060"
             }
           ]
@@ -647,7 +641,7 @@
             {
               "code": "Appointment.serviceType",
               "display": "The specific service that is to be performed during this appointment",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Appointment.serviceType\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Appointment.serviceType\u0060 - serviceType has change due to type change: R5 serviceType CodeableReference has no equivalent or mapped type in R4 serviceType"
             }
           ]
@@ -659,7 +653,7 @@
             {
               "code": "Appointment.slot",
               "display": "The slots that this appointment is filling",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.slot\u0060 maps as Equivalent to R4 \u0060Appointment.slot\u0060"
             }
           ]
@@ -671,7 +665,7 @@
             {
               "code": "Appointment.specialty",
               "display": "The specialty of a practitioner that would be required to perform the service requested in this appointment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.specialty\u0060 maps as Equivalent to R4 \u0060Appointment.specialty\u0060"
             }
           ]
@@ -683,7 +677,7 @@
             {
               "code": "Appointment.start",
               "display": "When appointment is to take place",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.start\u0060 maps as Equivalent to R4 \u0060Appointment.start\u0060"
             }
           ]
@@ -695,7 +689,7 @@
             {
               "code": "Appointment.status",
               "display": "proposed | pending | booked | arrived | fulfilled | cancelled | noshow | entered-in-error | checked-in | waitlist",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.status\u0060 maps as Equivalent to R4 \u0060Appointment.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/appointmentstatus|5.0.0 and http://hl7.org/fhir/ValueSet/appointmentstatus|4.0.1 (Equivalent)"
             }
           ]
@@ -712,7 +706,7 @@
             {
               "code": "Appointment.supportingInformation",
               "display": "Additional information to support the appointment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.supportingInformation\u0060 maps as Equivalent to R4 \u0060Appointment.supportingInformation\u0060"
             }
           ]
@@ -724,7 +718,7 @@
             {
               "code": "Appointment.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Appointment.text\u0060 maps as Equivalent to R4 \u0060Appointment.text\u0060"
             }
           ]

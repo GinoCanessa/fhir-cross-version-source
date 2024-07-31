@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 52 |
-Equivalent | 4 |
-RelatedTo | 12 |
+DoesNotExistInTarget | 40 |
+Equivalent | 20 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -47,10 +48,10 @@ RelatedTo | 12 |
 | ObservationDefinition.extension | ObservationDefinition.extension | SourceIsBroaderThanTarget | R5 `ObservationDefinition.extension` maps as SourceIsBroaderThanTarget to R4 `ObservationDefinition.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ObservationDefinition.hasMember | - | DoesNotExistInTarget | R5 `ObservationDefinition.hasMember` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.id | ObservationDefinition.id | Equivalent | R5 `ObservationDefinition.id` maps as Equivalent to R4 `ObservationDefinition.id` |
-| ObservationDefinition.identifier | ObservationDefinition.identifier | RelatedTo | R5 `ObservationDefinition.identifier` maps as RelatedTo to R4 `ObservationDefinition.identifier` - identifier changed from scalar to array (max cardinality from 1 to *) |
+| ObservationDefinition.identifier | ObservationDefinition.identifier | SourceIsNarrowerThanTarget | R5 `ObservationDefinition.identifier` maps as SourceIsNarrowerThanTarget to R4 `ObservationDefinition.identifier` - identifier changed from scalar to array (max cardinality from 1 to *) |
 | ObservationDefinition.implicitRules | ObservationDefinition.implicitRules | Equivalent | R5 `ObservationDefinition.implicitRules` maps as Equivalent to R4 `ObservationDefinition.implicitRules` |
 | ObservationDefinition.jurisdiction | - | DoesNotExistInTarget | R5 `ObservationDefinition.jurisdiction` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.language | ObservationDefinition.language | RelatedTo | R5 `ObservationDefinition.language` maps as RelatedTo to R4 `ObservationDefinition.language` - language changed the binding strength from Required to Preferred |
+| ObservationDefinition.language | ObservationDefinition.language | SourceIsNarrowerThanTarget | R5 `ObservationDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `ObservationDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ObservationDefinition.lastReviewDate | - | DoesNotExistInTarget | R5 `ObservationDefinition.lastReviewDate` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.meta | ObservationDefinition.meta | Equivalent | R5 `ObservationDefinition.meta` maps as Equivalent to R4 `ObservationDefinition.meta` |
 | ObservationDefinition.method | ObservationDefinition.method | Equivalent | R5 `ObservationDefinition.method` maps as Equivalent to R4 `ObservationDefinition.method` |
@@ -64,21 +65,21 @@ RelatedTo | 12 |
 | ObservationDefinition.publisher | - | DoesNotExistInTarget | R5 `ObservationDefinition.publisher` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.purpose | - | DoesNotExistInTarget | R5 `ObservationDefinition.purpose` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.qualifiedValue | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.abnormalCodedValueSet | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.abnormalCodedValueSet` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.age | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.age` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.appliesTo | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.appliesTo` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.condition | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.condition` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.context | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.context` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.criticalCodedValueSet | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.criticalCodedValueSet` does not appear in the target and has no mapping for `ObservationDefinition`. |
+| ObservationDefinition.qualifiedValue.abnormalCodedValueSet | ObservationDefinition.abnormalCodedValueSet | SourceIsBroaderThanTarget | R5 `ObservationDefinition.qualifiedValue.abnormalCodedValueSet` maps as SourceIsBroaderThanTarget to R4 `ObservationDefinition.abnormalCodedValueSet` - abnormalCodedValueSet has change due to type change: R5 abnormalCodedValueSet canonical has no equivalent or mapped type in R4 abnormalCodedValueSet |
+| ObservationDefinition.qualifiedValue.age | ObservationDefinition.qualifiedInterval.age | Equivalent | R5 `ObservationDefinition.qualifiedValue.age` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.age` |
+| ObservationDefinition.qualifiedValue.appliesTo | ObservationDefinition.qualifiedInterval.appliesTo | Equivalent | R5 `ObservationDefinition.qualifiedValue.appliesTo` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.appliesTo` |
+| ObservationDefinition.qualifiedValue.condition | ObservationDefinition.qualifiedInterval.condition | Equivalent | R5 `ObservationDefinition.qualifiedValue.condition` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.condition` |
+| ObservationDefinition.qualifiedValue.context | ObservationDefinition.qualifiedInterval.context | Equivalent | R5 `ObservationDefinition.qualifiedValue.context` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.context` |
+| ObservationDefinition.qualifiedValue.criticalCodedValueSet | ObservationDefinition.criticalCodedValueSet | SourceIsBroaderThanTarget | R5 `ObservationDefinition.qualifiedValue.criticalCodedValueSet` maps as SourceIsBroaderThanTarget to R4 `ObservationDefinition.criticalCodedValueSet` - criticalCodedValueSet has change due to type change: R5 criticalCodedValueSet canonical has no equivalent or mapped type in R4 criticalCodedValueSet |
 | ObservationDefinition.qualifiedValue.extension | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.extension` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.gender | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.gender` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.gestationalAge | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.gestationalAge` does not appear in the target and has no mapping for `ObservationDefinition`. |
+| ObservationDefinition.qualifiedValue.gender | ObservationDefinition.qualifiedInterval.gender | Equivalent | R5 `ObservationDefinition.qualifiedValue.gender` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.gender` - gender has compatible required binding for code type: http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0 and http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 (Equivalent) |
+| ObservationDefinition.qualifiedValue.gestationalAge | ObservationDefinition.qualifiedInterval.gestationalAge | Equivalent | R5 `ObservationDefinition.qualifiedValue.gestationalAge` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.gestationalAge` |
 | ObservationDefinition.qualifiedValue.id | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.id` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.qualifiedValue.modifierExtension | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.modifierExtension` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.normalCodedValueSet | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.normalCodedValueSet` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.range | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.range` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.rangeCategory | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.rangeCategory` does not appear in the target and has no mapping for `ObservationDefinition`. |
-| ObservationDefinition.qualifiedValue.validCodedValueSet | - | DoesNotExistInTarget | R5 `ObservationDefinition.qualifiedValue.validCodedValueSet` does not appear in the target and has no mapping for `ObservationDefinition`. |
+| ObservationDefinition.qualifiedValue.normalCodedValueSet | ObservationDefinition.normalCodedValueSet | SourceIsBroaderThanTarget | R5 `ObservationDefinition.qualifiedValue.normalCodedValueSet` maps as SourceIsBroaderThanTarget to R4 `ObservationDefinition.normalCodedValueSet` - normalCodedValueSet has change due to type change: R5 normalCodedValueSet canonical has no equivalent or mapped type in R4 normalCodedValueSet |
+| ObservationDefinition.qualifiedValue.range | ObservationDefinition.qualifiedInterval.range | Equivalent | R5 `ObservationDefinition.qualifiedValue.range` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.range` |
+| ObservationDefinition.qualifiedValue.rangeCategory | ObservationDefinition.qualifiedInterval.category | Equivalent | R5 `ObservationDefinition.qualifiedValue.rangeCategory` maps as Equivalent to R4 `ObservationDefinition.qualifiedInterval.category` - category has compatible required binding for code type: http://hl7.org/fhir/ValueSet/observation-range-category|5.0.0 and http://hl7.org/fhir/ValueSet/observation-range-category|4.0.1 (Equivalent) |
+| ObservationDefinition.qualifiedValue.validCodedValueSet | ObservationDefinition.validCodedValueSet | SourceIsBroaderThanTarget | R5 `ObservationDefinition.qualifiedValue.validCodedValueSet` maps as SourceIsBroaderThanTarget to R4 `ObservationDefinition.validCodedValueSet` - validCodedValueSet has change due to type change: R5 validCodedValueSet canonical has no equivalent or mapped type in R4 validCodedValueSet |
 | ObservationDefinition.specimen | - | DoesNotExistInTarget | R5 `ObservationDefinition.specimen` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.status | - | DoesNotExistInTarget | R5 `ObservationDefinition.status` does not appear in the target and has no mapping for `ObservationDefinition`. |
 | ObservationDefinition.subject | - | DoesNotExistInTarget | R5 `ObservationDefinition.subject` does not appear in the target and has no mapping for `ObservationDefinition`. |

@@ -473,18 +473,10 @@
       },
       {
         "path": "Extension.extension:identifier.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:identifier.extension:Identifier",
-        "sliceName": "Identifier",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Identifier"
-            ]
+            "code": "Identifier"
           }
         ]
       },
@@ -501,20 +493,22 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Qualification"
+            }
+          ],
+          "strength": "example",
+          "description": "Specific qualification the organization has to provide a service."
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -529,18 +523,10 @@
       },
       {
         "path": "Extension.extension:period.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:period.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },
@@ -557,17 +543,12 @@
       },
       {
         "path": "Extension.extension:issuer.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:issuer.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ]

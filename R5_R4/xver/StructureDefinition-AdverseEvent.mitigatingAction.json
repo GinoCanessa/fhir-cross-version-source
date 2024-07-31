@@ -434,33 +434,32 @@
       },
       {
         "path": "Extension.extension:item[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:item[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
             ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:item[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdverseEventMitigatingAction"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes describing the ameliorating actions taken after the adverse event occured in order to reduce the extent of harm.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-mitigating-action"
+        }
       },
       {
         "path": "Extension.extension:item[x].url",

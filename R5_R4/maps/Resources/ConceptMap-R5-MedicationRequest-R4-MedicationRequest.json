@@ -28,57 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
       "element": [
         {
-          "code": "MedicationRequest.dispenseRequest.dispenser",
-          "target": [
-            {
-              "code": "MedicationRequest.dispenseRequest.performer",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationRequest.medication",
-          "target": [
-            {
-              "code": "MedicationRequest.medication[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationRequest.reason.concept",
-          "target": [
-            {
-              "code": "MedicationRequest.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationRequest.reason.reference",
-          "target": [
-            {
-              "code": "MedicationRequest.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationRequest.reported",
-          "target": [
-            {
-              "code": "MedicationRequest.reported[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-      "target": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
-      "element": [
-        {
           "code": "MedicationRequest",
           "display": "Ordering of medication for patient or group",
           "target": [
@@ -97,7 +46,7 @@
             {
               "code": "MedicationRequest.authoredOn",
               "display": "When request was initially authored",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.authoredOn\u0060 maps as Equivalent to R4 \u0060MedicationRequest.authoredOn\u0060"
             }
           ]
@@ -109,7 +58,7 @@
             {
               "code": "MedicationRequest.basedOn",
               "display": "What request fulfills",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.basedOn\u0060 maps as Equivalent to R4 \u0060MedicationRequest.basedOn\u0060"
             }
           ]
@@ -121,7 +70,7 @@
             {
               "code": "MedicationRequest.category",
               "display": "Type of medication usage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.category\u0060 maps as Equivalent to R4 \u0060MedicationRequest.category\u0060"
             }
           ]
@@ -133,7 +82,7 @@
             {
               "code": "MedicationRequest.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.contained\u0060 maps as Equivalent to R4 \u0060MedicationRequest.contained\u0060"
             }
           ]
@@ -145,8 +94,8 @@
             {
               "code": "MedicationRequest.courseOfTherapyType",
               "display": "Overall pattern of medication administration",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationRequest.courseOfTherapyType\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.courseOfTherapyType\u0060 - courseOfTherapyType changed the binding strength from Extensible to Example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationRequest.courseOfTherapyType\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationRequest.courseOfTherapyType\u0060 - courseOfTherapyType changed the binding strength from Extensible to Example; courseOfTherapyType has change due to type change: R5 \u0060courseOfTherapyType\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060courseOfTherapyType\u0060"
             }
           ]
         },
@@ -162,7 +111,7 @@
             {
               "code": "MedicationRequest.dispenseRequest",
               "display": "Medication supply authorization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest\u0060"
             }
           ]
@@ -174,15 +123,21 @@
             {
               "code": "MedicationRequest.dispenseRequest.dispenseInterval",
               "display": "Minimum period of time between dispenses",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.dispenseInterval\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.dispenseInterval\u0060"
             }
           ]
         },
         {
           "code": "MedicationRequest.dispenseRequest.dispenser",
-          "display": "Intended performer of dispense",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationRequest.dispenseRequest.performer",
+              "display": "Intended dispenser",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationRequest.dispenseRequest.dispenser\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.performer\u0060"
+            }
+          ]
         },
         {
           "code": "MedicationRequest.dispenseRequest.dispenserInstruction",
@@ -201,7 +156,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.expectedSupplyDuration",
               "display": "Number of days supply per dispense",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.expectedSupplyDuration\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.expectedSupplyDuration\u0060"
             }
           ]
@@ -213,7 +168,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.dispenseRequest.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -225,7 +180,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.id\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.id\u0060"
             }
           ]
@@ -237,7 +192,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill",
               "display": "First fill details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.initialFill\u0060"
             }
           ]
@@ -249,7 +204,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill.duration",
               "display": "First fill duration",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill.duration\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.initialFill.duration\u0060"
             }
           ]
@@ -261,7 +216,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.dispenseRequest.initialFill.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -273,7 +228,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill.id\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.initialFill.id\u0060"
             }
           ]
@@ -285,7 +240,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.dispenseRequest.initialFill.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -297,7 +252,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.initialFill.quantity",
               "display": "First fill quantity",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.initialFill.quantity\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.initialFill.quantity\u0060"
             }
           ]
@@ -309,7 +264,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.dispenseRequest.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -321,7 +276,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
               "display": "Number of refills authorized",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.numberOfRepeatsAllowed\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.numberOfRepeatsAllowed\u0060"
             }
           ]
@@ -333,7 +288,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.quantity",
               "display": "Amount of medication to supply per dispense",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.quantity\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.quantity\u0060"
             }
           ]
@@ -345,7 +300,7 @@
             {
               "code": "MedicationRequest.dispenseRequest.validityPeriod",
               "display": "Time period supply is authorized for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.dispenseRequest.validityPeriod\u0060 maps as Equivalent to R4 \u0060MedicationRequest.dispenseRequest.validityPeriod\u0060"
             }
           ]
@@ -357,7 +312,7 @@
             {
               "code": "MedicationRequest.doNotPerform",
               "display": "True if request is prohibiting action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.doNotPerform\u0060 maps as Equivalent to R4 \u0060MedicationRequest.doNotPerform\u0060"
             }
           ]
@@ -369,8 +324,8 @@
             {
               "code": "MedicationRequest.dosageInstruction",
               "display": "How the medication should be taken",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationRequest.dosageInstruction\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.dosageInstruction\u0060 - dosageInstruction has change due to type change: R5 \u0060dosageInstruction\u0060 \u0060Dosage\u0060 maps as RelatedTo for R4 \u0060dosageInstruction\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationRequest.dosageInstruction\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.dosageInstruction\u0060 - dosageInstruction has change due to type change: R5 \u0060dosageInstruction\u0060 \u0060Dosage\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060dosageInstruction\u0060"
             }
           ]
         },
@@ -386,7 +341,7 @@
             {
               "code": "MedicationRequest.encounter",
               "display": "Encounter created as part of encounter/admission/stay",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.encounter\u0060 maps as Equivalent to R4 \u0060MedicationRequest.encounter\u0060"
             }
           ]
@@ -398,7 +353,7 @@
             {
               "code": "MedicationRequest.eventHistory",
               "display": "A list of events of interest in the lifecycle",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.eventHistory\u0060 maps as Equivalent to R4 \u0060MedicationRequest.eventHistory\u0060"
             }
           ]
@@ -410,7 +365,7 @@
             {
               "code": "MedicationRequest.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -422,7 +377,7 @@
             {
               "code": "MedicationRequest.groupIdentifier",
               "display": "Composite request this is part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.groupIdentifier\u0060 maps as Equivalent to R4 \u0060MedicationRequest.groupIdentifier\u0060"
             }
           ]
@@ -446,7 +401,7 @@
             {
               "code": "MedicationRequest.identifier",
               "display": "External ids for this request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.identifier\u0060 maps as Equivalent to R4 \u0060MedicationRequest.identifier\u0060"
             }
           ]
@@ -475,7 +430,7 @@
             {
               "code": "MedicationRequest.insurance",
               "display": "Associated insurance coverage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.insurance\u0060 maps as Equivalent to R4 \u0060MedicationRequest.insurance\u0060"
             }
           ]
@@ -487,7 +442,7 @@
             {
               "code": "MedicationRequest.intent",
               "display": "proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.intent\u0060 maps as Equivalent to R4 \u0060MedicationRequest.intent\u0060 - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medicationrequest-intent|5.0.0 and http://hl7.org/fhir/ValueSet/medicationrequest-intent|4.0.1 (Equivalent)"
             }
           ]
@@ -499,15 +454,21 @@
             {
               "code": "MedicationRequest.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationRequest.language\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationRequest.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationRequest.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "MedicationRequest.medication",
-          "display": "Medication to be taken",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationRequest.medication[x]",
+              "display": "Medication to be taken",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationRequest.medication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.medication[x]\u0060 - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]"
+            }
+          ]
         },
         {
           "code": "MedicationRequest.meta",
@@ -528,7 +489,7 @@
             {
               "code": "MedicationRequest.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -540,7 +501,7 @@
             {
               "code": "MedicationRequest.note",
               "display": "Information about the prescription",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -564,8 +525,8 @@
             {
               "code": "MedicationRequest.performerType",
               "display": "Desired kind of performer of the medication administration",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationRequest.performerType\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.performerType\u0060 - performerType changed the binding strength from Extensible to Example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationRequest.performerType\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationRequest.performerType\u0060 - performerType changed the binding strength from Extensible to Example; performerType has change due to type change: R5 \u0060performerType\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060performerType\u0060"
             }
           ]
         },
@@ -576,7 +537,7 @@
             {
               "code": "MedicationRequest.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.priority\u0060 maps as Equivalent to R4 \u0060MedicationRequest.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
@@ -588,15 +549,45 @@
             {
               "code": "MedicationRequest.priorPrescription",
               "display": "An order/prescription that is being replaced",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.priorPrescription\u0060 maps as Equivalent to R4 \u0060MedicationRequest.priorPrescription\u0060"
             }
           ]
         },
         {
           "code": "MedicationRequest.reason",
-          "display": "Reason or indication for ordering or not ordering the medication",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationRequest.reasonCode",
+              "display": "Reason or indication for ordering or not ordering the medication",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationRequest.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "MedicationRequest.reasonReference",
+              "display": "Condition or observation that supports why the prescription is being written",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationRequest.reason\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "MedicationRequest.reason.concept",
+          "target": [
+            {
+              "code": "MedicationRequest.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationRequest.reason.reference",
+          "target": [
+            {
+              "code": "MedicationRequest.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "MedicationRequest.recorder",
@@ -605,7 +596,7 @@
             {
               "code": "MedicationRequest.recorder",
               "display": "Person who entered the request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.recorder\u0060 maps as Equivalent to R4 \u0060MedicationRequest.recorder\u0060"
             }
           ]
@@ -617,8 +608,14 @@
         },
         {
           "code": "MedicationRequest.reported",
-          "display": "Reported rather than primary record",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationRequest.reported[x]",
+              "display": "Reported rather than primary record",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MedicationRequest.reported\u0060 maps as Equivalent to R4 \u0060MedicationRequest.reported[x]\u0060"
+            }
+          ]
         },
         {
           "code": "MedicationRequest.requester",
@@ -627,7 +624,7 @@
             {
               "code": "MedicationRequest.requester",
               "display": "Who/What requested the Request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.requester\u0060 maps as Equivalent to R4 \u0060MedicationRequest.requester\u0060"
             }
           ]
@@ -639,7 +636,7 @@
             {
               "code": "MedicationRequest.status",
               "display": "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.status\u0060 maps as Equivalent to R4 \u0060MedicationRequest.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medicationrequest-status|5.0.0 and http://hl7.org/fhir/ValueSet/medicationrequest-status|4.0.1 (Equivalent)"
             }
           ]
@@ -656,7 +653,7 @@
             {
               "code": "MedicationRequest.statusReason",
               "display": "Reason for current status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.statusReason\u0060 maps as Equivalent to R4 \u0060MedicationRequest.statusReason\u0060"
             }
           ]
@@ -668,7 +665,7 @@
             {
               "code": "MedicationRequest.subject",
               "display": "Who or group medication request is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.subject\u0060 maps as Equivalent to R4 \u0060MedicationRequest.subject\u0060"
             }
           ]
@@ -680,7 +677,7 @@
             {
               "code": "MedicationRequest.substitution",
               "display": "Any restrictions on medication substitution",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.substitution\u0060 maps as Equivalent to R4 \u0060MedicationRequest.substitution\u0060"
             }
           ]
@@ -692,8 +689,8 @@
             {
               "code": "MedicationRequest.substitution.allowed[x]",
               "display": "Whether substitution is allowed or not",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationRequest.substitution.allowed[x]\u0060 maps as RelatedTo to R4 \u0060MedicationRequest.substitution.allowed[x]\u0060 - allowed[x] changed the binding strength from Preferred to Example"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationRequest.substitution.allowed[x]\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationRequest.substitution.allowed[x]\u0060 - allowed[x] changed the binding strength from Preferred to Example; allowed[x] has change due to type change: R5 \u0060allowed[x]\u0060 \u0060boolean\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060allowed[x]\u0060; allowed[x] has change due to type change: R5 \u0060allowed[x]\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060allowed[x]\u0060"
             }
           ]
         },
@@ -704,7 +701,7 @@
             {
               "code": "MedicationRequest.substitution.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.substitution.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.substitution.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -716,7 +713,7 @@
             {
               "code": "MedicationRequest.substitution.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.substitution.id\u0060 maps as Equivalent to R4 \u0060MedicationRequest.substitution.id\u0060"
             }
           ]
@@ -728,7 +725,7 @@
             {
               "code": "MedicationRequest.substitution.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationRequest.substitution.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationRequest.substitution.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -740,7 +737,7 @@
             {
               "code": "MedicationRequest.substitution.reason",
               "display": "Why should (not) substitution be made",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.substitution.reason\u0060 maps as Equivalent to R4 \u0060MedicationRequest.substitution.reason\u0060"
             }
           ]
@@ -752,7 +749,7 @@
             {
               "code": "MedicationRequest.supportingInformation",
               "display": "Information to support ordering of the medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.supportingInformation\u0060 maps as Equivalent to R4 \u0060MedicationRequest.supportingInformation\u0060"
             }
           ]
@@ -764,7 +761,7 @@
             {
               "code": "MedicationRequest.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationRequest.text\u0060 maps as Equivalent to R4 \u0060MedicationRequest.text\u0060"
             }
           ]

@@ -13,14 +13,16 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 22 |
-Equivalent | 4 |
-RelatedTo | 11 |
+DoesNotExistInTarget | 20 |
+Equivalent | 10 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 3 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
-| BodyStructure | BodyStructure | Equivalent | R5 `BodyStructure` maps as Equivalent to R4 `BodyStructure` |
+| BodyStructure | BodyStructure | SourceIsNarrowerThanTarget | R5 `BodyStructure` is narrower than R4 `BodyStructure` and is compatible. `BodyStructure` is mapped from `BodyStructure` and `BodyStructure.includedStructure`. |
 | BodyStructure.active | BodyStructure.active | Equivalent | R5 `BodyStructure.active` maps as Equivalent to R4 `BodyStructure.active` |
 | BodyStructure.contained | BodyStructure.contained | Equivalent | R5 `BodyStructure.contained` maps as Equivalent to R4 `BodyStructure.contained` |
 | BodyStructure.description | BodyStructure.description | SourceIsBroaderThanTarget | R5 `BodyStructure.description` maps as SourceIsBroaderThanTarget to R4 `BodyStructure.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
@@ -30,7 +32,7 @@ RelatedTo | 11 |
 | BodyStructure.identifier | BodyStructure.identifier | Equivalent | R5 `BodyStructure.identifier` maps as Equivalent to R4 `BodyStructure.identifier` |
 | BodyStructure.image | BodyStructure.image | RelatedTo | R5 `BodyStructure.image` maps as RelatedTo to R4 `BodyStructure.image` - image has change due to type change: R5 `image` `Attachment` maps as RelatedTo for R4 `image` |
 | BodyStructure.implicitRules | BodyStructure.implicitRules | Equivalent | R5 `BodyStructure.implicitRules` maps as Equivalent to R4 `BodyStructure.implicitRules` |
-| BodyStructure.includedStructure | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure` does not appear in the target and has no mapping for `BodyStructure`. |
+| BodyStructure.includedStructure | BodyStructure | RelatedTo | R5 `BodyStructure.includedStructure` maps as RelatedTo to R4 `BodyStructure` - BodyStructure has change due to type change: R5 includedStructure BackboneElement has no equivalent or mapped type in R4 BodyStructure |
 | BodyStructure.includedStructure.bodyLandmarkOrientation | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.bodyLandmarkOrientation` does not appear in the target and has no mapping for `BodyStructure`. |
 | BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition` does not appear in the target and has no mapping for `BodyStructure`. |
 | BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark` does not appear in the target and has no mapping for `BodyStructure`. |
@@ -48,10 +50,10 @@ RelatedTo | 11 |
 | BodyStructure.includedStructure.id | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.id` does not appear in the target and has no mapping for `BodyStructure`. |
 | BodyStructure.includedStructure.laterality | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.laterality` does not appear in the target and has no mapping for `BodyStructure`. |
 | BodyStructure.includedStructure.modifierExtension | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.modifierExtension` does not appear in the target and has no mapping for `BodyStructure`. |
-| BodyStructure.includedStructure.qualifier | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.qualifier` does not appear in the target and has no mapping for `BodyStructure`. |
+| BodyStructure.includedStructure.qualifier | BodyStructure.locationQualifier | Equivalent | R5 `BodyStructure.includedStructure.qualifier` maps as Equivalent to R4 `BodyStructure.locationQualifier` |
 | BodyStructure.includedStructure.spatialReference | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.spatialReference` does not appear in the target and has no mapping for `BodyStructure`. |
 | BodyStructure.includedStructure.structure | - | DoesNotExistInTarget | R5 `BodyStructure.includedStructure.structure` does not appear in the target and has no mapping for `BodyStructure`. |
-| BodyStructure.language | BodyStructure.language | RelatedTo | R5 `BodyStructure.language` maps as RelatedTo to R4 `BodyStructure.language` - language changed the binding strength from Required to Preferred |
+| BodyStructure.language | BodyStructure.language | SourceIsNarrowerThanTarget | R5 `BodyStructure.language` maps as SourceIsNarrowerThanTarget to R4 `BodyStructure.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | BodyStructure.meta | BodyStructure.meta | Equivalent | R5 `BodyStructure.meta` maps as Equivalent to R4 `BodyStructure.meta` |
 | BodyStructure.modifierExtension | BodyStructure.modifierExtension | SourceIsBroaderThanTarget | R5 `BodyStructure.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `BodyStructure.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | BodyStructure.morphology | BodyStructure.morphology | Equivalent | R5 `BodyStructure.morphology` maps as Equivalent to R4 `BodyStructure.morphology` |

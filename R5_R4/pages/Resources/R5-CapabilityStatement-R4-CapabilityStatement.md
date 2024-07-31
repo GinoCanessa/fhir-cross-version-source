@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 5 |
-Equivalent | 4 |
-RelatedTo | 126 |
+Equivalent | 100 |
+SourceIsBroaderThanTarget | 29 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -54,7 +55,7 @@ RelatedTo | 126 |
 | CapabilityStatement.instantiates | CapabilityStatement.instantiates | Equivalent | R5 `CapabilityStatement.instantiates` maps as Equivalent to R4 `CapabilityStatement.instantiates` |
 | CapabilityStatement.jurisdiction | CapabilityStatement.jurisdiction | Equivalent | R5 `CapabilityStatement.jurisdiction` maps as Equivalent to R4 `CapabilityStatement.jurisdiction` |
 | CapabilityStatement.kind | CapabilityStatement.kind | Equivalent | R5 `CapabilityStatement.kind` maps as Equivalent to R4 `CapabilityStatement.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/capability-statement-kind|5.0.0 and http://hl7.org/fhir/ValueSet/capability-statement-kind|4.0.1 (Equivalent) |
-| CapabilityStatement.language | CapabilityStatement.language | RelatedTo | R5 `CapabilityStatement.language` maps as RelatedTo to R4 `CapabilityStatement.language` - language changed the binding strength from Required to Preferred |
+| CapabilityStatement.language | CapabilityStatement.language | SourceIsNarrowerThanTarget | R5 `CapabilityStatement.language` maps as SourceIsNarrowerThanTarget to R4 `CapabilityStatement.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CapabilityStatement.messaging | CapabilityStatement.messaging | Equivalent | R5 `CapabilityStatement.messaging` maps as Equivalent to R4 `CapabilityStatement.messaging` |
 | CapabilityStatement.messaging.documentation | CapabilityStatement.messaging.documentation | Equivalent | R5 `CapabilityStatement.messaging.documentation` maps as Equivalent to R4 `CapabilityStatement.messaging.documentation` |
 | CapabilityStatement.messaging.endpoint | CapabilityStatement.messaging.endpoint | Equivalent | R5 `CapabilityStatement.messaging.endpoint` maps as Equivalent to R4 `CapabilityStatement.messaging.endpoint` |

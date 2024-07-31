@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
       "element": [
         {
-          "code": "DeviceMetric.device",
-          "target": [
-            {
-              "code": "DeviceMetric.source",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
-      "target": "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
-      "element": [
-        {
           "code": "DeviceMetric",
           "display": "Measurement, calculation or setting capability of a medical device",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "DeviceMetric.calibration",
               "display": "Describes the calibrations that have been performed or that are required to be performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.calibration\u0060 maps as Equivalent to R4 \u0060DeviceMetric.calibration\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "DeviceMetric.calibration.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceMetric.calibration.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceMetric.calibration.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "DeviceMetric.calibration.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.calibration.id\u0060 maps as Equivalent to R4 \u0060DeviceMetric.calibration.id\u0060"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "DeviceMetric.calibration.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceMetric.calibration.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceMetric.calibration.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -109,7 +94,7 @@
             {
               "code": "DeviceMetric.calibration.state",
               "display": "not-calibrated | calibration-required | calibrated | unspecified",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.calibration.state\u0060 maps as Equivalent to R4 \u0060DeviceMetric.calibration.state\u0060 - state has compatible required binding for code type: http://hl7.org/fhir/ValueSet/metric-calibration-state|5.0.0 and http://hl7.org/fhir/ValueSet/metric-calibration-state|4.0.1 (Equivalent)"
             }
           ]
@@ -121,7 +106,7 @@
             {
               "code": "DeviceMetric.calibration.time",
               "display": "Describes the time last calibration has been performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.calibration.time\u0060 maps as Equivalent to R4 \u0060DeviceMetric.calibration.time\u0060"
             }
           ]
@@ -133,7 +118,7 @@
             {
               "code": "DeviceMetric.calibration.type",
               "display": "unspecified | offset | gain | two-point",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.calibration.type\u0060 maps as Equivalent to R4 \u0060DeviceMetric.calibration.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/metric-calibration-type|5.0.0 and http://hl7.org/fhir/ValueSet/metric-calibration-type|4.0.1 (Equivalent)"
             }
           ]
@@ -145,7 +130,7 @@
             {
               "code": "DeviceMetric.category",
               "display": "measurement | setting | calculation | unspecified",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.category\u0060 maps as Equivalent to R4 \u0060DeviceMetric.category\u0060 - category has compatible required binding for code type: http://hl7.org/fhir/ValueSet/metric-category|5.0.0 and http://hl7.org/fhir/ValueSet/metric-category|4.0.1 (Equivalent)"
             }
           ]
@@ -158,7 +143,7 @@
               "code": "DeviceMetric.color",
               "display": "black | red | green | yellow | blue | magenta | cyan | white",
               "relationship": "related-to",
-              "comment": "R5 \u0060DeviceMetric.color\u0060 maps as RelatedTo to R4 \u0060DeviceMetric.color\u0060 - (color failed to compare required binding of http://hl7.org/fhir/ValueSet/color-codes|5.0.0 and http://hl7.org/fhir/ValueSet/metric-color|4.0.1)"
+              "comment": "R5 \u0060DeviceMetric.color\u0060 maps as RelatedTo to R4 \u0060DeviceMetric.color\u0060 - (color failed to compare required binding of http://hl7.org/fhir/ValueSet/color-codes|5.0.0 and http://hl7.org/fhir/ValueSet/metric-color|4.0.1); color has change due to type change: R5 \u0060color\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060color\u0060"
             }
           ]
         },
@@ -169,15 +154,27 @@
             {
               "code": "DeviceMetric.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.contained\u0060 maps as Equivalent to R4 \u0060DeviceMetric.contained\u0060"
             }
           ]
         },
         {
           "code": "DeviceMetric.device",
-          "display": "Describes the link to the Device",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceMetric.source",
+              "display": "Describes the link to the source Device",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DeviceMetric.device\u0060 maps as Equivalent to R4 \u0060DeviceMetric.source\u0060"
+            },
+            {
+              "code": "DeviceMetric.parent",
+              "display": "Describes the link to the parent Device",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DeviceMetric.device\u0060 maps as Equivalent to R4 \u0060DeviceMetric.parent\u0060"
+            }
+          ]
         },
         {
           "code": "DeviceMetric.extension",
@@ -186,7 +183,7 @@
             {
               "code": "DeviceMetric.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceMetric.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceMetric.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -210,7 +207,7 @@
             {
               "code": "DeviceMetric.identifier",
               "display": "Instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.identifier\u0060 maps as Equivalent to R4 \u0060DeviceMetric.identifier\u0060"
             }
           ]
@@ -234,8 +231,8 @@
             {
               "code": "DeviceMetric.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DeviceMetric.language\u0060 maps as RelatedTo to R4 \u0060DeviceMetric.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DeviceMetric.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DeviceMetric.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -263,7 +260,7 @@
             {
               "code": "DeviceMetric.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceMetric.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceMetric.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -275,7 +272,7 @@
             {
               "code": "DeviceMetric.operationalStatus",
               "display": "on | off | standby | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.operationalStatus\u0060 maps as Equivalent to R4 \u0060DeviceMetric.operationalStatus\u0060 - operationalStatus has compatible required binding for code type: http://hl7.org/fhir/ValueSet/metric-operational-status|5.0.0 and http://hl7.org/fhir/ValueSet/metric-operational-status|4.0.1 (Equivalent)"
             }
           ]
@@ -287,7 +284,7 @@
             {
               "code": "DeviceMetric.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.text\u0060 maps as Equivalent to R4 \u0060DeviceMetric.text\u0060"
             }
           ]
@@ -299,7 +296,7 @@
             {
               "code": "DeviceMetric.type",
               "display": "Identity of metric, for example Heart Rate or PEEP Setting",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.type\u0060 maps as Equivalent to R4 \u0060DeviceMetric.type\u0060"
             }
           ]
@@ -311,7 +308,7 @@
             {
               "code": "DeviceMetric.unit",
               "display": "Unit of Measure for the Metric",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceMetric.unit\u0060 maps as Equivalent to R4 \u0060DeviceMetric.unit\u0060"
             }
           ]

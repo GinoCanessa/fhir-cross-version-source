@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
       "element": [
         {
-          "code": "SearchParameter.processingMode",
-          "target": [
-            {
-              "code": "SearchParameter.xpathUsage",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
-      "target": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
-      "element": [
-        {
           "code": "SearchParameter",
           "display": "Search parameter for a resource",
           "target": [
@@ -62,7 +47,7 @@
               "code": "SearchParameter.base",
               "display": "The resource type(s) this search parameter applies to",
               "relationship": "related-to",
-              "comment": "R5 \u0060SearchParameter.base\u0060 maps as RelatedTo to R4 \u0060SearchParameter.base\u0060 - (base failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1)"
+              "comment": "R5 \u0060SearchParameter.base\u0060 maps as RelatedTo to R4 \u0060SearchParameter.base\u0060 - (base failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); base has change due to type change: R5 \u0060base\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060base\u0060"
             }
           ]
         },
@@ -73,7 +58,7 @@
             {
               "code": "SearchParameter.chain",
               "display": "Chained names supported",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.chain\u0060 maps as Equivalent to R4 \u0060SearchParameter.chain\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "SearchParameter.code",
               "display": "Code used in URL",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.code\u0060 maps as Equivalent to R4 \u0060SearchParameter.code\u0060"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "SearchParameter.comparator",
               "display": "eq | ne | gt | lt | ge | le | sa | eb | ap",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.comparator\u0060 maps as Equivalent to R4 \u0060SearchParameter.comparator\u0060 - comparator has compatible required binding for code type: http://hl7.org/fhir/ValueSet/search-comparator|5.0.0 and http://hl7.org/fhir/ValueSet/search-comparator|4.0.1 (Equivalent)"
             }
           ]
@@ -109,7 +94,7 @@
             {
               "code": "SearchParameter.component",
               "display": "For Composite resources to define the parts",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.component\u0060 maps as Equivalent to R4 \u0060SearchParameter.component\u0060"
             }
           ]
@@ -121,7 +106,7 @@
             {
               "code": "SearchParameter.component.definition",
               "display": "Defines how the part works",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.component.definition\u0060 maps as Equivalent to R4 \u0060SearchParameter.component.definition\u0060"
             }
           ]
@@ -133,7 +118,7 @@
             {
               "code": "SearchParameter.component.expression",
               "display": "Subexpression relative to main expression",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.component.expression\u0060 maps as Equivalent to R4 \u0060SearchParameter.component.expression\u0060"
             }
           ]
@@ -145,7 +130,7 @@
             {
               "code": "SearchParameter.component.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SearchParameter.component.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SearchParameter.component.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -157,7 +142,7 @@
             {
               "code": "SearchParameter.component.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.component.id\u0060 maps as Equivalent to R4 \u0060SearchParameter.component.id\u0060"
             }
           ]
@@ -169,7 +154,7 @@
             {
               "code": "SearchParameter.component.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SearchParameter.component.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SearchParameter.component.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -186,7 +171,7 @@
             {
               "code": "SearchParameter.contact",
               "display": "Contact details for the publisher",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.contact\u0060 maps as Equivalent to R4 \u0060SearchParameter.contact\u0060"
             }
           ]
@@ -198,7 +183,7 @@
             {
               "code": "SearchParameter.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.contained\u0060 maps as Equivalent to R4 \u0060SearchParameter.contained\u0060"
             }
           ]
@@ -220,7 +205,7 @@
             {
               "code": "SearchParameter.date",
               "display": "Date last changed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.date\u0060 maps as Equivalent to R4 \u0060SearchParameter.date\u0060"
             }
           ]
@@ -232,7 +217,7 @@
             {
               "code": "SearchParameter.derivedFrom",
               "display": "Original definition for the search parameter",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.derivedFrom\u0060 maps as Equivalent to R4 \u0060SearchParameter.derivedFrom\u0060"
             }
           ]
@@ -244,7 +229,7 @@
             {
               "code": "SearchParameter.description",
               "display": "Natural language description of the search parameter",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.description\u0060 maps as Equivalent to R4 \u0060SearchParameter.description\u0060"
             }
           ]
@@ -256,7 +241,7 @@
             {
               "code": "SearchParameter.experimental",
               "display": "For testing purposes, not real usage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.experimental\u0060 maps as Equivalent to R4 \u0060SearchParameter.experimental\u0060"
             }
           ]
@@ -268,7 +253,7 @@
             {
               "code": "SearchParameter.expression",
               "display": "FHIRPath expression that extracts the values",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.expression\u0060 maps as Equivalent to R4 \u0060SearchParameter.expression\u0060"
             }
           ]
@@ -280,7 +265,7 @@
             {
               "code": "SearchParameter.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SearchParameter.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SearchParameter.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -321,7 +306,7 @@
             {
               "code": "SearchParameter.jurisdiction",
               "display": "Intended jurisdiction for search parameter (if applicable)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.jurisdiction\u0060 maps as Equivalent to R4 \u0060SearchParameter.jurisdiction\u0060"
             }
           ]
@@ -333,8 +318,8 @@
             {
               "code": "SearchParameter.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SearchParameter.language\u0060 maps as RelatedTo to R4 \u0060SearchParameter.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060SearchParameter.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060SearchParameter.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -357,7 +342,7 @@
             {
               "code": "SearchParameter.modifier",
               "display": "missing | exact | contains | not | text | in | not-in | below | above | type | identifier | ofType",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.modifier\u0060 maps as Equivalent to R4 \u0060SearchParameter.modifier\u0060 - modifier has compatible required binding for code type: http://hl7.org/fhir/ValueSet/search-modifier-code|5.0.0 and http://hl7.org/fhir/ValueSet/search-modifier-code|4.0.1 (Equivalent)"
             }
           ]
@@ -369,7 +354,7 @@
             {
               "code": "SearchParameter.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SearchParameter.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SearchParameter.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -381,7 +366,7 @@
             {
               "code": "SearchParameter.multipleAnd",
               "display": "Allow multiple parameters (and)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.multipleAnd\u0060 maps as Equivalent to R4 \u0060SearchParameter.multipleAnd\u0060"
             }
           ]
@@ -393,7 +378,7 @@
             {
               "code": "SearchParameter.multipleOr",
               "display": "Allow multiple values per parameter (or)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.multipleOr\u0060 maps as Equivalent to R4 \u0060SearchParameter.multipleOr\u0060"
             }
           ]
@@ -405,15 +390,21 @@
             {
               "code": "SearchParameter.name",
               "display": "Name for this search parameter (computer friendly)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.name\u0060 maps as Equivalent to R4 \u0060SearchParameter.name\u0060"
             }
           ]
         },
         {
           "code": "SearchParameter.processingMode",
-          "display": "normal | phonetic | other",
-          "noMap": true
+          "target": [
+            {
+              "code": "SearchParameter.xpathUsage",
+              "display": "normal | phonetic | nearby | distance | other",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SearchParameter.processingMode\u0060 maps as Equivalent to R4 \u0060SearchParameter.xpathUsage\u0060 - xpathUsage has compatible required binding for code type: http://hl7.org/fhir/ValueSet/search-processingmode|5.0.0 and http://hl7.org/fhir/ValueSet/search-xpath-usage|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "SearchParameter.publisher",
@@ -422,7 +413,7 @@
             {
               "code": "SearchParameter.publisher",
               "display": "Name of the publisher (organization or individual)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.publisher\u0060 maps as Equivalent to R4 \u0060SearchParameter.publisher\u0060"
             }
           ]
@@ -434,7 +425,7 @@
             {
               "code": "SearchParameter.purpose",
               "display": "Why this search parameter is defined",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.purpose\u0060 maps as Equivalent to R4 \u0060SearchParameter.purpose\u0060"
             }
           ]
@@ -446,7 +437,7 @@
             {
               "code": "SearchParameter.status",
               "display": "draft | active | retired | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.status\u0060 maps as Equivalent to R4 \u0060SearchParameter.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent)"
             }
           ]
@@ -459,7 +450,7 @@
               "code": "SearchParameter.target",
               "display": "Types of resource (if a resource reference)",
               "relationship": "related-to",
-              "comment": "R5 \u0060SearchParameter.target\u0060 maps as RelatedTo to R4 \u0060SearchParameter.target\u0060 - (target failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1)"
+              "comment": "R5 \u0060SearchParameter.target\u0060 maps as RelatedTo to R4 \u0060SearchParameter.target\u0060 - (target failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); target has change due to type change: R5 \u0060target\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060target\u0060"
             }
           ]
         },
@@ -470,7 +461,7 @@
             {
               "code": "SearchParameter.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.text\u0060 maps as Equivalent to R4 \u0060SearchParameter.text\u0060"
             }
           ]
@@ -487,7 +478,7 @@
             {
               "code": "SearchParameter.type",
               "display": "number | date | string | token | reference | composite | quantity | uri | special",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.type\u0060 maps as Equivalent to R4 \u0060SearchParameter.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/search-param-type|5.0.0 and http://hl7.org/fhir/ValueSet/search-param-type|4.0.1 (Equivalent)"
             }
           ]
@@ -499,7 +490,7 @@
             {
               "code": "SearchParameter.url",
               "display": "Canonical identifier for this search parameter, represented as a URI (globally unique)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.url\u0060 maps as Equivalent to R4 \u0060SearchParameter.url\u0060"
             }
           ]
@@ -511,7 +502,7 @@
             {
               "code": "SearchParameter.useContext",
               "display": "The context that the content is intended to support",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.useContext\u0060 maps as Equivalent to R4 \u0060SearchParameter.useContext\u0060"
             }
           ]
@@ -523,7 +514,7 @@
             {
               "code": "SearchParameter.version",
               "display": "Business version of the search parameter",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SearchParameter.version\u0060 maps as Equivalent to R4 \u0060SearchParameter.version\u0060"
             }
           ]

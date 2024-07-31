@@ -497,18 +497,10 @@
       },
       {
         "path": "Extension.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:description.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
+            "code": "markdown"
           }
         ]
       },
@@ -525,18 +517,10 @@
       },
       {
         "path": "Extension.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },
@@ -553,20 +537,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceCertaintyType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The aspect of quality, confidence, or certainty.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-type"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -581,20 +568,23 @@
       },
       {
         "path": "Extension.extension:rating.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:rating.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceCertaintyRating"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The assessment of quality, confidence, or certainty.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-rating"
+        }
       },
       {
         "path": "Extension.extension:rating.url",
@@ -609,18 +599,10 @@
       },
       {
         "path": "Extension.extension:rater.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:rater.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },

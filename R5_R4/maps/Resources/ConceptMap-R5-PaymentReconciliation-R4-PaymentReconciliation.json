@@ -28,120 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
       "element": [
         {
-          "code": "PaymentReconciliation.allocation",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.amount",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.amount",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.date",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.date",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.identifier",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.identifier",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.payee",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.payee",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.predecessor",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.predecessor",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.response",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.response",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.responsible",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.responsible",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.submitter",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.submitter",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.allocation.type",
-          "target": [
-            {
-              "code": "PaymentReconciliation.detail.type",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.amount",
-          "target": [
-            {
-              "code": "PaymentReconciliation.paymentAmount",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "PaymentReconciliation.date",
-          "target": [
-            {
-              "code": "PaymentReconciliation.paymentDate",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
-      "target": "http://hl7.org/fhir/StructureDefinition/PaymentReconciliation",
-      "element": [
-        {
           "code": "PaymentReconciliation",
           "display": "PaymentReconciliation resource",
           "target": [
@@ -160,8 +46,14 @@
         },
         {
           "code": "PaymentReconciliation.allocation",
-          "display": "Settlement particulars",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail",
+              "display": "Settlement particulars",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.account",
@@ -170,13 +62,25 @@
         },
         {
           "code": "PaymentReconciliation.allocation.amount",
-          "display": "Amount allocated to this payable",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.amount",
+              "display": "Amount allocated to this payable",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.amount\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.amount\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.date",
-          "display": "Date of commitment to pay",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.date",
+              "display": "Date of commitment to pay",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.date\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.date\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.encounter",
@@ -195,8 +99,14 @@
         },
         {
           "code": "PaymentReconciliation.allocation.identifier",
-          "display": "Business identifier of the payment detail",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.identifier",
+              "display": "Business identifier of the payment detail",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.identifier\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.identifier\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.modifierExtension",
@@ -205,28 +115,58 @@
         },
         {
           "code": "PaymentReconciliation.allocation.payee",
-          "display": "Recipient of the payment",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.payee",
+              "display": "Recipient of the payment",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.payee\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.payee\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.predecessor",
-          "display": "Business identifier of the prior payment detail",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.predecessor",
+              "display": "Business identifier of the prior payment detail",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.predecessor\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.predecessor\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.response",
-          "display": "Response committing to a payment",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.response",
+              "display": "Response committing to a payment",
+              "relationship": "related-to",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.response\u0060 maps as RelatedTo to R4 \u0060PaymentReconciliation.detail.response\u0060 - response has change due to type change: R5 \u0060response\u0060 \u0060Reference\u0060 maps as RelatedTo for R4 \u0060response\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.responsible",
-          "display": "Contact for the response",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.responsible",
+              "display": "Contact for the response",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.responsible\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.responsible\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.submitter",
-          "display": "Submitter of the request",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.submitter",
+              "display": "Submitter of the request",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.submitter\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.detail.submitter\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.allocation.target",
@@ -240,13 +180,25 @@
         },
         {
           "code": "PaymentReconciliation.allocation.type",
-          "display": "Category of payment",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.detail.type",
+              "display": "Category of payment",
+              "relationship": "related-to",
+              "comment": "R5 \u0060PaymentReconciliation.allocation.type\u0060 maps as RelatedTo to R4 \u0060PaymentReconciliation.detail.type\u0060 - type made the element mandatory; type increased the minimum cardinality from 0 to 1; type changed the binding strength from Extensible to Example; type has change due to type change: R5 \u0060type\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060type\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.amount",
-          "display": "Total amount of Payment",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.paymentAmount",
+              "display": "Total amount of Payment",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.amount\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.paymentAmount\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.authorization",
@@ -265,7 +217,7 @@
             {
               "code": "PaymentReconciliation.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.contained\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.contained\u0060"
             }
           ]
@@ -277,15 +229,21 @@
             {
               "code": "PaymentReconciliation.created",
               "display": "Creation date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.created\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.created\u0060"
             }
           ]
         },
         {
           "code": "PaymentReconciliation.date",
-          "display": "When payment issued",
-          "noMap": true
+          "target": [
+            {
+              "code": "PaymentReconciliation.paymentDate",
+              "display": "When payment issued",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PaymentReconciliation.date\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.paymentDate\u0060"
+            }
+          ]
         },
         {
           "code": "PaymentReconciliation.disposition",
@@ -294,7 +252,7 @@
             {
               "code": "PaymentReconciliation.disposition",
               "display": "Disposition message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.disposition\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.disposition\u0060"
             }
           ]
@@ -316,7 +274,7 @@
             {
               "code": "PaymentReconciliation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentReconciliation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentReconciliation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -328,7 +286,7 @@
             {
               "code": "PaymentReconciliation.formCode",
               "display": "Printed form identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.formCode\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.formCode\u0060"
             }
           ]
@@ -352,7 +310,7 @@
             {
               "code": "PaymentReconciliation.identifier",
               "display": "Business Identifier for a payment reconciliation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.identifier\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.identifier\u0060"
             }
           ]
@@ -386,8 +344,8 @@
             {
               "code": "PaymentReconciliation.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PaymentReconciliation.language\u0060 maps as RelatedTo to R4 \u0060PaymentReconciliation.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PaymentReconciliation.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PaymentReconciliation.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -420,7 +378,7 @@
             {
               "code": "PaymentReconciliation.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentReconciliation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentReconciliation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -432,7 +390,7 @@
             {
               "code": "PaymentReconciliation.outcome",
               "display": "queued | complete | error | partial",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.outcome\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.outcome\u0060 - outcome has compatible required binding for code type: http://hl7.org/fhir/ValueSet/payment-outcome|5.0.0 and http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1 (Equivalent)"
             }
           ]
@@ -444,7 +402,7 @@
             {
               "code": "PaymentReconciliation.paymentIdentifier",
               "display": "Business identifier for the payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.paymentIdentifier\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.paymentIdentifier\u0060"
             }
           ]
@@ -456,7 +414,7 @@
             {
               "code": "PaymentReconciliation.paymentIssuer",
               "display": "Party generating payment",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentReconciliation.paymentIssuer\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentReconciliation.paymentIssuer\u0060 - paymentIssuer has change due to type change: R5 \u0060paymentIssuer\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060paymentIssuer\u0060"
             }
           ]
@@ -468,7 +426,7 @@
             {
               "code": "PaymentReconciliation.period",
               "display": "Period covered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.period\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.period\u0060"
             }
           ]
@@ -480,7 +438,7 @@
             {
               "code": "PaymentReconciliation.processNote",
               "display": "Note concerning processing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.processNote\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.processNote\u0060"
             }
           ]
@@ -492,7 +450,7 @@
             {
               "code": "PaymentReconciliation.processNote.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentReconciliation.processNote.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentReconciliation.processNote.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -504,7 +462,7 @@
             {
               "code": "PaymentReconciliation.processNote.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.processNote.id\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.processNote.id\u0060"
             }
           ]
@@ -516,7 +474,7 @@
             {
               "code": "PaymentReconciliation.processNote.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PaymentReconciliation.processNote.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PaymentReconciliation.processNote.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -528,7 +486,7 @@
             {
               "code": "PaymentReconciliation.processNote.text",
               "display": "Note explanatory text",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.processNote.text\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.processNote.text\u0060"
             }
           ]
@@ -540,7 +498,7 @@
             {
               "code": "PaymentReconciliation.processNote.type",
               "display": "display | print | printoper",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.processNote.type\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.processNote.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/note-type|5.0.0 and http://hl7.org/fhir/ValueSet/note-type|4.0.1 (Equivalent)"
             }
           ]
@@ -562,7 +520,7 @@
             {
               "code": "PaymentReconciliation.request",
               "display": "Reference to requesting resource",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.request\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.request\u0060"
             }
           ]
@@ -574,7 +532,7 @@
             {
               "code": "PaymentReconciliation.requestor",
               "display": "Responsible practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.requestor\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.requestor\u0060"
             }
           ]
@@ -591,7 +549,7 @@
             {
               "code": "PaymentReconciliation.status",
               "display": "active | cancelled | draft | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.status\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent)"
             }
           ]
@@ -608,7 +566,7 @@
             {
               "code": "PaymentReconciliation.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PaymentReconciliation.text\u0060 maps as Equivalent to R4 \u0060PaymentReconciliation.text\u0060"
             }
           ]

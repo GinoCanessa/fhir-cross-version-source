@@ -448,20 +448,27 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "Supporting information role code"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosticReportSupportingInfoType"
+            }
+          ],
+          "strength": "example",
+          "description": "The code value for the role of the supporting information in the diagnostic report.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0936"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -477,17 +484,15 @@
       },
       {
         "path": "Extension.extension:reference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reference.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/Citation"
             ]
           }
         ]

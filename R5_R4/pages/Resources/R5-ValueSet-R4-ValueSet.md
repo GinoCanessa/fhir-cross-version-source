@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 39 |
-Equivalent | 4 |
-RelatedTo | 81 |
+Equivalent | 65 |
+SourceIsBroaderThanTarget | 18 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -35,7 +36,7 @@ RelatedTo | 81 |
 | ValueSet.compose.include.concept.designation.additionalUse | - | DoesNotExistInTarget | R5 `ValueSet.compose.include.concept.designation.additionalUse` does not appear in the target and has no mapping for `ValueSet`. |
 | ValueSet.compose.include.concept.designation.extension | ValueSet.compose.include.concept.designation.extension | SourceIsBroaderThanTarget | R5 `ValueSet.compose.include.concept.designation.extension` maps as SourceIsBroaderThanTarget to R4 `ValueSet.compose.include.concept.designation.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ValueSet.compose.include.concept.designation.id | ValueSet.compose.include.concept.designation.id | Equivalent | R5 `ValueSet.compose.include.concept.designation.id` maps as Equivalent to R4 `ValueSet.compose.include.concept.designation.id` |
-| ValueSet.compose.include.concept.designation.language | ValueSet.compose.include.concept.designation.language | RelatedTo | R5 `ValueSet.compose.include.concept.designation.language` maps as RelatedTo to R4 `ValueSet.compose.include.concept.designation.language` - language changed the binding strength from Required to Preferred |
+| ValueSet.compose.include.concept.designation.language | ValueSet.compose.include.concept.designation.language | SourceIsNarrowerThanTarget | R5 `ValueSet.compose.include.concept.designation.language` maps as SourceIsNarrowerThanTarget to R4 `ValueSet.compose.include.concept.designation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ValueSet.compose.include.concept.designation.modifierExtension | ValueSet.compose.include.concept.designation.modifierExtension | SourceIsBroaderThanTarget | R5 `ValueSet.compose.include.concept.designation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ValueSet.compose.include.concept.designation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ValueSet.compose.include.concept.designation.use | ValueSet.compose.include.concept.designation.use | Equivalent | R5 `ValueSet.compose.include.concept.designation.use` maps as Equivalent to R4 `ValueSet.compose.include.concept.designation.use` |
 | ValueSet.compose.include.concept.designation.value | ValueSet.compose.include.concept.designation.value | Equivalent | R5 `ValueSet.compose.include.concept.designation.value` maps as Equivalent to R4 `ValueSet.compose.include.concept.designation.value` |
@@ -121,7 +122,7 @@ RelatedTo | 81 |
 | ValueSet.immutable | ValueSet.immutable | Equivalent | R5 `ValueSet.immutable` maps as Equivalent to R4 `ValueSet.immutable` |
 | ValueSet.implicitRules | ValueSet.implicitRules | Equivalent | R5 `ValueSet.implicitRules` maps as Equivalent to R4 `ValueSet.implicitRules` |
 | ValueSet.jurisdiction | ValueSet.jurisdiction | Equivalent | R5 `ValueSet.jurisdiction` maps as Equivalent to R4 `ValueSet.jurisdiction` |
-| ValueSet.language | ValueSet.language | RelatedTo | R5 `ValueSet.language` maps as RelatedTo to R4 `ValueSet.language` - language changed the binding strength from Required to Preferred |
+| ValueSet.language | ValueSet.language | SourceIsNarrowerThanTarget | R5 `ValueSet.language` maps as SourceIsNarrowerThanTarget to R4 `ValueSet.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ValueSet.lastReviewDate | - | DoesNotExistInTarget | R5 `ValueSet.lastReviewDate` does not appear in the target and has no mapping for `ValueSet`. |
 | ValueSet.meta | ValueSet.meta | Equivalent | R5 `ValueSet.meta` maps as Equivalent to R4 `ValueSet.meta` |
 | ValueSet.modifierExtension | ValueSet.modifierExtension | SourceIsBroaderThanTarget | R5 `ValueSet.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ValueSet.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

@@ -13,9 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 29 |
+Equivalent | 26 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -31,7 +31,7 @@ RelatedTo | 29 |
 | RiskAssessment.id | RiskAssessment.id | Equivalent | R5 `RiskAssessment.id` maps as Equivalent to R4 `RiskAssessment.id` |
 | RiskAssessment.identifier | RiskAssessment.identifier | Equivalent | R5 `RiskAssessment.identifier` maps as Equivalent to R4 `RiskAssessment.identifier` |
 | RiskAssessment.implicitRules | RiskAssessment.implicitRules | Equivalent | R5 `RiskAssessment.implicitRules` maps as Equivalent to R4 `RiskAssessment.implicitRules` |
-| RiskAssessment.language | RiskAssessment.language | RelatedTo | R5 `RiskAssessment.language` maps as RelatedTo to R4 `RiskAssessment.language` - language changed the binding strength from Required to Preferred |
+| RiskAssessment.language | RiskAssessment.language | SourceIsNarrowerThanTarget | R5 `RiskAssessment.language` maps as SourceIsNarrowerThanTarget to R4 `RiskAssessment.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | RiskAssessment.meta | RiskAssessment.meta | Equivalent | R5 `RiskAssessment.meta` maps as Equivalent to R4 `RiskAssessment.meta` |
 | RiskAssessment.method | RiskAssessment.method | Equivalent | R5 `RiskAssessment.method` maps as Equivalent to R4 `RiskAssessment.method` |
 | RiskAssessment.mitigation | RiskAssessment.mitigation | Equivalent | R5 `RiskAssessment.mitigation` maps as Equivalent to R4 `RiskAssessment.mitigation` |
@@ -50,7 +50,8 @@ RelatedTo | 29 |
 | RiskAssessment.prediction.rationale | RiskAssessment.prediction.rationale | Equivalent | R5 `RiskAssessment.prediction.rationale` maps as Equivalent to R4 `RiskAssessment.prediction.rationale` |
 | RiskAssessment.prediction.relativeRisk | RiskAssessment.prediction.relativeRisk | Equivalent | R5 `RiskAssessment.prediction.relativeRisk` maps as Equivalent to R4 `RiskAssessment.prediction.relativeRisk` |
 | RiskAssessment.prediction.when[x] | RiskAssessment.prediction.when[x] | Equivalent | R5 `RiskAssessment.prediction.when[x]` maps as Equivalent to R4 `RiskAssessment.prediction.when[x]` |
-| RiskAssessment.reason | - | DoesNotExistInTarget | R5 `RiskAssessment.reason` does not appear in the target and has no mapping for `RiskAssessment`. |
+| RiskAssessment.reason | RiskAssessment.reasonCode | SourceIsBroaderThanTarget | R5 `RiskAssessment.reason` maps as SourceIsBroaderThanTarget to R4 `RiskAssessment.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| RiskAssessment.reason | RiskAssessment.reasonReference | SourceIsBroaderThanTarget | R5 `RiskAssessment.reason` maps as SourceIsBroaderThanTarget to R4 `RiskAssessment.reasonReference` - reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | RiskAssessment.status | RiskAssessment.status | Equivalent | R5 `RiskAssessment.status` maps as Equivalent to R4 `RiskAssessment.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/observation-status|5.0.0 and http://hl7.org/fhir/ValueSet/observation-status|4.0.1 (Equivalent) |
 | RiskAssessment.subject | RiskAssessment.subject | Equivalent | R5 `RiskAssessment.subject` maps as Equivalent to R4 `RiskAssessment.subject` |
 | RiskAssessment.text | RiskAssessment.text | Equivalent | R5 `RiskAssessment.text` maps as Equivalent to R4 `RiskAssessment.text` |

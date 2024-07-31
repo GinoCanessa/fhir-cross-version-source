@@ -30,7 +30,7 @@
             {
               "code": "OperationOutcome.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.contained\u0060 maps as Equivalent to R4 \u0060OperationOutcome.contained\u0060"
             }
           ]
@@ -42,7 +42,7 @@
             {
               "code": "OperationOutcome.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OperationOutcome.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OperationOutcome.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -78,7 +78,7 @@
             {
               "code": "OperationOutcome.issue",
               "display": "A single issue associated with the action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue\u0060"
             }
           ]
@@ -90,7 +90,7 @@
             {
               "code": "OperationOutcome.issue.code",
               "display": "Error or warning code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.code\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.code\u0060 - code has compatible required binding for code type: http://hl7.org/fhir/ValueSet/issue-type|5.0.0 and http://hl7.org/fhir/ValueSet/issue-type|4.0.1 (Equivalent)"
             }
           ]
@@ -102,7 +102,7 @@
             {
               "code": "OperationOutcome.issue.details",
               "display": "Additional details about the error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.details\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.details\u0060"
             }
           ]
@@ -114,7 +114,7 @@
             {
               "code": "OperationOutcome.issue.diagnostics",
               "display": "Additional diagnostic information about the issue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.diagnostics\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.diagnostics\u0060"
             }
           ]
@@ -126,7 +126,7 @@
             {
               "code": "OperationOutcome.issue.expression",
               "display": "FHIRPath of element(s) related to issue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.expression\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.expression\u0060"
             }
           ]
@@ -138,7 +138,7 @@
             {
               "code": "OperationOutcome.issue.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OperationOutcome.issue.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OperationOutcome.issue.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -150,7 +150,7 @@
             {
               "code": "OperationOutcome.issue.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.id\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.id\u0060"
             }
           ]
@@ -162,7 +162,7 @@
             {
               "code": "OperationOutcome.issue.location",
               "display": "Deprecated: Path of element(s) related to issue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.location\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.location\u0060"
             }
           ]
@@ -174,7 +174,7 @@
             {
               "code": "OperationOutcome.issue.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OperationOutcome.issue.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OperationOutcome.issue.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -186,7 +186,7 @@
             {
               "code": "OperationOutcome.issue.severity",
               "display": "fatal | error | warning | information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.issue.severity\u0060 maps as Equivalent to R4 \u0060OperationOutcome.issue.severity\u0060 - severity has compatible required binding for code type: http://hl7.org/fhir/ValueSet/issue-severity|5.0.0 and http://hl7.org/fhir/ValueSet/issue-severity|4.0.1 (Equivalent)"
             }
           ]
@@ -198,8 +198,8 @@
             {
               "code": "OperationOutcome.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060OperationOutcome.language\u0060 maps as RelatedTo to R4 \u0060OperationOutcome.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060OperationOutcome.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060OperationOutcome.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -222,7 +222,7 @@
             {
               "code": "OperationOutcome.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060OperationOutcome.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060OperationOutcome.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -234,7 +234,7 @@
             {
               "code": "OperationOutcome.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060OperationOutcome.text\u0060 maps as Equivalent to R4 \u0060OperationOutcome.text\u0060"
             }
           ]

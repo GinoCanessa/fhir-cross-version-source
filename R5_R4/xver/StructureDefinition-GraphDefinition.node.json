@@ -472,18 +472,10 @@
       },
       {
         "path": "Extension.extension:nodeId.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:nodeId.extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
         ]
       },
@@ -501,18 +493,10 @@
       },
       {
         "path": "Extension.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:description.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -529,20 +513,29 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "FHIRTypes"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-version-independent-all-resource-types|1.0.0",
+          "additional": [
+            {
+              "purpose": "ui",
+              "valueSet": "http://hl7.org/fhir/ValueSet/all-resource-types"
+            }
+          ]
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -557,17 +550,12 @@
       },
       {
         "path": "Extension.extension:profile.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:profile.extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/StructureDefinition"
             ]
           }
         ]

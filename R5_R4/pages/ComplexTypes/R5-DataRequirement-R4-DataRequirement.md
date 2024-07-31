@@ -14,8 +14,8 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 7 |
-Equivalent | 3 |
-RelatedTo | 23 |
+Equivalent | 25 |
+RelatedTo | 1 |
 
 
 | Source | Target | Status | Message |
@@ -45,7 +45,7 @@ RelatedTo | 23 |
 | DataRequirement.sort.id | DataRequirement.sort.id | Equivalent | R5 `DataRequirement.sort.id` maps as Equivalent to R4 `DataRequirement.sort.id` |
 | DataRequirement.sort.path | DataRequirement.sort.path | Equivalent | R5 `DataRequirement.sort.path` maps as Equivalent to R4 `DataRequirement.sort.path` |
 | DataRequirement.subject[x] | DataRequirement.subject[x] | Equivalent | R5 `DataRequirement.subject[x]` maps as Equivalent to R4 `DataRequirement.subject[x]` |
-| DataRequirement.type | DataRequirement.type | RelatedTo | R5 `DataRequirement.type` maps as RelatedTo to R4 `DataRequirement.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1) |
+| DataRequirement.type | DataRequirement.type | RelatedTo | R5 `DataRequirement.type` maps as RelatedTo to R4 `DataRequirement.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1); type has change due to type change: R5 `type` `code` maps as RelatedTo for R4 `type` |
 | DataRequirement.valueFilter | - | DoesNotExistInTarget | R5 `DataRequirement.valueFilter` does not appear in the target and has no mapping for `DataRequirement`. |
 | DataRequirement.valueFilter.comparator | - | DoesNotExistInTarget | R5 `DataRequirement.valueFilter.comparator` does not appear in the target and has no mapping for `DataRequirement`. |
 | DataRequirement.valueFilter.extension | - | DoesNotExistInTarget | R5 `DataRequirement.valueFilter.extension` does not appear in the target and has no mapping for `DataRequirement`. |

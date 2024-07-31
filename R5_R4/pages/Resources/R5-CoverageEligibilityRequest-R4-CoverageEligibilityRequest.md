@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 6 |
-Equivalent | 4 |
-RelatedTo | 48 |
+Equivalent | 41 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -61,7 +62,7 @@ RelatedTo | 48 |
 | CoverageEligibilityRequest.item.quantity | CoverageEligibilityRequest.item.quantity | Equivalent | R5 `CoverageEligibilityRequest.item.quantity` maps as Equivalent to R4 `CoverageEligibilityRequest.item.quantity` |
 | CoverageEligibilityRequest.item.supportingInfoSequence | CoverageEligibilityRequest.item.supportingInfoSequence | Equivalent | R5 `CoverageEligibilityRequest.item.supportingInfoSequence` maps as Equivalent to R4 `CoverageEligibilityRequest.item.supportingInfoSequence` |
 | CoverageEligibilityRequest.item.unitPrice | CoverageEligibilityRequest.item.unitPrice | Equivalent | R5 `CoverageEligibilityRequest.item.unitPrice` maps as Equivalent to R4 `CoverageEligibilityRequest.item.unitPrice` |
-| CoverageEligibilityRequest.language | CoverageEligibilityRequest.language | RelatedTo | R5 `CoverageEligibilityRequest.language` maps as RelatedTo to R4 `CoverageEligibilityRequest.language` - language changed the binding strength from Required to Preferred |
+| CoverageEligibilityRequest.language | CoverageEligibilityRequest.language | SourceIsNarrowerThanTarget | R5 `CoverageEligibilityRequest.language` maps as SourceIsNarrowerThanTarget to R4 `CoverageEligibilityRequest.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CoverageEligibilityRequest.meta | CoverageEligibilityRequest.meta | Equivalent | R5 `CoverageEligibilityRequest.meta` maps as Equivalent to R4 `CoverageEligibilityRequest.meta` |
 | CoverageEligibilityRequest.modifierExtension | CoverageEligibilityRequest.modifierExtension | SourceIsBroaderThanTarget | R5 `CoverageEligibilityRequest.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CoverageEligibilityRequest.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | CoverageEligibilityRequest.patient | CoverageEligibilityRequest.patient | Equivalent | R5 `CoverageEligibilityRequest.patient` maps as Equivalent to R4 `CoverageEligibilityRequest.patient` |

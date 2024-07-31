@@ -451,20 +451,33 @@
       },
       {
         "path": "Extension.extension:language.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:language.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "IETF language tag for a human language",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
+          "additional": [
+            {
+              "purpose": "starter",
+              "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+            }
+          ]
+        }
       },
       {
         "path": "Extension.extension:language.url",
@@ -481,18 +494,10 @@
       },
       {
         "path": "Extension.extension:preferred.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:preferred.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },

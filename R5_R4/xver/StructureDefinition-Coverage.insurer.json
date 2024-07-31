@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:Coverage.insurer compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Coverage.insurer` does not appear in the target and has no mapping for `Coverage`.",
+  "description": "R5 `Coverage.insurer` maps as RelatedTo to R4 `Coverage.payor` - payor made the element mandatory; payor increased the minimum cardinality from 0 to 1; payor changed from scalar to array (max cardinality from 1 to *); payor has change due to type change: R5 `insurer` `Reference` maps as SourceIsNarrowerThanTarget for R4 `payor`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Coverage"
+      "expression": "Coverage.payor"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Issuer of the policy",
         "definition": "The program or plan underwriter, payor, insurance company.",
-        "comment": "R5 `Coverage.insurer` does not appear in the target and has no mapping for `Coverage`.\nMay provide multiple identifiers such as insurance company identifier or business identifier (BIN number).",
+        "comment": "R5 `Coverage.insurer` maps as RelatedTo to R4 `Coverage.payor` - payor made the element mandatory; payor increased the minimum cardinality from 0 to 1; payor changed from scalar to array (max cardinality from 1 to *); payor has change due to type change: R5 `insurer` `Reference` maps as SourceIsNarrowerThanTarget for R4 `payor`\nMay provide multiple identifiers such as insurance company identifier or business identifier (BIN number).",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Reference:Reference",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Reference"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "Issuer of the policy",
         "definition": "The program or plan underwriter, payor, insurance company.",
-        "comment": "R5 `Coverage.insurer` does not appear in the target and has no mapping for `Coverage`.\nMay provide multiple identifiers such as insurance company identifier or business identifier (BIN number).",
+        "comment": "R5 `Coverage.insurer` maps as RelatedTo to R4 `Coverage.payor` - payor made the element mandatory; payor increased the minimum cardinality from 0 to 1; payor changed from scalar to array (max cardinality from 1 to *); payor has change due to type change: R5 `insurer` `Reference` maps as SourceIsNarrowerThanTarget for R4 `payor`\nMay provide multiple identifiers such as insurance company identifier or business identifier (BIN number).",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

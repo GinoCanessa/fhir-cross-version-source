@@ -474,20 +474,23 @@
       },
       {
         "path": "Extension.extension:aggregate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:aggregate.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AccountAggregate"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Indicates the balance was outstanding at the given age.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-aggregate"
+        }
       },
       {
         "path": "Extension.extension:aggregate.url",
@@ -503,20 +506,23 @@
       },
       {
         "path": "Extension.extension:term.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:term.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AccountBalanceTerm"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Indicates the balance was outstanding at the given age.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-balance-term"
+        }
       },
       {
         "path": "Extension.extension:term.url",
@@ -532,18 +538,10 @@
       },
       {
         "path": "Extension.extension:estimate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:estimate.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -561,18 +559,10 @@
       },
       {
         "path": "Extension.extension:amount.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:amount.extension:Money",
-        "sliceName": "Money",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Money"
-            ]
+            "code": "Money"
           }
         ]
       },

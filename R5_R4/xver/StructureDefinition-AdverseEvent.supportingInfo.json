@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:AdverseEvent.supportingInfo compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `AdverseEvent.supportingInfo` does not appear in the target and has no mapping for `AdverseEvent`.",
+  "description": "R5 `AdverseEvent.supportingInfo` maps as RelatedTo to R4 `AdverseEvent` - AdverseEvent has change due to type change: R5 supportingInfo BackboneElement has no equivalent or mapped type in R4 AdverseEvent",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -35,7 +35,7 @@
         ],
         "path": "Extension",
         "short": "Supporting information relevant to the event",
-        "definition": "R5 `AdverseEvent.supportingInfo` does not appear in the target and has no mapping for `AdverseEvent`.",
+        "definition": "R5 `AdverseEvent.supportingInfo` maps as RelatedTo to R4 `AdverseEvent` - AdverseEvent has change due to type change: R5 supportingInfo BackboneElement has no equivalent or mapped type in R4 AdverseEvent",
         "min": 0,
         "max": "*",
         "base": {
@@ -417,7 +417,7 @@
       {
         "path": "Extension",
         "short": "Supporting information relevant to the event",
-        "definition": "R5 `AdverseEvent.supportingInfo` does not appear in the target and has no mapping for `AdverseEvent`.",
+        "definition": "R5 `AdverseEvent.supportingInfo` maps as RelatedTo to R4 `AdverseEvent` - AdverseEvent has change due to type change: R5 supportingInfo BackboneElement has no equivalent or mapped type in R4 AdverseEvent",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -432,33 +432,28 @@
       },
       {
         "path": "Extension.extension:item[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:item[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
             ]
           }
-        ]
-      },
-      {
-        "path": "Extension.extension:item[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdverseEventSupportingInfo"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes describing the supporting information relevant to the event.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-supporting-info"
+        }
       },
       {
         "path": "Extension.extension:item[x].url",

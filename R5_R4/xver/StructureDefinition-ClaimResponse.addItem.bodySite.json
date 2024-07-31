@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:ClaimResponse.addItem.bodySite compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ClaimResponse.addItem.bodySite` maps as RelatedTo to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
+  "description": "R5 `ClaimResponse.addItem.bodySite` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Anatomical location",
         "definition": "Physical location where the service is performed or applies.",
-        "comment": "R5 `ClaimResponse.addItem.bodySite` maps as RelatedTo to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
+        "comment": "R5 `ClaimResponse.addItem.bodySite` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
         "min": 0,
         "max": "*",
         "base": {
@@ -434,7 +434,7 @@
         "path": "Extension",
         "short": "Anatomical location",
         "definition": "Physical location where the service is performed or applies.",
-        "comment": "R5 `ClaimResponse.addItem.bodySite` maps as RelatedTo to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
+        "comment": "R5 `ClaimResponse.addItem.bodySite` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -479,20 +479,22 @@
       },
       {
         "path": "Extension.extension:subSite.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:subSite.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Surface"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/surface"
+        }
       },
       {
         "path": "Extension.extension:subSite.url",

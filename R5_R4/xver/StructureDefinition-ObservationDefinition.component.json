@@ -476,20 +476,23 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationCode"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes identifying names of simple observations.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-codes"
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -505,20 +508,23 @@
       },
       {
         "path": "Extension.extension:permittedDataType.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:permittedDataType.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationDataType"
+            }
+          ],
+          "strength": "required",
+          "description": "Permitted data type for observation value.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/permitted-data-type|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:permittedDataType.url",
@@ -534,20 +540,23 @@
       },
       {
         "path": "Extension.extension:permittedUnit.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:permittedUnit.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ObservationUnit"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Codes identifying units of measure.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ucum-units"
+        }
       },
       {
         "path": "Extension.extension:permittedUnit.url",

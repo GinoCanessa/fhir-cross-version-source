@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 10 |
+Equivalent | 9 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -28,7 +29,7 @@ RelatedTo | 10 |
 | Basic.id | Basic.id | Equivalent | R5 `Basic.id` maps as Equivalent to R4 `Basic.id` |
 | Basic.identifier | Basic.identifier | Equivalent | R5 `Basic.identifier` maps as Equivalent to R4 `Basic.identifier` |
 | Basic.implicitRules | Basic.implicitRules | Equivalent | R5 `Basic.implicitRules` maps as Equivalent to R4 `Basic.implicitRules` |
-| Basic.language | Basic.language | RelatedTo | R5 `Basic.language` maps as RelatedTo to R4 `Basic.language` - language changed the binding strength from Required to Preferred |
+| Basic.language | Basic.language | SourceIsNarrowerThanTarget | R5 `Basic.language` maps as SourceIsNarrowerThanTarget to R4 `Basic.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Basic.meta | Basic.meta | Equivalent | R5 `Basic.meta` maps as Equivalent to R4 `Basic.meta` |
 | Basic.modifierExtension | Basic.modifierExtension | SourceIsBroaderThanTarget | R5 `Basic.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Basic.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Basic.subject | Basic.subject | Equivalent | R5 `Basic.subject` maps as Equivalent to R4 `Basic.subject` |

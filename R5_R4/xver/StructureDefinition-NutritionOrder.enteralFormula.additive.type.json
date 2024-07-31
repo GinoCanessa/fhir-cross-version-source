@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:NutritionOrder.enteralFormula.additive.type compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `NutritionOrder.enteralFormula.additive.type` does not appear in the target and has no mapping for `NutritionOrder`.",
+  "description": "R5 `NutritionOrder.enteralFormula.additive.type` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.additiveType` - additiveType has change due to type change: R5 type CodeableReference has no equivalent or mapped type in R4 additiveType",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "NutritionOrder.enteralFormula"
+      "expression": "NutritionOrder.enteralFormula.additiveType"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Type of modular component to add to the feeding",
         "definition": "Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.",
-        "comment": "R5 `NutritionOrder.enteralFormula.additive.type` does not appear in the target and has no mapping for `NutritionOrder`.",
+        "comment": "R5 `NutritionOrder.enteralFormula.additive.type` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.additiveType` - additiveType has change due to type change: R5 type CodeableReference has no equivalent or mapped type in R4 additiveType",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:CodeableReference:CodeableReference",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:CodeableReference"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "Type of modular component to add to the feeding",
         "definition": "Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.",
-        "comment": "R5 `NutritionOrder.enteralFormula.additive.type` does not appear in the target and has no mapping for `NutritionOrder`.",
+        "comment": "R5 `NutritionOrder.enteralFormula.additive.type` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.additiveType` - additiveType has change due to type change: R5 type CodeableReference has no equivalent or mapped type in R4 additiveType",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

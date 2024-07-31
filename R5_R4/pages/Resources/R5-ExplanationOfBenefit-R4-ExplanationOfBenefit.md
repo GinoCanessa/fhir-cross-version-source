@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 65 |
-Equivalent | 4 |
-RelatedTo | 247 |
+DoesNotExistInTarget | 62 |
+Equivalent | 193 |
+RelatedTo | 11 |
+SourceIsBroaderThanTarget | 48 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -30,7 +32,7 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.accident.type | ExplanationOfBenefit.accident.type | Equivalent | R5 `ExplanationOfBenefit.accident.type` maps as Equivalent to R4 `ExplanationOfBenefit.accident.type` |
 | ExplanationOfBenefit.addItem | ExplanationOfBenefit.addItem | Equivalent | R5 `ExplanationOfBenefit.addItem` maps as Equivalent to R4 `ExplanationOfBenefit.addItem` |
 | ExplanationOfBenefit.addItem.adjudication | ExplanationOfBenefit.addItem.adjudication | Equivalent | R5 `ExplanationOfBenefit.addItem.adjudication` maps as Equivalent to R4 `ExplanationOfBenefit.addItem.adjudication` |
-| ExplanationOfBenefit.addItem.bodySite | ExplanationOfBenefit.addItem.bodySite | RelatedTo | R5 `ExplanationOfBenefit.addItem.bodySite` maps as RelatedTo to R4 `ExplanationOfBenefit.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
+| ExplanationOfBenefit.addItem.bodySite | ExplanationOfBenefit.addItem.bodySite | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.addItem.bodySite` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
 | ExplanationOfBenefit.addItem.bodySite.extension | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.addItem.bodySite.extension` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.addItem.bodySite.id | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.addItem.bodySite.id` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.addItem.bodySite.modifierExtension | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.addItem.bodySite.modifierExtension` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
@@ -125,7 +127,7 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.careTeam.responsible | ExplanationOfBenefit.careTeam.responsible | Equivalent | R5 `ExplanationOfBenefit.careTeam.responsible` maps as Equivalent to R4 `ExplanationOfBenefit.careTeam.responsible` |
 | ExplanationOfBenefit.careTeam.role | ExplanationOfBenefit.careTeam.role | Equivalent | R5 `ExplanationOfBenefit.careTeam.role` maps as Equivalent to R4 `ExplanationOfBenefit.careTeam.role` |
 | ExplanationOfBenefit.careTeam.sequence | ExplanationOfBenefit.careTeam.sequence | Equivalent | R5 `ExplanationOfBenefit.careTeam.sequence` maps as Equivalent to R4 `ExplanationOfBenefit.careTeam.sequence` |
-| ExplanationOfBenefit.careTeam.specialty | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.careTeam.specialty` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
+| ExplanationOfBenefit.careTeam.specialty | ExplanationOfBenefit.careTeam.qualification | Equivalent | R5 `ExplanationOfBenefit.careTeam.specialty` maps as Equivalent to R4 `ExplanationOfBenefit.careTeam.qualification` |
 | ExplanationOfBenefit.claim | ExplanationOfBenefit.claim | Equivalent | R5 `ExplanationOfBenefit.claim` maps as Equivalent to R4 `ExplanationOfBenefit.claim` |
 | ExplanationOfBenefit.claimResponse | ExplanationOfBenefit.claimResponse | Equivalent | R5 `ExplanationOfBenefit.claimResponse` maps as Equivalent to R4 `ExplanationOfBenefit.claimResponse` |
 | ExplanationOfBenefit.contained | ExplanationOfBenefit.contained | Equivalent | R5 `ExplanationOfBenefit.contained` maps as Equivalent to R4 `ExplanationOfBenefit.contained` |
@@ -173,14 +175,14 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.item.adjudication.extension | ExplanationOfBenefit.item.adjudication.extension | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.item.adjudication.extension` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.item.adjudication.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ExplanationOfBenefit.item.adjudication.id | ExplanationOfBenefit.item.adjudication.id | Equivalent | R5 `ExplanationOfBenefit.item.adjudication.id` maps as Equivalent to R4 `ExplanationOfBenefit.item.adjudication.id` |
 | ExplanationOfBenefit.item.adjudication.modifierExtension | ExplanationOfBenefit.item.adjudication.modifierExtension | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.item.adjudication.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.item.adjudication.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| ExplanationOfBenefit.item.adjudication.quantity | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.adjudication.quantity` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
+| ExplanationOfBenefit.item.adjudication.quantity | ExplanationOfBenefit.item.adjudication.value | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.item.adjudication.quantity` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.item.adjudication.value` - value has change due to type change: R5 quantity Quantity has no equivalent or mapped type in R4 value |
 | ExplanationOfBenefit.item.adjudication.reason | ExplanationOfBenefit.item.adjudication.reason | Equivalent | R5 `ExplanationOfBenefit.item.adjudication.reason` maps as Equivalent to R4 `ExplanationOfBenefit.item.adjudication.reason` |
-| ExplanationOfBenefit.item.bodySite | ExplanationOfBenefit.item.bodySite | RelatedTo | R5 `ExplanationOfBenefit.item.bodySite` maps as RelatedTo to R4 `ExplanationOfBenefit.item.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
+| ExplanationOfBenefit.item.bodySite | ExplanationOfBenefit.item.bodySite | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.item.bodySite` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.item.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
 | ExplanationOfBenefit.item.bodySite.extension | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.bodySite.extension` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.item.bodySite.id | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.bodySite.id` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.item.bodySite.modifierExtension | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.bodySite.modifierExtension` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.item.bodySite.site | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.bodySite.site` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
-| ExplanationOfBenefit.item.bodySite.subSite | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.bodySite.subSite` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
+| ExplanationOfBenefit.item.bodySite.subSite | ExplanationOfBenefit.item.subSite | Equivalent | R5 `ExplanationOfBenefit.item.bodySite.subSite` maps as Equivalent to R4 `ExplanationOfBenefit.item.subSite` |
 | ExplanationOfBenefit.item.careTeamSequence | ExplanationOfBenefit.item.careTeamSequence | Equivalent | R5 `ExplanationOfBenefit.item.careTeamSequence` maps as Equivalent to R4 `ExplanationOfBenefit.item.careTeamSequence` |
 | ExplanationOfBenefit.item.category | ExplanationOfBenefit.item.category | Equivalent | R5 `ExplanationOfBenefit.item.category` maps as Equivalent to R4 `ExplanationOfBenefit.item.category` |
 | ExplanationOfBenefit.item.detail | ExplanationOfBenefit.item.detail | Equivalent | R5 `ExplanationOfBenefit.item.detail` maps as Equivalent to R4 `ExplanationOfBenefit.item.detail` |
@@ -260,7 +262,7 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.item.traceNumber | - | DoesNotExistInTarget | R5 `ExplanationOfBenefit.item.traceNumber` does not appear in the target and has no mapping for `ExplanationOfBenefit`. |
 | ExplanationOfBenefit.item.udi | ExplanationOfBenefit.item.udi | Equivalent | R5 `ExplanationOfBenefit.item.udi` maps as Equivalent to R4 `ExplanationOfBenefit.item.udi` |
 | ExplanationOfBenefit.item.unitPrice | ExplanationOfBenefit.item.unitPrice | Equivalent | R5 `ExplanationOfBenefit.item.unitPrice` maps as Equivalent to R4 `ExplanationOfBenefit.item.unitPrice` |
-| ExplanationOfBenefit.language | ExplanationOfBenefit.language | RelatedTo | R5 `ExplanationOfBenefit.language` maps as RelatedTo to R4 `ExplanationOfBenefit.language` - language changed the binding strength from Required to Preferred |
+| ExplanationOfBenefit.language | ExplanationOfBenefit.language | SourceIsNarrowerThanTarget | R5 `ExplanationOfBenefit.language` maps as SourceIsNarrowerThanTarget to R4 `ExplanationOfBenefit.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ExplanationOfBenefit.meta | ExplanationOfBenefit.meta | Equivalent | R5 `ExplanationOfBenefit.meta` maps as Equivalent to R4 `ExplanationOfBenefit.meta` |
 | ExplanationOfBenefit.modifierExtension | ExplanationOfBenefit.modifierExtension | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ExplanationOfBenefit.originalPrescription | ExplanationOfBenefit.originalPrescription | Equivalent | R5 `ExplanationOfBenefit.originalPrescription` maps as Equivalent to R4 `ExplanationOfBenefit.originalPrescription` |
@@ -300,7 +302,7 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.processNote | ExplanationOfBenefit.processNote | Equivalent | R5 `ExplanationOfBenefit.processNote` maps as Equivalent to R4 `ExplanationOfBenefit.processNote` |
 | ExplanationOfBenefit.processNote.extension | ExplanationOfBenefit.processNote.extension | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.processNote.extension` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.processNote.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ExplanationOfBenefit.processNote.id | ExplanationOfBenefit.processNote.id | Equivalent | R5 `ExplanationOfBenefit.processNote.id` maps as Equivalent to R4 `ExplanationOfBenefit.processNote.id` |
-| ExplanationOfBenefit.processNote.language | ExplanationOfBenefit.processNote.language | RelatedTo | R5 `ExplanationOfBenefit.processNote.language` maps as RelatedTo to R4 `ExplanationOfBenefit.processNote.language` - language changed the binding strength from Required to Preferred |
+| ExplanationOfBenefit.processNote.language | ExplanationOfBenefit.processNote.language | SourceIsNarrowerThanTarget | R5 `ExplanationOfBenefit.processNote.language` maps as SourceIsNarrowerThanTarget to R4 `ExplanationOfBenefit.processNote.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ExplanationOfBenefit.processNote.modifierExtension | ExplanationOfBenefit.processNote.modifierExtension | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.processNote.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.processNote.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ExplanationOfBenefit.processNote.number | ExplanationOfBenefit.processNote.number | Equivalent | R5 `ExplanationOfBenefit.processNote.number` maps as Equivalent to R4 `ExplanationOfBenefit.processNote.number` |
 | ExplanationOfBenefit.processNote.text | ExplanationOfBenefit.processNote.text | Equivalent | R5 `ExplanationOfBenefit.processNote.text` maps as Equivalent to R4 `ExplanationOfBenefit.processNote.text` |
@@ -325,7 +327,7 @@ RelatedTo | 247 |
 | ExplanationOfBenefit.supportingInfo.reason | ExplanationOfBenefit.supportingInfo.reason | Equivalent | R5 `ExplanationOfBenefit.supportingInfo.reason` maps as Equivalent to R4 `ExplanationOfBenefit.supportingInfo.reason` |
 | ExplanationOfBenefit.supportingInfo.sequence | ExplanationOfBenefit.supportingInfo.sequence | Equivalent | R5 `ExplanationOfBenefit.supportingInfo.sequence` maps as Equivalent to R4 `ExplanationOfBenefit.supportingInfo.sequence` |
 | ExplanationOfBenefit.supportingInfo.timing[x] | ExplanationOfBenefit.supportingInfo.timing[x] | Equivalent | R5 `ExplanationOfBenefit.supportingInfo.timing[x]` maps as Equivalent to R4 `ExplanationOfBenefit.supportingInfo.timing[x]` |
-| ExplanationOfBenefit.supportingInfo.value[x] | ExplanationOfBenefit.supportingInfo.value[x] | RelatedTo | R5 `ExplanationOfBenefit.supportingInfo.value[x]` maps as RelatedTo to R4 `ExplanationOfBenefit.supportingInfo.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x] |
+| ExplanationOfBenefit.supportingInfo.value[x] | ExplanationOfBenefit.supportingInfo.value[x] | SourceIsBroaderThanTarget | R5 `ExplanationOfBenefit.supportingInfo.value[x]` maps as SourceIsBroaderThanTarget to R4 `ExplanationOfBenefit.supportingInfo.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x] |
 | ExplanationOfBenefit.text | ExplanationOfBenefit.text | Equivalent | R5 `ExplanationOfBenefit.text` maps as Equivalent to R4 `ExplanationOfBenefit.text` |
 | ExplanationOfBenefit.total | ExplanationOfBenefit.total | Equivalent | R5 `ExplanationOfBenefit.total` maps as Equivalent to R4 `ExplanationOfBenefit.total` |
 | ExplanationOfBenefit.total.amount | ExplanationOfBenefit.total.amount | Equivalent | R5 `ExplanationOfBenefit.total.amount` maps as Equivalent to R4 `ExplanationOfBenefit.total.amount` |

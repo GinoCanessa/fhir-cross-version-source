@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 84 |
+Equivalent | 64 |
+SourceIsBroaderThanTarget | 22 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -46,7 +47,7 @@ RelatedTo | 84 |
 | TerminologyCapabilities.codeSystem.version.filter.op | TerminologyCapabilities.codeSystem.version.filter.op | Equivalent | R5 `TerminologyCapabilities.codeSystem.version.filter.op` maps as Equivalent to R4 `TerminologyCapabilities.codeSystem.version.filter.op` |
 | TerminologyCapabilities.codeSystem.version.id | TerminologyCapabilities.codeSystem.version.id | Equivalent | R5 `TerminologyCapabilities.codeSystem.version.id` maps as Equivalent to R4 `TerminologyCapabilities.codeSystem.version.id` |
 | TerminologyCapabilities.codeSystem.version.isDefault | TerminologyCapabilities.codeSystem.version.isDefault | Equivalent | R5 `TerminologyCapabilities.codeSystem.version.isDefault` maps as Equivalent to R4 `TerminologyCapabilities.codeSystem.version.isDefault` |
-| TerminologyCapabilities.codeSystem.version.language | TerminologyCapabilities.codeSystem.version.language | RelatedTo | R5 `TerminologyCapabilities.codeSystem.version.language` maps as RelatedTo to R4 `TerminologyCapabilities.codeSystem.version.language` - language removed a binding requirement - Required http://hl7.org/fhir/ValueSet/languages|5.0.0 |
+| TerminologyCapabilities.codeSystem.version.language | TerminologyCapabilities.codeSystem.version.language | SourceIsNarrowerThanTarget | R5 `TerminologyCapabilities.codeSystem.version.language` maps as SourceIsNarrowerThanTarget to R4 `TerminologyCapabilities.codeSystem.version.language` - language removed a binding requirement - Required http://hl7.org/fhir/ValueSet/languages|5.0.0; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | TerminologyCapabilities.codeSystem.version.modifierExtension | TerminologyCapabilities.codeSystem.version.modifierExtension | SourceIsBroaderThanTarget | R5 `TerminologyCapabilities.codeSystem.version.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `TerminologyCapabilities.codeSystem.version.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | TerminologyCapabilities.codeSystem.version.property | TerminologyCapabilities.codeSystem.version.property | Equivalent | R5 `TerminologyCapabilities.codeSystem.version.property` maps as Equivalent to R4 `TerminologyCapabilities.codeSystem.version.property` |
 | TerminologyCapabilities.contact | TerminologyCapabilities.contact | Equivalent | R5 `TerminologyCapabilities.contact` maps as Equivalent to R4 `TerminologyCapabilities.contact` |
@@ -82,7 +83,7 @@ RelatedTo | 84 |
 | TerminologyCapabilities.implicitRules | TerminologyCapabilities.implicitRules | Equivalent | R5 `TerminologyCapabilities.implicitRules` maps as Equivalent to R4 `TerminologyCapabilities.implicitRules` |
 | TerminologyCapabilities.jurisdiction | TerminologyCapabilities.jurisdiction | Equivalent | R5 `TerminologyCapabilities.jurisdiction` maps as Equivalent to R4 `TerminologyCapabilities.jurisdiction` |
 | TerminologyCapabilities.kind | TerminologyCapabilities.kind | Equivalent | R5 `TerminologyCapabilities.kind` maps as Equivalent to R4 `TerminologyCapabilities.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/capability-statement-kind|5.0.0 and http://hl7.org/fhir/ValueSet/capability-statement-kind|4.0.1 (Equivalent) |
-| TerminologyCapabilities.language | TerminologyCapabilities.language | RelatedTo | R5 `TerminologyCapabilities.language` maps as RelatedTo to R4 `TerminologyCapabilities.language` - language changed the binding strength from Required to Preferred |
+| TerminologyCapabilities.language | TerminologyCapabilities.language | SourceIsNarrowerThanTarget | R5 `TerminologyCapabilities.language` maps as SourceIsNarrowerThanTarget to R4 `TerminologyCapabilities.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | TerminologyCapabilities.lockedDate | TerminologyCapabilities.lockedDate | Equivalent | R5 `TerminologyCapabilities.lockedDate` maps as Equivalent to R4 `TerminologyCapabilities.lockedDate` |
 | TerminologyCapabilities.meta | TerminologyCapabilities.meta | Equivalent | R5 `TerminologyCapabilities.meta` maps as Equivalent to R4 `TerminologyCapabilities.meta` |
 | TerminologyCapabilities.modifierExtension | TerminologyCapabilities.modifierExtension | SourceIsBroaderThanTarget | R5 `TerminologyCapabilities.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `TerminologyCapabilities.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

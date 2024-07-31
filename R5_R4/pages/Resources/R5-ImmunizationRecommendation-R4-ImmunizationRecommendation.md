@@ -13,9 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 28 |
+Equivalent | 25 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -28,7 +28,7 @@ RelatedTo | 28 |
 | ImmunizationRecommendation.id | ImmunizationRecommendation.id | Equivalent | R5 `ImmunizationRecommendation.id` maps as Equivalent to R4 `ImmunizationRecommendation.id` |
 | ImmunizationRecommendation.identifier | ImmunizationRecommendation.identifier | Equivalent | R5 `ImmunizationRecommendation.identifier` maps as Equivalent to R4 `ImmunizationRecommendation.identifier` |
 | ImmunizationRecommendation.implicitRules | ImmunizationRecommendation.implicitRules | Equivalent | R5 `ImmunizationRecommendation.implicitRules` maps as Equivalent to R4 `ImmunizationRecommendation.implicitRules` |
-| ImmunizationRecommendation.language | ImmunizationRecommendation.language | RelatedTo | R5 `ImmunizationRecommendation.language` maps as RelatedTo to R4 `ImmunizationRecommendation.language` - language changed the binding strength from Required to Preferred |
+| ImmunizationRecommendation.language | ImmunizationRecommendation.language | SourceIsNarrowerThanTarget | R5 `ImmunizationRecommendation.language` maps as SourceIsNarrowerThanTarget to R4 `ImmunizationRecommendation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ImmunizationRecommendation.meta | ImmunizationRecommendation.meta | Equivalent | R5 `ImmunizationRecommendation.meta` maps as Equivalent to R4 `ImmunizationRecommendation.meta` |
 | ImmunizationRecommendation.modifierExtension | ImmunizationRecommendation.modifierExtension | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ImmunizationRecommendation.patient | ImmunizationRecommendation.patient | Equivalent | R5 `ImmunizationRecommendation.patient` maps as Equivalent to R4 `ImmunizationRecommendation.patient` |
@@ -41,17 +41,17 @@ RelatedTo | 28 |
 | ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension | ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ImmunizationRecommendation.recommendation.dateCriterion.value | ImmunizationRecommendation.recommendation.dateCriterion.value | Equivalent | R5 `ImmunizationRecommendation.recommendation.dateCriterion.value` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.dateCriterion.value` |
 | ImmunizationRecommendation.recommendation.description | ImmunizationRecommendation.recommendation.description | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.recommendation.description` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.recommendation.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
-| ImmunizationRecommendation.recommendation.doseNumber | - | DoesNotExistInTarget | R5 `ImmunizationRecommendation.recommendation.doseNumber` does not appear in the target and has no mapping for `ImmunizationRecommendation`. |
+| ImmunizationRecommendation.recommendation.doseNumber | ImmunizationRecommendation.recommendation.doseNumber[x] | Equivalent | R5 `ImmunizationRecommendation.recommendation.doseNumber` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.doseNumber[x]` |
 | ImmunizationRecommendation.recommendation.extension | ImmunizationRecommendation.recommendation.extension | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.recommendation.extension` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.recommendation.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ImmunizationRecommendation.recommendation.forecastReason | ImmunizationRecommendation.recommendation.forecastReason | Equivalent | R5 `ImmunizationRecommendation.recommendation.forecastReason` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.forecastReason` |
 | ImmunizationRecommendation.recommendation.forecastStatus | ImmunizationRecommendation.recommendation.forecastStatus | Equivalent | R5 `ImmunizationRecommendation.recommendation.forecastStatus` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.forecastStatus` |
 | ImmunizationRecommendation.recommendation.id | ImmunizationRecommendation.recommendation.id | Equivalent | R5 `ImmunizationRecommendation.recommendation.id` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.id` |
 | ImmunizationRecommendation.recommendation.modifierExtension | ImmunizationRecommendation.recommendation.modifierExtension | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.recommendation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.recommendation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ImmunizationRecommendation.recommendation.series | ImmunizationRecommendation.recommendation.series | Equivalent | R5 `ImmunizationRecommendation.recommendation.series` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.series` |
-| ImmunizationRecommendation.recommendation.seriesDoses | - | DoesNotExistInTarget | R5 `ImmunizationRecommendation.recommendation.seriesDoses` does not appear in the target and has no mapping for `ImmunizationRecommendation`. |
+| ImmunizationRecommendation.recommendation.seriesDoses | ImmunizationRecommendation.recommendation.seriesDoses[x] | Equivalent | R5 `ImmunizationRecommendation.recommendation.seriesDoses` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.seriesDoses[x]` |
 | ImmunizationRecommendation.recommendation.supportingImmunization | ImmunizationRecommendation.recommendation.supportingImmunization | Equivalent | R5 `ImmunizationRecommendation.recommendation.supportingImmunization` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.supportingImmunization` |
 | ImmunizationRecommendation.recommendation.supportingPatientInformation | ImmunizationRecommendation.recommendation.supportingPatientInformation | Equivalent | R5 `ImmunizationRecommendation.recommendation.supportingPatientInformation` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.supportingPatientInformation` |
-| ImmunizationRecommendation.recommendation.targetDisease | ImmunizationRecommendation.recommendation.targetDisease | RelatedTo | R5 `ImmunizationRecommendation.recommendation.targetDisease` maps as RelatedTo to R4 `ImmunizationRecommendation.recommendation.targetDisease` - targetDisease changed from array to scalar (max cardinality from * to 1) |
+| ImmunizationRecommendation.recommendation.targetDisease | ImmunizationRecommendation.recommendation.targetDisease | SourceIsBroaderThanTarget | R5 `ImmunizationRecommendation.recommendation.targetDisease` maps as SourceIsBroaderThanTarget to R4 `ImmunizationRecommendation.recommendation.targetDisease` - targetDisease changed from array to scalar (max cardinality from * to 1) |
 | ImmunizationRecommendation.recommendation.vaccineCode | ImmunizationRecommendation.recommendation.vaccineCode | Equivalent | R5 `ImmunizationRecommendation.recommendation.vaccineCode` maps as Equivalent to R4 `ImmunizationRecommendation.recommendation.vaccineCode` |
 | ImmunizationRecommendation.text | ImmunizationRecommendation.text | Equivalent | R5 `ImmunizationRecommendation.text` maps as Equivalent to R4 `ImmunizationRecommendation.text` |
 

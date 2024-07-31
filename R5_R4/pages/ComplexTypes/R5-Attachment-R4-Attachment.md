@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 5 |
-Equivalent | 4 |
-RelatedTo | 7 |
+Equivalent | 9 |
+SourceIsBroaderThanTarget | 1 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -30,7 +31,7 @@ RelatedTo | 7 |
 | Attachment.hash | Attachment.hash | Equivalent | R5 `Attachment.hash` maps as Equivalent to R4 `Attachment.hash` |
 | Attachment.height | - | DoesNotExistInTarget | R5 `Attachment.height` does not appear in the target and has no mapping for `Attachment`. |
 | Attachment.id | Attachment.id | Equivalent | R5 `Attachment.id` maps as Equivalent to R4 `Attachment.id` |
-| Attachment.language | Attachment.language | RelatedTo | R5 `Attachment.language` maps as RelatedTo to R4 `Attachment.language` - language changed the binding strength from Required to Preferred |
+| Attachment.language | Attachment.language | SourceIsNarrowerThanTarget | R5 `Attachment.language` maps as SourceIsNarrowerThanTarget to R4 `Attachment.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Attachment.pages | - | DoesNotExistInTarget | R5 `Attachment.pages` does not appear in the target and has no mapping for `Attachment`. |
 | Attachment.size | Attachment.size | SourceIsBroaderThanTarget | R5 `Attachment.size` maps as SourceIsBroaderThanTarget to R4 `Attachment.size` - size has change due to type change: R5 size integer64 has no equivalent or mapped type in R4 size |
 | Attachment.title | Attachment.title | Equivalent | R5 `Attachment.title` maps as Equivalent to R4 `Attachment.title` |

@@ -13,8 +13,8 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 5 |
+Equivalent | 7 |
+RelatedTo | 2 |
 
 
 | Source | Target | Status | Message |

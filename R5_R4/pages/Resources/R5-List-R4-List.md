@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 25 |
+Equivalent | 21 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -37,7 +39,7 @@ RelatedTo | 25 |
 | List.id | List.id | Equivalent | R5 `List.id` maps as Equivalent to R4 `List.id` |
 | List.identifier | List.identifier | Equivalent | R5 `List.identifier` maps as Equivalent to R4 `List.identifier` |
 | List.implicitRules | List.implicitRules | Equivalent | R5 `List.implicitRules` maps as Equivalent to R4 `List.implicitRules` |
-| List.language | List.language | RelatedTo | R5 `List.language` maps as RelatedTo to R4 `List.language` - language changed the binding strength from Required to Preferred |
+| List.language | List.language | SourceIsNarrowerThanTarget | R5 `List.language` maps as SourceIsNarrowerThanTarget to R4 `List.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | List.meta | List.meta | Equivalent | R5 `List.meta` maps as Equivalent to R4 `List.meta` |
 | List.mode | List.mode | Equivalent | R5 `List.mode` maps as Equivalent to R4 `List.mode` - mode has compatible required binding for code type: http://hl7.org/fhir/ValueSet/list-mode|5.0.0 and http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (Equivalent) |
 | List.modifierExtension | List.modifierExtension | SourceIsBroaderThanTarget | R5 `List.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `List.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

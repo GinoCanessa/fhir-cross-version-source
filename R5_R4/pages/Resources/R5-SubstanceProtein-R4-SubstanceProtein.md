@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 20 |
+Equivalent | 18 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -25,7 +27,7 @@ RelatedTo | 20 |
 | SubstanceProtein.extension | SubstanceProtein.extension | SourceIsBroaderThanTarget | R5 `SubstanceProtein.extension` maps as SourceIsBroaderThanTarget to R4 `SubstanceProtein.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | SubstanceProtein.id | SubstanceProtein.id | Equivalent | R5 `SubstanceProtein.id` maps as Equivalent to R4 `SubstanceProtein.id` |
 | SubstanceProtein.implicitRules | SubstanceProtein.implicitRules | Equivalent | R5 `SubstanceProtein.implicitRules` maps as Equivalent to R4 `SubstanceProtein.implicitRules` |
-| SubstanceProtein.language | SubstanceProtein.language | RelatedTo | R5 `SubstanceProtein.language` maps as RelatedTo to R4 `SubstanceProtein.language` - language changed the binding strength from Required to Preferred |
+| SubstanceProtein.language | SubstanceProtein.language | SourceIsNarrowerThanTarget | R5 `SubstanceProtein.language` maps as SourceIsNarrowerThanTarget to R4 `SubstanceProtein.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SubstanceProtein.meta | SubstanceProtein.meta | Equivalent | R5 `SubstanceProtein.meta` maps as Equivalent to R4 `SubstanceProtein.meta` |
 | SubstanceProtein.modifierExtension | SubstanceProtein.modifierExtension | SourceIsBroaderThanTarget | R5 `SubstanceProtein.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SubstanceProtein.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | SubstanceProtein.numberOfSubunits | SubstanceProtein.numberOfSubunits | Equivalent | R5 `SubstanceProtein.numberOfSubunits` maps as Equivalent to R4 `SubstanceProtein.numberOfSubunits` |

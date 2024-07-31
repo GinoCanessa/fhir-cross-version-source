@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 14 |
+SourceIsBroaderThanTarget | 2 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -27,7 +28,7 @@ RelatedTo | 13 |
 | EnrollmentResponse.id | EnrollmentResponse.id | Equivalent | R5 `EnrollmentResponse.id` maps as Equivalent to R4 `EnrollmentResponse.id` |
 | EnrollmentResponse.identifier | EnrollmentResponse.identifier | Equivalent | R5 `EnrollmentResponse.identifier` maps as Equivalent to R4 `EnrollmentResponse.identifier` |
 | EnrollmentResponse.implicitRules | EnrollmentResponse.implicitRules | Equivalent | R5 `EnrollmentResponse.implicitRules` maps as Equivalent to R4 `EnrollmentResponse.implicitRules` |
-| EnrollmentResponse.language | EnrollmentResponse.language | RelatedTo | R5 `EnrollmentResponse.language` maps as RelatedTo to R4 `EnrollmentResponse.language` - language changed the binding strength from Required to Preferred |
+| EnrollmentResponse.language | EnrollmentResponse.language | SourceIsNarrowerThanTarget | R5 `EnrollmentResponse.language` maps as SourceIsNarrowerThanTarget to R4 `EnrollmentResponse.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | EnrollmentResponse.meta | EnrollmentResponse.meta | Equivalent | R5 `EnrollmentResponse.meta` maps as Equivalent to R4 `EnrollmentResponse.meta` |
 | EnrollmentResponse.modifierExtension | EnrollmentResponse.modifierExtension | SourceIsBroaderThanTarget | R5 `EnrollmentResponse.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `EnrollmentResponse.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | EnrollmentResponse.organization | EnrollmentResponse.organization | Equivalent | R5 `EnrollmentResponse.organization` maps as Equivalent to R4 `EnrollmentResponse.organization` |

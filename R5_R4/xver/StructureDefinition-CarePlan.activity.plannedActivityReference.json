@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:CarePlan.activity.plannedActivityReference compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `CarePlan.activity.plannedActivityReference` does not appear in the target and has no mapping for `CarePlan`.",
+  "description": "R5 `CarePlan.activity.plannedActivityReference` maps as RelatedTo to R4 `CarePlan.activity.reference` - reference has change due to type change: R5 `plannedActivityReference` `Reference` maps as RelatedTo for R4 `reference`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "CarePlan.activity"
+      "expression": "CarePlan.activity.reference"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Activity that is intended to be part of the care plan",
         "definition": "The details of the proposed activity represented in a specific resource.",
-        "comment": "R5 `CarePlan.activity.plannedActivityReference` does not appear in the target and has no mapping for `CarePlan`.\nStandard extension exists ([http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal](http://hl7.org/fhir/extensions/StructureDefinition-resource-pertainsToGoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.  \nThe goal should be visible when the resource referenced by CarePlan.activity.plannedActivityReference is viewed independently from the CarePlan.  Requests that are pointed to by a CarePlan using this element should *not* point to this CarePlan using the \"basedOn\" element.  i.e. Requests that are part of a CarePlan are not \"based on\" the CarePlan.",
+        "comment": "R5 `CarePlan.activity.plannedActivityReference` maps as RelatedTo to R4 `CarePlan.activity.reference` - reference has change due to type change: R5 `plannedActivityReference` `Reference` maps as RelatedTo for R4 `reference`\nStandard extension exists ([http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal](http://hl7.org/fhir/extensions/StructureDefinition-resource-pertainsToGoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.  \nThe goal should be visible when the resource referenced by CarePlan.activity.plannedActivityReference is viewed independently from the CarePlan.  Requests that are pointed to by a CarePlan using this element should *not* point to this CarePlan using the \"basedOn\" element.  i.e. Requests that are part of a CarePlan are not \"based on\" the CarePlan.",
         "min": 0,
         "max": "1",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,12 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/RequestOrchestration",
+              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+              "http://hl7.org/fhir/StructureDefinition/SupplyRequest"
+            ]
           }
         ],
         "condition": [
@@ -398,60 +244,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Reference:Reference",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Reference"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,24 +259,21 @@
         "path": "Extension",
         "short": "Activity that is intended to be part of the care plan",
         "definition": "The details of the proposed activity represented in a specific resource.",
-        "comment": "R5 `CarePlan.activity.plannedActivityReference` does not appear in the target and has no mapping for `CarePlan`.\nStandard extension exists ([http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal](http://hl7.org/fhir/extensions/StructureDefinition-resource-pertainsToGoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.  \nThe goal should be visible when the resource referenced by CarePlan.activity.plannedActivityReference is viewed independently from the CarePlan.  Requests that are pointed to by a CarePlan using this element should *not* point to this CarePlan using the \"basedOn\" element.  i.e. Requests that are part of a CarePlan are not \"based on\" the CarePlan.",
+        "comment": "R5 `CarePlan.activity.plannedActivityReference` maps as RelatedTo to R4 `CarePlan.activity.reference` - reference has change due to type change: R5 `plannedActivityReference` `Reference` maps as RelatedTo for R4 `reference`\nStandard extension exists ([http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal](http://hl7.org/fhir/extensions/StructureDefinition-resource-pertainsToGoal.html)) that allows goals to be referenced from any of the referenced resources in CarePlan.activity.plannedActivityReference.  \nThe goal should be visible when the resource referenced by CarePlan.activity.plannedActivityReference is viewed independently from the CarePlan.  Requests that are pointed to by a CarePlan using this element should *not* point to this CarePlan using the \"basedOn\" element.  i.e. Requests that are part of a CarePlan are not \"based on\" the CarePlan.",
         "min": 0,
         "max": "1",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/RequestOrchestration",
+              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+              "http://hl7.org/fhir/StructureDefinition/SupplyRequest"
             ]
           }
         ]

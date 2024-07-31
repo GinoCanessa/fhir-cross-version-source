@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` does not appear in the target and has no mapping for `SubstancePolymer`.",
+  "description": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` maps as SourceIsBroaderThanTarget to R4 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount` - amount has change due to type change: R5 average integer has no equivalent or mapped type in R4 amount",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation"
+      "expression": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount"
     }
   ],
   "type": "Extension",
@@ -35,7 +35,7 @@
         ],
         "path": "Extension",
         "short": "An average amount of polymerisation",
-        "definition": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` does not appear in the target and has no mapping for `SubstancePolymer`.",
+        "definition": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` maps as SourceIsBroaderThanTarget to R4 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount` - amount has change due to type change: R5 average integer has no equivalent or mapped type in R4 amount",
         "min": 0,
         "max": "1",
         "base": {
@@ -397,60 +397,6 @@
         ]
       },
       {
-        "id": "Extension.extension:integer:integer",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:integer"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -465,7 +411,7 @@
       {
         "path": "Extension",
         "short": "An average amount of polymerisation",
-        "definition": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` does not appear in the target and has no mapping for `SubstancePolymer`.",
+        "definition": "R5 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average` maps as SourceIsBroaderThanTarget to R4 `SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount` - amount has change due to type change: R5 average integer has no equivalent or mapped type in R4 amount",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -473,19 +419,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

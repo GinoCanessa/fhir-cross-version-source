@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 10 |
-Equivalent | 4 |
-RelatedTo | 86 |
+DoesNotExistInTarget | 8 |
+Equivalent | 68 |
+RelatedTo | 3 |
+SourceIsBroaderThanTarget | 20 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -56,7 +58,7 @@ RelatedTo | 86 |
 | StructureMap.group.rule.dependent.id | StructureMap.group.rule.dependent.id | Equivalent | R5 `StructureMap.group.rule.dependent.id` maps as Equivalent to R4 `StructureMap.group.rule.dependent.id` |
 | StructureMap.group.rule.dependent.modifierExtension | StructureMap.group.rule.dependent.modifierExtension | SourceIsBroaderThanTarget | R5 `StructureMap.group.rule.dependent.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `StructureMap.group.rule.dependent.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | StructureMap.group.rule.dependent.name | StructureMap.group.rule.dependent.name | Equivalent | R5 `StructureMap.group.rule.dependent.name` maps as Equivalent to R4 `StructureMap.group.rule.dependent.name` |
-| StructureMap.group.rule.dependent.parameter | - | DoesNotExistInTarget | R5 `StructureMap.group.rule.dependent.parameter` does not appear in the target and has no mapping for `StructureMap`. |
+| StructureMap.group.rule.dependent.parameter | StructureMap.group.rule.dependent.variable | Equivalent | R5 `StructureMap.group.rule.dependent.parameter` maps as Equivalent to R4 `StructureMap.group.rule.dependent.variable` |
 | StructureMap.group.rule.documentation | StructureMap.group.rule.documentation | Equivalent | R5 `StructureMap.group.rule.documentation` maps as Equivalent to R4 `StructureMap.group.rule.documentation` |
 | StructureMap.group.rule.extension | StructureMap.group.rule.extension | SourceIsBroaderThanTarget | R5 `StructureMap.group.rule.extension` maps as SourceIsBroaderThanTarget to R4 `StructureMap.group.rule.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | StructureMap.group.rule.id | StructureMap.group.rule.id | Equivalent | R5 `StructureMap.group.rule.id` maps as Equivalent to R4 `StructureMap.group.rule.id` |
@@ -67,7 +69,7 @@ RelatedTo | 86 |
 | StructureMap.group.rule.source.check | StructureMap.group.rule.source.check | Equivalent | R5 `StructureMap.group.rule.source.check` maps as Equivalent to R4 `StructureMap.group.rule.source.check` |
 | StructureMap.group.rule.source.condition | StructureMap.group.rule.source.condition | Equivalent | R5 `StructureMap.group.rule.source.condition` maps as Equivalent to R4 `StructureMap.group.rule.source.condition` |
 | StructureMap.group.rule.source.context | StructureMap.group.rule.source.context | Equivalent | R5 `StructureMap.group.rule.source.context` maps as Equivalent to R4 `StructureMap.group.rule.source.context` |
-| StructureMap.group.rule.source.defaultValue | - | DoesNotExistInTarget | R5 `StructureMap.group.rule.source.defaultValue` does not appear in the target and has no mapping for `StructureMap`. |
+| StructureMap.group.rule.source.defaultValue | StructureMap.group.rule.source.defaultValue[x] | Equivalent | R5 `StructureMap.group.rule.source.defaultValue` maps as Equivalent to R4 `StructureMap.group.rule.source.defaultValue[x]` |
 | StructureMap.group.rule.source.element | StructureMap.group.rule.source.element | Equivalent | R5 `StructureMap.group.rule.source.element` maps as Equivalent to R4 `StructureMap.group.rule.source.element` |
 | StructureMap.group.rule.source.extension | StructureMap.group.rule.source.extension | SourceIsBroaderThanTarget | R5 `StructureMap.group.rule.source.extension` maps as SourceIsBroaderThanTarget to R4 `StructureMap.group.rule.source.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | StructureMap.group.rule.source.id | StructureMap.group.rule.source.id | Equivalent | R5 `StructureMap.group.rule.source.id` maps as Equivalent to R4 `StructureMap.group.rule.source.id` |
@@ -99,7 +101,7 @@ RelatedTo | 86 |
 | StructureMap.implicitRules | StructureMap.implicitRules | Equivalent | R5 `StructureMap.implicitRules` maps as Equivalent to R4 `StructureMap.implicitRules` |
 | StructureMap.import | StructureMap.import | Equivalent | R5 `StructureMap.import` maps as Equivalent to R4 `StructureMap.import` |
 | StructureMap.jurisdiction | StructureMap.jurisdiction | Equivalent | R5 `StructureMap.jurisdiction` maps as Equivalent to R4 `StructureMap.jurisdiction` |
-| StructureMap.language | StructureMap.language | RelatedTo | R5 `StructureMap.language` maps as RelatedTo to R4 `StructureMap.language` - language changed the binding strength from Required to Preferred |
+| StructureMap.language | StructureMap.language | SourceIsNarrowerThanTarget | R5 `StructureMap.language` maps as SourceIsNarrowerThanTarget to R4 `StructureMap.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | StructureMap.meta | StructureMap.meta | Equivalent | R5 `StructureMap.meta` maps as Equivalent to R4 `StructureMap.meta` |
 | StructureMap.modifierExtension | StructureMap.modifierExtension | SourceIsBroaderThanTarget | R5 `StructureMap.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `StructureMap.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | StructureMap.name | StructureMap.name | Equivalent | R5 `StructureMap.name` maps as Equivalent to R4 `StructureMap.name` |

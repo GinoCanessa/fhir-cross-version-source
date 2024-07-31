@@ -462,17 +462,12 @@
       },
       {
         "path": "Extension.extension:observation.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:observation.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
             ]
           }
         ]
@@ -491,20 +486,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TriggeredByType"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/observation-triggeredbytype|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-observation-triggeredbytype|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -520,18 +518,10 @@
       },
       {
         "path": "Extension.extension:reason.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reason.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },

@@ -14,8 +14,8 @@ Comparison Result: SourceIsBroaderThanTarget
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 12 |
-Equivalent | 43 |
-SourceIsBroaderThanTarget | 40 |
+Equivalent | 74 |
+SourceIsBroaderThanTarget | 9 |
 
 
 | Source | Target | Status | Message |

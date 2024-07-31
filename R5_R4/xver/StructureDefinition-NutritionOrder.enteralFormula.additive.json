@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:NutritionOrder.enteralFormula.additive compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `NutritionOrder.enteralFormula.additive` does not appear in the target and has no mapping for `NutritionOrder`.",
+  "description": "R5 `NutritionOrder.enteralFormula.additive` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula` - enteralFormula changed from array to scalar (max cardinality from * to 1)",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Components to add to the feeding",
         "definition": "Indicates modular components to be provided in addition or mixed with the base formula.",
-        "comment": "R5 `NutritionOrder.enteralFormula.additive` does not appear in the target and has no mapping for `NutritionOrder`.",
+        "comment": "R5 `NutritionOrder.enteralFormula.additive` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula` - enteralFormula changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "base": {
@@ -447,7 +447,7 @@
         "path": "Extension",
         "short": "Components to add to the feeding",
         "definition": "Indicates modular components to be provided in addition or mixed with the base formula.",
-        "comment": "R5 `NutritionOrder.enteralFormula.additive` does not appear in the target and has no mapping for `NutritionOrder`.",
+        "comment": "R5 `NutritionOrder.enteralFormula.additive` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula` - enteralFormula changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -463,19 +463,6 @@
       {
         "path": "Extension.extension:type.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:type.url",
@@ -494,19 +481,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:productName.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:productName.url",
         "fixedUri": "productName"
       },
@@ -520,17 +494,12 @@
       },
       {
         "path": "Extension.extension:quantity.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:quantity.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
+            "code": "Quantity",
             "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
             ]
           }
         ]

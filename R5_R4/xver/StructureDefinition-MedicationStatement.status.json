@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationStatement.status compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1",
+  "description": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1; status has change due to type change: R5 `status` `code` maps as SourceIsBroaderThanTarget for R4 `status`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "recorded | entered-in-error | draft",
         "definition": "A code representing the status of recording the medication statement.",
-        "comment": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1\nThis status concerns just the recording of the medication statement.  MedicationStatement.adherence should be used for indicating a patient's adherence to the information in this resource.  Note, the statuses are different than in previous releases for MedicationStatement or MedicationStatement.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
+        "comment": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1; status has change due to type change: R5 `status` `code` maps as SourceIsBroaderThanTarget for R4 `status`\nThis status concerns just the recording of the medication statement.  MedicationStatement.adherence should be used for indicating a patient's adherence to the information in this resource.  Note, the statuses are different than in previous releases for MedicationStatement or MedicationStatement.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
         "min": 1,
         "max": "1",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
             "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -390,6 +231,17 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationStatementStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-medication-statement-status|1.0.0"
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -413,14 +265,30 @@
         "path": "Extension",
         "short": "recorded | entered-in-error | draft",
         "definition": "A code representing the status of recording the medication statement.",
-        "comment": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1\nThis status concerns just the recording of the medication statement.  MedicationStatement.adherence should be used for indicating a patient's adherence to the information in this resource.  Note, the statuses are different than in previous releases for MedicationStatement or MedicationStatement.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
+        "comment": "R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1; status has change due to type change: R5 `status` `code` maps as SourceIsBroaderThanTarget for R4 `status`\nThis status concerns just the recording of the medication statement.  MedicationStatement.adherence should be used for indicating a patient's adherence to the information in this resource.  Note, the statuses are different than in previous releases for MedicationStatement or MedicationStatement.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
         "min": 1,
         "max": "1",
         "isModifier": true
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationStatementStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-medication-statement-status|1.0.0"
+        }
       },
       {
         "path": "Extension.url",

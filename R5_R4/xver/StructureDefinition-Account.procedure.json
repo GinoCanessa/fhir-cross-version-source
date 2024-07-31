@@ -500,18 +500,10 @@
       },
       {
         "path": "Extension.extension:sequence.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sequence.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -557,18 +549,10 @@
       },
       {
         "path": "Extension.extension:dateOfService.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dateOfService.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },
@@ -585,20 +569,22 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "procedure-type"
+            }
+          ],
+          "strength": "example",
+          "description": "Usage for the specific procedure - e.g. billing"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -614,20 +600,22 @@
       },
       {
         "path": "Extension.extension:packageCode.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:packageCode.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "procedure-package-code"
+            }
+          ],
+          "strength": "example",
+          "description": "Local or Regional package codes, e.g. DRGs"
+        }
       },
       {
         "path": "Extension.extension:packageCode.url",
@@ -643,17 +631,12 @@
       },
       {
         "path": "Extension.extension:device.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:device.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           }
         ]

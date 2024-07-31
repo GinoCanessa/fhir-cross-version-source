@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationKnowledge.definitional compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationKnowledge.definitional` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+  "description": "R5 `MedicationKnowledge.definitional` maps as RelatedTo to R4 `MedicationKnowledge` - MedicationKnowledge changed from scalar to array (max cardinality from 1 to *); MedicationKnowledge has change due to type change: R5 definitional BackboneElement has no equivalent or mapped type in R4 MedicationKnowledge",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Minimal definition information about the medication",
         "definition": "Along with the link to a Medicinal Product Definition resource, this information provides common definitional elements that are needed to understand the specific medication that is being described.",
-        "comment": "R5 `MedicationKnowledge.definitional` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+        "comment": "R5 `MedicationKnowledge.definitional` maps as RelatedTo to R4 `MedicationKnowledge` - MedicationKnowledge changed from scalar to array (max cardinality from 1 to *); MedicationKnowledge has change due to type change: R5 definitional BackboneElement has no equivalent or mapped type in R4 MedicationKnowledge",
         "min": 0,
         "max": "1",
         "base": {
@@ -545,7 +545,7 @@
         "path": "Extension",
         "short": "Minimal definition information about the medication",
         "definition": "Along with the link to a Medicinal Product Definition resource, this information provides common definitional elements that are needed to understand the specific medication that is being described.",
-        "comment": "R5 `MedicationKnowledge.definitional` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+        "comment": "R5 `MedicationKnowledge.definitional` maps as RelatedTo to R4 `MedicationKnowledge` - MedicationKnowledge changed from scalar to array (max cardinality from 1 to *); MedicationKnowledge has change due to type change: R5 definitional BackboneElement has no equivalent or mapped type in R4 MedicationKnowledge",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -560,17 +560,12 @@
       },
       {
         "path": "Extension.extension:definition.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definition.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"
             ]
           }
         ]
@@ -593,19 +588,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:doseForm.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:doseForm.url",
         "fixedUri": "doseForm"
       },
@@ -619,19 +601,6 @@
       {
         "path": "Extension.extension:intendedRoute.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:intendedRoute.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:intendedRoute.url",
@@ -658,19 +627,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:ingredient.extension:item.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:ingredient.extension:item.url",
         "fixedUri": "item"
       },
@@ -684,20 +640,22 @@
       },
       {
         "path": "Extension.extension:ingredient.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:ingredient.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationIngredientIsActive"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity"
+        }
       },
       {
         "path": "Extension.extension:ingredient.extension:type.url",
@@ -713,46 +671,22 @@
       },
       {
         "path": "Extension.extension:ingredient.extension:strength[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:ingredient.extension:strength[x].extension:Ratio",
-        "sliceName": "Ratio",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Ratio"
-            ]
+            "code": "Ratio"
           }
-        ]
-      },
-      {
-        "path": "Extension.extension:ingredient.extension:strength[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:ingredient.extension:strength[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationIngredientStrength"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-ingredientstrength"
+        }
       },
       {
         "path": "Extension.extension:ingredient.extension:strength[x].url",
@@ -775,19 +709,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:item.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:item.url",
         "fixedUri": "item"
       },
@@ -801,20 +722,22 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationIngredientIsActive"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -830,46 +753,22 @@
       },
       {
         "path": "Extension.extension:strength[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:strength[x].extension:Ratio",
-        "sliceName": "Ratio",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Ratio"
-            ]
+            "code": "Ratio"
           }
-        ]
-      },
-      {
-        "path": "Extension.extension:strength[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:strength[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationIngredientStrength"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-ingredientstrength"
+        }
       },
       {
         "path": "Extension.extension:strength[x].url",
@@ -896,19 +795,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:drugCharacteristic.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:drugCharacteristic.extension:type.url",
         "fixedUri": "type"
       },
@@ -923,71 +809,6 @@
       {
         "path": "Extension.extension:drugCharacteristic.extension:value[x].value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:drugCharacteristic.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:drugCharacteristic.extension:value[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:drugCharacteristic.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:drugCharacteristic.extension:value[x].extension:base64Binary",
-        "sliceName": "base64Binary",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-base64Binary"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:drugCharacteristic.extension:value[x].extension:Attachment",
-        "sliceName": "Attachment",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:drugCharacteristic.extension:value[x].url",
@@ -1010,19 +831,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:type.url",
         "fixedUri": "type"
       },
@@ -1037,71 +845,6 @@
       {
         "path": "Extension.extension:value[x].value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:base64Binary",
-        "sliceName": "base64Binary",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-base64Binary"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Attachment",
-        "sliceName": "Attachment",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:value[x].url",

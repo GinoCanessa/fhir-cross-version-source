@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 22 |
+Equivalent | 19 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -26,7 +28,7 @@ RelatedTo | 22 |
 | RelatedPerson.communication | RelatedPerson.communication | Equivalent | R5 `RelatedPerson.communication` maps as Equivalent to R4 `RelatedPerson.communication` |
 | RelatedPerson.communication.extension | RelatedPerson.communication.extension | SourceIsBroaderThanTarget | R5 `RelatedPerson.communication.extension` maps as SourceIsBroaderThanTarget to R4 `RelatedPerson.communication.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | RelatedPerson.communication.id | RelatedPerson.communication.id | Equivalent | R5 `RelatedPerson.communication.id` maps as Equivalent to R4 `RelatedPerson.communication.id` |
-| RelatedPerson.communication.language | RelatedPerson.communication.language | RelatedTo | R5 `RelatedPerson.communication.language` maps as RelatedTo to R4 `RelatedPerson.communication.language` - language changed the binding strength from Required to Preferred |
+| RelatedPerson.communication.language | RelatedPerson.communication.language | SourceIsNarrowerThanTarget | R5 `RelatedPerson.communication.language` maps as SourceIsNarrowerThanTarget to R4 `RelatedPerson.communication.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | RelatedPerson.communication.modifierExtension | RelatedPerson.communication.modifierExtension | SourceIsBroaderThanTarget | R5 `RelatedPerson.communication.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `RelatedPerson.communication.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | RelatedPerson.communication.preferred | RelatedPerson.communication.preferred | Equivalent | R5 `RelatedPerson.communication.preferred` maps as Equivalent to R4 `RelatedPerson.communication.preferred` |
 | RelatedPerson.contained | RelatedPerson.contained | Equivalent | R5 `RelatedPerson.contained` maps as Equivalent to R4 `RelatedPerson.contained` |
@@ -35,7 +37,7 @@ RelatedTo | 22 |
 | RelatedPerson.id | RelatedPerson.id | Equivalent | R5 `RelatedPerson.id` maps as Equivalent to R4 `RelatedPerson.id` |
 | RelatedPerson.identifier | RelatedPerson.identifier | Equivalent | R5 `RelatedPerson.identifier` maps as Equivalent to R4 `RelatedPerson.identifier` |
 | RelatedPerson.implicitRules | RelatedPerson.implicitRules | Equivalent | R5 `RelatedPerson.implicitRules` maps as Equivalent to R4 `RelatedPerson.implicitRules` |
-| RelatedPerson.language | RelatedPerson.language | RelatedTo | R5 `RelatedPerson.language` maps as RelatedTo to R4 `RelatedPerson.language` - language changed the binding strength from Required to Preferred |
+| RelatedPerson.language | RelatedPerson.language | SourceIsNarrowerThanTarget | R5 `RelatedPerson.language` maps as SourceIsNarrowerThanTarget to R4 `RelatedPerson.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | RelatedPerson.meta | RelatedPerson.meta | Equivalent | R5 `RelatedPerson.meta` maps as Equivalent to R4 `RelatedPerson.meta` |
 | RelatedPerson.modifierExtension | RelatedPerson.modifierExtension | SourceIsBroaderThanTarget | R5 `RelatedPerson.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `RelatedPerson.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | RelatedPerson.name | RelatedPerson.name | Equivalent | R5 `RelatedPerson.name` maps as Equivalent to R4 `RelatedPerson.name` |

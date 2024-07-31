@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 27 |
+Equivalent | 23 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -37,7 +39,7 @@ RelatedTo | 27 |
 | Group.id | Group.id | Equivalent | R5 `Group.id` maps as Equivalent to R4 `Group.id` |
 | Group.identifier | Group.identifier | Equivalent | R5 `Group.identifier` maps as Equivalent to R4 `Group.identifier` |
 | Group.implicitRules | Group.implicitRules | Equivalent | R5 `Group.implicitRules` maps as Equivalent to R4 `Group.implicitRules` |
-| Group.language | Group.language | RelatedTo | R5 `Group.language` maps as RelatedTo to R4 `Group.language` - language changed the binding strength from Required to Preferred |
+| Group.language | Group.language | SourceIsNarrowerThanTarget | R5 `Group.language` maps as SourceIsNarrowerThanTarget to R4 `Group.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Group.managingEntity | Group.managingEntity | Equivalent | R5 `Group.managingEntity` maps as Equivalent to R4 `Group.managingEntity` |
 | Group.member | Group.member | Equivalent | R5 `Group.member` maps as Equivalent to R4 `Group.member` |
 | Group.member.entity | Group.member.entity | RelatedTo | R5 `Group.member.entity` maps as RelatedTo to R4 `Group.member.entity` - entity has change due to type change: R5 `entity` `Reference` maps as RelatedTo for R4 `entity` |

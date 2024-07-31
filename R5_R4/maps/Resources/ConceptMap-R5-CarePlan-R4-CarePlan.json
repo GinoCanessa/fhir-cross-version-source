@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/CarePlan",
       "element": [
         {
-          "code": "CarePlan.activity.performedActivity",
-          "target": [
-            {
-              "code": "CarePlan.activity.reference",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "CarePlan.activity.plannedActivityReference",
-          "target": [
-            {
-              "code": "CarePlan.activity.reference",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "CarePlan.custodian",
-          "target": [
-            {
-              "code": "CarePlan.author",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/CarePlan",
-      "target": "http://hl7.org/fhir/StructureDefinition/CarePlan",
-      "element": [
-        {
           "code": "CarePlan",
           "display": "Healthcare plan for patient or group",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "CarePlan.activity",
               "display": "Action to occur as part of plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.activity\u0060 maps as Equivalent to R4 \u0060CarePlan.activity\u0060"
             }
           ]
@@ -91,7 +58,7 @@
             {
               "code": "CarePlan.activity.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.activity.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.activity.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -103,7 +70,7 @@
             {
               "code": "CarePlan.activity.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.activity.id\u0060 maps as Equivalent to R4 \u0060CarePlan.activity.id\u0060"
             }
           ]
@@ -115,20 +82,44 @@
             {
               "code": "CarePlan.activity.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.activity.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.activity.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "CarePlan.activity.performedActivity",
-          "display": "Results of the activity (concept, or Appointment, Encounter, Procedure, etc.)",
-          "noMap": true
+          "target": [
+            {
+              "code": "CarePlan.activity.reference",
+              "display": "Activity details defined in specific resource",
+              "relationship": "related-to",
+              "comment": "R5 \u0060CarePlan.activity.performedActivity\u0060 maps as RelatedTo to R4 \u0060CarePlan.activity.reference\u0060 - reference changed from array to scalar (max cardinality from * to 1); reference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/care-plan-activity-performed; reference has change due to type change: R5 performedActivity CodeableReference has no equivalent or mapped type in R4 reference"
+            },
+            {
+              "code": "CarePlan.activity.outcomeCodeableConcept",
+              "display": "Results of the activity",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060CarePlan.activity.performedActivity\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.activity.outcomeCodeableConcept\u0060 - outcomeCodeableConcept has change due to type change: R5 performedActivity CodeableReference has no equivalent or mapped type in R4 outcomeCodeableConcept"
+            },
+            {
+              "code": "CarePlan.activity.outcomeReference",
+              "display": "Appointment, Encounter, Procedure, etc.",
+              "relationship": "related-to",
+              "comment": "R5 \u0060CarePlan.activity.performedActivity\u0060 maps as RelatedTo to R4 \u0060CarePlan.activity.outcomeReference\u0060 - outcomeReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/care-plan-activity-performed; outcomeReference has change due to type change: R5 performedActivity CodeableReference has no equivalent or mapped type in R4 outcomeReference"
+            }
+          ]
         },
         {
           "code": "CarePlan.activity.plannedActivityReference",
-          "display": "Activity that is intended to be part of the care plan",
-          "noMap": true
+          "target": [
+            {
+              "code": "CarePlan.activity.reference",
+              "display": "Activity details defined in specific resource",
+              "relationship": "related-to",
+              "comment": "R5 \u0060CarePlan.activity.plannedActivityReference\u0060 maps as RelatedTo to R4 \u0060CarePlan.activity.reference\u0060 - reference has change due to type change: R5 \u0060plannedActivityReference\u0060 \u0060Reference\u0060 maps as RelatedTo for R4 \u0060reference\u0060"
+            }
+          ]
         },
         {
           "code": "CarePlan.activity.progress",
@@ -137,7 +128,7 @@
             {
               "code": "CarePlan.activity.progress",
               "display": "Comments about the activity status/progress",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.activity.progress\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.activity.progress\u0060 - progress has change due to type change: R5 \u0060progress\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060progress\u0060"
             }
           ]
@@ -161,7 +152,7 @@
             {
               "code": "CarePlan.basedOn",
               "display": "Fulfills CarePlan",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.basedOn\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.basedOn\u0060 - basedOn has change due to type change: R5 \u0060basedOn\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060basedOn\u0060"
             }
           ]
@@ -173,7 +164,7 @@
             {
               "code": "CarePlan.careTeam",
               "display": "Who\u0027s involved in plan?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.careTeam\u0060 maps as Equivalent to R4 \u0060CarePlan.careTeam\u0060"
             }
           ]
@@ -185,7 +176,7 @@
             {
               "code": "CarePlan.category",
               "display": "Type of plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.category\u0060 maps as Equivalent to R4 \u0060CarePlan.category\u0060"
             }
           ]
@@ -197,7 +188,7 @@
             {
               "code": "CarePlan.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.contained\u0060 maps as Equivalent to R4 \u0060CarePlan.contained\u0060"
             }
           ]
@@ -209,7 +200,7 @@
             {
               "code": "CarePlan.contributor",
               "display": "Who provided the content of the care plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.contributor\u0060 maps as Equivalent to R4 \u0060CarePlan.contributor\u0060"
             }
           ]
@@ -221,15 +212,21 @@
             {
               "code": "CarePlan.created",
               "display": "Date record was first recorded",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.created\u0060 maps as Equivalent to R4 \u0060CarePlan.created\u0060"
             }
           ]
         },
         {
           "code": "CarePlan.custodian",
-          "display": "Who is the designated responsible party",
-          "noMap": true
+          "target": [
+            {
+              "code": "CarePlan.author",
+              "display": "Who is the designated responsible party",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060CarePlan.custodian\u0060 maps as Equivalent to R4 \u0060CarePlan.author\u0060"
+            }
+          ]
         },
         {
           "code": "CarePlan.description",
@@ -238,7 +235,7 @@
             {
               "code": "CarePlan.description",
               "display": "Summary of nature of plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.description\u0060 maps as Equivalent to R4 \u0060CarePlan.description\u0060"
             }
           ]
@@ -250,7 +247,7 @@
             {
               "code": "CarePlan.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.encounter\u0060 maps as Equivalent to R4 \u0060CarePlan.encounter\u0060"
             }
           ]
@@ -262,7 +259,7 @@
             {
               "code": "CarePlan.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -274,7 +271,7 @@
             {
               "code": "CarePlan.goal",
               "display": "Desired outcome of plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.goal\u0060 maps as Equivalent to R4 \u0060CarePlan.goal\u0060"
             }
           ]
@@ -298,7 +295,7 @@
             {
               "code": "CarePlan.identifier",
               "display": "External Ids for this plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.identifier\u0060 maps as Equivalent to R4 \u0060CarePlan.identifier\u0060"
             }
           ]
@@ -322,7 +319,7 @@
             {
               "code": "CarePlan.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060CarePlan.instantiatesCanonical\u0060"
             }
           ]
@@ -334,7 +331,7 @@
             {
               "code": "CarePlan.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.instantiatesUri\u0060 maps as Equivalent to R4 \u0060CarePlan.instantiatesUri\u0060"
             }
           ]
@@ -346,7 +343,7 @@
             {
               "code": "CarePlan.intent",
               "display": "proposal | plan | order | option",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.intent\u0060 maps as Equivalent to R4 \u0060CarePlan.intent\u0060 - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/care-plan-intent|5.0.0 and http://hl7.org/fhir/ValueSet/care-plan-intent|4.0.1 (Equivalent)"
             }
           ]
@@ -358,8 +355,8 @@
             {
               "code": "CarePlan.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060CarePlan.language\u0060 maps as RelatedTo to R4 \u0060CarePlan.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060CarePlan.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060CarePlan.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -382,7 +379,7 @@
             {
               "code": "CarePlan.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -394,7 +391,7 @@
             {
               "code": "CarePlan.note",
               "display": "Comments about the plan",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CarePlan.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CarePlan.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -406,7 +403,7 @@
             {
               "code": "CarePlan.partOf",
               "display": "Part of referenced CarePlan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.partOf\u0060 maps as Equivalent to R4 \u0060CarePlan.partOf\u0060"
             }
           ]
@@ -418,7 +415,7 @@
             {
               "code": "CarePlan.period",
               "display": "Time period plan covers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.period\u0060 maps as Equivalent to R4 \u0060CarePlan.period\u0060"
             }
           ]
@@ -430,7 +427,7 @@
             {
               "code": "CarePlan.replaces",
               "display": "CarePlan replaced by this CarePlan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.replaces\u0060 maps as Equivalent to R4 \u0060CarePlan.replaces\u0060"
             }
           ]
@@ -442,7 +439,7 @@
             {
               "code": "CarePlan.status",
               "display": "draft | active | on-hold | revoked | completed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.status\u0060 maps as Equivalent to R4 \u0060CarePlan.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-status|5.0.0 and http://hl7.org/fhir/ValueSet/request-status|4.0.1 (Equivalent)"
             }
           ]
@@ -454,7 +451,7 @@
             {
               "code": "CarePlan.subject",
               "display": "Who the care plan is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.subject\u0060 maps as Equivalent to R4 \u0060CarePlan.subject\u0060"
             }
           ]
@@ -466,7 +463,7 @@
             {
               "code": "CarePlan.supportingInfo",
               "display": "Information considered as part of plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.supportingInfo\u0060 maps as Equivalent to R4 \u0060CarePlan.supportingInfo\u0060"
             }
           ]
@@ -478,7 +475,7 @@
             {
               "code": "CarePlan.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.text\u0060 maps as Equivalent to R4 \u0060CarePlan.text\u0060"
             }
           ]
@@ -490,7 +487,7 @@
             {
               "code": "CarePlan.title",
               "display": "Human-friendly name for the care plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CarePlan.title\u0060 maps as Equivalent to R4 \u0060CarePlan.title\u0060"
             }
           ]

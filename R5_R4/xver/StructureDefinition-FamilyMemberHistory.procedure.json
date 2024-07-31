@@ -490,20 +490,23 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProcedureCode"
+            }
+          ],
+          "strength": "example",
+          "description": "A code to identify a specific procedure.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/procedure-code"
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -519,20 +522,23 @@
       },
       {
         "path": "Extension.extension:outcome.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:outcome.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProcedureOutcome"
+            }
+          ],
+          "strength": "example",
+          "description": "The result of the procedure; e.g. death, permanent disability, temporary disability, etc.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/clinical-findings"
+        }
       },
       {
         "path": "Extension.extension:outcome.url",
@@ -548,18 +554,10 @@
       },
       {
         "path": "Extension.extension:contributedToDeath.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:contributedToDeath.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -577,70 +575,22 @@
       },
       {
         "path": "Extension.extension:performed[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:performed[x].extension:Age",
-        "sliceName": "Age",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Age"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:performed[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Age"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:performed[x].extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Range"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:performed[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Period"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:performed[x].extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "string"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },
@@ -658,18 +608,10 @@
       },
       {
         "path": "Extension.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },

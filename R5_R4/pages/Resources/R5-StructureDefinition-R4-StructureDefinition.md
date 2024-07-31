@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 52 |
+Equivalent | 43 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -51,7 +52,7 @@ RelatedTo | 52 |
 | StructureDefinition.jurisdiction | StructureDefinition.jurisdiction | Equivalent | R5 `StructureDefinition.jurisdiction` maps as Equivalent to R4 `StructureDefinition.jurisdiction` |
 | StructureDefinition.keyword | StructureDefinition.keyword | Equivalent | R5 `StructureDefinition.keyword` maps as Equivalent to R4 `StructureDefinition.keyword` |
 | StructureDefinition.kind | StructureDefinition.kind | Equivalent | R5 `StructureDefinition.kind` maps as Equivalent to R4 `StructureDefinition.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/structure-definition-kind|5.0.0 and http://hl7.org/fhir/ValueSet/structure-definition-kind|4.0.1 (Equivalent) |
-| StructureDefinition.language | StructureDefinition.language | RelatedTo | R5 `StructureDefinition.language` maps as RelatedTo to R4 `StructureDefinition.language` - language changed the binding strength from Required to Preferred |
+| StructureDefinition.language | StructureDefinition.language | SourceIsNarrowerThanTarget | R5 `StructureDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `StructureDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | StructureDefinition.mapping | StructureDefinition.mapping | Equivalent | R5 `StructureDefinition.mapping` maps as Equivalent to R4 `StructureDefinition.mapping` |
 | StructureDefinition.mapping.comment | StructureDefinition.mapping.comment | Equivalent | R5 `StructureDefinition.mapping.comment` maps as Equivalent to R4 `StructureDefinition.mapping.comment` |
 | StructureDefinition.mapping.extension | StructureDefinition.mapping.extension | SourceIsBroaderThanTarget | R5 `StructureDefinition.mapping.extension` maps as SourceIsBroaderThanTarget to R4 `StructureDefinition.mapping.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |

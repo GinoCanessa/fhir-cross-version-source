@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:ResearchStudy.comparisonGroup.description compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ResearchStudy.comparisonGroup.description` does not appear in the target and has no mapping for `ResearchStudy`.",
+  "description": "R5 `ResearchStudy.comparisonGroup.description` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.arm.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ResearchStudy"
+      "expression": "ResearchStudy.arm.description"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Short explanation of study path",
         "definition": "A succinct description of the path through the study that would be followed by a subject adhering to this comparisonGroup.",
-        "comment": "R5 `ResearchStudy.comparisonGroup.description` does not appear in the target and has no mapping for `ResearchStudy`.",
+        "comment": "R5 `ResearchStudy.comparisonGroup.description` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.arm.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:markdown:markdown",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:markdown"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "Short explanation of study path",
         "definition": "A succinct description of the path through the study that would be followed by a subject adhering to this comparisonGroup.",
-        "comment": "R5 `ResearchStudy.comparisonGroup.description` does not appear in the target and has no mapping for `ResearchStudy`.",
+        "comment": "R5 `ResearchStudy.comparisonGroup.description` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.arm.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

@@ -28,130 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
       "element": [
         {
-          "code": "MolecularSequence.literal",
-          "target": [
-            {
-              "code": "MolecularSequence.observedSeq",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.edit",
-          "target": [
-            {
-              "code": "MolecularSequence.variant",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.edit.end",
-          "target": [
-            {
-              "code": "MolecularSequence.variant.end",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.edit.replacedSequence",
-          "target": [
-            {
-              "code": "MolecularSequence.variant.referenceAllele",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.edit.replacementSequence",
-          "target": [
-            {
-              "code": "MolecularSequence.variant.observedAllele",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.chromosome",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.chromosome",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.orientation",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.orientation",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.sequence[x]",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.referenceSeqString",
-              "relationship": "source-is-broader-than-target",
-              "comment": "re-org"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.strand",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.strand",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.windowEnd",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.windowEnd",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.relative.startingSequence.windowStart",
-          "target": [
-            {
-              "code": "MolecularSequence.referenceSeq.windowStart",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MolecularSequence.subject",
-          "target": [
-            {
-              "code": "MolecularSequence.patient",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-      "target": "http://hl7.org/fhir/StructureDefinition/MolecularSequence",
-      "element": [
-        {
           "code": "MolecularSequence",
           "display": "Representation of a molecular sequence",
           "target": [
@@ -170,7 +46,7 @@
             {
               "code": "MolecularSequence.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.contained\u0060 maps as Equivalent to R4 \u0060MolecularSequence.contained\u0060"
             }
           ]
@@ -182,7 +58,7 @@
             {
               "code": "MolecularSequence.device",
               "display": "The method for sequencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.device\u0060 maps as Equivalent to R4 \u0060MolecularSequence.device\u0060"
             }
           ]
@@ -194,7 +70,7 @@
             {
               "code": "MolecularSequence.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MolecularSequence.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MolecularSequence.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -228,7 +104,7 @@
             {
               "code": "MolecularSequence.identifier",
               "display": "Unique ID for this particular sequence. This is a FHIR-defined id",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.identifier\u0060 maps as Equivalent to R4 \u0060MolecularSequence.identifier\u0060"
             }
           ]
@@ -252,15 +128,21 @@
             {
               "code": "MolecularSequence.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MolecularSequence.language\u0060 maps as RelatedTo to R4 \u0060MolecularSequence.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MolecularSequence.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MolecularSequence.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "MolecularSequence.literal",
-          "display": "Sequence that was observed",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.observedSeq",
+              "display": "Sequence that was observed",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.literal\u0060 maps as Equivalent to R4 \u0060MolecularSequence.observedSeq\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.meta",
@@ -281,7 +163,7 @@
             {
               "code": "MolecularSequence.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MolecularSequence.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MolecularSequence.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -293,7 +175,7 @@
             {
               "code": "MolecularSequence.performer",
               "display": "Who should be responsible for test result",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.performer\u0060 maps as Equivalent to R4 \u0060MolecularSequence.performer\u0060"
             }
           ]
@@ -310,13 +192,25 @@
         },
         {
           "code": "MolecularSequence.relative.edit",
-          "display": "Changes in sequence from the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.variant",
+              "display": "Variant in sequence",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.edit\u0060 maps as Equivalent to R4 \u0060MolecularSequence.variant\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.edit.end",
-          "display": "End position of the edit on the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.variant.end",
+              "display": "End position of the variant on the reference sequence",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.edit.end\u0060 maps as Equivalent to R4 \u0060MolecularSequence.variant.end\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.edit.extension",
@@ -335,13 +229,25 @@
         },
         {
           "code": "MolecularSequence.relative.edit.replacedSequence",
-          "display": "Allele in the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.variant.referenceAllele",
+              "display": "Allele in the reference sequence",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.edit.replacedSequence\u0060 maps as Equivalent to R4 \u0060MolecularSequence.variant.referenceAllele\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.edit.replacementSequence",
-          "display": "Allele that was observed",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.variant.observedAllele",
+              "display": "Allele that was observed",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.edit.replacementSequence\u0060 maps as Equivalent to R4 \u0060MolecularSequence.variant.observedAllele\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.edit.start",
@@ -375,13 +281,25 @@
         },
         {
           "code": "MolecularSequence.relative.startingSequence",
-          "display": "A sequence used as starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq",
+              "display": "A sequence used as reference",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence\u0060 maps as Equivalent to R4 \u0060MolecularSequence.referenceSeq\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.chromosome",
-          "display": "Chromosome Identifier",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.chromosome",
+              "display": "Chromosome containing genetic finding",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.chromosome\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MolecularSequence.referenceSeq.chromosome\u0060 - chromosome changed the binding strength from Required to Example; chromosome has change due to type change: R5 \u0060chromosome\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060chromosome\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.extension",
@@ -405,28 +323,58 @@
         },
         {
           "code": "MolecularSequence.relative.startingSequence.orientation",
-          "display": "sense | antisense",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.orientation",
+              "display": "sense | antisense",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.orientation\u0060 maps as Equivalent to R4 \u0060MolecularSequence.referenceSeq.orientation\u0060 - orientation has compatible required binding for code type: http://hl7.org/fhir/ValueSet/orientation-type|5.0.0 and http://hl7.org/fhir/ValueSet/orientation-type|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.sequence[x]",
-          "display": "The reference sequence that represents the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.referenceSeqString",
+              "display": "A string to represent reference sequence",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.sequence[x]\u0060 maps as RelatedTo to R4 \u0060MolecularSequence.referenceSeq.referenceSeqString\u0060 - referenceSeqString removed a binding requirement - Example ; referenceSeqString has change due to type change: R5 sequence[x] CodeableConcept has no equivalent or mapped type in R4 referenceSeqString; referenceSeqString has change due to type change: R5 \u0060sequence[x]\u0060 \u0060string\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060referenceSeqString\u0060; referenceSeqString has change due to type change: R5 sequence[x] Reference has no equivalent or mapped type in R4 referenceSeqString"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.strand",
-          "display": "watson | crick",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.strand",
+              "display": "watson | crick",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.strand\u0060 maps as Equivalent to R4 \u0060MolecularSequence.referenceSeq.strand\u0060 - strand has compatible required binding for code type: http://hl7.org/fhir/ValueSet/strand-type|5.0.0 and http://hl7.org/fhir/ValueSet/strand-type|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.windowEnd",
-          "display": "End position of the window on the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.windowEnd",
+              "display": "End position of the window on the reference sequence",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.windowEnd\u0060 maps as Equivalent to R4 \u0060MolecularSequence.referenceSeq.windowEnd\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.relative.startingSequence.windowStart",
-          "display": "Start position of the window on the starting sequence",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.referenceSeq.windowStart",
+              "display": "Start position of the window on the  reference sequence",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060MolecularSequence.relative.startingSequence.windowStart\u0060 maps as Equivalent to R4 \u0060MolecularSequence.referenceSeq.windowStart\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.specimen",
@@ -435,15 +383,21 @@
             {
               "code": "MolecularSequence.specimen",
               "display": "Specimen used for sequencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.specimen\u0060 maps as Equivalent to R4 \u0060MolecularSequence.specimen\u0060"
             }
           ]
         },
         {
           "code": "MolecularSequence.subject",
-          "display": "Subject this sequence is associated too",
-          "noMap": true
+          "target": [
+            {
+              "code": "MolecularSequence.patient",
+              "display": "Who and/or what this is about",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MolecularSequence.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MolecularSequence.patient\u0060 - patient has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060patient\u0060"
+            }
+          ]
         },
         {
           "code": "MolecularSequence.text",
@@ -452,7 +406,7 @@
             {
               "code": "MolecularSequence.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.text\u0060 maps as Equivalent to R4 \u0060MolecularSequence.text\u0060"
             }
           ]
@@ -464,7 +418,7 @@
             {
               "code": "MolecularSequence.type",
               "display": "aa | dna | rna",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MolecularSequence.type\u0060 maps as Equivalent to R4 \u0060MolecularSequence.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/sequence-type|5.0.0 and http://hl7.org/fhir/ValueSet/sequence-type|4.0.1 (Equivalent)"
             }
           ]

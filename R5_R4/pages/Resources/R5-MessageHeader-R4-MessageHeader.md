@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 34 |
+Equivalent | 25 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -25,7 +26,7 @@ RelatedTo | 34 |
 | MessageHeader.contained | MessageHeader.contained | Equivalent | R5 `MessageHeader.contained` maps as Equivalent to R4 `MessageHeader.contained` |
 | MessageHeader.definition | MessageHeader.definition | Equivalent | R5 `MessageHeader.definition` maps as Equivalent to R4 `MessageHeader.definition` |
 | MessageHeader.destination | MessageHeader.destination | Equivalent | R5 `MessageHeader.destination` maps as Equivalent to R4 `MessageHeader.destination` |
-| MessageHeader.destination.endpoint[x] | - | DoesNotExistInTarget | R5 `MessageHeader.destination.endpoint[x]` does not appear in the target and has no mapping for `MessageHeader`. |
+| MessageHeader.destination.endpoint[x] | MessageHeader.destination.endpoint | RelatedTo | R5 `MessageHeader.destination.endpoint[x]` maps as RelatedTo to R4 `MessageHeader.destination.endpoint` - endpoint made the element mandatory; endpoint increased the minimum cardinality from 0 to 1; endpoint has change due to type change: R5 endpoint[x] Reference has no equivalent or mapped type in R4 endpoint |
 | MessageHeader.destination.extension | MessageHeader.destination.extension | SourceIsBroaderThanTarget | R5 `MessageHeader.destination.extension` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.destination.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | MessageHeader.destination.id | MessageHeader.destination.id | Equivalent | R5 `MessageHeader.destination.id` maps as Equivalent to R4 `MessageHeader.destination.id` |
 | MessageHeader.destination.modifierExtension | MessageHeader.destination.modifierExtension | SourceIsBroaderThanTarget | R5 `MessageHeader.destination.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.destination.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -37,7 +38,7 @@ RelatedTo | 34 |
 | MessageHeader.focus | MessageHeader.focus | Equivalent | R5 `MessageHeader.focus` maps as Equivalent to R4 `MessageHeader.focus` |
 | MessageHeader.id | MessageHeader.id | Equivalent | R5 `MessageHeader.id` maps as Equivalent to R4 `MessageHeader.id` |
 | MessageHeader.implicitRules | MessageHeader.implicitRules | Equivalent | R5 `MessageHeader.implicitRules` maps as Equivalent to R4 `MessageHeader.implicitRules` |
-| MessageHeader.language | MessageHeader.language | RelatedTo | R5 `MessageHeader.language` maps as RelatedTo to R4 `MessageHeader.language` - language changed the binding strength from Required to Preferred |
+| MessageHeader.language | MessageHeader.language | SourceIsNarrowerThanTarget | R5 `MessageHeader.language` maps as SourceIsNarrowerThanTarget to R4 `MessageHeader.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | MessageHeader.meta | MessageHeader.meta | Equivalent | R5 `MessageHeader.meta` maps as Equivalent to R4 `MessageHeader.meta` |
 | MessageHeader.modifierExtension | MessageHeader.modifierExtension | SourceIsBroaderThanTarget | R5 `MessageHeader.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | MessageHeader.reason | MessageHeader.reason | Equivalent | R5 `MessageHeader.reason` maps as Equivalent to R4 `MessageHeader.reason` |
@@ -52,7 +53,7 @@ RelatedTo | 34 |
 | MessageHeader.sender | MessageHeader.sender | SourceIsBroaderThanTarget | R5 `MessageHeader.sender` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.sender` - sender has change due to type change: R5 `sender` `Reference` maps as SourceIsBroaderThanTarget for R4 `sender` |
 | MessageHeader.source | MessageHeader.source | Equivalent | R5 `MessageHeader.source` maps as Equivalent to R4 `MessageHeader.source` |
 | MessageHeader.source.contact | MessageHeader.source.contact | Equivalent | R5 `MessageHeader.source.contact` maps as Equivalent to R4 `MessageHeader.source.contact` |
-| MessageHeader.source.endpoint[x] | - | DoesNotExistInTarget | R5 `MessageHeader.source.endpoint[x]` does not appear in the target and has no mapping for `MessageHeader`. |
+| MessageHeader.source.endpoint[x] | MessageHeader.source.endpoint | RelatedTo | R5 `MessageHeader.source.endpoint[x]` maps as RelatedTo to R4 `MessageHeader.source.endpoint` - endpoint made the element mandatory; endpoint increased the minimum cardinality from 0 to 1; endpoint has change due to type change: R5 endpoint[x] Reference has no equivalent or mapped type in R4 endpoint |
 | MessageHeader.source.extension | MessageHeader.source.extension | SourceIsBroaderThanTarget | R5 `MessageHeader.source.extension` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.source.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | MessageHeader.source.id | MessageHeader.source.id | Equivalent | R5 `MessageHeader.source.id` maps as Equivalent to R4 `MessageHeader.source.id` |
 | MessageHeader.source.modifierExtension | MessageHeader.source.modifierExtension | SourceIsBroaderThanTarget | R5 `MessageHeader.source.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MessageHeader.source.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

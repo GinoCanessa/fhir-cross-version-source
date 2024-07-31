@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
       "element": [
         {
-          "code": "MedicationStatement.encounter",
-          "target": [
-            {
-              "code": "MedicationStatement.context",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationStatement.medication",
-          "target": [
-            {
-              "code": "MedicationStatement.medication[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationStatement.reason.concept",
-          "target": [
-            {
-              "code": "MedicationStatement.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationStatement.reason.reference",
-          "target": [
-            {
-              "code": "MedicationStatement.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-      "target": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-      "element": [
-        {
           "code": "MedicationStatement",
           "display": "Record of medication being taken by a patient",
           "target": [
@@ -118,8 +76,8 @@
             {
               "code": "MedicationStatement.category",
               "display": "Type of medication usage",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationStatement.category\u0060 maps as RelatedTo to R4 \u0060MedicationStatement.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred; category has change due to type change: R5 \u0060category\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060category\u0060"
             }
           ]
         },
@@ -130,7 +88,7 @@
             {
               "code": "MedicationStatement.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.contained\u0060 maps as Equivalent to R4 \u0060MedicationStatement.contained\u0060"
             }
           ]
@@ -142,7 +100,7 @@
             {
               "code": "MedicationStatement.dateAsserted",
               "display": "When the statement was asserted?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.dateAsserted\u0060 maps as Equivalent to R4 \u0060MedicationStatement.dateAsserted\u0060"
             }
           ]
@@ -154,7 +112,7 @@
             {
               "code": "MedicationStatement.derivedFrom",
               "display": "Additional supporting information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.derivedFrom\u0060 maps as Equivalent to R4 \u0060MedicationStatement.derivedFrom\u0060"
             }
           ]
@@ -166,8 +124,8 @@
             {
               "code": "MedicationStatement.dosage",
               "display": "Details of how medication is/was taken or should be taken",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationStatement.dosage\u0060 maps as RelatedTo to R4 \u0060MedicationStatement.dosage\u0060 - dosage has change due to type change: R5 \u0060dosage\u0060 \u0060Dosage\u0060 maps as RelatedTo for R4 \u0060dosage\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.dosage\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.dosage\u0060 - dosage has change due to type change: R5 \u0060dosage\u0060 \u0060Dosage\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060dosage\u0060"
             }
           ]
         },
@@ -178,15 +136,21 @@
             {
               "code": "MedicationStatement.effective[x]",
               "display": "The date/time or interval when the medication is/was/will be taken",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationStatement.effective[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.effective[x]\u0060 - effective[x] has change due to type change: R5 effective[x] Timing has no equivalent or mapped type in R4 effective[x]"
             }
           ]
         },
         {
           "code": "MedicationStatement.encounter",
-          "display": "Encounter associated with MedicationStatement",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationStatement.context",
+              "display": "Encounter / Episode associated with MedicationStatement",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationStatement.encounter\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationStatement.context\u0060 - context has change due to type change: R5 \u0060encounter\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060context\u0060"
+            }
+          ]
         },
         {
           "code": "MedicationStatement.extension",
@@ -195,7 +159,7 @@
             {
               "code": "MedicationStatement.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationStatement.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -219,7 +183,7 @@
             {
               "code": "MedicationStatement.identifier",
               "display": "External identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.identifier\u0060 maps as Equivalent to R4 \u0060MedicationStatement.identifier\u0060"
             }
           ]
@@ -243,8 +207,8 @@
             {
               "code": "MedicationStatement.informationSource",
               "display": "Person or organization that provided the information about the taking of this medication",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationStatement.informationSource\u0060 maps as RelatedTo to R4 \u0060MedicationStatement.informationSource\u0060 - informationSource changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.informationSource\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.informationSource\u0060 - informationSource changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -255,15 +219,21 @@
             {
               "code": "MedicationStatement.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationStatement.language\u0060 maps as RelatedTo to R4 \u0060MedicationStatement.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationStatement.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationStatement.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "MedicationStatement.medication",
-          "display": "What medication was taken",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationStatement.medication[x]",
+              "display": "What medication was taken",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.medication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.medication[x]\u0060 - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]"
+            }
+          ]
         },
         {
           "code": "MedicationStatement.meta",
@@ -284,7 +254,7 @@
             {
               "code": "MedicationStatement.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationStatement.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -296,7 +266,7 @@
             {
               "code": "MedicationStatement.note",
               "display": "Further information about the statement",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationStatement.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -308,15 +278,45 @@
             {
               "code": "MedicationStatement.partOf",
               "display": "Part of referenced event",
-              "relationship": "related-to",
+              "relationship": "source-is-narrower-than-target",
               "comment": "R5 \u0060MedicationStatement.partOf\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationStatement.partOf\u0060 - partOf has change due to type change: R5 \u0060partOf\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060partOf\u0060"
             }
           ]
         },
         {
           "code": "MedicationStatement.reason",
-          "display": "Reason for why the medication is being/was taken",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationStatement.reasonCode",
+              "display": "Reason for why the medication is being/was taken",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "MedicationStatement.reasonReference",
+              "display": "Condition or observation that supports why the medication is being/was taken",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationStatement.reason\u0060 maps as RelatedTo to R4 \u0060MedicationStatement.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "MedicationStatement.reason.concept",
+          "target": [
+            {
+              "code": "MedicationStatement.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationStatement.reason.reference",
+          "target": [
+            {
+              "code": "MedicationStatement.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "MedicationStatement.relatedClinicalInformation",
@@ -335,8 +335,8 @@
             {
               "code": "MedicationStatement.status",
               "display": "active | completed | entered-in-error | intended | stopped | on-hold | unknown | not-taken",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationStatement.status\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.status\u0060 - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationStatement.status\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationStatement.status\u0060 - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1; status has change due to type change: R5 \u0060status\u0060 \u0060code\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060status\u0060"
             }
           ]
         },
@@ -347,7 +347,7 @@
             {
               "code": "MedicationStatement.subject",
               "display": "Who is/was taking  the medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.subject\u0060 maps as Equivalent to R4 \u0060MedicationStatement.subject\u0060"
             }
           ]
@@ -359,7 +359,7 @@
             {
               "code": "MedicationStatement.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationStatement.text\u0060 maps as Equivalent to R4 \u0060MedicationStatement.text\u0060"
             }
           ]

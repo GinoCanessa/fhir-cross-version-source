@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
       "element": [
         {
-          "code": "FamilyMemberHistory.reason.concept",
-          "target": [
-            {
-              "code": "FamilyMemberHistory.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "FamilyMemberHistory.reason.reference",
-          "target": [
-            {
-              "code": "FamilyMemberHistory.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
-      "target": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
-      "element": [
-        {
           "code": "FamilyMemberHistory",
           "display": "Information about patient\u0027s relatives, relevant for patient",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "FamilyMemberHistory.age[x]",
               "display": "(approximate) age",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.age[x]\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.age[x]\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "FamilyMemberHistory.born[x]",
               "display": "(approximate) date of birth",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.born[x]\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.born[x]\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "FamilyMemberHistory.condition",
               "display": "Condition that the related person had",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition\u0060"
             }
           ]
@@ -106,7 +82,7 @@
             {
               "code": "FamilyMemberHistory.condition.code",
               "display": "Condition suffered by relation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition.code\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition.code\u0060"
             }
           ]
@@ -118,7 +94,7 @@
             {
               "code": "FamilyMemberHistory.condition.contributedToDeath",
               "display": "Whether the condition contributed to the cause of death",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition.contributedToDeath\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition.contributedToDeath\u0060"
             }
           ]
@@ -130,7 +106,7 @@
             {
               "code": "FamilyMemberHistory.condition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.condition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.condition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -142,7 +118,7 @@
             {
               "code": "FamilyMemberHistory.condition.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition.id\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition.id\u0060"
             }
           ]
@@ -154,7 +130,7 @@
             {
               "code": "FamilyMemberHistory.condition.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.condition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.condition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -166,7 +142,7 @@
             {
               "code": "FamilyMemberHistory.condition.note",
               "display": "Extra information about condition",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.condition.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.condition.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -178,7 +154,7 @@
             {
               "code": "FamilyMemberHistory.condition.onset[x]",
               "display": "When condition first manifested",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition.onset[x]\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition.onset[x]\u0060"
             }
           ]
@@ -190,7 +166,7 @@
             {
               "code": "FamilyMemberHistory.condition.outcome",
               "display": "deceased | permanent disability | etc.",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.condition.outcome\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.condition.outcome\u0060"
             }
           ]
@@ -202,7 +178,7 @@
             {
               "code": "FamilyMemberHistory.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.contained\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.contained\u0060"
             }
           ]
@@ -214,7 +190,7 @@
             {
               "code": "FamilyMemberHistory.dataAbsentReason",
               "display": "subject-unknown | withheld | unable-to-obtain | deferred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.dataAbsentReason\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.dataAbsentReason\u0060"
             }
           ]
@@ -226,7 +202,7 @@
             {
               "code": "FamilyMemberHistory.date",
               "display": "When history was recorded or last updated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.date\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.date\u0060"
             }
           ]
@@ -238,7 +214,7 @@
             {
               "code": "FamilyMemberHistory.deceased[x]",
               "display": "Dead? How old/when?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.deceased[x]\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.deceased[x]\u0060"
             }
           ]
@@ -250,7 +226,7 @@
             {
               "code": "FamilyMemberHistory.estimatedAge",
               "display": "Age is estimated?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.estimatedAge\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.estimatedAge\u0060"
             }
           ]
@@ -262,7 +238,7 @@
             {
               "code": "FamilyMemberHistory.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -286,7 +262,7 @@
             {
               "code": "FamilyMemberHistory.identifier",
               "display": "External Id(s) for this record",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.identifier\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.identifier\u0060"
             }
           ]
@@ -310,7 +286,7 @@
             {
               "code": "FamilyMemberHistory.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.instantiatesCanonical\u0060"
             }
           ]
@@ -322,7 +298,7 @@
             {
               "code": "FamilyMemberHistory.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.instantiatesUri\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.instantiatesUri\u0060"
             }
           ]
@@ -334,8 +310,8 @@
             {
               "code": "FamilyMemberHistory.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060FamilyMemberHistory.language\u0060 maps as RelatedTo to R4 \u0060FamilyMemberHistory.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060FamilyMemberHistory.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060FamilyMemberHistory.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -358,7 +334,7 @@
             {
               "code": "FamilyMemberHistory.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -370,7 +346,7 @@
             {
               "code": "FamilyMemberHistory.name",
               "display": "The family member described",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.name\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.name\u0060"
             }
           ]
@@ -382,7 +358,7 @@
             {
               "code": "FamilyMemberHistory.note",
               "display": "General note about related person",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060FamilyMemberHistory.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -424,7 +400,7 @@
             {
               "code": "FamilyMemberHistory.patient",
               "display": "Patient history is about",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.patient\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.patient\u0060"
             }
           ]
@@ -476,8 +452,38 @@
         },
         {
           "code": "FamilyMemberHistory.reason",
-          "display": "Why was family member history performed?",
-          "noMap": true
+          "target": [
+            {
+              "code": "FamilyMemberHistory.reasonCode",
+              "display": "Why was family member history performed?",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060FamilyMemberHistory.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060FamilyMemberHistory.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "FamilyMemberHistory.reasonReference",
+              "display": "Why was family member history performed?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060FamilyMemberHistory.reason\u0060 maps as RelatedTo to R4 \u0060FamilyMemberHistory.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "FamilyMemberHistory.reason.concept",
+          "target": [
+            {
+              "code": "FamilyMemberHistory.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FamilyMemberHistory.reason.reference",
+          "target": [
+            {
+              "code": "FamilyMemberHistory.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "FamilyMemberHistory.relationship",
@@ -486,7 +492,7 @@
             {
               "code": "FamilyMemberHistory.relationship",
               "display": "Relationship to the subject",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.relationship\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.relationship\u0060"
             }
           ]
@@ -498,7 +504,7 @@
             {
               "code": "FamilyMemberHistory.sex",
               "display": "male | female | other | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.sex\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.sex\u0060"
             }
           ]
@@ -510,7 +516,7 @@
             {
               "code": "FamilyMemberHistory.status",
               "display": "partial | completed | entered-in-error | health-unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.status\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/history-status|5.0.0 and http://hl7.org/fhir/ValueSet/history-status|4.0.1 (Equivalent)"
             }
           ]
@@ -522,7 +528,7 @@
             {
               "code": "FamilyMemberHistory.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060FamilyMemberHistory.text\u0060 maps as Equivalent to R4 \u0060FamilyMemberHistory.text\u0060"
             }
           ]

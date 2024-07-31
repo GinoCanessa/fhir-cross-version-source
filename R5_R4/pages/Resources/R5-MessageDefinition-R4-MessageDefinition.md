@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 41 |
+Equivalent | 37 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -46,12 +47,12 @@ RelatedTo | 41 |
 | MessageDefinition.focus.min | MessageDefinition.focus.min | Equivalent | R5 `MessageDefinition.focus.min` maps as Equivalent to R4 `MessageDefinition.focus.min` |
 | MessageDefinition.focus.modifierExtension | MessageDefinition.focus.modifierExtension | SourceIsBroaderThanTarget | R5 `MessageDefinition.focus.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MessageDefinition.focus.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | MessageDefinition.focus.profile | MessageDefinition.focus.profile | Equivalent | R5 `MessageDefinition.focus.profile` maps as Equivalent to R4 `MessageDefinition.focus.profile` |
-| MessageDefinition.graph | MessageDefinition.graph | RelatedTo | R5 `MessageDefinition.graph` maps as RelatedTo to R4 `MessageDefinition.graph` - graph changed from scalar to array (max cardinality from 1 to *) |
+| MessageDefinition.graph | MessageDefinition.graph | SourceIsNarrowerThanTarget | R5 `MessageDefinition.graph` maps as SourceIsNarrowerThanTarget to R4 `MessageDefinition.graph` - graph changed from scalar to array (max cardinality from 1 to *) |
 | MessageDefinition.id | MessageDefinition.id | Equivalent | R5 `MessageDefinition.id` maps as Equivalent to R4 `MessageDefinition.id` |
 | MessageDefinition.identifier | MessageDefinition.identifier | Equivalent | R5 `MessageDefinition.identifier` maps as Equivalent to R4 `MessageDefinition.identifier` |
 | MessageDefinition.implicitRules | MessageDefinition.implicitRules | Equivalent | R5 `MessageDefinition.implicitRules` maps as Equivalent to R4 `MessageDefinition.implicitRules` |
 | MessageDefinition.jurisdiction | MessageDefinition.jurisdiction | Equivalent | R5 `MessageDefinition.jurisdiction` maps as Equivalent to R4 `MessageDefinition.jurisdiction` |
-| MessageDefinition.language | MessageDefinition.language | RelatedTo | R5 `MessageDefinition.language` maps as RelatedTo to R4 `MessageDefinition.language` - language changed the binding strength from Required to Preferred |
+| MessageDefinition.language | MessageDefinition.language | SourceIsNarrowerThanTarget | R5 `MessageDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `MessageDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | MessageDefinition.meta | MessageDefinition.meta | Equivalent | R5 `MessageDefinition.meta` maps as Equivalent to R4 `MessageDefinition.meta` |
 | MessageDefinition.modifierExtension | MessageDefinition.modifierExtension | SourceIsBroaderThanTarget | R5 `MessageDefinition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MessageDefinition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | MessageDefinition.name | MessageDefinition.name | Equivalent | R5 `MessageDefinition.name` maps as Equivalent to R4 `MessageDefinition.name` |

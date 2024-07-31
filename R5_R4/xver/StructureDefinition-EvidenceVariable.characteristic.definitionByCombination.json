@@ -460,20 +460,23 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CharacteristicCombination"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/characteristic-combination|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-characteristic-combination|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -488,18 +491,10 @@
       },
       {
         "path": "Extension.extension:threshold.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:threshold.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },

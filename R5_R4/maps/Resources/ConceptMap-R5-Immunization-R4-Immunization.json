@@ -28,66 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Immunization",
       "element": [
         {
-          "code": "Immunization.informationSource.concept",
-          "target": [
-            {
-              "code": "Immunization.reportOrigin",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immunization.protocolApplied.doseNumber",
-          "target": [
-            {
-              "code": "Immunization.protocolApplied.doseNumber[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immunization.protocolApplied.seriesDoses",
-          "target": [
-            {
-              "code": "Immunization.protocolApplied.seriesDoses[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immunization.reaction.manifestation.concept",
-          "target": [
-            {
-              "code": "Immunization.reaction.detail",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immunization.reason.concept",
-          "target": [
-            {
-              "code": "Immunization.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Immunization.reason.reference",
-          "target": [
-            {
-              "code": "Immunization.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Immunization",
-      "target": "http://hl7.org/fhir/StructureDefinition/Immunization",
-      "element": [
-        {
           "code": "Immunization",
           "display": "Immunization event information",
           "target": [
@@ -116,7 +56,7 @@
             {
               "code": "Immunization.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.contained\u0060 maps as Equivalent to R4 \u0060Immunization.contained\u0060"
             }
           ]
@@ -128,7 +68,7 @@
             {
               "code": "Immunization.doseQuantity",
               "display": "Amount of vaccine administered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.doseQuantity\u0060 maps as Equivalent to R4 \u0060Immunization.doseQuantity\u0060"
             }
           ]
@@ -140,7 +80,7 @@
             {
               "code": "Immunization.encounter",
               "display": "Encounter immunization was part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.encounter\u0060 maps as Equivalent to R4 \u0060Immunization.encounter\u0060"
             }
           ]
@@ -152,7 +92,7 @@
             {
               "code": "Immunization.expirationDate",
               "display": "Vaccine expiration date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.expirationDate\u0060 maps as Equivalent to R4 \u0060Immunization.expirationDate\u0060"
             }
           ]
@@ -164,7 +104,7 @@
             {
               "code": "Immunization.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -176,7 +116,7 @@
             {
               "code": "Immunization.fundingSource",
               "display": "Funding source for the vaccine",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.fundingSource\u0060 maps as Equivalent to R4 \u0060Immunization.fundingSource\u0060"
             }
           ]
@@ -200,7 +140,7 @@
             {
               "code": "Immunization.identifier",
               "display": "Business identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.identifier\u0060 maps as Equivalent to R4 \u0060Immunization.identifier\u0060"
             }
           ]
@@ -223,13 +163,22 @@
           "noMap": true
         },
         {
+          "code": "Immunization.informationSource.concept",
+          "target": [
+            {
+              "code": "Immunization.reportOrigin",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Immunization.isSubpotent",
           "display": "Dose potency",
           "target": [
             {
               "code": "Immunization.isSubpotent",
               "display": "Dose potency",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.isSubpotent\u0060 maps as Equivalent to R4 \u0060Immunization.isSubpotent\u0060"
             }
           ]
@@ -241,8 +190,8 @@
             {
               "code": "Immunization.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Immunization.language\u0060 maps as RelatedTo to R4 \u0060Immunization.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Immunization.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Immunization.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -253,7 +202,7 @@
             {
               "code": "Immunization.location",
               "display": "Where immunization occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.location\u0060 maps as Equivalent to R4 \u0060Immunization.location\u0060"
             }
           ]
@@ -265,7 +214,7 @@
             {
               "code": "Immunization.lotNumber",
               "display": "Vaccine lot number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.lotNumber\u0060 maps as Equivalent to R4 \u0060Immunization.lotNumber\u0060"
             }
           ]
@@ -277,7 +226,7 @@
             {
               "code": "Immunization.manufacturer",
               "display": "Vaccine manufacturer",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.manufacturer\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.manufacturer\u0060 - manufacturer has change due to type change: R5 manufacturer CodeableReference has no equivalent or mapped type in R4 manufacturer"
             }
           ]
@@ -301,7 +250,7 @@
             {
               "code": "Immunization.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -313,7 +262,7 @@
             {
               "code": "Immunization.note",
               "display": "Additional immunization notes",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -325,7 +274,7 @@
             {
               "code": "Immunization.occurrence[x]",
               "display": "Vaccine administration date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.occurrence[x]\u0060 maps as Equivalent to R4 \u0060Immunization.occurrence[x]\u0060"
             }
           ]
@@ -337,7 +286,7 @@
             {
               "code": "Immunization.patient",
               "display": "Who was immunized",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.patient\u0060 maps as Equivalent to R4 \u0060Immunization.patient\u0060"
             }
           ]
@@ -349,7 +298,7 @@
             {
               "code": "Immunization.performer",
               "display": "Who performed event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.performer\u0060 maps as Equivalent to R4 \u0060Immunization.performer\u0060"
             }
           ]
@@ -361,7 +310,7 @@
             {
               "code": "Immunization.performer.actor",
               "display": "Individual or organization who was performing",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.performer.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -373,7 +322,7 @@
             {
               "code": "Immunization.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -385,7 +334,7 @@
             {
               "code": "Immunization.performer.function",
               "display": "What type of performance was done",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.performer.function\u0060 maps as Equivalent to R4 \u0060Immunization.performer.function\u0060"
             }
           ]
@@ -397,7 +346,7 @@
             {
               "code": "Immunization.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.performer.id\u0060 maps as Equivalent to R4 \u0060Immunization.performer.id\u0060"
             }
           ]
@@ -409,7 +358,7 @@
             {
               "code": "Immunization.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -421,7 +370,7 @@
             {
               "code": "Immunization.primarySource",
               "display": "Indicates context the data was recorded in",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.primarySource\u0060 maps as Equivalent to R4 \u0060Immunization.primarySource\u0060"
             }
           ]
@@ -433,8 +382,8 @@
             {
               "code": "Immunization.programEligibility",
               "display": "Patient eligibility for a vaccination program",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Immunization.programEligibility\u0060 maps as RelatedTo to R4 \u0060Immunization.programEligibility\u0060 - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Immunization.programEligibility\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.programEligibility\u0060 - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility"
             }
           ]
         },
@@ -470,7 +419,7 @@
             {
               "code": "Immunization.protocolApplied",
               "display": "Protocol followed by the provider",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.protocolApplied\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied\u0060"
             }
           ]
@@ -482,15 +431,21 @@
             {
               "code": "Immunization.protocolApplied.authority",
               "display": "Who is responsible for publishing the recommendations",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.protocolApplied.authority\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.authority\u0060"
             }
           ]
         },
         {
           "code": "Immunization.protocolApplied.doseNumber",
-          "display": "Dose number within series",
-          "noMap": true
+          "target": [
+            {
+              "code": "Immunization.protocolApplied.doseNumber[x]",
+              "display": "Dose number within series",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Immunization.protocolApplied.doseNumber\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.doseNumber[x]\u0060"
+            }
+          ]
         },
         {
           "code": "Immunization.protocolApplied.extension",
@@ -499,7 +454,7 @@
             {
               "code": "Immunization.protocolApplied.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.protocolApplied.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.protocolApplied.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -511,7 +466,7 @@
             {
               "code": "Immunization.protocolApplied.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.protocolApplied.id\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.id\u0060"
             }
           ]
@@ -523,7 +478,7 @@
             {
               "code": "Immunization.protocolApplied.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.protocolApplied.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.protocolApplied.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -535,15 +490,21 @@
             {
               "code": "Immunization.protocolApplied.series",
               "display": "Name of vaccine series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.protocolApplied.series\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.series\u0060"
             }
           ]
         },
         {
           "code": "Immunization.protocolApplied.seriesDoses",
-          "display": "Recommended number of doses for immunity",
-          "noMap": true
+          "target": [
+            {
+              "code": "Immunization.protocolApplied.seriesDoses[x]",
+              "display": "Recommended number of doses for immunity",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Immunization.protocolApplied.seriesDoses\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.seriesDoses[x]\u0060"
+            }
+          ]
         },
         {
           "code": "Immunization.protocolApplied.targetDisease",
@@ -552,7 +513,7 @@
             {
               "code": "Immunization.protocolApplied.targetDisease",
               "display": "Vaccine preventatable disease being targetted",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.protocolApplied.targetDisease\u0060 maps as Equivalent to R4 \u0060Immunization.protocolApplied.targetDisease\u0060"
             }
           ]
@@ -564,7 +525,7 @@
             {
               "code": "Immunization.reaction",
               "display": "Details of a reaction that follows immunization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.reaction\u0060 maps as Equivalent to R4 \u0060Immunization.reaction\u0060"
             }
           ]
@@ -576,7 +537,7 @@
             {
               "code": "Immunization.reaction.date",
               "display": "When reaction started",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.reaction.date\u0060 maps as Equivalent to R4 \u0060Immunization.reaction.date\u0060"
             }
           ]
@@ -588,7 +549,7 @@
             {
               "code": "Immunization.reaction.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.reaction.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.reaction.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -600,15 +561,30 @@
             {
               "code": "Immunization.reaction.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.reaction.id\u0060 maps as Equivalent to R4 \u0060Immunization.reaction.id\u0060"
             }
           ]
         },
         {
           "code": "Immunization.reaction.manifestation",
-          "display": "Additional information on reaction",
-          "noMap": true
+          "target": [
+            {
+              "code": "Immunization.reaction.detail",
+              "display": "Additional information on reaction",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Immunization.reaction.manifestation\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.reaction.detail\u0060 - detail has change due to type change: R5 manifestation CodeableReference has no equivalent or mapped type in R4 detail"
+            }
+          ]
+        },
+        {
+          "code": "Immunization.reaction.manifestation.concept",
+          "target": [
+            {
+              "code": "Immunization.reaction.detail",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Immunization.reaction.modifierExtension",
@@ -617,7 +593,7 @@
             {
               "code": "Immunization.reaction.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Immunization.reaction.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.reaction.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -629,15 +605,45 @@
             {
               "code": "Immunization.reaction.reported",
               "display": "Indicates self-reported reaction",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.reaction.reported\u0060 maps as Equivalent to R4 \u0060Immunization.reaction.reported\u0060"
             }
           ]
         },
         {
           "code": "Immunization.reason",
-          "display": "Why immunization occurred",
-          "noMap": true
+          "target": [
+            {
+              "code": "Immunization.reasonCode",
+              "display": "Why immunization occurred",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Immunization.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Immunization.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "Immunization.reasonReference",
+              "display": "Why immunization occurred",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Immunization.reason\u0060 maps as RelatedTo to R4 \u0060Immunization.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "Immunization.reason.concept",
+          "target": [
+            {
+              "code": "Immunization.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Immunization.reason.reference",
+          "target": [
+            {
+              "code": "Immunization.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Immunization.route",
@@ -646,7 +652,7 @@
             {
               "code": "Immunization.route",
               "display": "How vaccine entered body",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.route\u0060 maps as Equivalent to R4 \u0060Immunization.route\u0060"
             }
           ]
@@ -658,7 +664,7 @@
             {
               "code": "Immunization.site",
               "display": "Body site vaccine  was administered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.site\u0060 maps as Equivalent to R4 \u0060Immunization.site\u0060"
             }
           ]
@@ -670,7 +676,7 @@
             {
               "code": "Immunization.status",
               "display": "completed | entered-in-error | not-done",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.status\u0060 maps as Equivalent to R4 \u0060Immunization.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/immunization-status|5.0.0 and http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (Equivalent)"
             }
           ]
@@ -682,7 +688,7 @@
             {
               "code": "Immunization.statusReason",
               "display": "Reason not done",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.statusReason\u0060 maps as Equivalent to R4 \u0060Immunization.statusReason\u0060"
             }
           ]
@@ -694,7 +700,7 @@
             {
               "code": "Immunization.subpotentReason",
               "display": "Reason for being subpotent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.subpotentReason\u0060 maps as Equivalent to R4 \u0060Immunization.subpotentReason\u0060"
             }
           ]
@@ -711,7 +717,7 @@
             {
               "code": "Immunization.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.text\u0060 maps as Equivalent to R4 \u0060Immunization.text\u0060"
             }
           ]
@@ -723,7 +729,7 @@
             {
               "code": "Immunization.vaccineCode",
               "display": "Vaccine product administered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Immunization.vaccineCode\u0060 maps as Equivalent to R4 \u0060Immunization.vaccineCode\u0060"
             }
           ]

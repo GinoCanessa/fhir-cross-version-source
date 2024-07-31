@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 69 |
+Equivalent | 53 |
+SourceIsBroaderThanTarget | 19 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -48,7 +49,7 @@ RelatedTo | 69 |
 | InsurancePlan.id | InsurancePlan.id | Equivalent | R5 `InsurancePlan.id` maps as Equivalent to R4 `InsurancePlan.id` |
 | InsurancePlan.identifier | InsurancePlan.identifier | Equivalent | R5 `InsurancePlan.identifier` maps as Equivalent to R4 `InsurancePlan.identifier` |
 | InsurancePlan.implicitRules | InsurancePlan.implicitRules | Equivalent | R5 `InsurancePlan.implicitRules` maps as Equivalent to R4 `InsurancePlan.implicitRules` |
-| InsurancePlan.language | InsurancePlan.language | RelatedTo | R5 `InsurancePlan.language` maps as RelatedTo to R4 `InsurancePlan.language` - language changed the binding strength from Required to Preferred |
+| InsurancePlan.language | InsurancePlan.language | SourceIsNarrowerThanTarget | R5 `InsurancePlan.language` maps as SourceIsNarrowerThanTarget to R4 `InsurancePlan.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | InsurancePlan.meta | InsurancePlan.meta | Equivalent | R5 `InsurancePlan.meta` maps as Equivalent to R4 `InsurancePlan.meta` |
 | InsurancePlan.modifierExtension | InsurancePlan.modifierExtension | SourceIsBroaderThanTarget | R5 `InsurancePlan.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `InsurancePlan.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | InsurancePlan.name | InsurancePlan.name | Equivalent | R5 `InsurancePlan.name` maps as Equivalent to R4 `InsurancePlan.name` |

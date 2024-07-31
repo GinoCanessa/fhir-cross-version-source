@@ -469,20 +469,27 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The purpose for which an extended contact detail should be used."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PriceComponentType"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/price-component-type|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-price-component-type|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -497,20 +504,26 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "Codes may be used to differentiate between kinds of taxes, surcharges, discounts etc."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PriceComponentCode"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes may be used to differentiate between kinds of taxes, surcharges, discounts etc."
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -525,18 +538,10 @@
       },
       {
         "path": "Extension.extension:factor.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:factor.extension:decimal",
-        "sliceName": "decimal",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-decimal"
-            ]
+            "code": "decimal"
           }
         ]
       },
@@ -553,18 +558,10 @@
       },
       {
         "path": "Extension.extension:amount.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:amount.extension:Money",
-        "sliceName": "Money",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Money"
-            ]
+            "code": "Money"
           }
         ]
       },

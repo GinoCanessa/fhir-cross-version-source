@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ResearchSubject",
       "element": [
         {
-          "code": "ResearchSubject.actualComparisonGroup",
-          "target": [
-            {
-              "code": "ResearchSubject.actualArm",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ResearchSubject.assignedComparisonGroup",
-          "target": [
-            {
-              "code": "ResearchSubject.assignedArm",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ResearchSubject.subject",
-          "target": [
-            {
-              "code": "ResearchSubject.individual",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ResearchSubject",
-      "target": "http://hl7.org/fhir/StructureDefinition/ResearchSubject",
-      "element": [
-        {
           "code": "ResearchSubject",
           "display": "Participant or object which is the recipient of investigative activities in a study",
           "target": [
@@ -74,13 +41,25 @@
         },
         {
           "code": "ResearchSubject.actualComparisonGroup",
-          "display": "What path was followed",
-          "noMap": true
+          "target": [
+            {
+              "code": "ResearchSubject.actualArm",
+              "display": "What path was followed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ResearchSubject.actualComparisonGroup\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.actualArm\u0060 - actualArm has change due to type change: R5 actualComparisonGroup id has no equivalent or mapped type in R4 actualArm"
+            }
+          ]
         },
         {
           "code": "ResearchSubject.assignedComparisonGroup",
-          "display": "What path should be followed",
-          "noMap": true
+          "target": [
+            {
+              "code": "ResearchSubject.assignedArm",
+              "display": "What path should be followed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ResearchSubject.assignedComparisonGroup\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.assignedArm\u0060 - assignedArm has change due to type change: R5 assignedComparisonGroup id has no equivalent or mapped type in R4 assignedArm"
+            }
+          ]
         },
         {
           "code": "ResearchSubject.consent",
@@ -89,8 +68,8 @@
             {
               "code": "ResearchSubject.consent",
               "display": "Agreement to participate in study",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ResearchSubject.consent\u0060 maps as RelatedTo to R4 \u0060ResearchSubject.consent\u0060 - consent changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ResearchSubject.consent\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.consent\u0060 - consent changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -101,7 +80,7 @@
             {
               "code": "ResearchSubject.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.contained\u0060 maps as Equivalent to R4 \u0060ResearchSubject.contained\u0060"
             }
           ]
@@ -113,7 +92,7 @@
             {
               "code": "ResearchSubject.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ResearchSubject.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -137,7 +116,7 @@
             {
               "code": "ResearchSubject.identifier",
               "display": "Business Identifier for research subject in a study",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.identifier\u0060 maps as Equivalent to R4 \u0060ResearchSubject.identifier\u0060"
             }
           ]
@@ -161,8 +140,8 @@
             {
               "code": "ResearchSubject.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ResearchSubject.language\u0060 maps as RelatedTo to R4 \u0060ResearchSubject.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ResearchSubject.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ResearchSubject.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -185,7 +164,7 @@
             {
               "code": "ResearchSubject.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ResearchSubject.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -197,7 +176,7 @@
             {
               "code": "ResearchSubject.period",
               "display": "Start and end of participation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.period\u0060 maps as Equivalent to R4 \u0060ResearchSubject.period\u0060"
             }
           ]
@@ -259,7 +238,7 @@
             {
               "code": "ResearchSubject.status",
               "display": "candidate | eligible | follow-up | ineligible | not-registered | off-study | on-study | on-study-intervention | on-study-observation | pending-on-study | potential-candidate | screening | withdrawn",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.status\u0060 maps as Equivalent to R4 \u0060ResearchSubject.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/research-subject-status|4.0.1 (Equivalent)"
             }
           ]
@@ -271,15 +250,21 @@
             {
               "code": "ResearchSubject.study",
               "display": "Study subject is part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.study\u0060 maps as Equivalent to R4 \u0060ResearchSubject.study\u0060"
             }
           ]
         },
         {
           "code": "ResearchSubject.subject",
-          "display": "Who or what is part of study",
-          "noMap": true
+          "target": [
+            {
+              "code": "ResearchSubject.individual",
+              "display": "Who is part of study",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ResearchSubject.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ResearchSubject.individual\u0060 - individual has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060individual\u0060"
+            }
+          ]
         },
         {
           "code": "ResearchSubject.text",
@@ -288,7 +273,7 @@
             {
               "code": "ResearchSubject.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ResearchSubject.text\u0060 maps as Equivalent to R4 \u0060ResearchSubject.text\u0060"
             }
           ]

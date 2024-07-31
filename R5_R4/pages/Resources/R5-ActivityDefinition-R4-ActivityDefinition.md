@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 6 |
-Equivalent | 4 |
-RelatedTo | 61 |
+Equivalent | 47 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 15 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -33,7 +35,7 @@ RelatedTo | 61 |
 | ActivityDefinition.date | ActivityDefinition.date | Equivalent | R5 `ActivityDefinition.date` maps as Equivalent to R4 `ActivityDefinition.date` |
 | ActivityDefinition.description | ActivityDefinition.description | Equivalent | R5 `ActivityDefinition.description` maps as Equivalent to R4 `ActivityDefinition.description` |
 | ActivityDefinition.doNotPerform | ActivityDefinition.doNotPerform | Equivalent | R5 `ActivityDefinition.doNotPerform` maps as Equivalent to R4 `ActivityDefinition.doNotPerform` |
-| ActivityDefinition.dosage | ActivityDefinition.dosage | RelatedTo | R5 `ActivityDefinition.dosage` maps as RelatedTo to R4 `ActivityDefinition.dosage` - dosage has change due to type change: R5 `dosage` `Dosage` maps as RelatedTo for R4 `dosage` |
+| ActivityDefinition.dosage | ActivityDefinition.dosage | SourceIsBroaderThanTarget | R5 `ActivityDefinition.dosage` maps as SourceIsBroaderThanTarget to R4 `ActivityDefinition.dosage` - dosage has change due to type change: R5 `dosage` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosage` |
 | ActivityDefinition.dynamicValue | ActivityDefinition.dynamicValue | Equivalent | R5 `ActivityDefinition.dynamicValue` maps as Equivalent to R4 `ActivityDefinition.dynamicValue` |
 | ActivityDefinition.dynamicValue.expression | ActivityDefinition.dynamicValue.expression | RelatedTo | R5 `ActivityDefinition.dynamicValue.expression` maps as RelatedTo to R4 `ActivityDefinition.dynamicValue.expression` - expression has change due to type change: R5 `expression` `Expression` maps as RelatedTo for R4 `expression` |
 | ActivityDefinition.dynamicValue.extension | ActivityDefinition.dynamicValue.extension | SourceIsBroaderThanTarget | R5 `ActivityDefinition.dynamicValue.extension` maps as SourceIsBroaderThanTarget to R4 `ActivityDefinition.dynamicValue.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -51,7 +53,7 @@ RelatedTo | 61 |
 | ActivityDefinition.intent | ActivityDefinition.intent | Equivalent | R5 `ActivityDefinition.intent` maps as Equivalent to R4 `ActivityDefinition.intent` - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-intent|5.0.0 and http://hl7.org/fhir/ValueSet/request-intent|4.0.1 (Equivalent) |
 | ActivityDefinition.jurisdiction | ActivityDefinition.jurisdiction | Equivalent | R5 `ActivityDefinition.jurisdiction` maps as Equivalent to R4 `ActivityDefinition.jurisdiction` |
 | ActivityDefinition.kind | ActivityDefinition.kind | Equivalent | R5 `ActivityDefinition.kind` maps as Equivalent to R4 `ActivityDefinition.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/request-resource-types|4.0.1 (Equivalent) |
-| ActivityDefinition.language | ActivityDefinition.language | RelatedTo | R5 `ActivityDefinition.language` maps as RelatedTo to R4 `ActivityDefinition.language` - language changed the binding strength from Required to Preferred |
+| ActivityDefinition.language | ActivityDefinition.language | SourceIsNarrowerThanTarget | R5 `ActivityDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `ActivityDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ActivityDefinition.lastReviewDate | ActivityDefinition.lastReviewDate | Equivalent | R5 `ActivityDefinition.lastReviewDate` maps as Equivalent to R4 `ActivityDefinition.lastReviewDate` |
 | ActivityDefinition.library | ActivityDefinition.library | Equivalent | R5 `ActivityDefinition.library` maps as Equivalent to R4 `ActivityDefinition.library` |
 | ActivityDefinition.location | ActivityDefinition.location | SourceIsBroaderThanTarget | R5 `ActivityDefinition.location` maps as SourceIsBroaderThanTarget to R4 `ActivityDefinition.location` - location has change due to type change: R5 location CodeableReference has no equivalent or mapped type in R4 location |
@@ -75,7 +77,7 @@ RelatedTo | 61 |
 | ActivityDefinition.publisher | ActivityDefinition.publisher | Equivalent | R5 `ActivityDefinition.publisher` maps as Equivalent to R4 `ActivityDefinition.publisher` |
 | ActivityDefinition.purpose | ActivityDefinition.purpose | Equivalent | R5 `ActivityDefinition.purpose` maps as Equivalent to R4 `ActivityDefinition.purpose` |
 | ActivityDefinition.quantity | ActivityDefinition.quantity | Equivalent | R5 `ActivityDefinition.quantity` maps as Equivalent to R4 `ActivityDefinition.quantity` |
-| ActivityDefinition.relatedArtifact | ActivityDefinition.relatedArtifact | Equivalent | R5 `ActivityDefinition.relatedArtifact` maps as Equivalent to R4 `ActivityDefinition.relatedArtifact` |
+| ActivityDefinition.relatedArtifact | ActivityDefinition.relatedArtifact | SourceIsBroaderThanTarget | R5 `ActivityDefinition.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `ActivityDefinition.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | ActivityDefinition.reviewer | ActivityDefinition.reviewer | Equivalent | R5 `ActivityDefinition.reviewer` maps as Equivalent to R4 `ActivityDefinition.reviewer` |
 | ActivityDefinition.specimenRequirement | ActivityDefinition.specimenRequirement | SourceIsBroaderThanTarget | R5 `ActivityDefinition.specimenRequirement` maps as SourceIsBroaderThanTarget to R4 `ActivityDefinition.specimenRequirement` - specimenRequirement has change due to type change: R5 specimenRequirement canonical has no equivalent or mapped type in R4 specimenRequirement |
 | ActivityDefinition.status | ActivityDefinition.status | Equivalent | R5 `ActivityDefinition.status` maps as Equivalent to R4 `ActivityDefinition.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent) |

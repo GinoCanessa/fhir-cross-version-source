@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:Consent.category compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible",
+  "description": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible; category has change due to type change: R5 `category` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `category`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Classification of the consent statement - for indexing/retrieval",
         "definition": "A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.",
-        "comment": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible",
+        "comment": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible; category has change due to type change: R5 `category` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `category`",
         "min": 0,
         "max": "*",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
             "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -390,6 +231,17 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ConsentCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "A classification of the type of consents found in a consent statement.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-category"
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -413,14 +265,30 @@
         "path": "Extension",
         "short": "Classification of the consent statement - for indexing/retrieval",
         "definition": "A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.",
-        "comment": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible",
+        "comment": "R5 `Consent.category` maps as RelatedTo to R4 `Consent.category` - category made the element mandatory; category increased the minimum cardinality from 0 to 1; category changed the binding strength from Example to Extensible; category has change due to type change: R5 `category` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `category`",
         "min": 0,
         "max": "*",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ConsentCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "A classification of the type of consents found in a consent statement.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-category"
+        }
       },
       {
         "path": "Extension.url",

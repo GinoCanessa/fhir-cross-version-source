@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:OperationDefinition.resource compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1)",
+  "description": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); resource has change due to type change: R5 `resource` `code` maps as RelatedTo for R4 `resource`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Types this operation applies to",
         "definition": "The types on which this operation can be executed.",
-        "comment": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1)\nIf the type is an abstract resource (\"Resource\" or \"DomainResource\") then the operation can be invoked on any concrete specialization.",
+        "comment": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); resource has change due to type change: R5 `resource` `code` maps as RelatedTo for R4 `resource`\nIf the type is an abstract resource (\"Resource\" or \"DomainResource\") then the operation can be invoked on any concrete specialization.",
         "min": 0,
         "max": "*",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
             "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -390,6 +231,23 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "FHIRTypes"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-version-independent-all-resource-types|1.0.0",
+          "additional": [
+            {
+              "purpose": "ui",
+              "valueSet": "http://hl7.org/fhir/ValueSet/all-resource-types"
+            }
+          ]
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -413,14 +271,36 @@
         "path": "Extension",
         "short": "Types this operation applies to",
         "definition": "The types on which this operation can be executed.",
-        "comment": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1)\nIf the type is an abstract resource (\"Resource\" or \"DomainResource\") then the operation can be invoked on any concrete specialization.",
+        "comment": "R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); resource has change due to type change: R5 `resource` `code` maps as RelatedTo for R4 `resource`\nIf the type is an abstract resource (\"Resource\" or \"DomainResource\") then the operation can be invoked on any concrete specialization.",
         "min": 0,
         "max": "*",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "FHIRTypes"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-version-independent-all-resource-types|1.0.0",
+          "additional": [
+            {
+              "purpose": "ui",
+              "valueSet": "http://hl7.org/fhir/ValueSet/all-resource-types"
+            }
+          ]
+        }
       },
       {
         "path": "Extension.url",

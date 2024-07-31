@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 7 |
-Equivalent | 4 |
-RelatedTo | 54 |
+Equivalent | 47 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -73,7 +74,7 @@ RelatedTo | 54 |
 | CoverageEligibilityResponse.insurance.item.unit | CoverageEligibilityResponse.insurance.item.unit | Equivalent | R5 `CoverageEligibilityResponse.insurance.item.unit` maps as Equivalent to R4 `CoverageEligibilityResponse.insurance.item.unit` |
 | CoverageEligibilityResponse.insurance.modifierExtension | CoverageEligibilityResponse.insurance.modifierExtension | SourceIsBroaderThanTarget | R5 `CoverageEligibilityResponse.insurance.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CoverageEligibilityResponse.insurance.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | CoverageEligibilityResponse.insurer | CoverageEligibilityResponse.insurer | Equivalent | R5 `CoverageEligibilityResponse.insurer` maps as Equivalent to R4 `CoverageEligibilityResponse.insurer` |
-| CoverageEligibilityResponse.language | CoverageEligibilityResponse.language | RelatedTo | R5 `CoverageEligibilityResponse.language` maps as RelatedTo to R4 `CoverageEligibilityResponse.language` - language changed the binding strength from Required to Preferred |
+| CoverageEligibilityResponse.language | CoverageEligibilityResponse.language | SourceIsNarrowerThanTarget | R5 `CoverageEligibilityResponse.language` maps as SourceIsNarrowerThanTarget to R4 `CoverageEligibilityResponse.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CoverageEligibilityResponse.meta | CoverageEligibilityResponse.meta | Equivalent | R5 `CoverageEligibilityResponse.meta` maps as Equivalent to R4 `CoverageEligibilityResponse.meta` |
 | CoverageEligibilityResponse.modifierExtension | CoverageEligibilityResponse.modifierExtension | SourceIsBroaderThanTarget | R5 `CoverageEligibilityResponse.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CoverageEligibilityResponse.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | CoverageEligibilityResponse.outcome | CoverageEligibilityResponse.outcome | Equivalent | R5 `CoverageEligibilityResponse.outcome` maps as Equivalent to R4 `CoverageEligibilityResponse.outcome` - outcome has compatible required binding for code type: http://hl7.org/fhir/ValueSet/eligibility-outcome|5.0.0 and http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1 (Equivalent) |

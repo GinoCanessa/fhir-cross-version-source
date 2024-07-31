@@ -13,38 +13,40 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 33 |
-Equivalent | 4 |
-RelatedTo | 22 |
+DoesNotExistInTarget | 21 |
+Equivalent | 30 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
 | PaymentReconciliation | PaymentReconciliation | Equivalent | R5 `PaymentReconciliation` maps as Equivalent to R4 `PaymentReconciliation` |
 | PaymentReconciliation.accountNumber | - | DoesNotExistInTarget | R5 `PaymentReconciliation.accountNumber` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.allocation | PaymentReconciliation.detail | Equivalent | R5 `PaymentReconciliation.allocation` maps as Equivalent to R4 `PaymentReconciliation.detail` |
 | PaymentReconciliation.allocation.account | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.account` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.amount | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.amount` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.date | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.date` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.allocation.amount | PaymentReconciliation.detail.amount | Equivalent | R5 `PaymentReconciliation.allocation.amount` maps as Equivalent to R4 `PaymentReconciliation.detail.amount` |
+| PaymentReconciliation.allocation.date | PaymentReconciliation.detail.date | Equivalent | R5 `PaymentReconciliation.allocation.date` maps as Equivalent to R4 `PaymentReconciliation.detail.date` |
 | PaymentReconciliation.allocation.encounter | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.encounter` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.allocation.extension | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.extension` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.allocation.id | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.id` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.identifier | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.identifier` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.allocation.identifier | PaymentReconciliation.detail.identifier | Equivalent | R5 `PaymentReconciliation.allocation.identifier` maps as Equivalent to R4 `PaymentReconciliation.detail.identifier` |
 | PaymentReconciliation.allocation.modifierExtension | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.modifierExtension` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.payee | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.payee` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.predecessor | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.predecessor` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.response | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.response` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.responsible | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.responsible` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.submitter | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.submitter` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.allocation.payee | PaymentReconciliation.detail.payee | Equivalent | R5 `PaymentReconciliation.allocation.payee` maps as Equivalent to R4 `PaymentReconciliation.detail.payee` |
+| PaymentReconciliation.allocation.predecessor | PaymentReconciliation.detail.predecessor | Equivalent | R5 `PaymentReconciliation.allocation.predecessor` maps as Equivalent to R4 `PaymentReconciliation.detail.predecessor` |
+| PaymentReconciliation.allocation.response | PaymentReconciliation.detail.response | RelatedTo | R5 `PaymentReconciliation.allocation.response` maps as RelatedTo to R4 `PaymentReconciliation.detail.response` - response has change due to type change: R5 `response` `Reference` maps as RelatedTo for R4 `response` |
+| PaymentReconciliation.allocation.responsible | PaymentReconciliation.detail.responsible | Equivalent | R5 `PaymentReconciliation.allocation.responsible` maps as Equivalent to R4 `PaymentReconciliation.detail.responsible` |
+| PaymentReconciliation.allocation.submitter | PaymentReconciliation.detail.submitter | Equivalent | R5 `PaymentReconciliation.allocation.submitter` maps as Equivalent to R4 `PaymentReconciliation.detail.submitter` |
 | PaymentReconciliation.allocation.target | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.target` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.allocation.targetItem[x] | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.targetItem[x]` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.allocation.type | - | DoesNotExistInTarget | R5 `PaymentReconciliation.allocation.type` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.amount | - | DoesNotExistInTarget | R5 `PaymentReconciliation.amount` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.allocation.type | PaymentReconciliation.detail.type | RelatedTo | R5 `PaymentReconciliation.allocation.type` maps as RelatedTo to R4 `PaymentReconciliation.detail.type` - type made the element mandatory; type increased the minimum cardinality from 0 to 1; type changed the binding strength from Extensible to Example; type has change due to type change: R5 `type` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `type` |
+| PaymentReconciliation.amount | PaymentReconciliation.paymentAmount | Equivalent | R5 `PaymentReconciliation.amount` maps as Equivalent to R4 `PaymentReconciliation.paymentAmount` |
 | PaymentReconciliation.authorization | - | DoesNotExistInTarget | R5 `PaymentReconciliation.authorization` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.cardBrand | - | DoesNotExistInTarget | R5 `PaymentReconciliation.cardBrand` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.contained | PaymentReconciliation.contained | Equivalent | R5 `PaymentReconciliation.contained` maps as Equivalent to R4 `PaymentReconciliation.contained` |
 | PaymentReconciliation.created | PaymentReconciliation.created | Equivalent | R5 `PaymentReconciliation.created` maps as Equivalent to R4 `PaymentReconciliation.created` |
-| PaymentReconciliation.date | - | DoesNotExistInTarget | R5 `PaymentReconciliation.date` does not appear in the target and has no mapping for `PaymentReconciliation`. |
+| PaymentReconciliation.date | PaymentReconciliation.paymentDate | Equivalent | R5 `PaymentReconciliation.date` maps as Equivalent to R4 `PaymentReconciliation.paymentDate` |
 | PaymentReconciliation.disposition | PaymentReconciliation.disposition | Equivalent | R5 `PaymentReconciliation.disposition` maps as Equivalent to R4 `PaymentReconciliation.disposition` |
 | PaymentReconciliation.enterer | - | DoesNotExistInTarget | R5 `PaymentReconciliation.enterer` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.expirationDate | - | DoesNotExistInTarget | R5 `PaymentReconciliation.expirationDate` does not appear in the target and has no mapping for `PaymentReconciliation`. |
@@ -55,7 +57,7 @@ RelatedTo | 22 |
 | PaymentReconciliation.implicitRules | PaymentReconciliation.implicitRules | Equivalent | R5 `PaymentReconciliation.implicitRules` maps as Equivalent to R4 `PaymentReconciliation.implicitRules` |
 | PaymentReconciliation.issuerType | - | DoesNotExistInTarget | R5 `PaymentReconciliation.issuerType` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.kind | - | DoesNotExistInTarget | R5 `PaymentReconciliation.kind` does not appear in the target and has no mapping for `PaymentReconciliation`. |
-| PaymentReconciliation.language | PaymentReconciliation.language | RelatedTo | R5 `PaymentReconciliation.language` maps as RelatedTo to R4 `PaymentReconciliation.language` - language changed the binding strength from Required to Preferred |
+| PaymentReconciliation.language | PaymentReconciliation.language | SourceIsNarrowerThanTarget | R5 `PaymentReconciliation.language` maps as SourceIsNarrowerThanTarget to R4 `PaymentReconciliation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | PaymentReconciliation.location | - | DoesNotExistInTarget | R5 `PaymentReconciliation.location` does not appear in the target and has no mapping for `PaymentReconciliation`. |
 | PaymentReconciliation.meta | PaymentReconciliation.meta | Equivalent | R5 `PaymentReconciliation.meta` maps as Equivalent to R4 `PaymentReconciliation.meta` |
 | PaymentReconciliation.method | - | DoesNotExistInTarget | R5 `PaymentReconciliation.method` does not appear in the target and has no mapping for `PaymentReconciliation`. |

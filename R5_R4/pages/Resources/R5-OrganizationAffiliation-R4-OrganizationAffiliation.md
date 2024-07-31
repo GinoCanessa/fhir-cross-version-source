@@ -13,9 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 16 |
+Equivalent | 17 |
+SourceIsBroaderThanTarget | 3 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -23,7 +23,7 @@ RelatedTo | 16 |
 | OrganizationAffiliation | OrganizationAffiliation | Equivalent | R5 `OrganizationAffiliation` maps as Equivalent to R4 `OrganizationAffiliation` |
 | OrganizationAffiliation.active | OrganizationAffiliation.active | Equivalent | R5 `OrganizationAffiliation.active` maps as Equivalent to R4 `OrganizationAffiliation.active` |
 | OrganizationAffiliation.code | OrganizationAffiliation.code | Equivalent | R5 `OrganizationAffiliation.code` maps as Equivalent to R4 `OrganizationAffiliation.code` |
-| OrganizationAffiliation.contact | - | DoesNotExistInTarget | R5 `OrganizationAffiliation.contact` does not appear in the target and has no mapping for `OrganizationAffiliation`. |
+| OrganizationAffiliation.contact | OrganizationAffiliation.telecom | SourceIsBroaderThanTarget | R5 `OrganizationAffiliation.contact` maps as SourceIsBroaderThanTarget to R4 `OrganizationAffiliation.telecom` - telecom has change due to type change: R5 contact ExtendedContactDetail has no equivalent or mapped type in R4 telecom |
 | OrganizationAffiliation.contained | OrganizationAffiliation.contained | Equivalent | R5 `OrganizationAffiliation.contained` maps as Equivalent to R4 `OrganizationAffiliation.contained` |
 | OrganizationAffiliation.endpoint | OrganizationAffiliation.endpoint | Equivalent | R5 `OrganizationAffiliation.endpoint` maps as Equivalent to R4 `OrganizationAffiliation.endpoint` |
 | OrganizationAffiliation.extension | OrganizationAffiliation.extension | SourceIsBroaderThanTarget | R5 `OrganizationAffiliation.extension` maps as SourceIsBroaderThanTarget to R4 `OrganizationAffiliation.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -31,7 +31,7 @@ RelatedTo | 16 |
 | OrganizationAffiliation.id | OrganizationAffiliation.id | Equivalent | R5 `OrganizationAffiliation.id` maps as Equivalent to R4 `OrganizationAffiliation.id` |
 | OrganizationAffiliation.identifier | OrganizationAffiliation.identifier | Equivalent | R5 `OrganizationAffiliation.identifier` maps as Equivalent to R4 `OrganizationAffiliation.identifier` |
 | OrganizationAffiliation.implicitRules | OrganizationAffiliation.implicitRules | Equivalent | R5 `OrganizationAffiliation.implicitRules` maps as Equivalent to R4 `OrganizationAffiliation.implicitRules` |
-| OrganizationAffiliation.language | OrganizationAffiliation.language | RelatedTo | R5 `OrganizationAffiliation.language` maps as RelatedTo to R4 `OrganizationAffiliation.language` - language changed the binding strength from Required to Preferred |
+| OrganizationAffiliation.language | OrganizationAffiliation.language | SourceIsNarrowerThanTarget | R5 `OrganizationAffiliation.language` maps as SourceIsNarrowerThanTarget to R4 `OrganizationAffiliation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | OrganizationAffiliation.location | OrganizationAffiliation.location | Equivalent | R5 `OrganizationAffiliation.location` maps as Equivalent to R4 `OrganizationAffiliation.location` |
 | OrganizationAffiliation.meta | OrganizationAffiliation.meta | Equivalent | R5 `OrganizationAffiliation.meta` maps as Equivalent to R4 `OrganizationAffiliation.meta` |
 | OrganizationAffiliation.modifierExtension | OrganizationAffiliation.modifierExtension | SourceIsBroaderThanTarget | R5 `OrganizationAffiliation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `OrganizationAffiliation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

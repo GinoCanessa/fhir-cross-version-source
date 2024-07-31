@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 13 |
-Equivalent | 4 |
-RelatedTo | 44 |
+DoesNotExistInTarget | 9 |
+Equivalent | 37 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 13 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -34,7 +36,7 @@ RelatedTo | 44 |
 | Immunization.implicitRules | Immunization.implicitRules | Equivalent | R5 `Immunization.implicitRules` maps as Equivalent to R4 `Immunization.implicitRules` |
 | Immunization.informationSource | - | DoesNotExistInTarget | R5 `Immunization.informationSource` does not appear in the target and has no mapping for `Immunization`. |
 | Immunization.isSubpotent | Immunization.isSubpotent | Equivalent | R5 `Immunization.isSubpotent` maps as Equivalent to R4 `Immunization.isSubpotent` |
-| Immunization.language | Immunization.language | RelatedTo | R5 `Immunization.language` maps as RelatedTo to R4 `Immunization.language` - language changed the binding strength from Required to Preferred |
+| Immunization.language | Immunization.language | SourceIsNarrowerThanTarget | R5 `Immunization.language` maps as SourceIsNarrowerThanTarget to R4 `Immunization.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Immunization.location | Immunization.location | Equivalent | R5 `Immunization.location` maps as Equivalent to R4 `Immunization.location` |
 | Immunization.lotNumber | Immunization.lotNumber | Equivalent | R5 `Immunization.lotNumber` maps as Equivalent to R4 `Immunization.lotNumber` |
 | Immunization.manufacturer | Immunization.manufacturer | SourceIsBroaderThanTarget | R5 `Immunization.manufacturer` maps as SourceIsBroaderThanTarget to R4 `Immunization.manufacturer` - manufacturer has change due to type change: R5 manufacturer CodeableReference has no equivalent or mapped type in R4 manufacturer |
@@ -50,7 +52,7 @@ RelatedTo | 44 |
 | Immunization.performer.id | Immunization.performer.id | Equivalent | R5 `Immunization.performer.id` maps as Equivalent to R4 `Immunization.performer.id` |
 | Immunization.performer.modifierExtension | Immunization.performer.modifierExtension | SourceIsBroaderThanTarget | R5 `Immunization.performer.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Immunization.performer.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Immunization.primarySource | Immunization.primarySource | Equivalent | R5 `Immunization.primarySource` maps as Equivalent to R4 `Immunization.primarySource` |
-| Immunization.programEligibility | Immunization.programEligibility | RelatedTo | R5 `Immunization.programEligibility` maps as RelatedTo to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility |
+| Immunization.programEligibility | Immunization.programEligibility | SourceIsBroaderThanTarget | R5 `Immunization.programEligibility` maps as SourceIsBroaderThanTarget to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility |
 | Immunization.programEligibility.extension | - | DoesNotExistInTarget | R5 `Immunization.programEligibility.extension` does not appear in the target and has no mapping for `Immunization`. |
 | Immunization.programEligibility.id | - | DoesNotExistInTarget | R5 `Immunization.programEligibility.id` does not appear in the target and has no mapping for `Immunization`. |
 | Immunization.programEligibility.modifierExtension | - | DoesNotExistInTarget | R5 `Immunization.programEligibility.modifierExtension` does not appear in the target and has no mapping for `Immunization`. |
@@ -58,21 +60,22 @@ RelatedTo | 44 |
 | Immunization.programEligibility.programStatus | - | DoesNotExistInTarget | R5 `Immunization.programEligibility.programStatus` does not appear in the target and has no mapping for `Immunization`. |
 | Immunization.protocolApplied | Immunization.protocolApplied | Equivalent | R5 `Immunization.protocolApplied` maps as Equivalent to R4 `Immunization.protocolApplied` |
 | Immunization.protocolApplied.authority | Immunization.protocolApplied.authority | Equivalent | R5 `Immunization.protocolApplied.authority` maps as Equivalent to R4 `Immunization.protocolApplied.authority` |
-| Immunization.protocolApplied.doseNumber | - | DoesNotExistInTarget | R5 `Immunization.protocolApplied.doseNumber` does not appear in the target and has no mapping for `Immunization`. |
+| Immunization.protocolApplied.doseNumber | Immunization.protocolApplied.doseNumber[x] | Equivalent | R5 `Immunization.protocolApplied.doseNumber` maps as Equivalent to R4 `Immunization.protocolApplied.doseNumber[x]` |
 | Immunization.protocolApplied.extension | Immunization.protocolApplied.extension | SourceIsBroaderThanTarget | R5 `Immunization.protocolApplied.extension` maps as SourceIsBroaderThanTarget to R4 `Immunization.protocolApplied.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Immunization.protocolApplied.id | Immunization.protocolApplied.id | Equivalent | R5 `Immunization.protocolApplied.id` maps as Equivalent to R4 `Immunization.protocolApplied.id` |
 | Immunization.protocolApplied.modifierExtension | Immunization.protocolApplied.modifierExtension | SourceIsBroaderThanTarget | R5 `Immunization.protocolApplied.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Immunization.protocolApplied.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Immunization.protocolApplied.series | Immunization.protocolApplied.series | Equivalent | R5 `Immunization.protocolApplied.series` maps as Equivalent to R4 `Immunization.protocolApplied.series` |
-| Immunization.protocolApplied.seriesDoses | - | DoesNotExistInTarget | R5 `Immunization.protocolApplied.seriesDoses` does not appear in the target and has no mapping for `Immunization`. |
+| Immunization.protocolApplied.seriesDoses | Immunization.protocolApplied.seriesDoses[x] | Equivalent | R5 `Immunization.protocolApplied.seriesDoses` maps as Equivalent to R4 `Immunization.protocolApplied.seriesDoses[x]` |
 | Immunization.protocolApplied.targetDisease | Immunization.protocolApplied.targetDisease | Equivalent | R5 `Immunization.protocolApplied.targetDisease` maps as Equivalent to R4 `Immunization.protocolApplied.targetDisease` |
 | Immunization.reaction | Immunization.reaction | Equivalent | R5 `Immunization.reaction` maps as Equivalent to R4 `Immunization.reaction` |
 | Immunization.reaction.date | Immunization.reaction.date | Equivalent | R5 `Immunization.reaction.date` maps as Equivalent to R4 `Immunization.reaction.date` |
 | Immunization.reaction.extension | Immunization.reaction.extension | SourceIsBroaderThanTarget | R5 `Immunization.reaction.extension` maps as SourceIsBroaderThanTarget to R4 `Immunization.reaction.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Immunization.reaction.id | Immunization.reaction.id | Equivalent | R5 `Immunization.reaction.id` maps as Equivalent to R4 `Immunization.reaction.id` |
-| Immunization.reaction.manifestation | - | DoesNotExistInTarget | R5 `Immunization.reaction.manifestation` does not appear in the target and has no mapping for `Immunization`. |
+| Immunization.reaction.manifestation | Immunization.reaction.detail | SourceIsBroaderThanTarget | R5 `Immunization.reaction.manifestation` maps as SourceIsBroaderThanTarget to R4 `Immunization.reaction.detail` - detail has change due to type change: R5 manifestation CodeableReference has no equivalent or mapped type in R4 detail |
 | Immunization.reaction.modifierExtension | Immunization.reaction.modifierExtension | SourceIsBroaderThanTarget | R5 `Immunization.reaction.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Immunization.reaction.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Immunization.reaction.reported | Immunization.reaction.reported | Equivalent | R5 `Immunization.reaction.reported` maps as Equivalent to R4 `Immunization.reaction.reported` |
-| Immunization.reason | - | DoesNotExistInTarget | R5 `Immunization.reason` does not appear in the target and has no mapping for `Immunization`. |
+| Immunization.reason | Immunization.reasonCode | SourceIsBroaderThanTarget | R5 `Immunization.reason` maps as SourceIsBroaderThanTarget to R4 `Immunization.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| Immunization.reason | Immunization.reasonReference | RelatedTo | R5 `Immunization.reason` maps as RelatedTo to R4 `Immunization.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | Immunization.route | Immunization.route | Equivalent | R5 `Immunization.route` maps as Equivalent to R4 `Immunization.route` |
 | Immunization.site | Immunization.site | Equivalent | R5 `Immunization.site` maps as Equivalent to R4 `Immunization.site` |
 | Immunization.status | Immunization.status | Equivalent | R5 `Immunization.status` maps as Equivalent to R4 `Immunization.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/immunization-status|5.0.0 and http://hl7.org/fhir/ValueSet/immunization-status|4.0.1 (Equivalent) |

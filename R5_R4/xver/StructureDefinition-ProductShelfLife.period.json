@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:ProductShelfLife.period[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ProductShelfLife.period[x]` does not appear in the target and has no mapping for `ProductShelfLife`.",
+  "description": "R5 `ProductShelfLife.period[x]` maps as RelatedTo to R4 `ProductShelfLife.period` - period made the element mandatory; period increased the minimum cardinality from 0 to 1; period has change due to type change: R5 period[x] Duration has no equivalent or mapped type in R4 period; period has change due to type change: R5 period[x] string has no equivalent or mapped type in R4 period",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ProductShelfLife"
+      "expression": "ProductShelfLife.period"
     }
   ],
   "type": "Extension",
@@ -35,7 +35,7 @@
         ],
         "path": "Extension",
         "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
-        "definition": "R5 `ProductShelfLife.period[x]` does not appear in the target and has no mapping for `ProductShelfLife`.",
+        "definition": "R5 `ProductShelfLife.period[x]` maps as RelatedTo to R4 `ProductShelfLife.period` - period made the element mandatory; period increased the minimum cardinality from 0 to 1; period has change due to type change: R5 period[x] Duration has no equivalent or mapped type in R4 period; period has change due to type change: R5 period[x] string has no equivalent or mapped type in R4 period",
         "min": 0,
         "max": "1",
         "base": {
@@ -397,114 +397,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Duration:Duration",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Duration",
-        "sliceName": "Duration",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Duration"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Duration"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:string:string",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:string"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -519,7 +411,7 @@
       {
         "path": "Extension",
         "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
-        "definition": "R5 `ProductShelfLife.period[x]` does not appear in the target and has no mapping for `ProductShelfLife`.",
+        "definition": "R5 `ProductShelfLife.period[x]` maps as RelatedTo to R4 `ProductShelfLife.period` - period made the element mandatory; period increased the minimum cardinality from 0 to 1; period has change due to type change: R5 period[x] Duration has no equivalent or mapped type in R4 period; period has change due to type change: R5 period[x] string has no equivalent or mapped type in R4 period",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -527,32 +419,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:Duration",
-        "sliceName": "Duration",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Duration"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

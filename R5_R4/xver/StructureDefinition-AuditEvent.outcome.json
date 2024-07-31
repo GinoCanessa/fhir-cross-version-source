@@ -454,19 +454,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:code.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:code.url",
         "fixedUri": "code"
       },
@@ -481,20 +468,23 @@
       },
       {
         "path": "Extension.extension:detail.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:detail.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AuditEventOutcomeDetail"
+            }
+          ],
+          "strength": "example",
+          "description": "A code that provides details as the exact issue.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/audit-event-outcome-detail"
+        }
       },
       {
         "path": "Extension.extension:detail.url",

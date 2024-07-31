@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ClaimResponse",
       "element": [
         {
-          "code": "ClaimResponse.item.adjudication.quantity",
-          "target": [
-            {
-              "code": "ClaimResponse.item.adjudication.value",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ClaimResponse",
-      "target": "http://hl7.org/fhir/StructureDefinition/ClaimResponse",
-      "element": [
-        {
           "code": "ClaimResponse",
           "display": "Response to a claim predetermination or preauthorization",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "ClaimResponse.addItem",
               "display": "Insurer added line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem\u0060"
             }
           ]
@@ -85,8 +70,8 @@
             {
               "code": "ClaimResponse.addItem.bodySite",
               "display": "Anatomical location",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ClaimResponse.addItem.bodySite\u0060 maps as RelatedTo to R4 \u0060ClaimResponse.addItem.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ClaimResponse.addItem.bodySite\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
             }
           ]
         },
@@ -122,7 +107,7 @@
             {
               "code": "ClaimResponse.addItem.detail",
               "display": "Insurer added line details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail\u0060"
             }
           ]
@@ -146,7 +131,7 @@
             {
               "code": "ClaimResponse.addItem.detail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.detail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -158,7 +143,7 @@
             {
               "code": "ClaimResponse.addItem.detail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.factor\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.factor\u0060"
             }
           ]
@@ -170,7 +155,7 @@
             {
               "code": "ClaimResponse.addItem.detail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.id\u0060"
             }
           ]
@@ -182,7 +167,7 @@
             {
               "code": "ClaimResponse.addItem.detail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.modifier\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.modifier\u0060"
             }
           ]
@@ -194,7 +179,7 @@
             {
               "code": "ClaimResponse.addItem.detail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.detail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -206,7 +191,7 @@
             {
               "code": "ClaimResponse.addItem.detail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.net\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.net\u0060"
             }
           ]
@@ -218,7 +203,7 @@
             {
               "code": "ClaimResponse.addItem.detail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.noteNumber\u0060"
             }
           ]
@@ -247,7 +232,7 @@
             {
               "code": "ClaimResponse.addItem.detail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.quantity\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.quantity\u0060"
             }
           ]
@@ -269,7 +254,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail",
               "display": "Insurer added line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail\u0060"
             }
           ]
@@ -293,7 +278,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.detail.subDetail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -305,7 +290,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.factor\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.factor\u0060"
             }
           ]
@@ -317,7 +302,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.id\u0060"
             }
           ]
@@ -329,7 +314,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.modifier\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.modifier\u0060"
             }
           ]
@@ -341,7 +326,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.detail.subDetail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -353,7 +338,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.net\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.net\u0060"
             }
           ]
@@ -365,7 +350,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.noteNumber\u0060"
             }
           ]
@@ -394,7 +379,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.quantity\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.quantity\u0060"
             }
           ]
@@ -426,7 +411,7 @@
             {
               "code": "ClaimResponse.addItem.detail.subDetail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.subDetail.unitPrice\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.subDetail.unitPrice\u0060"
             }
           ]
@@ -448,7 +433,7 @@
             {
               "code": "ClaimResponse.addItem.detail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detail.unitPrice\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detail.unitPrice\u0060"
             }
           ]
@@ -460,7 +445,7 @@
             {
               "code": "ClaimResponse.addItem.detailSequence",
               "display": "Detail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.detailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.detailSequence\u0060"
             }
           ]
@@ -472,7 +457,7 @@
             {
               "code": "ClaimResponse.addItem.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -484,7 +469,7 @@
             {
               "code": "ClaimResponse.addItem.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.factor\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.factor\u0060"
             }
           ]
@@ -496,7 +481,7 @@
             {
               "code": "ClaimResponse.addItem.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.id\u0060"
             }
           ]
@@ -508,7 +493,7 @@
             {
               "code": "ClaimResponse.addItem.itemSequence",
               "display": "Item sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.itemSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.itemSequence\u0060"
             }
           ]
@@ -520,7 +505,7 @@
             {
               "code": "ClaimResponse.addItem.location[x]",
               "display": "Place of service or where product was supplied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.location[x]\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.location[x]\u0060"
             }
           ]
@@ -532,7 +517,7 @@
             {
               "code": "ClaimResponse.addItem.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.modifier\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.modifier\u0060"
             }
           ]
@@ -544,7 +529,7 @@
             {
               "code": "ClaimResponse.addItem.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.addItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.addItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -556,7 +541,7 @@
             {
               "code": "ClaimResponse.addItem.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.net\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.net\u0060"
             }
           ]
@@ -568,7 +553,7 @@
             {
               "code": "ClaimResponse.addItem.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.noteNumber\u0060"
             }
           ]
@@ -597,7 +582,7 @@
             {
               "code": "ClaimResponse.addItem.programCode",
               "display": "Program the product or service is provided under",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.programCode\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.programCode\u0060"
             }
           ]
@@ -609,7 +594,7 @@
             {
               "code": "ClaimResponse.addItem.provider",
               "display": "Authorized providers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.provider\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.provider\u0060"
             }
           ]
@@ -621,7 +606,7 @@
             {
               "code": "ClaimResponse.addItem.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.quantity\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.quantity\u0060"
             }
           ]
@@ -648,7 +633,7 @@
             {
               "code": "ClaimResponse.addItem.serviced[x]",
               "display": "Date or dates of service or product delivery",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.serviced[x]\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.serviced[x]\u0060"
             }
           ]
@@ -660,7 +645,7 @@
             {
               "code": "ClaimResponse.addItem.subdetailSequence",
               "display": "Subdetail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.subdetailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.subdetailSequence\u0060"
             }
           ]
@@ -682,7 +667,7 @@
             {
               "code": "ClaimResponse.addItem.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.addItem.unitPrice\u0060 maps as Equivalent to R4 \u0060ClaimResponse.addItem.unitPrice\u0060"
             }
           ]
@@ -694,7 +679,7 @@
             {
               "code": "ClaimResponse.adjudication",
               "display": "Header-level adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.adjudication\u0060 maps as Equivalent to R4 \u0060ClaimResponse.adjudication\u0060"
             }
           ]
@@ -706,7 +691,7 @@
             {
               "code": "ClaimResponse.communicationRequest",
               "display": "Request for additional information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.communicationRequest\u0060 maps as Equivalent to R4 \u0060ClaimResponse.communicationRequest\u0060"
             }
           ]
@@ -718,7 +703,7 @@
             {
               "code": "ClaimResponse.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.contained\u0060 maps as Equivalent to R4 \u0060ClaimResponse.contained\u0060"
             }
           ]
@@ -730,7 +715,7 @@
             {
               "code": "ClaimResponse.created",
               "display": "Response creation date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.created\u0060 maps as Equivalent to R4 \u0060ClaimResponse.created\u0060"
             }
           ]
@@ -752,7 +737,7 @@
             {
               "code": "ClaimResponse.disposition",
               "display": "Disposition Message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.disposition\u0060 maps as Equivalent to R4 \u0060ClaimResponse.disposition\u0060"
             }
           ]
@@ -769,7 +754,7 @@
             {
               "code": "ClaimResponse.error",
               "display": "Processing errors",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error\u0060"
             }
           ]
@@ -781,7 +766,7 @@
             {
               "code": "ClaimResponse.error.code",
               "display": "Error code detailing processing issues",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error.code\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error.code\u0060"
             }
           ]
@@ -793,7 +778,7 @@
             {
               "code": "ClaimResponse.error.detailSequence",
               "display": "Detail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error.detailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error.detailSequence\u0060"
             }
           ]
@@ -810,7 +795,7 @@
             {
               "code": "ClaimResponse.error.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.error.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.error.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -822,7 +807,7 @@
             {
               "code": "ClaimResponse.error.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error.id\u0060"
             }
           ]
@@ -834,7 +819,7 @@
             {
               "code": "ClaimResponse.error.itemSequence",
               "display": "Item sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error.itemSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error.itemSequence\u0060"
             }
           ]
@@ -846,7 +831,7 @@
             {
               "code": "ClaimResponse.error.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.error.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.error.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -858,7 +843,7 @@
             {
               "code": "ClaimResponse.error.subDetailSequence",
               "display": "Subdetail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.error.subDetailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.error.subDetailSequence\u0060"
             }
           ]
@@ -900,7 +885,7 @@
             {
               "code": "ClaimResponse.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -924,7 +909,7 @@
             {
               "code": "ClaimResponse.formCode",
               "display": "Printed form identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.formCode\u0060 maps as Equivalent to R4 \u0060ClaimResponse.formCode\u0060"
             }
           ]
@@ -936,7 +921,7 @@
             {
               "code": "ClaimResponse.fundsReserve",
               "display": "Funds reserved status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.fundsReserve\u0060 maps as Equivalent to R4 \u0060ClaimResponse.fundsReserve\u0060"
             }
           ]
@@ -960,7 +945,7 @@
             {
               "code": "ClaimResponse.identifier",
               "display": "Business Identifier for a claim response",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.identifier\u0060 maps as Equivalent to R4 \u0060ClaimResponse.identifier\u0060"
             }
           ]
@@ -984,7 +969,7 @@
             {
               "code": "ClaimResponse.insurance",
               "display": "Patient insurance information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance\u0060"
             }
           ]
@@ -996,7 +981,7 @@
             {
               "code": "ClaimResponse.insurance.businessArrangement",
               "display": "Additional provider contract number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.businessArrangement\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.businessArrangement\u0060"
             }
           ]
@@ -1008,7 +993,7 @@
             {
               "code": "ClaimResponse.insurance.claimResponse",
               "display": "Adjudication results",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.claimResponse\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.claimResponse\u0060"
             }
           ]
@@ -1020,7 +1005,7 @@
             {
               "code": "ClaimResponse.insurance.coverage",
               "display": "Insurance information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.coverage\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.coverage\u0060"
             }
           ]
@@ -1032,7 +1017,7 @@
             {
               "code": "ClaimResponse.insurance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.insurance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.insurance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1044,7 +1029,7 @@
             {
               "code": "ClaimResponse.insurance.focal",
               "display": "Coverage to be used for adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.focal\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.focal\u0060"
             }
           ]
@@ -1056,7 +1041,7 @@
             {
               "code": "ClaimResponse.insurance.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.id\u0060"
             }
           ]
@@ -1068,7 +1053,7 @@
             {
               "code": "ClaimResponse.insurance.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.insurance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.insurance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1080,7 +1065,7 @@
             {
               "code": "ClaimResponse.insurance.sequence",
               "display": "Insurance instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.insurance.sequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.insurance.sequence\u0060"
             }
           ]
@@ -1104,7 +1089,7 @@
             {
               "code": "ClaimResponse.item",
               "display": "Adjudication for claim line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item\u0060"
             }
           ]
@@ -1128,7 +1113,7 @@
             {
               "code": "ClaimResponse.item.adjudication.amount",
               "display": "Monetary amount",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.amount\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.adjudication.amount\u0060"
             }
           ]
@@ -1140,7 +1125,7 @@
             {
               "code": "ClaimResponse.item.adjudication.category",
               "display": "Type of adjudication information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.category\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.adjudication.category\u0060"
             }
           ]
@@ -1152,7 +1137,7 @@
             {
               "code": "ClaimResponse.item.adjudication.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.adjudication.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1164,7 +1149,7 @@
             {
               "code": "ClaimResponse.item.adjudication.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.adjudication.id\u0060"
             }
           ]
@@ -1176,15 +1161,21 @@
             {
               "code": "ClaimResponse.item.adjudication.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.adjudication.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "ClaimResponse.item.adjudication.quantity",
-          "display": "Non-monetary value",
-          "noMap": true
+          "target": [
+            {
+              "code": "ClaimResponse.item.adjudication.value",
+              "display": "Non-monetary value",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ClaimResponse.item.adjudication.quantity\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.adjudication.value\u0060 - value has change due to type change: R5 quantity Quantity has no equivalent or mapped type in R4 value"
+            }
+          ]
         },
         {
           "code": "ClaimResponse.item.adjudication.reason",
@@ -1193,7 +1184,7 @@
             {
               "code": "ClaimResponse.item.adjudication.reason",
               "display": "Explanation of adjudication outcome",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.adjudication.reason\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.adjudication.reason\u0060"
             }
           ]
@@ -1205,7 +1196,7 @@
             {
               "code": "ClaimResponse.item.detail",
               "display": "Adjudication for claim details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail\u0060"
             }
           ]
@@ -1229,7 +1220,7 @@
             {
               "code": "ClaimResponse.item.detail.detailSequence",
               "display": "Claim detail instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.detailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.detailSequence\u0060"
             }
           ]
@@ -1241,7 +1232,7 @@
             {
               "code": "ClaimResponse.item.detail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.detail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.detail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1253,7 +1244,7 @@
             {
               "code": "ClaimResponse.item.detail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.id\u0060"
             }
           ]
@@ -1265,7 +1256,7 @@
             {
               "code": "ClaimResponse.item.detail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.detail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.detail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1277,7 +1268,7 @@
             {
               "code": "ClaimResponse.item.detail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.noteNumber\u0060"
             }
           ]
@@ -1294,7 +1285,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail",
               "display": "Adjudication for claim sub-details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.subDetail\u0060"
             }
           ]
@@ -1306,7 +1297,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.adjudication",
               "display": "Subdetail level adjudication details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.adjudication\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.subDetail.adjudication\u0060"
             }
           ]
@@ -1318,7 +1309,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.detail.subDetail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1330,7 +1321,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.subDetail.id\u0060"
             }
           ]
@@ -1342,7 +1333,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.detail.subDetail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1354,7 +1345,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.subDetail.noteNumber\u0060"
             }
           ]
@@ -1371,7 +1362,7 @@
             {
               "code": "ClaimResponse.item.detail.subDetail.subDetailSequence",
               "display": "Claim sub-detail instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.detail.subDetail.subDetailSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.detail.subDetail.subDetailSequence\u0060"
             }
           ]
@@ -1393,7 +1384,7 @@
             {
               "code": "ClaimResponse.item.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1405,7 +1396,7 @@
             {
               "code": "ClaimResponse.item.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.id\u0060"
             }
           ]
@@ -1417,7 +1408,7 @@
             {
               "code": "ClaimResponse.item.itemSequence",
               "display": "Claim item instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.itemSequence\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.itemSequence\u0060"
             }
           ]
@@ -1429,7 +1420,7 @@
             {
               "code": "ClaimResponse.item.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.item.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.item.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1441,7 +1432,7 @@
             {
               "code": "ClaimResponse.item.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.item.noteNumber\u0060 maps as Equivalent to R4 \u0060ClaimResponse.item.noteNumber\u0060"
             }
           ]
@@ -1498,8 +1489,8 @@
             {
               "code": "ClaimResponse.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ClaimResponse.language\u0060 maps as RelatedTo to R4 \u0060ClaimResponse.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ClaimResponse.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ClaimResponse.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -1522,7 +1513,7 @@
             {
               "code": "ClaimResponse.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1534,7 +1525,7 @@
             {
               "code": "ClaimResponse.outcome",
               "display": "queued | complete | error | partial",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.outcome\u0060 maps as Equivalent to R4 \u0060ClaimResponse.outcome\u0060 - outcome has compatible required binding for code type: http://hl7.org/fhir/ValueSet/claim-outcome|5.0.0 and http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1 (Equivalent)"
             }
           ]
@@ -1546,7 +1537,7 @@
             {
               "code": "ClaimResponse.patient",
               "display": "The recipient of the products and services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.patient\u0060 maps as Equivalent to R4 \u0060ClaimResponse.patient\u0060"
             }
           ]
@@ -1558,7 +1549,7 @@
             {
               "code": "ClaimResponse.payeeType",
               "display": "Party to be paid any benefits payable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payeeType\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payeeType\u0060"
             }
           ]
@@ -1570,7 +1561,7 @@
             {
               "code": "ClaimResponse.payment",
               "display": "Payment Details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment\u0060"
             }
           ]
@@ -1582,7 +1573,7 @@
             {
               "code": "ClaimResponse.payment.adjustment",
               "display": "Payment adjustment for non-claim issues",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.adjustment\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.adjustment\u0060"
             }
           ]
@@ -1594,7 +1585,7 @@
             {
               "code": "ClaimResponse.payment.adjustmentReason",
               "display": "Explanation for the adjustment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.adjustmentReason\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.adjustmentReason\u0060"
             }
           ]
@@ -1606,7 +1597,7 @@
             {
               "code": "ClaimResponse.payment.amount",
               "display": "Payable amount after adjustment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.amount\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.amount\u0060"
             }
           ]
@@ -1618,7 +1609,7 @@
             {
               "code": "ClaimResponse.payment.date",
               "display": "Expected date of payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.date\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.date\u0060"
             }
           ]
@@ -1630,7 +1621,7 @@
             {
               "code": "ClaimResponse.payment.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.payment.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.payment.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1642,7 +1633,7 @@
             {
               "code": "ClaimResponse.payment.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.id\u0060"
             }
           ]
@@ -1654,7 +1645,7 @@
             {
               "code": "ClaimResponse.payment.identifier",
               "display": "Business identifier for the payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.identifier\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.identifier\u0060"
             }
           ]
@@ -1666,7 +1657,7 @@
             {
               "code": "ClaimResponse.payment.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.payment.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.payment.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1678,7 +1669,7 @@
             {
               "code": "ClaimResponse.payment.type",
               "display": "Partial or complete payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.payment.type\u0060 maps as Equivalent to R4 \u0060ClaimResponse.payment.type\u0060"
             }
           ]
@@ -1690,7 +1681,7 @@
             {
               "code": "ClaimResponse.preAuthPeriod",
               "display": "Preauthorization reference effective period",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.preAuthPeriod\u0060 maps as Equivalent to R4 \u0060ClaimResponse.preAuthPeriod\u0060"
             }
           ]
@@ -1702,7 +1693,7 @@
             {
               "code": "ClaimResponse.preAuthRef",
               "display": "Preauthorization reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.preAuthRef\u0060 maps as Equivalent to R4 \u0060ClaimResponse.preAuthRef\u0060"
             }
           ]
@@ -1714,7 +1705,7 @@
             {
               "code": "ClaimResponse.processNote",
               "display": "Note concerning adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.processNote\u0060 maps as Equivalent to R4 \u0060ClaimResponse.processNote\u0060"
             }
           ]
@@ -1726,7 +1717,7 @@
             {
               "code": "ClaimResponse.processNote.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.processNote.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.processNote.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1738,7 +1729,7 @@
             {
               "code": "ClaimResponse.processNote.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.processNote.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.processNote.id\u0060"
             }
           ]
@@ -1750,8 +1741,8 @@
             {
               "code": "ClaimResponse.processNote.language",
               "display": "Language of the text",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ClaimResponse.processNote.language\u0060 maps as RelatedTo to R4 \u0060ClaimResponse.processNote.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ClaimResponse.processNote.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ClaimResponse.processNote.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -1762,7 +1753,7 @@
             {
               "code": "ClaimResponse.processNote.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.processNote.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.processNote.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1774,7 +1765,7 @@
             {
               "code": "ClaimResponse.processNote.number",
               "display": "Note instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.processNote.number\u0060 maps as Equivalent to R4 \u0060ClaimResponse.processNote.number\u0060"
             }
           ]
@@ -1786,7 +1777,7 @@
             {
               "code": "ClaimResponse.processNote.text",
               "display": "Note explanatory text",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.processNote.text\u0060 maps as Equivalent to R4 \u0060ClaimResponse.processNote.text\u0060"
             }
           ]
@@ -1810,7 +1801,7 @@
             {
               "code": "ClaimResponse.request",
               "display": "Id of resource triggering adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.request\u0060 maps as Equivalent to R4 \u0060ClaimResponse.request\u0060"
             }
           ]
@@ -1822,7 +1813,7 @@
             {
               "code": "ClaimResponse.requestor",
               "display": "Party responsible for the claim",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.requestor\u0060 maps as Equivalent to R4 \u0060ClaimResponse.requestor\u0060"
             }
           ]
@@ -1834,7 +1825,7 @@
             {
               "code": "ClaimResponse.status",
               "display": "active | cancelled | draft | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.status\u0060 maps as Equivalent to R4 \u0060ClaimResponse.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/fm-status|5.0.0 and http://hl7.org/fhir/ValueSet/fm-status|4.0.1 (Equivalent)"
             }
           ]
@@ -1846,7 +1837,7 @@
             {
               "code": "ClaimResponse.subType",
               "display": "More granular claim type",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.subType\u0060 maps as Equivalent to R4 \u0060ClaimResponse.subType\u0060"
             }
           ]
@@ -1858,7 +1849,7 @@
             {
               "code": "ClaimResponse.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.text\u0060 maps as Equivalent to R4 \u0060ClaimResponse.text\u0060"
             }
           ]
@@ -1870,7 +1861,7 @@
             {
               "code": "ClaimResponse.total",
               "display": "Adjudication totals",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.total\u0060 maps as Equivalent to R4 \u0060ClaimResponse.total\u0060"
             }
           ]
@@ -1882,7 +1873,7 @@
             {
               "code": "ClaimResponse.total.amount",
               "display": "Financial total for the category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.total.amount\u0060 maps as Equivalent to R4 \u0060ClaimResponse.total.amount\u0060"
             }
           ]
@@ -1894,7 +1885,7 @@
             {
               "code": "ClaimResponse.total.category",
               "display": "Type of adjudication information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.total.category\u0060 maps as Equivalent to R4 \u0060ClaimResponse.total.category\u0060"
             }
           ]
@@ -1906,7 +1897,7 @@
             {
               "code": "ClaimResponse.total.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.total.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.total.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1918,7 +1909,7 @@
             {
               "code": "ClaimResponse.total.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.total.id\u0060 maps as Equivalent to R4 \u0060ClaimResponse.total.id\u0060"
             }
           ]
@@ -1930,7 +1921,7 @@
             {
               "code": "ClaimResponse.total.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClaimResponse.total.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClaimResponse.total.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1947,7 +1938,7 @@
             {
               "code": "ClaimResponse.type",
               "display": "More granular claim type",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.type\u0060 maps as Equivalent to R4 \u0060ClaimResponse.type\u0060"
             }
           ]
@@ -1959,7 +1950,7 @@
             {
               "code": "ClaimResponse.use",
               "display": "claim | preauthorization | predetermination",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClaimResponse.use\u0060 maps as Equivalent to R4 \u0060ClaimResponse.use\u0060 - use has compatible required binding for code type: http://hl7.org/fhir/ValueSet/claim-use|5.0.0 and http://hl7.org/fhir/ValueSet/claim-use|4.0.1 (Equivalent)"
             }
           ]

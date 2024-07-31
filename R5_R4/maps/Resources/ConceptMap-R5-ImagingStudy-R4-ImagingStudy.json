@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
       "element": [
         {
-          "code": "ImagingStudy.procedure.concept",
-          "target": [
-            {
-              "code": "ImagingStudy.procedureCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ImagingStudy.procedure.reference",
-          "target": [
-            {
-              "code": "ImagingStudy.procedureReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ImagingStudy.reason.concept",
-          "target": [
-            {
-              "code": "ImagingStudy.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ImagingStudy.reason.reference",
-          "target": [
-            {
-              "code": "ImagingStudy.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-      "target": "http://hl7.org/fhir/StructureDefinition/ImagingStudy",
-      "element": [
-        {
           "code": "ImagingStudy",
           "display": "A set of images produced in single study (one or more series of references images)",
           "target": [
@@ -88,7 +46,7 @@
             {
               "code": "ImagingStudy.basedOn",
               "display": "Request fulfilled",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.basedOn\u0060 maps as Equivalent to R4 \u0060ImagingStudy.basedOn\u0060"
             }
           ]
@@ -100,7 +58,7 @@
             {
               "code": "ImagingStudy.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.contained\u0060 maps as Equivalent to R4 \u0060ImagingStudy.contained\u0060"
             }
           ]
@@ -112,7 +70,7 @@
             {
               "code": "ImagingStudy.description",
               "display": "Institution-generated description",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.description\u0060 maps as Equivalent to R4 \u0060ImagingStudy.description\u0060"
             }
           ]
@@ -124,7 +82,7 @@
             {
               "code": "ImagingStudy.encounter",
               "display": "Encounter with which this imaging study is associated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.encounter\u0060 maps as Equivalent to R4 \u0060ImagingStudy.encounter\u0060"
             }
           ]
@@ -136,7 +94,7 @@
             {
               "code": "ImagingStudy.endpoint",
               "display": "Study access endpoint",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.endpoint\u0060 maps as Equivalent to R4 \u0060ImagingStudy.endpoint\u0060"
             }
           ]
@@ -148,7 +106,7 @@
             {
               "code": "ImagingStudy.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -172,7 +130,7 @@
             {
               "code": "ImagingStudy.identifier",
               "display": "Identifiers for the whole study",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.identifier\u0060 maps as Equivalent to R4 \u0060ImagingStudy.identifier\u0060"
             }
           ]
@@ -196,8 +154,8 @@
             {
               "code": "ImagingStudy.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ImagingStudy.language\u0060 maps as RelatedTo to R4 \u0060ImagingStudy.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ImagingStudy.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ImagingStudy.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -208,7 +166,7 @@
             {
               "code": "ImagingStudy.location",
               "display": "Where ImagingStudy occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.location\u0060 maps as Equivalent to R4 \u0060ImagingStudy.location\u0060"
             }
           ]
@@ -232,7 +190,7 @@
             {
               "code": "ImagingStudy.modality",
               "display": "All series modality if actual acquisition modalities",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.modality\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.modality\u0060 - modality has change due to type change: R5 modality CodeableConcept has no equivalent or mapped type in R4 modality"
             }
           ]
@@ -244,7 +202,7 @@
             {
               "code": "ImagingStudy.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -256,7 +214,7 @@
             {
               "code": "ImagingStudy.note",
               "display": "User-defined comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -268,7 +226,7 @@
             {
               "code": "ImagingStudy.numberOfInstances",
               "display": "Number of Study Related Instances",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.numberOfInstances\u0060 maps as Equivalent to R4 \u0060ImagingStudy.numberOfInstances\u0060"
             }
           ]
@@ -280,7 +238,7 @@
             {
               "code": "ImagingStudy.numberOfSeries",
               "display": "Number of Study Related Series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.numberOfSeries\u0060 maps as Equivalent to R4 \u0060ImagingStudy.numberOfSeries\u0060"
             }
           ]
@@ -292,13 +250,73 @@
         },
         {
           "code": "ImagingStudy.procedure",
-          "display": "The performed procedure or code",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImagingStudy.procedureCode",
+              "display": "The performed procedure code",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ImagingStudy.procedure\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.procedureCode\u0060 - procedureCode changed the binding strength from Preferred to Extensible; procedureCode has change due to type change: R5 procedure CodeableReference has no equivalent or mapped type in R4 procedureCode"
+            },
+            {
+              "code": "ImagingStudy.procedureReference",
+              "display": "The performed Procedure reference",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ImagingStudy.procedure\u0060 maps as RelatedTo to R4 \u0060ImagingStudy.procedureReference\u0060 - procedureReference changed from array to scalar (max cardinality from * to 1); procedureReference removed a binding requirement - Preferred http://loinc.org/vs/loinc-rsna-radiology-playbook; procedureReference has change due to type change: R5 procedure CodeableReference has no equivalent or mapped type in R4 procedureReference"
+            }
+          ]
+        },
+        {
+          "code": "ImagingStudy.procedure.concept",
+          "target": [
+            {
+              "code": "ImagingStudy.procedureCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ImagingStudy.procedure.reference",
+          "target": [
+            {
+              "code": "ImagingStudy.procedureReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ImagingStudy.reason",
-          "display": "Why the study was requested / performed",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImagingStudy.reasonCode",
+              "display": "Why the study was requested",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ImagingStudy.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "ImagingStudy.reasonReference",
+              "display": "Why was study performed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ImagingStudy.reason\u0060 maps as RelatedTo to R4 \u0060ImagingStudy.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/procedure-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "ImagingStudy.reason.concept",
+          "target": [
+            {
+              "code": "ImagingStudy.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ImagingStudy.reason.reference",
+          "target": [
+            {
+              "code": "ImagingStudy.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ImagingStudy.referrer",
@@ -307,7 +325,7 @@
             {
               "code": "ImagingStudy.referrer",
               "display": "Referring physician",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.referrer\u0060 maps as Equivalent to R4 \u0060ImagingStudy.referrer\u0060"
             }
           ]
@@ -319,7 +337,7 @@
             {
               "code": "ImagingStudy.series",
               "display": "Each study has one or more series of instances",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series\u0060"
             }
           ]
@@ -331,7 +349,7 @@
             {
               "code": "ImagingStudy.series.bodySite",
               "display": "Body part examined",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.bodySite\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.bodySite\u0060 - bodySite has change due to type change: R5 bodySite CodeableReference has no equivalent or mapped type in R4 bodySite"
             }
           ]
@@ -343,7 +361,7 @@
             {
               "code": "ImagingStudy.series.description",
               "display": "A short human readable summary of the series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.description\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.description\u0060"
             }
           ]
@@ -355,7 +373,7 @@
             {
               "code": "ImagingStudy.series.endpoint",
               "display": "Series access endpoint",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.endpoint\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.endpoint\u0060"
             }
           ]
@@ -367,7 +385,7 @@
             {
               "code": "ImagingStudy.series.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -379,7 +397,7 @@
             {
               "code": "ImagingStudy.series.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.id\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.id\u0060"
             }
           ]
@@ -391,7 +409,7 @@
             {
               "code": "ImagingStudy.series.instance",
               "display": "A single SOP instance from the series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance\u0060"
             }
           ]
@@ -403,7 +421,7 @@
             {
               "code": "ImagingStudy.series.instance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.instance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.instance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -415,7 +433,7 @@
             {
               "code": "ImagingStudy.series.instance.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance.id\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance.id\u0060"
             }
           ]
@@ -427,7 +445,7 @@
             {
               "code": "ImagingStudy.series.instance.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.instance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.instance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -439,7 +457,7 @@
             {
               "code": "ImagingStudy.series.instance.number",
               "display": "The number of this instance in the series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance.number\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance.number\u0060"
             }
           ]
@@ -451,7 +469,7 @@
             {
               "code": "ImagingStudy.series.instance.sopClass",
               "display": "DICOM class type",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance.sopClass\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance.sopClass\u0060"
             }
           ]
@@ -463,7 +481,7 @@
             {
               "code": "ImagingStudy.series.instance.title",
               "display": "Description of instance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance.title\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance.title\u0060"
             }
           ]
@@ -475,7 +493,7 @@
             {
               "code": "ImagingStudy.series.instance.uid",
               "display": "DICOM SOP Instance UID",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.instance.uid\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.instance.uid\u0060"
             }
           ]
@@ -487,7 +505,7 @@
             {
               "code": "ImagingStudy.series.laterality",
               "display": "Body part laterality",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.laterality\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.laterality\u0060 - laterality has change due to type change: R5 laterality CodeableConcept has no equivalent or mapped type in R4 laterality"
             }
           ]
@@ -499,7 +517,7 @@
             {
               "code": "ImagingStudy.series.modality",
               "display": "The modality of the instances in the series",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.modality\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.modality\u0060 - modality has change due to type change: R5 modality CodeableConcept has no equivalent or mapped type in R4 modality"
             }
           ]
@@ -511,7 +529,7 @@
             {
               "code": "ImagingStudy.series.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -523,7 +541,7 @@
             {
               "code": "ImagingStudy.series.number",
               "display": "Numeric identifier of this series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.number\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.number\u0060"
             }
           ]
@@ -535,7 +553,7 @@
             {
               "code": "ImagingStudy.series.numberOfInstances",
               "display": "Number of Series Related Instances",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.numberOfInstances\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.numberOfInstances\u0060"
             }
           ]
@@ -547,7 +565,7 @@
             {
               "code": "ImagingStudy.series.performer",
               "display": "Who performed the series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.performer\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.performer\u0060"
             }
           ]
@@ -559,7 +577,7 @@
             {
               "code": "ImagingStudy.series.performer.actor",
               "display": "Who performed the series",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.performer.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -571,7 +589,7 @@
             {
               "code": "ImagingStudy.series.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -583,7 +601,7 @@
             {
               "code": "ImagingStudy.series.performer.function",
               "display": "Type of performance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.performer.function\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.performer.function\u0060"
             }
           ]
@@ -595,7 +613,7 @@
             {
               "code": "ImagingStudy.series.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.performer.id\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.performer.id\u0060"
             }
           ]
@@ -607,7 +625,7 @@
             {
               "code": "ImagingStudy.series.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImagingStudy.series.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImagingStudy.series.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -619,7 +637,7 @@
             {
               "code": "ImagingStudy.series.specimen",
               "display": "Specimen imaged",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.specimen\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.specimen\u0060"
             }
           ]
@@ -631,7 +649,7 @@
             {
               "code": "ImagingStudy.series.started",
               "display": "When the series started",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.started\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.started\u0060"
             }
           ]
@@ -643,7 +661,7 @@
             {
               "code": "ImagingStudy.series.uid",
               "display": "DICOM Series Instance UID for the series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.series.uid\u0060 maps as Equivalent to R4 \u0060ImagingStudy.series.uid\u0060"
             }
           ]
@@ -655,7 +673,7 @@
             {
               "code": "ImagingStudy.started",
               "display": "When the study was started",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.started\u0060 maps as Equivalent to R4 \u0060ImagingStudy.started\u0060"
             }
           ]
@@ -667,7 +685,7 @@
             {
               "code": "ImagingStudy.status",
               "display": "registered | available | cancelled | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.status\u0060 maps as Equivalent to R4 \u0060ImagingStudy.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/imagingstudy-status|5.0.0 and http://hl7.org/fhir/ValueSet/imagingstudy-status|4.0.1 (Equivalent)"
             }
           ]
@@ -679,7 +697,7 @@
             {
               "code": "ImagingStudy.subject",
               "display": "Who or what is the subject of the study",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.subject\u0060 maps as Equivalent to R4 \u0060ImagingStudy.subject\u0060"
             }
           ]
@@ -691,7 +709,7 @@
             {
               "code": "ImagingStudy.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImagingStudy.text\u0060 maps as Equivalent to R4 \u0060ImagingStudy.text\u0060"
             }
           ]

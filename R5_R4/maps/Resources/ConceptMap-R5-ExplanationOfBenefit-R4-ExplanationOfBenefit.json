@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit",
       "element": [
         {
-          "code": "ExplanationOfBenefit.careTeam.specialty",
-          "target": [
-            {
-              "code": "ExplanationOfBenefit.careTeam.qualification",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ExplanationOfBenefit.item.adjudication.quantity",
-          "target": [
-            {
-              "code": "ExplanationOfBenefit.item.adjudication.value",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ExplanationOfBenefit.item.bodySite.site",
-          "target": [
-            {
-              "code": "ExplanationOfBenefit.item.site",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ExplanationOfBenefit.item.bodySite.subSite",
-          "target": [
-            {
-              "code": "ExplanationOfBenefit.item.subSite",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit",
-      "target": "http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit",
-      "element": [
-        {
           "code": "ExplanationOfBenefit",
           "display": "Explanation of Benefit resource",
           "target": [
@@ -88,7 +46,7 @@
             {
               "code": "ExplanationOfBenefit.accident",
               "display": "Details of the event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.accident\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.accident\u0060"
             }
           ]
@@ -100,7 +58,7 @@
             {
               "code": "ExplanationOfBenefit.accident.date",
               "display": "When the incident occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.date\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.accident.date\u0060"
             }
           ]
@@ -112,7 +70,7 @@
             {
               "code": "ExplanationOfBenefit.accident.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.accident.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -124,7 +82,7 @@
             {
               "code": "ExplanationOfBenefit.accident.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.accident.id\u0060"
             }
           ]
@@ -136,7 +94,7 @@
             {
               "code": "ExplanationOfBenefit.accident.location[x]",
               "display": "Where the event occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.location[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.accident.location[x]\u0060"
             }
           ]
@@ -148,7 +106,7 @@
             {
               "code": "ExplanationOfBenefit.accident.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.accident.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -160,7 +118,7 @@
             {
               "code": "ExplanationOfBenefit.accident.type",
               "display": "The nature of the accident",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.accident.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.accident.type\u0060"
             }
           ]
@@ -172,7 +130,7 @@
             {
               "code": "ExplanationOfBenefit.addItem",
               "display": "Insurer added line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem\u0060"
             }
           ]
@@ -184,7 +142,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.adjudication",
               "display": "Added items adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.adjudication\u0060"
             }
           ]
@@ -196,8 +154,8 @@
             {
               "code": "ExplanationOfBenefit.addItem.bodySite",
               "display": "Anatomical location",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ExplanationOfBenefit.addItem.bodySite\u0060 maps as RelatedTo to R4 \u0060ExplanationOfBenefit.addItem.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.addItem.bodySite\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
             }
           ]
         },
@@ -233,7 +191,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail",
               "display": "Insurer added line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail\u0060"
             }
           ]
@@ -245,7 +203,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.adjudication",
               "display": "Added items adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.adjudication\u0060"
             }
           ]
@@ -257,7 +215,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.detail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -269,7 +227,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.factor\u0060"
             }
           ]
@@ -281,7 +239,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.id\u0060"
             }
           ]
@@ -293,7 +251,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.modifier\u0060"
             }
           ]
@@ -305,7 +263,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.detail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -317,7 +275,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.net\u0060"
             }
           ]
@@ -329,7 +287,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.noteNumber\u0060"
             }
           ]
@@ -363,7 +321,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.quantity\u0060"
             }
           ]
@@ -385,7 +343,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail",
               "display": "Insurer added line items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail\u0060"
             }
           ]
@@ -397,7 +355,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.adjudication",
               "display": "Added items adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.adjudication\u0060"
             }
           ]
@@ -409,7 +367,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -421,7 +379,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.factor\u0060"
             }
           ]
@@ -433,7 +391,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.id\u0060"
             }
           ]
@@ -445,7 +403,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.modifier\u0060"
             }
           ]
@@ -457,7 +415,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -469,7 +427,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.net\u0060"
             }
           ]
@@ -481,7 +439,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.noteNumber\u0060"
             }
           ]
@@ -515,7 +473,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.quantity\u0060"
             }
           ]
@@ -547,7 +505,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.subDetail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.subDetail.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.subDetail.unitPrice\u0060"
             }
           ]
@@ -569,7 +527,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detail.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detail.unitPrice\u0060"
             }
           ]
@@ -581,7 +539,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.detailSequence",
               "display": "Detail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.detailSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.detailSequence\u0060"
             }
           ]
@@ -593,7 +551,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -605,7 +563,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.factor\u0060"
             }
           ]
@@ -617,7 +575,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.id\u0060"
             }
           ]
@@ -629,7 +587,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.itemSequence",
               "display": "Item sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.itemSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.itemSequence\u0060"
             }
           ]
@@ -641,7 +599,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.location[x]",
               "display": "Place of service or where product was supplied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.location[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.location[x]\u0060"
             }
           ]
@@ -653,7 +611,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.modifier\u0060"
             }
           ]
@@ -665,7 +623,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.addItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -677,7 +635,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.net\u0060"
             }
           ]
@@ -689,7 +647,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.noteNumber\u0060"
             }
           ]
@@ -723,7 +681,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.programCode",
               "display": "Program the product or service is provided under",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.programCode\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.programCode\u0060"
             }
           ]
@@ -735,7 +693,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.provider",
               "display": "Authorized providers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.provider\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.provider\u0060"
             }
           ]
@@ -747,7 +705,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.quantity\u0060"
             }
           ]
@@ -774,7 +732,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.serviced[x]",
               "display": "Date or dates of service or product delivery",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.serviced[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.serviced[x]\u0060"
             }
           ]
@@ -786,7 +744,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.subDetailSequence",
               "display": "Subdetail sequence number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.subDetailSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.subDetailSequence\u0060"
             }
           ]
@@ -808,7 +766,7 @@
             {
               "code": "ExplanationOfBenefit.addItem.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.addItem.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.addItem.unitPrice\u0060"
             }
           ]
@@ -820,7 +778,7 @@
             {
               "code": "ExplanationOfBenefit.adjudication",
               "display": "Header-level adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.adjudication\u0060"
             }
           ]
@@ -832,7 +790,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance",
               "display": "Balance by Benefit Category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance\u0060"
             }
           ]
@@ -844,7 +802,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.category",
               "display": "Benefit classification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.category\u0060"
             }
           ]
@@ -856,7 +814,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.description",
               "display": "Description of the benefit or services covered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.description\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.description\u0060"
             }
           ]
@@ -868,7 +826,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.excluded",
               "display": "Excluded from the plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.excluded\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.excluded\u0060"
             }
           ]
@@ -880,7 +838,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.benefitBalance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -892,7 +850,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial",
               "display": "Benefit Summary",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.financial\u0060"
             }
           ]
@@ -904,7 +862,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.allowed[x]",
               "display": "Benefits allowed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.allowed[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.allowed[x]\u0060"
             }
           ]
@@ -916,7 +874,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -928,7 +886,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.id\u0060"
             }
           ]
@@ -940,7 +898,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -952,7 +910,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.type",
               "display": "Benefit classification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.type\u0060"
             }
           ]
@@ -964,7 +922,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.financial.used[x]",
               "display": "Benefits used",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.financial.used[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.financial.used[x]\u0060"
             }
           ]
@@ -976,7 +934,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.id\u0060"
             }
           ]
@@ -988,7 +946,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.benefitBalance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1000,7 +958,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.name",
               "display": "Short name for the benefit",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.name\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.name\u0060"
             }
           ]
@@ -1012,7 +970,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.network",
               "display": "In or out of network",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.network\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.network\u0060"
             }
           ]
@@ -1024,7 +982,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.term",
               "display": "Annual or lifetime",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.term\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.term\u0060"
             }
           ]
@@ -1036,7 +994,7 @@
             {
               "code": "ExplanationOfBenefit.benefitBalance.unit",
               "display": "Individual or family",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitBalance.unit\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitBalance.unit\u0060"
             }
           ]
@@ -1048,7 +1006,7 @@
             {
               "code": "ExplanationOfBenefit.benefitPeriod",
               "display": "When the benefits are applicable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.benefitPeriod\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.benefitPeriod\u0060"
             }
           ]
@@ -1060,7 +1018,7 @@
             {
               "code": "ExplanationOfBenefit.billablePeriod",
               "display": "Relevant time frame for the claim",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.billablePeriod\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.billablePeriod\u0060"
             }
           ]
@@ -1072,7 +1030,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam",
               "display": "Care Team members",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam\u0060"
             }
           ]
@@ -1084,7 +1042,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.careTeam.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1096,7 +1054,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.id\u0060"
             }
           ]
@@ -1108,7 +1066,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.careTeam.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1120,7 +1078,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.provider",
               "display": "Practitioner or organization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.provider\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.provider\u0060"
             }
           ]
@@ -1132,7 +1090,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.responsible",
               "display": "Indicator of the lead practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.responsible\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.responsible\u0060"
             }
           ]
@@ -1144,7 +1102,7 @@
             {
               "code": "ExplanationOfBenefit.careTeam.role",
               "display": "Function within the team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.role\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.role\u0060"
             }
           ]
@@ -1156,15 +1114,21 @@
             {
               "code": "ExplanationOfBenefit.careTeam.sequence",
               "display": "Order of care team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.careTeam.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.sequence\u0060"
             }
           ]
         },
         {
           "code": "ExplanationOfBenefit.careTeam.specialty",
-          "display": "Practitioner or provider specialization",
-          "noMap": true
+          "target": [
+            {
+              "code": "ExplanationOfBenefit.careTeam.qualification",
+              "display": "Practitioner credential or specialization",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ExplanationOfBenefit.careTeam.specialty\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.careTeam.qualification\u0060"
+            }
+          ]
         },
         {
           "code": "ExplanationOfBenefit.claim",
@@ -1173,7 +1137,7 @@
             {
               "code": "ExplanationOfBenefit.claim",
               "display": "Claim reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.claim\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.claim\u0060"
             }
           ]
@@ -1185,7 +1149,7 @@
             {
               "code": "ExplanationOfBenefit.claimResponse",
               "display": "Claim response reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.claimResponse\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.claimResponse\u0060"
             }
           ]
@@ -1197,7 +1161,7 @@
             {
               "code": "ExplanationOfBenefit.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.contained\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.contained\u0060"
             }
           ]
@@ -1209,7 +1173,7 @@
             {
               "code": "ExplanationOfBenefit.created",
               "display": "Response creation date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.created\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.created\u0060"
             }
           ]
@@ -1226,7 +1190,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis",
               "display": "Pertinent diagnosis information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis\u0060"
             }
           ]
@@ -1238,7 +1202,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.diagnosis[x]",
               "display": "Nature of illness or problem",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.diagnosis[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis.diagnosis[x]\u0060"
             }
           ]
@@ -1250,7 +1214,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.diagnosis.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1262,7 +1226,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis.id\u0060"
             }
           ]
@@ -1274,7 +1238,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.diagnosis.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1286,7 +1250,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.onAdmission",
               "display": "Present on admission",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.onAdmission\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis.onAdmission\u0060"
             }
           ]
@@ -1298,7 +1262,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.sequence",
               "display": "Diagnosis instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis.sequence\u0060"
             }
           ]
@@ -1310,7 +1274,7 @@
             {
               "code": "ExplanationOfBenefit.diagnosis.type",
               "display": "Timing or nature of the diagnosis",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.diagnosis.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.diagnosis.type\u0060"
             }
           ]
@@ -1327,7 +1291,7 @@
             {
               "code": "ExplanationOfBenefit.disposition",
               "display": "Disposition Message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.disposition\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.disposition\u0060"
             }
           ]
@@ -1344,7 +1308,7 @@
             {
               "code": "ExplanationOfBenefit.enterer",
               "display": "Author of the claim",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.enterer\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.enterer\u0060 - enterer has change due to type change: R5 \u0060enterer\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060enterer\u0060"
             }
           ]
@@ -1386,7 +1350,7 @@
             {
               "code": "ExplanationOfBenefit.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1398,7 +1362,7 @@
             {
               "code": "ExplanationOfBenefit.facility",
               "display": "Servicing Facility",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.facility\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.facility\u0060 - facility has change due to type change: R5 \u0060facility\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060facility\u0060"
             }
           ]
@@ -1422,7 +1386,7 @@
             {
               "code": "ExplanationOfBenefit.formCode",
               "display": "Printed form identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.formCode\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.formCode\u0060"
             }
           ]
@@ -1434,7 +1398,7 @@
             {
               "code": "ExplanationOfBenefit.fundsReserve",
               "display": "Funds reserved status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.fundsReserve\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.fundsReserve\u0060"
             }
           ]
@@ -1446,7 +1410,7 @@
             {
               "code": "ExplanationOfBenefit.fundsReserveRequested",
               "display": "For whom to reserve funds",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.fundsReserveRequested\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.fundsReserveRequested\u0060"
             }
           ]
@@ -1470,7 +1434,7 @@
             {
               "code": "ExplanationOfBenefit.identifier",
               "display": "Business Identifier for the resource",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.identifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.identifier\u0060"
             }
           ]
@@ -1506,7 +1470,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.coverage",
               "display": "Insurance information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.coverage\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.insurance.coverage\u0060"
             }
           ]
@@ -1518,7 +1482,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.insurance.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1530,7 +1494,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.focal",
               "display": "Coverage to be used for adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.focal\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.insurance.focal\u0060"
             }
           ]
@@ -1542,7 +1506,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.insurance.id\u0060"
             }
           ]
@@ -1554,7 +1518,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.insurance.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1566,7 +1530,7 @@
             {
               "code": "ExplanationOfBenefit.insurance.preAuthRef",
               "display": "Prior authorization reference number",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.insurance.preAuthRef\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.insurance.preAuthRef\u0060"
             }
           ]
@@ -1590,7 +1554,7 @@
             {
               "code": "ExplanationOfBenefit.item",
               "display": "Product or service provided",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item\u0060"
             }
           ]
@@ -1602,7 +1566,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication",
               "display": "Adjudication details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.adjudication\u0060"
             }
           ]
@@ -1614,7 +1578,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.amount",
               "display": "Monetary amount",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.amount\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.adjudication.amount\u0060"
             }
           ]
@@ -1626,7 +1590,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.category",
               "display": "Type of adjudication information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.adjudication.category\u0060"
             }
           ]
@@ -1638,7 +1602,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.adjudication.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1650,7 +1614,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.adjudication.id\u0060"
             }
           ]
@@ -1662,15 +1626,21 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.adjudication.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "ExplanationOfBenefit.item.adjudication.quantity",
-          "display": "Non-monitary value",
-          "noMap": true
+          "target": [
+            {
+              "code": "ExplanationOfBenefit.item.adjudication.value",
+              "display": "Non-monitary value",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.quantity\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.adjudication.value\u0060 - value has change due to type change: R5 quantity Quantity has no equivalent or mapped type in R4 value"
+            }
+          ]
         },
         {
           "code": "ExplanationOfBenefit.item.adjudication.reason",
@@ -1679,7 +1649,7 @@
             {
               "code": "ExplanationOfBenefit.item.adjudication.reason",
               "display": "Explanation of adjudication outcome",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.adjudication.reason\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.adjudication.reason\u0060"
             }
           ]
@@ -1691,8 +1661,8 @@
             {
               "code": "ExplanationOfBenefit.item.bodySite",
               "display": "Anatomical location",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ExplanationOfBenefit.item.bodySite\u0060 maps as RelatedTo to R4 \u0060ExplanationOfBenefit.item.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.item.bodySite\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.bodySite\u0060 - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite"
             }
           ]
         },
@@ -1713,13 +1683,24 @@
         },
         {
           "code": "ExplanationOfBenefit.item.bodySite.site",
-          "display": "Location",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "ExplanationOfBenefit.item.site",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ExplanationOfBenefit.item.bodySite.subSite",
-          "display": "Sub-location",
-          "noMap": true
+          "target": [
+            {
+              "code": "ExplanationOfBenefit.item.subSite",
+              "display": "Anatomical sub-location",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ExplanationOfBenefit.item.bodySite.subSite\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.subSite\u0060"
+            }
+          ]
         },
         {
           "code": "ExplanationOfBenefit.item.careTeamSequence",
@@ -1728,7 +1709,7 @@
             {
               "code": "ExplanationOfBenefit.item.careTeamSequence",
               "display": "Applicable care team members",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.careTeamSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.careTeamSequence\u0060"
             }
           ]
@@ -1740,7 +1721,7 @@
             {
               "code": "ExplanationOfBenefit.item.category",
               "display": "Benefit classification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.category\u0060"
             }
           ]
@@ -1752,7 +1733,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail",
               "display": "Additional items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail\u0060"
             }
           ]
@@ -1764,7 +1745,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.adjudication",
               "display": "Detail level adjudication details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.adjudication\u0060"
             }
           ]
@@ -1776,7 +1757,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.category",
               "display": "Benefit classification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.category\u0060"
             }
           ]
@@ -1788,7 +1769,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.detail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1800,7 +1781,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.factor\u0060"
             }
           ]
@@ -1812,7 +1793,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.id\u0060"
             }
           ]
@@ -1824,7 +1805,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.modifier\u0060"
             }
           ]
@@ -1836,7 +1817,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.detail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1848,7 +1829,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.net\u0060"
             }
           ]
@@ -1860,7 +1841,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.noteNumber\u0060"
             }
           ]
@@ -1894,7 +1875,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.programCode",
               "display": "Program the product or service is provided under",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.programCode\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.programCode\u0060"
             }
           ]
@@ -1906,7 +1887,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.quantity\u0060"
             }
           ]
@@ -1918,7 +1899,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.revenue",
               "display": "Revenue or cost center code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.revenue\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.revenue\u0060"
             }
           ]
@@ -1935,7 +1916,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.sequence",
               "display": "Product or service provided",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.sequence\u0060"
             }
           ]
@@ -1947,7 +1928,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail",
               "display": "Additional items",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail\u0060"
             }
           ]
@@ -1959,7 +1940,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.adjudication",
               "display": "Subdetail level adjudication details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.adjudication\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.adjudication\u0060"
             }
           ]
@@ -1971,7 +1952,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.category",
               "display": "Benefit classification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.category\u0060"
             }
           ]
@@ -1983,7 +1964,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1995,7 +1976,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.factor\u0060"
             }
           ]
@@ -2007,7 +1988,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.id\u0060"
             }
           ]
@@ -2019,7 +2000,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.modifier",
               "display": "Service/Product billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.modifier\u0060"
             }
           ]
@@ -2031,7 +2012,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2043,7 +2024,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.net\u0060"
             }
           ]
@@ -2055,7 +2036,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.noteNumber\u0060"
             }
           ]
@@ -2089,7 +2070,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.programCode",
               "display": "Program the product or service is provided under",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.programCode\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.programCode\u0060"
             }
           ]
@@ -2101,7 +2082,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.quantity\u0060"
             }
           ]
@@ -2113,7 +2094,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.revenue",
               "display": "Revenue or cost center code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.revenue\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.revenue\u0060"
             }
           ]
@@ -2130,7 +2111,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.sequence",
               "display": "Product or service provided",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.sequence\u0060"
             }
           ]
@@ -2152,7 +2133,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.udi",
               "display": "Unique device identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.udi\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.udi\u0060"
             }
           ]
@@ -2164,7 +2145,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.subDetail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.subDetail.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.subDetail.unitPrice\u0060"
             }
           ]
@@ -2186,7 +2167,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.udi",
               "display": "Unique device identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.udi\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.udi\u0060"
             }
           ]
@@ -2198,7 +2179,7 @@
             {
               "code": "ExplanationOfBenefit.item.detail.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.detail.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.detail.unitPrice\u0060"
             }
           ]
@@ -2210,7 +2191,7 @@
             {
               "code": "ExplanationOfBenefit.item.diagnosisSequence",
               "display": "Applicable diagnoses",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.diagnosisSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.diagnosisSequence\u0060"
             }
           ]
@@ -2222,7 +2203,7 @@
             {
               "code": "ExplanationOfBenefit.item.encounter",
               "display": "Encounters related to this billed item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.encounter\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.encounter\u0060"
             }
           ]
@@ -2234,7 +2215,7 @@
             {
               "code": "ExplanationOfBenefit.item.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -2246,7 +2227,7 @@
             {
               "code": "ExplanationOfBenefit.item.factor",
               "display": "Price scaling factor",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.factor\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.factor\u0060"
             }
           ]
@@ -2258,7 +2239,7 @@
             {
               "code": "ExplanationOfBenefit.item.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.id\u0060"
             }
           ]
@@ -2270,7 +2251,7 @@
             {
               "code": "ExplanationOfBenefit.item.informationSequence",
               "display": "Applicable exception and supporting information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.informationSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.informationSequence\u0060"
             }
           ]
@@ -2282,7 +2263,7 @@
             {
               "code": "ExplanationOfBenefit.item.location[x]",
               "display": "Place of service or where product was supplied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.location[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.location[x]\u0060"
             }
           ]
@@ -2294,7 +2275,7 @@
             {
               "code": "ExplanationOfBenefit.item.modifier",
               "display": "Product or service billing modifiers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.modifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.modifier\u0060"
             }
           ]
@@ -2306,7 +2287,7 @@
             {
               "code": "ExplanationOfBenefit.item.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.item.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.item.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2318,7 +2299,7 @@
             {
               "code": "ExplanationOfBenefit.item.net",
               "display": "Total item cost",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.net\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.net\u0060"
             }
           ]
@@ -2330,7 +2311,7 @@
             {
               "code": "ExplanationOfBenefit.item.noteNumber",
               "display": "Applicable note numbers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.noteNumber\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.noteNumber\u0060"
             }
           ]
@@ -2347,7 +2328,7 @@
             {
               "code": "ExplanationOfBenefit.item.procedureSequence",
               "display": "Applicable procedures",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.procedureSequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.procedureSequence\u0060"
             }
           ]
@@ -2376,7 +2357,7 @@
             {
               "code": "ExplanationOfBenefit.item.programCode",
               "display": "Program the product or service is provided under",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.programCode\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.programCode\u0060"
             }
           ]
@@ -2388,7 +2369,7 @@
             {
               "code": "ExplanationOfBenefit.item.quantity",
               "display": "Count of products or services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.quantity\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.quantity\u0060"
             }
           ]
@@ -2405,7 +2386,7 @@
             {
               "code": "ExplanationOfBenefit.item.revenue",
               "display": "Revenue or cost center code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.revenue\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.revenue\u0060"
             }
           ]
@@ -2457,7 +2438,7 @@
             {
               "code": "ExplanationOfBenefit.item.sequence",
               "display": "Item instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.sequence\u0060"
             }
           ]
@@ -2469,7 +2450,7 @@
             {
               "code": "ExplanationOfBenefit.item.serviced[x]",
               "display": "Date or dates of service or product delivery",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.serviced[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.serviced[x]\u0060"
             }
           ]
@@ -2491,7 +2472,7 @@
             {
               "code": "ExplanationOfBenefit.item.udi",
               "display": "Unique device identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.udi\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.udi\u0060"
             }
           ]
@@ -2503,7 +2484,7 @@
             {
               "code": "ExplanationOfBenefit.item.unitPrice",
               "display": "Fee, charge or cost per item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.item.unitPrice\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.item.unitPrice\u0060"
             }
           ]
@@ -2515,8 +2496,8 @@
             {
               "code": "ExplanationOfBenefit.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ExplanationOfBenefit.language\u0060 maps as RelatedTo to R4 \u0060ExplanationOfBenefit.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ExplanationOfBenefit.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -2539,7 +2520,7 @@
             {
               "code": "ExplanationOfBenefit.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2551,7 +2532,7 @@
             {
               "code": "ExplanationOfBenefit.originalPrescription",
               "display": "Original prescription if superceded by fulfiller",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.originalPrescription\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.originalPrescription\u0060"
             }
           ]
@@ -2563,7 +2544,7 @@
             {
               "code": "ExplanationOfBenefit.outcome",
               "display": "queued | complete | error | partial",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.outcome\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.outcome\u0060 - outcome has compatible required binding for code type: http://hl7.org/fhir/ValueSet/claim-outcome|5.0.0 and http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1 (Equivalent)"
             }
           ]
@@ -2575,7 +2556,7 @@
             {
               "code": "ExplanationOfBenefit.patient",
               "display": "The recipient of the products and services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.patient\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.patient\u0060"
             }
           ]
@@ -2592,7 +2573,7 @@
             {
               "code": "ExplanationOfBenefit.payee",
               "display": "Recipient of benefits payable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payee\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payee\u0060"
             }
           ]
@@ -2604,7 +2585,7 @@
             {
               "code": "ExplanationOfBenefit.payee.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.payee.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.payee.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -2616,7 +2597,7 @@
             {
               "code": "ExplanationOfBenefit.payee.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payee.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payee.id\u0060"
             }
           ]
@@ -2628,7 +2609,7 @@
             {
               "code": "ExplanationOfBenefit.payee.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.payee.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.payee.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2640,7 +2621,7 @@
             {
               "code": "ExplanationOfBenefit.payee.party",
               "display": "Recipient reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payee.party\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payee.party\u0060"
             }
           ]
@@ -2652,7 +2633,7 @@
             {
               "code": "ExplanationOfBenefit.payee.type",
               "display": "Category of recipient",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payee.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payee.type\u0060"
             }
           ]
@@ -2664,7 +2645,7 @@
             {
               "code": "ExplanationOfBenefit.payment",
               "display": "Payment Details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment\u0060"
             }
           ]
@@ -2676,7 +2657,7 @@
             {
               "code": "ExplanationOfBenefit.payment.adjustment",
               "display": "Payment adjustment for non-claim issues",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.adjustment\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.adjustment\u0060"
             }
           ]
@@ -2688,7 +2669,7 @@
             {
               "code": "ExplanationOfBenefit.payment.adjustmentReason",
               "display": "Explanation for the variance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.adjustmentReason\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.adjustmentReason\u0060"
             }
           ]
@@ -2700,7 +2681,7 @@
             {
               "code": "ExplanationOfBenefit.payment.amount",
               "display": "Payable amount after adjustment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.amount\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.amount\u0060"
             }
           ]
@@ -2712,7 +2693,7 @@
             {
               "code": "ExplanationOfBenefit.payment.date",
               "display": "Expected date of payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.date\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.date\u0060"
             }
           ]
@@ -2724,7 +2705,7 @@
             {
               "code": "ExplanationOfBenefit.payment.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.payment.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -2736,7 +2717,7 @@
             {
               "code": "ExplanationOfBenefit.payment.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.id\u0060"
             }
           ]
@@ -2748,7 +2729,7 @@
             {
               "code": "ExplanationOfBenefit.payment.identifier",
               "display": "Business identifier for the payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.identifier\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.identifier\u0060"
             }
           ]
@@ -2760,7 +2741,7 @@
             {
               "code": "ExplanationOfBenefit.payment.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.payment.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2772,7 +2753,7 @@
             {
               "code": "ExplanationOfBenefit.payment.type",
               "display": "Partial or complete payment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.payment.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.payment.type\u0060"
             }
           ]
@@ -2784,7 +2765,7 @@
             {
               "code": "ExplanationOfBenefit.preAuthRef",
               "display": "Preauthorization reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.preAuthRef\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.preAuthRef\u0060"
             }
           ]
@@ -2796,7 +2777,7 @@
             {
               "code": "ExplanationOfBenefit.preAuthRefPeriod",
               "display": "Preauthorization in-effect period",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.preAuthRefPeriod\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.preAuthRefPeriod\u0060"
             }
           ]
@@ -2808,7 +2789,7 @@
             {
               "code": "ExplanationOfBenefit.precedence",
               "display": "Precedence (primary, secondary, etc.)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.precedence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.precedence\u0060"
             }
           ]
@@ -2820,7 +2801,7 @@
             {
               "code": "ExplanationOfBenefit.prescription",
               "display": "Prescription authorizing services or products",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.prescription\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.prescription\u0060"
             }
           ]
@@ -2832,7 +2813,7 @@
             {
               "code": "ExplanationOfBenefit.priority",
               "display": "Desired processing urgency",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.priority\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.priority\u0060"
             }
           ]
@@ -2844,7 +2825,7 @@
             {
               "code": "ExplanationOfBenefit.procedure",
               "display": "Clinical procedures performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure\u0060"
             }
           ]
@@ -2856,7 +2837,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.date",
               "display": "When the procedure was performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.date\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.date\u0060"
             }
           ]
@@ -2868,7 +2849,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.procedure.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -2880,7 +2861,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.id\u0060"
             }
           ]
@@ -2892,7 +2873,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.procedure.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -2904,7 +2885,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.procedure[x]",
               "display": "Specific clinical procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.procedure[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.procedure[x]\u0060"
             }
           ]
@@ -2916,7 +2897,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.sequence",
               "display": "Procedure instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.sequence\u0060"
             }
           ]
@@ -2928,7 +2909,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.type",
               "display": "Category of Procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.type\u0060"
             }
           ]
@@ -2940,7 +2921,7 @@
             {
               "code": "ExplanationOfBenefit.procedure.udi",
               "display": "Unique device identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.procedure.udi\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.procedure.udi\u0060"
             }
           ]
@@ -2952,7 +2933,7 @@
             {
               "code": "ExplanationOfBenefit.processNote",
               "display": "Note concerning adjudication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.processNote\u0060"
             }
           ]
@@ -2964,7 +2945,7 @@
             {
               "code": "ExplanationOfBenefit.processNote.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.processNote.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -2976,7 +2957,7 @@
             {
               "code": "ExplanationOfBenefit.processNote.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.processNote.id\u0060"
             }
           ]
@@ -2988,8 +2969,8 @@
             {
               "code": "ExplanationOfBenefit.processNote.language",
               "display": "Language of the text",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ExplanationOfBenefit.processNote.language\u0060 maps as RelatedTo to R4 \u0060ExplanationOfBenefit.processNote.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.processNote.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ExplanationOfBenefit.processNote.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -3000,7 +2981,7 @@
             {
               "code": "ExplanationOfBenefit.processNote.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.processNote.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -3012,7 +2993,7 @@
             {
               "code": "ExplanationOfBenefit.processNote.number",
               "display": "Note instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote.number\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.processNote.number\u0060"
             }
           ]
@@ -3024,7 +3005,7 @@
             {
               "code": "ExplanationOfBenefit.processNote.text",
               "display": "Note explanatory text",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.processNote.text\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.processNote.text\u0060"
             }
           ]
@@ -3060,7 +3041,7 @@
             {
               "code": "ExplanationOfBenefit.referral",
               "display": "Treatment Referral",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.referral\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.referral\u0060"
             }
           ]
@@ -3072,7 +3053,7 @@
             {
               "code": "ExplanationOfBenefit.related",
               "display": "Prior or corollary claims",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.related\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.related\u0060"
             }
           ]
@@ -3084,7 +3065,7 @@
             {
               "code": "ExplanationOfBenefit.related.claim",
               "display": "Reference to the related claim",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.related.claim\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.related.claim\u0060"
             }
           ]
@@ -3096,7 +3077,7 @@
             {
               "code": "ExplanationOfBenefit.related.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.related.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.related.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -3108,7 +3089,7 @@
             {
               "code": "ExplanationOfBenefit.related.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.related.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.related.id\u0060"
             }
           ]
@@ -3120,7 +3101,7 @@
             {
               "code": "ExplanationOfBenefit.related.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.related.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.related.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -3132,7 +3113,7 @@
             {
               "code": "ExplanationOfBenefit.related.reference",
               "display": "File or case reference",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.related.reference\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.related.reference\u0060"
             }
           ]
@@ -3144,7 +3125,7 @@
             {
               "code": "ExplanationOfBenefit.related.relationship",
               "display": "How the reference claim is related",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.related.relationship\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.related.relationship\u0060"
             }
           ]
@@ -3156,7 +3137,7 @@
             {
               "code": "ExplanationOfBenefit.status",
               "display": "active | cancelled | draft | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.status\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/explanationofbenefit-status|5.0.0 and http://hl7.org/fhir/ValueSet/explanationofbenefit-status|4.0.1 (Equivalent)"
             }
           ]
@@ -3168,7 +3149,7 @@
             {
               "code": "ExplanationOfBenefit.subType",
               "display": "More granular claim type",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.subType\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.subType\u0060"
             }
           ]
@@ -3180,7 +3161,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo",
               "display": "Supporting information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo\u0060"
             }
           ]
@@ -3192,7 +3173,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.category",
               "display": "Classification of the supplied information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.category\u0060"
             }
           ]
@@ -3204,7 +3185,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.code",
               "display": "Type of information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.code\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.code\u0060"
             }
           ]
@@ -3216,7 +3197,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.supportingInfo.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -3228,7 +3209,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.id\u0060"
             }
           ]
@@ -3240,7 +3221,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.supportingInfo.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -3252,7 +3233,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.reason",
               "display": "Explanation for the information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.reason\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.reason\u0060"
             }
           ]
@@ -3264,7 +3245,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.sequence",
               "display": "Information instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.sequence\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.sequence\u0060"
             }
           ]
@@ -3276,7 +3257,7 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.timing[x]",
               "display": "When it occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.timing[x]\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.supportingInfo.timing[x]\u0060"
             }
           ]
@@ -3288,8 +3269,8 @@
             {
               "code": "ExplanationOfBenefit.supportingInfo.value[x]",
               "display": "Data to be provided",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.value[x]\u0060 maps as RelatedTo to R4 \u0060ExplanationOfBenefit.supportingInfo.value[x]\u0060 - value[x] has change due to type change: R5 \u0060value[x]\u0060 \u0060Attachment\u0060 maps as RelatedTo for R4 \u0060value[x]\u0060; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x]"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ExplanationOfBenefit.supportingInfo.value[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.supportingInfo.value[x]\u0060 - value[x] has change due to type change: R5 \u0060value[x]\u0060 \u0060Attachment\u0060 maps as RelatedTo for R4 \u0060value[x]\u0060; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x]"
             }
           ]
         },
@@ -3300,7 +3281,7 @@
             {
               "code": "ExplanationOfBenefit.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.text\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.text\u0060"
             }
           ]
@@ -3312,7 +3293,7 @@
             {
               "code": "ExplanationOfBenefit.total",
               "display": "Adjudication totals",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.total\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.total\u0060"
             }
           ]
@@ -3324,7 +3305,7 @@
             {
               "code": "ExplanationOfBenefit.total.amount",
               "display": "Financial total for the category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.total.amount\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.total.amount\u0060"
             }
           ]
@@ -3336,7 +3317,7 @@
             {
               "code": "ExplanationOfBenefit.total.category",
               "display": "Type of adjudication information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.total.category\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.total.category\u0060"
             }
           ]
@@ -3348,7 +3329,7 @@
             {
               "code": "ExplanationOfBenefit.total.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.total.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.total.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -3360,7 +3341,7 @@
             {
               "code": "ExplanationOfBenefit.total.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.total.id\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.total.id\u0060"
             }
           ]
@@ -3372,7 +3353,7 @@
             {
               "code": "ExplanationOfBenefit.total.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ExplanationOfBenefit.total.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ExplanationOfBenefit.total.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -3389,7 +3370,7 @@
             {
               "code": "ExplanationOfBenefit.type",
               "display": "Category or discipline",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.type\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.type\u0060"
             }
           ]
@@ -3401,7 +3382,7 @@
             {
               "code": "ExplanationOfBenefit.use",
               "display": "claim | preauthorization | predetermination",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ExplanationOfBenefit.use\u0060 maps as Equivalent to R4 \u0060ExplanationOfBenefit.use\u0060 - use has compatible required binding for code type: http://hl7.org/fhir/ValueSet/claim-use|5.0.0 and http://hl7.org/fhir/ValueSet/claim-use|4.0.1 (Equivalent)"
             }
           ]

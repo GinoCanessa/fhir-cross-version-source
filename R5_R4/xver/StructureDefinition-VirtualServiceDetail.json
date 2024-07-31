@@ -490,20 +490,27 @@
       },
       {
         "path": "Extension.extension:channelType.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:channelType.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The purpose for which an extended contact detail should be used."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "VirtualServiceType"
+            }
+          ],
+          "strength": "example",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/virtual-service-type"
+        }
       },
       {
         "path": "Extension.extension:channelType.url",
@@ -519,44 +526,16 @@
       },
       {
         "path": "Extension.extension:address[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:address[x].extension:url",
-        "sliceName": "url",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:address[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "url"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:address[x].extension:ContactPoint",
-        "sliceName": "ContactPoint",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "string"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ContactPoint"
-            ]
+            "code": "ContactPoint"
           }
         ]
       },
@@ -587,18 +566,10 @@
       },
       {
         "path": "Extension.extension:additionalInfo.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:additionalInfo.extension:url",
-        "sliceName": "url",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
-            ]
+            "code": "url"
           }
         ]
       },
@@ -616,18 +587,10 @@
       },
       {
         "path": "Extension.extension:maxParticipants.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:maxParticipants.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -645,18 +608,10 @@
       },
       {
         "path": "Extension.extension:sessionKey.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sessionKey.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },

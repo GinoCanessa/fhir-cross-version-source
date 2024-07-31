@@ -28,95 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
       "element": [
         {
-          "code": "DeviceDefinition.conformsTo",
-          "target": [
-            {
-              "code": "DeviceDefinition.specialization",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.conformsTo.category",
-          "target": [
-            {
-              "code": "DeviceDefinition.specialization.category",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.conformsTo.source",
-          "target": [
-            {
-              "code": "DeviceDefinition.specialization.source",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.conformsTo.specification",
-          "target": [
-            {
-              "code": "DeviceDefinition.specialization.specification",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.conformsTo.version",
-          "target": [
-            {
-              "code": "DeviceDefinition.specialization.version",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.guideline.relatedArtifact",
-          "target": [
-            {
-              "code": "DeviceDefinition.guideline.onlineInformation",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.manufacturer",
-          "target": [
-            {
-              "code": "DeviceDefinition.manufacturer[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.property.value[x]",
-          "target": [
-            {
-              "code": "DeviceDefinition.property.valueCode",
-              "relationship": "source-is-broader-than-target",
-              "comment": "re-org"
-            }
-          ]
-        },
-        {
-          "code": "DeviceDefinition.property.value[x]",
-          "target": [
-            {
-              "code": "DeviceDefinition.property.valueQuantity",
-              "relationship": "source-is-broader-than-target",
-              "comment": "re-org"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-      "target": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-      "element": [
-        {
           "code": "DeviceDefinition",
           "display": "An instance of a medical-related component of a medical device",
           "target": [
@@ -200,13 +111,24 @@
         },
         {
           "code": "DeviceDefinition.conformsTo",
-          "display": "Identifies the standards, specifications, or formal guidances for the capabilities supported by the device",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceDefinition.specialization",
+              "display": "The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DeviceDefinition.conformsTo\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.specialization\u0060"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.conformsTo.category",
-          "display": "Describes the common type of the standard, specification, or formal guidance",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "DeviceDefinition.specialization.category",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.conformsTo.extension",
@@ -225,18 +147,34 @@
         },
         {
           "code": "DeviceDefinition.conformsTo.source",
-          "display": "Standard, regulation, certification, or guidance website, document, or other publication, or similar, supporting the conformance",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "DeviceDefinition.specialization.source",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.conformsTo.specification",
-          "display": "Identifies the standard, specification, or formal guidance that the device adheres to the Device Specification type",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "DeviceDefinition.specialization.specification",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.conformsTo.version",
-          "display": "The specific form or variant of the standard, specification or formal guidance",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceDefinition.specialization.version",
+              "display": "The version of the standard that is used to operate and communicate",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DeviceDefinition.conformsTo.version\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.specialization.version\u0060 - version changed from array to scalar (max cardinality from * to 1)"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.contact",
@@ -245,7 +183,7 @@
             {
               "code": "DeviceDefinition.contact",
               "display": "Details for human/organization for support",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.contact\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.contact\u0060"
             }
           ]
@@ -257,7 +195,7 @@
             {
               "code": "DeviceDefinition.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.contained\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.contained\u0060"
             }
           ]
@@ -309,7 +247,7 @@
             {
               "code": "DeviceDefinition.deviceName",
               "display": "A name given to the device to identify it",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.deviceName\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.deviceName\u0060"
             }
           ]
@@ -321,7 +259,7 @@
             {
               "code": "DeviceDefinition.deviceName.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.deviceName.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.deviceName.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -333,7 +271,7 @@
             {
               "code": "DeviceDefinition.deviceName.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.deviceName.id\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.deviceName.id\u0060"
             }
           ]
@@ -345,7 +283,7 @@
             {
               "code": "DeviceDefinition.deviceName.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.deviceName.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.deviceName.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -357,7 +295,7 @@
             {
               "code": "DeviceDefinition.deviceName.name",
               "display": "The name of the device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.deviceName.name\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.deviceName.name\u0060"
             }
           ]
@@ -369,7 +307,7 @@
             {
               "code": "DeviceDefinition.deviceName.type",
               "display": "udi-label-name | user-friendly-name | patient-reported-name | manufacturer-name | model-name | other",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.deviceName.type\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.deviceName.type\u0060 - type has compatible required binding for code type: http://hl7.org/fhir/ValueSet/device-nametype|5.0.0 and http://hl7.org/fhir/ValueSet/device-nametype|4.0.1 (Equivalent)"
             }
           ]
@@ -381,7 +319,7 @@
             {
               "code": "DeviceDefinition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -423,8 +361,13 @@
         },
         {
           "code": "DeviceDefinition.guideline.relatedArtifact",
-          "display": "A source of information or reference for this guideline",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "DeviceDefinition.guideline.onlineInformation",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.guideline.usageInstruction",
@@ -490,7 +433,7 @@
             {
               "code": "DeviceDefinition.identifier",
               "display": "Instance identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.identifier\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.identifier\u0060"
             }
           ]
@@ -514,8 +457,8 @@
             {
               "code": "DeviceDefinition.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DeviceDefinition.language\u0060 maps as RelatedTo to R4 \u0060DeviceDefinition.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DeviceDefinition.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DeviceDefinition.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -526,7 +469,7 @@
             {
               "code": "DeviceDefinition.languageCode",
               "display": "Language code for the human-readable text strings produced by the device (all supported)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.languageCode\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.languageCode\u0060"
             }
           ]
@@ -563,8 +506,14 @@
         },
         {
           "code": "DeviceDefinition.manufacturer",
-          "display": "Name of device manufacturer",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceDefinition.manufacturer[x]",
+              "display": "Name of device manufacturer",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DeviceDefinition.manufacturer\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.manufacturer[x]\u0060"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.material",
@@ -573,7 +522,7 @@
             {
               "code": "DeviceDefinition.material",
               "display": "A substance used to create the material(s) of which the device is made",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.material\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.material\u0060"
             }
           ]
@@ -585,7 +534,7 @@
             {
               "code": "DeviceDefinition.material.allergenicIndicator",
               "display": "Whether the substance is a known or suspected allergen",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.material.allergenicIndicator\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.material.allergenicIndicator\u0060"
             }
           ]
@@ -597,7 +546,7 @@
             {
               "code": "DeviceDefinition.material.alternate",
               "display": "Indicates an alternative material of the device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.material.alternate\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.material.alternate\u0060"
             }
           ]
@@ -609,7 +558,7 @@
             {
               "code": "DeviceDefinition.material.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.material.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.material.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -621,7 +570,7 @@
             {
               "code": "DeviceDefinition.material.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.material.id\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.material.id\u0060"
             }
           ]
@@ -633,7 +582,7 @@
             {
               "code": "DeviceDefinition.material.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.material.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.material.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -645,7 +594,7 @@
             {
               "code": "DeviceDefinition.material.substance",
               "display": "The substance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.material.substance\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.material.substance\u0060"
             }
           ]
@@ -669,7 +618,7 @@
             {
               "code": "DeviceDefinition.modelNumber",
               "display": "The model number for the device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.modelNumber\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.modelNumber\u0060"
             }
           ]
@@ -681,7 +630,7 @@
             {
               "code": "DeviceDefinition.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -693,7 +642,7 @@
             {
               "code": "DeviceDefinition.note",
               "display": "Device notes and comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -705,7 +654,7 @@
             {
               "code": "DeviceDefinition.owner",
               "display": "Organization responsible for device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.owner\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.owner\u0060"
             }
           ]
@@ -802,7 +751,7 @@
             {
               "code": "DeviceDefinition.property",
               "display": "The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.property\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.property\u0060"
             }
           ]
@@ -814,7 +763,7 @@
             {
               "code": "DeviceDefinition.property.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.property.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.property.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -826,7 +775,7 @@
             {
               "code": "DeviceDefinition.property.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.property.id\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.property.id\u0060"
             }
           ]
@@ -838,7 +787,7 @@
             {
               "code": "DeviceDefinition.property.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.property.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.property.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -850,15 +799,33 @@
             {
               "code": "DeviceDefinition.property.type",
               "display": "Code that specifies the property DeviceDefinitionPropetyCode (Extensible)",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DeviceDefinition.property.type\u0060 maps as RelatedTo to R4 \u0060DeviceDefinition.property.type\u0060 - type removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-property-type"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DeviceDefinition.property.type\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DeviceDefinition.property.type\u0060 - type removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-property-type; type has change due to type change: R5 \u0060type\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060type\u0060"
             }
           ]
         },
         {
           "code": "DeviceDefinition.property.value[x]",
-          "display": "Value of the property",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceDefinition.property.valueCode",
+              "display": "Property value as a code, e.g., NTP4 (synced to NTP)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060DeviceDefinition.property.value[x]\u0060 maps as RelatedTo to R4 \u0060DeviceDefinition.property.valueCode\u0060 - valueCode changed from scalar to array (max cardinality from 1 to *); valueCode has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueCode"
+            },
+            {
+              "code": "DeviceDefinition.property.valueCode",
+              "display": "Property value as a code, e.g., NTP4 (synced to NTP)",
+              "relationship": "related-to",
+              "comment": "R5 \u0060DeviceDefinition.property.value[x]\u0060 maps as RelatedTo to R4 \u0060DeviceDefinition.property.valueCode\u0060 - valueCode changed from scalar to array (max cardinality from 1 to *); valueCode has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueCode"
+            },
+            {
+              "code": "DeviceDefinition.property.valueQuantity",
+              "display": "Property value as a quantity",
+              "relationship": "related-to",
+              "comment": "R5 \u0060DeviceDefinition.property.value[x]\u0060 maps as RelatedTo to R4 \u0060DeviceDefinition.property.valueQuantity\u0060 - valueQuantity changed from scalar to array (max cardinality from 1 to *); valueQuantity has change due to type change: R5 value[x] CodeableConcept has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueQuantity"
+            }
+          ]
         },
         {
           "code": "DeviceDefinition.regulatoryIdentifier",
@@ -907,7 +874,7 @@
             {
               "code": "DeviceDefinition.safety",
               "display": "Safety characteristics of the device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.safety\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.safety\u0060"
             }
           ]
@@ -931,7 +898,7 @@
             {
               "code": "DeviceDefinition.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.text\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.text\u0060"
             }
           ]
@@ -943,7 +910,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier",
               "display": "Unique Device Identifier (UDI) Barcode string",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.udiDeviceIdentifier\u0060"
             }
           ]
@@ -955,7 +922,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.deviceIdentifier",
               "display": "The identifier that is to be associated with every Device that references this DeviceDefintiion for the issuer and jurisdication porvided in the DeviceDefinition.udiDeviceIdentifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.deviceIdentifier\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.udiDeviceIdentifier.deviceIdentifier\u0060"
             }
           ]
@@ -967,7 +934,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.udiDeviceIdentifier.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -979,7 +946,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.id\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.udiDeviceIdentifier.id\u0060"
             }
           ]
@@ -991,7 +958,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.issuer",
               "display": "The organization that assigns the identifier algorithm",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.issuer\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.udiDeviceIdentifier.issuer\u0060"
             }
           ]
@@ -1003,7 +970,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.jurisdiction",
               "display": "The jurisdiction to which the deviceIdentifier applies",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.jurisdiction\u0060 maps as Equivalent to R4 \u0060DeviceDefinition.udiDeviceIdentifier.jurisdiction\u0060"
             }
           ]
@@ -1045,7 +1012,7 @@
             {
               "code": "DeviceDefinition.udiDeviceIdentifier.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.udiDeviceIdentifier.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.udiDeviceIdentifier.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1057,7 +1024,7 @@
             {
               "code": "DeviceDefinition.version",
               "display": "Available versions",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceDefinition.version\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceDefinition.version\u0060 - version has change due to type change: R5 version BackboneElement has no equivalent or mapped type in R4 version"
             }
           ]

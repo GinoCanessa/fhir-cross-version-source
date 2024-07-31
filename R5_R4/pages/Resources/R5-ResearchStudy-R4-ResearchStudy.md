@@ -13,14 +13,16 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 59 |
-Equivalent | 4 |
-RelatedTo | 26 |
+DoesNotExistInTarget | 51 |
+Equivalent | 23 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 3 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
-| ResearchStudy | ResearchStudy | Equivalent | R5 `ResearchStudy` maps as Equivalent to R4 `ResearchStudy` |
+| ResearchStudy | ResearchStudy | SourceIsNarrowerThanTarget | R5 `ResearchStudy` is narrower than R4 `ResearchStudy` and is compatible. `ResearchStudy` is mapped from `ResearchStudy` and `ResearchStudy.recruitment`. |
 | ResearchStudy.associatedParty | - | DoesNotExistInTarget | R5 `ResearchStudy.associatedParty` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.associatedParty.classifier | - | DoesNotExistInTarget | R5 `ResearchStudy.associatedParty.classifier` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.associatedParty.extension | - | DoesNotExistInTarget | R5 `ResearchStudy.associatedParty.extension` does not appear in the target and has no mapping for `ResearchStudy`. |
@@ -31,16 +33,16 @@ RelatedTo | 26 |
 | ResearchStudy.associatedParty.period | - | DoesNotExistInTarget | R5 `ResearchStudy.associatedParty.period` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.associatedParty.role | - | DoesNotExistInTarget | R5 `ResearchStudy.associatedParty.role` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.classifier | - | DoesNotExistInTarget | R5 `ResearchStudy.classifier` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.comparisonGroup | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.comparisonGroup.description | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.description` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.comparisonGroup | ResearchStudy.arm | Equivalent | R5 `ResearchStudy.comparisonGroup` maps as Equivalent to R4 `ResearchStudy.arm` |
+| ResearchStudy.comparisonGroup.description | ResearchStudy.arm.description | SourceIsBroaderThanTarget | R5 `ResearchStudy.comparisonGroup.description` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.arm.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | ResearchStudy.comparisonGroup.extension | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.extension` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.comparisonGroup.id | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.id` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.comparisonGroup.intendedExposure | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.intendedExposure` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.comparisonGroup.linkId | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.linkId` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.comparisonGroup.modifierExtension | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.modifierExtension` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.comparisonGroup.name | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.name` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.comparisonGroup.name | ResearchStudy.arm.name | Equivalent | R5 `ResearchStudy.comparisonGroup.name` maps as Equivalent to R4 `ResearchStudy.arm.name` |
 | ResearchStudy.comparisonGroup.observedGroup | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.observedGroup` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.comparisonGroup.type | - | DoesNotExistInTarget | R5 `ResearchStudy.comparisonGroup.type` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.comparisonGroup.type | ResearchStudy.arm.type | SourceIsNarrowerThanTarget | R5 `ResearchStudy.comparisonGroup.type` maps as SourceIsNarrowerThanTarget to R4 `ResearchStudy.arm.type` - type removed a binding requirement - Extensible http://hl7.org/fhir/ValueSet/research-study-arm-type; type has change due to type change: R5 `type` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `type` |
 | ResearchStudy.condition | ResearchStudy.condition | Equivalent | R5 `ResearchStudy.condition` maps as Equivalent to R4 `ResearchStudy.condition` |
 | ResearchStudy.contained | ResearchStudy.contained | Equivalent | R5 `ResearchStudy.contained` maps as Equivalent to R4 `ResearchStudy.contained` |
 | ResearchStudy.date | - | DoesNotExistInTarget | R5 `ResearchStudy.date` does not appear in the target and has no mapping for `ResearchStudy`. |
@@ -58,7 +60,7 @@ RelatedTo | 26 |
 | ResearchStudy.label.modifierExtension | - | DoesNotExistInTarget | R5 `ResearchStudy.label.modifierExtension` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.label.type | - | DoesNotExistInTarget | R5 `ResearchStudy.label.type` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.label.value | - | DoesNotExistInTarget | R5 `ResearchStudy.label.value` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.language | ResearchStudy.language | RelatedTo | R5 `ResearchStudy.language` maps as RelatedTo to R4 `ResearchStudy.language` - language changed the binding strength from Required to Preferred |
+| ResearchStudy.language | ResearchStudy.language | SourceIsNarrowerThanTarget | R5 `ResearchStudy.language` maps as SourceIsNarrowerThanTarget to R4 `ResearchStudy.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ResearchStudy.meta | ResearchStudy.meta | Equivalent | R5 `ResearchStudy.meta` maps as Equivalent to R4 `ResearchStudy.meta` |
 | ResearchStudy.modifierExtension | ResearchStudy.modifierExtension | SourceIsBroaderThanTarget | R5 `ResearchStudy.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ResearchStudy.name | - | DoesNotExistInTarget | R5 `ResearchStudy.name` does not appear in the target and has no mapping for `ResearchStudy`. |
@@ -81,7 +83,7 @@ RelatedTo | 26 |
 | ResearchStudy.partOf | ResearchStudy.partOf | Equivalent | R5 `ResearchStudy.partOf` maps as Equivalent to R4 `ResearchStudy.partOf` |
 | ResearchStudy.period | ResearchStudy.period | Equivalent | R5 `ResearchStudy.period` maps as Equivalent to R4 `ResearchStudy.period` |
 | ResearchStudy.phase | ResearchStudy.phase | Equivalent | R5 `ResearchStudy.phase` maps as Equivalent to R4 `ResearchStudy.phase` |
-| ResearchStudy.primaryPurposeType | ResearchStudy.primaryPurposeType | RelatedTo | R5 `ResearchStudy.primaryPurposeType` maps as RelatedTo to R4 `ResearchStudy.primaryPurposeType` - primaryPurposeType changed the binding strength from Preferred to Extensible |
+| ResearchStudy.primaryPurposeType | ResearchStudy.primaryPurposeType | SourceIsBroaderThanTarget | R5 `ResearchStudy.primaryPurposeType` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.primaryPurposeType` - primaryPurposeType changed the binding strength from Preferred to Extensible; primaryPurposeType has change due to type change: R5 `primaryPurposeType` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `primaryPurposeType` |
 | ResearchStudy.progressStatus | - | DoesNotExistInTarget | R5 `ResearchStudy.progressStatus` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.progressStatus.actual | - | DoesNotExistInTarget | R5 `ResearchStudy.progressStatus.actual` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.progressStatus.extension | - | DoesNotExistInTarget | R5 `ResearchStudy.progressStatus.extension` does not appear in the target and has no mapping for `ResearchStudy`. |
@@ -90,16 +92,16 @@ RelatedTo | 26 |
 | ResearchStudy.progressStatus.period | - | DoesNotExistInTarget | R5 `ResearchStudy.progressStatus.period` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.progressStatus.state | - | DoesNotExistInTarget | R5 `ResearchStudy.progressStatus.state` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.protocol | ResearchStudy.protocol | Equivalent | R5 `ResearchStudy.protocol` maps as Equivalent to R4 `ResearchStudy.protocol` |
-| ResearchStudy.recruitment | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.recruitment | ResearchStudy | RelatedTo | R5 `ResearchStudy.recruitment` maps as RelatedTo to R4 `ResearchStudy` - ResearchStudy changed from scalar to array (max cardinality from 1 to *); ResearchStudy has change due to type change: R5 recruitment BackboneElement has no equivalent or mapped type in R4 ResearchStudy |
 | ResearchStudy.recruitment.actualGroup | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.actualGroup` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.recruitment.actualNumber | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.actualNumber` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.recruitment.eligibility | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.eligibility` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.recruitment.eligibility | ResearchStudy.enrollment | RelatedTo | R5 `ResearchStudy.recruitment.eligibility` maps as RelatedTo to R4 `ResearchStudy.enrollment` - enrollment changed from scalar to array (max cardinality from 1 to *); enrollment has change due to type change: R5 `eligibility` `Reference` maps as SourceIsBroaderThanTarget for R4 `enrollment` |
 | ResearchStudy.recruitment.extension | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.extension` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.recruitment.id | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.id` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.recruitment.modifierExtension | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.modifierExtension` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.recruitment.targetNumber | - | DoesNotExistInTarget | R5 `ResearchStudy.recruitment.targetNumber` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.region | - | DoesNotExistInTarget | R5 `ResearchStudy.region` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.relatedArtifact | ResearchStudy.relatedArtifact | Equivalent | R5 `ResearchStudy.relatedArtifact` maps as Equivalent to R4 `ResearchStudy.relatedArtifact` |
+| ResearchStudy.region | ResearchStudy.location | Equivalent | R5 `ResearchStudy.region` maps as Equivalent to R4 `ResearchStudy.location` |
+| ResearchStudy.relatedArtifact | ResearchStudy.relatedArtifact | SourceIsBroaderThanTarget | R5 `ResearchStudy.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | ResearchStudy.result | - | DoesNotExistInTarget | R5 `ResearchStudy.result` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.site | ResearchStudy.site | SourceIsBroaderThanTarget | R5 `ResearchStudy.site` maps as SourceIsBroaderThanTarget to R4 `ResearchStudy.site` - site has change due to type change: R5 `site` `Reference` maps as SourceIsBroaderThanTarget for R4 `site` |
 | ResearchStudy.status | ResearchStudy.status | Equivalent | R5 `ResearchStudy.status` maps as Equivalent to R4 `ResearchStudy.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/research-study-status|4.0.1 (Equivalent) |
@@ -108,5 +110,5 @@ RelatedTo | 26 |
 | ResearchStudy.title | ResearchStudy.title | Equivalent | R5 `ResearchStudy.title` maps as Equivalent to R4 `ResearchStudy.title` |
 | ResearchStudy.url | - | DoesNotExistInTarget | R5 `ResearchStudy.url` does not appear in the target and has no mapping for `ResearchStudy`. |
 | ResearchStudy.version | - | DoesNotExistInTarget | R5 `ResearchStudy.version` does not appear in the target and has no mapping for `ResearchStudy`. |
-| ResearchStudy.whyStopped | - | DoesNotExistInTarget | R5 `ResearchStudy.whyStopped` does not appear in the target and has no mapping for `ResearchStudy`. |
+| ResearchStudy.whyStopped | ResearchStudy.reasonStopped | Equivalent | R5 `ResearchStudy.whyStopped` maps as Equivalent to R4 `ResearchStudy.reasonStopped` |
 

@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:Account.relatedAccount compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Account.relatedAccount` does not appear in the target and has no mapping for `Account`.",
+  "description": "R5 `Account.relatedAccount` maps as RelatedTo to R4 `Account` - Account has change due to type change: R5 relatedAccount BackboneElement has no equivalent or mapped type in R4 Account",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -35,7 +35,7 @@
         ],
         "path": "Extension",
         "short": "Other associated accounts related to this account",
-        "definition": "R5 `Account.relatedAccount` does not appear in the target and has no mapping for `Account`.",
+        "definition": "R5 `Account.relatedAccount` maps as RelatedTo to R4 `Account` - Account has change due to type change: R5 relatedAccount BackboneElement has no equivalent or mapped type in R4 Account",
         "min": 0,
         "max": "*",
         "base": {
@@ -429,7 +429,7 @@
       {
         "path": "Extension",
         "short": "Other associated accounts related to this account",
-        "definition": "R5 `Account.relatedAccount` does not appear in the target and has no mapping for `Account`.",
+        "definition": "R5 `Account.relatedAccount` maps as RelatedTo to R4 `Account` - Account has change due to type change: R5 relatedAccount BackboneElement has no equivalent or mapped type in R4 Account",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -443,20 +443,23 @@
       },
       {
         "path": "Extension.extension:relationship.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:relationship.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AccountRelationship"
+            }
+          ],
+          "strength": "example",
+          "description": "Indicates the relationship between the accounts",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-relationship"
+        }
       },
       {
         "path": "Extension.extension:relationship.url",
@@ -472,19 +475,6 @@
       {
         "path": "Extension.extension:account.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:account.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:account.url",

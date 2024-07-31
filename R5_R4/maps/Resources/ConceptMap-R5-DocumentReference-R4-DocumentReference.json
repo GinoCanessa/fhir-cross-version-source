@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
       "element": [
         {
-          "code": "DocumentReference.event.concept",
-          "target": [
-            {
-              "code": "DocumentReference.context.event",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DocumentReference.facilityType",
-          "target": [
-            {
-              "code": "DocumentReference.context.facilityType",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DocumentReference.period",
-          "target": [
-            {
-              "code": "DocumentReference.context.period",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DocumentReference.practiceSetting",
-          "target": [
-            {
-              "code": "DocumentReference.context.practiceSetting",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-      "target": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
-      "element": [
-        {
           "code": "DocumentReference",
           "display": "A reference to a document",
           "target": [
@@ -123,7 +81,7 @@
             {
               "code": "DocumentReference.author",
               "display": "Who and/or what authored the document",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.author\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.author\u0060 - author has change due to type change: R5 \u0060author\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060author\u0060"
             }
           ]
@@ -145,7 +103,7 @@
             {
               "code": "DocumentReference.category",
               "display": "Categorization of document",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.category\u0060 maps as Equivalent to R4 \u0060DocumentReference.category\u0060"
             }
           ]
@@ -157,7 +115,7 @@
             {
               "code": "DocumentReference.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.contained\u0060 maps as Equivalent to R4 \u0060DocumentReference.contained\u0060"
             }
           ]
@@ -169,7 +127,7 @@
             {
               "code": "DocumentReference.content",
               "display": "Document referenced",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.content\u0060 maps as Equivalent to R4 \u0060DocumentReference.content\u0060"
             }
           ]
@@ -193,7 +151,7 @@
             {
               "code": "DocumentReference.content.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.content.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.content.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -205,7 +163,7 @@
             {
               "code": "DocumentReference.content.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.content.id\u0060 maps as Equivalent to R4 \u0060DocumentReference.content.id\u0060"
             }
           ]
@@ -217,7 +175,7 @@
             {
               "code": "DocumentReference.content.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.content.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.content.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -254,8 +212,8 @@
             {
               "code": "DocumentReference.context",
               "display": "Clinical context of document",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DocumentReference.context\u0060 maps as RelatedTo to R4 \u0060DocumentReference.context\u0060 - context changed from array to scalar (max cardinality from * to 1); context has change due to type change: R5 context Reference has no equivalent or mapped type in R4 context"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DocumentReference.context\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.context\u0060 - context changed from array to scalar (max cardinality from * to 1); context has change due to type change: R5 context Reference has no equivalent or mapped type in R4 context"
             }
           ]
         },
@@ -266,7 +224,7 @@
             {
               "code": "DocumentReference.custodian",
               "display": "Organization which maintains the document",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.custodian\u0060 maps as Equivalent to R4 \u0060DocumentReference.custodian\u0060"
             }
           ]
@@ -278,7 +236,7 @@
             {
               "code": "DocumentReference.date",
               "display": "When this document reference was created",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.date\u0060 maps as Equivalent to R4 \u0060DocumentReference.date\u0060"
             }
           ]
@@ -290,7 +248,7 @@
             {
               "code": "DocumentReference.description",
               "display": "Human-readable description",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
@@ -303,7 +261,7 @@
               "code": "DocumentReference.docStatus",
               "display": "preliminary | final | amended | entered-in-error",
               "relationship": "related-to",
-              "comment": "R5 \u0060DocumentReference.docStatus\u0060 maps as RelatedTo to R4 \u0060DocumentReference.docStatus\u0060 - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1"
+              "comment": "R5 \u0060DocumentReference.docStatus\u0060 maps as RelatedTo to R4 \u0060DocumentReference.docStatus\u0060 - docStatus has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; docStatus has change due to type change: R5 \u0060docStatus\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060docStatus\u0060"
             }
           ]
         },
@@ -313,21 +271,36 @@
           "noMap": true
         },
         {
+          "code": "DocumentReference.event.concept",
+          "target": [
+            {
+              "code": "DocumentReference.context.event",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "DocumentReference.extension",
           "display": "Additional content defined by implementations",
           "target": [
             {
               "code": "DocumentReference.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
         },
         {
           "code": "DocumentReference.facilityType",
-          "display": "Kind of facility where patient was seen",
-          "noMap": true
+          "target": [
+            {
+              "code": "DocumentReference.context.facilityType",
+              "display": "Kind of facility where patient was seen",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DocumentReference.facilityType\u0060 maps as Equivalent to R4 \u0060DocumentReference.context.facilityType\u0060"
+            }
+          ]
         },
         {
           "code": "DocumentReference.id",
@@ -348,7 +321,7 @@
             {
               "code": "DocumentReference.identifier",
               "display": "Other identifiers for the document",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.identifier\u0060 maps as Equivalent to R4 \u0060DocumentReference.identifier\u0060"
             }
           ]
@@ -372,8 +345,8 @@
             {
               "code": "DocumentReference.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DocumentReference.language\u0060 maps as RelatedTo to R4 \u0060DocumentReference.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DocumentReference.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DocumentReference.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -401,20 +374,32 @@
             {
               "code": "DocumentReference.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "DocumentReference.period",
-          "display": "Time of service that is being documented",
-          "noMap": true
+          "target": [
+            {
+              "code": "DocumentReference.context.period",
+              "display": "Time of service that is being documented",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DocumentReference.period\u0060 maps as Equivalent to R4 \u0060DocumentReference.context.period\u0060"
+            }
+          ]
         },
         {
           "code": "DocumentReference.practiceSetting",
-          "display": "Additional details about where the content was created (e.g. clinical specialty)",
-          "noMap": true
+          "target": [
+            {
+              "code": "DocumentReference.context.practiceSetting",
+              "display": "Additional details about where the content was created (e.g. clinical specialty)",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060DocumentReference.practiceSetting\u0060 maps as Equivalent to R4 \u0060DocumentReference.context.practiceSetting\u0060"
+            }
+          ]
         },
         {
           "code": "DocumentReference.relatesTo",
@@ -423,7 +408,7 @@
             {
               "code": "DocumentReference.relatesTo",
               "display": "Relationships to other documents",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.relatesTo\u0060 maps as Equivalent to R4 \u0060DocumentReference.relatesTo\u0060"
             }
           ]
@@ -447,7 +432,7 @@
             {
               "code": "DocumentReference.relatesTo.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.relatesTo.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.relatesTo.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -459,7 +444,7 @@
             {
               "code": "DocumentReference.relatesTo.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.relatesTo.id\u0060 maps as Equivalent to R4 \u0060DocumentReference.relatesTo.id\u0060"
             }
           ]
@@ -471,7 +456,7 @@
             {
               "code": "DocumentReference.relatesTo.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DocumentReference.relatesTo.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.relatesTo.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -483,7 +468,7 @@
             {
               "code": "DocumentReference.relatesTo.target",
               "display": "Target of the relationship",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.relatesTo.target\u0060 maps as Equivalent to R4 \u0060DocumentReference.relatesTo.target\u0060"
             }
           ]
@@ -495,8 +480,8 @@
             {
               "code": "DocumentReference.securityLabel",
               "display": "Document security-tags",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DocumentReference.securityLabel\u0060 maps as RelatedTo to R4 \u0060DocumentReference.securityLabel\u0060 - securityLabel changed the binding strength from Example to Extensible"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DocumentReference.securityLabel\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DocumentReference.securityLabel\u0060 - securityLabel changed the binding strength from Example to Extensible; securityLabel has change due to type change: R5 \u0060securityLabel\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060securityLabel\u0060"
             }
           ]
         },
@@ -507,7 +492,7 @@
             {
               "code": "DocumentReference.status",
               "display": "current | superseded | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.status\u0060 maps as Equivalent to R4 \u0060DocumentReference.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/document-reference-status|5.0.0 and http://hl7.org/fhir/ValueSet/document-reference-status|4.0.1 (Equivalent)"
             }
           ]
@@ -531,7 +516,7 @@
             {
               "code": "DocumentReference.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.text\u0060 maps as Equivalent to R4 \u0060DocumentReference.text\u0060"
             }
           ]
@@ -543,7 +528,7 @@
             {
               "code": "DocumentReference.type",
               "display": "Kind of document (LOINC if possible)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DocumentReference.type\u0060 maps as Equivalent to R4 \u0060DocumentReference.type\u0060"
             }
           ]

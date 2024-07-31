@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:Practitioner.communication compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Practitioner.communication` maps as RelatedTo to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication",
+  "description": "R5 `Practitioner.communication` maps as SourceIsBroaderThanTarget to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "A language which may be used to communicate with the practitioner",
         "definition": "A language which may be used to communicate with the practitioner, often for correspondence/administrative purposes.\r\rThe `PractitionerRole.communication` property should be used for publishing the languages that a practitioner is able to communicate with patients (on a per Organization/Role basis).",
-        "comment": "R5 `Practitioner.communication` maps as RelatedTo to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication\nIf no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Practitioner.Communication associations.\r\rFor animals, language is not a relevant field, and should be absent from the instance.",
+        "comment": "R5 `Practitioner.communication` maps as SourceIsBroaderThanTarget to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication\nIf no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Practitioner.Communication associations.\r\rFor animals, language is not a relevant field, and should be absent from the instance.",
         "min": 0,
         "max": "*",
         "base": {
@@ -435,7 +435,7 @@
         "path": "Extension",
         "short": "A language which may be used to communicate with the practitioner",
         "definition": "A language which may be used to communicate with the practitioner, often for correspondence/administrative purposes.\r\rThe `PractitionerRole.communication` property should be used for publishing the languages that a practitioner is able to communicate with patients (on a per Organization/Role basis).",
-        "comment": "R5 `Practitioner.communication` maps as RelatedTo to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication\nIf no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Practitioner.Communication associations.\r\rFor animals, language is not a relevant field, and should be absent from the instance.",
+        "comment": "R5 `Practitioner.communication` maps as SourceIsBroaderThanTarget to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication\nIf no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Practitioner.Communication associations.\r\rFor animals, language is not a relevant field, and should be absent from the instance.",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -451,20 +451,33 @@
       },
       {
         "path": "Extension.extension:language.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:language.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "IETF language tag for a human language",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|5.0.0",
+          "additional": [
+            {
+              "purpose": "starter",
+              "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+            }
+          ]
+        }
       },
       {
         "path": "Extension.extension:language.url",
@@ -481,18 +494,10 @@
       },
       {
         "path": "Extension.extension:preferred.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:preferred.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },

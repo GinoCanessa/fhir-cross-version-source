@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 35 |
+Equivalent | 31 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -28,7 +29,7 @@ RelatedTo | 35 |
 | VisionPrescription.id | VisionPrescription.id | Equivalent | R5 `VisionPrescription.id` maps as Equivalent to R4 `VisionPrescription.id` |
 | VisionPrescription.identifier | VisionPrescription.identifier | Equivalent | R5 `VisionPrescription.identifier` maps as Equivalent to R4 `VisionPrescription.identifier` |
 | VisionPrescription.implicitRules | VisionPrescription.implicitRules | Equivalent | R5 `VisionPrescription.implicitRules` maps as Equivalent to R4 `VisionPrescription.implicitRules` |
-| VisionPrescription.language | VisionPrescription.language | RelatedTo | R5 `VisionPrescription.language` maps as RelatedTo to R4 `VisionPrescription.language` - language changed the binding strength from Required to Preferred |
+| VisionPrescription.language | VisionPrescription.language | SourceIsNarrowerThanTarget | R5 `VisionPrescription.language` maps as SourceIsNarrowerThanTarget to R4 `VisionPrescription.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | VisionPrescription.lensSpecification | VisionPrescription.lensSpecification | Equivalent | R5 `VisionPrescription.lensSpecification` maps as Equivalent to R4 `VisionPrescription.lensSpecification` |
 | VisionPrescription.lensSpecification.add | VisionPrescription.lensSpecification.add | Equivalent | R5 `VisionPrescription.lensSpecification.add` maps as Equivalent to R4 `VisionPrescription.lensSpecification.add` |
 | VisionPrescription.lensSpecification.axis | VisionPrescription.lensSpecification.axis | Equivalent | R5 `VisionPrescription.lensSpecification.axis` maps as Equivalent to R4 `VisionPrescription.lensSpecification.axis` |

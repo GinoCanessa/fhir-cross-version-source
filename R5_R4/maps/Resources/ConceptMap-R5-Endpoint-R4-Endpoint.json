@@ -28,65 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Endpoint",
       "element": [
         {
-          "code": "Endpoint.payload",
-          "target": [
-            {
-              "code": "Endpoint",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "Endpoint.payload.mimeType",
-          "target": [
-            {
-              "code": "Endpoint.payload.payloadMimeType",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Endpoint.payload.mimeType",
-          "target": [
-            {
-              "code": "Endpoint.payloadMimeType",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Endpoint.payload.type",
-          "target": [
-            {
-              "code": "Endpoint.payload.payloadType",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Endpoint.payload.type",
-          "target": [
-            {
-              "code": "Endpoint.payloadType",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Endpoint",
-      "target": "http://hl7.org/fhir/StructureDefinition/Endpoint",
-      "element": [
-        {
           "code": "Endpoint",
           "display": "The technical details of an endpoint that can be used for electronic services",
           "target": [
             {
               "code": "Endpoint",
               "display": "The technical details of an endpoint that can be used for electronic services",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060Endpoint\u0060 maps as Equivalent to R4 \u0060Endpoint\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Endpoint\u0060 is narrower than R4 \u0060Endpoint\u0060 and is compatible. \u0060Endpoint\u0060 is mapped from \u0060Endpoint\u0060 and \u0060Endpoint.payload\u0060."
             }
           ]
         },
@@ -97,7 +46,7 @@
             {
               "code": "Endpoint.address",
               "display": "The technical base address for connecting to this endpoint",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.address\u0060 maps as Equivalent to R4 \u0060Endpoint.address\u0060"
             }
           ]
@@ -109,8 +58,8 @@
             {
               "code": "Endpoint.connectionType",
               "display": "Protocol/Profile/Standard to be used with this endpoint connection",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Endpoint.connectionType\u0060 maps as RelatedTo to R4 \u0060Endpoint.connectionType\u0060 - connectionType changed from array to scalar (max cardinality from * to 1); connectionType changed the binding strength from Example to Extensible; connectionType has change due to type change: R5 connectionType CodeableConcept has no equivalent or mapped type in R4 connectionType"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Endpoint.connectionType\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Endpoint.connectionType\u0060 - connectionType changed from array to scalar (max cardinality from * to 1); connectionType changed the binding strength from Example to Extensible; connectionType has change due to type change: R5 connectionType CodeableConcept has no equivalent or mapped type in R4 connectionType"
             }
           ]
         },
@@ -121,7 +70,7 @@
             {
               "code": "Endpoint.contact",
               "display": "Contact details for source (e.g. troubleshooting)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.contact\u0060 maps as Equivalent to R4 \u0060Endpoint.contact\u0060"
             }
           ]
@@ -133,7 +82,7 @@
             {
               "code": "Endpoint.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.contained\u0060 maps as Equivalent to R4 \u0060Endpoint.contained\u0060"
             }
           ]
@@ -155,7 +104,7 @@
             {
               "code": "Endpoint.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Endpoint.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Endpoint.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -167,7 +116,7 @@
             {
               "code": "Endpoint.header",
               "display": "Usage depends on the channel type",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.header\u0060 maps as Equivalent to R4 \u0060Endpoint.header\u0060"
             }
           ]
@@ -191,7 +140,7 @@
             {
               "code": "Endpoint.identifier",
               "display": "Identifies this endpoint across multiple systems",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.identifier\u0060 maps as Equivalent to R4 \u0060Endpoint.identifier\u0060"
             }
           ]
@@ -215,8 +164,8 @@
             {
               "code": "Endpoint.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Endpoint.language\u0060 maps as RelatedTo to R4 \u0060Endpoint.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Endpoint.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Endpoint.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -227,7 +176,7 @@
             {
               "code": "Endpoint.managingOrganization",
               "display": "Organization that manages this endpoint (might not be the organization that exposes the endpoint)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.managingOrganization\u0060 maps as Equivalent to R4 \u0060Endpoint.managingOrganization\u0060"
             }
           ]
@@ -251,7 +200,7 @@
             {
               "code": "Endpoint.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Endpoint.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Endpoint.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -263,15 +212,21 @@
             {
               "code": "Endpoint.name",
               "display": "A name that this endpoint can be identified by",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.name\u0060 maps as Equivalent to R4 \u0060Endpoint.name\u0060"
             }
           ]
         },
         {
           "code": "Endpoint.payload",
-          "display": "Set of payloads that are provided by this endpoint",
-          "noMap": true
+          "target": [
+            {
+              "code": "Endpoint",
+              "display": "The technical details of an endpoint that can be used for electronic services",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Endpoint.payload\u0060 maps as RelatedTo to R4 \u0060Endpoint\u0060 - Endpoint has change due to type change: R5 payload BackboneElement has no equivalent or mapped type in R4 Endpoint"
+            }
+          ]
         },
         {
           "code": "Endpoint.payload.extension",
@@ -285,8 +240,17 @@
         },
         {
           "code": "Endpoint.payload.mimeType",
-          "display": "Mimetype to send. If not specified, the content could be anything (including no payload, if the connectionType defined this)",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "Endpoint.payload.payloadMimeType",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "Endpoint.payload.payloadMimeType",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Endpoint.payload.modifierExtension",
@@ -295,8 +259,17 @@
         },
         {
           "code": "Endpoint.payload.type",
-          "display": "The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)",
-          "noMap": true
+          "noMap": true,
+          "target": [
+            {
+              "code": "Endpoint.payload.payloadType",
+              "relationship": "equivalent"
+            },
+            {
+              "code": "Endpoint.payload.payloadType",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Endpoint.period",
@@ -305,7 +278,7 @@
             {
               "code": "Endpoint.period",
               "display": "Interval the endpoint is expected to be operational",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.period\u0060 maps as Equivalent to R4 \u0060Endpoint.period\u0060"
             }
           ]
@@ -317,7 +290,7 @@
             {
               "code": "Endpoint.status",
               "display": "active | suspended | error | off | entered-in-error | test",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.status\u0060 maps as Equivalent to R4 \u0060Endpoint.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/endpoint-status|5.0.0 and http://hl7.org/fhir/ValueSet/endpoint-status|4.0.1 (Equivalent)"
             }
           ]
@@ -329,7 +302,7 @@
             {
               "code": "Endpoint.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Endpoint.text\u0060 maps as Equivalent to R4 \u0060Endpoint.text\u0060"
             }
           ]

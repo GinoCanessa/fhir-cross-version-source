@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 46 |
+Equivalent | 38 |
+RelatedTo | 3 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -38,7 +40,7 @@ RelatedTo | 46 |
 | VerificationResult.frequency | VerificationResult.frequency | Equivalent | R5 `VerificationResult.frequency` maps as Equivalent to R4 `VerificationResult.frequency` |
 | VerificationResult.id | VerificationResult.id | Equivalent | R5 `VerificationResult.id` maps as Equivalent to R4 `VerificationResult.id` |
 | VerificationResult.implicitRules | VerificationResult.implicitRules | Equivalent | R5 `VerificationResult.implicitRules` maps as Equivalent to R4 `VerificationResult.implicitRules` |
-| VerificationResult.language | VerificationResult.language | RelatedTo | R5 `VerificationResult.language` maps as RelatedTo to R4 `VerificationResult.language` - language changed the binding strength from Required to Preferred |
+| VerificationResult.language | VerificationResult.language | SourceIsNarrowerThanTarget | R5 `VerificationResult.language` maps as SourceIsNarrowerThanTarget to R4 `VerificationResult.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | VerificationResult.lastPerformed | VerificationResult.lastPerformed | Equivalent | R5 `VerificationResult.lastPerformed` maps as Equivalent to R4 `VerificationResult.lastPerformed` |
 | VerificationResult.meta | VerificationResult.meta | Equivalent | R5 `VerificationResult.meta` maps as Equivalent to R4 `VerificationResult.meta` |
 | VerificationResult.modifierExtension | VerificationResult.modifierExtension | SourceIsBroaderThanTarget | R5 `VerificationResult.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `VerificationResult.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

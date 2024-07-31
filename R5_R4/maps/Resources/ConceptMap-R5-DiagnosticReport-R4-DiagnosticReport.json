@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
       "element": [
         {
-          "code": "DiagnosticReport.study",
-          "target": [
-            {
-              "code": "DiagnosticReport.imagingStudy",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-      "target": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
-      "element": [
-        {
           "code": "DiagnosticReport",
           "display": "A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "DiagnosticReport.basedOn",
               "display": "What was requested",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.basedOn\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.basedOn\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "DiagnosticReport.category",
               "display": "Service category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.category\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.category\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "DiagnosticReport.code",
               "display": "Name/Code for this diagnostic report",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.code\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.code\u0060"
             }
           ]
@@ -102,7 +87,7 @@
             {
               "code": "DiagnosticReport.conclusion",
               "display": "Clinical conclusion (interpretation) of test results",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.conclusion\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.conclusion\u0060 - conclusion has change due to type change: R5 conclusion markdown has no equivalent or mapped type in R4 conclusion"
             }
           ]
@@ -114,7 +99,7 @@
             {
               "code": "DiagnosticReport.conclusionCode",
               "display": "Codes for the clinical conclusion of test results",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.conclusionCode\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.conclusionCode\u0060"
             }
           ]
@@ -126,7 +111,7 @@
             {
               "code": "DiagnosticReport.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.contained\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.contained\u0060"
             }
           ]
@@ -138,7 +123,7 @@
             {
               "code": "DiagnosticReport.effective[x]",
               "display": "Clinically relevant time/time-period for report",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.effective[x]\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.effective[x]\u0060"
             }
           ]
@@ -150,7 +135,7 @@
             {
               "code": "DiagnosticReport.encounter",
               "display": "Health care event when test ordered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.encounter\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.encounter\u0060"
             }
           ]
@@ -162,7 +147,7 @@
             {
               "code": "DiagnosticReport.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -186,7 +171,7 @@
             {
               "code": "DiagnosticReport.identifier",
               "display": "Business identifier for report",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.identifier\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.identifier\u0060"
             }
           ]
@@ -210,7 +195,7 @@
             {
               "code": "DiagnosticReport.issued",
               "display": "DateTime this version was made",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.issued\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.issued\u0060"
             }
           ]
@@ -222,8 +207,8 @@
             {
               "code": "DiagnosticReport.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DiagnosticReport.language\u0060 maps as RelatedTo to R4 \u0060DiagnosticReport.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DiagnosticReport.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DiagnosticReport.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -234,7 +219,7 @@
             {
               "code": "DiagnosticReport.media",
               "display": "Key images associated with this report",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.media\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.media\u0060"
             }
           ]
@@ -246,7 +231,7 @@
             {
               "code": "DiagnosticReport.media.comment",
               "display": "Comment about the image (e.g. explanation)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.media.comment\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.media.comment\u0060"
             }
           ]
@@ -258,7 +243,7 @@
             {
               "code": "DiagnosticReport.media.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.media.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.media.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -270,7 +255,7 @@
             {
               "code": "DiagnosticReport.media.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.media.id\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.media.id\u0060"
             }
           ]
@@ -294,7 +279,7 @@
             {
               "code": "DiagnosticReport.media.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.media.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.media.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -318,7 +303,7 @@
             {
               "code": "DiagnosticReport.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -335,7 +320,7 @@
             {
               "code": "DiagnosticReport.performer",
               "display": "Responsible Diagnostic Service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.performer\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.performer\u0060"
             }
           ]
@@ -359,7 +344,7 @@
             {
               "code": "DiagnosticReport.result",
               "display": "Observations",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.result\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.result\u0060"
             }
           ]
@@ -371,7 +356,7 @@
             {
               "code": "DiagnosticReport.resultsInterpreter",
               "display": "Primary result interpreter",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.resultsInterpreter\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.resultsInterpreter\u0060"
             }
           ]
@@ -383,7 +368,7 @@
             {
               "code": "DiagnosticReport.specimen",
               "display": "Specimens this report is based on",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.specimen\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.specimen\u0060"
             }
           ]
@@ -395,15 +380,21 @@
             {
               "code": "DiagnosticReport.status",
               "display": "registered | partial | preliminary | final \u002B",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DiagnosticReport.status\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DiagnosticReport.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/diagnostic-report-status|5.0.0 and http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1 (SourceIsNarrowerThanTarget)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DiagnosticReport.status\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DiagnosticReport.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/diagnostic-report-status|5.0.0 and http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1 (SourceIsNarrowerThanTarget); status has change due to type change: R5 \u0060status\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060status\u0060"
             }
           ]
         },
         {
           "code": "DiagnosticReport.study",
-          "display": "Reference to full details of an analysis associated with the diagnostic report",
-          "noMap": true
+          "target": [
+            {
+              "code": "DiagnosticReport.imagingStudy",
+              "display": "Reference to full details of imaging associated with the diagnostic report",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DiagnosticReport.study\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.imagingStudy\u0060 - imagingStudy has change due to type change: R5 \u0060study\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060imagingStudy\u0060"
+            }
+          ]
         },
         {
           "code": "DiagnosticReport.subject",
@@ -412,7 +403,7 @@
             {
               "code": "DiagnosticReport.subject",
               "display": "The subject of the report - usually, but not always, the patient",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DiagnosticReport.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DiagnosticReport.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
             }
           ]
@@ -454,7 +445,7 @@
             {
               "code": "DiagnosticReport.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DiagnosticReport.text\u0060 maps as Equivalent to R4 \u0060DiagnosticReport.text\u0060"
             }
           ]

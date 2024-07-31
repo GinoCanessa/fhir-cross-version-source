@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
       "element": [
         {
-          "code": "PlanDefinition.action.relatedAction.targetId",
-          "target": [
-            {
-              "code": "PlanDefinition.action.relatedAction.actionId",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-      "target": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
-      "element": [
-        {
           "code": "PlanDefinition",
           "display": "The definition of a plan for a series of actions, independent of any specific patient or context",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "PlanDefinition.action",
               "display": "Action defined by the plan",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "PlanDefinition.action.action",
               "display": "A sub-action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.action\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.action\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "PlanDefinition.action.cardinalityBehavior",
               "display": "single | multiple",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.cardinalityBehavior\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.cardinalityBehavior\u0060 - cardinalityBehavior has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-cardinality-behavior|5.0.0 and http://hl7.org/fhir/ValueSet/action-cardinality-behavior|4.0.1 (Equivalent)"
             }
           ]
@@ -97,8 +82,8 @@
             {
               "code": "PlanDefinition.action.code",
               "display": "Code representing the meaning of the action or sub-actions",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.code\u0060 maps as RelatedTo to R4 \u0060PlanDefinition.action.code\u0060 - code changed from scalar to array (max cardinality from 1 to *); code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/action-code"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.code\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PlanDefinition.action.code\u0060 - code changed from scalar to array (max cardinality from 1 to *); code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/action-code; code has change due to type change: R5 \u0060code\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060code\u0060"
             }
           ]
         },
@@ -109,7 +94,7 @@
             {
               "code": "PlanDefinition.action.condition",
               "display": "Whether or not the action is applicable",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.condition\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.condition\u0060"
             }
           ]
@@ -133,7 +118,7 @@
             {
               "code": "PlanDefinition.action.condition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.condition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.condition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -145,7 +130,7 @@
             {
               "code": "PlanDefinition.action.condition.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.condition.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.condition.id\u0060"
             }
           ]
@@ -157,7 +142,7 @@
             {
               "code": "PlanDefinition.action.condition.kind",
               "display": "applicability | start | stop",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.condition.kind\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.condition.kind\u0060 - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-condition-kind|5.0.0 and http://hl7.org/fhir/ValueSet/action-condition-kind|4.0.1 (Equivalent)"
             }
           ]
@@ -169,7 +154,7 @@
             {
               "code": "PlanDefinition.action.condition.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.condition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.condition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -181,7 +166,7 @@
             {
               "code": "PlanDefinition.action.definition[x]",
               "display": "Description of the activity to be performed",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.definition[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.definition[x]\u0060 - definition[x] has change due to type change: R5 \u0060definition[x]\u0060 \u0060canonical\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060definition[x]\u0060"
             }
           ]
@@ -193,7 +178,7 @@
             {
               "code": "PlanDefinition.action.description",
               "display": "Brief description of the action",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
@@ -205,8 +190,8 @@
             {
               "code": "PlanDefinition.action.documentation",
               "display": "Supporting documentation for the intended performer of the action",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.documentation\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.documentation\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.documentation\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.documentation\u0060 - documentation has change due to type change: R5 \u0060documentation\u0060 \u0060RelatedArtifact\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060documentation\u0060"
             }
           ]
         },
@@ -217,7 +202,7 @@
             {
               "code": "PlanDefinition.action.dynamicValue",
               "display": "Dynamic aspects of the definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.dynamicValue\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.dynamicValue\u0060"
             }
           ]
@@ -241,7 +226,7 @@
             {
               "code": "PlanDefinition.action.dynamicValue.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.dynamicValue.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.dynamicValue.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -253,7 +238,7 @@
             {
               "code": "PlanDefinition.action.dynamicValue.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.dynamicValue.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.dynamicValue.id\u0060"
             }
           ]
@@ -265,7 +250,7 @@
             {
               "code": "PlanDefinition.action.dynamicValue.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.dynamicValue.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.dynamicValue.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -277,7 +262,7 @@
             {
               "code": "PlanDefinition.action.dynamicValue.path",
               "display": "The path to the element to be set dynamically",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.dynamicValue.path\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.dynamicValue.path\u0060"
             }
           ]
@@ -289,7 +274,7 @@
             {
               "code": "PlanDefinition.action.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -301,7 +286,7 @@
             {
               "code": "PlanDefinition.action.goalId",
               "display": "What goals this action supports",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.goalId\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.goalId\u0060"
             }
           ]
@@ -313,7 +298,7 @@
             {
               "code": "PlanDefinition.action.groupingBehavior",
               "display": "visual-group | logical-group | sentence-group",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.groupingBehavior\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.groupingBehavior\u0060 - groupingBehavior has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-grouping-behavior|5.0.0 and http://hl7.org/fhir/ValueSet/action-grouping-behavior|4.0.1 (Equivalent)"
             }
           ]
@@ -325,8 +310,8 @@
             {
               "code": "PlanDefinition.action.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.id\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.id\u0060 is narrower than R4 \u0060PlanDefinition.action.id\u0060 and is compatible. \u0060PlanDefinition.action.id\u0060 is mapped from \u0060PlanDefinition.action.id\u0060 and \u0060PlanDefinition.action.linkId\u0060."
             }
           ]
         },
@@ -337,7 +322,7 @@
             {
               "code": "PlanDefinition.action.input",
               "display": "Input data requirements",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.input\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.input\u0060 - input has change due to type change: R5 input BackboneElement has no equivalent or mapped type in R4 input"
             }
           ]
@@ -374,8 +359,14 @@
         },
         {
           "code": "PlanDefinition.action.linkId",
-          "display": "Unique id for the action in the PlanDefinition",
-          "noMap": true
+          "target": [
+            {
+              "code": "PlanDefinition.action.id",
+              "display": "Unique id for inter-element referencing",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.linkId\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.id\u0060 - id has change due to type change: R5 linkId string has no equivalent or mapped type in R4 id"
+            }
+          ]
         },
         {
           "code": "PlanDefinition.action.location",
@@ -389,7 +380,7 @@
             {
               "code": "PlanDefinition.action.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -401,7 +392,7 @@
             {
               "code": "PlanDefinition.action.output",
               "display": "Output data definition",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.output\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.output\u0060 - output has change due to type change: R5 output BackboneElement has no equivalent or mapped type in R4 output"
             }
           ]
@@ -443,7 +434,7 @@
             {
               "code": "PlanDefinition.action.participant",
               "display": "Who should participate in the action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.participant\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.participant\u0060"
             }
           ]
@@ -460,7 +451,7 @@
             {
               "code": "PlanDefinition.action.participant.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.participant.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.participant.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -477,7 +468,7 @@
             {
               "code": "PlanDefinition.action.participant.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.participant.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.participant.id\u0060"
             }
           ]
@@ -489,7 +480,7 @@
             {
               "code": "PlanDefinition.action.participant.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.participant.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -501,7 +492,7 @@
             {
               "code": "PlanDefinition.action.participant.role",
               "display": "E.g. Nurse, Surgeon, Parent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.participant.role\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.participant.role\u0060"
             }
           ]
@@ -535,7 +526,7 @@
             {
               "code": "PlanDefinition.action.precheckBehavior",
               "display": "yes | no",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.precheckBehavior\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.precheckBehavior\u0060 - precheckBehavior has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-precheck-behavior|5.0.0 and http://hl7.org/fhir/ValueSet/action-precheck-behavior|4.0.1 (Equivalent)"
             }
           ]
@@ -547,7 +538,7 @@
             {
               "code": "PlanDefinition.action.prefix",
               "display": "User-visible prefix for the action (e.g. 1. or A.)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.prefix\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.prefix\u0060"
             }
           ]
@@ -559,7 +550,7 @@
             {
               "code": "PlanDefinition.action.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.priority\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
@@ -571,8 +562,8 @@
             {
               "code": "PlanDefinition.action.reason",
               "display": "Why the action should be performed",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.reason\u0060 maps as RelatedTo to R4 \u0060PlanDefinition.action.reason\u0060 - reason removed a binding requirement - Example http://hl7.org/fhir/ValueSet/action-reason-code"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.reason\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PlanDefinition.action.reason\u0060 - reason removed a binding requirement - Example http://hl7.org/fhir/ValueSet/action-reason-code; reason has change due to type change: R5 \u0060reason\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060reason\u0060"
             }
           ]
         },
@@ -583,15 +574,21 @@
             {
               "code": "PlanDefinition.action.relatedAction",
               "display": "Relationship to another action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.relatedAction\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.relatedAction\u0060"
             }
           ]
         },
         {
           "code": "PlanDefinition.action.relatedAction.endRelationship",
-          "display": "before | before-start | before-end | concurrent | concurrent-with-start | concurrent-with-end | after | after-start | after-end",
-          "noMap": true
+          "target": [
+            {
+              "code": "PlanDefinition.action.relatedAction.relationship",
+              "display": "before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end",
+              "relationship": "related-to",
+              "comment": "R5 \u0060PlanDefinition.action.relatedAction.endRelationship\u0060 maps as RelatedTo to R4 \u0060PlanDefinition.action.relatedAction.relationship\u0060 - relationship made the element mandatory; relationship increased the minimum cardinality from 0 to 1; relationship has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0 and http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "PlanDefinition.action.relatedAction.extension",
@@ -600,7 +597,7 @@
             {
               "code": "PlanDefinition.action.relatedAction.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.relatedAction.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.relatedAction.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -612,7 +609,7 @@
             {
               "code": "PlanDefinition.action.relatedAction.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.relatedAction.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.relatedAction.id\u0060"
             }
           ]
@@ -624,7 +621,7 @@
             {
               "code": "PlanDefinition.action.relatedAction.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.relatedAction.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.relatedAction.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -636,7 +633,7 @@
             {
               "code": "PlanDefinition.action.relatedAction.offset[x]",
               "display": "Time offset for the relationship",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.relatedAction.offset[x]\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.relatedAction.offset[x]\u0060"
             }
           ]
@@ -648,15 +645,21 @@
             {
               "code": "PlanDefinition.action.relatedAction.relationship",
               "display": "before-start | before | before-end | concurrent-with-start | concurrent | concurrent-with-end | after-start | after | after-end",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.relatedAction.relationship\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.relatedAction.relationship\u0060 - relationship has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-relationship-type|5.0.0 and http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1 (Equivalent)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.relatedAction.relationship\u0060 is narrower than R4 \u0060PlanDefinition.action.relatedAction.relationship\u0060 and is compatible. \u0060PlanDefinition.action.relatedAction.relationship\u0060 is mapped from \u0060PlanDefinition.action.relatedAction.endRelationship\u0060 and \u0060PlanDefinition.action.relatedAction.relationship\u0060."
             }
           ]
         },
         {
           "code": "PlanDefinition.action.relatedAction.targetId",
-          "display": "What action is this related to",
-          "noMap": true
+          "target": [
+            {
+              "code": "PlanDefinition.action.relatedAction.actionId",
+              "display": "What action is this related to",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060PlanDefinition.action.relatedAction.targetId\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.relatedAction.actionId\u0060"
+            }
+          ]
         },
         {
           "code": "PlanDefinition.action.requiredBehavior",
@@ -665,7 +668,7 @@
             {
               "code": "PlanDefinition.action.requiredBehavior",
               "display": "must | could | must-unless-documented",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.requiredBehavior\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.requiredBehavior\u0060 - requiredBehavior has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-required-behavior|5.0.0 and http://hl7.org/fhir/ValueSet/action-required-behavior|4.0.1 (Equivalent)"
             }
           ]
@@ -677,7 +680,7 @@
             {
               "code": "PlanDefinition.action.selectionBehavior",
               "display": "any | all | all-or-none | exactly-one | at-most-one | one-or-more",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.selectionBehavior\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.selectionBehavior\u0060 - selectionBehavior has compatible required binding for code type: http://hl7.org/fhir/ValueSet/action-selection-behavior|5.0.0 and http://hl7.org/fhir/ValueSet/action-selection-behavior|4.0.1 (Equivalent)"
             }
           ]
@@ -689,7 +692,7 @@
             {
               "code": "PlanDefinition.action.subject[x]",
               "display": "Type of individual the action is focused on",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.subject[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.subject[x]\u0060 - subject[x] has change due to type change: R5 subject[x] canonical has no equivalent or mapped type in R4 subject[x]"
             }
           ]
@@ -701,7 +704,7 @@
             {
               "code": "PlanDefinition.action.textEquivalent",
               "display": "Static text equivalent of the action, used if the dynamic aspects cannot be interpreted by the receiving system",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.action.textEquivalent\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.textEquivalent\u0060 - textEquivalent has change due to type change: R5 textEquivalent markdown has no equivalent or mapped type in R4 textEquivalent"
             }
           ]
@@ -713,7 +716,7 @@
             {
               "code": "PlanDefinition.action.timing[x]",
               "display": "When the action should take place",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.timing[x]\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.timing[x]\u0060"
             }
           ]
@@ -725,7 +728,7 @@
             {
               "code": "PlanDefinition.action.title",
               "display": "User-visible title",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.title\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.title\u0060"
             }
           ]
@@ -737,7 +740,7 @@
             {
               "code": "PlanDefinition.action.transform",
               "display": "Transform to apply the template",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.transform\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.transform\u0060"
             }
           ]
@@ -749,8 +752,8 @@
             {
               "code": "PlanDefinition.action.trigger",
               "display": "When the action should be triggered",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.action.trigger\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.trigger\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060PlanDefinition.action.trigger\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.action.trigger\u0060 - trigger has change due to type change: R5 \u0060trigger\u0060 \u0060TriggerDefinition\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060trigger\u0060"
             }
           ]
         },
@@ -761,7 +764,7 @@
             {
               "code": "PlanDefinition.action.type",
               "display": "create | update | remove | fire-event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.action.type\u0060 maps as Equivalent to R4 \u0060PlanDefinition.action.type\u0060"
             }
           ]
@@ -843,7 +846,7 @@
             {
               "code": "PlanDefinition.approvalDate",
               "display": "When the plan definition was approved by publisher",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.approvalDate\u0060 maps as Equivalent to R4 \u0060PlanDefinition.approvalDate\u0060"
             }
           ]
@@ -860,7 +863,7 @@
             {
               "code": "PlanDefinition.author",
               "display": "Who authored the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.author\u0060 maps as Equivalent to R4 \u0060PlanDefinition.author\u0060"
             }
           ]
@@ -872,7 +875,7 @@
             {
               "code": "PlanDefinition.contact",
               "display": "Contact details for the publisher",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.contact\u0060 maps as Equivalent to R4 \u0060PlanDefinition.contact\u0060"
             }
           ]
@@ -884,7 +887,7 @@
             {
               "code": "PlanDefinition.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.contained\u0060 maps as Equivalent to R4 \u0060PlanDefinition.contained\u0060"
             }
           ]
@@ -896,7 +899,7 @@
             {
               "code": "PlanDefinition.copyright",
               "display": "Use and/or publishing restrictions",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.copyright\u0060 maps as Equivalent to R4 \u0060PlanDefinition.copyright\u0060"
             }
           ]
@@ -913,7 +916,7 @@
             {
               "code": "PlanDefinition.date",
               "display": "Date last changed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.date\u0060 maps as Equivalent to R4 \u0060PlanDefinition.date\u0060"
             }
           ]
@@ -925,7 +928,7 @@
             {
               "code": "PlanDefinition.description",
               "display": "Natural language description of the plan definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.description\u0060 maps as Equivalent to R4 \u0060PlanDefinition.description\u0060"
             }
           ]
@@ -937,7 +940,7 @@
             {
               "code": "PlanDefinition.editor",
               "display": "Who edited the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.editor\u0060 maps as Equivalent to R4 \u0060PlanDefinition.editor\u0060"
             }
           ]
@@ -949,7 +952,7 @@
             {
               "code": "PlanDefinition.effectivePeriod",
               "display": "When the plan definition is expected to be used",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.effectivePeriod\u0060 maps as Equivalent to R4 \u0060PlanDefinition.effectivePeriod\u0060"
             }
           ]
@@ -961,7 +964,7 @@
             {
               "code": "PlanDefinition.endorser",
               "display": "Who endorsed the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.endorser\u0060 maps as Equivalent to R4 \u0060PlanDefinition.endorser\u0060"
             }
           ]
@@ -973,7 +976,7 @@
             {
               "code": "PlanDefinition.experimental",
               "display": "For testing purposes, not real usage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.experimental\u0060 maps as Equivalent to R4 \u0060PlanDefinition.experimental\u0060"
             }
           ]
@@ -985,7 +988,7 @@
             {
               "code": "PlanDefinition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -997,7 +1000,7 @@
             {
               "code": "PlanDefinition.goal",
               "display": "What the plan is trying to accomplish",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal\u0060"
             }
           ]
@@ -1009,7 +1012,7 @@
             {
               "code": "PlanDefinition.goal.addresses",
               "display": "What does the goal address",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.addresses\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.addresses\u0060"
             }
           ]
@@ -1021,7 +1024,7 @@
             {
               "code": "PlanDefinition.goal.category",
               "display": "E.g. Treatment, dietary, behavioral",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.category\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.category\u0060"
             }
           ]
@@ -1033,7 +1036,7 @@
             {
               "code": "PlanDefinition.goal.description",
               "display": "Code or text describing the goal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.description\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.description\u0060"
             }
           ]
@@ -1045,8 +1048,8 @@
             {
               "code": "PlanDefinition.goal.documentation",
               "display": "Supporting documentation for the goal",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.goal.documentation\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.documentation\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060PlanDefinition.goal.documentation\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.documentation\u0060 - documentation has change due to type change: R5 \u0060documentation\u0060 \u0060RelatedArtifact\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060documentation\u0060"
             }
           ]
         },
@@ -1057,7 +1060,7 @@
             {
               "code": "PlanDefinition.goal.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.goal.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1069,7 +1072,7 @@
             {
               "code": "PlanDefinition.goal.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.id\u0060"
             }
           ]
@@ -1081,7 +1084,7 @@
             {
               "code": "PlanDefinition.goal.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.goal.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1093,7 +1096,7 @@
             {
               "code": "PlanDefinition.goal.priority",
               "display": "high-priority | medium-priority | low-priority",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.priority\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.priority\u0060"
             }
           ]
@@ -1105,7 +1108,7 @@
             {
               "code": "PlanDefinition.goal.start",
               "display": "When goal pursuit begins",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.start\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.start\u0060"
             }
           ]
@@ -1117,7 +1120,7 @@
             {
               "code": "PlanDefinition.goal.target",
               "display": "Target outcome for the goal",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.target\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.target\u0060"
             }
           ]
@@ -1129,7 +1132,7 @@
             {
               "code": "PlanDefinition.goal.target.detail[x]",
               "display": "The target value to be achieved",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.goal.target.detail[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.target.detail[x]\u0060 - detail[x] has change due to type change: R5 detail[x] string has no equivalent or mapped type in R4 detail[x]; detail[x] has change due to type change: R5 detail[x] boolean has no equivalent or mapped type in R4 detail[x]; detail[x] has change due to type change: R5 detail[x] integer has no equivalent or mapped type in R4 detail[x]; detail[x] has change due to type change: R5 detail[x] Ratio has no equivalent or mapped type in R4 detail[x]"
             }
           ]
@@ -1141,7 +1144,7 @@
             {
               "code": "PlanDefinition.goal.target.due",
               "display": "Reach goal within",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.target.due\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.target.due\u0060"
             }
           ]
@@ -1153,7 +1156,7 @@
             {
               "code": "PlanDefinition.goal.target.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.goal.target.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.target.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -1165,7 +1168,7 @@
             {
               "code": "PlanDefinition.goal.target.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.target.id\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.target.id\u0060"
             }
           ]
@@ -1177,7 +1180,7 @@
             {
               "code": "PlanDefinition.goal.target.measure",
               "display": "The parameter whose value is to be tracked",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.goal.target.measure\u0060 maps as Equivalent to R4 \u0060PlanDefinition.goal.target.measure\u0060"
             }
           ]
@@ -1189,7 +1192,7 @@
             {
               "code": "PlanDefinition.goal.target.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.goal.target.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.goal.target.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1213,7 +1216,7 @@
             {
               "code": "PlanDefinition.identifier",
               "display": "Additional identifier for the plan definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.identifier\u0060 maps as Equivalent to R4 \u0060PlanDefinition.identifier\u0060"
             }
           ]
@@ -1237,7 +1240,7 @@
             {
               "code": "PlanDefinition.jurisdiction",
               "display": "Intended jurisdiction for plan definition (if applicable)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.jurisdiction\u0060 maps as Equivalent to R4 \u0060PlanDefinition.jurisdiction\u0060"
             }
           ]
@@ -1249,8 +1252,8 @@
             {
               "code": "PlanDefinition.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.language\u0060 maps as RelatedTo to R4 \u0060PlanDefinition.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PlanDefinition.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PlanDefinition.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -1261,7 +1264,7 @@
             {
               "code": "PlanDefinition.lastReviewDate",
               "display": "When the plan definition was last reviewed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.lastReviewDate\u0060 maps as Equivalent to R4 \u0060PlanDefinition.lastReviewDate\u0060"
             }
           ]
@@ -1273,7 +1276,7 @@
             {
               "code": "PlanDefinition.library",
               "display": "Logic used by the plan definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.library\u0060 maps as Equivalent to R4 \u0060PlanDefinition.library\u0060"
             }
           ]
@@ -1297,7 +1300,7 @@
             {
               "code": "PlanDefinition.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -1309,7 +1312,7 @@
             {
               "code": "PlanDefinition.name",
               "display": "Name for this plan definition (computer friendly)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.name\u0060 maps as Equivalent to R4 \u0060PlanDefinition.name\u0060"
             }
           ]
@@ -1321,7 +1324,7 @@
             {
               "code": "PlanDefinition.publisher",
               "display": "Name of the publisher (organization or individual)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.publisher\u0060 maps as Equivalent to R4 \u0060PlanDefinition.publisher\u0060"
             }
           ]
@@ -1333,7 +1336,7 @@
             {
               "code": "PlanDefinition.purpose",
               "display": "Why this plan definition is defined",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.purpose\u0060 maps as Equivalent to R4 \u0060PlanDefinition.purpose\u0060"
             }
           ]
@@ -1345,8 +1348,8 @@
             {
               "code": "PlanDefinition.relatedArtifact",
               "display": "Additional documentation, citations",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PlanDefinition.relatedArtifact\u0060 maps as Equivalent to R4 \u0060PlanDefinition.relatedArtifact\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060PlanDefinition.relatedArtifact\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.relatedArtifact\u0060 - relatedArtifact has change due to type change: R5 \u0060relatedArtifact\u0060 \u0060RelatedArtifact\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060relatedArtifact\u0060"
             }
           ]
         },
@@ -1357,7 +1360,7 @@
             {
               "code": "PlanDefinition.reviewer",
               "display": "Who reviewed the content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.reviewer\u0060 maps as Equivalent to R4 \u0060PlanDefinition.reviewer\u0060"
             }
           ]
@@ -1369,7 +1372,7 @@
             {
               "code": "PlanDefinition.status",
               "display": "draft | active | retired | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.status\u0060 maps as Equivalent to R4 \u0060PlanDefinition.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent)"
             }
           ]
@@ -1381,7 +1384,7 @@
             {
               "code": "PlanDefinition.subject[x]",
               "display": "Type of individual the plan definition is focused on",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.subject[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.subject[x]\u0060 - subject[x] has change due to type change: R5 \u0060subject[x]\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject[x]\u0060; subject[x] has change due to type change: R5 subject[x] canonical has no equivalent or mapped type in R4 subject[x]"
             }
           ]
@@ -1393,7 +1396,7 @@
             {
               "code": "PlanDefinition.subtitle",
               "display": "Subordinate title of the plan definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.subtitle\u0060 maps as Equivalent to R4 \u0060PlanDefinition.subtitle\u0060"
             }
           ]
@@ -1405,7 +1408,7 @@
             {
               "code": "PlanDefinition.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.text\u0060 maps as Equivalent to R4 \u0060PlanDefinition.text\u0060"
             }
           ]
@@ -1417,7 +1420,7 @@
             {
               "code": "PlanDefinition.title",
               "display": "Name for this plan definition (human friendly)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.title\u0060 maps as Equivalent to R4 \u0060PlanDefinition.title\u0060"
             }
           ]
@@ -1429,7 +1432,7 @@
             {
               "code": "PlanDefinition.topic",
               "display": "E.g. Education, Treatment, Assessment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.topic\u0060 maps as Equivalent to R4 \u0060PlanDefinition.topic\u0060"
             }
           ]
@@ -1441,7 +1444,7 @@
             {
               "code": "PlanDefinition.type",
               "display": "order-set | clinical-protocol | eca-rule | workflow-definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.type\u0060 maps as Equivalent to R4 \u0060PlanDefinition.type\u0060"
             }
           ]
@@ -1453,7 +1456,7 @@
             {
               "code": "PlanDefinition.url",
               "display": "Canonical identifier for this plan definition, represented as a URI (globally unique)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.url\u0060 maps as Equivalent to R4 \u0060PlanDefinition.url\u0060"
             }
           ]
@@ -1465,7 +1468,7 @@
             {
               "code": "PlanDefinition.usage",
               "display": "Describes the clinical usage of the plan",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PlanDefinition.usage\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PlanDefinition.usage\u0060 - usage has change due to type change: R5 usage markdown has no equivalent or mapped type in R4 usage"
             }
           ]
@@ -1477,7 +1480,7 @@
             {
               "code": "PlanDefinition.useContext",
               "display": "The context that the content is intended to support",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.useContext\u0060 maps as Equivalent to R4 \u0060PlanDefinition.useContext\u0060"
             }
           ]
@@ -1489,7 +1492,7 @@
             {
               "code": "PlanDefinition.version",
               "display": "Business version of the plan definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PlanDefinition.version\u0060 maps as Equivalent to R4 \u0060PlanDefinition.version\u0060"
             }
           ]

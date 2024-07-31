@@ -28,120 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
       "element": [
         {
-          "code": "ObservationDefinition.qualifiedValue.abnormalCodedValueSet",
-          "target": [
-            {
-              "code": "ObservationDefinition.abnormalCodedValueSet",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.age",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.age",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.appliesTo",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.appliesTo",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.condition",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.condition",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.context",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.context",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.criticalCodedValueSet",
-          "target": [
-            {
-              "code": "ObservationDefinition.criticalCodedValueSet",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.gender",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.gender",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.gestationalAge",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.gestationalAge",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.normalCodedValueSet",
-          "target": [
-            {
-              "code": "ObservationDefinition.normalCodedValueSet",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.range",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.range",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.rangeCategory",
-          "target": [
-            {
-              "code": "ObservationDefinition.qualifiedInterval.category",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ObservationDefinition.qualifiedValue.validCodedValueSet",
-          "target": [
-            {
-              "code": "ObservationDefinition.validCodedValueSet",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
-      "target": "http://hl7.org/fhir/StructureDefinition/ObservationDefinition",
-      "element": [
-        {
           "code": "ObservationDefinition",
           "display": "Definition of an observation",
           "target": [
@@ -170,7 +56,7 @@
             {
               "code": "ObservationDefinition.category",
               "display": "Category of observation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.category\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.category\u0060"
             }
           ]
@@ -182,7 +68,7 @@
             {
               "code": "ObservationDefinition.code",
               "display": "Type of observation (code / type)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.code\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.code\u0060"
             }
           ]
@@ -239,7 +125,7 @@
             {
               "code": "ObservationDefinition.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.contained\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.contained\u0060"
             }
           ]
@@ -296,7 +182,7 @@
             {
               "code": "ObservationDefinition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ObservationDefinition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -325,8 +211,8 @@
             {
               "code": "ObservationDefinition.identifier",
               "display": "Business identifier for this ObservationDefinition instance",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ObservationDefinition.identifier\u0060 maps as RelatedTo to R4 \u0060ObservationDefinition.identifier\u0060 - identifier changed from scalar to array (max cardinality from 1 to *)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ObservationDefinition.identifier\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ObservationDefinition.identifier\u0060 - identifier changed from scalar to array (max cardinality from 1 to *)"
             }
           ]
         },
@@ -354,8 +240,8 @@
             {
               "code": "ObservationDefinition.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ObservationDefinition.language\u0060 maps as RelatedTo to R4 \u0060ObservationDefinition.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ObservationDefinition.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ObservationDefinition.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -383,7 +269,7 @@
             {
               "code": "ObservationDefinition.method",
               "display": "Method used to produce the observation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.method\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.method\u0060"
             }
           ]
@@ -395,7 +281,7 @@
             {
               "code": "ObservationDefinition.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ObservationDefinition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -407,7 +293,7 @@
             {
               "code": "ObservationDefinition.multipleResultsAllowed",
               "display": "Multiple results allowed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.multipleResultsAllowed\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.multipleResultsAllowed\u0060"
             }
           ]
@@ -429,7 +315,7 @@
             {
               "code": "ObservationDefinition.permittedDataType",
               "display": "Quantity | CodeableConcept | string | boolean | integer | Range | Ratio | SampledData | time | dateTime | Period",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.permittedDataType\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.permittedDataType\u0060 - permittedDataType has compatible required binding for code type: http://hl7.org/fhir/ValueSet/permitted-data-type|5.0.0 and http://hl7.org/fhir/ValueSet/permitted-data-type|4.0.1 (Equivalent)"
             }
           ]
@@ -446,7 +332,7 @@
             {
               "code": "ObservationDefinition.preferredReportName",
               "display": "Preferred report name",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.preferredReportName\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.preferredReportName\u0060"
             }
           ]
@@ -468,33 +354,69 @@
         },
         {
           "code": "ObservationDefinition.qualifiedValue.abnormalCodedValueSet",
-          "display": "Value set of abnormal coded values as part of this set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.abnormalCodedValueSet",
+              "display": "Value set of abnormal coded values for the observations conforming to this ObservationDefinition",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.abnormalCodedValueSet\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.abnormalCodedValueSet\u0060 - abnormalCodedValueSet has change due to type change: R5 abnormalCodedValueSet canonical has no equivalent or mapped type in R4 abnormalCodedValueSet"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.age",
-          "display": "Applicable age range for the set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.age",
+              "display": "Applicable age range, if relevant",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.age\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.age\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.appliesTo",
-          "display": "Targetted population for the set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.appliesTo",
+              "display": "Targetted population of the range",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.appliesTo\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.appliesTo\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.condition",
-          "display": "Condition associated with the set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.condition",
+              "display": "Condition associated with the reference range",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.condition\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.condition\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.context",
-          "display": "Context qualifier for the set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.context",
+              "display": "Range context qualifier",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.context\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.context\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.criticalCodedValueSet",
-          "display": "Value set of critical coded values as part of this set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.criticalCodedValueSet",
+              "display": "Value set of critical coded values for the observations conforming to this ObservationDefinition",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.criticalCodedValueSet\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.criticalCodedValueSet\u0060 - criticalCodedValueSet has change due to type change: R5 criticalCodedValueSet canonical has no equivalent or mapped type in R4 criticalCodedValueSet"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.extension",
@@ -503,13 +425,25 @@
         },
         {
           "code": "ObservationDefinition.qualifiedValue.gender",
-          "display": "male | female | other | unknown",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.gender",
+              "display": "male | female | other | unknown",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.gender\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.gender\u0060 - gender has compatible required binding for code type: http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0 and http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.gestationalAge",
-          "display": "Applicable gestational age range for the set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.gestationalAge",
+              "display": "Applicable gestational age range, if relevant",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.gestationalAge\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.gestationalAge\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.id",
@@ -523,23 +457,47 @@
         },
         {
           "code": "ObservationDefinition.qualifiedValue.normalCodedValueSet",
-          "display": "Value set of normal coded values as part of this set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.normalCodedValueSet",
+              "display": "Value set of normal coded values for the observations conforming to this ObservationDefinition",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.normalCodedValueSet\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.normalCodedValueSet\u0060 - normalCodedValueSet has change due to type change: R5 normalCodedValueSet canonical has no equivalent or mapped type in R4 normalCodedValueSet"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.range",
-          "display": "The range for continuous or ordinal observations",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.range",
+              "display": "The interval itself, for continuous or ordinal observations",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.range\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.range\u0060"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.rangeCategory",
-          "display": "reference | critical | absolute",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.qualifiedInterval.category",
+              "display": "reference | critical | absolute",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.rangeCategory\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.qualifiedInterval.category\u0060 - category has compatible required binding for code type: http://hl7.org/fhir/ValueSet/observation-range-category|5.0.0 and http://hl7.org/fhir/ValueSet/observation-range-category|4.0.1 (Equivalent)"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.qualifiedValue.validCodedValueSet",
-          "display": "Value set of valid coded values as part of this set of qualified values",
-          "noMap": true
+          "target": [
+            {
+              "code": "ObservationDefinition.validCodedValueSet",
+              "display": "Value set of valid coded values for the observations conforming to this ObservationDefinition",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ObservationDefinition.qualifiedValue.validCodedValueSet\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ObservationDefinition.validCodedValueSet\u0060 - validCodedValueSet has change due to type change: R5 validCodedValueSet canonical has no equivalent or mapped type in R4 validCodedValueSet"
+            }
+          ]
         },
         {
           "code": "ObservationDefinition.specimen",
@@ -563,7 +521,7 @@
             {
               "code": "ObservationDefinition.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ObservationDefinition.text\u0060 maps as Equivalent to R4 \u0060ObservationDefinition.text\u0060"
             }
           ]

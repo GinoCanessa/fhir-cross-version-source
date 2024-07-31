@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:ImplementationGuide.definition.page.source[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ImplementationGuide.definition.page.source[x]` does not appear in the target and has no mapping for `ImplementationGuide`.",
+  "description": "R5 `ImplementationGuide.definition.page.source[x]` maps as RelatedTo to R4 `ImplementationGuide.definition.page.name[x]` - name[x] made the element mandatory; name[x] increased the minimum cardinality from 0 to 1; name[x] has change due to type change: R5 source[x] string has no equivalent or mapped type in R4 name[x]; name[x] has change due to type change: R5 source[x] markdown has no equivalent or mapped type in R4 name[x]",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ImplementationGuide.definition.page"
+      "expression": "ImplementationGuide.definition.page.name[x]"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Source for page",
         "definition": "Indicates the URL or the actual content to provide for the page.",
-        "comment": "R5 `ImplementationGuide.definition.page.source[x]` does not appear in the target and has no mapping for `ImplementationGuide`.\nIf absent and the page isn't a generated page, this may be inferred from the page name by checking input locations.  String is used for XHTML content - sent as an escaped string.  FHIR tooling can't support 'direct' XHTML anywhere other than in narrative.",
+        "comment": "R5 `ImplementationGuide.definition.page.source[x]` maps as RelatedTo to R4 `ImplementationGuide.definition.page.name[x]` - name[x] made the element mandatory; name[x] increased the minimum cardinality from 0 to 1; name[x] has change due to type change: R5 source[x] string has no equivalent or mapped type in R4 name[x]; name[x] has change due to type change: R5 source[x] markdown has no equivalent or mapped type in R4 name[x]\nIf absent and the page isn't a generated page, this may be inferred from the page name by checking input locations.  String is used for XHTML content - sent as an escaped string.  FHIR tooling can't support 'direct' XHTML anywhere other than in narrative.",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,168 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:url:url",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:url",
-        "sliceName": "url",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:url"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:string:string",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:string"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:markdown:markdown",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:markdown"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -575,7 +413,7 @@
         "path": "Extension",
         "short": "Source for page",
         "definition": "Indicates the URL or the actual content to provide for the page.",
-        "comment": "R5 `ImplementationGuide.definition.page.source[x]` does not appear in the target and has no mapping for `ImplementationGuide`.\nIf absent and the page isn't a generated page, this may be inferred from the page name by checking input locations.  String is used for XHTML content - sent as an escaped string.  FHIR tooling can't support 'direct' XHTML anywhere other than in narrative.",
+        "comment": "R5 `ImplementationGuide.definition.page.source[x]` maps as RelatedTo to R4 `ImplementationGuide.definition.page.name[x]` - name[x] made the element mandatory; name[x] increased the minimum cardinality from 0 to 1; name[x] has change due to type change: R5 source[x] string has no equivalent or mapped type in R4 name[x]; name[x] has change due to type change: R5 source[x] markdown has no equivalent or mapped type in R4 name[x]\nIf absent and the page isn't a generated page, this may be inferred from the page name by checking input locations.  String is used for XHTML content - sent as an escaped string.  FHIR tooling can't support 'direct' XHTML anywhere other than in narrative.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -583,45 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:url",
-        "sliceName": "url",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-url"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

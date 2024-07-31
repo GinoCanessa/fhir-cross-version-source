@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
       "element": [
         {
-          "code": "EpisodeOfCare.careTeam",
-          "target": [
-            {
-              "code": "EpisodeOfCare.team",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "EpisodeOfCare.diagnosis.use",
-          "target": [
-            {
-              "code": "EpisodeOfCare.diagnosis.role",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
-      "target": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
-      "element": [
-        {
           "code": "EpisodeOfCare",
           "display": "An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "EpisodeOfCare.account",
               "display": "The set of accounts that may be used for billing for this EpisodeOfCare",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.account\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.account\u0060"
             }
           ]
@@ -82,15 +58,21 @@
             {
               "code": "EpisodeOfCare.careManager",
               "display": "Care manager/care coordinator for the patient",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.careManager\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.careManager\u0060"
             }
           ]
         },
         {
           "code": "EpisodeOfCare.careTeam",
-          "display": "Other practitioners facilitating this episode of care",
-          "noMap": true
+          "target": [
+            {
+              "code": "EpisodeOfCare.team",
+              "display": "Other practitioners facilitating this episode of care",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare.careTeam\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.team\u0060"
+            }
+          ]
         },
         {
           "code": "EpisodeOfCare.contained",
@@ -99,7 +81,7 @@
             {
               "code": "EpisodeOfCare.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.contained\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.contained\u0060"
             }
           ]
@@ -111,7 +93,7 @@
             {
               "code": "EpisodeOfCare.diagnosis",
               "display": "The list of diagnosis relevant to this episode of care",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.diagnosis\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.diagnosis\u0060"
             }
           ]
@@ -135,7 +117,7 @@
             {
               "code": "EpisodeOfCare.diagnosis.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.diagnosis.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.diagnosis.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -147,7 +129,7 @@
             {
               "code": "EpisodeOfCare.diagnosis.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.diagnosis.id\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.diagnosis.id\u0060"
             }
           ]
@@ -159,15 +141,21 @@
             {
               "code": "EpisodeOfCare.diagnosis.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.diagnosis.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.diagnosis.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "EpisodeOfCare.diagnosis.use",
-          "display": "Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge \u2026)",
-          "noMap": true
+          "target": [
+            {
+              "code": "EpisodeOfCare.diagnosis.role",
+              "display": "Role that this diagnosis has within the episode of care (e.g. admission, billing, discharge \u2026)",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060EpisodeOfCare.diagnosis.use\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.diagnosis.role\u0060"
+            }
+          ]
         },
         {
           "code": "EpisodeOfCare.extension",
@@ -176,7 +164,7 @@
             {
               "code": "EpisodeOfCare.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -200,7 +188,7 @@
             {
               "code": "EpisodeOfCare.identifier",
               "display": "Business Identifier(s) relevant for this EpisodeOfCare",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.identifier\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.identifier\u0060"
             }
           ]
@@ -224,8 +212,8 @@
             {
               "code": "EpisodeOfCare.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060EpisodeOfCare.language\u0060 maps as RelatedTo to R4 \u0060EpisodeOfCare.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060EpisodeOfCare.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060EpisodeOfCare.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -236,7 +224,7 @@
             {
               "code": "EpisodeOfCare.managingOrganization",
               "display": "Organization that assumes care",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.managingOrganization\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.managingOrganization\u0060"
             }
           ]
@@ -260,7 +248,7 @@
             {
               "code": "EpisodeOfCare.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -272,7 +260,7 @@
             {
               "code": "EpisodeOfCare.patient",
               "display": "The patient who is the focus of this episode of care",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.patient\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.patient\u0060"
             }
           ]
@@ -284,7 +272,7 @@
             {
               "code": "EpisodeOfCare.period",
               "display": "Interval during responsibility is assumed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.period\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.period\u0060"
             }
           ]
@@ -326,7 +314,7 @@
             {
               "code": "EpisodeOfCare.referralRequest",
               "display": "Originating Referral Request(s)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.referralRequest\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.referralRequest\u0060"
             }
           ]
@@ -338,7 +326,7 @@
             {
               "code": "EpisodeOfCare.status",
               "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.status\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/episode-of-care-status|5.0.0 and http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1 (Equivalent)"
             }
           ]
@@ -350,7 +338,7 @@
             {
               "code": "EpisodeOfCare.statusHistory",
               "display": "Past list of status codes (the current status may be included to cover the start date of the status)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory\u0060"
             }
           ]
@@ -362,7 +350,7 @@
             {
               "code": "EpisodeOfCare.statusHistory.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.statusHistory.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -374,7 +362,7 @@
             {
               "code": "EpisodeOfCare.statusHistory.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory.id\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.id\u0060"
             }
           ]
@@ -386,7 +374,7 @@
             {
               "code": "EpisodeOfCare.statusHistory.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060EpisodeOfCare.statusHistory.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -398,7 +386,7 @@
             {
               "code": "EpisodeOfCare.statusHistory.period",
               "display": "Duration the EpisodeOfCare was in the specified status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory.period\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.period\u0060"
             }
           ]
@@ -410,7 +398,7 @@
             {
               "code": "EpisodeOfCare.statusHistory.status",
               "display": "planned | waitlist | active | onhold | finished | cancelled | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.statusHistory.status\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.statusHistory.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/episode-of-care-status|5.0.0 and http://hl7.org/fhir/ValueSet/episode-of-care-status|4.0.1 (Equivalent)"
             }
           ]
@@ -422,7 +410,7 @@
             {
               "code": "EpisodeOfCare.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.text\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.text\u0060"
             }
           ]
@@ -434,7 +422,7 @@
             {
               "code": "EpisodeOfCare.type",
               "display": "Type/class  - e.g. specialist referral, disease management",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060EpisodeOfCare.type\u0060 maps as Equivalent to R4 \u0060EpisodeOfCare.type\u0060"
             }
           ]

@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 6 |
-Equivalent | 4 |
-RelatedTo | 22 |
+Equivalent | 19 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -24,7 +26,7 @@ RelatedTo | 22 |
 | Practitioner.active | Practitioner.active | Equivalent | R5 `Practitioner.active` maps as Equivalent to R4 `Practitioner.active` |
 | Practitioner.address | Practitioner.address | Equivalent | R5 `Practitioner.address` maps as Equivalent to R4 `Practitioner.address` |
 | Practitioner.birthDate | Practitioner.birthDate | Equivalent | R5 `Practitioner.birthDate` maps as Equivalent to R4 `Practitioner.birthDate` |
-| Practitioner.communication | Practitioner.communication | RelatedTo | R5 `Practitioner.communication` maps as RelatedTo to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication |
+| Practitioner.communication | Practitioner.communication | SourceIsBroaderThanTarget | R5 `Practitioner.communication` maps as SourceIsBroaderThanTarget to R4 `Practitioner.communication` - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication |
 | Practitioner.communication.extension | - | DoesNotExistInTarget | R5 `Practitioner.communication.extension` does not appear in the target and has no mapping for `Practitioner`. |
 | Practitioner.communication.id | - | DoesNotExistInTarget | R5 `Practitioner.communication.id` does not appear in the target and has no mapping for `Practitioner`. |
 | Practitioner.communication.language | - | DoesNotExistInTarget | R5 `Practitioner.communication.language` does not appear in the target and has no mapping for `Practitioner`. |
@@ -37,7 +39,7 @@ RelatedTo | 22 |
 | Practitioner.id | Practitioner.id | Equivalent | R5 `Practitioner.id` maps as Equivalent to R4 `Practitioner.id` |
 | Practitioner.identifier | Practitioner.identifier | Equivalent | R5 `Practitioner.identifier` maps as Equivalent to R4 `Practitioner.identifier` |
 | Practitioner.implicitRules | Practitioner.implicitRules | Equivalent | R5 `Practitioner.implicitRules` maps as Equivalent to R4 `Practitioner.implicitRules` |
-| Practitioner.language | Practitioner.language | RelatedTo | R5 `Practitioner.language` maps as RelatedTo to R4 `Practitioner.language` - language changed the binding strength from Required to Preferred |
+| Practitioner.language | Practitioner.language | SourceIsNarrowerThanTarget | R5 `Practitioner.language` maps as SourceIsNarrowerThanTarget to R4 `Practitioner.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Practitioner.meta | Practitioner.meta | Equivalent | R5 `Practitioner.meta` maps as Equivalent to R4 `Practitioner.meta` |
 | Practitioner.modifierExtension | Practitioner.modifierExtension | SourceIsBroaderThanTarget | R5 `Practitioner.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Practitioner.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Practitioner.name | Practitioner.name | Equivalent | R5 `Practitioner.name` maps as Equivalent to R4 `Practitioner.name` |

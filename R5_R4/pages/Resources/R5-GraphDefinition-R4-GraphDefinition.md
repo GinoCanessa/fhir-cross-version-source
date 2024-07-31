@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 25 |
-Equivalent | 4 |
-RelatedTo | 27 |
+Equivalent | 25 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -33,7 +35,7 @@ RelatedTo | 27 |
 | GraphDefinition.identifier | - | DoesNotExistInTarget | R5 `GraphDefinition.identifier` does not appear in the target and has no mapping for `GraphDefinition`. |
 | GraphDefinition.implicitRules | GraphDefinition.implicitRules | Equivalent | R5 `GraphDefinition.implicitRules` maps as Equivalent to R4 `GraphDefinition.implicitRules` |
 | GraphDefinition.jurisdiction | GraphDefinition.jurisdiction | Equivalent | R5 `GraphDefinition.jurisdiction` maps as Equivalent to R4 `GraphDefinition.jurisdiction` |
-| GraphDefinition.language | GraphDefinition.language | RelatedTo | R5 `GraphDefinition.language` maps as RelatedTo to R4 `GraphDefinition.language` - language changed the binding strength from Required to Preferred |
+| GraphDefinition.language | GraphDefinition.language | SourceIsNarrowerThanTarget | R5 `GraphDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `GraphDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | GraphDefinition.link | GraphDefinition.link | Equivalent | R5 `GraphDefinition.link` maps as Equivalent to R4 `GraphDefinition.link` |
 | GraphDefinition.link.compartment | - | DoesNotExistInTarget | R5 `GraphDefinition.link.compartment` does not appear in the target and has no mapping for `GraphDefinition`. |
 | GraphDefinition.link.compartment.code | - | DoesNotExistInTarget | R5 `GraphDefinition.link.compartment.code` does not appear in the target and has no mapping for `GraphDefinition`. |

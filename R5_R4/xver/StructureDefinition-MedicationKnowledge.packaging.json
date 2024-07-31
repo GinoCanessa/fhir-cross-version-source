@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationKnowledge.packaging compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationKnowledge.packaging` maps as RelatedTo to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
+  "description": "R5 `MedicationKnowledge.packaging` maps as SourceIsBroaderThanTarget to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Details about packaged medications",
         "definition": "Information that only applies to packages (not products).",
-        "comment": "R5 `MedicationKnowledge.packaging` maps as RelatedTo to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
+        "comment": "R5 `MedicationKnowledge.packaging` maps as SourceIsBroaderThanTarget to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "base": {
@@ -433,7 +433,7 @@
         "path": "Extension",
         "short": "Details about packaged medications",
         "definition": "Information that only applies to packages (not products).",
-        "comment": "R5 `MedicationKnowledge.packaging` maps as RelatedTo to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
+        "comment": "R5 `MedicationKnowledge.packaging` maps as SourceIsBroaderThanTarget to R4 `MedicationKnowledge.packaging` - packaging changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -464,17 +464,12 @@
       },
       {
         "path": "Extension.extension:packagedProduct.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:packagedProduct.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition"
             ]
           }
         ]

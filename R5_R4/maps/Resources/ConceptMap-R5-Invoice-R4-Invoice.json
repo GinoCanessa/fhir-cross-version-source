@@ -30,7 +30,7 @@
             {
               "code": "Invoice.account",
               "display": "Account that is being balanced",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.account\u0060 maps as Equivalent to R4 \u0060Invoice.account\u0060"
             }
           ]
@@ -42,7 +42,7 @@
             {
               "code": "Invoice.cancelledReason",
               "display": "Reason for cancellation of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.cancelledReason\u0060 maps as Equivalent to R4 \u0060Invoice.cancelledReason\u0060"
             }
           ]
@@ -54,7 +54,7 @@
             {
               "code": "Invoice.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.contained\u0060 maps as Equivalent to R4 \u0060Invoice.contained\u0060"
             }
           ]
@@ -71,7 +71,7 @@
             {
               "code": "Invoice.date",
               "display": "Invoice date / posting date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.date\u0060 maps as Equivalent to R4 \u0060Invoice.date\u0060"
             }
           ]
@@ -83,7 +83,7 @@
             {
               "code": "Invoice.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -107,7 +107,7 @@
             {
               "code": "Invoice.identifier",
               "display": "Business Identifier for item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.identifier\u0060 maps as Equivalent to R4 \u0060Invoice.identifier\u0060"
             }
           ]
@@ -131,7 +131,7 @@
             {
               "code": "Invoice.issuer",
               "display": "Issuing Organization of Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.issuer\u0060 maps as Equivalent to R4 \u0060Invoice.issuer\u0060"
             }
           ]
@@ -143,8 +143,8 @@
             {
               "code": "Invoice.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Invoice.language\u0060 maps as RelatedTo to R4 \u0060Invoice.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Invoice.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Invoice.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -155,7 +155,7 @@
             {
               "code": "Invoice.lineItem",
               "display": "Line items of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.lineItem\u0060 maps as Equivalent to R4 \u0060Invoice.lineItem\u0060"
             }
           ]
@@ -167,7 +167,7 @@
             {
               "code": "Invoice.lineItem.chargeItem[x]",
               "display": "Reference to ChargeItem containing details of this line item or an inline billing code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.lineItem.chargeItem[x]\u0060 maps as Equivalent to R4 \u0060Invoice.lineItem.chargeItem[x]\u0060"
             }
           ]
@@ -179,7 +179,7 @@
             {
               "code": "Invoice.lineItem.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.lineItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.lineItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -191,7 +191,7 @@
             {
               "code": "Invoice.lineItem.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.lineItem.id\u0060 maps as Equivalent to R4 \u0060Invoice.lineItem.id\u0060"
             }
           ]
@@ -203,7 +203,7 @@
             {
               "code": "Invoice.lineItem.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.lineItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.lineItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -215,7 +215,7 @@
             {
               "code": "Invoice.lineItem.priceComponent",
               "display": "Components of total line item price",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.lineItem.priceComponent\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.lineItem.priceComponent\u0060 - priceComponent has change due to type change: R5 type MonetaryComponent does not exist in R4"
             }
           ]
@@ -227,7 +227,7 @@
             {
               "code": "Invoice.lineItem.sequence",
               "display": "Sequence number of line item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.lineItem.sequence\u0060 maps as Equivalent to R4 \u0060Invoice.lineItem.sequence\u0060"
             }
           ]
@@ -256,7 +256,7 @@
             {
               "code": "Invoice.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -268,7 +268,7 @@
             {
               "code": "Invoice.note",
               "display": "Comments made about the invoice",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -280,7 +280,7 @@
             {
               "code": "Invoice.participant",
               "display": "Participant in creation of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.participant\u0060 maps as Equivalent to R4 \u0060Invoice.participant\u0060"
             }
           ]
@@ -292,7 +292,7 @@
             {
               "code": "Invoice.participant.actor",
               "display": "Individual who was involved",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.participant.actor\u0060 maps as Equivalent to R4 \u0060Invoice.participant.actor\u0060"
             }
           ]
@@ -304,7 +304,7 @@
             {
               "code": "Invoice.participant.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.participant.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.participant.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -316,7 +316,7 @@
             {
               "code": "Invoice.participant.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.participant.id\u0060 maps as Equivalent to R4 \u0060Invoice.participant.id\u0060"
             }
           ]
@@ -328,7 +328,7 @@
             {
               "code": "Invoice.participant.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.participant.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -340,7 +340,7 @@
             {
               "code": "Invoice.participant.role",
               "display": "Type of involvement in creation of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.participant.role\u0060 maps as Equivalent to R4 \u0060Invoice.participant.role\u0060"
             }
           ]
@@ -352,7 +352,7 @@
             {
               "code": "Invoice.paymentTerms",
               "display": "Payment details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.paymentTerms\u0060 maps as Equivalent to R4 \u0060Invoice.paymentTerms\u0060"
             }
           ]
@@ -369,7 +369,7 @@
             {
               "code": "Invoice.recipient",
               "display": "Recipient of this invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.recipient\u0060 maps as Equivalent to R4 \u0060Invoice.recipient\u0060"
             }
           ]
@@ -381,7 +381,7 @@
             {
               "code": "Invoice.status",
               "display": "draft | issued | balanced | cancelled | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.status\u0060 maps as Equivalent to R4 \u0060Invoice.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/invoice-status|5.0.0 and http://hl7.org/fhir/ValueSet/invoice-status|4.0.1 (Equivalent)"
             }
           ]
@@ -393,7 +393,7 @@
             {
               "code": "Invoice.subject",
               "display": "Recipient(s) of goods and services",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.subject\u0060 maps as Equivalent to R4 \u0060Invoice.subject\u0060"
             }
           ]
@@ -405,7 +405,7 @@
             {
               "code": "Invoice.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.text\u0060 maps as Equivalent to R4 \u0060Invoice.text\u0060"
             }
           ]
@@ -417,7 +417,7 @@
             {
               "code": "Invoice.totalGross",
               "display": "Gross total of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.totalGross\u0060 maps as Equivalent to R4 \u0060Invoice.totalGross\u0060"
             }
           ]
@@ -429,7 +429,7 @@
             {
               "code": "Invoice.totalNet",
               "display": "Net total of this Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.totalNet\u0060 maps as Equivalent to R4 \u0060Invoice.totalNet\u0060"
             }
           ]
@@ -441,7 +441,7 @@
             {
               "code": "Invoice.totalPriceComponent",
               "display": "Components of Invoice total",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Invoice.totalPriceComponent\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Invoice.totalPriceComponent\u0060 - totalPriceComponent has change due to type change: R5 type MonetaryComponent does not exist in R4"
             }
           ]
@@ -453,7 +453,7 @@
             {
               "code": "Invoice.type",
               "display": "Type of Invoice",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Invoice.type\u0060 maps as Equivalent to R4 \u0060Invoice.type\u0060"
             }
           ]

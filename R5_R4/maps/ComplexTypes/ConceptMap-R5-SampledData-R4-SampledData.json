@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/SampledData",
       "element": [
         {
-          "code": "SampledData.interval",
-          "target": [
-            {
-              "code": "SampledData.period",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/SampledData",
-      "target": "http://hl7.org/fhir/StructureDefinition/SampledData",
-      "element": [
-        {
           "code": "SampledData",
           "display": "A series of measurements taken by a device",
           "target": [
@@ -121,8 +106,14 @@
         },
         {
           "code": "SampledData.interval",
-          "display": "Number of intervalUnits between samples",
-          "noMap": true
+          "target": [
+            {
+              "code": "SampledData.period",
+              "display": "Number of milliseconds between samples",
+              "relationship": "related-to",
+              "comment": "R5 \u0060SampledData.interval\u0060 maps as RelatedTo to R4 \u0060SampledData.period\u0060 - period made the element mandatory; period increased the minimum cardinality from 0 to 1"
+            }
+          ]
         },
         {
           "code": "SampledData.intervalUnit",

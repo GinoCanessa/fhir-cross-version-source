@@ -28,57 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
       "element": [
         {
-          "code": "MedicationAdministration.encounter",
-          "target": [
-            {
-              "code": "MedicationAdministration.context",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationAdministration.medication",
-          "target": [
-            {
-              "code": "MedicationAdministration.medication[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationAdministration.occurence[x]",
-          "target": [
-            {
-              "code": "MedicationAdministration.effective[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationAdministration.reason.concept",
-          "target": [
-            {
-              "code": "MedicationAdministration.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationAdministration.reason.reference",
-          "target": [
-            {
-              "code": "MedicationAdministration.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-      "target": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
-      "element": [
-        {
           "code": "MedicationAdministration",
           "display": "Administration of medication to a patient",
           "target": [
@@ -102,8 +51,8 @@
             {
               "code": "MedicationAdministration.category",
               "display": "Type of medication usage",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationAdministration.category\u0060 maps as RelatedTo to R4 \u0060MedicationAdministration.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationAdministration.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred; category has change due to type change: R5 \u0060category\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060category\u0060"
             }
           ]
         },
@@ -114,7 +63,7 @@
             {
               "code": "MedicationAdministration.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.contained\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.contained\u0060"
             }
           ]
@@ -126,7 +75,7 @@
             {
               "code": "MedicationAdministration.device",
               "display": "Device used to administer",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.device\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.device\u0060 - device has change due to type change: R5 device CodeableReference has no equivalent or mapped type in R4 device"
             }
           ]
@@ -138,7 +87,7 @@
             {
               "code": "MedicationAdministration.dosage",
               "display": "Details of how medication was taken",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage\u0060"
             }
           ]
@@ -150,7 +99,7 @@
             {
               "code": "MedicationAdministration.dosage.dose",
               "display": "Amount of medication per dose",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.dose\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.dose\u0060"
             }
           ]
@@ -162,7 +111,7 @@
             {
               "code": "MedicationAdministration.dosage.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.dosage.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.dosage.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -174,7 +123,7 @@
             {
               "code": "MedicationAdministration.dosage.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.id\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.id\u0060"
             }
           ]
@@ -186,7 +135,7 @@
             {
               "code": "MedicationAdministration.dosage.method",
               "display": "How drug was administered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.method\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.method\u0060"
             }
           ]
@@ -198,7 +147,7 @@
             {
               "code": "MedicationAdministration.dosage.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.dosage.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.dosage.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -210,7 +159,7 @@
             {
               "code": "MedicationAdministration.dosage.rate[x]",
               "display": "Dose quantity per unit of time",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.dosage.rate[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.dosage.rate[x]\u0060 - rate[x] has change due to type change: R5 \u0060rate[x]\u0060 \u0060Ratio\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060rate[x]\u0060"
             }
           ]
@@ -222,7 +171,7 @@
             {
               "code": "MedicationAdministration.dosage.route",
               "display": "Path of substance into body",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.route\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.route\u0060"
             }
           ]
@@ -234,7 +183,7 @@
             {
               "code": "MedicationAdministration.dosage.site",
               "display": "Body site administered to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.site\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.site\u0060"
             }
           ]
@@ -246,15 +195,21 @@
             {
               "code": "MedicationAdministration.dosage.text",
               "display": "Free text dosage instructions e.g. SIG",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.dosage.text\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.dosage.text\u0060"
             }
           ]
         },
         {
           "code": "MedicationAdministration.encounter",
-          "display": "Encounter administered as part of",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationAdministration.context",
+              "display": "Encounter or Episode of Care administered as part of",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationAdministration.encounter\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationAdministration.context\u0060 - context has change due to type change: R5 \u0060encounter\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060context\u0060"
+            }
+          ]
         },
         {
           "code": "MedicationAdministration.eventHistory",
@@ -263,7 +218,7 @@
             {
               "code": "MedicationAdministration.eventHistory",
               "display": "A list of events of interest in the lifecycle",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.eventHistory\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.eventHistory\u0060"
             }
           ]
@@ -275,7 +230,7 @@
             {
               "code": "MedicationAdministration.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -299,7 +254,7 @@
             {
               "code": "MedicationAdministration.identifier",
               "display": "External identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.identifier\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.identifier\u0060"
             }
           ]
@@ -328,15 +283,21 @@
             {
               "code": "MedicationAdministration.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationAdministration.language\u0060 maps as RelatedTo to R4 \u0060MedicationAdministration.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationAdministration.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationAdministration.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
         {
           "code": "MedicationAdministration.medication",
-          "display": "What was administered",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationAdministration.medication[x]",
+              "display": "What was administered",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationAdministration.medication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.medication[x]\u0060 - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]"
+            }
+          ]
         },
         {
           "code": "MedicationAdministration.meta",
@@ -357,7 +318,7 @@
             {
               "code": "MedicationAdministration.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -369,15 +330,21 @@
             {
               "code": "MedicationAdministration.note",
               "display": "Information about the administration",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
         },
         {
           "code": "MedicationAdministration.occurence[x]",
-          "display": "Specific date/time or interval of time during which the administration took place (or did not take place)",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationAdministration.effective[x]",
+              "display": "Start and end time of administration",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationAdministration.occurence[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.effective[x]\u0060 - effective[x] has change due to type change: R5 occurence[x] Timing has no equivalent or mapped type in R4 effective[x]"
+            }
+          ]
         },
         {
           "code": "MedicationAdministration.partOf",
@@ -386,7 +353,7 @@
             {
               "code": "MedicationAdministration.partOf",
               "display": "Part of referenced event",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.partOf\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.partOf\u0060 - partOf has change due to type change: R5 \u0060partOf\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060partOf\u0060"
             }
           ]
@@ -398,7 +365,7 @@
             {
               "code": "MedicationAdministration.performer",
               "display": "Who performed the medication administration and what they did",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.performer\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.performer\u0060"
             }
           ]
@@ -410,7 +377,7 @@
             {
               "code": "MedicationAdministration.performer.actor",
               "display": "Who performed the medication administration",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.performer.actor\u0060 - actor has change due to type change: R5 actor CodeableReference has no equivalent or mapped type in R4 actor"
             }
           ]
@@ -422,7 +389,7 @@
             {
               "code": "MedicationAdministration.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -434,7 +401,7 @@
             {
               "code": "MedicationAdministration.performer.function",
               "display": "Type of performance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.performer.function\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.performer.function\u0060"
             }
           ]
@@ -446,7 +413,7 @@
             {
               "code": "MedicationAdministration.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.performer.id\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.performer.id\u0060"
             }
           ]
@@ -458,15 +425,45 @@
             {
               "code": "MedicationAdministration.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationAdministration.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "MedicationAdministration.reason",
-          "display": "Concept, condition or observation that supports why the medication was administered",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationAdministration.reasonCode",
+              "display": "Reason administration performed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationAdministration.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationAdministration.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "MedicationAdministration.reasonReference",
+              "display": "Condition or observation that supports why the medication was administered",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MedicationAdministration.reason\u0060 maps as RelatedTo to R4 \u0060MedicationAdministration.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/reason-medication-given-codes; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "MedicationAdministration.reason.concept",
+          "target": [
+            {
+              "code": "MedicationAdministration.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MedicationAdministration.reason.reference",
+          "target": [
+            {
+              "code": "MedicationAdministration.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "MedicationAdministration.recorded",
@@ -480,7 +477,7 @@
             {
               "code": "MedicationAdministration.request",
               "display": "Request administration performed against",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.request\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.request\u0060"
             }
           ]
@@ -492,7 +489,7 @@
             {
               "code": "MedicationAdministration.status",
               "display": "in-progress | not-done | on-hold | completed | entered-in-error | stopped | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.status\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medication-admin-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-admin-status|4.0.1 (Equivalent)"
             }
           ]
@@ -504,7 +501,7 @@
             {
               "code": "MedicationAdministration.statusReason",
               "display": "Reason administration not performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.statusReason\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.statusReason\u0060"
             }
           ]
@@ -516,7 +513,7 @@
             {
               "code": "MedicationAdministration.subject",
               "display": "Who received medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.subject\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.subject\u0060"
             }
           ]
@@ -533,7 +530,7 @@
             {
               "code": "MedicationAdministration.supportingInformation",
               "display": "Additional information to support administration",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.supportingInformation\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.supportingInformation\u0060"
             }
           ]
@@ -545,7 +542,7 @@
             {
               "code": "MedicationAdministration.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationAdministration.text\u0060 maps as Equivalent to R4 \u0060MedicationAdministration.text\u0060"
             }
           ]

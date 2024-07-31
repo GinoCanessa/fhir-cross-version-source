@@ -28,66 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/SubstancePolymer",
       "element": [
         {
-          "code": "SubstancePolymer.monomerSet.startingMaterial.category",
-          "target": [
-            {
-              "code": "SubstancePolymer.monomerSet.startingMaterial.type",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SubstancePolymer.monomerSet.startingMaterial.code",
-          "target": [
-            {
-              "code": "SubstancePolymer.monomerSet.startingMaterial.material",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SubstancePolymer.repeat.repeatUnit.amount",
-          "target": [
-            {
-              "code": "SubstancePolymer.repeat.numberOfUnits",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type",
-          "target": [
-            {
-              "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.degree",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SubstancePolymer.repeat.repeatUnit.orientation",
-          "target": [
-            {
-              "code": "SubstancePolymer.repeat.repeatUnit.orientationOfPolymerisation",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SubstancePolymer.repeat.repeatUnit.unit",
-          "target": [
-            {
-              "code": "SubstancePolymer.repeat.repeatUnit.repeatUnit",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/SubstancePolymer",
-      "target": "http://hl7.org/fhir/StructureDefinition/SubstancePolymer",
-      "element": [
-        {
           "code": "SubstancePolymer",
           "display": "Properties of a substance specific to it being a polymer",
           "target": [
@@ -106,7 +46,7 @@
             {
               "code": "SubstancePolymer.class",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.class\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.class\u0060"
             }
           ]
@@ -118,7 +58,7 @@
             {
               "code": "SubstancePolymer.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.contained\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.contained\u0060"
             }
           ]
@@ -130,7 +70,7 @@
             {
               "code": "SubstancePolymer.copolymerConnectivity",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.copolymerConnectivity\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.copolymerConnectivity\u0060"
             }
           ]
@@ -142,7 +82,7 @@
             {
               "code": "SubstancePolymer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -154,7 +94,7 @@
             {
               "code": "SubstancePolymer.geometry",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.geometry\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.geometry\u0060"
             }
           ]
@@ -195,8 +135,8 @@
             {
               "code": "SubstancePolymer.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SubstancePolymer.language\u0060 maps as RelatedTo to R4 \u0060SubstancePolymer.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060SubstancePolymer.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060SubstancePolymer.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -219,8 +159,8 @@
             {
               "code": "SubstancePolymer.modification",
               "display": "Todo",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SubstancePolymer.modification\u0060 maps as RelatedTo to R4 \u0060SubstancePolymer.modification\u0060 - modification changed from scalar to array (max cardinality from 1 to *)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060SubstancePolymer.modification\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060SubstancePolymer.modification\u0060 - modification changed from scalar to array (max cardinality from 1 to *)"
             }
           ]
         },
@@ -231,7 +171,7 @@
             {
               "code": "SubstancePolymer.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -243,7 +183,7 @@
             {
               "code": "SubstancePolymer.monomerSet",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet\u0060"
             }
           ]
@@ -255,7 +195,7 @@
             {
               "code": "SubstancePolymer.monomerSet.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.monomerSet.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -267,7 +207,7 @@
             {
               "code": "SubstancePolymer.monomerSet.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.id\u0060"
             }
           ]
@@ -279,7 +219,7 @@
             {
               "code": "SubstancePolymer.monomerSet.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.monomerSet.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -291,7 +231,7 @@
             {
               "code": "SubstancePolymer.monomerSet.ratioType",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.ratioType\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.ratioType\u0060"
             }
           ]
@@ -303,7 +243,7 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.startingMaterial\u0060"
             }
           ]
@@ -315,20 +255,32 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial.amount",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.amount\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.amount\u0060 - amount has change due to type change: R5 amount Quantity has no equivalent or mapped type in R4 amount"
             }
           ]
         },
         {
           "code": "SubstancePolymer.monomerSet.startingMaterial.category",
-          "display": "Substance high level category, e.g. chemical substance",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.monomerSet.startingMaterial.type",
+              "display": "Todo",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.category\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.type\u0060"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.monomerSet.startingMaterial.code",
-          "display": "The type of substance for this starting material",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.monomerSet.startingMaterial.material",
+              "display": "Todo",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.code\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.material\u0060"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.monomerSet.startingMaterial.extension",
@@ -337,7 +289,7 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -349,7 +301,7 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.id\u0060"
             }
           ]
@@ -361,7 +313,7 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial.isDefining",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.isDefining\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.isDefining\u0060"
             }
           ]
@@ -373,7 +325,7 @@
             {
               "code": "SubstancePolymer.monomerSet.startingMaterial.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.monomerSet.startingMaterial.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.monomerSet.startingMaterial.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -385,7 +337,7 @@
             {
               "code": "SubstancePolymer.repeat",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat\u0060"
             }
           ]
@@ -397,7 +349,7 @@
             {
               "code": "SubstancePolymer.repeat.averageMolecularFormula",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.averageMolecularFormula\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.averageMolecularFormula\u0060"
             }
           ]
@@ -409,7 +361,7 @@
             {
               "code": "SubstancePolymer.repeat.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -421,7 +373,7 @@
             {
               "code": "SubstancePolymer.repeat.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.id\u0060"
             }
           ]
@@ -433,7 +385,7 @@
             {
               "code": "SubstancePolymer.repeat.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -445,20 +397,19 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.amount",
-          "display": "Number of repeats of this unit",
           "target": [
             {
-              "code": "SubstancePolymer.repeat.repeatUnit.amount",
+              "code": "SubstancePolymer.repeat.numberOfUnits",
               "display": "Todo",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.amount\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.amount\u0060 - amount has change due to type change: R5 amount integer has no equivalent or mapped type in R4 amount"
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.amount\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.numberOfUnits\u0060"
             }
           ]
         },
@@ -469,15 +420,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average",
-          "display": "An average amount of polymerisation",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount",
+              "display": "Todo",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount\u0060 - amount has change due to type change: R5 average integer has no equivalent or mapped type in R4 amount"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.extension",
@@ -486,15 +443,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high",
-          "display": "A high expected limit of the amount",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount",
+              "display": "Todo",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount\u0060 - amount has change due to type change: R5 high integer has no equivalent or mapped type in R4 amount"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.id",
@@ -503,15 +466,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.id\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low",
-          "display": "A low expected limit of the amount",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount",
+              "display": "Todo",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.amount\u0060 - amount has change due to type change: R5 low integer has no equivalent or mapped type in R4 amount"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.modifierExtension",
@@ -520,15 +489,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type",
-          "display": "The type of the degree of polymerisation shall be described, e.g. SRU/Polymer Ratio",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.degree",
+              "display": "Todo",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.degree\u0060"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.extension",
@@ -537,7 +512,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -549,7 +524,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.id\u0060"
             }
           ]
@@ -561,15 +536,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.orientation",
-          "display": "The orientation of the polymerisation, e.g. head-tail, head-head, random",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.orientationOfPolymerisation",
+              "display": "Todo",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.orientation\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.orientationOfPolymerisation\u0060"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation",
@@ -578,7 +559,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation\u0060"
             }
           ]
@@ -602,7 +583,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -619,7 +600,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.id\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.id\u0060"
             }
           ]
@@ -631,7 +612,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -643,7 +624,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation\u0060"
             }
           ]
@@ -655,15 +636,21 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type\u0060"
             }
           ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnit.unit",
-          "display": "Structural repeat units are essential elements for defining polymers",
-          "noMap": true
+          "target": [
+            {
+              "code": "SubstancePolymer.repeat.repeatUnit.repeatUnit",
+              "display": "Todo",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnit.unit\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnit.repeatUnit\u0060"
+            }
+          ]
         },
         {
           "code": "SubstancePolymer.repeat.repeatUnitAmountType",
@@ -672,7 +659,7 @@
             {
               "code": "SubstancePolymer.repeat.repeatUnitAmountType",
               "display": "Todo",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.repeat.repeatUnitAmountType\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.repeat.repeatUnitAmountType\u0060"
             }
           ]
@@ -684,7 +671,7 @@
             {
               "code": "SubstancePolymer.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SubstancePolymer.text\u0060 maps as Equivalent to R4 \u0060SubstancePolymer.text\u0060"
             }
           ]

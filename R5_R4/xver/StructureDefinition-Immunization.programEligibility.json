@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:Immunization.programEligibility compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Immunization.programEligibility` maps as RelatedTo to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
+  "description": "R5 `Immunization.programEligibility` maps as SourceIsBroaderThanTarget to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Patient eligibility for a specific vaccination program",
         "definition": "Indicates a patient's eligibility for a funding program.",
-        "comment": "R5 `Immunization.programEligibility` maps as RelatedTo to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
+        "comment": "R5 `Immunization.programEligibility` maps as SourceIsBroaderThanTarget to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
         "min": 0,
         "max": "*",
         "base": {
@@ -433,7 +433,7 @@
         "path": "Extension",
         "short": "Patient eligibility for a specific vaccination program",
         "definition": "Indicates a patient's eligibility for a funding program.",
-        "comment": "R5 `Immunization.programEligibility` maps as RelatedTo to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
+        "comment": "R5 `Immunization.programEligibility` maps as SourceIsBroaderThanTarget to R4 `Immunization.programEligibility` - programEligibility added a binding requirement - Example http://hl7.org/fhir/ValueSet/immunization-program-eligibility; programEligibility has change due to type change: R5 programEligibility BackboneElement has no equivalent or mapped type in R4 programEligibility",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -448,20 +448,27 @@
       },
       {
         "path": "Extension.extension:program.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:program.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The vaccation funding program a patient may be eligible for."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "VaccineFundingProgram"
+            }
+          ],
+          "strength": "example",
+          "description": "x",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-vaccine-funding-program"
+        }
       },
       {
         "path": "Extension.extension:program.url",
@@ -477,20 +484,27 @@
       },
       {
         "path": "Extension.extension:programStatus.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:programStatus.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The patient's eligibility for a vaccation program."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProgramEligibility"
+            }
+          ],
+          "strength": "example",
+          "description": "x",
+          "valueSet": "http://hl7.org/fhir/ValueSet/immunization-program-eligibility"
+        }
       },
       {
         "path": "Extension.extension:programStatus.url",

@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 12 |
+Equivalent | 13 |
+SourceIsBroaderThanTarget | 2 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -29,7 +30,7 @@ RelatedTo | 12 |
 | EnrollmentRequest.identifier | EnrollmentRequest.identifier | Equivalent | R5 `EnrollmentRequest.identifier` maps as Equivalent to R4 `EnrollmentRequest.identifier` |
 | EnrollmentRequest.implicitRules | EnrollmentRequest.implicitRules | Equivalent | R5 `EnrollmentRequest.implicitRules` maps as Equivalent to R4 `EnrollmentRequest.implicitRules` |
 | EnrollmentRequest.insurer | EnrollmentRequest.insurer | Equivalent | R5 `EnrollmentRequest.insurer` maps as Equivalent to R4 `EnrollmentRequest.insurer` |
-| EnrollmentRequest.language | EnrollmentRequest.language | RelatedTo | R5 `EnrollmentRequest.language` maps as RelatedTo to R4 `EnrollmentRequest.language` - language changed the binding strength from Required to Preferred |
+| EnrollmentRequest.language | EnrollmentRequest.language | SourceIsNarrowerThanTarget | R5 `EnrollmentRequest.language` maps as SourceIsNarrowerThanTarget to R4 `EnrollmentRequest.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | EnrollmentRequest.meta | EnrollmentRequest.meta | Equivalent | R5 `EnrollmentRequest.meta` maps as Equivalent to R4 `EnrollmentRequest.meta` |
 | EnrollmentRequest.modifierExtension | EnrollmentRequest.modifierExtension | SourceIsBroaderThanTarget | R5 `EnrollmentRequest.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `EnrollmentRequest.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | EnrollmentRequest.provider | EnrollmentRequest.provider | Equivalent | R5 `EnrollmentRequest.provider` maps as Equivalent to R4 `EnrollmentRequest.provider` |

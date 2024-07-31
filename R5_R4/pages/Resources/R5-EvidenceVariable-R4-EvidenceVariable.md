@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 46 |
-Equivalent | 4 |
-RelatedTo | 33 |
+DoesNotExistInTarget | 42 |
+Equivalent | 28 |
+RelatedTo | 5 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -47,11 +49,11 @@ RelatedTo | 33 |
 | EvidenceVariable.characteristic.definitionByTypeAndValue.offset | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionByTypeAndValue.offset` does not appear in the target and has no mapping for `EvidenceVariable`. |
 | EvidenceVariable.characteristic.definitionByTypeAndValue.type | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionByTypeAndValue.type` does not appear in the target and has no mapping for `EvidenceVariable`. |
 | EvidenceVariable.characteristic.definitionByTypeAndValue.value[x] | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionByTypeAndValue.value[x]` does not appear in the target and has no mapping for `EvidenceVariable`. |
-| EvidenceVariable.characteristic.definitionCanonical | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionCanonical` does not appear in the target and has no mapping for `EvidenceVariable`. |
-| EvidenceVariable.characteristic.definitionCodeableConcept | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionCodeableConcept` does not appear in the target and has no mapping for `EvidenceVariable`. |
-| EvidenceVariable.characteristic.definitionExpression | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionExpression` does not appear in the target and has no mapping for `EvidenceVariable`. |
+| EvidenceVariable.characteristic.definitionCanonical | EvidenceVariable.characteristic.definition[x] | RelatedTo | R5 `EvidenceVariable.characteristic.definitionCanonical` maps as RelatedTo to R4 `EvidenceVariable.characteristic.definition[x]` - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 `definitionCanonical` `canonical` maps as RelatedTo for R4 `definition[x]` |
+| EvidenceVariable.characteristic.definitionCodeableConcept | EvidenceVariable.characteristic.definition[x] | RelatedTo | R5 `EvidenceVariable.characteristic.definitionCodeableConcept` maps as RelatedTo to R4 `EvidenceVariable.characteristic.definition[x]` - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1 |
+| EvidenceVariable.characteristic.definitionExpression | EvidenceVariable.characteristic.definition[x] | RelatedTo | R5 `EvidenceVariable.characteristic.definitionExpression` maps as RelatedTo to R4 `EvidenceVariable.characteristic.definition[x]` - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 `definitionExpression` `Expression` maps as RelatedTo for R4 `definition[x]` |
 | EvidenceVariable.characteristic.definitionId | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionId` does not appear in the target and has no mapping for `EvidenceVariable`. |
-| EvidenceVariable.characteristic.definitionReference | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.definitionReference` does not appear in the target and has no mapping for `EvidenceVariable`. |
+| EvidenceVariable.characteristic.definitionReference | EvidenceVariable.characteristic.definition[x] | RelatedTo | R5 `EvidenceVariable.characteristic.definitionReference` maps as RelatedTo to R4 `EvidenceVariable.characteristic.definition[x]` - definition[x] made the element mandatory; definition[x] increased the minimum cardinality from 0 to 1; definition[x] has change due to type change: R5 `definitionReference` `Reference` maps as SourceIsBroaderThanTarget for R4 `definition[x]` |
 | EvidenceVariable.characteristic.description | EvidenceVariable.characteristic.description | SourceIsBroaderThanTarget | R5 `EvidenceVariable.characteristic.description` maps as SourceIsBroaderThanTarget to R4 `EvidenceVariable.characteristic.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | EvidenceVariable.characteristic.duration[x] | - | DoesNotExistInTarget | R5 `EvidenceVariable.characteristic.duration[x]` does not appear in the target and has no mapping for `EvidenceVariable`. |
 | EvidenceVariable.characteristic.exclude | EvidenceVariable.characteristic.exclude | Equivalent | R5 `EvidenceVariable.characteristic.exclude` maps as Equivalent to R4 `EvidenceVariable.characteristic.exclude` |
@@ -85,7 +87,7 @@ RelatedTo | 33 |
 | EvidenceVariable.id | EvidenceVariable.id | Equivalent | R5 `EvidenceVariable.id` maps as Equivalent to R4 `EvidenceVariable.id` |
 | EvidenceVariable.identifier | EvidenceVariable.identifier | Equivalent | R5 `EvidenceVariable.identifier` maps as Equivalent to R4 `EvidenceVariable.identifier` |
 | EvidenceVariable.implicitRules | EvidenceVariable.implicitRules | Equivalent | R5 `EvidenceVariable.implicitRules` maps as Equivalent to R4 `EvidenceVariable.implicitRules` |
-| EvidenceVariable.language | EvidenceVariable.language | RelatedTo | R5 `EvidenceVariable.language` maps as RelatedTo to R4 `EvidenceVariable.language` - language changed the binding strength from Required to Preferred |
+| EvidenceVariable.language | EvidenceVariable.language | SourceIsNarrowerThanTarget | R5 `EvidenceVariable.language` maps as SourceIsNarrowerThanTarget to R4 `EvidenceVariable.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | EvidenceVariable.lastReviewDate | EvidenceVariable.lastReviewDate | Equivalent | R5 `EvidenceVariable.lastReviewDate` maps as Equivalent to R4 `EvidenceVariable.lastReviewDate` |
 | EvidenceVariable.meta | EvidenceVariable.meta | Equivalent | R5 `EvidenceVariable.meta` maps as Equivalent to R4 `EvidenceVariable.meta` |
 | EvidenceVariable.modifierExtension | EvidenceVariable.modifierExtension | SourceIsBroaderThanTarget | R5 `EvidenceVariable.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `EvidenceVariable.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -93,7 +95,7 @@ RelatedTo | 33 |
 | EvidenceVariable.note | EvidenceVariable.note | SourceIsBroaderThanTarget | R5 `EvidenceVariable.note` maps as SourceIsBroaderThanTarget to R4 `EvidenceVariable.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
 | EvidenceVariable.publisher | EvidenceVariable.publisher | Equivalent | R5 `EvidenceVariable.publisher` maps as Equivalent to R4 `EvidenceVariable.publisher` |
 | EvidenceVariable.purpose | - | DoesNotExistInTarget | R5 `EvidenceVariable.purpose` does not appear in the target and has no mapping for `EvidenceVariable`. |
-| EvidenceVariable.relatedArtifact | EvidenceVariable.relatedArtifact | Equivalent | R5 `EvidenceVariable.relatedArtifact` maps as Equivalent to R4 `EvidenceVariable.relatedArtifact` |
+| EvidenceVariable.relatedArtifact | EvidenceVariable.relatedArtifact | SourceIsBroaderThanTarget | R5 `EvidenceVariable.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `EvidenceVariable.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | EvidenceVariable.reviewer | EvidenceVariable.reviewer | Equivalent | R5 `EvidenceVariable.reviewer` maps as Equivalent to R4 `EvidenceVariable.reviewer` |
 | EvidenceVariable.shortTitle | EvidenceVariable.shortTitle | Equivalent | R5 `EvidenceVariable.shortTitle` maps as Equivalent to R4 `EvidenceVariable.shortTitle` |
 | EvidenceVariable.status | EvidenceVariable.status | Equivalent | R5 `EvidenceVariable.status` maps as Equivalent to R4 `EvidenceVariable.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent) |

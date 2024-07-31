@@ -6,7 +6,7 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | Target | TriggerDefinition |  | Base StructureDefinition for TriggerDefinition Type: A description of a triggering event. Triggering events can be named events, data events, or periodic, as determined by the type element. | 8 | 6 |
 
 
-Comparison Result: Equivalent
+Comparison Result: SourceIsBroaderThanTarget
 
 
 ### Mapping details

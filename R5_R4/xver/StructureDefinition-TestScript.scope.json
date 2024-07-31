@@ -462,17 +462,12 @@
       },
       {
         "path": "Extension.extension:artifact.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:artifact.extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
             ]
           }
         ]
@@ -491,20 +486,27 @@
       },
       {
         "path": "Extension.extension:conformance.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:conformance.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The expectation of whether the test must pass for the system to be considered conformant with the artifact."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TestScriptScopeConformanceType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The expectation of whether the test must pass for the system to be considered conformant with the artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/testscript-scope-conformance-codes"
+        }
       },
       {
         "path": "Extension.extension:conformance.url",
@@ -520,20 +522,27 @@
       },
       {
         "path": "Extension.extension:phase.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:phase.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The phase of testing for this artifact."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TestScriptScopePhaseType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The phase of testing for this artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/testscript-scope-phase-codes"
+        }
       },
       {
         "path": "Extension.extension:phase.url",

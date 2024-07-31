@@ -443,20 +443,23 @@
       },
       {
         "path": "Extension.extension:relation.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:relation.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceDefinitionRelationType"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The type of relation between this and the linked device.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/devicedefinition-relationtype"
+        }
       },
       {
         "path": "Extension.extension:relation.url",

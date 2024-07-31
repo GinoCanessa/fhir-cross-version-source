@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 44 |
+Equivalent | 35 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -57,7 +59,7 @@ RelatedTo | 44 |
 | Bundle.identifier | Bundle.identifier | Equivalent | R5 `Bundle.identifier` maps as Equivalent to R4 `Bundle.identifier` |
 | Bundle.implicitRules | Bundle.implicitRules | Equivalent | R5 `Bundle.implicitRules` maps as Equivalent to R4 `Bundle.implicitRules` |
 | Bundle.issues | - | DoesNotExistInTarget | R5 `Bundle.issues` does not appear in the target and has no mapping for `Bundle`. |
-| Bundle.language | Bundle.language | RelatedTo | R5 `Bundle.language` maps as RelatedTo to R4 `Bundle.language` - language changed the binding strength from Required to Preferred |
+| Bundle.language | Bundle.language | SourceIsNarrowerThanTarget | R5 `Bundle.language` maps as SourceIsNarrowerThanTarget to R4 `Bundle.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Bundle.link | Bundle.link | Equivalent | R5 `Bundle.link` maps as Equivalent to R4 `Bundle.link` |
 | Bundle.link.extension | Bundle.link.extension | SourceIsBroaderThanTarget | R5 `Bundle.link.extension` maps as SourceIsBroaderThanTarget to R4 `Bundle.link.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Bundle.link.id | Bundle.link.id | Equivalent | R5 `Bundle.link.id` maps as Equivalent to R4 `Bundle.link.id` |

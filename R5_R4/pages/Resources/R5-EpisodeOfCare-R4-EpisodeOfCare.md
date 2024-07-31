@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 8 |
-Equivalent | 4 |
-RelatedTo | 25 |
+DoesNotExistInTarget | 6 |
+Equivalent | 23 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -23,19 +25,19 @@ RelatedTo | 25 |
 | EpisodeOfCare | EpisodeOfCare | Equivalent | R5 `EpisodeOfCare` maps as Equivalent to R4 `EpisodeOfCare` |
 | EpisodeOfCare.account | EpisodeOfCare.account | Equivalent | R5 `EpisodeOfCare.account` maps as Equivalent to R4 `EpisodeOfCare.account` |
 | EpisodeOfCare.careManager | EpisodeOfCare.careManager | Equivalent | R5 `EpisodeOfCare.careManager` maps as Equivalent to R4 `EpisodeOfCare.careManager` |
-| EpisodeOfCare.careTeam | - | DoesNotExistInTarget | R5 `EpisodeOfCare.careTeam` does not appear in the target and has no mapping for `EpisodeOfCare`. |
+| EpisodeOfCare.careTeam | EpisodeOfCare.team | Equivalent | R5 `EpisodeOfCare.careTeam` maps as Equivalent to R4 `EpisodeOfCare.team` |
 | EpisodeOfCare.contained | EpisodeOfCare.contained | Equivalent | R5 `EpisodeOfCare.contained` maps as Equivalent to R4 `EpisodeOfCare.contained` |
 | EpisodeOfCare.diagnosis | EpisodeOfCare.diagnosis | Equivalent | R5 `EpisodeOfCare.diagnosis` maps as Equivalent to R4 `EpisodeOfCare.diagnosis` |
 | EpisodeOfCare.diagnosis.condition | EpisodeOfCare.diagnosis.condition | RelatedTo | R5 `EpisodeOfCare.diagnosis.condition` maps as RelatedTo to R4 `EpisodeOfCare.diagnosis.condition` - condition made the element mandatory; condition increased the minimum cardinality from 0 to 1; condition changed from array to scalar (max cardinality from * to 1); condition removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; condition has change due to type change: R5 condition CodeableReference has no equivalent or mapped type in R4 condition |
 | EpisodeOfCare.diagnosis.extension | EpisodeOfCare.diagnosis.extension | SourceIsBroaderThanTarget | R5 `EpisodeOfCare.diagnosis.extension` maps as SourceIsBroaderThanTarget to R4 `EpisodeOfCare.diagnosis.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | EpisodeOfCare.diagnosis.id | EpisodeOfCare.diagnosis.id | Equivalent | R5 `EpisodeOfCare.diagnosis.id` maps as Equivalent to R4 `EpisodeOfCare.diagnosis.id` |
 | EpisodeOfCare.diagnosis.modifierExtension | EpisodeOfCare.diagnosis.modifierExtension | SourceIsBroaderThanTarget | R5 `EpisodeOfCare.diagnosis.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `EpisodeOfCare.diagnosis.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| EpisodeOfCare.diagnosis.use | - | DoesNotExistInTarget | R5 `EpisodeOfCare.diagnosis.use` does not appear in the target and has no mapping for `EpisodeOfCare`. |
+| EpisodeOfCare.diagnosis.use | EpisodeOfCare.diagnosis.role | Equivalent | R5 `EpisodeOfCare.diagnosis.use` maps as Equivalent to R4 `EpisodeOfCare.diagnosis.role` |
 | EpisodeOfCare.extension | EpisodeOfCare.extension | SourceIsBroaderThanTarget | R5 `EpisodeOfCare.extension` maps as SourceIsBroaderThanTarget to R4 `EpisodeOfCare.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | EpisodeOfCare.id | EpisodeOfCare.id | Equivalent | R5 `EpisodeOfCare.id` maps as Equivalent to R4 `EpisodeOfCare.id` |
 | EpisodeOfCare.identifier | EpisodeOfCare.identifier | Equivalent | R5 `EpisodeOfCare.identifier` maps as Equivalent to R4 `EpisodeOfCare.identifier` |
 | EpisodeOfCare.implicitRules | EpisodeOfCare.implicitRules | Equivalent | R5 `EpisodeOfCare.implicitRules` maps as Equivalent to R4 `EpisodeOfCare.implicitRules` |
-| EpisodeOfCare.language | EpisodeOfCare.language | RelatedTo | R5 `EpisodeOfCare.language` maps as RelatedTo to R4 `EpisodeOfCare.language` - language changed the binding strength from Required to Preferred |
+| EpisodeOfCare.language | EpisodeOfCare.language | SourceIsNarrowerThanTarget | R5 `EpisodeOfCare.language` maps as SourceIsNarrowerThanTarget to R4 `EpisodeOfCare.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | EpisodeOfCare.managingOrganization | EpisodeOfCare.managingOrganization | Equivalent | R5 `EpisodeOfCare.managingOrganization` maps as Equivalent to R4 `EpisodeOfCare.managingOrganization` |
 | EpisodeOfCare.meta | EpisodeOfCare.meta | Equivalent | R5 `EpisodeOfCare.meta` maps as Equivalent to R4 `EpisodeOfCare.meta` |
 | EpisodeOfCare.modifierExtension | EpisodeOfCare.modifierExtension | SourceIsBroaderThanTarget | R5 `EpisodeOfCare.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `EpisodeOfCare.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

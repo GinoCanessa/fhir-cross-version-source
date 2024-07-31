@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 34 |
+Equivalent | 28 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -25,7 +27,7 @@ RelatedTo | 34 |
 | SubstanceNucleicAcid.extension | SubstanceNucleicAcid.extension | SourceIsBroaderThanTarget | R5 `SubstanceNucleicAcid.extension` maps as SourceIsBroaderThanTarget to R4 `SubstanceNucleicAcid.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | SubstanceNucleicAcid.id | SubstanceNucleicAcid.id | Equivalent | R5 `SubstanceNucleicAcid.id` maps as Equivalent to R4 `SubstanceNucleicAcid.id` |
 | SubstanceNucleicAcid.implicitRules | SubstanceNucleicAcid.implicitRules | Equivalent | R5 `SubstanceNucleicAcid.implicitRules` maps as Equivalent to R4 `SubstanceNucleicAcid.implicitRules` |
-| SubstanceNucleicAcid.language | SubstanceNucleicAcid.language | RelatedTo | R5 `SubstanceNucleicAcid.language` maps as RelatedTo to R4 `SubstanceNucleicAcid.language` - language changed the binding strength from Required to Preferred |
+| SubstanceNucleicAcid.language | SubstanceNucleicAcid.language | SourceIsNarrowerThanTarget | R5 `SubstanceNucleicAcid.language` maps as SourceIsNarrowerThanTarget to R4 `SubstanceNucleicAcid.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SubstanceNucleicAcid.meta | SubstanceNucleicAcid.meta | Equivalent | R5 `SubstanceNucleicAcid.meta` maps as Equivalent to R4 `SubstanceNucleicAcid.meta` |
 | SubstanceNucleicAcid.modifierExtension | SubstanceNucleicAcid.modifierExtension | SourceIsBroaderThanTarget | R5 `SubstanceNucleicAcid.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SubstanceNucleicAcid.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | SubstanceNucleicAcid.numberOfSubunits | SubstanceNucleicAcid.numberOfSubunits | Equivalent | R5 `SubstanceNucleicAcid.numberOfSubunits` maps as Equivalent to R4 `SubstanceNucleicAcid.numberOfSubunits` |

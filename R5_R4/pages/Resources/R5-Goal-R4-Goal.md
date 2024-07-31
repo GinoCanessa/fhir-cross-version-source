@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 3 |
-Equivalent | 4 |
-RelatedTo | 24 |
+DoesNotExistInTarget | 1 |
+Equivalent | 20 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -31,14 +33,15 @@ RelatedTo | 24 |
 | Goal.id | Goal.id | Equivalent | R5 `Goal.id` maps as Equivalent to R4 `Goal.id` |
 | Goal.identifier | Goal.identifier | Equivalent | R5 `Goal.identifier` maps as Equivalent to R4 `Goal.identifier` |
 | Goal.implicitRules | Goal.implicitRules | Equivalent | R5 `Goal.implicitRules` maps as Equivalent to R4 `Goal.implicitRules` |
-| Goal.language | Goal.language | RelatedTo | R5 `Goal.language` maps as RelatedTo to R4 `Goal.language` - language changed the binding strength from Required to Preferred |
+| Goal.language | Goal.language | SourceIsNarrowerThanTarget | R5 `Goal.language` maps as SourceIsNarrowerThanTarget to R4 `Goal.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Goal.lifecycleStatus | Goal.lifecycleStatus | Equivalent | R5 `Goal.lifecycleStatus` maps as Equivalent to R4 `Goal.lifecycleStatus` - lifecycleStatus has compatible required binding for code type: http://hl7.org/fhir/ValueSet/goal-status|5.0.0 and http://hl7.org/fhir/ValueSet/goal-status|4.0.1 (Equivalent) |
 | Goal.meta | Goal.meta | Equivalent | R5 `Goal.meta` maps as Equivalent to R4 `Goal.meta` |
 | Goal.modifierExtension | Goal.modifierExtension | SourceIsBroaderThanTarget | R5 `Goal.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Goal.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Goal.note | Goal.note | SourceIsBroaderThanTarget | R5 `Goal.note` maps as SourceIsBroaderThanTarget to R4 `Goal.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
-| Goal.outcome | - | DoesNotExistInTarget | R5 `Goal.outcome` does not appear in the target and has no mapping for `Goal`. |
+| Goal.outcome | Goal.outcomeCode | SourceIsBroaderThanTarget | R5 `Goal.outcome` maps as SourceIsBroaderThanTarget to R4 `Goal.outcomeCode` - outcomeCode has change due to type change: R5 outcome CodeableReference has no equivalent or mapped type in R4 outcomeCode |
+| Goal.outcome | Goal.outcomeReference | RelatedTo | R5 `Goal.outcome` maps as RelatedTo to R4 `Goal.outcomeReference` - outcomeReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; outcomeReference has change due to type change: R5 outcome CodeableReference has no equivalent or mapped type in R4 outcomeReference |
 | Goal.priority | Goal.priority | Equivalent | R5 `Goal.priority` maps as Equivalent to R4 `Goal.priority` |
-| Goal.source | - | DoesNotExistInTarget | R5 `Goal.source` does not appear in the target and has no mapping for `Goal`. |
+| Goal.source | Goal.expressedBy | SourceIsBroaderThanTarget | R5 `Goal.source` maps as SourceIsBroaderThanTarget to R4 `Goal.expressedBy` - expressedBy has change due to type change: R5 `source` `Reference` maps as SourceIsBroaderThanTarget for R4 `expressedBy` |
 | Goal.start[x] | Goal.start[x] | Equivalent | R5 `Goal.start[x]` maps as Equivalent to R4 `Goal.start[x]` |
 | Goal.statusDate | Goal.statusDate | Equivalent | R5 `Goal.statusDate` maps as Equivalent to R4 `Goal.statusDate` |
 | Goal.statusReason | Goal.statusReason | Equivalent | R5 `Goal.statusReason` maps as Equivalent to R4 `Goal.statusReason` |

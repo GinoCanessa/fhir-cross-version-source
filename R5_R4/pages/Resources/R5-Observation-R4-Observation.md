@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 10 |
-Equivalent | 4 |
-RelatedTo | 46 |
+Equivalent | 35 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 13 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -34,7 +36,7 @@ RelatedTo | 46 |
 | Observation.component.interpretation | Observation.component.interpretation | Equivalent | R5 `Observation.component.interpretation` maps as Equivalent to R4 `Observation.component.interpretation` |
 | Observation.component.modifierExtension | Observation.component.modifierExtension | SourceIsBroaderThanTarget | R5 `Observation.component.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Observation.component.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Observation.component.referenceRange | Observation.component.referenceRange | Equivalent | R5 `Observation.component.referenceRange` maps as Equivalent to R4 `Observation.component.referenceRange` |
-| Observation.component.value[x] | Observation.component.value[x] | SourceIsBroaderThanTarget | R5 `Observation.component.value[x]` maps as SourceIsBroaderThanTarget to R4 `Observation.component.value[x]` - value[x] has change due to type change: R5 `value[x]` `Ratio` maps as SourceIsBroaderThanTarget for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 value[x]; value[x] has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value[x] |
+| Observation.component.value[x] | Observation.component.value[x] | SourceIsBroaderThanTarget | R5 `Observation.component.value[x]` maps as SourceIsBroaderThanTarget to R4 `Observation.component.value[x]` - value[x] has change due to type change: R5 `value[x]` `Ratio` maps as SourceIsBroaderThanTarget for R4 `value[x]`; value[x] has change due to type change: R5 `value[x]` `SampledData` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 value[x]; value[x] has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value[x] |
 | Observation.contained | Observation.contained | Equivalent | R5 `Observation.contained` maps as Equivalent to R4 `Observation.contained` |
 | Observation.dataAbsentReason | Observation.dataAbsentReason | Equivalent | R5 `Observation.dataAbsentReason` maps as Equivalent to R4 `Observation.dataAbsentReason` |
 | Observation.derivedFrom | Observation.derivedFrom | RelatedTo | R5 `Observation.derivedFrom` maps as RelatedTo to R4 `Observation.derivedFrom` - derivedFrom has change due to type change: R5 `derivedFrom` `Reference` maps as RelatedTo for R4 `derivedFrom` |
@@ -50,7 +52,7 @@ RelatedTo | 46 |
 | Observation.instantiates[x] | - | DoesNotExistInTarget | R5 `Observation.instantiates[x]` does not appear in the target and has no mapping for `Observation`. |
 | Observation.interpretation | Observation.interpretation | Equivalent | R5 `Observation.interpretation` maps as Equivalent to R4 `Observation.interpretation` |
 | Observation.issued | Observation.issued | Equivalent | R5 `Observation.issued` maps as Equivalent to R4 `Observation.issued` |
-| Observation.language | Observation.language | RelatedTo | R5 `Observation.language` maps as RelatedTo to R4 `Observation.language` - language changed the binding strength from Required to Preferred |
+| Observation.language | Observation.language | SourceIsNarrowerThanTarget | R5 `Observation.language` maps as SourceIsNarrowerThanTarget to R4 `Observation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Observation.meta | Observation.meta | Equivalent | R5 `Observation.meta` maps as Equivalent to R4 `Observation.meta` |
 | Observation.method | Observation.method | Equivalent | R5 `Observation.method` maps as Equivalent to R4 `Observation.method` |
 | Observation.modifierExtension | Observation.modifierExtension | SourceIsBroaderThanTarget | R5 `Observation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Observation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -79,5 +81,5 @@ RelatedTo | 46 |
 | Observation.triggeredBy.observation | - | DoesNotExistInTarget | R5 `Observation.triggeredBy.observation` does not appear in the target and has no mapping for `Observation`. |
 | Observation.triggeredBy.reason | - | DoesNotExistInTarget | R5 `Observation.triggeredBy.reason` does not appear in the target and has no mapping for `Observation`. |
 | Observation.triggeredBy.type | - | DoesNotExistInTarget | R5 `Observation.triggeredBy.type` does not appear in the target and has no mapping for `Observation`. |
-| Observation.value[x] | Observation.value[x] | SourceIsBroaderThanTarget | R5 `Observation.value[x]` maps as SourceIsBroaderThanTarget to R4 `Observation.value[x]` - value[x] has change due to type change: R5 `value[x]` `Ratio` maps as SourceIsBroaderThanTarget for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 value[x]; value[x] has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value[x] |
+| Observation.value[x] | Observation.value[x] | SourceIsBroaderThanTarget | R5 `Observation.value[x]` maps as SourceIsBroaderThanTarget to R4 `Observation.value[x]` - value[x] has change due to type change: R5 `value[x]` `Ratio` maps as SourceIsBroaderThanTarget for R4 `value[x]`; value[x] has change due to type change: R5 `value[x]` `SampledData` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 value[x]; value[x] has change due to type change: R5 value[x] Reference has no equivalent or mapped type in R4 value[x] |
 

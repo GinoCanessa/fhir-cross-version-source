@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
       "element": [
         {
-          "code": "MedicationDispense.encounter",
-          "target": [
-            {
-              "code": "MedicationDispense.context",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationDispense.medication",
-          "target": [
-            {
-              "code": "MedicationDispense.medication[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MedicationDispense.notPerformedReason",
-          "target": [
-            {
-              "code": "MedicationDispense.statusReason[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
-      "target": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
-      "element": [
-        {
           "code": "MedicationDispense",
           "display": "Dispensing a medication to a named patient",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "MedicationDispense.authorizingPrescription",
               "display": "Medication order that authorizes the dispense",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.authorizingPrescription\u0060 maps as Equivalent to R4 \u0060MedicationDispense.authorizingPrescription\u0060"
             }
           ]
@@ -96,8 +63,8 @@
             {
               "code": "MedicationDispense.category",
               "display": "Type of medication dispense",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationDispense.category\u0060 maps as RelatedTo to R4 \u0060MedicationDispense.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationDispense.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.category\u0060 - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred; category has change due to type change: R5 \u0060category\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060category\u0060"
             }
           ]
         },
@@ -108,7 +75,7 @@
             {
               "code": "MedicationDispense.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.contained\u0060 maps as Equivalent to R4 \u0060MedicationDispense.contained\u0060"
             }
           ]
@@ -120,7 +87,7 @@
             {
               "code": "MedicationDispense.daysSupply",
               "display": "Amount of medication expressed as a timing amount",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.daysSupply\u0060 maps as Equivalent to R4 \u0060MedicationDispense.daysSupply\u0060"
             }
           ]
@@ -132,7 +99,7 @@
             {
               "code": "MedicationDispense.destination",
               "display": "Where the medication was sent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.destination\u0060 maps as Equivalent to R4 \u0060MedicationDispense.destination\u0060"
             }
           ]
@@ -144,15 +111,21 @@
             {
               "code": "MedicationDispense.dosageInstruction",
               "display": "How the medication is to be used by the patient or administered by the caregiver",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationDispense.dosageInstruction\u0060 maps as RelatedTo to R4 \u0060MedicationDispense.dosageInstruction\u0060 - dosageInstruction has change due to type change: R5 \u0060dosageInstruction\u0060 \u0060Dosage\u0060 maps as RelatedTo for R4 \u0060dosageInstruction\u0060"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationDispense.dosageInstruction\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.dosageInstruction\u0060 - dosageInstruction has change due to type change: R5 \u0060dosageInstruction\u0060 \u0060Dosage\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060dosageInstruction\u0060"
             }
           ]
         },
         {
           "code": "MedicationDispense.encounter",
-          "display": "Encounter associated with event",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationDispense.context",
+              "display": "Encounter / Episode associated with event",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationDispense.encounter\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationDispense.context\u0060 - context has change due to type change: R5 \u0060encounter\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060context\u0060"
+            }
+          ]
         },
         {
           "code": "MedicationDispense.eventHistory",
@@ -161,7 +134,7 @@
             {
               "code": "MedicationDispense.eventHistory",
               "display": "A list of relevant lifecycle events",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.eventHistory\u0060 maps as Equivalent to R4 \u0060MedicationDispense.eventHistory\u0060"
             }
           ]
@@ -173,7 +146,7 @@
             {
               "code": "MedicationDispense.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -197,7 +170,7 @@
             {
               "code": "MedicationDispense.identifier",
               "display": "External identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.identifier\u0060 maps as Equivalent to R4 \u0060MedicationDispense.identifier\u0060"
             }
           ]
@@ -221,8 +194,8 @@
             {
               "code": "MedicationDispense.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MedicationDispense.language\u0060 maps as RelatedTo to R4 \u0060MedicationDispense.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MedicationDispense.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MedicationDispense.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -233,15 +206,21 @@
             {
               "code": "MedicationDispense.location",
               "display": "Where the dispense occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.location\u0060 maps as Equivalent to R4 \u0060MedicationDispense.location\u0060"
             }
           ]
         },
         {
           "code": "MedicationDispense.medication",
-          "display": "What medication was supplied",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationDispense.medication[x]",
+              "display": "What medication was supplied",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationDispense.medication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.medication[x]\u0060 - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]"
+            }
+          ]
         },
         {
           "code": "MedicationDispense.meta",
@@ -262,7 +241,7 @@
             {
               "code": "MedicationDispense.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -274,15 +253,21 @@
             {
               "code": "MedicationDispense.note",
               "display": "Information about the dispense",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
         },
         {
           "code": "MedicationDispense.notPerformedReason",
-          "display": "Why a dispense was not performed",
-          "noMap": true
+          "target": [
+            {
+              "code": "MedicationDispense.statusReason[x]",
+              "display": "Why a dispense was not performed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060MedicationDispense.notPerformedReason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.statusReason[x]\u0060 - statusReason[x] has change due to type change: R5 notPerformedReason CodeableReference has no equivalent or mapped type in R4 statusReason[x]"
+            }
+          ]
         },
         {
           "code": "MedicationDispense.partOf",
@@ -291,7 +276,7 @@
             {
               "code": "MedicationDispense.partOf",
               "display": "Event that dispense is part of",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.partOf\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.partOf\u0060 - partOf has change due to type change: R5 \u0060partOf\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060partOf\u0060"
             }
           ]
@@ -303,7 +288,7 @@
             {
               "code": "MedicationDispense.performer",
               "display": "Who performed event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.performer\u0060 maps as Equivalent to R4 \u0060MedicationDispense.performer\u0060"
             }
           ]
@@ -315,7 +300,7 @@
             {
               "code": "MedicationDispense.performer.actor",
               "display": "Individual who was performing",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.performer.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -327,7 +312,7 @@
             {
               "code": "MedicationDispense.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -339,7 +324,7 @@
             {
               "code": "MedicationDispense.performer.function",
               "display": "Who performed the dispense and what they did",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.performer.function\u0060 maps as Equivalent to R4 \u0060MedicationDispense.performer.function\u0060"
             }
           ]
@@ -351,7 +336,7 @@
             {
               "code": "MedicationDispense.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.performer.id\u0060 maps as Equivalent to R4 \u0060MedicationDispense.performer.id\u0060"
             }
           ]
@@ -363,7 +348,7 @@
             {
               "code": "MedicationDispense.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -375,7 +360,7 @@
             {
               "code": "MedicationDispense.quantity",
               "display": "Amount dispensed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.quantity\u0060 maps as Equivalent to R4 \u0060MedicationDispense.quantity\u0060"
             }
           ]
@@ -387,7 +372,7 @@
             {
               "code": "MedicationDispense.receiver",
               "display": "Who collected the medication",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.receiver\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.receiver\u0060 - receiver has change due to type change: R5 \u0060receiver\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060receiver\u0060"
             }
           ]
@@ -409,7 +394,7 @@
             {
               "code": "MedicationDispense.status",
               "display": "preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.status\u0060 maps as Equivalent to R4 \u0060MedicationDispense.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/medicationdispense-status|5.0.0 and http://hl7.org/fhir/ValueSet/medicationdispense-status|4.0.1 (Equivalent)"
             }
           ]
@@ -426,7 +411,7 @@
             {
               "code": "MedicationDispense.subject",
               "display": "Who the dispense is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.subject\u0060 maps as Equivalent to R4 \u0060MedicationDispense.subject\u0060"
             }
           ]
@@ -438,7 +423,7 @@
             {
               "code": "MedicationDispense.substitution",
               "display": "Whether a substitution was performed on the dispense",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.substitution\u0060 maps as Equivalent to R4 \u0060MedicationDispense.substitution\u0060"
             }
           ]
@@ -450,7 +435,7 @@
             {
               "code": "MedicationDispense.substitution.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.substitution.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.substitution.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -462,7 +447,7 @@
             {
               "code": "MedicationDispense.substitution.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.substitution.id\u0060 maps as Equivalent to R4 \u0060MedicationDispense.substitution.id\u0060"
             }
           ]
@@ -474,7 +459,7 @@
             {
               "code": "MedicationDispense.substitution.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MedicationDispense.substitution.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MedicationDispense.substitution.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -486,7 +471,7 @@
             {
               "code": "MedicationDispense.substitution.reason",
               "display": "Why was substitution made",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.substitution.reason\u0060 maps as Equivalent to R4 \u0060MedicationDispense.substitution.reason\u0060"
             }
           ]
@@ -510,7 +495,7 @@
             {
               "code": "MedicationDispense.substitution.type",
               "display": "Code signifying whether a different drug was dispensed from what was prescribed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.substitution.type\u0060 maps as Equivalent to R4 \u0060MedicationDispense.substitution.type\u0060"
             }
           ]
@@ -522,7 +507,7 @@
             {
               "code": "MedicationDispense.substitution.wasSubstituted",
               "display": "Whether a substitution was or was not performed on the dispense",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.substitution.wasSubstituted\u0060 maps as Equivalent to R4 \u0060MedicationDispense.substitution.wasSubstituted\u0060"
             }
           ]
@@ -534,7 +519,7 @@
             {
               "code": "MedicationDispense.supportingInformation",
               "display": "Information that supports the dispensing of the medication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.supportingInformation\u0060 maps as Equivalent to R4 \u0060MedicationDispense.supportingInformation\u0060"
             }
           ]
@@ -546,7 +531,7 @@
             {
               "code": "MedicationDispense.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.text\u0060 maps as Equivalent to R4 \u0060MedicationDispense.text\u0060"
             }
           ]
@@ -558,7 +543,7 @@
             {
               "code": "MedicationDispense.type",
               "display": "Trial fill, partial fill, emergency fill, etc.",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.type\u0060 maps as Equivalent to R4 \u0060MedicationDispense.type\u0060"
             }
           ]
@@ -570,7 +555,7 @@
             {
               "code": "MedicationDispense.whenHandedOver",
               "display": "When product was given out",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.whenHandedOver\u0060 maps as Equivalent to R4 \u0060MedicationDispense.whenHandedOver\u0060"
             }
           ]
@@ -582,7 +567,7 @@
             {
               "code": "MedicationDispense.whenPrepared",
               "display": "When product was packaged and reviewed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MedicationDispense.whenPrepared\u0060 maps as Equivalent to R4 \u0060MedicationDispense.whenPrepared\u0060"
             }
           ]

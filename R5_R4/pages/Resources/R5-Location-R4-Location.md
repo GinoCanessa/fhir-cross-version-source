@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 25 |
+DoesNotExistInTarget | 2 |
+Equivalent | 23 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -24,17 +25,17 @@ RelatedTo | 25 |
 | Location.address | Location.address | Equivalent | R5 `Location.address` maps as Equivalent to R4 `Location.address` |
 | Location.alias | Location.alias | Equivalent | R5 `Location.alias` maps as Equivalent to R4 `Location.alias` |
 | Location.characteristic | - | DoesNotExistInTarget | R5 `Location.characteristic` does not appear in the target and has no mapping for `Location`. |
-| Location.contact | - | DoesNotExistInTarget | R5 `Location.contact` does not appear in the target and has no mapping for `Location`. |
+| Location.contact | Location.telecom | SourceIsBroaderThanTarget | R5 `Location.contact` maps as SourceIsBroaderThanTarget to R4 `Location.telecom` - telecom has change due to type change: R5 contact ExtendedContactDetail has no equivalent or mapped type in R4 telecom |
 | Location.contained | Location.contained | Equivalent | R5 `Location.contained` maps as Equivalent to R4 `Location.contained` |
 | Location.description | Location.description | SourceIsBroaderThanTarget | R5 `Location.description` maps as SourceIsBroaderThanTarget to R4 `Location.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | Location.endpoint | Location.endpoint | Equivalent | R5 `Location.endpoint` maps as Equivalent to R4 `Location.endpoint` |
 | Location.extension | Location.extension | SourceIsBroaderThanTarget | R5 `Location.extension` maps as SourceIsBroaderThanTarget to R4 `Location.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
-| Location.form | - | DoesNotExistInTarget | R5 `Location.form` does not appear in the target and has no mapping for `Location`. |
+| Location.form | Location.physicalType | Equivalent | R5 `Location.form` maps as Equivalent to R4 `Location.physicalType` |
 | Location.hoursOfOperation | Location.hoursOfOperation | SourceIsBroaderThanTarget | R5 `Location.hoursOfOperation` maps as SourceIsBroaderThanTarget to R4 `Location.hoursOfOperation` - hoursOfOperation has change due to type change: R5 hoursOfOperation Availability has no equivalent or mapped type in R4 hoursOfOperation |
 | Location.id | Location.id | Equivalent | R5 `Location.id` maps as Equivalent to R4 `Location.id` |
 | Location.identifier | Location.identifier | Equivalent | R5 `Location.identifier` maps as Equivalent to R4 `Location.identifier` |
 | Location.implicitRules | Location.implicitRules | Equivalent | R5 `Location.implicitRules` maps as Equivalent to R4 `Location.implicitRules` |
-| Location.language | Location.language | RelatedTo | R5 `Location.language` maps as RelatedTo to R4 `Location.language` - language changed the binding strength from Required to Preferred |
+| Location.language | Location.language | SourceIsNarrowerThanTarget | R5 `Location.language` maps as SourceIsNarrowerThanTarget to R4 `Location.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Location.managingOrganization | Location.managingOrganization | Equivalent | R5 `Location.managingOrganization` maps as Equivalent to R4 `Location.managingOrganization` |
 | Location.meta | Location.meta | Equivalent | R5 `Location.meta` maps as Equivalent to R4 `Location.meta` |
 | Location.mode | Location.mode | Equivalent | R5 `Location.mode` maps as Equivalent to R4 `Location.mode` - mode has compatible required binding for code type: http://hl7.org/fhir/ValueSet/location-mode|5.0.0 and http://hl7.org/fhir/ValueSet/location-mode|4.0.1 (Equivalent) |

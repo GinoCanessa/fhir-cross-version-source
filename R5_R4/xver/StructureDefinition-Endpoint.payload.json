@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:Endpoint.payload compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `Endpoint.payload` does not appear in the target and has no mapping for `Endpoint`.",
+  "description": "R5 `Endpoint.payload` maps as RelatedTo to R4 `Endpoint` - Endpoint has change due to type change: R5 payload BackboneElement has no equivalent or mapped type in R4 Endpoint",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Set of payloads that are provided by this endpoint",
         "definition": "The set of payloads that are provided/available at this endpoint.",
-        "comment": "R5 `Endpoint.payload` does not appear in the target and has no mapping for `Endpoint`.\nNote that not all mimetypes or types will be listed under the one endpoint resource, there may be multiple instances that information for cases where other header data such as the endpoint address, active status/period etc. is different.",
+        "comment": "R5 `Endpoint.payload` maps as RelatedTo to R4 `Endpoint` - Endpoint has change due to type change: R5 payload BackboneElement has no equivalent or mapped type in R4 Endpoint\nNote that not all mimetypes or types will be listed under the one endpoint resource, there may be multiple instances that information for cases where other header data such as the endpoint address, active status/period etc. is different.",
         "min": 0,
         "max": "*",
         "base": {
@@ -435,7 +435,7 @@
         "path": "Extension",
         "short": "Set of payloads that are provided by this endpoint",
         "definition": "The set of payloads that are provided/available at this endpoint.",
-        "comment": "R5 `Endpoint.payload` does not appear in the target and has no mapping for `Endpoint`.\nNote that not all mimetypes or types will be listed under the one endpoint resource, there may be multiple instances that information for cases where other header data such as the endpoint address, active status/period etc. is different.",
+        "comment": "R5 `Endpoint.payload` maps as RelatedTo to R4 `Endpoint` - Endpoint has change due to type change: R5 payload BackboneElement has no equivalent or mapped type in R4 Endpoint\nNote that not all mimetypes or types will be listed under the one endpoint resource, there may be multiple instances that information for cases where other header data such as the endpoint address, active status/period etc. is different.",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -451,20 +451,22 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PayloadType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/endpoint-payload-type"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -481,20 +483,31 @@
       },
       {
         "path": "Extension.extension:mimeType.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:mimeType.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The mime type of an attachment. Any valid mime type is allowed."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MimeType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "description": "BCP 13 (RFCs 2045, 2046, 2047, 4288, 4289 and 2049)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/mimetypes|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:mimeType.url",

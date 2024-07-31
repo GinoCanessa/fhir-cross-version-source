@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
       "element": [
         {
-          "code": "BiologicallyDerivedProduct.productStatus",
-          "target": [
-            {
-              "code": "BiologicallyDerivedProduct.status",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
-      "target": "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
-      "element": [
-        {
           "code": "BiologicallyDerivedProduct",
           "display": "This resource reflects an instance of a biologically derived product",
           "target": [
@@ -66,7 +51,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection",
               "display": "How this product was collected",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.collection\u0060"
             }
           ]
@@ -78,7 +63,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.collected[x]",
               "display": "Time of product collection",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.collected[x]\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.collection.collected[x]\u0060"
             }
           ]
@@ -90,7 +75,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.collector",
               "display": "Individual performing collection",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.collector\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.collection.collector\u0060"
             }
           ]
@@ -102,7 +87,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BiologicallyDerivedProduct.collection.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -114,7 +99,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.id\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.collection.id\u0060"
             }
           ]
@@ -126,7 +111,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BiologicallyDerivedProduct.collection.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -138,7 +123,7 @@
             {
               "code": "BiologicallyDerivedProduct.collection.source",
               "display": "Who is product from",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.collection.source\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.collection.source\u0060"
             }
           ]
@@ -150,7 +135,7 @@
             {
               "code": "BiologicallyDerivedProduct.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.contained\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.contained\u0060"
             }
           ]
@@ -172,7 +157,7 @@
             {
               "code": "BiologicallyDerivedProduct.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BiologicallyDerivedProduct.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BiologicallyDerivedProduct.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -196,7 +181,7 @@
             {
               "code": "BiologicallyDerivedProduct.identifier",
               "display": "External ids for this item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.identifier\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.identifier\u0060"
             }
           ]
@@ -220,8 +205,8 @@
             {
               "code": "BiologicallyDerivedProduct.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060BiologicallyDerivedProduct.language\u0060 maps as RelatedTo to R4 \u0060BiologicallyDerivedProduct.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060BiologicallyDerivedProduct.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060BiologicallyDerivedProduct.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -244,7 +229,7 @@
             {
               "code": "BiologicallyDerivedProduct.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060BiologicallyDerivedProduct.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060BiologicallyDerivedProduct.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -256,7 +241,7 @@
             {
               "code": "BiologicallyDerivedProduct.parent",
               "display": "BiologicallyDerivedProduct parent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.parent\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.parent\u0060"
             }
           ]
@@ -285,15 +270,21 @@
             {
               "code": "BiologicallyDerivedProduct.productCode",
               "display": "What this biologically derived product is",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.productCode\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.productCode\u0060"
             }
           ]
         },
         {
           "code": "BiologicallyDerivedProduct.productStatus",
-          "display": "available | unavailable",
-          "noMap": true
+          "target": [
+            {
+              "code": "BiologicallyDerivedProduct.status",
+              "display": "available | unavailable",
+              "relationship": "related-to",
+              "comment": "R5 \u0060BiologicallyDerivedProduct.productStatus\u0060 maps as RelatedTo to R4 \u0060BiologicallyDerivedProduct.status\u0060 - status made the binding required (from Example) for http://hl7.org/fhir/ValueSet/product-status|4.0.1; status has change due to type change: R5 productStatus Coding has no equivalent or mapped type in R4 status"
+            }
+          ]
         },
         {
           "code": "BiologicallyDerivedProduct.property",
@@ -332,7 +323,7 @@
             {
               "code": "BiologicallyDerivedProduct.request",
               "display": "Procedure request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.request\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.request\u0060"
             }
           ]
@@ -349,7 +340,7 @@
             {
               "code": "BiologicallyDerivedProduct.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060BiologicallyDerivedProduct.text\u0060 maps as Equivalent to R4 \u0060BiologicallyDerivedProduct.text\u0060"
             }
           ]

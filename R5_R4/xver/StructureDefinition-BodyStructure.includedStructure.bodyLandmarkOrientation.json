@@ -504,20 +504,23 @@
       },
       {
         "path": "Extension.extension:landmarkDescription.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:landmarkDescription.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "bodyLandmarkOrientationLandmarkDescription"
+            }
+          ],
+          "strength": "example",
+          "description": "Select SNOMED code system values. Values used in a podiatry setting to decsribe landmarks on the body.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+        }
       },
       {
         "path": "Extension.extension:landmarkDescription.url",
@@ -533,20 +536,23 @@
       },
       {
         "path": "Extension.extension:clockFacePosition.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:clockFacePosition.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "bodyLandmarkOrientationClockFacePosition"
+            }
+          ],
+          "strength": "example",
+          "description": "Select SNOMED CT codes. A set of codes that describe a things orientation based on a hourly positions of a clock face.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-bodylandmarkorientation-clockface-position"
+        }
       },
       {
         "path": "Extension.extension:clockFacePosition.url",
@@ -599,18 +605,10 @@
       },
       {
         "path": "Extension.extension:distanceFromLandmark.extension:value.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:value.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
+            "code": "Quantity"
           }
         ]
       },
@@ -661,18 +659,10 @@
       },
       {
         "path": "Extension.extension:value.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
+            "code": "Quantity"
           }
         ]
       },
@@ -690,20 +680,23 @@
       },
       {
         "path": "Extension.extension:surfaceOrientation.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:surfaceOrientation.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "bodyLandmarkOrientationSurfaceOrientation"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Select SNOMED code system values. The surface area a body location is in relation to a landmark.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
+        }
       },
       {
         "path": "Extension.extension:surfaceOrientation.url",

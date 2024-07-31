@@ -507,20 +507,27 @@
       },
       {
         "path": "Extension.extension:purpose.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:purpose.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The purpose for which an extended contact detail should be used."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Purpose"
+            }
+          ],
+          "strength": "preferred",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/contactentity-type"
+        }
       },
       {
         "path": "Extension.extension:purpose.url",
@@ -537,18 +544,10 @@
       },
       {
         "path": "Extension.extension:name.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:name.extension:HumanName",
-        "sliceName": "HumanName",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-HumanName"
-            ]
+            "code": "HumanName"
           }
         ]
       },
@@ -566,18 +565,10 @@
       },
       {
         "path": "Extension.extension:telecom.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:telecom.extension:ContactPoint",
-        "sliceName": "ContactPoint",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ContactPoint"
-            ]
+            "code": "ContactPoint"
           }
         ]
       },
@@ -595,18 +586,10 @@
       },
       {
         "path": "Extension.extension:address.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:address.extension:Address",
-        "sliceName": "Address",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Address"
-            ]
+            "code": "Address"
           }
         ]
       },
@@ -624,17 +607,12 @@
       },
       {
         "path": "Extension.extension:organization.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:organization.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ]
@@ -653,18 +631,10 @@
       },
       {
         "path": "Extension.extension:period.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:period.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },

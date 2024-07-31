@@ -13,8 +13,8 @@ Comparison Result: SourceIsBroaderThanTarget
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 3 |
-SourceIsBroaderThanTarget | 3 |
+Equivalent | 5 |
+SourceIsBroaderThanTarget | 1 |
 
 
 | Source | Target | Status | Message |

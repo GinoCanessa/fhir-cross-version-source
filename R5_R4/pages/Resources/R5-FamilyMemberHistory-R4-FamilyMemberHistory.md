@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 16 |
-Equivalent | 4 |
-RelatedTo | 29 |
+DoesNotExistInTarget | 15 |
+Equivalent | 26 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 6 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -43,7 +45,7 @@ RelatedTo | 29 |
 | FamilyMemberHistory.implicitRules | FamilyMemberHistory.implicitRules | Equivalent | R5 `FamilyMemberHistory.implicitRules` maps as Equivalent to R4 `FamilyMemberHistory.implicitRules` |
 | FamilyMemberHistory.instantiatesCanonical | FamilyMemberHistory.instantiatesCanonical | Equivalent | R5 `FamilyMemberHistory.instantiatesCanonical` maps as Equivalent to R4 `FamilyMemberHistory.instantiatesCanonical` |
 | FamilyMemberHistory.instantiatesUri | FamilyMemberHistory.instantiatesUri | Equivalent | R5 `FamilyMemberHistory.instantiatesUri` maps as Equivalent to R4 `FamilyMemberHistory.instantiatesUri` |
-| FamilyMemberHistory.language | FamilyMemberHistory.language | RelatedTo | R5 `FamilyMemberHistory.language` maps as RelatedTo to R4 `FamilyMemberHistory.language` - language changed the binding strength from Required to Preferred |
+| FamilyMemberHistory.language | FamilyMemberHistory.language | SourceIsNarrowerThanTarget | R5 `FamilyMemberHistory.language` maps as SourceIsNarrowerThanTarget to R4 `FamilyMemberHistory.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | FamilyMemberHistory.meta | FamilyMemberHistory.meta | Equivalent | R5 `FamilyMemberHistory.meta` maps as Equivalent to R4 `FamilyMemberHistory.meta` |
 | FamilyMemberHistory.modifierExtension | FamilyMemberHistory.modifierExtension | SourceIsBroaderThanTarget | R5 `FamilyMemberHistory.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `FamilyMemberHistory.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | FamilyMemberHistory.name | FamilyMemberHistory.name | Equivalent | R5 `FamilyMemberHistory.name` maps as Equivalent to R4 `FamilyMemberHistory.name` |
@@ -64,7 +66,8 @@ RelatedTo | 29 |
 | FamilyMemberHistory.procedure.note | - | DoesNotExistInTarget | R5 `FamilyMemberHistory.procedure.note` does not appear in the target and has no mapping for `FamilyMemberHistory`. |
 | FamilyMemberHistory.procedure.outcome | - | DoesNotExistInTarget | R5 `FamilyMemberHistory.procedure.outcome` does not appear in the target and has no mapping for `FamilyMemberHistory`. |
 | FamilyMemberHistory.procedure.performed[x] | - | DoesNotExistInTarget | R5 `FamilyMemberHistory.procedure.performed[x]` does not appear in the target and has no mapping for `FamilyMemberHistory`. |
-| FamilyMemberHistory.reason | - | DoesNotExistInTarget | R5 `FamilyMemberHistory.reason` does not appear in the target and has no mapping for `FamilyMemberHistory`. |
+| FamilyMemberHistory.reason | FamilyMemberHistory.reasonCode | SourceIsBroaderThanTarget | R5 `FamilyMemberHistory.reason` maps as SourceIsBroaderThanTarget to R4 `FamilyMemberHistory.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| FamilyMemberHistory.reason | FamilyMemberHistory.reasonReference | RelatedTo | R5 `FamilyMemberHistory.reason` maps as RelatedTo to R4 `FamilyMemberHistory.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | FamilyMemberHistory.relationship | FamilyMemberHistory.relationship | Equivalent | R5 `FamilyMemberHistory.relationship` maps as Equivalent to R4 `FamilyMemberHistory.relationship` |
 | FamilyMemberHistory.sex | FamilyMemberHistory.sex | Equivalent | R5 `FamilyMemberHistory.sex` maps as Equivalent to R4 `FamilyMemberHistory.sex` |
 | FamilyMemberHistory.status | FamilyMemberHistory.status | Equivalent | R5 `FamilyMemberHistory.status` maps as Equivalent to R4 `FamilyMemberHistory.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/history-status|5.0.0 and http://hl7.org/fhir/ValueSet/history-status|4.0.1 (Equivalent) |

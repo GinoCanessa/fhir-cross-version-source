@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 7 |
-Equivalent | 4 |
-RelatedTo | 37 |
+DoesNotExistInTarget | 4 |
+Equivalent | 27 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 14 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -23,24 +25,24 @@ RelatedTo | 37 |
 | MedicationDispense | MedicationDispense | Equivalent | R5 `MedicationDispense` maps as Equivalent to R4 `MedicationDispense` |
 | MedicationDispense.authorizingPrescription | MedicationDispense.authorizingPrescription | Equivalent | R5 `MedicationDispense.authorizingPrescription` maps as Equivalent to R4 `MedicationDispense.authorizingPrescription` |
 | MedicationDispense.basedOn | - | DoesNotExistInTarget | R5 `MedicationDispense.basedOn` does not appear in the target and has no mapping for `MedicationDispense`. |
-| MedicationDispense.category | MedicationDispense.category | RelatedTo | R5 `MedicationDispense.category` maps as RelatedTo to R4 `MedicationDispense.category` - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred |
+| MedicationDispense.category | MedicationDispense.category | SourceIsBroaderThanTarget | R5 `MedicationDispense.category` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.category` - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred; category has change due to type change: R5 `category` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `category` |
 | MedicationDispense.contained | MedicationDispense.contained | Equivalent | R5 `MedicationDispense.contained` maps as Equivalent to R4 `MedicationDispense.contained` |
 | MedicationDispense.daysSupply | MedicationDispense.daysSupply | Equivalent | R5 `MedicationDispense.daysSupply` maps as Equivalent to R4 `MedicationDispense.daysSupply` |
 | MedicationDispense.destination | MedicationDispense.destination | Equivalent | R5 `MedicationDispense.destination` maps as Equivalent to R4 `MedicationDispense.destination` |
-| MedicationDispense.dosageInstruction | MedicationDispense.dosageInstruction | RelatedTo | R5 `MedicationDispense.dosageInstruction` maps as RelatedTo to R4 `MedicationDispense.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as RelatedTo for R4 `dosageInstruction` |
-| MedicationDispense.encounter | - | DoesNotExistInTarget | R5 `MedicationDispense.encounter` does not appear in the target and has no mapping for `MedicationDispense`. |
+| MedicationDispense.dosageInstruction | MedicationDispense.dosageInstruction | SourceIsBroaderThanTarget | R5 `MedicationDispense.dosageInstruction` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosageInstruction` |
+| MedicationDispense.encounter | MedicationDispense.context | SourceIsNarrowerThanTarget | R5 `MedicationDispense.encounter` maps as SourceIsNarrowerThanTarget to R4 `MedicationDispense.context` - context has change due to type change: R5 `encounter` `Reference` maps as SourceIsNarrowerThanTarget for R4 `context` |
 | MedicationDispense.eventHistory | MedicationDispense.eventHistory | Equivalent | R5 `MedicationDispense.eventHistory` maps as Equivalent to R4 `MedicationDispense.eventHistory` |
 | MedicationDispense.extension | MedicationDispense.extension | SourceIsBroaderThanTarget | R5 `MedicationDispense.extension` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | MedicationDispense.id | MedicationDispense.id | Equivalent | R5 `MedicationDispense.id` maps as Equivalent to R4 `MedicationDispense.id` |
 | MedicationDispense.identifier | MedicationDispense.identifier | Equivalent | R5 `MedicationDispense.identifier` maps as Equivalent to R4 `MedicationDispense.identifier` |
 | MedicationDispense.implicitRules | MedicationDispense.implicitRules | Equivalent | R5 `MedicationDispense.implicitRules` maps as Equivalent to R4 `MedicationDispense.implicitRules` |
-| MedicationDispense.language | MedicationDispense.language | RelatedTo | R5 `MedicationDispense.language` maps as RelatedTo to R4 `MedicationDispense.language` - language changed the binding strength from Required to Preferred |
+| MedicationDispense.language | MedicationDispense.language | SourceIsNarrowerThanTarget | R5 `MedicationDispense.language` maps as SourceIsNarrowerThanTarget to R4 `MedicationDispense.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | MedicationDispense.location | MedicationDispense.location | Equivalent | R5 `MedicationDispense.location` maps as Equivalent to R4 `MedicationDispense.location` |
-| MedicationDispense.medication | - | DoesNotExistInTarget | R5 `MedicationDispense.medication` does not appear in the target and has no mapping for `MedicationDispense`. |
+| MedicationDispense.medication | MedicationDispense.medication[x] | SourceIsBroaderThanTarget | R5 `MedicationDispense.medication` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.medication[x]` - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x] |
 | MedicationDispense.meta | MedicationDispense.meta | Equivalent | R5 `MedicationDispense.meta` maps as Equivalent to R4 `MedicationDispense.meta` |
 | MedicationDispense.modifierExtension | MedicationDispense.modifierExtension | SourceIsBroaderThanTarget | R5 `MedicationDispense.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | MedicationDispense.note | MedicationDispense.note | SourceIsBroaderThanTarget | R5 `MedicationDispense.note` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
-| MedicationDispense.notPerformedReason | - | DoesNotExistInTarget | R5 `MedicationDispense.notPerformedReason` does not appear in the target and has no mapping for `MedicationDispense`. |
+| MedicationDispense.notPerformedReason | MedicationDispense.statusReason[x] | SourceIsBroaderThanTarget | R5 `MedicationDispense.notPerformedReason` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.statusReason[x]` - statusReason[x] has change due to type change: R5 notPerformedReason CodeableReference has no equivalent or mapped type in R4 statusReason[x] |
 | MedicationDispense.partOf | MedicationDispense.partOf | SourceIsBroaderThanTarget | R5 `MedicationDispense.partOf` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.partOf` - partOf has change due to type change: R5 `partOf` `Reference` maps as SourceIsBroaderThanTarget for R4 `partOf` |
 | MedicationDispense.performer | MedicationDispense.performer | Equivalent | R5 `MedicationDispense.performer` maps as Equivalent to R4 `MedicationDispense.performer` |
 | MedicationDispense.performer.actor | MedicationDispense.performer.actor | SourceIsBroaderThanTarget | R5 `MedicationDispense.performer.actor` maps as SourceIsBroaderThanTarget to R4 `MedicationDispense.performer.actor` - actor has change due to type change: R5 `actor` `Reference` maps as SourceIsBroaderThanTarget for R4 `actor` |

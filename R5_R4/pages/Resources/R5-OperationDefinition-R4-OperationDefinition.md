@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 6 |
-Equivalent | 4 |
-RelatedTo | 60 |
+Equivalent | 50 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 11 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -40,7 +42,7 @@ RelatedTo | 60 |
 | OperationDefinition.instance | OperationDefinition.instance | Equivalent | R5 `OperationDefinition.instance` maps as Equivalent to R4 `OperationDefinition.instance` |
 | OperationDefinition.jurisdiction | OperationDefinition.jurisdiction | Equivalent | R5 `OperationDefinition.jurisdiction` maps as Equivalent to R4 `OperationDefinition.jurisdiction` |
 | OperationDefinition.kind | OperationDefinition.kind | Equivalent | R5 `OperationDefinition.kind` maps as Equivalent to R4 `OperationDefinition.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/operation-kind|5.0.0 and http://hl7.org/fhir/ValueSet/operation-kind|4.0.1 (Equivalent) |
-| OperationDefinition.language | OperationDefinition.language | RelatedTo | R5 `OperationDefinition.language` maps as RelatedTo to R4 `OperationDefinition.language` - language changed the binding strength from Required to Preferred |
+| OperationDefinition.language | OperationDefinition.language | SourceIsNarrowerThanTarget | R5 `OperationDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `OperationDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | OperationDefinition.meta | OperationDefinition.meta | Equivalent | R5 `OperationDefinition.meta` maps as Equivalent to R4 `OperationDefinition.meta` |
 | OperationDefinition.modifierExtension | OperationDefinition.modifierExtension | SourceIsBroaderThanTarget | R5 `OperationDefinition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `OperationDefinition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | OperationDefinition.name | OperationDefinition.name | Equivalent | R5 `OperationDefinition.name` maps as Equivalent to R4 `OperationDefinition.name` |
@@ -76,11 +78,11 @@ RelatedTo | 60 |
 | OperationDefinition.parameter.scope | - | DoesNotExistInTarget | R5 `OperationDefinition.parameter.scope` does not appear in the target and has no mapping for `OperationDefinition`. |
 | OperationDefinition.parameter.searchType | OperationDefinition.parameter.searchType | Equivalent | R5 `OperationDefinition.parameter.searchType` maps as Equivalent to R4 `OperationDefinition.parameter.searchType` - searchType has compatible required binding for code type: http://hl7.org/fhir/ValueSet/search-param-type|5.0.0 and http://hl7.org/fhir/ValueSet/search-param-type|4.0.1 (Equivalent) |
 | OperationDefinition.parameter.targetProfile | OperationDefinition.parameter.targetProfile | Equivalent | R5 `OperationDefinition.parameter.targetProfile` maps as Equivalent to R4 `OperationDefinition.parameter.targetProfile` |
-| OperationDefinition.parameter.type | OperationDefinition.parameter.type | RelatedTo | R5 `OperationDefinition.parameter.type` maps as RelatedTo to R4 `OperationDefinition.parameter.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1) |
+| OperationDefinition.parameter.type | OperationDefinition.parameter.type | RelatedTo | R5 `OperationDefinition.parameter.type` maps as RelatedTo to R4 `OperationDefinition.parameter.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1); type has change due to type change: R5 `type` `code` maps as RelatedTo for R4 `type` |
 | OperationDefinition.parameter.use | OperationDefinition.parameter.use | Equivalent | R5 `OperationDefinition.parameter.use` maps as Equivalent to R4 `OperationDefinition.parameter.use` - use has compatible required binding for code type: http://hl7.org/fhir/ValueSet/operation-parameter-use|5.0.0 and http://hl7.org/fhir/ValueSet/operation-parameter-use|4.0.1 (Equivalent) |
 | OperationDefinition.publisher | OperationDefinition.publisher | Equivalent | R5 `OperationDefinition.publisher` maps as Equivalent to R4 `OperationDefinition.publisher` |
 | OperationDefinition.purpose | OperationDefinition.purpose | Equivalent | R5 `OperationDefinition.purpose` maps as Equivalent to R4 `OperationDefinition.purpose` |
-| OperationDefinition.resource | OperationDefinition.resource | RelatedTo | R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1) |
+| OperationDefinition.resource | OperationDefinition.resource | RelatedTo | R5 `OperationDefinition.resource` maps as RelatedTo to R4 `OperationDefinition.resource` - (resource failed to compare required binding of http://hl7.org/fhir/ValueSet/version-independent-all-resource-types|5.0.0 and http://hl7.org/fhir/ValueSet/resource-types|4.0.1); resource has change due to type change: R5 `resource` `code` maps as RelatedTo for R4 `resource` |
 | OperationDefinition.status | OperationDefinition.status | Equivalent | R5 `OperationDefinition.status` maps as Equivalent to R4 `OperationDefinition.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent) |
 | OperationDefinition.system | OperationDefinition.system | Equivalent | R5 `OperationDefinition.system` maps as Equivalent to R4 `OperationDefinition.system` |
 | OperationDefinition.text | OperationDefinition.text | Equivalent | R5 `OperationDefinition.text` maps as Equivalent to R4 `OperationDefinition.text` |

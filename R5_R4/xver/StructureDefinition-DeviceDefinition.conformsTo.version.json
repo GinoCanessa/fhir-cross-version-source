@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:DeviceDefinition.conformsTo.version compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `DeviceDefinition.conformsTo.version` does not appear in the target and has no mapping for `DeviceDefinition`.",
+  "description": "R5 `DeviceDefinition.conformsTo.version` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.specialization.version` - version changed from array to scalar (max cardinality from * to 1)",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "DeviceDefinition"
+      "expression": "DeviceDefinition.specialization.version"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "The specific form or variant of the standard, specification or formal guidance",
         "definition": "Identifies the specific form or variant of the standard, specification, or formal guidance. This may be a 'version number', release, document edition, publication year, or other label.",
-        "comment": "R5 `DeviceDefinition.conformsTo.version` does not appear in the target and has no mapping for `DeviceDefinition`.",
+        "comment": "R5 `DeviceDefinition.conformsTo.version` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.specialization.version` - version changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:string:string",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:string"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "The specific form or variant of the standard, specification or formal guidance",
         "definition": "Identifies the specific form or variant of the standard, specification, or formal guidance. This may be a 'version number', release, document edition, publication year, or other label.",
-        "comment": "R5 `DeviceDefinition.conformsTo.version` does not appear in the target and has no mapping for `DeviceDefinition`.",
+        "comment": "R5 `DeviceDefinition.conformsTo.version` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.specialization.version` - version changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

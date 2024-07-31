@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
       "element": [
         {
-          "code": "MessageHeader.destination.endpoint[x]",
-          "target": [
-            {
-              "code": "MessageHeader.destination.endpoint",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "MessageHeader.source.endpoint[x]",
-          "target": [
-            {
-              "code": "MessageHeader.source.endpoint",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
-      "target": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
-      "element": [
-        {
           "code": "MessageHeader",
           "display": "A resource that describes a message that is exchanged between systems",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "MessageHeader.author",
               "display": "The source of the decision",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.author\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.author\u0060 - author has change due to type change: R5 \u0060author\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060author\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "MessageHeader.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.contained\u0060 maps as Equivalent to R4 \u0060MessageHeader.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "MessageHeader.definition",
               "display": "Link to the definition for this message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.definition\u0060 maps as Equivalent to R4 \u0060MessageHeader.definition\u0060"
             }
           ]
@@ -106,15 +82,21 @@
             {
               "code": "MessageHeader.destination",
               "display": "Message destination application(s)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.destination\u0060 maps as Equivalent to R4 \u0060MessageHeader.destination\u0060"
             }
           ]
         },
         {
           "code": "MessageHeader.destination.endpoint[x]",
-          "display": "Actual destination address or Endpoint resource",
-          "noMap": true
+          "target": [
+            {
+              "code": "MessageHeader.destination.endpoint",
+              "display": "Actual destination address or id",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MessageHeader.destination.endpoint[x]\u0060 maps as RelatedTo to R4 \u0060MessageHeader.destination.endpoint\u0060 - endpoint made the element mandatory; endpoint increased the minimum cardinality from 0 to 1; endpoint has change due to type change: R5 endpoint[x] Reference has no equivalent or mapped type in R4 endpoint"
+            }
+          ]
         },
         {
           "code": "MessageHeader.destination.extension",
@@ -123,7 +105,7 @@
             {
               "code": "MessageHeader.destination.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.destination.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.destination.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -135,7 +117,7 @@
             {
               "code": "MessageHeader.destination.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.destination.id\u0060 maps as Equivalent to R4 \u0060MessageHeader.destination.id\u0060"
             }
           ]
@@ -147,7 +129,7 @@
             {
               "code": "MessageHeader.destination.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.destination.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.destination.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -159,7 +141,7 @@
             {
               "code": "MessageHeader.destination.name",
               "display": "Name of system",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.destination.name\u0060 maps as Equivalent to R4 \u0060MessageHeader.destination.name\u0060"
             }
           ]
@@ -171,7 +153,7 @@
             {
               "code": "MessageHeader.destination.receiver",
               "display": "Intended \u0022real-world\u0022 recipient for the data",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.destination.receiver\u0060 maps as Equivalent to R4 \u0060MessageHeader.destination.receiver\u0060"
             }
           ]
@@ -183,7 +165,7 @@
             {
               "code": "MessageHeader.destination.target",
               "display": "Particular delivery destination within the destination",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.destination.target\u0060 maps as Equivalent to R4 \u0060MessageHeader.destination.target\u0060"
             }
           ]
@@ -195,7 +177,7 @@
             {
               "code": "MessageHeader.event[x]",
               "display": "Code for the event this message represents or link to event definition",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.event[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.event[x]\u0060 - event[x] has change due to type change: R5 event[x] canonical has no equivalent or mapped type in R4 event[x]"
             }
           ]
@@ -207,7 +189,7 @@
             {
               "code": "MessageHeader.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -219,7 +201,7 @@
             {
               "code": "MessageHeader.focus",
               "display": "The actual content of the message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.focus\u0060 maps as Equivalent to R4 \u0060MessageHeader.focus\u0060"
             }
           ]
@@ -255,8 +237,8 @@
             {
               "code": "MessageHeader.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060MessageHeader.language\u0060 maps as RelatedTo to R4 \u0060MessageHeader.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060MessageHeader.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060MessageHeader.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -279,7 +261,7 @@
             {
               "code": "MessageHeader.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -291,7 +273,7 @@
             {
               "code": "MessageHeader.reason",
               "display": "Cause of event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.reason\u0060 maps as Equivalent to R4 \u0060MessageHeader.reason\u0060"
             }
           ]
@@ -303,7 +285,7 @@
             {
               "code": "MessageHeader.response",
               "display": "If this is a reply to prior message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.response\u0060 maps as Equivalent to R4 \u0060MessageHeader.response\u0060"
             }
           ]
@@ -315,7 +297,7 @@
             {
               "code": "MessageHeader.response.code",
               "display": "ok | transient-error | fatal-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.response.code\u0060 maps as Equivalent to R4 \u0060MessageHeader.response.code\u0060 - code has compatible required binding for code type: http://hl7.org/fhir/ValueSet/response-code|5.0.0 and http://hl7.org/fhir/ValueSet/response-code|4.0.1 (Equivalent)"
             }
           ]
@@ -327,7 +309,7 @@
             {
               "code": "MessageHeader.response.details",
               "display": "Specific list of hints/warnings/errors",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.response.details\u0060 maps as Equivalent to R4 \u0060MessageHeader.response.details\u0060"
             }
           ]
@@ -339,7 +321,7 @@
             {
               "code": "MessageHeader.response.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.response.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.response.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -351,7 +333,7 @@
             {
               "code": "MessageHeader.response.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.response.id\u0060 maps as Equivalent to R4 \u0060MessageHeader.response.id\u0060"
             }
           ]
@@ -363,7 +345,7 @@
             {
               "code": "MessageHeader.response.identifier",
               "display": "Id of original message",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.response.identifier\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.response.identifier\u0060 - identifier has change due to type change: R5 identifier Identifier has no equivalent or mapped type in R4 identifier"
             }
           ]
@@ -375,7 +357,7 @@
             {
               "code": "MessageHeader.response.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.response.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.response.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -387,7 +369,7 @@
             {
               "code": "MessageHeader.responsible",
               "display": "Final responsibility for event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.responsible\u0060 maps as Equivalent to R4 \u0060MessageHeader.responsible\u0060"
             }
           ]
@@ -399,7 +381,7 @@
             {
               "code": "MessageHeader.sender",
               "display": "Real world sender of the message",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.sender\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.sender\u0060 - sender has change due to type change: R5 \u0060sender\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060sender\u0060"
             }
           ]
@@ -411,7 +393,7 @@
             {
               "code": "MessageHeader.source",
               "display": "Message source application",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source\u0060 maps as Equivalent to R4 \u0060MessageHeader.source\u0060"
             }
           ]
@@ -423,15 +405,21 @@
             {
               "code": "MessageHeader.source.contact",
               "display": "Human contact for problems",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source.contact\u0060 maps as Equivalent to R4 \u0060MessageHeader.source.contact\u0060"
             }
           ]
         },
         {
           "code": "MessageHeader.source.endpoint[x]",
-          "display": "Actual source address or Endpoint resource",
-          "noMap": true
+          "target": [
+            {
+              "code": "MessageHeader.source.endpoint",
+              "display": "Actual message source address or id",
+              "relationship": "related-to",
+              "comment": "R5 \u0060MessageHeader.source.endpoint[x]\u0060 maps as RelatedTo to R4 \u0060MessageHeader.source.endpoint\u0060 - endpoint made the element mandatory; endpoint increased the minimum cardinality from 0 to 1; endpoint has change due to type change: R5 endpoint[x] Reference has no equivalent or mapped type in R4 endpoint"
+            }
+          ]
         },
         {
           "code": "MessageHeader.source.extension",
@@ -440,7 +428,7 @@
             {
               "code": "MessageHeader.source.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.source.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.source.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -452,7 +440,7 @@
             {
               "code": "MessageHeader.source.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source.id\u0060 maps as Equivalent to R4 \u0060MessageHeader.source.id\u0060"
             }
           ]
@@ -464,7 +452,7 @@
             {
               "code": "MessageHeader.source.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060MessageHeader.source.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060MessageHeader.source.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -476,7 +464,7 @@
             {
               "code": "MessageHeader.source.name",
               "display": "Name of system",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source.name\u0060 maps as Equivalent to R4 \u0060MessageHeader.source.name\u0060"
             }
           ]
@@ -488,7 +476,7 @@
             {
               "code": "MessageHeader.source.software",
               "display": "Name of software running the system",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source.software\u0060 maps as Equivalent to R4 \u0060MessageHeader.source.software\u0060"
             }
           ]
@@ -500,7 +488,7 @@
             {
               "code": "MessageHeader.source.version",
               "display": "Version of software running",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.source.version\u0060 maps as Equivalent to R4 \u0060MessageHeader.source.version\u0060"
             }
           ]
@@ -512,7 +500,7 @@
             {
               "code": "MessageHeader.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060MessageHeader.text\u0060 maps as Equivalent to R4 \u0060MessageHeader.text\u0060"
             }
           ]

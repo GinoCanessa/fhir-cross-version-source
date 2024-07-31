@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 12 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -29,7 +30,7 @@ RelatedTo | 13 |
 | Flag.id | Flag.id | Equivalent | R5 `Flag.id` maps as Equivalent to R4 `Flag.id` |
 | Flag.identifier | Flag.identifier | Equivalent | R5 `Flag.identifier` maps as Equivalent to R4 `Flag.identifier` |
 | Flag.implicitRules | Flag.implicitRules | Equivalent | R5 `Flag.implicitRules` maps as Equivalent to R4 `Flag.implicitRules` |
-| Flag.language | Flag.language | RelatedTo | R5 `Flag.language` maps as RelatedTo to R4 `Flag.language` - language changed the binding strength from Required to Preferred |
+| Flag.language | Flag.language | SourceIsNarrowerThanTarget | R5 `Flag.language` maps as SourceIsNarrowerThanTarget to R4 `Flag.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Flag.meta | Flag.meta | Equivalent | R5 `Flag.meta` maps as Equivalent to R4 `Flag.meta` |
 | Flag.modifierExtension | Flag.modifierExtension | SourceIsBroaderThanTarget | R5 `Flag.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Flag.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Flag.period | Flag.period | Equivalent | R5 `Flag.period` maps as Equivalent to R4 `Flag.period` |

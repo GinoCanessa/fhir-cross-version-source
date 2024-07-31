@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
       "element": [
         {
-          "code": "ClinicalImpression.finding.item.concept",
-          "target": [
-            {
-              "code": "ClinicalImpression.finding.itemCodeableConcept",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ClinicalImpression.finding.item.reference",
-          "target": [
-            {
-              "code": "ClinicalImpression.finding.itemReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ClinicalImpression.performer",
-          "target": [
-            {
-              "code": "ClinicalImpression.assessor",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
-      "target": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
-      "element": [
-        {
           "code": "ClinicalImpression",
           "display": "A clinical assessment performed when planning treatments and management strategies for a patient",
           "target": [
@@ -84,7 +51,7 @@
             {
               "code": "ClinicalImpression.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.contained\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.contained\u0060"
             }
           ]
@@ -96,7 +63,7 @@
             {
               "code": "ClinicalImpression.date",
               "display": "When the assessment was documented",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.date\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.date\u0060"
             }
           ]
@@ -108,7 +75,7 @@
             {
               "code": "ClinicalImpression.description",
               "display": "Why/how the assessment was performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.description\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.description\u0060"
             }
           ]
@@ -120,7 +87,7 @@
             {
               "code": "ClinicalImpression.effective[x]",
               "display": "Time of assessment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.effective[x]\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.effective[x]\u0060"
             }
           ]
@@ -132,7 +99,7 @@
             {
               "code": "ClinicalImpression.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.encounter\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.encounter\u0060"
             }
           ]
@@ -144,7 +111,7 @@
             {
               "code": "ClinicalImpression.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClinicalImpression.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -156,7 +123,7 @@
             {
               "code": "ClinicalImpression.finding",
               "display": "Possible or likely findings and diagnoses",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.finding\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.finding\u0060"
             }
           ]
@@ -168,7 +135,7 @@
             {
               "code": "ClinicalImpression.finding.basis",
               "display": "Which investigations support finding",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.finding.basis\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.finding.basis\u0060"
             }
           ]
@@ -180,7 +147,7 @@
             {
               "code": "ClinicalImpression.finding.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClinicalImpression.finding.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.finding.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -192,15 +159,45 @@
             {
               "code": "ClinicalImpression.finding.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.finding.id\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.finding.id\u0060"
             }
           ]
         },
         {
           "code": "ClinicalImpression.finding.item",
-          "display": "What was found",
-          "noMap": true
+          "target": [
+            {
+              "code": "ClinicalImpression.finding.itemCodeableConcept",
+              "display": "What was found",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ClinicalImpression.finding.item\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.finding.itemCodeableConcept\u0060 - itemCodeableConcept has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 itemCodeableConcept"
+            },
+            {
+              "code": "ClinicalImpression.finding.itemReference",
+              "display": "What was found",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ClinicalImpression.finding.item\u0060 maps as RelatedTo to R4 \u0060ClinicalImpression.finding.itemReference\u0060 - itemReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; itemReference has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 itemReference"
+            }
+          ]
+        },
+        {
+          "code": "ClinicalImpression.finding.item.concept",
+          "target": [
+            {
+              "code": "ClinicalImpression.finding.itemCodeableConcept",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ClinicalImpression.finding.item.reference",
+          "target": [
+            {
+              "code": "ClinicalImpression.finding.itemReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "ClinicalImpression.finding.modifierExtension",
@@ -209,7 +206,7 @@
             {
               "code": "ClinicalImpression.finding.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClinicalImpression.finding.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.finding.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -233,7 +230,7 @@
             {
               "code": "ClinicalImpression.identifier",
               "display": "Business identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.identifier\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.identifier\u0060"
             }
           ]
@@ -257,8 +254,8 @@
             {
               "code": "ClinicalImpression.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ClinicalImpression.language\u0060 maps as RelatedTo to R4 \u0060ClinicalImpression.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ClinicalImpression.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ClinicalImpression.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -281,7 +278,7 @@
             {
               "code": "ClinicalImpression.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClinicalImpression.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -293,15 +290,21 @@
             {
               "code": "ClinicalImpression.note",
               "display": "Comments made about the ClinicalImpression",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ClinicalImpression.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ClinicalImpression.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
         },
         {
           "code": "ClinicalImpression.performer",
-          "display": "The clinician performing the assessment",
-          "noMap": true
+          "target": [
+            {
+              "code": "ClinicalImpression.assessor",
+              "display": "The clinician performing the assessment",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ClinicalImpression.performer\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.assessor\u0060"
+            }
+          ]
         },
         {
           "code": "ClinicalImpression.previous",
@@ -310,7 +313,7 @@
             {
               "code": "ClinicalImpression.previous",
               "display": "Reference to last assessment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.previous\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.previous\u0060"
             }
           ]
@@ -322,7 +325,7 @@
             {
               "code": "ClinicalImpression.problem",
               "display": "Relevant impressions of patient state",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.problem\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.problem\u0060"
             }
           ]
@@ -334,7 +337,7 @@
             {
               "code": "ClinicalImpression.prognosisCodeableConcept",
               "display": "Estimate of likely outcome",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.prognosisCodeableConcept\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.prognosisCodeableConcept\u0060"
             }
           ]
@@ -346,7 +349,7 @@
             {
               "code": "ClinicalImpression.prognosisReference",
               "display": "RiskAssessment expressing likely outcome",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.prognosisReference\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.prognosisReference\u0060"
             }
           ]
@@ -358,7 +361,7 @@
             {
               "code": "ClinicalImpression.protocol",
               "display": "Clinical Protocol followed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.protocol\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.protocol\u0060"
             }
           ]
@@ -370,7 +373,7 @@
             {
               "code": "ClinicalImpression.status",
               "display": "in-progress | completed | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.status\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/event-status|5.0.0 and http://hl7.org/fhir/ValueSet/clinicalimpression-status|4.0.1 (Equivalent)"
             }
           ]
@@ -382,7 +385,7 @@
             {
               "code": "ClinicalImpression.statusReason",
               "display": "Reason for current status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.statusReason\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.statusReason\u0060"
             }
           ]
@@ -394,7 +397,7 @@
             {
               "code": "ClinicalImpression.subject",
               "display": "Patient or group assessed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.subject\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.subject\u0060"
             }
           ]
@@ -406,7 +409,7 @@
             {
               "code": "ClinicalImpression.summary",
               "display": "Summary of the assessment",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.summary\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.summary\u0060"
             }
           ]
@@ -418,7 +421,7 @@
             {
               "code": "ClinicalImpression.supportingInfo",
               "display": "Information supporting the clinical impression",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.supportingInfo\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.supportingInfo\u0060"
             }
           ]
@@ -430,7 +433,7 @@
             {
               "code": "ClinicalImpression.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ClinicalImpression.text\u0060 maps as Equivalent to R4 \u0060ClinicalImpression.text\u0060"
             }
           ]

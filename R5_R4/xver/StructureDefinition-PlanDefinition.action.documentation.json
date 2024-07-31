@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:PlanDefinition.action.documentation compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `PlanDefinition.action.documentation` maps as Equivalent to R4 `PlanDefinition.action.documentation`",
+  "description": "R5 `PlanDefinition.action.documentation` maps as SourceIsBroaderThanTarget to R4 `PlanDefinition.action.documentation` - documentation has change due to type change: R5 `documentation` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `documentation`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Supporting documentation for the intended performer of the action",
         "definition": "Didactic or other informational resources associated with the action that can be provided to the CDS recipient. Information resources can include inline text commentary and links to web resources.",
-        "comment": "R5 `PlanDefinition.action.documentation` maps as Equivalent to R4 `PlanDefinition.action.documentation`",
+        "comment": "R5 `PlanDefinition.action.documentation` maps as SourceIsBroaderThanTarget to R4 `PlanDefinition.action.documentation` - documentation has change due to type change: R5 `documentation` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `documentation`",
         "min": 0,
         "max": "*",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
             "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -413,14 +254,19 @@
         "path": "Extension",
         "short": "Supporting documentation for the intended performer of the action",
         "definition": "Didactic or other informational resources associated with the action that can be provided to the CDS recipient. Information resources can include inline text commentary and links to web resources.",
-        "comment": "R5 `PlanDefinition.action.documentation` maps as Equivalent to R4 `PlanDefinition.action.documentation`",
+        "comment": "R5 `PlanDefinition.action.documentation` maps as SourceIsBroaderThanTarget to R4 `PlanDefinition.action.documentation` - documentation has change due to type change: R5 `documentation` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `documentation`",
         "min": 0,
         "max": "*",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
+        "min": 1,
+        "type": [
+          {
+            "code": "RelatedArtifact"
+          }
+        ]
       },
       {
         "path": "Extension.url",

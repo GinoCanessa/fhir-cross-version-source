@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:ServiceRequest.reason compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ServiceRequest.reason` does not appear in the target and has no mapping for `ServiceRequest`.",
+  "description": "R5 `ServiceRequest.reason` maps to multiple elements in `ServiceRequest`.",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ServiceRequest"
+      "expression": "ServiceRequest.reasonCode"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Explanation/Justification for procedure or service",
         "definition": "An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in `supportingInfo`.",
-        "comment": "R5 `ServiceRequest.reason` does not appear in the target and has no mapping for `ServiceRequest`.\nThis element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all. To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise, use `concept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html).",
+        "comment": "R5 `ServiceRequest.reason` maps to multiple elements in `ServiceRequest`.\nThis element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all. To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise, use `concept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html).",
         "min": 0,
         "max": "*",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:CodeableReference:CodeableReference",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:CodeableReference"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "Explanation/Justification for procedure or service",
         "definition": "An explanation or justification for why this service is being requested in coded or textual form.   This is often for billing purposes.  May relate to the resources referred to in `supportingInfo`.",
-        "comment": "R5 `ServiceRequest.reason` does not appear in the target and has no mapping for `ServiceRequest`.\nThis element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all. To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise, use `concept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html).",
+        "comment": "R5 `ServiceRequest.reason` maps to multiple elements in `ServiceRequest`.\nThis element represents why the referral is being made and may be used to decide how the service will be performed, or even if it will be performed at all. To be as specific as possible,  a reference to  *Observation* or *Condition* should be used if available.  Otherwise, use `concept.text` element if the data is free (uncoded) text as shown in the [CT Scan example](servicerequest-example-di.html).",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

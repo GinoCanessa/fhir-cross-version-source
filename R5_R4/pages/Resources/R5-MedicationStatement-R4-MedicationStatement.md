@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 11 |
-Equivalent | 4 |
-RelatedTo | 16 |
+DoesNotExistInTarget | 8 |
+Equivalent | 10 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 9 |
+SourceIsNarrowerThanTarget | 3 |
 
 
 | Source | Target | Status | Message |
@@ -27,28 +29,29 @@ RelatedTo | 16 |
 | MedicationStatement.adherence.id | - | DoesNotExistInTarget | R5 `MedicationStatement.adherence.id` does not appear in the target and has no mapping for `MedicationStatement`. |
 | MedicationStatement.adherence.modifierExtension | - | DoesNotExistInTarget | R5 `MedicationStatement.adherence.modifierExtension` does not appear in the target and has no mapping for `MedicationStatement`. |
 | MedicationStatement.adherence.reason | - | DoesNotExistInTarget | R5 `MedicationStatement.adherence.reason` does not appear in the target and has no mapping for `MedicationStatement`. |
-| MedicationStatement.category | MedicationStatement.category | RelatedTo | R5 `MedicationStatement.category` maps as RelatedTo to R4 `MedicationStatement.category` - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred |
+| MedicationStatement.category | MedicationStatement.category | SourceIsBroaderThanTarget | R5 `MedicationStatement.category` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.category` - category changed from array to scalar (max cardinality from * to 1); category changed the binding strength from Example to Preferred; category has change due to type change: R5 `category` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `category` |
 | MedicationStatement.contained | MedicationStatement.contained | Equivalent | R5 `MedicationStatement.contained` maps as Equivalent to R4 `MedicationStatement.contained` |
 | MedicationStatement.dateAsserted | MedicationStatement.dateAsserted | Equivalent | R5 `MedicationStatement.dateAsserted` maps as Equivalent to R4 `MedicationStatement.dateAsserted` |
 | MedicationStatement.derivedFrom | MedicationStatement.derivedFrom | Equivalent | R5 `MedicationStatement.derivedFrom` maps as Equivalent to R4 `MedicationStatement.derivedFrom` |
-| MedicationStatement.dosage | MedicationStatement.dosage | RelatedTo | R5 `MedicationStatement.dosage` maps as RelatedTo to R4 `MedicationStatement.dosage` - dosage has change due to type change: R5 `dosage` `Dosage` maps as RelatedTo for R4 `dosage` |
+| MedicationStatement.dosage | MedicationStatement.dosage | SourceIsBroaderThanTarget | R5 `MedicationStatement.dosage` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.dosage` - dosage has change due to type change: R5 `dosage` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosage` |
 | MedicationStatement.effective[x] | MedicationStatement.effective[x] | SourceIsBroaderThanTarget | R5 `MedicationStatement.effective[x]` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.effective[x]` - effective[x] has change due to type change: R5 effective[x] Timing has no equivalent or mapped type in R4 effective[x] |
-| MedicationStatement.encounter | - | DoesNotExistInTarget | R5 `MedicationStatement.encounter` does not appear in the target and has no mapping for `MedicationStatement`. |
+| MedicationStatement.encounter | MedicationStatement.context | SourceIsNarrowerThanTarget | R5 `MedicationStatement.encounter` maps as SourceIsNarrowerThanTarget to R4 `MedicationStatement.context` - context has change due to type change: R5 `encounter` `Reference` maps as SourceIsNarrowerThanTarget for R4 `context` |
 | MedicationStatement.extension | MedicationStatement.extension | SourceIsBroaderThanTarget | R5 `MedicationStatement.extension` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | MedicationStatement.id | MedicationStatement.id | Equivalent | R5 `MedicationStatement.id` maps as Equivalent to R4 `MedicationStatement.id` |
 | MedicationStatement.identifier | MedicationStatement.identifier | Equivalent | R5 `MedicationStatement.identifier` maps as Equivalent to R4 `MedicationStatement.identifier` |
 | MedicationStatement.implicitRules | MedicationStatement.implicitRules | Equivalent | R5 `MedicationStatement.implicitRules` maps as Equivalent to R4 `MedicationStatement.implicitRules` |
-| MedicationStatement.informationSource | MedicationStatement.informationSource | RelatedTo | R5 `MedicationStatement.informationSource` maps as RelatedTo to R4 `MedicationStatement.informationSource` - informationSource changed from array to scalar (max cardinality from * to 1) |
-| MedicationStatement.language | MedicationStatement.language | RelatedTo | R5 `MedicationStatement.language` maps as RelatedTo to R4 `MedicationStatement.language` - language changed the binding strength from Required to Preferred |
-| MedicationStatement.medication | - | DoesNotExistInTarget | R5 `MedicationStatement.medication` does not appear in the target and has no mapping for `MedicationStatement`. |
+| MedicationStatement.informationSource | MedicationStatement.informationSource | SourceIsBroaderThanTarget | R5 `MedicationStatement.informationSource` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.informationSource` - informationSource changed from array to scalar (max cardinality from * to 1) |
+| MedicationStatement.language | MedicationStatement.language | SourceIsNarrowerThanTarget | R5 `MedicationStatement.language` maps as SourceIsNarrowerThanTarget to R4 `MedicationStatement.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
+| MedicationStatement.medication | MedicationStatement.medication[x] | SourceIsBroaderThanTarget | R5 `MedicationStatement.medication` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.medication[x]` - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x] |
 | MedicationStatement.meta | MedicationStatement.meta | Equivalent | R5 `MedicationStatement.meta` maps as Equivalent to R4 `MedicationStatement.meta` |
 | MedicationStatement.modifierExtension | MedicationStatement.modifierExtension | SourceIsBroaderThanTarget | R5 `MedicationStatement.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | MedicationStatement.note | MedicationStatement.note | SourceIsBroaderThanTarget | R5 `MedicationStatement.note` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
 | MedicationStatement.partOf | MedicationStatement.partOf | SourceIsNarrowerThanTarget | R5 `MedicationStatement.partOf` maps as SourceIsNarrowerThanTarget to R4 `MedicationStatement.partOf` - partOf has change due to type change: R5 `partOf` `Reference` maps as SourceIsNarrowerThanTarget for R4 `partOf` |
-| MedicationStatement.reason | - | DoesNotExistInTarget | R5 `MedicationStatement.reason` does not appear in the target and has no mapping for `MedicationStatement`. |
+| MedicationStatement.reason | MedicationStatement.reasonCode | SourceIsBroaderThanTarget | R5 `MedicationStatement.reason` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| MedicationStatement.reason | MedicationStatement.reasonReference | RelatedTo | R5 `MedicationStatement.reason` maps as RelatedTo to R4 `MedicationStatement.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | MedicationStatement.relatedClinicalInformation | - | DoesNotExistInTarget | R5 `MedicationStatement.relatedClinicalInformation` does not appear in the target and has no mapping for `MedicationStatement`. |
 | MedicationStatement.renderedDosageInstruction | - | DoesNotExistInTarget | R5 `MedicationStatement.renderedDosageInstruction` does not appear in the target and has no mapping for `MedicationStatement`. |
-| MedicationStatement.status | MedicationStatement.status | SourceIsBroaderThanTarget | R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1 |
+| MedicationStatement.status | MedicationStatement.status | SourceIsBroaderThanTarget | R5 `MedicationStatement.status` maps as SourceIsBroaderThanTarget to R4 `MedicationStatement.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/medication-statement-status|5.0.0 and http://hl7.org/fhir/ValueSet/medication-statement-status|4.0.1; status has change due to type change: R5 `status` `code` maps as SourceIsBroaderThanTarget for R4 `status` |
 | MedicationStatement.subject | MedicationStatement.subject | Equivalent | R5 `MedicationStatement.subject` maps as Equivalent to R4 `MedicationStatement.subject` |
 | MedicationStatement.text | MedicationStatement.text | Equivalent | R5 `MedicationStatement.text` maps as Equivalent to R4 `MedicationStatement.text` |
 

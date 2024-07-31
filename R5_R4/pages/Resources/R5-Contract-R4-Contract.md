@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 177 |
+Equivalent | 140 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 38 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -40,7 +42,7 @@ RelatedTo | 177 |
 | Contract.expirationType | Contract.expirationType | Equivalent | R5 `Contract.expirationType` maps as Equivalent to R4 `Contract.expirationType` |
 | Contract.extension | Contract.extension | SourceIsBroaderThanTarget | R5 `Contract.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Contract.friendly | Contract.friendly | Equivalent | R5 `Contract.friendly` maps as Equivalent to R4 `Contract.friendly` |
-| Contract.friendly.content[x] | Contract.friendly.content[x] | RelatedTo | R5 `Contract.friendly.content[x]` maps as RelatedTo to R4 `Contract.friendly.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
+| Contract.friendly.content[x] | Contract.friendly.content[x] | SourceIsBroaderThanTarget | R5 `Contract.friendly.content[x]` maps as SourceIsBroaderThanTarget to R4 `Contract.friendly.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
 | Contract.friendly.extension | Contract.friendly.extension | SourceIsBroaderThanTarget | R5 `Contract.friendly.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.friendly.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Contract.friendly.id | Contract.friendly.id | Equivalent | R5 `Contract.friendly.id` maps as Equivalent to R4 `Contract.friendly.id` |
 | Contract.friendly.modifierExtension | Contract.friendly.modifierExtension | SourceIsBroaderThanTarget | R5 `Contract.friendly.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Contract.friendly.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -50,20 +52,20 @@ RelatedTo | 177 |
 | Contract.instantiatesCanonical | Contract.instantiatesCanonical | Equivalent | R5 `Contract.instantiatesCanonical` maps as Equivalent to R4 `Contract.instantiatesCanonical` |
 | Contract.instantiatesUri | Contract.instantiatesUri | Equivalent | R5 `Contract.instantiatesUri` maps as Equivalent to R4 `Contract.instantiatesUri` |
 | Contract.issued | Contract.issued | Equivalent | R5 `Contract.issued` maps as Equivalent to R4 `Contract.issued` |
-| Contract.language | Contract.language | RelatedTo | R5 `Contract.language` maps as RelatedTo to R4 `Contract.language` - language changed the binding strength from Required to Preferred |
+| Contract.language | Contract.language | SourceIsNarrowerThanTarget | R5 `Contract.language` maps as SourceIsNarrowerThanTarget to R4 `Contract.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Contract.legal | Contract.legal | Equivalent | R5 `Contract.legal` maps as Equivalent to R4 `Contract.legal` |
-| Contract.legal.content[x] | Contract.legal.content[x] | RelatedTo | R5 `Contract.legal.content[x]` maps as RelatedTo to R4 `Contract.legal.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
+| Contract.legal.content[x] | Contract.legal.content[x] | SourceIsBroaderThanTarget | R5 `Contract.legal.content[x]` maps as SourceIsBroaderThanTarget to R4 `Contract.legal.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
 | Contract.legal.extension | Contract.legal.extension | SourceIsBroaderThanTarget | R5 `Contract.legal.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.legal.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Contract.legal.id | Contract.legal.id | Equivalent | R5 `Contract.legal.id` maps as Equivalent to R4 `Contract.legal.id` |
 | Contract.legal.modifierExtension | Contract.legal.modifierExtension | SourceIsBroaderThanTarget | R5 `Contract.legal.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Contract.legal.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| Contract.legallyBinding[x] | Contract.legallyBinding[x] | RelatedTo | R5 `Contract.legallyBinding[x]` maps as RelatedTo to R4 `Contract.legallyBinding[x]` - legallyBinding[x] has change due to type change: R5 `legallyBinding[x]` `Attachment` maps as RelatedTo for R4 `legallyBinding[x]` |
+| Contract.legallyBinding[x] | Contract.legallyBinding[x] | SourceIsBroaderThanTarget | R5 `Contract.legallyBinding[x]` maps as SourceIsBroaderThanTarget to R4 `Contract.legallyBinding[x]` - legallyBinding[x] has change due to type change: R5 `legallyBinding[x]` `Attachment` maps as RelatedTo for R4 `legallyBinding[x]` |
 | Contract.legalState | Contract.legalState | Equivalent | R5 `Contract.legalState` maps as Equivalent to R4 `Contract.legalState` |
 | Contract.meta | Contract.meta | Equivalent | R5 `Contract.meta` maps as Equivalent to R4 `Contract.meta` |
 | Contract.modifierExtension | Contract.modifierExtension | SourceIsBroaderThanTarget | R5 `Contract.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Contract.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Contract.name | Contract.name | Equivalent | R5 `Contract.name` maps as Equivalent to R4 `Contract.name` |
 | Contract.relevantHistory | Contract.relevantHistory | Equivalent | R5 `Contract.relevantHistory` maps as Equivalent to R4 `Contract.relevantHistory` |
 | Contract.rule | Contract.rule | Equivalent | R5 `Contract.rule` maps as Equivalent to R4 `Contract.rule` |
-| Contract.rule.content[x] | Contract.rule.content[x] | RelatedTo | R5 `Contract.rule.content[x]` maps as RelatedTo to R4 `Contract.rule.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
+| Contract.rule.content[x] | Contract.rule.content[x] | SourceIsBroaderThanTarget | R5 `Contract.rule.content[x]` maps as SourceIsBroaderThanTarget to R4 `Contract.rule.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]` |
 | Contract.rule.extension | Contract.rule.extension | SourceIsBroaderThanTarget | R5 `Contract.rule.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.rule.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Contract.rule.id | Contract.rule.id | Equivalent | R5 `Contract.rule.id` maps as Equivalent to R4 `Contract.rule.id` |
 | Contract.rule.modifierExtension | Contract.rule.modifierExtension | SourceIsBroaderThanTarget | R5 `Contract.rule.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Contract.rule.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -164,7 +166,7 @@ RelatedTo | 177 |
 | Contract.term.offer.answer.extension | Contract.term.offer.answer.extension | SourceIsBroaderThanTarget | R5 `Contract.term.offer.answer.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.term.offer.answer.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Contract.term.offer.answer.id | Contract.term.offer.answer.id | Equivalent | R5 `Contract.term.offer.answer.id` maps as Equivalent to R4 `Contract.term.offer.answer.id` |
 | Contract.term.offer.answer.modifierExtension | Contract.term.offer.answer.modifierExtension | SourceIsBroaderThanTarget | R5 `Contract.term.offer.answer.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Contract.term.offer.answer.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| Contract.term.offer.answer.value[x] | Contract.term.offer.answer.value[x] | RelatedTo | R5 `Contract.term.offer.answer.value[x]` maps as RelatedTo to R4 `Contract.term.offer.answer.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]` |
+| Contract.term.offer.answer.value[x] | Contract.term.offer.answer.value[x] | SourceIsBroaderThanTarget | R5 `Contract.term.offer.answer.value[x]` maps as SourceIsBroaderThanTarget to R4 `Contract.term.offer.answer.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]` |
 | Contract.term.offer.decision | Contract.term.offer.decision | Equivalent | R5 `Contract.term.offer.decision` maps as Equivalent to R4 `Contract.term.offer.decision` |
 | Contract.term.offer.decisionMode | Contract.term.offer.decisionMode | Equivalent | R5 `Contract.term.offer.decisionMode` maps as Equivalent to R4 `Contract.term.offer.decisionMode` |
 | Contract.term.offer.extension | Contract.term.offer.extension | SourceIsBroaderThanTarget | R5 `Contract.term.offer.extension` maps as SourceIsBroaderThanTarget to R4 `Contract.term.offer.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |

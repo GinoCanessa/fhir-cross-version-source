@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Communication",
       "element": [
         {
-          "code": "Communication.reason.concept",
-          "target": [
-            {
-              "code": "Communication.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Communication.reason.reference",
-          "target": [
-            {
-              "code": "Communication.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Communication",
-      "target": "http://hl7.org/fhir/StructureDefinition/Communication",
-      "element": [
-        {
           "code": "Communication",
           "display": "A clinical or business level record of information being transmitted or shared",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "Communication.about",
               "display": "Resources that pertain to this communication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.about\u0060 maps as Equivalent to R4 \u0060Communication.about\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "Communication.basedOn",
               "display": "Request fulfilled by this communication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.basedOn\u0060 maps as Equivalent to R4 \u0060Communication.basedOn\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "Communication.category",
               "display": "Message category",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.category\u0060 maps as Equivalent to R4 \u0060Communication.category\u0060"
             }
           ]
@@ -106,7 +82,7 @@
             {
               "code": "Communication.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.contained\u0060 maps as Equivalent to R4 \u0060Communication.contained\u0060"
             }
           ]
@@ -118,7 +94,7 @@
             {
               "code": "Communication.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.encounter\u0060 maps as Equivalent to R4 \u0060Communication.encounter\u0060"
             }
           ]
@@ -130,7 +106,7 @@
             {
               "code": "Communication.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -154,7 +130,7 @@
             {
               "code": "Communication.identifier",
               "display": "Unique identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.identifier\u0060 maps as Equivalent to R4 \u0060Communication.identifier\u0060"
             }
           ]
@@ -178,7 +154,7 @@
             {
               "code": "Communication.inResponseTo",
               "display": "Reply to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.inResponseTo\u0060 maps as Equivalent to R4 \u0060Communication.inResponseTo\u0060"
             }
           ]
@@ -190,7 +166,7 @@
             {
               "code": "Communication.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060Communication.instantiatesCanonical\u0060"
             }
           ]
@@ -202,7 +178,7 @@
             {
               "code": "Communication.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.instantiatesUri\u0060 maps as Equivalent to R4 \u0060Communication.instantiatesUri\u0060"
             }
           ]
@@ -214,8 +190,8 @@
             {
               "code": "Communication.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Communication.language\u0060 maps as RelatedTo to R4 \u0060Communication.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Communication.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Communication.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -226,7 +202,7 @@
             {
               "code": "Communication.medium",
               "display": "A channel of communication",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.medium\u0060 maps as Equivalent to R4 \u0060Communication.medium\u0060"
             }
           ]
@@ -250,7 +226,7 @@
             {
               "code": "Communication.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -262,7 +238,7 @@
             {
               "code": "Communication.note",
               "display": "Comments made about the communication",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -274,7 +250,7 @@
             {
               "code": "Communication.partOf",
               "display": "Part of this action",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.partOf\u0060 maps as Equivalent to R4 \u0060Communication.partOf\u0060"
             }
           ]
@@ -286,7 +262,7 @@
             {
               "code": "Communication.payload",
               "display": "Message payload",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.payload\u0060 maps as Equivalent to R4 \u0060Communication.payload\u0060"
             }
           ]
@@ -298,8 +274,8 @@
             {
               "code": "Communication.payload.content[x]",
               "display": "Message part content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Communication.payload.content[x]\u0060 maps as RelatedTo to R4 \u0060Communication.payload.content[x]\u0060 - content[x] has change due to type change: R5 \u0060content[x]\u0060 \u0060Attachment\u0060 maps as RelatedTo for R4 \u0060content[x]\u0060; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Communication.payload.content[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.payload.content[x]\u0060 - content[x] has change due to type change: R5 \u0060content[x]\u0060 \u0060Attachment\u0060 maps as RelatedTo for R4 \u0060content[x]\u0060; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]"
             }
           ]
         },
@@ -310,7 +286,7 @@
             {
               "code": "Communication.payload.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.payload.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.payload.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -322,7 +298,7 @@
             {
               "code": "Communication.payload.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.payload.id\u0060 maps as Equivalent to R4 \u0060Communication.payload.id\u0060"
             }
           ]
@@ -334,7 +310,7 @@
             {
               "code": "Communication.payload.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.payload.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.payload.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -346,15 +322,45 @@
             {
               "code": "Communication.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.priority\u0060 maps as Equivalent to R4 \u0060Communication.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
         },
         {
           "code": "Communication.reason",
-          "display": "Indication for message",
-          "noMap": true
+          "target": [
+            {
+              "code": "Communication.reasonCode",
+              "display": "Indication for message",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Communication.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "Communication.reasonReference",
+              "display": "Why was communication done?",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Communication.reason\u0060 maps as RelatedTo to R4 \u0060Communication.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "Communication.reason.concept",
+          "target": [
+            {
+              "code": "Communication.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Communication.reason.reference",
+          "target": [
+            {
+              "code": "Communication.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Communication.received",
@@ -363,7 +369,7 @@
             {
               "code": "Communication.received",
               "display": "When received",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.received\u0060 maps as Equivalent to R4 \u0060Communication.received\u0060"
             }
           ]
@@ -375,7 +381,7 @@
             {
               "code": "Communication.recipient",
               "display": "Message recipient",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.recipient\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.recipient\u0060 - recipient has change due to type change: R5 \u0060recipient\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060recipient\u0060"
             }
           ]
@@ -387,7 +393,7 @@
             {
               "code": "Communication.sender",
               "display": "Message sender",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Communication.sender\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Communication.sender\u0060 - sender has change due to type change: R5 \u0060sender\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060sender\u0060"
             }
           ]
@@ -399,7 +405,7 @@
             {
               "code": "Communication.sent",
               "display": "When sent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.sent\u0060 maps as Equivalent to R4 \u0060Communication.sent\u0060"
             }
           ]
@@ -411,7 +417,7 @@
             {
               "code": "Communication.status",
               "display": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.status\u0060 maps as Equivalent to R4 \u0060Communication.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/event-status|5.0.0 and http://hl7.org/fhir/ValueSet/event-status|4.0.1 (Equivalent)"
             }
           ]
@@ -423,7 +429,7 @@
             {
               "code": "Communication.statusReason",
               "display": "Reason for current status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.statusReason\u0060 maps as Equivalent to R4 \u0060Communication.statusReason\u0060"
             }
           ]
@@ -435,7 +441,7 @@
             {
               "code": "Communication.subject",
               "display": "Focus of message",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.subject\u0060 maps as Equivalent to R4 \u0060Communication.subject\u0060"
             }
           ]
@@ -447,7 +453,7 @@
             {
               "code": "Communication.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.text\u0060 maps as Equivalent to R4 \u0060Communication.text\u0060"
             }
           ]
@@ -459,7 +465,7 @@
             {
               "code": "Communication.topic",
               "display": "Description of the purpose/content",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Communication.topic\u0060 maps as Equivalent to R4 \u0060Communication.topic\u0060"
             }
           ]

@@ -434,33 +434,29 @@
       },
       {
         "path": "Extension.extension:item[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:item[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/DeviceUsage",
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+              "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
             ]
           }
-        ]
-      },
-      {
-        "path": "Extension.extension:item[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AdverseEventContributingFactor"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes describing the contributing factors suspected to have increased the probability or severity of the adverse event.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor"
+        }
       },
       {
         "path": "Extension.extension:item[x].url",

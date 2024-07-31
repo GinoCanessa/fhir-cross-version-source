@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 2 |
-Equivalent | 4 |
-RelatedTo | 36 |
+Equivalent | 32 |
+RelatedTo | 3 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -40,7 +42,7 @@ RelatedTo | 36 |
 | Library.identifier | Library.identifier | Equivalent | R5 `Library.identifier` maps as Equivalent to R4 `Library.identifier` |
 | Library.implicitRules | Library.implicitRules | Equivalent | R5 `Library.implicitRules` maps as Equivalent to R4 `Library.implicitRules` |
 | Library.jurisdiction | Library.jurisdiction | Equivalent | R5 `Library.jurisdiction` maps as Equivalent to R4 `Library.jurisdiction` |
-| Library.language | Library.language | RelatedTo | R5 `Library.language` maps as RelatedTo to R4 `Library.language` - language changed the binding strength from Required to Preferred |
+| Library.language | Library.language | SourceIsNarrowerThanTarget | R5 `Library.language` maps as SourceIsNarrowerThanTarget to R4 `Library.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Library.lastReviewDate | Library.lastReviewDate | Equivalent | R5 `Library.lastReviewDate` maps as Equivalent to R4 `Library.lastReviewDate` |
 | Library.meta | Library.meta | Equivalent | R5 `Library.meta` maps as Equivalent to R4 `Library.meta` |
 | Library.modifierExtension | Library.modifierExtension | SourceIsBroaderThanTarget | R5 `Library.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Library.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -48,7 +50,7 @@ RelatedTo | 36 |
 | Library.parameter | Library.parameter | RelatedTo | R5 `Library.parameter` maps as RelatedTo to R4 `Library.parameter` - parameter has change due to type change: R5 `parameter` `ParameterDefinition` maps as RelatedTo for R4 `parameter` |
 | Library.publisher | Library.publisher | Equivalent | R5 `Library.publisher` maps as Equivalent to R4 `Library.publisher` |
 | Library.purpose | Library.purpose | Equivalent | R5 `Library.purpose` maps as Equivalent to R4 `Library.purpose` |
-| Library.relatedArtifact | Library.relatedArtifact | Equivalent | R5 `Library.relatedArtifact` maps as Equivalent to R4 `Library.relatedArtifact` |
+| Library.relatedArtifact | Library.relatedArtifact | SourceIsBroaderThanTarget | R5 `Library.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `Library.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | Library.reviewer | Library.reviewer | Equivalent | R5 `Library.reviewer` maps as Equivalent to R4 `Library.reviewer` |
 | Library.status | Library.status | Equivalent | R5 `Library.status` maps as Equivalent to R4 `Library.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent) |
 | Library.subject[x] | Library.subject[x] | Equivalent | R5 `Library.subject[x]` maps as Equivalent to R4 `Library.subject[x]` |

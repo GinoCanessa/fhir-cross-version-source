@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:AuditEvent.occurred[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `AuditEvent.occurred[x]` does not appear in the target and has no mapping for `AuditEvent`.",
+  "description": "R5 `AuditEvent.occurred[x]` maps as SourceIsBroaderThanTarget to R4 `AuditEvent.period` - period has change due to type change: R5 occurred[x] dateTime has no equivalent or mapped type in R4 period",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "AuditEvent"
+      "expression": "AuditEvent.period"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "When the activity occurred",
         "definition": "The time or period during which the activity occurred.",
-        "comment": "R5 `AuditEvent.occurred[x]` does not appear in the target and has no mapping for `AuditEvent`.\nThe time or period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time.",
+        "comment": "R5 `AuditEvent.occurred[x]` maps as SourceIsBroaderThanTarget to R4 `AuditEvent.period` - period has change due to type change: R5 occurred[x] dateTime has no equivalent or mapped type in R4 period\nThe time or period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time.",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,114 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Period:Period",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Period"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:dateTime:dateTime",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:dateTime"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -521,7 +413,7 @@
         "path": "Extension",
         "short": "When the activity occurred",
         "definition": "The time or period during which the activity occurred.",
-        "comment": "R5 `AuditEvent.occurred[x]` does not appear in the target and has no mapping for `AuditEvent`.\nThe time or period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time.",
+        "comment": "R5 `AuditEvent.occurred[x]` maps as SourceIsBroaderThanTarget to R4 `AuditEvent.period` - period has change due to type change: R5 occurred[x] dateTime has no equivalent or mapped type in R4 period\nThe time or period can be a little arbitrary; where possible, the time should correspond to human assessment of the activity time.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -529,32 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

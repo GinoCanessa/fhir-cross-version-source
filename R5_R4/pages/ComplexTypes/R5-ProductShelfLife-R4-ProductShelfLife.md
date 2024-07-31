@@ -13,8 +13,7 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 1 |
-Equivalent | 4 |
+Equivalent | 5 |
 RelatedTo | 2 |
 
 
@@ -24,7 +23,7 @@ RelatedTo | 2 |
 | ProductShelfLife.extension | ProductShelfLife.extension | Equivalent | R5 `ProductShelfLife.extension` maps as Equivalent to R4 `ProductShelfLife.extension` |
 | ProductShelfLife.id | ProductShelfLife.id | Equivalent | R5 `ProductShelfLife.id` maps as Equivalent to R4 `ProductShelfLife.id` |
 | ProductShelfLife.modifierExtension | ProductShelfLife.modifierExtension | Equivalent | R5 `ProductShelfLife.modifierExtension` maps as Equivalent to R4 `ProductShelfLife.modifierExtension` |
-| ProductShelfLife.period[x] | - | DoesNotExistInTarget | R5 `ProductShelfLife.period[x]` does not appear in the target and has no mapping for `ProductShelfLife`. |
+| ProductShelfLife.period[x] | ProductShelfLife.period | RelatedTo | R5 `ProductShelfLife.period[x]` maps as RelatedTo to R4 `ProductShelfLife.period` - period made the element mandatory; period increased the minimum cardinality from 0 to 1; period has change due to type change: R5 period[x] Duration has no equivalent or mapped type in R4 period; period has change due to type change: R5 period[x] string has no equivalent or mapped type in R4 period |
 | ProductShelfLife.specialPrecautionsForStorage | ProductShelfLife.specialPrecautionsForStorage | Equivalent | R5 `ProductShelfLife.specialPrecautionsForStorage` maps as Equivalent to R4 `ProductShelfLife.specialPrecautionsForStorage` |
 | ProductShelfLife.type | ProductShelfLife.type | RelatedTo | R5 `ProductShelfLife.type` maps as RelatedTo to R4 `ProductShelfLife.type` - type made the element mandatory; type increased the minimum cardinality from 0 to 1 |
 

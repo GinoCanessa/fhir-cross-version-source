@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:CommunicationRequest.payload.content[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `CommunicationRequest.payload.content[x]` maps as RelatedTo to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]",
+  "description": "R5 `CommunicationRequest.payload.content[x]` maps as SourceIsBroaderThanTarget to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Message part content",
         "definition": "The communicated content (or for multi-part communications, one portion of the communication).",
-        "comment": "R5 `CommunicationRequest.payload.content[x]` maps as RelatedTo to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]\nThe content can be codified or textual.  As an example of codified content, when working with machine generated communications, the payload may be drawn from a finite, terminology defined set of communications, especially for short, status update kinds of communications where more of a natural language approach isn't appropriate.\n\nIf the content isn't codified, contentCodeableConcept.text can be used.  \n\nWhen using contentCodeableConcept, the CodeableConcept is what is being communicated and is not a categorization of the content.",
+        "comment": "R5 `CommunicationRequest.payload.content[x]` maps as SourceIsBroaderThanTarget to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]\nThe content can be codified or textual.  As an example of codified content, when working with machine generated communications, the payload may be drawn from a finite, terminology defined set of communications, especially for short, status update kinds of communications where more of a natural language approach isn't appropriate.\n\nIf the content isn't codified, contentCodeableConcept.text can be used.  \n\nWhen using contentCodeableConcept, the CodeableConcept is what is being communicated and is not a categorization of the content.",
         "min": 1,
         "max": "1",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
             "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
-            "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -398,60 +239,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Attachment:Attachment",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Attachment",
-        "sliceName": "Attachment",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Attachment"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,25 +254,17 @@
         "path": "Extension",
         "short": "Message part content",
         "definition": "The communicated content (or for multi-part communications, one portion of the communication).",
-        "comment": "R5 `CommunicationRequest.payload.content[x]` maps as RelatedTo to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]\nThe content can be codified or textual.  As an example of codified content, when working with machine generated communications, the payload may be drawn from a finite, terminology defined set of communications, especially for short, status update kinds of communications where more of a natural language approach isn't appropriate.\n\nIf the content isn't codified, contentCodeableConcept.text can be used.  \n\nWhen using contentCodeableConcept, the CodeableConcept is what is being communicated and is not a categorization of the content.",
+        "comment": "R5 `CommunicationRequest.payload.content[x]` maps as SourceIsBroaderThanTarget to R4 `CommunicationRequest.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x]\nThe content can be codified or textual.  As an example of codified content, when working with machine generated communications, the payload may be drawn from a finite, terminology defined set of communications, especially for short, status update kinds of communications where more of a natural language approach isn't appropriate.\n\nIf the content isn't codified, contentCodeableConcept.text can be used.  \n\nWhen using contentCodeableConcept, the CodeableConcept is what is being communicated and is not a categorization of the content.",
         "min": 1,
         "max": "1",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:Attachment",
-        "sliceName": "Attachment",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment"
-            ]
+            "code": "Attachment"
           }
         ]
       },

@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 7 |
-Equivalent | 4 |
-RelatedTo | 29 |
+DoesNotExistInTarget | 4 |
+Equivalent | 26 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -25,7 +27,7 @@ RelatedTo | 29 |
 | DeviceRequest.asNeededFor | - | DoesNotExistInTarget | R5 `DeviceRequest.asNeededFor` does not appear in the target and has no mapping for `DeviceRequest`. |
 | DeviceRequest.authoredOn | DeviceRequest.authoredOn | Equivalent | R5 `DeviceRequest.authoredOn` maps as Equivalent to R4 `DeviceRequest.authoredOn` |
 | DeviceRequest.basedOn | DeviceRequest.basedOn | Equivalent | R5 `DeviceRequest.basedOn` maps as Equivalent to R4 `DeviceRequest.basedOn` |
-| DeviceRequest.code | - | DoesNotExistInTarget | R5 `DeviceRequest.code` does not appear in the target and has no mapping for `DeviceRequest`. |
+| DeviceRequest.code | DeviceRequest.code[x] | SourceIsBroaderThanTarget | R5 `DeviceRequest.code` maps as SourceIsBroaderThanTarget to R4 `DeviceRequest.code[x]` - code[x] has change due to type change: R5 code CodeableReference has no equivalent or mapped type in R4 code[x] |
 | DeviceRequest.contained | DeviceRequest.contained | Equivalent | R5 `DeviceRequest.contained` maps as Equivalent to R4 `DeviceRequest.contained` |
 | DeviceRequest.doNotPerform | - | DoesNotExistInTarget | R5 `DeviceRequest.doNotPerform` does not appear in the target and has no mapping for `DeviceRequest`. |
 | DeviceRequest.encounter | DeviceRequest.encounter | Equivalent | R5 `DeviceRequest.encounter` maps as Equivalent to R4 `DeviceRequest.encounter` |
@@ -38,7 +40,7 @@ RelatedTo | 29 |
 | DeviceRequest.instantiatesUri | DeviceRequest.instantiatesUri | Equivalent | R5 `DeviceRequest.instantiatesUri` maps as Equivalent to R4 `DeviceRequest.instantiatesUri` |
 | DeviceRequest.insurance | DeviceRequest.insurance | Equivalent | R5 `DeviceRequest.insurance` maps as Equivalent to R4 `DeviceRequest.insurance` |
 | DeviceRequest.intent | DeviceRequest.intent | Equivalent | R5 `DeviceRequest.intent` maps as Equivalent to R4 `DeviceRequest.intent` - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-intent|5.0.0 and http://hl7.org/fhir/ValueSet/request-intent|4.0.1 (Equivalent) |
-| DeviceRequest.language | DeviceRequest.language | RelatedTo | R5 `DeviceRequest.language` maps as RelatedTo to R4 `DeviceRequest.language` - language changed the binding strength from Required to Preferred |
+| DeviceRequest.language | DeviceRequest.language | SourceIsNarrowerThanTarget | R5 `DeviceRequest.language` maps as SourceIsNarrowerThanTarget to R4 `DeviceRequest.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | DeviceRequest.meta | DeviceRequest.meta | Equivalent | R5 `DeviceRequest.meta` maps as Equivalent to R4 `DeviceRequest.meta` |
 | DeviceRequest.modifierExtension | DeviceRequest.modifierExtension | SourceIsBroaderThanTarget | R5 `DeviceRequest.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `DeviceRequest.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | DeviceRequest.note | DeviceRequest.note | SourceIsBroaderThanTarget | R5 `DeviceRequest.note` maps as SourceIsBroaderThanTarget to R4 `DeviceRequest.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
@@ -52,9 +54,10 @@ RelatedTo | 29 |
 | DeviceRequest.performer | DeviceRequest.performer | SourceIsBroaderThanTarget | R5 `DeviceRequest.performer` maps as SourceIsBroaderThanTarget to R4 `DeviceRequest.performer` - performer has change due to type change: R5 performer CodeableReference has no equivalent or mapped type in R4 performer |
 | DeviceRequest.priority | DeviceRequest.priority | Equivalent | R5 `DeviceRequest.priority` maps as Equivalent to R4 `DeviceRequest.priority` - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent) |
 | DeviceRequest.quantity | - | DoesNotExistInTarget | R5 `DeviceRequest.quantity` does not appear in the target and has no mapping for `DeviceRequest`. |
-| DeviceRequest.reason | - | DoesNotExistInTarget | R5 `DeviceRequest.reason` does not appear in the target and has no mapping for `DeviceRequest`. |
+| DeviceRequest.reason | DeviceRequest.reasonCode | SourceIsBroaderThanTarget | R5 `DeviceRequest.reason` maps as SourceIsBroaderThanTarget to R4 `DeviceRequest.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| DeviceRequest.reason | DeviceRequest.reasonReference | RelatedTo | R5 `DeviceRequest.reason` maps as RelatedTo to R4 `DeviceRequest.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | DeviceRequest.relevantHistory | DeviceRequest.relevantHistory | Equivalent | R5 `DeviceRequest.relevantHistory` maps as Equivalent to R4 `DeviceRequest.relevantHistory` |
-| DeviceRequest.replaces | - | DoesNotExistInTarget | R5 `DeviceRequest.replaces` does not appear in the target and has no mapping for `DeviceRequest`. |
+| DeviceRequest.replaces | DeviceRequest.priorRequest | RelatedTo | R5 `DeviceRequest.replaces` maps as RelatedTo to R4 `DeviceRequest.priorRequest` - priorRequest has change due to type change: R5 `replaces` `Reference` maps as RelatedTo for R4 `priorRequest` |
 | DeviceRequest.requester | DeviceRequest.requester | Equivalent | R5 `DeviceRequest.requester` maps as Equivalent to R4 `DeviceRequest.requester` |
 | DeviceRequest.status | DeviceRequest.status | Equivalent | R5 `DeviceRequest.status` maps as Equivalent to R4 `DeviceRequest.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-status|5.0.0 and http://hl7.org/fhir/ValueSet/request-status|4.0.1 (Equivalent) |
 | DeviceRequest.subject | DeviceRequest.subject | Equivalent | R5 `DeviceRequest.subject` maps as Equivalent to R4 `DeviceRequest.subject` |

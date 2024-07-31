@@ -28,48 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
       "element": [
         {
-          "code": "DeviceRequest.code",
-          "target": [
-            {
-              "code": "DeviceRequest.code[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceRequest.reason.concept",
-          "target": [
-            {
-              "code": "DeviceRequest.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceRequest.reason.reference",
-          "target": [
-            {
-              "code": "DeviceRequest.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "DeviceRequest.replaces",
-          "target": [
-            {
-              "code": "DeviceRequest.priorRequest",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-      "target": "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
-      "element": [
-        {
           "code": "DeviceRequest",
           "display": "Medical device request",
           "target": [
@@ -98,7 +56,7 @@
             {
               "code": "DeviceRequest.authoredOn",
               "display": "When recorded",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.authoredOn\u0060 maps as Equivalent to R4 \u0060DeviceRequest.authoredOn\u0060"
             }
           ]
@@ -110,15 +68,21 @@
             {
               "code": "DeviceRequest.basedOn",
               "display": "What request fulfills",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.basedOn\u0060 maps as Equivalent to R4 \u0060DeviceRequest.basedOn\u0060"
             }
           ]
         },
         {
           "code": "DeviceRequest.code",
-          "display": "Device requested",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceRequest.code[x]",
+              "display": "Device requested",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DeviceRequest.code\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.code[x]\u0060 - code[x] has change due to type change: R5 code CodeableReference has no equivalent or mapped type in R4 code[x]"
+            }
+          ]
         },
         {
           "code": "DeviceRequest.contained",
@@ -127,7 +91,7 @@
             {
               "code": "DeviceRequest.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.contained\u0060 maps as Equivalent to R4 \u0060DeviceRequest.contained\u0060"
             }
           ]
@@ -144,7 +108,7 @@
             {
               "code": "DeviceRequest.encounter",
               "display": "Encounter motivating request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.encounter\u0060 maps as Equivalent to R4 \u0060DeviceRequest.encounter\u0060"
             }
           ]
@@ -156,7 +120,7 @@
             {
               "code": "DeviceRequest.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -168,7 +132,7 @@
             {
               "code": "DeviceRequest.groupIdentifier",
               "display": "Identifier of composite request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.groupIdentifier\u0060 maps as Equivalent to R4 \u0060DeviceRequest.groupIdentifier\u0060"
             }
           ]
@@ -192,7 +156,7 @@
             {
               "code": "DeviceRequest.identifier",
               "display": "External Request identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.identifier\u0060 maps as Equivalent to R4 \u0060DeviceRequest.identifier\u0060"
             }
           ]
@@ -216,7 +180,7 @@
             {
               "code": "DeviceRequest.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060DeviceRequest.instantiatesCanonical\u0060"
             }
           ]
@@ -228,7 +192,7 @@
             {
               "code": "DeviceRequest.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.instantiatesUri\u0060 maps as Equivalent to R4 \u0060DeviceRequest.instantiatesUri\u0060"
             }
           ]
@@ -240,7 +204,7 @@
             {
               "code": "DeviceRequest.insurance",
               "display": "Associated insurance coverage",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.insurance\u0060 maps as Equivalent to R4 \u0060DeviceRequest.insurance\u0060"
             }
           ]
@@ -252,7 +216,7 @@
             {
               "code": "DeviceRequest.intent",
               "display": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.intent\u0060 maps as Equivalent to R4 \u0060DeviceRequest.intent\u0060 - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-intent|5.0.0 and http://hl7.org/fhir/ValueSet/request-intent|4.0.1 (Equivalent)"
             }
           ]
@@ -264,8 +228,8 @@
             {
               "code": "DeviceRequest.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DeviceRequest.language\u0060 maps as RelatedTo to R4 \u0060DeviceRequest.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DeviceRequest.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DeviceRequest.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -288,7 +252,7 @@
             {
               "code": "DeviceRequest.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -300,7 +264,7 @@
             {
               "code": "DeviceRequest.note",
               "display": "Notes or comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -312,7 +276,7 @@
             {
               "code": "DeviceRequest.occurrence[x]",
               "display": "Desired time or schedule for use",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.occurrence[x]\u0060 maps as Equivalent to R4 \u0060DeviceRequest.occurrence[x]\u0060"
             }
           ]
@@ -324,7 +288,7 @@
             {
               "code": "DeviceRequest.parameter",
               "display": "Device details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.parameter\u0060 maps as Equivalent to R4 \u0060DeviceRequest.parameter\u0060"
             }
           ]
@@ -336,7 +300,7 @@
             {
               "code": "DeviceRequest.parameter.code",
               "display": "Device detail",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.parameter.code\u0060 maps as Equivalent to R4 \u0060DeviceRequest.parameter.code\u0060"
             }
           ]
@@ -348,7 +312,7 @@
             {
               "code": "DeviceRequest.parameter.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.parameter.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.parameter.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -360,7 +324,7 @@
             {
               "code": "DeviceRequest.parameter.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.parameter.id\u0060 maps as Equivalent to R4 \u0060DeviceRequest.parameter.id\u0060"
             }
           ]
@@ -372,7 +336,7 @@
             {
               "code": "DeviceRequest.parameter.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.parameter.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.parameter.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -384,7 +348,7 @@
             {
               "code": "DeviceRequest.parameter.value[x]",
               "display": "Value of detail",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.parameter.value[x]\u0060 maps as Equivalent to R4 \u0060DeviceRequest.parameter.value[x]\u0060"
             }
           ]
@@ -396,7 +360,7 @@
             {
               "code": "DeviceRequest.performer",
               "display": "Requested Filler",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DeviceRequest.performer\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.performer\u0060 - performer has change due to type change: R5 performer CodeableReference has no equivalent or mapped type in R4 performer"
             }
           ]
@@ -408,7 +372,7 @@
             {
               "code": "DeviceRequest.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.priority\u0060 maps as Equivalent to R4 \u0060DeviceRequest.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
@@ -420,8 +384,38 @@
         },
         {
           "code": "DeviceRequest.reason",
-          "display": "Coded/Linked Reason for request",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceRequest.reasonCode",
+              "display": "Coded Reason for request",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DeviceRequest.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DeviceRequest.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "DeviceRequest.reasonReference",
+              "display": "Linked Reason for request",
+              "relationship": "related-to",
+              "comment": "R5 \u0060DeviceRequest.reason\u0060 maps as RelatedTo to R4 \u0060DeviceRequest.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "DeviceRequest.reason.concept",
+          "target": [
+            {
+              "code": "DeviceRequest.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DeviceRequest.reason.reference",
+          "target": [
+            {
+              "code": "DeviceRequest.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "DeviceRequest.relevantHistory",
@@ -430,15 +424,21 @@
             {
               "code": "DeviceRequest.relevantHistory",
               "display": "Request provenance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.relevantHistory\u0060 maps as Equivalent to R4 \u0060DeviceRequest.relevantHistory\u0060"
             }
           ]
         },
         {
           "code": "DeviceRequest.replaces",
-          "display": "What request replaces",
-          "noMap": true
+          "target": [
+            {
+              "code": "DeviceRequest.priorRequest",
+              "display": "What request replaces",
+              "relationship": "related-to",
+              "comment": "R5 \u0060DeviceRequest.replaces\u0060 maps as RelatedTo to R4 \u0060DeviceRequest.priorRequest\u0060 - priorRequest has change due to type change: R5 \u0060replaces\u0060 \u0060Reference\u0060 maps as RelatedTo for R4 \u0060priorRequest\u0060"
+            }
+          ]
         },
         {
           "code": "DeviceRequest.requester",
@@ -447,7 +447,7 @@
             {
               "code": "DeviceRequest.requester",
               "display": "Who/what is requesting diagnostics",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.requester\u0060 maps as Equivalent to R4 \u0060DeviceRequest.requester\u0060"
             }
           ]
@@ -459,7 +459,7 @@
             {
               "code": "DeviceRequest.status",
               "display": "draft | active | on-hold | revoked | completed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.status\u0060 maps as Equivalent to R4 \u0060DeviceRequest.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-status|5.0.0 and http://hl7.org/fhir/ValueSet/request-status|4.0.1 (Equivalent)"
             }
           ]
@@ -471,7 +471,7 @@
             {
               "code": "DeviceRequest.subject",
               "display": "Focus of request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.subject\u0060 maps as Equivalent to R4 \u0060DeviceRequest.subject\u0060"
             }
           ]
@@ -483,7 +483,7 @@
             {
               "code": "DeviceRequest.supportingInfo",
               "display": "Additional clinical information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.supportingInfo\u0060 maps as Equivalent to R4 \u0060DeviceRequest.supportingInfo\u0060"
             }
           ]
@@ -495,7 +495,7 @@
             {
               "code": "DeviceRequest.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DeviceRequest.text\u0060 maps as Equivalent to R4 \u0060DeviceRequest.text\u0060"
             }
           ]

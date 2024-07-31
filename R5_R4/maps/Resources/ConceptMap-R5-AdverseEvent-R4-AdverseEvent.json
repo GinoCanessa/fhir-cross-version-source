@@ -28,85 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
       "element": [
         {
-          "code": "AdverseEvent.code",
-          "target": [
-            {
-              "code": "AdverseEvent.event",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.occurrence[x]",
-          "target": [
-            {
-              "code": "AdverseEvent.date",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.resultingEffect",
-          "target": [
-            {
-              "code": "AdverseEvent.resultingCondition",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.supportingInfo",
-          "target": [
-            {
-              "code": "AdverseEvent",
-              "relationship": "source-is-narrower-than-target"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.supportingInfo.item[x]",
-          "target": [
-            {
-              "code": "AdverseEvent.subjectMedicalHistory",
-              "relationship": "source-is-broader-than-target",
-              "comment": "re-org"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.suspectEntity.causality.entityRelatedness",
-          "target": [
-            {
-              "code": "AdverseEvent.suspectEntity.causality.productRelatedness",
-              "relationship": "equivalent",
-              "comment": "re-org"
-            }
-          ]
-        },
-        {
-          "code": "AdverseEvent.suspectEntity.instance[x]",
-          "target": [
-            {
-              "code": "AdverseEvent.suspectEntity.instance",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
-      "target": "http://hl7.org/fhir/StructureDefinition/AdverseEvent",
-      "element": [
-        {
           "code": "AdverseEvent",
           "display": "An event that may be related to unintended effects on a patient or research participant",
           "target": [
             {
               "code": "AdverseEvent",
               "display": "Medical care, research study or other healthcare event causing physical injury",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060AdverseEvent\u0060 maps as Equivalent to R4 \u0060AdverseEvent\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060AdverseEvent\u0060 is narrower than R4 \u0060AdverseEvent\u0060 and is compatible. \u0060AdverseEvent\u0060 is mapped from \u0060AdverseEvent\u0060 and \u0060AdverseEvent.supportingInfo\u0060."
             }
           ]
         },
@@ -117,7 +46,7 @@
             {
               "code": "AdverseEvent.actuality",
               "display": "actual | potential",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.actuality\u0060 maps as Equivalent to R4 \u0060AdverseEvent.actuality\u0060 - actuality has compatible required binding for code type: http://hl7.org/fhir/ValueSet/adverse-event-actuality|5.0.0 and http://hl7.org/fhir/ValueSet/adverse-event-actuality|4.0.1 (Equivalent)"
             }
           ]
@@ -129,15 +58,21 @@
             {
               "code": "AdverseEvent.category",
               "display": "product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment",
-              "relationship": "related-to",
-              "comment": "R5 \u0060AdverseEvent.category\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.category\u0060 - category changed the binding strength from Example to Extensible"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060AdverseEvent.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.category\u0060 - category changed the binding strength from Example to Extensible; category has change due to type change: R5 \u0060category\u0060 \u0060CodeableConcept\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060category\u0060"
             }
           ]
         },
         {
           "code": "AdverseEvent.code",
-          "display": "Event or incident that occurred or was averted",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.event",
+              "display": "Type of the event itself in relation to the subject",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent.code\u0060 maps as Equivalent to R4 \u0060AdverseEvent.event\u0060"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.contained",
@@ -146,7 +81,7 @@
             {
               "code": "AdverseEvent.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.contained\u0060 maps as Equivalent to R4 \u0060AdverseEvent.contained\u0060"
             }
           ]
@@ -168,8 +103,14 @@
         },
         {
           "code": "AdverseEvent.contributingFactor.item[x]",
-          "display": "Item suspected to have increased the probability or severity of the adverse event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.subjectMedicalHistory",
+              "display": "AdverseEvent.subjectMedicalHistory",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.contributingFactor.item[x]\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.subjectMedicalHistory\u0060 - subjectMedicalHistory changed from scalar to array (max cardinality from 1 to *); subjectMedicalHistory removed a binding requirement - Example http://hl7.org/fhir/ValueSet/adverse-event-contributing-factor; subjectMedicalHistory has change due to type change: R5 \u0060item[x]\u0060 \u0060Reference\u0060 maps as RelatedTo for R4 \u0060subjectMedicalHistory\u0060; subjectMedicalHistory has change due to type change: R5 item[x] CodeableConcept has no equivalent or mapped type in R4 subjectMedicalHistory"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.contributingFactor.modifierExtension",
@@ -183,7 +124,7 @@
             {
               "code": "AdverseEvent.detected",
               "display": "When the event was detected",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.detected\u0060 maps as Equivalent to R4 \u0060AdverseEvent.detected\u0060"
             }
           ]
@@ -195,7 +136,7 @@
             {
               "code": "AdverseEvent.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.encounter\u0060 maps as Equivalent to R4 \u0060AdverseEvent.encounter\u0060"
             }
           ]
@@ -212,7 +153,7 @@
             {
               "code": "AdverseEvent.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -236,8 +177,8 @@
             {
               "code": "AdverseEvent.identifier",
               "display": "Business identifier for the event",
-              "relationship": "related-to",
-              "comment": "R5 \u0060AdverseEvent.identifier\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.identifier\u0060 - identifier changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060AdverseEvent.identifier\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.identifier\u0060 - identifier changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -260,8 +201,8 @@
             {
               "code": "AdverseEvent.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060AdverseEvent.language\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060AdverseEvent.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060AdverseEvent.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -272,7 +213,7 @@
             {
               "code": "AdverseEvent.location",
               "display": "Location where adverse event occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.location\u0060 maps as Equivalent to R4 \u0060AdverseEvent.location\u0060"
             }
           ]
@@ -321,7 +262,7 @@
             {
               "code": "AdverseEvent.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -333,8 +274,14 @@
         },
         {
           "code": "AdverseEvent.occurrence[x]",
-          "display": "When the event occurred",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.date",
+              "display": "When the event occurred",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060AdverseEvent.occurrence[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.date\u0060 - date has change due to type change: R5 occurrence[x] Period has no equivalent or mapped type in R4 date; date has change due to type change: R5 occurrence[x] Timing has no equivalent or mapped type in R4 date"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.outcome",
@@ -344,7 +291,7 @@
               "code": "AdverseEvent.outcome",
               "display": "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown",
               "relationship": "related-to",
-              "comment": "R5 \u0060AdverseEvent.outcome\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.outcome\u0060 - outcome changed from array to scalar (max cardinality from * to 1); outcome made the binding required (from Example) for http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1"
+              "comment": "R5 \u0060AdverseEvent.outcome\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.outcome\u0060 - outcome changed from array to scalar (max cardinality from * to 1); outcome made the binding required (from Example) for http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1; outcome has change due to type change: R5 \u0060outcome\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060outcome\u0060"
             }
           ]
         },
@@ -355,8 +302,14 @@
         },
         {
           "code": "AdverseEvent.participant.actor",
-          "display": "Who was involved in the adverse event or the potential adverse event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.contributor",
+              "display": "Who  was involved in the adverse event or the potential adverse event",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.participant.actor\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.contributor\u0060 - contributor changed from scalar to array (max cardinality from 1 to *); contributor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060contributor\u0060"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.participant.extension",
@@ -410,7 +363,7 @@
             {
               "code": "AdverseEvent.recordedDate",
               "display": "When the event was recorded",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.recordedDate\u0060 maps as Equivalent to R4 \u0060AdverseEvent.recordedDate\u0060"
             }
           ]
@@ -422,15 +375,21 @@
             {
               "code": "AdverseEvent.recorder",
               "display": "Who recorded the adverse event",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.recorder\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.recorder\u0060 - recorder has change due to type change: R5 \u0060recorder\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060recorder\u0060"
             }
           ]
         },
         {
           "code": "AdverseEvent.resultingEffect",
-          "display": "Effect on the subject due to this event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.resultingCondition",
+              "display": "Effect on the subject due to this event",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060AdverseEvent.resultingEffect\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.resultingCondition\u0060 - resultingCondition has change due to type change: R5 \u0060resultingEffect\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060resultingCondition\u0060"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.seriousness",
@@ -439,7 +398,7 @@
             {
               "code": "AdverseEvent.seriousness",
               "display": "Seriousness of the event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.seriousness\u0060 maps as Equivalent to R4 \u0060AdverseEvent.seriousness\u0060"
             }
           ]
@@ -456,7 +415,7 @@
             {
               "code": "AdverseEvent.study",
               "display": "AdverseEvent.study",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.study\u0060 maps as Equivalent to R4 \u0060AdverseEvent.study\u0060"
             }
           ]
@@ -468,15 +427,21 @@
             {
               "code": "AdverseEvent.subject",
               "display": "Subject impacted by event",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
             }
           ]
         },
         {
           "code": "AdverseEvent.supportingInfo",
-          "display": "Supporting information relevant to the event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent",
+              "display": "Medical care, research study or other healthcare event causing physical injury",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.supportingInfo\u0060 maps as RelatedTo to R4 \u0060AdverseEvent\u0060 - AdverseEvent has change due to type change: R5 supportingInfo BackboneElement has no equivalent or mapped type in R4 AdverseEvent"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.supportingInfo.extension",
@@ -490,8 +455,14 @@
         },
         {
           "code": "AdverseEvent.supportingInfo.item[x]",
-          "display": "Subject medical history or document relevant to this adverse event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.subjectMedicalHistory",
+              "display": "AdverseEvent.subjectMedicalHistory",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.supportingInfo.item[x]\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.subjectMedicalHistory\u0060 - subjectMedicalHistory changed from scalar to array (max cardinality from 1 to *); subjectMedicalHistory removed a binding requirement - Example http://hl7.org/fhir/ValueSet/adverse-event-supporting-info; subjectMedicalHistory has change due to type change: R5 \u0060item[x]\u0060 \u0060Reference\u0060 maps as RelatedTo for R4 \u0060subjectMedicalHistory\u0060; subjectMedicalHistory has change due to type change: R5 item[x] CodeableConcept has no equivalent or mapped type in R4 subjectMedicalHistory"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.supportingInfo.modifierExtension",
@@ -505,7 +476,7 @@
             {
               "code": "AdverseEvent.suspectEntity",
               "display": "The suspected agent causing the adverse event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.suspectEntity\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity\u0060"
             }
           ]
@@ -517,15 +488,21 @@
             {
               "code": "AdverseEvent.suspectEntity.causality",
               "display": "Information on the possible cause of the event",
-              "relationship": "related-to",
-              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.suspectEntity.causality\u0060 - causality changed from scalar to array (max cardinality from 1 to *)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality\u0060 - causality changed from scalar to array (max cardinality from 1 to *)"
             }
           ]
         },
         {
           "code": "AdverseEvent.suspectEntity.causality.assessmentMethod",
-          "display": "Method of evaluating the relatedness of the suspected entity to the event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.assessment",
+              "display": "Assessment of if the entity caused the event",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.assessmentMethod\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity.causality.assessment\u0060"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.suspectEntity.causality.author",
@@ -534,15 +511,21 @@
             {
               "code": "AdverseEvent.suspectEntity.causality.author",
               "display": "AdverseEvent.suspectEntity.causalityAuthor",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.author\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.author\u0060 - author has change due to type change: R5 \u0060author\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060author\u0060"
             }
           ]
         },
         {
           "code": "AdverseEvent.suspectEntity.causality.entityRelatedness",
-          "display": "Result of the assessment regarding the relatedness of the suspected entity to the event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.causality.productRelatedness",
+              "display": "AdverseEvent.suspectEntity.causalityProductRelatedness",
+              "relationship": "related-to",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.entityRelatedness\u0060 maps as RelatedTo to R4 \u0060AdverseEvent.suspectEntity.causality.productRelatedness\u0060 - productRelatedness removed a binding requirement - Example http://hl7.org/fhir/ValueSet/adverse-event-causality-assess; productRelatedness has change due to type change: R5 entityRelatedness CodeableConcept has no equivalent or mapped type in R4 productRelatedness"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.suspectEntity.causality.extension",
@@ -551,7 +534,7 @@
             {
               "code": "AdverseEvent.suspectEntity.causality.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -563,7 +546,7 @@
             {
               "code": "AdverseEvent.suspectEntity.causality.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.id\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity.causality.id\u0060"
             }
           ]
@@ -575,7 +558,7 @@
             {
               "code": "AdverseEvent.suspectEntity.causality.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.causality.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.causality.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -587,7 +570,7 @@
             {
               "code": "AdverseEvent.suspectEntity.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -599,15 +582,21 @@
             {
               "code": "AdverseEvent.suspectEntity.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.id\u0060 maps as Equivalent to R4 \u0060AdverseEvent.suspectEntity.id\u0060"
             }
           ]
         },
         {
           "code": "AdverseEvent.suspectEntity.instance[x]",
-          "display": "Refers to the specific entity that caused the adverse event",
-          "noMap": true
+          "target": [
+            {
+              "code": "AdverseEvent.suspectEntity.instance",
+              "display": "Refers to the specific entity that caused the adverse event",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060AdverseEvent.suspectEntity.instance[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.instance\u0060 - instance has change due to type change: R5 instance[x] CodeableConcept has no equivalent or mapped type in R4 instance; instance has change due to type change: R5 \u0060instance[x]\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060instance\u0060"
+            }
+          ]
         },
         {
           "code": "AdverseEvent.suspectEntity.modifierExtension",
@@ -616,7 +605,7 @@
             {
               "code": "AdverseEvent.suspectEntity.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060AdverseEvent.suspectEntity.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060AdverseEvent.suspectEntity.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -628,7 +617,7 @@
             {
               "code": "AdverseEvent.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060AdverseEvent.text\u0060 maps as Equivalent to R4 \u0060AdverseEvent.text\u0060"
             }
           ]

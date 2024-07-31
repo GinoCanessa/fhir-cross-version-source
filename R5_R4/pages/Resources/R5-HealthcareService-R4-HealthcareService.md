@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 3 |
-Equivalent | 4 |
-RelatedTo | 30 |
+Equivalent | 26 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -27,7 +29,7 @@ RelatedTo | 30 |
 | HealthcareService.category | HealthcareService.category | Equivalent | R5 `HealthcareService.category` maps as Equivalent to R4 `HealthcareService.category` |
 | HealthcareService.characteristic | HealthcareService.characteristic | Equivalent | R5 `HealthcareService.characteristic` maps as Equivalent to R4 `HealthcareService.characteristic` |
 | HealthcareService.comment | HealthcareService.comment | SourceIsBroaderThanTarget | R5 `HealthcareService.comment` maps as SourceIsBroaderThanTarget to R4 `HealthcareService.comment` - comment has change due to type change: R5 comment markdown has no equivalent or mapped type in R4 comment |
-| HealthcareService.communication | HealthcareService.communication | RelatedTo | R5 `HealthcareService.communication` maps as RelatedTo to R4 `HealthcareService.communication` - communication changed the binding strength from Required to Preferred |
+| HealthcareService.communication | HealthcareService.communication | SourceIsNarrowerThanTarget | R5 `HealthcareService.communication` maps as SourceIsNarrowerThanTarget to R4 `HealthcareService.communication` - communication changed the binding strength from Required to Preferred; communication has change due to type change: R5 `communication` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `communication` |
 | HealthcareService.contact | - | DoesNotExistInTarget | R5 `HealthcareService.contact` does not appear in the target and has no mapping for `HealthcareService`. |
 | HealthcareService.contained | HealthcareService.contained | Equivalent | R5 `HealthcareService.contained` maps as Equivalent to R4 `HealthcareService.contained` |
 | HealthcareService.coverageArea | HealthcareService.coverageArea | Equivalent | R5 `HealthcareService.coverageArea` maps as Equivalent to R4 `HealthcareService.coverageArea` |
@@ -43,7 +45,7 @@ RelatedTo | 30 |
 | HealthcareService.id | HealthcareService.id | Equivalent | R5 `HealthcareService.id` maps as Equivalent to R4 `HealthcareService.id` |
 | HealthcareService.identifier | HealthcareService.identifier | Equivalent | R5 `HealthcareService.identifier` maps as Equivalent to R4 `HealthcareService.identifier` |
 | HealthcareService.implicitRules | HealthcareService.implicitRules | Equivalent | R5 `HealthcareService.implicitRules` maps as Equivalent to R4 `HealthcareService.implicitRules` |
-| HealthcareService.language | HealthcareService.language | RelatedTo | R5 `HealthcareService.language` maps as RelatedTo to R4 `HealthcareService.language` - language changed the binding strength from Required to Preferred |
+| HealthcareService.language | HealthcareService.language | SourceIsNarrowerThanTarget | R5 `HealthcareService.language` maps as SourceIsNarrowerThanTarget to R4 `HealthcareService.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | HealthcareService.location | HealthcareService.location | Equivalent | R5 `HealthcareService.location` maps as Equivalent to R4 `HealthcareService.location` |
 | HealthcareService.meta | HealthcareService.meta | Equivalent | R5 `HealthcareService.meta` maps as Equivalent to R4 `HealthcareService.meta` |
 | HealthcareService.modifierExtension | HealthcareService.modifierExtension | SourceIsBroaderThanTarget | R5 `HealthcareService.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `HealthcareService.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:ServiceRequest.patientInstruction compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ServiceRequest.patientInstruction` maps as RelatedTo to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
+  "description": "R5 `ServiceRequest.patientInstruction` maps as SourceIsBroaderThanTarget to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Patient or consumer-oriented instructions",
         "definition": "Instructions in terms that are understood by the patient or consumer.",
-        "comment": "R5 `ServiceRequest.patientInstruction` maps as RelatedTo to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
+        "comment": "R5 `ServiceRequest.patientInstruction` maps as SourceIsBroaderThanTarget to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
         "min": 0,
         "max": "*",
         "base": {
@@ -419,7 +419,7 @@
         "path": "Extension",
         "short": "Patient or consumer-oriented instructions",
         "definition": "Instructions in terms that are understood by the patient or consumer.",
-        "comment": "R5 `ServiceRequest.patientInstruction` maps as RelatedTo to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
+        "comment": "R5 `ServiceRequest.patientInstruction` maps as SourceIsBroaderThanTarget to R4 `ServiceRequest.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction BackboneElement has no equivalent or mapped type in R4 patientInstruction",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -434,30 +434,15 @@
       },
       {
         "path": "Extension.extension:instruction[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:instruction[x].extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:instruction[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "markdown"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
             ]
           }
         ]

@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 12 |
-Equivalent | 4 |
-RelatedTo | 65 |
+Equivalent | 55 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -33,7 +34,7 @@ RelatedTo | 65 |
 | CodeSystem.concept.designation.additionalUse | - | DoesNotExistInTarget | R5 `CodeSystem.concept.designation.additionalUse` does not appear in the target and has no mapping for `CodeSystem`. |
 | CodeSystem.concept.designation.extension | CodeSystem.concept.designation.extension | SourceIsBroaderThanTarget | R5 `CodeSystem.concept.designation.extension` maps as SourceIsBroaderThanTarget to R4 `CodeSystem.concept.designation.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | CodeSystem.concept.designation.id | CodeSystem.concept.designation.id | Equivalent | R5 `CodeSystem.concept.designation.id` maps as Equivalent to R4 `CodeSystem.concept.designation.id` |
-| CodeSystem.concept.designation.language | CodeSystem.concept.designation.language | RelatedTo | R5 `CodeSystem.concept.designation.language` maps as RelatedTo to R4 `CodeSystem.concept.designation.language` - language changed the binding strength from Required to Preferred |
+| CodeSystem.concept.designation.language | CodeSystem.concept.designation.language | SourceIsNarrowerThanTarget | R5 `CodeSystem.concept.designation.language` maps as SourceIsNarrowerThanTarget to R4 `CodeSystem.concept.designation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CodeSystem.concept.designation.modifierExtension | CodeSystem.concept.designation.modifierExtension | SourceIsBroaderThanTarget | R5 `CodeSystem.concept.designation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CodeSystem.concept.designation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | CodeSystem.concept.designation.use | CodeSystem.concept.designation.use | Equivalent | R5 `CodeSystem.concept.designation.use` maps as Equivalent to R4 `CodeSystem.concept.designation.use` |
 | CodeSystem.concept.designation.value | CodeSystem.concept.designation.value | Equivalent | R5 `CodeSystem.concept.designation.value` maps as Equivalent to R4 `CodeSystem.concept.designation.value` |
@@ -73,7 +74,7 @@ RelatedTo | 65 |
 | CodeSystem.identifier | CodeSystem.identifier | Equivalent | R5 `CodeSystem.identifier` maps as Equivalent to R4 `CodeSystem.identifier` |
 | CodeSystem.implicitRules | CodeSystem.implicitRules | Equivalent | R5 `CodeSystem.implicitRules` maps as Equivalent to R4 `CodeSystem.implicitRules` |
 | CodeSystem.jurisdiction | CodeSystem.jurisdiction | Equivalent | R5 `CodeSystem.jurisdiction` maps as Equivalent to R4 `CodeSystem.jurisdiction` |
-| CodeSystem.language | CodeSystem.language | RelatedTo | R5 `CodeSystem.language` maps as RelatedTo to R4 `CodeSystem.language` - language changed the binding strength from Required to Preferred |
+| CodeSystem.language | CodeSystem.language | SourceIsNarrowerThanTarget | R5 `CodeSystem.language` maps as SourceIsNarrowerThanTarget to R4 `CodeSystem.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CodeSystem.lastReviewDate | - | DoesNotExistInTarget | R5 `CodeSystem.lastReviewDate` does not appear in the target and has no mapping for `CodeSystem`. |
 | CodeSystem.meta | CodeSystem.meta | Equivalent | R5 `CodeSystem.meta` maps as Equivalent to R4 `CodeSystem.meta` |
 | CodeSystem.modifierExtension | CodeSystem.modifierExtension | SourceIsBroaderThanTarget | R5 `CodeSystem.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CodeSystem.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

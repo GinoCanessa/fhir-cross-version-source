@@ -13,14 +13,15 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 16 |
+Equivalent | 15 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
 | Slot | Slot | Equivalent | R5 `Slot` maps as Equivalent to R4 `Slot` |
-| Slot.appointmentType | Slot.appointmentType | RelatedTo | R5 `Slot.appointmentType` maps as RelatedTo to R4 `Slot.appointmentType` - appointmentType changed from array to scalar (max cardinality from * to 1) |
+| Slot.appointmentType | Slot.appointmentType | SourceIsBroaderThanTarget | R5 `Slot.appointmentType` maps as SourceIsBroaderThanTarget to R4 `Slot.appointmentType` - appointmentType changed from array to scalar (max cardinality from * to 1) |
 | Slot.comment | Slot.comment | Equivalent | R5 `Slot.comment` maps as Equivalent to R4 `Slot.comment` |
 | Slot.contained | Slot.contained | Equivalent | R5 `Slot.contained` maps as Equivalent to R4 `Slot.contained` |
 | Slot.end | Slot.end | Equivalent | R5 `Slot.end` maps as Equivalent to R4 `Slot.end` |
@@ -28,7 +29,7 @@ RelatedTo | 16 |
 | Slot.id | Slot.id | Equivalent | R5 `Slot.id` maps as Equivalent to R4 `Slot.id` |
 | Slot.identifier | Slot.identifier | Equivalent | R5 `Slot.identifier` maps as Equivalent to R4 `Slot.identifier` |
 | Slot.implicitRules | Slot.implicitRules | Equivalent | R5 `Slot.implicitRules` maps as Equivalent to R4 `Slot.implicitRules` |
-| Slot.language | Slot.language | RelatedTo | R5 `Slot.language` maps as RelatedTo to R4 `Slot.language` - language changed the binding strength from Required to Preferred |
+| Slot.language | Slot.language | SourceIsNarrowerThanTarget | R5 `Slot.language` maps as SourceIsNarrowerThanTarget to R4 `Slot.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Slot.meta | Slot.meta | Equivalent | R5 `Slot.meta` maps as Equivalent to R4 `Slot.meta` |
 | Slot.modifierExtension | Slot.modifierExtension | SourceIsBroaderThanTarget | R5 `Slot.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Slot.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Slot.overbooked | Slot.overbooked | Equivalent | R5 `Slot.overbooked` maps as Equivalent to R4 `Slot.overbooked` |

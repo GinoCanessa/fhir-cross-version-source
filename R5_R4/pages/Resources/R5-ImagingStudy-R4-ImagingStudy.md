@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 3 |
-Equivalent | 4 |
-RelatedTo | 47 |
+DoesNotExistInTarget | 1 |
+Equivalent | 36 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 14 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -30,7 +32,7 @@ RelatedTo | 47 |
 | ImagingStudy.id | ImagingStudy.id | Equivalent | R5 `ImagingStudy.id` maps as Equivalent to R4 `ImagingStudy.id` |
 | ImagingStudy.identifier | ImagingStudy.identifier | Equivalent | R5 `ImagingStudy.identifier` maps as Equivalent to R4 `ImagingStudy.identifier` |
 | ImagingStudy.implicitRules | ImagingStudy.implicitRules | Equivalent | R5 `ImagingStudy.implicitRules` maps as Equivalent to R4 `ImagingStudy.implicitRules` |
-| ImagingStudy.language | ImagingStudy.language | RelatedTo | R5 `ImagingStudy.language` maps as RelatedTo to R4 `ImagingStudy.language` - language changed the binding strength from Required to Preferred |
+| ImagingStudy.language | ImagingStudy.language | SourceIsNarrowerThanTarget | R5 `ImagingStudy.language` maps as SourceIsNarrowerThanTarget to R4 `ImagingStudy.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ImagingStudy.location | ImagingStudy.location | Equivalent | R5 `ImagingStudy.location` maps as Equivalent to R4 `ImagingStudy.location` |
 | ImagingStudy.meta | ImagingStudy.meta | Equivalent | R5 `ImagingStudy.meta` maps as Equivalent to R4 `ImagingStudy.meta` |
 | ImagingStudy.modality | ImagingStudy.modality | SourceIsBroaderThanTarget | R5 `ImagingStudy.modality` maps as SourceIsBroaderThanTarget to R4 `ImagingStudy.modality` - modality has change due to type change: R5 modality CodeableConcept has no equivalent or mapped type in R4 modality |
@@ -39,8 +41,10 @@ RelatedTo | 47 |
 | ImagingStudy.numberOfInstances | ImagingStudy.numberOfInstances | Equivalent | R5 `ImagingStudy.numberOfInstances` maps as Equivalent to R4 `ImagingStudy.numberOfInstances` |
 | ImagingStudy.numberOfSeries | ImagingStudy.numberOfSeries | Equivalent | R5 `ImagingStudy.numberOfSeries` maps as Equivalent to R4 `ImagingStudy.numberOfSeries` |
 | ImagingStudy.partOf | - | DoesNotExistInTarget | R5 `ImagingStudy.partOf` does not appear in the target and has no mapping for `ImagingStudy`. |
-| ImagingStudy.procedure | - | DoesNotExistInTarget | R5 `ImagingStudy.procedure` does not appear in the target and has no mapping for `ImagingStudy`. |
-| ImagingStudy.reason | - | DoesNotExistInTarget | R5 `ImagingStudy.reason` does not appear in the target and has no mapping for `ImagingStudy`. |
+| ImagingStudy.procedure | ImagingStudy.procedureCode | SourceIsBroaderThanTarget | R5 `ImagingStudy.procedure` maps as SourceIsBroaderThanTarget to R4 `ImagingStudy.procedureCode` - procedureCode changed the binding strength from Preferred to Extensible; procedureCode has change due to type change: R5 procedure CodeableReference has no equivalent or mapped type in R4 procedureCode |
+| ImagingStudy.procedure | ImagingStudy.procedureReference | RelatedTo | R5 `ImagingStudy.procedure` maps as RelatedTo to R4 `ImagingStudy.procedureReference` - procedureReference changed from array to scalar (max cardinality from * to 1); procedureReference removed a binding requirement - Preferred http://loinc.org/vs/loinc-rsna-radiology-playbook; procedureReference has change due to type change: R5 procedure CodeableReference has no equivalent or mapped type in R4 procedureReference |
+| ImagingStudy.reason | ImagingStudy.reasonCode | SourceIsBroaderThanTarget | R5 `ImagingStudy.reason` maps as SourceIsBroaderThanTarget to R4 `ImagingStudy.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| ImagingStudy.reason | ImagingStudy.reasonReference | RelatedTo | R5 `ImagingStudy.reason` maps as RelatedTo to R4 `ImagingStudy.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/procedure-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | ImagingStudy.referrer | ImagingStudy.referrer | Equivalent | R5 `ImagingStudy.referrer` maps as Equivalent to R4 `ImagingStudy.referrer` |
 | ImagingStudy.series | ImagingStudy.series | Equivalent | R5 `ImagingStudy.series` maps as Equivalent to R4 `ImagingStudy.series` |
 | ImagingStudy.series.bodySite | ImagingStudy.series.bodySite | SourceIsBroaderThanTarget | R5 `ImagingStudy.series.bodySite` maps as SourceIsBroaderThanTarget to R4 `ImagingStudy.series.bodySite` - bodySite has change due to type change: R5 bodySite CodeableReference has no equivalent or mapped type in R4 bodySite |

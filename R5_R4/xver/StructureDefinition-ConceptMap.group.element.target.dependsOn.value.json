@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:ConceptMap.group.element.target.dependsOn.value[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` does not appear in the target and has no mapping for `ConceptMap`.",
+  "description": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` maps as RelatedTo to R4 `ConceptMap.group.element.target.dependsOn.value` - value made the element mandatory; value increased the minimum cardinality from 0 to 1; value has change due to type change: R5 value[x] code has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Coding has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ConceptMap.group.element.target.dependsOn"
+      "expression": "ConceptMap.group.element.target.dependsOn.value"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Value of the referenced data element",
         "definition": "Data element value that the map depends on / produces.",
-        "comment": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` does not appear in the target and has no mapping for `ConceptMap`.\nIf the data type is a code, then the code system is .group.source for .dependsOn.valueCode and .group.target for .product.valueCode.",
+        "comment": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` maps as RelatedTo to R4 `ConceptMap.group.element.target.dependsOn.value` - value made the element mandatory; value increased the minimum cardinality from 0 to 1; value has change due to type change: R5 value[x] code has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Coding has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value\nIf the data type is a code, then the code system is .group.source for .dependsOn.valueCode and .group.target for .product.valueCode.",
         "min": 0,
         "max": "1",
         "base": {
@@ -398,276 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:code:code",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:code"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Coding:Coding",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Coding"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:string:string",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:string"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:boolean:boolean",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:boolean"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:Quantity:Quantity",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Quantity"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -683,7 +413,7 @@
         "path": "Extension",
         "short": "Value of the referenced data element",
         "definition": "Data element value that the map depends on / produces.",
-        "comment": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` does not appear in the target and has no mapping for `ConceptMap`.\nIf the data type is a code, then the code system is .group.source for .dependsOn.valueCode and .group.target for .product.valueCode.",
+        "comment": "R5 `ConceptMap.group.element.target.dependsOn.value[x]` maps as RelatedTo to R4 `ConceptMap.group.element.target.dependsOn.value` - value made the element mandatory; value increased the minimum cardinality from 0 to 1; value has change due to type change: R5 value[x] code has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Coding has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value\nIf the data type is a code, then the code system is .group.source for .dependsOn.valueCode and .group.target for .product.valueCode.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -691,71 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

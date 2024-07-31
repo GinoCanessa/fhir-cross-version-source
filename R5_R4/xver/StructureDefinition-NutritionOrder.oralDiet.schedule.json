@@ -462,18 +462,10 @@
       },
       {
         "path": "Extension.extension:timing.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timing.extension:Timing",
-        "sliceName": "Timing",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Timing"
-            ]
+            "code": "Timing"
           }
         ]
       },
@@ -491,18 +483,10 @@
       },
       {
         "path": "Extension.extension:asNeeded.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:asNeeded.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -520,20 +504,27 @@
       },
       {
         "path": "Extension.extension:asNeededFor.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:asNeededFor.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept identifying the precondition that should be met or evaluated prior to       consuming a nutrition product."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "OralDietAsNeededReason"
+            }
+          ],
+          "strength": "example",
+          "description": "A coded concept identifying the precondition that should be met or evaluated prior to       consuming a nutrition product.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+        }
       },
       {
         "path": "Extension.extension:asNeededFor.url",

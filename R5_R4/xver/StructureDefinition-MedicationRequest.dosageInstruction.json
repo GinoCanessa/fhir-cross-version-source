@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationRequest.dosageInstruction compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationRequest.dosageInstruction` maps as RelatedTo to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as RelatedTo for R4 `dosageInstruction`",
+  "description": "R5 `MedicationRequest.dosageInstruction` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosageInstruction`",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Specific instructions for how the medication should be taken",
         "definition": "Specific instructions for how the medication is to be used by the patient.",
-        "comment": "R5 `MedicationRequest.dosageInstruction` maps as RelatedTo to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as RelatedTo for R4 `dosageInstruction`\nThere are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, \"Ondansetron 8mg orally or IV twice a day as needed for nausea\" or \"Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting\".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. \n\nWhen drug orders are grouped together at the time of order entry,  but each of the drugs can be manipulated independently e.g. changing the status of one order to \"completed\" or \"cancelled\", changing another order status to \"on-hold\", the method to \"group\" all of the medication requests together is to use  MedicationRequest.groupIdentifier element.  All of the orders grouped together in this manner will have the same groupIdentifier, and separately, each order in the group may have a unique identifier.  \n\nThere are cases that require grouping of Medication orders together when it is necessary to specify optionality e.g. order two drugs at one time, but stating either of these drugs may be used to treat the patient.  The use of a RequestOrchestration should be used as a parent for the Medication orders that require this type of grouping. An example when it may be necessary to group medication orders together is when you specify timing relationships e.g. order drug \"xyz\" with dose 123, then taper the same drug to a different dose after some interval of time\nprecedence:\ne.g. give drug \"abc\" followed by drug \"def\"\ne.g. give drug 30 minutes before some procedure was performed\nmore generically this supports - hierarchical groups of actions, where each specific action references the action to be performed (in terms of a Request resource), and each group describes additional behavior, relationships, and applicable conditions between the actions in the overall group.\nNote that one should NOT use the List or Composition resource to accomplish the above requirements.  You may use List or Composition for other business requirements, but not to address the specific requirements of grouping medication orders.",
+        "comment": "R5 `MedicationRequest.dosageInstruction` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosageInstruction`\nThere are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, \"Ondansetron 8mg orally or IV twice a day as needed for nausea\" or \"Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting\".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. \n\nWhen drug orders are grouped together at the time of order entry,  but each of the drugs can be manipulated independently e.g. changing the status of one order to \"completed\" or \"cancelled\", changing another order status to \"on-hold\", the method to \"group\" all of the medication requests together is to use  MedicationRequest.groupIdentifier element.  All of the orders grouped together in this manner will have the same groupIdentifier, and separately, each order in the group may have a unique identifier.  \n\nThere are cases that require grouping of Medication orders together when it is necessary to specify optionality e.g. order two drugs at one time, but stating either of these drugs may be used to treat the patient.  The use of a RequestOrchestration should be used as a parent for the Medication orders that require this type of grouping. An example when it may be necessary to group medication orders together is when you specify timing relationships e.g. order drug \"xyz\" with dose 123, then taper the same drug to a different dose after some interval of time\nprecedence:\ne.g. give drug \"abc\" followed by drug \"def\"\ne.g. give drug 30 minutes before some procedure was performed\nmore generically this supports - hierarchical groups of actions, where each specific action references the action to be performed (in terms of a Request resource), and each group describes additional behavior, relationships, and applicable conditions between the actions in the overall group.\nNote that one should NOT use the List or Composition resource to accomplish the above requirements.  You may use List or Composition for other business requirements, but not to address the specific requirements of grouping medication orders.",
         "min": 0,
         "max": "*",
         "base": {
@@ -205,8 +205,8 @@
         "path": "Extension.value[x]",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "0",
+        "min": 1,
+        "max": "1",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -214,166 +214,7 @@
         },
         "type": [
           {
-            "code": "base64Binary"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "canonical"
-          },
-          {
-            "code": "code"
-          },
-          {
-            "code": "date"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "decimal"
-          },
-          {
-            "code": "id"
-          },
-          {
-            "code": "instant"
-          },
-          {
-            "code": "integer"
-          },
-          {
-            "code": "integer64"
-          },
-          {
-            "code": "markdown"
-          },
-          {
-            "code": "oid"
-          },
-          {
-            "code": "positiveInt"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "time"
-          },
-          {
-            "code": "unsignedInt"
-          },
-          {
-            "code": "uri"
-          },
-          {
-            "code": "url"
-          },
-          {
-            "code": "uuid"
-          },
-          {
-            "code": "Address"
-          },
-          {
-            "code": "Age"
-          },
-          {
-            "code": "Annotation"
-          },
-          {
-            "code": "Attachment"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "CodeableReference"
-          },
-          {
-            "code": "Coding"
-          },
-          {
-            "code": "ContactPoint"
-          },
-          {
-            "code": "Count"
-          },
-          {
-            "code": "Distance"
-          },
-          {
-            "code": "Duration"
-          },
-          {
-            "code": "HumanName"
-          },
-          {
-            "code": "Identifier"
-          },
-          {
-            "code": "Money"
-          },
-          {
-            "code": "Period"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "RatioRange"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "SampledData"
-          },
-          {
-            "code": "Signature"
-          },
-          {
-            "code": "Timing"
-          },
-          {
-            "code": "ContactDetail"
-          },
-          {
-            "code": "DataRequirement"
-          },
-          {
-            "code": "Expression"
-          },
-          {
-            "code": "ParameterDefinition"
-          },
-          {
-            "code": "RelatedArtifact"
-          },
-          {
-            "code": "TriggerDefinition"
-          },
-          {
-            "code": "UsageContext"
-          },
-          {
-            "code": "Availability"
-          },
-          {
-            "code": "ExtendedContactDetail"
-          },
-          {
             "code": "Dosage"
-          },
-          {
-            "code": "Meta"
           }
         ],
         "condition": [
@@ -398,60 +239,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Dosage:Dosage",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Dosage",
-        "sliceName": "Dosage",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Dosage"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,25 +254,17 @@
         "path": "Extension",
         "short": "Specific instructions for how the medication should be taken",
         "definition": "Specific instructions for how the medication is to be used by the patient.",
-        "comment": "R5 `MedicationRequest.dosageInstruction` maps as RelatedTo to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as RelatedTo for R4 `dosageInstruction`\nThere are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, \"Ondansetron 8mg orally or IV twice a day as needed for nausea\" or \"Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting\".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. \n\nWhen drug orders are grouped together at the time of order entry,  but each of the drugs can be manipulated independently e.g. changing the status of one order to \"completed\" or \"cancelled\", changing another order status to \"on-hold\", the method to \"group\" all of the medication requests together is to use  MedicationRequest.groupIdentifier element.  All of the orders grouped together in this manner will have the same groupIdentifier, and separately, each order in the group may have a unique identifier.  \n\nThere are cases that require grouping of Medication orders together when it is necessary to specify optionality e.g. order two drugs at one time, but stating either of these drugs may be used to treat the patient.  The use of a RequestOrchestration should be used as a parent for the Medication orders that require this type of grouping. An example when it may be necessary to group medication orders together is when you specify timing relationships e.g. order drug \"xyz\" with dose 123, then taper the same drug to a different dose after some interval of time\nprecedence:\ne.g. give drug \"abc\" followed by drug \"def\"\ne.g. give drug 30 minutes before some procedure was performed\nmore generically this supports - hierarchical groups of actions, where each specific action references the action to be performed (in terms of a Request resource), and each group describes additional behavior, relationships, and applicable conditions between the actions in the overall group.\nNote that one should NOT use the List or Composition resource to accomplish the above requirements.  You may use List or Composition for other business requirements, but not to address the specific requirements of grouping medication orders.",
+        "comment": "R5 `MedicationRequest.dosageInstruction` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.dosageInstruction` - dosageInstruction has change due to type change: R5 `dosageInstruction` `Dosage` maps as SourceIsBroaderThanTarget for R4 `dosageInstruction`\nThere are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, \"Ondansetron 8mg orally or IV twice a day as needed for nausea\" or \"Compazine® (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting\".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. In general, each prescribed drug will be a separate Medication Request. \n\nWhen drug orders are grouped together at the time of order entry,  but each of the drugs can be manipulated independently e.g. changing the status of one order to \"completed\" or \"cancelled\", changing another order status to \"on-hold\", the method to \"group\" all of the medication requests together is to use  MedicationRequest.groupIdentifier element.  All of the orders grouped together in this manner will have the same groupIdentifier, and separately, each order in the group may have a unique identifier.  \n\nThere are cases that require grouping of Medication orders together when it is necessary to specify optionality e.g. order two drugs at one time, but stating either of these drugs may be used to treat the patient.  The use of a RequestOrchestration should be used as a parent for the Medication orders that require this type of grouping. An example when it may be necessary to group medication orders together is when you specify timing relationships e.g. order drug \"xyz\" with dose 123, then taper the same drug to a different dose after some interval of time\nprecedence:\ne.g. give drug \"abc\" followed by drug \"def\"\ne.g. give drug 30 minutes before some procedure was performed\nmore generically this supports - hierarchical groups of actions, where each specific action references the action to be performed (in terms of a Request resource), and each group describes additional behavior, relationships, and applicable conditions between the actions in the overall group.\nNote that one should NOT use the List or Composition resource to accomplish the above requirements.  You may use List or Composition for other business requirements, but not to address the specific requirements of grouping medication orders.",
         "min": 0,
         "max": "*",
         "isModifier": false
       },
       {
         "path": "Extension.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:Dosage",
-        "sliceName": "Dosage",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage"
-            ]
+            "code": "Dosage"
           }
         ]
       },

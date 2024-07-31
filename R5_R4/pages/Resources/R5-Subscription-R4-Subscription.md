@@ -13,21 +13,23 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 26 |
-Equivalent | 4 |
-RelatedTo | 9 |
+DoesNotExistInTarget | 23 |
+Equivalent | 11 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 2 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
 | Subscription | Subscription | Equivalent | R5 `Subscription` maps as Equivalent to R4 `Subscription` |
-| Subscription.channelType | - | DoesNotExistInTarget | R5 `Subscription.channelType` does not appear in the target and has no mapping for `Subscription`. |
+| Subscription.channelType | Subscription.channel.type | RelatedTo | R5 `Subscription.channelType` maps as RelatedTo to R4 `Subscription.channel.type` - type made the binding required (from Extensible) for http://hl7.org/fhir/ValueSet/subscription-channel-type|4.0.1; type has change due to type change: R5 channelType Coding has no equivalent or mapped type in R4 type |
 | Subscription.contact | Subscription.contact | Equivalent | R5 `Subscription.contact` maps as Equivalent to R4 `Subscription.contact` |
 | Subscription.contained | Subscription.contained | Equivalent | R5 `Subscription.contained` maps as Equivalent to R4 `Subscription.contained` |
 | Subscription.content | - | DoesNotExistInTarget | R5 `Subscription.content` does not appear in the target and has no mapping for `Subscription`. |
-| Subscription.contentType | - | DoesNotExistInTarget | R5 `Subscription.contentType` does not appear in the target and has no mapping for `Subscription`. |
+| Subscription.contentType | Subscription.channel.payload | Equivalent | R5 `Subscription.contentType` maps as Equivalent to R4 `Subscription.channel.payload` - payload using http://hl7.org/fhir/ValueSet/mimetypes is exempted and assumed equivalent |
 | Subscription.end | Subscription.end | Equivalent | R5 `Subscription.end` maps as Equivalent to R4 `Subscription.end` |
-| Subscription.endpoint | - | DoesNotExistInTarget | R5 `Subscription.endpoint` does not appear in the target and has no mapping for `Subscription`. |
+| Subscription.endpoint | Subscription.channel.endpoint | Equivalent | R5 `Subscription.endpoint` maps as Equivalent to R4 `Subscription.channel.endpoint` |
 | Subscription.extension | Subscription.extension | SourceIsBroaderThanTarget | R5 `Subscription.extension` maps as SourceIsBroaderThanTarget to R4 `Subscription.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Subscription.filterBy | - | DoesNotExistInTarget | R5 `Subscription.filterBy` does not appear in the target and has no mapping for `Subscription`. |
 | Subscription.filterBy.comparator | - | DoesNotExistInTarget | R5 `Subscription.filterBy.comparator` does not appear in the target and has no mapping for `Subscription`. |
@@ -42,7 +44,7 @@ RelatedTo | 9 |
 | Subscription.id | Subscription.id | Equivalent | R5 `Subscription.id` maps as Equivalent to R4 `Subscription.id` |
 | Subscription.identifier | - | DoesNotExistInTarget | R5 `Subscription.identifier` does not appear in the target and has no mapping for `Subscription`. |
 | Subscription.implicitRules | Subscription.implicitRules | Equivalent | R5 `Subscription.implicitRules` maps as Equivalent to R4 `Subscription.implicitRules` |
-| Subscription.language | Subscription.language | RelatedTo | R5 `Subscription.language` maps as RelatedTo to R4 `Subscription.language` - language changed the binding strength from Required to Preferred |
+| Subscription.language | Subscription.language | SourceIsNarrowerThanTarget | R5 `Subscription.language` maps as SourceIsNarrowerThanTarget to R4 `Subscription.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Subscription.managingEntity | - | DoesNotExistInTarget | R5 `Subscription.managingEntity` does not appear in the target and has no mapping for `Subscription`. |
 | Subscription.maxCount | - | DoesNotExistInTarget | R5 `Subscription.maxCount` does not appear in the target and has no mapping for `Subscription`. |
 | Subscription.meta | Subscription.meta | Equivalent | R5 `Subscription.meta` maps as Equivalent to R4 `Subscription.meta` |

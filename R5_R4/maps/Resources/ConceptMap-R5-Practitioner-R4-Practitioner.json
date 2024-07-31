@@ -30,7 +30,7 @@
             {
               "code": "Practitioner.active",
               "display": "Whether this practitioner\u0027s record is in active use",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.active\u0060 maps as Equivalent to R4 \u0060Practitioner.active\u0060"
             }
           ]
@@ -42,7 +42,7 @@
             {
               "code": "Practitioner.address",
               "display": "Address(es) of the practitioner that are not role specific (typically home address)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.address\u0060 maps as Equivalent to R4 \u0060Practitioner.address\u0060"
             }
           ]
@@ -54,7 +54,7 @@
             {
               "code": "Practitioner.birthDate",
               "display": "The date  on which the practitioner was born",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.birthDate\u0060 maps as Equivalent to R4 \u0060Practitioner.birthDate\u0060"
             }
           ]
@@ -66,8 +66,8 @@
             {
               "code": "Practitioner.communication",
               "display": "A language the practitioner can use in patient communication",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Practitioner.communication\u0060 maps as RelatedTo to R4 \u0060Practitioner.communication\u0060 - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Practitioner.communication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Practitioner.communication\u0060 - communication added a binding requirement - Preferred http://hl7.org/fhir/ValueSet/languages; communication has change due to type change: R5 communication BackboneElement has no equivalent or mapped type in R4 communication"
             }
           ]
         },
@@ -103,7 +103,7 @@
             {
               "code": "Practitioner.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.contained\u0060 maps as Equivalent to R4 \u0060Practitioner.contained\u0060"
             }
           ]
@@ -120,7 +120,7 @@
             {
               "code": "Practitioner.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Practitioner.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Practitioner.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -132,7 +132,7 @@
             {
               "code": "Practitioner.gender",
               "display": "male | female | other | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.gender\u0060 maps as Equivalent to R4 \u0060Practitioner.gender\u0060 - gender has compatible required binding for code type: http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0 and http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 (Equivalent)"
             }
           ]
@@ -156,7 +156,7 @@
             {
               "code": "Practitioner.identifier",
               "display": "An identifier for the person as this agent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.identifier\u0060 maps as Equivalent to R4 \u0060Practitioner.identifier\u0060"
             }
           ]
@@ -180,8 +180,8 @@
             {
               "code": "Practitioner.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Practitioner.language\u0060 maps as RelatedTo to R4 \u0060Practitioner.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Practitioner.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Practitioner.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -204,7 +204,7 @@
             {
               "code": "Practitioner.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Practitioner.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Practitioner.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -216,7 +216,7 @@
             {
               "code": "Practitioner.name",
               "display": "The name(s) associated with the practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.name\u0060 maps as Equivalent to R4 \u0060Practitioner.name\u0060"
             }
           ]
@@ -240,7 +240,7 @@
             {
               "code": "Practitioner.qualification",
               "display": "Certification, licenses, or training pertaining to the provision of care",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification\u0060"
             }
           ]
@@ -252,7 +252,7 @@
             {
               "code": "Practitioner.qualification.code",
               "display": "Coded representation of the qualification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification.code\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification.code\u0060"
             }
           ]
@@ -264,7 +264,7 @@
             {
               "code": "Practitioner.qualification.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Practitioner.qualification.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Practitioner.qualification.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -276,7 +276,7 @@
             {
               "code": "Practitioner.qualification.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification.id\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification.id\u0060"
             }
           ]
@@ -288,7 +288,7 @@
             {
               "code": "Practitioner.qualification.identifier",
               "display": "An identifier for this qualification for the practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification.identifier\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification.identifier\u0060"
             }
           ]
@@ -300,7 +300,7 @@
             {
               "code": "Practitioner.qualification.issuer",
               "display": "Organization that regulates and issues the qualification",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification.issuer\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification.issuer\u0060"
             }
           ]
@@ -312,7 +312,7 @@
             {
               "code": "Practitioner.qualification.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Practitioner.qualification.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Practitioner.qualification.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -324,7 +324,7 @@
             {
               "code": "Practitioner.qualification.period",
               "display": "Period during which the qualification is valid",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.qualification.period\u0060 maps as Equivalent to R4 \u0060Practitioner.qualification.period\u0060"
             }
           ]
@@ -336,7 +336,7 @@
             {
               "code": "Practitioner.telecom",
               "display": "A contact detail for the practitioner (that apply to all roles)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.telecom\u0060 maps as Equivalent to R4 \u0060Practitioner.telecom\u0060"
             }
           ]
@@ -348,7 +348,7 @@
             {
               "code": "Practitioner.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Practitioner.text\u0060 maps as Equivalent to R4 \u0060Practitioner.text\u0060"
             }
           ]

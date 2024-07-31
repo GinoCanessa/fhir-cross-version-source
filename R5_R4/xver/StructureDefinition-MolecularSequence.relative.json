@@ -638,20 +638,23 @@
       },
       {
         "path": "Extension.extension:coordinateSystem.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:coordinateSystem.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "LL5323-2"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Genomic coordinate system.",
+          "valueSet": "http://loinc.org/LL5323-2/"
+        }
       },
       {
         "path": "Extension.extension:coordinateSystem.url",
@@ -666,18 +669,10 @@
       },
       {
         "path": "Extension.extension:ordinalPosition.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:ordinalPosition.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
+            "code": "integer"
           }
         ]
       },
@@ -694,18 +689,10 @@
       },
       {
         "path": "Extension.extension:sequenceRange.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sequenceRange.extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
+            "code": "Range"
           }
         ]
       },
@@ -730,20 +717,23 @@
       },
       {
         "path": "Extension.extension:startingSequence.extension:genomeAssembly.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:genomeAssembly.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "LL1040-6"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Human reference sequence NCBI build ID.",
+          "valueSet": "http://loinc.org/LL1040-6/"
+        }
       },
       {
         "path": "Extension.extension:startingSequence.extension:genomeAssembly.url",
@@ -762,19 +752,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:startingSequence.extension:chromosome.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:startingSequence.extension:chromosome.url",
         "fixedUri": "chromosome"
       },
@@ -789,45 +766,6 @@
       {
         "path": "Extension.extension:startingSequence.extension:sequence[x].value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:sequence[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:startingSequence.extension:sequence[x].url",
@@ -846,19 +784,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:startingSequence.extension:windowStart.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:startingSequence.extension:windowStart.url",
         "fixedUri": "windowStart"
       },
@@ -873,19 +798,6 @@
       {
         "path": "Extension.extension:startingSequence.extension:windowEnd.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:windowEnd.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:startingSequence.extension:windowEnd.url",
@@ -904,19 +816,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:startingSequence.extension:orientation.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:startingSequence.extension:orientation.url",
         "fixedUri": "orientation"
       },
@@ -931,19 +830,6 @@
       {
         "path": "Extension.extension:startingSequence.extension:strand.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:startingSequence.extension:strand.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:startingSequence.extension:strand.url",
@@ -962,20 +848,23 @@
       },
       {
         "path": "Extension.extension:genomeAssembly.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:genomeAssembly.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "LL1040-6"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Human reference sequence NCBI build ID.",
+          "valueSet": "http://loinc.org/LL1040-6/"
+        }
       },
       {
         "path": "Extension.extension:genomeAssembly.url",
@@ -994,19 +883,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:chromosome.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:chromosome.url",
         "fixedUri": "chromosome"
       },
@@ -1021,45 +897,6 @@
       {
         "path": "Extension.extension:sequence[x].value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:sequence[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:sequence[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:sequence[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:sequence[x].url",
@@ -1078,19 +915,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:windowStart.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:windowStart.url",
         "fixedUri": "windowStart"
       },
@@ -1105,19 +929,6 @@
       {
         "path": "Extension.extension:windowEnd.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:windowEnd.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:windowEnd.url",
@@ -1136,19 +947,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:orientation.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:orientation.url",
         "fixedUri": "orientation"
       },
@@ -1163,19 +961,6 @@
       {
         "path": "Extension.extension:strand.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:strand.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:strand.url",
@@ -1198,18 +983,10 @@
       },
       {
         "path": "Extension.extension:edit.extension:start.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:edit.extension:start.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
+            "code": "integer"
           }
         ]
       },
@@ -1230,19 +1007,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:edit.extension:end.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:edit.extension:end.url",
         "fixedUri": "end"
       },
@@ -1259,19 +1023,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:edit.extension:replacementSequence.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:edit.extension:replacementSequence.url",
         "fixedUri": "replacementSequence"
       },
@@ -1286,19 +1037,6 @@
       {
         "path": "Extension.extension:edit.extension:replacedSequence.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:edit.extension:replacedSequence.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:edit.extension:replacedSequence.url",
@@ -1318,18 +1056,10 @@
       },
       {
         "path": "Extension.extension:start.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:start.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
+            "code": "integer"
           }
         ]
       },
@@ -1350,19 +1080,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:end.extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:end.url",
         "fixedUri": "end"
       },
@@ -1379,19 +1096,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:replacementSequence.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:replacementSequence.url",
         "fixedUri": "replacementSequence"
       },
@@ -1406,19 +1110,6 @@
       {
         "path": "Extension.extension:replacedSequence.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:replacedSequence.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:replacedSequence.url",

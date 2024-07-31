@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 59 |
+Equivalent | 48 |
+SourceIsBroaderThanTarget | 14 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -33,7 +34,7 @@ RelatedTo | 59 |
 | SubstanceSourceMaterial.geographicalLocation | SubstanceSourceMaterial.geographicalLocation | Equivalent | R5 `SubstanceSourceMaterial.geographicalLocation` maps as Equivalent to R4 `SubstanceSourceMaterial.geographicalLocation` |
 | SubstanceSourceMaterial.id | SubstanceSourceMaterial.id | Equivalent | R5 `SubstanceSourceMaterial.id` maps as Equivalent to R4 `SubstanceSourceMaterial.id` |
 | SubstanceSourceMaterial.implicitRules | SubstanceSourceMaterial.implicitRules | Equivalent | R5 `SubstanceSourceMaterial.implicitRules` maps as Equivalent to R4 `SubstanceSourceMaterial.implicitRules` |
-| SubstanceSourceMaterial.language | SubstanceSourceMaterial.language | RelatedTo | R5 `SubstanceSourceMaterial.language` maps as RelatedTo to R4 `SubstanceSourceMaterial.language` - language changed the binding strength from Required to Preferred |
+| SubstanceSourceMaterial.language | SubstanceSourceMaterial.language | SourceIsNarrowerThanTarget | R5 `SubstanceSourceMaterial.language` maps as SourceIsNarrowerThanTarget to R4 `SubstanceSourceMaterial.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SubstanceSourceMaterial.meta | SubstanceSourceMaterial.meta | Equivalent | R5 `SubstanceSourceMaterial.meta` maps as Equivalent to R4 `SubstanceSourceMaterial.meta` |
 | SubstanceSourceMaterial.modifierExtension | SubstanceSourceMaterial.modifierExtension | SourceIsBroaderThanTarget | R5 `SubstanceSourceMaterial.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SubstanceSourceMaterial.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | SubstanceSourceMaterial.organism | SubstanceSourceMaterial.organism | Equivalent | R5 `SubstanceSourceMaterial.organism` maps as Equivalent to R4 `SubstanceSourceMaterial.organism` |

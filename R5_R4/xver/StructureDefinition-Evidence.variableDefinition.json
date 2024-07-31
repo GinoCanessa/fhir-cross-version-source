@@ -496,18 +496,10 @@
       },
       {
         "path": "Extension.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:description.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
+            "code": "markdown"
           }
         ]
       },
@@ -524,18 +516,10 @@
       },
       {
         "path": "Extension.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },
@@ -552,20 +536,23 @@
       },
       {
         "path": "Extension.extension:variableRole.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:variableRole.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceVariableRole"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The role that the assertion variable plays.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/variable-role"
+        }
       },
       {
         "path": "Extension.extension:variableRole.url",
@@ -580,17 +567,13 @@
       },
       {
         "path": "Extension.extension:observed.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:observed.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"
             ]
           }
         ]
@@ -608,17 +591,13 @@
       },
       {
         "path": "Extension.extension:intended.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:intended.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"
             ]
           }
         ]
@@ -637,20 +616,23 @@
       },
       {
         "path": "Extension.extension:directnessMatch.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:directnessMatch.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceDirectness"
+            }
+          ],
+          "strength": "extensible",
+          "description": "The quality of how direct the match is.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/directness"
+        }
       },
       {
         "path": "Extension.extension:directnessMatch.url",

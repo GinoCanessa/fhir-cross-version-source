@@ -450,20 +450,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BiologicallyDerivedProductPropertyTypeCodes"
+            }
+          ],
+          "strength": "example",
+          "description": "Biologically Derived Product Property Type Codes",
+          "valueSet": "http://hl7.org/fhir/ValueSet/biologicallyderived-product-property-type-codes"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -479,122 +482,34 @@
       },
       {
         "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:integer",
-        "sliceName": "integer",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "boolean"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "integer"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "CodeableConcept"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Period"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Quantity"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Ratio",
-        "sliceName": "Ratio",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Range"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Ratio"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Ratio"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Attachment",
-        "sliceName": "Attachment",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "string"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment"
-            ]
+            "code": "Attachment"
           }
         ]
       },

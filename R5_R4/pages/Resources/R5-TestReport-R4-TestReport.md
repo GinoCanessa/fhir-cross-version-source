@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 5 |
-Equivalent | 4 |
-RelatedTo | 63 |
+Equivalent | 45 |
+SourceIsBroaderThanTarget | 21 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -27,7 +28,7 @@ RelatedTo | 63 |
 | TestReport.identifier | TestReport.identifier | Equivalent | R5 `TestReport.identifier` maps as Equivalent to R4 `TestReport.identifier` |
 | TestReport.implicitRules | TestReport.implicitRules | Equivalent | R5 `TestReport.implicitRules` maps as Equivalent to R4 `TestReport.implicitRules` |
 | TestReport.issued | TestReport.issued | Equivalent | R5 `TestReport.issued` maps as Equivalent to R4 `TestReport.issued` |
-| TestReport.language | TestReport.language | RelatedTo | R5 `TestReport.language` maps as RelatedTo to R4 `TestReport.language` - language changed the binding strength from Required to Preferred |
+| TestReport.language | TestReport.language | SourceIsNarrowerThanTarget | R5 `TestReport.language` maps as SourceIsNarrowerThanTarget to R4 `TestReport.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | TestReport.meta | TestReport.meta | Equivalent | R5 `TestReport.meta` maps as Equivalent to R4 `TestReport.meta` |
 | TestReport.modifierExtension | TestReport.modifierExtension | SourceIsBroaderThanTarget | R5 `TestReport.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `TestReport.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | TestReport.name | TestReport.name | Equivalent | R5 `TestReport.name` maps as Equivalent to R4 `TestReport.name` |

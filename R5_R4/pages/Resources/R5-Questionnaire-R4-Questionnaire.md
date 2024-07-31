@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 61 |
+DoesNotExistInTarget | 3 |
+Equivalent | 52 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -37,7 +39,7 @@ RelatedTo | 61 |
 | Questionnaire.identifier | Questionnaire.identifier | Equivalent | R5 `Questionnaire.identifier` maps as Equivalent to R4 `Questionnaire.identifier` |
 | Questionnaire.implicitRules | Questionnaire.implicitRules | Equivalent | R5 `Questionnaire.implicitRules` maps as Equivalent to R4 `Questionnaire.implicitRules` |
 | Questionnaire.item | Questionnaire.item | Equivalent | R5 `Questionnaire.item` maps as Equivalent to R4 `Questionnaire.item` |
-| Questionnaire.item.answerConstraint | - | DoesNotExistInTarget | R5 `Questionnaire.item.answerConstraint` does not appear in the target and has no mapping for `Questionnaire`. |
+| Questionnaire.item.answerConstraint | Questionnaire.item.type | RelatedTo | R5 `Questionnaire.item.answerConstraint` maps as RelatedTo to R4 `Questionnaire.item.type` - type made the element mandatory; type increased the minimum cardinality from 0 to 1; (type failed to compare required binding of http://hl7.org/fhir/ValueSet/questionnaire-answer-constraint|5.0.0 and http://hl7.org/fhir/ValueSet/item-type|4.0.1); type has change due to type change: R5 `answerConstraint` `code` maps as RelatedTo for R4 `type` |
 | Questionnaire.item.answerOption | Questionnaire.item.answerOption | Equivalent | R5 `Questionnaire.item.answerOption` maps as Equivalent to R4 `Questionnaire.item.answerOption` |
 | Questionnaire.item.answerOption.extension | Questionnaire.item.answerOption.extension | SourceIsBroaderThanTarget | R5 `Questionnaire.item.answerOption.extension` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.answerOption.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Questionnaire.item.answerOption.id | Questionnaire.item.answerOption.id | Equivalent | R5 `Questionnaire.item.answerOption.id` maps as Equivalent to R4 `Questionnaire.item.answerOption.id` |
@@ -62,7 +64,7 @@ RelatedTo | 61 |
 | Questionnaire.item.initial.extension | Questionnaire.item.initial.extension | SourceIsBroaderThanTarget | R5 `Questionnaire.item.initial.extension` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.initial.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Questionnaire.item.initial.id | Questionnaire.item.initial.id | Equivalent | R5 `Questionnaire.item.initial.id` maps as Equivalent to R4 `Questionnaire.item.initial.id` |
 | Questionnaire.item.initial.modifierExtension | Questionnaire.item.initial.modifierExtension | SourceIsBroaderThanTarget | R5 `Questionnaire.item.initial.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.initial.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| Questionnaire.item.initial.value[x] | Questionnaire.item.initial.value[x] | RelatedTo | R5 `Questionnaire.item.initial.value[x]` maps as RelatedTo to R4 `Questionnaire.item.initial.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]` |
+| Questionnaire.item.initial.value[x] | Questionnaire.item.initial.value[x] | SourceIsBroaderThanTarget | R5 `Questionnaire.item.initial.value[x]` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.initial.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]` |
 | Questionnaire.item.item | Questionnaire.item.item | Equivalent | R5 `Questionnaire.item.item` maps as Equivalent to R4 `Questionnaire.item.item` |
 | Questionnaire.item.linkId | Questionnaire.item.linkId | Equivalent | R5 `Questionnaire.item.linkId` maps as Equivalent to R4 `Questionnaire.item.linkId` |
 | Questionnaire.item.maxLength | Questionnaire.item.maxLength | Equivalent | R5 `Questionnaire.item.maxLength` maps as Equivalent to R4 `Questionnaire.item.maxLength` |
@@ -72,9 +74,9 @@ RelatedTo | 61 |
 | Questionnaire.item.repeats | Questionnaire.item.repeats | Equivalent | R5 `Questionnaire.item.repeats` maps as Equivalent to R4 `Questionnaire.item.repeats` |
 | Questionnaire.item.required | Questionnaire.item.required | Equivalent | R5 `Questionnaire.item.required` maps as Equivalent to R4 `Questionnaire.item.required` |
 | Questionnaire.item.text | Questionnaire.item.text | Equivalent | R5 `Questionnaire.item.text` maps as Equivalent to R4 `Questionnaire.item.text` |
-| Questionnaire.item.type | Questionnaire.item.type | SourceIsBroaderThanTarget | R5 `Questionnaire.item.type` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.type` - type has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/item-type|5.0.0 and http://hl7.org/fhir/ValueSet/item-type|4.0.1 |
+| Questionnaire.item.type | Questionnaire.item.type | SourceIsBroaderThanTarget | R5 `Questionnaire.item.type` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.item.type` - type has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/item-type|5.0.0 and http://hl7.org/fhir/ValueSet/item-type|4.0.1; type has change due to type change: R5 `type` `code` maps as SourceIsBroaderThanTarget for R4 `type` |
 | Questionnaire.jurisdiction | Questionnaire.jurisdiction | Equivalent | R5 `Questionnaire.jurisdiction` maps as Equivalent to R4 `Questionnaire.jurisdiction` |
-| Questionnaire.language | Questionnaire.language | RelatedTo | R5 `Questionnaire.language` maps as RelatedTo to R4 `Questionnaire.language` - language changed the binding strength from Required to Preferred |
+| Questionnaire.language | Questionnaire.language | SourceIsNarrowerThanTarget | R5 `Questionnaire.language` maps as SourceIsNarrowerThanTarget to R4 `Questionnaire.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Questionnaire.lastReviewDate | Questionnaire.lastReviewDate | Equivalent | R5 `Questionnaire.lastReviewDate` maps as Equivalent to R4 `Questionnaire.lastReviewDate` |
 | Questionnaire.meta | Questionnaire.meta | Equivalent | R5 `Questionnaire.meta` maps as Equivalent to R4 `Questionnaire.meta` |
 | Questionnaire.modifierExtension | Questionnaire.modifierExtension | SourceIsBroaderThanTarget | R5 `Questionnaire.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Questionnaire.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

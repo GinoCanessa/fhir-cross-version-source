@@ -448,20 +448,22 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DatesType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/datestype"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -477,31 +479,13 @@
       },
       {
         "path": "Extension.extension:when[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:when[x].extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:when[x].extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "dateTime"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },

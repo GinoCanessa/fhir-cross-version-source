@@ -788,18 +788,10 @@
       },
       {
         "path": "Extension.extension:linkId.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:linkId.extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
         ]
       },
@@ -833,18 +825,10 @@
       },
       {
         "path": "Extension.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },
@@ -878,17 +862,13 @@
       },
       {
         "path": "Extension.extension:definitionReference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionReference.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+              "http://hl7.org/fhir/StructureDefinition/Evidence"
             ]
           }
         ]
@@ -907,17 +887,13 @@
       },
       {
         "path": "Extension.extension:definitionCanonical.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionCanonical.extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+              "http://hl7.org/fhir/StructureDefinition/Evidence"
             ]
           }
         ]
@@ -939,19 +915,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:definitionCodeableConcept.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:definitionCodeableConcept.url",
         "fixedUri": "definitionCodeableConcept"
       },
@@ -966,18 +929,10 @@
       },
       {
         "path": "Extension.extension:definitionExpression.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionExpression.extension:Expression",
-        "sliceName": "Expression",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Expression"
-            ]
+            "code": "Expression"
           }
         ]
       },
@@ -995,18 +950,10 @@
       },
       {
         "path": "Extension.extension:definitionId.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionId.extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
         ]
       },
@@ -1032,20 +979,22 @@
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UsageContextType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/usage-context-type"
+        }
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:type.url",
@@ -1060,20 +1009,22 @@
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:method.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:method.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DefinitionMethod"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/definition-method"
+        }
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:method.url",
@@ -1088,17 +1039,13 @@
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:device.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:device.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
             ]
           }
         ]
@@ -1117,83 +1064,25 @@
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "CodeableConcept"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "boolean"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Quantity"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Range"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:value[x].extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Reference"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
         ]
       },
@@ -1211,20 +1100,22 @@
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:offset.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByTypeAndValue.extension:offset.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CharacteristicOffset"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/characteristic-offset"
+        }
       },
       {
         "path": "Extension.extension:definitionByTypeAndValue.extension:offset.url",
@@ -1244,20 +1135,22 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UsageContextType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/ValueSet/usage-context-type"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -1272,20 +1165,22 @@
       },
       {
         "path": "Extension.extension:method.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:method.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DefinitionMethod"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/definition-method"
+        }
       },
       {
         "path": "Extension.extension:method.url",
@@ -1300,17 +1195,13 @@
       },
       {
         "path": "Extension.extension:device.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:device.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
             ]
           }
         ]
@@ -1329,83 +1220,25 @@
       },
       {
         "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "CodeableConcept"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "boolean"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Quantity"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Range"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Reference"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
         ]
       },
@@ -1423,20 +1256,22 @@
       },
       {
         "path": "Extension.extension:offset.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:offset.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CharacteristicOffset"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/characteristic-offset"
+        }
       },
       {
         "path": "Extension.extension:offset.url",
@@ -1460,20 +1295,23 @@
       },
       {
         "path": "Extension.extension:definitionByCombination.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByCombination.extension:code.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CharacteristicCombination"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/characteristic-combination|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-characteristic-combination|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:definitionByCombination.extension:code.url",
@@ -1488,18 +1326,10 @@
       },
       {
         "path": "Extension.extension:definitionByCombination.extension:threshold.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:definitionByCombination.extension:threshold.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1536,20 +1366,23 @@
       },
       {
         "path": "Extension.extension:code.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:code.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CharacteristicCombination"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/characteristic-combination|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-characteristic-combination|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:code.url",
@@ -1564,18 +1397,10 @@
       },
       {
         "path": "Extension.extension:threshold.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:threshold.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1607,31 +1432,13 @@
       },
       {
         "path": "Extension.extension:instances[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:instances[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:instances[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Quantity"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
+            "code": "Range"
           }
         ]
       },
@@ -1648,31 +1455,13 @@
       },
       {
         "path": "Extension.extension:duration[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:duration[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:duration[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Quantity"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
+            "code": "Range"
           }
         ]
       },
@@ -1696,18 +1485,10 @@
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:description.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
+            "code": "markdown"
           }
         ]
       },
@@ -1725,18 +1506,10 @@
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },
@@ -1753,59 +1526,31 @@
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:event[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:event[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:event[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "CodeableConcept"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:event[x].extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Reference"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:event[x].extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "dateTime"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceVariableEvent"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/evidence-variable-event"
+        }
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:event[x].url",
@@ -1820,18 +1565,10 @@
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:quantity.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:quantity.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
+            "code": "Quantity"
           }
         ]
       },
@@ -1848,18 +1585,10 @@
       },
       {
         "path": "Extension.extension:timeFromEvent.extension:range.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timeFromEvent.extension:range.extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
+            "code": "Range"
           }
         ]
       },
@@ -1880,18 +1609,10 @@
       },
       {
         "path": "Extension.extension:description.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:description.extension:markdown",
-        "sliceName": "markdown",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-markdown"
-            ]
+            "code": "markdown"
           }
         ]
       },
@@ -1909,18 +1630,10 @@
       },
       {
         "path": "Extension.extension:note.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:note.extension:Annotation",
-        "sliceName": "Annotation",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation"
-            ]
+            "code": "Annotation"
           }
         ]
       },
@@ -1937,59 +1650,31 @@
       },
       {
         "path": "Extension.extension:event[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:event[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:event[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "CodeableConcept"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:event[x].extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Reference"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:event[x].extension:id",
-        "sliceName": "id",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "dateTime"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-id"
-            ]
+            "code": "id"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "EvidenceVariableEvent"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/evidence-variable-event"
+        }
       },
       {
         "path": "Extension.extension:event[x].url",
@@ -2004,18 +1689,10 @@
       },
       {
         "path": "Extension.extension:quantity.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:quantity.extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
+            "code": "Quantity"
           }
         ]
       },
@@ -2032,18 +1709,10 @@
       },
       {
         "path": "Extension.extension:range.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:range.extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
+            "code": "Range"
           }
         ]
       },

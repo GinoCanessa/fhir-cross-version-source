@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation",
       "element": [
         {
-          "code": "ImmunizationEvaluation.doseNumber",
-          "target": [
-            {
-              "code": "ImmunizationEvaluation.doseNumber[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ImmunizationEvaluation.seriesDoses",
-          "target": [
-            {
-              "code": "ImmunizationEvaluation.seriesDoses[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation",
-      "target": "http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation",
-      "element": [
-        {
           "code": "ImmunizationEvaluation",
           "display": "Immunization evaluation information",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "ImmunizationEvaluation.authority",
               "display": "Who is responsible for publishing the recommendations",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.authority\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.authority\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "ImmunizationEvaluation.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.contained\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "ImmunizationEvaluation.date",
               "display": "Date evaluation was performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.date\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.date\u0060"
             }
           ]
@@ -106,15 +82,21 @@
             {
               "code": "ImmunizationEvaluation.description",
               "display": "Evaluation notes",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationEvaluation.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationEvaluation.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
         },
         {
           "code": "ImmunizationEvaluation.doseNumber",
-          "display": "Dose number within series",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImmunizationEvaluation.doseNumber[x]",
+              "display": "Dose number within series",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ImmunizationEvaluation.doseNumber\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.doseNumber[x]\u0060"
+            }
+          ]
         },
         {
           "code": "ImmunizationEvaluation.doseStatus",
@@ -123,7 +105,7 @@
             {
               "code": "ImmunizationEvaluation.doseStatus",
               "display": "Status of the dose relative to published recommendations",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.doseStatus\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.doseStatus\u0060"
             }
           ]
@@ -135,7 +117,7 @@
             {
               "code": "ImmunizationEvaluation.doseStatusReason",
               "display": "Reason for the dose status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.doseStatusReason\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.doseStatusReason\u0060"
             }
           ]
@@ -147,7 +129,7 @@
             {
               "code": "ImmunizationEvaluation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationEvaluation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationEvaluation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -171,7 +153,7 @@
             {
               "code": "ImmunizationEvaluation.identifier",
               "display": "Business identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.identifier\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.identifier\u0060"
             }
           ]
@@ -183,7 +165,7 @@
             {
               "code": "ImmunizationEvaluation.immunizationEvent",
               "display": "Immunization being evaluated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.immunizationEvent\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.immunizationEvent\u0060"
             }
           ]
@@ -207,8 +189,8 @@
             {
               "code": "ImmunizationEvaluation.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ImmunizationEvaluation.language\u0060 maps as RelatedTo to R4 \u0060ImmunizationEvaluation.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ImmunizationEvaluation.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ImmunizationEvaluation.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -231,7 +213,7 @@
             {
               "code": "ImmunizationEvaluation.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationEvaluation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationEvaluation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -243,7 +225,7 @@
             {
               "code": "ImmunizationEvaluation.patient",
               "display": "Who this evaluation is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.patient\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.patient\u0060"
             }
           ]
@@ -255,15 +237,21 @@
             {
               "code": "ImmunizationEvaluation.series",
               "display": "Name of vaccine series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.series\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.series\u0060"
             }
           ]
         },
         {
           "code": "ImmunizationEvaluation.seriesDoses",
-          "display": "Recommended number of doses for immunity",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImmunizationEvaluation.seriesDoses[x]",
+              "display": "Recommended number of doses for immunity",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ImmunizationEvaluation.seriesDoses\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.seriesDoses[x]\u0060"
+            }
+          ]
         },
         {
           "code": "ImmunizationEvaluation.status",
@@ -272,7 +260,7 @@
             {
               "code": "ImmunizationEvaluation.status",
               "display": "completed | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.status\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/immunization-evaluation-status|5.0.0 and http://hl7.org/fhir/ValueSet/immunization-evaluation-status|4.0.1 (Equivalent)"
             }
           ]
@@ -284,7 +272,7 @@
             {
               "code": "ImmunizationEvaluation.targetDisease",
               "display": "Evaluation target disease",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.targetDisease\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.targetDisease\u0060"
             }
           ]
@@ -296,7 +284,7 @@
             {
               "code": "ImmunizationEvaluation.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationEvaluation.text\u0060 maps as Equivalent to R4 \u0060ImmunizationEvaluation.text\u0060"
             }
           ]

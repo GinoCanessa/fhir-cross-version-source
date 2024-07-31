@@ -28,66 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Procedure",
       "element": [
         {
-          "code": "Procedure.complication.reference",
-          "target": [
-            {
-              "code": "Procedure.complicationDetail",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Procedure.occurrence[x]",
-          "target": [
-            {
-              "code": "Procedure.performed[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Procedure.reason.concept",
-          "target": [
-            {
-              "code": "Procedure.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Procedure.reason.reference",
-          "target": [
-            {
-              "code": "Procedure.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Procedure.used.concept",
-          "target": [
-            {
-              "code": "Procedure.usedCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Procedure.used.reference",
-          "target": [
-            {
-              "code": "Procedure.usedReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Procedure",
-      "target": "http://hl7.org/fhir/StructureDefinition/Procedure",
-      "element": [
-        {
           "code": "Procedure",
           "display": "An action that is being or was performed on an individual or entity",
           "target": [
@@ -106,7 +46,7 @@
             {
               "code": "Procedure.basedOn",
               "display": "A request for this procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.basedOn\u0060 maps as Equivalent to R4 \u0060Procedure.basedOn\u0060"
             }
           ]
@@ -118,7 +58,7 @@
             {
               "code": "Procedure.bodySite",
               "display": "Target body sites",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.bodySite\u0060 maps as Equivalent to R4 \u0060Procedure.bodySite\u0060"
             }
           ]
@@ -130,8 +70,8 @@
             {
               "code": "Procedure.category",
               "display": "Classification of the procedure",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Procedure.category\u0060 maps as RelatedTo to R4 \u0060Procedure.category\u0060 - category changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Procedure.category\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.category\u0060 - category changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -142,7 +82,7 @@
             {
               "code": "Procedure.code",
               "display": "Identification of the procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.code\u0060 maps as Equivalent to R4 \u0060Procedure.code\u0060"
             }
           ]
@@ -154,8 +94,17 @@
             {
               "code": "Procedure.complication",
               "display": "Complication following the procedure",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.complication\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.complication\u0060 - complication has change due to type change: R5 complication CodeableReference has no equivalent or mapped type in R4 complication"
+            }
+          ]
+        },
+        {
+          "code": "Procedure.complication.reference",
+          "target": [
+            {
+              "code": "Procedure.complicationDetail",
+              "relationship": "equivalent"
             }
           ]
         },
@@ -166,7 +115,7 @@
             {
               "code": "Procedure.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.contained\u0060 maps as Equivalent to R4 \u0060Procedure.contained\u0060"
             }
           ]
@@ -178,7 +127,7 @@
             {
               "code": "Procedure.encounter",
               "display": "Encounter created as part of",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.encounter\u0060 maps as Equivalent to R4 \u0060Procedure.encounter\u0060"
             }
           ]
@@ -190,7 +139,7 @@
             {
               "code": "Procedure.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -202,7 +151,7 @@
             {
               "code": "Procedure.focalDevice",
               "display": "Manipulated, implanted, or removed device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.focalDevice\u0060 maps as Equivalent to R4 \u0060Procedure.focalDevice\u0060"
             }
           ]
@@ -214,7 +163,7 @@
             {
               "code": "Procedure.focalDevice.action",
               "display": "Kind of change to device",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.focalDevice.action\u0060 maps as Equivalent to R4 \u0060Procedure.focalDevice.action\u0060"
             }
           ]
@@ -226,7 +175,7 @@
             {
               "code": "Procedure.focalDevice.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.focalDevice.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.focalDevice.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -238,7 +187,7 @@
             {
               "code": "Procedure.focalDevice.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.focalDevice.id\u0060 maps as Equivalent to R4 \u0060Procedure.focalDevice.id\u0060"
             }
           ]
@@ -250,7 +199,7 @@
             {
               "code": "Procedure.focalDevice.manipulated",
               "display": "Device that was changed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.focalDevice.manipulated\u0060 maps as Equivalent to R4 \u0060Procedure.focalDevice.manipulated\u0060"
             }
           ]
@@ -262,7 +211,7 @@
             {
               "code": "Procedure.focalDevice.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.focalDevice.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.focalDevice.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -279,7 +228,7 @@
             {
               "code": "Procedure.followUp",
               "display": "Instructions for follow up",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.followUp\u0060 maps as Equivalent to R4 \u0060Procedure.followUp\u0060"
             }
           ]
@@ -303,7 +252,7 @@
             {
               "code": "Procedure.identifier",
               "display": "External Identifiers for this procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.identifier\u0060 maps as Equivalent to R4 \u0060Procedure.identifier\u0060"
             }
           ]
@@ -327,7 +276,7 @@
             {
               "code": "Procedure.instantiatesCanonical",
               "display": "Instantiates FHIR protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.instantiatesCanonical\u0060 maps as Equivalent to R4 \u0060Procedure.instantiatesCanonical\u0060"
             }
           ]
@@ -339,7 +288,7 @@
             {
               "code": "Procedure.instantiatesUri",
               "display": "Instantiates external protocol or definition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.instantiatesUri\u0060 maps as Equivalent to R4 \u0060Procedure.instantiatesUri\u0060"
             }
           ]
@@ -351,8 +300,8 @@
             {
               "code": "Procedure.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Procedure.language\u0060 maps as RelatedTo to R4 \u0060Procedure.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Procedure.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Procedure.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -363,7 +312,7 @@
             {
               "code": "Procedure.location",
               "display": "Where the procedure happened",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.location\u0060 maps as Equivalent to R4 \u0060Procedure.location\u0060"
             }
           ]
@@ -387,7 +336,7 @@
             {
               "code": "Procedure.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -399,15 +348,21 @@
             {
               "code": "Procedure.note",
               "display": "Additional information about the procedure",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
         },
         {
           "code": "Procedure.occurrence[x]",
-          "display": "When the procedure occurred or is occurring",
-          "noMap": true
+          "target": [
+            {
+              "code": "Procedure.performed[x]",
+              "display": "When the procedure was performed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Procedure.occurrence[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.performed[x]\u0060 - performed[x] has change due to type change: R5 occurrence[x] Timing has no equivalent or mapped type in R4 performed[x]"
+            }
+          ]
         },
         {
           "code": "Procedure.outcome",
@@ -416,7 +371,7 @@
             {
               "code": "Procedure.outcome",
               "display": "The result of procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.outcome\u0060 maps as Equivalent to R4 \u0060Procedure.outcome\u0060"
             }
           ]
@@ -428,7 +383,7 @@
             {
               "code": "Procedure.partOf",
               "display": "Part of referenced event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.partOf\u0060 maps as Equivalent to R4 \u0060Procedure.partOf\u0060"
             }
           ]
@@ -440,7 +395,7 @@
             {
               "code": "Procedure.performer",
               "display": "The people who performed the procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.performer\u0060 maps as Equivalent to R4 \u0060Procedure.performer\u0060"
             }
           ]
@@ -452,7 +407,7 @@
             {
               "code": "Procedure.performer.actor",
               "display": "The reference to the practitioner",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.performer.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -464,7 +419,7 @@
             {
               "code": "Procedure.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -476,7 +431,7 @@
             {
               "code": "Procedure.performer.function",
               "display": "Type of performance",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.performer.function\u0060 maps as Equivalent to R4 \u0060Procedure.performer.function\u0060"
             }
           ]
@@ -488,7 +443,7 @@
             {
               "code": "Procedure.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.performer.id\u0060 maps as Equivalent to R4 \u0060Procedure.performer.id\u0060"
             }
           ]
@@ -500,7 +455,7 @@
             {
               "code": "Procedure.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -512,7 +467,7 @@
             {
               "code": "Procedure.performer.onBehalfOf",
               "display": "Organization the device or practitioner was acting for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.performer.onBehalfOf\u0060 maps as Equivalent to R4 \u0060Procedure.performer.onBehalfOf\u0060"
             }
           ]
@@ -524,8 +479,38 @@
         },
         {
           "code": "Procedure.reason",
-          "display": "The justification that the procedure was performed",
-          "noMap": true
+          "target": [
+            {
+              "code": "Procedure.reasonCode",
+              "display": "Coded reason procedure performed",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Procedure.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "Procedure.reasonReference",
+              "display": "The justification that the procedure was performed",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Procedure.reason\u0060 maps as RelatedTo to R4 \u0060Procedure.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/procedure-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "Procedure.reason.concept",
+          "target": [
+            {
+              "code": "Procedure.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Procedure.reason.reference",
+          "target": [
+            {
+              "code": "Procedure.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "Procedure.recorded",
@@ -539,7 +524,7 @@
             {
               "code": "Procedure.recorder",
               "display": "Who recorded the procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.recorder\u0060 maps as Equivalent to R4 \u0060Procedure.recorder\u0060"
             }
           ]
@@ -551,7 +536,7 @@
             {
               "code": "Procedure.report",
               "display": "Any report resulting from the procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.report\u0060 maps as Equivalent to R4 \u0060Procedure.report\u0060"
             }
           ]
@@ -568,7 +553,7 @@
             {
               "code": "Procedure.status",
               "display": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.status\u0060 maps as Equivalent to R4 \u0060Procedure.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/event-status|5.0.0 and http://hl7.org/fhir/ValueSet/event-status|4.0.1 (Equivalent)"
             }
           ]
@@ -580,7 +565,7 @@
             {
               "code": "Procedure.statusReason",
               "display": "Reason for current status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.statusReason\u0060 maps as Equivalent to R4 \u0060Procedure.statusReason\u0060"
             }
           ]
@@ -592,7 +577,7 @@
             {
               "code": "Procedure.subject",
               "display": "Who the procedure was performed on",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Procedure.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
             }
           ]
@@ -609,15 +594,45 @@
             {
               "code": "Procedure.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Procedure.text\u0060 maps as Equivalent to R4 \u0060Procedure.text\u0060"
             }
           ]
         },
         {
           "code": "Procedure.used",
-          "display": "Items used during procedure",
-          "noMap": true
+          "target": [
+            {
+              "code": "Procedure.usedCode",
+              "display": "Coded items used during the procedure",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Procedure.used\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Procedure.usedCode\u0060 - usedCode has change due to type change: R5 used CodeableReference has no equivalent or mapped type in R4 usedCode"
+            },
+            {
+              "code": "Procedure.usedReference",
+              "display": "Items used during procedure",
+              "relationship": "related-to",
+              "comment": "R5 \u0060Procedure.used\u0060 maps as RelatedTo to R4 \u0060Procedure.usedReference\u0060 - usedReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-type; usedReference has change due to type change: R5 used CodeableReference has no equivalent or mapped type in R4 usedReference"
+            }
+          ]
+        },
+        {
+          "code": "Procedure.used.concept",
+          "target": [
+            {
+              "code": "Procedure.usedCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Procedure.used.reference",
+          "target": [
+            {
+              "code": "Procedure.usedReference",
+              "relationship": "equivalent"
+            }
+          ]
         }
       ]
     }

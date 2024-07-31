@@ -478,18 +478,10 @@
       },
       {
         "path": "Extension.extension:path.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:path.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -507,18 +499,10 @@
       },
       {
         "path": "Extension.extension:searchParam.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:searchParam.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -536,20 +520,27 @@
       },
       {
         "path": "Extension.extension:comparator.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:comparator.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "Possible comparators for the valueFilter element."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ValueFilterComparator"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/value-filter-comparator|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-value-filter-comparator|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:comparator.url",
@@ -565,44 +556,16 @@
       },
       {
         "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "dateTime"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Duration",
-        "sliceName": "Duration",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Period"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Duration"
-            ]
+            "code": "Duration"
           }
         ]
       },

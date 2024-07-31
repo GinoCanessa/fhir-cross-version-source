@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 7 |
-Equivalent | 4 |
-RelatedTo | 35 |
+Equivalent | 29 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -44,7 +46,7 @@ RelatedTo | 35 |
 | ChargeItemDefinition.implicitRules | ChargeItemDefinition.implicitRules | Equivalent | R5 `ChargeItemDefinition.implicitRules` maps as Equivalent to R4 `ChargeItemDefinition.implicitRules` |
 | ChargeItemDefinition.instance | ChargeItemDefinition.instance | SourceIsBroaderThanTarget | R5 `ChargeItemDefinition.instance` maps as SourceIsBroaderThanTarget to R4 `ChargeItemDefinition.instance` - instance has change due to type change: R5 `instance` `Reference` maps as SourceIsBroaderThanTarget for R4 `instance` |
 | ChargeItemDefinition.jurisdiction | ChargeItemDefinition.jurisdiction | Equivalent | R5 `ChargeItemDefinition.jurisdiction` maps as Equivalent to R4 `ChargeItemDefinition.jurisdiction` |
-| ChargeItemDefinition.language | ChargeItemDefinition.language | RelatedTo | R5 `ChargeItemDefinition.language` maps as RelatedTo to R4 `ChargeItemDefinition.language` - language changed the binding strength from Required to Preferred |
+| ChargeItemDefinition.language | ChargeItemDefinition.language | SourceIsNarrowerThanTarget | R5 `ChargeItemDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `ChargeItemDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ChargeItemDefinition.lastReviewDate | ChargeItemDefinition.lastReviewDate | Equivalent | R5 `ChargeItemDefinition.lastReviewDate` maps as Equivalent to R4 `ChargeItemDefinition.lastReviewDate` |
 | ChargeItemDefinition.meta | ChargeItemDefinition.meta | Equivalent | R5 `ChargeItemDefinition.meta` maps as Equivalent to R4 `ChargeItemDefinition.meta` |
 | ChargeItemDefinition.modifierExtension | ChargeItemDefinition.modifierExtension | SourceIsBroaderThanTarget | R5 `ChargeItemDefinition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ChargeItemDefinition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

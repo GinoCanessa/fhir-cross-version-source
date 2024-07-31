@@ -489,18 +489,10 @@
       },
       {
         "path": "Extension.extension:name.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:name.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -518,20 +510,23 @@
       },
       {
         "path": "Extension.extension:role.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:role.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchStudyPartyRole"
+            }
+          ],
+          "strength": "extensible",
+          "description": "desc.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-study-party-role"
+        }
       },
       {
         "path": "Extension.extension:role.url",
@@ -548,18 +543,10 @@
       },
       {
         "path": "Extension.extension:period.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:period.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },
@@ -577,20 +564,23 @@
       },
       {
         "path": "Extension.extension:classifier.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:classifier.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchStudyPartyOrganizationType"
+            }
+          ],
+          "strength": "example",
+          "description": "A characterization or type of the entity.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-study-party-organization-type"
+        }
       },
       {
         "path": "Extension.extension:classifier.url",
@@ -606,17 +596,14 @@
       },
       {
         "path": "Extension.extension:party.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:party.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ]

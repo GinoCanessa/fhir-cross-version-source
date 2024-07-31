@@ -13,8 +13,8 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 8 |
-RelatedTo | 2 |
+Equivalent | 9 |
+RelatedTo | 1 |
 
 
 | Source | Target | Status | Message |
@@ -27,6 +27,6 @@ RelatedTo | 2 |
 | ParameterDefinition.min | ParameterDefinition.min | Equivalent | R5 `ParameterDefinition.min` maps as Equivalent to R4 `ParameterDefinition.min` |
 | ParameterDefinition.name | ParameterDefinition.name | Equivalent | R5 `ParameterDefinition.name` maps as Equivalent to R4 `ParameterDefinition.name` |
 | ParameterDefinition.profile | ParameterDefinition.profile | Equivalent | R5 `ParameterDefinition.profile` maps as Equivalent to R4 `ParameterDefinition.profile` |
-| ParameterDefinition.type | ParameterDefinition.type | RelatedTo | R5 `ParameterDefinition.type` maps as RelatedTo to R4 `ParameterDefinition.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1) |
+| ParameterDefinition.type | ParameterDefinition.type | RelatedTo | R5 `ParameterDefinition.type` maps as RelatedTo to R4 `ParameterDefinition.type` - (type failed to compare required binding of http://hl7.org/fhir/ValueSet/fhir-types|5.0.0 and http://hl7.org/fhir/ValueSet/all-types|4.0.1); type has change due to type change: R5 `type` `code` maps as RelatedTo for R4 `type` |
 | ParameterDefinition.use | ParameterDefinition.use | Equivalent | R5 `ParameterDefinition.use` maps as Equivalent to R4 `ParameterDefinition.use` - use has compatible required binding for code type: http://hl7.org/fhir/ValueSet/operation-parameter-use|5.0.0 and http://hl7.org/fhir/ValueSet/operation-parameter-use|4.0.1 (Equivalent) |
 

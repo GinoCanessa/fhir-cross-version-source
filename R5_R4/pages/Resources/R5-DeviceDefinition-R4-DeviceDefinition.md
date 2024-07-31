@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 92 |
-Equivalent | 4 |
-RelatedTo | 39 |
+DoesNotExistInTarget | 88 |
+Equivalent | 30 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 13 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -35,14 +37,14 @@ RelatedTo | 39 |
 | DeviceDefinition.classification.justification | - | DoesNotExistInTarget | R5 `DeviceDefinition.classification.justification` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.classification.modifierExtension | - | DoesNotExistInTarget | R5 `DeviceDefinition.classification.modifierExtension` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.classification.type | - | DoesNotExistInTarget | R5 `DeviceDefinition.classification.type` does not appear in the target and has no mapping for `DeviceDefinition`. |
-| DeviceDefinition.conformsTo | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo` does not appear in the target and has no mapping for `DeviceDefinition`. |
+| DeviceDefinition.conformsTo | DeviceDefinition.specialization | Equivalent | R5 `DeviceDefinition.conformsTo` maps as Equivalent to R4 `DeviceDefinition.specialization` |
 | DeviceDefinition.conformsTo.category | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.category` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.conformsTo.extension | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.extension` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.conformsTo.id | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.id` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.conformsTo.modifierExtension | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.modifierExtension` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.conformsTo.source | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.source` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.conformsTo.specification | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.specification` does not appear in the target and has no mapping for `DeviceDefinition`. |
-| DeviceDefinition.conformsTo.version | - | DoesNotExistInTarget | R5 `DeviceDefinition.conformsTo.version` does not appear in the target and has no mapping for `DeviceDefinition`. |
+| DeviceDefinition.conformsTo.version | DeviceDefinition.specialization.version | SourceIsBroaderThanTarget | R5 `DeviceDefinition.conformsTo.version` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.specialization.version` - version changed from array to scalar (max cardinality from * to 1) |
 | DeviceDefinition.contact | DeviceDefinition.contact | Equivalent | R5 `DeviceDefinition.contact` maps as Equivalent to R4 `DeviceDefinition.contact` |
 | DeviceDefinition.contained | DeviceDefinition.contained | Equivalent | R5 `DeviceDefinition.contained` maps as Equivalent to R4 `DeviceDefinition.contained` |
 | DeviceDefinition.correctiveAction | - | DoesNotExistInTarget | R5 `DeviceDefinition.correctiveAction` does not appear in the target and has no mapping for `DeviceDefinition`. |
@@ -80,7 +82,7 @@ RelatedTo | 39 |
 | DeviceDefinition.id | DeviceDefinition.id | Equivalent | R5 `DeviceDefinition.id` maps as Equivalent to R4 `DeviceDefinition.id` |
 | DeviceDefinition.identifier | DeviceDefinition.identifier | Equivalent | R5 `DeviceDefinition.identifier` maps as Equivalent to R4 `DeviceDefinition.identifier` |
 | DeviceDefinition.implicitRules | DeviceDefinition.implicitRules | Equivalent | R5 `DeviceDefinition.implicitRules` maps as Equivalent to R4 `DeviceDefinition.implicitRules` |
-| DeviceDefinition.language | DeviceDefinition.language | RelatedTo | R5 `DeviceDefinition.language` maps as RelatedTo to R4 `DeviceDefinition.language` - language changed the binding strength from Required to Preferred |
+| DeviceDefinition.language | DeviceDefinition.language | SourceIsNarrowerThanTarget | R5 `DeviceDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `DeviceDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | DeviceDefinition.languageCode | DeviceDefinition.languageCode | Equivalent | R5 `DeviceDefinition.languageCode` maps as Equivalent to R4 `DeviceDefinition.languageCode` |
 | DeviceDefinition.link | - | DoesNotExistInTarget | R5 `DeviceDefinition.link` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.link.extension | - | DoesNotExistInTarget | R5 `DeviceDefinition.link.extension` does not appear in the target and has no mapping for `DeviceDefinition`. |
@@ -88,7 +90,7 @@ RelatedTo | 39 |
 | DeviceDefinition.link.modifierExtension | - | DoesNotExistInTarget | R5 `DeviceDefinition.link.modifierExtension` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.link.relatedDevice | - | DoesNotExistInTarget | R5 `DeviceDefinition.link.relatedDevice` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.link.relation | - | DoesNotExistInTarget | R5 `DeviceDefinition.link.relation` does not appear in the target and has no mapping for `DeviceDefinition`. |
-| DeviceDefinition.manufacturer | - | DoesNotExistInTarget | R5 `DeviceDefinition.manufacturer` does not appear in the target and has no mapping for `DeviceDefinition`. |
+| DeviceDefinition.manufacturer | DeviceDefinition.manufacturer[x] | Equivalent | R5 `DeviceDefinition.manufacturer` maps as Equivalent to R4 `DeviceDefinition.manufacturer[x]` |
 | DeviceDefinition.material | DeviceDefinition.material | Equivalent | R5 `DeviceDefinition.material` maps as Equivalent to R4 `DeviceDefinition.material` |
 | DeviceDefinition.material.allergenicIndicator | DeviceDefinition.material.allergenicIndicator | Equivalent | R5 `DeviceDefinition.material.allergenicIndicator` maps as Equivalent to R4 `DeviceDefinition.material.allergenicIndicator` |
 | DeviceDefinition.material.alternate | DeviceDefinition.material.alternate | Equivalent | R5 `DeviceDefinition.material.alternate` maps as Equivalent to R4 `DeviceDefinition.material.alternate` |
@@ -122,8 +124,10 @@ RelatedTo | 39 |
 | DeviceDefinition.property.extension | DeviceDefinition.property.extension | SourceIsBroaderThanTarget | R5 `DeviceDefinition.property.extension` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.property.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | DeviceDefinition.property.id | DeviceDefinition.property.id | Equivalent | R5 `DeviceDefinition.property.id` maps as Equivalent to R4 `DeviceDefinition.property.id` |
 | DeviceDefinition.property.modifierExtension | DeviceDefinition.property.modifierExtension | SourceIsBroaderThanTarget | R5 `DeviceDefinition.property.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `DeviceDefinition.property.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| DeviceDefinition.property.type | DeviceDefinition.property.type | RelatedTo | R5 `DeviceDefinition.property.type` maps as RelatedTo to R4 `DeviceDefinition.property.type` - type removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-property-type |
-| DeviceDefinition.property.value[x] | - | DoesNotExistInTarget | R5 `DeviceDefinition.property.value[x]` does not appear in the target and has no mapping for `DeviceDefinition`. |
+| DeviceDefinition.property.type | DeviceDefinition.property.type | SourceIsNarrowerThanTarget | R5 `DeviceDefinition.property.type` maps as SourceIsNarrowerThanTarget to R4 `DeviceDefinition.property.type` - type removed a binding requirement - Example http://hl7.org/fhir/ValueSet/device-property-type; type has change due to type change: R5 `type` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `type` |
+| DeviceDefinition.property.value[x] | DeviceDefinition.property.valueCode | RelatedTo | R5 `DeviceDefinition.property.value[x]` maps as RelatedTo to R4 `DeviceDefinition.property.valueCode` - valueCode changed from scalar to array (max cardinality from 1 to *); valueCode has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueCode |
+| DeviceDefinition.property.value[x] | DeviceDefinition.property.valueCode | RelatedTo | R5 `DeviceDefinition.property.value[x]` maps as RelatedTo to R4 `DeviceDefinition.property.valueCode` - valueCode changed from scalar to array (max cardinality from 1 to *); valueCode has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueCode; valueCode has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueCode |
+| DeviceDefinition.property.value[x] | DeviceDefinition.property.valueQuantity | RelatedTo | R5 `DeviceDefinition.property.value[x]` maps as RelatedTo to R4 `DeviceDefinition.property.valueQuantity` - valueQuantity changed from scalar to array (max cardinality from 1 to *); valueQuantity has change due to type change: R5 value[x] CodeableConcept has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] string has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] integer has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] Range has no equivalent or mapped type in R4 valueQuantity; valueQuantity has change due to type change: R5 value[x] Attachment has no equivalent or mapped type in R4 valueQuantity |
 | DeviceDefinition.regulatoryIdentifier | - | DoesNotExistInTarget | R5 `DeviceDefinition.regulatoryIdentifier` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.regulatoryIdentifier.deviceIdentifier | - | DoesNotExistInTarget | R5 `DeviceDefinition.regulatoryIdentifier.deviceIdentifier` does not appear in the target and has no mapping for `DeviceDefinition`. |
 | DeviceDefinition.regulatoryIdentifier.extension | - | DoesNotExistInTarget | R5 `DeviceDefinition.regulatoryIdentifier.extension` does not appear in the target and has no mapping for `DeviceDefinition`. |

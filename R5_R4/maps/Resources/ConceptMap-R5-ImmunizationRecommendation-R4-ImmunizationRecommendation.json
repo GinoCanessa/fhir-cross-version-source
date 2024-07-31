@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
       "element": [
         {
-          "code": "ImmunizationRecommendation.recommendation.doseNumber",
-          "target": [
-            {
-              "code": "ImmunizationRecommendation.recommendation.doseNumber[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ImmunizationRecommendation.recommendation.seriesDoses",
-          "target": [
-            {
-              "code": "ImmunizationRecommendation.recommendation.seriesDoses[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-      "target": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
-      "element": [
-        {
           "code": "ImmunizationRecommendation",
           "display": "Guidance or advice relating to an immunization",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "ImmunizationRecommendation.authority",
               "display": "Who is responsible for protocol",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.authority\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.authority\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "ImmunizationRecommendation.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.contained\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "ImmunizationRecommendation.date",
               "display": "Date recommendation(s) created",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.date\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.date\u0060"
             }
           ]
@@ -106,7 +82,7 @@
             {
               "code": "ImmunizationRecommendation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -130,7 +106,7 @@
             {
               "code": "ImmunizationRecommendation.identifier",
               "display": "Business identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.identifier\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.identifier\u0060"
             }
           ]
@@ -154,8 +130,8 @@
             {
               "code": "ImmunizationRecommendation.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ImmunizationRecommendation.language\u0060 maps as RelatedTo to R4 \u0060ImmunizationRecommendation.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ImmunizationRecommendation.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ImmunizationRecommendation.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -178,7 +154,7 @@
             {
               "code": "ImmunizationRecommendation.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -190,7 +166,7 @@
             {
               "code": "ImmunizationRecommendation.patient",
               "display": "Who this profile is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.patient\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.patient\u0060"
             }
           ]
@@ -202,7 +178,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation",
               "display": "Vaccine administration recommendations",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation\u0060"
             }
           ]
@@ -214,7 +190,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.contraindicatedVaccineCode",
               "display": "Vaccine which is contraindicated to fulfill the recommendation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.contraindicatedVaccineCode\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.contraindicatedVaccineCode\u0060"
             }
           ]
@@ -226,7 +202,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion",
               "display": "Dates governing proposed immunization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion\u0060"
             }
           ]
@@ -238,7 +214,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion.code",
               "display": "Type of date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion.code\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion.code\u0060"
             }
           ]
@@ -250,7 +226,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -262,7 +238,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion.id\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion.id\u0060"
             }
           ]
@@ -274,7 +250,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -286,7 +262,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.dateCriterion.value",
               "display": "Recommended date",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.dateCriterion.value\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.dateCriterion.value\u0060"
             }
           ]
@@ -298,15 +274,21 @@
             {
               "code": "ImmunizationRecommendation.recommendation.description",
               "display": "Protocol details",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.description\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.description\u0060 - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description"
             }
           ]
         },
         {
           "code": "ImmunizationRecommendation.recommendation.doseNumber",
-          "display": "Recommended dose number within series",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImmunizationRecommendation.recommendation.doseNumber[x]",
+              "display": "Recommended dose number within series",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ImmunizationRecommendation.recommendation.doseNumber\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.doseNumber[x]\u0060"
+            }
+          ]
         },
         {
           "code": "ImmunizationRecommendation.recommendation.extension",
@@ -315,7 +297,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -327,7 +309,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.forecastReason",
               "display": "Vaccine administration status reason",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.forecastReason\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.forecastReason\u0060"
             }
           ]
@@ -339,7 +321,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.forecastStatus",
               "display": "Vaccine recommendation status",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.forecastStatus\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.forecastStatus\u0060"
             }
           ]
@@ -351,7 +333,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.id\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.id\u0060"
             }
           ]
@@ -363,7 +345,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -375,15 +357,21 @@
             {
               "code": "ImmunizationRecommendation.recommendation.series",
               "display": "Name of vaccination series",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.series\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.series\u0060"
             }
           ]
         },
         {
           "code": "ImmunizationRecommendation.recommendation.seriesDoses",
-          "display": "Recommended number of doses for immunity",
-          "noMap": true
+          "target": [
+            {
+              "code": "ImmunizationRecommendation.recommendation.seriesDoses[x]",
+              "display": "Recommended number of doses for immunity",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060ImmunizationRecommendation.recommendation.seriesDoses\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.seriesDoses[x]\u0060"
+            }
+          ]
         },
         {
           "code": "ImmunizationRecommendation.recommendation.supportingImmunization",
@@ -392,7 +380,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.supportingImmunization",
               "display": "Past immunizations supporting recommendation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.supportingImmunization\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.supportingImmunization\u0060"
             }
           ]
@@ -404,7 +392,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.supportingPatientInformation",
               "display": "Patient observations supporting recommendation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.supportingPatientInformation\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.supportingPatientInformation\u0060"
             }
           ]
@@ -416,8 +404,8 @@
             {
               "code": "ImmunizationRecommendation.recommendation.targetDisease",
               "display": "Disease to be immunized against",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ImmunizationRecommendation.recommendation.targetDisease\u0060 maps as RelatedTo to R4 \u0060ImmunizationRecommendation.recommendation.targetDisease\u0060 - targetDisease changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ImmunizationRecommendation.recommendation.targetDisease\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ImmunizationRecommendation.recommendation.targetDisease\u0060 - targetDisease changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -428,7 +416,7 @@
             {
               "code": "ImmunizationRecommendation.recommendation.vaccineCode",
               "display": "Vaccine  or vaccine group recommendation applies to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.recommendation.vaccineCode\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.recommendation.vaccineCode\u0060"
             }
           ]
@@ -440,7 +428,7 @@
             {
               "code": "ImmunizationRecommendation.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ImmunizationRecommendation.text\u0060 maps as Equivalent to R4 \u0060ImmunizationRecommendation.text\u0060"
             }
           ]

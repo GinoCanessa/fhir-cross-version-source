@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 6 |
-Equivalent | 4 |
-RelatedTo | 29 |
+Equivalent | 24 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -31,7 +33,7 @@ RelatedTo | 29 |
 | AllergyIntolerance.id | AllergyIntolerance.id | Equivalent | R5 `AllergyIntolerance.id` maps as Equivalent to R4 `AllergyIntolerance.id` |
 | AllergyIntolerance.identifier | AllergyIntolerance.identifier | Equivalent | R5 `AllergyIntolerance.identifier` maps as Equivalent to R4 `AllergyIntolerance.identifier` |
 | AllergyIntolerance.implicitRules | AllergyIntolerance.implicitRules | Equivalent | R5 `AllergyIntolerance.implicitRules` maps as Equivalent to R4 `AllergyIntolerance.implicitRules` |
-| AllergyIntolerance.language | AllergyIntolerance.language | RelatedTo | R5 `AllergyIntolerance.language` maps as RelatedTo to R4 `AllergyIntolerance.language` - language changed the binding strength from Required to Preferred |
+| AllergyIntolerance.language | AllergyIntolerance.language | SourceIsNarrowerThanTarget | R5 `AllergyIntolerance.language` maps as SourceIsNarrowerThanTarget to R4 `AllergyIntolerance.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | AllergyIntolerance.lastOccurrence | AllergyIntolerance.lastOccurrence | Equivalent | R5 `AllergyIntolerance.lastOccurrence` maps as Equivalent to R4 `AllergyIntolerance.lastOccurrence` |
 | AllergyIntolerance.meta | AllergyIntolerance.meta | Equivalent | R5 `AllergyIntolerance.meta` maps as Equivalent to R4 `AllergyIntolerance.meta` |
 | AllergyIntolerance.modifierExtension | AllergyIntolerance.modifierExtension | SourceIsBroaderThanTarget | R5 `AllergyIntolerance.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `AllergyIntolerance.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Specimen",
       "element": [
         {
-          "code": "Specimen.processing.method",
-          "target": [
-            {
-              "code": "Specimen.processing.procedure",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Specimen",
-      "target": "http://hl7.org/fhir/StructureDefinition/Specimen",
-      "element": [
-        {
           "code": "Specimen",
           "display": "Sample for analysis",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "Specimen.accessionIdentifier",
               "display": "Identifier assigned by the lab",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.accessionIdentifier\u0060 maps as Equivalent to R4 \u0060Specimen.accessionIdentifier\u0060"
             }
           ]
@@ -73,7 +58,7 @@
             {
               "code": "Specimen.collection",
               "display": "Collection details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection\u0060 maps as Equivalent to R4 \u0060Specimen.collection\u0060"
             }
           ]
@@ -85,7 +70,7 @@
             {
               "code": "Specimen.collection.bodySite",
               "display": "Anatomical collection site",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.collection.bodySite\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.collection.bodySite\u0060 - bodySite has change due to type change: R5 bodySite CodeableReference has no equivalent or mapped type in R4 bodySite"
             }
           ]
@@ -97,7 +82,7 @@
             {
               "code": "Specimen.collection.collected[x]",
               "display": "Collection time",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.collected[x]\u0060 maps as Equivalent to R4 \u0060Specimen.collection.collected[x]\u0060"
             }
           ]
@@ -109,7 +94,7 @@
             {
               "code": "Specimen.collection.collector",
               "display": "Who collected the specimen",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.collection.collector\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.collection.collector\u0060 - collector has change due to type change: R5 \u0060collector\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060collector\u0060"
             }
           ]
@@ -126,7 +111,7 @@
             {
               "code": "Specimen.collection.duration",
               "display": "How long it took to collect specimen",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.duration\u0060 maps as Equivalent to R4 \u0060Specimen.collection.duration\u0060"
             }
           ]
@@ -138,7 +123,7 @@
             {
               "code": "Specimen.collection.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.collection.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.collection.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -150,7 +135,7 @@
             {
               "code": "Specimen.collection.fastingStatus[x]",
               "display": "Whether or how long patient abstained from food and/or drink",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.fastingStatus[x]\u0060 maps as Equivalent to R4 \u0060Specimen.collection.fastingStatus[x]\u0060"
             }
           ]
@@ -162,7 +147,7 @@
             {
               "code": "Specimen.collection.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.id\u0060 maps as Equivalent to R4 \u0060Specimen.collection.id\u0060"
             }
           ]
@@ -174,7 +159,7 @@
             {
               "code": "Specimen.collection.method",
               "display": "Technique used to perform collection",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.method\u0060 maps as Equivalent to R4 \u0060Specimen.collection.method\u0060"
             }
           ]
@@ -186,7 +171,7 @@
             {
               "code": "Specimen.collection.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.collection.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.collection.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -203,7 +188,7 @@
             {
               "code": "Specimen.collection.quantity",
               "display": "The quantity of specimen collected",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.collection.quantity\u0060 maps as Equivalent to R4 \u0060Specimen.collection.quantity\u0060"
             }
           ]
@@ -220,7 +205,7 @@
             {
               "code": "Specimen.condition",
               "display": "State of the specimen",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.condition\u0060 maps as Equivalent to R4 \u0060Specimen.condition\u0060"
             }
           ]
@@ -232,7 +217,7 @@
             {
               "code": "Specimen.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.contained\u0060 maps as Equivalent to R4 \u0060Specimen.contained\u0060"
             }
           ]
@@ -244,7 +229,7 @@
             {
               "code": "Specimen.container",
               "display": "Direct container of specimen (tube/slide, etc.)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.container\u0060 maps as Equivalent to R4 \u0060Specimen.container\u0060"
             }
           ]
@@ -261,7 +246,7 @@
             {
               "code": "Specimen.container.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.container.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.container.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -273,7 +258,7 @@
             {
               "code": "Specimen.container.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.container.id\u0060 maps as Equivalent to R4 \u0060Specimen.container.id\u0060"
             }
           ]
@@ -290,7 +275,7 @@
             {
               "code": "Specimen.container.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.container.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.container.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -302,7 +287,7 @@
             {
               "code": "Specimen.container.specimenQuantity",
               "display": "Quantity of specimen within container",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.container.specimenQuantity\u0060 maps as Equivalent to R4 \u0060Specimen.container.specimenQuantity\u0060"
             }
           ]
@@ -314,7 +299,7 @@
             {
               "code": "Specimen.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -368,7 +353,7 @@
             {
               "code": "Specimen.identifier",
               "display": "External Identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.identifier\u0060 maps as Equivalent to R4 \u0060Specimen.identifier\u0060"
             }
           ]
@@ -392,8 +377,8 @@
             {
               "code": "Specimen.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Specimen.language\u0060 maps as RelatedTo to R4 \u0060Specimen.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Specimen.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Specimen.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -416,7 +401,7 @@
             {
               "code": "Specimen.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -428,7 +413,7 @@
             {
               "code": "Specimen.note",
               "display": "Comments",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -440,7 +425,7 @@
             {
               "code": "Specimen.parent",
               "display": "Specimen from which this specimen originated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.parent\u0060 maps as Equivalent to R4 \u0060Specimen.parent\u0060"
             }
           ]
@@ -452,7 +437,7 @@
             {
               "code": "Specimen.processing",
               "display": "Processing and processing step details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.processing\u0060 maps as Equivalent to R4 \u0060Specimen.processing\u0060"
             }
           ]
@@ -464,7 +449,7 @@
             {
               "code": "Specimen.processing.additive",
               "display": "Material used in the processing step",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.processing.additive\u0060 maps as Equivalent to R4 \u0060Specimen.processing.additive\u0060"
             }
           ]
@@ -476,7 +461,7 @@
             {
               "code": "Specimen.processing.description",
               "display": "Textual description of procedure",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.processing.description\u0060 maps as Equivalent to R4 \u0060Specimen.processing.description\u0060"
             }
           ]
@@ -488,7 +473,7 @@
             {
               "code": "Specimen.processing.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.processing.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.processing.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -500,15 +485,21 @@
             {
               "code": "Specimen.processing.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.processing.id\u0060 maps as Equivalent to R4 \u0060Specimen.processing.id\u0060"
             }
           ]
         },
         {
           "code": "Specimen.processing.method",
-          "display": "Indicates the treatment step  applied to the specimen",
-          "noMap": true
+          "target": [
+            {
+              "code": "Specimen.processing.procedure",
+              "display": "Indicates the treatment step  applied to the specimen",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060Specimen.processing.method\u0060 maps as Equivalent to R4 \u0060Specimen.processing.procedure\u0060"
+            }
+          ]
         },
         {
           "code": "Specimen.processing.modifierExtension",
@@ -517,7 +508,7 @@
             {
               "code": "Specimen.processing.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.processing.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.processing.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -529,7 +520,7 @@
             {
               "code": "Specimen.processing.time[x]",
               "display": "Date and time of specimen processing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.processing.time[x]\u0060 maps as Equivalent to R4 \u0060Specimen.processing.time[x]\u0060"
             }
           ]
@@ -541,7 +532,7 @@
             {
               "code": "Specimen.receivedTime",
               "display": "The time when specimen was received for processing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.receivedTime\u0060 maps as Equivalent to R4 \u0060Specimen.receivedTime\u0060"
             }
           ]
@@ -553,7 +544,7 @@
             {
               "code": "Specimen.request",
               "display": "Why the specimen was collected",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.request\u0060 maps as Equivalent to R4 \u0060Specimen.request\u0060"
             }
           ]
@@ -570,7 +561,7 @@
             {
               "code": "Specimen.status",
               "display": "available | unavailable | unsatisfactory | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.status\u0060 maps as Equivalent to R4 \u0060Specimen.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/specimen-status|5.0.0 and http://hl7.org/fhir/ValueSet/specimen-status|4.0.1 (Equivalent)"
             }
           ]
@@ -582,7 +573,7 @@
             {
               "code": "Specimen.subject",
               "display": "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Specimen.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Specimen.subject\u0060 - subject has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060subject\u0060"
             }
           ]
@@ -594,7 +585,7 @@
             {
               "code": "Specimen.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.text\u0060 maps as Equivalent to R4 \u0060Specimen.text\u0060"
             }
           ]
@@ -606,7 +597,7 @@
             {
               "code": "Specimen.type",
               "display": "Kind of material that forms the specimen",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Specimen.type\u0060 maps as Equivalent to R4 \u0060Specimen.type\u0060"
             }
           ]

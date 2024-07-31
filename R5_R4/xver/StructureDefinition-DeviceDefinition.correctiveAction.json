@@ -461,18 +461,10 @@
       },
       {
         "path": "Extension.extension:recall.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:recall.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -490,20 +482,23 @@
       },
       {
         "path": "Extension.extension:scope.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:scope.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceCorrectiveActionScope"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/device-correctiveactionscope|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-device-correctiveactionscope|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:scope.url",
@@ -518,18 +513,10 @@
       },
       {
         "path": "Extension.extension:period.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:period.extension:Period",
-        "sliceName": "Period",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Period"
-            ]
+            "code": "Period"
           }
         ]
       },

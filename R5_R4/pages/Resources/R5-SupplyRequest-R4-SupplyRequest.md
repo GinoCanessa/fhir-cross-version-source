@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 22 |
+DoesNotExistInTarget | 2 |
+Equivalent | 19 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -32,8 +34,8 @@ RelatedTo | 22 |
 | SupplyRequest.id | SupplyRequest.id | Equivalent | R5 `SupplyRequest.id` maps as Equivalent to R4 `SupplyRequest.id` |
 | SupplyRequest.identifier | SupplyRequest.identifier | Equivalent | R5 `SupplyRequest.identifier` maps as Equivalent to R4 `SupplyRequest.identifier` |
 | SupplyRequest.implicitRules | SupplyRequest.implicitRules | Equivalent | R5 `SupplyRequest.implicitRules` maps as Equivalent to R4 `SupplyRequest.implicitRules` |
-| SupplyRequest.item | - | DoesNotExistInTarget | R5 `SupplyRequest.item` does not appear in the target and has no mapping for `SupplyRequest`. |
-| SupplyRequest.language | SupplyRequest.language | RelatedTo | R5 `SupplyRequest.language` maps as RelatedTo to R4 `SupplyRequest.language` - language changed the binding strength from Required to Preferred |
+| SupplyRequest.item | SupplyRequest.item[x] | SourceIsBroaderThanTarget | R5 `SupplyRequest.item` maps as SourceIsBroaderThanTarget to R4 `SupplyRequest.item[x]` - item[x] has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 item[x] |
+| SupplyRequest.language | SupplyRequest.language | SourceIsNarrowerThanTarget | R5 `SupplyRequest.language` maps as SourceIsNarrowerThanTarget to R4 `SupplyRequest.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SupplyRequest.meta | SupplyRequest.meta | Equivalent | R5 `SupplyRequest.meta` maps as Equivalent to R4 `SupplyRequest.meta` |
 | SupplyRequest.modifierExtension | SupplyRequest.modifierExtension | SourceIsBroaderThanTarget | R5 `SupplyRequest.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SupplyRequest.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | SupplyRequest.occurrence[x] | SupplyRequest.occurrence[x] | Equivalent | R5 `SupplyRequest.occurrence[x]` maps as Equivalent to R4 `SupplyRequest.occurrence[x]` |
@@ -45,7 +47,8 @@ RelatedTo | 22 |
 | SupplyRequest.parameter.value[x] | SupplyRequest.parameter.value[x] | Equivalent | R5 `SupplyRequest.parameter.value[x]` maps as Equivalent to R4 `SupplyRequest.parameter.value[x]` |
 | SupplyRequest.priority | SupplyRequest.priority | Equivalent | R5 `SupplyRequest.priority` maps as Equivalent to R4 `SupplyRequest.priority` - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent) |
 | SupplyRequest.quantity | SupplyRequest.quantity | Equivalent | R5 `SupplyRequest.quantity` maps as Equivalent to R4 `SupplyRequest.quantity` |
-| SupplyRequest.reason | - | DoesNotExistInTarget | R5 `SupplyRequest.reason` does not appear in the target and has no mapping for `SupplyRequest`. |
+| SupplyRequest.reason | SupplyRequest.reasonCode | SourceIsBroaderThanTarget | R5 `SupplyRequest.reason` maps as SourceIsBroaderThanTarget to R4 `SupplyRequest.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| SupplyRequest.reason | SupplyRequest.reasonReference | RelatedTo | R5 `SupplyRequest.reason` maps as RelatedTo to R4 `SupplyRequest.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/supplyrequest-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | SupplyRequest.requester | SupplyRequest.requester | SourceIsBroaderThanTarget | R5 `SupplyRequest.requester` maps as SourceIsBroaderThanTarget to R4 `SupplyRequest.requester` - requester has change due to type change: R5 `requester` `Reference` maps as SourceIsBroaderThanTarget for R4 `requester` |
 | SupplyRequest.status | SupplyRequest.status | Equivalent | R5 `SupplyRequest.status` maps as Equivalent to R4 `SupplyRequest.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/supplyrequest-status|5.0.0 and http://hl7.org/fhir/ValueSet/supplyrequest-status|4.0.1 (Equivalent) |
 | SupplyRequest.supplier | SupplyRequest.supplier | Equivalent | R5 `SupplyRequest.supplier` maps as Equivalent to R4 `SupplyRequest.supplier` |

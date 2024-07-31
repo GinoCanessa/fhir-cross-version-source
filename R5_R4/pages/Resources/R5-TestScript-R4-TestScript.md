@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 18 |
-Equivalent | 4 |
-RelatedTo | 154 |
+Equivalent | 117 |
+RelatedTo | 4 |
+SourceIsBroaderThanTarget | 36 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -44,10 +46,10 @@ RelatedTo | 154 |
 | TestScript.fixture.modifierExtension | TestScript.fixture.modifierExtension | SourceIsBroaderThanTarget | R5 `TestScript.fixture.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `TestScript.fixture.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | TestScript.fixture.resource | TestScript.fixture.resource | Equivalent | R5 `TestScript.fixture.resource` maps as Equivalent to R4 `TestScript.fixture.resource` |
 | TestScript.id | TestScript.id | Equivalent | R5 `TestScript.id` maps as Equivalent to R4 `TestScript.id` |
-| TestScript.identifier | TestScript.identifier | RelatedTo | R5 `TestScript.identifier` maps as RelatedTo to R4 `TestScript.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
+| TestScript.identifier | TestScript.identifier | SourceIsBroaderThanTarget | R5 `TestScript.identifier` maps as SourceIsBroaderThanTarget to R4 `TestScript.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
 | TestScript.implicitRules | TestScript.implicitRules | Equivalent | R5 `TestScript.implicitRules` maps as Equivalent to R4 `TestScript.implicitRules` |
 | TestScript.jurisdiction | TestScript.jurisdiction | Equivalent | R5 `TestScript.jurisdiction` maps as Equivalent to R4 `TestScript.jurisdiction` |
-| TestScript.language | TestScript.language | RelatedTo | R5 `TestScript.language` maps as RelatedTo to R4 `TestScript.language` - language changed the binding strength from Required to Preferred |
+| TestScript.language | TestScript.language | SourceIsNarrowerThanTarget | R5 `TestScript.language` maps as SourceIsNarrowerThanTarget to R4 `TestScript.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | TestScript.meta | TestScript.meta | Equivalent | R5 `TestScript.meta` maps as Equivalent to R4 `TestScript.meta` |
 | TestScript.metadata | TestScript.metadata | Equivalent | R5 `TestScript.metadata` maps as Equivalent to R4 `TestScript.metadata` |
 | TestScript.metadata.capability | TestScript.metadata.capability | Equivalent | R5 `TestScript.metadata.capability` maps as Equivalent to R4 `TestScript.metadata.capability` |
@@ -117,7 +119,7 @@ RelatedTo | 154 |
 | TestScript.setup.action.assert.requirement.link[x] | - | DoesNotExistInTarget | R5 `TestScript.setup.action.assert.requirement.link[x]` does not appear in the target and has no mapping for `TestScript`. |
 | TestScript.setup.action.assert.requirement.modifierExtension | - | DoesNotExistInTarget | R5 `TestScript.setup.action.assert.requirement.modifierExtension` does not appear in the target and has no mapping for `TestScript`. |
 | TestScript.setup.action.assert.resource | TestScript.setup.action.assert.resource | RelatedTo | R5 `TestScript.setup.action.assert.resource` maps as RelatedTo to R4 `TestScript.setup.action.assert.resource` - resource made the binding required (from Extensible) for http://hl7.org/fhir/ValueSet/defined-types|4.0.1; resource has change due to type change: R5 resource uri has no equivalent or mapped type in R4 resource |
-| TestScript.setup.action.assert.response | TestScript.setup.action.assert.response | RelatedTo | R5 `TestScript.setup.action.assert.response` maps as RelatedTo to R4 `TestScript.setup.action.assert.response` - response has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/assert-response-code-types|5.0.0 and http://hl7.org/fhir/ValueSet/assert-response-code-types|4.0.1 |
+| TestScript.setup.action.assert.response | TestScript.setup.action.assert.response | RelatedTo | R5 `TestScript.setup.action.assert.response` maps as RelatedTo to R4 `TestScript.setup.action.assert.response` - response has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/assert-response-code-types|5.0.0 and http://hl7.org/fhir/ValueSet/assert-response-code-types|4.0.1; response has change due to type change: R5 `response` `code` maps as RelatedTo for R4 `response` |
 | TestScript.setup.action.assert.responseCode | TestScript.setup.action.assert.responseCode | Equivalent | R5 `TestScript.setup.action.assert.responseCode` maps as Equivalent to R4 `TestScript.setup.action.assert.responseCode` |
 | TestScript.setup.action.assert.sourceId | TestScript.setup.action.assert.sourceId | Equivalent | R5 `TestScript.setup.action.assert.sourceId` maps as Equivalent to R4 `TestScript.setup.action.assert.sourceId` |
 | TestScript.setup.action.assert.stopTestOnFail | - | DoesNotExistInTarget | R5 `TestScript.setup.action.assert.stopTestOnFail` does not appear in the target and has no mapping for `TestScript`. |

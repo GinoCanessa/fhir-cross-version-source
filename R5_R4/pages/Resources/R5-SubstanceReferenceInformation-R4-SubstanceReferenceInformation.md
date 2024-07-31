@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 32 |
+Equivalent | 27 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -39,7 +40,7 @@ RelatedTo | 32 |
 | SubstanceReferenceInformation.geneElement.type | SubstanceReferenceInformation.geneElement.type | Equivalent | R5 `SubstanceReferenceInformation.geneElement.type` maps as Equivalent to R4 `SubstanceReferenceInformation.geneElement.type` |
 | SubstanceReferenceInformation.id | SubstanceReferenceInformation.id | Equivalent | R5 `SubstanceReferenceInformation.id` maps as Equivalent to R4 `SubstanceReferenceInformation.id` |
 | SubstanceReferenceInformation.implicitRules | SubstanceReferenceInformation.implicitRules | Equivalent | R5 `SubstanceReferenceInformation.implicitRules` maps as Equivalent to R4 `SubstanceReferenceInformation.implicitRules` |
-| SubstanceReferenceInformation.language | SubstanceReferenceInformation.language | RelatedTo | R5 `SubstanceReferenceInformation.language` maps as RelatedTo to R4 `SubstanceReferenceInformation.language` - language changed the binding strength from Required to Preferred |
+| SubstanceReferenceInformation.language | SubstanceReferenceInformation.language | SourceIsNarrowerThanTarget | R5 `SubstanceReferenceInformation.language` maps as SourceIsNarrowerThanTarget to R4 `SubstanceReferenceInformation.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SubstanceReferenceInformation.meta | SubstanceReferenceInformation.meta | Equivalent | R5 `SubstanceReferenceInformation.meta` maps as Equivalent to R4 `SubstanceReferenceInformation.meta` |
 | SubstanceReferenceInformation.modifierExtension | SubstanceReferenceInformation.modifierExtension | SourceIsBroaderThanTarget | R5 `SubstanceReferenceInformation.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SubstanceReferenceInformation.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | SubstanceReferenceInformation.target | SubstanceReferenceInformation.target | Equivalent | R5 `SubstanceReferenceInformation.target` maps as Equivalent to R4 `SubstanceReferenceInformation.target` |

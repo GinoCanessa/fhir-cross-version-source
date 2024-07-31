@@ -28,6 +28,47 @@
       "target": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
       "element": [
         {
+          "code": "HealthcareService",
+          "display": "The details of a healthcare service available at a location",
+          "target": [
+            {
+              "code": "HealthcareService",
+              "display": "The details of a healthcare service available at a location",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060HealthcareService\u0060 maps as Equivalent to R4 \u0060HealthcareService\u0060"
+            }
+          ]
+        },
+        {
+          "code": "HealthcareService.active",
+          "display": "Whether this HealthcareService record is in active use",
+          "target": [
+            {
+              "code": "HealthcareService.active",
+              "display": "Whether this HealthcareService record is in active use",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060HealthcareService.active\u0060 maps as Equivalent to R4 \u0060HealthcareService.active\u0060"
+            }
+          ]
+        },
+        {
+          "code": "HealthcareService.appointmentRequired",
+          "display": "If an appointment is required for access to this service",
+          "target": [
+            {
+              "code": "HealthcareService.appointmentRequired",
+              "display": "If an appointment is required for access to this service",
+              "relationship": "equivalent",
+              "comment": "R5 \u0060HealthcareService.appointmentRequired\u0060 maps as Equivalent to R4 \u0060HealthcareService.appointmentRequired\u0060"
+            }
+          ]
+        },
+        {
+          "code": "HealthcareService.availability",
+          "display": "Times the healthcare service is available (including exceptions)",
+          "noMap": true
+        },
+        {
           "code": "HealthcareService.availability.availableTime.allDay",
           "target": [
             {
@@ -82,69 +123,13 @@
           ]
         },
         {
-          "code": "HealthcareService.contact.telecom",
-          "target": [
-            {
-              "code": "HealthcareService.telecom",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-      "target": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-      "element": [
-        {
-          "code": "HealthcareService",
-          "display": "The details of a healthcare service available at a location",
-          "target": [
-            {
-              "code": "HealthcareService",
-              "display": "The details of a healthcare service available at a location",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060HealthcareService\u0060 maps as Equivalent to R4 \u0060HealthcareService\u0060"
-            }
-          ]
-        },
-        {
-          "code": "HealthcareService.active",
-          "display": "Whether this HealthcareService record is in active use",
-          "target": [
-            {
-              "code": "HealthcareService.active",
-              "display": "Whether this HealthcareService record is in active use",
-              "relationship": "related-to",
-              "comment": "R5 \u0060HealthcareService.active\u0060 maps as Equivalent to R4 \u0060HealthcareService.active\u0060"
-            }
-          ]
-        },
-        {
-          "code": "HealthcareService.appointmentRequired",
-          "display": "If an appointment is required for access to this service",
-          "target": [
-            {
-              "code": "HealthcareService.appointmentRequired",
-              "display": "If an appointment is required for access to this service",
-              "relationship": "related-to",
-              "comment": "R5 \u0060HealthcareService.appointmentRequired\u0060 maps as Equivalent to R4 \u0060HealthcareService.appointmentRequired\u0060"
-            }
-          ]
-        },
-        {
-          "code": "HealthcareService.availability",
-          "display": "Times the healthcare service is available (including exceptions)",
-          "noMap": true
-        },
-        {
           "code": "HealthcareService.category",
           "display": "Broad category of service being performed or delivered",
           "target": [
             {
               "code": "HealthcareService.category",
               "display": "Broad category of service being performed or delivered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.category\u0060 maps as Equivalent to R4 \u0060HealthcareService.category\u0060"
             }
           ]
@@ -156,7 +141,7 @@
             {
               "code": "HealthcareService.characteristic",
               "display": "Collection of characteristics (attributes)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.characteristic\u0060 maps as Equivalent to R4 \u0060HealthcareService.characteristic\u0060"
             }
           ]
@@ -168,7 +153,7 @@
             {
               "code": "HealthcareService.comment",
               "display": "Additional description and/or any specific issues not covered elsewhere",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060HealthcareService.comment\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060HealthcareService.comment\u0060 - comment has change due to type change: R5 comment markdown has no equivalent or mapped type in R4 comment"
             }
           ]
@@ -180,8 +165,8 @@
             {
               "code": "HealthcareService.communication",
               "display": "The language that this service is offered in",
-              "relationship": "related-to",
-              "comment": "R5 \u0060HealthcareService.communication\u0060 maps as RelatedTo to R4 \u0060HealthcareService.communication\u0060 - communication changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060HealthcareService.communication\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060HealthcareService.communication\u0060 - communication changed the binding strength from Required to Preferred; communication has change due to type change: R5 \u0060communication\u0060 \u0060CodeableConcept\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060communication\u0060"
             }
           ]
         },
@@ -191,13 +176,22 @@
           "noMap": true
         },
         {
+          "code": "HealthcareService.contact.telecom",
+          "target": [
+            {
+              "code": "HealthcareService.telecom",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "HealthcareService.contained",
           "display": "Contained, inline Resources",
           "target": [
             {
               "code": "HealthcareService.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.contained\u0060 maps as Equivalent to R4 \u0060HealthcareService.contained\u0060"
             }
           ]
@@ -209,7 +203,7 @@
             {
               "code": "HealthcareService.coverageArea",
               "display": "Location(s) service is intended for/available to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.coverageArea\u0060 maps as Equivalent to R4 \u0060HealthcareService.coverageArea\u0060"
             }
           ]
@@ -221,7 +215,7 @@
             {
               "code": "HealthcareService.eligibility",
               "display": "Specific eligibility requirements required to use the service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.eligibility\u0060 maps as Equivalent to R4 \u0060HealthcareService.eligibility\u0060"
             }
           ]
@@ -233,7 +227,7 @@
             {
               "code": "HealthcareService.eligibility.code",
               "display": "Coded value for the eligibility",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.eligibility.code\u0060 maps as Equivalent to R4 \u0060HealthcareService.eligibility.code\u0060"
             }
           ]
@@ -245,7 +239,7 @@
             {
               "code": "HealthcareService.eligibility.comment",
               "display": "Describes the eligibility conditions for the service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.eligibility.comment\u0060 maps as Equivalent to R4 \u0060HealthcareService.eligibility.comment\u0060"
             }
           ]
@@ -257,7 +251,7 @@
             {
               "code": "HealthcareService.eligibility.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060HealthcareService.eligibility.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060HealthcareService.eligibility.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -269,7 +263,7 @@
             {
               "code": "HealthcareService.eligibility.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.eligibility.id\u0060 maps as Equivalent to R4 \u0060HealthcareService.eligibility.id\u0060"
             }
           ]
@@ -281,7 +275,7 @@
             {
               "code": "HealthcareService.eligibility.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060HealthcareService.eligibility.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060HealthcareService.eligibility.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -293,7 +287,7 @@
             {
               "code": "HealthcareService.endpoint",
               "display": "Technical endpoints providing access to electronic services operated for the healthcare service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.endpoint\u0060 maps as Equivalent to R4 \u0060HealthcareService.endpoint\u0060"
             }
           ]
@@ -305,7 +299,7 @@
             {
               "code": "HealthcareService.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060HealthcareService.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060HealthcareService.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -317,7 +311,7 @@
             {
               "code": "HealthcareService.extraDetails",
               "display": "Extra details about the service that can\u0027t be placed in the other fields",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.extraDetails\u0060 maps as Equivalent to R4 \u0060HealthcareService.extraDetails\u0060"
             }
           ]
@@ -341,7 +335,7 @@
             {
               "code": "HealthcareService.identifier",
               "display": "External identifiers for this item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.identifier\u0060 maps as Equivalent to R4 \u0060HealthcareService.identifier\u0060"
             }
           ]
@@ -365,8 +359,8 @@
             {
               "code": "HealthcareService.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060HealthcareService.language\u0060 maps as RelatedTo to R4 \u0060HealthcareService.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060HealthcareService.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060HealthcareService.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -377,7 +371,7 @@
             {
               "code": "HealthcareService.location",
               "display": "Location(s) where service may be provided",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.location\u0060 maps as Equivalent to R4 \u0060HealthcareService.location\u0060"
             }
           ]
@@ -401,7 +395,7 @@
             {
               "code": "HealthcareService.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060HealthcareService.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060HealthcareService.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -413,7 +407,7 @@
             {
               "code": "HealthcareService.name",
               "display": "Description of service as presented to a consumer while searching",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.name\u0060 maps as Equivalent to R4 \u0060HealthcareService.name\u0060"
             }
           ]
@@ -442,7 +436,7 @@
             {
               "code": "HealthcareService.program",
               "display": "Programs that this service is applicable to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.program\u0060 maps as Equivalent to R4 \u0060HealthcareService.program\u0060"
             }
           ]
@@ -454,7 +448,7 @@
             {
               "code": "HealthcareService.providedBy",
               "display": "Organization that provides this service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.providedBy\u0060 maps as Equivalent to R4 \u0060HealthcareService.providedBy\u0060"
             }
           ]
@@ -466,7 +460,7 @@
             {
               "code": "HealthcareService.referralMethod",
               "display": "Ways that the service accepts referrals",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.referralMethod\u0060 maps as Equivalent to R4 \u0060HealthcareService.referralMethod\u0060"
             }
           ]
@@ -478,7 +472,7 @@
             {
               "code": "HealthcareService.serviceProvisionCode",
               "display": "Conditions under which service is available/offered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.serviceProvisionCode\u0060 maps as Equivalent to R4 \u0060HealthcareService.serviceProvisionCode\u0060"
             }
           ]
@@ -490,7 +484,7 @@
             {
               "code": "HealthcareService.specialty",
               "display": "Specialties handled by the HealthcareService",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.specialty\u0060 maps as Equivalent to R4 \u0060HealthcareService.specialty\u0060"
             }
           ]
@@ -502,7 +496,7 @@
             {
               "code": "HealthcareService.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.text\u0060 maps as Equivalent to R4 \u0060HealthcareService.text\u0060"
             }
           ]
@@ -514,7 +508,7 @@
             {
               "code": "HealthcareService.type",
               "display": "Type of service that may be delivered or performed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060HealthcareService.type\u0060 maps as Equivalent to R4 \u0060HealthcareService.type\u0060"
             }
           ]

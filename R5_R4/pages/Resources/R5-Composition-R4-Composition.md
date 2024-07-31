@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 5 |
-Equivalent | 4 |
-RelatedTo | 42 |
+Equivalent | 31 |
+RelatedTo | 3 |
+SourceIsBroaderThanTarget | 11 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -42,9 +44,9 @@ RelatedTo | 42 |
 | Composition.event.period | Composition.event.period | Equivalent | R5 `Composition.event.period` maps as Equivalent to R4 `Composition.event.period` |
 | Composition.extension | Composition.extension | SourceIsBroaderThanTarget | R5 `Composition.extension` maps as SourceIsBroaderThanTarget to R4 `Composition.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Composition.id | Composition.id | Equivalent | R5 `Composition.id` maps as Equivalent to R4 `Composition.id` |
-| Composition.identifier | Composition.identifier | RelatedTo | R5 `Composition.identifier` maps as RelatedTo to R4 `Composition.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
+| Composition.identifier | Composition.identifier | SourceIsBroaderThanTarget | R5 `Composition.identifier` maps as SourceIsBroaderThanTarget to R4 `Composition.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
 | Composition.implicitRules | Composition.implicitRules | Equivalent | R5 `Composition.implicitRules` maps as Equivalent to R4 `Composition.implicitRules` |
-| Composition.language | Composition.language | RelatedTo | R5 `Composition.language` maps as RelatedTo to R4 `Composition.language` - language changed the binding strength from Required to Preferred |
+| Composition.language | Composition.language | SourceIsNarrowerThanTarget | R5 `Composition.language` maps as SourceIsNarrowerThanTarget to R4 `Composition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Composition.meta | Composition.meta | Equivalent | R5 `Composition.meta` maps as Equivalent to R4 `Composition.meta` |
 | Composition.modifierExtension | Composition.modifierExtension | SourceIsBroaderThanTarget | R5 `Composition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Composition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Composition.name | - | DoesNotExistInTarget | R5 `Composition.name` does not appear in the target and has no mapping for `Composition`. |
@@ -63,8 +65,8 @@ RelatedTo | 42 |
 | Composition.section.section | Composition.section.section | Equivalent | R5 `Composition.section.section` maps as Equivalent to R4 `Composition.section.section` |
 | Composition.section.text | Composition.section.text | Equivalent | R5 `Composition.section.text` maps as Equivalent to R4 `Composition.section.text` |
 | Composition.section.title | Composition.section.title | Equivalent | R5 `Composition.section.title` maps as Equivalent to R4 `Composition.section.title` |
-| Composition.status | Composition.status | RelatedTo | R5 `Composition.status` maps as RelatedTo to R4 `Composition.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1 |
-| Composition.subject | Composition.subject | RelatedTo | R5 `Composition.subject` maps as RelatedTo to R4 `Composition.subject` - subject changed from array to scalar (max cardinality from * to 1) |
+| Composition.status | Composition.status | RelatedTo | R5 `Composition.status` maps as RelatedTo to R4 `Composition.status` - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; status has change due to type change: R5 `status` `code` maps as RelatedTo for R4 `status` |
+| Composition.subject | Composition.subject | SourceIsBroaderThanTarget | R5 `Composition.subject` maps as SourceIsBroaderThanTarget to R4 `Composition.subject` - subject changed from array to scalar (max cardinality from * to 1) |
 | Composition.text | Composition.text | Equivalent | R5 `Composition.text` maps as Equivalent to R4 `Composition.text` |
 | Composition.title | Composition.title | Equivalent | R5 `Composition.title` maps as Equivalent to R4 `Composition.title` |
 | Composition.type | Composition.type | Equivalent | R5 `Composition.type` maps as Equivalent to R4 `Composition.type` |

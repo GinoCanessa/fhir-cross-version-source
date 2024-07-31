@@ -432,46 +432,29 @@
       },
       {
         "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:uri",
-        "sliceName": "uri",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "Coding"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-uri"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:canonical",
-        "sliceName": "canonical",
-        "sliceIsConstraining": true,
-        "type": [
+            "code": "uri"
+          },
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-canonical"
-            ]
+            "code": "canonical"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DocumentFormat"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Document Format Codes.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes"
+        }
       },
       {
         "path": "Extension.extension:value[x].url",

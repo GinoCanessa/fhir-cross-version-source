@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 19 |
-Equivalent | 4 |
-RelatedTo | 26 |
+Equivalent | 24 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -39,7 +40,7 @@ RelatedTo | 26 |
 | NamingSystem.implicitRules | NamingSystem.implicitRules | Equivalent | R5 `NamingSystem.implicitRules` maps as Equivalent to R4 `NamingSystem.implicitRules` |
 | NamingSystem.jurisdiction | NamingSystem.jurisdiction | Equivalent | R5 `NamingSystem.jurisdiction` maps as Equivalent to R4 `NamingSystem.jurisdiction` |
 | NamingSystem.kind | NamingSystem.kind | Equivalent | R5 `NamingSystem.kind` maps as Equivalent to R4 `NamingSystem.kind` - kind has compatible required binding for code type: http://hl7.org/fhir/ValueSet/namingsystem-type|5.0.0 and http://hl7.org/fhir/ValueSet/namingsystem-type|4.0.1 (Equivalent) |
-| NamingSystem.language | NamingSystem.language | RelatedTo | R5 `NamingSystem.language` maps as RelatedTo to R4 `NamingSystem.language` - language changed the binding strength from Required to Preferred |
+| NamingSystem.language | NamingSystem.language | SourceIsNarrowerThanTarget | R5 `NamingSystem.language` maps as SourceIsNarrowerThanTarget to R4 `NamingSystem.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | NamingSystem.lastReviewDate | - | DoesNotExistInTarget | R5 `NamingSystem.lastReviewDate` does not appear in the target and has no mapping for `NamingSystem`. |
 | NamingSystem.meta | NamingSystem.meta | Equivalent | R5 `NamingSystem.meta` maps as Equivalent to R4 `NamingSystem.meta` |
 | NamingSystem.modifierExtension | NamingSystem.modifierExtension | SourceIsBroaderThanTarget | R5 `NamingSystem.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `NamingSystem.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -53,7 +54,7 @@ RelatedTo | 26 |
 | NamingSystem.text | NamingSystem.text | Equivalent | R5 `NamingSystem.text` maps as Equivalent to R4 `NamingSystem.text` |
 | NamingSystem.title | - | DoesNotExistInTarget | R5 `NamingSystem.title` does not appear in the target and has no mapping for `NamingSystem`. |
 | NamingSystem.topic | - | DoesNotExistInTarget | R5 `NamingSystem.topic` does not appear in the target and has no mapping for `NamingSystem`. |
-| NamingSystem.type | NamingSystem.type | RelatedTo | R5 `NamingSystem.type` maps as RelatedTo to R4 `NamingSystem.type` - type changed the binding strength from Preferred to Extensible |
+| NamingSystem.type | NamingSystem.type | SourceIsBroaderThanTarget | R5 `NamingSystem.type` maps as SourceIsBroaderThanTarget to R4 `NamingSystem.type` - type changed the binding strength from Preferred to Extensible; type has change due to type change: R5 `type` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `type` |
 | NamingSystem.uniqueId | NamingSystem.uniqueId | Equivalent | R5 `NamingSystem.uniqueId` maps as Equivalent to R4 `NamingSystem.uniqueId` |
 | NamingSystem.uniqueId.authoritative | - | DoesNotExistInTarget | R5 `NamingSystem.uniqueId.authoritative` does not appear in the target and has no mapping for `NamingSystem`. |
 | NamingSystem.uniqueId.comment | NamingSystem.uniqueId.comment | Equivalent | R5 `NamingSystem.uniqueId.comment` maps as Equivalent to R4 `NamingSystem.uniqueId.comment` |

@@ -500,18 +500,10 @@
       },
       {
         "path": "Extension.extension:sequence.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sequence.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -557,18 +549,10 @@
       },
       {
         "path": "Extension.extension:dateOfDiagnosis.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dateOfDiagnosis.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },
@@ -585,20 +569,27 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DiagnosisUse"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "preferred",
+          "description": "The type of diagnosis this condition represents.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/encounter-diagnosis-use"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -614,18 +605,10 @@
       },
       {
         "path": "Extension.extension:onAdmission.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:onAdmission.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -643,20 +626,22 @@
       },
       {
         "path": "Extension.extension:packageCode.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:packageCode.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "diagnosis-package-code"
+            }
+          ],
+          "strength": "example",
+          "description": "Local or Regional package codes, e.g. DRGs"
+        }
       },
       {
         "path": "Extension.extension:packageCode.url",

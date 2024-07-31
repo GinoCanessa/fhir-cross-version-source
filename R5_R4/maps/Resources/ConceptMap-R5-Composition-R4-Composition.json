@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Composition",
       "element": [
         {
-          "code": "Composition.event.detail.concept",
-          "target": [
-            {
-              "code": "Composition.event.code",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "Composition.relatesTo.resourceReference",
-          "target": [
-            {
-              "code": "Composition.relatesTo.target[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Composition",
-      "target": "http://hl7.org/fhir/StructureDefinition/Composition",
-      "element": [
-        {
           "code": "Composition",
           "display": "A set of resources composed into a single coherent clinical statement with clinical attestation",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "Composition.attester",
               "display": "Attests to accuracy of composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.attester\u0060 maps as Equivalent to R4 \u0060Composition.attester\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "Composition.attester.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.attester.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.attester.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "Composition.attester.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.attester.id\u0060 maps as Equivalent to R4 \u0060Composition.attester.id\u0060"
             }
           ]
@@ -118,7 +94,7 @@
             {
               "code": "Composition.attester.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.attester.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.attester.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -130,7 +106,7 @@
             {
               "code": "Composition.attester.party",
               "display": "Who attested the composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.attester.party\u0060 maps as Equivalent to R4 \u0060Composition.attester.party\u0060"
             }
           ]
@@ -142,7 +118,7 @@
             {
               "code": "Composition.attester.time",
               "display": "When the composition was attested",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.attester.time\u0060 maps as Equivalent to R4 \u0060Composition.attester.time\u0060"
             }
           ]
@@ -154,7 +130,7 @@
             {
               "code": "Composition.author",
               "display": "Who and/or what authored the composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.author\u0060 maps as Equivalent to R4 \u0060Composition.author\u0060"
             }
           ]
@@ -166,7 +142,7 @@
             {
               "code": "Composition.category",
               "display": "Categorization of Composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.category\u0060 maps as Equivalent to R4 \u0060Composition.category\u0060"
             }
           ]
@@ -178,7 +154,7 @@
             {
               "code": "Composition.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.contained\u0060 maps as Equivalent to R4 \u0060Composition.contained\u0060"
             }
           ]
@@ -190,7 +166,7 @@
             {
               "code": "Composition.custodian",
               "display": "Organization which maintains the composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.custodian\u0060 maps as Equivalent to R4 \u0060Composition.custodian\u0060"
             }
           ]
@@ -202,7 +178,7 @@
             {
               "code": "Composition.date",
               "display": "Composition editing time",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.date\u0060 maps as Equivalent to R4 \u0060Composition.date\u0060"
             }
           ]
@@ -214,7 +190,7 @@
             {
               "code": "Composition.encounter",
               "display": "Context of the Composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.encounter\u0060 maps as Equivalent to R4 \u0060Composition.encounter\u0060"
             }
           ]
@@ -226,7 +202,7 @@
             {
               "code": "Composition.event",
               "display": "The clinical service(s) being documented",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.event\u0060 maps as Equivalent to R4 \u0060Composition.event\u0060"
             }
           ]
@@ -244,13 +220,22 @@
           ]
         },
         {
+          "code": "Composition.event.detail.concept",
+          "target": [
+            {
+              "code": "Composition.event.code",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "Composition.event.extension",
           "display": "Additional content defined by implementations",
           "target": [
             {
               "code": "Composition.event.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.event.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.event.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -262,7 +247,7 @@
             {
               "code": "Composition.event.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.event.id\u0060 maps as Equivalent to R4 \u0060Composition.event.id\u0060"
             }
           ]
@@ -274,7 +259,7 @@
             {
               "code": "Composition.event.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.event.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.event.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -286,7 +271,7 @@
             {
               "code": "Composition.event.period",
               "display": "The period covered by the documentation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.event.period\u0060 maps as Equivalent to R4 \u0060Composition.event.period\u0060"
             }
           ]
@@ -298,7 +283,7 @@
             {
               "code": "Composition.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -322,8 +307,8 @@
             {
               "code": "Composition.identifier",
               "display": "Version-independent identifier for the Composition",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Composition.identifier\u0060 maps as RelatedTo to R4 \u0060Composition.identifier\u0060 - identifier changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Composition.identifier\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.identifier\u0060 - identifier changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -346,8 +331,8 @@
             {
               "code": "Composition.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Composition.language\u0060 maps as RelatedTo to R4 \u0060Composition.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060Composition.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060Composition.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -370,7 +355,7 @@
             {
               "code": "Composition.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -392,8 +377,17 @@
             {
               "code": "Composition.relatesTo",
               "display": "Relationships to other compositions/documents",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.relatesTo\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.relatesTo\u0060 - relatesTo has change due to type change: R5 relatesTo RelatedArtifact has no equivalent or mapped type in R4 relatesTo"
+            }
+          ]
+        },
+        {
+          "code": "Composition.relatesTo.resourceReference",
+          "target": [
+            {
+              "code": "Composition.relatesTo.target[x]",
+              "relationship": "equivalent"
             }
           ]
         },
@@ -404,7 +398,7 @@
             {
               "code": "Composition.section",
               "display": "Composition is broken into sections",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section\u0060 maps as Equivalent to R4 \u0060Composition.section\u0060"
             }
           ]
@@ -416,7 +410,7 @@
             {
               "code": "Composition.section.author",
               "display": "Who and/or what authored the section",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.author\u0060 maps as Equivalent to R4 \u0060Composition.section.author\u0060"
             }
           ]
@@ -428,7 +422,7 @@
             {
               "code": "Composition.section.code",
               "display": "Classification of section (recommended)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.code\u0060 maps as Equivalent to R4 \u0060Composition.section.code\u0060"
             }
           ]
@@ -440,7 +434,7 @@
             {
               "code": "Composition.section.emptyReason",
               "display": "Why the section is empty",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.emptyReason\u0060 maps as Equivalent to R4 \u0060Composition.section.emptyReason\u0060"
             }
           ]
@@ -452,7 +446,7 @@
             {
               "code": "Composition.section.entry",
               "display": "A reference to data that supports this section",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.entry\u0060 maps as Equivalent to R4 \u0060Composition.section.entry\u0060"
             }
           ]
@@ -464,7 +458,7 @@
             {
               "code": "Composition.section.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.section.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.section.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -476,7 +470,7 @@
             {
               "code": "Composition.section.focus",
               "display": "Who/what the section is about, when it is not about the subject of composition",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.focus\u0060 maps as Equivalent to R4 \u0060Composition.section.focus\u0060"
             }
           ]
@@ -488,7 +482,7 @@
             {
               "code": "Composition.section.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.id\u0060 maps as Equivalent to R4 \u0060Composition.section.id\u0060"
             }
           ]
@@ -500,7 +494,7 @@
             {
               "code": "Composition.section.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060Composition.section.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.section.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -512,7 +506,7 @@
             {
               "code": "Composition.section.orderedBy",
               "display": "Order of section entries",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.orderedBy\u0060 maps as Equivalent to R4 \u0060Composition.section.orderedBy\u0060"
             }
           ]
@@ -524,7 +518,7 @@
             {
               "code": "Composition.section.section",
               "display": "Nested Section",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.section\u0060 maps as Equivalent to R4 \u0060Composition.section.section\u0060"
             }
           ]
@@ -536,7 +530,7 @@
             {
               "code": "Composition.section.text",
               "display": "Text summary of the section, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.text\u0060 maps as Equivalent to R4 \u0060Composition.section.text\u0060"
             }
           ]
@@ -548,7 +542,7 @@
             {
               "code": "Composition.section.title",
               "display": "Label for section (e.g. for ToC)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.section.title\u0060 maps as Equivalent to R4 \u0060Composition.section.title\u0060"
             }
           ]
@@ -561,7 +555,7 @@
               "code": "Composition.status",
               "display": "preliminary | final | amended | entered-in-error",
               "relationship": "related-to",
-              "comment": "R5 \u0060Composition.status\u0060 maps as RelatedTo to R4 \u0060Composition.status\u0060 - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1"
+              "comment": "R5 \u0060Composition.status\u0060 maps as RelatedTo to R4 \u0060Composition.status\u0060 - status has INCOMPATIBLE required binding for code type: http://hl7.org/fhir/ValueSet/composition-status|5.0.0 and http://hl7.org/fhir/ValueSet/composition-status|4.0.1; status has change due to type change: R5 \u0060status\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060status\u0060"
             }
           ]
         },
@@ -572,8 +566,8 @@
             {
               "code": "Composition.subject",
               "display": "Who and/or what the composition is about",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Composition.subject\u0060 maps as RelatedTo to R4 \u0060Composition.subject\u0060 - subject changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Composition.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Composition.subject\u0060 - subject changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -584,7 +578,7 @@
             {
               "code": "Composition.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.text\u0060 maps as Equivalent to R4 \u0060Composition.text\u0060"
             }
           ]
@@ -596,7 +590,7 @@
             {
               "code": "Composition.title",
               "display": "Human Readable name/title",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.title\u0060 maps as Equivalent to R4 \u0060Composition.title\u0060"
             }
           ]
@@ -608,7 +602,7 @@
             {
               "code": "Composition.type",
               "display": "Kind of composition (LOINC if possible)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Composition.type\u0060 maps as Equivalent to R4 \u0060Composition.type\u0060"
             }
           ]

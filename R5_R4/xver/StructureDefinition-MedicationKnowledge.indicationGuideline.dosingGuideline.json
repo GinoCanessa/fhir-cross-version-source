@@ -13,7 +13,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "MedicationKnowledge"
+      "expression": "MedicationKnowledge.administrationGuidelines"
     }
   ],
   "type": "Extension",
@@ -530,18 +530,10 @@
       },
       {
         "path": "Extension.extension:treatmentIntent.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:treatmentIntent.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -569,19 +561,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:dosage.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:dosage.extension:type.url",
         "fixedUri": "type"
       },
@@ -594,18 +573,10 @@
       },
       {
         "path": "Extension.extension:dosage.extension:dosage.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dosage.extension:dosage.extension:Dosage",
-        "sliceName": "Dosage",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage"
-            ]
+            "code": "Dosage"
           }
         ]
       },
@@ -630,19 +601,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:type.url",
         "fixedUri": "type"
       },
@@ -655,18 +613,10 @@
       },
       {
         "path": "Extension.extension:dosage.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dosage.extension:Dosage",
-        "sliceName": "Dosage",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage"
-            ]
+            "code": "Dosage"
           }
         ]
       },
@@ -684,18 +634,10 @@
       },
       {
         "path": "Extension.extension:administrationTreatment.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:administrationTreatment.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -721,18 +663,10 @@
       },
       {
         "path": "Extension.extension:patientCharacteristic.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:patientCharacteristic.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -753,45 +687,6 @@
         "max": "0"
       },
       {
-        "path": "Extension.extension:patientCharacteristic.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:patientCharacteristic.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:patientCharacteristic.extension:value[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
-      },
-      {
         "path": "Extension.extension:patientCharacteristic.extension:value[x].url",
         "fixedUri": "value%5Bx%5D"
       },
@@ -809,18 +704,10 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -839,45 +726,6 @@
       {
         "path": "Extension.extension:value[x].value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Quantity",
-        "sliceName": "Quantity",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Quantity"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].extension:Range",
-        "sliceName": "Range",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Range"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.extension:value[x].url",

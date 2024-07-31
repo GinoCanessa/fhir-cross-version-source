@@ -742,20 +742,27 @@
       },
       {
         "path": "Extension.extension:timezone.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:timezone.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "IANA Timezones (BCP 175)."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IANATimezone"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/timezones|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-timezones|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:timezone.url",
@@ -771,20 +778,23 @@
       },
       {
         "path": "Extension.extension:recurrenceType.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:recurrenceType.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "AppointmentRecurrenceType"
+            }
+          ],
+          "strength": "preferred",
+          "description": "IANA Timezones (BCP 175)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/appointment-recurrrence-type"
+        }
       },
       {
         "path": "Extension.extension:recurrenceType.url",
@@ -800,18 +810,10 @@
       },
       {
         "path": "Extension.extension:lastOccurrenceDate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:lastOccurrenceDate.extension:date",
-        "sliceName": "date",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-date"
-            ]
+            "code": "date"
           }
         ]
       },
@@ -829,18 +831,10 @@
       },
       {
         "path": "Extension.extension:occurrenceCount.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:occurrenceCount.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -858,18 +852,10 @@
       },
       {
         "path": "Extension.extension:occurrenceDate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:occurrenceDate.extension:date",
-        "sliceName": "date",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-date"
-            ]
+            "code": "date"
           }
         ]
       },
@@ -894,18 +880,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:monday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:monday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -923,18 +901,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:tuesday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:tuesday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -952,18 +922,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:wednesday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:wednesday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -981,18 +943,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:thursday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:thursday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1010,18 +964,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:friday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:friday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1039,18 +985,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:saturday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:saturday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1068,18 +1006,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:sunday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:sunday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1097,18 +1027,10 @@
       },
       {
         "path": "Extension.extension:weeklyTemplate.extension:weekInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weeklyTemplate.extension:weekInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1130,18 +1052,10 @@
       },
       {
         "path": "Extension.extension:monday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1159,18 +1073,10 @@
       },
       {
         "path": "Extension.extension:tuesday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:tuesday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1188,18 +1094,10 @@
       },
       {
         "path": "Extension.extension:wednesday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:wednesday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1217,18 +1115,10 @@
       },
       {
         "path": "Extension.extension:thursday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:thursday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1246,18 +1136,10 @@
       },
       {
         "path": "Extension.extension:friday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:friday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1275,18 +1157,10 @@
       },
       {
         "path": "Extension.extension:saturday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:saturday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1304,18 +1178,10 @@
       },
       {
         "path": "Extension.extension:sunday.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sunday.extension:boolean",
-        "sliceName": "boolean",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-boolean"
-            ]
+            "code": "boolean"
           }
         ]
       },
@@ -1333,18 +1199,10 @@
       },
       {
         "path": "Extension.extension:weekInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:weekInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1369,18 +1227,10 @@
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:dayOfMonth.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monthlyTemplate.extension:dayOfMonth.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1398,20 +1248,23 @@
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "WeekOfMonth"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/week-of-month|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-week-of-month|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:nthWeekOfMonth.url",
@@ -1428,20 +1281,23 @@
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:dayOfWeek.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monthlyTemplate.extension:dayOfWeek.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DaysOfWeek"
+            }
+          ],
+          "strength": "required",
+          "description": "The days of the week.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:dayOfWeek.url",
@@ -1457,18 +1313,10 @@
       },
       {
         "path": "Extension.extension:monthlyTemplate.extension:monthInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monthlyTemplate.extension:monthInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1490,18 +1338,10 @@
       },
       {
         "path": "Extension.extension:dayOfMonth.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dayOfMonth.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1519,20 +1359,23 @@
       },
       {
         "path": "Extension.extension:nthWeekOfMonth.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:nthWeekOfMonth.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "WeekOfMonth"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/week-of-month|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-week-of-month|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:nthWeekOfMonth.url",
@@ -1549,20 +1392,23 @@
       },
       {
         "path": "Extension.extension:dayOfWeek.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:dayOfWeek.extension:Coding",
-        "sliceName": "Coding",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Coding"
-            ]
+            "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DaysOfWeek"
+            }
+          ],
+          "strength": "required",
+          "description": "The days of the week.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:dayOfWeek.url",
@@ -1578,18 +1424,10 @@
       },
       {
         "path": "Extension.extension:monthInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:monthInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1614,18 +1452,10 @@
       },
       {
         "path": "Extension.extension:yearlyTemplate.extension:yearInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:yearlyTemplate.extension:yearInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1647,18 +1477,10 @@
       },
       {
         "path": "Extension.extension:yearInterval.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:yearInterval.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },
@@ -1677,18 +1499,10 @@
       },
       {
         "path": "Extension.extension:excludingDate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:excludingDate.extension:date",
-        "sliceName": "date",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-date"
-            ]
+            "code": "date"
           }
         ]
       },
@@ -1707,18 +1521,10 @@
       },
       {
         "path": "Extension.extension:excludingRecurrenceId.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:excludingRecurrenceId.extension:positiveInt",
-        "sliceName": "positiveInt",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-positiveInt"
-            ]
+            "code": "positiveInt"
           }
         ]
       },

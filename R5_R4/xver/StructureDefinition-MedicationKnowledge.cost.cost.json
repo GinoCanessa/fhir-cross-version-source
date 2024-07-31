@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationKnowledge.cost.cost[x] compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationKnowledge.cost.cost[x]` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+  "description": "R5 `MedicationKnowledge.cost.cost[x]` maps as RelatedTo to R4 `MedicationKnowledge.cost.cost` - cost removed a binding requirement - Example http://hl7.org/fhir/ValueSet/medication-cost-category; cost has change due to type change: R5 `cost[x]` `Money` maps as SourceIsNarrowerThanTarget for R4 `cost`; cost has change due to type change: R5 cost[x] CodeableConcept has no equivalent or mapped type in R4 cost",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "MedicationKnowledge.cost"
+      "expression": "MedicationKnowledge.cost.cost"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "The price or category of the cost of the medication",
         "definition": "The price or representation of the cost (for example, Band A, Band B or $, $$) of the medication.",
-        "comment": "R5 `MedicationKnowledge.cost.cost[x]` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+        "comment": "R5 `MedicationKnowledge.cost.cost[x]` maps as RelatedTo to R4 `MedicationKnowledge.cost.cost` - cost removed a binding requirement - Example http://hl7.org/fhir/ValueSet/medication-cost-category; cost has change due to type change: R5 `cost[x]` `Money` maps as SourceIsNarrowerThanTarget for R4 `cost`; cost has change due to type change: R5 cost[x] CodeableConcept has no equivalent or mapped type in R4 cost",
         "min": 1,
         "max": "1",
         "base": {
@@ -398,114 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:Money:Money",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:Money",
-        "sliceName": "Money",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:Money"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Money"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:CodeableConcept:CodeableConcept",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:CodeableConcept"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -521,7 +413,7 @@
         "path": "Extension",
         "short": "The price or category of the cost of the medication",
         "definition": "The price or representation of the cost (for example, Band A, Band B or $, $$) of the medication.",
-        "comment": "R5 `MedicationKnowledge.cost.cost[x]` does not appear in the target and has no mapping for `MedicationKnowledge`.",
+        "comment": "R5 `MedicationKnowledge.cost.cost[x]` maps as RelatedTo to R4 `MedicationKnowledge.cost.cost` - cost removed a binding requirement - Example http://hl7.org/fhir/ValueSet/medication-cost-category; cost has change due to type change: R5 `cost[x]` `Money` maps as SourceIsNarrowerThanTarget for R4 `cost`; cost has change due to type change: R5 cost[x] CodeableConcept has no equivalent or mapped type in R4 cost",
         "min": 1,
         "max": "1",
         "isModifier": false
@@ -529,32 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:Money",
-        "sliceName": "Money",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Money"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

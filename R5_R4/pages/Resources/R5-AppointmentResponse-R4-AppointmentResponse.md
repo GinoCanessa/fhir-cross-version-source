@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 11 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -30,11 +32,11 @@ RelatedTo | 13 |
 | AppointmentResponse.id | AppointmentResponse.id | Equivalent | R5 `AppointmentResponse.id` maps as Equivalent to R4 `AppointmentResponse.id` |
 | AppointmentResponse.identifier | AppointmentResponse.identifier | Equivalent | R5 `AppointmentResponse.identifier` maps as Equivalent to R4 `AppointmentResponse.identifier` |
 | AppointmentResponse.implicitRules | AppointmentResponse.implicitRules | Equivalent | R5 `AppointmentResponse.implicitRules` maps as Equivalent to R4 `AppointmentResponse.implicitRules` |
-| AppointmentResponse.language | AppointmentResponse.language | RelatedTo | R5 `AppointmentResponse.language` maps as RelatedTo to R4 `AppointmentResponse.language` - language changed the binding strength from Required to Preferred |
+| AppointmentResponse.language | AppointmentResponse.language | SourceIsNarrowerThanTarget | R5 `AppointmentResponse.language` maps as SourceIsNarrowerThanTarget to R4 `AppointmentResponse.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | AppointmentResponse.meta | AppointmentResponse.meta | Equivalent | R5 `AppointmentResponse.meta` maps as Equivalent to R4 `AppointmentResponse.meta` |
 | AppointmentResponse.modifierExtension | AppointmentResponse.modifierExtension | SourceIsBroaderThanTarget | R5 `AppointmentResponse.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `AppointmentResponse.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | AppointmentResponse.occurrenceDate | - | DoesNotExistInTarget | R5 `AppointmentResponse.occurrenceDate` does not appear in the target and has no mapping for `AppointmentResponse`. |
-| AppointmentResponse.participantStatus | AppointmentResponse.participantStatus | RelatedTo | R5 `AppointmentResponse.participantStatus` maps as RelatedTo to R4 `AppointmentResponse.participantStatus` - (participantStatus failed to compare required binding of http://hl7.org/fhir/ValueSet/appointmentresponse-status|5.0.0 and http://hl7.org/fhir/ValueSet/participationstatus|4.0.1) |
+| AppointmentResponse.participantStatus | AppointmentResponse.participantStatus | RelatedTo | R5 `AppointmentResponse.participantStatus` maps as RelatedTo to R4 `AppointmentResponse.participantStatus` - (participantStatus failed to compare required binding of http://hl7.org/fhir/ValueSet/appointmentresponse-status|5.0.0 and http://hl7.org/fhir/ValueSet/participationstatus|4.0.1); participantStatus has change due to type change: R5 `participantStatus` `code` maps as RelatedTo for R4 `participantStatus` |
 | AppointmentResponse.participantType | AppointmentResponse.participantType | Equivalent | R5 `AppointmentResponse.participantType` maps as Equivalent to R4 `AppointmentResponse.participantType` |
 | AppointmentResponse.proposedNewTime | - | DoesNotExistInTarget | R5 `AppointmentResponse.proposedNewTime` does not appear in the target and has no mapping for `AppointmentResponse`. |
 | AppointmentResponse.recurrenceId | - | DoesNotExistInTarget | R5 `AppointmentResponse.recurrenceId` does not appear in the target and has no mapping for `AppointmentResponse`. |

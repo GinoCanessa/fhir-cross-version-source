@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/Dosage",
       "element": [
         {
-          "code": "Dosage.asNeeded",
-          "target": [
-            {
-              "code": "Dosage.asNeeded[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/Dosage",
-      "target": "http://hl7.org/fhir/StructureDefinition/Dosage",
-      "element": [
-        {
           "code": "Dosage",
           "display": "How the medication is/was taken or should be taken",
           "target": [
@@ -68,13 +53,25 @@
         },
         {
           "code": "Dosage.asNeeded",
-          "display": "Take \u0022as needed\u0022",
-          "noMap": true
+          "target": [
+            {
+              "code": "Dosage.asNeeded[x]",
+              "display": "Take \u0022as needed\u0022 (for x)",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Dosage.asNeeded\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Dosage.asNeeded[x]\u0060 - asNeeded[x] added a binding requirement - Example http://hl7.org/fhir/ValueSet/medication-as-needed-reason; asNeeded[x] has change due to type change: R5 \u0060asNeeded\u0060 \u0060boolean\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060asNeeded[x]\u0060"
+            }
+          ]
         },
         {
           "code": "Dosage.asNeededFor",
-          "display": "Take \u0022as needed\u0022 (for x)",
-          "noMap": true
+          "target": [
+            {
+              "code": "Dosage.asNeeded[x]",
+              "display": "Take \u0022as needed\u0022 (for x)",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Dosage.asNeededFor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Dosage.asNeeded[x]\u0060 - asNeeded[x] changed from array to scalar (max cardinality from * to 1)"
+            }
+          ]
         },
         {
           "code": "Dosage.doseAndRate",
@@ -179,7 +176,7 @@
             {
               "code": "Dosage.maxDosePerAdministration",
               "display": "Upper limit on medication per administration",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Dosage.maxDosePerAdministration\u0060 maps as Equivalent to R4 \u0060Dosage.maxDosePerAdministration\u0060"
             }
           ]
@@ -191,7 +188,7 @@
             {
               "code": "Dosage.maxDosePerLifetime",
               "display": "Upper limit on medication per lifetime of the patient",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060Dosage.maxDosePerLifetime\u0060 maps as Equivalent to R4 \u0060Dosage.maxDosePerLifetime\u0060"
             }
           ]
@@ -203,8 +200,8 @@
             {
               "code": "Dosage.maxDosePerPeriod",
               "display": "Upper limit on medication per unit of time",
-              "relationship": "related-to",
-              "comment": "R5 \u0060Dosage.maxDosePerPeriod\u0060 maps as RelatedTo to R4 \u0060Dosage.maxDosePerPeriod\u0060 - maxDosePerPeriod changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060Dosage.maxDosePerPeriod\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060Dosage.maxDosePerPeriod\u0060 - maxDosePerPeriod changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },

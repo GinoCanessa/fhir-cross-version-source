@@ -323,9 +323,9 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | Status | Count |
 | ------ | ----- |
 | DoesNotExistInTarget | 10 |
-| Equivalent | 26 |
+| Equivalent | 23 |
 | RelatedTo | 8 |
-| SourceIsBroaderThanTarget | 4 |
+| SourceIsBroaderThanTarget | 7 |
 
 
 <details>
@@ -351,7 +351,7 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | R5-DataRequirement-R4-DataRequirement | http://hl7.org/fhir/StructureDefinition/DataRequirement | http://hl7.org/fhir/StructureDefinition/DataRequirement | RelatedTo | R5 `DataRequirement` maps as RelatedTo to R4 `DataRequirement`. |
 | R5-DataType | http://hl7.org/fhir/StructureDefinition/DataType |  | DoesNotExistInTarget | DataType does not exist in target and has no mapping |
 | R5-Distance-R4-Distance | http://hl7.org/fhir/StructureDefinition/Distance | http://hl7.org/fhir/StructureDefinition/Distance | Equivalent | R5 `Distance` is equivalent to R4 `Distance`. |
-| R5-Dosage-R4-Dosage | http://hl7.org/fhir/StructureDefinition/Dosage | http://hl7.org/fhir/StructureDefinition/Dosage | RelatedTo | R5 `Dosage` maps as RelatedTo to R4 `Dosage`. |
+| R5-Dosage-R4-Dosage | http://hl7.org/fhir/StructureDefinition/Dosage | http://hl7.org/fhir/StructureDefinition/Dosage | SourceIsBroaderThanTarget | R5 `Dosage` is broader than R4 `Dosage` and requires mapping choices for conversion. |
 | R5-Duration-R4-Duration | http://hl7.org/fhir/StructureDefinition/Duration | http://hl7.org/fhir/StructureDefinition/Duration | Equivalent | R5 `Duration` is equivalent to R4 `Duration`. |
 | R5-Element-R4-Element | http://hl7.org/fhir/StructureDefinition/Element | http://hl7.org/fhir/StructureDefinition/Element | Equivalent | R5 `Element` is equivalent to R4 `Element`. |
 | R5-ElementDefinition-R4-ElementDefinition | http://hl7.org/fhir/StructureDefinition/ElementDefinition | http://hl7.org/fhir/StructureDefinition/ElementDefinition | SourceIsBroaderThanTarget | R5 `ElementDefinition` is broader than R4 `ElementDefinition` and requires mapping choices for conversion. |
@@ -374,11 +374,11 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | R5-Ratio-R4-Ratio | http://hl7.org/fhir/StructureDefinition/Ratio | http://hl7.org/fhir/StructureDefinition/Ratio | SourceIsBroaderThanTarget | R5 `Ratio` is broader than R4 `Ratio` and requires mapping choices for conversion. |
 | R5-RatioRange | http://hl7.org/fhir/StructureDefinition/RatioRange |  | DoesNotExistInTarget | RatioRange does not exist in target and has no mapping |
 | R5-Reference-R4-Reference | http://hl7.org/fhir/StructureDefinition/Reference | http://hl7.org/fhir/StructureDefinition/Reference | Equivalent | R5 `Reference` is equivalent to R4 `Reference`. |
-| R5-RelatedArtifact-R4-RelatedArtifact | http://hl7.org/fhir/StructureDefinition/RelatedArtifact | http://hl7.org/fhir/StructureDefinition/RelatedArtifact | Equivalent | R5 `RelatedArtifact` is equivalent to R4 `RelatedArtifact`. |
-| R5-SampledData-R4-SampledData | http://hl7.org/fhir/StructureDefinition/SampledData | http://hl7.org/fhir/StructureDefinition/SampledData | Equivalent | R5 `SampledData` is equivalent to R4 `SampledData`. |
+| R5-RelatedArtifact-R4-RelatedArtifact | http://hl7.org/fhir/StructureDefinition/RelatedArtifact | http://hl7.org/fhir/StructureDefinition/RelatedArtifact | SourceIsBroaderThanTarget | R5 `RelatedArtifact` is broader than R4 `RelatedArtifact` and requires mapping choices for conversion. |
+| R5-SampledData-R4-SampledData | http://hl7.org/fhir/StructureDefinition/SampledData | http://hl7.org/fhir/StructureDefinition/SampledData | RelatedTo | R5 `SampledData` maps as RelatedTo to R4 `SampledData`. |
 | R5-Signature-R4-Signature | http://hl7.org/fhir/StructureDefinition/Signature | http://hl7.org/fhir/StructureDefinition/Signature | RelatedTo | R5 `Signature` maps as RelatedTo to R4 `Signature`. |
 | R5-Timing-R4-Timing | http://hl7.org/fhir/StructureDefinition/Timing | http://hl7.org/fhir/StructureDefinition/Timing | Equivalent | R5 `Timing` is equivalent to R4 `Timing`. |
-| R5-TriggerDefinition-R4-TriggerDefinition | http://hl7.org/fhir/StructureDefinition/TriggerDefinition | http://hl7.org/fhir/StructureDefinition/TriggerDefinition | Equivalent | R5 `TriggerDefinition` is equivalent to R4 `TriggerDefinition`. |
+| R5-TriggerDefinition-R4-TriggerDefinition | http://hl7.org/fhir/StructureDefinition/TriggerDefinition | http://hl7.org/fhir/StructureDefinition/TriggerDefinition | SourceIsBroaderThanTarget | R5 `TriggerDefinition` is broader than R4 `TriggerDefinition` and requires mapping choices for conversion. |
 | R5-UsageContext-R4-UsageContext | http://hl7.org/fhir/StructureDefinition/UsageContext | http://hl7.org/fhir/StructureDefinition/UsageContext | Equivalent | R5 `UsageContext` is equivalent to R4 `UsageContext`. |
 | R5-VirtualServiceDetail | http://hl7.org/fhir/StructureDefinition/VirtualServiceDetail |  | DoesNotExistInTarget | VirtualServiceDetail does not exist in target and has no mapping |
 
@@ -388,7 +388,8 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | Status | Count |
 | ------ | ----- |
 | DoesNotExistInTarget | 32 |
-| RelatedTo | 128 |
+| RelatedTo | 126 |
+| SourceIsNarrowerThanTarget | 2 |
 
 
 <details>
@@ -407,7 +408,7 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | R5-ArtifactAssessment | http://hl7.org/fhir/StructureDefinition/ArtifactAssessment |  | DoesNotExistInTarget | ArtifactAssessment does not exist in target and has no mapping |
 | R5-AuditEvent-R4-AuditEvent | http://hl7.org/fhir/StructureDefinition/AuditEvent | http://hl7.org/fhir/StructureDefinition/AuditEvent | RelatedTo | R5 `AuditEvent` maps as RelatedTo to R4 `AuditEvent`. |
 | R5-Basic-R4-Basic | http://hl7.org/fhir/StructureDefinition/Basic | http://hl7.org/fhir/StructureDefinition/Basic | RelatedTo | R5 `Basic` maps as RelatedTo to R4 `Basic`. |
-| R5-Binary-R4-Binary | http://hl7.org/fhir/StructureDefinition/Binary | http://hl7.org/fhir/StructureDefinition/Binary | RelatedTo | R5 `Binary` maps as RelatedTo to R4 `Binary`. |
+| R5-Binary-R4-Binary | http://hl7.org/fhir/StructureDefinition/Binary | http://hl7.org/fhir/StructureDefinition/Binary | SourceIsNarrowerThanTarget | R5 `Binary` maps as SourceIsNarrowerThanTarget to R4 `Binary`. |
 | R5-BiologicallyDerivedProduct-R4-BiologicallyDerivedProduct | http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct | http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct | RelatedTo | R5 `BiologicallyDerivedProduct` maps as RelatedTo to R4 `BiologicallyDerivedProduct`. |
 | R5-BiologicallyDerivedProductDispense | http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProductDispense |  | DoesNotExistInTarget | BiologicallyDerivedProductDispense does not exist in target and has no mapping |
 | R5-BodyStructure-R4-BodyStructure | http://hl7.org/fhir/StructureDefinition/BodyStructure | http://hl7.org/fhir/StructureDefinition/BodyStructure | RelatedTo | R5 `BodyStructure` maps as RelatedTo to R4 `BodyStructure`. |
@@ -525,7 +526,7 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | R5-Requirements | http://hl7.org/fhir/StructureDefinition/Requirements |  | DoesNotExistInTarget | Requirements does not exist in target and has no mapping |
 | R5-ResearchStudy-R4-ResearchStudy | http://hl7.org/fhir/StructureDefinition/ResearchStudy | http://hl7.org/fhir/StructureDefinition/ResearchStudy | RelatedTo | R5 `ResearchStudy` maps as RelatedTo to R4 `ResearchStudy`. |
 | R5-ResearchSubject-R4-ResearchSubject | http://hl7.org/fhir/StructureDefinition/ResearchSubject | http://hl7.org/fhir/StructureDefinition/ResearchSubject | RelatedTo | R5 `ResearchSubject` maps as RelatedTo to R4 `ResearchSubject`. |
-| R5-Resource-R4-Resource | http://hl7.org/fhir/StructureDefinition/Resource | http://hl7.org/fhir/StructureDefinition/Resource | RelatedTo | R5 `Resource` maps as RelatedTo to R4 `Resource`. |
+| R5-Resource-R4-Resource | http://hl7.org/fhir/StructureDefinition/Resource | http://hl7.org/fhir/StructureDefinition/Resource | SourceIsNarrowerThanTarget | R5 `Resource` maps as SourceIsNarrowerThanTarget to R4 `Resource`. |
 | R5-RiskAssessment-R4-RiskAssessment | http://hl7.org/fhir/StructureDefinition/RiskAssessment | http://hl7.org/fhir/StructureDefinition/RiskAssessment | RelatedTo | R5 `RiskAssessment` maps as RelatedTo to R4 `RiskAssessment`. |
 | R5-Schedule-R4-Schedule | http://hl7.org/fhir/StructureDefinition/Schedule | http://hl7.org/fhir/StructureDefinition/Schedule | RelatedTo | R5 `Schedule` maps as RelatedTo to R4 `Schedule`. |
 | R5-SearchParameter-R4-SearchParameter | http://hl7.org/fhir/StructureDefinition/SearchParameter | http://hl7.org/fhir/StructureDefinition/SearchParameter | RelatedTo | R5 `SearchParameter` maps as RelatedTo to R4 `SearchParameter`. |

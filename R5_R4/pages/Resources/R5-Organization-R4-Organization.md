@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 9 |
-Equivalent | 4 |
-RelatedTo | 13 |
+Equivalent | 13 |
+SourceIsBroaderThanTarget | 3 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -31,7 +32,7 @@ RelatedTo | 13 |
 | Organization.id | Organization.id | Equivalent | R5 `Organization.id` maps as Equivalent to R4 `Organization.id` |
 | Organization.identifier | Organization.identifier | Equivalent | R5 `Organization.identifier` maps as Equivalent to R4 `Organization.identifier` |
 | Organization.implicitRules | Organization.implicitRules | Equivalent | R5 `Organization.implicitRules` maps as Equivalent to R4 `Organization.implicitRules` |
-| Organization.language | Organization.language | RelatedTo | R5 `Organization.language` maps as RelatedTo to R4 `Organization.language` - language changed the binding strength from Required to Preferred |
+| Organization.language | Organization.language | SourceIsNarrowerThanTarget | R5 `Organization.language` maps as SourceIsNarrowerThanTarget to R4 `Organization.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Organization.meta | Organization.meta | Equivalent | R5 `Organization.meta` maps as Equivalent to R4 `Organization.meta` |
 | Organization.modifierExtension | Organization.modifierExtension | SourceIsBroaderThanTarget | R5 `Organization.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Organization.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Organization.name | Organization.name | Equivalent | R5 `Organization.name` maps as Equivalent to R4 `Organization.name` |

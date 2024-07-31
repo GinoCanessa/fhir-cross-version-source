@@ -13,8 +13,9 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 15 |
+Equivalent | 14 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -34,7 +35,7 @@ RelatedTo | 15 |
 | OperationOutcome.issue.location | OperationOutcome.issue.location | Equivalent | R5 `OperationOutcome.issue.location` maps as Equivalent to R4 `OperationOutcome.issue.location` |
 | OperationOutcome.issue.modifierExtension | OperationOutcome.issue.modifierExtension | SourceIsBroaderThanTarget | R5 `OperationOutcome.issue.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `OperationOutcome.issue.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | OperationOutcome.issue.severity | OperationOutcome.issue.severity | Equivalent | R5 `OperationOutcome.issue.severity` maps as Equivalent to R4 `OperationOutcome.issue.severity` - severity has compatible required binding for code type: http://hl7.org/fhir/ValueSet/issue-severity|5.0.0 and http://hl7.org/fhir/ValueSet/issue-severity|4.0.1 (Equivalent) |
-| OperationOutcome.language | OperationOutcome.language | RelatedTo | R5 `OperationOutcome.language` maps as RelatedTo to R4 `OperationOutcome.language` - language changed the binding strength from Required to Preferred |
+| OperationOutcome.language | OperationOutcome.language | SourceIsNarrowerThanTarget | R5 `OperationOutcome.language` maps as SourceIsNarrowerThanTarget to R4 `OperationOutcome.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | OperationOutcome.meta | OperationOutcome.meta | Equivalent | R5 `OperationOutcome.meta` maps as Equivalent to R4 `OperationOutcome.meta` |
 | OperationOutcome.modifierExtension | OperationOutcome.modifierExtension | SourceIsBroaderThanTarget | R5 `OperationOutcome.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `OperationOutcome.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | OperationOutcome.text | OperationOutcome.text | Equivalent | R5 `OperationOutcome.text` maps as Equivalent to R4 `OperationOutcome.text` |

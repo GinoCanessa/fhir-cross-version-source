@@ -13,8 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-Equivalent | 4 |
-RelatedTo | 41 |
+Equivalent | 34 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -26,7 +28,7 @@ RelatedTo | 41 |
 | Patient.communication | Patient.communication | Equivalent | R5 `Patient.communication` maps as Equivalent to R4 `Patient.communication` |
 | Patient.communication.extension | Patient.communication.extension | SourceIsBroaderThanTarget | R5 `Patient.communication.extension` maps as SourceIsBroaderThanTarget to R4 `Patient.communication.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Patient.communication.id | Patient.communication.id | Equivalent | R5 `Patient.communication.id` maps as Equivalent to R4 `Patient.communication.id` |
-| Patient.communication.language | Patient.communication.language | RelatedTo | R5 `Patient.communication.language` maps as RelatedTo to R4 `Patient.communication.language` - language changed the binding strength from Required to Preferred |
+| Patient.communication.language | Patient.communication.language | SourceIsNarrowerThanTarget | R5 `Patient.communication.language` maps as SourceIsNarrowerThanTarget to R4 `Patient.communication.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Patient.communication.modifierExtension | Patient.communication.modifierExtension | SourceIsBroaderThanTarget | R5 `Patient.communication.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Patient.communication.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Patient.communication.preferred | Patient.communication.preferred | Equivalent | R5 `Patient.communication.preferred` maps as Equivalent to R4 `Patient.communication.preferred` |
 | Patient.contact | Patient.contact | Equivalent | R5 `Patient.contact` maps as Equivalent to R4 `Patient.contact` |
@@ -48,7 +50,7 @@ RelatedTo | 41 |
 | Patient.id | Patient.id | Equivalent | R5 `Patient.id` maps as Equivalent to R4 `Patient.id` |
 | Patient.identifier | Patient.identifier | Equivalent | R5 `Patient.identifier` maps as Equivalent to R4 `Patient.identifier` |
 | Patient.implicitRules | Patient.implicitRules | Equivalent | R5 `Patient.implicitRules` maps as Equivalent to R4 `Patient.implicitRules` |
-| Patient.language | Patient.language | RelatedTo | R5 `Patient.language` maps as RelatedTo to R4 `Patient.language` - language changed the binding strength from Required to Preferred |
+| Patient.language | Patient.language | SourceIsNarrowerThanTarget | R5 `Patient.language` maps as SourceIsNarrowerThanTarget to R4 `Patient.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Patient.link | Patient.link | Equivalent | R5 `Patient.link` maps as Equivalent to R4 `Patient.link` |
 | Patient.link.extension | Patient.link.extension | SourceIsBroaderThanTarget | R5 `Patient.link.extension` maps as SourceIsBroaderThanTarget to R4 `Patient.link.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Patient.link.id | Patient.link.id | Equivalent | R5 `Patient.link.id` maps as Equivalent to R4 `Patient.link.id` |

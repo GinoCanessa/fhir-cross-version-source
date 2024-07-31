@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 13 |
-Equivalent | 4 |
-RelatedTo | 38 |
+DoesNotExistInTarget | 12 |
+Equivalent | 30 |
+SourceIsBroaderThanTarget | 12 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -55,7 +56,7 @@ RelatedTo | 38 |
 | Specimen.id | Specimen.id | Equivalent | R5 `Specimen.id` maps as Equivalent to R4 `Specimen.id` |
 | Specimen.identifier | Specimen.identifier | Equivalent | R5 `Specimen.identifier` maps as Equivalent to R4 `Specimen.identifier` |
 | Specimen.implicitRules | Specimen.implicitRules | Equivalent | R5 `Specimen.implicitRules` maps as Equivalent to R4 `Specimen.implicitRules` |
-| Specimen.language | Specimen.language | RelatedTo | R5 `Specimen.language` maps as RelatedTo to R4 `Specimen.language` - language changed the binding strength from Required to Preferred |
+| Specimen.language | Specimen.language | SourceIsNarrowerThanTarget | R5 `Specimen.language` maps as SourceIsNarrowerThanTarget to R4 `Specimen.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Specimen.meta | Specimen.meta | Equivalent | R5 `Specimen.meta` maps as Equivalent to R4 `Specimen.meta` |
 | Specimen.modifierExtension | Specimen.modifierExtension | SourceIsBroaderThanTarget | R5 `Specimen.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Specimen.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Specimen.note | Specimen.note | SourceIsBroaderThanTarget | R5 `Specimen.note` maps as SourceIsBroaderThanTarget to R4 `Specimen.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
@@ -65,7 +66,7 @@ RelatedTo | 38 |
 | Specimen.processing.description | Specimen.processing.description | Equivalent | R5 `Specimen.processing.description` maps as Equivalent to R4 `Specimen.processing.description` |
 | Specimen.processing.extension | Specimen.processing.extension | SourceIsBroaderThanTarget | R5 `Specimen.processing.extension` maps as SourceIsBroaderThanTarget to R4 `Specimen.processing.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Specimen.processing.id | Specimen.processing.id | Equivalent | R5 `Specimen.processing.id` maps as Equivalent to R4 `Specimen.processing.id` |
-| Specimen.processing.method | - | DoesNotExistInTarget | R5 `Specimen.processing.method` does not appear in the target and has no mapping for `Specimen`. |
+| Specimen.processing.method | Specimen.processing.procedure | Equivalent | R5 `Specimen.processing.method` maps as Equivalent to R4 `Specimen.processing.procedure` |
 | Specimen.processing.modifierExtension | Specimen.processing.modifierExtension | SourceIsBroaderThanTarget | R5 `Specimen.processing.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Specimen.processing.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Specimen.processing.time[x] | Specimen.processing.time[x] | Equivalent | R5 `Specimen.processing.time[x]` maps as Equivalent to R4 `Specimen.processing.time[x]` |
 | Specimen.receivedTime | Specimen.receivedTime | Equivalent | R5 `Specimen.receivedTime` maps as Equivalent to R4 `Specimen.receivedTime` |

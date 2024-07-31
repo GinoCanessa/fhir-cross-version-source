@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 24 |
-Equivalent | 4 |
-RelatedTo | 44 |
+Equivalent | 32 |
+SourceIsBroaderThanTarget | 15 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -38,7 +39,7 @@ RelatedTo | 44 |
 | SpecimenDefinition.identifier | SpecimenDefinition.identifier | Equivalent | R5 `SpecimenDefinition.identifier` maps as Equivalent to R4 `SpecimenDefinition.identifier` |
 | SpecimenDefinition.implicitRules | SpecimenDefinition.implicitRules | Equivalent | R5 `SpecimenDefinition.implicitRules` maps as Equivalent to R4 `SpecimenDefinition.implicitRules` |
 | SpecimenDefinition.jurisdiction | - | DoesNotExistInTarget | R5 `SpecimenDefinition.jurisdiction` does not appear in the target and has no mapping for `SpecimenDefinition`. |
-| SpecimenDefinition.language | SpecimenDefinition.language | RelatedTo | R5 `SpecimenDefinition.language` maps as RelatedTo to R4 `SpecimenDefinition.language` - language changed the binding strength from Required to Preferred |
+| SpecimenDefinition.language | SpecimenDefinition.language | SourceIsNarrowerThanTarget | R5 `SpecimenDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `SpecimenDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | SpecimenDefinition.lastReviewDate | - | DoesNotExistInTarget | R5 `SpecimenDefinition.lastReviewDate` does not appear in the target and has no mapping for `SpecimenDefinition`. |
 | SpecimenDefinition.meta | SpecimenDefinition.meta | Equivalent | R5 `SpecimenDefinition.meta` maps as Equivalent to R4 `SpecimenDefinition.meta` |
 | SpecimenDefinition.modifierExtension | SpecimenDefinition.modifierExtension | SourceIsBroaderThanTarget | R5 `SpecimenDefinition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SpecimenDefinition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -55,7 +56,7 @@ RelatedTo | 44 |
 | SpecimenDefinition.typeTested | SpecimenDefinition.typeTested | Equivalent | R5 `SpecimenDefinition.typeTested` maps as Equivalent to R4 `SpecimenDefinition.typeTested` |
 | SpecimenDefinition.typeTested.container | SpecimenDefinition.typeTested.container | Equivalent | R5 `SpecimenDefinition.typeTested.container` maps as Equivalent to R4 `SpecimenDefinition.typeTested.container` |
 | SpecimenDefinition.typeTested.container.additive | SpecimenDefinition.typeTested.container.additive | Equivalent | R5 `SpecimenDefinition.typeTested.container.additive` maps as Equivalent to R4 `SpecimenDefinition.typeTested.container.additive` |
-| SpecimenDefinition.typeTested.container.additive.additive[x] | SpecimenDefinition.typeTested.container.additive.additive[x] | RelatedTo | R5 `SpecimenDefinition.typeTested.container.additive.additive[x]` maps as RelatedTo to R4 `SpecimenDefinition.typeTested.container.additive.additive[x]` - additive[x] has change due to type change: R5 `additive[x]` `Reference` maps as RelatedTo for R4 `additive[x]` |
+| SpecimenDefinition.typeTested.container.additive.additive[x] | SpecimenDefinition.typeTested.container.additive.additive[x] | SourceIsBroaderThanTarget | R5 `SpecimenDefinition.typeTested.container.additive.additive[x]` maps as SourceIsBroaderThanTarget to R4 `SpecimenDefinition.typeTested.container.additive.additive[x]` - additive[x] has change due to type change: R5 `additive[x]` `Reference` maps as RelatedTo for R4 `additive[x]` |
 | SpecimenDefinition.typeTested.container.additive.extension | SpecimenDefinition.typeTested.container.additive.extension | SourceIsBroaderThanTarget | R5 `SpecimenDefinition.typeTested.container.additive.extension` maps as SourceIsBroaderThanTarget to R4 `SpecimenDefinition.typeTested.container.additive.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | SpecimenDefinition.typeTested.container.additive.id | SpecimenDefinition.typeTested.container.additive.id | Equivalent | R5 `SpecimenDefinition.typeTested.container.additive.id` maps as Equivalent to R4 `SpecimenDefinition.typeTested.container.additive.id` |
 | SpecimenDefinition.typeTested.container.additive.modifierExtension | SpecimenDefinition.typeTested.container.additive.modifierExtension | SourceIsBroaderThanTarget | R5 `SpecimenDefinition.typeTested.container.additive.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `SpecimenDefinition.typeTested.container.additive.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

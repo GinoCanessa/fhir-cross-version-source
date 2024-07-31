@@ -6,7 +6,7 @@
   "title": "Cross-Version Extension for FHIR R5:SupplyDelivery.suppliedItem compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `SupplyDelivery.suppliedItem` maps as RelatedTo to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
+  "description": "R5 `SupplyDelivery.suppliedItem` maps as SourceIsBroaderThanTarget to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "The item that is delivered or supplied",
         "definition": "The item that is being delivered or has been supplied.",
-        "comment": "R5 `SupplyDelivery.suppliedItem` maps as RelatedTo to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
+        "comment": "R5 `SupplyDelivery.suppliedItem` maps as SourceIsBroaderThanTarget to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "base": {
@@ -433,7 +433,7 @@
         "path": "Extension",
         "short": "The item that is delivered or supplied",
         "definition": "The item that is being delivered or has been supplied.",
-        "comment": "R5 `SupplyDelivery.suppliedItem` maps as RelatedTo to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
+        "comment": "R5 `SupplyDelivery.suppliedItem` maps as SourceIsBroaderThanTarget to R4 `SupplyDelivery.suppliedItem` - suppliedItem changed from array to scalar (max cardinality from * to 1)",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -464,20 +464,28 @@
       },
       {
         "path": "Extension.extension:item[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:item[x].extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
+              "http://hl7.org/fhir/StructureDefinition/NutritionProduct",
+              "http://hl7.org/fhir/StructureDefinition/InventoryItem"
             ]
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "SupplyDeliverySupplyItemType"
+            }
+          ],
+          "strength": "example",
+          "description": "The item that was delivered.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/supplydelivery-supplyitemtype"
+        }
       },
       {
         "path": "Extension.extension:item[x].url",

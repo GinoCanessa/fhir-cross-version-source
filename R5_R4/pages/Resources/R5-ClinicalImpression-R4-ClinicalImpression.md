@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 3 |
-Equivalent | 4 |
-RelatedTo | 26 |
+DoesNotExistInTarget | 1 |
+Equivalent | 25 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 5 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -32,16 +34,17 @@ RelatedTo | 26 |
 | ClinicalImpression.finding.basis | ClinicalImpression.finding.basis | Equivalent | R5 `ClinicalImpression.finding.basis` maps as Equivalent to R4 `ClinicalImpression.finding.basis` |
 | ClinicalImpression.finding.extension | ClinicalImpression.finding.extension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.finding.extension` maps as SourceIsBroaderThanTarget to R4 `ClinicalImpression.finding.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ClinicalImpression.finding.id | ClinicalImpression.finding.id | Equivalent | R5 `ClinicalImpression.finding.id` maps as Equivalent to R4 `ClinicalImpression.finding.id` |
-| ClinicalImpression.finding.item | - | DoesNotExistInTarget | R5 `ClinicalImpression.finding.item` does not appear in the target and has no mapping for `ClinicalImpression`. |
+| ClinicalImpression.finding.item | ClinicalImpression.finding.itemCodeableConcept | SourceIsBroaderThanTarget | R5 `ClinicalImpression.finding.item` maps as SourceIsBroaderThanTarget to R4 `ClinicalImpression.finding.itemCodeableConcept` - itemCodeableConcept has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 itemCodeableConcept |
+| ClinicalImpression.finding.item | ClinicalImpression.finding.itemReference | RelatedTo | R5 `ClinicalImpression.finding.item` maps as RelatedTo to R4 `ClinicalImpression.finding.itemReference` - itemReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/condition-code; itemReference has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 itemReference |
 | ClinicalImpression.finding.modifierExtension | ClinicalImpression.finding.modifierExtension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.finding.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ClinicalImpression.finding.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ClinicalImpression.id | ClinicalImpression.id | Equivalent | R5 `ClinicalImpression.id` maps as Equivalent to R4 `ClinicalImpression.id` |
 | ClinicalImpression.identifier | ClinicalImpression.identifier | Equivalent | R5 `ClinicalImpression.identifier` maps as Equivalent to R4 `ClinicalImpression.identifier` |
 | ClinicalImpression.implicitRules | ClinicalImpression.implicitRules | Equivalent | R5 `ClinicalImpression.implicitRules` maps as Equivalent to R4 `ClinicalImpression.implicitRules` |
-| ClinicalImpression.language | ClinicalImpression.language | RelatedTo | R5 `ClinicalImpression.language` maps as RelatedTo to R4 `ClinicalImpression.language` - language changed the binding strength from Required to Preferred |
+| ClinicalImpression.language | ClinicalImpression.language | SourceIsNarrowerThanTarget | R5 `ClinicalImpression.language` maps as SourceIsNarrowerThanTarget to R4 `ClinicalImpression.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ClinicalImpression.meta | ClinicalImpression.meta | Equivalent | R5 `ClinicalImpression.meta` maps as Equivalent to R4 `ClinicalImpression.meta` |
 | ClinicalImpression.modifierExtension | ClinicalImpression.modifierExtension | SourceIsBroaderThanTarget | R5 `ClinicalImpression.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ClinicalImpression.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ClinicalImpression.note | ClinicalImpression.note | SourceIsBroaderThanTarget | R5 `ClinicalImpression.note` maps as SourceIsBroaderThanTarget to R4 `ClinicalImpression.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
-| ClinicalImpression.performer | - | DoesNotExistInTarget | R5 `ClinicalImpression.performer` does not appear in the target and has no mapping for `ClinicalImpression`. |
+| ClinicalImpression.performer | ClinicalImpression.assessor | Equivalent | R5 `ClinicalImpression.performer` maps as Equivalent to R4 `ClinicalImpression.assessor` |
 | ClinicalImpression.previous | ClinicalImpression.previous | Equivalent | R5 `ClinicalImpression.previous` maps as Equivalent to R4 `ClinicalImpression.previous` |
 | ClinicalImpression.problem | ClinicalImpression.problem | Equivalent | R5 `ClinicalImpression.problem` maps as Equivalent to R4 `ClinicalImpression.problem` |
 | ClinicalImpression.prognosisCodeableConcept | ClinicalImpression.prognosisCodeableConcept | Equivalent | R5 `ClinicalImpression.prognosisCodeableConcept` maps as Equivalent to R4 `ClinicalImpression.prognosisCodeableConcept` |

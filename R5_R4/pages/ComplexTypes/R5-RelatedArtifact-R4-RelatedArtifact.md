@@ -6,7 +6,7 @@ Comparison of hl7.fhir.r5.core#5.0.0 and hl7.fhir.r4.core#4.0.1
 | Target | RelatedArtifact |  | Base StructureDefinition for RelatedArtifact Type: Related artifacts such as additional documentation, justification, or bibliographic references. | 10 | 8 |
 
 
-Comparison Result: Equivalent
+Comparison Result: SourceIsBroaderThanTarget
 
 
 ### Mapping details

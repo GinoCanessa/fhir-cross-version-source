@@ -30,7 +30,7 @@
             {
               "code": "SupplyDelivery.basedOn",
               "display": "Fulfills plan, proposal or order",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.basedOn\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.basedOn\u0060"
             }
           ]
@@ -42,7 +42,7 @@
             {
               "code": "SupplyDelivery.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.contained\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.contained\u0060"
             }
           ]
@@ -54,7 +54,7 @@
             {
               "code": "SupplyDelivery.destination",
               "display": "Where the Supply was sent",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.destination\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.destination\u0060"
             }
           ]
@@ -66,7 +66,7 @@
             {
               "code": "SupplyDelivery.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -90,7 +90,7 @@
             {
               "code": "SupplyDelivery.identifier",
               "display": "External identifier",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.identifier\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.identifier\u0060"
             }
           ]
@@ -114,8 +114,8 @@
             {
               "code": "SupplyDelivery.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SupplyDelivery.language\u0060 maps as RelatedTo to R4 \u0060SupplyDelivery.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060SupplyDelivery.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060SupplyDelivery.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -138,7 +138,7 @@
             {
               "code": "SupplyDelivery.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -150,7 +150,7 @@
             {
               "code": "SupplyDelivery.occurrence[x]",
               "display": "When event occurred",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.occurrence[x]\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.occurrence[x]\u0060"
             }
           ]
@@ -162,7 +162,7 @@
             {
               "code": "SupplyDelivery.partOf",
               "display": "Part of referenced event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.partOf\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.partOf\u0060"
             }
           ]
@@ -174,7 +174,7 @@
             {
               "code": "SupplyDelivery.patient",
               "display": "Patient for whom the item is supplied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.patient\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.patient\u0060"
             }
           ]
@@ -186,7 +186,7 @@
             {
               "code": "SupplyDelivery.receiver",
               "display": "Who collected the Supply",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.receiver\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.receiver\u0060 - receiver has change due to type change: R5 \u0060receiver\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060receiver\u0060"
             }
           ]
@@ -198,7 +198,7 @@
             {
               "code": "SupplyDelivery.status",
               "display": "in-progress | completed | abandoned | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.status\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/supplydelivery-status|5.0.0 and http://hl7.org/fhir/ValueSet/supplydelivery-status|4.0.1 (Equivalent)"
             }
           ]
@@ -210,8 +210,8 @@
             {
               "code": "SupplyDelivery.suppliedItem",
               "display": "The item that is delivered or supplied",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SupplyDelivery.suppliedItem\u0060 maps as RelatedTo to R4 \u0060SupplyDelivery.suppliedItem\u0060 - suppliedItem changed from array to scalar (max cardinality from * to 1)"
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SupplyDelivery.suppliedItem\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.suppliedItem\u0060 - suppliedItem changed from array to scalar (max cardinality from * to 1)"
             }
           ]
         },
@@ -222,7 +222,7 @@
             {
               "code": "SupplyDelivery.suppliedItem.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.suppliedItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.suppliedItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -234,7 +234,7 @@
             {
               "code": "SupplyDelivery.suppliedItem.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.suppliedItem.id\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.suppliedItem.id\u0060"
             }
           ]
@@ -246,7 +246,7 @@
             {
               "code": "SupplyDelivery.suppliedItem.item[x]",
               "display": "Medication, Substance, or Device supplied",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.suppliedItem.item[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.suppliedItem.item[x]\u0060 - item[x] has change due to type change: R5 \u0060item[x]\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060item[x]\u0060"
             }
           ]
@@ -258,7 +258,7 @@
             {
               "code": "SupplyDelivery.suppliedItem.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyDelivery.suppliedItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyDelivery.suppliedItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -270,7 +270,7 @@
             {
               "code": "SupplyDelivery.suppliedItem.quantity",
               "display": "Amount dispensed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.suppliedItem.quantity\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.suppliedItem.quantity\u0060"
             }
           ]
@@ -282,7 +282,7 @@
             {
               "code": "SupplyDelivery.supplier",
               "display": "Dispenser",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.supplier\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.supplier\u0060"
             }
           ]
@@ -294,7 +294,7 @@
             {
               "code": "SupplyDelivery.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.text\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.text\u0060"
             }
           ]
@@ -306,7 +306,7 @@
             {
               "code": "SupplyDelivery.type",
               "display": "Category of dispense event",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyDelivery.type\u0060 maps as Equivalent to R4 \u0060SupplyDelivery.type\u0060 - type has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/supplydelivery-supplyitemtype|5.0.0 and http://hl7.org/fhir/ValueSet/supplydelivery-type|4.0.1 (Equivalent)"
             }
           ]

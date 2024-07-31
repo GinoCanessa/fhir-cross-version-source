@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 8 |
-Equivalent | 4 |
-RelatedTo | 20 |
+Equivalent | 18 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -37,7 +39,7 @@ RelatedTo | 20 |
 | Person.id | Person.id | Equivalent | R5 `Person.id` maps as Equivalent to R4 `Person.id` |
 | Person.identifier | Person.identifier | Equivalent | R5 `Person.identifier` maps as Equivalent to R4 `Person.identifier` |
 | Person.implicitRules | Person.implicitRules | Equivalent | R5 `Person.implicitRules` maps as Equivalent to R4 `Person.implicitRules` |
-| Person.language | Person.language | RelatedTo | R5 `Person.language` maps as RelatedTo to R4 `Person.language` - language changed the binding strength from Required to Preferred |
+| Person.language | Person.language | SourceIsNarrowerThanTarget | R5 `Person.language` maps as SourceIsNarrowerThanTarget to R4 `Person.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Person.link | Person.link | Equivalent | R5 `Person.link` maps as Equivalent to R4 `Person.link` |
 | Person.link.assurance | Person.link.assurance | Equivalent | R5 `Person.link.assurance` maps as Equivalent to R4 `Person.link.assurance` - assurance has compatible required binding for code type: http://hl7.org/fhir/ValueSet/identity-assuranceLevel|5.0.0 and http://hl7.org/fhir/ValueSet/identity-assuranceLevel|4.0.1 (Equivalent) |
 | Person.link.extension | Person.link.extension | SourceIsBroaderThanTarget | R5 `Person.link.extension` maps as SourceIsBroaderThanTarget to R4 `Person.link.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |

@@ -14,8 +14,10 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 28 |
-Equivalent | 4 |
-RelatedTo | 78 |
+Equivalent | 52 |
+RelatedTo | 4 |
+SourceIsBroaderThanTarget | 21 |
+SourceIsNarrowerThanTarget | 5 |
 
 
 | Source | Target | Status | Message |
@@ -40,7 +42,7 @@ RelatedTo | 78 |
 | Measure.extension | Measure.extension | SourceIsBroaderThanTarget | R5 `Measure.extension` maps as SourceIsBroaderThanTarget to R4 `Measure.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Measure.group | Measure.group | Equivalent | R5 `Measure.group` maps as Equivalent to R4 `Measure.group` |
 | Measure.group.basis | - | DoesNotExistInTarget | R5 `Measure.group.basis` does not appear in the target and has no mapping for `Measure`. |
-| Measure.group.code | Measure.group.code | RelatedTo | R5 `Measure.group.code` maps as RelatedTo to R4 `Measure.group.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-group-example |
+| Measure.group.code | Measure.group.code | SourceIsNarrowerThanTarget | R5 `Measure.group.code` maps as SourceIsNarrowerThanTarget to R4 `Measure.group.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-group-example; code has change due to type change: R5 `code` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `code` |
 | Measure.group.description | Measure.group.description | SourceIsBroaderThanTarget | R5 `Measure.group.description` maps as SourceIsBroaderThanTarget to R4 `Measure.group.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | Measure.group.extension | Measure.group.extension | SourceIsBroaderThanTarget | R5 `Measure.group.extension` maps as SourceIsBroaderThanTarget to R4 `Measure.group.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Measure.group.id | Measure.group.id | Equivalent | R5 `Measure.group.id` maps as Equivalent to R4 `Measure.group.id` |
@@ -63,9 +65,9 @@ RelatedTo | 78 |
 | Measure.group.scoring | - | DoesNotExistInTarget | R5 `Measure.group.scoring` does not appear in the target and has no mapping for `Measure`. |
 | Measure.group.scoringUnit | - | DoesNotExistInTarget | R5 `Measure.group.scoringUnit` does not appear in the target and has no mapping for `Measure`. |
 | Measure.group.stratifier | Measure.group.stratifier | Equivalent | R5 `Measure.group.stratifier` maps as Equivalent to R4 `Measure.group.stratifier` |
-| Measure.group.stratifier.code | Measure.group.stratifier.code | RelatedTo | R5 `Measure.group.stratifier.code` maps as RelatedTo to R4 `Measure.group.stratifier.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example |
+| Measure.group.stratifier.code | Measure.group.stratifier.code | SourceIsNarrowerThanTarget | R5 `Measure.group.stratifier.code` maps as SourceIsNarrowerThanTarget to R4 `Measure.group.stratifier.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example; code has change due to type change: R5 `code` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `code` |
 | Measure.group.stratifier.component | Measure.group.stratifier.component | Equivalent | R5 `Measure.group.stratifier.component` maps as Equivalent to R4 `Measure.group.stratifier.component` |
-| Measure.group.stratifier.component.code | Measure.group.stratifier.component.code | RelatedTo | R5 `Measure.group.stratifier.component.code` maps as RelatedTo to R4 `Measure.group.stratifier.component.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example |
+| Measure.group.stratifier.component.code | Measure.group.stratifier.component.code | SourceIsNarrowerThanTarget | R5 `Measure.group.stratifier.component.code` maps as SourceIsNarrowerThanTarget to R4 `Measure.group.stratifier.component.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-stratifier-example; code has change due to type change: R5 `code` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `code` |
 | Measure.group.stratifier.component.criteria | Measure.group.stratifier.component.criteria | RelatedTo | R5 `Measure.group.stratifier.component.criteria` maps as RelatedTo to R4 `Measure.group.stratifier.component.criteria` - criteria made the element mandatory; criteria increased the minimum cardinality from 0 to 1; criteria has change due to type change: R5 `criteria` `Expression` maps as RelatedTo for R4 `criteria` |
 | Measure.group.stratifier.component.description | Measure.group.stratifier.component.description | SourceIsBroaderThanTarget | R5 `Measure.group.stratifier.component.description` maps as SourceIsBroaderThanTarget to R4 `Measure.group.stratifier.component.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | Measure.group.stratifier.component.extension | Measure.group.stratifier.component.extension | SourceIsBroaderThanTarget | R5 `Measure.group.stratifier.component.extension` maps as SourceIsBroaderThanTarget to R4 `Measure.group.stratifier.component.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -88,7 +90,7 @@ RelatedTo | 78 |
 | Measure.implicitRules | Measure.implicitRules | Equivalent | R5 `Measure.implicitRules` maps as Equivalent to R4 `Measure.implicitRules` |
 | Measure.improvementNotation | Measure.improvementNotation | Equivalent | R5 `Measure.improvementNotation` maps as Equivalent to R4 `Measure.improvementNotation` - improvementNotation has compatible required binding for non-code type: http://hl7.org/fhir/ValueSet/measure-improvement-notation|5.0.0 and http://hl7.org/fhir/ValueSet/measure-improvement-notation|4.0.1 (Equivalent) |
 | Measure.jurisdiction | Measure.jurisdiction | Equivalent | R5 `Measure.jurisdiction` maps as Equivalent to R4 `Measure.jurisdiction` |
-| Measure.language | Measure.language | RelatedTo | R5 `Measure.language` maps as RelatedTo to R4 `Measure.language` - language changed the binding strength from Required to Preferred |
+| Measure.language | Measure.language | SourceIsNarrowerThanTarget | R5 `Measure.language` maps as SourceIsNarrowerThanTarget to R4 `Measure.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Measure.lastReviewDate | Measure.lastReviewDate | Equivalent | R5 `Measure.lastReviewDate` maps as Equivalent to R4 `Measure.lastReviewDate` |
 | Measure.library | Measure.library | Equivalent | R5 `Measure.library` maps as Equivalent to R4 `Measure.library` |
 | Measure.meta | Measure.meta | Equivalent | R5 `Measure.meta` maps as Equivalent to R4 `Measure.meta` |
@@ -98,7 +100,7 @@ RelatedTo | 78 |
 | Measure.purpose | Measure.purpose | Equivalent | R5 `Measure.purpose` maps as Equivalent to R4 `Measure.purpose` |
 | Measure.rateAggregation | Measure.rateAggregation | SourceIsBroaderThanTarget | R5 `Measure.rateAggregation` maps as SourceIsBroaderThanTarget to R4 `Measure.rateAggregation` - rateAggregation has change due to type change: R5 rateAggregation markdown has no equivalent or mapped type in R4 rateAggregation |
 | Measure.rationale | Measure.rationale | Equivalent | R5 `Measure.rationale` maps as Equivalent to R4 `Measure.rationale` |
-| Measure.relatedArtifact | Measure.relatedArtifact | Equivalent | R5 `Measure.relatedArtifact` maps as Equivalent to R4 `Measure.relatedArtifact` |
+| Measure.relatedArtifact | Measure.relatedArtifact | SourceIsBroaderThanTarget | R5 `Measure.relatedArtifact` maps as SourceIsBroaderThanTarget to R4 `Measure.relatedArtifact` - relatedArtifact has change due to type change: R5 `relatedArtifact` `RelatedArtifact` maps as SourceIsBroaderThanTarget for R4 `relatedArtifact` |
 | Measure.reviewer | Measure.reviewer | Equivalent | R5 `Measure.reviewer` maps as Equivalent to R4 `Measure.reviewer` |
 | Measure.riskAdjustment | Measure.riskAdjustment | SourceIsBroaderThanTarget | R5 `Measure.riskAdjustment` maps as SourceIsBroaderThanTarget to R4 `Measure.riskAdjustment` - riskAdjustment has change due to type change: R5 riskAdjustment markdown has no equivalent or mapped type in R4 riskAdjustment |
 | Measure.scoring | Measure.scoring | Equivalent | R5 `Measure.scoring` maps as Equivalent to R4 `Measure.scoring` |
@@ -107,7 +109,7 @@ RelatedTo | 78 |
 | Measure.subject[x] | Measure.subject[x] | Equivalent | R5 `Measure.subject[x]` maps as Equivalent to R4 `Measure.subject[x]` |
 | Measure.subtitle | Measure.subtitle | Equivalent | R5 `Measure.subtitle` maps as Equivalent to R4 `Measure.subtitle` |
 | Measure.supplementalData | Measure.supplementalData | Equivalent | R5 `Measure.supplementalData` maps as Equivalent to R4 `Measure.supplementalData` |
-| Measure.supplementalData.code | Measure.supplementalData.code | RelatedTo | R5 `Measure.supplementalData.code` maps as RelatedTo to R4 `Measure.supplementalData.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-supplemental-data-example |
+| Measure.supplementalData.code | Measure.supplementalData.code | SourceIsNarrowerThanTarget | R5 `Measure.supplementalData.code` maps as SourceIsNarrowerThanTarget to R4 `Measure.supplementalData.code` - code removed a binding requirement - Example http://hl7.org/fhir/ValueSet/measure-supplemental-data-example; code has change due to type change: R5 `code` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `code` |
 | Measure.supplementalData.criteria | Measure.supplementalData.criteria | RelatedTo | R5 `Measure.supplementalData.criteria` maps as RelatedTo to R4 `Measure.supplementalData.criteria` - criteria has change due to type change: R5 `criteria` `Expression` maps as RelatedTo for R4 `criteria` |
 | Measure.supplementalData.description | Measure.supplementalData.description | SourceIsBroaderThanTarget | R5 `Measure.supplementalData.description` maps as SourceIsBroaderThanTarget to R4 `Measure.supplementalData.description` - description has change due to type change: R5 description markdown has no equivalent or mapped type in R4 description |
 | Measure.supplementalData.extension | Measure.supplementalData.extension | SourceIsBroaderThanTarget | R5 `Measure.supplementalData.extension` maps as SourceIsBroaderThanTarget to R4 `Measure.supplementalData.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |

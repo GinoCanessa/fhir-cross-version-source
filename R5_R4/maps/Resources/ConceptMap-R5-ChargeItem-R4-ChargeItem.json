@@ -28,38 +28,14 @@
       "target": "http://hl7.org/fhir/StructureDefinition/ChargeItem",
       "element": [
         {
-          "code": "ChargeItem.encounter",
-          "target": [
-            {
-              "code": "ChargeItem.context",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "ChargeItem.product",
-          "target": [
-            {
-              "code": "ChargeItem.product[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/ChargeItem",
-      "target": "http://hl7.org/fhir/StructureDefinition/ChargeItem",
-      "element": [
-        {
           "code": "ChargeItem",
           "display": "Item containing charge code(s) associated with the provision of healthcare provider products",
           "target": [
             {
               "code": "ChargeItem",
               "display": "Item containing charge code(s) associated with the provision of healthcare provider products",
-              "relationship": "equivalent",
-              "comment": "R5 \u0060ChargeItem\u0060 maps as Equivalent to R4 \u0060ChargeItem\u0060"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ChargeItem\u0060 is narrower than R4 \u0060ChargeItem\u0060 and is compatible. \u0060ChargeItem\u0060 is mapped from \u0060ChargeItem\u0060 and \u0060ChargeItem.totalPriceComponent\u0060."
             }
           ]
         },
@@ -70,7 +46,7 @@
             {
               "code": "ChargeItem.account",
               "display": "Account to place this charge",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.account\u0060 maps as Equivalent to R4 \u0060ChargeItem.account\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "ChargeItem.bodysite",
               "display": "Anatomical location, if relevant",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.bodysite\u0060 maps as Equivalent to R4 \u0060ChargeItem.bodysite\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "ChargeItem.code",
               "display": "A code that identifies the charge, like a billing code",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.code\u0060 maps as Equivalent to R4 \u0060ChargeItem.code\u0060"
             }
           ]
@@ -106,7 +82,7 @@
             {
               "code": "ChargeItem.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.contained\u0060 maps as Equivalent to R4 \u0060ChargeItem.contained\u0060"
             }
           ]
@@ -118,7 +94,7 @@
             {
               "code": "ChargeItem.costCenter",
               "display": "Organization that has ownership of the (potential, future) revenue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.costCenter\u0060 maps as Equivalent to R4 \u0060ChargeItem.costCenter\u0060"
             }
           ]
@@ -130,7 +106,7 @@
             {
               "code": "ChargeItem.definitionCanonical",
               "display": "Resource defining the code of this ChargeItem",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.definitionCanonical\u0060 maps as Equivalent to R4 \u0060ChargeItem.definitionCanonical\u0060"
             }
           ]
@@ -142,15 +118,21 @@
             {
               "code": "ChargeItem.definitionUri",
               "display": "Defining information about the code of this charge item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.definitionUri\u0060 maps as Equivalent to R4 \u0060ChargeItem.definitionUri\u0060"
             }
           ]
         },
         {
           "code": "ChargeItem.encounter",
-          "display": "Encounter associated with this ChargeItem",
-          "noMap": true
+          "target": [
+            {
+              "code": "ChargeItem.context",
+              "display": "Encounter / Episode associated with event",
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ChargeItem.encounter\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ChargeItem.context\u0060 - context has change due to type change: R5 \u0060encounter\u0060 \u0060Reference\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060context\u0060"
+            }
+          ]
         },
         {
           "code": "ChargeItem.enteredDate",
@@ -159,7 +141,7 @@
             {
               "code": "ChargeItem.enteredDate",
               "display": "Date the charge item was entered",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.enteredDate\u0060 maps as Equivalent to R4 \u0060ChargeItem.enteredDate\u0060"
             }
           ]
@@ -171,7 +153,7 @@
             {
               "code": "ChargeItem.enterer",
               "display": "Individual who was entering",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.enterer\u0060 maps as Equivalent to R4 \u0060ChargeItem.enterer\u0060"
             }
           ]
@@ -183,7 +165,7 @@
             {
               "code": "ChargeItem.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -207,7 +189,7 @@
             {
               "code": "ChargeItem.identifier",
               "display": "Business Identifier for item",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.identifier\u0060 maps as Equivalent to R4 \u0060ChargeItem.identifier\u0060"
             }
           ]
@@ -231,8 +213,8 @@
             {
               "code": "ChargeItem.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060ChargeItem.language\u0060 maps as RelatedTo to R4 \u0060ChargeItem.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060ChargeItem.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060ChargeItem.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -255,7 +237,7 @@
             {
               "code": "ChargeItem.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -267,7 +249,7 @@
             {
               "code": "ChargeItem.note",
               "display": "Comments made about the ChargeItem",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -279,7 +261,7 @@
             {
               "code": "ChargeItem.occurrence[x]",
               "display": "When the charged service was applied",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.occurrence[x]\u0060 maps as Equivalent to R4 \u0060ChargeItem.occurrence[x]\u0060"
             }
           ]
@@ -303,7 +285,7 @@
             {
               "code": "ChargeItem.partOf",
               "display": "Part of referenced ChargeItem",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.partOf\u0060 maps as Equivalent to R4 \u0060ChargeItem.partOf\u0060"
             }
           ]
@@ -315,7 +297,7 @@
             {
               "code": "ChargeItem.performer",
               "display": "Who performed charged service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.performer\u0060 maps as Equivalent to R4 \u0060ChargeItem.performer\u0060"
             }
           ]
@@ -327,7 +309,7 @@
             {
               "code": "ChargeItem.performer.actor",
               "display": "Individual who was performing",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.performer.actor\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.performer.actor\u0060 - actor has change due to type change: R5 \u0060actor\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060actor\u0060"
             }
           ]
@@ -339,7 +321,7 @@
             {
               "code": "ChargeItem.performer.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.performer.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.performer.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -351,7 +333,7 @@
             {
               "code": "ChargeItem.performer.function",
               "display": "What type of performance was done",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.performer.function\u0060 maps as Equivalent to R4 \u0060ChargeItem.performer.function\u0060"
             }
           ]
@@ -363,7 +345,7 @@
             {
               "code": "ChargeItem.performer.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.performer.id\u0060 maps as Equivalent to R4 \u0060ChargeItem.performer.id\u0060"
             }
           ]
@@ -375,7 +357,7 @@
             {
               "code": "ChargeItem.performer.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.performer.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.performer.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -387,15 +369,21 @@
             {
               "code": "ChargeItem.performingOrganization",
               "display": "Organization providing the charged service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.performingOrganization\u0060 maps as Equivalent to R4 \u0060ChargeItem.performingOrganization\u0060"
             }
           ]
         },
         {
           "code": "ChargeItem.product",
-          "display": "Product charged",
-          "noMap": true
+          "target": [
+            {
+              "code": "ChargeItem.product[x]",
+              "display": "Product charged",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060ChargeItem.product\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.product[x]\u0060 - product[x] changed from array to scalar (max cardinality from * to 1); product[x] has change due to type change: R5 product CodeableReference has no equivalent or mapped type in R4 product[x]"
+            }
+          ]
         },
         {
           "code": "ChargeItem.quantity",
@@ -404,7 +392,7 @@
             {
               "code": "ChargeItem.quantity",
               "display": "Quantity of which the charge item has been serviced",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.quantity\u0060 maps as Equivalent to R4 \u0060ChargeItem.quantity\u0060"
             }
           ]
@@ -416,7 +404,7 @@
             {
               "code": "ChargeItem.reason",
               "display": "Why was the charged  service rendered?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.reason\u0060 maps as Equivalent to R4 \u0060ChargeItem.reason\u0060"
             }
           ]
@@ -428,7 +416,7 @@
             {
               "code": "ChargeItem.requestingOrganization",
               "display": "Organization requesting the charged service",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.requestingOrganization\u0060 maps as Equivalent to R4 \u0060ChargeItem.requestingOrganization\u0060"
             }
           ]
@@ -440,7 +428,7 @@
             {
               "code": "ChargeItem.service",
               "display": "Which rendered service is being charged?",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060ChargeItem.service\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060ChargeItem.service\u0060 - service has change due to type change: R5 service CodeableReference has no equivalent or mapped type in R4 service"
             }
           ]
@@ -452,7 +440,7 @@
             {
               "code": "ChargeItem.status",
               "display": "planned | billable | not-billable | aborted | billed | entered-in-error | unknown",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.status\u0060 maps as Equivalent to R4 \u0060ChargeItem.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/chargeitem-status|5.0.0 and http://hl7.org/fhir/ValueSet/chargeitem-status|4.0.1 (Equivalent)"
             }
           ]
@@ -464,7 +452,7 @@
             {
               "code": "ChargeItem.subject",
               "display": "Individual service was done for/to",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.subject\u0060 maps as Equivalent to R4 \u0060ChargeItem.subject\u0060"
             }
           ]
@@ -476,7 +464,7 @@
             {
               "code": "ChargeItem.supportingInformation",
               "display": "Further information supporting this charge",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.supportingInformation\u0060 maps as Equivalent to R4 \u0060ChargeItem.supportingInformation\u0060"
             }
           ]
@@ -488,15 +476,21 @@
             {
               "code": "ChargeItem.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060ChargeItem.text\u0060 maps as Equivalent to R4 \u0060ChargeItem.text\u0060"
             }
           ]
         },
         {
           "code": "ChargeItem.totalPriceComponent",
-          "display": "Total price overriding the associated rules",
-          "noMap": true
+          "target": [
+            {
+              "code": "ChargeItem",
+              "display": "Item containing charge code(s) associated with the provision of healthcare provider products",
+              "relationship": "related-to",
+              "comment": "R5 \u0060ChargeItem.totalPriceComponent\u0060 maps as RelatedTo to R4 \u0060ChargeItem\u0060 - ChargeItem changed from scalar to array (max cardinality from 1 to *); ChargeItem has change due to type change: R5 type MonetaryComponent does not exist in R4"
+            }
+          ]
         },
         {
           "code": "ChargeItem.unitPriceComponent",

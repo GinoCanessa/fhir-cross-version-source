@@ -448,17 +448,14 @@
       },
       {
         "path": "Extension.extension:party.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:party.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ]
@@ -477,18 +474,10 @@
       },
       {
         "path": "Extension.extension:responsibility.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:responsibility.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },

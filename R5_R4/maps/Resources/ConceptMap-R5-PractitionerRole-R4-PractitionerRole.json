@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
       "element": [
         {
-          "code": "PractitionerRole.contact.telecom",
-          "target": [
-            {
-              "code": "PractitionerRole.telecom",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-      "target": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-      "element": [
-        {
           "code": "PractitionerRole",
           "display": "Roles/organizations the practitioner is associated with",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "PractitionerRole.active",
               "display": "Whether this practitioner role record is in active use",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.active\u0060 maps as Equivalent to R4 \u0060PractitionerRole.active\u0060"
             }
           ]
@@ -83,7 +68,7 @@
             {
               "code": "PractitionerRole.code",
               "display": "Roles which this practitioner may perform",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.code\u0060 maps as Equivalent to R4 \u0060PractitionerRole.code\u0060"
             }
           ]
@@ -99,13 +84,22 @@
           "noMap": true
         },
         {
+          "code": "PractitionerRole.contact.telecom",
+          "target": [
+            {
+              "code": "PractitionerRole.telecom",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
           "code": "PractitionerRole.contained",
           "display": "Contained, inline Resources",
           "target": [
             {
               "code": "PractitionerRole.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.contained\u0060 maps as Equivalent to R4 \u0060PractitionerRole.contained\u0060"
             }
           ]
@@ -117,7 +111,7 @@
             {
               "code": "PractitionerRole.endpoint",
               "display": "Technical endpoints providing access to services operated for the practitioner with this role",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.endpoint\u0060 maps as Equivalent to R4 \u0060PractitionerRole.endpoint\u0060"
             }
           ]
@@ -129,7 +123,7 @@
             {
               "code": "PractitionerRole.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PractitionerRole.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PractitionerRole.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -141,7 +135,7 @@
             {
               "code": "PractitionerRole.healthcareService",
               "display": "The list of healthcare services that this worker provides for this role\u0027s Organization/Location(s)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.healthcareService\u0060 maps as Equivalent to R4 \u0060PractitionerRole.healthcareService\u0060"
             }
           ]
@@ -165,7 +159,7 @@
             {
               "code": "PractitionerRole.identifier",
               "display": "Business Identifiers that are specific to a role/location",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.identifier\u0060 maps as Equivalent to R4 \u0060PractitionerRole.identifier\u0060"
             }
           ]
@@ -189,8 +183,8 @@
             {
               "code": "PractitionerRole.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060PractitionerRole.language\u0060 maps as RelatedTo to R4 \u0060PractitionerRole.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060PractitionerRole.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060PractitionerRole.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -201,7 +195,7 @@
             {
               "code": "PractitionerRole.location",
               "display": "The location(s) at which this practitioner provides care",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.location\u0060 maps as Equivalent to R4 \u0060PractitionerRole.location\u0060"
             }
           ]
@@ -225,7 +219,7 @@
             {
               "code": "PractitionerRole.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060PractitionerRole.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060PractitionerRole.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -237,7 +231,7 @@
             {
               "code": "PractitionerRole.organization",
               "display": "Organization where the roles are available",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.organization\u0060 maps as Equivalent to R4 \u0060PractitionerRole.organization\u0060"
             }
           ]
@@ -249,7 +243,7 @@
             {
               "code": "PractitionerRole.period",
               "display": "The period during which the practitioner is authorized to perform in these role(s)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.period\u0060 maps as Equivalent to R4 \u0060PractitionerRole.period\u0060"
             }
           ]
@@ -261,7 +255,7 @@
             {
               "code": "PractitionerRole.practitioner",
               "display": "Practitioner that is able to provide the defined services for the organization",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.practitioner\u0060 maps as Equivalent to R4 \u0060PractitionerRole.practitioner\u0060"
             }
           ]
@@ -273,7 +267,7 @@
             {
               "code": "PractitionerRole.specialty",
               "display": "Specific specialty of the practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.specialty\u0060 maps as Equivalent to R4 \u0060PractitionerRole.specialty\u0060"
             }
           ]
@@ -285,7 +279,7 @@
             {
               "code": "PractitionerRole.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060PractitionerRole.text\u0060 maps as Equivalent to R4 \u0060PractitionerRole.text\u0060"
             }
           ]

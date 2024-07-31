@@ -462,20 +462,23 @@
       },
       {
         "path": "Extension.extension:mode.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:mode.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DocumentAttestationMode"
+            }
+          ],
+          "strength": "preferred",
+          "description": "The way in which a person authenticated a document.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/composition-attestation-mode"
+        }
       },
       {
         "path": "Extension.extension:mode.url",
@@ -491,18 +494,10 @@
       },
       {
         "path": "Extension.extension:time.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:time.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },
@@ -520,17 +515,16 @@
       },
       {
         "path": "Extension.extension:party.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:party.extension:Reference",
-        "sliceName": "Reference",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
             ]
           }
         ]

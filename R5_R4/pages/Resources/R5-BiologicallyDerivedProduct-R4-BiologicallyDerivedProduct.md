@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 12 |
-Equivalent | 4 |
-RelatedTo | 17 |
+DoesNotExistInTarget | 11 |
+Equivalent | 15 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -36,14 +38,14 @@ RelatedTo | 17 |
 | BiologicallyDerivedProduct.id | BiologicallyDerivedProduct.id | Equivalent | R5 `BiologicallyDerivedProduct.id` maps as Equivalent to R4 `BiologicallyDerivedProduct.id` |
 | BiologicallyDerivedProduct.identifier | BiologicallyDerivedProduct.identifier | Equivalent | R5 `BiologicallyDerivedProduct.identifier` maps as Equivalent to R4 `BiologicallyDerivedProduct.identifier` |
 | BiologicallyDerivedProduct.implicitRules | BiologicallyDerivedProduct.implicitRules | Equivalent | R5 `BiologicallyDerivedProduct.implicitRules` maps as Equivalent to R4 `BiologicallyDerivedProduct.implicitRules` |
-| BiologicallyDerivedProduct.language | BiologicallyDerivedProduct.language | RelatedTo | R5 `BiologicallyDerivedProduct.language` maps as RelatedTo to R4 `BiologicallyDerivedProduct.language` - language changed the binding strength from Required to Preferred |
+| BiologicallyDerivedProduct.language | BiologicallyDerivedProduct.language | SourceIsNarrowerThanTarget | R5 `BiologicallyDerivedProduct.language` maps as SourceIsNarrowerThanTarget to R4 `BiologicallyDerivedProduct.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | BiologicallyDerivedProduct.meta | BiologicallyDerivedProduct.meta | Equivalent | R5 `BiologicallyDerivedProduct.meta` maps as Equivalent to R4 `BiologicallyDerivedProduct.meta` |
 | BiologicallyDerivedProduct.modifierExtension | BiologicallyDerivedProduct.modifierExtension | SourceIsBroaderThanTarget | R5 `BiologicallyDerivedProduct.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `BiologicallyDerivedProduct.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | BiologicallyDerivedProduct.parent | BiologicallyDerivedProduct.parent | Equivalent | R5 `BiologicallyDerivedProduct.parent` maps as Equivalent to R4 `BiologicallyDerivedProduct.parent` |
 | BiologicallyDerivedProduct.processingFacility | - | DoesNotExistInTarget | R5 `BiologicallyDerivedProduct.processingFacility` does not appear in the target and has no mapping for `BiologicallyDerivedProduct`. |
 | BiologicallyDerivedProduct.productCategory | BiologicallyDerivedProduct.productCategory | RelatedTo | R5 `BiologicallyDerivedProduct.productCategory` maps as RelatedTo to R4 `BiologicallyDerivedProduct.productCategory` - productCategory made the binding required (from Example) for http://hl7.org/fhir/ValueSet/product-category|4.0.1; productCategory has change due to type change: R5 productCategory Coding has no equivalent or mapped type in R4 productCategory |
 | BiologicallyDerivedProduct.productCode | BiologicallyDerivedProduct.productCode | Equivalent | R5 `BiologicallyDerivedProduct.productCode` maps as Equivalent to R4 `BiologicallyDerivedProduct.productCode` |
-| BiologicallyDerivedProduct.productStatus | - | DoesNotExistInTarget | R5 `BiologicallyDerivedProduct.productStatus` does not appear in the target and has no mapping for `BiologicallyDerivedProduct`. |
+| BiologicallyDerivedProduct.productStatus | BiologicallyDerivedProduct.status | RelatedTo | R5 `BiologicallyDerivedProduct.productStatus` maps as RelatedTo to R4 `BiologicallyDerivedProduct.status` - status made the binding required (from Example) for http://hl7.org/fhir/ValueSet/product-status|4.0.1; status has change due to type change: R5 productStatus Coding has no equivalent or mapped type in R4 status |
 | BiologicallyDerivedProduct.property | - | DoesNotExistInTarget | R5 `BiologicallyDerivedProduct.property` does not appear in the target and has no mapping for `BiologicallyDerivedProduct`. |
 | BiologicallyDerivedProduct.property.extension | - | DoesNotExistInTarget | R5 `BiologicallyDerivedProduct.property.extension` does not appear in the target and has no mapping for `BiologicallyDerivedProduct`. |
 | BiologicallyDerivedProduct.property.id | - | DoesNotExistInTarget | R5 `BiologicallyDerivedProduct.property.id` does not appear in the target and has no mapping for `BiologicallyDerivedProduct`. |

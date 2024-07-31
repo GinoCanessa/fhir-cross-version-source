@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 9 |
-Equivalent | 4 |
-RelatedTo | 27 |
+DoesNotExistInTarget | 8 |
+Equivalent | 21 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 7 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -35,7 +37,7 @@ RelatedTo | 27 |
 | DiagnosticReport.identifier | DiagnosticReport.identifier | Equivalent | R5 `DiagnosticReport.identifier` maps as Equivalent to R4 `DiagnosticReport.identifier` |
 | DiagnosticReport.implicitRules | DiagnosticReport.implicitRules | Equivalent | R5 `DiagnosticReport.implicitRules` maps as Equivalent to R4 `DiagnosticReport.implicitRules` |
 | DiagnosticReport.issued | DiagnosticReport.issued | Equivalent | R5 `DiagnosticReport.issued` maps as Equivalent to R4 `DiagnosticReport.issued` |
-| DiagnosticReport.language | DiagnosticReport.language | RelatedTo | R5 `DiagnosticReport.language` maps as RelatedTo to R4 `DiagnosticReport.language` - language changed the binding strength from Required to Preferred |
+| DiagnosticReport.language | DiagnosticReport.language | SourceIsNarrowerThanTarget | R5 `DiagnosticReport.language` maps as SourceIsNarrowerThanTarget to R4 `DiagnosticReport.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | DiagnosticReport.media | DiagnosticReport.media | Equivalent | R5 `DiagnosticReport.media` maps as Equivalent to R4 `DiagnosticReport.media` |
 | DiagnosticReport.media.comment | DiagnosticReport.media.comment | Equivalent | R5 `DiagnosticReport.media.comment` maps as Equivalent to R4 `DiagnosticReport.media.comment` |
 | DiagnosticReport.media.extension | DiagnosticReport.media.extension | SourceIsBroaderThanTarget | R5 `DiagnosticReport.media.extension` maps as SourceIsBroaderThanTarget to R4 `DiagnosticReport.media.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -50,8 +52,8 @@ RelatedTo | 27 |
 | DiagnosticReport.result | DiagnosticReport.result | Equivalent | R5 `DiagnosticReport.result` maps as Equivalent to R4 `DiagnosticReport.result` |
 | DiagnosticReport.resultsInterpreter | DiagnosticReport.resultsInterpreter | Equivalent | R5 `DiagnosticReport.resultsInterpreter` maps as Equivalent to R4 `DiagnosticReport.resultsInterpreter` |
 | DiagnosticReport.specimen | DiagnosticReport.specimen | Equivalent | R5 `DiagnosticReport.specimen` maps as Equivalent to R4 `DiagnosticReport.specimen` |
-| DiagnosticReport.status | DiagnosticReport.status | SourceIsNarrowerThanTarget | R5 `DiagnosticReport.status` maps as SourceIsNarrowerThanTarget to R4 `DiagnosticReport.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/diagnostic-report-status|5.0.0 and http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1 (SourceIsNarrowerThanTarget) |
-| DiagnosticReport.study | - | DoesNotExistInTarget | R5 `DiagnosticReport.study` does not appear in the target and has no mapping for `DiagnosticReport`. |
+| DiagnosticReport.status | DiagnosticReport.status | SourceIsNarrowerThanTarget | R5 `DiagnosticReport.status` maps as SourceIsNarrowerThanTarget to R4 `DiagnosticReport.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/diagnostic-report-status|5.0.0 and http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1 (SourceIsNarrowerThanTarget); status has change due to type change: R5 `status` `code` maps as SourceIsNarrowerThanTarget for R4 `status` |
+| DiagnosticReport.study | DiagnosticReport.imagingStudy | SourceIsBroaderThanTarget | R5 `DiagnosticReport.study` maps as SourceIsBroaderThanTarget to R4 `DiagnosticReport.imagingStudy` - imagingStudy has change due to type change: R5 `study` `Reference` maps as SourceIsBroaderThanTarget for R4 `imagingStudy` |
 | DiagnosticReport.subject | DiagnosticReport.subject | SourceIsBroaderThanTarget | R5 `DiagnosticReport.subject` maps as SourceIsBroaderThanTarget to R4 `DiagnosticReport.subject` - subject has change due to type change: R5 `subject` `Reference` maps as SourceIsBroaderThanTarget for R4 `subject` |
 | DiagnosticReport.supportingInfo | - | DoesNotExistInTarget | R5 `DiagnosticReport.supportingInfo` does not appear in the target and has no mapping for `DiagnosticReport`. |
 | DiagnosticReport.supportingInfo.extension | - | DoesNotExistInTarget | R5 `DiagnosticReport.supportingInfo.extension` does not appear in the target and has no mapping for `DiagnosticReport`. |

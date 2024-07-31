@@ -28,21 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/DetectedIssue",
       "element": [
         {
-          "code": "DetectedIssue.subject",
-          "target": [
-            {
-              "code": "DetectedIssue.patient",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/DetectedIssue",
-      "target": "http://hl7.org/fhir/StructureDefinition/DetectedIssue",
-      "element": [
-        {
           "code": "DetectedIssue",
           "display": "Clinical issue with action",
           "target": [
@@ -61,7 +46,7 @@
             {
               "code": "DetectedIssue.author",
               "display": "The provider or device that identified the issue",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.author\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.author\u0060 - author has change due to type change: R5 \u0060author\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060author\u0060"
             }
           ]
@@ -78,7 +63,7 @@
             {
               "code": "DetectedIssue.code",
               "display": "Issue Category, e.g. drug-drug, duplicate therapy, etc.",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.code\u0060 maps as Equivalent to R4 \u0060DetectedIssue.code\u0060"
             }
           ]
@@ -90,7 +75,7 @@
             {
               "code": "DetectedIssue.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.contained\u0060 maps as Equivalent to R4 \u0060DetectedIssue.contained\u0060"
             }
           ]
@@ -102,7 +87,7 @@
             {
               "code": "DetectedIssue.detail",
               "display": "Description and context",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.detail\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.detail\u0060 - detail has change due to type change: R5 detail markdown has no equivalent or mapped type in R4 detail"
             }
           ]
@@ -119,7 +104,7 @@
             {
               "code": "DetectedIssue.evidence",
               "display": "Supporting evidence",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.evidence\u0060 maps as Equivalent to R4 \u0060DetectedIssue.evidence\u0060"
             }
           ]
@@ -131,7 +116,7 @@
             {
               "code": "DetectedIssue.evidence.code",
               "display": "Manifestation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.evidence.code\u0060 maps as Equivalent to R4 \u0060DetectedIssue.evidence.code\u0060"
             }
           ]
@@ -143,7 +128,7 @@
             {
               "code": "DetectedIssue.evidence.detail",
               "display": "Supporting information",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.evidence.detail\u0060 maps as Equivalent to R4 \u0060DetectedIssue.evidence.detail\u0060"
             }
           ]
@@ -155,7 +140,7 @@
             {
               "code": "DetectedIssue.evidence.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.evidence.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.evidence.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -167,7 +152,7 @@
             {
               "code": "DetectedIssue.evidence.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.evidence.id\u0060 maps as Equivalent to R4 \u0060DetectedIssue.evidence.id\u0060"
             }
           ]
@@ -179,7 +164,7 @@
             {
               "code": "DetectedIssue.evidence.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.evidence.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.evidence.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -191,7 +176,7 @@
             {
               "code": "DetectedIssue.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -215,7 +200,7 @@
             {
               "code": "DetectedIssue.identified[x]",
               "display": "When identified",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.identified[x]\u0060 maps as Equivalent to R4 \u0060DetectedIssue.identified[x]\u0060"
             }
           ]
@@ -227,7 +212,7 @@
             {
               "code": "DetectedIssue.identifier",
               "display": "Unique id for the detected issue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.identifier\u0060 maps as Equivalent to R4 \u0060DetectedIssue.identifier\u0060"
             }
           ]
@@ -239,7 +224,7 @@
             {
               "code": "DetectedIssue.implicated",
               "display": "Problem resource",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.implicated\u0060 maps as Equivalent to R4 \u0060DetectedIssue.implicated\u0060"
             }
           ]
@@ -263,8 +248,8 @@
             {
               "code": "DetectedIssue.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060DetectedIssue.language\u0060 maps as RelatedTo to R4 \u0060DetectedIssue.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060DetectedIssue.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060DetectedIssue.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -287,7 +272,7 @@
             {
               "code": "DetectedIssue.mitigation",
               "display": "Step taken to address",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.mitigation\u0060 maps as Equivalent to R4 \u0060DetectedIssue.mitigation\u0060"
             }
           ]
@@ -299,7 +284,7 @@
             {
               "code": "DetectedIssue.mitigation.action",
               "display": "What mitigation?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.mitigation.action\u0060 maps as Equivalent to R4 \u0060DetectedIssue.mitigation.action\u0060"
             }
           ]
@@ -311,7 +296,7 @@
             {
               "code": "DetectedIssue.mitigation.author",
               "display": "Who is committing?",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.mitigation.author\u0060 maps as Equivalent to R4 \u0060DetectedIssue.mitigation.author\u0060"
             }
           ]
@@ -323,7 +308,7 @@
             {
               "code": "DetectedIssue.mitigation.date",
               "display": "Date committed",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.mitigation.date\u0060 maps as Equivalent to R4 \u0060DetectedIssue.mitigation.date\u0060"
             }
           ]
@@ -335,7 +320,7 @@
             {
               "code": "DetectedIssue.mitigation.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.mitigation.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.mitigation.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -347,7 +332,7 @@
             {
               "code": "DetectedIssue.mitigation.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.mitigation.id\u0060 maps as Equivalent to R4 \u0060DetectedIssue.mitigation.id\u0060"
             }
           ]
@@ -359,7 +344,7 @@
             {
               "code": "DetectedIssue.mitigation.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.mitigation.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.mitigation.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -376,7 +361,7 @@
             {
               "code": "DetectedIssue.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060DetectedIssue.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -388,7 +373,7 @@
             {
               "code": "DetectedIssue.reference",
               "display": "Authority for issue",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.reference\u0060 maps as Equivalent to R4 \u0060DetectedIssue.reference\u0060"
             }
           ]
@@ -400,7 +385,7 @@
             {
               "code": "DetectedIssue.severity",
               "display": "high | moderate | low",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.severity\u0060 maps as Equivalent to R4 \u0060DetectedIssue.severity\u0060 - severity has compatible required binding for code type: http://hl7.org/fhir/ValueSet/detectedissue-severity|5.0.0 and http://hl7.org/fhir/ValueSet/detectedissue-severity|4.0.1 (Equivalent)"
             }
           ]
@@ -413,14 +398,20 @@
               "code": "DetectedIssue.status",
               "display": "registered | preliminary | final | amended \u002B",
               "relationship": "related-to",
-              "comment": "R5 \u0060DetectedIssue.status\u0060 maps as RelatedTo to R4 \u0060DetectedIssue.status\u0060 - (status failed to compare required binding of http://hl7.org/fhir/ValueSet/detectedissue-status|5.0.0 and http://hl7.org/fhir/ValueSet/observation-status|4.0.1)"
+              "comment": "R5 \u0060DetectedIssue.status\u0060 maps as RelatedTo to R4 \u0060DetectedIssue.status\u0060 - (status failed to compare required binding of http://hl7.org/fhir/ValueSet/detectedissue-status|5.0.0 and http://hl7.org/fhir/ValueSet/observation-status|4.0.1); status has change due to type change: R5 \u0060status\u0060 \u0060code\u0060 maps as RelatedTo for R4 \u0060status\u0060"
             }
           ]
         },
         {
           "code": "DetectedIssue.subject",
-          "display": "Associated subject",
-          "noMap": true
+          "target": [
+            {
+              "code": "DetectedIssue.patient",
+              "display": "Associated patient",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060DetectedIssue.subject\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060DetectedIssue.patient\u0060 - patient has change due to type change: R5 \u0060subject\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060patient\u0060"
+            }
+          ]
         },
         {
           "code": "DetectedIssue.text",
@@ -429,7 +420,7 @@
             {
               "code": "DetectedIssue.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060DetectedIssue.text\u0060 maps as Equivalent to R4 \u0060DetectedIssue.text\u0060"
             }
           ]

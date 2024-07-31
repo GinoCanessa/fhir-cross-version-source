@@ -6,14 +6,14 @@
   "title": "Cross-Version Extension for FHIR R5:MedicationRequest.medication compared to FHIR R4",
   "status": "draft",
   "experimental": true,
-  "description": "R5 `MedicationRequest.medication` does not appear in the target and has no mapping for `MedicationRequest`.",
+  "description": "R5 `MedicationRequest.medication` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.medication[x]` - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "MedicationRequest"
+      "expression": "MedicationRequest.medication[x]"
     }
   ],
   "type": "Extension",
@@ -36,7 +36,7 @@
         "path": "Extension",
         "short": "Medication to be taken",
         "definition": "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
-        "comment": "R5 `MedicationRequest.medication` does not appear in the target and has no mapping for `MedicationRequest`.\nIf only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.",
+        "comment": "R5 `MedicationRequest.medication` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.medication[x]` - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]\nIf only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.",
         "min": 1,
         "max": "1",
         "base": {
@@ -398,60 +398,6 @@
         ]
       },
       {
-        "id": "Extension.extension:CodeableReference:CodeableReference",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "short": "Optional Extensions Element",
-        "definition": "Optional Extension Element - found in all resources.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:CodeableReference"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
-          }
-        ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a,N/A"
-          }
-        ]
-      },
-      {
         "id": "Extension.url",
         "path": "Extension.url",
         "base": {
@@ -467,7 +413,7 @@
         "path": "Extension",
         "short": "Medication to be taken",
         "definition": "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications.",
-        "comment": "R5 `MedicationRequest.medication` does not appear in the target and has no mapping for `MedicationRequest`.\nIf only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.",
+        "comment": "R5 `MedicationRequest.medication` maps as SourceIsBroaderThanTarget to R4 `MedicationRequest.medication[x]` - medication[x] has change due to type change: R5 medication CodeableReference has no equivalent or mapped type in R4 medication[x]\nIf only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the Medication resource is recommended.  For example, if you require form or lot number or if the medication is compounded or extemporaneously prepared, then you must reference the Medication resource.",
         "min": 1,
         "max": "1",
         "isModifier": false
@@ -475,19 +421,6 @@
       {
         "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
       },
       {
         "path": "Extension.url",

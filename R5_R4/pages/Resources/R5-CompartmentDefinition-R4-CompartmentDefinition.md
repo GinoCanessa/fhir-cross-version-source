@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 25 |
+Equivalent | 24 |
+SourceIsBroaderThanTarget | 4 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -30,7 +31,7 @@ RelatedTo | 25 |
 | CompartmentDefinition.extension | CompartmentDefinition.extension | SourceIsBroaderThanTarget | R5 `CompartmentDefinition.extension` maps as SourceIsBroaderThanTarget to R4 `CompartmentDefinition.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | CompartmentDefinition.id | CompartmentDefinition.id | Equivalent | R5 `CompartmentDefinition.id` maps as Equivalent to R4 `CompartmentDefinition.id` |
 | CompartmentDefinition.implicitRules | CompartmentDefinition.implicitRules | Equivalent | R5 `CompartmentDefinition.implicitRules` maps as Equivalent to R4 `CompartmentDefinition.implicitRules` |
-| CompartmentDefinition.language | CompartmentDefinition.language | RelatedTo | R5 `CompartmentDefinition.language` maps as RelatedTo to R4 `CompartmentDefinition.language` - language changed the binding strength from Required to Preferred |
+| CompartmentDefinition.language | CompartmentDefinition.language | SourceIsNarrowerThanTarget | R5 `CompartmentDefinition.language` maps as SourceIsNarrowerThanTarget to R4 `CompartmentDefinition.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | CompartmentDefinition.meta | CompartmentDefinition.meta | Equivalent | R5 `CompartmentDefinition.meta` maps as Equivalent to R4 `CompartmentDefinition.meta` |
 | CompartmentDefinition.modifierExtension | CompartmentDefinition.modifierExtension | SourceIsBroaderThanTarget | R5 `CompartmentDefinition.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `CompartmentDefinition.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | CompartmentDefinition.name | CompartmentDefinition.name | Equivalent | R5 `CompartmentDefinition.name` maps as Equivalent to R4 `CompartmentDefinition.name` |

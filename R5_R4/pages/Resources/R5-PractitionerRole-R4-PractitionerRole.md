@@ -14,8 +14,9 @@ Comparison Result: RelatedTo
 | Status | Count |
 | ------ | ----- |
 DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 15 |
+Equivalent | 16 |
+SourceIsBroaderThanTarget | 2 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -34,7 +35,7 @@ RelatedTo | 15 |
 | PractitionerRole.id | PractitionerRole.id | Equivalent | R5 `PractitionerRole.id` maps as Equivalent to R4 `PractitionerRole.id` |
 | PractitionerRole.identifier | PractitionerRole.identifier | Equivalent | R5 `PractitionerRole.identifier` maps as Equivalent to R4 `PractitionerRole.identifier` |
 | PractitionerRole.implicitRules | PractitionerRole.implicitRules | Equivalent | R5 `PractitionerRole.implicitRules` maps as Equivalent to R4 `PractitionerRole.implicitRules` |
-| PractitionerRole.language | PractitionerRole.language | RelatedTo | R5 `PractitionerRole.language` maps as RelatedTo to R4 `PractitionerRole.language` - language changed the binding strength from Required to Preferred |
+| PractitionerRole.language | PractitionerRole.language | SourceIsNarrowerThanTarget | R5 `PractitionerRole.language` maps as SourceIsNarrowerThanTarget to R4 `PractitionerRole.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | PractitionerRole.location | PractitionerRole.location | Equivalent | R5 `PractitionerRole.location` maps as Equivalent to R4 `PractitionerRole.location` |
 | PractitionerRole.meta | PractitionerRole.meta | Equivalent | R5 `PractitionerRole.meta` maps as Equivalent to R4 `PractitionerRole.meta` |
 | PractitionerRole.modifierExtension | PractitionerRole.modifierExtension | SourceIsBroaderThanTarget | R5 `PractitionerRole.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `PractitionerRole.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

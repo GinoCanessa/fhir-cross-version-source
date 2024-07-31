@@ -28,39 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
       "element": [
         {
-          "code": "SupplyRequest.item",
-          "target": [
-            {
-              "code": "SupplyRequest.item[x]",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SupplyRequest.reason.concept",
-          "target": [
-            {
-              "code": "SupplyRequest.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "SupplyRequest.reason.reference",
-          "target": [
-            {
-              "code": "SupplyRequest.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
-      "target": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
-      "element": [
-        {
           "code": "SupplyRequest",
           "display": "Request for a medication, substance or device",
           "target": [
@@ -79,7 +46,7 @@
             {
               "code": "SupplyRequest.authoredOn",
               "display": "When the request was made",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.authoredOn\u0060 maps as Equivalent to R4 \u0060SupplyRequest.authoredOn\u0060"
             }
           ]
@@ -96,7 +63,7 @@
             {
               "code": "SupplyRequest.category",
               "display": "The kind of supply (central, non-stock, etc.)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.category\u0060 maps as Equivalent to R4 \u0060SupplyRequest.category\u0060"
             }
           ]
@@ -108,7 +75,7 @@
             {
               "code": "SupplyRequest.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.contained\u0060 maps as Equivalent to R4 \u0060SupplyRequest.contained\u0060"
             }
           ]
@@ -125,7 +92,7 @@
             {
               "code": "SupplyRequest.deliverFrom",
               "display": "The origin of the supply",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.deliverFrom\u0060 maps as Equivalent to R4 \u0060SupplyRequest.deliverFrom\u0060"
             }
           ]
@@ -137,7 +104,7 @@
             {
               "code": "SupplyRequest.deliverTo",
               "display": "The destination of the supply",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.deliverTo\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.deliverTo\u0060 - deliverTo has change due to type change: R5 \u0060deliverTo\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060deliverTo\u0060"
             }
           ]
@@ -149,7 +116,7 @@
             {
               "code": "SupplyRequest.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -173,7 +140,7 @@
             {
               "code": "SupplyRequest.identifier",
               "display": "Business Identifier for SupplyRequest",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.identifier\u0060 maps as Equivalent to R4 \u0060SupplyRequest.identifier\u0060"
             }
           ]
@@ -192,8 +159,14 @@
         },
         {
           "code": "SupplyRequest.item",
-          "display": "Medication, Substance, or Device requested to be supplied",
-          "noMap": true
+          "target": [
+            {
+              "code": "SupplyRequest.item[x]",
+              "display": "Medication, Substance, or Device requested to be supplied",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SupplyRequest.item\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.item[x]\u0060 - item[x] has change due to type change: R5 item CodeableReference has no equivalent or mapped type in R4 item[x]"
+            }
+          ]
         },
         {
           "code": "SupplyRequest.language",
@@ -202,8 +175,8 @@
             {
               "code": "SupplyRequest.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060SupplyRequest.language\u0060 maps as RelatedTo to R4 \u0060SupplyRequest.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060SupplyRequest.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060SupplyRequest.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -226,7 +199,7 @@
             {
               "code": "SupplyRequest.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -238,7 +211,7 @@
             {
               "code": "SupplyRequest.occurrence[x]",
               "display": "When the request should be fulfilled",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.occurrence[x]\u0060 maps as Equivalent to R4 \u0060SupplyRequest.occurrence[x]\u0060"
             }
           ]
@@ -250,7 +223,7 @@
             {
               "code": "SupplyRequest.parameter",
               "display": "Ordered item details",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.parameter\u0060 maps as Equivalent to R4 \u0060SupplyRequest.parameter\u0060"
             }
           ]
@@ -262,7 +235,7 @@
             {
               "code": "SupplyRequest.parameter.code",
               "display": "Item detail",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.parameter.code\u0060 maps as Equivalent to R4 \u0060SupplyRequest.parameter.code\u0060"
             }
           ]
@@ -274,7 +247,7 @@
             {
               "code": "SupplyRequest.parameter.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.parameter.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.parameter.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -286,7 +259,7 @@
             {
               "code": "SupplyRequest.parameter.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.parameter.id\u0060 maps as Equivalent to R4 \u0060SupplyRequest.parameter.id\u0060"
             }
           ]
@@ -298,7 +271,7 @@
             {
               "code": "SupplyRequest.parameter.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.parameter.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.parameter.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -310,7 +283,7 @@
             {
               "code": "SupplyRequest.parameter.value[x]",
               "display": "Value of detail",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.parameter.value[x]\u0060 maps as Equivalent to R4 \u0060SupplyRequest.parameter.value[x]\u0060"
             }
           ]
@@ -322,7 +295,7 @@
             {
               "code": "SupplyRequest.priority",
               "display": "routine | urgent | asap | stat",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.priority\u0060 maps as Equivalent to R4 \u0060SupplyRequest.priority\u0060 - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent)"
             }
           ]
@@ -334,15 +307,45 @@
             {
               "code": "SupplyRequest.quantity",
               "display": "The requested amount of the item indicated",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.quantity\u0060 maps as Equivalent to R4 \u0060SupplyRequest.quantity\u0060"
             }
           ]
         },
         {
           "code": "SupplyRequest.reason",
-          "display": "The reason why the supply item was requested",
-          "noMap": true
+          "target": [
+            {
+              "code": "SupplyRequest.reasonCode",
+              "display": "The reason why the supply item was requested",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060SupplyRequest.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "SupplyRequest.reasonReference",
+              "display": "The reason why the supply item was requested",
+              "relationship": "related-to",
+              "comment": "R5 \u0060SupplyRequest.reason\u0060 maps as RelatedTo to R4 \u0060SupplyRequest.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/supplyrequest-reason; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "SupplyRequest.reason.concept",
+          "target": [
+            {
+              "code": "SupplyRequest.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SupplyRequest.reason.reference",
+          "target": [
+            {
+              "code": "SupplyRequest.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "SupplyRequest.requester",
@@ -351,7 +354,7 @@
             {
               "code": "SupplyRequest.requester",
               "display": "Individual making the request",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060SupplyRequest.requester\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060SupplyRequest.requester\u0060 - requester has change due to type change: R5 \u0060requester\u0060 \u0060Reference\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060requester\u0060"
             }
           ]
@@ -363,7 +366,7 @@
             {
               "code": "SupplyRequest.status",
               "display": "draft | active | suspended \u002B",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.status\u0060 maps as Equivalent to R4 \u0060SupplyRequest.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/supplyrequest-status|5.0.0 and http://hl7.org/fhir/ValueSet/supplyrequest-status|4.0.1 (Equivalent)"
             }
           ]
@@ -375,7 +378,7 @@
             {
               "code": "SupplyRequest.supplier",
               "display": "Who is intended to fulfill the request",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.supplier\u0060 maps as Equivalent to R4 \u0060SupplyRequest.supplier\u0060"
             }
           ]
@@ -387,7 +390,7 @@
             {
               "code": "SupplyRequest.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060SupplyRequest.text\u0060 maps as Equivalent to R4 \u0060SupplyRequest.text\u0060"
             }
           ]

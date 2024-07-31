@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 34 |
-Equivalent | 4 |
-RelatedTo | 63 |
+DoesNotExistInTarget | 29 |
+Equivalent | 45 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 23 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -26,14 +28,14 @@ RelatedTo | 63 |
 | NutritionOrder.contained | NutritionOrder.contained | Equivalent | R5 `NutritionOrder.contained` maps as Equivalent to R4 `NutritionOrder.contained` |
 | NutritionOrder.dateTime | NutritionOrder.dateTime | Equivalent | R5 `NutritionOrder.dateTime` maps as Equivalent to R4 `NutritionOrder.dateTime` |
 | NutritionOrder.encounter | NutritionOrder.encounter | Equivalent | R5 `NutritionOrder.encounter` maps as Equivalent to R4 `NutritionOrder.encounter` |
-| NutritionOrder.enteralFormula | NutritionOrder.enteralFormula | Equivalent | R5 `NutritionOrder.enteralFormula` maps as Equivalent to R4 `NutritionOrder.enteralFormula` |
-| NutritionOrder.enteralFormula.additive | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive` does not appear in the target and has no mapping for `NutritionOrder`. |
+| NutritionOrder.enteralFormula | NutritionOrder.enteralFormula | SourceIsNarrowerThanTarget | R5 `NutritionOrder.enteralFormula` is narrower than R4 `NutritionOrder.enteralFormula` and is compatible. `NutritionOrder.enteralFormula` is mapped from `NutritionOrder.enteralFormula` and `NutritionOrder.enteralFormula.additive`. |
+| NutritionOrder.enteralFormula.additive | NutritionOrder.enteralFormula | SourceIsBroaderThanTarget | R5 `NutritionOrder.enteralFormula.additive` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula` - enteralFormula changed from array to scalar (max cardinality from * to 1) |
 | NutritionOrder.enteralFormula.additive.extension | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.extension` does not appear in the target and has no mapping for `NutritionOrder`. |
 | NutritionOrder.enteralFormula.additive.id | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.id` does not appear in the target and has no mapping for `NutritionOrder`. |
 | NutritionOrder.enteralFormula.additive.modifierExtension | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.modifierExtension` does not appear in the target and has no mapping for `NutritionOrder`. |
-| NutritionOrder.enteralFormula.additive.productName | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.productName` does not appear in the target and has no mapping for `NutritionOrder`. |
+| NutritionOrder.enteralFormula.additive.productName | NutritionOrder.enteralFormula.additiveProductName | Equivalent | R5 `NutritionOrder.enteralFormula.additive.productName` maps as Equivalent to R4 `NutritionOrder.enteralFormula.additiveProductName` |
 | NutritionOrder.enteralFormula.additive.quantity | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.quantity` does not appear in the target and has no mapping for `NutritionOrder`. |
-| NutritionOrder.enteralFormula.additive.type | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.additive.type` does not appear in the target and has no mapping for `NutritionOrder`. |
+| NutritionOrder.enteralFormula.additive.type | NutritionOrder.enteralFormula.additiveType | SourceIsBroaderThanTarget | R5 `NutritionOrder.enteralFormula.additive.type` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.additiveType` - additiveType has change due to type change: R5 type CodeableReference has no equivalent or mapped type in R4 additiveType |
 | NutritionOrder.enteralFormula.administration | NutritionOrder.enteralFormula.administration | Equivalent | R5 `NutritionOrder.enteralFormula.administration` maps as Equivalent to R4 `NutritionOrder.enteralFormula.administration` |
 | NutritionOrder.enteralFormula.administration.extension | NutritionOrder.enteralFormula.administration.extension | SourceIsBroaderThanTarget | R5 `NutritionOrder.enteralFormula.administration.extension` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.administration.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | NutritionOrder.enteralFormula.administration.id | NutritionOrder.enteralFormula.administration.id | Equivalent | R5 `NutritionOrder.enteralFormula.administration.id` maps as Equivalent to R4 `NutritionOrder.enteralFormula.administration.id` |
@@ -56,7 +58,7 @@ RelatedTo | 63 |
 | NutritionOrder.enteralFormula.id | NutritionOrder.enteralFormula.id | Equivalent | R5 `NutritionOrder.enteralFormula.id` maps as Equivalent to R4 `NutritionOrder.enteralFormula.id` |
 | NutritionOrder.enteralFormula.maxVolumeToDeliver | NutritionOrder.enteralFormula.maxVolumeToDeliver | Equivalent | R5 `NutritionOrder.enteralFormula.maxVolumeToDeliver` maps as Equivalent to R4 `NutritionOrder.enteralFormula.maxVolumeToDeliver` |
 | NutritionOrder.enteralFormula.modifierExtension | NutritionOrder.enteralFormula.modifierExtension | SourceIsBroaderThanTarget | R5 `NutritionOrder.enteralFormula.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.enteralFormula.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| NutritionOrder.enteralFormula.routeOfAdministration | - | DoesNotExistInTarget | R5 `NutritionOrder.enteralFormula.routeOfAdministration` does not appear in the target and has no mapping for `NutritionOrder`. |
+| NutritionOrder.enteralFormula.routeOfAdministration | NutritionOrder.enteralFormula.routeofAdministration | Equivalent | R5 `NutritionOrder.enteralFormula.routeOfAdministration` maps as Equivalent to R4 `NutritionOrder.enteralFormula.routeofAdministration` |
 | NutritionOrder.excludeFoodModifier | NutritionOrder.excludeFoodModifier | Equivalent | R5 `NutritionOrder.excludeFoodModifier` maps as Equivalent to R4 `NutritionOrder.excludeFoodModifier` |
 | NutritionOrder.extension | NutritionOrder.extension | SourceIsBroaderThanTarget | R5 `NutritionOrder.extension` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | NutritionOrder.foodPreferenceModifier | NutritionOrder.foodPreferenceModifier | Equivalent | R5 `NutritionOrder.foodPreferenceModifier` maps as Equivalent to R4 `NutritionOrder.foodPreferenceModifier` |
@@ -68,7 +70,7 @@ RelatedTo | 63 |
 | NutritionOrder.instantiatesCanonical | NutritionOrder.instantiatesCanonical | Equivalent | R5 `NutritionOrder.instantiatesCanonical` maps as Equivalent to R4 `NutritionOrder.instantiatesCanonical` |
 | NutritionOrder.instantiatesUri | NutritionOrder.instantiatesUri | Equivalent | R5 `NutritionOrder.instantiatesUri` maps as Equivalent to R4 `NutritionOrder.instantiatesUri` |
 | NutritionOrder.intent | NutritionOrder.intent | Equivalent | R5 `NutritionOrder.intent` maps as Equivalent to R4 `NutritionOrder.intent` - intent has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-intent|5.0.0 and http://hl7.org/fhir/ValueSet/request-intent|4.0.1 (Equivalent) |
-| NutritionOrder.language | NutritionOrder.language | RelatedTo | R5 `NutritionOrder.language` maps as RelatedTo to R4 `NutritionOrder.language` - language changed the binding strength from Required to Preferred |
+| NutritionOrder.language | NutritionOrder.language | SourceIsNarrowerThanTarget | R5 `NutritionOrder.language` maps as SourceIsNarrowerThanTarget to R4 `NutritionOrder.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | NutritionOrder.meta | NutritionOrder.meta | Equivalent | R5 `NutritionOrder.meta` maps as Equivalent to R4 `NutritionOrder.meta` |
 | NutritionOrder.modifierExtension | NutritionOrder.modifierExtension | SourceIsBroaderThanTarget | R5 `NutritionOrder.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | NutritionOrder.note | NutritionOrder.note | SourceIsBroaderThanTarget | R5 `NutritionOrder.note` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
@@ -103,7 +105,7 @@ RelatedTo | 63 |
 | NutritionOrder.performer | - | DoesNotExistInTarget | R5 `NutritionOrder.performer` does not appear in the target and has no mapping for `NutritionOrder`. |
 | NutritionOrder.priority | - | DoesNotExistInTarget | R5 `NutritionOrder.priority` does not appear in the target and has no mapping for `NutritionOrder`. |
 | NutritionOrder.status | NutritionOrder.status | Equivalent | R5 `NutritionOrder.status` maps as Equivalent to R4 `NutritionOrder.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-status|5.0.0 and http://hl7.org/fhir/ValueSet/request-status|4.0.1 (Equivalent) |
-| NutritionOrder.subject | - | DoesNotExistInTarget | R5 `NutritionOrder.subject` does not appear in the target and has no mapping for `NutritionOrder`. |
+| NutritionOrder.subject | NutritionOrder.patient | SourceIsBroaderThanTarget | R5 `NutritionOrder.subject` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.patient` - patient has change due to type change: R5 `subject` `Reference` maps as SourceIsBroaderThanTarget for R4 `patient` |
 | NutritionOrder.supplement | NutritionOrder.supplement | Equivalent | R5 `NutritionOrder.supplement` maps as Equivalent to R4 `NutritionOrder.supplement` |
 | NutritionOrder.supplement.extension | NutritionOrder.supplement.extension | SourceIsBroaderThanTarget | R5 `NutritionOrder.supplement.extension` maps as SourceIsBroaderThanTarget to R4 `NutritionOrder.supplement.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | NutritionOrder.supplement.id | NutritionOrder.supplement.id | Equivalent | R5 `NutritionOrder.supplement.id` maps as Equivalent to R4 `NutritionOrder.supplement.id` |

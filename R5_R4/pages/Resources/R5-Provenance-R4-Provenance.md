@@ -13,24 +13,26 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 4 |
-Equivalent | 4 |
-RelatedTo | 27 |
+DoesNotExistInTarget | 3 |
+Equivalent | 18 |
+RelatedTo | 3 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
 | ------ | ------ | ------ | ------- |
 | Provenance | Provenance | Equivalent | R5 `Provenance` maps as Equivalent to R4 `Provenance` |
-| Provenance.activity | Provenance.activity | RelatedTo | R5 `Provenance.activity` maps as RelatedTo to R4 `Provenance.activity` - activity changed the binding strength from Example to Extensible |
+| Provenance.activity | Provenance.activity | SourceIsBroaderThanTarget | R5 `Provenance.activity` maps as SourceIsBroaderThanTarget to R4 `Provenance.activity` - activity changed the binding strength from Example to Extensible; activity has change due to type change: R5 `activity` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `activity` |
 | Provenance.agent | Provenance.agent | Equivalent | R5 `Provenance.agent` maps as Equivalent to R4 `Provenance.agent` |
 | Provenance.agent.extension | Provenance.agent.extension | SourceIsBroaderThanTarget | R5 `Provenance.agent.extension` maps as SourceIsBroaderThanTarget to R4 `Provenance.agent.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Provenance.agent.id | Provenance.agent.id | Equivalent | R5 `Provenance.agent.id` maps as Equivalent to R4 `Provenance.agent.id` |
 | Provenance.agent.modifierExtension | Provenance.agent.modifierExtension | SourceIsBroaderThanTarget | R5 `Provenance.agent.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Provenance.agent.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Provenance.agent.onBehalfOf | Provenance.agent.onBehalfOf | RelatedTo | R5 `Provenance.agent.onBehalfOf` maps as RelatedTo to R4 `Provenance.agent.onBehalfOf` - onBehalfOf has change due to type change: R5 `onBehalfOf` `Reference` maps as RelatedTo for R4 `onBehalfOf` |
 | Provenance.agent.role | Provenance.agent.role | Equivalent | R5 `Provenance.agent.role` maps as Equivalent to R4 `Provenance.agent.role` |
-| Provenance.agent.type | Provenance.agent.type | RelatedTo | R5 `Provenance.agent.type` maps as RelatedTo to R4 `Provenance.agent.type` - type changed the binding strength from Example to Extensible |
+| Provenance.agent.type | Provenance.agent.type | SourceIsBroaderThanTarget | R5 `Provenance.agent.type` maps as SourceIsBroaderThanTarget to R4 `Provenance.agent.type` - type changed the binding strength from Example to Extensible; type has change due to type change: R5 `type` `CodeableConcept` maps as SourceIsBroaderThanTarget for R4 `type` |
 | Provenance.agent.who | Provenance.agent.who | SourceIsBroaderThanTarget | R5 `Provenance.agent.who` maps as SourceIsBroaderThanTarget to R4 `Provenance.agent.who` - who has change due to type change: R5 `who` `Reference` maps as SourceIsBroaderThanTarget for R4 `who` |
-| Provenance.authorization | - | DoesNotExistInTarget | R5 `Provenance.authorization` does not appear in the target and has no mapping for `Provenance`. |
+| Provenance.authorization | Provenance.reason | SourceIsBroaderThanTarget | R5 `Provenance.authorization` maps as SourceIsBroaderThanTarget to R4 `Provenance.reason` - reason changed the binding strength from Example to Extensible; reason has change due to type change: R5 authorization CodeableReference has no equivalent or mapped type in R4 reason |
 | Provenance.basedOn | - | DoesNotExistInTarget | R5 `Provenance.basedOn` does not appear in the target and has no mapping for `Provenance`. |
 | Provenance.contained | Provenance.contained | Equivalent | R5 `Provenance.contained` maps as Equivalent to R4 `Provenance.contained` |
 | Provenance.encounter | - | DoesNotExistInTarget | R5 `Provenance.encounter` does not appear in the target and has no mapping for `Provenance`. |
@@ -44,7 +46,7 @@ RelatedTo | 27 |
 | Provenance.extension | Provenance.extension | SourceIsBroaderThanTarget | R5 `Provenance.extension` maps as SourceIsBroaderThanTarget to R4 `Provenance.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Provenance.id | Provenance.id | Equivalent | R5 `Provenance.id` maps as Equivalent to R4 `Provenance.id` |
 | Provenance.implicitRules | Provenance.implicitRules | Equivalent | R5 `Provenance.implicitRules` maps as Equivalent to R4 `Provenance.implicitRules` |
-| Provenance.language | Provenance.language | RelatedTo | R5 `Provenance.language` maps as RelatedTo to R4 `Provenance.language` - language changed the binding strength from Required to Preferred |
+| Provenance.language | Provenance.language | SourceIsNarrowerThanTarget | R5 `Provenance.language` maps as SourceIsNarrowerThanTarget to R4 `Provenance.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Provenance.location | Provenance.location | Equivalent | R5 `Provenance.location` maps as Equivalent to R4 `Provenance.location` |
 | Provenance.meta | Provenance.meta | Equivalent | R5 `Provenance.meta` maps as Equivalent to R4 `Provenance.meta` |
 | Provenance.modifierExtension | Provenance.modifierExtension | SourceIsBroaderThanTarget | R5 `Provenance.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Provenance.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |

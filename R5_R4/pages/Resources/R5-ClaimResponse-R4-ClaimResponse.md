@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 46 |
-Equivalent | 4 |
-RelatedTo | 137 |
+DoesNotExistInTarget | 45 |
+Equivalent | 101 |
+RelatedTo | 11 |
+SourceIsBroaderThanTarget | 28 |
+SourceIsNarrowerThanTarget | 2 |
 
 
 | Source | Target | Status | Message |
@@ -23,7 +25,7 @@ RelatedTo | 137 |
 | ClaimResponse | ClaimResponse | Equivalent | R5 `ClaimResponse` maps as Equivalent to R4 `ClaimResponse` |
 | ClaimResponse.addItem | ClaimResponse.addItem | Equivalent | R5 `ClaimResponse.addItem` maps as Equivalent to R4 `ClaimResponse.addItem` |
 | ClaimResponse.addItem.adjudication | ClaimResponse.addItem.adjudication | RelatedTo | R5 `ClaimResponse.addItem.adjudication` maps as RelatedTo to R4 `ClaimResponse.addItem.adjudication` - adjudication made the element mandatory; adjudication increased the minimum cardinality from 0 to 1 |
-| ClaimResponse.addItem.bodySite | ClaimResponse.addItem.bodySite | RelatedTo | R5 `ClaimResponse.addItem.bodySite` maps as RelatedTo to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
+| ClaimResponse.addItem.bodySite | ClaimResponse.addItem.bodySite | SourceIsBroaderThanTarget | R5 `ClaimResponse.addItem.bodySite` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.addItem.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
 | ClaimResponse.addItem.bodySite.extension | - | DoesNotExistInTarget | R5 `ClaimResponse.addItem.bodySite.extension` does not appear in the target and has no mapping for `ClaimResponse`. |
 | ClaimResponse.addItem.bodySite.id | - | DoesNotExistInTarget | R5 `ClaimResponse.addItem.bodySite.id` does not appear in the target and has no mapping for `ClaimResponse`. |
 | ClaimResponse.addItem.bodySite.modifierExtension | - | DoesNotExistInTarget | R5 `ClaimResponse.addItem.bodySite.modifierExtension` does not appear in the target and has no mapping for `ClaimResponse`. |
@@ -133,7 +135,7 @@ RelatedTo | 137 |
 | ClaimResponse.item.adjudication.extension | ClaimResponse.item.adjudication.extension | SourceIsBroaderThanTarget | R5 `ClaimResponse.item.adjudication.extension` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.item.adjudication.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ClaimResponse.item.adjudication.id | ClaimResponse.item.adjudication.id | Equivalent | R5 `ClaimResponse.item.adjudication.id` maps as Equivalent to R4 `ClaimResponse.item.adjudication.id` |
 | ClaimResponse.item.adjudication.modifierExtension | ClaimResponse.item.adjudication.modifierExtension | SourceIsBroaderThanTarget | R5 `ClaimResponse.item.adjudication.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.item.adjudication.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| ClaimResponse.item.adjudication.quantity | - | DoesNotExistInTarget | R5 `ClaimResponse.item.adjudication.quantity` does not appear in the target and has no mapping for `ClaimResponse`. |
+| ClaimResponse.item.adjudication.quantity | ClaimResponse.item.adjudication.value | SourceIsBroaderThanTarget | R5 `ClaimResponse.item.adjudication.quantity` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.item.adjudication.value` - value has change due to type change: R5 quantity Quantity has no equivalent or mapped type in R4 value |
 | ClaimResponse.item.adjudication.reason | ClaimResponse.item.adjudication.reason | Equivalent | R5 `ClaimResponse.item.adjudication.reason` maps as Equivalent to R4 `ClaimResponse.item.adjudication.reason` |
 | ClaimResponse.item.detail | ClaimResponse.item.detail | Equivalent | R5 `ClaimResponse.item.detail` maps as Equivalent to R4 `ClaimResponse.item.detail` |
 | ClaimResponse.item.detail.adjudication | ClaimResponse.item.detail.adjudication | RelatedTo | R5 `ClaimResponse.item.detail.adjudication` maps as RelatedTo to R4 `ClaimResponse.item.detail.adjudication` - adjudication made the element mandatory; adjudication increased the minimum cardinality from 0 to 1 |
@@ -167,7 +169,7 @@ RelatedTo | 137 |
 | ClaimResponse.item.reviewOutcome.preAuthRef | - | DoesNotExistInTarget | R5 `ClaimResponse.item.reviewOutcome.preAuthRef` does not appear in the target and has no mapping for `ClaimResponse`. |
 | ClaimResponse.item.reviewOutcome.reason | - | DoesNotExistInTarget | R5 `ClaimResponse.item.reviewOutcome.reason` does not appear in the target and has no mapping for `ClaimResponse`. |
 | ClaimResponse.item.traceNumber | - | DoesNotExistInTarget | R5 `ClaimResponse.item.traceNumber` does not appear in the target and has no mapping for `ClaimResponse`. |
-| ClaimResponse.language | ClaimResponse.language | RelatedTo | R5 `ClaimResponse.language` maps as RelatedTo to R4 `ClaimResponse.language` - language changed the binding strength from Required to Preferred |
+| ClaimResponse.language | ClaimResponse.language | SourceIsNarrowerThanTarget | R5 `ClaimResponse.language` maps as SourceIsNarrowerThanTarget to R4 `ClaimResponse.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ClaimResponse.meta | ClaimResponse.meta | Equivalent | R5 `ClaimResponse.meta` maps as Equivalent to R4 `ClaimResponse.meta` |
 | ClaimResponse.modifierExtension | ClaimResponse.modifierExtension | SourceIsBroaderThanTarget | R5 `ClaimResponse.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ClaimResponse.outcome | ClaimResponse.outcome | Equivalent | R5 `ClaimResponse.outcome` maps as Equivalent to R4 `ClaimResponse.outcome` - outcome has compatible required binding for code type: http://hl7.org/fhir/ValueSet/claim-outcome|5.0.0 and http://hl7.org/fhir/ValueSet/remittance-outcome|4.0.1 (Equivalent) |
@@ -188,7 +190,7 @@ RelatedTo | 137 |
 | ClaimResponse.processNote | ClaimResponse.processNote | Equivalent | R5 `ClaimResponse.processNote` maps as Equivalent to R4 `ClaimResponse.processNote` |
 | ClaimResponse.processNote.extension | ClaimResponse.processNote.extension | SourceIsBroaderThanTarget | R5 `ClaimResponse.processNote.extension` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.processNote.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ClaimResponse.processNote.id | ClaimResponse.processNote.id | Equivalent | R5 `ClaimResponse.processNote.id` maps as Equivalent to R4 `ClaimResponse.processNote.id` |
-| ClaimResponse.processNote.language | ClaimResponse.processNote.language | RelatedTo | R5 `ClaimResponse.processNote.language` maps as RelatedTo to R4 `ClaimResponse.processNote.language` - language changed the binding strength from Required to Preferred |
+| ClaimResponse.processNote.language | ClaimResponse.processNote.language | SourceIsNarrowerThanTarget | R5 `ClaimResponse.processNote.language` maps as SourceIsNarrowerThanTarget to R4 `ClaimResponse.processNote.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `CodeableConcept` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ClaimResponse.processNote.modifierExtension | ClaimResponse.processNote.modifierExtension | SourceIsBroaderThanTarget | R5 `ClaimResponse.processNote.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ClaimResponse.processNote.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | ClaimResponse.processNote.number | ClaimResponse.processNote.number | Equivalent | R5 `ClaimResponse.processNote.number` maps as Equivalent to R4 `ClaimResponse.processNote.number` |
 | ClaimResponse.processNote.text | ClaimResponse.processNote.text | Equivalent | R5 `ClaimResponse.processNote.text` maps as Equivalent to R4 `ClaimResponse.processNote.text` |

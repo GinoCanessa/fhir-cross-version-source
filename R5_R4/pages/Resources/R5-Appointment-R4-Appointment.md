@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 49 |
-Equivalent | 4 |
-RelatedTo | 31 |
+DoesNotExistInTarget | 46 |
+Equivalent | 25 |
+RelatedTo | 2 |
+SourceIsBroaderThanTarget | 10 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -25,7 +27,7 @@ RelatedTo | 31 |
 | Appointment.appointmentType | Appointment.appointmentType | Equivalent | R5 `Appointment.appointmentType` maps as Equivalent to R4 `Appointment.appointmentType` |
 | Appointment.basedOn | Appointment.basedOn | SourceIsBroaderThanTarget | R5 `Appointment.basedOn` maps as SourceIsBroaderThanTarget to R4 `Appointment.basedOn` - basedOn has change due to type change: R5 `basedOn` `Reference` maps as SourceIsBroaderThanTarget for R4 `basedOn` |
 | Appointment.cancellationDate | - | DoesNotExistInTarget | R5 `Appointment.cancellationDate` does not appear in the target and has no mapping for `Appointment`. |
-| Appointment.cancellationReason | - | DoesNotExistInTarget | R5 `Appointment.cancellationReason` does not appear in the target and has no mapping for `Appointment`. |
+| Appointment.cancellationReason | Appointment.cancelationReason | Equivalent | R5 `Appointment.cancellationReason` maps as Equivalent to R4 `Appointment.cancelationReason` |
 | Appointment.class | - | DoesNotExistInTarget | R5 `Appointment.class` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.contained | Appointment.contained | Equivalent | R5 `Appointment.contained` maps as Equivalent to R4 `Appointment.contained` |
 | Appointment.created | Appointment.created | Equivalent | R5 `Appointment.created` maps as Equivalent to R4 `Appointment.created` |
@@ -35,11 +37,11 @@ RelatedTo | 31 |
 | Appointment.id | Appointment.id | Equivalent | R5 `Appointment.id` maps as Equivalent to R4 `Appointment.id` |
 | Appointment.identifier | Appointment.identifier | Equivalent | R5 `Appointment.identifier` maps as Equivalent to R4 `Appointment.identifier` |
 | Appointment.implicitRules | Appointment.implicitRules | Equivalent | R5 `Appointment.implicitRules` maps as Equivalent to R4 `Appointment.implicitRules` |
-| Appointment.language | Appointment.language | RelatedTo | R5 `Appointment.language` maps as RelatedTo to R4 `Appointment.language` - language changed the binding strength from Required to Preferred |
+| Appointment.language | Appointment.language | SourceIsNarrowerThanTarget | R5 `Appointment.language` maps as SourceIsNarrowerThanTarget to R4 `Appointment.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Appointment.meta | Appointment.meta | Equivalent | R5 `Appointment.meta` maps as Equivalent to R4 `Appointment.meta` |
 | Appointment.minutesDuration | Appointment.minutesDuration | Equivalent | R5 `Appointment.minutesDuration` maps as Equivalent to R4 `Appointment.minutesDuration` |
 | Appointment.modifierExtension | Appointment.modifierExtension | SourceIsBroaderThanTarget | R5 `Appointment.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Appointment.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| Appointment.note | - | DoesNotExistInTarget | R5 `Appointment.note` does not appear in the target and has no mapping for `Appointment`. |
+| Appointment.note | Appointment.comment | SourceIsBroaderThanTarget | R5 `Appointment.note` maps as SourceIsBroaderThanTarget to R4 `Appointment.comment` - comment changed from array to scalar (max cardinality from * to 1); comment has change due to type change: R5 note Annotation has no equivalent or mapped type in R4 comment |
 | Appointment.occurrenceChanged | - | DoesNotExistInTarget | R5 `Appointment.occurrenceChanged` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.originatingAppointment | - | DoesNotExistInTarget | R5 `Appointment.originatingAppointment` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.participant | Appointment.participant | Equivalent | R5 `Appointment.participant` maps as Equivalent to R4 `Appointment.participant` |
@@ -51,10 +53,10 @@ RelatedTo | 31 |
 | Appointment.participant.required | Appointment.participant.required | RelatedTo | R5 `Appointment.participant.required` maps as RelatedTo to R4 `Appointment.participant.required` - required added a required binding to http://hl7.org/fhir/ValueSet/participantrequired|4.0.1; required has change due to type change: R5 required boolean has no equivalent or mapped type in R4 required |
 | Appointment.participant.status | Appointment.participant.status | Equivalent | R5 `Appointment.participant.status` maps as Equivalent to R4 `Appointment.participant.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/participationstatus|5.0.0 and http://hl7.org/fhir/ValueSet/participationstatus|4.0.1 (Equivalent) |
 | Appointment.participant.type | Appointment.participant.type | Equivalent | R5 `Appointment.participant.type` maps as Equivalent to R4 `Appointment.participant.type` |
-| Appointment.patientInstruction | Appointment.patientInstruction | RelatedTo | R5 `Appointment.patientInstruction` maps as RelatedTo to R4 `Appointment.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction CodeableReference has no equivalent or mapped type in R4 patientInstruction |
+| Appointment.patientInstruction | Appointment.patientInstruction | SourceIsBroaderThanTarget | R5 `Appointment.patientInstruction` maps as SourceIsBroaderThanTarget to R4 `Appointment.patientInstruction` - patientInstruction changed from array to scalar (max cardinality from * to 1); patientInstruction has change due to type change: R5 patientInstruction CodeableReference has no equivalent or mapped type in R4 patientInstruction |
 | Appointment.previousAppointment | - | DoesNotExistInTarget | R5 `Appointment.previousAppointment` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.priority | Appointment.priority | RelatedTo | R5 `Appointment.priority` maps as RelatedTo to R4 `Appointment.priority` - priority removed a binding requirement - Example http://terminology.hl7.org/ValueSet/v3-ActPriority; priority has change due to type change: R5 priority CodeableConcept has no equivalent or mapped type in R4 priority |
-| Appointment.reason | - | DoesNotExistInTarget | R5 `Appointment.reason` does not appear in the target and has no mapping for `Appointment`. |
+| Appointment.reason | Appointment.reasonCode | SourceIsBroaderThanTarget | R5 `Appointment.reason` maps as SourceIsBroaderThanTarget to R4 `Appointment.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
 | Appointment.recurrenceId | - | DoesNotExistInTarget | R5 `Appointment.recurrenceId` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.recurrenceTemplate | - | DoesNotExistInTarget | R5 `Appointment.recurrenceTemplate` does not appear in the target and has no mapping for `Appointment`. |
 | Appointment.recurrenceTemplate.excludingDate | - | DoesNotExistInTarget | R5 `Appointment.recurrenceTemplate.excludingDate` does not appear in the target and has no mapping for `Appointment`. |

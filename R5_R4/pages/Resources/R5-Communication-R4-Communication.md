@@ -13,9 +13,10 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 1 |
-Equivalent | 4 |
-RelatedTo | 30 |
+Equivalent | 25 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 8 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -33,19 +34,20 @@ RelatedTo | 30 |
 | Communication.inResponseTo | Communication.inResponseTo | Equivalent | R5 `Communication.inResponseTo` maps as Equivalent to R4 `Communication.inResponseTo` |
 | Communication.instantiatesCanonical | Communication.instantiatesCanonical | Equivalent | R5 `Communication.instantiatesCanonical` maps as Equivalent to R4 `Communication.instantiatesCanonical` |
 | Communication.instantiatesUri | Communication.instantiatesUri | Equivalent | R5 `Communication.instantiatesUri` maps as Equivalent to R4 `Communication.instantiatesUri` |
-| Communication.language | Communication.language | RelatedTo | R5 `Communication.language` maps as RelatedTo to R4 `Communication.language` - language changed the binding strength from Required to Preferred |
+| Communication.language | Communication.language | SourceIsNarrowerThanTarget | R5 `Communication.language` maps as SourceIsNarrowerThanTarget to R4 `Communication.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Communication.medium | Communication.medium | Equivalent | R5 `Communication.medium` maps as Equivalent to R4 `Communication.medium` |
 | Communication.meta | Communication.meta | Equivalent | R5 `Communication.meta` maps as Equivalent to R4 `Communication.meta` |
 | Communication.modifierExtension | Communication.modifierExtension | SourceIsBroaderThanTarget | R5 `Communication.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Communication.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Communication.note | Communication.note | SourceIsBroaderThanTarget | R5 `Communication.note` maps as SourceIsBroaderThanTarget to R4 `Communication.note` - note has change due to type change: R5 `note` `Annotation` maps as SourceIsBroaderThanTarget for R4 `note` |
 | Communication.partOf | Communication.partOf | Equivalent | R5 `Communication.partOf` maps as Equivalent to R4 `Communication.partOf` |
 | Communication.payload | Communication.payload | Equivalent | R5 `Communication.payload` maps as Equivalent to R4 `Communication.payload` |
-| Communication.payload.content[x] | Communication.payload.content[x] | RelatedTo | R5 `Communication.payload.content[x]` maps as RelatedTo to R4 `Communication.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x] |
+| Communication.payload.content[x] | Communication.payload.content[x] | SourceIsBroaderThanTarget | R5 `Communication.payload.content[x]` maps as SourceIsBroaderThanTarget to R4 `Communication.payload.content[x]` - content[x] has change due to type change: R5 `content[x]` `Attachment` maps as RelatedTo for R4 `content[x]`; content[x] has change due to type change: R5 content[x] CodeableConcept has no equivalent or mapped type in R4 content[x] |
 | Communication.payload.extension | Communication.payload.extension | SourceIsBroaderThanTarget | R5 `Communication.payload.extension` maps as SourceIsBroaderThanTarget to R4 `Communication.payload.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | Communication.payload.id | Communication.payload.id | Equivalent | R5 `Communication.payload.id` maps as Equivalent to R4 `Communication.payload.id` |
 | Communication.payload.modifierExtension | Communication.payload.modifierExtension | SourceIsBroaderThanTarget | R5 `Communication.payload.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Communication.payload.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Communication.priority | Communication.priority | Equivalent | R5 `Communication.priority` maps as Equivalent to R4 `Communication.priority` - priority has compatible required binding for code type: http://hl7.org/fhir/ValueSet/request-priority|5.0.0 and http://hl7.org/fhir/ValueSet/request-priority|4.0.1 (Equivalent) |
-| Communication.reason | - | DoesNotExistInTarget | R5 `Communication.reason` does not appear in the target and has no mapping for `Communication`. |
+| Communication.reason | Communication.reasonCode | SourceIsBroaderThanTarget | R5 `Communication.reason` maps as SourceIsBroaderThanTarget to R4 `Communication.reasonCode` - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode |
+| Communication.reason | Communication.reasonReference | RelatedTo | R5 `Communication.reason` maps as RelatedTo to R4 `Communication.reasonReference` - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference |
 | Communication.received | Communication.received | Equivalent | R5 `Communication.received` maps as Equivalent to R4 `Communication.received` |
 | Communication.recipient | Communication.recipient | SourceIsBroaderThanTarget | R5 `Communication.recipient` maps as SourceIsBroaderThanTarget to R4 `Communication.recipient` - recipient has change due to type change: R5 `recipient` `Reference` maps as SourceIsBroaderThanTarget for R4 `recipient` |
 | Communication.sender | Communication.sender | SourceIsBroaderThanTarget | R5 `Communication.sender` maps as SourceIsBroaderThanTarget to R4 `Communication.sender` - sender has change due to type change: R5 `sender` `Reference` maps as SourceIsBroaderThanTarget for R4 `sender` |

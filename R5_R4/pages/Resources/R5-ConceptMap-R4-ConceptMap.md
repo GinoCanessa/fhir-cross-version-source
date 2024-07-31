@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 46 |
-Equivalent | 4 |
-RelatedTo | 51 |
+DoesNotExistInTarget | 41 |
+Equivalent | 42 |
+RelatedTo | 1 |
+SourceIsBroaderThanTarget | 16 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -54,11 +56,11 @@ RelatedTo | 51 |
 | ConceptMap.group.element.target.code | ConceptMap.group.element.target.code | Equivalent | R5 `ConceptMap.group.element.target.code` maps as Equivalent to R4 `ConceptMap.group.element.target.code` |
 | ConceptMap.group.element.target.comment | ConceptMap.group.element.target.comment | Equivalent | R5 `ConceptMap.group.element.target.comment` maps as Equivalent to R4 `ConceptMap.group.element.target.comment` |
 | ConceptMap.group.element.target.dependsOn | ConceptMap.group.element.target.dependsOn | Equivalent | R5 `ConceptMap.group.element.target.dependsOn` maps as Equivalent to R4 `ConceptMap.group.element.target.dependsOn` |
-| ConceptMap.group.element.target.dependsOn.attribute | - | DoesNotExistInTarget | R5 `ConceptMap.group.element.target.dependsOn.attribute` does not appear in the target and has no mapping for `ConceptMap`. |
+| ConceptMap.group.element.target.dependsOn.attribute | ConceptMap.group.element.target.dependsOn.property | SourceIsBroaderThanTarget | R5 `ConceptMap.group.element.target.dependsOn.attribute` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.group.element.target.dependsOn.property` - property has change due to type change: R5 attribute code has no equivalent or mapped type in R4 property |
 | ConceptMap.group.element.target.dependsOn.extension | ConceptMap.group.element.target.dependsOn.extension | SourceIsBroaderThanTarget | R5 `ConceptMap.group.element.target.dependsOn.extension` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.group.element.target.dependsOn.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
 | ConceptMap.group.element.target.dependsOn.id | ConceptMap.group.element.target.dependsOn.id | Equivalent | R5 `ConceptMap.group.element.target.dependsOn.id` maps as Equivalent to R4 `ConceptMap.group.element.target.dependsOn.id` |
 | ConceptMap.group.element.target.dependsOn.modifierExtension | ConceptMap.group.element.target.dependsOn.modifierExtension | SourceIsBroaderThanTarget | R5 `ConceptMap.group.element.target.dependsOn.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.group.element.target.dependsOn.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| ConceptMap.group.element.target.dependsOn.value[x] | - | DoesNotExistInTarget | R5 `ConceptMap.group.element.target.dependsOn.value[x]` does not appear in the target and has no mapping for `ConceptMap`. |
+| ConceptMap.group.element.target.dependsOn.value[x] | ConceptMap.group.element.target.dependsOn.value | RelatedTo | R5 `ConceptMap.group.element.target.dependsOn.value[x]` maps as RelatedTo to R4 `ConceptMap.group.element.target.dependsOn.value` - value made the element mandatory; value increased the minimum cardinality from 0 to 1; value has change due to type change: R5 value[x] code has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Coding has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] boolean has no equivalent or mapped type in R4 value; value has change due to type change: R5 value[x] Quantity has no equivalent or mapped type in R4 value |
 | ConceptMap.group.element.target.dependsOn.valueSet | - | DoesNotExistInTarget | R5 `ConceptMap.group.element.target.dependsOn.valueSet` does not appear in the target and has no mapping for `ConceptMap`. |
 | ConceptMap.group.element.target.display | ConceptMap.group.element.target.display | Equivalent | R5 `ConceptMap.group.element.target.display` maps as Equivalent to R4 `ConceptMap.group.element.target.display` |
 | ConceptMap.group.element.target.extension | ConceptMap.group.element.target.extension | SourceIsBroaderThanTarget | R5 `ConceptMap.group.element.target.extension` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.group.element.target.extension` - extension has change due to type change: R5 `extension` `Extension` maps as SourceIsBroaderThanTarget for R4 `extension` |
@@ -86,14 +88,14 @@ RelatedTo | 51 |
 | ConceptMap.group.unmapped.id | ConceptMap.group.unmapped.id | Equivalent | R5 `ConceptMap.group.unmapped.id` maps as Equivalent to R4 `ConceptMap.group.unmapped.id` |
 | ConceptMap.group.unmapped.mode | ConceptMap.group.unmapped.mode | Equivalent | R5 `ConceptMap.group.unmapped.mode` maps as Equivalent to R4 `ConceptMap.group.unmapped.mode` - mode has compatible required binding for code type: http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|5.0.0 and http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode|4.0.1 (Equivalent) |
 | ConceptMap.group.unmapped.modifierExtension | ConceptMap.group.unmapped.modifierExtension | SourceIsBroaderThanTarget | R5 `ConceptMap.group.unmapped.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.group.unmapped.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
-| ConceptMap.group.unmapped.otherMap | - | DoesNotExistInTarget | R5 `ConceptMap.group.unmapped.otherMap` does not appear in the target and has no mapping for `ConceptMap`. |
+| ConceptMap.group.unmapped.otherMap | ConceptMap.group.unmapped.url | Equivalent | R5 `ConceptMap.group.unmapped.otherMap` maps as Equivalent to R4 `ConceptMap.group.unmapped.url` |
 | ConceptMap.group.unmapped.relationship | - | DoesNotExistInTarget | R5 `ConceptMap.group.unmapped.relationship` does not appear in the target and has no mapping for `ConceptMap`. |
 | ConceptMap.group.unmapped.valueSet | - | DoesNotExistInTarget | R5 `ConceptMap.group.unmapped.valueSet` does not appear in the target and has no mapping for `ConceptMap`. |
 | ConceptMap.id | ConceptMap.id | Equivalent | R5 `ConceptMap.id` maps as Equivalent to R4 `ConceptMap.id` |
-| ConceptMap.identifier | ConceptMap.identifier | RelatedTo | R5 `ConceptMap.identifier` maps as RelatedTo to R4 `ConceptMap.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
+| ConceptMap.identifier | ConceptMap.identifier | SourceIsBroaderThanTarget | R5 `ConceptMap.identifier` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.identifier` - identifier changed from array to scalar (max cardinality from * to 1) |
 | ConceptMap.implicitRules | ConceptMap.implicitRules | Equivalent | R5 `ConceptMap.implicitRules` maps as Equivalent to R4 `ConceptMap.implicitRules` |
 | ConceptMap.jurisdiction | ConceptMap.jurisdiction | Equivalent | R5 `ConceptMap.jurisdiction` maps as Equivalent to R4 `ConceptMap.jurisdiction` |
-| ConceptMap.language | ConceptMap.language | RelatedTo | R5 `ConceptMap.language` maps as RelatedTo to R4 `ConceptMap.language` - language changed the binding strength from Required to Preferred |
+| ConceptMap.language | ConceptMap.language | SourceIsNarrowerThanTarget | R5 `ConceptMap.language` maps as SourceIsNarrowerThanTarget to R4 `ConceptMap.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | ConceptMap.lastReviewDate | - | DoesNotExistInTarget | R5 `ConceptMap.lastReviewDate` does not appear in the target and has no mapping for `ConceptMap`. |
 | ConceptMap.meta | ConceptMap.meta | Equivalent | R5 `ConceptMap.meta` maps as Equivalent to R4 `ConceptMap.meta` |
 | ConceptMap.modifierExtension | ConceptMap.modifierExtension | SourceIsBroaderThanTarget | R5 `ConceptMap.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `ConceptMap.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
@@ -111,9 +113,9 @@ RelatedTo | 51 |
 | ConceptMap.purpose | ConceptMap.purpose | Equivalent | R5 `ConceptMap.purpose` maps as Equivalent to R4 `ConceptMap.purpose` |
 | ConceptMap.relatedArtifact | - | DoesNotExistInTarget | R5 `ConceptMap.relatedArtifact` does not appear in the target and has no mapping for `ConceptMap`. |
 | ConceptMap.reviewer | - | DoesNotExistInTarget | R5 `ConceptMap.reviewer` does not appear in the target and has no mapping for `ConceptMap`. |
-| ConceptMap.sourceScope[x] | - | DoesNotExistInTarget | R5 `ConceptMap.sourceScope[x]` does not appear in the target and has no mapping for `ConceptMap`. |
+| ConceptMap.sourceScope[x] | ConceptMap.source[x] | Equivalent | R5 `ConceptMap.sourceScope[x]` maps as Equivalent to R4 `ConceptMap.source[x]` |
 | ConceptMap.status | ConceptMap.status | Equivalent | R5 `ConceptMap.status` maps as Equivalent to R4 `ConceptMap.status` - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/publication-status|5.0.0 and http://hl7.org/fhir/ValueSet/publication-status|4.0.1 (Equivalent) |
-| ConceptMap.targetScope[x] | - | DoesNotExistInTarget | R5 `ConceptMap.targetScope[x]` does not appear in the target and has no mapping for `ConceptMap`. |
+| ConceptMap.targetScope[x] | ConceptMap.target[x] | Equivalent | R5 `ConceptMap.targetScope[x]` maps as Equivalent to R4 `ConceptMap.target[x]` |
 | ConceptMap.text | ConceptMap.text | Equivalent | R5 `ConceptMap.text` maps as Equivalent to R4 `ConceptMap.text` |
 | ConceptMap.title | ConceptMap.title | Equivalent | R5 `ConceptMap.title` maps as Equivalent to R4 `ConceptMap.title` |
 | ConceptMap.topic | - | DoesNotExistInTarget | R5 `ConceptMap.topic` does not appear in the target and has no mapping for `ConceptMap`. |

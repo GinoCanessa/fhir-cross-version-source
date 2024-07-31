@@ -13,9 +13,11 @@ Comparison Result: RelatedTo
 
 | Status | Count |
 | ------ | ----- |
-DoesNotExistInTarget | 29 |
-Equivalent | 4 |
-RelatedTo | 142 |
+DoesNotExistInTarget | 27 |
+Equivalent | 113 |
+RelatedTo | 6 |
+SourceIsBroaderThanTarget | 28 |
+SourceIsNarrowerThanTarget | 1 |
 
 
 | Source | Target | Status | Message |
@@ -37,7 +39,7 @@ RelatedTo | 142 |
 | Claim.careTeam.responsible | Claim.careTeam.responsible | Equivalent | R5 `Claim.careTeam.responsible` maps as Equivalent to R4 `Claim.careTeam.responsible` |
 | Claim.careTeam.role | Claim.careTeam.role | Equivalent | R5 `Claim.careTeam.role` maps as Equivalent to R4 `Claim.careTeam.role` |
 | Claim.careTeam.sequence | Claim.careTeam.sequence | Equivalent | R5 `Claim.careTeam.sequence` maps as Equivalent to R4 `Claim.careTeam.sequence` |
-| Claim.careTeam.specialty | - | DoesNotExistInTarget | R5 `Claim.careTeam.specialty` does not appear in the target and has no mapping for `Claim`. |
+| Claim.careTeam.specialty | Claim.careTeam.qualification | Equivalent | R5 `Claim.careTeam.specialty` maps as Equivalent to R4 `Claim.careTeam.qualification` |
 | Claim.contained | Claim.contained | Equivalent | R5 `Claim.contained` maps as Equivalent to R4 `Claim.contained` |
 | Claim.created | Claim.created | Equivalent | R5 `Claim.created` maps as Equivalent to R4 `Claim.created` |
 | Claim.diagnosis | Claim.diagnosis | Equivalent | R5 `Claim.diagnosis` maps as Equivalent to R4 `Claim.diagnosis` |
@@ -76,12 +78,12 @@ RelatedTo | 142 |
 | Claim.insurance.sequence | Claim.insurance.sequence | Equivalent | R5 `Claim.insurance.sequence` maps as Equivalent to R4 `Claim.insurance.sequence` |
 | Claim.insurer | Claim.insurer | Equivalent | R5 `Claim.insurer` maps as Equivalent to R4 `Claim.insurer` |
 | Claim.item | Claim.item | Equivalent | R5 `Claim.item` maps as Equivalent to R4 `Claim.item` |
-| Claim.item.bodySite | Claim.item.bodySite | RelatedTo | R5 `Claim.item.bodySite` maps as RelatedTo to R4 `Claim.item.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
+| Claim.item.bodySite | Claim.item.bodySite | SourceIsBroaderThanTarget | R5 `Claim.item.bodySite` maps as SourceIsBroaderThanTarget to R4 `Claim.item.bodySite` - bodySite changed from array to scalar (max cardinality from * to 1); bodySite added a binding requirement - Example http://hl7.org/fhir/ValueSet/tooth; bodySite has change due to type change: R5 bodySite BackboneElement has no equivalent or mapped type in R4 bodySite |
 | Claim.item.bodySite.extension | - | DoesNotExistInTarget | R5 `Claim.item.bodySite.extension` does not appear in the target and has no mapping for `Claim`. |
 | Claim.item.bodySite.id | - | DoesNotExistInTarget | R5 `Claim.item.bodySite.id` does not appear in the target and has no mapping for `Claim`. |
 | Claim.item.bodySite.modifierExtension | - | DoesNotExistInTarget | R5 `Claim.item.bodySite.modifierExtension` does not appear in the target and has no mapping for `Claim`. |
 | Claim.item.bodySite.site | - | DoesNotExistInTarget | R5 `Claim.item.bodySite.site` does not appear in the target and has no mapping for `Claim`. |
-| Claim.item.bodySite.subSite | - | DoesNotExistInTarget | R5 `Claim.item.bodySite.subSite` does not appear in the target and has no mapping for `Claim`. |
+| Claim.item.bodySite.subSite | Claim.item.subSite | Equivalent | R5 `Claim.item.bodySite.subSite` maps as Equivalent to R4 `Claim.item.subSite` |
 | Claim.item.careTeamSequence | Claim.item.careTeamSequence | Equivalent | R5 `Claim.item.careTeamSequence` maps as Equivalent to R4 `Claim.item.careTeamSequence` |
 | Claim.item.category | Claim.item.category | Equivalent | R5 `Claim.item.category` maps as Equivalent to R4 `Claim.item.category` |
 | Claim.item.detail | Claim.item.detail | Equivalent | R5 `Claim.item.detail` maps as Equivalent to R4 `Claim.item.detail` |
@@ -146,7 +148,7 @@ RelatedTo | 142 |
 | Claim.item.traceNumber | - | DoesNotExistInTarget | R5 `Claim.item.traceNumber` does not appear in the target and has no mapping for `Claim`. |
 | Claim.item.udi | Claim.item.udi | Equivalent | R5 `Claim.item.udi` maps as Equivalent to R4 `Claim.item.udi` |
 | Claim.item.unitPrice | Claim.item.unitPrice | Equivalent | R5 `Claim.item.unitPrice` maps as Equivalent to R4 `Claim.item.unitPrice` |
-| Claim.language | Claim.language | RelatedTo | R5 `Claim.language` maps as RelatedTo to R4 `Claim.language` - language changed the binding strength from Required to Preferred |
+| Claim.language | Claim.language | SourceIsNarrowerThanTarget | R5 `Claim.language` maps as SourceIsNarrowerThanTarget to R4 `Claim.language` - language changed the binding strength from Required to Preferred; language has change due to type change: R5 `language` `code` maps as SourceIsNarrowerThanTarget for R4 `language` |
 | Claim.meta | Claim.meta | Equivalent | R5 `Claim.meta` maps as Equivalent to R4 `Claim.meta` |
 | Claim.modifierExtension | Claim.modifierExtension | SourceIsBroaderThanTarget | R5 `Claim.modifierExtension` maps as SourceIsBroaderThanTarget to R4 `Claim.modifierExtension` - modifierExtension has change due to type change: R5 `modifierExtension` `Extension` maps as SourceIsBroaderThanTarget for R4 `modifierExtension` |
 | Claim.originalPrescription | Claim.originalPrescription | Equivalent | R5 `Claim.originalPrescription` maps as Equivalent to R4 `Claim.originalPrescription` |
@@ -189,7 +191,7 @@ RelatedTo | 142 |
 | Claim.supportingInfo.reason | Claim.supportingInfo.reason | Equivalent | R5 `Claim.supportingInfo.reason` maps as Equivalent to R4 `Claim.supportingInfo.reason` |
 | Claim.supportingInfo.sequence | Claim.supportingInfo.sequence | Equivalent | R5 `Claim.supportingInfo.sequence` maps as Equivalent to R4 `Claim.supportingInfo.sequence` |
 | Claim.supportingInfo.timing[x] | Claim.supportingInfo.timing[x] | Equivalent | R5 `Claim.supportingInfo.timing[x]` maps as Equivalent to R4 `Claim.supportingInfo.timing[x]` |
-| Claim.supportingInfo.value[x] | Claim.supportingInfo.value[x] | RelatedTo | R5 `Claim.supportingInfo.value[x]` maps as RelatedTo to R4 `Claim.supportingInfo.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x] |
+| Claim.supportingInfo.value[x] | Claim.supportingInfo.value[x] | SourceIsBroaderThanTarget | R5 `Claim.supportingInfo.value[x]` maps as SourceIsBroaderThanTarget to R4 `Claim.supportingInfo.value[x]` - value[x] has change due to type change: R5 `value[x]` `Attachment` maps as RelatedTo for R4 `value[x]`; value[x] has change due to type change: R5 value[x] Identifier has no equivalent or mapped type in R4 value[x] |
 | Claim.text | Claim.text | Equivalent | R5 `Claim.text` maps as Equivalent to R4 `Claim.text` |
 | Claim.total | Claim.total | Equivalent | R5 `Claim.total` maps as Equivalent to R4 `Claim.total` |
 | Claim.traceNumber | - | DoesNotExistInTarget | R5 `Claim.traceNumber` does not appear in the target and has no mapping for `Claim`. |

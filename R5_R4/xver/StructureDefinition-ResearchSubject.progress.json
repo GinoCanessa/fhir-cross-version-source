@@ -506,20 +506,23 @@
       },
       {
         "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchSubjectStateType"
+            }
+          ],
+          "strength": "example",
+          "description": "Identifies the kind of state being refered to.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-subject-state-type"
+        }
       },
       {
         "path": "Extension.extension:type.url",
@@ -535,20 +538,23 @@
       },
       {
         "path": "Extension.extension:subjectState.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:subjectState.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchSubjectProgresss"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/research-subject-state|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-research-subject-state|1.0.0"
+        }
       },
       {
         "path": "Extension.extension:subjectState.url",
@@ -565,20 +571,23 @@
       },
       {
         "path": "Extension.extension:milestone.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:milestone.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ResearchSubjectMilestone"
+            }
+          ],
+          "strength": "example",
+          "description": "Indicates the progression of a study subject through the study milestones.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-subject-milestone"
+        }
       },
       {
         "path": "Extension.extension:milestone.url",
@@ -594,20 +603,23 @@
       },
       {
         "path": "Extension.extension:reason.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reason.extension:CodeableConcept",
-        "sliceName": "CodeableConcept",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableConcept"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "StateChangeReason"
+            }
+          ],
+          "strength": "example",
+          "description": "Indicates why the state of the subject changed.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/state-change-reason"
+        }
       },
       {
         "path": "Extension.extension:reason.url",
@@ -624,18 +636,10 @@
       },
       {
         "path": "Extension.extension:startDate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:startDate.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },
@@ -653,18 +657,10 @@
       },
       {
         "path": "Extension.extension:endDate.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:endDate.extension:dateTime",
-        "sliceName": "dateTime",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-dateTime"
-            ]
+            "code": "dateTime"
           }
         ]
       },

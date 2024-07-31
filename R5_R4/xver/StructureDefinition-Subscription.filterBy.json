@@ -492,20 +492,29 @@
       },
       {
         "path": "Extension.extension:resourceType.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:resourceType.extension:uri",
-        "sliceName": "uri",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-uri"
-            ]
+            "code": "uri"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "FHIRTypes"
+            }
+          ],
+          "strength": "extensible",
+          "description": "A type of resource, or a Reference (from all versions)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/subscription-types",
+          "additional": [
+            {
+              "purpose": "ui",
+              "valueSet": "http://hl7.org/fhir/ValueSet/all-resource-types"
+            }
+          ]
+        }
       },
       {
         "path": "Extension.extension:resourceType.url",
@@ -521,18 +530,10 @@
       },
       {
         "path": "Extension.extension:filterParameter.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:filterParameter.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },
@@ -551,20 +552,23 @@
       },
       {
         "path": "Extension.extension:comparator.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:comparator.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "SearchComparator"
+            }
+          ],
+          "strength": "required",
+          "description": "Search Comparator Codes applied to this filter.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/search-comparator|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:comparator.url",
@@ -581,20 +585,23 @@
       },
       {
         "path": "Extension.extension:modifier.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:modifier.extension:code",
-        "sliceName": "code",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-code"
-            ]
+            "code": "code"
           }
-        ]
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "SearchModifierCode"
+            }
+          ],
+          "strength": "required",
+          "description": "Search Modifier Code applied to this filter.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/search-modifier-code|5.0.0"
+        }
       },
       {
         "path": "Extension.extension:modifier.url",
@@ -610,18 +617,10 @@
       },
       {
         "path": "Extension.extension:value.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value.extension:string",
-        "sliceName": "string",
-        "sliceIsConstraining": true,
+        "min": 1,
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-string"
-            ]
+            "code": "string"
           }
         ]
       },

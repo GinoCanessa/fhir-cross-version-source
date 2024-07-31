@@ -28,30 +28,6 @@
       "target": "http://hl7.org/fhir/StructureDefinition/CareTeam",
       "element": [
         {
-          "code": "CareTeam.reason.concept",
-          "target": [
-            {
-              "code": "CareTeam.reasonCode",
-              "relationship": "equivalent"
-            }
-          ]
-        },
-        {
-          "code": "CareTeam.reason.reference",
-          "target": [
-            {
-              "code": "CareTeam.reasonReference",
-              "relationship": "equivalent"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": "http://hl7.org/fhir/StructureDefinition/CareTeam",
-      "target": "http://hl7.org/fhir/StructureDefinition/CareTeam",
-      "element": [
-        {
           "code": "CareTeam",
           "display": "Planned participants in the coordination and delivery of care",
           "target": [
@@ -70,7 +46,7 @@
             {
               "code": "CareTeam.category",
               "display": "Type of team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.category\u0060 maps as Equivalent to R4 \u0060CareTeam.category\u0060"
             }
           ]
@@ -82,7 +58,7 @@
             {
               "code": "CareTeam.contained",
               "display": "Contained, inline Resources",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.contained\u0060 maps as Equivalent to R4 \u0060CareTeam.contained\u0060"
             }
           ]
@@ -94,7 +70,7 @@
             {
               "code": "CareTeam.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CareTeam.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -118,7 +94,7 @@
             {
               "code": "CareTeam.identifier",
               "display": "External Ids for this team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.identifier\u0060 maps as Equivalent to R4 \u0060CareTeam.identifier\u0060"
             }
           ]
@@ -142,8 +118,8 @@
             {
               "code": "CareTeam.language",
               "display": "Language of the resource content",
-              "relationship": "related-to",
-              "comment": "R5 \u0060CareTeam.language\u0060 maps as RelatedTo to R4 \u0060CareTeam.language\u0060 - language changed the binding strength from Required to Preferred"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060CareTeam.language\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060CareTeam.language\u0060 - language changed the binding strength from Required to Preferred; language has change due to type change: R5 \u0060language\u0060 \u0060code\u0060 maps as SourceIsNarrowerThanTarget for R4 \u0060language\u0060"
             }
           ]
         },
@@ -154,7 +130,7 @@
             {
               "code": "CareTeam.managingOrganization",
               "display": "Organization responsible for the care team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.managingOrganization\u0060 maps as Equivalent to R4 \u0060CareTeam.managingOrganization\u0060"
             }
           ]
@@ -178,7 +154,7 @@
             {
               "code": "CareTeam.modifierExtension",
               "display": "Extensions that cannot be ignored",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CareTeam.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -190,7 +166,7 @@
             {
               "code": "CareTeam.name",
               "display": "Name of the team, such as crisis assessment team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.name\u0060 maps as Equivalent to R4 \u0060CareTeam.name\u0060"
             }
           ]
@@ -202,7 +178,7 @@
             {
               "code": "CareTeam.note",
               "display": "Comments made about the CareTeam",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CareTeam.note\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.note\u0060 - note has change due to type change: R5 \u0060note\u0060 \u0060Annotation\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060note\u0060"
             }
           ]
@@ -214,15 +190,21 @@
             {
               "code": "CareTeam.participant",
               "display": "Members of the team",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.participant\u0060 maps as Equivalent to R4 \u0060CareTeam.participant\u0060"
             }
           ]
         },
         {
           "code": "CareTeam.participant.coverage[x]",
-          "display": "When the member is generally available within this care team",
-          "noMap": true
+          "target": [
+            {
+              "code": "CareTeam.participant.period",
+              "display": "Time period of participant",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060CareTeam.participant.coverage[x]\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.participant.period\u0060 - period has change due to type change: R5 coverage[x] Timing has no equivalent or mapped type in R4 period"
+            }
+          ]
         },
         {
           "code": "CareTeam.participant.extension",
@@ -231,7 +213,7 @@
             {
               "code": "CareTeam.participant.extension",
               "display": "Additional content defined by implementations",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CareTeam.participant.extension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.participant.extension\u0060 - extension has change due to type change: R5 \u0060extension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060extension\u0060"
             }
           ]
@@ -243,7 +225,7 @@
             {
               "code": "CareTeam.participant.id",
               "display": "Unique id for inter-element referencing",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.participant.id\u0060 maps as Equivalent to R4 \u0060CareTeam.participant.id\u0060"
             }
           ]
@@ -255,7 +237,7 @@
             {
               "code": "CareTeam.participant.member",
               "display": "Who is involved",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.participant.member\u0060 maps as Equivalent to R4 \u0060CareTeam.participant.member\u0060"
             }
           ]
@@ -267,7 +249,7 @@
             {
               "code": "CareTeam.participant.modifierExtension",
               "display": "Extensions that cannot be ignored even if unrecognized",
-              "relationship": "related-to",
+              "relationship": "source-is-broader-than-target",
               "comment": "R5 \u0060CareTeam.participant.modifierExtension\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.participant.modifierExtension\u0060 - modifierExtension has change due to type change: R5 \u0060modifierExtension\u0060 \u0060Extension\u0060 maps as SourceIsBroaderThanTarget for R4 \u0060modifierExtension\u0060"
             }
           ]
@@ -279,7 +261,7 @@
             {
               "code": "CareTeam.participant.onBehalfOf",
               "display": "Organization of the practitioner",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.participant.onBehalfOf\u0060 maps as Equivalent to R4 \u0060CareTeam.participant.onBehalfOf\u0060"
             }
           ]
@@ -291,8 +273,8 @@
             {
               "code": "CareTeam.participant.role",
               "display": "Type of involvement",
-              "relationship": "related-to",
-              "comment": "R5 \u0060CareTeam.participant.role\u0060 maps as RelatedTo to R4 \u0060CareTeam.participant.role\u0060 - role changed from scalar to array (max cardinality from 1 to *)"
+              "relationship": "source-is-narrower-than-target",
+              "comment": "R5 \u0060CareTeam.participant.role\u0060 maps as SourceIsNarrowerThanTarget to R4 \u0060CareTeam.participant.role\u0060 - role changed from scalar to array (max cardinality from 1 to *)"
             }
           ]
         },
@@ -303,15 +285,45 @@
             {
               "code": "CareTeam.period",
               "display": "Time period team covers",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.period\u0060 maps as Equivalent to R4 \u0060CareTeam.period\u0060"
             }
           ]
         },
         {
           "code": "CareTeam.reason",
-          "display": "Why the care team exists",
-          "noMap": true
+          "target": [
+            {
+              "code": "CareTeam.reasonCode",
+              "display": "Why the care team exists",
+              "relationship": "source-is-broader-than-target",
+              "comment": "R5 \u0060CareTeam.reason\u0060 maps as SourceIsBroaderThanTarget to R4 \u0060CareTeam.reasonCode\u0060 - reasonCode has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonCode"
+            },
+            {
+              "code": "CareTeam.reasonReference",
+              "display": "Why the care team exists",
+              "relationship": "related-to",
+              "comment": "R5 \u0060CareTeam.reason\u0060 maps as RelatedTo to R4 \u0060CareTeam.reasonReference\u0060 - reasonReference removed a binding requirement - Example http://hl7.org/fhir/ValueSet/clinical-findings; reasonReference has change due to type change: R5 reason CodeableReference has no equivalent or mapped type in R4 reasonReference"
+            }
+          ]
+        },
+        {
+          "code": "CareTeam.reason.concept",
+          "target": [
+            {
+              "code": "CareTeam.reasonCode",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CareTeam.reason.reference",
+          "target": [
+            {
+              "code": "CareTeam.reasonReference",
+              "relationship": "equivalent"
+            }
+          ]
         },
         {
           "code": "CareTeam.status",
@@ -320,7 +332,7 @@
             {
               "code": "CareTeam.status",
               "display": "proposed | active | suspended | inactive | entered-in-error",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.status\u0060 maps as Equivalent to R4 \u0060CareTeam.status\u0060 - status has compatible required binding for code type: http://hl7.org/fhir/ValueSet/care-team-status|5.0.0 and http://hl7.org/fhir/ValueSet/care-team-status|4.0.1 (Equivalent)"
             }
           ]
@@ -332,7 +344,7 @@
             {
               "code": "CareTeam.subject",
               "display": "Who care team is for",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.subject\u0060 maps as Equivalent to R4 \u0060CareTeam.subject\u0060"
             }
           ]
@@ -344,7 +356,7 @@
             {
               "code": "CareTeam.telecom",
               "display": "A contact detail for the care team (that applies to all members)",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.telecom\u0060 maps as Equivalent to R4 \u0060CareTeam.telecom\u0060"
             }
           ]
@@ -356,7 +368,7 @@
             {
               "code": "CareTeam.text",
               "display": "Text summary of the resource, for human interpretation",
-              "relationship": "related-to",
+              "relationship": "equivalent",
               "comment": "R5 \u0060CareTeam.text\u0060 maps as Equivalent to R4 \u0060CareTeam.text\u0060"
             }
           ]
