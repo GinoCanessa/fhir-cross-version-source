@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -539,74 +539,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "Expresses the type of characteristic",
-        "definition": "Used to express the type of characteristic.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:type",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:method",
-        "path": "Extension.extension:method",
-        "short": "Method for how the characteristic value was determined",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:method",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:device",
-        "path": "Extension.extension:device",
-        "short": "Device used for determining characteristic",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:device",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value[x]",
-        "path": "Extension.extension:value[x]",
-        "short": "Defines the characteristic when coupled with characteristic.type",
-        "definition": "Defines the characteristic when paired with characteristic.type.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:value[x]",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:offset",
-        "path": "Extension.extension:offset",
-        "short": "Reference point for valueQuantity or valueRange",
-        "definition": "Defines the reference point for comparison when valueQuantity or valueRange is not compared to zero.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:offset",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:definitionByCombination",
         "path": "Extension.extension:definitionByCombination",
         "short": "Used to specify how two or more characteristics are combined",
@@ -617,46 +549,6 @@
           "path": "Extension.extension:definitionByCombination",
           "min": 0,
           "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:code",
-        "path": "Extension.extension:code",
-        "short": "all-of | any-of | at-least | at-most | statistical | net-effect | dataset",
-        "definition": "Used to specify if two or more characteristics are combined with OR or AND.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:code",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:threshold",
-        "path": "Extension.extension:threshold",
-        "short": "Provides the value of \"n\" when \"at-least\" or \"at-most\" codes are used",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:threshold",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:characteristic",
-        "path": "Extension.extension:characteristic",
-        "short": "A defining factor of the characteristic",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:characteristic",
-          "min": 1,
-          "max": "*"
         },
         "isModifier": false
       },
@@ -700,70 +592,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:description",
-        "path": "Extension.extension:description",
-        "short": "Human readable description",
-        "min": 0,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:description",
-          "min": 0,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:note",
-        "path": "Extension.extension:note",
-        "short": "Used for footnotes or explanatory notes",
-        "definition": "A human-readable string to clarify or explain concepts about the timeFromEvent.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:note",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:event[x]",
-        "path": "Extension.extension:event[x]",
-        "short": "The event used as a base point (reference point) in time",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:event[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:quantity",
-        "path": "Extension.extension:quantity",
-        "short": "Used to express the observation at a defined amount of time before or after the event",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:quantity",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:range",
-        "path": "Extension.extension:range",
-        "short": "Used to express the observation within a period before and/or after the event",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:range",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic"
       }
     ]
   },
@@ -1122,160 +956,12 @@
         "fixedUri": "offset"
       },
       {
+        "path": "Extension.extension:definitionByTypeAndValue.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:definitionByTypeAndValue.url",
         "fixedUri": "definitionByTypeAndValue"
-      },
-      {
-        "path": "Extension.extension:type",
-        "short": "Expresses the type of characteristic",
-        "definition": "Used to express the type of characteristic.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "UsageContextType"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://terminology.hl7.org/ValueSet/usage-context-type"
-        }
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:method",
-        "short": "Method for how the characteristic value was determined",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:method.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DefinitionMethod"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/definition-method"
-        }
-      },
-      {
-        "path": "Extension.extension:method.url",
-        "fixedUri": "method"
-      },
-      {
-        "path": "Extension.extension:device",
-        "short": "Device used for determining characteristic",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:device.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:device.url",
-        "fixedUri": "device"
-      },
-      {
-        "path": "Extension.extension:value[x]",
-        "short": "Defines the characteristic when coupled with characteristic.type",
-        "definition": "Defines the characteristic when paired with characteristic.type.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value[x].value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "id"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
-      },
-      {
-        "path": "Extension.extension:offset",
-        "short": "Reference point for valueQuantity or valueRange",
-        "definition": "Defines the reference point for comparison when valueQuantity or valueRange is not compared to zero.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:offset.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "CharacteristicOffset"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/characteristic-offset"
-        }
-      },
-      {
-        "path": "Extension.extension:offset.url",
-        "fixedUri": "offset"
       },
       {
         "path": "Extension.extension:definitionByCombination",
@@ -1353,75 +1039,12 @@
         "fixedUri": "characteristic"
       },
       {
-        "path": "Extension.extension:definitionByCombination.url",
-        "fixedUri": "definitionByCombination"
-      },
-      {
-        "path": "Extension.extension:code",
-        "short": "all-of | any-of | at-least | at-most | statistical | net-effect | dataset",
-        "definition": "Used to specify if two or more characteristics are combined with OR or AND.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:code.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "CharacteristicCombination"
-            }
-          ],
-          "strength": "required",
-          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/characteristic-combination|5.0.0 compared with R4",
-          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-characteristic-combination|1.0.0"
-        }
-      },
-      {
-        "path": "Extension.extension:code.url",
-        "fixedUri": "code"
-      },
-      {
-        "path": "Extension.extension:threshold",
-        "short": "Provides the value of \"n\" when \"at-least\" or \"at-most\" codes are used",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:threshold.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "positiveInt"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:threshold.url",
-        "fixedUri": "threshold"
-      },
-      {
-        "path": "Extension.extension:characteristic",
-        "short": "A defining factor of the characteristic",
-        "min": 1,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:characteristic.value[x]",
+        "path": "Extension.extension:definitionByCombination.value[x]",
         "max": "0"
       },
       {
-        "path": "Extension.extension:characteristic.url",
-        "fixedUri": "characteristic"
+        "path": "Extension.extension:definitionByCombination.url",
+        "fixedUri": "definitionByCombination"
       },
       {
         "path": "Extension.extension:instances[x]",
@@ -1597,128 +1220,16 @@
         "fixedUri": "range"
       },
       {
+        "path": "Extension.extension:timeFromEvent.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:timeFromEvent.url",
         "fixedUri": "timeFromEvent"
       },
       {
-        "path": "Extension.extension:description",
-        "short": "Human readable description",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:description.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "markdown"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:description.url",
-        "fixedUri": "description"
-      },
-      {
-        "path": "Extension.extension:note",
-        "short": "Used for footnotes or explanatory notes",
-        "definition": "A human-readable string to clarify or explain concepts about the timeFromEvent.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:note.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Annotation"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:note.url",
-        "fixedUri": "note"
-      },
-      {
-        "path": "Extension.extension:event[x]",
-        "short": "The event used as a base point (reference point) in time",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:event[x].value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "Reference"
-          },
-          {
-            "code": "dateTime"
-          },
-          {
-            "code": "id"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "EvidenceVariableEvent"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/evidence-variable-event"
-        }
-      },
-      {
-        "path": "Extension.extension:event[x].url",
-        "fixedUri": "event%5Bx%5D"
-      },
-      {
-        "path": "Extension.extension:quantity",
-        "short": "Used to express the observation at a defined amount of time before or after the event",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:quantity.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:quantity.url",
-        "fixedUri": "quantity"
-      },
-      {
-        "path": "Extension.extension:range",
-        "short": "Used to express the observation within a period before and/or after the event",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:range.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Range"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:range.url",
-        "fixedUri": "range"
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

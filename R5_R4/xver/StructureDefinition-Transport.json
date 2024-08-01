@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,441 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical",
+        "path": "Extension.extension:instantiatesCanonical",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to a *FHIR*-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:instantiatesCanonical",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:instantiatesUri",
+        "path": "Extension.extension:instantiatesUri",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to an *externally* maintained  protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:instantiatesUri",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension:basedOn",
+        "short": "Request fulfilled by this transport",
+        "definition": "BasedOn refers to a higher-level authorization that triggered the creation of the transport.  It references a \"request\" resource such as a ServiceRequest or Transport, which is distinct from the \"request\" resource the Transport is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a transport is created to fulfill a procedureRequest ( = FocusOn ) to transport a specimen to the lab.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basedOn",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:groupIdentifier",
+        "path": "Extension.extension:groupIdentifier",
+        "short": "Requisition or grouper id",
+        "definition": "A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:groupIdentifier",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:partOf",
+        "path": "Extension.extension:partOf",
+        "short": "Part of referenced event",
+        "definition": "A larger event of which this particular event is a component or step.",
+        "comment": "Not to be used to link an event to an Encounter - use Event.context for that.\r\r[The allowed reference resources may be adjusted as appropriate for the event resource].",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:partOf",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "in-progress | completed | abandoned | cancelled | planned | entered-in-error",
+        "definition": "A code specifying the state of the transport event.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension:statusReason",
+        "short": "Reason for current status",
+        "definition": "An explanation as to why this transport is held, failed, was refused, etc.",
+        "comment": "This applies to the current status.  Look at the history of the transport to see reasons for past statuses.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:statusReason",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:intent",
+        "path": "Extension.extension:intent",
+        "short": "unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
+        "definition": "Indicates the \"level\" of actionability associated with the Transport, i.e. i+R[9]Cs this a proposed transport, a planned transport, an actionable transport, etc.",
+        "comment": "This element is immutable.  Proposed transports, planned transports, etc. must be distinct instances.\n\nIn most cases, Transports will have an intent of \"order\".",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:intent",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:priority",
+        "path": "Extension.extension:priority",
+        "short": "routine | urgent | asap | stat",
+        "definition": "Indicates how quickly the Transport should be addressed with respect to other requests.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:priority",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Human-readable explanation of transport",
+        "definition": "A free-text description of what is to be performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:focus",
+        "path": "Extension.extension:focus",
+        "short": "What transport is acting on",
+        "definition": "The request being actioned or the resource being manipulated by this transport.",
+        "comment": "If multiple resources need to be manipulated, use sub-transports.  (This ensures that status can be tracked independently for each referenced resource.).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:focus",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:for",
+        "path": "Extension.extension:for",
+        "short": "Beneficiary of the Transport",
+        "definition": "The entity who benefits from the performance of the service specified in the transport (e.g., the patient).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:for",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension:encounter",
+        "short": "Healthcare event during which this transport originated",
+        "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this transport was created.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:completionTime",
+        "path": "Extension.extension:completionTime",
+        "short": "Completion time of the event (the occurrence)",
+        "definition": "Identifies the completion time of the event (the occurrence).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:completionTime",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:authoredOn",
+        "path": "Extension.extension:authoredOn",
+        "short": "Transport Creation Date",
+        "definition": "The date and time this transport was created.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:authoredOn",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:lastModified",
+        "path": "Extension.extension:lastModified",
+        "short": "Transport Last Modified Date",
+        "definition": "The date and time of last modification to this transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:lastModified",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:requester",
+        "path": "Extension.extension:requester",
+        "short": "Who is asking for transport to be done",
+        "definition": "The creator of the transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:requester",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:performerType",
+        "path": "Extension.extension:performerType",
+        "short": "Requested performer",
+        "definition": "The kind of participant that should perform the transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:performerType",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:owner",
+        "path": "Extension.extension:owner",
+        "short": "Responsible individual",
+        "definition": "Individual organization or Device currently responsible for transport execution.",
+        "comment": "Transports may be created with an owner not yet identified.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:owner",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension:location",
+        "short": "Where transport occurs",
+        "definition": "Principal physical location where this transport is performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:location",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:insurance",
+        "path": "Extension.extension:insurance",
+        "short": "Associated insurance coverage",
+        "definition": "Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:insurance",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Comments made about the transport",
+        "definition": "Free-text information captured about the transport as it progresses.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:relevantHistory",
+        "path": "Extension.extension:relevantHistory",
+        "short": "Key events in history of the Transport",
+        "definition": "Links to Provenance records for past versions of this Transport that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the transport.",
+        "comment": "This element does not point to the Provenance associated with the *current* version of the resource - as it would be created after this version existed.  The Provenance for the current version can be retrieved with a _revinclude.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:relevantHistory",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:restriction",
+        "path": "Extension.extension:restriction",
+        "short": "Constraints on fulfillment transports",
+        "definition": "If the Transport.focus is a request resource and the transport is seeking fulfillment (i.e. is asking for the request to be actioned), this element identifies any limitations on what parts of the referenced request should be actioned.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:restriction",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:input",
+        "path": "Extension.extension:input",
+        "short": "Information used to perform transport",
+        "definition": "Additional information that may be needed in the execution of the transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:input",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:output",
+        "path": "Extension.extension:output",
+        "short": "Information produced as part of transport",
+        "definition": "Outputs produced by the Transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:output",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:requestedLocation",
+        "path": "Extension.extension:requestedLocation",
+        "short": "The desired location",
+        "definition": "The desired or final location for the transport.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:requestedLocation",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:currentLocation",
+        "path": "Extension.extension:currentLocation",
+        "short": "The entity current location",
+        "definition": "The current location for the entity to be transported.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:currentLocation",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension:reason",
+        "short": "Why transport is needed",
+        "definition": "A resource reference indicating why this transport needs to be performed.",
+        "comment": "Transports might be justified based on an Observation, a Condition, a past or planned procedure, etc. This should only be included if there is no focus or if it differs from the reason indicated on the focus.    Use the CodeableConcept text element in `Transport.reasonCode` if the data is free (uncoded) text.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:reason",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:history",
+        "path": "Extension.extension:history",
+        "short": "Parent (or preceding) transport",
+        "definition": "The transport event prior to this one.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:history",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Transport"
       }
     ]
   },
@@ -409,6 +844,1355 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to a *FHIR*-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical.url",
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "path": "Extension.extension:instantiatesUri",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to an *externally* maintained  protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instantiatesUri.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instantiatesUri.url",
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "path": "Extension.extension:basedOn",
+        "short": "Request fulfilled by this transport",
+        "definition": "BasedOn refers to a higher-level authorization that triggered the creation of the transport.  It references a \"request\" resource such as a ServiceRequest or Transport, which is distinct from the \"request\" resource the Transport is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a transport is created to fulfill a procedureRequest ( = FocusOn ) to transport a specimen to the lab.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:basedOn.url",
+        "fixedUri": "basedOn"
+      },
+      {
+        "path": "Extension.extension:groupIdentifier",
+        "short": "Requisition or grouper id",
+        "definition": "A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:groupIdentifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:groupIdentifier.url",
+        "fixedUri": "groupIdentifier"
+      },
+      {
+        "path": "Extension.extension:partOf",
+        "short": "Part of referenced event",
+        "definition": "A larger event of which this particular event is a component or step.",
+        "comment": "Not to be used to link an event to an Encounter - use Event.context for that.\r\r[The allowed reference resources may be adjusted as appropriate for the event resource].",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:partOf.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Transport"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:partOf.url",
+        "fixedUri": "partOf"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "in-progress | completed | abandoned | cancelled | planned | entered-in-error",
+        "definition": "A code specifying the state of the transport event.",
+        "min": 0,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/transport-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-transport-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:statusReason",
+        "short": "Reason for current status",
+        "definition": "An explanation as to why this transport is held, failed, was refused, etc.",
+        "comment": "This applies to the current status.  Look at the history of the transport to see reasons for past statuses.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusReason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportStatusReason"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes to identify the reason for current status.  These will typically be specific to a particular workflow.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/transport-status-reason"
+        }
+      },
+      {
+        "path": "Extension.extension:statusReason.url",
+        "fixedUri": "statusReason"
+      },
+      {
+        "path": "Extension.extension:intent",
+        "short": "unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
+        "definition": "Indicates the \"level\" of actionability associated with the Transport, i.e. i+R[9]Cs this a proposed transport, a planned transport, an actionable transport, etc.",
+        "comment": "This element is immutable.  Proposed transports, planned transports, etc. must be distinct instances.\n\nIn most cases, Transports will have an intent of \"order\".",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:intent.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportIntent"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/transport-intent|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-transport-intent|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:intent.url",
+        "fixedUri": "intent"
+      },
+      {
+        "path": "Extension.extension:priority",
+        "short": "routine | urgent | asap | stat",
+        "definition": "Indicates how quickly the Transport should be addressed with respect to other requests.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:priority.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "The transport's priority."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportPriority"
+            }
+          ],
+          "strength": "required",
+          "description": "The priority of a transport (may affect service level applied to the transport).",
+          "valueSet": "http://hl7.org/fhir/ValueSet/request-priority|5.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:priority.url",
+        "fixedUri": "priority"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Human-readable explanation of transport",
+        "definition": "A free-text description of what is to be performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:focus",
+        "short": "What transport is acting on",
+        "definition": "The request being actioned or the resource being manipulated by this transport.",
+        "comment": "If multiple resources need to be manipulated, use sub-transports.  (This ensures that status can be tracked independently for each referenced resource.).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:focus.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:focus.url",
+        "fixedUri": "focus"
+      },
+      {
+        "path": "Extension.extension:for",
+        "short": "Beneficiary of the Transport",
+        "definition": "The entity who benefits from the performance of the service specified in the transport (e.g., the patient).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:for.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:for.url",
+        "fixedUri": "for"
+      },
+      {
+        "path": "Extension.extension:encounter",
+        "short": "Healthcare event during which this transport originated",
+        "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this transport was created.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:encounter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:encounter.url",
+        "fixedUri": "encounter"
+      },
+      {
+        "path": "Extension.extension:completionTime",
+        "short": "Completion time of the event (the occurrence)",
+        "definition": "Identifies the completion time of the event (the occurrence).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:completionTime.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:completionTime.url",
+        "fixedUri": "completionTime"
+      },
+      {
+        "path": "Extension.extension:authoredOn",
+        "short": "Transport Creation Date",
+        "definition": "The date and time this transport was created.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:authoredOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:authoredOn.url",
+        "fixedUri": "authoredOn"
+      },
+      {
+        "path": "Extension.extension:lastModified",
+        "short": "Transport Last Modified Date",
+        "definition": "The date and time of last modification to this transport.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:lastModified.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:lastModified.url",
+        "fixedUri": "lastModified"
+      },
+      {
+        "path": "Extension.extension:requester",
+        "short": "Who is asking for transport to be done",
+        "definition": "The creator of the transport.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:requester.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:requester.url",
+        "fixedUri": "requester"
+      },
+      {
+        "path": "Extension.extension:performerType",
+        "short": "Requested performer",
+        "definition": "The kind of participant that should perform the transport.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performerType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportPerformerType"
+            }
+          ],
+          "strength": "preferred",
+          "description": "The type(s) of transport performers allowed.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/performer-role"
+        }
+      },
+      {
+        "path": "Extension.extension:performerType.url",
+        "fixedUri": "performerType"
+      },
+      {
+        "path": "Extension.extension:owner",
+        "short": "Responsible individual",
+        "definition": "Individual organization or Device currently responsible for transport execution.",
+        "comment": "Transports may be created with an owner not yet identified.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:owner.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:owner.url",
+        "fixedUri": "owner"
+      },
+      {
+        "path": "Extension.extension:location",
+        "short": "Where transport occurs",
+        "definition": "Principal physical location where this transport is performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:location.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:location.url",
+        "fixedUri": "location"
+      },
+      {
+        "path": "Extension.extension:insurance",
+        "short": "Associated insurance coverage",
+        "definition": "Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Transport.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:insurance.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Coverage",
+              "http://hl7.org/fhir/StructureDefinition/ClaimResponse"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:insurance.url",
+        "fixedUri": "insurance"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Comments made about the transport",
+        "definition": "Free-text information captured about the transport as it progresses.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:relevantHistory",
+        "short": "Key events in history of the Transport",
+        "definition": "Links to Provenance records for past versions of this Transport that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the transport.",
+        "comment": "This element does not point to the Provenance associated with the *current* version of the resource - as it would be created after this version existed.  The Provenance for the current version can be retrieved with a _revinclude.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:relevantHistory.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Provenance"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:relevantHistory.url",
+        "fixedUri": "relevantHistory"
+      },
+      {
+        "path": "Extension.extension:restriction",
+        "short": "Constraints on fulfillment transports",
+        "definition": "If the Transport.focus is a request resource and the transport is seeking fulfillment (i.e. is asking for the request to be actioned), this element identifies any limitations on what parts of the referenced request should be actioned.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:restriction.extension:repetitions",
+        "short": "How many times to repeat",
+        "definition": "Indicates the number of times the requested action should occur.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:restriction.extension:repetitions.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:restriction.extension:repetitions.url",
+        "fixedUri": "repetitions"
+      },
+      {
+        "path": "Extension.extension:restriction.extension:period",
+        "short": "When fulfillment sought",
+        "definition": "Over what time-period is fulfillment sought.",
+        "comment": "Note that period.high is the due date representing the time by which the transport should be completed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:restriction.extension:period.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:restriction.extension:period.url",
+        "fixedUri": "period"
+      },
+      {
+        "path": "Extension.extension:restriction.extension:recipient",
+        "short": "For whom is fulfillment sought?",
+        "definition": "For requests that are targeted to more than one potential recipient/target, to identify who is fulfillment is sought for.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:restriction.extension:recipient.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:restriction.extension:recipient.url",
+        "fixedUri": "recipient"
+      },
+      {
+        "path": "Extension.extension:restriction.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:restriction.url",
+        "fixedUri": "restriction"
+      },
+      {
+        "path": "Extension.extension:input",
+        "short": "Information used to perform transport",
+        "definition": "Additional information that may be needed in the execution of the transport.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:input.extension:type",
+        "short": "Label for the input",
+        "definition": "A code or description indicating how the input is intended to be used as part of the transport execution.",
+        "comment": "If referencing a BPMN workflow or Protocol, the \"system\" is the URL for the workflow definition and the code is the \"name\" of the required input.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:input.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportInputParameterType"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Comparison source\", \"Applicable consent\", \"Concomitent Medications\", etc."
+        }
+      },
+      {
+        "path": "Extension.extension:input.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x]",
+        "short": "Content to use in performing the transport",
+        "definition": "The value of the input parameter as a basic type.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].extension:integer64",
+        "sliceName": "integer64",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer64"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].extension:RatioRange",
+        "sliceName": "RatioRange",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-RatioRange"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].extension:Availability",
+        "sliceName": "Availability",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].extension:ExtendedContactDetail",
+        "sliceName": "ExtendedContactDetail",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExtendedContactDetail"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:input.extension:value[x].url",
+        "fixedUri": "value%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:input.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:input.url",
+        "fixedUri": "input"
+      },
+      {
+        "path": "Extension.extension:output",
+        "short": "Information produced as part of transport",
+        "definition": "Outputs produced by the Transport.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:output.extension:type",
+        "short": "Label for output",
+        "definition": "The name of the Output parameter.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:output.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TransportOutputParameterType"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes to identify types of input parameters.  These will typically be specific to a particular workflow.  E.g. \"Identified issues\", \"Preliminary results\", \"Filler order\", \"Final results\", etc."
+        }
+      },
+      {
+        "path": "Extension.extension:output.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x]",
+        "short": "Result of output",
+        "definition": "The value of the Output parameter as a basic type.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].extension:integer64",
+        "sliceName": "integer64",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-integer64"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].extension:RatioRange",
+        "sliceName": "RatioRange",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-RatioRange"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].extension:Availability",
+        "sliceName": "Availability",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].extension:ExtendedContactDetail",
+        "sliceName": "ExtendedContactDetail",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ExtendedContactDetail"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:output.extension:value[x].url",
+        "fixedUri": "value%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:output.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:output.url",
+        "fixedUri": "output"
+      },
+      {
+        "path": "Extension.extension:requestedLocation",
+        "short": "The desired location",
+        "definition": "The desired or final location for the transport.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:requestedLocation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:requestedLocation.url",
+        "fixedUri": "requestedLocation"
+      },
+      {
+        "path": "Extension.extension:currentLocation",
+        "short": "The entity current location",
+        "definition": "The current location for the entity to be transported.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:currentLocation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:currentLocation.url",
+        "fixedUri": "currentLocation"
+      },
+      {
+        "path": "Extension.extension:reason",
+        "short": "Why transport is needed",
+        "definition": "A resource reference indicating why this transport needs to be performed.",
+        "comment": "Transports might be justified based on an Observation, a Condition, a past or planned procedure, etc. This should only be included if there is no focus or if it differs from the reason indicated on the focus.    Use the CodeableConcept text element in `Transport.reasonCode` if the data is free (uncoded) text.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reason.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:reason.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reason.url",
+        "fixedUri": "reason"
+      },
+      {
+        "path": "Extension.extension:history",
+        "short": "Parent (or preceding) transport",
+        "definition": "The transport event prior to this one.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:history.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Transport"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:history.url",
+        "fixedUri": "history"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

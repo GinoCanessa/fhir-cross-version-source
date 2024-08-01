@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -425,33 +425,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "Category of dosage for a medication",
-        "definition": "The type or category of dosage for a given medication (for example, prophylaxis, maintenance, therapeutic, etc.).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:type",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:dosage",
-        "path": "Extension.extension:dosage",
-        "short": "Dosage for the medication for the specific guidelines",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:dosage",
-          "min": 1,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:administrationTreatment",
         "path": "Extension.extension:administrationTreatment",
         "short": "Type of treatment the guideline applies to",
@@ -480,32 +453,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "Categorization of specific characteristic that is relevant to the administration guideline",
-        "definition": "The categorization of the specific characteristic that is relevant to the administration guideline (e.g. height, weight, gender).",
-        "min": 1,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:type",
-          "min": 1,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value[x]",
-        "path": "Extension.extension:value[x]",
-        "short": "The specific characteristic",
-        "definition": "The specific characteristic (e.g. height, weight, gender, etc.).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.indicationGuideline.dosingGuideline"
       }
     ]
   },
@@ -585,40 +538,8 @@
         "fixedUri": "dosage"
       },
       {
-        "path": "Extension.extension:dosage.url",
-        "fixedUri": "dosage"
-      },
-      {
-        "path": "Extension.extension:type",
-        "short": "Category of dosage for a medication",
-        "definition": "The type or category of dosage for a given medication (for example, prophylaxis, maintenance, therapeutic, etc.).",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:dosage",
-        "short": "Dosage for the medication for the specific guidelines",
-        "min": 1,
-        "max": "*",
-        "isModifier": false
-      },
-      {
         "path": "Extension.extension:dosage.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Dosage"
-          }
-        ]
+        "max": "0"
       },
       {
         "path": "Extension.extension:dosage.url",
@@ -691,45 +612,16 @@
         "fixedUri": "value%5Bx%5D"
       },
       {
+        "path": "Extension.extension:patientCharacteristic.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:patientCharacteristic.url",
         "fixedUri": "patientCharacteristic"
       },
       {
-        "path": "Extension.extension:type",
-        "short": "Categorization of specific characteristic that is relevant to the administration guideline",
-        "definition": "The categorization of the specific characteristic that is relevant to the administration guideline (e.g. height, weight, gender).",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:value[x]",
-        "short": "The specific characteristic",
-        "definition": "The specific characteristic (e.g. height, weight, gender, etc.).",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value[x].value[x]",
+        "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
       },
       {
         "path": "Extension.url",

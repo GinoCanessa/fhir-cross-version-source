@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -440,61 +440,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "careteam | device | group | healthcareservice | location | organization | patient | practitioner | practitionerrole | relatedperson",
-        "definition": "The type of participant in the action.",
-        "min": 0,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:type",
-          "min": 0,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:typeCanonical",
-        "path": "Extension.extension:typeCanonical",
-        "short": "Who or what can participate",
-        "definition": "The type of participant in the action.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:typeCanonical",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:typeReference",
-        "path": "Extension.extension:typeReference",
-        "short": "Who or what can participate",
-        "definition": "The type of participant in the action.",
-        "comment": "When this element is a reference, it SHOULD be a reference to a definitional resource (for example, a location type, rather than a specific location).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:typeReference",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:role",
-        "path": "Extension.extension:role",
-        "short": "E.g. Nurse, Surgeon, Parent",
-        "definition": "The role the participant should play in performing the described action.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:role",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor"
       }
     ]
   },
@@ -683,131 +634,16 @@
         "fixedUri": "role"
       },
       {
+        "path": "Extension.extension:option.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:option.url",
         "fixedUri": "option"
       },
       {
-        "path": "Extension.extension:type",
-        "short": "careteam | device | group | healthcareservice | location | organization | patient | practitioner | practitionerrole | relatedperson",
-        "definition": "The type of participant in the action.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ActivityParticipantType"
-            }
-          ],
-          "strength": "required",
-          "description": "The type of participant in the activity.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-type|5.0.0"
-        }
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:typeCanonical",
-        "short": "Who or what can participate",
-        "definition": "The type of participant in the action.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:typeCanonical.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "canonical",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:typeCanonical.url",
-        "fixedUri": "typeCanonical"
-      },
-      {
-        "path": "Extension.extension:typeReference",
-        "short": "Who or what can participate",
-        "definition": "The type of participant in the action.",
-        "comment": "When this element is a reference, it SHOULD be a reference to a definitional resource (for example, a location type, rather than a specific location).",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:typeReference.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
-              "http://hl7.org/fhir/StructureDefinition/Endpoint",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
-              "http://hl7.org/fhir/StructureDefinition/Location",
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:typeReference.url",
-        "fixedUri": "typeReference"
-      },
-      {
-        "path": "Extension.extension:role",
-        "short": "E.g. Nurse, Surgeon, Parent",
-        "definition": "The role the participant should play in performing the described action.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:role.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ActionParticipantRole"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://terminology.hl7.org/ValueSet/action-participant-role"
-        }
-      },
-      {
-        "path": "Extension.extension:role.url",
-        "fixedUri": "role"
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -450,32 +450,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:name",
-        "path": "Extension.extension:name",
-        "short": "Distributor's human-readable name",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:name",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:organizationReference",
-        "path": "Extension.extension:organizationReference",
-        "short": "Distributor as an Organization resource",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:organizationReference",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:udiDeviceIdentifier",
         "path": "Extension.extension:udiDeviceIdentifier",
         "short": "Unique Device Identifier (UDI) Barcode string on the packaging",
@@ -500,6 +474,14 @@
           "max": "*"
         },
         "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.packaging"
       }
     ]
   },
@@ -625,51 +607,12 @@
         "fixedUri": "organizationReference"
       },
       {
+        "path": "Extension.extension:distributor.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:distributor.url",
         "fixedUri": "distributor"
-      },
-      {
-        "path": "Extension.extension:name",
-        "short": "Distributor's human-readable name",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:name.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:name.url",
-        "fixedUri": "name"
-      },
-      {
-        "path": "Extension.extension:organizationReference",
-        "short": "Distributor as an Organization resource",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:organizationReference.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:organizationReference.url",
-        "fixedUri": "organizationReference"
       },
       {
         "path": "Extension.extension:udiDeviceIdentifier",
@@ -700,6 +643,10 @@
       {
         "path": "Extension.extension:packaging.url",
         "fixedUri": "packaging"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

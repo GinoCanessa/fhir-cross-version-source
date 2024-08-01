@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -425,33 +425,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:code",
-        "path": "Extension.extension:code",
-        "short": "The detail of the order being requested",
-        "definition": "A value representing the additional detail or instructions for the order (e.g., catheter insertion, body elevation, descriptive device configuration and/or setting instructions).",
-        "min": 1,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:code",
-          "min": 1,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value[x]",
-        "path": "Extension.extension:value[x]",
-        "short": "The value for the order detail",
-        "definition": "Indicates a value for the order detail.",
-        "comment": "CodeableConcept values are indented to express concepts that would normally be coded - when a code is not available for a concept, CodeableConcept.text can be used. When the data is a text or not a single identifiable concept, string should be used.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:value[x]",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.orderDetail"
       }
     ]
   },
@@ -575,80 +554,16 @@
         "fixedUri": "value%5Bx%5D"
       },
       {
+        "path": "Extension.extension:parameter.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:parameter.url",
         "fixedUri": "parameter"
       },
       {
-        "path": "Extension.extension:code",
-        "short": "The detail of the order being requested",
-        "definition": "A value representing the additional detail or instructions for the order (e.g., catheter insertion, body elevation, descriptive device configuration and/or setting instructions).",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:code.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "ServiceRequestOrderDetailParameterCode"
-            }
-          ],
-          "strength": "example",
-          "description": "Codes for order detail parameters.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail-parameter-code"
-        }
-      },
-      {
-        "path": "Extension.extension:code.url",
-        "fixedUri": "code"
-      },
-      {
-        "path": "Extension.extension:value[x]",
-        "short": "The value for the order detail",
-        "definition": "Indicates a value for the order detail.",
-        "comment": "CodeableConcept values are indented to express concepts that would normally be coded - when a code is not available for a concept, CodeableConcept.text can be used. When the data is a text or not a single identifiable concept, string should be used.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value[x].value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          },
-          {
-            "code": "Ratio"
-          },
-          {
-            "code": "Range"
-          },
-          {
-            "code": "boolean"
-          },
-          {
-            "code": "CodeableConcept"
-          },
-          {
-            "code": "string"
-          },
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

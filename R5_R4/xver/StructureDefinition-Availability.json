@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -410,60 +410,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:daysOfWeek",
-        "path": "Extension.extension:daysOfWeek",
-        "short": "mon | tue | wed | thu | fri | sat | sun",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:daysOfWeek",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:allDay",
-        "path": "Extension.extension:allDay",
-        "short": "Always available? i.e. 24 hour service",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:allDay",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:availableStartTime",
-        "path": "Extension.extension:availableStartTime",
-        "short": "Opening time of day (ignored if allDay = true)",
-        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:availableStartTime",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:availableEndTime",
-        "path": "Extension.extension:availableEndTime",
-        "short": "Closing time of day (ignored if allDay = true)",
-        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:availableEndTime",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:notAvailableTime",
         "path": "Extension.extension:notAvailableTime",
         "short": "Not available during this time due to provided reason",
@@ -477,31 +423,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:description",
-        "path": "Extension.extension:description",
-        "short": "Reason presented to the user explaining why time not available",
-        "definition": "The reason will generally be provided to give the textual reason for displaying when the {item} is not available, e.g. 'Closed public holidays' or 'Independence Day'. In cases such as this, the `during` might not be included and local knowledge would be required in such cases (as don't desire to keep updating when the holiday occurs each year).\n\ne.g.2: 'Closed for maintenance over the summer' for this example you would want to include the `during` period, unless this was a university hospital and the \"summer\" period was well known, but would recommend its inclusion anyway.",
-        "min": 0,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:description",
-          "min": 0,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:during",
-        "path": "Extension.extension:during",
-        "short": "Service not available during this period",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:during",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Availability"
       }
     ]
   },
@@ -620,105 +547,12 @@
         "fixedUri": "availableEndTime"
       },
       {
+        "path": "Extension.extension:availableTime.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:availableTime.url",
         "fixedUri": "availableTime"
-      },
-      {
-        "path": "Extension.extension:daysOfWeek",
-        "short": "mon | tue | wed | thu | fri | sat | sun",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:daysOfWeek.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
-              "valueString": "The purpose for which an extended contact detail should be used."
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "DaysOfWeek"
-            }
-          ],
-          "strength": "required",
-          "description": "The purpose for which an extended contact detail should be used.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|5.0.0"
-        }
-      },
-      {
-        "path": "Extension.extension:daysOfWeek.url",
-        "fixedUri": "daysOfWeek"
-      },
-      {
-        "path": "Extension.extension:allDay",
-        "short": "Always available? i.e. 24 hour service",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:allDay.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:allDay.url",
-        "fixedUri": "allDay"
-      },
-      {
-        "path": "Extension.extension:availableStartTime",
-        "short": "Opening time of day (ignored if allDay = true)",
-        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:availableStartTime.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "time"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:availableStartTime.url",
-        "fixedUri": "availableStartTime"
-      },
-      {
-        "path": "Extension.extension:availableEndTime",
-        "short": "Closing time of day (ignored if allDay = true)",
-        "definition": "The timezone is expected to be specified or implied by the context this datatype is used.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:availableEndTime.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "time"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:availableEndTime.url",
-        "fixedUri": "availableEndTime"
       },
       {
         "path": "Extension.extension:notAvailableTime",
@@ -769,49 +603,16 @@
         "fixedUri": "during"
       },
       {
+        "path": "Extension.extension:notAvailableTime.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:notAvailableTime.url",
         "fixedUri": "notAvailableTime"
       },
       {
-        "path": "Extension.extension:description",
-        "short": "Reason presented to the user explaining why time not available",
-        "definition": "The reason will generally be provided to give the textual reason for displaying when the {item} is not available, e.g. 'Closed public holidays' or 'Independence Day'. In cases such as this, the `during` might not be included and local knowledge would be required in such cases (as don't desire to keep updating when the holiday occurs each year).\n\ne.g.2: 'Closed for maintenance over the summer' for this example you would want to include the `during` period, unless this was a university hospital and the \"summer\" period was well known, but would recommend its inclusion anyway.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:description.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:description.url",
-        "fixedUri": "description"
-      },
-      {
-        "path": "Extension.extension:during",
-        "short": "Service not available during this period",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:during.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:during.url",
-        "fixedUri": "during"
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

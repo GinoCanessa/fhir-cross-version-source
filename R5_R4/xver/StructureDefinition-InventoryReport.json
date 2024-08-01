@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -395,6 +395,134 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "draft | requested | active | entered-in-error",
+        "definition": "The status of the inventory check or notification - whether this is draft (e.g. the report is still pending some updates) or active.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:countType",
+        "path": "Extension.extension:countType",
+        "short": "snapshot | difference",
+        "definition": "Whether the report is about the current inventory count (snapshot) or a differential change in inventory (change).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:countType",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:operationType",
+        "path": "Extension.extension:operationType",
+        "short": "addition | subtraction",
+        "definition": "What type of operation is being performed - addition or subtraction.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:operationType",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:operationTypeReason",
+        "path": "Extension.extension:operationTypeReason",
+        "short": "The reason for this count - regular count, ad-hoc count, new arrivals, etc",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:operationTypeReason",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reportedDateTime",
+        "path": "Extension.extension:reportedDateTime",
+        "short": "When the report has been submitted",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:reportedDateTime",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reporter",
+        "path": "Extension.extension:reporter",
+        "short": "Who submits the report",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:reporter",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reportingPeriod",
+        "path": "Extension.extension:reportingPeriod",
+        "short": "The period the report refers to",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:reportingPeriod",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:inventoryListing",
+        "path": "Extension.extension:inventoryListing",
+        "short": "An inventory listing section (grouped by any of the attributes)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:inventoryListing",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "A note associated with the InventoryReport",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-InventoryReport"
       }
     ]
   },
@@ -407,6 +535,364 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "draft | requested | active | entered-in-error",
+        "definition": "The status of the inventory check or notification - whether this is draft (e.g. the report is still pending some updates) or active.",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InventoryReportStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/inventoryreport-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-inventoryreport-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:countType",
+        "short": "snapshot | difference",
+        "definition": "Whether the report is about the current inventory count (snapshot) or a differential change in inventory (change).",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:countType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InventoryCountType"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/inventoryreport-counttype|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-inventoryreport-counttype|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:countType.url",
+        "fixedUri": "countType"
+      },
+      {
+        "path": "Extension.extension:operationType",
+        "short": "addition | subtraction",
+        "definition": "What type of operation is being performed - addition or subtraction.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operationType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:operationType.url",
+        "fixedUri": "operationType"
+      },
+      {
+        "path": "Extension.extension:operationTypeReason",
+        "short": "The reason for this count - regular count, ad-hoc count, new arrivals, etc",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operationTypeReason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:operationTypeReason.url",
+        "fixedUri": "operationTypeReason"
+      },
+      {
+        "path": "Extension.extension:reportedDateTime",
+        "short": "When the report has been submitted",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reportedDateTime.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reportedDateTime.url",
+        "fixedUri": "reportedDateTime"
+      },
+      {
+        "path": "Extension.extension:reporter",
+        "short": "Who submits the report",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reporter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reporter.url",
+        "fixedUri": "reporter"
+      },
+      {
+        "path": "Extension.extension:reportingPeriod",
+        "short": "The period the report refers to",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reportingPeriod.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reportingPeriod.url",
+        "fixedUri": "reportingPeriod"
+      },
+      {
+        "path": "Extension.extension:inventoryListing",
+        "short": "An inventory listing section (grouped by any of the attributes)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:location",
+        "short": "Location of the inventory items",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:location.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:location.url",
+        "fixedUri": "location"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:itemStatus",
+        "short": "The status of the items that are being reported",
+        "definition": "The status of the items.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:itemStatus.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:itemStatus.url",
+        "fixedUri": "itemStatus"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:countingDateTime",
+        "short": "The date and time when the items were counted",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:countingDateTime.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:countingDateTime.url",
+        "fixedUri": "countingDateTime"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item",
+        "short": "The item or items in this listing",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:category",
+        "short": "The inventory category or classification of the items being reported",
+        "definition": "The inventory category or classification of the items being reported. This is meant not for defining the product, but for inventory categories e.g. 'pending recount' or 'damaged'.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:quantity",
+        "short": "The quantity of the item or items being reported",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:quantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:quantity.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:item",
+        "short": "The code or reference to the item type",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:item.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:item.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.extension:item.url",
+        "fixedUri": "item"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.extension:item.url",
+        "fixedUri": "item"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:inventoryListing.url",
+        "fixedUri": "inventoryListing"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "A note associated with the InventoryReport",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

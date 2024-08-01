@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -454,48 +454,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:item",
-        "path": "Extension.extension:item",
-        "short": "Substances contained in the medication",
-        "definition": "A reference to the resource that provides information about the ingredient.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:item",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "A code that defines the type of ingredient, active, base, etc",
-        "definition": "Indication of whether this ingredient affects the therapeutic action of the drug.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:type",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:strength[x]",
-        "path": "Extension.extension:strength[x]",
-        "short": "Quantity of ingredient present",
-        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet but can also be expressed a quantity when the denominator is assumed to be 1 tablet.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:strength[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:drugCharacteristic",
         "path": "Extension.extension:drugCharacteristic",
         "short": "Specifies descriptive properties of the medicine",
@@ -510,32 +468,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "Code specifying the type of characteristic of medication",
-        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
-        "min": 0,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:type",
-          "min": 0,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value[x]",
-        "path": "Extension.extension:value[x]",
-        "short": "Description of the characteristic",
-        "definition": "The description should be provided as a CodeableConcept, SimpleQuantity or an image.  The description can be a string only when these others are not available.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.definitional"
       }
     ]
   },
@@ -693,86 +631,12 @@
         "fixedUri": "strength%5Bx%5D"
       },
       {
-        "path": "Extension.extension:ingredient.url",
-        "fixedUri": "ingredient"
-      },
-      {
-        "path": "Extension.extension:item",
-        "short": "Substances contained in the medication",
-        "definition": "A reference to the resource that provides information about the ingredient.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:item.value[x]",
+        "path": "Extension.extension:ingredient.value[x]",
         "max": "0"
       },
       {
-        "path": "Extension.extension:item.url",
-        "fixedUri": "item"
-      },
-      {
-        "path": "Extension.extension:type",
-        "short": "A code that defines the type of ingredient, active, base, etc",
-        "definition": "Indication of whether this ingredient affects the therapeutic action of the drug.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "MedicationIngredientIsActive"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity"
-        }
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:strength[x]",
-        "short": "Quantity of ingredient present",
-        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet but can also be expressed a quantity when the denominator is assumed to be 1 tablet.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:strength[x].value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Ratio"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "MedicationIngredientStrength"
-            }
-          ],
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/ValueSet/medication-ingredientstrength"
-        }
-      },
-      {
-        "path": "Extension.extension:strength[x].url",
-        "fixedUri": "strength%5Bx%5D"
+        "path": "Extension.extension:ingredient.url",
+        "fixedUri": "ingredient"
       },
       {
         "path": "Extension.extension:drugCharacteristic",
@@ -815,40 +679,16 @@
         "fixedUri": "value%5Bx%5D"
       },
       {
+        "path": "Extension.extension:drugCharacteristic.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:drugCharacteristic.url",
         "fixedUri": "drugCharacteristic"
       },
       {
-        "path": "Extension.extension:type",
-        "short": "Code specifying the type of characteristic of medication",
-        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
+        "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:value[x]",
-        "short": "Description of the characteristic",
-        "definition": "The description should be provided as a CodeableConcept, SimpleQuantity or an image.  The description can be a string only when these others are not available.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
       },
       {
         "path": "Extension.url",

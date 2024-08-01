@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,186 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "registered | available | cancelled | entered-in-error | unknown",
+        "definition": "The status of the genomic study.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension:type",
+        "short": "The type of the study (e.g., Familial variant segregation, Functional variation detection, or Gene expression profiling)",
+        "definition": "The type of the study, e.g., Familial variant segregation, Functional variation detection, or Gene expression profiling.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:type",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension:encounter",
+        "short": "The healthcare event with which this genomics study is associated",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:startDate",
+        "path": "Extension.extension:startDate",
+        "short": "When the genomic study was started",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:startDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension:basedOn",
+        "short": "Event resources that the genomic study is based on",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basedOn",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:referrer",
+        "path": "Extension.extension:referrer",
+        "short": "Healthcare professional who requested or referred the genomic study",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:referrer",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:interpreter",
+        "path": "Extension.extension:interpreter",
+        "short": "Healthcare professionals who interpreted the genomic study",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:interpreter",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension:reason",
+        "short": "Why the genomic study was performed",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:reason",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical",
+        "path": "Extension.extension:instantiatesCanonical",
+        "short": "The defined protocol that describes the study",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:instantiatesCanonical",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:instantiatesUri",
+        "path": "Extension.extension:instantiatesUri",
+        "short": "The URL pointing to an externally maintained protocol that describes the study",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:instantiatesUri",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Comments related to the genomic study",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Description of the genomic study",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:analysis",
+        "path": "Extension.extension:analysis",
+        "short": "Genomic Analysis Event",
+        "definition": "The details about a specific analysis that was performed in this GenomicStudy.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:analysis",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GenomicStudy"
       }
     ]
   },
@@ -409,6 +589,941 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "registered | available | cancelled | entered-in-error | unknown",
+        "definition": "The status of the genomic study.",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/genomicstudy-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-genomicstudy-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:type",
+        "short": "The type of the study (e.g., Familial variant segregation, Functional variation detection, or Gene expression profiling)",
+        "definition": "The type of the study, e.g., Familial variant segregation, Functional variation detection, or Gene expression profiling.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyType"
+            }
+          ],
+          "strength": "example",
+          "description": "The type relevant to GenomicStudy.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-type"
+        }
+      },
+      {
+        "path": "Extension.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:encounter",
+        "short": "The healthcare event with which this genomics study is associated",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:encounter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:encounter.url",
+        "fixedUri": "encounter"
+      },
+      {
+        "path": "Extension.extension:startDate",
+        "short": "When the genomic study was started",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:startDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:startDate.url",
+        "fixedUri": "startDate"
+      },
+      {
+        "path": "Extension.extension:basedOn",
+        "short": "Event resources that the genomic study is based on",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:basedOn.url",
+        "fixedUri": "basedOn"
+      },
+      {
+        "path": "Extension.extension:referrer",
+        "short": "Healthcare professional who requested or referred the genomic study",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:referrer.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:referrer.url",
+        "fixedUri": "referrer"
+      },
+      {
+        "path": "Extension.extension:interpreter",
+        "short": "Healthcare professionals who interpreted the genomic study",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interpreter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:interpreter.url",
+        "fixedUri": "interpreter"
+      },
+      {
+        "path": "Extension.extension:reason",
+        "short": "Why the genomic study was performed",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reason.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:reason.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reason.url",
+        "fixedUri": "reason"
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical",
+        "short": "The defined protocol that describes the study",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instantiatesCanonical.url",
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "path": "Extension.extension:instantiatesUri",
+        "short": "The URL pointing to an externally maintained protocol that describes the study",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instantiatesUri.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instantiatesUri.url",
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Comments related to the genomic study",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Description of the genomic study",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:analysis",
+        "short": "Genomic Analysis Event",
+        "definition": "The details about a specific analysis that was performed in this GenomicStudy.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:identifier",
+        "short": "Identifiers for the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:methodType",
+        "short": "Type of the methods used in the analysis (e.g., FISH, Karyotyping, MSI)",
+        "definition": "Type of the methods used in the analysis, e.g., Fluorescence in situ hybridization (FISH), Karyotyping, or Microsatellite instability testing (MSI).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:methodType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyMethodType"
+            }
+          ],
+          "strength": "example",
+          "description": "The method type of the GenomicStudy analysis.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-methodtype"
+        }
+      },
+      {
+        "path": "Extension.extension:analysis.extension:methodType.url",
+        "fixedUri": "methodType"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:changeType",
+        "short": "Type of the genomic changes studied in the analysis (e.g., DNA, RNA, or AA change)",
+        "definition": "Type of the genomic changes studied in the analysis, e.g., DNA, RNA, or amino acid change.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:changeType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyChangeType"
+            }
+          ],
+          "strength": "example",
+          "description": "The change type relevant to GenomicStudy analysis.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-changetype"
+        }
+      },
+      {
+        "path": "Extension.extension:analysis.extension:changeType.url",
+        "fixedUri": "changeType"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:genomeBuild",
+        "short": "Genome build that is used in this analysis",
+        "definition": "The reference genome build that is used in this analysis.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:genomeBuild.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "HumanRefSeqNCBIBuildId"
+            }
+          ],
+          "strength": "extensible",
+          "description": "Human reference sequence NCBI build ID",
+          "valueSet": "http://loinc.org/vs/LL1040-6"
+        }
+      },
+      {
+        "path": "Extension.extension:analysis.extension:genomeBuild.url",
+        "fixedUri": "genomeBuild"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesCanonical",
+        "short": "The defined protocol that describes the analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesCanonical.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesCanonical.url",
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesUri",
+        "short": "The URL pointing to an externally maintained protocol that describes the analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesUri.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:instantiatesUri.url",
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:title",
+        "short": "Name of the analysis event (human friendly)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:title.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:focus",
+        "short": "What the genomic analysis is about, when it is not about the subject of record",
+        "definition": "The focus of a genomic analysis when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, child, or sibling. For example, in trio testing, the GenomicStudy.subject would be the child (proband) and the GenomicStudy.analysis.focus of a specific analysis would be the parent.",
+        "comment": "If the focus of the analysis is not known, the value of this field SHALL use the data absent extension.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:focus.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:focus.url",
+        "fixedUri": "focus"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:specimen",
+        "short": "The specimen used in the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:specimen.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:specimen.url",
+        "fixedUri": "specimen"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:date",
+        "short": "The date of the analysis event",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:date.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:date.url",
+        "fixedUri": "date"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:note",
+        "short": "Any notes capture with the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:protocolPerformed",
+        "short": "The protocol that was performed for the analysis event",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:protocolPerformed.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:protocolPerformed.url",
+        "fixedUri": "protocolPerformed"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsStudied",
+        "short": "The genomic regions to be studied in the analysis (BED file)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsStudied.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsStudied.url",
+        "fixedUri": "regionsStudied"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsCalled",
+        "short": "Genomic regions actually called in the analysis event (BED file)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsCalled.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:regionsCalled.url",
+        "fixedUri": "regionsCalled"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input",
+        "short": "Inputs for the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:file",
+        "short": "File containing input data",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:file.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:file.url",
+        "fixedUri": "file"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:type",
+        "short": "Type of input data (e.g., BAM, CRAM, or FASTA)",
+        "definition": "Type of input data, e.g., BAM, CRAM, or FASTA.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyDataFormat"
+            }
+          ],
+          "strength": "example",
+          "description": "The data format of the data file.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-dataformat"
+        }
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:generatedBy[x]",
+        "short": "The analysis event or other GenomicStudy that generated this input file",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:generatedBy[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/GenomicStudy"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.extension:generatedBy[x].url",
+        "fixedUri": "generatedBy%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:input.url",
+        "fixedUri": "input"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output",
+        "short": "Outputs for the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:file",
+        "short": "File containing output data",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:file.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:file.url",
+        "fixedUri": "file"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:type",
+        "short": "Type of output data (e.g., VCF, MAF, or BAM)",
+        "definition": "Type of output data, e.g., VCF, MAF, or BAM.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "GenomicStudyDataFormat"
+            }
+          ],
+          "strength": "example",
+          "description": "The data format of the data file.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/genomicstudy-dataformat"
+        }
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:output.url",
+        "fixedUri": "output"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer",
+        "short": "Performer for the analysis event",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:actor",
+        "short": "The organization, healthcare professional, or others who participated in performing this analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:actor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:actor.url",
+        "fixedUri": "actor"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:role",
+        "short": "Role of the actor for this analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:role.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.extension:role.url",
+        "fixedUri": "role"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:performer.url",
+        "fixedUri": "performer"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device",
+        "short": "Devices used for the analysis (e.g., instruments, software), with settings and parameters",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:device",
+        "short": "Device used for the analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:device.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:function",
+        "short": "Specific function for the device used for the analysis",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:function.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.extension:function.url",
+        "fixedUri": "function"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:analysis.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:analysis.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:analysis.url",
+        "fixedUri": "analysis"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

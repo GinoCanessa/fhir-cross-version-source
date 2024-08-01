@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,237 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension:basedOn",
+        "short": "Fulfills plan, proposal or order",
+        "definition": "A plan, proposal or order that is fulfilled in whole or in part by this DeviceUsage.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basedOn",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "active | completed | not-done | entered-in-error +",
+        "definition": "A code representing the patient or other source's judgment about the state of the device used that this statement is about.  Generally this will be active or completed.",
+        "comment": "DeviceUseStatment is a statement at a point in time.  The status is only representative at the point when it was asserted.  The value set for contains codes that assert the status of the use  by the patient (for example, stopped or on hold) as well as codes that assert the status of the resource itself (for example, entered in error).\r\rThis element is labeled as a modifier because the status contains the codes that mark the statement as not currently valid.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension:category",
+        "short": "The category of the statement - classifying how the statement is made",
+        "definition": "This attribute indicates a category for the statement - The device statement may be made in an inpatient or outpatient settting (inpatient | outpatient | community | patientspecified).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:category",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:patient",
+        "path": "Extension.extension:patient",
+        "short": "Patient using device",
+        "definition": "The patient who used the device.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:patient",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:derivedFrom",
+        "path": "Extension.extension:derivedFrom",
+        "short": "Supporting information",
+        "definition": "Allows linking the DeviceUsage to the underlying Request, or to other information that supports or is used to derive the DeviceUsage.",
+        "comment": "The most common use cases for deriving a DeviceUsage comes from creating it from a request or from an observation or a claim. it should be noted that the amount of information that is available varies from the type resource that you derive the DeviceUsage from.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:derivedFrom",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:context",
+        "path": "Extension.extension:context",
+        "short": "The encounter or episode of care that establishes the context for this device use statement",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:context",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:timing[x]",
+        "path": "Extension.extension:timing[x]",
+        "short": "How often  the device was used",
+        "definition": "How often the device was used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:timing[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:dateAsserted",
+        "path": "Extension.extension:dateAsserted",
+        "short": "When the statement was made (and recorded)",
+        "definition": "The time at which the statement was recorded by informationSource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:dateAsserted",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:usageStatus",
+        "path": "Extension.extension:usageStatus",
+        "short": "The status of the device usage, for example always, sometimes, never. This is not the same as the status of the statement",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:usageStatus",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:usageReason",
+        "path": "Extension.extension:usageReason",
+        "short": "The reason for asserting the usage status - for example forgot, lost, stolen, broken",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:usageReason",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:adherence",
+        "path": "Extension.extension:adherence",
+        "short": "How device is being used",
+        "definition": "This indicates how or if the device is being used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:adherence",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:informationSource",
+        "path": "Extension.extension:informationSource",
+        "short": "Who made the statement",
+        "definition": "Who reported the device was being used by the patient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:informationSource",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension:device",
+        "short": "Code or Reference to device used",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:device",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension:reason",
+        "short": "Why device was used",
+        "definition": "Reason or justification for the use of the device. A coded concept, or another resource whose existence justifies this DeviceUsage.",
+        "comment": "When the status is not done, the reason code indicates why it was not done.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:reason",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:bodySite",
+        "path": "Extension.extension:bodySite",
+        "short": "Target body site",
+        "definition": "Indicates the anotomic location on the subject's body where the device was used ( i.e. the target).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:bodySite",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Addition details (comments, instructions)",
+        "definition": "Details about the device statement that were not represented at all or sufficiently in one of the attributes provided in a class. These may include for example a comment, an instruction, or a note associated with the statement.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage"
       }
     ]
   },
@@ -409,6 +640,481 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn",
+        "short": "Fulfills plan, proposal or order",
+        "definition": "A plan, proposal or order that is fulfilled in whole or in part by this DeviceUsage.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:basedOn.url",
+        "fixedUri": "basedOn"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "active | completed | not-done | entered-in-error +",
+        "definition": "A code representing the patient or other source's judgment about the state of the device used that this statement is about.  Generally this will be active or completed.",
+        "comment": "DeviceUseStatment is a statement at a point in time.  The status is only representative at the point when it was asserted.  The value set for contains codes that assert the status of the use  by the patient (for example, stopped or on hold) as well as codes that assert the status of the resource itself (for example, entered in error).\r\rThis element is labeled as a modifier because the status contains the codes that mark the statement as not currently valid.",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceUsageStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "A coded concept indicating the current status of the Device Usage.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/deviceusage-status|5.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:category",
+        "short": "The category of the statement - classifying how the statement is made",
+        "definition": "This attribute indicates a category for the statement - The device statement may be made in an inpatient or outpatient settting (inpatient | outpatient | community | patientspecified).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:patient",
+        "short": "Patient using device",
+        "definition": "The patient who used the device.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:patient.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:patient.url",
+        "fixedUri": "patient"
+      },
+      {
+        "path": "Extension.extension:derivedFrom",
+        "short": "Supporting information",
+        "definition": "Allows linking the DeviceUsage to the underlying Request, or to other information that supports or is used to derive the DeviceUsage.",
+        "comment": "The most common use cases for deriving a DeviceUsage comes from creating it from a request or from an observation or a claim. it should be noted that the amount of information that is available varies from the type resource that you derive the DeviceUsage from.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:derivedFrom.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              "http://hl7.org/fhir/StructureDefinition/Procedure",
+              "http://hl7.org/fhir/StructureDefinition/Claim",
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:derivedFrom.url",
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "path": "Extension.extension:context",
+        "short": "The encounter or episode of care that establishes the context for this device use statement",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:context.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter",
+              "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:context.url",
+        "fixedUri": "context"
+      },
+      {
+        "path": "Extension.extension:timing[x]",
+        "short": "How often  the device was used",
+        "definition": "How often the device was used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:timing[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:timing[x].url",
+        "fixedUri": "timing%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:dateAsserted",
+        "short": "When the statement was made (and recorded)",
+        "definition": "The time at which the statement was recorded by informationSource.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:dateAsserted.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:dateAsserted.url",
+        "fixedUri": "dateAsserted"
+      },
+      {
+        "path": "Extension.extension:usageStatus",
+        "short": "The status of the device usage, for example always, sometimes, never. This is not the same as the status of the statement",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:usageStatus.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceUsageStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Codes representing the usage status of the device.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/deviceusage-status|5.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:usageStatus.url",
+        "fixedUri": "usageStatus"
+      },
+      {
+        "path": "Extension.extension:usageReason",
+        "short": "The reason for asserting the usage status - for example forgot, lost, stolen, broken",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:usageReason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:usageReason.url",
+        "fixedUri": "usageReason"
+      },
+      {
+        "path": "Extension.extension:adherence",
+        "short": "How device is being used",
+        "definition": "This indicates how or if the device is being used.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:adherence.extension:code",
+        "short": "always | never | sometimes",
+        "definition": "Type of adherence.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:adherence.extension:code.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceUsageAdherenceCode"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes for adherence",
+          "valueSet": "http://hl7.org/fhir/ValueSet/deviceusage-adherence-code"
+        }
+      },
+      {
+        "path": "Extension.extension:adherence.extension:code.url",
+        "fixedUri": "code"
+      },
+      {
+        "path": "Extension.extension:adherence.extension:reason",
+        "short": "lost | stolen | prescribed | broken | burned | forgot",
+        "definition": "Reason for adherence type.",
+        "min": 1,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:adherence.extension:reason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceUsageAdherenceReason"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes for adherence reason",
+          "valueSet": "http://hl7.org/fhir/ValueSet/deviceusage-adherence-reason"
+        }
+      },
+      {
+        "path": "Extension.extension:adherence.extension:reason.url",
+        "fixedUri": "reason"
+      },
+      {
+        "path": "Extension.extension:adherence.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:adherence.url",
+        "fixedUri": "adherence"
+      },
+      {
+        "path": "Extension.extension:informationSource",
+        "short": "Who made the statement",
+        "definition": "Who reported the device was being used by the patient.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:informationSource.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:informationSource.url",
+        "fixedUri": "informationSource"
+      },
+      {
+        "path": "Extension.extension:device",
+        "short": "Code or Reference to device used",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:reason",
+        "short": "Why device was used",
+        "definition": "Reason or justification for the use of the device. A coded concept, or another resource whose existence justifies this DeviceUsage.",
+        "comment": "When the status is not done, the reason code indicates why it was not done.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reason.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:reason.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reason.url",
+        "fixedUri": "reason"
+      },
+      {
+        "path": "Extension.extension:bodySite",
+        "short": "Target body site",
+        "definition": "Indicates the anotomic location on the subject's body where the device was used ( i.e. the target).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodySite.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:bodySite.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodySite.url",
+        "fixedUri": "bodySite"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Addition details (comments, instructions)",
+        "definition": "Details about the device statement that were not represented at all or sufficiently in one of the attributes provided in a class. These may include for example a comment, an instruction, or a note associated with the statement.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

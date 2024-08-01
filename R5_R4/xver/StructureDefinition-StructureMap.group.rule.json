@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -423,157 +423,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:context",
-        "path": "Extension.extension:context",
-        "short": "Type or variable this rule applies to",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:context",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:min",
-        "path": "Extension.extension:min",
-        "short": "Specified minimum cardinality",
-        "definition": "Specified minimum cardinality for the element. This is optional; if present, it acts an implicit check on the input content.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:min",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:max",
-        "path": "Extension.extension:max",
-        "short": "Specified maximum cardinality (number or *)",
-        "definition": "Specified maximum cardinality for the element - a number or a \"*\". This is optional; if present, it acts an implicit check on the input content (* just serves as documentation; it's the default value).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:max",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:type",
-        "path": "Extension.extension:type",
-        "short": "Rule only applies if source has this type",
-        "definition": "Specified type for the element. This works as a condition on the mapping - use for polymorphic elements.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:type",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:defaultValue",
-        "path": "Extension.extension:defaultValue",
-        "short": "Default value if no value exists",
-        "definition": "A value to use if there is no existing value in the source object.",
-        "comment": "If there's a default value on an item that can repeat, it will only be used once.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:defaultValue",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:element",
-        "path": "Extension.extension:element",
-        "short": "Optional field for this source",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:element",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:listMode",
-        "path": "Extension.extension:listMode",
-        "short": "first | not_first | last | not_last | only_one",
-        "definition": "How to handle the list mode for this element.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:listMode",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:variable",
-        "path": "Extension.extension:variable",
-        "short": "Named context for field, if a field is specified",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:variable",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:condition",
-        "path": "Extension.extension:condition",
-        "short": "FHIRPath expression  - must be true or the rule does not apply",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:condition",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:check",
-        "path": "Extension.extension:check",
-        "short": "FHIRPath expression  - must be true or the mapping engine throws an error instead of completing",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:check",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:logMessage",
-        "path": "Extension.extension:logMessage",
-        "short": "Message to put in log if source exists (FHIRPath)",
-        "definition": "A FHIRPath expression which specifies a message to put in the transform log when content matching the source rule is found.",
-        "comment": "This is typically used for recording that something Is not transformed to the target for some reason.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:logMessage",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:target",
         "path": "Extension.extension:target",
         "short": "Content to create because of this mapping rule",
@@ -583,112 +432,6 @@
           "path": "Extension.extension:target",
           "min": 0,
           "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:context",
-        "path": "Extension.extension:context",
-        "short": "Variable this rule applies to",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:context",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:element",
-        "path": "Extension.extension:element",
-        "short": "Field to create in the context",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:element",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:variable",
-        "path": "Extension.extension:variable",
-        "short": "Named context for field, if desired, and a field is specified",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:variable",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:listMode",
-        "path": "Extension.extension:listMode",
-        "short": "first | share | last | single",
-        "definition": "If field is a list, how to manage the list.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:listMode",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:listRuleId",
-        "path": "Extension.extension:listRuleId",
-        "short": "Internal rule reference for shared list items",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:listRuleId",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:transform",
-        "path": "Extension.extension:transform",
-        "short": "create | copy +",
-        "definition": "How the data is copied / created.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:transform",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:parameter",
-        "path": "Extension.extension:parameter",
-        "short": "Parameters to the transform",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:parameter",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value[x]",
-        "path": "Extension.extension:value[x]",
-        "short": "Parameter value - variable or literal",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:value[x]",
-          "min": 1,
-          "max": "1"
         },
         "isModifier": false
       },
@@ -719,32 +462,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:name",
-        "path": "Extension.extension:name",
-        "short": "Name of a rule or group to apply",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:name",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:parameter",
-        "path": "Extension.extension:parameter",
-        "short": "Parameter to pass to the rule or group",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:parameter",
-          "min": 1,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:documentation",
         "path": "Extension.extension:documentation",
         "short": "Documentation for this instance of data",
@@ -756,6 +473,14 @@
           "max": "1"
         },
         "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule"
       }
     ]
   },
@@ -965,181 +690,12 @@
         "fixedUri": "logMessage"
       },
       {
+        "path": "Extension.extension:source.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:source.url",
         "fixedUri": "source"
-      },
-      {
-        "path": "Extension.extension:context",
-        "short": "Type or variable this rule applies to",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:context.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:context.url",
-        "fixedUri": "context"
-      },
-      {
-        "path": "Extension.extension:min",
-        "short": "Specified minimum cardinality",
-        "definition": "Specified minimum cardinality for the element. This is optional; if present, it acts an implicit check on the input content.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:min.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:min.url",
-        "fixedUri": "min"
-      },
-      {
-        "path": "Extension.extension:max",
-        "short": "Specified maximum cardinality (number or *)",
-        "definition": "Specified maximum cardinality for the element - a number or a \"*\". This is optional; if present, it acts an implicit check on the input content (* just serves as documentation; it's the default value).",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:max.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:max.url",
-        "fixedUri": "max"
-      },
-      {
-        "path": "Extension.extension:type",
-        "short": "Rule only applies if source has this type",
-        "definition": "Specified type for the element. This works as a condition on the mapping - use for polymorphic elements.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:type.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:type.url",
-        "fixedUri": "type"
-      },
-      {
-        "path": "Extension.extension:defaultValue",
-        "short": "Default value if no value exists",
-        "definition": "A value to use if there is no existing value in the source object.",
-        "comment": "If there's a default value on an item that can repeat, it will only be used once.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:defaultValue.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:defaultValue.url",
-        "fixedUri": "defaultValue"
-      },
-      {
-        "path": "Extension.extension:element",
-        "short": "Optional field for this source",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:element.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:element.url",
-        "fixedUri": "element"
-      },
-      {
-        "path": "Extension.extension:listMode",
-        "short": "first | not_first | last | not_last | only_one",
-        "definition": "How to handle the list mode for this element.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:listMode.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:listMode.url",
-        "fixedUri": "listMode"
-      },
-      {
-        "path": "Extension.extension:variable",
-        "short": "Named context for field, if a field is specified",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:variable.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:variable.url",
-        "fixedUri": "variable"
-      },
-      {
-        "path": "Extension.extension:condition",
-        "short": "FHIRPath expression  - must be true or the rule does not apply",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:condition.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:condition.url",
-        "fixedUri": "condition"
-      },
-      {
-        "path": "Extension.extension:check",
-        "short": "FHIRPath expression  - must be true or the mapping engine throws an error instead of completing",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:check.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:check.url",
-        "fixedUri": "check"
-      },
-      {
-        "path": "Extension.extension:logMessage",
-        "short": "Message to put in log if source exists (FHIRPath)",
-        "definition": "A FHIRPath expression which specifies a message to put in the transform log when content matching the source rule is found.",
-        "comment": "This is typically used for recording that something Is not transformed to the target for some reason.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:logMessage.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:logMessage.url",
-        "fixedUri": "logMessage"
       },
       {
         "path": "Extension.extension:target",
@@ -1263,160 +819,20 @@
         "fixedUri": "value%5Bx%5D"
       },
       {
+        "path": "Extension.extension:target.extension:parameter.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:target.extension:parameter.url",
         "fixedUri": "parameter"
       },
       {
-        "path": "Extension.extension:target.extension:value[x]",
-        "short": "Parameter value - variable or literal",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:target.extension:value[x].value[x]",
+        "path": "Extension.extension:target.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:target.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
       },
       {
         "path": "Extension.extension:target.url",
         "fixedUri": "target"
-      },
-      {
-        "path": "Extension.extension:context",
-        "short": "Variable this rule applies to",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:context.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:context.url",
-        "fixedUri": "context"
-      },
-      {
-        "path": "Extension.extension:element",
-        "short": "Field to create in the context",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:element.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:element.url",
-        "fixedUri": "element"
-      },
-      {
-        "path": "Extension.extension:variable",
-        "short": "Named context for field, if desired, and a field is specified",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:variable.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:variable.url",
-        "fixedUri": "variable"
-      },
-      {
-        "path": "Extension.extension:listMode",
-        "short": "first | share | last | single",
-        "definition": "If field is a list, how to manage the list.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:listMode.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:listMode.url",
-        "fixedUri": "listMode"
-      },
-      {
-        "path": "Extension.extension:listRuleId",
-        "short": "Internal rule reference for shared list items",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:listRuleId.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:listRuleId.url",
-        "fixedUri": "listRuleId"
-      },
-      {
-        "path": "Extension.extension:transform",
-        "short": "create | copy +",
-        "definition": "How the data is copied / created.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:transform.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:transform.url",
-        "fixedUri": "transform"
-      },
-      {
-        "path": "Extension.extension:parameter",
-        "short": "Parameters to the transform",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:parameter.extension:value[x]",
-        "short": "Parameter value - variable or literal",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:parameter.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:parameter.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
-      },
-      {
-        "path": "Extension.extension:parameter.url",
-        "fixedUri": "parameter"
-      },
-      {
-        "path": "Extension.extension:value[x]",
-        "short": "Parameter value - variable or literal",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:value[x].url",
-        "fixedUri": "value%5Bx%5D"
       },
       {
         "path": "Extension.extension:rule",
@@ -1471,38 +887,12 @@
         "fixedUri": "parameter"
       },
       {
+        "path": "Extension.extension:dependent.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:dependent.url",
         "fixedUri": "dependent"
-      },
-      {
-        "path": "Extension.extension:name",
-        "short": "Name of a rule or group to apply",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:name.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:name.url",
-        "fixedUri": "name"
-      },
-      {
-        "path": "Extension.extension:parameter",
-        "short": "Parameter to pass to the rule or group",
-        "min": 1,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:parameter.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:parameter.url",
-        "fixedUri": "parameter"
       },
       {
         "path": "Extension.extension:documentation",
@@ -1518,6 +908,10 @@
       {
         "path": "Extension.extension:documentation.url",
         "fixedUri": "documentation"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

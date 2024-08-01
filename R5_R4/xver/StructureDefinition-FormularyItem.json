@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,29 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "active | entered-in-error | inactive",
+        "definition": "The validity about the information of the formulary item and not of the underlying product or service itself.",
+        "comment": "This status is intended to identify if the formulary item in a local system is in active use within the formulary.  For example, a formulary might include a medicinal product and the status relates to its inclusion.  At some point in the future, if the status of the formulary item is changed to \"inactive\" that means that it is no longer valid in the formulary.  But the product itself might still be in active use and might be included in other formularies.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-FormularyItem"
       }
     ]
   },
@@ -409,6 +432,43 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "active | entered-in-error | inactive",
+        "definition": "The validity about the information of the formulary item and not of the underlying product or service itself.",
+        "comment": "This status is intended to identify if the formulary item in a local system is in active use within the formulary.  For example, a formulary might include a medicinal product and the status relates to its inclusion.  At some point in the future, if the status of the formulary item is changed to \"inactive\" that means that it is no longer valid in the formulary.  But the product itself might still be in active use and might be included in other formularies.",
+        "min": 0,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "FormularyItemStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/formularyitem-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-formularyitem-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

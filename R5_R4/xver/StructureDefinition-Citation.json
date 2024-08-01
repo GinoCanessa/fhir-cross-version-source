@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,436 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension:url",
+        "short": "Canonical identifier for this citation record, represented as a globally unique URI",
+        "definition": "An absolute URI that is used to identify this citation record when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this summary is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the summary is stored on different servers.",
+        "comment": "In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the meta.source element to indicate where the current master source of the resource can be found.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:url",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension:version",
+        "short": "Business version of the citation record",
+        "definition": "The identifier that is used to identify this version of the citation record when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the citation record author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "comment": "There may be different citation record instances that have the same identifier but different versions. The version can be appended to the url in a reference to allow a reference to a particular business version of the citation record with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:version",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x]",
+        "path": "Extension.extension:versionAlgorithm[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "comment": "If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 is newer, and a 0 if the version ordering can't successfully be determined.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:versionAlgorithm[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension:name",
+        "short": "Name for this citation record (computer friendly)",
+        "definition": "A natural language name identifying the citation record. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "comment": "The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:name",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension:title",
+        "short": "Name for this citation record (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the citation record.",
+        "comment": "This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc. Use this element if you have a need for naming the citation record for human use, such as a display name for the citation record that is used when selecting citations from a list.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:title",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this summary. Enables tracking the life-cycle of the content.",
+        "comment": "Allows filtering of summaries that are appropriate for use versus not. Use \"active\" when the citation record is the version for others to actively use, \"draft\" while you are developing the content, and \"retired\" when this record should no longer be used for any purpose.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:experimental",
+        "path": "Extension.extension:experimental",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this citation record is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "comment": "Allows filtering of citation records that are appropriate for use versus not.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:experimental",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension:date",
+        "short": "Date last changed",
+        "definition": "The date (and optionally time) when the citation record was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the citation record changes.",
+        "comment": "The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the citation record. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:date",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:publisher",
+        "path": "Extension.extension:publisher",
+        "short": "The publisher of the citation record, not the publisher of the article or artifact being cited",
+        "definition": "The name of the organization or individual that published the citation record.",
+        "comment": "Usually an organization but may be an individual. The publisher (or steward) of the citation record is the organization or individual primarily responsible for the maintenance and upkeep of the citation record. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the citation record. This item SHOULD be populated unless the information is available from context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:publisher",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension:contact",
+        "short": "Contact details for the publisher of the citation record",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "comment": "May be a web site, an email address, a telephone number, etc.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:contact",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Natural language description of the citation",
+        "definition": "A free text natural language description of the citation from a consumer's perspective.",
+        "comment": "This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the citation as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the citation is presumed to be the predominant language in the place the citation was created).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:useContext",
+        "path": "Extension.extension:useContext",
+        "short": "The context that the citation record content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate citation record instances.",
+        "comment": "When multiple useContexts are specified, there is no expectation that all or any of the contexts apply.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:useContext",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension:jurisdiction",
+        "short": "Intended jurisdiction for citation record (if applicable)",
+        "definition": "A legal or geographic region in which the citation record is intended to be used.",
+        "comment": "It may be possible for the citation record to be used in jurisdictions other than those for which it was originally designed or intended.\n\nDEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:jurisdiction",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:purpose",
+        "path": "Extension.extension:purpose",
+        "short": "Why this citation is defined",
+        "definition": "Explanation of why this citation is needed and why it has been designed as it has.",
+        "comment": "This element does not describe the usage of the citation. Instead, it provides traceability of ''why'' the resource is either needed or ''why'' it is defined as it is.  This may be used to point to source materials or specifications that drove the structure of this citation.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:purpose",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:copyright",
+        "path": "Extension.extension:copyright",
+        "short": "Use and/or publishing restrictions for the citation record, not for the cited artifact",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:copyright",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:copyrightLabel",
+        "path": "Extension.extension:copyrightLabel",
+        "short": "Copyright holder and year(s) for the ciation record, not for the cited artifact",
+        "definition": "A short string (<50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved').",
+        "comment": "The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:copyrightLabel",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:approvalDate",
+        "path": "Extension.extension:approvalDate",
+        "short": "When the citation record was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "comment": "The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:approvalDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:lastReviewDate",
+        "path": "Extension.extension:lastReviewDate",
+        "short": "When the citation record was last reviewed by the publisher",
+        "definition": "The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.",
+        "comment": "If specified, this date follows the original approval date.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:lastReviewDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:effectivePeriod",
+        "path": "Extension.extension:effectivePeriod",
+        "short": "When the citation record is expected to be used",
+        "definition": "The period during which the citation record content was or is planned to be in active use.",
+        "comment": "The effective period for a citation record determines when the content is applicable for usage and is independent of publication and review dates. For example, a citation intended to be used for the year 2016 might be published in 2015.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:effectivePeriod",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:editor",
+        "path": "Extension.extension:editor",
+        "short": "Who edited the citation record",
+        "definition": "Who edited or revised the citation record.",
+        "comment": "The Citation.editor element is structured to support a name (with a string datatype) and contact point information for the editor, and is not structured to support unique identifiers for the editor. If detailed contributorship data is needed for the editing of the citation record, then one can create a Citation Resource for the Citation Resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:editor",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:reviewer",
+        "path": "Extension.extension:reviewer",
+        "short": "Who reviewed the citation record",
+        "definition": "The Citation.reviewer element is structured to support a name (with a string datatype) and contact point information for the reviewer, and is not structured to support unique identifiers for the reviewer. If detailed contributorship data is needed for the review of the citation record, then one can create a Citation Resource for the Citation Resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:reviewer",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:endorser",
+        "path": "Extension.extension:endorser",
+        "short": "Who endorsed the citation record",
+        "definition": "The Citation.endorser element is structured to support a name (with a string datatype) and contact point information for the endorser, and is not structured to support unique identifiers for the endorser. If detailed contributorship data is needed for the endorsement of the citation record, then one can create a Citation Resource for the Citation Resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:endorser",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:summary",
+        "path": "Extension.extension:summary",
+        "short": "A human-readable display of key concepts to represent the citation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:summary",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension:classification",
+        "short": "The assignment to an organizing scheme",
+        "definition": "Use this element if you need to classify the citation record independently from classifying the cited artifact.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:classification",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Used for general notes and annotations not coded elsewhere",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:currentState",
+        "path": "Extension.extension:currentState",
+        "short": "The status of the citation record",
+        "definition": "Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:currentState",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension:statusDate",
+        "short": "An effective date or period for a status of the citation record",
+        "definition": "The state or status of the citation record paired with an effective date or period for that state.",
+        "comment": "Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:statusDate",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:relatedArtifact",
+        "path": "Extension.extension:relatedArtifact",
+        "short": "Artifact related to the citation record",
+        "definition": "Use this if needed for reporting artifacts related to the citation record, NOT FOR reporting artifacts related to the cited article. For example, one may use this element to report the data source for generation of the Citation Resource instance if it was automatically generated, such as conversion from a citation repository.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:relatedArtifact",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:citedArtifact",
+        "path": "Extension.extension:citedArtifact",
+        "short": "The article or artifact being described",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:citedArtifact",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Citation"
       }
     ]
   },
@@ -409,6 +839,2679 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:url",
+        "short": "Canonical identifier for this citation record, represented as a globally unique URI",
+        "definition": "An absolute URI that is used to identify this citation record when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this summary is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the summary is stored on different servers.",
+        "comment": "In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the meta.source element to indicate where the current master source of the resource can be found.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:url.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:url.url",
+        "fixedUri": "url"
+      },
+      {
+        "path": "Extension.extension:version",
+        "short": "Business version of the citation record",
+        "definition": "The identifier that is used to identify this version of the citation record when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the citation record author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "comment": "There may be different citation record instances that have the same identifier but different versions. The version can be appended to the url in a reference to allow a reference to a particular business version of the citation record with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:version.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:version.url",
+        "fixedUri": "version"
+      },
+      {
+        "path": "Extension.extension:versionAlgorithm[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "comment": "If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 is newer, and a 0 if the version ordering can't successfully be determined.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:versionAlgorithm[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/version-algorithm"
+        }
+      },
+      {
+        "path": "Extension.extension:versionAlgorithm[x].url",
+        "fixedUri": "versionAlgorithm%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:name",
+        "short": "Name for this citation record (computer friendly)",
+        "definition": "A natural language name identifying the citation record. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "comment": "The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:name.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:name.url",
+        "fixedUri": "name"
+      },
+      {
+        "path": "Extension.extension:title",
+        "short": "Name for this citation record (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the citation record.",
+        "comment": "This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc. Use this element if you have a need for naming the citation record for human use, such as a display name for the citation record that is used when selecting citations from a list.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:title.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this summary. Enables tracking the life-cycle of the content.",
+        "comment": "Allows filtering of summaries that are appropriate for use versus not. Use \"active\" when the citation record is the version for others to actively use, \"draft\" while you are developing the content, and \"retired\" when this record should no longer be used for any purpose.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublicationStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|5.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:experimental",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this citation record is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "comment": "Allows filtering of citation records that are appropriate for use versus not.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:experimental.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:experimental.url",
+        "fixedUri": "experimental"
+      },
+      {
+        "path": "Extension.extension:date",
+        "short": "Date last changed",
+        "definition": "The date (and optionally time) when the citation record was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the citation record changes.",
+        "comment": "The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the citation record. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:date.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:date.url",
+        "fixedUri": "date"
+      },
+      {
+        "path": "Extension.extension:publisher",
+        "short": "The publisher of the citation record, not the publisher of the article or artifact being cited",
+        "definition": "The name of the organization or individual that published the citation record.",
+        "comment": "Usually an organization but may be an individual. The publisher (or steward) of the citation record is the organization or individual primarily responsible for the maintenance and upkeep of the citation record. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the citation record. This item SHOULD be populated unless the information is available from context.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:publisher.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:publisher.url",
+        "fixedUri": "publisher"
+      },
+      {
+        "path": "Extension.extension:contact",
+        "short": "Contact details for the publisher of the citation record",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "comment": "May be a web site, an email address, a telephone number, etc.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contact.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contact.url",
+        "fixedUri": "contact"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Natural language description of the citation",
+        "definition": "A free text natural language description of the citation from a consumer's perspective.",
+        "comment": "This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the citation as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the citation is presumed to be the predominant language in the place the citation was created).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:useContext",
+        "short": "The context that the citation record content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate citation record instances.",
+        "comment": "When multiple useContexts are specified, there is no expectation that all or any of the contexts apply.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:useContext.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "UsageContext"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:useContext.url",
+        "fixedUri": "useContext"
+      },
+      {
+        "path": "Extension.extension:jurisdiction",
+        "short": "Intended jurisdiction for citation record (if applicable)",
+        "definition": "A legal or geographic region in which the citation record is intended to be used.",
+        "comment": "It may be possible for the citation record to be used in jurisdictions other than those for which it was originally designed or intended.\n\nDEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:jurisdiction.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Jurisdiction"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/jurisdiction"
+        }
+      },
+      {
+        "path": "Extension.extension:jurisdiction.url",
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "path": "Extension.extension:purpose",
+        "short": "Why this citation is defined",
+        "definition": "Explanation of why this citation is needed and why it has been designed as it has.",
+        "comment": "This element does not describe the usage of the citation. Instead, it provides traceability of ''why'' the resource is either needed or ''why'' it is defined as it is.  This may be used to point to source materials or specifications that drove the structure of this citation.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:purpose.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:purpose.url",
+        "fixedUri": "purpose"
+      },
+      {
+        "path": "Extension.extension:copyright",
+        "short": "Use and/or publishing restrictions for the citation record, not for the cited artifact",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:copyright.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:copyright.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "path": "Extension.extension:copyrightLabel",
+        "short": "Copyright holder and year(s) for the ciation record, not for the cited artifact",
+        "definition": "A short string (<50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved').",
+        "comment": "The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:copyrightLabel.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:copyrightLabel.url",
+        "fixedUri": "copyrightLabel"
+      },
+      {
+        "path": "Extension.extension:approvalDate",
+        "short": "When the citation record was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "comment": "The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:approvalDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:approvalDate.url",
+        "fixedUri": "approvalDate"
+      },
+      {
+        "path": "Extension.extension:lastReviewDate",
+        "short": "When the citation record was last reviewed by the publisher",
+        "definition": "The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.",
+        "comment": "If specified, this date follows the original approval date.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:lastReviewDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:lastReviewDate.url",
+        "fixedUri": "lastReviewDate"
+      },
+      {
+        "path": "Extension.extension:effectivePeriod",
+        "short": "When the citation record is expected to be used",
+        "definition": "The period during which the citation record content was or is planned to be in active use.",
+        "comment": "The effective period for a citation record determines when the content is applicable for usage and is independent of publication and review dates. For example, a citation intended to be used for the year 2016 might be published in 2015.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:effectivePeriod.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:effectivePeriod.url",
+        "fixedUri": "effectivePeriod"
+      },
+      {
+        "path": "Extension.extension:editor",
+        "short": "Who edited the citation record",
+        "definition": "Who edited or revised the citation record.",
+        "comment": "The Citation.editor element is structured to support a name (with a string datatype) and contact point information for the editor, and is not structured to support unique identifiers for the editor. If detailed contributorship data is needed for the editing of the citation record, then one can create a Citation Resource for the Citation Resource.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:editor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:editor.url",
+        "fixedUri": "editor"
+      },
+      {
+        "path": "Extension.extension:reviewer",
+        "short": "Who reviewed the citation record",
+        "definition": "The Citation.reviewer element is structured to support a name (with a string datatype) and contact point information for the reviewer, and is not structured to support unique identifiers for the reviewer. If detailed contributorship data is needed for the review of the citation record, then one can create a Citation Resource for the Citation Resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:reviewer.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:reviewer.url",
+        "fixedUri": "reviewer"
+      },
+      {
+        "path": "Extension.extension:endorser",
+        "short": "Who endorsed the citation record",
+        "definition": "The Citation.endorser element is structured to support a name (with a string datatype) and contact point information for the endorser, and is not structured to support unique identifiers for the endorser. If detailed contributorship data is needed for the endorsement of the citation record, then one can create a Citation Resource for the Citation Resource.\n\nSee guidance around (not) making local changes to elements [here](canonicalresource.html#localization).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:endorser.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:endorser.url",
+        "fixedUri": "endorser"
+      },
+      {
+        "path": "Extension.extension:summary",
+        "short": "A human-readable display of key concepts to represent the citation",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:summary.extension:style",
+        "short": "Format for display of the citation summary",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:summary.extension:style.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationSummaryStyle"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-summary-style"
+        }
+      },
+      {
+        "path": "Extension.extension:summary.extension:style.url",
+        "fixedUri": "style"
+      },
+      {
+        "path": "Extension.extension:summary.extension:text",
+        "short": "The human-readable display of the citation summary",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:summary.extension:text.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:summary.extension:text.url",
+        "fixedUri": "text"
+      },
+      {
+        "path": "Extension.extension:summary.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:summary.url",
+        "fixedUri": "summary"
+      },
+      {
+        "path": "Extension.extension:classification",
+        "short": "The assignment to an organizing scheme",
+        "definition": "Use this element if you need to classify the citation record independently from classifying the cited artifact.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:classification.extension:type",
+        "short": "The kind of classifier (e.g. publication type, keyword)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:classification.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationClassificationType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-classification-type"
+        }
+      },
+      {
+        "path": "Extension.extension:classification.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:classification.extension:classifier",
+        "short": "The specific classification value",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:classification.extension:classifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationArtifactClassifier"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier"
+        }
+      },
+      {
+        "path": "Extension.extension:classification.extension:classifier.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "path": "Extension.extension:classification.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:classification.url",
+        "fixedUri": "classification"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Used for general notes and annotations not coded elsewhere",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:currentState",
+        "short": "The status of the citation record",
+        "definition": "Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:currentState.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationStatusType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-status-type"
+        }
+      },
+      {
+        "path": "Extension.extension:currentState.url",
+        "fixedUri": "currentState"
+      },
+      {
+        "path": "Extension.extension:statusDate",
+        "short": "An effective date or period for a status of the citation record",
+        "definition": "The state or status of the citation record paired with an effective date or period for that state.",
+        "comment": "Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:activity",
+        "short": "Classification of the status",
+        "definition": "The state or status of the citation record (that will be paired with the period).",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:activity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationStatusType"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-status-type"
+        }
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:activity.url",
+        "fixedUri": "activity"
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:actual",
+        "short": "Either occurred or expected",
+        "definition": "Whether the status date is actual (has occurred) or expected (estimated or anticipated).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:actual.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:actual.url",
+        "fixedUri": "actual"
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:period",
+        "short": "When the status started and/or ended",
+        "definition": "For an instance, place the same value in both start and end elements.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:period.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:statusDate.extension:period.url",
+        "fixedUri": "period"
+      },
+      {
+        "path": "Extension.extension:statusDate.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:statusDate.url",
+        "fixedUri": "statusDate"
+      },
+      {
+        "path": "Extension.extension:relatedArtifact",
+        "short": "Artifact related to the citation record",
+        "definition": "Use this if needed for reporting artifacts related to the citation record, NOT FOR reporting artifacts related to the cited article. For example, one may use this element to report the data source for generation of the Citation Resource instance if it was automatically generated, such as conversion from a citation repository.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:relatedArtifact.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "RelatedArtifact"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:relatedArtifact.url",
+        "fixedUri": "relatedArtifact"
+      },
+      {
+        "path": "Extension.extension:citedArtifact",
+        "short": "The article or artifact being described",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:identifier",
+        "short": "Unique identifier. May include DOI, PMID, PMCID, etc",
+        "definition": "A formal identifier that is used to identify the cited artifact when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "comment": "This element will contain unique identifiers that support de-duplication of citations. Commonly used identifiers for study citations include digital object identifier (DOI), PubMed ID (PMID), and PubMed Central ID (PMCID). To maintain interoperability, the suggested identifier.system values to use for these 3 identifiers are: DOI = \"https://doi.org\" PMID = \"https://pubmed.ncbi.nlm.nih.gov\" PMCID = \"https://www.ncbi.nlm.nih.gov/pmc/\"",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatedIdentifier",
+        "short": "Identifier not unique to the cited artifact. May include trial registry identifiers",
+        "definition": "A formal identifier that is used to identify things closely related to the cited artifact.",
+        "comment": "May include trial registry identifiers, e.g. NCT04372602 from clinicaltrials.gov. This related identifier would not be used as unique identifier for the cited artifact itself. Multiple published articles (each with their own unique identifier) may relate to the same study record in a research registry. Commonly used related identifiers for study registries include ClinicalTrials.gov identifier (NCTId) and PROSPERO identifier (used for registration of systematic reviews). To maintain interoperability, the suggested identifier.system values to use for these 2 identifiers are: ClinicalTrials.gov = \"https://clinicaltrials.gov\" PROSPERO = \"https://www.crd.york.ac.uk/prospero/\"",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatedIdentifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatedIdentifier.url",
+        "fixedUri": "relatedIdentifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:dateAccessed",
+        "short": "When the cited artifact was accessed",
+        "definition": "Use this element when citing an artifact from a potentially unstable source, such as a webpage, to note the date (and time) the source was accessed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:dateAccessed.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:dateAccessed.url",
+        "fixedUri": "dateAccessed"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version",
+        "short": "The defined version of the cited artifact",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:value",
+        "short": "The version number or other version identifier",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:value.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:baseCitation",
+        "short": "Citation for the main version of the cited artifact",
+        "definition": "When referencing a baseCitation, one may inherit any data from the referenced Citation Resource and consider any data in the current Citation Resource as superceding to be version-specific.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:baseCitation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Citation"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.extension:baseCitation.url",
+        "fixedUri": "baseCitation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:version.url",
+        "fixedUri": "version"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:currentState",
+        "short": "The status of the cited artifact",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:currentState.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedArtifactStatusType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-status-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:currentState.url",
+        "fixedUri": "currentState"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate",
+        "short": "An effective date or period for a status of the cited artifact",
+        "definition": "An effective date or period, historical or future, actual or expected, for a status of the cited artifact.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:activity",
+        "short": "Classification of the status",
+        "definition": "A definition of the status associated with a date or period.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:activity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedArtifactStatusType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-status-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:activity.url",
+        "fixedUri": "activity"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:actual",
+        "short": "Either occurred or expected",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:actual.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:actual.url",
+        "fixedUri": "actual"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:period",
+        "short": "When the status started and/or ended",
+        "definition": "For an instance, place the same value in both start and end elements.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:period.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.extension:period.url",
+        "fixedUri": "period"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:statusDate.url",
+        "fixedUri": "statusDate"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title",
+        "short": "The title details of the article or artifact",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:type",
+        "short": "The kind of title",
+        "definition": "Used to express the reason for or classification of the title.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TitleType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/title-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:language",
+        "short": "Used to express the specific language",
+        "definition": "Used to express the specific language of the title.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:language.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A human language."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/languages compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-languages|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:language.url",
+        "fixedUri": "language"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:text",
+        "short": "The title of the article or artifact",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:text.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.extension:text.url",
+        "fixedUri": "text"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract",
+        "short": "Summary of the article or artifact",
+        "definition": "The abstract may be used to convey article-contained abstracts, externally-created abstracts, or other descriptive summaries.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:type",
+        "short": "The kind of abstract",
+        "definition": "Used to express the reason for or classification of the abstract.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedArtifactAbstractType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:language",
+        "short": "Used to express the specific language",
+        "definition": "Used to express the specific language of the abstract.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:language.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A human language."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/languages compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-languages|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:language.url",
+        "fixedUri": "language"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:text",
+        "short": "Abstract content",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:text.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:text.url",
+        "fixedUri": "text"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:copyright",
+        "short": "Copyright notice for the abstract",
+        "definition": "There is also a copyright element in the publicationForm element, so this copyright element is intended for copyright of the abstract.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:copyright.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.extension:copyright.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:abstract.url",
+        "fixedUri": "abstract"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part",
+        "short": "The component of the article or artifact",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:type",
+        "short": "The kind of component",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedArtifactPartType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-part-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:value",
+        "short": "The specification of the component",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:value.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:baseCitation",
+        "short": "The citation for the full article or artifact",
+        "definition": "When referencing a baseCitation, one may inherit any data from the referenced Citation Resource and consider any data in the current Citation Resource as superceding to be specific to the citation of the specified part. For example, the part-specific Citation may have additional contributorship data that supercedes the contributorship data for the full citation when there is a need to uniquely report the contributorship for an image or supplement associated with the fuller citation record.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:baseCitation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Citation"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.extension:baseCitation.url",
+        "fixedUri": "baseCitation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:part.url",
+        "fixedUri": "part"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo",
+        "short": "The artifact related to the cited artifact",
+        "definition": "The citedArtifact.relatesTo element uses a BackboneElement instead of the RelatedArtifact Datatype to enable use of an extended value set for the required code for the type of relationship.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:type",
+        "short": "documentation | justification | citation | predecessor | successor | derived-from | depends-on | composed-of | part-of | amends | amended-with | appends | appended-with | cites | cited-by | comments-on | comment-in | contains | contained-in | corrects | correction-in | replaces | replaced-with | retracts | retracted-by | signs | similar-to | supports | supported-with | transforms | transformed-into | transformed-with | documents | specification-of | created-with | cite-as | reprint | reprint-of",
+        "definition": "The type of relationship to the related artifact.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RelatedArtifactTypeExpanded"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/related-artifact-type-all|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-related-artifact-type-all|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:classifier",
+        "short": "Additional classifiers",
+        "definition": "Provides additional classifiers of the related artifact.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:classifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationArtifactClassifier"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:classifier.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:label",
+        "short": "Short label",
+        "definition": "A short label that can be used to reference the related artifact from elsewhere in the containing artifact, such as a footnote index.",
+        "comment": "Though not commonly used in citation records, this could be used for referencing other articles in the abstract or explanatory notes.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:label.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:label.url",
+        "fixedUri": "label"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:display",
+        "short": "Brief description of the related artifact",
+        "definition": "A brief description of the document or knowledge resource being referenced, suitable for display to a consumer.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:display.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:display.url",
+        "fixedUri": "display"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:citation",
+        "short": "Bibliographic citation for the artifact",
+        "definition": "A bibliographic citation for the related artifact. This text SHOULD be formatted according to an accepted citation format.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:citation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:citation.url",
+        "fixedUri": "citation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:document",
+        "short": "What document is being referenced",
+        "definition": "The document being referenced, represented as an attachment. Do not use this element if using the resource element to provide the canonical to the related artifact.",
+        "comment": "To refer to related artifacts by URL, the FHIR Attachment Datatype includes a url element, so the path would be Citation.citedArtifact.relatesTo.document.url",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:document.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:document.url",
+        "fixedUri": "document"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resource",
+        "short": "What artifact is being referenced",
+        "definition": "The related artifact, such as a library, value set, profile, or other knowledge resource.",
+        "comment": "If the type is predecessor, this is a reference to the succeeding knowledge resource. If the type is successor, this is a reference to the prior knowledge resource",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resource.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resource.url",
+        "fixedUri": "resource"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resourceReference",
+        "short": "What artifact, if not a conformance resource",
+        "definition": "The related artifact, if the artifact is not a canonical resource, or a resource reference to a canonical resource.",
+        "comment": "If both resource and resourceReference are present, they SHOULD be consistent and reference the same resource. Although relatedArtifact is intended to support references to definitional resources, there are cases where non-definitional resources can be definitional (such as Location where the kind is mode). Related artifacts SHOULD be used to reference definitional resources, and profiles SHOULD be used to make that explicit for particular use cases.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resourceReference.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.extension:resourceReference.url",
+        "fixedUri": "resourceReference"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:relatesTo.url",
+        "fixedUri": "relatesTo"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm",
+        "short": "If multiple, used to represent alternative forms of the article that are not separate citations",
+        "definition": "A common use is a journal article with a publication date and pagination for a print version and a different publication date for the online version of the same article.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn",
+        "short": "The collection the cited article or artifact is published in",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:type",
+        "short": "Kind of container (e.g. Periodical, database, or book)",
+        "definition": "Journals and newspapers are coded as Periodical.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublishedInType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/published-in-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:identifier",
+        "short": "Journal identifiers include ISSN, ISO Abbreviation and NLMuniqueID; Book identifiers include ISBN",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:title",
+        "short": "Name of the database or title of the book or journal",
+        "definition": "ClinicalTrials.gov is a name of a database.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:title.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:title.url",
+        "fixedUri": "title"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisher",
+        "short": "Name of or resource describing the publisher",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisher.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisher.url",
+        "fixedUri": "publisher"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisherLocation",
+        "short": "Geographic location of the publisher",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisherLocation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.extension:publisherLocation.url",
+        "fixedUri": "publisherLocation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publishedIn.url",
+        "fixedUri": "publishedIn"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:citedMedium",
+        "short": "Internet or Print",
+        "definition": "Describes the form of the medium cited. Common codes are \"Internet\" or \"Print\". The CitedMedium value set has 6 codes. The codes internet, print, and offline-digital-storage are the common codes for a typical publication form, though internet and print are more common for study citations. Three additional codes (each appending one of the primary codes with \"-without-issue\" are used for situations when a study is published both within an issue (of a periodical release as commonly done for journals) AND is published separately from the issue (as commonly done with early online publication), to represent specific identification of the publication form not associated with the issue.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:citedMedium.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedMedium"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-medium"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:citedMedium.url",
+        "fixedUri": "citedMedium"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:volume",
+        "short": "Volume number of journal or other collection in which the article is published",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:volume.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:volume.url",
+        "fixedUri": "volume"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:issue",
+        "short": "Issue, part or supplement of journal or other collection in which the article is published",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:issue.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:issue.url",
+        "fixedUri": "issue"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:articleDate",
+        "short": "The date the article was added to the database, or the date the article was released",
+        "definition": "The articleDate is the preferred element for expressing the publication date as structured data.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:articleDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:articleDate.url",
+        "fixedUri": "articleDate"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateText",
+        "short": "Text representation of the date on which the issue of the cited artifact was published",
+        "definition": "The publicationDateText element is prefererntially used when a date is not represented in a form that can be handled as structured data in other elements.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateText.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateText.url",
+        "fixedUri": "publicationDateText"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateSeason",
+        "short": "Season in which the cited artifact was published",
+        "definition": "Spring, Summer, Fall/Autumn, Winter.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateSeason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:publicationDateSeason.url",
+        "fixedUri": "publicationDateSeason"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastRevisionDate",
+        "short": "The date the article was last revised or updated in the database",
+        "definition": "The lastRevisionDate is used for the cited article and not the date the Citation Resource is last revised.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastRevisionDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastRevisionDate.url",
+        "fixedUri": "lastRevisionDate"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:language",
+        "short": "Language(s) in which this form of the article is published",
+        "definition": "The language or languages in which this form of the article is published.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:language.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A human language."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Language"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/languages compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-languages|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:language.url",
+        "fixedUri": "language"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:accessionNumber",
+        "short": "Entry number or identifier for inclusion in a database",
+        "definition": "Accession numbers may be used instead of or in addition to page numbers.  Accession numbers are functionally identifiers when coupled with the identity of the database for which they are accession numbers. Accession numbers which are used for indexing citations in a dataset of citations should NOT be entered in Citation.citedArtifact.publicationForm.accessionNumber -- this use would be a type of Citation.identifier for the citation record itself.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:accessionNumber.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:accessionNumber.url",
+        "fixedUri": "accessionNumber"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageString",
+        "short": "Used for full display of pagination",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageString.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageString.url",
+        "fixedUri": "pageString"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:firstPage",
+        "short": "Used for isolated representation of first page",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:firstPage.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:firstPage.url",
+        "fixedUri": "firstPage"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastPage",
+        "short": "Used for isolated representation of last page",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastPage.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:lastPage.url",
+        "fixedUri": "lastPage"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageCount",
+        "short": "Number of pages or screens",
+        "definition": "Actual or approximate number of pages or screens. Distinct from reporting the page numbers.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageCount.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:pageCount.url",
+        "fixedUri": "pageCount"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:copyright",
+        "short": "Copyright notice for the full article or artifact",
+        "definition": "It is possible that different publication forms have different copyright notices.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:copyright.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.extension:copyright.url",
+        "fixedUri": "copyright"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:publicationForm.url",
+        "fixedUri": "publicationForm"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation",
+        "short": "Used for any URL for the article or artifact cited",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:classifier",
+        "short": "Code the reason for different URLs, e.g. abstract and full-text",
+        "definition": "A characterization of the object expected at the web location.",
+        "comment": "Categories that may be frequently used for study citations may include abstract, full-text, supplement, webpage, and doi-based.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:classifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ArtifactUrlClassifier"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-url-classifier"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:classifier.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:url",
+        "short": "The specific URL",
+        "definition": "Persistent URLs, like doi, are preferred.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:url.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.extension:url.url",
+        "fixedUri": "url"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:webLocation.url",
+        "fixedUri": "webLocation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification",
+        "short": "The assignment to an organizing scheme",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:type",
+        "short": "The kind of classifier (e.g. publication type, keyword)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitedArtifactClassificationType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-artifact-classification-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:classifier",
+        "short": "The specific classification value",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:classifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "CitationArtifactClassifier"
+            }
+          ],
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/citation-artifact-classifier"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:classifier.url",
+        "fixedUri": "classifier"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:artifactAssessment",
+        "short": "Complex or externally created classification",
+        "definition": "Examples relevant to study citations include MeSH Headings or Keywords that contain qualifier codings or sub-classifications, and include risk of bias assessments created by persons different from the creator of the citation record.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:artifactAssessment.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ArtifactAssessment"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.extension:artifactAssessment.url",
+        "fixedUri": "artifactAssessment"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:classification.url",
+        "fixedUri": "classification"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship",
+        "short": "Attribution of authors and other contributors",
+        "definition": "This element is used to list authors and other contributors, their contact information, specific contributions, and summary statements.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:complete",
+        "short": "Indicates if the list includes all authors and/or contributors",
+        "definition": "If list is incomplete, \"et al\" can be appended to Contributorship.summary.value for display purposes.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:complete.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:complete.url",
+        "fixedUri": "complete"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry",
+        "short": "An individual entity named as a contributor",
+        "definition": "An individual entity named as a contributor, for example in the author list or contributor list.",
+        "comment": "Used to report contributorship in individualized ways.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributor",
+        "short": "The identity of the individual contributor",
+        "definition": "If naming a contributor without additional detail or further structured data, the display element within the Reference datatype may be used for a simple string without referencing another resource.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributor.url",
+        "fixedUri": "contributor"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:forenameInitials",
+        "short": "For citation styles that use initials",
+        "definition": "This element is used to support a data element used for citations that is not otherwise supported fully by FHIR HumanName datatype. In some citation summary styles (e.g. Medline), authors are presented with full spelling of their last name (family name) and initials for all forenames (first names, middle names, preceding names, given names). As the FHIR HumanName Datatype does not have a specific element for forename initials and this is common in citation usage, the element is added to contributorship.entry directly.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:forenameInitials.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:forenameInitials.url",
+        "fixedUri": "forenameInitials"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:affiliation",
+        "short": "Organizational affiliation",
+        "definition": "Organization affiliated with the contributor.",
+        "comment": "If naming an organization without additional detail or further structured data, the display element within the Reference datatype may be used for a simple string without referencing another resource.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:affiliation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:affiliation.url",
+        "fixedUri": "affiliation"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionType",
+        "short": "The specific contribution",
+        "definition": "This element identifies the specific nature of an individual’s contribution with respect to the cited work.",
+        "comment": "The CreDiT taxonomy provides a way to encode contribution information. The purpose of CRediT is to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ArtifactContributionType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-contribution-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionType.url",
+        "fixedUri": "contributionType"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:role",
+        "short": "The role of the contributor (e.g. author, editor, reviewer, funder)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:role.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContributorRole"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-role"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:role.url",
+        "fixedUri": "role"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance",
+        "short": "Contributions with accounting for time or number",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:type",
+        "short": "The specific contribution",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ArtifactContributionInstanceType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:time",
+        "short": "The time that the contribution was made",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:time.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.extension:time.url",
+        "fixedUri": "time"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:contributionInstance.url",
+        "fixedUri": "contributionInstance"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:correspondingContact",
+        "short": "Whether the contributor is the corresponding contributor for the role",
+        "definition": "If there are multiple authors and one serves as the corresponding author, then that one would have correspondingContact = true.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:correspondingContact.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:correspondingContact.url",
+        "fixedUri": "correspondingContact"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:rankingOrder",
+        "short": "Ranked order of contribution",
+        "definition": "Provides a numerical ranking to represent the degree of contributorship relative to other contributors, such as 1 for first author and 2 for second author.",
+        "comment": "Used to retain order of authorship as structured data",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:rankingOrder.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.extension:rankingOrder.url",
+        "fixedUri": "rankingOrder"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:entry.url",
+        "fixedUri": "entry"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary",
+        "short": "Used to record a display of the author/contributor list without separate data element for each list member",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:type",
+        "short": "Such as author list, contributorship statement, funding statement, acknowledgements statement, or conflicts of interest statement",
+        "definition": "Used most commonly to express an author list or a contributorship statement.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContributorSummaryType"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-type"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:style",
+        "short": "The format for the display string",
+        "definition": "The format for the display string, such as author last name with first letter capitalized followed by forename initials.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:style.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContributorSummaryStyle"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-style"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:style.url",
+        "fixedUri": "style"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:source",
+        "short": "Used to code the producer or rule for creating the display string",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:source.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ContributorSummarySource"
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/contributor-summary-source"
+        }
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:source.url",
+        "fixedUri": "source"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:value",
+        "short": "The display string for the author list, contributor list, or contributorship statement",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:value.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.extension:value.url",
+        "fixedUri": "value"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.extension:summary.url",
+        "fixedUri": "summary"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:contributorship.url",
+        "fixedUri": "contributorship"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:note",
+        "short": "Any additional information or content for the article or artifact",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:citedArtifact.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:citedArtifact.url",
+        "fixedUri": "citedArtifact"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,191 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension:type",
+        "short": "Overall type of this authorization, for example drug marketing approval, orphan drug designation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:type",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "General textual supporting information",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:region",
+        "path": "Extension.extension:region",
+        "short": "The territory in which the authorization has been granted",
+        "definition": "The territory (e.g., country, jurisdiction etc.) in which the authorization has been granted.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:region",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "The status that is authorised e.g. approved. Intermediate states can be tracked with cases and applications",
+        "definition": "The status that is authorised e.g. approved. Intermediate states and actions can be tracked with cases and applications.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension:statusDate",
+        "short": "The date at which the current status was assigned",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:statusDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:validityPeriod",
+        "path": "Extension.extension:validityPeriod",
+        "short": "The time period in which the regulatory approval etc. is in effect, e.g. a Marketing Authorization includes the date of authorization and/or expiration date",
+        "definition": "The time period in which the regulatory approval, clearance or licencing is in effect. As an example, a Marketing Authorization includes the date of authorization and/or an expiration date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:validityPeriod",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:indication",
+        "path": "Extension.extension:indication",
+        "short": "Condition for which the use of the regulated product applies",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:indication",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:intendedUse",
+        "path": "Extension.extension:intendedUse",
+        "short": "The intended use of the product, e.g. prevention, treatment",
+        "definition": "The intended use of the product, e.g. prevention, treatment, diagnosis.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:intendedUse",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:basis",
+        "path": "Extension.extension:basis",
+        "short": "The legal/regulatory framework or reasons under which this authorization is granted",
+        "definition": "The legal or regulatory framework against which this authorization is granted, or other reasons for it.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basis",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:holder",
+        "path": "Extension.extension:holder",
+        "short": "The organization that has been granted this authorization, by the regulator",
+        "definition": "The organization that has been granted this authorization, by some authoritative body (the 'regulator').",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:holder",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:regulator",
+        "path": "Extension.extension:regulator",
+        "short": "The regulatory authority or authorizing body granting the authorization",
+        "definition": "The regulatory authority or authorizing body granting the authorization. For example, European Medicines Agency (EMA), Food and Drug Administration (FDA), Health Canada (HC), etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:regulator",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:attachedDocument",
+        "path": "Extension.extension:attachedDocument",
+        "short": "Additional information or supporting documentation about the authorization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:attachedDocument",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:case",
+        "path": "Extension.extension:case",
+        "short": "The case or regulatory procedure for granting or amending a regulated authorization. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page)",
+        "definition": "The case or regulatory procedure for granting or amending a regulated authorization. An authorization is granted in response to submissions/applications by those seeking authorization. A case is the administrative process that deals with the application(s) that relate to this and assesses them. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:case",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-RegulatedAuthorization"
       }
     ]
   },
@@ -409,6 +594,478 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type",
+        "short": "Overall type of this authorization, for example drug marketing approval, orphan drug designation",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RegulatedAuthorizationType"
+            }
+          ],
+          "strength": "example",
+          "description": "Overall type of this authorization.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/regulated-authorization-type"
+        }
+      },
+      {
+        "path": "Extension.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "General textual supporting information",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:region",
+        "short": "The territory in which the authorization has been granted",
+        "definition": "The territory (e.g., country, jurisdiction etc.) in which the authorization has been granted.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:region.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Jurisdiction"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/ValueSet/jurisdiction"
+        }
+      },
+      {
+        "path": "Extension.extension:region.url",
+        "fixedUri": "region"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "The status that is authorised e.g. approved. Intermediate states can be tracked with cases and applications",
+        "definition": "The status that is authorised e.g. approved. Intermediate states and actions can be tracked with cases and applications.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublicationStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:statusDate",
+        "short": "The date at which the current status was assigned",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:statusDate.url",
+        "fixedUri": "statusDate"
+      },
+      {
+        "path": "Extension.extension:validityPeriod",
+        "short": "The time period in which the regulatory approval etc. is in effect, e.g. a Marketing Authorization includes the date of authorization and/or expiration date",
+        "definition": "The time period in which the regulatory approval, clearance or licencing is in effect. As an example, a Marketing Authorization includes the date of authorization and/or an expiration date.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:validityPeriod.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:validityPeriod.url",
+        "fixedUri": "validityPeriod"
+      },
+      {
+        "path": "Extension.extension:indication",
+        "short": "Condition for which the use of the regulated product applies",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.url",
+        "fixedUri": "indication"
+      },
+      {
+        "path": "Extension.extension:intendedUse",
+        "short": "The intended use of the product, e.g. prevention, treatment",
+        "definition": "The intended use of the product, e.g. prevention, treatment, diagnosis.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:intendedUse.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProductIntendedUse"
+            }
+          ],
+          "strength": "preferred",
+          "description": "The overall intended use of a product.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/product-intended-use"
+        }
+      },
+      {
+        "path": "Extension.extension:intendedUse.url",
+        "fixedUri": "intendedUse"
+      },
+      {
+        "path": "Extension.extension:basis",
+        "short": "The legal/regulatory framework or reasons under which this authorization is granted",
+        "definition": "The legal or regulatory framework against which this authorization is granted, or other reasons for it.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basis.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RegulatedAuthorizationBasis"
+            }
+          ],
+          "strength": "example",
+          "description": "A legal or regulatory framework against which an authorization is granted, or other reasons for it.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/regulated-authorization-basis"
+        }
+      },
+      {
+        "path": "Extension.extension:basis.url",
+        "fixedUri": "basis"
+      },
+      {
+        "path": "Extension.extension:holder",
+        "short": "The organization that has been granted this authorization, by the regulator",
+        "definition": "The organization that has been granted this authorization, by some authoritative body (the 'regulator').",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:holder.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:holder.url",
+        "fixedUri": "holder"
+      },
+      {
+        "path": "Extension.extension:regulator",
+        "short": "The regulatory authority or authorizing body granting the authorization",
+        "definition": "The regulatory authority or authorizing body granting the authorization. For example, European Medicines Agency (EMA), Food and Drug Administration (FDA), Health Canada (HC), etc.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:regulator.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:regulator.url",
+        "fixedUri": "regulator"
+      },
+      {
+        "path": "Extension.extension:attachedDocument",
+        "short": "Additional information or supporting documentation about the authorization",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:attachedDocument.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:attachedDocument.url",
+        "fixedUri": "attachedDocument"
+      },
+      {
+        "path": "Extension.extension:case",
+        "short": "The case or regulatory procedure for granting or amending a regulated authorization. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page)",
+        "definition": "The case or regulatory procedure for granting or amending a regulated authorization. An authorization is granted in response to submissions/applications by those seeking authorization. A case is the administrative process that deals with the application(s) that relate to this and assesses them. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:identifier",
+        "short": "Identifier by which this case can be referenced",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:case.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:case.extension:type",
+        "short": "The defining type of case",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "RegulatedAuthorizationCaseType"
+            }
+          ],
+          "strength": "example",
+          "description": "The type of a case involved in an application.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/regulated-authorization-case-type"
+        }
+      },
+      {
+        "path": "Extension.extension:case.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:case.extension:status",
+        "short": "The status associated with the case",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublicationStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status"
+        }
+      },
+      {
+        "path": "Extension.extension:case.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:case.extension:date[x]",
+        "short": "Relevant date for this case",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:date[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:case.extension:date[x].url",
+        "fixedUri": "date%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:case.extension:application",
+        "short": "Applications submitted to obtain a regulated authorization. Steps within the longer running case or procedure",
+        "definition": "A regulatory submission from an organization to a regulator, as part of an assessing case. Multiple applications may occur over time, with more or different information to support or modify the submission or the authorization. The applications can be considered as steps within the longer running case or procedure for this authorization process.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:case.extension:application.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:case.extension:application.url",
+        "fixedUri": "application"
+      },
+      {
+        "path": "Extension.extension:case.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:case.url",
+        "fixedUri": "case"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

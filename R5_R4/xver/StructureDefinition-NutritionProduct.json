@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,138 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "active | inactive | entered-in-error",
+        "definition": "The current state of the product.",
+        "comment": "Unknown does not represent \"other\" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension:category",
+        "short": "Broad product groups or categories used to classify the product, such as Legume and Legume Products, Beverages, or Beef Products",
+        "definition": "Nutrition products can have different classifications - according to its nutritional properties, preparation methods, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:category",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension:manufacturer",
+        "short": "Manufacturer, representative or officially responsible for the product",
+        "definition": "The organisation (manufacturer, representative or legal authorization holder) that is responsible for the device.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:manufacturer",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:nutrient",
+        "path": "Extension.extension:nutrient",
+        "short": "The product's nutritional information expressed by the nutrients",
+        "definition": "Note: This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:nutrient",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension:ingredient",
+        "short": "Ingredients contained in this product",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:ingredient",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:knownAllergen",
+        "path": "Extension.extension:knownAllergen",
+        "short": "Known or suspected allergens that are a part of this product",
+        "definition": "Allergens that are known or suspected to be a part of this nutrition product.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:knownAllergen",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:characteristic",
+        "path": "Extension.extension:characteristic",
+        "short": "Specifies descriptive properties of the nutrition product",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:characteristic",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:instance",
+        "path": "Extension.extension:instance",
+        "short": "One or several physical instances or occurrences of the nutrition product",
+        "definition": "Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:instance",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Comments made about the product",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct"
       }
     ]
   },
@@ -409,6 +541,525 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "active | inactive | entered-in-error",
+        "definition": "The current state of the product.",
+        "comment": "Unknown does not represent \"other\" - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "NutritionProductStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/nutritionproduct-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-nutritionproduct-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:category",
+        "short": "Broad product groups or categories used to classify the product, such as Legume and Legume Products, Beverages, or Beef Products",
+        "definition": "Nutrition products can have different classifications - according to its nutritional properties, preparation methods, etc.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "NutritionProductCategory"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes identifying classes of nutrition products.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/nutrition-product-category"
+        }
+      },
+      {
+        "path": "Extension.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:manufacturer",
+        "short": "Manufacturer, representative or officially responsible for the product",
+        "definition": "The organisation (manufacturer, representative or legal authorization holder) that is responsible for the device.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:manufacturer.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:manufacturer.url",
+        "fixedUri": "manufacturer"
+      },
+      {
+        "path": "Extension.extension:nutrient",
+        "short": "The product's nutritional information expressed by the nutrients",
+        "definition": "Note: This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:item",
+        "short": "The (relevant) nutrients in the product",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:item.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:item.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:item.url",
+        "fixedUri": "item"
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:amount",
+        "short": "The amount of nutrient expressed in one or more units: X per pack / per serving / per dose",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:amount.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:nutrient.extension:amount.url",
+        "fixedUri": "amount"
+      },
+      {
+        "path": "Extension.extension:nutrient.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:nutrient.url",
+        "fixedUri": "nutrient"
+      },
+      {
+        "path": "Extension.extension:ingredient",
+        "short": "Ingredients contained in this product",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:item",
+        "short": "The ingredient contained in the product",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:item.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:item.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:item.url",
+        "fixedUri": "item"
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:amount",
+        "short": "The amount of ingredient that is in the product",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:amount.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:ingredient.extension:amount.url",
+        "fixedUri": "amount"
+      },
+      {
+        "path": "Extension.extension:ingredient.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:ingredient.url",
+        "fixedUri": "ingredient"
+      },
+      {
+        "path": "Extension.extension:knownAllergen",
+        "short": "Known or suspected allergens that are a part of this product",
+        "definition": "Allergens that are known or suspected to be a part of this nutrition product.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:knownAllergen.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:knownAllergen.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:knownAllergen.url",
+        "fixedUri": "knownAllergen"
+      },
+      {
+        "path": "Extension.extension:characteristic",
+        "short": "Specifies descriptive properties of the nutrition product",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:type",
+        "short": "Code specifying the type of characteristic",
+        "definition": "A code specifying which characteristic of the product is being described (for example, colour, shape).",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PropertyCharacteristic"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes that identify properties that can be measured.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/measurement-property"
+        }
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:value[x]",
+        "short": "The value of the characteristic",
+        "definition": "The actual characteristic value corresponding to the type.",
+        "comment": "The description should be provided as a CodeableConcept, SimpleQuantity or an image.  The description can be a string only when these others are not available.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:value[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          },
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:characteristic.extension:value[x].url",
+        "fixedUri": "value%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:characteristic.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:characteristic.url",
+        "fixedUri": "characteristic"
+      },
+      {
+        "path": "Extension.extension:instance",
+        "short": "One or several physical instances or occurrences of the nutrition product",
+        "definition": "Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:quantity",
+        "short": "The amount of items or instances",
+        "definition": "The amount of items or instances that the resource considers, for instance when referring to 2 identical units together.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:quantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:quantity.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "path": "Extension.extension:instance.extension:identifier",
+        "short": "The identifier for the physical instance, typically a serial number or manufacturer number",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:instance.extension:name",
+        "short": "The name for the specific product",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:name.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:name.url",
+        "fixedUri": "name"
+      },
+      {
+        "path": "Extension.extension:instance.extension:lotNumber",
+        "short": "The identification of the batch or lot of the product",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:lotNumber.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:lotNumber.url",
+        "fixedUri": "lotNumber"
+      },
+      {
+        "path": "Extension.extension:instance.extension:expiry",
+        "short": "The expiry date or date and time for the product",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:expiry.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:expiry.url",
+        "fixedUri": "expiry"
+      },
+      {
+        "path": "Extension.extension:instance.extension:useBy",
+        "short": "The date until which the product is expected to be good for consumption",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:useBy.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:useBy.url",
+        "fixedUri": "useBy"
+      },
+      {
+        "path": "Extension.extension:instance.extension:biologicalSourceEvent",
+        "short": "An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled",
+        "definition": "Necessary to support mandatory requirements for traceability from donor/source to recipient and vice versa, while also satisfying donor anonymity requirements. The element is defined consistently across BiologicallyDerivedProduct, NutritionProduct, and Device.  The identifier references an event that links to a single biological entity such as a blood donor, or to multiple biological entities (e.g. when the product is an embryo or a pooled platelet product).  A single biologicalSourceEvent identifier may appear on multiple products of many types derived from a single donation event or source extraction.  As an example, a single donation event may provide 2 kidneys and a liver for organ transplantation, 2 corneas for eye surgery, heart valves and arterial tissue for cardiovascular surgery, multiple skin grafts, tendons, multiple shaped bone grafts and a large number of bone putty/paste products; and each of them may be assigned to the same biological source event identifier.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:instance.extension:biologicalSourceEvent.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:instance.extension:biologicalSourceEvent.url",
+        "fixedUri": "biologicalSourceEvent"
+      },
+      {
+        "path": "Extension.extension:instance.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:instance.url",
+        "fixedUri": "instance"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Comments made about the product",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

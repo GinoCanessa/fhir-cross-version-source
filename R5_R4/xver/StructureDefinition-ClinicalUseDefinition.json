@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -395,6 +395,147 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension:type",
+        "short": "indication | contraindication | interaction | undesirable-effect | warning",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:type",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension:category",
+        "short": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy\", \"Overdose\"",
+        "definition": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\".",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:category",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "Whether this is a current issue or one that has been retired etc",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:contraindication",
+        "path": "Extension.extension:contraindication",
+        "short": "Specifics for when this is a contraindication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:contraindication",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:indication",
+        "path": "Extension.extension:indication",
+        "short": "Specifics for when this is an indication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:indication",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:interaction",
+        "path": "Extension.extension:interaction",
+        "short": "Specifics for when this is an interaction",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:interaction",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:population",
+        "path": "Extension.extension:population",
+        "short": "The population group to which this applies",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:population",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:library",
+        "path": "Extension.extension:library",
+        "short": "Logic used by the clinical use definition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:library",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:undesirableEffect",
+        "path": "Extension.extension:undesirableEffect",
+        "short": "A possible negative outcome from the use of this treatment",
+        "definition": "Describe the possible undesirable effects (negative outcomes) from the use of the medicinal product as treatment.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:undesirableEffect",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:warning",
+        "path": "Extension.extension:warning",
+        "short": "Critical environmental, health or physical risks or hazards. For example 'Do not operate heavy machinery', 'May cause drowsiness'",
+        "definition": "A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical advice/attention if you feel unwell'.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:warning",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalUseDefinition"
       }
     ]
   },
@@ -407,6 +548,958 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type",
+        "short": "indication | contraindication | interaction | undesirable-effect | warning",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ClinicalUseDefinitionType"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/clinical-use-definition-type|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-clinical-use-definition-type|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:category",
+        "short": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy\", \"Overdose\"",
+        "definition": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\".",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ClinicalUseDefinitionCategory"
+            }
+          ],
+          "strength": "preferred",
+          "description": "A categorisation for a clinical use information item.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/clinical-use-definition-category"
+        }
+      },
+      {
+        "path": "Extension.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "Whether this is a current issue or one that has been retired etc",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublicationStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:contraindication",
+        "short": "Specifics for when this is a contraindication",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseSymptomProcedure",
+        "short": "The situation that is being documented as contraindicating against this item",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.url",
+        "fixedUri": "diseaseSymptomProcedure"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseStatus",
+        "short": "The status of the disease or symptom for the contraindication",
+        "definition": "The status of the disease or symptom for the contraindication, for example \"chronic\" or \"metastatic\".",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseStatus.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseStatus.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:diseaseStatus.url",
+        "fixedUri": "diseaseStatus"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:comorbidity",
+        "short": "A comorbidity (concurrent condition) or coinfection",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:comorbidity.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:comorbidity.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:comorbidity.url",
+        "fixedUri": "comorbidity"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:indication",
+        "short": "The indication which this is a contraidication for",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:indication.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:indication.url",
+        "fixedUri": "indication"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:applicability",
+        "short": "An expression that returns true or false, indicating whether the indication is applicable or not, after having applied its other elements",
+        "definition": "The expression may be inlined or may be a reference to a named expression within a logic library referenced by the library element.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:applicability.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:applicability.url",
+        "fixedUri": "applicability"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy",
+        "short": "Information about use of the product in relation to other therapies described as part of the contraindication",
+        "definition": "Information about the use of the medicinal product in relation to other therapies described as part of the contraindication.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType",
+        "short": "The type of relationship between the product indication/contraindication and another therapy",
+        "definition": "The type of relationship between the medicinal product indication or contraindication and another therapy.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TherapyRelationshipType"
+            }
+          ],
+          "strength": "preferred",
+          "description": "Classification of relationship between a therapy and a contraindication or an indication.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/therapy-relationship-type"
+        }
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType.url",
+        "fixedUri": "relationshipType"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:treatment",
+        "short": "Reference to a specific medication, substance etc. as part of an indication or contraindication",
+        "definition": "Reference to a specific medication (active substance, medicinal product or class of products, biological, food etc.) as part of an indication or contraindication.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:treatment.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:treatment.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.extension:treatment.url",
+        "fixedUri": "treatment"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.extension:otherTherapy.url",
+        "fixedUri": "otherTherapy"
+      },
+      {
+        "path": "Extension.extension:contraindication.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:contraindication.url",
+        "fixedUri": "contraindication"
+      },
+      {
+        "path": "Extension.extension:indication",
+        "short": "Specifics for when this is an indication",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseSymptomProcedure",
+        "short": "The situation that is being documented as an indicaton for this item",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseSymptomProcedure.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseSymptomProcedure.url",
+        "fixedUri": "diseaseSymptomProcedure"
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseStatus",
+        "short": "The status of the disease or symptom for the indication",
+        "definition": "The status of the disease or symptom for the indication, for example \"chronic\" or \"metastatic\".",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseStatus.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseStatus.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:diseaseStatus.url",
+        "fixedUri": "diseaseStatus"
+      },
+      {
+        "path": "Extension.extension:indication.extension:comorbidity",
+        "short": "A comorbidity or coinfection as part of the indication",
+        "definition": "A comorbidity (concurrent condition) or coinfection as part of the indication.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:comorbidity.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:comorbidity.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:comorbidity.url",
+        "fixedUri": "comorbidity"
+      },
+      {
+        "path": "Extension.extension:indication.extension:intendedEffect",
+        "short": "The intended effect, aim or strategy to be achieved",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:intendedEffect.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:intendedEffect.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:intendedEffect.url",
+        "fixedUri": "intendedEffect"
+      },
+      {
+        "path": "Extension.extension:indication.extension:duration[x]",
+        "short": "Timing or duration information",
+        "definition": "Timing or duration information, that may be associated with use with the indicated condition e.g. Adult patients suffering from myocardial infarction (from a few days until less than 35 days), ischaemic stroke (from 7 days until less than 6 months).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:duration[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Range"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:duration[x].url",
+        "fixedUri": "duration%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:indication.extension:undesirableEffect",
+        "short": "An unwanted side effect or negative outcome of the subject of this resource when being used for this indication",
+        "definition": "An unwanted side effect or negative outcome that may happen if you use the drug (or other subject of this resource) for this indication.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:undesirableEffect.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:undesirableEffect.url",
+        "fixedUri": "undesirableEffect"
+      },
+      {
+        "path": "Extension.extension:indication.extension:applicability",
+        "short": "An expression that returns true or false, indicating whether the indication is applicable or not, after having applied its other elements",
+        "definition": "The expression may be inlined or may be a reference to a named expression within a logic library referenced by the library element.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:applicability.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:indication.extension:applicability.url",
+        "fixedUri": "applicability"
+      },
+      {
+        "path": "Extension.extension:indication.extension:otherTherapy",
+        "short": "The use of the medicinal product in relation to other therapies described as part of the indication",
+        "definition": "Information about the use of the medicinal product in relation to other therapies described as part of the indication.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:indication.extension:otherTherapy.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.extension:otherTherapy.url",
+        "fixedUri": "otherTherapy"
+      },
+      {
+        "path": "Extension.extension:indication.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:indication.url",
+        "fixedUri": "indication"
+      },
+      {
+        "path": "Extension.extension:interaction",
+        "short": "Specifics for when this is an interaction",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant",
+        "short": "The specific medication, product, food etc. or laboratory test that interacts",
+        "definition": "The specific medication, product, food, substance etc. or laboratory test that interacts.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant.extension:item[x]",
+        "short": "The specific medication, product, food etc. or laboratory test that interacts",
+        "definition": "The specific medication, product, food, substance etc. or laboratory test that interacts.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant.extension:item[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition",
+              "http://hl7.org/fhir/StructureDefinition/Medication",
+              "http://hl7.org/fhir/StructureDefinition/Substance",
+              "http://hl7.org/fhir/StructureDefinition/NutritionProduct",
+              "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct",
+              "http://hl7.org/fhir/StructureDefinition/ObservationDefinition"
+            ]
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Interactant"
+            }
+          ],
+          "strength": "example",
+          "description": "An interactant - a substance that may have a clinically significant effect on another.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/interactant"
+        }
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant.extension:item[x].url",
+        "fixedUri": "item%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:interactant.url",
+        "fixedUri": "interactant"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:type",
+        "short": "The type of the interaction e.g. drug-drug interaction, drug-lab test interaction",
+        "definition": "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InteractionType"
+            }
+          ],
+          "strength": "example",
+          "description": "A categorisation for an interaction between two substances.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/interaction-type"
+        }
+      },
+      {
+        "path": "Extension.extension:interaction.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:effect",
+        "short": "The effect of the interaction, for example \"reduced gastric absorption of primary medication\"",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:effect.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:effect.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:interaction.extension:effect.url",
+        "fixedUri": "effect"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:incidence",
+        "short": "The incidence of the interaction, e.g. theoretical, observed",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:incidence.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UndesirableEffectSymptom"
+            }
+          ],
+          "strength": "example",
+          "description": "A categorisation for incidence of occurence of an interaction.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/interaction-incidence"
+        }
+      },
+      {
+        "path": "Extension.extension:interaction.extension:incidence.url",
+        "fixedUri": "incidence"
+      },
+      {
+        "path": "Extension.extension:interaction.extension:management",
+        "short": "Actions for managing the interaction",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:interaction.extension:management.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "InteractionManagement"
+            }
+          ],
+          "strength": "example",
+          "description": "A type of management for an interaction of a medication or other substance.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/interaction-management"
+        }
+      },
+      {
+        "path": "Extension.extension:interaction.extension:management.url",
+        "fixedUri": "management"
+      },
+      {
+        "path": "Extension.extension:interaction.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:interaction.url",
+        "fixedUri": "interaction"
+      },
+      {
+        "path": "Extension.extension:population",
+        "short": "The population group to which this applies",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:population.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:population.url",
+        "fixedUri": "population"
+      },
+      {
+        "path": "Extension.extension:library",
+        "short": "Logic used by the clinical use definition",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:library.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Library"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:library.url",
+        "fixedUri": "library"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect",
+        "short": "A possible negative outcome from the use of this treatment",
+        "definition": "Describe the possible undesirable effects (negative outcomes) from the use of the medicinal product as treatment.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:symptomConditionEffect",
+        "short": "The situation in which the undesirable effect may manifest",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.url",
+        "fixedUri": "symptomConditionEffect"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:classification",
+        "short": "High level classification of the effect",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:classification.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UndesirableEffectClassification"
+            }
+          ],
+          "strength": "example",
+          "description": "A categorisation for an undesirable effect.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/undesirable-effect-classification"
+        }
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:classification.url",
+        "fixedUri": "classification"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence",
+        "short": "How often the effect is seen",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "UndesirablEffectFrequency"
+            }
+          ],
+          "strength": "example",
+          "description": "A categorisation for a frequency of occurence of an undesirable effect.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/undesirable-effect-frequency"
+        }
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence.url",
+        "fixedUri": "frequencyOfOccurrence"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:undesirableEffect.url",
+        "fixedUri": "undesirableEffect"
+      },
+      {
+        "path": "Extension.extension:warning",
+        "short": "Critical environmental, health or physical risks or hazards. For example 'Do not operate heavy machinery', 'May cause drowsiness'",
+        "definition": "A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical advice/attention if you feel unwell'.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:warning.extension:description",
+        "short": "A textual definition of this warning, with formatting",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:warning.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:warning.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:warning.extension:code",
+        "short": "A coded or unformatted textual definition of this warning",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:warning.extension:code.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "WarningType"
+            }
+          ],
+          "strength": "example",
+          "description": "Classification of warning type.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/warning-type"
+        }
+      },
+      {
+        "path": "Extension.extension:warning.extension:code.url",
+        "fixedUri": "code"
+      },
+      {
+        "path": "Extension.extension:warning.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:warning.url",
+        "fixedUri": "warning"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

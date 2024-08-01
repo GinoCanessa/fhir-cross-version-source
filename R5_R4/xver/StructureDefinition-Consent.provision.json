@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -426,34 +426,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:role",
-        "path": "Extension.extension:role",
-        "short": "How the actor is involved",
-        "definition": "How the individual is involved in the resources content that is described in the exception.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:role",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:reference",
-        "path": "Extension.extension:reference",
-        "short": "Resource for the actor (or group, by role)",
-        "definition": "The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:reference",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:action",
         "path": "Extension.extension:action",
         "short": "Actions controlled by this provision",
@@ -571,34 +543,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:meaning",
-        "path": "Extension.extension:meaning",
-        "short": "instance | related | dependents | authoredby",
-        "definition": "How the resource reference is interpreted when testing consent restrictions.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:meaning",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:reference",
-        "path": "Extension.extension:reference",
-        "short": "The actual data reference",
-        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:reference",
-          "min": 1,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:expression",
         "path": "Extension.extension:expression",
         "short": "A computable expression of the consent",
@@ -626,6 +570,14 @@
           "max": "*"
         },
         "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.provision"
       }
     ]
   },
@@ -697,40 +649,12 @@
         "fixedUri": "reference"
       },
       {
+        "path": "Extension.extension:actor.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:actor.url",
         "fixedUri": "actor"
-      },
-      {
-        "path": "Extension.extension:role",
-        "short": "How the actor is involved",
-        "definition": "How the individual is involved in the resources content that is described in the exception.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:role.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:role.url",
-        "fixedUri": "role"
-      },
-      {
-        "path": "Extension.extension:reference",
-        "short": "Resource for the actor (or group, by role)",
-        "definition": "The resource that identifies the actor. To identify actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:reference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reference.url",
-        "fixedUri": "reference"
       },
       {
         "path": "Extension.extension:action",
@@ -926,40 +850,12 @@
         "fixedUri": "reference"
       },
       {
+        "path": "Extension.extension:data.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:data.url",
         "fixedUri": "data"
-      },
-      {
-        "path": "Extension.extension:meaning",
-        "short": "instance | related | dependents | authoredby",
-        "definition": "How the resource reference is interpreted when testing consent restrictions.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:meaning.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:meaning.url",
-        "fixedUri": "meaning"
-      },
-      {
-        "path": "Extension.extension:reference",
-        "short": "The actual data reference",
-        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
-        "min": 1,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:reference.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:reference.url",
-        "fixedUri": "reference"
       },
       {
         "path": "Extension.extension:expression",
@@ -998,6 +894,10 @@
       {
         "path": "Extension.extension:provision.url",
         "fixedUri": "provision"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

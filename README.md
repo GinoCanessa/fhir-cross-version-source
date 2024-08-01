@@ -26,6 +26,7 @@ In order to generate these extensions, we depend on some sources of truth which 
   * `ConceptMap` resources for mapping renamed elements (see [input/elements](https://github.com/HL7/fhir-cross-version/tree/main/input/elements))
   * Per version `FML` files used to map structures (e.g., see [input/R5toR4](https://github.com/HL7/fhir-cross-version/tree/main/input/R5toR4))
     * These files are a mix of generated and hand-maintained content.  Brian Postlethwaite has been working on corrections based on this tooling.
+  * TODO: `ConceptMap` resources for mapping backport extension URLs into IG-based alternatives (e.g., from the Subscription backport IG).
 * Manual primitive mappings
   * The primitive mapping decisions are quite varied across versions. It was simpler to hand-maintain a complete set for now, though we could push these back into the correct files of the `fhir-cross-version` repo.
 
@@ -241,12 +242,12 @@ There exists some mapping information that we know the two are related and shoul
 Now, the fun really starts because in R5 there is a new backbone element of `AdverseEvent.participant` which does not exist in R4.
 
 So we have two sets of 'things' someone may want to express from R5 in R4:
-1. A simple additional `AdverseEvent.contributor` that is a reference to an `Organization`.
+1. An additional `AdverseEvent.contributor` that is a reference to an `Organization`.
 2. An entire R5 `AdverseEvent.participant`.
 
 The question is twofold:
 * Do we _want_ to allow expression of 1), 2), or both in R4?
-  * The simple element change (1) is listed in a map.
+  * The simple element change (1) is listed in a map, so we know there is a direct relationship.
   * We do not know if there are requirements in any of the rest of the `AdverseEvent` structure that would be required to *use* one of the new reference types.
 * Where do we want the extension context to live?
   * If we are using `AdverseEvent.participant.contributor`, do we want a null value in `AdverseEvent.contributor` with the extension, or do we move that up to `AdverseEvent`?

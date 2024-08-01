@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -451,103 +451,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:genomeAssembly",
-        "path": "Extension.extension:genomeAssembly",
-        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:genomeAssembly",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:chromosome",
-        "path": "Extension.extension:chromosome",
-        "short": "Chromosome Identifier",
-        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:chromosome",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:sequence[x]",
-        "path": "Extension.extension:sequence[x]",
-        "short": "The reference sequence that represents the starting sequence",
-        "definition": "A starting sequence may be represented in one of three ways:\n  1.  CodeableConcept, using NCBI, LRG or other appropriate code systems\n  1.  a simple string of IUPAC codes\n  1.  a reference to another MolecularSequence resource.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:sequence[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:windowStart",
-        "path": "Extension.extension:windowStart",
-        "short": "Start position of the window on the starting sequence",
-        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:windowStart",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:windowEnd",
-        "path": "Extension.extension:windowEnd",
-        "short": "End position of the window on the starting sequence",
-        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:windowEnd",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:orientation",
-        "path": "Extension.extension:orientation",
-        "short": "sense | antisense",
-        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:orientation",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:strand",
-        "path": "Extension.extension:strand",
-        "short": "watson | crick",
-        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:strand",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:edit",
         "path": "Extension.extension:edit",
         "short": "Changes in sequence from the starting sequence",
@@ -561,60 +464,12 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:start",
-        "path": "Extension.extension:start",
-        "short": "Start position of the edit on the starting sequence",
-        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
-        "min": 0,
-        "max": "1",
+        "id": "Extension.url",
+        "path": "Extension.url",
         "base": {
-          "path": "Extension.extension:start",
-          "min": 0,
-          "max": "1"
+          "path": "Extension.url"
         },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:end",
-        "path": "Extension.extension:end",
-        "short": "End position of the edit on the starting sequence",
-        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:end",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:replacementSequence",
-        "path": "Extension.extension:replacementSequence",
-        "short": "Allele that was observed",
-        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:replacementSequence",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:replacedSequence",
-        "path": "Extension.extension:replacedSequence",
-        "short": "Allele in the starting sequence",
-        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.extension:replacedSequence",
-          "min": 0,
-          "max": "1"
-        },
-        "isModifier": false
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative"
       }
     ]
   },
@@ -836,135 +691,12 @@
         "fixedUri": "strand"
       },
       {
+        "path": "Extension.extension:startingSequence.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:startingSequence.url",
         "fixedUri": "startingSequence"
-      },
-      {
-        "path": "Extension.extension:genomeAssembly",
-        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:genomeAssembly.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "LL1040-6"
-            }
-          ],
-          "strength": "extensible",
-          "description": "Human reference sequence NCBI build ID.",
-          "valueSet": "http://loinc.org/LL1040-6/"
-        }
-      },
-      {
-        "path": "Extension.extension:genomeAssembly.url",
-        "fixedUri": "genomeAssembly"
-      },
-      {
-        "path": "Extension.extension:chromosome",
-        "short": "Chromosome Identifier",
-        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:chromosome.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:chromosome.url",
-        "fixedUri": "chromosome"
-      },
-      {
-        "path": "Extension.extension:sequence[x]",
-        "short": "The reference sequence that represents the starting sequence",
-        "definition": "A starting sequence may be represented in one of three ways:\n  1.  CodeableConcept, using NCBI, LRG or other appropriate code systems\n  1.  a simple string of IUPAC codes\n  1.  a reference to another MolecularSequence resource.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:sequence[x].value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:sequence[x].url",
-        "fixedUri": "sequence%5Bx%5D"
-      },
-      {
-        "path": "Extension.extension:windowStart",
-        "short": "Start position of the window on the starting sequence",
-        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:windowStart.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:windowStart.url",
-        "fixedUri": "windowStart"
-      },
-      {
-        "path": "Extension.extension:windowEnd",
-        "short": "End position of the window on the starting sequence",
-        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:windowEnd.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:windowEnd.url",
-        "fixedUri": "windowEnd"
-      },
-      {
-        "path": "Extension.extension:orientation",
-        "short": "sense | antisense",
-        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:orientation.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:orientation.url",
-        "fixedUri": "orientation"
-      },
-      {
-        "path": "Extension.extension:strand",
-        "short": "watson | crick",
-        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:strand.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:strand.url",
-        "fixedUri": "strand"
       },
       {
         "path": "Extension.extension:edit",
@@ -1043,77 +775,16 @@
         "fixedUri": "replacedSequence"
       },
       {
+        "path": "Extension.extension:edit.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:edit.url",
         "fixedUri": "edit"
       },
       {
-        "path": "Extension.extension:start",
-        "short": "Start position of the edit on the starting sequence",
-        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:start.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:start.url",
-        "fixedUri": "start"
-      },
-      {
-        "path": "Extension.extension:end",
-        "short": "End position of the edit on the starting sequence",
-        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:end.value[x]",
+        "path": "Extension.value[x]",
         "max": "0"
-      },
-      {
-        "path": "Extension.extension:end.url",
-        "fixedUri": "end"
-      },
-      {
-        "path": "Extension.extension:replacementSequence",
-        "short": "Allele that was observed",
-        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:replacementSequence.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:replacementSequence.url",
-        "fixedUri": "replacementSequence"
-      },
-      {
-        "path": "Extension.extension:replacedSequence",
-        "short": "Allele in the starting sequence",
-        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
-        "min": 0,
-        "max": "1",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:replacedSequence.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:replacedSequence.url",
-        "fixedUri": "replacedSequence"
       },
       {
         "path": "Extension.url",

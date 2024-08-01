@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,282 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension:basedOn",
+        "short": "The order or request that this dispense is fulfilling",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basedOn",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:partOf",
+        "path": "Extension.extension:partOf",
+        "short": "The bigger event that this dispense is a part of",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:partOf",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown",
+        "definition": "A code specifying the state of the set of dispense events.",
+        "comment": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension:statusReason",
+        "short": "Why a dispense was or was not performed",
+        "definition": "Indicates the reason why a dispense was or was not performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:statusReason",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension:category",
+        "short": "Type of device dispense",
+        "definition": "Indicates the type of device dispense.",
+        "comment": "The category can be used to include where the device is expected to be consumed or other types of dispenses.  Invariants can be used to bind to different value sets when profiling to bind.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:category",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension:device",
+        "short": "What device was supplied",
+        "definition": "Identifies the device being dispensed. This is either a link to a resource representing the details of the device or a simple attribute carrying a code that identifies the device from a known list of devices.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:device",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:receiver",
+        "path": "Extension.extension:receiver",
+        "short": "Who collected the device or where the medication was delivered",
+        "definition": "Identifies the person who picked up the device or the person or location where the device was delivered.  This may be a patient or their caregiver, but some cases exist where it can be a healthcare professional or a location.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:receiver",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension:encounter",
+        "short": "Encounter associated with event",
+        "definition": "The encounter that establishes the context for this event.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:supportingInformation",
+        "path": "Extension.extension:supportingInformation",
+        "short": "Information that supports the dispensing of the device",
+        "definition": "Additional information that supports the device being dispensed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:supportingInformation",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:performer",
+        "path": "Extension.extension:performer",
+        "short": "Who performed event",
+        "definition": "Indicates who or what performed the event.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:performer",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension:location",
+        "short": "Where the dispense occurred",
+        "definition": "The principal physical location where the dispense was performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:location",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension:type",
+        "short": "Trial fill, partial fill, emergency fill, etc",
+        "definition": "Indicates the type of dispensing event that is performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:type",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension:quantity",
+        "short": "Amount dispensed",
+        "definition": "The number of devices that have been dispensed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:quantity",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:preparedDate",
+        "path": "Extension.extension:preparedDate",
+        "short": "When product was packaged and reviewed",
+        "definition": "The time when the dispensed product was packaged and reviewed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:preparedDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:whenHandedOver",
+        "path": "Extension.extension:whenHandedOver",
+        "short": "When product was given out",
+        "definition": "The time the dispensed product was made available to the patient or their representative.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:whenHandedOver",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:destination",
+        "path": "Extension.extension:destination",
+        "short": "Where the device was sent or should be sent",
+        "definition": "Identification of the facility/location where the device was /should be shipped to, as part of the dispense process.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:destination",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Information about the dispense",
+        "definition": "Extra information about the dispense that could not be conveyed in the other attributes.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:usageInstruction",
+        "path": "Extension.extension:usageInstruction",
+        "short": "Full representation of the usage instructions",
+        "definition": "The full representation of the instructions.",
+        "comment": "The content of the renderedDosageInstructions must not be different than the dose represented in the dosageInstruction content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:usageInstruction",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:eventHistory",
+        "path": "Extension.extension:eventHistory",
+        "short": "A list of relevant lifecycle events",
+        "definition": "A summary of the events of interest that have occurred, such as when the dispense was verified.",
+        "comment": "This might not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the Provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the Provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:eventHistory",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDispense"
       }
     ]
   },
@@ -409,6 +685,520 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn",
+        "short": "The order or request that this dispense is fulfilling",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CarePlan",
+              "http://hl7.org/fhir/StructureDefinition/DeviceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:basedOn.url",
+        "fixedUri": "basedOn"
+      },
+      {
+        "path": "Extension.extension:partOf",
+        "short": "The bigger event that this dispense is a part of",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:partOf.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Procedure"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:partOf.url",
+        "fixedUri": "partOf"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "preparation | in-progress | cancelled | on-hold | completed | entered-in-error | stopped | declined | unknown",
+        "definition": "A code specifying the state of the set of dispense events.",
+        "comment": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.",
+        "min": 1,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the state of the dispense event."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceDispenseStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/devicedispense-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-devicedispense-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:statusReason",
+        "short": "Why a dispense was or was not performed",
+        "definition": "Indicates the reason why a dispense was or was not performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusReason.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:statusReason.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:statusReason.url",
+        "fixedUri": "statusReason"
+      },
+      {
+        "path": "Extension.extension:category",
+        "short": "Type of device dispense",
+        "definition": "Indicates the type of device dispense.",
+        "comment": "The category can be used to include where the device is expected to be consumed or other types of dispenses.  Invariants can be used to bind to different value sets when profiling to bind.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:device",
+        "short": "What device was supplied",
+        "definition": "Identifies the device being dispensed. This is either a link to a resource representing the details of the device or a simple attribute carrying a code that identifies the device from a known list of devices.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:device.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:device.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:receiver",
+        "short": "Who collected the device or where the medication was delivered",
+        "definition": "Identifies the person who picked up the device or the person or location where the device was delivered.  This may be a patient or their caregiver, but some cases exist where it can be a healthcare professional or a location.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:receiver.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Location",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:receiver.url",
+        "fixedUri": "receiver"
+      },
+      {
+        "path": "Extension.extension:encounter",
+        "short": "Encounter associated with event",
+        "definition": "The encounter that establishes the context for this event.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:encounter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:encounter.url",
+        "fixedUri": "encounter"
+      },
+      {
+        "path": "Extension.extension:supportingInformation",
+        "short": "Information that supports the dispensing of the device",
+        "definition": "Additional information that supports the device being dispensed.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:supportingInformation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:supportingInformation.url",
+        "fixedUri": "supportingInformation"
+      },
+      {
+        "path": "Extension.extension:performer",
+        "short": "Who performed event",
+        "definition": "Indicates who or what performed the event.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:function",
+        "short": "Who performed the dispense and what they did",
+        "definition": "Distinguishes the type of performer in the dispense.  For example, date enterer, packager, final checker.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:function.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:performer.extension:function.url",
+        "fixedUri": "function"
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor",
+        "short": "Individual who was performing",
+        "definition": "The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the device.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor.url",
+        "fixedUri": "actor"
+      },
+      {
+        "path": "Extension.extension:performer.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:performer.url",
+        "fixedUri": "performer"
+      },
+      {
+        "path": "Extension.extension:location",
+        "short": "Where the dispense occurred",
+        "definition": "The principal physical location where the dispense was performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:location.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:location.url",
+        "fixedUri": "location"
+      },
+      {
+        "path": "Extension.extension:type",
+        "short": "Trial fill, partial fill, emergency fill, etc",
+        "definition": "Indicates the type of dispensing event that is performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:quantity",
+        "short": "Amount dispensed",
+        "definition": "The number of devices that have been dispensed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:quantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:quantity.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "path": "Extension.extension:preparedDate",
+        "short": "When product was packaged and reviewed",
+        "definition": "The time when the dispensed product was packaged and reviewed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:preparedDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:preparedDate.url",
+        "fixedUri": "preparedDate"
+      },
+      {
+        "path": "Extension.extension:whenHandedOver",
+        "short": "When product was given out",
+        "definition": "The time the dispensed product was made available to the patient or their representative.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:whenHandedOver.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:whenHandedOver.url",
+        "fixedUri": "whenHandedOver"
+      },
+      {
+        "path": "Extension.extension:destination",
+        "short": "Where the device was sent or should be sent",
+        "definition": "Identification of the facility/location where the device was /should be shipped to, as part of the dispense process.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:destination.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:destination.url",
+        "fixedUri": "destination"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Information about the dispense",
+        "definition": "Extra information about the dispense that could not be conveyed in the other attributes.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:usageInstruction",
+        "short": "Full representation of the usage instructions",
+        "definition": "The full representation of the instructions.",
+        "comment": "The content of the renderedDosageInstructions must not be different than the dose represented in the dosageInstruction content.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:usageInstruction.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:usageInstruction.url",
+        "fixedUri": "usageInstruction"
+      },
+      {
+        "path": "Extension.extension:eventHistory",
+        "short": "A list of relevant lifecycle events",
+        "definition": "A summary of the events of interest that have occurred, such as when the dispense was verified.",
+        "comment": "This might not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the Provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the Provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:eventHistory.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Provenance"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:eventHistory.url",
+        "fixedUri": "eventHistory"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

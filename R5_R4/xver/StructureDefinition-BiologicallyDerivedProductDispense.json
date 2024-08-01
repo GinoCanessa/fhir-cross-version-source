@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -396,6 +396,220 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension:basedOn",
+        "short": "The order or request that this dispense is fulfilling",
+        "definition": "The order or request that the dispense is fulfilling. This is a reference to a ServiceRequest resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:basedOn",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:partOf",
+        "path": "Extension.extension:partOf",
+        "short": "Short description",
+        "definition": "A larger event of which this particular event is a component.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:partOf",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "preparation | in-progress | allocated | issued | unfulfilled | returned | entered-in-error | unknown",
+        "definition": "A code specifying the state of the dispense event.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:originRelationshipType",
+        "path": "Extension.extension:originRelationshipType",
+        "short": "Relationship between the donor and intended recipient",
+        "definition": "Indicates the relationship between the donor of the biologically derived product and the intended recipient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:originRelationshipType",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:product",
+        "path": "Extension.extension:product",
+        "short": "The BiologicallyDerivedProduct that is dispensed",
+        "definition": "A link to a resource identifying the biologically derived product that is being dispensed.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:product",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:patient",
+        "path": "Extension.extension:patient",
+        "short": "The intended recipient of the dispensed product",
+        "definition": "A link to a resource representing the patient that the product is dispensed for.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:patient",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:matchStatus",
+        "path": "Extension.extension:matchStatus",
+        "short": "Indicates the type of matching associated with the dispense",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:matchStatus",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:performer",
+        "path": "Extension.extension:performer",
+        "short": "Indicates who or what performed an action",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:performer",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension:location",
+        "short": "Where the dispense occurred",
+        "definition": "The physical location where the dispense was performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:location",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension:quantity",
+        "short": "Amount dispensed",
+        "definition": "The amount of product in the dispense. Quantity will depend on the product being dispensed. Examples are: volume; cell count; concentration.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:quantity",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:preparedDate",
+        "path": "Extension.extension:preparedDate",
+        "short": "When product was selected/matched",
+        "definition": "When the product was selected/ matched.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:preparedDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:whenHandedOver",
+        "path": "Extension.extension:whenHandedOver",
+        "short": "When the product was dispatched",
+        "definition": "When the product was dispatched for clinical use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:whenHandedOver",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:destination",
+        "path": "Extension.extension:destination",
+        "short": "Where the product was dispatched to",
+        "definition": "Link to a resource identifying the physical location that the product was dispatched to.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:destination",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension:note",
+        "short": "Additional notes",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:note",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:usageInstruction",
+        "path": "Extension.extension:usageInstruction",
+        "short": "Specific instructions for use",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:usageInstruction",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BiologicallyDerivedProductDispense"
       }
     ]
   },
@@ -409,6 +623,447 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn",
+        "short": "The order or request that this dispense is fulfilling",
+        "definition": "The order or request that the dispense is fulfilling. This is a reference to a ServiceRequest resource.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:basedOn.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:basedOn.url",
+        "fixedUri": "basedOn"
+      },
+      {
+        "path": "Extension.extension:partOf",
+        "short": "Short description",
+        "definition": "A larger event of which this particular event is a component.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:partOf.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProductDispense"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:partOf.url",
+        "fixedUri": "partOf"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "preparation | in-progress | allocated | issued | unfulfilled | returned | entered-in-error | unknown",
+        "definition": "A code specifying the state of the dispense event.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the state of the dispense event."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BiologicallyDerivedProductDispenseStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-biologicallyderivedproductdispense-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:originRelationshipType",
+        "short": "Relationship between the donor and intended recipient",
+        "definition": "Indicates the relationship between the donor of the biologically derived product and the intended recipient.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:originRelationshipType.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the relationship between the recipient and origin of the dispensed product."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BiologicallyDerivedProductDispenseOriginRelationship"
+            }
+          ],
+          "strength": "example",
+          "description": "Describes the relationship between the recipient and origin of the dispensed product.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-origin-relationship"
+        }
+      },
+      {
+        "path": "Extension.extension:originRelationshipType.url",
+        "fixedUri": "originRelationshipType"
+      },
+      {
+        "path": "Extension.extension:product",
+        "short": "The BiologicallyDerivedProduct that is dispensed",
+        "definition": "A link to a resource identifying the biologically derived product that is being dispensed.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:product.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:product.url",
+        "fixedUri": "product"
+      },
+      {
+        "path": "Extension.extension:patient",
+        "short": "The intended recipient of the dispensed product",
+        "definition": "A link to a resource representing the patient that the product is dispensed for.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:patient.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:patient.url",
+        "fixedUri": "patient"
+      },
+      {
+        "path": "Extension.extension:matchStatus",
+        "short": "Indicates the type of matching associated with the dispense",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:matchStatus.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the type of matching between the recipient and origin of the dispensed product."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BiologicallyDerivedProductDispenseMatchStatus"
+            }
+          ],
+          "strength": "example",
+          "description": "Describes the type of matching between the recipient and origin of the dispensed product.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-match-status"
+        }
+      },
+      {
+        "path": "Extension.extension:matchStatus.url",
+        "fixedUri": "matchStatus"
+      },
+      {
+        "path": "Extension.extension:performer",
+        "short": "Indicates who or what performed an action",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:function",
+        "short": "Identifies the function of the performer during the dispense",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:function.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the role or function of the performer in the dispense."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "BiologicallyDerivedProductDispensPerformerFunction"
+            }
+          ],
+          "strength": "example",
+          "description": "Describes the the role or function of the performer in the dispense.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/biologicallyderivedproductdispense-performer-function"
+        }
+      },
+      {
+        "path": "Extension.extension:performer.extension:function.url",
+        "fixedUri": "function"
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor",
+        "short": "Who performed the action",
+        "definition": "Identifies the person responsible for the action.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:performer.extension:actor.url",
+        "fixedUri": "actor"
+      },
+      {
+        "path": "Extension.extension:performer.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:performer.url",
+        "fixedUri": "performer"
+      },
+      {
+        "path": "Extension.extension:location",
+        "short": "Where the dispense occurred",
+        "definition": "The physical location where the dispense was performed.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:location.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:location.url",
+        "fixedUri": "location"
+      },
+      {
+        "path": "Extension.extension:quantity",
+        "short": "Amount dispensed",
+        "definition": "The amount of product in the dispense. Quantity will depend on the product being dispensed. Examples are: volume; cell count; concentration.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:quantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:quantity.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "path": "Extension.extension:preparedDate",
+        "short": "When product was selected/matched",
+        "definition": "When the product was selected/ matched.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:preparedDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:preparedDate.url",
+        "fixedUri": "preparedDate"
+      },
+      {
+        "path": "Extension.extension:whenHandedOver",
+        "short": "When the product was dispatched",
+        "definition": "When the product was dispatched for clinical use.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:whenHandedOver.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:whenHandedOver.url",
+        "fixedUri": "whenHandedOver"
+      },
+      {
+        "path": "Extension.extension:destination",
+        "short": "Where the product was dispatched to",
+        "definition": "Link to a resource identifying the physical location that the product was dispatched to.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:destination.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Location"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:destination.url",
+        "fixedUri": "destination"
+      },
+      {
+        "path": "Extension.extension:note",
+        "short": "Additional notes",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:note.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:note.url",
+        "fixedUri": "note"
+      },
+      {
+        "path": "Extension.extension:usageInstruction",
+        "short": "Specific instructions for use",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:usageInstruction.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:usageInstruction.url",
+        "fixedUri": "usageInstruction"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

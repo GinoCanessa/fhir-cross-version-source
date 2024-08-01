@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -440,34 +440,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:device",
-        "path": "Extension.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:device",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value",
-        "path": "Extension.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:value",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:surfaceOrientation",
         "path": "Extension.extension:surfaceOrientation",
         "short": "Relative landmark surface orientation",
@@ -480,6 +452,14 @@
           "max": "*"
         },
         "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation"
       }
     ]
   },
@@ -617,58 +597,12 @@
         "fixedUri": "value"
       },
       {
-        "path": "Extension.extension:distanceFromLandmark.url",
-        "fixedUri": "distanceFromLandmark"
-      },
-      {
-        "path": "Extension.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:device.value[x]",
+        "path": "Extension.extension:distanceFromLandmark.value[x]",
         "max": "0"
       },
       {
-        "path": "Extension.extension:device.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:device.url",
-        "fixedUri": "device"
-      },
-      {
-        "path": "Extension.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value.url",
-        "fixedUri": "value"
+        "path": "Extension.extension:distanceFromLandmark.url",
+        "fixedUri": "distanceFromLandmark"
       },
       {
         "path": "Extension.extension:surfaceOrientation",
@@ -701,6 +635,10 @@
       {
         "path": "Extension.extension:surfaceOrientation.url",
         "fixedUri": "surfaceOrientation"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

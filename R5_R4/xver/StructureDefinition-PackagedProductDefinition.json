@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -395,6 +395,205 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension:name",
+        "short": "A name for this package. Typically as listed in a drug formulary, catalogue, inventory etc",
+        "definition": "A name for this package. Typically what it would be listed as in a drug formulary or catalogue, inventory etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:name",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension:type",
+        "short": "A high level category e.g. medicinal product, raw material, shipping container etc",
+        "definition": "A high level category e.g. medicinal product, raw material, shipping/transport container, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:type",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:packageFor",
+        "path": "Extension.extension:packageFor",
+        "short": "The product that this is a pack for",
+        "definition": "The product this package model relates to, not the contents of the package (for which see package.containedItem).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:packageFor",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "The status within the lifecycle of this item. High level - not intended to duplicate details elsewhere e.g. legal status, or authorization/marketing status",
+        "definition": "The status within the lifecycle of this item. A high level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization or marketing status.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": true
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension:statusDate",
+        "short": "The date at which the given status became applicable",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:statusDate",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:containedItemQuantity",
+        "path": "Extension.extension:containedItemQuantity",
+        "short": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. See also packaging.containedItem.amount (especially the long definition)",
+        "definition": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. This attribute differs from containedItem.amount in that it can give a single aggregated count of all tablet types in a pack, even when these are different manufactured items. For example a pill pack of 21 tablets plus 7 sugar tablets, can be denoted here as '28 tablets'. This attribute is repeatable so that the different item types in one pack type can be counted (e.g. a count of vials and count of syringes). Each repeat must have different units, so that it is clear what the different sets of counted items are, and it is not intended to allow different counts of similar items (e.g. not '2 tubes and 3 tubes'). Repeats are not to be used to represent different pack sizes (e.g. 20 pack vs. 50 pack) - which would be different instances of this resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:containedItemQuantity",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension:description",
+        "short": "Textual description. Note that this is not the name of the package or product",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:description",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply",
+        "path": "Extension.extension:legalStatusOfSupply",
+        "short": "The legal status of supply of the packaged item as classified by the regulator",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:legalStatusOfSupply",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:marketingStatus",
+        "path": "Extension.extension:marketingStatus",
+        "short": "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:marketingStatus",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:copackagedIndicator",
+        "path": "Extension.extension:copackagedIndicator",
+        "short": "Identifies if the drug product is supplied with another item such as a diluent or adjuvant",
+        "definition": "Identifies if the package contains different items, such as when a drug product is supplied with another item e.g. a diluent or adjuvant.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:copackagedIndicator",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension:manufacturer",
+        "short": "Manufacturer of this package type (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package type. When there are multiple it means these are all possible manufacturers.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:manufacturer",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:attachedDocument",
+        "path": "Extension.extension:attachedDocument",
+        "short": "Additional information or supporting documentation about the packaged product",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:attachedDocument",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:packaging",
+        "path": "Extension.extension:packaging",
+        "short": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap",
+        "definition": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap (which is not a device or a medication manufactured item).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:packaging",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:characteristic",
+        "path": "Extension.extension:characteristic",
+        "short": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\"",
+        "definition": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\", \"calendar pack\".",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:characteristic",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition"
       }
     ]
   },
@@ -407,6 +606,762 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:name",
+        "short": "A name for this package. Typically as listed in a drug formulary, catalogue, inventory etc",
+        "definition": "A name for this package. Typically what it would be listed as in a drug formulary or catalogue, inventory etc.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:name.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:name.url",
+        "fixedUri": "name"
+      },
+      {
+        "path": "Extension.extension:type",
+        "short": "A high level category e.g. medicinal product, raw material, shipping container etc",
+        "definition": "A high level category e.g. medicinal product, raw material, shipping/transport container, etc.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PackageType"
+            }
+          ],
+          "strength": "example",
+          "description": "A high level categorisation of a package.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-type"
+        }
+      },
+      {
+        "path": "Extension.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:packageFor",
+        "short": "The product that this is a pack for",
+        "definition": "The product this package model relates to, not the contents of the package (for which see package.containedItem).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packageFor.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packageFor.url",
+        "fixedUri": "packageFor"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "The status within the lifecycle of this item. High level - not intended to duplicate details elsewhere e.g. legal status, or authorization/marketing status",
+        "definition": "The status within the lifecycle of this item. A high level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization or marketing status.",
+        "min": 0,
+        "max": "1",
+        "isModifier": true
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PublicationStatus"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:statusDate",
+        "short": "The date at which the given status became applicable",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusDate.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:statusDate.url",
+        "fixedUri": "statusDate"
+      },
+      {
+        "path": "Extension.extension:containedItemQuantity",
+        "short": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. See also packaging.containedItem.amount (especially the long definition)",
+        "definition": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. This attribute differs from containedItem.amount in that it can give a single aggregated count of all tablet types in a pack, even when these are different manufactured items. For example a pill pack of 21 tablets plus 7 sugar tablets, can be denoted here as '28 tablets'. This attribute is repeatable so that the different item types in one pack type can be counted (e.g. a count of vials and count of syringes). Each repeat must have different units, so that it is clear what the different sets of counted items are, and it is not intended to allow different counts of similar items (e.g. not '2 tubes and 3 tubes'). Repeats are not to be used to represent different pack sizes (e.g. 20 pack vs. 50 pack) - which would be different instances of this resource.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:containedItemQuantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:containedItemQuantity.url",
+        "fixedUri": "containedItemQuantity"
+      },
+      {
+        "path": "Extension.extension:description",
+        "short": "Textual description. Note that this is not the name of the package or product",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:description.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:description.url",
+        "fixedUri": "description"
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply",
+        "short": "The legal status of supply of the packaged item as classified by the regulator",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:code",
+        "short": "The actual status of supply. In what situation this package type may be supplied for use",
+        "definition": "The actual status of supply. Conveys in what situation this package type may be supplied for use.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:code.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "LegalStatusOfSupply"
+            }
+          ],
+          "strength": "example",
+          "description": "The prescription supply types appropriate to a medicinal product",
+          "valueSet": "http://hl7.org/fhir/ValueSet/legal-status-of-supply"
+        }
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:code.url",
+        "fixedUri": "code"
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:jurisdiction",
+        "short": "The place where the legal status of supply applies",
+        "definition": "The place where the legal status of supply applies. When not specified, this indicates it is unknown in this context.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:jurisdiction.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Jurisdiction"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/ValueSet/jurisdiction"
+        }
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.extension:jurisdiction.url",
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:legalStatusOfSupply.url",
+        "fixedUri": "legalStatusOfSupply"
+      },
+      {
+        "path": "Extension.extension:marketingStatus",
+        "short": "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:marketingStatus.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:marketingStatus.extension:MarketingStatus",
+        "sliceName": "MarketingStatus",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-MarketingStatus"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:marketingStatus.url",
+        "fixedUri": "marketingStatus"
+      },
+      {
+        "path": "Extension.extension:copackagedIndicator",
+        "short": "Identifies if the drug product is supplied with another item such as a diluent or adjuvant",
+        "definition": "Identifies if the package contains different items, such as when a drug product is supplied with another item e.g. a diluent or adjuvant.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:copackagedIndicator.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:copackagedIndicator.url",
+        "fixedUri": "copackagedIndicator"
+      },
+      {
+        "path": "Extension.extension:manufacturer",
+        "short": "Manufacturer of this package type (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package type. When there are multiple it means these are all possible manufacturers.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:manufacturer.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:manufacturer.url",
+        "fixedUri": "manufacturer"
+      },
+      {
+        "path": "Extension.extension:attachedDocument",
+        "short": "Additional information or supporting documentation about the packaged product",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:attachedDocument.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:attachedDocument.url",
+        "fixedUri": "attachedDocument"
+      },
+      {
+        "path": "Extension.extension:packaging",
+        "short": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap",
+        "definition": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap (which is not a device or a medication manufactured item).",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:identifier",
+        "short": "An identifier that is specific to this particular part of the packaging. Including possibly a Data Carrier Identifier",
+        "definition": "A business identifier that is specific to this particular part of the packaging, often assigned by the manufacturer. Including possibly Data Carrier Identifier (a GS1 barcode).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:identifier.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:identifier.url",
+        "fixedUri": "identifier"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:type",
+        "short": "The physical type of the container of the items",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PackagingType"
+            }
+          ],
+          "strength": "example",
+          "description": "A high level categorisation of a package.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/packaging-type"
+        }
+      },
+      {
+        "path": "Extension.extension:packaging.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:componentPart",
+        "short": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial)",
+        "definition": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial). The latter type are designed be a container, but the former are not.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:componentPart.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:componentPart.url",
+        "fixedUri": "componentPart"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:quantity",
+        "short": "The quantity of this level of packaging in the package that contains it (with the outermost level being 1)",
+        "definition": "The quantity of packaging items contained at this layer of the package. This does not relate to the number of contained items but relates solely to the number of packaging items. When looking at the outermost layer it is always 1. If there are two boxes within, at the next layer it would be 2.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:quantity.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:quantity.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:material",
+        "short": "Material type of the package item",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:material.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PackageMaterial"
+            }
+          ],
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material"
+        }
+      },
+      {
+        "path": "Extension.extension:packaging.extension:material.url",
+        "fixedUri": "material"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:alternateMaterial",
+        "short": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material",
+        "definition": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material (e.g. different types of plastic for a blister sleeve).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:alternateMaterial.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "PackageMaterial"
+            }
+          ],
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material"
+        }
+      },
+      {
+        "path": "Extension.extension:packaging.extension:alternateMaterial.url",
+        "fixedUri": "alternateMaterial"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:shelfLifeStorage",
+        "short": "Shelf Life and storage information",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:shelfLifeStorage.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:shelfLifeStorage.extension:ProductShelfLife",
+        "sliceName": "ProductShelfLife",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-ProductShelfLife"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:shelfLifeStorage.url",
+        "fixedUri": "shelfLifeStorage"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:manufacturer",
+        "short": "Manufacturer of this packaging item (multiple means these are all potential manufacturers)",
+        "definition": "Manufacturer of this packaging item. When there are multiple values each one is a potential manufacturer of this packaging item.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:manufacturer.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:manufacturer.url",
+        "fixedUri": "manufacturer"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property",
+        "short": "General characteristics of this item",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:type",
+        "short": "A code expressing the type of characteristic",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:type.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ProductCharacteristic"
+            }
+          ],
+          "strength": "example",
+          "description": "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/product-characteristic-codes"
+        }
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:type.url",
+        "fixedUri": "type"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:value[x]",
+        "short": "A value for the characteristic",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:value[x].value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.extension:value[x].url",
+        "fixedUri": "value%5Bx%5D"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:property.url",
+        "fixedUri": "property"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem",
+        "short": "The item(s) within the packaging",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:item",
+        "short": "The actual item(s) of medication, as manufactured, or a device, or other medically related item (food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package",
+        "definition": "The actual item(s) of medication, as manufactured, or a device (typically, but not necessarily, a co-packaged one), or other medically related item (such as food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package. This also allows another whole packaged product to be included, which is solely for the case where a package of other entire packages is wanted - such as a wholesale or distribution pack (for layers within one package, use PackagedProductDefinition.packaging.packaging).",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:item.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:item.extension:CodeableReference",
+        "sliceName": "CodeableReference",
+        "sliceIsConstraining": true,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:item.url",
+        "fixedUri": "item"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:amount",
+        "short": "The number of this type of item within this packaging or for continuous items such as liquids it is the quantity (for example 25ml). See also PackagedProductDefinition.containedItemQuantity (especially the long definition)",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:amount.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.extension:amount.url",
+        "fixedUri": "amount"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:containedItem.url",
+        "fixedUri": "containedItem"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:packaging",
+        "short": "Allows containers (and parts of containers) within containers, still as a part of single packaged product",
+        "definition": "Allows containers (and parts of containers) within containers, still as a part of a single packaged product. See also PackagedProductDefinition.packaging.containedItem.item(PackagedProductDefinition).",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:packaging.extension:packaging.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.extension:packaging.url",
+        "fixedUri": "packaging"
+      },
+      {
+        "path": "Extension.extension:packaging.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:packaging.url",
+        "fixedUri": "packaging"
+      },
+      {
+        "path": "Extension.extension:characteristic",
+        "short": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\"",
+        "definition": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\", \"calendar pack\".",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:characteristic.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:characteristic.url",
+        "fixedUri": "characteristic"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

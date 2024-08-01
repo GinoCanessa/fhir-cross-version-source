@@ -206,7 +206,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -438,90 +438,6 @@
         "isModifier": false
       },
       {
-        "id": "Extension.extension:landmarkDescription",
-        "path": "Extension.extension:landmarkDescription",
-        "short": "Body ]andmark description",
-        "definition": "A description of a landmark on the body used as a reference to locate something else.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:landmarkDescription",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:clockFacePosition",
-        "path": "Extension.extension:clockFacePosition",
-        "short": "Clockface orientation",
-        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:clockFacePosition",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:distanceFromLandmark",
-        "path": "Extension.extension:distanceFromLandmark",
-        "short": "Landmark relative location",
-        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:distanceFromLandmark",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:device",
-        "path": "Extension.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:device",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:value",
-        "path": "Extension.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:value",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
-        "id": "Extension.extension:surfaceOrientation",
-        "path": "Extension.extension:surfaceOrientation",
-        "short": "Relative landmark surface orientation",
-        "definition": "The surface area a body location is in relation to a landmark.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Extension.extension:surfaceOrientation",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
-      },
-      {
         "id": "Extension.extension:spatialReference",
         "path": "Extension.extension:spatialReference",
         "short": "Cartesian reference for structure",
@@ -547,6 +463,14 @@
           "max": "*"
         },
         "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
       }
     ]
   },
@@ -758,58 +682,12 @@
         "fixedUri": "value"
       },
       {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.url",
-        "fixedUri": "distanceFromLandmark"
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.value[x]",
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.value[x]",
         "max": "0"
       },
       {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:device.url",
-        "fixedUri": "device"
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:value.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:bodyLandmarkOrientation.extension:value.url",
-        "fixedUri": "value"
+        "path": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.url",
+        "fixedUri": "distanceFromLandmark"
       },
       {
         "path": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation",
@@ -844,216 +722,12 @@
         "fixedUri": "surfaceOrientation"
       },
       {
+        "path": "Extension.extension:bodyLandmarkOrientation.value[x]",
+        "max": "0"
+      },
+      {
         "path": "Extension.extension:bodyLandmarkOrientation.url",
         "fixedUri": "bodyLandmarkOrientation"
-      },
-      {
-        "path": "Extension.extension:landmarkDescription",
-        "short": "Body ]andmark description",
-        "definition": "A description of a landmark on the body used as a reference to locate something else.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:landmarkDescription.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "bodyLandmarkOrientationLandmarkDescription"
-            }
-          ],
-          "strength": "example",
-          "description": "Select SNOMED code system values. Values used in a podiatry setting to decsribe landmarks on the body.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
-        }
-      },
-      {
-        "path": "Extension.extension:landmarkDescription.url",
-        "fixedUri": "landmarkDescription"
-      },
-      {
-        "path": "Extension.extension:clockFacePosition",
-        "short": "Clockface orientation",
-        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:clockFacePosition.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "bodyLandmarkOrientationClockFacePosition"
-            }
-          ],
-          "strength": "example",
-          "description": "Select SNOMED CT codes. A set of codes that describe a things orientation based on a hourly positions of a clock face.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-bodylandmarkorientation-clockface-position"
-        }
-      },
-      {
-        "path": "Extension.extension:clockFacePosition.url",
-        "fixedUri": "clockFacePosition"
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark",
-        "short": "Landmark relative location",
-        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:device.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:device.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:device.url",
-        "fixedUri": "device"
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:value.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.extension:value.url",
-        "fixedUri": "value"
-      },
-      {
-        "path": "Extension.extension:distanceFromLandmark.url",
-        "fixedUri": "distanceFromLandmark"
-      },
-      {
-        "path": "Extension.extension:device",
-        "short": "Measurement device",
-        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:device.value[x]",
-        "max": "0"
-      },
-      {
-        "path": "Extension.extension:device.extension:CodeableReference",
-        "sliceName": "CodeableReference",
-        "sliceIsConstraining": true,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeableReference"
-            ]
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:device.url",
-        "fixedUri": "device"
-      },
-      {
-        "path": "Extension.extension:value",
-        "short": "Measured distance from body landmark",
-        "definition": "The measured distance (e.g., in cm) from a body landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:value.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "path": "Extension.extension:value.url",
-        "fixedUri": "value"
-      },
-      {
-        "path": "Extension.extension:surfaceOrientation",
-        "short": "Relative landmark surface orientation",
-        "definition": "The surface area a body location is in relation to a landmark.",
-        "min": 0,
-        "max": "*",
-        "isModifier": false
-      },
-      {
-        "path": "Extension.extension:surfaceOrientation.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "bodyLandmarkOrientationSurfaceOrientation"
-            }
-          ],
-          "strength": "preferred",
-          "description": "Select SNOMED code system values. The surface area a body location is in relation to a landmark.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/bodystructure-relative-location"
-        }
-      },
-      {
-        "path": "Extension.extension:surfaceOrientation.url",
-        "fixedUri": "surfaceOrientation"
       },
       {
         "path": "Extension.extension:spatialReference",
@@ -1093,6 +767,10 @@
       {
         "path": "Extension.extension:qualifier.url",
         "fixedUri": "qualifier"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",

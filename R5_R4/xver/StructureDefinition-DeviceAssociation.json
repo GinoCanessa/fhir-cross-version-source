@@ -205,7 +205,7 @@
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Extension.value[x]",
           "min": 0,
@@ -395,6 +395,106 @@
             "map": "N/A"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension:device",
+        "short": "Reference to the devices associated with the patient or group",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:device",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension:category",
+        "short": "Describes the relationship between the device and subject",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:category",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension:status",
+        "short": "implanted | explanted | attached | entered-in-error | unknown",
+        "definition": "Indicates the state of the Device association.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:status",
+          "min": 1,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension:statusReason",
+        "short": "The reasons given for the current association status",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:statusReason",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:bodyStructure",
+        "path": "Extension.extension:bodyStructure",
+        "short": "Current anatomical location of the device in/on subject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:bodyStructure",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension:period",
+        "short": "Begin and end dates and times for the device association",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension:period",
+          "min": 0,
+          "max": "1"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:operation",
+        "path": "Extension.extension:operation",
+        "short": "The details about the device when it is in use to describe its operation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension:operation",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "base": {
+          "path": "Extension.url"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceAssociation"
       }
     ]
   },
@@ -407,6 +507,259 @@
         "min": 0,
         "max": "*",
         "isModifier": false
+      },
+      {
+        "path": "Extension.extension:device",
+        "short": "Reference to the devices associated with the patient or group",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:device.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:device.url",
+        "fixedUri": "device"
+      },
+      {
+        "path": "Extension.extension:category",
+        "short": "Describes the relationship between the device and subject",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:category.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:category.url",
+        "fixedUri": "category"
+      },
+      {
+        "path": "Extension.extension:status",
+        "short": "implanted | explanted | attached | entered-in-error | unknown",
+        "definition": "Indicates the state of the Device association.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the state of the device association."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceAssociationStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/deviceassociation-status|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-deviceassociation-status|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:statusReason",
+        "short": "The reasons given for the current association status",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:statusReason.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceAssociationStatusReason"
+            }
+          ],
+          "strength": "required",
+          "description": "Allowed values based on differential of http://hl7.org/fhir/ValueSet/deviceassociation-status-reason|5.0.0 compared with R4",
+          "valueSet": "http://hl7.org/fhir/uv/xver/ValueSet/R5-R4-deviceassociation-status-reason|1.0.0"
+        }
+      },
+      {
+        "path": "Extension.extension:statusReason.url",
+        "fixedUri": "statusReason"
+      },
+      {
+        "path": "Extension.extension:bodyStructure",
+        "short": "Current anatomical location of the device in/on subject",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:bodyStructure.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/BodyStructure"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:bodyStructure.url",
+        "fixedUri": "bodyStructure"
+      },
+      {
+        "path": "Extension.extension:period",
+        "short": "Begin and end dates and times for the device association",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:period.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:period.url",
+        "fixedUri": "period"
+      },
+      {
+        "path": "Extension.extension:operation",
+        "short": "The details about the device when it is in use to describe its operation",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operation.extension:status",
+        "short": "Device operational condition",
+        "definition": "Device operational condition corresponding to the association.",
+        "min": 1,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operation.extension:status.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/binding-definition",
+              "valueString": "A coded concept specifying the status of the association operation."
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "DeviceAssociationOperationStatus"
+            }
+          ],
+          "strength": "example",
+          "description": "Describes the the status of the association operation.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/deviceassociation-operationstatus"
+        }
+      },
+      {
+        "path": "Extension.extension:operation.extension:status.url",
+        "fixedUri": "status"
+      },
+      {
+        "path": "Extension.extension:operation.extension:operator",
+        "short": "The individual performing the action enabled by the device",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operation.extension:operator.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:operation.extension:operator.url",
+        "fixedUri": "operator"
+      },
+      {
+        "path": "Extension.extension:operation.extension:period",
+        "short": "Begin and end dates and times for the device's operation",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "path": "Extension.extension:operation.extension:period.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension:operation.extension:period.url",
+        "fixedUri": "period"
+      },
+      {
+        "path": "Extension.extension:operation.value[x]",
+        "max": "0"
+      },
+      {
+        "path": "Extension.extension:operation.url",
+        "fixedUri": "operation"
+      },
+      {
+        "path": "Extension.value[x]",
+        "max": "0"
       },
       {
         "path": "Extension.url",
