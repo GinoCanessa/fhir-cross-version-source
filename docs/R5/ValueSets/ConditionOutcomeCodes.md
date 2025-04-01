@@ -1,0 +1,26 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:35 PM
+
+### ConditionOutcomeCodes
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r5.core@5.0.0 |
+| VS Name | ConditionOutcomeCodes |
+| Canonical URL | `http://hl7.org/fhir/ValueSet/condition-outcome` |
+| Version | 5.0.0 |
+| Description | Example value set for condition outcomes. |
+| Status | `Draft` |
+| Has Escape Valve Code | `` |
+| Database Key | `4398` |
+| Database Concept Count | `0` |
+| Database Active Concept Count | `0` |
+### Bindings
+
+| Source | Element | Binding | Strength | Element Short |
+| ------ | ------- | ------- | -------- | ------------- |
+| `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory` | `FamilyMemberHistory.condition.outcome` | `http://hl7.org/fhir/ValueSet/condition-outcome` | `Example` | deceased \| permanent disability \| etc |
+
+### Expansion Failure
+
+Failed to expand this value set: Expansion is limited

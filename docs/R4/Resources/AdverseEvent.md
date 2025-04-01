@@ -1,0 +1,122 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:23 PM
+
+### AdverseEvent
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r4.core@4.0.1 |
+| Stucture Name | AdverseEvent |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/AdverseEvent` |
+| Version | 4.0.1 |
+| Description | Actual or  potential/avoided event causing unintended physical injury resulting from or contributed to by medical care, a research study or other healthcare setting factors that requires additional monitoring, treatment, or hospitalization, or that results in death. |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `1033` |
+| Database Snapshot Count | `41` |
+| Database Differential Count | `27` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `AdverseEvent` | `AdverseEvent` | `AdverseEvent` | AdverseEvent | Medical care, research study or other healthcare event causing physical injury | 0..* | AdverseEvent |  |  |
+| `AdverseEvent.actuality` | `AdverseEvent.actuality` | `actuality` | AdverseEvent.actuality | actual \| potential | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/adverse-event-actuality|4.0.1` |
+| `AdverseEvent.category` | `AdverseEvent.category` | `category` | AdverseEvent.category | product-problem \| product-quality \| product-use-error \| wrong-dose \| incorrect-prescribing-information \| wrong-technique \| wrong-route-of-administration \| wrong-rate \| wrong-duration \| wrong-time \| expired-drug \| medical-device-use-error \| problem-different-manufacturer \| unsafe-physical-environment | 0..* | CodeableConcept | `Extensible` | `http://hl7.org/fhir/ValueSet/adverse-event-category` |
+| `AdverseEvent.contained` | `AdverseEvent.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `AdverseEvent.contributor` | `AdverseEvent.contributor` | `contributor` | AdverseEvent.contributor | Who  was involved in the adverse event or the potential adverse event | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Device), Reference(http://hl7.org/fhir/StructureDefinition/Practitioner), Reference(http://hl7.org/fhir/StructureDefinition/PractitionerRole) |  |  |
+| `AdverseEvent.date` | `AdverseEvent.date` | `date` | AdverseEvent.date | When the event occurred | 0..1 | dateTime |  |  |
+| `AdverseEvent.detected` | `AdverseEvent.detected` | `detected` | AdverseEvent.detected | When the event was detected | 0..1 | dateTime |  |  |
+| `AdverseEvent.encounter` | `AdverseEvent.encounter` | `encounter` | AdverseEvent.encounter | Encounter created as part of | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Encounter) |  |  |
+| `AdverseEvent.event` | `AdverseEvent.event` | `event` | AdverseEvent.event | Type of the event itself in relation to the subject | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/adverse-event-type` |
+| `AdverseEvent.extension` | `AdverseEvent.extension` | `extension` | DomainResource.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `AdverseEvent.id` | `AdverseEvent.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `AdverseEvent.identifier` | `AdverseEvent.identifier` | `identifier` | AdverseEvent.identifier | Business identifier for the event | 0..1 | Identifier |  |  |
+| `AdverseEvent.implicitRules` | `AdverseEvent.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `AdverseEvent.language` | `AdverseEvent.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/all-languages` |
+| `AdverseEvent.location` | `AdverseEvent.location` | `location` | AdverseEvent.location | Location where adverse event occurred | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Location) |  |  |
+| `AdverseEvent.meta` | `AdverseEvent.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `AdverseEvent.modifierExtension` | `AdverseEvent.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `AdverseEvent.outcome` | `AdverseEvent.outcome` | `outcome` | AdverseEvent.outcome | resolved \| recovering \| ongoing \| resolvedWithSequelae \| fatal \| unknown | 0..1 | CodeableConcept | `Required` | `http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.0.1` |
+| `AdverseEvent.recordedDate` | `AdverseEvent.recordedDate` | `recordedDate` | AdverseEvent.recordedDate | When the event was recorded | 0..1 | dateTime |  |  |
+| `AdverseEvent.recorder` | `AdverseEvent.recorder` | `recorder` | AdverseEvent.recorder | Who recorded the adverse event | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient), Reference(http://hl7.org/fhir/StructureDefinition/Practitioner), Reference(http://hl7.org/fhir/StructureDefinition/PractitionerRole), Reference(http://hl7.org/fhir/StructureDefinition/RelatedPerson) |  |  |
+| `AdverseEvent.referenceDocument` | `AdverseEvent.referenceDocument` | `referenceDocument` | AdverseEvent.referenceDocument | AdverseEvent.referenceDocument | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/DocumentReference) |  |  |
+| `AdverseEvent.resultingCondition` | `AdverseEvent.resultingCondition` | `resultingCondition` | AdverseEvent.resultingCondition | Effect on the subject due to this event | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Condition) |  |  |
+| `AdverseEvent.seriousness` | `AdverseEvent.seriousness` | `seriousness` | AdverseEvent.seriousness | Seriousness of the event | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/adverse-event-seriousness` |
+| `AdverseEvent.severity` | `AdverseEvent.severity` | `severity` | AdverseEvent.severity | mild \| moderate \| severe | 0..1 | CodeableConcept | `Required` | `http://hl7.org/fhir/ValueSet/adverse-event-severity|4.0.1` |
+| `AdverseEvent.study` | `AdverseEvent.study` | `study` | AdverseEvent.study | AdverseEvent.study | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/ResearchStudy) |  |  |
+| `AdverseEvent.subject` | `AdverseEvent.subject` | `subject` | AdverseEvent.subject | Subject impacted by event | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Group), Reference(http://hl7.org/fhir/StructureDefinition/Patient), Reference(http://hl7.org/fhir/StructureDefinition/Practitioner), Reference(http://hl7.org/fhir/StructureDefinition/RelatedPerson) |  |  |
+| `AdverseEvent.subjectMedicalHistory` | `AdverseEvent.subjectMedicalHistory` | `subjectMedicalHistory` | AdverseEvent.subjectMedicalHistory | AdverseEvent.subjectMedicalHistory | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/AllergyIntolerance), Reference(http://hl7.org/fhir/StructureDefinition/Condition), Reference(http://hl7.org/fhir/StructureDefinition/DocumentReference), Reference(http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory), Reference(http://hl7.org/fhir/StructureDefinition/Immunization), Reference(http://hl7.org/fhir/StructureDefinition/Media), Reference(http://hl7.org/fhir/StructureDefinition/Observation), Reference(http://hl7.org/fhir/StructureDefinition/Procedure) |  |  |
+| `AdverseEvent.suspectEntity` | `AdverseEvent.suspectEntity` | `suspectEntity` | AdverseEvent.suspectEntity | The suspected agent causing the adverse event | 0..* | BackboneElement |  |  |
+| `AdverseEvent.suspectEntity.causality` | `AdverseEvent.suspectEntity.causality` | `causality` | AdverseEvent.suspectEntity.causality | Information on the possible cause of the event | 0..* | BackboneElement |  |  |
+| `AdverseEvent.suspectEntity.causality.assessment` | `AdverseEvent.suspectEntity.causality.assessment` | `assessment` | AdverseEvent.suspectEntity.causality.assessment | Assessment of if the entity caused the event | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/adverse-event-causality-assess` |
+| `AdverseEvent.suspectEntity.causality.author` | `AdverseEvent.suspectEntity.causality.author` | `author` | AdverseEvent.suspectEntity.causality.author | AdverseEvent.suspectEntity.causalityAuthor | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner), Reference(http://hl7.org/fhir/StructureDefinition/PractitionerRole) |  |  |
+| `AdverseEvent.suspectEntity.causality.extension` | `AdverseEvent.suspectEntity.causality.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `AdverseEvent.suspectEntity.causality.id` | `AdverseEvent.suspectEntity.causality.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `AdverseEvent.suspectEntity.causality.method` | `AdverseEvent.suspectEntity.causality.method` | `method` | AdverseEvent.suspectEntity.causality.method | ProbabilityScale \| Bayesian \| Checklist | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/adverse-event-causality-method` |
+| `AdverseEvent.suspectEntity.causality.modifierExtension` | `AdverseEvent.suspectEntity.causality.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `AdverseEvent.suspectEntity.causality.productRelatedness` | `AdverseEvent.suspectEntity.causality.productRelatedness` | `productRelatedness` | AdverseEvent.suspectEntity.causality.productRelatedness | AdverseEvent.suspectEntity.causalityProductRelatedness | 0..1 | string |  |  |
+| `AdverseEvent.suspectEntity.extension` | `AdverseEvent.suspectEntity.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `AdverseEvent.suspectEntity.id` | `AdverseEvent.suspectEntity.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `AdverseEvent.suspectEntity.instance` | `AdverseEvent.suspectEntity.instance` | `instance` | AdverseEvent.suspectEntity.instance | Refers to the specific entity that caused the adverse event | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Device), Reference(http://hl7.org/fhir/StructureDefinition/Immunization), Reference(http://hl7.org/fhir/StructureDefinition/Medication), Reference(http://hl7.org/fhir/StructureDefinition/MedicationAdministration), Reference(http://hl7.org/fhir/StructureDefinition/MedicationStatement), Reference(http://hl7.org/fhir/StructureDefinition/Procedure), Reference(http://hl7.org/fhir/StructureDefinition/Substance) |  |  |
+| `AdverseEvent.suspectEntity.modifierExtension` | `AdverseEvent.suspectEntity.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `AdverseEvent.text` | `AdverseEvent.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| | | [AdverseEvent](/docs/R3/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `417`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `613`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R4/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1391`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1392`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R4B/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `931`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1160`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R5/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition AdverseEvent from hl7.fhir.r4.core@4.0.1 (R4, key 3).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| *No Map* | Relationship | [R3 AdverseEvent](/docs/R3/Resources/AdverseEvent.md)| Relationship | R4 AdverseEvent| Relationship | [R4B AdverseEvent](/docs/R4B/Resources/AdverseEvent.md)| Relationship | [R5 AdverseEvent](/docs/R5/Resources/AdverseEvent.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| | | `AdverseEvent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10054)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10055)| **`AdverseEvent`**| _Equivalent_<br/>(21579/21580)| `AdverseEvent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36713)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36714)| `AdverseEvent`
+| | | `AdverseEvent.id`| _Equivalent_<br/>(10056/10057)| **`AdverseEvent.id`**| _Equivalent_<br/>(21581/21582)| `AdverseEvent.id`| _Equivalent_<br/>(36715/36716)| `AdverseEvent.id`
+| | | `AdverseEvent.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10058)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10059)| **`AdverseEvent.meta`**| _Equivalent_<br/>(21583/21584)| `AdverseEvent.meta`| _Equivalent_<br/>(36717/36718)| `AdverseEvent.meta`
+| | | `AdverseEvent.implicitRules`| _Equivalent_<br/>(10060/10061)| **`AdverseEvent.implicitRules`**| _Equivalent_<br/>(21585/21586)| `AdverseEvent.implicitRules`| _Equivalent_<br/>(36719/36720)| `AdverseEvent.implicitRules`
+| | | `AdverseEvent.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10062)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(10063)| **`AdverseEvent.language`**| _Equivalent_<br/>(21587/21588)| `AdverseEvent.language`| _Equivalent_<br/>(36721/36722)| `AdverseEvent.language`
+| | | `AdverseEvent.text`| _Equivalent_<br/>(10064/10065)| **`AdverseEvent.text`**| _Equivalent_<br/>(21589/21590)| `AdverseEvent.text`| _Equivalent_<br/>(36723/36724)| `AdverseEvent.text`
+| | | `AdverseEvent.contained`| _Equivalent_<br/>(10066/10067)| **`AdverseEvent.contained`**| _Equivalent_<br/>(21591/21592)| `AdverseEvent.contained`| _Equivalent_<br/>(36725/36726)| `AdverseEvent.contained`
+| | | `AdverseEvent.extension`| _Equivalent_<br/>(10068/10069)| **`AdverseEvent.extension`**| _Equivalent_<br/>(21593/21594)| `AdverseEvent.extension`| _Equivalent_<br/>(36727/36728)| `AdverseEvent.extension`
+| | | `AdverseEvent.modifierExtension`| _Equivalent_<br/>(10070/10071)| **`AdverseEvent.modifierExtension`**| _Equivalent_<br/>(21595/21596)| `AdverseEvent.modifierExtension`| _Equivalent_<br/>(36729/36730)| `AdverseEvent.modifierExtension`
+| | | `AdverseEvent.identifier`| _Equivalent_<br/>(10072/10073)| **`AdverseEvent.identifier`**| _Equivalent_<br/>(21597/21598)| `AdverseEvent.identifier`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36731)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36732)| `AdverseEvent.identifier`
+| | | `AdverseEvent.type`| →→→→ _RelatedTo_ →→→→ <br/>(808)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1340)| **`AdverseEvent.actuality`**| _Equivalent_<br/>(21599/21600)| `AdverseEvent.actuality`| _Equivalent_<br/>(36733/36734)| `AdverseEvent.actuality`
+| | | `AdverseEvent.category`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10074)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(10075)| **`AdverseEvent.category`**| _Equivalent_<br/>(21601/21602)| `AdverseEvent.category`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36735)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36736)| `AdverseEvent.category`
+| | | `AdverseEvent.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(809)<hr/>←←←← _Equivalent_ ←←←← <br/>(1347)| **`AdverseEvent.event`**| _Equivalent_<br/>(21603/21604)| `AdverseEvent.event`| _Equivalent_<br/>(1715/1959)| `AdverseEvent.code`
+| | | `AdverseEvent.subject`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10076)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10077)| **`AdverseEvent.subject`**| _Equivalent_<br/>(21605/21606)| `AdverseEvent.subject`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(36737)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36738)| `AdverseEvent.subject`
+| | | | | **`AdverseEvent.encounter`**| _Equivalent_<br/>(21607/21608)| `AdverseEvent.encounter`| _Equivalent_<br/>(36739/36740)| `AdverseEvent.encounter`
+| | | `AdverseEvent.date`| _Equivalent_<br/>(10078/10079)| **`AdverseEvent.date`**| _Equivalent_<br/>(21609/21610)| `AdverseEvent.date`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1719)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1963)| `AdverseEvent.occurrence[x]`
+| | | | | **`AdverseEvent.detected`**| _Equivalent_<br/>(21611/21612)| `AdverseEvent.detected`| _Equivalent_<br/>(36741/36742)| `AdverseEvent.detected`
+| | | | | **`AdverseEvent.recordedDate`**| _Equivalent_<br/>(21613/21614)| `AdverseEvent.recordedDate`| _Equivalent_<br/>(36743/36744)| `AdverseEvent.recordedDate`
+| | | `AdverseEvent.reaction`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1342)| **`AdverseEvent.resultingCondition`**| _Equivalent_<br/>(21615/21616)| `AdverseEvent.resultingCondition`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1716)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1960)| `AdverseEvent.resultingEffect`
+| | | `AdverseEvent.location`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10080)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10081)| **`AdverseEvent.location`**| _Equivalent_<br/>(21617/21618)| `AdverseEvent.location`| _Equivalent_<br/>(36745/36746)| `AdverseEvent.location`
+| | | `AdverseEvent.seriousness`| _Equivalent_<br/>(10082/10083)| **`AdverseEvent.seriousness`**| _Equivalent_<br/>(21619/21620)| `AdverseEvent.seriousness`| _Equivalent_<br/>(36747/36748)| `AdverseEvent.seriousness`
+| | | | | **`AdverseEvent.severity`**| _Equivalent_<br/>(21621/21622)| `AdverseEvent.severity`| | | 
+| | | `AdverseEvent.outcome`| _Equivalent_<br/>(10084/10085)| **`AdverseEvent.outcome`**| _Equivalent_<br/>(21623/21624)| `AdverseEvent.outcome`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36750)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36751)| `AdverseEvent.outcome`
+| | | `AdverseEvent.recorder`| →→→→ _RelatedTo_ →→→→ <br/>(10086)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10087)| **`AdverseEvent.recorder`**| _Equivalent_<br/>(21625/21626)| `AdverseEvent.recorder`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(36752)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36753)| `AdverseEvent.recorder`
+| | | `AdverseEvent.eventParticipant`| →→→→ _RelatedTo_ →→→→ <br/>(801)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1341)| **`AdverseEvent.contributor`**| _Equivalent_<br/>(21627/21628)| `AdverseEvent.contributor`| | | 
+| | | `AdverseEvent.suspectEntity`| _Equivalent_<br/>(10088/10089)| **`AdverseEvent.suspectEntity`**| _Equivalent_<br/>(21629/21630)| `AdverseEvent.suspectEntity`| _Equivalent_<br/>(36755/36756)| `AdverseEvent.suspectEntity`
+| | | `AdverseEvent.suspectEntity.id`| _Equivalent_<br/>(10090/10091)| **`AdverseEvent.suspectEntity.id`**| _Equivalent_<br/>(21631/21632)| `AdverseEvent.suspectEntity.id`| _Equivalent_<br/>(36757/36758)| `AdverseEvent.suspectEntity.id`
+| | | `AdverseEvent.suspectEntity.extension`| _Equivalent_<br/>(10092/10093)| **`AdverseEvent.suspectEntity.extension`**| _Equivalent_<br/>(21633/21634)| `AdverseEvent.suspectEntity.extension`| _Equivalent_<br/>(36759/36760)| `AdverseEvent.suspectEntity.extension`
+| | | `AdverseEvent.suspectEntity.modifierExtension`| _Equivalent_<br/>(10094/10095)| **`AdverseEvent.suspectEntity.modifierExtension`**| _Equivalent_<br/>(21635/21636)| `AdverseEvent.suspectEntity.modifierExtension`| _Equivalent_<br/>(36761/36762)| `AdverseEvent.suspectEntity.modifierExtension`
+| | | `AdverseEvent.suspectEntity.instance`| →→→→ _RelatedTo_ →→→→ <br/>(10096)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10097)| **`AdverseEvent.suspectEntity.instance`**| _Equivalent_<br/>(21637/21638)| `AdverseEvent.suspectEntity.instance`| →→→→ _RelatedTo_ →→→→ <br/>(1717)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1961)| `AdverseEvent.suspectEntity.instance[x]`
+| | | `AdverseEvent.suspectEntity.causality`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10098)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(10099)| **`AdverseEvent.suspectEntity.causality`**| _Equivalent_<br/>(21639/21640)| `AdverseEvent.suspectEntity.causality`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(36763)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36764)| `AdverseEvent.suspectEntity.causality`
+| | | | | **`AdverseEvent.suspectEntity.causality.id`**| _Equivalent_<br/>(21641/21642)| `AdverseEvent.suspectEntity.causality.id`| _Equivalent_<br/>(36765/36766)| `AdverseEvent.suspectEntity.causality.id`
+| | | | | **`AdverseEvent.suspectEntity.causality.extension`**| _Equivalent_<br/>(21643/21644)| `AdverseEvent.suspectEntity.causality.extension`| _Equivalent_<br/>(36767/36768)| `AdverseEvent.suspectEntity.causality.extension`
+| | | | | **`AdverseEvent.suspectEntity.causality.modifierExtension`**| _Equivalent_<br/>(21645/21646)| `AdverseEvent.suspectEntity.causality.modifierExtension`| _Equivalent_<br/>(36769/36770)| `AdverseEvent.suspectEntity.causality.modifierExtension`
+| | | `AdverseEvent.suspectEntity.causalityAssessment`| _Equivalent_<br/>(803/1343)| **`AdverseEvent.suspectEntity.causality.assessment`**| _Equivalent_<br/>(21647/21648)| `AdverseEvent.suspectEntity.causality.assessment`| _Equivalent_<br/>(1720/1964)| `AdverseEvent.suspectEntity.causality.assessmentMethod`
+| | | `AdverseEvent.suspectEntity.causalityProductRelatedness`| _Equivalent_<br/>(806/1346)| **`AdverseEvent.suspectEntity.causality.productRelatedness`**| _Equivalent_<br/>(21649/21650)| `AdverseEvent.suspectEntity.causality.productRelatedness`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1718)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1962)| `AdverseEvent.suspectEntity.causality.entityRelatedness`
+| | | `AdverseEvent.suspectEntity.causalityAuthor`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(804)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1344)| **`AdverseEvent.suspectEntity.causality.author`**| _Equivalent_<br/>(21651/21652)| `AdverseEvent.suspectEntity.causality.author`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(36771)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36772)| `AdverseEvent.suspectEntity.causality.author`
+| | | `AdverseEvent.suspectEntity.causalityMethod`| _Equivalent_<br/>(805/1345)| **`AdverseEvent.suspectEntity.causality.method`**| _Equivalent_<br/>(21653/21654)| `AdverseEvent.suspectEntity.causality.method`| | | 
+| | | `AdverseEvent.subjectMedicalHistory`| →→→→ _RelatedTo_ →→→→ <br/>(10100)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10101)| **`AdverseEvent.subjectMedicalHistory`**| _Equivalent_<br/>(21655/21656)| `AdverseEvent.subjectMedicalHistory`| | | 
+| | | `AdverseEvent.referenceDocument`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10102)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10103)| **`AdverseEvent.referenceDocument`**| _Equivalent_<br/>(21657/21658)| `AdverseEvent.referenceDocument`| | | 
+| | | `AdverseEvent.study`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10104)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10105)| **`AdverseEvent.study`**| _Equivalent_<br/>(21659/21660)| `AdverseEvent.study`| _Equivalent_<br/>(36776/36777)| `AdverseEvent.study`
+| | | *33 of 35 elements used* | | *41 of 41 elements used* | | *41 of 41 elements used* | | *36 of 65 elements used* 
+

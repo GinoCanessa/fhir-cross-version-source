@@ -1,0 +1,115 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:36 PM
+
+### HealthcareService
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r5.core@5.0.0 |
+| Stucture Name | HealthcareService |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/HealthcareService` |
+| Version | 5.0.0 |
+| Description | The details of a healthcare service available at a location or in a catalog.  In the case where there is a hierarchy of services (for example, Lab -> Pathology -> Wound Cultures), this can be represented using a set of linked HealthcareServices. |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `2318` |
+| Database Snapshot Count | `37` |
+| Database Differential Count | `26` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `HealthcareService` | `HealthcareService` | `HealthcareService` | HealthcareService | The details of a healthcare service available at a location | 0..* | HealthcareService |  |  |
+| `HealthcareService.active` | `HealthcareService.active` | `active` | HealthcareService.active | Whether this HealthcareService record is in active use | 0..1 | boolean |  |  |
+| `HealthcareService.appointmentRequired` | `HealthcareService.appointmentRequired` | `appointmentRequired` | HealthcareService.appointmentRequired | If an appointment is required for access to this service | 0..1 | boolean |  |  |
+| `HealthcareService.availability` | `HealthcareService.availability` | `availability` | HealthcareService.availability | Times the healthcare service is available (including exceptions) | 0..* | Availability |  |  |
+| `HealthcareService.category` | `HealthcareService.category` | `category` | HealthcareService.category | Broad category of service being performed or delivered | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/service-category` |
+| `HealthcareService.characteristic` | `HealthcareService.characteristic` | `characteristic` | HealthcareService.characteristic | Collection of characteristics (attributes) | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/service-mode` |
+| `HealthcareService.comment` | `HealthcareService.comment` | `comment` | HealthcareService.comment | Additional description and/or any specific issues not covered elsewhere | 0..1 | markdown |  |  |
+| `HealthcareService.communication` | `HealthcareService.communication` | `communication` | HealthcareService.communication | The language that this service is offered in | 0..* | CodeableConcept | `Required` | `http://hl7.org/fhir/ValueSet/all-languages|5.0.0` |
+| `HealthcareService.contact` | `HealthcareService.contact` | `contact` | HealthcareService.contact | Official contact details for the HealthcareService | 0..* | ExtendedContactDetail |  |  |
+| `HealthcareService.contained` | `HealthcareService.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `HealthcareService.coverageArea` | `HealthcareService.coverageArea` | `coverageArea` | HealthcareService.coverageArea | Location(s) service is intended for/available to | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Location) |  |  |
+| `HealthcareService.eligibility` | `HealthcareService.eligibility` | `eligibility` | HealthcareService.eligibility | Specific eligibility requirements required to use the service | 0..* | BackboneElement |  |  |
+| `HealthcareService.eligibility.code` | `HealthcareService.eligibility.code` | `code` | HealthcareService.eligibility.code | Coded value for the eligibility | 0..1 | CodeableConcept | `Example` |  |
+| `HealthcareService.eligibility.comment` | `HealthcareService.eligibility.comment` | `comment` | HealthcareService.eligibility.comment | Describes the eligibility conditions for the service | 0..1 | markdown |  |  |
+| `HealthcareService.eligibility.extension` | `HealthcareService.eligibility.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `HealthcareService.eligibility.id` | `HealthcareService.eligibility.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `HealthcareService.eligibility.modifierExtension` | `HealthcareService.eligibility.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `HealthcareService.endpoint` | `HealthcareService.endpoint` | `endpoint` | HealthcareService.endpoint | Technical endpoints providing access to electronic services operated for the healthcare service | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Endpoint) |  |  |
+| `HealthcareService.extension` | `HealthcareService.extension` | `extension` | DomainResource.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `HealthcareService.extraDetails` | `HealthcareService.extraDetails` | `extraDetails` | HealthcareService.extraDetails | Extra details about the service that can't be placed in the other fields | 0..1 | markdown |  |  |
+| `HealthcareService.id` | `HealthcareService.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `HealthcareService.identifier` | `HealthcareService.identifier` | `identifier` | HealthcareService.identifier | External identifiers for this item | 0..* | Identifier |  |  |
+| `HealthcareService.implicitRules` | `HealthcareService.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `HealthcareService.language` | `HealthcareService.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/all-languages|5.0.0` |
+| `HealthcareService.location` | `HealthcareService.location` | `location` | HealthcareService.location | Location(s) where service may be provided | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Location) |  |  |
+| `HealthcareService.meta` | `HealthcareService.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `HealthcareService.modifierExtension` | `HealthcareService.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `HealthcareService.name` | `HealthcareService.name` | `name` | HealthcareService.name | Description of service as presented to a consumer while searching | 0..1 | string |  |  |
+| `HealthcareService.offeredIn` | `HealthcareService.offeredIn` | `offeredIn` | HealthcareService.offeredIn | The service within which this service is offered | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/HealthcareService) |  |  |
+| `HealthcareService.photo` | `HealthcareService.photo` | `photo` | HealthcareService.photo | Facilitates quick identification of the service | 0..1 | Attachment |  |  |
+| `HealthcareService.program` | `HealthcareService.program` | `program` | HealthcareService.program | Programs that this service is applicable to | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/program` |
+| `HealthcareService.providedBy` | `HealthcareService.providedBy` | `providedBy` | HealthcareService.providedBy | Organization that provides this service | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `HealthcareService.referralMethod` | `HealthcareService.referralMethod` | `referralMethod` | HealthcareService.referralMethod | Ways that the service accepts referrals | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/service-referral-method` |
+| `HealthcareService.serviceProvisionCode` | `HealthcareService.serviceProvisionCode` | `serviceProvisionCode` | HealthcareService.serviceProvisionCode | Conditions under which service is available/offered | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/service-provision-conditions` |
+| `HealthcareService.specialty` | `HealthcareService.specialty` | `specialty` | HealthcareService.specialty | Specialties handled by the HealthcareService | 0..* | CodeableConcept | `Preferred` | `http://hl7.org/fhir/ValueSet/c80-practice-codes` |
+| `HealthcareService.text` | `HealthcareService.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `HealthcareService.type` | `HealthcareService.type` | `type` | HealthcareService.type | Type of service that may be delivered or performed | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/service-type` |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [HealthcareService](/docs/R2/Resources/HealthcareService.md)<br/> `http://hl7.org/fhir/StructureDefinition/HealthcareService\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `115`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`RelatedTo`<br/>- DBKey: `281`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [HealthcareService](/docs/R3/Resources/HealthcareService.md)<br/> `http://hl7.org/fhir/StructureDefinition/HealthcareService\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `467`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `661`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [HealthcareService](/docs/R4/Resources/HealthcareService.md)<br/> `http://hl7.org/fhir/StructureDefinition/HealthcareService\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1505`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1506`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [HealthcareService](/docs/R4B/Resources/HealthcareService.md)<br/> `http://hl7.org/fhir/StructureDefinition/HealthcareService\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `986`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1215`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [HealthcareService](/docs/R5/Resources/HealthcareService.md)<br/> `http://hl7.org/fhir/StructureDefinition/HealthcareService\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition HealthcareService from hl7.fhir.r5.core@5.0.0 (R5, key 5).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| [R2 HealthcareService](/docs/R2/Resources/HealthcareService.md)| Relationship | [R3 HealthcareService](/docs/R3/Resources/HealthcareService.md)| Relationship | [R4 HealthcareService](/docs/R4/Resources/HealthcareService.md)| Relationship | [R4B HealthcareService](/docs/R4B/Resources/HealthcareService.md)| Relationship | R5 HealthcareService
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| `HealthcareService`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(5444)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(630)| `HealthcareService`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14761)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14762)| `HealthcareService`| _Equivalent_<br/>(27809/27810)| `HealthcareService`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42763)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(42764)| **`HealthcareService`**
+| `HealthcareService.serviceType`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(246)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(630)| `HealthcareService`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14761)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14762)| `HealthcareService`| _Equivalent_<br/>(27809/27810)| `HealthcareService`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42763)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(42764)| **`HealthcareService`**
+| `HealthcareService.id`| _Equivalent_<br/>(5446/5447)| `HealthcareService.id`| _Equivalent_<br/>(14763/14764)| `HealthcareService.id`| _Equivalent_<br/>(27811/27812)| `HealthcareService.id`| _Equivalent_<br/>(42765/42766)| **`HealthcareService.id`**
+| `HealthcareService.meta`| _Equivalent_<br/>(5448/5449)| `HealthcareService.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14765)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14766)| `HealthcareService.meta`| _Equivalent_<br/>(27813/27814)| `HealthcareService.meta`| _Equivalent_<br/>(42767/42768)| **`HealthcareService.meta`**
+| `HealthcareService.implicitRules`| _Equivalent_<br/>(5450/5451)| `HealthcareService.implicitRules`| _Equivalent_<br/>(14767/14768)| `HealthcareService.implicitRules`| _Equivalent_<br/>(27815/27816)| `HealthcareService.implicitRules`| _Equivalent_<br/>(42769/42770)| **`HealthcareService.implicitRules`**
+| `HealthcareService.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5452)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5453)| `HealthcareService.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14769)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14770)| `HealthcareService.language`| _Equivalent_<br/>(27817/27818)| `HealthcareService.language`| _Equivalent_<br/>(42771/42772)| **`HealthcareService.language`**
+| `HealthcareService.text`| _Equivalent_<br/>(5454/5455)| `HealthcareService.text`| _Equivalent_<br/>(14771/14772)| `HealthcareService.text`| _Equivalent_<br/>(27819/27820)| `HealthcareService.text`| _Equivalent_<br/>(42773/42774)| **`HealthcareService.text`**
+| `HealthcareService.contained`| _Equivalent_<br/>(5456/5457)| `HealthcareService.contained`| _Equivalent_<br/>(14773/14774)| `HealthcareService.contained`| _Equivalent_<br/>(27821/27822)| `HealthcareService.contained`| _Equivalent_<br/>(42775/42776)| **`HealthcareService.contained`**
+| `HealthcareService.extension`| _Equivalent_<br/>(5458/5459)| `HealthcareService.extension`| _Equivalent_<br/>(14775/14776)| `HealthcareService.extension`| _Equivalent_<br/>(27823/27824)| `HealthcareService.extension`| _Equivalent_<br/>(42777/42778)| **`HealthcareService.extension`**
+| `HealthcareService.modifierExtension`| _Equivalent_<br/>(5460/5461)| `HealthcareService.modifierExtension`| _Equivalent_<br/>(14777/14778)| `HealthcareService.modifierExtension`| _Equivalent_<br/>(27825/27826)| `HealthcareService.modifierExtension`| _Equivalent_<br/>(42779/42780)| **`HealthcareService.modifierExtension`**
+| `HealthcareService.identifier`| _Equivalent_<br/>(5462/5463)| `HealthcareService.identifier`| _Equivalent_<br/>(14779/14780)| `HealthcareService.identifier`| _Equivalent_<br/>(27827/27828)| `HealthcareService.identifier`| _Equivalent_<br/>(42781/42782)| **`HealthcareService.identifier`**
+| | | `HealthcareService.active`| _Equivalent_<br/>(14781/14782)| `HealthcareService.active`| _Equivalent_<br/>(27829/27830)| `HealthcareService.active`| _Equivalent_<br/>(42783/42784)| **`HealthcareService.active`**
+| `HealthcareService.providedBy`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5464)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5465)| `HealthcareService.providedBy`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14783)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14784)| `HealthcareService.providedBy`| _Equivalent_<br/>(27831/27832)| `HealthcareService.providedBy`| _Equivalent_<br/>(42785/42786)| **`HealthcareService.providedBy`**
+| | | | | | | | | **`HealthcareService.offeredIn`**
+| `HealthcareService.serviceCategory`| _Equivalent_<br/>(244/631)| `HealthcareService.category`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14785)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14786)| `HealthcareService.category`| _Equivalent_<br/>(27833/27834)| `HealthcareService.category`| _Equivalent_<br/>(42787/42788)| **`HealthcareService.category`**
+| `HealthcareService.serviceType.type`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(248)<hr/>←←←← _RelatedTo_ ←←←← <br/>(634)| `HealthcareService.type`| _Equivalent_<br/>(14787/14788)| `HealthcareService.type`| _Equivalent_<br/>(27835/27836)| `HealthcareService.type`| _Equivalent_<br/>(42789/42790)| **`HealthcareService.type`**
+| `HealthcareService.serviceType.specialty`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(247)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(633)| `HealthcareService.specialty`| _Equivalent_<br/>(14789/14790)| `HealthcareService.specialty`| _Equivalent_<br/>(27837/27838)| `HealthcareService.specialty`| _Equivalent_<br/>(42791/42792)| **`HealthcareService.specialty`**
+| `HealthcareService.location`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5469)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5470)| `HealthcareService.location`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14791)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14792)| `HealthcareService.location`| _Equivalent_<br/>(27839/27840)| `HealthcareService.location`| _Equivalent_<br/>(42793/42794)| **`HealthcareService.location`**
+| `HealthcareService.serviceName`| _Equivalent_<br/>(245/632)| `HealthcareService.name`| _Equivalent_<br/>(14793/14794)| `HealthcareService.name`| _Equivalent_<br/>(27841/27842)| `HealthcareService.name`| _Equivalent_<br/>(42795/42796)| **`HealthcareService.name`**
+| `HealthcareService.comment`| _Equivalent_<br/>(5471/5472)| `HealthcareService.comment`| _Equivalent_<br/>(14795/14796)| `HealthcareService.comment`| _Equivalent_<br/>(27843/27844)| `HealthcareService.comment`| _Equivalent_<br/>(42797/42798)| **`HealthcareService.comment`**
+| `HealthcareService.extraDetails`| _Equivalent_<br/>(5473/5474)| `HealthcareService.extraDetails`| _Equivalent_<br/>(14797/14798)| `HealthcareService.extraDetails`| _Equivalent_<br/>(27845/27846)| `HealthcareService.extraDetails`| _Equivalent_<br/>(42799/42800)| **`HealthcareService.extraDetails`**
+| `HealthcareService.photo`| _Equivalent_<br/>(5475/5476)| `HealthcareService.photo`| _Equivalent_<br/>(14799/14800)| `HealthcareService.photo`| _Equivalent_<br/>(27847/27848)| `HealthcareService.photo`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(42801)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42802)| **`HealthcareService.photo`**
+| | | | | | | | | **`HealthcareService.contact`**
+| `HealthcareService.coverageArea`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5479)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5480)| `HealthcareService.coverageArea`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14803)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14804)| `HealthcareService.coverageArea`| _Equivalent_<br/>(27851/27852)| `HealthcareService.coverageArea`| _Equivalent_<br/>(42804/42805)| **`HealthcareService.coverageArea`**
+| `HealthcareService.serviceProvisionCode`| _Equivalent_<br/>(5481/5482)| `HealthcareService.serviceProvisionCode`| _Equivalent_<br/>(14805/14806)| `HealthcareService.serviceProvisionCode`| _Equivalent_<br/>(27853/27854)| `HealthcareService.serviceProvisionCode`| _Equivalent_<br/>(42806/42807)| **`HealthcareService.serviceProvisionCode`**
+| `HealthcareService.eligibility`| _Equivalent_<br/>(5483/5484)| `HealthcareService.eligibility`| →→→→ _Equivalent_ →→→→ <br/>(27804)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(27803)| `HealthcareService.eligibility`| _Equivalent_<br/>(27855/27856)| `HealthcareService.eligibility`| _Equivalent_<br/>(42808/42809)| **`HealthcareService.eligibility`**
+| | | | | `HealthcareService.eligibility.id`| _Equivalent_<br/>(27857/27858)| `HealthcareService.eligibility.id`| _Equivalent_<br/>(42810/42811)| **`HealthcareService.eligibility.id`**
+| | | | | `HealthcareService.eligibility.extension`| _Equivalent_<br/>(27859/27860)| `HealthcareService.eligibility.extension`| _Equivalent_<br/>(42812/42813)| **`HealthcareService.eligibility.extension`**
+| | | | | `HealthcareService.eligibility.modifierExtension`| _Equivalent_<br/>(27861/27862)| `HealthcareService.eligibility.modifierExtension`| _Equivalent_<br/>(42814/42815)| **`HealthcareService.eligibility.modifierExtension`**
+| `HealthcareService.eligibility`| _Equivalent_<br/>(5483/5484)| `HealthcareService.eligibility`| _Equivalent_<br/>(1088/1538)| `HealthcareService.eligibility.code`| _Equivalent_<br/>(27863/27864)| `HealthcareService.eligibility.code`| _Equivalent_<br/>(42816/42817)| **`HealthcareService.eligibility.code`**
+| `HealthcareService.eligibilityNote`| _Equivalent_<br/>(5485/5486)| `HealthcareService.eligibilityNote`| _Equivalent_<br/>(1089/1539)| `HealthcareService.eligibility.comment`| _Equivalent_<br/>(27865/27866)| `HealthcareService.eligibility.comment`| _Equivalent_<br/>(42818/42819)| **`HealthcareService.eligibility.comment`**
+| `HealthcareService.programName`| _Equivalent_<br/>(5487/5488)| `HealthcareService.programName`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1090)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14807)| `HealthcareService.program`| _Equivalent_<br/>(27867/27868)| `HealthcareService.program`| _Equivalent_<br/>(42820/42821)| **`HealthcareService.program`**
+| `HealthcareService.characteristic`| _Equivalent_<br/>(5489/5490)| `HealthcareService.characteristic`| _Equivalent_<br/>(14808/14809)| `HealthcareService.characteristic`| _Equivalent_<br/>(27869/27870)| `HealthcareService.characteristic`| _Equivalent_<br/>(42822/42823)| **`HealthcareService.characteristic`**
+| | | | | `HealthcareService.communication`| _Equivalent_<br/>(27871/27872)| `HealthcareService.communication`| _Equivalent_<br/>(42824/42825)| **`HealthcareService.communication`**
+| `HealthcareService.referralMethod`| _Equivalent_<br/>(5491/5492)| `HealthcareService.referralMethod`| _Equivalent_<br/>(14810/14811)| `HealthcareService.referralMethod`| _Equivalent_<br/>(27873/27874)| `HealthcareService.referralMethod`| _Equivalent_<br/>(42826/42827)| **`HealthcareService.referralMethod`**
+| `HealthcareService.appointmentRequired`| _Equivalent_<br/>(5493/5494)| `HealthcareService.appointmentRequired`| _Equivalent_<br/>(14812/14813)| `HealthcareService.appointmentRequired`| _Equivalent_<br/>(27875/27876)| `HealthcareService.appointmentRequired`| _Equivalent_<br/>(42828/42829)| **`HealthcareService.appointmentRequired`**
+| | | | | | | | | **`HealthcareService.availability`**
+| | | `HealthcareService.endpoint`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14845)| `HealthcareService.endpoint`| _Equivalent_<br/>(27907/27908)| `HealthcareService.endpoint`| _Equivalent_<br/>(42845/42846)| **`HealthcareService.endpoint`**
+| *28 of 48 elements used* | | *29 of 45 elements used* | | *34 of 50 elements used* | | *34 of 50 elements used* | | *37 of 37 elements used* 
+

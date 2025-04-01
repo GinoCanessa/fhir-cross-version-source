@@ -1,0 +1,276 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:09 PM
+
+### Claim
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | Claim |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/Claim` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for Claim Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `51` |
+| Database Snapshot Count | `118` |
+| Database Differential Count | `86` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `Claim` | `Claim` | `Claim` | Claim | Claim, Pre-determination or Pre-authorization | 0..* | Claim |  |  |
+| `Claim.accident` | `Claim.accident` | `accident` |  | Accident Date | 0..1 | date |  |  |
+| `Claim.accidentType` | `Claim.accidentType` | `accidentType` |  | Accident Type | 0..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/v3-ActIncidentCode` |
+| `Claim.additionalMaterials` | `Claim.additionalMaterials` | `additionalMaterials` |  | Additional materials, documents, etc. | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/additionalmaterials` |
+| `Claim.condition` | `Claim.condition` | `condition` |  | List of presenting Conditions | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/fm-conditions` |
+| `Claim.contained` | `Claim.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `Claim.coverage` | `Claim.coverage` | `coverage` |  | Insurance or medical plan | 0..* | BackboneElement |  |  |
+| `Claim.coverage.businessArrangement` | `Claim.coverage.businessArrangement` | `businessArrangement` |  | Business agreement | 0..1 | string |  |  |
+| `Claim.coverage.claimResponse` | `Claim.coverage.claimResponse` | `claimResponse` |  | Adjudication results | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/ClaimResponse) |  |  |
+| `Claim.coverage.coverage` | `Claim.coverage.coverage` | `coverage` |  | Insurance information | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Coverage) |  |  |
+| `Claim.coverage.extension` | `Claim.coverage.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.coverage.focal` | `Claim.coverage.focal` | `focal` |  | The focal Coverage | 1..1 | boolean |  |  |
+| `Claim.coverage.id` | `Claim.coverage.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.coverage.modifierExtension` | `Claim.coverage.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.coverage.originalRuleset` | `Claim.coverage.originalRuleset` | `originalRuleset` |  | Original version | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/ruleset` |
+| `Claim.coverage.preAuthRef` | `Claim.coverage.preAuthRef` | `preAuthRef` |  | Pre-Authorization/Determination Reference | 0..* | string |  |  |
+| `Claim.coverage.relationship` | `Claim.coverage.relationship` | `relationship` |  | Patient relationship to subscriber | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/relationship` |
+| `Claim.coverage.sequence` | `Claim.coverage.sequence` | `sequence` |  | Service instance identifier | 1..1 | positiveInt |  |  |
+| `Claim.created` | `Claim.created` | `created` |  | Creation date | 0..1 | dateTime |  |  |
+| `Claim.diagnosis` | `Claim.diagnosis` | `diagnosis` |  | Diagnosis | 0..* | BackboneElement |  |  |
+| `Claim.diagnosis.diagnosis` | `Claim.diagnosis.diagnosis` | `diagnosis` |  | Patient's list of diagnosis | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/icd-10` |
+| `Claim.diagnosis.extension` | `Claim.diagnosis.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.diagnosis.id` | `Claim.diagnosis.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.diagnosis.modifierExtension` | `Claim.diagnosis.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.diagnosis.sequence` | `Claim.diagnosis.sequence` | `sequence` |  | Sequence of diagnosis | 1..1 | positiveInt |  |  |
+| `Claim.enterer` | `Claim.enterer` | `enterer` |  | Author | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Claim.exception` | `Claim.exception` | `exception` |  | Eligibility exceptions | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/claim-exception` |
+| `Claim.extension` | `Claim.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.facility` | `Claim.facility` | `facility` |  | Servicing Facility | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Location) |  |  |
+| `Claim.fundsReserve` | `Claim.fundsReserve` | `fundsReserve` |  | Funds requested to be reserved | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/fundsreserve` |
+| `Claim.id` | `Claim.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `Claim.identifier` | `Claim.identifier` | `identifier` |  | Claim number | 0..* | Identifier |  |  |
+| `Claim.implicitRules` | `Claim.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `Claim.interventionException` | `Claim.interventionException` | `interventionException` |  | Intervention and exception code (Pharma) | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/intervention` |
+| `Claim.item` | `Claim.item` | `item` |  | Goods and Services | 0..* | BackboneElement |  |  |
+| `Claim.item.bodySite` | `Claim.item.bodySite` | `bodySite` |  | Service Location | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/tooth` |
+| `Claim.item.detail` | `Claim.item.detail` | `detail` |  | Additional items | 0..* | BackboneElement |  |  |
+| `Claim.item.detail.extension` | `Claim.item.detail.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.item.detail.factor` | `Claim.item.detail.factor` | `factor` |  | Price scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.detail.id` | `Claim.item.detail.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.item.detail.modifierExtension` | `Claim.item.detail.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.item.detail.net` | `Claim.item.detail.net` | `net` |  | Total additional item cost | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.item.detail.points` | `Claim.item.detail.points` | `points` |  | Difficulty scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.detail.quantity` | `Claim.item.detail.quantity` | `quantity` |  | Count of Products or Services | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/SimpleQuantity] |  |  |
+| `Claim.item.detail.sequence` | `Claim.item.detail.sequence` | `sequence` |  | Service instance | 1..1 | positiveInt |  |  |
+| `Claim.item.detail.service` | `Claim.item.detail.service` | `service` |  | Additional item codes | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/service-uscls` |
+| `Claim.item.detail.subDetail` | `Claim.item.detail.subDetail` | `subDetail` |  | Additional items | 0..* | BackboneElement |  |  |
+| `Claim.item.detail.subDetail.extension` | `Claim.item.detail.subDetail.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.item.detail.subDetail.factor` | `Claim.item.detail.subDetail.factor` | `factor` |  | Price scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.detail.subDetail.id` | `Claim.item.detail.subDetail.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.item.detail.subDetail.modifierExtension` | `Claim.item.detail.subDetail.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.item.detail.subDetail.net` | `Claim.item.detail.subDetail.net` | `net` |  | Net additional item cost | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.item.detail.subDetail.points` | `Claim.item.detail.subDetail.points` | `points` |  | Difficulty scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.detail.subDetail.quantity` | `Claim.item.detail.subDetail.quantity` | `quantity` |  | Count of Products or Services | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/SimpleQuantity] |  |  |
+| `Claim.item.detail.subDetail.sequence` | `Claim.item.detail.subDetail.sequence` | `sequence` |  | Service instance | 1..1 | positiveInt |  |  |
+| `Claim.item.detail.subDetail.service` | `Claim.item.detail.subDetail.service` | `service` |  | Additional item codes | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/service-uscls` |
+| `Claim.item.detail.subDetail.type` | `Claim.item.detail.subDetail.type` | `type` |  | Type of product or service | 1..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode` |
+| `Claim.item.detail.subDetail.udi` | `Claim.item.detail.subDetail.udi` | `udi` |  | Unique Device Identifier | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/udi` |
+| `Claim.item.detail.subDetail.unitPrice` | `Claim.item.detail.subDetail.unitPrice` | `unitPrice` |  | Fee, charge or cost per point | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.item.detail.type` | `Claim.item.detail.type` | `type` |  | Group or type of product or service | 1..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode` |
+| `Claim.item.detail.udi` | `Claim.item.detail.udi` | `udi` |  | Unique Device Identifier | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/udi` |
+| `Claim.item.detail.unitPrice` | `Claim.item.detail.unitPrice` | `unitPrice` |  | Fee, charge or cost per point | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.item.diagnosisLinkId` | `Claim.item.diagnosisLinkId` | `diagnosisLinkId` |  | Diagnosis Link | 0..* | positiveInt |  |  |
+| `Claim.item.extension` | `Claim.item.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.item.factor` | `Claim.item.factor` | `factor` |  | Price scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.id` | `Claim.item.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.item.modifier` | `Claim.item.modifier` | `modifier` |  | Service/Product billing modifiers | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/claim-modifiers` |
+| `Claim.item.modifierExtension` | `Claim.item.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.item.net` | `Claim.item.net` | `net` |  | Total item cost | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.item.points` | `Claim.item.points` | `points` |  | Difficulty scaling factor | 0..1 | decimal |  |  |
+| `Claim.item.prosthesis` | `Claim.item.prosthesis` | `prosthesis` |  | Prosthetic details | 0..1 | BackboneElement |  |  |
+| `Claim.item.prosthesis.extension` | `Claim.item.prosthesis.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.item.prosthesis.id` | `Claim.item.prosthesis.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.item.prosthesis.initial` | `Claim.item.prosthesis.initial` | `initial` |  | Is this the initial service | 0..1 | boolean |  |  |
+| `Claim.item.prosthesis.modifierExtension` | `Claim.item.prosthesis.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.item.prosthesis.priorDate` | `Claim.item.prosthesis.priorDate` | `priorDate` |  | Initial service Date | 0..1 | date |  |  |
+| `Claim.item.prosthesis.priorMaterial` | `Claim.item.prosthesis.priorMaterial` | `priorMaterial` |  | Prosthetic Material | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/oral-prosthodontic-material` |
+| `Claim.item.provider` | `Claim.item.provider` | `provider` |  | Responsible practitioner | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Claim.item.quantity` | `Claim.item.quantity` | `quantity` |  | Count of Products or Services | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/SimpleQuantity] |  |  |
+| `Claim.item.sequence` | `Claim.item.sequence` | `sequence` |  | Service instance | 1..1 | positiveInt |  |  |
+| `Claim.item.service` | `Claim.item.service` | `service` |  | Item Code | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/service-uscls` |
+| `Claim.item.serviceDate` | `Claim.item.serviceDate` | `serviceDate` |  | Date of Service | 0..1 | date |  |  |
+| `Claim.item.subSite` | `Claim.item.subSite` | `subSite` |  | Service Sub-location | 0..* | Coding | `Example` | `http://hl7.org/fhir/ValueSet/surface` |
+| `Claim.item.type` | `Claim.item.type` | `type` |  | Group or type of product or service | 1..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode` |
+| `Claim.item.udi` | `Claim.item.udi` | `udi` |  | Unique Device Identifier | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/udi` |
+| `Claim.item.unitPrice` | `Claim.item.unitPrice` | `unitPrice` |  | Fee, charge or cost per point | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `Claim.language` | `Claim.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `Claim.meta` | `Claim.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `Claim.missingTeeth` | `Claim.missingTeeth` | `missingTeeth` |  | Only if type = oral | 0..* | BackboneElement |  |  |
+| `Claim.missingTeeth.extension` | `Claim.missingTeeth.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.missingTeeth.extractionDate` | `Claim.missingTeeth.extractionDate` | `extractionDate` |  | Date of Extraction | 0..1 | date |  |  |
+| `Claim.missingTeeth.id` | `Claim.missingTeeth.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.missingTeeth.modifierExtension` | `Claim.missingTeeth.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.missingTeeth.reason` | `Claim.missingTeeth.reason` | `reason` |  | Reason for missing | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/missing-tooth-reason` |
+| `Claim.missingTeeth.tooth` | `Claim.missingTeeth.tooth` | `tooth` |  | Tooth Code | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/teeth` |
+| `Claim.modifierExtension` | `Claim.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.organization` | `Claim.organization` | `organization` |  | Responsible organization | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `Claim.originalPrescription` | `Claim.originalPrescription` | `originalPrescription` |  | Original Prescription | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/MedicationOrder) |  |  |
+| `Claim.originalRuleset` | `Claim.originalRuleset` | `originalRuleset` |  | Original specification followed | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/ruleset` |
+| `Claim.patient` | `Claim.patient` | `patient` |  | The subject of the Products and Services | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient) |  |  |
+| `Claim.payee` | `Claim.payee` | `payee` |  | Payee | 0..1 | BackboneElement |  |  |
+| `Claim.payee.extension` | `Claim.payee.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Claim.payee.id` | `Claim.payee.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Claim.payee.modifierExtension` | `Claim.payee.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Claim.payee.organization` | `Claim.payee.organization` | `organization` |  | Organization who is the payee | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `Claim.payee.person` | `Claim.payee.person` | `person` |  | Other person who is the payee | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient) |  |  |
+| `Claim.payee.provider` | `Claim.payee.provider` | `provider` |  | Provider who is the payee | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Claim.payee.type` | `Claim.payee.type` | `type` |  | Party to be paid any benefits payable | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/payeetype` |
+| `Claim.prescription` | `Claim.prescription` | `prescription` |  | Prescription | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/MedicationOrder), Reference(http://hl7.org/fhir/StructureDefinition/VisionPrescription) |  |  |
+| `Claim.priority` | `Claim.priority` | `priority` |  | Desired processing priority | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/process-priority` |
+| `Claim.provider` | `Claim.provider` | `provider` |  | Responsible provider | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Claim.referral` | `Claim.referral` | `referral` |  | Treatment Referral | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/ReferralRequest) |  |  |
+| `Claim.ruleset` | `Claim.ruleset` | `ruleset` |  | Current specification followed | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/ruleset` |
+| `Claim.school` | `Claim.school` | `school` |  | Name of School | 0..1 | string |  |  |
+| `Claim.target` | `Claim.target` | `target` |  | Insurer | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `Claim.text` | `Claim.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `Claim.type` | `Claim.type` | `type` |  | institutional \| oral \| pharmacy \| professional \| vision | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/claim-type-link` |
+| `Claim.use` | `Claim.use` | `use` |  | complete \| proposed \| exploratory \| other | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/claim-use-link` |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [Claim](/docs/R2/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `83`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `249`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R3/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `626`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R4/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1423`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R4B/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `945`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1174`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R5/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition Claim from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 Claim| Relationship | [R3 Claim](/docs/R3/Resources/Claim.md)| Relationship | [R4 Claim](/docs/R4/Resources/Claim.md)| Relationship | [R4B Claim](/docs/R4B/Resources/Claim.md)| Relationship | [R5 Claim](/docs/R5/Resources/Claim.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`Claim`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3376)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3377)| `Claim`| _Equivalent_<br/>(11245/11246)| `Claim`| _Equivalent_<br/>(22956/22957)| `Claim`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(38218)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(38219)| `Claim`
+| **`Claim.id`**| _Equivalent_<br/>(3378/3379)| `Claim.id`| _Equivalent_<br/>(11247/11248)| `Claim.id`| _Equivalent_<br/>(22958/22959)| `Claim.id`| _Equivalent_<br/>(38220/38221)| `Claim.id`
+| **`Claim.meta`**| _Equivalent_<br/>(3380/3381)| `Claim.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11249)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11250)| `Claim.meta`| _Equivalent_<br/>(22960/22961)| `Claim.meta`| _Equivalent_<br/>(38222/38223)| `Claim.meta`
+| **`Claim.implicitRules`**| _Equivalent_<br/>(3382/3383)| `Claim.implicitRules`| _Equivalent_<br/>(11251/11252)| `Claim.implicitRules`| _Equivalent_<br/>(22962/22963)| `Claim.implicitRules`| _Equivalent_<br/>(38224/38225)| `Claim.implicitRules`
+| **`Claim.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3384)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3385)| `Claim.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11253)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11254)| `Claim.language`| _Equivalent_<br/>(22964/22965)| `Claim.language`| _Equivalent_<br/>(38226/38227)| `Claim.language`
+| **`Claim.text`**| _Equivalent_<br/>(3386/3387)| `Claim.text`| _Equivalent_<br/>(11255/11256)| `Claim.text`| _Equivalent_<br/>(22966/22967)| `Claim.text`| _Equivalent_<br/>(38228/38229)| `Claim.text`
+| **`Claim.contained`**| _Equivalent_<br/>(3388/3389)| `Claim.contained`| _Equivalent_<br/>(11257/11258)| `Claim.contained`| _Equivalent_<br/>(22968/22969)| `Claim.contained`| _Equivalent_<br/>(38230/38231)| `Claim.contained`
+| **`Claim.extension`**| _Equivalent_<br/>(3390/3391)| `Claim.extension`| _Equivalent_<br/>(11259/11260)| `Claim.extension`| _Equivalent_<br/>(22970/22971)| `Claim.extension`| _Equivalent_<br/>(38232/38233)| `Claim.extension`
+| **`Claim.modifierExtension`**| _Equivalent_<br/>(3392/3393)| `Claim.modifierExtension`| _Equivalent_<br/>(11261/11262)| `Claim.modifierExtension`| _Equivalent_<br/>(22972/22973)| `Claim.modifierExtension`| _Equivalent_<br/>(38234/38235)| `Claim.modifierExtension`
+| **`Claim.type`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3394)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3395)| `Claim.type`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11267)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11268)| `Claim.type`| _Equivalent_<br/>(22978/22979)| `Claim.type`| _Equivalent_<br/>(38240/38241)| `Claim.type`
+| **`Claim.identifier`**| _Equivalent_<br/>(3396/3397)| `Claim.identifier`| _Equivalent_<br/>(11263/11264)| `Claim.identifier`| _Equivalent_<br/>(22974/22975)| `Claim.identifier`| _Equivalent_<br/>(38236/38237)| `Claim.identifier`
+| **`Claim.ruleset`**| | | | | | | | | 
+| **`Claim.originalRuleset`**| | | | | | | | | 
+| **`Claim.created`**| _Equivalent_<br/>(3398/3399)| `Claim.created`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11277)<hr/>←←←← _Equivalent_ ←←←← <br/>(11278)| `Claim.created`| _Equivalent_<br/>(22988/22989)| `Claim.created`| _Equivalent_<br/>(38250/38251)| `Claim.created`
+| **`Claim.target`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(91)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(518)| `Claim.insurer`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11281)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11282)| `Claim.insurer`| _Equivalent_<br/>(22992/22993)| `Claim.insurer`| _Equivalent_<br/>(38254/38255)| `Claim.insurer`
+| **`Claim.provider`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3400)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3401)| `Claim.provider`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11283)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11284)| `Claim.provider`| _Equivalent_<br/>(22994/22995)| `Claim.provider`| →→→→ _Equivalent_ →→→→ <br/>(38256)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38257)| `Claim.provider`
+| **`Claim.organization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3402)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3403)| `Claim.organization`| | | | | | | 
+| **`Claim.use`**| _Equivalent_<br/>(3404/3405)| `Claim.use`| →→→→ _RelatedTo_ →→→→ <br/>(11271)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11272)| `Claim.use`| _Equivalent_<br/>(22982/22983)| `Claim.use`| _Equivalent_<br/>(38244/38245)| `Claim.use`
+| **`Claim.priority`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3406)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3407)| `Claim.priority`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11285)<hr/>←←←← _Equivalent_ ←←←← <br/>(11286)| `Claim.priority`| _Equivalent_<br/>(22996/22997)| `Claim.priority`| →→→→ _Equivalent_ →→→→ <br/>(38258)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38259)| `Claim.priority`
+| **`Claim.fundsReserve`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3408)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3409)| `Claim.fundsReserve`| _Equivalent_<br/>(11287/11288)| `Claim.fundsReserve`| _Equivalent_<br/>(22998/22999)| `Claim.fundsReserve`| _Equivalent_<br/>(38260/38261)| `Claim.fundsReserve`
+| **`Claim.enterer`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3410)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3411)| `Claim.enterer`| →→→→ _RelatedTo_ →→→→ <br/>(11279)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11280)| `Claim.enterer`| _Equivalent_<br/>(22990/22991)| `Claim.enterer`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(38252)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38253)| `Claim.enterer`
+| **`Claim.facility`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3412)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3413)| `Claim.facility`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11322)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11323)| `Claim.facility`| _Equivalent_<br/>(23032/23033)| `Claim.facility`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(38294)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38295)| `Claim.facility`
+| **`Claim.prescription`**| →→→→ _RelatedTo_ →→→→ <br/>(3414)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3415)| `Claim.prescription`| →→→→ _RelatedTo_ →→→→ <br/>(11303)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11304)| `Claim.prescription`| _Equivalent_<br/>(23014/23015)| `Claim.prescription`| _Equivalent_<br/>(38276/38277)| `Claim.prescription`
+| **`Claim.originalPrescription`**| →→→→ _RelatedTo_ →→→→ <br/>(3416)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3417)| `Claim.originalPrescription`| →→→→ _RelatedTo_ →→→→ <br/>(11305)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11306)| `Claim.originalPrescription`| _Equivalent_<br/>(23016/23017)| `Claim.originalPrescription`| _Equivalent_<br/>(38278/38279)| `Claim.originalPrescription`
+| **`Claim.payee`**| _Equivalent_<br/>(3418/3419)| `Claim.payee`| _Equivalent_<br/>(11307/11308)| `Claim.payee`| _Equivalent_<br/>(23018/23019)| `Claim.payee`| _Equivalent_<br/>(38280/38281)| `Claim.payee`
+| **`Claim.payee.id`**| _Equivalent_<br/>(3420/3421)| `Claim.payee.id`| _Equivalent_<br/>(11309/11310)| `Claim.payee.id`| _Equivalent_<br/>(23020/23021)| `Claim.payee.id`| _Equivalent_<br/>(38282/38283)| `Claim.payee.id`
+| **`Claim.payee.extension`**| _Equivalent_<br/>(3422/3423)| `Claim.payee.extension`| _Equivalent_<br/>(11311/11312)| `Claim.payee.extension`| _Equivalent_<br/>(23022/23023)| `Claim.payee.extension`| _Equivalent_<br/>(38284/38285)| `Claim.payee.extension`
+| **`Claim.payee.modifierExtension`**| _Equivalent_<br/>(3424/3425)| `Claim.payee.modifierExtension`| _Equivalent_<br/>(11313/11314)| `Claim.payee.modifierExtension`| _Equivalent_<br/>(23024/23025)| `Claim.payee.modifierExtension`| _Equivalent_<br/>(38286/38287)| `Claim.payee.modifierExtension`
+| **`Claim.payee.type`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3426)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3427)| `Claim.payee.type`| _Equivalent_<br/>(11315/11316)| `Claim.payee.type`| _Equivalent_<br/>(23026/23027)| `Claim.payee.type`| _Equivalent_<br/>(38288/38289)| `Claim.payee.type`
+| **`Claim.payee.provider`**| →→→→ _RelatedTo_ →→→→ <br/>(88)<hr/>←←←← _RelatedTo_ ←←←← <br/>(528)| `Claim.payee.party`| →→→→ _RelatedTo_ →→→→ <br/>(11318)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11319)| `Claim.payee.party`| _Equivalent_<br/>(23028/23029)| `Claim.payee.party`| _Equivalent_<br/>(38290/38291)| `Claim.payee.party`
+| **`Claim.payee.organization`**| →→→→ _RelatedTo_ →→→→ <br/>(86)<hr/>←←←← _RelatedTo_ ←←←← <br/>(526)| `Claim.payee.party`| →→→→ _RelatedTo_ →→→→ <br/>(11318)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11319)| `Claim.payee.party`| _Equivalent_<br/>(23028/23029)| `Claim.payee.party`| _Equivalent_<br/>(38290/38291)| `Claim.payee.party`
+| **`Claim.payee.person`**| →→→→ _RelatedTo_ →→→→ <br/>(87)<hr/>←←←← _RelatedTo_ ←←←← <br/>(527)| `Claim.payee.party`| →→→→ _RelatedTo_ →→→→ <br/>(11318)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11319)| `Claim.payee.party`| _Equivalent_<br/>(23028/23029)| `Claim.payee.party`| _Equivalent_<br/>(38290/38291)| `Claim.payee.party`
+| **`Claim.referral`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3428)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3429)| `Claim.referral`| →→→→ _RelatedTo_ →→→→ <br/>(11320)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11321)| `Claim.referral`| _Equivalent_<br/>(23030/23031)| `Claim.referral`| _Equivalent_<br/>(38292/38293)| `Claim.referral`
+| **`Claim.diagnosis`**| _Equivalent_<br/>(3430/3431)| `Claim.diagnosis`| _Equivalent_<br/>(11345/11346)| `Claim.diagnosis`| _Equivalent_<br/>(23072/23073)| `Claim.diagnosis`| _Equivalent_<br/>(38332/38333)| `Claim.diagnosis`
+| **`Claim.diagnosis.id`**| _Equivalent_<br/>(3432/3433)| `Claim.diagnosis.id`| _Equivalent_<br/>(11347/11348)| `Claim.diagnosis.id`| _Equivalent_<br/>(23074/23075)| `Claim.diagnosis.id`| _Equivalent_<br/>(38334/38335)| `Claim.diagnosis.id`
+| **`Claim.diagnosis.extension`**| _Equivalent_<br/>(3434/3435)| `Claim.diagnosis.extension`| _Equivalent_<br/>(11349/11350)| `Claim.diagnosis.extension`| _Equivalent_<br/>(23076/23077)| `Claim.diagnosis.extension`| _Equivalent_<br/>(38336/38337)| `Claim.diagnosis.extension`
+| **`Claim.diagnosis.modifierExtension`**| _Equivalent_<br/>(3436/3437)| `Claim.diagnosis.modifierExtension`| _Equivalent_<br/>(11351/11352)| `Claim.diagnosis.modifierExtension`| _Equivalent_<br/>(23078/23079)| `Claim.diagnosis.modifierExtension`| _Equivalent_<br/>(38338/38339)| `Claim.diagnosis.modifierExtension`
+| **`Claim.diagnosis.sequence`**| _Equivalent_<br/>(3438/3439)| `Claim.diagnosis.sequence`| _Equivalent_<br/>(11353/11354)| `Claim.diagnosis.sequence`| _Equivalent_<br/>(23080/23081)| `Claim.diagnosis.sequence`| _Equivalent_<br/>(38340/38341)| `Claim.diagnosis.sequence`
+| **`Claim.diagnosis.diagnosis`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(68)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(510)| `Claim.diagnosis.diagnosis[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11355)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11356)| `Claim.diagnosis.diagnosis[x]`| _Equivalent_<br/>(23082/23083)| `Claim.diagnosis.diagnosis[x]`| _Equivalent_<br/>(38342/38343)| `Claim.diagnosis.diagnosis[x]`
+| **`Claim.condition`**| | | | | | | | | 
+| **`Claim.patient`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3440)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3441)| `Claim.patient`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11273)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11274)| `Claim.patient`| _Equivalent_<br/>(22984/22985)| `Claim.patient`| _Equivalent_<br/>(38246/38247)| `Claim.patient`
+| **`Claim.coverage`**| _Equivalent_<br/>(59/511)| `Claim.insurance`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11375)<hr/>←←←← _Equivalent_ ←←←← <br/>(11376)| `Claim.insurance`| _Equivalent_<br/>(23108/23109)| `Claim.insurance`| →→→→ _Equivalent_ →→→→ <br/>(38367)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38368)| `Claim.insurance`
+| **`Claim.coverage.id`**| | | | | | | | | 
+| **`Claim.coverage.extension`**| | | | | | | | | 
+| **`Claim.coverage.modifierExtension`**| | | | | | | | | 
+| **`Claim.coverage.sequence`**| _Equivalent_<br/>(67/517)| `Claim.insurance.sequence`| _Equivalent_<br/>(11383/11384)| `Claim.insurance.sequence`| _Equivalent_<br/>(23116/23117)| `Claim.insurance.sequence`| _Equivalent_<br/>(38375/38376)| `Claim.insurance.sequence`
+| **`Claim.coverage.focal`**| _Equivalent_<br/>(63/515)| `Claim.insurance.focal`| _Equivalent_<br/>(11385/11386)| `Claim.insurance.focal`| _Equivalent_<br/>(23118/23119)| `Claim.insurance.focal`| _Equivalent_<br/>(38377/38378)| `Claim.insurance.focal`
+| **`Claim.coverage.coverage`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(62)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(514)| `Claim.insurance.coverage`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11387)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11388)| `Claim.insurance.coverage`| _Equivalent_<br/>(23122/23123)| `Claim.insurance.coverage`| _Equivalent_<br/>(38381/38382)| `Claim.insurance.coverage`
+| **`Claim.coverage.businessArrangement`**| _Equivalent_<br/>(60/512)| `Claim.insurance.businessArrangement`| _Equivalent_<br/>(11389/11390)| `Claim.insurance.businessArrangement`| _Equivalent_<br/>(23124/23125)| `Claim.insurance.businessArrangement`| _Equivalent_<br/>(38383/38384)| `Claim.insurance.businessArrangement`
+| **`Claim.coverage.relationship`**| | | | | | | | | 
+| **`Claim.coverage.preAuthRef`**| _Equivalent_<br/>(65/516)| `Claim.insurance.preAuthRef`| _Equivalent_<br/>(11391/11392)| `Claim.insurance.preAuthRef`| _Equivalent_<br/>(23126/23127)| `Claim.insurance.preAuthRef`| _Equivalent_<br/>(38385/38386)| `Claim.insurance.preAuthRef`
+| **`Claim.coverage.claimResponse`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(61)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(513)| `Claim.insurance.claimResponse`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11393)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11394)| `Claim.insurance.claimResponse`| _Equivalent_<br/>(23128/23129)| `Claim.insurance.claimResponse`| _Equivalent_<br/>(38387/38388)| `Claim.insurance.claimResponse`
+| **`Claim.coverage.originalRuleset`**| | | | | | | | | 
+| **`Claim.exception`**| | | | | | | | | 
+| **`Claim.school`**| | | | | | | | | 
+| **`Claim.accident`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3445)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3446)| `Claim.accident`| _Equivalent_<br/>(11395/11396)| `Claim.accident`| _Equivalent_<br/>(23130/23131)| `Claim.accident`| _Equivalent_<br/>(38389/38390)| `Claim.accident`
+| **`Claim.accidentType`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(56)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(509)| `Claim.accident.type`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11405)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11406)| `Claim.accident.type`| _Equivalent_<br/>(23140/23141)| `Claim.accident.type`| _Equivalent_<br/>(38399/38400)| `Claim.accident.type`
+| **`Claim.interventionException`**| | | | | | | | | 
+| **`Claim.item`**| _Equivalent_<br/>(3447/3448)| `Claim.item`| _Equivalent_<br/>(11409/11410)| `Claim.item`| _Equivalent_<br/>(23144/23145)| `Claim.item`| _Equivalent_<br/>(38403/38404)| `Claim.item`
+| **`Claim.item.id`**| _Equivalent_<br/>(3449/3450)| `Claim.item.id`| _Equivalent_<br/>(11411/11412)| `Claim.item.id`| _Equivalent_<br/>(23146/23147)| `Claim.item.id`| _Equivalent_<br/>(38405/38406)| `Claim.item.id`
+| **`Claim.item.extension`**| _Equivalent_<br/>(3451/3452)| `Claim.item.extension`| _Equivalent_<br/>(11413/11414)| `Claim.item.extension`| _Equivalent_<br/>(23148/23149)| `Claim.item.extension`| _Equivalent_<br/>(38407/38408)| `Claim.item.extension`
+| **`Claim.item.modifierExtension`**| _Equivalent_<br/>(3453/3454)| `Claim.item.modifierExtension`| _Equivalent_<br/>(11415/11416)| `Claim.item.modifierExtension`| _Equivalent_<br/>(23150/23151)| `Claim.item.modifierExtension`| _Equivalent_<br/>(38409/38410)| `Claim.item.modifierExtension`
+| **`Claim.item.sequence`**| _Equivalent_<br/>(3455/3456)| `Claim.item.sequence`| _Equivalent_<br/>(11417/11418)| `Claim.item.sequence`| _Equivalent_<br/>(23152/23153)| `Claim.item.sequence`| _Equivalent_<br/>(38411/38412)| `Claim.item.sequence`
+| **`Claim.item.type`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(81)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(519)| `Claim.item.category`| _Equivalent_<br/>(11421/11422)| `Claim.item.category`| _Equivalent_<br/>(23164/23165)| `Claim.item.category`| _Equivalent_<br/>(38423/38424)| `Claim.item.category`
+| **`Claim.item.provider`**| | | | | | | | | 
+| **`Claim.item.diagnosisLinkId`**| _Equivalent_<br/>(3457/3458)| `Claim.item.diagnosisLinkId`| _Equivalent_<br/>(861/1379)| `Claim.item.diagnosisSequence`| _Equivalent_<br/>(23156/23157)| `Claim.item.diagnosisSequence`| _Equivalent_<br/>(38415/38416)| `Claim.item.diagnosisSequence`
+| **`Claim.item.service`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3459)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3460)| `Claim.item.service`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(864)<hr/>←←←← _Equivalent_ ←←←← <br/>(1382)| `Claim.item.productOrService`| _Equivalent_<br/>(23166/23167)| `Claim.item.productOrService`| →→→→ _Equivalent_ →→→→ <br/>(38425)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38426)| `Claim.item.productOrService`
+| **`Claim.item.serviceDate`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(80)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(525)| `Claim.item.serviced[x]`| _Equivalent_<br/>(11427/11428)| `Claim.item.serviced[x]`| _Equivalent_<br/>(23172/23173)| `Claim.item.serviced[x]`| _Equivalent_<br/>(38431/38432)| `Claim.item.serviced[x]`
+| **`Claim.item.quantity`**| _Equivalent_<br/>(3461/3462)| `Claim.item.quantity`| _Equivalent_<br/>(11431/11432)| `Claim.item.quantity`| _Equivalent_<br/>(23176/23177)| `Claim.item.quantity`| _Equivalent_<br/>(38435/38436)| `Claim.item.quantity`
+| **`Claim.item.unitPrice`**| →→→→ _RelatedTo_ →→→→ <br/>(3463)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3464)| `Claim.item.unitPrice`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11433)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11434)| `Claim.item.unitPrice`| _Equivalent_<br/>(23178/23179)| `Claim.item.unitPrice`| _Equivalent_<br/>(38437/38438)| `Claim.item.unitPrice`
+| **`Claim.item.factor`**| →→→→ _Equivalent_ →→→→ <br/>(3465)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3466)| `Claim.item.factor`| _Equivalent_<br/>(11435/11436)| `Claim.item.factor`| _Equivalent_<br/>(23180/23181)| `Claim.item.factor`| _Equivalent_<br/>(38439/38440)| `Claim.item.factor`
+| **`Claim.item.points`**| →→→→ _Equivalent_ →→→→ <br/>(75)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(524)| `Claim.item.factor`| _Equivalent_<br/>(11435/11436)| `Claim.item.factor`| _Equivalent_<br/>(23180/23181)| `Claim.item.factor`| _Equivalent_<br/>(38439/38440)| `Claim.item.factor`
+| **`Claim.item.net`**| →→→→ _RelatedTo_ →→→→ <br/>(3467)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3468)| `Claim.item.net`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11437)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11438)| `Claim.item.net`| _Equivalent_<br/>(23182/23183)| `Claim.item.net`| _Equivalent_<br/>(38441/38442)| `Claim.item.net`
+| **`Claim.item.udi`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3469)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3470)| `Claim.item.udi`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11439)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11440)| `Claim.item.udi`| _Equivalent_<br/>(23184/23185)| `Claim.item.udi`| _Equivalent_<br/>(38443/38444)| `Claim.item.udi`
+| **`Claim.item.bodySite`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3471)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3472)| `Claim.item.bodySite`| _Equivalent_<br/>(11441/11442)| `Claim.item.bodySite`| _Equivalent_<br/>(23186/23187)| `Claim.item.bodySite`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(38445)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(38446)| `Claim.item.bodySite`
+| **`Claim.item.subSite`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3473)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3474)| `Claim.item.subSite`| _Equivalent_<br/>(11443/11444)| `Claim.item.subSite`| _Equivalent_<br/>(23188/23189)| `Claim.item.subSite`| | | 
+| **`Claim.item.modifier`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3475)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3476)| `Claim.item.modifier`| _Equivalent_<br/>(11423/11424)| `Claim.item.modifier`| _Equivalent_<br/>(23168/23169)| `Claim.item.modifier`| _Equivalent_<br/>(38427/38428)| `Claim.item.modifier`
+| **`Claim.item.detail`**| _Equivalent_<br/>(3477/3478)| `Claim.item.detail`| _Equivalent_<br/>(11447/11448)| `Claim.item.detail`| _Equivalent_<br/>(23192/23193)| `Claim.item.detail`| _Equivalent_<br/>(38450/38451)| `Claim.item.detail`
+| **`Claim.item.detail.id`**| _Equivalent_<br/>(3479/3480)| `Claim.item.detail.id`| _Equivalent_<br/>(11449/11450)| `Claim.item.detail.id`| _Equivalent_<br/>(23194/23195)| `Claim.item.detail.id`| _Equivalent_<br/>(38452/38453)| `Claim.item.detail.id`
+| **`Claim.item.detail.extension`**| _Equivalent_<br/>(3481/3482)| `Claim.item.detail.extension`| _Equivalent_<br/>(11451/11452)| `Claim.item.detail.extension`| _Equivalent_<br/>(23196/23197)| `Claim.item.detail.extension`| _Equivalent_<br/>(38454/38455)| `Claim.item.detail.extension`
+| **`Claim.item.detail.modifierExtension`**| _Equivalent_<br/>(3483/3484)| `Claim.item.detail.modifierExtension`| _Equivalent_<br/>(11453/11454)| `Claim.item.detail.modifierExtension`| _Equivalent_<br/>(23198/23199)| `Claim.item.detail.modifierExtension`| _Equivalent_<br/>(38456/38457)| `Claim.item.detail.modifierExtension`
+| **`Claim.item.detail.sequence`**| _Equivalent_<br/>(3485/3486)| `Claim.item.detail.sequence`| _Equivalent_<br/>(11455/11456)| `Claim.item.detail.sequence`| _Equivalent_<br/>(23200/23201)| `Claim.item.detail.sequence`| _Equivalent_<br/>(38458/38459)| `Claim.item.detail.sequence`
+| **`Claim.item.detail.type`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(74)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(520)| `Claim.item.detail.category`| _Equivalent_<br/>(11459/11460)| `Claim.item.detail.category`| _Equivalent_<br/>(23204/23205)| `Claim.item.detail.category`| _Equivalent_<br/>(38462/38463)| `Claim.item.detail.category`
+| **`Claim.item.detail.service`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3487)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3488)| `Claim.item.detail.service`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(859)<hr/>←←←← _Equivalent_ ←←←← <br/>(1377)| `Claim.item.detail.productOrService`| _Equivalent_<br/>(23206/23207)| `Claim.item.detail.productOrService`| →→→→ _Equivalent_ →→→→ <br/>(38464)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38465)| `Claim.item.detail.productOrService`
+| **`Claim.item.detail.quantity`**| _Equivalent_<br/>(3489/3490)| `Claim.item.detail.quantity`| _Equivalent_<br/>(11465/11466)| `Claim.item.detail.quantity`| _Equivalent_<br/>(23212/23213)| `Claim.item.detail.quantity`| _Equivalent_<br/>(38470/38471)| `Claim.item.detail.quantity`
+| **`Claim.item.detail.unitPrice`**| →→→→ _RelatedTo_ →→→→ <br/>(3491)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3492)| `Claim.item.detail.unitPrice`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11467)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11468)| `Claim.item.detail.unitPrice`| _Equivalent_<br/>(23214/23215)| `Claim.item.detail.unitPrice`| _Equivalent_<br/>(38472/38473)| `Claim.item.detail.unitPrice`
+| **`Claim.item.detail.factor`**| →→→→ _Equivalent_ →→→→ <br/>(3493)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3494)| `Claim.item.detail.factor`| _Equivalent_<br/>(11469/11470)| `Claim.item.detail.factor`| _Equivalent_<br/>(23216/23217)| `Claim.item.detail.factor`| _Equivalent_<br/>(38474/38475)| `Claim.item.detail.factor`
+| **`Claim.item.detail.points`**| →→→→ _Equivalent_ →→→→ <br/>(71)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(521)| `Claim.item.detail.factor`| _Equivalent_<br/>(11469/11470)| `Claim.item.detail.factor`| _Equivalent_<br/>(23216/23217)| `Claim.item.detail.factor`| _Equivalent_<br/>(38474/38475)| `Claim.item.detail.factor`
+| **`Claim.item.detail.net`**| →→→→ _RelatedTo_ →→→→ <br/>(3495)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3496)| `Claim.item.detail.net`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11471)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11472)| `Claim.item.detail.net`| _Equivalent_<br/>(23218/23219)| `Claim.item.detail.net`| _Equivalent_<br/>(38476/38477)| `Claim.item.detail.net`
+| **`Claim.item.detail.udi`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3497)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3498)| `Claim.item.detail.udi`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11473)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11474)| `Claim.item.detail.udi`| _Equivalent_<br/>(23220/23221)| `Claim.item.detail.udi`| _Equivalent_<br/>(38478/38479)| `Claim.item.detail.udi`
+| **`Claim.item.detail.subDetail`**| _Equivalent_<br/>(3499/3500)| `Claim.item.detail.subDetail`| _Equivalent_<br/>(11475/11476)| `Claim.item.detail.subDetail`| _Equivalent_<br/>(23222/23223)| `Claim.item.detail.subDetail`| _Equivalent_<br/>(38480/38481)| `Claim.item.detail.subDetail`
+| **`Claim.item.detail.subDetail.id`**| _Equivalent_<br/>(3501/3502)| `Claim.item.detail.subDetail.id`| _Equivalent_<br/>(11477/11478)| `Claim.item.detail.subDetail.id`| _Equivalent_<br/>(23224/23225)| `Claim.item.detail.subDetail.id`| _Equivalent_<br/>(38482/38483)| `Claim.item.detail.subDetail.id`
+| **`Claim.item.detail.subDetail.extension`**| _Equivalent_<br/>(3503/3504)| `Claim.item.detail.subDetail.extension`| _Equivalent_<br/>(11479/11480)| `Claim.item.detail.subDetail.extension`| _Equivalent_<br/>(23226/23227)| `Claim.item.detail.subDetail.extension`| _Equivalent_<br/>(38484/38485)| `Claim.item.detail.subDetail.extension`
+| **`Claim.item.detail.subDetail.modifierExtension`**| _Equivalent_<br/>(3505/3506)| `Claim.item.detail.subDetail.modifierExtension`| _Equivalent_<br/>(11481/11482)| `Claim.item.detail.subDetail.modifierExtension`| _Equivalent_<br/>(23228/23229)| `Claim.item.detail.subDetail.modifierExtension`| _Equivalent_<br/>(38486/38487)| `Claim.item.detail.subDetail.modifierExtension`
+| **`Claim.item.detail.subDetail.sequence`**| _Equivalent_<br/>(3507/3508)| `Claim.item.detail.subDetail.sequence`| _Equivalent_<br/>(11483/11484)| `Claim.item.detail.subDetail.sequence`| _Equivalent_<br/>(23230/23231)| `Claim.item.detail.subDetail.sequence`| _Equivalent_<br/>(38488/38489)| `Claim.item.detail.subDetail.sequence`
+| **`Claim.item.detail.subDetail.type`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(73)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(522)| `Claim.item.detail.subDetail.category`| _Equivalent_<br/>(11487/11488)| `Claim.item.detail.subDetail.category`| _Equivalent_<br/>(23234/23235)| `Claim.item.detail.subDetail.category`| _Equivalent_<br/>(38492/38493)| `Claim.item.detail.subDetail.category`
+| **`Claim.item.detail.subDetail.service`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3509)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3510)| `Claim.item.detail.subDetail.service`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(860)<hr/>←←←← _Equivalent_ ←←←← <br/>(1378)| `Claim.item.detail.subDetail.productOrService`| _Equivalent_<br/>(23236/23237)| `Claim.item.detail.subDetail.productOrService`| →→→→ _Equivalent_ →→→→ <br/>(38494)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(38495)| `Claim.item.detail.subDetail.productOrService`
+| **`Claim.item.detail.subDetail.quantity`**| _Equivalent_<br/>(3511/3512)| `Claim.item.detail.subDetail.quantity`| _Equivalent_<br/>(11493/11494)| `Claim.item.detail.subDetail.quantity`| _Equivalent_<br/>(23242/23243)| `Claim.item.detail.subDetail.quantity`| _Equivalent_<br/>(38500/38501)| `Claim.item.detail.subDetail.quantity`
+| **`Claim.item.detail.subDetail.unitPrice`**| →→→→ _RelatedTo_ →→→→ <br/>(3513)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3514)| `Claim.item.detail.subDetail.unitPrice`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11495)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11496)| `Claim.item.detail.subDetail.unitPrice`| _Equivalent_<br/>(23244/23245)| `Claim.item.detail.subDetail.unitPrice`| _Equivalent_<br/>(38502/38503)| `Claim.item.detail.subDetail.unitPrice`
+| **`Claim.item.detail.subDetail.factor`**| →→→→ _Equivalent_ →→→→ <br/>(3515)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3516)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(11497/11498)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(23246/23247)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(38504/38505)| `Claim.item.detail.subDetail.factor`
+| **`Claim.item.detail.subDetail.points`**| →→→→ _Equivalent_ →→→→ <br/>(72)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(523)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(11497/11498)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(23246/23247)| `Claim.item.detail.subDetail.factor`| _Equivalent_<br/>(38504/38505)| `Claim.item.detail.subDetail.factor`
+| **`Claim.item.detail.subDetail.net`**| →→→→ _RelatedTo_ →→→→ <br/>(3517)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3518)| `Claim.item.detail.subDetail.net`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11499)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11500)| `Claim.item.detail.subDetail.net`| _Equivalent_<br/>(23248/23249)| `Claim.item.detail.subDetail.net`| _Equivalent_<br/>(38506/38507)| `Claim.item.detail.subDetail.net`
+| **`Claim.item.detail.subDetail.udi`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3519)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3520)| `Claim.item.detail.subDetail.udi`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11501)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11502)| `Claim.item.detail.subDetail.udi`| _Equivalent_<br/>(23250/23251)| `Claim.item.detail.subDetail.udi`| _Equivalent_<br/>(38508/38509)| `Claim.item.detail.subDetail.udi`
+| **`Claim.item.prosthesis`**| | | | | | | | | 
+| **`Claim.item.prosthesis.id`**| | | | | | | | | 
+| **`Claim.item.prosthesis.extension`**| | | | | | | | | 
+| **`Claim.item.prosthesis.modifierExtension`**| | | | | | | | | 
+| **`Claim.item.prosthesis.initial`**| | | | | | | | | 
+| **`Claim.item.prosthesis.priorDate`**| | | | | | | | | 
+| **`Claim.item.prosthesis.priorMaterial`**| | | | | | | | | 
+| **`Claim.additionalMaterials`**| | | | | | | | | 
+| **`Claim.missingTeeth`**| | | | | | | | | 
+| **`Claim.missingTeeth.id`**| | | | | | | | | 
+| **`Claim.missingTeeth.extension`**| | | | | | | | | 
+| **`Claim.missingTeeth.modifierExtension`**| | | | | | | | | 
+| **`Claim.missingTeeth.tooth`**| | | | | | | | | 
+| **`Claim.missingTeeth.reason`**| | | | | | | | | 
+| **`Claim.missingTeeth.extractionDate`**| | | | | | | | | 
+| *118 of 118 elements used* | | *86 of 149 elements used* | | *85 of 149 elements used* | | *85 of 149 elements used* | | *84 of 175 elements used* 
+

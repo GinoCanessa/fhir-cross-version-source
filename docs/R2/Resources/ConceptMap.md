@@ -1,0 +1,143 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:09 PM
+
+### ConceptMap
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | ConceptMap |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/ConceptMap` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for ConceptMap Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `57` |
+| Database Snapshot Count | `51` |
+| Database Differential Count | `31` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `ConceptMap` | `ConceptMap` | `ConceptMap` | ConceptMap | A map from one set of concepts to one or more other concepts | 0..* | ConceptMap |  |  |
+| `ConceptMap.contact` | `ConceptMap.contact` | `contact` |  | Contact details of the publisher | 0..* | BackboneElement |  |  |
+| `ConceptMap.contact.extension` | `ConceptMap.contact.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ConceptMap.contact.id` | `ConceptMap.contact.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ConceptMap.contact.modifierExtension` | `ConceptMap.contact.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ConceptMap.contact.name` | `ConceptMap.contact.name` | `name` |  | Name of a individual to contact | 0..1 | string |  |  |
+| `ConceptMap.contact.telecom` | `ConceptMap.contact.telecom` | `telecom` |  | Contact details for individual or publisher | 0..* | ContactPoint |  |  |
+| `ConceptMap.contained` | `ConceptMap.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `ConceptMap.copyright` | `ConceptMap.copyright` | `copyright` |  | Use and/or publishing restrictions | 0..1 | string |  |  |
+| `ConceptMap.date` | `ConceptMap.date` | `date` |  | Date for given status | 0..1 | dateTime |  |  |
+| `ConceptMap.description` | `ConceptMap.description` | `description` |  | Human language description of the concept map | 0..1 | string |  |  |
+| `ConceptMap.element` | `ConceptMap.element` | `element` |  | Mappings for a concept from the source set | 0..* | BackboneElement |  |  |
+| `ConceptMap.element.code` | `ConceptMap.element.code` | `code` |  | Identifies element being mapped | 0..1 | code |  |  |
+| `ConceptMap.element.codeSystem` | `ConceptMap.element.codeSystem` | `codeSystem` |  | Code System (if value set crosses code systems) | 0..1 | uri |  |  |
+| `ConceptMap.element.extension` | `ConceptMap.element.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ConceptMap.element.id` | `ConceptMap.element.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ConceptMap.element.modifierExtension` | `ConceptMap.element.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ConceptMap.element.target` | `ConceptMap.element.target` | `target` |  | Concept in target system for element | 0..* | BackboneElement |  |  |
+| `ConceptMap.element.target.code` | `ConceptMap.element.target.code` | `code` |  | Code that identifies the target element | 0..1 | code |  |  |
+| `ConceptMap.element.target.codeSystem` | `ConceptMap.element.target.codeSystem` | `codeSystem` |  | System of the target (if necessary) | 0..1 | uri |  |  |
+| `ConceptMap.element.target.comments` | `ConceptMap.element.target.comments` | `comments` |  | Description of status/issues in mapping | 0..1 | string |  |  |
+| `ConceptMap.element.target.dependsOn` | `ConceptMap.element.target.dependsOn` | `dependsOn` |  | Other elements required for this mapping (from context) | 0..* | BackboneElement |  |  |
+| `ConceptMap.element.target.dependsOn.code` | `ConceptMap.element.target.dependsOn.code` | `code` |  | Value of the referenced element | 1..1 | string |  |  |
+| `ConceptMap.element.target.dependsOn.codeSystem` | `ConceptMap.element.target.dependsOn.codeSystem` | `codeSystem` |  | Code System (if necessary) | 1..1 | uri |  |  |
+| `ConceptMap.element.target.dependsOn.element` | `ConceptMap.element.target.dependsOn.element` | `element` |  | Reference to element/field/ValueSet mapping depends on | 1..1 | uri |  |  |
+| `ConceptMap.element.target.dependsOn.extension` | `ConceptMap.element.target.dependsOn.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ConceptMap.element.target.dependsOn.id` | `ConceptMap.element.target.dependsOn.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ConceptMap.element.target.dependsOn.modifierExtension` | `ConceptMap.element.target.dependsOn.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ConceptMap.element.target.equivalence` | `ConceptMap.element.target.equivalence` | `equivalence` |  | equivalent \| equal \| wider \| subsumes \| narrower \| specializes \| inexact \| unmatched \| disjoint | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/concept-map-equivalence` |
+| `ConceptMap.element.target.extension` | `ConceptMap.element.target.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ConceptMap.element.target.id` | `ConceptMap.element.target.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ConceptMap.element.target.modifierExtension` | `ConceptMap.element.target.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ConceptMap.element.target.product` | `ConceptMap.element.target.product` | `product` |  | Other concepts that this mapping also produces | 0..* | ConceptMap.element.target.dependsOn |  |  |
+| `ConceptMap.experimental` | `ConceptMap.experimental` | `experimental` |  | If for testing purposes, not real usage | 0..1 | boolean |  |  |
+| `ConceptMap.extension` | `ConceptMap.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ConceptMap.id` | `ConceptMap.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `ConceptMap.identifier` | `ConceptMap.identifier` | `identifier` |  | Additional identifier for the concept map | 0..1 | Identifier |  |  |
+| `ConceptMap.implicitRules` | `ConceptMap.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `ConceptMap.language` | `ConceptMap.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `ConceptMap.meta` | `ConceptMap.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `ConceptMap.modifierExtension` | `ConceptMap.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ConceptMap.name` | `ConceptMap.name` | `name` |  | Informal name for this concept map | 0..1 | string |  |  |
+| `ConceptMap.publisher` | `ConceptMap.publisher` | `publisher` |  | Name of the publisher (organization or individual) | 0..1 | string |  |  |
+| `ConceptMap.requirements` | `ConceptMap.requirements` | `requirements` |  | Why needed | 0..1 | string |  |  |
+| `ConceptMap.source[x]` | `ConceptMap.source[x]` | `source[x]` |  | Identifies the source of the concepts which are being mapped | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/StructureDefinition), Reference(http://hl7.org/fhir/StructureDefinition/ValueSet), uri |  |  |
+| `ConceptMap.status` | `ConceptMap.status` | `status` |  | draft \| active \| retired | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/conformance-resource-status` |
+| `ConceptMap.target[x]` | `ConceptMap.target[x]` | `target[x]` |  | Provides context to the mappings | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/StructureDefinition), Reference(http://hl7.org/fhir/StructureDefinition/ValueSet), uri |  |  |
+| `ConceptMap.text` | `ConceptMap.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `ConceptMap.url` | `ConceptMap.url` | `url` |  | Globally unique logical id for concept map | 0..1 | uri |  |  |
+| `ConceptMap.useContext` | `ConceptMap.useContext` | `useContext` |  | Content intends to support these contexts | 0..* | CodeableConcept | `Extensible` | `http://hl7.org/fhir/ValueSet/use-context` |
+| `ConceptMap.version` | `ConceptMap.version` | `version` |  | Logical id for this version of the concept map | 0..1 | string |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [ConceptMap](/docs/R2/Resources/ConceptMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/ConceptMap\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `89`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `256`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMap](/docs/R3/Resources/ConceptMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/ConceptMap\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `438`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `634`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMap](/docs/R4/Resources/ConceptMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/ConceptMap\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1439`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1440`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMap](/docs/R4B/Resources/ConceptMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/ConceptMap\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `954`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1183`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMap](/docs/R5/Resources/ConceptMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/ConceptMap\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition ConceptMap from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 ConceptMap| Relationship | [R3 ConceptMap](/docs/R3/Resources/ConceptMap.md)| Relationship | [R4 ConceptMap](/docs/R4/Resources/ConceptMap.md)| Relationship | [R4B ConceptMap](/docs/R4B/Resources/ConceptMap.md)| Relationship | [R5 ConceptMap](/docs/R5/Resources/ConceptMap.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`ConceptMap`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3924)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3925)| `ConceptMap`| _Equivalent_<br/>(12329/12330)| `ConceptMap`| _Equivalent_<br/>(24125/24126)| `ConceptMap`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(39421)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(39422)| `ConceptMap`
+| **`ConceptMap.id`**| _Equivalent_<br/>(3926/3927)| `ConceptMap.id`| _Equivalent_<br/>(12331/12332)| `ConceptMap.id`| _Equivalent_<br/>(24127/24128)| `ConceptMap.id`| _Equivalent_<br/>(39423/39424)| `ConceptMap.id`
+| **`ConceptMap.meta`**| _Equivalent_<br/>(3928/3929)| `ConceptMap.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12333)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12334)| `ConceptMap.meta`| _Equivalent_<br/>(24129/24130)| `ConceptMap.meta`| _Equivalent_<br/>(39425/39426)| `ConceptMap.meta`
+| **`ConceptMap.implicitRules`**| _Equivalent_<br/>(3930/3931)| `ConceptMap.implicitRules`| _Equivalent_<br/>(12335/12336)| `ConceptMap.implicitRules`| _Equivalent_<br/>(24131/24132)| `ConceptMap.implicitRules`| _Equivalent_<br/>(39427/39428)| `ConceptMap.implicitRules`
+| **`ConceptMap.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3932)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3933)| `ConceptMap.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12337)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(12338)| `ConceptMap.language`| _Equivalent_<br/>(24133/24134)| `ConceptMap.language`| _Equivalent_<br/>(39429/39430)| `ConceptMap.language`
+| **`ConceptMap.text`**| _Equivalent_<br/>(3934/3935)| `ConceptMap.text`| _Equivalent_<br/>(12339/12340)| `ConceptMap.text`| _Equivalent_<br/>(24135/24136)| `ConceptMap.text`| _Equivalent_<br/>(39431/39432)| `ConceptMap.text`
+| **`ConceptMap.contained`**| _Equivalent_<br/>(3936/3937)| `ConceptMap.contained`| _Equivalent_<br/>(12341/12342)| `ConceptMap.contained`| _Equivalent_<br/>(24137/24138)| `ConceptMap.contained`| _Equivalent_<br/>(39433/39434)| `ConceptMap.contained`
+| **`ConceptMap.extension`**| _Equivalent_<br/>(3938/3939)| `ConceptMap.extension`| _Equivalent_<br/>(12343/12344)| `ConceptMap.extension`| _Equivalent_<br/>(24139/24140)| `ConceptMap.extension`| _Equivalent_<br/>(39435/39436)| `ConceptMap.extension`
+| **`ConceptMap.modifierExtension`**| _Equivalent_<br/>(3940/3941)| `ConceptMap.modifierExtension`| _Equivalent_<br/>(12345/12346)| `ConceptMap.modifierExtension`| _Equivalent_<br/>(24141/24142)| `ConceptMap.modifierExtension`| _Equivalent_<br/>(39437/39438)| `ConceptMap.modifierExtension`
+| **`ConceptMap.url`**| _Equivalent_<br/>(3942/3943)| `ConceptMap.url`| _Equivalent_<br/>(12347/12348)| `ConceptMap.url`| _Equivalent_<br/>(24143/24144)| `ConceptMap.url`| _Equivalent_<br/>(39439/39440)| `ConceptMap.url`
+| **`ConceptMap.identifier`**| _Equivalent_<br/>(3944/3945)| `ConceptMap.identifier`| _Equivalent_<br/>(12349/12350)| `ConceptMap.identifier`| _Equivalent_<br/>(24145/24146)| `ConceptMap.identifier`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(39441)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(39442)| `ConceptMap.identifier`
+| **`ConceptMap.version`**| _Equivalent_<br/>(3946/3947)| `ConceptMap.version`| _Equivalent_<br/>(12351/12352)| `ConceptMap.version`| _Equivalent_<br/>(24147/24148)| `ConceptMap.version`| _Equivalent_<br/>(39443/39444)| `ConceptMap.version`
+| **`ConceptMap.name`**| _Equivalent_<br/>(3948/3949)| `ConceptMap.name`| _Equivalent_<br/>(12353/12354)| `ConceptMap.name`| _Equivalent_<br/>(24149/24150)| `ConceptMap.name`| _Equivalent_<br/>(39445/39446)| `ConceptMap.name`
+| **`ConceptMap.status`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3950)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3951)| `ConceptMap.status`| _Equivalent_<br/>(12357/12358)| `ConceptMap.status`| _Equivalent_<br/>(24153/24154)| `ConceptMap.status`| _Equivalent_<br/>(39449/39450)| `ConceptMap.status`
+| **`ConceptMap.experimental`**| _Equivalent_<br/>(3952/3953)| `ConceptMap.experimental`| _Equivalent_<br/>(12359/12360)| `ConceptMap.experimental`| _Equivalent_<br/>(24155/24156)| `ConceptMap.experimental`| _Equivalent_<br/>(39451/39452)| `ConceptMap.experimental`
+| **`ConceptMap.publisher`**| _Equivalent_<br/>(3954/3955)| `ConceptMap.publisher`| _Equivalent_<br/>(12363/12364)| `ConceptMap.publisher`| _Equivalent_<br/>(24159/24160)| `ConceptMap.publisher`| _Equivalent_<br/>(39455/39456)| `ConceptMap.publisher`
+| **`ConceptMap.contact`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3956)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3957)| `ConceptMap.contact`| _Equivalent_<br/>(12365/12366)| `ConceptMap.contact`| _Equivalent_<br/>(24161/24162)| `ConceptMap.contact`| _Equivalent_<br/>(39457/39458)| `ConceptMap.contact`
+| **`ConceptMap.contact.id`**| | | | | | | | | 
+| **`ConceptMap.contact.extension`**| | | | | | | | | 
+| **`ConceptMap.contact.modifierExtension`**| | | | | | | | | 
+| **`ConceptMap.contact.name`**| | | | | | | | | 
+| **`ConceptMap.contact.telecom`**| | | | | | | | | 
+| **`ConceptMap.date`**| _Equivalent_<br/>(3963/3964)| `ConceptMap.date`| _Equivalent_<br/>(12361/12362)| `ConceptMap.date`| _Equivalent_<br/>(24157/24158)| `ConceptMap.date`| _Equivalent_<br/>(39453/39454)| `ConceptMap.date`
+| **`ConceptMap.description`**| _Equivalent_<br/>(3965/3966)| `ConceptMap.description`| _Equivalent_<br/>(12367/12368)| `ConceptMap.description`| _Equivalent_<br/>(24163/24164)| `ConceptMap.description`| _Equivalent_<br/>(39459/39460)| `ConceptMap.description`
+| **`ConceptMap.useContext`**| _Equivalent_<br/>(156/574)| `ConceptMap.useContext`| _Equivalent_<br/>(12369/12370)| `ConceptMap.useContext`| _Equivalent_<br/>(24165/24166)| `ConceptMap.useContext`| _Equivalent_<br/>(39461/39462)| `ConceptMap.useContext`
+| **`ConceptMap.useContext`**| _Equivalent_<br/>(156/574)| `ConceptMap.jurisdiction`| _Equivalent_<br/>(12371/12372)| `ConceptMap.jurisdiction`| _Equivalent_<br/>(24167/24168)| `ConceptMap.jurisdiction`| _Equivalent_<br/>(39463/39464)| `ConceptMap.jurisdiction`
+| **`ConceptMap.requirements`**| _Equivalent_<br/>(155/575)| `ConceptMap.purpose`| _Equivalent_<br/>(12373/12374)| `ConceptMap.purpose`| _Equivalent_<br/>(24169/24170)| `ConceptMap.purpose`| _Equivalent_<br/>(39465/39466)| `ConceptMap.purpose`
+| **`ConceptMap.copyright`**| _Equivalent_<br/>(3967/3968)| `ConceptMap.copyright`| _Equivalent_<br/>(12375/12376)| `ConceptMap.copyright`| _Equivalent_<br/>(24171/24172)| `ConceptMap.copyright`| _Equivalent_<br/>(39467/39468)| `ConceptMap.copyright`
+| **`ConceptMap.source[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3969)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3970)| `ConceptMap.source[x]`| →→→→ _RelatedTo_ →→→→ <br/>(12377)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(12378)| `ConceptMap.source[x]`| _Equivalent_<br/>(24173/24174)| `ConceptMap.source[x]`| _Equivalent_<br/>(1745/1989)| `ConceptMap.sourceScope[x]`
+| **`ConceptMap.target[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3971)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3972)| `ConceptMap.target[x]`| →→→→ _RelatedTo_ →→→→ <br/>(12379)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(12380)| `ConceptMap.target[x]`| _Equivalent_<br/>(24175/24176)| `ConceptMap.target[x]`| _Equivalent_<br/>(1746/1990)| `ConceptMap.targetScope[x]`
+| **`ConceptMap.element`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(142)<hr/>←←←← _Equivalent_ ←←←← <br/>(561)| `ConceptMap.group.element`| _Equivalent_<br/>(12397/12398)| `ConceptMap.group.element`| _Equivalent_<br/>(24193/24194)| `ConceptMap.group.element`| _Equivalent_<br/>(39483/39484)| `ConceptMap.group.element`
+| **`ConceptMap.element.id`**| | | | | | | | | 
+| **`ConceptMap.element.extension`**| | | | | | | | | 
+| **`ConceptMap.element.modifierExtension`**| | | | | | | | | 
+| **`ConceptMap.element.codeSystem`**| _Equivalent_<br/>(144/573)| `ConceptMap.group.source`| _Equivalent_<br/>(12389/12390)| `ConceptMap.group.source`| _Equivalent_<br/>(24185/24186)| `ConceptMap.group.source`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(39477)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(39478)| `ConceptMap.group.source`
+| **`ConceptMap.element.code`**| _Equivalent_<br/>(143/562)| `ConceptMap.group.element.code`| _Equivalent_<br/>(12405/12406)| `ConceptMap.group.element.code`| _Equivalent_<br/>(24201/24202)| `ConceptMap.group.element.code`| _Equivalent_<br/>(39491/39492)| `ConceptMap.group.element.code`
+| **`ConceptMap.element.target`**| _Equivalent_<br/>(145/563)| `ConceptMap.group.element.target`| _Equivalent_<br/>(12409/12410)| `ConceptMap.group.element.target`| _Equivalent_<br/>(24205/24206)| `ConceptMap.group.element.target`| _Equivalent_<br/>(39495/39496)| `ConceptMap.group.element.target`
+| **`ConceptMap.element.target.id`**| | | | | | | | | 
+| **`ConceptMap.element.target.extension`**| | | | | | | | | 
+| **`ConceptMap.element.target.modifierExtension`**| | | | | | | | | 
+| **`ConceptMap.element.target.codeSystem`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(147)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(567)| `ConceptMap.group.element.target.dependsOn.code`| _Equivalent_<br/>(905/1417)| `ConceptMap.group.element.target.dependsOn.value`| _Equivalent_<br/>(24233/24234)| `ConceptMap.group.element.target.dependsOn.value`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1743)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1987)| `ConceptMap.group.element.target.dependsOn.value[x]`
+| **`ConceptMap.element.target.code`**| _Equivalent_<br/>(146/564)| `ConceptMap.group.element.target.code`| _Equivalent_<br/>(12417/12418)| `ConceptMap.group.element.target.code`| _Equivalent_<br/>(24213/24214)| `ConceptMap.group.element.target.code`| _Equivalent_<br/>(39503/39504)| `ConceptMap.group.element.target.code`
+| **`ConceptMap.element.target.equivalence`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(153)<hr/>←←←← _RelatedTo_ ←←←← <br/>(571)| `ConceptMap.group.element.target.equivalence`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12421)<hr/>←←←← _Equivalent_ ←←←← <br/>(12422)| `ConceptMap.group.element.target.equivalence`| _Equivalent_<br/>(24217/24218)| `ConceptMap.group.element.target.equivalence`| →→→→ _RelatedTo_ →→→→ <br/>(1747)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(39507)| `ConceptMap.group.element.target.relationship`
+| **`ConceptMap.element.target.comments`**| _Equivalent_<br/>(148/565)| `ConceptMap.group.element.target.comment`| _Equivalent_<br/>(12423/12424)| `ConceptMap.group.element.target.comment`| _Equivalent_<br/>(24219/24220)| `ConceptMap.group.element.target.comment`| _Equivalent_<br/>(39508/39509)| `ConceptMap.group.element.target.comment`
+| **`ConceptMap.element.target.dependsOn`**| _Equivalent_<br/>(149/566)| `ConceptMap.group.element.target.dependsOn`| _Equivalent_<br/>(12425/12426)| `ConceptMap.group.element.target.dependsOn`| _Equivalent_<br/>(24221/24222)| `ConceptMap.group.element.target.dependsOn`| _Equivalent_<br/>(39510/39511)| `ConceptMap.group.element.target.dependsOn`
+| **`ConceptMap.element.target.dependsOn.id`**| | | | | | | | | 
+| **`ConceptMap.element.target.dependsOn.extension`**| | | | | | | | | 
+| **`ConceptMap.element.target.dependsOn.modifierExtension`**| | | | | | | | | 
+| **`ConceptMap.element.target.dependsOn.element`**| _Equivalent_<br/>(152/569)| `ConceptMap.group.element.target.dependsOn.property`| _Equivalent_<br/>(12433/12434)| `ConceptMap.group.element.target.dependsOn.property`| _Equivalent_<br/>(24229/24230)| `ConceptMap.group.element.target.dependsOn.property`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1742)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1986)| `ConceptMap.group.element.target.dependsOn.attribute`
+| **`ConceptMap.element.target.dependsOn.codeSystem`**| →→→→ _Equivalent_ →→→→ <br/>(151)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(570)| `ConceptMap.group.element.target.dependsOn.system`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(12435)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(12436)| `ConceptMap.group.element.target.dependsOn.system`| _Equivalent_<br/>(24231/24232)| `ConceptMap.group.element.target.dependsOn.system`| | | 
+| **`ConceptMap.element.target.dependsOn.code`**| →→→→ _Equivalent_ →→→→ <br/>(150)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(568)| `ConceptMap.group.element.target.dependsOn.code`| _Equivalent_<br/>(905/1417)| `ConceptMap.group.element.target.dependsOn.value`| _Equivalent_<br/>(24233/24234)| `ConceptMap.group.element.target.dependsOn.value`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1743)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1987)| `ConceptMap.group.element.target.dependsOn.value[x]`
+| **`ConceptMap.element.target.product`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(154)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(572)| `ConceptMap.group.element.target.product`| _Equivalent_<br/>(12439/12440)| `ConceptMap.group.element.target.product`| _Equivalent_<br/>(24237/24238)| `ConceptMap.group.element.target.product`| _Equivalent_<br/>(39520/39521)| `ConceptMap.group.element.target.product`
+| *51 of 51 elements used* | | *37 of 65 elements used* | | *37 of 65 elements used* | | *37 of 65 elements used* | | *36 of 101 elements used* 
+

@@ -1,0 +1,38 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:25 PM
+
+### MedicinalProductDomain
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r4b.core@4.3.0 |
+| VS Name | MedicinalProductDomain |
+| Canonical URL | `http://hl7.org/fhir/ValueSet/medicinal-product-domain` |
+| Version | 4.3.0 |
+| Description | Applicable domain for this product (e.g. human, veterinary) |
+| Status | `Draft` |
+| Has Escape Valve Code | `False` |
+| Database Key | `3924` |
+| Database Concept Count | `3` |
+| Database Active Concept Count | `3` |
+### Bindings
+
+| Source | Element | Binding | Strength | Element Short |
+| ------ | ------- | ------- | -------- | ------------- |
+| `http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition` | `MedicinalProductDefinition.domain` | `http://hl7.org/fhir/ValueSet/medicinal-product-domain` | `Example` | If this medicine applies to human or veterinary uses |
+| `http://hl7.org/fhir/StructureDefinition/SubstanceDefinition` | `SubstanceDefinition.domain` | `http://hl7.org/fhir/ValueSet/medicinal-product-domain` | `Example` | If the substance applies to human or veterinary use |
+
+### Referenced Systems
+
+* `http://hl7.org/fhir/medicinal-product-domain`
+### Empty Projection
+
+This Value Set resulted in no projection (no mappings to other packages).
+
+### Codes
+
+| System | Code | Display |
+| ------ | ---- | ------- |
+| `http://hl7.org/fhir/medicinal-product-domain` | `Human` | Human use |
+| `http://hl7.org/fhir/medicinal-product-domain` | `HumanAndVeterinary` | Human and Veterinary use |
+| `http://hl7.org/fhir/medicinal-product-domain` | `Veterinary` | Veterinary use |

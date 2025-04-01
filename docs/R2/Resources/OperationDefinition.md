@@ -1,0 +1,142 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:10 PM
+
+### OperationDefinition
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | OperationDefinition |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/OperationDefinition` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for OperationDefinition Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `103` |
+| Database Snapshot Count | `50` |
+| Database Differential Count | `33` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `OperationDefinition` | `OperationDefinition` | `OperationDefinition` | OperationDefinition | Definition of an operation or a named query | 0..* | OperationDefinition |  |  |
+| `OperationDefinition.base` | `OperationDefinition.base` | `base` |  | Marks this as a profile of the base | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/OperationDefinition) |  |  |
+| `OperationDefinition.code` | `OperationDefinition.code` | `code` |  | Name used to invoke the operation | 1..1 | code |  |  |
+| `OperationDefinition.contact` | `OperationDefinition.contact` | `contact` |  | Contact details of the publisher | 0..* | BackboneElement |  |  |
+| `OperationDefinition.contact.extension` | `OperationDefinition.contact.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `OperationDefinition.contact.id` | `OperationDefinition.contact.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `OperationDefinition.contact.modifierExtension` | `OperationDefinition.contact.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `OperationDefinition.contact.name` | `OperationDefinition.contact.name` | `name` |  | Name of a individual to contact | 0..1 | string |  |  |
+| `OperationDefinition.contact.telecom` | `OperationDefinition.contact.telecom` | `telecom` |  | Contact details for individual or publisher | 0..* | ContactPoint |  |  |
+| `OperationDefinition.contained` | `OperationDefinition.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `OperationDefinition.date` | `OperationDefinition.date` | `date` |  | Date for this version of the operation definition | 0..1 | dateTime |  |  |
+| `OperationDefinition.description` | `OperationDefinition.description` | `description` |  | Natural language description of the operation | 0..1 | string |  |  |
+| `OperationDefinition.experimental` | `OperationDefinition.experimental` | `experimental` |  | If for testing purposes, not real usage | 0..1 | boolean |  |  |
+| `OperationDefinition.extension` | `OperationDefinition.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `OperationDefinition.id` | `OperationDefinition.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `OperationDefinition.idempotent` | `OperationDefinition.idempotent` | `idempotent` |  | Whether content is unchanged by operation | 0..1 | boolean |  |  |
+| `OperationDefinition.implicitRules` | `OperationDefinition.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `OperationDefinition.instance` | `OperationDefinition.instance` | `instance` |  | Invoke on an instance? | 1..1 | boolean |  |  |
+| `OperationDefinition.kind` | `OperationDefinition.kind` | `kind` |  | operation \| query | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/operation-kind` |
+| `OperationDefinition.language` | `OperationDefinition.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `OperationDefinition.meta` | `OperationDefinition.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `OperationDefinition.modifierExtension` | `OperationDefinition.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `OperationDefinition.name` | `OperationDefinition.name` | `name` |  | Informal name for this operation | 1..1 | string |  |  |
+| `OperationDefinition.notes` | `OperationDefinition.notes` | `notes` |  | Additional information about use | 0..1 | string |  |  |
+| `OperationDefinition.parameter` | `OperationDefinition.parameter` | `parameter` |  | Parameters for the operation/query | 0..* | BackboneElement |  |  |
+| `OperationDefinition.parameter.binding` | `OperationDefinition.parameter.binding` | `binding` |  | ValueSet details if this is coded | 0..1 | BackboneElement |  |  |
+| `OperationDefinition.parameter.binding.extension` | `OperationDefinition.parameter.binding.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `OperationDefinition.parameter.binding.id` | `OperationDefinition.parameter.binding.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `OperationDefinition.parameter.binding.modifierExtension` | `OperationDefinition.parameter.binding.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `OperationDefinition.parameter.binding.strength` | `OperationDefinition.parameter.binding.strength` | `strength` |  | required \| extensible \| preferred \| example | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/binding-strength` |
+| `OperationDefinition.parameter.binding.valueSet[x]` | `OperationDefinition.parameter.binding.valueSet[x]` | `valueSet[x]` |  | Source of value set | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/ValueSet), uri |  |  |
+| `OperationDefinition.parameter.documentation` | `OperationDefinition.parameter.documentation` | `documentation` |  | Description of meaning/use | 0..1 | string |  |  |
+| `OperationDefinition.parameter.extension` | `OperationDefinition.parameter.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `OperationDefinition.parameter.id` | `OperationDefinition.parameter.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `OperationDefinition.parameter.max` | `OperationDefinition.parameter.max` | `max` |  | Maximum Cardinality (a number or *) | 1..1 | string |  |  |
+| `OperationDefinition.parameter.min` | `OperationDefinition.parameter.min` | `min` |  | Minimum Cardinality | 1..1 | integer |  |  |
+| `OperationDefinition.parameter.modifierExtension` | `OperationDefinition.parameter.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `OperationDefinition.parameter.name` | `OperationDefinition.parameter.name` | `name` |  | Name in Parameters.parameter.name or in URL | 1..1 | code |  |  |
+| `OperationDefinition.parameter.part` | `OperationDefinition.parameter.part` | `part` |  | Parts of a Tuple Parameter | 0..* | OperationDefinition.parameter |  |  |
+| `OperationDefinition.parameter.profile` | `OperationDefinition.parameter.profile` | `profile` |  | Profile on the type | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/StructureDefinition) |  |  |
+| `OperationDefinition.parameter.type` | `OperationDefinition.parameter.type` | `type` |  | What type this parameter has | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/operation-parameter-type` |
+| `OperationDefinition.parameter.use` | `OperationDefinition.parameter.use` | `use` |  | in \| out | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/operation-parameter-use` |
+| `OperationDefinition.publisher` | `OperationDefinition.publisher` | `publisher` |  | Name of the publisher (Organization or individual) | 0..1 | string |  |  |
+| `OperationDefinition.requirements` | `OperationDefinition.requirements` | `requirements` |  | Why is this needed? | 0..1 | string |  |  |
+| `OperationDefinition.status` | `OperationDefinition.status` | `status` |  | draft \| active \| retired | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/conformance-resource-status` |
+| `OperationDefinition.system` | `OperationDefinition.system` | `system` |  | Invoke at the system level? | 1..1 | boolean |  |  |
+| `OperationDefinition.text` | `OperationDefinition.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `OperationDefinition.type` | `OperationDefinition.type` | `type` |  | Invoke at resource level for these type | 0..* | code | `Required` | `http://hl7.org/fhir/ValueSet/resource-types` |
+| `OperationDefinition.url` | `OperationDefinition.url` | `url` |  | Logical URL to reference this operation definition | 0..1 | uri |  |  |
+| `OperationDefinition.version` | `OperationDefinition.version` | `version` |  | Logical id for this version of the operation definition | 0..1 | string |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [OperationDefinition](/docs/R2/Resources/OperationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/OperationDefinition\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `133`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `299`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OperationDefinition](/docs/R3/Resources/OperationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/OperationDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `490`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `684`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OperationDefinition](/docs/R4/Resources/OperationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/OperationDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1561`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1562`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OperationDefinition](/docs/R4B/Resources/OperationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/OperationDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1016`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1245`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OperationDefinition](/docs/R5/Resources/OperationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/OperationDefinition\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition OperationDefinition from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 OperationDefinition| Relationship | [R3 OperationDefinition](/docs/R3/Resources/OperationDefinition.md)| Relationship | [R4 OperationDefinition](/docs/R4/Resources/OperationDefinition.md)| Relationship | [R4B OperationDefinition](/docs/R4B/Resources/OperationDefinition.md)| Relationship | [R5 OperationDefinition](/docs/R5/Resources/OperationDefinition.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`OperationDefinition`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6714)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6715)| `OperationDefinition`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16568)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16569)| `OperationDefinition`| _Equivalent_<br/>(30980/30981)| `OperationDefinition`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(45596)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45597)| `OperationDefinition`
+| **`OperationDefinition.id`**| _Equivalent_<br/>(6716/6717)| `OperationDefinition.id`| _Equivalent_<br/>(16570/16571)| `OperationDefinition.id`| _Equivalent_<br/>(30982/30983)| `OperationDefinition.id`| _Equivalent_<br/>(45598/45599)| `OperationDefinition.id`
+| **`OperationDefinition.meta`**| _Equivalent_<br/>(6718/6719)| `OperationDefinition.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16572)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16573)| `OperationDefinition.meta`| _Equivalent_<br/>(30984/30985)| `OperationDefinition.meta`| _Equivalent_<br/>(45600/45601)| `OperationDefinition.meta`
+| **`OperationDefinition.implicitRules`**| _Equivalent_<br/>(6720/6721)| `OperationDefinition.implicitRules`| _Equivalent_<br/>(16574/16575)| `OperationDefinition.implicitRules`| _Equivalent_<br/>(30986/30987)| `OperationDefinition.implicitRules`| _Equivalent_<br/>(45602/45603)| `OperationDefinition.implicitRules`
+| **`OperationDefinition.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6722)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6723)| `OperationDefinition.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16576)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(16577)| `OperationDefinition.language`| _Equivalent_<br/>(30988/30989)| `OperationDefinition.language`| _Equivalent_<br/>(45604/45605)| `OperationDefinition.language`
+| **`OperationDefinition.text`**| _Equivalent_<br/>(6724/6725)| `OperationDefinition.text`| _Equivalent_<br/>(16578/16579)| `OperationDefinition.text`| _Equivalent_<br/>(30990/30991)| `OperationDefinition.text`| _Equivalent_<br/>(45606/45607)| `OperationDefinition.text`
+| **`OperationDefinition.contained`**| _Equivalent_<br/>(6726/6727)| `OperationDefinition.contained`| _Equivalent_<br/>(16580/16581)| `OperationDefinition.contained`| _Equivalent_<br/>(30992/30993)| `OperationDefinition.contained`| _Equivalent_<br/>(45608/45609)| `OperationDefinition.contained`
+| **`OperationDefinition.extension`**| _Equivalent_<br/>(6728/6729)| `OperationDefinition.extension`| _Equivalent_<br/>(16582/16583)| `OperationDefinition.extension`| _Equivalent_<br/>(30994/30995)| `OperationDefinition.extension`| _Equivalent_<br/>(45610/45611)| `OperationDefinition.extension`
+| **`OperationDefinition.modifierExtension`**| _Equivalent_<br/>(6730/6731)| `OperationDefinition.modifierExtension`| _Equivalent_<br/>(16584/16585)| `OperationDefinition.modifierExtension`| _Equivalent_<br/>(30996/30997)| `OperationDefinition.modifierExtension`| _Equivalent_<br/>(45612/45613)| `OperationDefinition.modifierExtension`
+| **`OperationDefinition.url`**| _Equivalent_<br/>(6732/6733)| `OperationDefinition.url`| _Equivalent_<br/>(16586/16587)| `OperationDefinition.url`| _Equivalent_<br/>(30998/30999)| `OperationDefinition.url`| _Equivalent_<br/>(45614/45615)| `OperationDefinition.url`
+| **`OperationDefinition.version`**| _Equivalent_<br/>(6734/6735)| `OperationDefinition.version`| _Equivalent_<br/>(16588/16589)| `OperationDefinition.version`| _Equivalent_<br/>(31000/31001)| `OperationDefinition.version`| _Equivalent_<br/>(45616/45617)| `OperationDefinition.version`
+| **`OperationDefinition.name`**| _Equivalent_<br/>(6736/6737)| `OperationDefinition.name`| _Equivalent_<br/>(16590/16591)| `OperationDefinition.name`| _Equivalent_<br/>(31002/31003)| `OperationDefinition.name`| _Equivalent_<br/>(45618/45619)| `OperationDefinition.name`
+| **`OperationDefinition.status`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6738)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6739)| `OperationDefinition.status`| _Equivalent_<br/>(16592/16593)| `OperationDefinition.status`| _Equivalent_<br/>(31006/31007)| `OperationDefinition.status`| _Equivalent_<br/>(45622/45623)| `OperationDefinition.status`
+| **`OperationDefinition.kind`**| _Equivalent_<br/>(6740/6741)| `OperationDefinition.kind`| _Equivalent_<br/>(16594/16595)| `OperationDefinition.kind`| _Equivalent_<br/>(31008/31009)| `OperationDefinition.kind`| _Equivalent_<br/>(45624/45625)| `OperationDefinition.kind`
+| **`OperationDefinition.experimental`**| _Equivalent_<br/>(6742/6743)| `OperationDefinition.experimental`| _Equivalent_<br/>(16596/16597)| `OperationDefinition.experimental`| _Equivalent_<br/>(31010/31011)| `OperationDefinition.experimental`| _Equivalent_<br/>(45626/45627)| `OperationDefinition.experimental`
+| **`OperationDefinition.publisher`**| _Equivalent_<br/>(6744/6745)| `OperationDefinition.publisher`| _Equivalent_<br/>(16600/16601)| `OperationDefinition.publisher`| _Equivalent_<br/>(31014/31015)| `OperationDefinition.publisher`| _Equivalent_<br/>(45630/45631)| `OperationDefinition.publisher`
+| **`OperationDefinition.contact`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(6746)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6747)| `OperationDefinition.contact`| _Equivalent_<br/>(16602/16603)| `OperationDefinition.contact`| _Equivalent_<br/>(31016/31017)| `OperationDefinition.contact`| _Equivalent_<br/>(45632/45633)| `OperationDefinition.contact`
+| **`OperationDefinition.contact.id`**| | | | | | | | | 
+| **`OperationDefinition.contact.extension`**| | | | | | | | | 
+| **`OperationDefinition.contact.modifierExtension`**| | | | | | | | | 
+| **`OperationDefinition.contact.name`**| | | | | | | | | 
+| **`OperationDefinition.contact.telecom`**| | | | | | | | | 
+| **`OperationDefinition.date`**| _Equivalent_<br/>(6753/6754)| `OperationDefinition.date`| _Equivalent_<br/>(16598/16599)| `OperationDefinition.date`| _Equivalent_<br/>(31012/31013)| `OperationDefinition.date`| _Equivalent_<br/>(45628/45629)| `OperationDefinition.date`
+| **`OperationDefinition.description`**| _Equivalent_<br/>(6755/6756)| `OperationDefinition.description`| _Equivalent_<br/>(16604/16605)| `OperationDefinition.description`| _Equivalent_<br/>(31018/31019)| `OperationDefinition.description`| _Equivalent_<br/>(45634/45635)| `OperationDefinition.description`
+| **`OperationDefinition.requirements`**| _Equivalent_<br/>(301/678)| `OperationDefinition.purpose`| _Equivalent_<br/>(16610/16611)| `OperationDefinition.purpose`| _Equivalent_<br/>(31024/31025)| `OperationDefinition.purpose`| _Equivalent_<br/>(45640/45641)| `OperationDefinition.purpose`
+| **`OperationDefinition.idempotent`**| _Equivalent_<br/>(6757/6758)| `OperationDefinition.idempotent`| _Equivalent_<br/>(1209/1617)| `OperationDefinition.affectsState`| _Equivalent_<br/>(31026/31027)| `OperationDefinition.affectsState`| _Equivalent_<br/>(45642/45643)| `OperationDefinition.affectsState`
+| **`OperationDefinition.code`**| _Equivalent_<br/>(6759/6760)| `OperationDefinition.code`| _Equivalent_<br/>(16612/16613)| `OperationDefinition.code`| _Equivalent_<br/>(31028/31029)| `OperationDefinition.code`| _Equivalent_<br/>(45644/45645)| `OperationDefinition.code`
+| **`OperationDefinition.notes`**| _Equivalent_<br/>(300/677)| `OperationDefinition.comment`| _Equivalent_<br/>(16614/16615)| `OperationDefinition.comment`| _Equivalent_<br/>(31030/31031)| `OperationDefinition.comment`| _Equivalent_<br/>(45646/45647)| `OperationDefinition.comment`
+| **`OperationDefinition.base`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6761)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6762)| `OperationDefinition.base`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(16616)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16617)| `OperationDefinition.base`| _Equivalent_<br/>(31032/31033)| `OperationDefinition.base`| _Equivalent_<br/>(45648/45649)| `OperationDefinition.base`
+| **`OperationDefinition.system`**| _Equivalent_<br/>(6763/6764)| `OperationDefinition.system`| _Equivalent_<br/>(16620/16621)| `OperationDefinition.system`| _Equivalent_<br/>(31036/31037)| `OperationDefinition.system`| _Equivalent_<br/>(45652/45653)| `OperationDefinition.system`
+| **`OperationDefinition.type`**| →→→→ _Equivalent_ →→→→ <br/>(16559)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(16558)| `OperationDefinition.resource`| →→→→ _Equivalent_ →→→→ <br/>(16618)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16619)| `OperationDefinition.resource`| →→→→ _Equivalent_ →→→→ <br/>(31034)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(31035)| `OperationDefinition.resource`| _Equivalent_<br/>(45650/45651)| `OperationDefinition.resource`
+| **`OperationDefinition.type`**| →→→→ _Equivalent_ →→→→ <br/>(16559)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(16558)| `OperationDefinition.type`| _Equivalent_<br/>(16622/16623)| `OperationDefinition.type`| _Equivalent_<br/>(31038/31039)| `OperationDefinition.type`| _Equivalent_<br/>(45654/45655)| `OperationDefinition.type`
+| **`OperationDefinition.instance`**| _Equivalent_<br/>(6765/6766)| `OperationDefinition.instance`| _Equivalent_<br/>(16624/16625)| `OperationDefinition.instance`| _Equivalent_<br/>(31040/31041)| `OperationDefinition.instance`| _Equivalent_<br/>(45656/45657)| `OperationDefinition.instance`
+| **`OperationDefinition.parameter`**| _Equivalent_<br/>(6767/6768)| `OperationDefinition.parameter`| _Equivalent_<br/>(16626/16627)| `OperationDefinition.parameter`| _Equivalent_<br/>(31046/31047)| `OperationDefinition.parameter`| _Equivalent_<br/>(45662/45663)| `OperationDefinition.parameter`
+| **`OperationDefinition.parameter.id`**| _Equivalent_<br/>(6769/6770)| `OperationDefinition.parameter.id`| _Equivalent_<br/>(16628/16629)| `OperationDefinition.parameter.id`| _Equivalent_<br/>(31048/31049)| `OperationDefinition.parameter.id`| _Equivalent_<br/>(45664/45665)| `OperationDefinition.parameter.id`
+| **`OperationDefinition.parameter.extension`**| _Equivalent_<br/>(6771/6772)| `OperationDefinition.parameter.extension`| _Equivalent_<br/>(16630/16631)| `OperationDefinition.parameter.extension`| _Equivalent_<br/>(31050/31051)| `OperationDefinition.parameter.extension`| _Equivalent_<br/>(45666/45667)| `OperationDefinition.parameter.extension`
+| **`OperationDefinition.parameter.modifierExtension`**| _Equivalent_<br/>(6773/6774)| `OperationDefinition.parameter.modifierExtension`| _Equivalent_<br/>(16632/16633)| `OperationDefinition.parameter.modifierExtension`| _Equivalent_<br/>(31052/31053)| `OperationDefinition.parameter.modifierExtension`| _Equivalent_<br/>(45668/45669)| `OperationDefinition.parameter.modifierExtension`
+| **`OperationDefinition.parameter.name`**| _Equivalent_<br/>(6775/6776)| `OperationDefinition.parameter.name`| _Equivalent_<br/>(16634/16635)| `OperationDefinition.parameter.name`| _Equivalent_<br/>(31054/31055)| `OperationDefinition.parameter.name`| _Equivalent_<br/>(45670/45671)| `OperationDefinition.parameter.name`
+| **`OperationDefinition.parameter.use`**| _Equivalent_<br/>(6777/6778)| `OperationDefinition.parameter.use`| _Equivalent_<br/>(16636/16637)| `OperationDefinition.parameter.use`| _Equivalent_<br/>(31056/31057)| `OperationDefinition.parameter.use`| _Equivalent_<br/>(45672/45673)| `OperationDefinition.parameter.use`
+| **`OperationDefinition.parameter.min`**| _Equivalent_<br/>(6779/6780)| `OperationDefinition.parameter.min`| _Equivalent_<br/>(16638/16639)| `OperationDefinition.parameter.min`| _Equivalent_<br/>(31058/31059)| `OperationDefinition.parameter.min`| _Equivalent_<br/>(45674/45675)| `OperationDefinition.parameter.min`
+| **`OperationDefinition.parameter.max`**| _Equivalent_<br/>(6781/6782)| `OperationDefinition.parameter.max`| _Equivalent_<br/>(16640/16641)| `OperationDefinition.parameter.max`| _Equivalent_<br/>(31060/31061)| `OperationDefinition.parameter.max`| _Equivalent_<br/>(45676/45677)| `OperationDefinition.parameter.max`
+| **`OperationDefinition.parameter.documentation`**| _Equivalent_<br/>(6783/6784)| `OperationDefinition.parameter.documentation`| _Equivalent_<br/>(16642/16643)| `OperationDefinition.parameter.documentation`| _Equivalent_<br/>(31062/31063)| `OperationDefinition.parameter.documentation`| _Equivalent_<br/>(45678/45679)| `OperationDefinition.parameter.documentation`
+| **`OperationDefinition.parameter.type`**| _Equivalent_<br/>(303/680)| `OperationDefinition.parameter.type`| →→→→ _Equivalent_ →→→→ <br/>(16644)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16645)| `OperationDefinition.parameter.type`| →→→→ _Equivalent_ →→→→ <br/>(31064)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(31065)| `OperationDefinition.parameter.type`| _Equivalent_<br/>(45680/45681)| `OperationDefinition.parameter.type`
+| **`OperationDefinition.parameter.type`**| _Equivalent_<br/>(303/680)| `OperationDefinition.parameter.searchType`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16646)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16647)| `OperationDefinition.parameter.searchType`| _Equivalent_<br/>(31068/31069)| `OperationDefinition.parameter.searchType`| _Equivalent_<br/>(45684/45685)| `OperationDefinition.parameter.searchType`
+| **`OperationDefinition.parameter.profile`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6785)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6786)| `OperationDefinition.parameter.profile`| →→→→ _RelatedTo_ →→→→ <br/>(1211)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1619)| `OperationDefinition.parameter.targetProfile`| _Equivalent_<br/>(31066/31067)| `OperationDefinition.parameter.targetProfile`| _Equivalent_<br/>(45682/45683)| `OperationDefinition.parameter.targetProfile`
+| **`OperationDefinition.parameter.binding`**| _Equivalent_<br/>(6787/6788)| `OperationDefinition.parameter.binding`| _Equivalent_<br/>(16648/16649)| `OperationDefinition.parameter.binding`| _Equivalent_<br/>(31070/31071)| `OperationDefinition.parameter.binding`| _Equivalent_<br/>(45686/45687)| `OperationDefinition.parameter.binding`
+| **`OperationDefinition.parameter.binding.id`**| _Equivalent_<br/>(6789/6790)| `OperationDefinition.parameter.binding.id`| _Equivalent_<br/>(16650/16651)| `OperationDefinition.parameter.binding.id`| _Equivalent_<br/>(31072/31073)| `OperationDefinition.parameter.binding.id`| _Equivalent_<br/>(45688/45689)| `OperationDefinition.parameter.binding.id`
+| **`OperationDefinition.parameter.binding.extension`**| _Equivalent_<br/>(6791/6792)| `OperationDefinition.parameter.binding.extension`| _Equivalent_<br/>(16652/16653)| `OperationDefinition.parameter.binding.extension`| _Equivalent_<br/>(31074/31075)| `OperationDefinition.parameter.binding.extension`| _Equivalent_<br/>(45690/45691)| `OperationDefinition.parameter.binding.extension`
+| **`OperationDefinition.parameter.binding.modifierExtension`**| _Equivalent_<br/>(6793/6794)| `OperationDefinition.parameter.binding.modifierExtension`| _Equivalent_<br/>(16654/16655)| `OperationDefinition.parameter.binding.modifierExtension`| _Equivalent_<br/>(31076/31077)| `OperationDefinition.parameter.binding.modifierExtension`| _Equivalent_<br/>(45692/45693)| `OperationDefinition.parameter.binding.modifierExtension`
+| **`OperationDefinition.parameter.binding.strength`**| _Equivalent_<br/>(6795/6796)| `OperationDefinition.parameter.binding.strength`| _Equivalent_<br/>(16656/16657)| `OperationDefinition.parameter.binding.strength`| _Equivalent_<br/>(31078/31079)| `OperationDefinition.parameter.binding.strength`| _Equivalent_<br/>(45694/45695)| `OperationDefinition.parameter.binding.strength`
+| **`OperationDefinition.parameter.binding.valueSet[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6797)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6798)| `OperationDefinition.parameter.binding.valueSet[x]`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1210)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1618)| `OperationDefinition.parameter.binding.valueSet`| _Equivalent_<br/>(31080/31081)| `OperationDefinition.parameter.binding.valueSet`| _Equivalent_<br/>(45696/45697)| `OperationDefinition.parameter.binding.valueSet`
+| **`OperationDefinition.parameter.part`**| _Equivalent_<br/>(6799/6800)| `OperationDefinition.parameter.part`| _Equivalent_<br/>(16658/16659)| `OperationDefinition.parameter.part`| _Equivalent_<br/>(31094/31095)| `OperationDefinition.parameter.part`| _Equivalent_<br/>(45710/45711)| `OperationDefinition.parameter.part`
+| *50 of 50 elements used* | | *47 of 55 elements used* | | *47 of 64 elements used* | | *47 of 64 elements used* | | *47 of 70 elements used* 
+

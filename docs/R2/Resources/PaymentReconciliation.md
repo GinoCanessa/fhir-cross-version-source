@@ -1,0 +1,118 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:08 PM
+
+### PaymentReconciliation
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | PaymentReconciliation |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for PaymentReconciliation Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `111` |
+| Database Snapshot Count | `39` |
+| Database Differential Count | `25` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `PaymentReconciliation` | `PaymentReconciliation` | `PaymentReconciliation` | PaymentReconciliation | PaymentReconciliation resource | 0..* | PaymentReconciliation |  |  |
+| `PaymentReconciliation.contained` | `PaymentReconciliation.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `PaymentReconciliation.created` | `PaymentReconciliation.created` | `created` |  | Creation date | 0..1 | dateTime |  |  |
+| `PaymentReconciliation.detail` | `PaymentReconciliation.detail` | `detail` |  | Details | 0..* | BackboneElement |  |  |
+| `PaymentReconciliation.detail.amount` | `PaymentReconciliation.detail.amount` | `amount` |  | Detail amount | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+| `PaymentReconciliation.detail.date` | `PaymentReconciliation.detail.date` | `date` |  | Invoice date | 0..1 | date |  |  |
+| `PaymentReconciliation.detail.extension` | `PaymentReconciliation.detail.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `PaymentReconciliation.detail.id` | `PaymentReconciliation.detail.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `PaymentReconciliation.detail.modifierExtension` | `PaymentReconciliation.detail.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `PaymentReconciliation.detail.payee` | `PaymentReconciliation.detail.payee` | `payee` |  | Payee | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `PaymentReconciliation.detail.request` | `PaymentReconciliation.detail.request` | `request` |  | Claim | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Resource) |  |  |
+| `PaymentReconciliation.detail.responce` | `PaymentReconciliation.detail.responce` | `responce` |  | Claim Response | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Resource) |  |  |
+| `PaymentReconciliation.detail.submitter` | `PaymentReconciliation.detail.submitter` | `submitter` |  | Submitter | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `PaymentReconciliation.detail.type` | `PaymentReconciliation.detail.type` | `type` |  | Type code | 1..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/payment-type` |
+| `PaymentReconciliation.disposition` | `PaymentReconciliation.disposition` | `disposition` |  | Disposition Message | 0..1 | string |  |  |
+| `PaymentReconciliation.extension` | `PaymentReconciliation.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `PaymentReconciliation.form` | `PaymentReconciliation.form` | `form` |  | Printed Form Identifier | 0..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/forms` |
+| `PaymentReconciliation.id` | `PaymentReconciliation.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `PaymentReconciliation.identifier` | `PaymentReconciliation.identifier` | `identifier` |  | Business Identifier | 0..* | Identifier |  |  |
+| `PaymentReconciliation.implicitRules` | `PaymentReconciliation.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `PaymentReconciliation.language` | `PaymentReconciliation.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `PaymentReconciliation.meta` | `PaymentReconciliation.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `PaymentReconciliation.modifierExtension` | `PaymentReconciliation.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `PaymentReconciliation.note` | `PaymentReconciliation.note` | `note` |  | Note text | 0..* | BackboneElement |  |  |
+| `PaymentReconciliation.note.extension` | `PaymentReconciliation.note.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `PaymentReconciliation.note.id` | `PaymentReconciliation.note.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `PaymentReconciliation.note.modifierExtension` | `PaymentReconciliation.note.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `PaymentReconciliation.note.text` | `PaymentReconciliation.note.text` | `text` |  | Notes text | 0..1 | string |  |  |
+| `PaymentReconciliation.note.type` | `PaymentReconciliation.note.type` | `type` |  | display \| print \| printoper | 0..1 | Coding | `Required` | `http://hl7.org/fhir/ValueSet/note-type` |
+| `PaymentReconciliation.organization` | `PaymentReconciliation.organization` | `organization` |  | Insurer | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `PaymentReconciliation.originalRuleset` | `PaymentReconciliation.originalRuleset` | `originalRuleset` |  | Original version | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/ruleset` |
+| `PaymentReconciliation.outcome` | `PaymentReconciliation.outcome` | `outcome` |  | complete \| error | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/remittance-outcome` |
+| `PaymentReconciliation.period` | `PaymentReconciliation.period` | `period` |  | Period covered | 0..1 | Period |  |  |
+| `PaymentReconciliation.request` | `PaymentReconciliation.request` | `request` |  | Claim reference | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/ProcessRequest) |  |  |
+| `PaymentReconciliation.requestOrganization` | `PaymentReconciliation.requestOrganization` | `requestOrganization` |  | Responsible organization | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `PaymentReconciliation.requestProvider` | `PaymentReconciliation.requestProvider` | `requestProvider` |  | Responsible practitioner | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `PaymentReconciliation.ruleset` | `PaymentReconciliation.ruleset` | `ruleset` |  | Resource version | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/ruleset` |
+| `PaymentReconciliation.text` | `PaymentReconciliation.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `PaymentReconciliation.total` | `PaymentReconciliation.total` | `total` |  | Total amount of Payment | 1..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Money] |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [PaymentReconciliation](/docs/R2/Resources/PaymentReconciliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `141`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `307`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PaymentReconciliation](/docs/R3/Resources/PaymentReconciliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `496`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `691`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PaymentReconciliation](/docs/R4/Resources/PaymentReconciliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1575`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1576`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PaymentReconciliation](/docs/R4B/Resources/PaymentReconciliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1023`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1252`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PaymentReconciliation](/docs/R5/Resources/PaymentReconciliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/PaymentReconciliation\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition PaymentReconciliation from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 PaymentReconciliation| Relationship | [R3 PaymentReconciliation](/docs/R3/Resources/PaymentReconciliation.md)| Relationship | [R4 PaymentReconciliation](/docs/R4/Resources/PaymentReconciliation.md)| Relationship | [R4B PaymentReconciliation](/docs/R4B/Resources/PaymentReconciliation.md)| Relationship | [R5 PaymentReconciliation](/docs/R5/Resources/PaymentReconciliation.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`PaymentReconciliation`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7074)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7075)| `PaymentReconciliation`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16923)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16924)| `PaymentReconciliation`| _Equivalent_<br/>(31419/31420)| `PaymentReconciliation`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(46076)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(46077)| `PaymentReconciliation`
+| **`PaymentReconciliation.id`**| _Equivalent_<br/>(7076/7077)| `PaymentReconciliation.id`| _Equivalent_<br/>(16925/16926)| `PaymentReconciliation.id`| _Equivalent_<br/>(31421/31422)| `PaymentReconciliation.id`| _Equivalent_<br/>(46078/46079)| `PaymentReconciliation.id`
+| **`PaymentReconciliation.meta`**| _Equivalent_<br/>(7078/7079)| `PaymentReconciliation.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16927)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16928)| `PaymentReconciliation.meta`| _Equivalent_<br/>(31423/31424)| `PaymentReconciliation.meta`| _Equivalent_<br/>(46080/46081)| `PaymentReconciliation.meta`
+| **`PaymentReconciliation.implicitRules`**| _Equivalent_<br/>(7080/7081)| `PaymentReconciliation.implicitRules`| _Equivalent_<br/>(16929/16930)| `PaymentReconciliation.implicitRules`| _Equivalent_<br/>(31425/31426)| `PaymentReconciliation.implicitRules`| _Equivalent_<br/>(46082/46083)| `PaymentReconciliation.implicitRules`
+| **`PaymentReconciliation.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7082)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7083)| `PaymentReconciliation.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16931)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(16932)| `PaymentReconciliation.language`| _Equivalent_<br/>(31427/31428)| `PaymentReconciliation.language`| _Equivalent_<br/>(46084/46085)| `PaymentReconciliation.language`
+| **`PaymentReconciliation.text`**| _Equivalent_<br/>(7084/7085)| `PaymentReconciliation.text`| _Equivalent_<br/>(16933/16934)| `PaymentReconciliation.text`| _Equivalent_<br/>(31429/31430)| `PaymentReconciliation.text`| _Equivalent_<br/>(46086/46087)| `PaymentReconciliation.text`
+| **`PaymentReconciliation.contained`**| _Equivalent_<br/>(7086/7087)| `PaymentReconciliation.contained`| _Equivalent_<br/>(16935/16936)| `PaymentReconciliation.contained`| _Equivalent_<br/>(31431/31432)| `PaymentReconciliation.contained`| _Equivalent_<br/>(46088/46089)| `PaymentReconciliation.contained`
+| **`PaymentReconciliation.extension`**| _Equivalent_<br/>(7088/7089)| `PaymentReconciliation.extension`| _Equivalent_<br/>(16937/16938)| `PaymentReconciliation.extension`| _Equivalent_<br/>(31433/31434)| `PaymentReconciliation.extension`| _Equivalent_<br/>(46090/46091)| `PaymentReconciliation.extension`
+| **`PaymentReconciliation.modifierExtension`**| _Equivalent_<br/>(7090/7091)| `PaymentReconciliation.modifierExtension`| _Equivalent_<br/>(16939/16940)| `PaymentReconciliation.modifierExtension`| _Equivalent_<br/>(31435/31436)| `PaymentReconciliation.modifierExtension`| _Equivalent_<br/>(46092/46093)| `PaymentReconciliation.modifierExtension`
+| **`PaymentReconciliation.identifier`**| _Equivalent_<br/>(7092/7093)| `PaymentReconciliation.identifier`| _Equivalent_<br/>(16941/16942)| `PaymentReconciliation.identifier`| _Equivalent_<br/>(31437/31438)| `PaymentReconciliation.identifier`| _Equivalent_<br/>(46094/46095)| `PaymentReconciliation.identifier`
+| **`PaymentReconciliation.request`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7094)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7095)| `PaymentReconciliation.request`| →→→→ _RelatedTo_ →→→→ <br/>(16949)<hr/>←←←← _RelatedTo_ ←←←← <br/>(16950)| `PaymentReconciliation.request`| _Equivalent_<br/>(31447/31448)| `PaymentReconciliation.request`| _Equivalent_<br/>(46104/46105)| `PaymentReconciliation.request`
+| **`PaymentReconciliation.outcome`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7096)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7097)| `PaymentReconciliation.outcome`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16951)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16952)| `PaymentReconciliation.outcome`| _Equivalent_<br/>(31451/31452)| `PaymentReconciliation.outcome`| _Equivalent_<br/>(46108/46109)| `PaymentReconciliation.outcome`
+| **`PaymentReconciliation.disposition`**| _Equivalent_<br/>(7098/7099)| `PaymentReconciliation.disposition`| _Equivalent_<br/>(16953/16954)| `PaymentReconciliation.disposition`| _Equivalent_<br/>(31453/31454)| `PaymentReconciliation.disposition`| _Equivalent_<br/>(46110/46111)| `PaymentReconciliation.disposition`
+| **`PaymentReconciliation.ruleset`**| | | | | | | | | 
+| **`PaymentReconciliation.originalRuleset`**| | | | | | | | | 
+| **`PaymentReconciliation.created`**| _Equivalent_<br/>(7100/7101)| `PaymentReconciliation.created`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16947)<hr/>←←←← _Equivalent_ ←←←← <br/>(16948)| `PaymentReconciliation.created`| _Equivalent_<br/>(31443/31444)| `PaymentReconciliation.created`| _Equivalent_<br/>(46100/46101)| `PaymentReconciliation.created`
+| **`PaymentReconciliation.period`**| _Equivalent_<br/>(7102/7103)| `PaymentReconciliation.period`| _Equivalent_<br/>(16945/16946)| `PaymentReconciliation.period`| _Equivalent_<br/>(31441/31442)| `PaymentReconciliation.period`| _Equivalent_<br/>(46098/46099)| `PaymentReconciliation.period`
+| **`PaymentReconciliation.organization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7104)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7105)| `PaymentReconciliation.organization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1219)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1625)| `PaymentReconciliation.paymentIssuer`| _Equivalent_<br/>(31445/31446)| `PaymentReconciliation.paymentIssuer`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(46102)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(46103)| `PaymentReconciliation.paymentIssuer`
+| **`PaymentReconciliation.requestProvider`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7106)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7107)| `PaymentReconciliation.requestProvider`| →→→→ _RelatedTo_ →→→→ <br/>(1221)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1627)| `PaymentReconciliation.requestor`| _Equivalent_<br/>(31449/31450)| `PaymentReconciliation.requestor`| _Equivalent_<br/>(46106/46107)| `PaymentReconciliation.requestor`
+| **`PaymentReconciliation.requestOrganization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7108)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7109)| `PaymentReconciliation.requestOrganization`| →→→→ _RelatedTo_ →→→→ <br/>(1220)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1626)| `PaymentReconciliation.requestor`| _Equivalent_<br/>(31449/31450)| `PaymentReconciliation.requestor`| _Equivalent_<br/>(46106/46107)| `PaymentReconciliation.requestor`
+| **`PaymentReconciliation.detail`**| _Equivalent_<br/>(7110/7111)| `PaymentReconciliation.detail`| _Equivalent_<br/>(16955/16956)| `PaymentReconciliation.detail`| _Equivalent_<br/>(31461/31462)| `PaymentReconciliation.detail`| | | 
+| **`PaymentReconciliation.detail.id`**| _Equivalent_<br/>(7112/7113)| `PaymentReconciliation.detail.id`| _Equivalent_<br/>(16957/16958)| `PaymentReconciliation.detail.id`| _Equivalent_<br/>(31463/31464)| `PaymentReconciliation.detail.id`| | | 
+| **`PaymentReconciliation.detail.extension`**| _Equivalent_<br/>(7114/7115)| `PaymentReconciliation.detail.extension`| _Equivalent_<br/>(16959/16960)| `PaymentReconciliation.detail.extension`| _Equivalent_<br/>(31465/31466)| `PaymentReconciliation.detail.extension`| | | 
+| **`PaymentReconciliation.detail.modifierExtension`**| _Equivalent_<br/>(7116/7117)| `PaymentReconciliation.detail.modifierExtension`| _Equivalent_<br/>(16961/16962)| `PaymentReconciliation.detail.modifierExtension`| _Equivalent_<br/>(31467/31468)| `PaymentReconciliation.detail.modifierExtension`| | | 
+| **`PaymentReconciliation.detail.type`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7118)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7119)| `PaymentReconciliation.detail.type`| _Equivalent_<br/>(16963/16964)| `PaymentReconciliation.detail.type`| _Equivalent_<br/>(31473/31474)| `PaymentReconciliation.detail.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1922)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2160)| `PaymentReconciliation.allocation.type`
+| **`PaymentReconciliation.detail.request`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7120)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7121)| `PaymentReconciliation.detail.request`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16965)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16966)| `PaymentReconciliation.detail.request`| _Equivalent_<br/>(31475/31476)| `PaymentReconciliation.detail.request`| | | 
+| **`PaymentReconciliation.detail.responce`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(320)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(682)| `PaymentReconciliation.detail.response`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16967)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16968)| `PaymentReconciliation.detail.response`| _Equivalent_<br/>(31479/31480)| `PaymentReconciliation.detail.response`| →→→→ _RelatedTo_ →→→→ <br/>(1924)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2162)| `PaymentReconciliation.allocation.response`
+| **`PaymentReconciliation.detail.submitter`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7122)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7123)| `PaymentReconciliation.detail.submitter`| →→→→ _RelatedTo_ →→→→ <br/>(16969)<hr/>←←←← _RelatedTo_ ←←←← <br/>(16970)| `PaymentReconciliation.detail.submitter`| _Equivalent_<br/>(31477/31478)| `PaymentReconciliation.detail.submitter`| _Equivalent_<br/>(1923/2161)| `PaymentReconciliation.allocation.submitter`
+| **`PaymentReconciliation.detail.payee`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7124)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7125)| `PaymentReconciliation.detail.payee`| →→→→ _RelatedTo_ →→→→ <br/>(16971)<hr/>←←←← _RelatedTo_ ←←←← <br/>(16972)| `PaymentReconciliation.detail.payee`| _Equivalent_<br/>(31485/31486)| `PaymentReconciliation.detail.payee`| _Equivalent_<br/>(1927/2165)| `PaymentReconciliation.allocation.payee`
+| **`PaymentReconciliation.detail.date`**| _Equivalent_<br/>(7126/7127)| `PaymentReconciliation.detail.date`| _Equivalent_<br/>(16973/16974)| `PaymentReconciliation.detail.date`| _Equivalent_<br/>(31481/31482)| `PaymentReconciliation.detail.date`| _Equivalent_<br/>(1925/2163)| `PaymentReconciliation.allocation.date`
+| **`PaymentReconciliation.detail.amount`**| →→→→ _RelatedTo_ →→→→ <br/>(7128)<hr/>←←←← _RelatedTo_ ←←←← <br/>(7129)| `PaymentReconciliation.detail.amount`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(16975)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(16976)| `PaymentReconciliation.detail.amount`| _Equivalent_<br/>(31487/31488)| `PaymentReconciliation.detail.amount`| _Equivalent_<br/>(1928/2166)| `PaymentReconciliation.allocation.amount`
+| **`PaymentReconciliation.form`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7130)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7131)| `PaymentReconciliation.form`| _Equivalent_<br/>(1218/1623)| `PaymentReconciliation.formCode`| _Equivalent_<br/>(31489/31490)| `PaymentReconciliation.formCode`| _Equivalent_<br/>(46119/46120)| `PaymentReconciliation.formCode`
+| **`PaymentReconciliation.total`**| →→→→ _RelatedTo_ →→→→ <br/>(7132)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7133)| `PaymentReconciliation.total`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1222)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1624)| `PaymentReconciliation.paymentAmount`| _Equivalent_<br/>(31457/31458)| `PaymentReconciliation.paymentAmount`| _Equivalent_<br/>(1919/2157)| `PaymentReconciliation.amount`
+| **`PaymentReconciliation.note`**| _Equivalent_<br/>(321/683)| `PaymentReconciliation.processNote`| _Equivalent_<br/>(16977/16978)| `PaymentReconciliation.processNote`| _Equivalent_<br/>(31491/31492)| `PaymentReconciliation.processNote`| _Equivalent_<br/>(46121/46122)| `PaymentReconciliation.processNote`
+| **`PaymentReconciliation.note.id`**| | | | | | | | | 
+| **`PaymentReconciliation.note.extension`**| | | | | | | | | 
+| **`PaymentReconciliation.note.modifierExtension`**| | | | | | | | | 
+| **`PaymentReconciliation.note.type`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(323)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(685)| `PaymentReconciliation.processNote.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(16985)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16986)| `PaymentReconciliation.processNote.type`| _Equivalent_<br/>(31499/31500)| `PaymentReconciliation.processNote.type`| _Equivalent_<br/>(46129/46130)| `PaymentReconciliation.processNote.type`
+| **`PaymentReconciliation.note.text`**| _Equivalent_<br/>(322/684)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(16987/16988)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(31501/31502)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(46131/46132)| `PaymentReconciliation.processNote.text`
+| *39 of 39 elements used* | | *34 of 38 elements used* | | *33 of 42 elements used* | | *33 of 42 elements used* | | *28 of 59 elements used* 
+

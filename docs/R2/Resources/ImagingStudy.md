@@ -1,0 +1,139 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:08 PM
+
+### ImagingStudy
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | ImagingStudy |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/ImagingStudy` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for ImagingStudy Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `87` |
+| Database Snapshot Count | `48` |
+| Database Differential Count | `34` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `ImagingStudy` | `ImagingStudy` | `ImagingStudy` | ImagingStudy | A set of images produced in single study (one or more series of references images) | 0..* | ImagingStudy |  |  |
+| `ImagingStudy.accession` | `ImagingStudy.accession` | `accession` |  | Related workflow identifier ("Accession Number") | 0..1 | Identifier |  |  |
+| `ImagingStudy.availability` | `ImagingStudy.availability` | `availability` |  | ONLINE \| OFFLINE \| NEARLINE \| UNAVAILABLE (0008,0056) | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/instance-availability` |
+| `ImagingStudy.contained` | `ImagingStudy.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `ImagingStudy.description` | `ImagingStudy.description` | `description` |  | Institution-generated description | 0..1 | string |  |  |
+| `ImagingStudy.extension` | `ImagingStudy.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ImagingStudy.id` | `ImagingStudy.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `ImagingStudy.identifier` | `ImagingStudy.identifier` | `identifier` |  | Other identifiers for the study | 0..* | Identifier |  |  |
+| `ImagingStudy.implicitRules` | `ImagingStudy.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `ImagingStudy.interpreter` | `ImagingStudy.interpreter` | `interpreter` |  | Who interpreted images | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `ImagingStudy.language` | `ImagingStudy.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `ImagingStudy.meta` | `ImagingStudy.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `ImagingStudy.modalityList` | `ImagingStudy.modalityList` | `modalityList` |  | All series modality if actual acquisition modalities | 0..* | Coding | `Extensible` | `http://hl7.org/fhir/ValueSet/dicom-cid29` |
+| `ImagingStudy.modifierExtension` | `ImagingStudy.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ImagingStudy.numberOfInstances` | `ImagingStudy.numberOfInstances` | `numberOfInstances` |  | Number of Study Related Instances | 1..1 | unsignedInt |  |  |
+| `ImagingStudy.numberOfSeries` | `ImagingStudy.numberOfSeries` | `numberOfSeries` |  | Number of Study Related Series | 1..1 | unsignedInt |  |  |
+| `ImagingStudy.order` | `ImagingStudy.order` | `order` |  | Order(s) that caused this study to be performed | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/DiagnosticOrder) |  |  |
+| `ImagingStudy.patient` | `ImagingStudy.patient` | `patient` |  | Who the images are of | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient) |  |  |
+| `ImagingStudy.procedure` | `ImagingStudy.procedure` | `procedure` |  | Type of procedure performed | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Procedure) |  |  |
+| `ImagingStudy.referrer` | `ImagingStudy.referrer` | `referrer` |  | Referring physician (0008,0090) | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `ImagingStudy.series` | `ImagingStudy.series` | `series` |  | Each study has one or more series of instances | 0..* | BackboneElement |  |  |
+| `ImagingStudy.series.availability` | `ImagingStudy.series.availability` | `availability` |  | ONLINE \| OFFLINE \| NEARLINE \| UNAVAILABLE | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/instance-availability` |
+| `ImagingStudy.series.bodySite` | `ImagingStudy.series.bodySite` | `bodySite` |  | Body part examined | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/body-site` |
+| `ImagingStudy.series.description` | `ImagingStudy.series.description` | `description` |  | A description of the series | 0..1 | string |  |  |
+| `ImagingStudy.series.extension` | `ImagingStudy.series.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ImagingStudy.series.id` | `ImagingStudy.series.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ImagingStudy.series.instance` | `ImagingStudy.series.instance` | `instance` |  | A single SOP instance from the series | 0..* | BackboneElement |  |  |
+| `ImagingStudy.series.instance.content` | `ImagingStudy.series.instance.content` | `content` |  | Content of the instance | 0..* | Attachment |  |  |
+| `ImagingStudy.series.instance.extension` | `ImagingStudy.series.instance.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `ImagingStudy.series.instance.id` | `ImagingStudy.series.instance.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `ImagingStudy.series.instance.modifierExtension` | `ImagingStudy.series.instance.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ImagingStudy.series.instance.number` | `ImagingStudy.series.instance.number` | `number` |  | The number of this instance in the series | 0..1 | unsignedInt |  |  |
+| `ImagingStudy.series.instance.sopClass` | `ImagingStudy.series.instance.sopClass` | `sopClass` |  | DICOM class type | 1..1 | oid |  |  |
+| `ImagingStudy.series.instance.title` | `ImagingStudy.series.instance.title` | `title` |  | Description of instance | 0..1 | string |  |  |
+| `ImagingStudy.series.instance.type` | `ImagingStudy.series.instance.type` | `type` |  | Type of instance (image etc.) | 0..1 | string |  |  |
+| `ImagingStudy.series.instance.uid` | `ImagingStudy.series.instance.uid` | `uid` |  | Formal identifier for this instance | 1..1 | oid |  |  |
+| `ImagingStudy.series.laterality` | `ImagingStudy.series.laterality` | `laterality` |  | Body part laterality | 0..1 | Coding | `Example` | `http://hl7.org/fhir/ValueSet/bodysite-laterality` |
+| `ImagingStudy.series.modality` | `ImagingStudy.series.modality` | `modality` |  | The modality of the instances in the series | 1..1 | Coding | `Extensible` | `http://hl7.org/fhir/ValueSet/dicom-cid29` |
+| `ImagingStudy.series.modifierExtension` | `ImagingStudy.series.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `ImagingStudy.series.number` | `ImagingStudy.series.number` | `number` |  | Numeric identifier of this series | 0..1 | unsignedInt |  |  |
+| `ImagingStudy.series.numberOfInstances` | `ImagingStudy.series.numberOfInstances` | `numberOfInstances` |  | Number of Series Related Instances | 1..1 | unsignedInt |  |  |
+| `ImagingStudy.series.started` | `ImagingStudy.series.started` | `started` |  | When the series started | 0..1 | dateTime |  |  |
+| `ImagingStudy.series.uid` | `ImagingStudy.series.uid` | `uid` |  | Formal identifier for this series | 1..1 | oid |  |  |
+| `ImagingStudy.series.url` | `ImagingStudy.series.url` | `url` |  | Location of the referenced instance(s) | 0..1 | uri |  |  |
+| `ImagingStudy.started` | `ImagingStudy.started` | `started` |  | When the study was started | 0..1 | dateTime |  |  |
+| `ImagingStudy.text` | `ImagingStudy.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `ImagingStudy.uid` | `ImagingStudy.uid` | `uid` |  | Formal identifier for the study | 1..1 | oid |  |  |
+| `ImagingStudy.url` | `ImagingStudy.url` | `url` |  | Retrieve URI | 0..1 | uri |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [ImagingStudy](/docs/R2/Resources/ImagingStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingStudy\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `117`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `283`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudy](/docs/R3/Resources/ImagingStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingStudy\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `468`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `662`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudy](/docs/R4/Resources/ImagingStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingStudy\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1507`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1508`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudy](/docs/R4B/Resources/ImagingStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingStudy\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `987`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1216`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudy](/docs/R5/Resources/ImagingStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingStudy\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition ImagingStudy from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 ImagingStudy| Relationship | [R3 ImagingStudy](/docs/R3/Resources/ImagingStudy.md)| Relationship | [R4 ImagingStudy](/docs/R4/Resources/ImagingStudy.md)| Relationship | [R4B ImagingStudy](/docs/R4B/Resources/ImagingStudy.md)| Relationship | [R5 ImagingStudy](/docs/R5/Resources/ImagingStudy.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`ImagingStudy`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5566)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5567)| `ImagingStudy`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14887)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14888)| `ImagingStudy`| _Equivalent_<br/>(27919/27920)| `ImagingStudy`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42847)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(42848)| `ImagingStudy`
+| **`ImagingStudy.id`**| _Equivalent_<br/>(5568/5569)| `ImagingStudy.id`| _Equivalent_<br/>(14889/14890)| `ImagingStudy.id`| _Equivalent_<br/>(27921/27922)| `ImagingStudy.id`| _Equivalent_<br/>(42849/42850)| `ImagingStudy.id`
+| **`ImagingStudy.meta`**| _Equivalent_<br/>(5570/5571)| `ImagingStudy.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14891)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14892)| `ImagingStudy.meta`| _Equivalent_<br/>(27923/27924)| `ImagingStudy.meta`| _Equivalent_<br/>(42851/42852)| `ImagingStudy.meta`
+| **`ImagingStudy.implicitRules`**| _Equivalent_<br/>(5572/5573)| `ImagingStudy.implicitRules`| _Equivalent_<br/>(14893/14894)| `ImagingStudy.implicitRules`| _Equivalent_<br/>(27925/27926)| `ImagingStudy.implicitRules`| _Equivalent_<br/>(42853/42854)| `ImagingStudy.implicitRules`
+| **`ImagingStudy.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5574)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5575)| `ImagingStudy.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14895)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14896)| `ImagingStudy.language`| _Equivalent_<br/>(27927/27928)| `ImagingStudy.language`| _Equivalent_<br/>(42855/42856)| `ImagingStudy.language`
+| **`ImagingStudy.text`**| _Equivalent_<br/>(5576/5577)| `ImagingStudy.text`| _Equivalent_<br/>(14897/14898)| `ImagingStudy.text`| _Equivalent_<br/>(27929/27930)| `ImagingStudy.text`| _Equivalent_<br/>(42857/42858)| `ImagingStudy.text`
+| **`ImagingStudy.contained`**| _Equivalent_<br/>(5578/5579)| `ImagingStudy.contained`| _Equivalent_<br/>(14899/14900)| `ImagingStudy.contained`| _Equivalent_<br/>(27931/27932)| `ImagingStudy.contained`| _Equivalent_<br/>(42859/42860)| `ImagingStudy.contained`
+| **`ImagingStudy.extension`**| →→→→ _Equivalent_ →→→→ <br/>(5580)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5581)| `ImagingStudy.extension`| _Equivalent_<br/>(14901/14902)| `ImagingStudy.extension`| _Equivalent_<br/>(27933/27934)| `ImagingStudy.extension`| _Equivalent_<br/>(42861/42862)| `ImagingStudy.extension`
+| **`ImagingStudy.modifierExtension`**| _Equivalent_<br/>(5582/5583)| `ImagingStudy.modifierExtension`| _Equivalent_<br/>(14903/14904)| `ImagingStudy.modifierExtension`| _Equivalent_<br/>(27935/27936)| `ImagingStudy.modifierExtension`| _Equivalent_<br/>(42863/42864)| `ImagingStudy.modifierExtension`
+| **`ImagingStudy.started`**| _Equivalent_<br/>(5584/5585)| `ImagingStudy.started`| _Equivalent_<br/>(14907/14908)| `ImagingStudy.started`| _Equivalent_<br/>(27947/27948)| `ImagingStudy.started`| _Equivalent_<br/>(42875/42876)| `ImagingStudy.started`
+| **`ImagingStudy.patient`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5586)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5587)| `ImagingStudy.patient`| →→→→ _RelatedTo_ →→→→ <br/>(1095)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1545)| `ImagingStudy.subject`| _Equivalent_<br/>(27943/27944)| `ImagingStudy.subject`| _Equivalent_<br/>(42871/42872)| `ImagingStudy.subject`
+| **`ImagingStudy.uid`**| _Equivalent_<br/>(5588/5589)| `ImagingStudy.uid`| →→→→ _RelatedTo_ →→→→ <br/>(1098)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1542)| `ImagingStudy.identifier`| _Equivalent_<br/>(27937/27938)| `ImagingStudy.identifier`| _Equivalent_<br/>(42865/42866)| `ImagingStudy.identifier`
+| **`ImagingStudy.accession`**| _Equivalent_<br/>(5590/5591)| `ImagingStudy.accession`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1541)| `ImagingStudy.identifier`| _Equivalent_<br/>(27937/27938)| `ImagingStudy.identifier`| _Equivalent_<br/>(42865/42866)| `ImagingStudy.identifier`
+| **`ImagingStudy.identifier`**| _Equivalent_<br/>(5592/5593)| `ImagingStudy.identifier`| →→→→ _Equivalent_ →→→→ <br/>(14905)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14906)| `ImagingStudy.identifier`| _Equivalent_<br/>(27937/27938)| `ImagingStudy.identifier`| _Equivalent_<br/>(42865/42866)| `ImagingStudy.identifier`
+| **`ImagingStudy.order`**| →→→→ _RelatedTo_ →→→→ <br/>(249)<hr/>←←←← _RelatedTo_ ←←←← <br/>(635)| `ImagingStudy.context`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1093)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1540)| `ImagingStudy.encounter`| _Equivalent_<br/>(27945/27946)| `ImagingStudy.encounter`| _Equivalent_<br/>(42873/42874)| `ImagingStudy.encounter`
+| **`ImagingStudy.modalityList`**| _Equivalent_<br/>(5594/5595)| `ImagingStudy.modalityList`| _Equivalent_<br/>(1094/1543)| `ImagingStudy.modality`| _Equivalent_<br/>(27941/27942)| `ImagingStudy.modality`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42869)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42870)| `ImagingStudy.modality`
+| **`ImagingStudy.referrer`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5596)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5597)| `ImagingStudy.referrer`| →→→→ _RelatedTo_ →→→→ <br/>(14911)<hr/>←←←← _RelatedTo_ ←←←← <br/>(14912)| `ImagingStudy.referrer`| _Equivalent_<br/>(27951/27952)| `ImagingStudy.referrer`| _Equivalent_<br/>(42879/42880)| `ImagingStudy.referrer`
+| **`ImagingStudy.availability`**| _Equivalent_<br/>(5598/5599)| `ImagingStudy.availability`| _Equivalent_<br/>(27909/1546)| `base64Binary`| | | | | 
+| **`ImagingStudy.availability`**| _Equivalent_<br/>(5598/5599)| `ImagingStudy.availability`| _Equivalent_<br/>(27909/1546)| `ImagingStudy.status`| _Equivalent_<br/>(27939/27940)| `ImagingStudy.status`| _Equivalent_<br/>(42867/42868)| `ImagingStudy.status`
+| **`ImagingStudy.url`**| →→→→ _Equivalent_ →→→→ <br/>(14879)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(637)| `base64Binary`| | | | | | | 
+| **`ImagingStudy.url`**| →→→→ _Equivalent_ →→→→ <br/>(14879)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(637)| `ImagingStudy.extension`| _Equivalent_<br/>(14901/14902)| `ImagingStudy.extension`| _Equivalent_<br/>(27933/27934)| `ImagingStudy.extension`| _Equivalent_<br/>(42861/42862)| `ImagingStudy.extension`
+| **`ImagingStudy.numberOfSeries`**| →→→→ _Equivalent_ →→→→ <br/>(5600)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5601)| `ImagingStudy.numberOfSeries`| _Equivalent_<br/>(14917/14918)| `ImagingStudy.numberOfSeries`| _Equivalent_<br/>(27957/27958)| `ImagingStudy.numberOfSeries`| _Equivalent_<br/>(42884/42885)| `ImagingStudy.numberOfSeries`
+| **`ImagingStudy.numberOfInstances`**| →→→→ _Equivalent_ →→→→ <br/>(5602)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5603)| `ImagingStudy.numberOfInstances`| _Equivalent_<br/>(14919/14920)| `ImagingStudy.numberOfInstances`| _Equivalent_<br/>(27959/27960)| `ImagingStudy.numberOfInstances`| _Equivalent_<br/>(42886/42887)| `ImagingStudy.numberOfInstances`
+| **`ImagingStudy.procedure`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(250)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(636)| `ImagingStudy.procedureReference`| →→→→ _RelatedTo_ →→→→ <br/>(14921)<hr/>←←←← _RelatedTo_ ←←←← <br/>(14922)| `ImagingStudy.procedureReference`| _Equivalent_<br/>(27961/27962)| `ImagingStudy.procedureReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1886)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2127)| `ImagingStudy.procedure`
+| **`ImagingStudy.interpreter`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5604)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5605)| `ImagingStudy.interpreter`| →→→→ _RelatedTo_ →→→→ <br/>(14913)<hr/>←←←← _RelatedTo_ ←←←← <br/>(14914)| `ImagingStudy.interpreter`| _Equivalent_<br/>(27953/27954)| `ImagingStudy.interpreter`| | | 
+| **`ImagingStudy.description`**| _Equivalent_<br/>(5606/5607)| `ImagingStudy.description`| _Equivalent_<br/>(14925/14926)| `ImagingStudy.description`| _Equivalent_<br/>(27973/27974)| `ImagingStudy.description`| _Equivalent_<br/>(42892/42893)| `ImagingStudy.description`
+| **`ImagingStudy.series`**| _Equivalent_<br/>(5608/5609)| `ImagingStudy.series`| _Equivalent_<br/>(14927/14928)| `ImagingStudy.series`| _Equivalent_<br/>(27975/27976)| `ImagingStudy.series`| _Equivalent_<br/>(42894/42895)| `ImagingStudy.series`
+| **`ImagingStudy.series.id`**| _Equivalent_<br/>(5610/5611)| `ImagingStudy.series.id`| _Equivalent_<br/>(14929/14930)| `ImagingStudy.series.id`| _Equivalent_<br/>(27977/27978)| `ImagingStudy.series.id`| _Equivalent_<br/>(42896/42897)| `ImagingStudy.series.id`
+| **`ImagingStudy.series.extension`**| →→→→ _Equivalent_ →→→→ <br/>(5612)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5613)| `ImagingStudy.series.extension`| _Equivalent_<br/>(14931/14932)| `ImagingStudy.series.extension`| _Equivalent_<br/>(27979/27980)| `ImagingStudy.series.extension`| _Equivalent_<br/>(42898/42899)| `ImagingStudy.series.extension`
+| **`ImagingStudy.series.modifierExtension`**| _Equivalent_<br/>(5614/5615)| `ImagingStudy.series.modifierExtension`| _Equivalent_<br/>(14933/14934)| `ImagingStudy.series.modifierExtension`| _Equivalent_<br/>(27981/27982)| `ImagingStudy.series.modifierExtension`| _Equivalent_<br/>(42900/42901)| `ImagingStudy.series.modifierExtension`
+| **`ImagingStudy.series.number`**| _Equivalent_<br/>(5616/5617)| `ImagingStudy.series.number`| _Equivalent_<br/>(14937/14938)| `ImagingStudy.series.number`| _Equivalent_<br/>(27985/27986)| `ImagingStudy.series.number`| _Equivalent_<br/>(42904/42905)| `ImagingStudy.series.number`
+| **`ImagingStudy.series.modality`**| _Equivalent_<br/>(5618/5619)| `ImagingStudy.series.modality`| _Equivalent_<br/>(14939/14940)| `ImagingStudy.series.modality`| _Equivalent_<br/>(27987/27988)| `ImagingStudy.series.modality`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42906)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42907)| `ImagingStudy.series.modality`
+| **`ImagingStudy.series.uid`**| _Equivalent_<br/>(5620/5621)| `ImagingStudy.series.uid`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14935)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14936)| `ImagingStudy.series.uid`| _Equivalent_<br/>(27983/27984)| `ImagingStudy.series.uid`| _Equivalent_<br/>(42902/42903)| `ImagingStudy.series.uid`
+| **`ImagingStudy.series.description`**| _Equivalent_<br/>(5622/5623)| `ImagingStudy.series.description`| _Equivalent_<br/>(14941/14942)| `ImagingStudy.series.description`| _Equivalent_<br/>(27989/27990)| `ImagingStudy.series.description`| _Equivalent_<br/>(42908/42909)| `ImagingStudy.series.description`
+| **`ImagingStudy.series.numberOfInstances`**| →→→→ _Equivalent_ →→→→ <br/>(5624)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5625)| `ImagingStudy.series.numberOfInstances`| _Equivalent_<br/>(14943/14944)| `ImagingStudy.series.numberOfInstances`| _Equivalent_<br/>(27991/27992)| `ImagingStudy.series.numberOfInstances`| _Equivalent_<br/>(42910/42911)| `ImagingStudy.series.numberOfInstances`
+| **`ImagingStudy.series.availability`**| _Equivalent_<br/>(5626/5627)| `ImagingStudy.series.availability`| | | | | | | 
+| **`ImagingStudy.series.url`**| →→→→ _Equivalent_ →→→→ <br/>(14884)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(638)| `base64Binary`| | | | | | | 
+| **`ImagingStudy.series.url`**| →→→→ _Equivalent_ →→→→ <br/>(14884)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(638)| `ImagingStudy.series.extension`| _Equivalent_<br/>(14931/14932)| `ImagingStudy.series.extension`| _Equivalent_<br/>(27979/27980)| `ImagingStudy.series.extension`| _Equivalent_<br/>(42898/42899)| `ImagingStudy.series.extension`
+| **`ImagingStudy.series.bodySite`**| _Equivalent_<br/>(5628/5629)| `ImagingStudy.series.bodySite`| _Equivalent_<br/>(14947/14948)| `ImagingStudy.series.bodySite`| _Equivalent_<br/>(27995/27996)| `ImagingStudy.series.bodySite`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42914)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42915)| `ImagingStudy.series.bodySite`
+| **`ImagingStudy.series.laterality`**| _Equivalent_<br/>(5630/5631)| `ImagingStudy.series.laterality`| _Equivalent_<br/>(14949/14950)| `ImagingStudy.series.laterality`| _Equivalent_<br/>(27997/27998)| `ImagingStudy.series.laterality`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42916)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42917)| `ImagingStudy.series.laterality`
+| **`ImagingStudy.series.started`**| _Equivalent_<br/>(5632/5633)| `ImagingStudy.series.started`| _Equivalent_<br/>(14951/14952)| `ImagingStudy.series.started`| _Equivalent_<br/>(28001/28002)| `ImagingStudy.series.started`| _Equivalent_<br/>(42920/42921)| `ImagingStudy.series.started`
+| **`ImagingStudy.series.instance`**| _Equivalent_<br/>(5634/5635)| `ImagingStudy.series.instance`| _Equivalent_<br/>(14955/14956)| `ImagingStudy.series.instance`| _Equivalent_<br/>(28015/28016)| `ImagingStudy.series.instance`| _Equivalent_<br/>(42934/42935)| `ImagingStudy.series.instance`
+| **`ImagingStudy.series.instance.id`**| _Equivalent_<br/>(5636/5637)| `ImagingStudy.series.instance.id`| _Equivalent_<br/>(14957/14958)| `ImagingStudy.series.instance.id`| _Equivalent_<br/>(28017/28018)| `ImagingStudy.series.instance.id`| _Equivalent_<br/>(42936/42937)| `ImagingStudy.series.instance.id`
+| **`ImagingStudy.series.instance.extension`**| _Equivalent_<br/>(5638/5639)| `ImagingStudy.series.instance.extension`| _Equivalent_<br/>(14959/14960)| `ImagingStudy.series.instance.extension`| _Equivalent_<br/>(28019/28020)| `ImagingStudy.series.instance.extension`| _Equivalent_<br/>(42938/42939)| `ImagingStudy.series.instance.extension`
+| **`ImagingStudy.series.instance.modifierExtension`**| _Equivalent_<br/>(5640/5641)| `ImagingStudy.series.instance.modifierExtension`| _Equivalent_<br/>(14961/14962)| `ImagingStudy.series.instance.modifierExtension`| _Equivalent_<br/>(28021/28022)| `ImagingStudy.series.instance.modifierExtension`| _Equivalent_<br/>(42940/42941)| `ImagingStudy.series.instance.modifierExtension`
+| **`ImagingStudy.series.instance.number`**| _Equivalent_<br/>(5642/5643)| `ImagingStudy.series.instance.number`| _Equivalent_<br/>(14965/14966)| `ImagingStudy.series.instance.number`| _Equivalent_<br/>(28027/28028)| `ImagingStudy.series.instance.number`| _Equivalent_<br/>(42946/42947)| `ImagingStudy.series.instance.number`
+| **`ImagingStudy.series.instance.uid`**| _Equivalent_<br/>(5644/5645)| `ImagingStudy.series.instance.uid`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14963)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14964)| `ImagingStudy.series.instance.uid`| _Equivalent_<br/>(28023/28024)| `ImagingStudy.series.instance.uid`| _Equivalent_<br/>(42942/42943)| `ImagingStudy.series.instance.uid`
+| **`ImagingStudy.series.instance.sopClass`**| _Equivalent_<br/>(5646/5647)| `ImagingStudy.series.instance.sopClass`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(14967)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14968)| `ImagingStudy.series.instance.sopClass`| _Equivalent_<br/>(28025/28026)| `ImagingStudy.series.instance.sopClass`| _Equivalent_<br/>(42944/42945)| `ImagingStudy.series.instance.sopClass`
+| **`ImagingStudy.series.instance.type`**| | | | | | | | | 
+| **`ImagingStudy.series.instance.title`**| _Equivalent_<br/>(5648/5649)| `ImagingStudy.series.instance.title`| _Equivalent_<br/>(14969/14970)| `ImagingStudy.series.instance.title`| _Equivalent_<br/>(28029/28030)| `ImagingStudy.series.instance.title`| _Equivalent_<br/>(42948/42949)| `ImagingStudy.series.instance.title`
+| **`ImagingStudy.series.instance.content`**| | | | | | | | | 
+| *48 of 48 elements used* | | *45 of 50 elements used* | | *42 of 56 elements used* | | *41 of 56 elements used* | | *40 of 54 elements used* 
+

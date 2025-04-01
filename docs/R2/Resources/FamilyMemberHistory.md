@@ -1,0 +1,96 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:09 PM
+
+### FamilyMemberHistory
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | FamilyMemberHistory |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for FamilyMemberHistory Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `81` |
+| Database Snapshot Count | `28` |
+| Database Differential Count | `17` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `FamilyMemberHistory` | `FamilyMemberHistory` | `FamilyMemberHistory` | FamilyMemberHistory | Information about patient's relatives, relevant for patient | 0..* | FamilyMemberHistory |  |  |
+| `FamilyMemberHistory.age[x]` | `FamilyMemberHistory.age[x]` | `age[x]` |  | (approximate) age | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/Age], Range, string |  |  |
+| `FamilyMemberHistory.born[x]` | `FamilyMemberHistory.born[x]` | `born[x]` |  | (approximate) date of birth | 0..1 | date, Period, string |  |  |
+| `FamilyMemberHistory.condition` | `FamilyMemberHistory.condition` | `condition` |  | Condition that the related person had | 0..* | BackboneElement |  |  |
+| `FamilyMemberHistory.condition.code` | `FamilyMemberHistory.condition.code` | `code` |  | Condition suffered by relation | 1..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/condition-code` |
+| `FamilyMemberHistory.condition.extension` | `FamilyMemberHistory.condition.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `FamilyMemberHistory.condition.id` | `FamilyMemberHistory.condition.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `FamilyMemberHistory.condition.modifierExtension` | `FamilyMemberHistory.condition.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `FamilyMemberHistory.condition.note` | `FamilyMemberHistory.condition.note` | `note` |  | Extra information about condition | 0..1 | Annotation |  |  |
+| `FamilyMemberHistory.condition.onset[x]` | `FamilyMemberHistory.condition.onset[x]` | `onset[x]` |  | When condition first manifested | 0..1 | Period, Quantity[http://hl7.org/fhir/StructureDefinition/Age], Range, string |  |  |
+| `FamilyMemberHistory.condition.outcome` | `FamilyMemberHistory.condition.outcome` | `outcome` |  | deceased \| permanent disability \| etc. | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/condition-outcome` |
+| `FamilyMemberHistory.contained` | `FamilyMemberHistory.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `FamilyMemberHistory.date` | `FamilyMemberHistory.date` | `date` |  | When history was captured/updated | 0..1 | dateTime |  |  |
+| `FamilyMemberHistory.deceased[x]` | `FamilyMemberHistory.deceased[x]` | `deceased[x]` |  | Dead? How old/when? | 0..1 | boolean, date, Quantity[http://hl7.org/fhir/StructureDefinition/Age], Range, string |  |  |
+| `FamilyMemberHistory.extension` | `FamilyMemberHistory.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `FamilyMemberHistory.gender` | `FamilyMemberHistory.gender` | `gender` |  | male \| female \| other \| unknown | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/administrative-gender` |
+| `FamilyMemberHistory.id` | `FamilyMemberHistory.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `FamilyMemberHistory.identifier` | `FamilyMemberHistory.identifier` | `identifier` |  | External Id(s) for this record | 0..* | Identifier |  |  |
+| `FamilyMemberHistory.implicitRules` | `FamilyMemberHistory.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `FamilyMemberHistory.language` | `FamilyMemberHistory.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `FamilyMemberHistory.meta` | `FamilyMemberHistory.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `FamilyMemberHistory.modifierExtension` | `FamilyMemberHistory.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `FamilyMemberHistory.name` | `FamilyMemberHistory.name` | `name` |  | The family member described | 0..1 | string |  |  |
+| `FamilyMemberHistory.note` | `FamilyMemberHistory.note` | `note` |  | General note about related person | 0..1 | Annotation |  |  |
+| `FamilyMemberHistory.patient` | `FamilyMemberHistory.patient` | `patient` |  | Patient history is about | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient) |  |  |
+| `FamilyMemberHistory.relationship` | `FamilyMemberHistory.relationship` | `relationship` |  | Relationship to the subject | 1..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/v3-FamilyMember` |
+| `FamilyMemberHistory.status` | `FamilyMemberHistory.status` | `status` |  | partial \| completed \| entered-in-error \| health-unknown | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/history-status` |
+| `FamilyMemberHistory.text` | `FamilyMemberHistory.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [FamilyMemberHistory](/docs/R2/Resources/FamilyMemberHistory.md)<br/> `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `111`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `277`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FamilyMemberHistory](/docs/R3/Resources/FamilyMemberHistory.md)<br/> `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `461`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `655`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FamilyMemberHistory](/docs/R4/Resources/FamilyMemberHistory.md)<br/> `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1493`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1494`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FamilyMemberHistory](/docs/R4B/Resources/FamilyMemberHistory.md)<br/> `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `980`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1209`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FamilyMemberHistory](/docs/R5/Resources/FamilyMemberHistory.md)<br/> `http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition FamilyMemberHistory from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 FamilyMemberHistory| Relationship | [R3 FamilyMemberHistory](/docs/R3/Resources/FamilyMemberHistory.md)| Relationship | [R4 FamilyMemberHistory](/docs/R4/Resources/FamilyMemberHistory.md)| Relationship | [R4B FamilyMemberHistory](/docs/R4B/Resources/FamilyMemberHistory.md)| Relationship | [R5 FamilyMemberHistory](/docs/R5/Resources/FamilyMemberHistory.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`FamilyMemberHistory`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5251)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5252)| `FamilyMemberHistory`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14408)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14409)| `FamilyMemberHistory`| _Equivalent_<br/>(27424/27425)| `FamilyMemberHistory`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(42420)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42421)| `FamilyMemberHistory`
+| **`FamilyMemberHistory.id`**| _Equivalent_<br/>(5253/5254)| `FamilyMemberHistory.id`| _Equivalent_<br/>(14410/14411)| `FamilyMemberHistory.id`| _Equivalent_<br/>(27426/27427)| `FamilyMemberHistory.id`| _Equivalent_<br/>(42422/42423)| `FamilyMemberHistory.id`
+| **`FamilyMemberHistory.meta`**| _Equivalent_<br/>(5255/5256)| `FamilyMemberHistory.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14412)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14413)| `FamilyMemberHistory.meta`| _Equivalent_<br/>(27428/27429)| `FamilyMemberHistory.meta`| _Equivalent_<br/>(42424/42425)| `FamilyMemberHistory.meta`
+| **`FamilyMemberHistory.implicitRules`**| _Equivalent_<br/>(5257/5258)| `FamilyMemberHistory.implicitRules`| _Equivalent_<br/>(14414/14415)| `FamilyMemberHistory.implicitRules`| _Equivalent_<br/>(27430/27431)| `FamilyMemberHistory.implicitRules`| _Equivalent_<br/>(42426/42427)| `FamilyMemberHistory.implicitRules`
+| **`FamilyMemberHistory.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5259)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5260)| `FamilyMemberHistory.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14416)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14417)| `FamilyMemberHistory.language`| _Equivalent_<br/>(27432/27433)| `FamilyMemberHistory.language`| _Equivalent_<br/>(42428/42429)| `FamilyMemberHistory.language`
+| **`FamilyMemberHistory.text`**| _Equivalent_<br/>(5261/5262)| `FamilyMemberHistory.text`| _Equivalent_<br/>(14418/14419)| `FamilyMemberHistory.text`| _Equivalent_<br/>(27434/27435)| `FamilyMemberHistory.text`| _Equivalent_<br/>(42430/42431)| `FamilyMemberHistory.text`
+| **`FamilyMemberHistory.contained`**| _Equivalent_<br/>(5263/5264)| `FamilyMemberHistory.contained`| _Equivalent_<br/>(14420/14421)| `FamilyMemberHistory.contained`| _Equivalent_<br/>(27436/27437)| `FamilyMemberHistory.contained`| _Equivalent_<br/>(42432/42433)| `FamilyMemberHistory.contained`
+| **`FamilyMemberHistory.extension`**| _Equivalent_<br/>(5265/5266)| `FamilyMemberHistory.extension`| _Equivalent_<br/>(14422/14423)| `FamilyMemberHistory.extension`| _Equivalent_<br/>(27438/27439)| `FamilyMemberHistory.extension`| _Equivalent_<br/>(42434/42435)| `FamilyMemberHistory.extension`
+| **`FamilyMemberHistory.modifierExtension`**| _Equivalent_<br/>(5267/5268)| `FamilyMemberHistory.modifierExtension`| _Equivalent_<br/>(14424/14425)| `FamilyMemberHistory.modifierExtension`| _Equivalent_<br/>(27440/27441)| `FamilyMemberHistory.modifierExtension`| _Equivalent_<br/>(42436/42437)| `FamilyMemberHistory.modifierExtension`
+| **`FamilyMemberHistory.identifier`**| _Equivalent_<br/>(5269/5270)| `FamilyMemberHistory.identifier`| _Equivalent_<br/>(14426/14427)| `FamilyMemberHistory.identifier`| _Equivalent_<br/>(27442/27443)| `FamilyMemberHistory.identifier`| _Equivalent_<br/>(42438/42439)| `FamilyMemberHistory.identifier`
+| **`FamilyMemberHistory.patient`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5271)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5272)| `FamilyMemberHistory.patient`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14430)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14431)| `FamilyMemberHistory.patient`| _Equivalent_<br/>(27452/27453)| `FamilyMemberHistory.patient`| _Equivalent_<br/>(42448/42449)| `FamilyMemberHistory.patient`
+| **`FamilyMemberHistory.date`**| _Equivalent_<br/>(5273/5274)| `FamilyMemberHistory.date`| _Equivalent_<br/>(14432/14433)| `FamilyMemberHistory.date`| _Equivalent_<br/>(27454/27455)| `FamilyMemberHistory.date`| _Equivalent_<br/>(42450/42451)| `FamilyMemberHistory.date`
+| **`FamilyMemberHistory.status`**| _Equivalent_<br/>(5275/5276)| `FamilyMemberHistory.status`| _Equivalent_<br/>(14428/14429)| `FamilyMemberHistory.status`| _Equivalent_<br/>(27448/27449)| `FamilyMemberHistory.status`| _Equivalent_<br/>(42444/42445)| `FamilyMemberHistory.status`
+| **`FamilyMemberHistory.name`**| _Equivalent_<br/>(5277/5278)| `FamilyMemberHistory.name`| _Equivalent_<br/>(14434/14435)| `FamilyMemberHistory.name`| _Equivalent_<br/>(27456/27457)| `FamilyMemberHistory.name`| _Equivalent_<br/>(42452/42453)| `FamilyMemberHistory.name`
+| **`FamilyMemberHistory.relationship`**| _Equivalent_<br/>(5279/5280)| `FamilyMemberHistory.relationship`| _Equivalent_<br/>(14436/14437)| `FamilyMemberHistory.relationship`| _Equivalent_<br/>(27458/27459)| `FamilyMemberHistory.relationship`| _Equivalent_<br/>(42454/42455)| `FamilyMemberHistory.relationship`
+| **`FamilyMemberHistory.gender`**| _Equivalent_<br/>(5281/5282)| `FamilyMemberHistory.gender`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1078)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1527)| `FamilyMemberHistory.sex`| _Equivalent_<br/>(27460/27461)| `FamilyMemberHistory.sex`| _Equivalent_<br/>(42456/42457)| `FamilyMemberHistory.sex`
+| **`FamilyMemberHistory.born[x]`**| _Equivalent_<br/>(5283/5284)| `FamilyMemberHistory.born[x]`| _Equivalent_<br/>(14438/14439)| `FamilyMemberHistory.born[x]`| _Equivalent_<br/>(27462/27463)| `FamilyMemberHistory.born[x]`| _Equivalent_<br/>(42458/42459)| `FamilyMemberHistory.born[x]`
+| **`FamilyMemberHistory.age[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(5285)<hr/>←←←← _RelatedTo_ ←←←← <br/>(5286)| `FamilyMemberHistory.age[x]`| _Equivalent_<br/>(14440/14441)| `FamilyMemberHistory.age[x]`| _Equivalent_<br/>(27464/27465)| `FamilyMemberHistory.age[x]`| _Equivalent_<br/>(42460/42461)| `FamilyMemberHistory.age[x]`
+| **`FamilyMemberHistory.deceased[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(5287)<hr/>←←←← _RelatedTo_ ←←←← <br/>(5288)| `FamilyMemberHistory.deceased[x]`| _Equivalent_<br/>(14444/14445)| `FamilyMemberHistory.deceased[x]`| _Equivalent_<br/>(27468/27469)| `FamilyMemberHistory.deceased[x]`| _Equivalent_<br/>(42464/42465)| `FamilyMemberHistory.deceased[x]`
+| **`FamilyMemberHistory.note`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5289)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5290)| `FamilyMemberHistory.note`| _Equivalent_<br/>(14450/14451)| `FamilyMemberHistory.note`| _Equivalent_<br/>(27474/27475)| `FamilyMemberHistory.note`| _Equivalent_<br/>(42466/42467)| `FamilyMemberHistory.note`
+| **`FamilyMemberHistory.condition`**| _Equivalent_<br/>(5291/5292)| `FamilyMemberHistory.condition`| _Equivalent_<br/>(14452/14453)| `FamilyMemberHistory.condition`| _Equivalent_<br/>(27476/27477)| `FamilyMemberHistory.condition`| _Equivalent_<br/>(42468/42469)| `FamilyMemberHistory.condition`
+| **`FamilyMemberHistory.condition.id`**| _Equivalent_<br/>(5293/5294)| `FamilyMemberHistory.condition.id`| _Equivalent_<br/>(14454/14455)| `FamilyMemberHistory.condition.id`| _Equivalent_<br/>(27478/27479)| `FamilyMemberHistory.condition.id`| _Equivalent_<br/>(42470/42471)| `FamilyMemberHistory.condition.id`
+| **`FamilyMemberHistory.condition.extension`**| _Equivalent_<br/>(5295/5296)| `FamilyMemberHistory.condition.extension`| _Equivalent_<br/>(14456/14457)| `FamilyMemberHistory.condition.extension`| _Equivalent_<br/>(27480/27481)| `FamilyMemberHistory.condition.extension`| _Equivalent_<br/>(42472/42473)| `FamilyMemberHistory.condition.extension`
+| **`FamilyMemberHistory.condition.modifierExtension`**| _Equivalent_<br/>(5297/5298)| `FamilyMemberHistory.condition.modifierExtension`| _Equivalent_<br/>(14458/14459)| `FamilyMemberHistory.condition.modifierExtension`| _Equivalent_<br/>(27482/27483)| `FamilyMemberHistory.condition.modifierExtension`| _Equivalent_<br/>(42474/42475)| `FamilyMemberHistory.condition.modifierExtension`
+| **`FamilyMemberHistory.condition.code`**| _Equivalent_<br/>(5299/5300)| `FamilyMemberHistory.condition.code`| _Equivalent_<br/>(14460/14461)| `FamilyMemberHistory.condition.code`| _Equivalent_<br/>(27484/27485)| `FamilyMemberHistory.condition.code`| _Equivalent_<br/>(42476/42477)| `FamilyMemberHistory.condition.code`
+| **`FamilyMemberHistory.condition.outcome`**| _Equivalent_<br/>(5301/5302)| `FamilyMemberHistory.condition.outcome`| _Equivalent_<br/>(14462/14463)| `FamilyMemberHistory.condition.outcome`| _Equivalent_<br/>(27486/27487)| `FamilyMemberHistory.condition.outcome`| _Equivalent_<br/>(42478/42479)| `FamilyMemberHistory.condition.outcome`
+| **`FamilyMemberHistory.condition.onset[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(5303)<hr/>←←←← _RelatedTo_ ←←←← <br/>(5304)| `FamilyMemberHistory.condition.onset[x]`| _Equivalent_<br/>(14464/14465)| `FamilyMemberHistory.condition.onset[x]`| _Equivalent_<br/>(27490/27491)| `FamilyMemberHistory.condition.onset[x]`| _Equivalent_<br/>(42482/42483)| `FamilyMemberHistory.condition.onset[x]`
+| **`FamilyMemberHistory.condition.note`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5305)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5306)| `FamilyMemberHistory.condition.note`| _Equivalent_<br/>(14466/14467)| `FamilyMemberHistory.condition.note`| _Equivalent_<br/>(27492/27493)| `FamilyMemberHistory.condition.note`| _Equivalent_<br/>(42484/42485)| `FamilyMemberHistory.condition.note`
+| *28 of 28 elements used* | | *28 of 34 elements used* | | *28 of 35 elements used* | | *28 of 35 elements used* | | *28 of 49 elements used* 
+

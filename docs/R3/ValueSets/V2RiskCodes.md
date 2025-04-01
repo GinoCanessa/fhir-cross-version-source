@@ -1,0 +1,44 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:11 PM
+
+### v2 Risk Codes
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r3.core@3.0.2 |
+| VS Name | v2 Risk Codes |
+| Canonical URL | `http://hl7.org/fhir/ValueSet/v2-0489` |
+| Version | 2.8.2 |
+| Description | FHIR Value set/code system definition for HL7 v2 table 0489 ( Risk Codes) |
+| Status | `Active` |
+| Has Escape Valve Code | `False` |
+| Database Key | `1833` |
+| Database Concept Count | `11` |
+| Database Active Concept Count | `11` |
+### Bindings
+
+| Source | Element | Binding | Strength | Element Short |
+| ------ | ------- | ------- | -------- | ------------- |
+
+### Referenced Systems
+
+* `http://hl7.org/fhir/v2/0489`
+### Empty Projection
+
+This Value Set resulted in no projection (no mappings to other packages).
+
+### Codes
+
+| System | Code | Display |
+| ------ | ---- | ------- |
+| `http://hl7.org/fhir/v2/0489` | `AGG` | Aggressive |
+| `http://hl7.org/fhir/v2/0489` | `BHZ` | Biohazard |
+| `http://hl7.org/fhir/v2/0489` | `BIO` | Biological |
+| `http://hl7.org/fhir/v2/0489` | `COR` | Corrosive |
+| `http://hl7.org/fhir/v2/0489` | `ESC` | Escape Risk |
+| `http://hl7.org/fhir/v2/0489` | `EXP` | Explosive |
+| `http://hl7.org/fhir/v2/0489` | `IFL` | MaterialDangerInflammable |
+| `http://hl7.org/fhir/v2/0489` | `INF` | MaterialDangerInfectious |
+| `http://hl7.org/fhir/v2/0489` | `INJ` | Injury Hazard |
+| `http://hl7.org/fhir/v2/0489` | `POI` | Poison |
+| `http://hl7.org/fhir/v2/0489` | `RAD` | Radioactive |

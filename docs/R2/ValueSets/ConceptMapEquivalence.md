@@ -1,0 +1,55 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:07 PM
+
+### ConceptMapEquivalence
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| VS Name | ConceptMapEquivalence |
+| Canonical URL | `http://hl7.org/fhir/ValueSet/concept-map-equivalence` |
+| Version | 1.0.2 |
+| Description | The degree of equivalence between concepts. |
+| Status | `Draft` |
+| Has Escape Valve Code | `False` |
+| Database Key | `60` |
+| Database Concept Count | `9` |
+| Database Active Concept Count | `9` |
+### Bindings
+
+| Source | Element | Binding | Strength | Element Short |
+| ------ | ------- | ------- | -------- | ------------- |
+| `http://hl7.org/fhir/StructureDefinition/ConceptMap` | `ConceptMap.element.target.equivalence` | `http://hl7.org/fhir/ValueSet/concept-map-equivalence` | `Required` | equivalent \| equal \| wider \| subsumes \| narrower \| specializes \| inexact \| unmatched \| disjoint |
+| `http://hl7.org/fhir/StructureDefinition/elementdefinition-equivalence` | `Extension.valueCode` | `http://hl7.org/fhir/ValueSet/concept-map-equivalence` | `Required` | Value of extension |
+
+### Referenced Systems
+
+* `http://hl7.org/fhir/concept-map-equivalence`
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [ConceptMapEquivalence](/docs/R2/ValueSets/ConceptMapEquivalence.md)<br/> `http://hl7.org/fhir/ValueSet/concept-map-equivalence\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `23`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `182`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapEquivalence](/docs/R3/ValueSets/ConceptMapEquivalence.md)<br/> `http://hl7.org/fhir/ValueSet/concept-map-equivalence\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `349`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `572`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapEquivalence](/docs/R4/ValueSets/ConceptMapEquivalence.md)<br/> `http://hl7.org/fhir/ValueSet/concept-map-equivalence\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapEquivalence](/docs/R4B/ValueSets/ConceptMapEquivalence.md)<br/> `http://hl7.org/fhir/ValueSet/concept-map-equivalence\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `797`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1058`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapRelationship](/docs/R5/ValueSets/ConceptMapRelationship.md)<br/> `http://hl7.org/fhir/ValueSet/concept-map-relationship\|5.0.0` 
+
+### Code Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Value Set ConceptMapEquivalence from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All codes from this value set are listed while other value sets only show contents that have relationships with those codes.
+
+| R2 ConceptMapEquivalence| Relationship | [R3 ConceptMapEquivalence](/docs/R3/ValueSets/ConceptMapEquivalence.md)| Relationship | [R4 ConceptMapEquivalence](/docs/R4/ValueSets/ConceptMapEquivalence.md)| Relationship | [R4B ConceptMapEquivalence](/docs/R4B/ValueSets/ConceptMapEquivalence.md)| Relationship | [R5 ConceptMapRelationship](/docs/R5/ValueSets/ConceptMapRelationship.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| <td colspan="8">**R2** System: `http://hl7.org/fhir/concept-map-equivalence`
+| **`equal`**| _Equivalent_ <br/>(104/1475)| `equal`| _Equivalent_ <br/>(3008/5216)| `equal`| _Equivalent_ <br/>(14716/14717)| `equal`| →→→→ _Equivalent_ →→→→ <br/>(7544)<hr/>←←←← __ ←←←← <br/>() | `equivalent`
+| **`equivalent`**| _Equivalent_ <br/>(106/1476)| `equivalent`| _Equivalent_ <br/>(3010/5218)| `equivalent`| _Equivalent_ <br/>(14714/14715)| `equivalent`| _Equivalent_ <br/>(7546/9813)| `equivalent`
+| **`wider`**| _Equivalent_ <br/>(107/1483)| `wider`| _Equivalent_ <br/>(3011/5219)| `wider`| _Equivalent_ <br/>(14718/14719)| `wider`| _Equivalent_ <br/>(7547/9816)| `source-is-narrower-than-target`
+| **`subsumes`**| _Equivalent_ <br/>(112/1481)| `subsumes`| _Equivalent_ <br/>(3017/5225)| `subsumes`| _Equivalent_ <br/>(14720/14721)| `subsumes`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7553)<hr/>←←←← __ ←←←← <br/>() | `source-is-broader-than-target`
+| **`narrower`**| _Equivalent_ <br/>(110/1478)| `narrower`| _Equivalent_ <br/>(3014/5222)| `narrower`| _Equivalent_ <br/>(14722/14723)| `narrower`| _Equivalent_ <br/>(7550/9817)| `source-is-broader-than-target`
+| **`specializes`**| _Equivalent_ <br/>(108/1480)| `specializes`| _Equivalent_ <br/>(3012/5220)| `specializes`| _Equivalent_ <br/>(14724/14725)| `specializes`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7548)<hr/>←←←← __ ←←←← <br/>() | `source-is-narrower-than-target`
+| **`inexact`**| _Equivalent_ <br/>(105/1477)| `inexact`| _Equivalent_ <br/>(3009/5217)| `inexact`| _Equivalent_ <br/>(14726/14727)| `inexact`| _Equivalent_ <br/>(7545/9814)| `related-to`
+| **`disjoint`**| _Equivalent_ <br/>(109/1474)| `disjoint`| _Equivalent_ <br/>(3013/5221)| `disjoint`| _Equivalent_ <br/>(14730/14731)| `disjoint`| _Equivalent_ <br/>(7549/9815)| `not-related-to`
+| **`unmatched`**| _Equivalent_ <br/>(111/1482)| `unmatched`| _Equivalent_ <br/>(3015/5223)| `unmatched`| _Equivalent_ <br/>(14728/14729)| `unmatched`| | | 
+| *9 of 9 codes used* | | *9 of 10 codes used* | | *9 of 10 codes used* | | *9 of 10 codes used* | | *5 of 5 codes used* 
+

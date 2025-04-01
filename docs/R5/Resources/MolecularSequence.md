@@ -1,0 +1,128 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:39 PM
+
+### MolecularSequence
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r5.core@5.0.0 |
+| Stucture Name | MolecularSequence |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/MolecularSequence` |
+| Version | 5.0.0 |
+| Description | Representation of a molecular sequence. |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `2346` |
+| Database Snapshot Count | `44` |
+| Database Differential Count | `27` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `MolecularSequence` | `MolecularSequence` | `MolecularSequence` | MolecularSequence | Representation of a molecular sequence | 0..* | MolecularSequence |  |  |
+| `MolecularSequence.contained` | `MolecularSequence.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `MolecularSequence.device` | `MolecularSequence.device` | `device` | MolecularSequence.device | The method for sequencing | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Device) |  |  |
+| `MolecularSequence.extension` | `MolecularSequence.extension` | `extension` | DomainResource.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `MolecularSequence.focus` | `MolecularSequence.focus` | `focus` | MolecularSequence.focus | What the molecular sequence is about, when it is not about the subject of record | 0..* | Reference(http://hl7.org/fhir/StructureDefinition/Resource) |  |  |
+| `MolecularSequence.formatted` | `MolecularSequence.formatted` | `formatted` | MolecularSequence.formatted | Embedded file or a link (URL) which contains content to represent the sequence | 0..* | Attachment |  |  |
+| `MolecularSequence.id` | `MolecularSequence.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `MolecularSequence.identifier` | `MolecularSequence.identifier` | `identifier` | MolecularSequence.identifier | Unique ID for this particular sequence | 0..* | Identifier |  |  |
+| `MolecularSequence.implicitRules` | `MolecularSequence.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `MolecularSequence.language` | `MolecularSequence.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/all-languages|5.0.0` |
+| `MolecularSequence.literal` | `MolecularSequence.literal` | `literal` | MolecularSequence.literal | Sequence that was observed | 0..1 | string |  |  |
+| `MolecularSequence.meta` | `MolecularSequence.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `MolecularSequence.modifierExtension` | `MolecularSequence.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `MolecularSequence.performer` | `MolecularSequence.performer` | `performer` | MolecularSequence.performer | Who should be responsible for test result | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `MolecularSequence.relative` | `MolecularSequence.relative` | `relative` | MolecularSequence.relative | A sequence defined relative to another sequence | 0..* | BackboneElement |  |  |
+| `MolecularSequence.relative.coordinateSystem` | `MolecularSequence.relative.coordinateSystem` | `coordinateSystem` | MolecularSequence.relative.coordinateSystem | Ways of identifying nucleotides or amino acids within a sequence | 1..1 | CodeableConcept | `Extensible` | `http://loinc.org/LL5323-2/` |
+| `MolecularSequence.relative.edit` | `MolecularSequence.relative.edit` | `edit` | MolecularSequence.relative.edit | Changes in sequence from the starting sequence | 0..* | BackboneElement |  |  |
+| `MolecularSequence.relative.edit.end` | `MolecularSequence.relative.edit.end` | `end` | MolecularSequence.relative.edit.end | End position of the edit on the starting sequence | 0..1 | integer |  |  |
+| `MolecularSequence.relative.edit.extension` | `MolecularSequence.relative.edit.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `MolecularSequence.relative.edit.id` | `MolecularSequence.relative.edit.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `MolecularSequence.relative.edit.modifierExtension` | `MolecularSequence.relative.edit.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `MolecularSequence.relative.edit.replacedSequence` | `MolecularSequence.relative.edit.replacedSequence` | `replacedSequence` | MolecularSequence.relative.edit.replacedSequence | Allele in the starting sequence | 0..1 | string |  |  |
+| `MolecularSequence.relative.edit.replacementSequence` | `MolecularSequence.relative.edit.replacementSequence` | `replacementSequence` | MolecularSequence.relative.edit.replacementSequence | Allele that was observed | 0..1 | string |  |  |
+| `MolecularSequence.relative.edit.start` | `MolecularSequence.relative.edit.start` | `start` | MolecularSequence.relative.edit.start | Start position of the edit on the starting sequence | 0..1 | integer |  |  |
+| `MolecularSequence.relative.extension` | `MolecularSequence.relative.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `MolecularSequence.relative.id` | `MolecularSequence.relative.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `MolecularSequence.relative.modifierExtension` | `MolecularSequence.relative.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `MolecularSequence.relative.ordinalPosition` | `MolecularSequence.relative.ordinalPosition` | `ordinalPosition` | MolecularSequence.relative.ordinalPosition | Indicates the order in which the sequence should be considered when putting multiple 'relative' elements together | 0..1 | integer |  |  |
+| `MolecularSequence.relative.sequenceRange` | `MolecularSequence.relative.sequenceRange` | `sequenceRange` | MolecularSequence.relative.sequenceRange | Indicates the nucleotide range in the composed sequence when multiple 'relative' elements are used together | 0..1 | Range |  |  |
+| `MolecularSequence.relative.startingSequence` | `MolecularSequence.relative.startingSequence` | `startingSequence` | MolecularSequence.relative.startingSequence | A sequence used as starting sequence | 0..1 | BackboneElement |  |  |
+| `MolecularSequence.relative.startingSequence.chromosome` | `MolecularSequence.relative.startingSequence.chromosome` | `chromosome` | MolecularSequence.relative.startingSequence.chromosome | Chromosome Identifier | 0..1 | CodeableConcept | `Required` | `http://loinc.org/LL2938-0/|5.0.0` |
+| `MolecularSequence.relative.startingSequence.extension` | `MolecularSequence.relative.startingSequence.extension` | `extension` | Element.extension | Additional content defined by implementations | 0..* | Extension |  |  |
+| `MolecularSequence.relative.startingSequence.genomeAssembly` | `MolecularSequence.relative.startingSequence.genomeAssembly` | `genomeAssembly` | MolecularSequence.relative.startingSequence.genomeAssembly | The genome assembly used for starting sequence, e.g. GRCh38 | 0..1 | CodeableConcept | `Extensible` | `http://loinc.org/LL1040-6/` |
+| `MolecularSequence.relative.startingSequence.id` | `MolecularSequence.relative.startingSequence.id` | `id` | Element.id | Unique id for inter-element referencing | 0..1 | id |  |  |
+| `MolecularSequence.relative.startingSequence.modifierExtension` | `MolecularSequence.relative.startingSequence.modifierExtension` | `modifierExtension` | BackboneElement.modifierExtension | Extensions that cannot be ignored even if unrecognized | 0..* | Extension |  |  |
+| `MolecularSequence.relative.startingSequence.orientation` | `MolecularSequence.relative.startingSequence.orientation` | `orientation` | MolecularSequence.relative.startingSequence.orientation | sense \| antisense | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/orientation-type|5.0.0` |
+| `MolecularSequence.relative.startingSequence.sequence[x]` | `MolecularSequence.relative.startingSequence.sequence[x]` | `sequence[x]` | MolecularSequence.relative.startingSequence.sequence[x] | The reference sequence that represents the starting sequence | 0..1 | CodeableConcept, Reference(http://hl7.org/fhir/StructureDefinition/MolecularSequence), string | `Example` |  |
+| `MolecularSequence.relative.startingSequence.strand` | `MolecularSequence.relative.startingSequence.strand` | `strand` | MolecularSequence.relative.startingSequence.strand | watson \| crick | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/strand-type|5.0.0` |
+| `MolecularSequence.relative.startingSequence.windowEnd` | `MolecularSequence.relative.startingSequence.windowEnd` | `windowEnd` | MolecularSequence.relative.startingSequence.windowEnd | End position of the window on the starting sequence | 0..1 | integer |  |  |
+| `MolecularSequence.relative.startingSequence.windowStart` | `MolecularSequence.relative.startingSequence.windowStart` | `windowStart` | MolecularSequence.relative.startingSequence.windowStart | Start position of the window on the starting sequence | 0..1 | integer |  |  |
+| `MolecularSequence.specimen` | `MolecularSequence.specimen` | `specimen` | MolecularSequence.specimen | Specimen used for sequencing | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Specimen) |  |  |
+| `MolecularSequence.subject` | `MolecularSequence.subject` | `subject` | MolecularSequence.subject | Subject this sequence is associated too | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct), Reference(http://hl7.org/fhir/StructureDefinition/Group), Reference(http://hl7.org/fhir/StructureDefinition/NutritionProduct), Reference(http://hl7.org/fhir/StructureDefinition/Patient), Reference(http://hl7.org/fhir/StructureDefinition/Substance) |  |  |
+| `MolecularSequence.text` | `MolecularSequence.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `MolecularSequence.type` | `MolecularSequence.type` | `type` | MolecularSequence.type | aa \| dna \| rna | 0..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/sequence-type|5.0.0` |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| | | [Sequence](/docs/R3/Resources/Sequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/Sequence\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `486`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `680`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R4/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1551`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1552`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R4B/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1011`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1240`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R5/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition MolecularSequence from hl7.fhir.r5.core@5.0.0 (R5, key 5).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| *No Map* | Relationship | [R3 Sequence](/docs/R3/Resources/Sequence.md)| Relationship | [R4 MolecularSequence](/docs/R4/Resources/MolecularSequence.md)| Relationship | [R4B MolecularSequence](/docs/R4B/Resources/MolecularSequence.md)| Relationship | R5 MolecularSequence
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| | | | | `MolecularSequence`| _Equivalent_<br/>(30380/30381)| `MolecularSequence`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(45060)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(45061)| **`MolecularSequence`**
+| | | | | `MolecularSequence.id`| _Equivalent_<br/>(30382/30383)| `MolecularSequence.id`| _Equivalent_<br/>(45062/45063)| **`MolecularSequence.id`**
+| | | | | `MolecularSequence.meta`| _Equivalent_<br/>(30384/30385)| `MolecularSequence.meta`| _Equivalent_<br/>(45064/45065)| **`MolecularSequence.meta`**
+| | | | | `MolecularSequence.implicitRules`| _Equivalent_<br/>(30386/30387)| `MolecularSequence.implicitRules`| _Equivalent_<br/>(45066/45067)| **`MolecularSequence.implicitRules`**
+| | | | | `MolecularSequence.language`| _Equivalent_<br/>(30388/30389)| `MolecularSequence.language`| _Equivalent_<br/>(45068/45069)| **`MolecularSequence.language`**
+| | | | | `MolecularSequence.text`| _Equivalent_<br/>(30390/30391)| `MolecularSequence.text`| _Equivalent_<br/>(45070/45071)| **`MolecularSequence.text`**
+| | | | | `MolecularSequence.contained`| _Equivalent_<br/>(30392/30393)| `MolecularSequence.contained`| _Equivalent_<br/>(45072/45073)| **`MolecularSequence.contained`**
+| | | | | `MolecularSequence.extension`| _Equivalent_<br/>(30394/30395)| `MolecularSequence.extension`| _Equivalent_<br/>(45074/45075)| **`MolecularSequence.extension`**
+| | | | | `MolecularSequence.modifierExtension`| _Equivalent_<br/>(30396/30397)| `MolecularSequence.modifierExtension`| _Equivalent_<br/>(45076/45077)| **`MolecularSequence.modifierExtension`**
+| | | | | `MolecularSequence.identifier`| _Equivalent_<br/>(30398/30399)| `MolecularSequence.identifier`| _Equivalent_<br/>(45078/45079)| **`MolecularSequence.identifier`**
+| | | | | `MolecularSequence.type`| _Equivalent_<br/>(30400/30401)| `MolecularSequence.type`| _Equivalent_<br/>(45080/45081)| **`MolecularSequence.type`**
+| | | | | `MolecularSequence.patient`| _Equivalent_<br/>(30404/30405)| `MolecularSequence.patient`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1846)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2089)| **`MolecularSequence.subject`**
+| | | | | | | | | **`MolecularSequence.focus`**
+| | | | | `MolecularSequence.specimen`| _Equivalent_<br/>(30406/30407)| `MolecularSequence.specimen`| _Equivalent_<br/>(45083/45084)| **`MolecularSequence.specimen`**
+| | | | | `MolecularSequence.device`| _Equivalent_<br/>(30408/30409)| `MolecularSequence.device`| _Equivalent_<br/>(45085/45086)| **`MolecularSequence.device`**
+| | | | | `MolecularSequence.performer`| _Equivalent_<br/>(30410/30411)| `MolecularSequence.performer`| _Equivalent_<br/>(45087/45088)| **`MolecularSequence.performer`**
+| | | | | | | | | **`MolecularSequence.literal`**
+| | | | | | | | | **`MolecularSequence.formatted`**
+| | | | | | | | | **`MolecularSequence.relative`**
+| | | | | | | | | **`MolecularSequence.relative.id`**
+| | | | | | | | | **`MolecularSequence.relative.extension`**
+| | | | | | | | | **`MolecularSequence.relative.modifierExtension`**
+| | | | | | | | | **`MolecularSequence.relative.coordinateSystem`**
+| | | | | | | | | **`MolecularSequence.relative.ordinalPosition`**
+| | | | | | | | | **`MolecularSequence.relative.sequenceRange`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.id`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.extension`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.modifierExtension`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.genomeAssembly`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.chromosome`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.sequence[x]`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.windowStart`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.windowEnd`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.orientation`**
+| | | | | | | | | **`MolecularSequence.relative.startingSequence.strand`**
+| | | | | | | | | **`MolecularSequence.relative.edit`**
+| | | | | | | | | **`MolecularSequence.relative.edit.id`**
+| | | | | | | | | **`MolecularSequence.relative.edit.extension`**
+| | | | | | | | | **`MolecularSequence.relative.edit.modifierExtension`**
+| | | | | | | | | **`MolecularSequence.relative.edit.start`**
+| | | | | | | | | **`MolecularSequence.relative.edit.end`**
+| | | | | | | | | **`MolecularSequence.relative.edit.replacementSequence`**
+| | | | | | | | | **`MolecularSequence.relative.edit.replacedSequence`**
+| | | *0 of 70 elements used* | | *15 of 101 elements used* | | *15 of 101 elements used* | | *44 of 44 elements used* 
+

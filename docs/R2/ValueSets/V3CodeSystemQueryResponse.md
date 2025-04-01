@@ -1,0 +1,37 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:06 PM
+
+### v3 Code System QueryResponse
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| VS Name | v3 Code System QueryResponse |
+| Canonical URL | `http://hl7.org/fhir/ValueSet/v3-QueryResponse` |
+| Version | 2015-07-31 |
+| Description | A code classifying the general nature of the response to a given query. Includes whether or not data was found, or whether an error occurred. |
+| Status | `Active` |
+| Has Escape Valve Code | `False` |
+| Database Key | `966` |
+| Database Concept Count | `4` |
+| Database Active Concept Count | `4` |
+### Bindings
+
+| Source | Element | Binding | Strength | Element Short |
+| ------ | ------- | ------- | -------- | ------------- |
+
+### Referenced Systems
+
+* `http://hl7.org/fhir/v3/QueryResponse`
+### Empty Projection
+
+This Value Set resulted in no projection (no mappings to other packages).
+
+### Codes
+
+| System | Code | Display |
+| ------ | ---- | ------- |
+| `http://hl7.org/fhir/v3/QueryResponse` | `AE` | ApplicationError |
+| `http://hl7.org/fhir/v3/QueryResponse` | `NF` | No data found |
+| `http://hl7.org/fhir/v3/QueryResponse` | `OK` | Data found |
+| `http://hl7.org/fhir/v3/QueryResponse` | `QE` | QueryParameterError |

@@ -1,0 +1,146 @@
+Comparison of 
+Generated at Tuesday, April 1, 2025 1:39:09 PM
+
+### Immunization
+
+|      |     |
+| ---: | --- |
+| Package | hl7.fhir.r2.core@1.0.2 |
+| Stucture Name | Immunization |
+| Canonical URL | `http://hl7.org/fhir/StructureDefinition/Immunization` |
+| Version | 1.0.2 |
+| Description | Base StructureDefinition for Immunization Resource |
+| Status | `Draft` |
+| Artifact Class | `Resource` |
+| Database Key | `88` |
+| Database Snapshot Count | `52` |
+| Database Differential Count | `35` |
+
+### Elements
+
+| Id | Path | Name | Base Path | Short | Cardinality | Collated Type | Binding Strength | Binding Value Set |
+| -- | ---- | ---- | --------- | ----- | ----------- | ------------- | ---------------- | ----------------- |
+| `Immunization` | `Immunization` | `Immunization` | Immunization | Immunization event information | 0..* | Immunization |  |  |
+| `Immunization.contained` | `Immunization.contained` | `contained` | DomainResource.contained | Contained, inline Resources | 0..* | Resource |  |  |
+| `Immunization.date` | `Immunization.date` | `date` |  | Vaccination administration date | 0..1 | dateTime |  |  |
+| `Immunization.doseQuantity` | `Immunization.doseQuantity` | `doseQuantity` |  | Amount of vaccine administered | 0..1 | Quantity[http://hl7.org/fhir/StructureDefinition/SimpleQuantity] |  |  |
+| `Immunization.encounter` | `Immunization.encounter` | `encounter` |  | Encounter administered as part of | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Encounter) |  |  |
+| `Immunization.expirationDate` | `Immunization.expirationDate` | `expirationDate` |  | Vaccine expiration date | 0..1 | date |  |  |
+| `Immunization.explanation` | `Immunization.explanation` | `explanation` |  | Administration/non-administration reasons | 0..1 | BackboneElement |  |  |
+| `Immunization.explanation.extension` | `Immunization.explanation.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Immunization.explanation.id` | `Immunization.explanation.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Immunization.explanation.modifierExtension` | `Immunization.explanation.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Immunization.explanation.reason` | `Immunization.explanation.reason` | `reason` |  | Why immunization occurred | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/immunization-reason` |
+| `Immunization.explanation.reasonNotGiven` | `Immunization.explanation.reasonNotGiven` | `reasonNotGiven` |  | Why immunization did not occur | 0..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/no-immunization-reason` |
+| `Immunization.extension` | `Immunization.extension` | `extension` | DomainResource.extension | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Immunization.id` | `Immunization.id` | `id` | Resource.id | Logical id of this artifact | 0..1 | id |  |  |
+| `Immunization.identifier` | `Immunization.identifier` | `identifier` |  | Business identifier | 0..* | Identifier |  |  |
+| `Immunization.implicitRules` | `Immunization.implicitRules` | `implicitRules` | Resource.implicitRules | A set of rules under which this content was created | 0..1 | uri |  |  |
+| `Immunization.language` | `Immunization.language` | `language` | Resource.language | Language of the resource content | 0..1 | code | `Required` | `http://tools.ietf.org/html/bcp47` |
+| `Immunization.location` | `Immunization.location` | `location` |  | Where vaccination occurred | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Location) |  |  |
+| `Immunization.lotNumber` | `Immunization.lotNumber` | `lotNumber` |  | Vaccine lot number | 0..1 | string |  |  |
+| `Immunization.manufacturer` | `Immunization.manufacturer` | `manufacturer` |  | Vaccine manufacturer | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `Immunization.meta` | `Immunization.meta` | `meta` | Resource.meta | Metadata about the resource | 0..1 | Meta |  |  |
+| `Immunization.modifierExtension` | `Immunization.modifierExtension` | `modifierExtension` | DomainResource.modifierExtension | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Immunization.note` | `Immunization.note` | `note` |  | Vaccination notes | 0..* | Annotation |  |  |
+| `Immunization.patient` | `Immunization.patient` | `patient` |  | Who was immunized | 1..1 | Reference(http://hl7.org/fhir/StructureDefinition/Patient) |  |  |
+| `Immunization.performer` | `Immunization.performer` | `performer` |  | Who administered vaccine | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Immunization.reaction` | `Immunization.reaction` | `reaction` |  | Details of a reaction that follows immunization | 0..* | BackboneElement |  |  |
+| `Immunization.reaction.date` | `Immunization.reaction.date` | `date` |  | When reaction started | 0..1 | dateTime |  |  |
+| `Immunization.reaction.detail` | `Immunization.reaction.detail` | `detail` |  | Additional information on reaction | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Observation) |  |  |
+| `Immunization.reaction.extension` | `Immunization.reaction.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Immunization.reaction.id` | `Immunization.reaction.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Immunization.reaction.modifierExtension` | `Immunization.reaction.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Immunization.reaction.reported` | `Immunization.reaction.reported` | `reported` |  | Indicates self-reported reaction | 0..1 | boolean |  |  |
+| `Immunization.reported` | `Immunization.reported` | `reported` |  | Indicates a self-reported record | 1..1 | boolean |  |  |
+| `Immunization.requester` | `Immunization.requester` | `requester` |  | Who ordered vaccination | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Practitioner) |  |  |
+| `Immunization.route` | `Immunization.route` | `route` |  | How vaccine entered body | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/immunization-route` |
+| `Immunization.site` | `Immunization.site` | `site` |  | Body site vaccine  was administered | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/immunization-site` |
+| `Immunization.status` | `Immunization.status` | `status` |  | in-progress \| on-hold \| completed \| entered-in-error \| stopped | 1..1 | code | `Required` | `http://hl7.org/fhir/ValueSet/medication-admin-status` |
+| `Immunization.text` | `Immunization.text` | `text` | DomainResource.text | Text summary of the resource, for human interpretation | 0..1 | Narrative |  |  |
+| `Immunization.vaccinationProtocol` | `Immunization.vaccinationProtocol` | `vaccinationProtocol` |  | What protocol was followed | 0..* | BackboneElement |  |  |
+| `Immunization.vaccinationProtocol.authority` | `Immunization.vaccinationProtocol.authority` | `authority` |  | Who is responsible for protocol | 0..1 | Reference(http://hl7.org/fhir/StructureDefinition/Organization) |  |  |
+| `Immunization.vaccinationProtocol.description` | `Immunization.vaccinationProtocol.description` | `description` |  | Details of vaccine protocol | 0..1 | string |  |  |
+| `Immunization.vaccinationProtocol.doseSequence` | `Immunization.vaccinationProtocol.doseSequence` | `doseSequence` |  | Dose number within series | 1..1 | positiveInt |  |  |
+| `Immunization.vaccinationProtocol.doseStatus` | `Immunization.vaccinationProtocol.doseStatus` | `doseStatus` |  | Indicates if dose counts towards immunity | 1..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status` |
+| `Immunization.vaccinationProtocol.doseStatusReason` | `Immunization.vaccinationProtocol.doseStatusReason` | `doseStatusReason` |  | Why dose does (not) count | 0..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-status-reason` |
+| `Immunization.vaccinationProtocol.extension` | `Immunization.vaccinationProtocol.extension` | `extension` |  | Additional Content defined by implementations | 0..* | Extension |  |  |
+| `Immunization.vaccinationProtocol.id` | `Immunization.vaccinationProtocol.id` | `id` |  | xml:id (or equivalent in JSON) | 0..1 | id |  |  |
+| `Immunization.vaccinationProtocol.modifierExtension` | `Immunization.vaccinationProtocol.modifierExtension` | `modifierExtension` |  | Extensions that cannot be ignored | 0..* | Extension |  |  |
+| `Immunization.vaccinationProtocol.series` | `Immunization.vaccinationProtocol.series` | `series` |  | Name of vaccine series | 0..1 | string |  |  |
+| `Immunization.vaccinationProtocol.seriesDoses` | `Immunization.vaccinationProtocol.seriesDoses` | `seriesDoses` |  | Recommended number of doses for immunity | 0..1 | positiveInt |  |  |
+| `Immunization.vaccinationProtocol.targetDisease` | `Immunization.vaccinationProtocol.targetDisease` | `targetDisease` |  | Disease immunized against | 1..* | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/vaccination-protocol-dose-target` |
+| `Immunization.vaccineCode` | `Immunization.vaccineCode` | `vaccineCode` |  | Vaccine product administered | 1..1 | CodeableConcept | `Example` | `http://hl7.org/fhir/ValueSet/vaccine-code` |
+| `Immunization.wasNotGiven` | `Immunization.wasNotGiven` | `wasNotGiven` |  | Flag for whether immunization was given | 1..1 | boolean |  |  |
+### Mapping Table
+
+| R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| [Immunization](/docs/R2/Resources/Immunization.md)<br/> `http://hl7.org/fhir/StructureDefinition/Immunization\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `118`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `284`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Immunization](/docs/R3/Resources/Immunization.md)<br/> `http://hl7.org/fhir/StructureDefinition/Immunization\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `469`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `663`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Immunization](/docs/R4/Resources/Immunization.md)<br/> `http://hl7.org/fhir/StructureDefinition/Immunization\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1509`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1510`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Immunization](/docs/R4B/Resources/Immunization.md)<br/> `http://hl7.org/fhir/StructureDefinition/Immunization\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `988`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1217`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Immunization](/docs/R5/Resources/Immunization.md)<br/> `http://hl7.org/fhir/StructureDefinition/Immunization\|5.0.0` 
+
+### Element Mappings
+
+
+#### Map Group 0
+
+This group is centered on the Structure Definition Immunization from hl7.fhir.r2.core@1.0.2 (R2, key 1).
+All elements from this structure are listed while other structures only show contents that have relationships with those elements.
+
+| R2 Immunization| Relationship | [R3 Immunization](/docs/R3/Resources/Immunization.md)| Relationship | [R4 Immunization](/docs/R4/Resources/Immunization.md)| Relationship | [R4B Immunization](/docs/R4B/Resources/Immunization.md)| Relationship | [R5 Immunization](/docs/R5/Resources/Immunization.md)
+| --- | --- | --- | --- | --- | --- | --- | --- | ---
+| **`Immunization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5650)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5651)| `Immunization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14978)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14979)| `Immunization`| _Equivalent_<br/>(28051/28052)| `Immunization`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42950)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(42951)| `Immunization`
+| **`Immunization.id`**| _Equivalent_<br/>(5652/5653)| `Immunization.id`| _Equivalent_<br/>(14980/14981)| `Immunization.id`| _Equivalent_<br/>(28053/28054)| `Immunization.id`| _Equivalent_<br/>(42952/42953)| `Immunization.id`
+| **`Immunization.meta`**| _Equivalent_<br/>(5654/5655)| `Immunization.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14982)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14983)| `Immunization.meta`| _Equivalent_<br/>(28055/28056)| `Immunization.meta`| _Equivalent_<br/>(42954/42955)| `Immunization.meta`
+| **`Immunization.implicitRules`**| _Equivalent_<br/>(5656/5657)| `Immunization.implicitRules`| _Equivalent_<br/>(14984/14985)| `Immunization.implicitRules`| _Equivalent_<br/>(28057/28058)| `Immunization.implicitRules`| _Equivalent_<br/>(42956/42957)| `Immunization.implicitRules`
+| **`Immunization.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5658)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5659)| `Immunization.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14986)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14987)| `Immunization.language`| _Equivalent_<br/>(28059/28060)| `Immunization.language`| _Equivalent_<br/>(42958/42959)| `Immunization.language`
+| **`Immunization.text`**| _Equivalent_<br/>(5660/5661)| `Immunization.text`| _Equivalent_<br/>(14988/14989)| `Immunization.text`| _Equivalent_<br/>(28061/28062)| `Immunization.text`| _Equivalent_<br/>(42960/42961)| `Immunization.text`
+| **`Immunization.contained`**| _Equivalent_<br/>(5662/5663)| `Immunization.contained`| _Equivalent_<br/>(14990/14991)| `Immunization.contained`| _Equivalent_<br/>(28063/28064)| `Immunization.contained`| _Equivalent_<br/>(42962/42963)| `Immunization.contained`
+| **`Immunization.extension`**| _Equivalent_<br/>(5664/5665)| `Immunization.extension`| →→→→ _Equivalent_ →→→→ <br/>(14992)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14993)| `Immunization.extension`| _Equivalent_<br/>(28065/28066)| `Immunization.extension`| _Equivalent_<br/>(42964/42965)| `Immunization.extension`
+| **`Immunization.modifierExtension`**| _Equivalent_<br/>(5666/5667)| `Immunization.modifierExtension`| _Equivalent_<br/>(14994/14995)| `Immunization.modifierExtension`| _Equivalent_<br/>(28067/28068)| `Immunization.modifierExtension`| _Equivalent_<br/>(42966/42967)| `Immunization.modifierExtension`
+| **`Immunization.identifier`**| _Equivalent_<br/>(5668/5669)| `Immunization.identifier`| _Equivalent_<br/>(14996/14997)| `Immunization.identifier`| _Equivalent_<br/>(28069/28070)| `Immunization.identifier`| _Equivalent_<br/>(42968/42969)| `Immunization.identifier`
+| **`Immunization.status`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(5670)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5671)| `Immunization.status`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14998)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14999)| `Immunization.status`| _Equivalent_<br/>(28071/28072)| `Immunization.status`| _Equivalent_<br/>(42970/42971)| `Immunization.status`
+| **`Immunization.date`**| _Equivalent_<br/>(5672/5673)| `Immunization.date`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1099)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1547)| `Immunization.occurrence[x]`| _Equivalent_<br/>(28081/28082)| `Immunization.occurrence[x]`| _Equivalent_<br/>(42980/42981)| `Immunization.occurrence[x]`
+| **`Immunization.vaccineCode`**| _Equivalent_<br/>(5674/5675)| `Immunization.vaccineCode`| _Equivalent_<br/>(15001/15002)| `Immunization.vaccineCode`| _Equivalent_<br/>(28075/28076)| `Immunization.vaccineCode`| _Equivalent_<br/>(42974/42975)| `Immunization.vaccineCode`
+| **`Immunization.patient`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5676)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5677)| `Immunization.patient`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15003)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15004)| `Immunization.patient`| _Equivalent_<br/>(28077/28078)| `Immunization.patient`| _Equivalent_<br/>(42976/42977)| `Immunization.patient`
+| **`Immunization.wasNotGiven`**| _Equivalent_<br/>(258/639)| `Immunization.notGiven`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1103)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1559)| `Immunization.extension`| _Equivalent_<br/>(28065/28066)| `Immunization.extension`| _Equivalent_<br/>(42964/42965)| `Immunization.extension`
+| **`Immunization.wasNotGiven`**| _Equivalent_<br/>(258/639)| `Immunization.notGiven`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1103)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1559)| `Immunization.status`| _Equivalent_<br/>(28071/28072)| `Immunization.status`| _Equivalent_<br/>(42970/42971)| `Immunization.status`
+| **`Immunization.wasNotGiven`**| _Equivalent_<br/>(258/639)| `Immunization.notGiven`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1103)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1559)| `Immunization.statusReason`| _Equivalent_<br/>(28073/28074)| `Immunization.statusReason`| _Equivalent_<br/>(42972/42973)| `Immunization.statusReason`
+| **`Immunization.reported`**| | | | | | | | | 
+| **`Immunization.performer`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(255)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(640)| `Immunization.practitioner.actor`| →→→→ _RelatedTo_ →→→→ <br/>(1107)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1549)| `Immunization.performer.actor`| _Equivalent_<br/>(28113/28114)| `Immunization.performer.actor`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(43010)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(43011)| `Immunization.performer.actor`
+| **`Immunization.requester`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(257)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(641)| `Immunization.practitioner.actor`| →→→→ _RelatedTo_ →→→→ <br/>(1107)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1549)| `Immunization.performer.actor`| _Equivalent_<br/>(28113/28114)| `Immunization.performer.actor`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(43010)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(43011)| `Immunization.performer.actor`
+| **`Immunization.encounter`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5678)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5679)| `Immunization.encounter`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15005)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15006)| `Immunization.encounter`| _Equivalent_<br/>(28079/28080)| `Immunization.encounter`| _Equivalent_<br/>(42978/42979)| `Immunization.encounter`
+| **`Immunization.manufacturer`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5680)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5681)| `Immunization.manufacturer`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15013)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15014)| `Immunization.manufacturer`| _Equivalent_<br/>(28091/28092)| `Immunization.manufacturer`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42988)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(42989)| `Immunization.manufacturer`
+| **`Immunization.location`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5682)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5683)| `Immunization.location`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15011)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15012)| `Immunization.location`| _Equivalent_<br/>(28089/28090)| `Immunization.location`| _Equivalent_<br/>(42986/42987)| `Immunization.location`
+| **`Immunization.lotNumber`**| _Equivalent_<br/>(5684/5685)| `Immunization.lotNumber`| _Equivalent_<br/>(15015/15016)| `Immunization.lotNumber`| _Equivalent_<br/>(28093/28094)| `Immunization.lotNumber`| _Equivalent_<br/>(42990/42991)| `Immunization.lotNumber`
+| **`Immunization.expirationDate`**| _Equivalent_<br/>(5686/5687)| `Immunization.expirationDate`| _Equivalent_<br/>(15017/15018)| `Immunization.expirationDate`| _Equivalent_<br/>(28095/28096)| `Immunization.expirationDate`| _Equivalent_<br/>(42992/42993)| `Immunization.expirationDate`
+| **`Immunization.site`**| _Equivalent_<br/>(5688/5689)| `Immunization.site`| _Equivalent_<br/>(15019/15020)| `Immunization.site`| _Equivalent_<br/>(28097/28098)| `Immunization.site`| _Equivalent_<br/>(42994/42995)| `Immunization.site`
+| **`Immunization.route`**| _Equivalent_<br/>(5690/5691)| `Immunization.route`| _Equivalent_<br/>(15021/15022)| `Immunization.route`| _Equivalent_<br/>(28099/28100)| `Immunization.route`| _Equivalent_<br/>(42996/42997)| `Immunization.route`
+| **`Immunization.doseQuantity`**| _Equivalent_<br/>(5692/5693)| `Immunization.doseQuantity`| _Equivalent_<br/>(15023/15024)| `Immunization.doseQuantity`| _Equivalent_<br/>(28101/28102)| `Immunization.doseQuantity`| _Equivalent_<br/>(42998/42999)| `Immunization.doseQuantity`
+| **`Immunization.note`**| _Equivalent_<br/>(5694/5695)| `Immunization.note`| _Equivalent_<br/>(15028/15029)| `Immunization.note`| _Equivalent_<br/>(28115/28116)| `Immunization.note`| _Equivalent_<br/>(43012/43013)| `Immunization.note`
+| **`Immunization.explanation`**| _Equivalent_<br/>(5696/5697)| `Immunization.explanation`| →→→→ _RelatedTo_ →→→→ <br/>(1100)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1560)| `Immunization`| _Equivalent_<br/>(28051/28052)| `Immunization`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(42950)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(42951)| `Immunization`
+| **`Immunization.explanation.id`**| _Equivalent_<br/>(5698/5699)| `Immunization.explanation.id`| | | | | | | 
+| **`Immunization.explanation.extension`**| _Equivalent_<br/>(5700/5701)| `Immunization.explanation.extension`| | | | | | | 
+| **`Immunization.explanation.modifierExtension`**| _Equivalent_<br/>(5702/5703)| `Immunization.explanation.modifierExtension`| | | | | | | 
+| **`Immunization.explanation.reason`**| _Equivalent_<br/>(5704/5705)| `Immunization.explanation.reason`| _Equivalent_<br/>(1101/1557)| `Immunization.reasonCode`| _Equivalent_<br/>(28117/28118)| `Immunization.reasonCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1800)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2044)| `Immunization.reason`
+| **`Immunization.explanation.reasonNotGiven`**| _Equivalent_<br/>(5706/5707)| `Immunization.explanation.reasonNotGiven`| _Equivalent_<br/>(1102/1558)| `Immunization.reasonCode`| _Equivalent_<br/>(28117/28118)| `Immunization.reasonCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1800)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2044)| `Immunization.reason`
+| **`Immunization.reaction`**| _Equivalent_<br/>(5708/5709)| `Immunization.reaction`| _Equivalent_<br/>(15033/15034)| `Immunization.reaction`| _Equivalent_<br/>(28145/28146)| `Immunization.reaction`| _Equivalent_<br/>(43030/43031)| `Immunization.reaction`
+| **`Immunization.reaction.id`**| _Equivalent_<br/>(5710/5711)| `Immunization.reaction.id`| _Equivalent_<br/>(15035/15036)| `Immunization.reaction.id`| _Equivalent_<br/>(28147/28148)| `Immunization.reaction.id`| _Equivalent_<br/>(43032/43033)| `Immunization.reaction.id`
+| **`Immunization.reaction.extension`**| _Equivalent_<br/>(5712/5713)| `Immunization.reaction.extension`| _Equivalent_<br/>(15037/15038)| `Immunization.reaction.extension`| _Equivalent_<br/>(28149/28150)| `Immunization.reaction.extension`| _Equivalent_<br/>(43034/43035)| `Immunization.reaction.extension`
+| **`Immunization.reaction.modifierExtension`**| _Equivalent_<br/>(5714/5715)| `Immunization.reaction.modifierExtension`| _Equivalent_<br/>(15039/15040)| `Immunization.reaction.modifierExtension`| _Equivalent_<br/>(28151/28152)| `Immunization.reaction.modifierExtension`| _Equivalent_<br/>(43036/43037)| `Immunization.reaction.modifierExtension`
+| **`Immunization.reaction.date`**| _Equivalent_<br/>(5716/5717)| `Immunization.reaction.date`| _Equivalent_<br/>(15041/15042)| `Immunization.reaction.date`| _Equivalent_<br/>(28153/28154)| `Immunization.reaction.date`| _Equivalent_<br/>(43038/43039)| `Immunization.reaction.date`
+| **`Immunization.reaction.detail`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5718)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5719)| `Immunization.reaction.detail`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15043)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15044)| `Immunization.reaction.detail`| _Equivalent_<br/>(28155/28156)| `Immunization.reaction.detail`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2046)| `Immunization.reaction.manifestation`
+| **`Immunization.reaction.reported`**| _Equivalent_<br/>(5720/5721)| `Immunization.reaction.reported`| _Equivalent_<br/>(15045/15046)| `Immunization.reaction.reported`| _Equivalent_<br/>(28157/28158)| `Immunization.reaction.reported`| _Equivalent_<br/>(43040/43041)| `Immunization.reaction.reported`
+| **`Immunization.vaccinationProtocol`**| _Equivalent_<br/>(5722/5723)| `Immunization.vaccinationProtocol`| _Equivalent_<br/>(1109/1551)| `Immunization.protocolApplied`| _Equivalent_<br/>(28159/28160)| `Immunization.protocolApplied`| _Equivalent_<br/>(43042/43043)| `Immunization.protocolApplied`
+| **`Immunization.vaccinationProtocol.id`**| _Equivalent_<br/>(5724/5725)| `Immunization.vaccinationProtocol.id`| | | | | | | 
+| **`Immunization.vaccinationProtocol.extension`**| _Equivalent_<br/>(5726/5727)| `Immunization.vaccinationProtocol.extension`| | | | | | | 
+| **`Immunization.vaccinationProtocol.modifierExtension`**| _Equivalent_<br/>(5728/5729)| `Immunization.vaccinationProtocol.modifierExtension`| | | | | | | 
+| **`Immunization.vaccinationProtocol.doseSequence`**| →→→→ _Equivalent_ →→→→ <br/>(5730)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5731)| `Immunization.vaccinationProtocol.doseSequence`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1112)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1553)| `Immunization.protocolApplied.doseNumber[x]`| _Equivalent_<br/>(28173/28174)| `Immunization.protocolApplied.doseNumber[x]`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1798)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2042)| `Immunization.protocolApplied.doseNumber`
+| **`Immunization.vaccinationProtocol.description`**| _Equivalent_<br/>(5732/5733)| `Immunization.vaccinationProtocol.description`| | | | | | | 
+| **`Immunization.vaccinationProtocol.authority`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5734)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5735)| `Immunization.vaccinationProtocol.authority`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1110)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1552)| `Immunization.protocolApplied.authority`| _Equivalent_<br/>(28169/28170)| `Immunization.protocolApplied.authority`| _Equivalent_<br/>(43052/43053)| `Immunization.protocolApplied.authority`
+| **`Immunization.vaccinationProtocol.series`**| _Equivalent_<br/>(5736/5737)| `Immunization.vaccinationProtocol.series`| _Equivalent_<br/>(1115/1554)| `Immunization.protocolApplied.series`| _Equivalent_<br/>(28167/28168)| `Immunization.protocolApplied.series`| _Equivalent_<br/>(43050/43051)| `Immunization.protocolApplied.series`
+| **`Immunization.vaccinationProtocol.seriesDoses`**| _Equivalent_<br/>(5738/5739)| `Immunization.vaccinationProtocol.seriesDoses`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1116)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1555)| `Immunization.protocolApplied.seriesDoses[x]`| _Equivalent_<br/>(28175/28176)| `Immunization.protocolApplied.seriesDoses[x]`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1799)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2043)| `Immunization.protocolApplied.seriesDoses`
+| **`Immunization.vaccinationProtocol.targetDisease`**| _Equivalent_<br/>(5740/5741)| `Immunization.vaccinationProtocol.targetDisease`| →→→→ _Equivalent_ →→→→ <br/>(1117)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1556)| `Immunization.protocolApplied.targetDisease`| _Equivalent_<br/>(28171/28172)| `Immunization.protocolApplied.targetDisease`| _Equivalent_<br/>(43054/43055)| `Immunization.protocolApplied.targetDisease`
+| **`Immunization.vaccinationProtocol.doseStatus`**| _Equivalent_<br/>(5742/5743)| `Immunization.vaccinationProtocol.doseStatus`| | | | | | | 
+| **`Immunization.vaccinationProtocol.doseStatusReason`**| _Equivalent_<br/>(5744/5745)| `Immunization.vaccinationProtocol.doseStatusReason`| | | | | | | 
+| *52 of 52 elements used* | | *50 of 57 elements used* | | *39 of 63 elements used* | | *39 of 63 elements used* | | *39 of 61 elements used* 
+
