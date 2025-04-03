@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### RequestIntent
 
@@ -59,7 +59,7 @@ All codes from this value set are listed while other value sets only show conten
 | `in-progress`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(435)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | **`instance-order`**| _Equivalent_ <br/>(4918/7249)| `instance-order`| | | | | 
 | `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(433)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | **`instance-order`**| _Equivalent_ <br/>(4918/7249)| `instance-order`| | | | | 
 | | | **`option`**| _Equivalent_ <br/>(4919/7250)| `option`| | | | | 
-| *7 of 13 codes used* | | *8 of 8 codes used* | | *8 of 9 codes used* | | *0 of 9 codes used* | | *0 of 9 codes used* 
+| *7 of 13 codes used* <br/>remaining codes:<br/>`cancelled`, `draft`, `failed`, `rejected`, `review`, `suspended`| | *8 of 8 codes used* | | *8 of 9 codes used* <br/>remaining codes:<br/>`directive`| | *0 of 9 codes used* <br/>remaining codes:<br/>`directive`, `filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`| | *0 of 9 codes used* <br/>remaining codes:<br/>`directive`, `filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`
 
 
 #### Map Group 1
@@ -83,5 +83,5 @@ All codes from this value set are listed while other value sets only show conten
 | `in-progress`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(435)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | **`instance-order`**| _Equivalent_ <br/>(4918/7249)| `instance-order`| _Equivalent_ <br/>(18308/18309)| `instance-order`| _Equivalent_ <br/>(9501/11840)| `instance-order`
 | `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(433)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | **`instance-order`**| _Equivalent_ <br/>(4918/7249)| `instance-order`| _Equivalent_ <br/>(18308/18309)| `instance-order`| _Equivalent_ <br/>(9501/11840)| `instance-order`
 | | | **`option`**| _Equivalent_ <br/>(4919/7250)| `option`| _Equivalent_ <br/>(18310/18311)| `option`| _Equivalent_ <br/>(9502/11841)| `option`
-| *7 of 13 codes used* | | *8 of 8 codes used* | | *8 of 9 codes used* | | *8 of 9 codes used* | | *8 of 9 codes used* 
+| *7 of 13 codes used* <br/>remaining codes:<br/>`cancelled`, `draft`, `failed`, `rejected`, `review`, `suspended`| | *8 of 8 codes used* | | *8 of 9 codes used* <br/>remaining codes:<br/>`unknown`| | *8 of 9 codes used* <br/>remaining codes:<br/>`unknown`| | *8 of 9 codes used* <br/>remaining codes:<br/>`unknown`
 

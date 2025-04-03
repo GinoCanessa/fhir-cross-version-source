@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### DiscriminatorType
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`pattern`**| _Equivalent_ <br/>(3632/5919)| `pattern`| _Equivalent_ <br/>(15804/15805)| `pattern`| _Equivalent_ <br/>(8016/10320)| `pattern`
 | | | **`type`**| _Equivalent_ <br/>(3634/5921)| `type`| _Equivalent_ <br/>(15806/15807)| `type`| _Equivalent_ <br/>(8018/10323)| `type`
 | | | **`profile`**| _Equivalent_ <br/>(3631/5918)| `profile`| _Equivalent_ <br/>(15808/15809)| `profile`| _Equivalent_ <br/>(8015/10322)| `profile`
-| | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 6 codes used* 
+| | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 6 codes used* <br/>remaining codes:<br/>`position`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### CompositionStatus
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | `final`| _Equivalent_ <br/>(140/1502)| **`final`**| _Equivalent_ <br/>(3039/5247)| `final`| _Equivalent_ <br/>(14706/14707)| `final`| _Equivalent_ <br/>(7559/9827)| `final`
 | `amended`| _Equivalent_ <br/>(139/1501)| **`amended`**| _Equivalent_ <br/>(3038/5246)| `amended`| _Equivalent_ <br/>(14708/14709)| `amended`| _Equivalent_ <br/>(7558/9821)| `amended`
 | `entered-in-error`| _Equivalent_ <br/>(142/1504)| **`entered-in-error`**| _Equivalent_ <br/>(3041/5249)| `entered-in-error`| _Equivalent_ <br/>(14710/14711)| `entered-in-error`| _Equivalent_ <br/>(7561/9826)| `entered-in-error`
-| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 11 codes used* 
+| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 11 codes used* <br/>remaining codes:<br/>`appended`, `cancelled`, `corrected`, `deprecated`, `partial`, `registered`, `unknown`
 

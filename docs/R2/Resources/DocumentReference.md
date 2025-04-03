@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### DocumentReference
 
@@ -139,5 +139,5 @@ All elements from this structure are listed while other structures only show con
 | **`DocumentReference.context.related.modifierExtension`**| _Equivalent_<br/>(4920/4921)| `DocumentReference.context.related.modifierExtension`| | | | | | | 
 | **`DocumentReference.context.related.identifier`**| _Equivalent_<br/>(4922/4923)| `DocumentReference.context.related.identifier`| | | | | | | 
 | **`DocumentReference.context.related.ref`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4924)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4925)| `DocumentReference.context.related.ref`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1010)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1493)| `DocumentReference.context.related`| _Equivalent_<br/>(26127/26128)| `DocumentReference.context.related`| | | 
-| *51 of 51 elements used* | | *51 of 51 elements used* | | *46 of 45 elements used* | | *45 of 45 elements used* | | *32 of 52 elements used* 
+| *51 of 51 elements used* | | *51 of 51 elements used* | | *46 of 45 elements used* | | *45 of 45 elements used* | | *32 of 52 elements used* <br/>remaining elements:<br/>`DocumentReference.attester`, `DocumentReference.attester.extension`, `DocumentReference.attester.id`, `DocumentReference.attester.mode`, `DocumentReference.attester.modifierExtension`, `DocumentReference.attester.party`, `DocumentReference.attester.time`, `DocumentReference.basedOn`, `DocumentReference.bodySite`, `DocumentReference.content.profile`, `DocumentReference.content.profile.extension`, `DocumentReference.content.profile.id`, `DocumentReference.content.profile.modifierExtension`, `DocumentReference.content.profile.value[x]`, `DocumentReference.event`, `DocumentReference.facilityType`, `DocumentReference.modality`, `DocumentReference.period`, `DocumentReference.practiceSetting`, `DocumentReference.version`
 

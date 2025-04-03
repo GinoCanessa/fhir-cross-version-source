@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### Observation Interpretation Codes
 
@@ -79,5 +79,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`W`**| _Equivalent_ <br/>(877/2245)| `W`| _Equivalent_ <br/>(4079/6423)| `W`| | | | | 
 | **`WR`**| _Equivalent_ <br/>(878/2246)| `WR`| _Equivalent_ <br/>(4080/6424)| `WR`| | | | | 
 | **`null`**| | | | | | | | | 
-| *39 of 39 codes used* | | *38 of 39 codes used* | | *31 of 39 codes used* | | | | 
+| *39 of 39 codes used* | | *38 of 39 codes used* <br/>remaining codes:<br/>`null`| | *31 of 39 codes used* <br/>remaining codes:<br/>`CAR`, `E`, `EX`, `EXP`, `HX`, `LX`, `NCL`, `UNE`| | | | 
 

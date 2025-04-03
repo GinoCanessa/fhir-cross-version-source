@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### AppointmentResponseStatus
 
@@ -49,7 +49,7 @@ All codes from this value set are listed while other value sets only show conten
 | `needs-action`| _Equivalent_ <br/>(41/1411)| `needs-action`| _Equivalent_ <br/>(2927/5128)| `needs-action`| _Equivalent_ <br/>(16746/16747)| `needs-action`| _Equivalent_ <br/>(7483/9745)| **`needs-action`**
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/appointmentstatus`
 | | | | | | | | | **`entered-in-error`**
-| *4 of 6 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *5 of 5 codes used* 
+| *4 of 6 codes used* <br/>remaining codes:<br/>`accepted`, `completed`, `declined`, `in-process`, `needs-action`, `tentative`| | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *5 of 5 codes used* 
 
 
 #### Map Group 1

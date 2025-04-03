@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### CommunicationRequestStatus
 
@@ -52,5 +52,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`rejected`**| →→→→ _Equivalent_ →→→→ <br/>(151)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1509) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`failed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(146)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1514) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`failed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(146)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1514) | `entered-in-error`| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
-| *10 of 10 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* 
+| *10 of 10 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`
 

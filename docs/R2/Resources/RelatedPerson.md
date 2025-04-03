@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### RelatedPerson
 
@@ -74,5 +74,5 @@ All elements from this structure are listed while other structures only show con
 | **`RelatedPerson.address`**| _Equivalent_<br/>(7641/7642)| `RelatedPerson.address`| _Equivalent_<br/>(17927/17928)| `RelatedPerson.address`| _Equivalent_<br/>(32307/32308)| `RelatedPerson.address`| _Equivalent_<br/>(46931/46932)| `RelatedPerson.address`
 | **`RelatedPerson.photo`**| _Equivalent_<br/>(7643/7644)| `RelatedPerson.photo`| _Equivalent_<br/>(17929/17930)| `RelatedPerson.photo`| _Equivalent_<br/>(32309/32310)| `RelatedPerson.photo`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(46933)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(46934)| `RelatedPerson.photo`
 | **`RelatedPerson.period`**| _Equivalent_<br/>(7645/7646)| `RelatedPerson.period`| _Equivalent_<br/>(17931/17932)| `RelatedPerson.period`| _Equivalent_<br/>(32311/32312)| `RelatedPerson.period`| _Equivalent_<br/>(46935/46936)| `RelatedPerson.period`
-| *19 of 19 elements used* | | *19 of 20 elements used* | | *19 of 26 elements used* | | *19 of 26 elements used* | | *19 of 26 elements used* 
+| *19 of 19 elements used* | | *19 of 20 elements used* <br/>remaining elements:<br/>`RelatedPerson.active`| | *19 of 26 elements used* <br/>remaining elements:<br/>`RelatedPerson.active`, `RelatedPerson.communication`, `RelatedPerson.communication.extension`, `RelatedPerson.communication.id`, `RelatedPerson.communication.language`, `RelatedPerson.communication.modifierExtension`, `RelatedPerson.communication.preferred`| | *19 of 26 elements used* <br/>remaining elements:<br/>`RelatedPerson.active`, `RelatedPerson.communication`, `RelatedPerson.communication.extension`, `RelatedPerson.communication.id`, `RelatedPerson.communication.language`, `RelatedPerson.communication.modifierExtension`, `RelatedPerson.communication.preferred`| | *19 of 26 elements used* <br/>remaining elements:<br/>`RelatedPerson.active`, `RelatedPerson.communication`, `RelatedPerson.communication.extension`, `RelatedPerson.communication.id`, `RelatedPerson.communication.language`, `RelatedPerson.communication.modifierExtension`, `RelatedPerson.communication.preferred`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### Questionnaire
 
@@ -175,5 +175,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `Questionnaire.item.initial.value[x]`| _Equivalent_<br/>(32197/32198)| **`Questionnaire.item.initial.value[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(46765)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(46766)| `Questionnaire.item.initial.value[x]`
 | `Questionnaire.group.group`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(364)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(714)| `Questionnaire.item.item`| _Equivalent_<br/>(17777/17778)| `Questionnaire.item.item`| _Equivalent_<br/>(32199/32200)| **`Questionnaire.item.item`**| _Equivalent_<br/>(46767/46768)| `Questionnaire.item.item`
 | `Questionnaire.group.question.group`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(368)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(714)| `Questionnaire.item.item`| _Equivalent_<br/>(17777/17778)| `Questionnaire.item.item`| _Equivalent_<br/>(32199/32200)| **`Questionnaire.item.item`**| _Equivalent_<br/>(46767/46768)| `Questionnaire.item.item`
-| *33 of 40 elements used* | | *55 of 58 elements used* | | *65 of 65 elements used* | | *65 of 65 elements used* | | *66 of 69 elements used* 
+| *33 of 40 elements used* <br/>remaining elements:<br/>`Questionnaire.group.extension`, `Questionnaire.group.id`, `Questionnaire.group.modifierExtension`, `Questionnaire.group.question.extension`, `Questionnaire.group.question.id`, `Questionnaire.group.question.modifierExtension`, `Questionnaire.group.title`| | *55 of 58 elements used* <br/>remaining elements:<br/>`Questionnaire.item.option.extension`, `Questionnaire.item.option.id`, `Questionnaire.item.option.modifierExtension`| | *65 of 65 elements used* | | *65 of 65 elements used* | | *66 of 69 elements used* <br/>remaining elements:<br/>`Questionnaire.copyrightLabel`, `Questionnaire.item.disabledDisplay`, `Questionnaire.versionAlgorithm[x]`
 

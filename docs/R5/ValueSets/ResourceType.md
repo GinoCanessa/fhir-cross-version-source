@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:35 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### ResourceType
 
@@ -205,5 +205,5 @@ All codes from this value set are listed while other value sets only show conten
 | `ValueSet`| _Equivalent_ <br/>(12745/12746)| `ValueSet`| _Equivalent_ <br/>(13810/13811)| `ValueSet`| _Equivalent_ <br/>(17402/17403)| `ValueSet`| _Equivalent_ <br/>(18832/18833)| **`ValueSet`**
 | | | | | `VerificationResult`| _Equivalent_ <br/>(17404/17405)| `VerificationResult`| _Equivalent_ <br/>(18834/18835)| **`VerificationResult`**
 | `VisionPrescription`| _Equivalent_ <br/>(12747/12748)| `VisionPrescription`| _Equivalent_ <br/>(13812/13813)| `VisionPrescription`| _Equivalent_ <br/>(17406/17407)| `VisionPrescription`| _Equivalent_ <br/>(18836/18837)| **`VisionPrescription`**
-| *75 of 96 codes used* | | *100 of 119 codes used* | | *121 of 148 codes used* | | *134 of 143 codes used* | | *158 of 158 codes used* 
+| *75 of 96 codes used* <br/>remaining codes:<br/>`BodySite`, `Conformance`, `DataElement`, `DeviceComponent`, `DeviceUseRequest`, `DeviceUseStatement`, `DiagnosticOrder`, `DocumentManifest`, `DomainResource`, `EligibilityRequest`, `EligibilityResponse`, `ImagingObjectSelection`, `Media`, `MedicationOrder`, `Order`, `OrderResponse`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `Resource`| | *100 of 119 codes used* <br/>remaining codes:<br/>`BodySite`, `DataElement`, `DeviceComponent`, `DeviceUseStatement`, `DocumentManifest`, `DomainResource`, `EligibilityRequest`, `EligibilityResponse`, `ExpansionProfile`, `ImagingManifest`, `Media`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `RequestGroup`, `Resource`, `Sequence`, `ServiceDefinition`| | *121 of 148 codes used* <br/>remaining codes:<br/>`CatalogEntry`, `DeviceUseStatement`, `DocumentManifest`, `DomainResource`, `EffectEvidenceSynthesis`, `Media`, `MedicinalProduct`, `MedicinalProductAuthorization`, `MedicinalProductContraindication`, `MedicinalProductIndication`, `MedicinalProductIngredient`, `MedicinalProductInteraction`, `MedicinalProductManufactured`, `MedicinalProductPackaged`, `MedicinalProductPharmaceutical`, `MedicinalProductUndesirableEffect`, `RequestGroup`, `ResearchDefinition`, `ResearchElementDefinition`, `Resource`, `RiskEvidenceSynthesis`, `SubstanceNucleicAcid`, `SubstancePolymer`, `SubstanceProtein`, `SubstanceReferenceInformation`, `SubstanceSourceMaterial`, `SubstanceSpecification`| | *134 of 143 codes used* <br/>remaining codes:<br/>`CatalogEntry`, `DeviceUseStatement`, `DocumentManifest`, `DomainResource`, `Media`, `RequestGroup`, `ResearchDefinition`, `ResearchElementDefinition`, `Resource`| | *158 of 158 codes used* 
 

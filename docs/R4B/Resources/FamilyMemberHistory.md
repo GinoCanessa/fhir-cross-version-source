@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### FamilyMemberHistory
 
@@ -107,5 +107,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `FamilyMemberHistory.condition.contributedToDeath`| _Equivalent_<br/>(27488/27489)| **`FamilyMemberHistory.condition.contributedToDeath`**| _Equivalent_<br/>(42480/42481)| `FamilyMemberHistory.condition.contributedToDeath`
 | `FamilyMemberHistory.condition.onset[x]`| →→→→ _RelatedTo_ →→→→ <br/>(5303)<hr/>←←←← _RelatedTo_ ←←←← <br/>(5304)| `FamilyMemberHistory.condition.onset[x]`| _Equivalent_<br/>(14464/14465)| `FamilyMemberHistory.condition.onset[x]`| _Equivalent_<br/>(27490/27491)| **`FamilyMemberHistory.condition.onset[x]`**| _Equivalent_<br/>(42482/42483)| `FamilyMemberHistory.condition.onset[x]`
 | `FamilyMemberHistory.condition.note`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5305)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5306)| `FamilyMemberHistory.condition.note`| _Equivalent_<br/>(14466/14467)| `FamilyMemberHistory.condition.note`| _Equivalent_<br/>(27492/27493)| **`FamilyMemberHistory.condition.note`**| _Equivalent_<br/>(42484/42485)| `FamilyMemberHistory.condition.note`
-| *28 of 28 elements used* | | *34 of 34 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *34 of 49 elements used* 
+| *28 of 28 elements used* | | *34 of 34 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *34 of 49 elements used* <br/>remaining elements:<br/>`FamilyMemberHistory.participant`, `FamilyMemberHistory.participant.actor`, `FamilyMemberHistory.participant.extension`, `FamilyMemberHistory.participant.function`, `FamilyMemberHistory.participant.id`, `FamilyMemberHistory.participant.modifierExtension`, `FamilyMemberHistory.procedure`, `FamilyMemberHistory.procedure.code`, `FamilyMemberHistory.procedure.contributedToDeath`, `FamilyMemberHistory.procedure.extension`, `FamilyMemberHistory.procedure.id`, `FamilyMemberHistory.procedure.modifierExtension`, `FamilyMemberHistory.procedure.note`, `FamilyMemberHistory.procedure.outcome`, `FamilyMemberHistory.procedure.performed[x]`
 

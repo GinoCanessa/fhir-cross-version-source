@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Signature
 
@@ -54,5 +54,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Signature.onBehalfOf[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1282)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1671)| `Signature.onBehalfOf`| _Equivalent_<br/>(21282/21283)| `Signature.onBehalfOf`| _Equivalent_<br/>(36349/36350)| `Signature.onBehalfOf`
 | `Signature.contentType`| →→→→ _Equivalent_ →→→→ <br/>(2857)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2858)| **`Signature.contentType`**| _Equivalent_<br/>(1281/1672)| `Signature.sigFormat`| _Equivalent_<br/>(21286/21287)| `Signature.sigFormat`| _Equivalent_<br/>(36353/36354)| `Signature.sigFormat`
 | `Signature.blob`| →→→→ _Equivalent_ →→→→ <br/>(2859)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2860)| **`Signature.blob`**| _Equivalent_<br/>(1280/1670)| `Signature.data`| _Equivalent_<br/>(21288/21289)| `Signature.data`| _Equivalent_<br/>(36355/36356)| `Signature.data`
-| *8 of 8 elements used* | | *9 of 9 elements used* | | *9 of 10 elements used* | | *9 of 10 elements used* | | *9 of 10 elements used* 
+| *8 of 8 elements used* | | *9 of 9 elements used* | | *9 of 10 elements used* <br/>remaining elements:<br/>`Signature.targetFormat`| | *9 of 10 elements used* <br/>remaining elements:<br/>`Signature.targetFormat`| | *9 of 10 elements used* <br/>remaining elements:<br/>`Signature.targetFormat`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### FilterOperator
 
@@ -51,5 +51,5 @@ All codes from this value set are listed while other value sets only show conten
 | `not-in`| _Equivalent_ <br/>(1382/2874)| `not-in`| _Equivalent_ <br/>(3171/5382)| `not-in`| _Equivalent_ <br/>(16042/16043)| **`not-in`**| _Equivalent_ <br/>(7729/10036)| `not-in`
 | | | `generalizes`| _Equivalent_ <br/>(3173/5384)| `generalizes`| _Equivalent_ <br/>(16044/16045)| **`generalizes`**| _Equivalent_ <br/>(7731/10032)| `generalizes`
 | | | `exists`| _Equivalent_ <br/>(3172/5383)| `exists`| _Equivalent_ <br/>(16046/16047)| **`exists`**| _Equivalent_ <br/>(7730/10031)| `exists`
-| *6 of 6 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 11 codes used* 
+| *6 of 6 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 11 codes used* <br/>remaining codes:<br/>`child-of`, `descendent-leaf`
 

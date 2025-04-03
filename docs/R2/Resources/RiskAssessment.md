@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### RiskAssessment
 
@@ -90,5 +90,5 @@ All elements from this structure are listed while other structures only show con
 | **`RiskAssessment.prediction.when[x]`**| _Equivalent_<br/>(7701/7702)| `RiskAssessment.prediction.when[x]`| _Equivalent_<br/>(18213/18214)| `RiskAssessment.prediction.when[x]`| _Equivalent_<br/>(32852/32853)| `RiskAssessment.prediction.when[x]`| _Equivalent_<br/>(47176/47177)| `RiskAssessment.prediction.when[x]`
 | **`RiskAssessment.prediction.rationale`**| _Equivalent_<br/>(7703/7704)| `RiskAssessment.prediction.rationale`| _Equivalent_<br/>(18215/18216)| `RiskAssessment.prediction.rationale`| _Equivalent_<br/>(32854/32855)| `RiskAssessment.prediction.rationale`| _Equivalent_<br/>(47178/47179)| `RiskAssessment.prediction.rationale`
 | **`RiskAssessment.mitigation`**| _Equivalent_<br/>(7705/7706)| `RiskAssessment.mitigation`| _Equivalent_<br/>(18217/18218)| `RiskAssessment.mitigation`| _Equivalent_<br/>(32856/32857)| `RiskAssessment.mitigation`| _Equivalent_<br/>(47180/47181)| `RiskAssessment.mitigation`
-| *27 of 27 elements used* | | *27 of 34 elements used* | | *27 of 35 elements used* | | *27 of 35 elements used* | | *27 of 34 elements used* 
+| *27 of 27 elements used* | | *27 of 34 elements used* <br/>remaining elements:<br/>`RiskAssessment.basedOn`, `RiskAssessment.code`, `RiskAssessment.comment`, `RiskAssessment.parent`, `RiskAssessment.prediction.qualitativeRisk`, `RiskAssessment.reason[x]`, `RiskAssessment.status`| | *27 of 35 elements used* <br/>remaining elements:<br/>`RiskAssessment.basedOn`, `RiskAssessment.code`, `RiskAssessment.note`, `RiskAssessment.parent`, `RiskAssessment.prediction.qualitativeRisk`, `RiskAssessment.reasonCode`, `RiskAssessment.reasonReference`, `RiskAssessment.status`| | *27 of 35 elements used* <br/>remaining elements:<br/>`RiskAssessment.basedOn`, `RiskAssessment.code`, `RiskAssessment.note`, `RiskAssessment.parent`, `RiskAssessment.prediction.qualitativeRisk`, `RiskAssessment.reasonCode`, `RiskAssessment.reasonReference`, `RiskAssessment.status`| | *27 of 34 elements used* <br/>remaining elements:<br/>`RiskAssessment.basedOn`, `RiskAssessment.code`, `RiskAssessment.note`, `RiskAssessment.parent`, `RiskAssessment.prediction.qualitativeRisk`, `RiskAssessment.reason`, `RiskAssessment.status`
 

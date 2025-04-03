@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### SystemRestfulInteraction
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`transaction`**| _Equivalent_ <br/>(184/1551)| `transaction`| _Equivalent_ <br/>(3087/5294)| `transaction`| _Equivalent_ <br/>(18286/18287)| `transaction`| _Equivalent_ <br/>(7657/9957)| `transaction`
 | **`search-system`**| _Equivalent_ <br/>(183/1550)| `search-system`| _Equivalent_ <br/>(3084/5291)| `search-system`| _Equivalent_ <br/>(18290/18291)| `search-system`| _Equivalent_ <br/>(7654/9956)| `search-system`
 | **`history-system`**| _Equivalent_ <br/>(182/1549)| `history-system`| _Equivalent_ <br/>(3086/5293)| `history-system`| _Equivalent_ <br/>(18292/18293)| `history-system`| _Equivalent_ <br/>(7656/9955)| `history-system`
-| *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`batch`| | *3 of 4 codes used* <br/>remaining codes:<br/>`batch`| | *3 of 4 codes used* <br/>remaining codes:<br/>`batch`| | *3 of 4 codes used* <br/>remaining codes:<br/>`batch`
 

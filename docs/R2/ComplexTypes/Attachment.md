@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Attachment
 
@@ -58,5 +58,5 @@ All elements from this structure are listed while other structures only show con
 | **`Attachment.hash`**| _Equivalent_<br/>(2469/2470)| `Attachment.hash`| _Equivalent_<br/>(9198/9199)| `Attachment.hash`| _Equivalent_<br/>(20548/20549)| `Attachment.hash`| _Equivalent_<br/>(35665/35666)| `Attachment.hash`
 | **`Attachment.title`**| _Equivalent_<br/>(2471/2472)| `Attachment.title`| _Equivalent_<br/>(9200/9201)| `Attachment.title`| _Equivalent_<br/>(20550/20551)| `Attachment.title`| _Equivalent_<br/>(35667/35668)| `Attachment.title`
 | **`Attachment.creation`**| _Equivalent_<br/>(2473/2474)| `Attachment.creation`| _Equivalent_<br/>(9202/9203)| `Attachment.creation`| _Equivalent_<br/>(20552/20553)| `Attachment.creation`| _Equivalent_<br/>(35669/35670)| `Attachment.creation`
-| *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 16 elements used* 
+| *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 11 elements used* | | *11 of 16 elements used* <br/>remaining elements:<br/>`Attachment.duration`, `Attachment.frames`, `Attachment.height`, `Attachment.pages`, `Attachment.width`
 

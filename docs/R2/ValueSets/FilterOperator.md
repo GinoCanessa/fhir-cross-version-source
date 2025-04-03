@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### FilterOperator
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`regex`**| _Equivalent_ <br/>(1380/2875)| `regex`| _Equivalent_ <br/>(3168/5379)| `regex`| _Equivalent_ <br/>(16038/16039)| `regex`| _Equivalent_ <br/>(7726/10037)| `regex`
 | **`in`**| _Equivalent_ <br/>(1381/2871)| `in`| _Equivalent_ <br/>(3169/5380)| `in`| _Equivalent_ <br/>(16040/16041)| `in`| _Equivalent_ <br/>(7727/10033)| `in`
 | **`not-in`**| _Equivalent_ <br/>(1382/2874)| `not-in`| _Equivalent_ <br/>(3171/5382)| `not-in`| _Equivalent_ <br/>(16042/16043)| `not-in`| _Equivalent_ <br/>(7729/10036)| `not-in`
-| *6 of 6 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* | | *6 of 11 codes used* 
+| *6 of 6 codes used* | | *6 of 9 codes used* <br/>remaining codes:<br/>`descendent-of`, `exists`, `generalizes`| | *6 of 9 codes used* <br/>remaining codes:<br/>`descendent-of`, `exists`, `generalizes`| | *6 of 9 codes used* <br/>remaining codes:<br/>`descendent-of`, `exists`, `generalizes`| | *6 of 11 codes used* <br/>remaining codes:<br/>`child-of`, `descendent-leaf`, `descendent-of`, `exists`, `generalizes`
 

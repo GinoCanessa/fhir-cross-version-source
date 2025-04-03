@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### Substance
 
@@ -90,5 +90,5 @@ All elements from this structure are listed while other structures only show con
 | `Substance.ingredient.modifierExtension`| _Equivalent_<br/>(8069/8070)| `Substance.ingredient.modifierExtension`| _Equivalent_<br/>(18943/18944)| `Substance.ingredient.modifierExtension`| _Equivalent_<br/>(33823/33824)| **`Substance.ingredient.modifierExtension`**| _Equivalent_<br/>(48147/48148)| `Substance.ingredient.modifierExtension`
 | `Substance.ingredient.quantity`| _Equivalent_<br/>(8071/8072)| `Substance.ingredient.quantity`| _Equivalent_<br/>(18945/18946)| `Substance.ingredient.quantity`| _Equivalent_<br/>(33825/33826)| **`Substance.ingredient.quantity`**| _Equivalent_<br/>(48149/48150)| `Substance.ingredient.quantity`
 | `Substance.ingredient.substance`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(421)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(763)| `Substance.ingredient.substance[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18947)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18948)| `Substance.ingredient.substance[x]`| _Equivalent_<br/>(33827/33828)| **`Substance.ingredient.substance[x]`**| _Equivalent_<br/>(48151/48152)| `Substance.ingredient.substance[x]`
-| *26 of 26 elements used* | | *27 of 27 elements used* | | *27 of 27 elements used* | | *27 of 27 elements used* | | *21 of 23 elements used* 
+| *26 of 26 elements used* | | *27 of 27 elements used* | | *27 of 27 elements used* | | *27 of 27 elements used* | | *21 of 23 elements used* <br/>remaining elements:<br/>`Substance.expiry`, `Substance.quantity`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### Confidentiality
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | `R`| _Equivalent_ <br/>(18856/18855)| **`R`**| | | 
 | | | | | `U`| _Equivalent_ <br/>(18858/18857)| **`U`**| | | 
 | | | | | `V`| _Equivalent_ <br/>(18860/18859)| **`V`**| | | 
-| | | | | *6 of 20 codes used* | | *6 of 6 codes used* | | 
+| | | | | *6 of 20 codes used* <br/>remaining codes:<br/>`B`, `C`, `D`, `ETH`, `HIV`, `I`, `PSY`, `S`, `SDV`, `T`, `_Confidentiality`, `_ConfidentialityByAccessKind`, `_ConfidentialityByInfoType`, `_ConfidentialityModifiers`| | *6 of 6 codes used* | | 
 

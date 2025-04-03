@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:32 PM
+Generated at Thursday, April 3, 2025 8:18:30 AM
 
 ### Consent
 
@@ -162,5 +162,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Consent.data.reference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(915)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1437)| `Consent.provision.data.reference`| _Equivalent_<br/>(24459/24460)| **`Consent.provision.data.reference`**| _Equivalent_<br/>(39691/39692)| `Consent.provision.data.reference`
 | | | `Consent.except.data.reference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(926)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1437)| `Consent.provision.data.reference`| _Equivalent_<br/>(24459/24460)| **`Consent.provision.data.reference`**| _Equivalent_<br/>(39691/39692)| `Consent.provision.data.reference`
 | | | | | `Consent.provision.provision`| _Equivalent_<br/>(24461/24462)| **`Consent.provision.provision`**| _Equivalent_<br/>(39693/39694)| `Consent.provision.provision`
-| | | *49 of 65 elements used* | | *57 of 57 elements used* | | *57 of 57 elements used* | | *51 of 65 elements used* 
+| | | *49 of 65 elements used* <br/>remaining elements:<br/>`Consent.actor.extension`, `Consent.actor.id`, `Consent.actor.modifierExtension`, `Consent.data.extension`, `Consent.data.id`, `Consent.data.modifierExtension`, `Consent.except.actor.extension`, `Consent.except.actor.id`, `Consent.except.actor.modifierExtension`, `Consent.except.data.extension`, `Consent.except.data.id`, `Consent.except.data.modifierExtension`, `Consent.except.extension`, `Consent.except.id`, `Consent.except.modifierExtension`, `Consent.period`| | *57 of 57 elements used* | | *57 of 57 elements used* | | *51 of 65 elements used* <br/>remaining elements:<br/>`Consent.controller`, `Consent.decision`, `Consent.grantor`, `Consent.manager`, `Consent.period`, `Consent.policyBasis.extension`, `Consent.policyBasis.id`, `Consent.policyBasis.modifierExtension`, `Consent.policyBasis.reference`, `Consent.policyBasis.url`, `Consent.policyText`, `Consent.provision.expression`, `Consent.verification.verificationType`, `Consent.verification.verifiedBy`
 

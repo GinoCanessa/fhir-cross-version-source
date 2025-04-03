@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### OperationDefinition
 
@@ -164,5 +164,5 @@ All elements from this structure are listed while other structures only show con
 | | | `OperationDefinition.overload.modifierExtension`| _Equivalent_<br/>(16666/16667)| `OperationDefinition.overload.modifierExtension`| _Equivalent_<br/>(31102/31103)| **`OperationDefinition.overload.modifierExtension`**| _Equivalent_<br/>(45718/45719)| `OperationDefinition.overload.modifierExtension`
 | | | `OperationDefinition.overload.parameterName`| _Equivalent_<br/>(16668/16669)| `OperationDefinition.overload.parameterName`| _Equivalent_<br/>(31104/31105)| **`OperationDefinition.overload.parameterName`**| _Equivalent_<br/>(45720/45721)| `OperationDefinition.overload.parameterName`
 | | | `OperationDefinition.overload.comment`| _Equivalent_<br/>(16670/16671)| `OperationDefinition.overload.comment`| _Equivalent_<br/>(31106/31107)| **`OperationDefinition.overload.comment`**| _Equivalent_<br/>(45722/45723)| `OperationDefinition.overload.comment`
-| *45 of 50 elements used* | | *55 of 55 elements used* | | *64 of 64 elements used* | | *64 of 64 elements used* | | *64 of 70 elements used* 
+| *45 of 50 elements used* <br/>remaining elements:<br/>`OperationDefinition.contact.extension`, `OperationDefinition.contact.id`, `OperationDefinition.contact.modifierExtension`, `OperationDefinition.contact.name`, `OperationDefinition.contact.telecom`| | *55 of 55 elements used* | | *64 of 64 elements used* | | *64 of 64 elements used* | | *64 of 70 elements used* <br/>remaining elements:<br/>`OperationDefinition.copyright`, `OperationDefinition.copyrightLabel`, `OperationDefinition.identifier`, `OperationDefinition.parameter.allowedType`, `OperationDefinition.parameter.scope`, `OperationDefinition.versionAlgorithm[x]`
 

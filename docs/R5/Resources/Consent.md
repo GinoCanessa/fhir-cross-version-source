@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### Consent
 
@@ -176,5 +176,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Consent.except.data.reference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(926)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1437)| `Consent.provision.data.reference`| _Equivalent_<br/>(24459/24460)| `Consent.provision.data.reference`| _Equivalent_<br/>(39691/39692)| **`Consent.provision.data.reference`**
 | | | | | | | | | **`Consent.provision.expression`**
 | | | | | `Consent.provision.provision`| _Equivalent_<br/>(24461/24462)| `Consent.provision.provision`| _Equivalent_<br/>(39693/39694)| **`Consent.provision.provision`**
-| | | *42 of 65 elements used* | | *49 of 57 elements used* | | *49 of 57 elements used* | | *65 of 65 elements used* 
+| | | *42 of 65 elements used* <br/>remaining elements:<br/>`Consent.actor.extension`, `Consent.actor.id`, `Consent.actor.modifierExtension`, `Consent.data.extension`, `Consent.data.id`, `Consent.data.modifierExtension`, `Consent.except.actor.extension`, `Consent.except.actor.id`, `Consent.except.actor.modifierExtension`, `Consent.except.data.extension`, `Consent.except.data.id`, `Consent.except.data.modifierExtension`, `Consent.except.extension`, `Consent.except.id`, `Consent.except.modifierExtension`, `Consent.except.type`, `Consent.organization`, `Consent.period`, `Consent.policy.authority`, `Consent.policy.extension`, `Consent.policy.id`, `Consent.policy.modifierExtension`, `Consent.policy.uri`| | *49 of 57 elements used* <br/>remaining elements:<br/>`Consent.organization`, `Consent.policy.authority`, `Consent.policy.extension`, `Consent.policy.id`, `Consent.policy.modifierExtension`, `Consent.policy.uri`, `Consent.provision.type`, `Consent.scope`| | *49 of 57 elements used* <br/>remaining elements:<br/>`Consent.organization`, `Consent.policy.authority`, `Consent.policy.extension`, `Consent.policy.id`, `Consent.policy.modifierExtension`, `Consent.policy.uri`, `Consent.provision.type`, `Consent.scope`| | *65 of 65 elements used* 
 

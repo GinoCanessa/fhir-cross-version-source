@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### AdverseEvent
 
@@ -166,5 +166,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`AdverseEvent.supportingInfo.modifierExtension`**
 | | | | | | | | | **`AdverseEvent.supportingInfo.item[x]`**
 | | | | | | | | | **`AdverseEvent.note`**
-| | | *29 of 35 elements used* | | *36 of 41 elements used* | | *36 of 41 elements used* | | *65 of 65 elements used* 
+| | | *29 of 35 elements used* <br/>remaining elements:<br/>`AdverseEvent.description`, `AdverseEvent.eventParticipant`, `AdverseEvent.referenceDocument`, `AdverseEvent.subjectMedicalHistory`, `AdverseEvent.suspectEntity.causalityMethod`, `AdverseEvent.suspectEntity.causalityResult`| | *36 of 41 elements used* <br/>remaining elements:<br/>`AdverseEvent.contributor`, `AdverseEvent.referenceDocument`, `AdverseEvent.severity`, `AdverseEvent.subjectMedicalHistory`, `AdverseEvent.suspectEntity.causality.method`| | *36 of 41 elements used* <br/>remaining elements:<br/>`AdverseEvent.contributor`, `AdverseEvent.referenceDocument`, `AdverseEvent.severity`, `AdverseEvent.subjectMedicalHistory`, `AdverseEvent.suspectEntity.causality.method`| | *65 of 65 elements used* 
 

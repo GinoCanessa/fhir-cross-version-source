@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:17 PM
+Generated at Thursday, April 3, 2025 8:18:15 AM
 
 ### ClinicalImpression
 
@@ -113,5 +113,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ClinicalImpression.prognosisReference`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11787)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11788)| `ClinicalImpression.prognosisReference`| _Equivalent_<br/>(23657/23658)| `ClinicalImpression.prognosisReference`| _Equivalent_<br/>(38857/38858)| `ClinicalImpression.prognosisReference`
 | `ClinicalImpression.action`| →→→→ _RelatedTo_ →→→→ <br/>(3738)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3739)| **`ClinicalImpression.action`**| | | | | | | 
 | | | **`ClinicalImpression.note`**| _Equivalent_<br/>(11789/11790)| `ClinicalImpression.note`| _Equivalent_<br/>(23661/23662)| `ClinicalImpression.note`| _Equivalent_<br/>(38861/38862)| `ClinicalImpression.note`
-| *28 of 41 elements used* | | *38 of 38 elements used* | | *38 of 40 elements used* | | *38 of 40 elements used* | | *30 of 33 elements used* 
+| *28 of 41 elements used* <br/>remaining elements:<br/>`ClinicalImpression.investigations.extension`, `ClinicalImpression.investigations.id`, `ClinicalImpression.investigations.modifierExtension`, `ClinicalImpression.plan`, `ClinicalImpression.prognosis`, `ClinicalImpression.resolved`, `ClinicalImpression.ruledOut`, `ClinicalImpression.ruledOut.extension`, `ClinicalImpression.ruledOut.id`, `ClinicalImpression.ruledOut.item`, `ClinicalImpression.ruledOut.modifierExtension`, `ClinicalImpression.ruledOut.reason`, `ClinicalImpression.trigger[x]`| | *38 of 38 elements used* | | *38 of 40 elements used* <br/>remaining elements:<br/>`ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`| | *38 of 40 elements used* <br/>remaining elements:<br/>`ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`| | *30 of 33 elements used* <br/>remaining elements:<br/>`ClinicalImpression.changePattern`, `ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`
 

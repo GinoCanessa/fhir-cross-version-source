@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### Subscription
 
@@ -84,5 +84,5 @@ All elements from this structure are listed while other structures only show con
 | **`Subscription.channel.header`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8017)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8018)| `Subscription.channel.header`| _Equivalent_<br/>(18892/18893)| `Subscription.channel.header`| _Equivalent_<br/>(33773/33774)| `Subscription.channel.header`| | | 
 | **`Subscription.end`**| _Equivalent_<br/>(8019/8020)| `Subscription.end`| _Equivalent_<br/>(18870/18871)| `Subscription.end`| _Equivalent_<br/>(33751/33752)| `Subscription.end`| _Equivalent_<br/>(47911/47912)| `Subscription.end`
 | **`Subscription.tag`**| _Equivalent_<br/>(8021/8022)| `Subscription.tag`| | | | | | | 
-| *24 of 24 elements used* | | *24 of 24 elements used* | | *23 of 23 elements used* | | *23 of 23 elements used* | | *13 of 39 elements used* 
+| *24 of 24 elements used* | | *24 of 24 elements used* | | *23 of 23 elements used* | | *23 of 23 elements used* | | *13 of 39 elements used* <br/>remaining elements:<br/>`Subscription.channelType`, `Subscription.content`, `Subscription.contentType`, `Subscription.endpoint`, `Subscription.filterBy`, `Subscription.filterBy.comparator`, `Subscription.filterBy.extension`, `Subscription.filterBy.filterParameter`, `Subscription.filterBy.id`, `Subscription.filterBy.modifier`, `Subscription.filterBy.modifierExtension`, `Subscription.filterBy.resourceType`, `Subscription.filterBy.value`, `Subscription.heartbeatPeriod`, `Subscription.identifier`, `Subscription.managingEntity`, `Subscription.maxCount`, `Subscription.name`, `Subscription.parameter`, `Subscription.parameter.extension`, `Subscription.parameter.id`, `Subscription.parameter.modifierExtension`, `Subscription.parameter.name`, `Subscription.parameter.value`, `Subscription.timeout`, `Subscription.topic`
 

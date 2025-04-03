@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:27 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### Duration
 
@@ -52,5 +52,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Duration.unit`| _Equivalent_<br/>(9401/9402)| `Duration.unit`| _Equivalent_<br/>(20780/20781)| **`Duration.unit`**| _Equivalent_<br/>(35895/35896)| `Duration.unit`
 | | | `Duration.system`| _Equivalent_<br/>(9403/9404)| `Duration.system`| _Equivalent_<br/>(20782/20783)| **`Duration.system`**| _Equivalent_<br/>(35897/35898)| `Duration.system`
 | | | `Duration.code`| _Equivalent_<br/>(9405/9406)| `Duration.code`| _Equivalent_<br/>(20784/20785)| **`Duration.code`**| _Equivalent_<br/>(35899/35900)| `Duration.code`
-| *0 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
+| *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
 

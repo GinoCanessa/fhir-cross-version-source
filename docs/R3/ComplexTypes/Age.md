@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Age
 
@@ -52,5 +52,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Age.unit`**| _Equivalent_<br/>(9164/9165)| `Age.unit`| _Equivalent_<br/>(20514/20515)| `Age.unit`| _Equivalent_<br/>(35631/35632)| `Age.unit`
 | | | **`Age.system`**| _Equivalent_<br/>(9166/9167)| `Age.system`| _Equivalent_<br/>(20516/20517)| `Age.system`| _Equivalent_<br/>(35633/35634)| `Age.system`
 | | | **`Age.code`**| _Equivalent_<br/>(9168/9169)| `Age.code`| _Equivalent_<br/>(20518/20519)| `Age.code`| _Equivalent_<br/>(35635/35636)| `Age.code`
-| *0 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
+| *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
 

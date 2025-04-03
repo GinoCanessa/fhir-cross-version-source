@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### CodeSearchSupport
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R4B** System: `http://hl7.org/fhir/code-search-support`
 | | | | | `explicit`| _Equivalent_ <br/>(14664/14665)| **`explicit`**| _Equivalent_ <br/>(9449/11785)| `in-compose`
 | | | | | `all`| _Equivalent_ <br/>(14666/14667)| **`all`**| _Equivalent_ <br/>(9448/11787)| `in-compose-or-expansion`
-| | | | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 3 codes used* 
+| | | | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`in-expansion`
 

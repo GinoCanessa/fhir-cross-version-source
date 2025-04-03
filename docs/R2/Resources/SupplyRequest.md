@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### SupplyRequest
 
@@ -86,5 +86,5 @@ All elements from this structure are listed while other structures only show con
 | **`SupplyRequest.when.modifierExtension`**| | | | | | | | | 
 | **`SupplyRequest.when.code`**| | | | | | | | | 
 | **`SupplyRequest.when.schedule`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(432)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(771)| `SupplyRequest.occurrence[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(19049)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(19050)| `SupplyRequest.occurrence[x]`| _Equivalent_<br/>(33927/33928)| `SupplyRequest.occurrence[x]`| _Equivalent_<br/>(48471/48472)| `SupplyRequest.occurrence[x]`
-| *24 of 24 elements used* | | *19 of 31 elements used* | | *18 of 29 elements used* | | *18 of 29 elements used* | | *17 of 30 elements used* 
+| *24 of 24 elements used* | | *19 of 31 elements used* <br/>remaining elements:<br/>`SupplyRequest.deliverFrom`, `SupplyRequest.deliverTo`, `SupplyRequest.orderedItem.extension`, `SupplyRequest.orderedItem.id`, `SupplyRequest.orderedItem.item[x]`, `SupplyRequest.orderedItem.modifierExtension`, `SupplyRequest.orderedItem.quantity`, `SupplyRequest.priority`, `SupplyRequest.requester`, `SupplyRequest.requester.extension`, `SupplyRequest.requester.id`, `SupplyRequest.requester.modifierExtension`, `SupplyRequest.requester.onBehalfOf`| | *18 of 29 elements used* <br/>remaining elements:<br/>`SupplyRequest.deliverFrom`, `SupplyRequest.deliverTo`, `SupplyRequest.item[x]`, `SupplyRequest.parameter`, `SupplyRequest.parameter.code`, `SupplyRequest.parameter.extension`, `SupplyRequest.parameter.id`, `SupplyRequest.parameter.modifierExtension`, `SupplyRequest.parameter.value[x]`, `SupplyRequest.priority`, `SupplyRequest.quantity`| | *18 of 29 elements used* <br/>remaining elements:<br/>`SupplyRequest.deliverFrom`, `SupplyRequest.deliverTo`, `SupplyRequest.item[x]`, `SupplyRequest.parameter`, `SupplyRequest.parameter.code`, `SupplyRequest.parameter.extension`, `SupplyRequest.parameter.id`, `SupplyRequest.parameter.modifierExtension`, `SupplyRequest.parameter.value[x]`, `SupplyRequest.priority`, `SupplyRequest.quantity`| | *17 of 30 elements used* <br/>remaining elements:<br/>`SupplyRequest.basedOn`, `SupplyRequest.deliverFor`, `SupplyRequest.deliverFrom`, `SupplyRequest.deliverTo`, `SupplyRequest.item`, `SupplyRequest.parameter`, `SupplyRequest.parameter.code`, `SupplyRequest.parameter.extension`, `SupplyRequest.parameter.id`, `SupplyRequest.parameter.modifierExtension`, `SupplyRequest.parameter.value[x]`, `SupplyRequest.priority`, `SupplyRequest.quantity`
 

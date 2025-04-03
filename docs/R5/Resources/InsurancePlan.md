@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### InsurancePlan
 
@@ -182,5 +182,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `InsurancePlan.plan.specificCost.benefit.cost.applicability`| _Equivalent_<br/>(28705/28706)| `InsurancePlan.plan.specificCost.benefit.cost.applicability`| _Equivalent_<br/>(43589/43590)| **`InsurancePlan.plan.specificCost.benefit.cost.applicability`**
 | | | | | `InsurancePlan.plan.specificCost.benefit.cost.qualifiers`| _Equivalent_<br/>(28707/28708)| `InsurancePlan.plan.specificCost.benefit.cost.qualifiers`| _Equivalent_<br/>(43591/43592)| **`InsurancePlan.plan.specificCost.benefit.cost.qualifiers`**
 | | | | | `InsurancePlan.plan.specificCost.benefit.cost.value`| _Equivalent_<br/>(28709/28710)| `InsurancePlan.plan.specificCost.benefit.cost.value`| _Equivalent_<br/>(43593/43594)| **`InsurancePlan.plan.specificCost.benefit.cost.value`**
-| | | | | *73 of 80 elements used* | | *73 of 80 elements used* | | *73 of 73 elements used* 
+| | | | | *73 of 80 elements used* <br/>remaining elements:<br/>`InsurancePlan.contact.address`, `InsurancePlan.contact.extension`, `InsurancePlan.contact.id`, `InsurancePlan.contact.modifierExtension`, `InsurancePlan.contact.name`, `InsurancePlan.contact.purpose`, `InsurancePlan.contact.telecom`| | *73 of 80 elements used* <br/>remaining elements:<br/>`InsurancePlan.contact.address`, `InsurancePlan.contact.extension`, `InsurancePlan.contact.id`, `InsurancePlan.contact.modifierExtension`, `InsurancePlan.contact.name`, `InsurancePlan.contact.purpose`, `InsurancePlan.contact.telecom`| | *73 of 73 elements used* 
 

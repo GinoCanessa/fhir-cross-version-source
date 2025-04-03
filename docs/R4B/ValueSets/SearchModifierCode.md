@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:27 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### SearchModifierCode
 
@@ -55,5 +55,5 @@ All codes from this value set are listed while other value sets only show conten
 | `type`| _Equivalent_ <br/>(12767/12768)| `type`| _Equivalent_ <br/>(4837/7160)| `type`| _Equivalent_ <br/>(17460/17461)| **`type`**| _Equivalent_ <br/>(9412/11751)| `type`
 | | | | | `identifier`| _Equivalent_ <br/>(17462/17463)| **`identifier`**| _Equivalent_ <br/>(9400/11742)| `identifier`
 | | | | | `ofType`| _Equivalent_ <br/>(17464/17465)| **`ofType`**| _Equivalent_ <br/>(9413/11748)| `of-type`
-| *10 of 10 codes used* | | *10 of 10 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *14 of 15 codes used* 
+| *10 of 10 codes used* | | *10 of 10 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *14 of 15 codes used* <br/>remaining codes:<br/>`iterate`
 

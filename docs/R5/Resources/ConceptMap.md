@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### ConceptMap
 
@@ -239,5 +239,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`ConceptMap.group.unmapped.valueSet`**
 | | | | | | | | | **`ConceptMap.group.unmapped.relationship`**
 | | | `ConceptMap.group.unmapped.url`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(12455)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(12456)| `ConceptMap.group.unmapped.url`| _Equivalent_<br/>(24253/24254)| `ConceptMap.group.unmapped.url`| _Equivalent_<br/>(1744/1988)| **`ConceptMap.group.unmapped.otherMap`**
-| *36 of 51 elements used* | | *61 of 65 elements used* | | *61 of 65 elements used* | | *61 of 65 elements used* | | *101 of 101 elements used* 
+| *36 of 51 elements used* <br/>remaining elements:<br/>`ConceptMap.contact.extension`, `ConceptMap.contact.id`, `ConceptMap.contact.modifierExtension`, `ConceptMap.contact.name`, `ConceptMap.contact.telecom`, `ConceptMap.element.extension`, `ConceptMap.element.id`, `ConceptMap.element.modifierExtension`, `ConceptMap.element.target.dependsOn.codeSystem`, `ConceptMap.element.target.dependsOn.extension`, `ConceptMap.element.target.dependsOn.id`, `ConceptMap.element.target.dependsOn.modifierExtension`, `ConceptMap.element.target.extension`, `ConceptMap.element.target.id`, `ConceptMap.element.target.modifierExtension`| | *61 of 65 elements used* <br/>remaining elements:<br/>`ConceptMap.group.element.target.dependsOn.display`, `ConceptMap.group.element.target.dependsOn.system`, `ConceptMap.group.sourceVersion`, `ConceptMap.group.targetVersion`| | *61 of 65 elements used* <br/>remaining elements:<br/>`ConceptMap.group.element.target.dependsOn.display`, `ConceptMap.group.element.target.dependsOn.system`, `ConceptMap.group.sourceVersion`, `ConceptMap.group.targetVersion`| | *61 of 65 elements used* <br/>remaining elements:<br/>`ConceptMap.group.element.target.dependsOn.display`, `ConceptMap.group.element.target.dependsOn.system`, `ConceptMap.group.sourceVersion`, `ConceptMap.group.targetVersion`| | *101 of 101 elements used* 
 

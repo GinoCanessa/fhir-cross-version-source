@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### ResearchStudyStatus
 
@@ -54,5 +54,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4573)<hr/>←←←← _Equivalent_ ←←←← <br/>(6893) | `administratively-completed`| _Equivalent_ <br/>(17030/17031)| `administratively-completed`| | | 
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4573)<hr/>←←←← _Equivalent_ ←←←← <br/>(6893) | `completed`| _Equivalent_ <br/>(17038/17039)| `completed`| | | 
 | | | **`entered-in-error`**| →→→→ _Equivalent_ →→→→ <br/>(4575)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6887) | `withdrawn`| _Equivalent_ <br/>(17048/17049)| `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9301)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11637) | `retired`
-| | | *6 of 6 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | *2 of 4 codes used* 
+| | | *6 of 6 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | *2 of 4 codes used* <br/>remaining codes:<br/>`draft`, `unknown`
 

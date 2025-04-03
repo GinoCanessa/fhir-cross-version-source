@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### NamingSystem
 
@@ -105,5 +105,5 @@ All elements from this structure are listed while other structures only show con
 | **`NamingSystem.uniqueId.preferred`**| _Equivalent_<br/>(6484/6485)| `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(16324/16325)| `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(30636/30637)| `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(45228/45229)| `NamingSystem.uniqueId.preferred`
 | **`NamingSystem.uniqueId.period`**| _Equivalent_<br/>(6486/6487)| `NamingSystem.uniqueId.period`| _Equivalent_<br/>(16328/16329)| `NamingSystem.uniqueId.period`| _Equivalent_<br/>(30640/30641)| `NamingSystem.uniqueId.period`| _Equivalent_<br/>(45232/45233)| `NamingSystem.uniqueId.period`
 | **`NamingSystem.replacedBy`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6488)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6489)| `NamingSystem.replacedBy`| | | | | | | 
-| *34 of 34 elements used* | | *30 of 31 elements used* | | *29 of 30 elements used* | | *29 of 30 elements used* | | *29 of 49 elements used* 
+| *34 of 34 elements used* | | *30 of 31 elements used* <br/>remaining elements:<br/>`NamingSystem.uniqueId.comment`| | *29 of 30 elements used* <br/>remaining elements:<br/>`NamingSystem.uniqueId.comment`| | *29 of 30 elements used* <br/>remaining elements:<br/>`NamingSystem.uniqueId.comment`| | *29 of 49 elements used* <br/>remaining elements:<br/>`NamingSystem.approvalDate`, `NamingSystem.author`, `NamingSystem.copyright`, `NamingSystem.copyrightLabel`, `NamingSystem.editor`, `NamingSystem.effectivePeriod`, `NamingSystem.endorser`, `NamingSystem.experimental`, `NamingSystem.identifier`, `NamingSystem.lastReviewDate`, `NamingSystem.purpose`, `NamingSystem.relatedArtifact`, `NamingSystem.reviewer`, `NamingSystem.title`, `NamingSystem.topic`, `NamingSystem.uniqueId.authoritative`, `NamingSystem.uniqueId.comment`, `NamingSystem.url`, `NamingSystem.version`, `NamingSystem.versionAlgorithm[x]`
 

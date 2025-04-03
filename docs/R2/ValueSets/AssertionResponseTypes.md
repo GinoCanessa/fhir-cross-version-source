@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### AssertionResponseTypes
 
@@ -75,5 +75,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`unprocessable`**| _Equivalent_ <br/>(1342/2801)| `unprocessable`| _Equivalent_ <br/>(4987/7332)| `unprocessable`| _Equivalent_ <br/>(14534/14535)| `unprocessable`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9577)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11915) | `serviceUnavailable`
 | **`unprocessable`**| _Equivalent_ <br/>(1342/2801)| `unprocessable`| _Equivalent_ <br/>(4987/7332)| `unprocessable`| _Equivalent_ <br/>(14534/14535)| `unprocessable`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9577)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11915) | `gatewayTimeout`
 | **`unprocessable`**| _Equivalent_ <br/>(1342/2801)| `unprocessable`| _Equivalent_ <br/>(4987/7332)| `unprocessable`| _Equivalent_ <br/>(14534/14535)| `unprocessable`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9577)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11915) | `httpVersionNotSupported`
-| *12 of 12 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *33 of 44 codes used* 
+| *12 of 12 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | *33 of 44 codes used* <br/>remaining codes:<br/>`continue`, `found`, `multipleChoices`, `nonAuthoritativeInformation`, `partialContent`, `permanentRedirect`, `resetContent`, `seeOther`, `switchingProtocols`, `temporaryRedirect`, `useProxy`
 

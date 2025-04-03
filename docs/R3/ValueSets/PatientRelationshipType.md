@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### PatientRelationshipType
 
@@ -163,5 +163,5 @@ All codes from this value set are listed while other value sets only show conten
 | `NBOR`| _Equivalent_ <br/>(12558/12559)| **`NBOR`**| | | | | | | 
 | `ONESELF`| _Equivalent_ <br/>(12560/12561)| **`ONESELF`**| | | | | | | 
 | `ROOM`| _Equivalent_ <br/>(12562/12563)| **`ROOM`**| | | | | | | 
-| *109 of 121 codes used* | | *121 of 121 codes used* | | | | | | 
+| *109 of 121 codes used* <br/>remaining codes:<br/>`agent`, `caregiver`, `emergency`, `family`, `friend`, `guarantor`, `guardian`, `owner`, `parent`, `partner`, `work`, `_PersonalRelationshipRoleType`| | *121 of 121 codes used* | | | | | | 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Quantity
 
@@ -57,7 +57,7 @@ All elements from this structure are listed while other structures only show con
 | **`Quantity.unit`**| _Equivalent_<br/>(2789/2790)| `Quantity.unit`| | | | | | | 
 | **`Quantity.system`**| _Equivalent_<br/>(2791/2792)| `Quantity.system`| | | | | | | 
 | **`Quantity.code`**| _Equivalent_<br/>(2793/2794)| `Quantity.code`| | | | | | | 
-| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* 
+| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* <br/>remaining elements:<br/>`Age`, `Age.code`, `Age.comparator`, `Age.extension`, `Age.id`, `Age.system`, `Age.unit`, `Age.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Age`, `Age.code`, `Age.comparator`, `Age.extension`, `Age.id`, `Age.system`, `Age.unit`, `Age.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Age`, `Age.code`, `Age.comparator`, `Age.extension`, `Age.id`, `Age.system`, `Age.unit`, `Age.value`
 
 
 #### Map Group 1
@@ -75,7 +75,7 @@ All elements from this structure are listed while other structures only show con
 | **`Quantity.unit`**| _Equivalent_<br/>(2789/2790)| `Quantity.unit`| | | | | | | 
 | **`Quantity.system`**| _Equivalent_<br/>(2791/2792)| `Quantity.system`| | | | | | | 
 | **`Quantity.code`**| _Equivalent_<br/>(2793/2794)| `Quantity.code`| | | | | | | 
-| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* 
+| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* <br/>remaining elements:<br/>`Count`, `Count.code`, `Count.comparator`, `Count.extension`, `Count.id`, `Count.system`, `Count.unit`, `Count.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Count`, `Count.code`, `Count.comparator`, `Count.extension`, `Count.id`, `Count.system`, `Count.unit`, `Count.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Count`, `Count.code`, `Count.comparator`, `Count.extension`, `Count.id`, `Count.system`, `Count.unit`, `Count.value`
 
 
 #### Map Group 2
@@ -93,7 +93,7 @@ All elements from this structure are listed while other structures only show con
 | **`Quantity.unit`**| _Equivalent_<br/>(2789/2790)| `Quantity.unit`| | | | | | | 
 | **`Quantity.system`**| _Equivalent_<br/>(2791/2792)| `Quantity.system`| | | | | | | 
 | **`Quantity.code`**| _Equivalent_<br/>(2793/2794)| `Quantity.code`| | | | | | | 
-| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* 
+| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* <br/>remaining elements:<br/>`Distance`, `Distance.code`, `Distance.comparator`, `Distance.extension`, `Distance.id`, `Distance.system`, `Distance.unit`, `Distance.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Distance`, `Distance.code`, `Distance.comparator`, `Distance.extension`, `Distance.id`, `Distance.system`, `Distance.unit`, `Distance.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Distance`, `Distance.code`, `Distance.comparator`, `Distance.extension`, `Distance.id`, `Distance.system`, `Distance.unit`, `Distance.value`
 
 
 #### Map Group 3
@@ -111,7 +111,7 @@ All elements from this structure are listed while other structures only show con
 | **`Quantity.unit`**| _Equivalent_<br/>(2789/2790)| `Quantity.unit`| | | | | | | 
 | **`Quantity.system`**| _Equivalent_<br/>(2791/2792)| `Quantity.system`| | | | | | | 
 | **`Quantity.code`**| _Equivalent_<br/>(2793/2794)| `Quantity.code`| | | | | | | 
-| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* | | *0 of 8 elements used* 
+| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 8 elements used* <br/>remaining elements:<br/>`Duration`, `Duration.code`, `Duration.comparator`, `Duration.extension`, `Duration.id`, `Duration.system`, `Duration.unit`, `Duration.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Duration`, `Duration.code`, `Duration.comparator`, `Duration.extension`, `Duration.id`, `Duration.system`, `Duration.unit`, `Duration.value`| | *0 of 8 elements used* <br/>remaining elements:<br/>`Duration`, `Duration.code`, `Duration.comparator`, `Duration.extension`, `Duration.id`, `Duration.system`, `Duration.unit`, `Duration.value`
 
 
 #### Map Group 4
@@ -129,7 +129,7 @@ All elements from this structure are listed while other structures only show con
 | **`Quantity.unit`**| _Equivalent_<br/>(2789/2790)| `Quantity.unit`| | | | | | | 
 | **`Quantity.system`**| _Equivalent_<br/>(2791/2792)| `Quantity.system`| | | | | | | 
 | **`Quantity.code`**| _Equivalent_<br/>(2793/2794)| `Quantity.code`| | | | | | | 
-| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 5 elements used* | | *0 of 5 elements used* | | *0 of 5 elements used* 
+| *8 of 8 elements used* | | *8 of 8 elements used* | | *0 of 5 elements used* <br/>remaining elements:<br/>`Money`, `Money.currency`, `Money.extension`, `Money.id`, `Money.value`| | *0 of 5 elements used* <br/>remaining elements:<br/>`Money`, `Money.currency`, `Money.extension`, `Money.id`, `Money.value`| | *0 of 5 elements used* <br/>remaining elements:<br/>`Money`, `Money.currency`, `Money.extension`, `Money.id`, `Money.value`
 
 
 #### Map Group 5

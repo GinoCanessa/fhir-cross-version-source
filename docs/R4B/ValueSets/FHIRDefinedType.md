@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### FHIRDefinedType
 
@@ -255,5 +255,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | `VerificationResult`| _Equivalent_ <br/>(15738/15739)| **`VerificationResult`**| | | 
 | `VisionPrescription`| _Equivalent_ <br/>(12268/12269)| `VisionPrescription`| _Equivalent_ <br/>(13535/13536)| `VisionPrescription`| _Equivalent_ <br/>(15740/15741)| **`VisionPrescription`**| | | 
 | `Parameters`| _Equivalent_ <br/>(12212/12213)| `Parameters`| _Equivalent_ <br/>(13465/13466)| `Parameters`| _Equivalent_ <br/>(15657/15658)| **`Parameters`**| | | 
-| *126 of 142 codes used* | | *160 of 173 codes used* | | *192 of 211 codes used* | | *207 of 207 codes used* | | 
+| *126 of 142 codes used* <br/>remaining codes:<br/>`BodySite`, `Conformance`, `DataElement`, `DeviceComponent`, `DeviceUseRequest`, `DiagnosticOrder`, `EligibilityRequest`, `EligibilityResponse`, `ImagingObjectSelection`, `MedicationOrder`, `Order`, `OrderResponse`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`| | *160 of 173 codes used* <br/>remaining codes:<br/>`BodySite`, `DataElement`, `DeviceComponent`, `EligibilityRequest`, `EligibilityResponse`, `ExpansionProfile`, `ImagingManifest`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `Sequence`, `ServiceDefinition`| | *192 of 211 codes used* <br/>remaining codes:<br/>`SubstanceAmount`, `EffectEvidenceSynthesis`, `MedicinalProduct`, `MedicinalProductAuthorization`, `MedicinalProductContraindication`, `MedicinalProductIndication`, `MedicinalProductIngredient`, `MedicinalProductInteraction`, `MedicinalProductManufactured`, `MedicinalProductPackaged`, `MedicinalProductPharmaceutical`, `MedicinalProductUndesirableEffect`, `RiskEvidenceSynthesis`, `SubstanceNucleicAcid`, `SubstancePolymer`, `SubstanceProtein`, `SubstanceReferenceInformation`, `SubstanceSourceMaterial`, `SubstanceSpecification`| | *207 of 207 codes used* | | 
 

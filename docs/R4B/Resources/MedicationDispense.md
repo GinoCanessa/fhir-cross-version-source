@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### MedicationDispense
 
@@ -127,5 +127,5 @@ All elements from this structure are listed while other structures only show con
 | `MedicationDispense.substitution.responsibleParty`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6260)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6261)| `MedicationDispense.substitution.responsibleParty`| →→→→ _RelatedTo_ →→→→ <br/>(15909)<hr/>←←←← _RelatedTo_ ←←←← <br/>(15910)| `MedicationDispense.substitution.responsibleParty`| _Equivalent_<br/>(29674/29675)| **`MedicationDispense.substitution.responsibleParty`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(44422)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(44423)| `MedicationDispense.substitution.responsibleParty`
 | | | `MedicationDispense.detectedIssue`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15911)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15912)| `MedicationDispense.detectedIssue`| _Equivalent_<br/>(29676/29677)| **`MedicationDispense.detectedIssue`**| | | 
 | | | `MedicationDispense.eventHistory`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15914)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15915)| `MedicationDispense.eventHistory`| _Equivalent_<br/>(29678/29679)| **`MedicationDispense.eventHistory`**| _Equivalent_<br/>(44425/44426)| `MedicationDispense.eventHistory`
-| *31 of 44 elements used* | | *43 of 45 elements used* | | *45 of 45 elements used* | | *45 of 45 elements used* | | *44 of 48 elements used* 
+| *31 of 44 elements used* <br/>remaining elements:<br/>`MedicationDispense.dosageInstruction.additionalInstructions`, `MedicationDispense.dosageInstruction.asNeeded[x]`, `MedicationDispense.dosageInstruction.dose[x]`, `MedicationDispense.dosageInstruction.extension`, `MedicationDispense.dosageInstruction.id`, `MedicationDispense.dosageInstruction.maxDosePerPeriod`, `MedicationDispense.dosageInstruction.method`, `MedicationDispense.dosageInstruction.modifierExtension`, `MedicationDispense.dosageInstruction.rate[x]`, `MedicationDispense.dosageInstruction.route`, `MedicationDispense.dosageInstruction.site[x]`, `MedicationDispense.dosageInstruction.text`, `MedicationDispense.dosageInstruction.timing`| | *43 of 45 elements used* <br/>remaining elements:<br/>`MedicationDispense.notDone`, `MedicationDispense.performer.onBehalfOf`| | *45 of 45 elements used* | | *45 of 45 elements used* | | *44 of 48 elements used* <br/>remaining elements:<br/>`MedicationDispense.basedOn`, `MedicationDispense.recorded`, `MedicationDispense.renderedDosageInstruction`, `MedicationDispense.statusChanged`
 

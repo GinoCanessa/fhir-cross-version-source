@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### DiagnosticOrderStatus
 
@@ -58,7 +58,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`suspended`**| _Equivalent_ <br/>(449/2391)| `suspended`| | | | | | | 
 | **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(442)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2385) | `cancelled`| | | | | | | 
 | **`failed`**| | | | | | | | | 
-| *13 of 13 codes used* | | *5 of 8 codes used* | | *0 of 9 codes used* | | *0 of 9 codes used* | | *0 of 9 codes used* 
+| *13 of 13 codes used* | | *5 of 8 codes used* <br/>remaining codes:<br/>`filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`| | *0 of 9 codes used* <br/>remaining codes:<br/>`directive`, `filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`| | *0 of 9 codes used* <br/>remaining codes:<br/>`directive`, `filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`| | *0 of 9 codes used* <br/>remaining codes:<br/>`directive`, `filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`
 
 
 #### Map Group 1
@@ -82,7 +82,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`suspended`**| _Equivalent_ <br/>(449/2391)| `suspended`| | | | | | | 
 | **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(442)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2385) | `cancelled`| | | | | | | 
 | **`failed`**| | | | | | | | | 
-| *13 of 13 codes used* | | *5 of 8 codes used* | | *0 of 9 codes used* | | *0 of 9 codes used* | | *0 of 9 codes used* 
+| *13 of 13 codes used* | | *5 of 8 codes used* <br/>remaining codes:<br/>`filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`| | *0 of 9 codes used* <br/>remaining codes:<br/>`filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`, `unknown`| | *0 of 9 codes used* <br/>remaining codes:<br/>`filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`, `unknown`| | *0 of 9 codes used* <br/>remaining codes:<br/>`filler-order`, `instance-order`, `option`, `order`, `original-order`, `plan`, `proposal`, `reflex-order`, `unknown`
 
 
 #### Map Group 2
@@ -106,5 +106,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`suspended`**| _Equivalent_ <br/>(449/2391)| `suspended`| _Equivalent_ <br/>(3051/5258)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(442)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2385) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`failed`**| | | | | | | | | 
-| *13 of 13 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* 
+| *13 of 13 codes used* | | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### PractitionerRole
 
@@ -106,5 +106,5 @@ All elements from this structure are listed while other structures only show con
 | | | `PractitionerRole.notAvailable.during`| _Equivalent_<br/>(17349/17350)| `PractitionerRole.notAvailable.during`| _Equivalent_<br/>(31889/31890)| **`PractitionerRole.notAvailable.during`**| | | 
 | | | `PractitionerRole.availabilityExceptions`| _Equivalent_<br/>(17351/17352)| `PractitionerRole.availabilityExceptions`| _Equivalent_<br/>(31891/31892)| **`PractitionerRole.availabilityExceptions`**| | | 
 | | | `PractitionerRole.endpoint`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17353)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17354)| `PractitionerRole.endpoint`| _Equivalent_<br/>(31893/31894)| **`PractitionerRole.endpoint`**| _Equivalent_<br/>(46493/46494)| `PractitionerRole.endpoint`
-| | | *35 of 35 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *20 of 23 elements used* 
+| | | *35 of 35 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *20 of 23 elements used* <br/>remaining elements:<br/>`PractitionerRole.availability`, `PractitionerRole.characteristic`, `PractitionerRole.communication`
 

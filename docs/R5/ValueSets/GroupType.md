@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### GroupType
 
@@ -51,5 +51,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`organization`**
 | | | | | | | | | **`relatedperson`**
 | | | | | | | | | **`specimen`**
-| *4 of 6 codes used* | | *4 of 6 codes used* | | *4 of 6 codes used* | | *4 of 6 codes used* | | *10 of 10 codes used* 
+| *4 of 6 codes used* <br/>remaining codes:<br/>`medication`, `substance`| | *4 of 6 codes used* <br/>remaining codes:<br/>`medication`, `substance`| | *4 of 6 codes used* <br/>remaining codes:<br/>`medication`, `substance`| | *4 of 6 codes used* <br/>remaining codes:<br/>`medication`, `substance`| | *10 of 10 codes used* 
 

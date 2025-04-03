@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:24 PM
+Generated at Thursday, April 3, 2025 8:18:22 AM
 
 ### StructureMap
 
@@ -222,5 +222,5 @@ All elements from this structure are listed while other structures only show con
 | | | `StructureMap.group.rule.dependent.name`| _Equivalent_<br/>(18842/18843)| **`StructureMap.group.rule.dependent.name`**| _Equivalent_<br/>(33723/33724)| `StructureMap.group.rule.dependent.name`| _Equivalent_<br/>(47885/47886)| `StructureMap.group.rule.dependent.name`
 | | | `StructureMap.group.rule.dependent.variable`| _Equivalent_<br/>(18844/18845)| **`StructureMap.group.rule.dependent.variable`**| _Equivalent_<br/>(33725/33726)| `StructureMap.group.rule.dependent.variable`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1850)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2093)| `StructureMap.group.rule.dependent.parameter`
 | | | `StructureMap.group.rule.documentation`| _Equivalent_<br/>(18846/18847)| **`StructureMap.group.rule.documentation`**| _Equivalent_<br/>(33727/33728)| `StructureMap.group.rule.documentation`| _Equivalent_<br/>(47887/47888)| `StructureMap.group.rule.documentation`
-| | | *92 of 92 elements used* | | *93 of 93 elements used* | | *93 of 93 elements used* | | *92 of 100 elements used* 
+| | | *92 of 92 elements used* | | *93 of 93 elements used* | | *93 of 93 elements used* | | *92 of 100 elements used* <br/>remaining elements:<br/>`StructureMap.const`, `StructureMap.const.extension`, `StructureMap.const.id`, `StructureMap.const.modifierExtension`, `StructureMap.const.name`, `StructureMap.const.value`, `StructureMap.copyrightLabel`, `StructureMap.versionAlgorithm[x]`
 

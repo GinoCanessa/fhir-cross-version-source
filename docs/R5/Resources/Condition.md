@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### Condition
 
@@ -108,5 +108,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `Condition.stage.type`| _Equivalent_<br/>(24315/24316)| `Condition.stage.type`| _Equivalent_<br/>(39592/39593)| **`Condition.stage.type`**
 | `Condition.evidence`| _Equivalent_<br/>(4030/4031)| `Condition.evidence`| _Equivalent_<br/>(12509/12510)| `Condition.evidence`| _Equivalent_<br/>(24317/24318)| `Condition.evidence`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(39594)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(39595)| **`Condition.evidence`**
 | `Condition.notes`| →→→→ _RelatedTo_ →→→→ <br/>(159)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(578)| `Condition.note`| _Equivalent_<br/>(12521/12522)| `Condition.note`| _Equivalent_<br/>(24329/24330)| `Condition.note`| _Equivalent_<br/>(39601/39602)| **`Condition.note`**
-| *29 of 35 elements used* | | *29 of 35 elements used* | | *30 of 37 elements used* | | *30 of 37 elements used* | | *36 of 36 elements used* 
+| *29 of 35 elements used* <br/>remaining elements:<br/>`Condition.asserter`, `Condition.evidence.code`, `Condition.evidence.detail`, `Condition.evidence.extension`, `Condition.evidence.id`, `Condition.evidence.modifierExtension`| | *29 of 35 elements used* <br/>remaining elements:<br/>`Condition.asserter`, `Condition.evidence.code`, `Condition.evidence.detail`, `Condition.evidence.extension`, `Condition.evidence.id`, `Condition.evidence.modifierExtension`| | *30 of 37 elements used* <br/>remaining elements:<br/>`Condition.asserter`, `Condition.evidence.code`, `Condition.evidence.detail`, `Condition.evidence.extension`, `Condition.evidence.id`, `Condition.evidence.modifierExtension`, `Condition.recorder`| | *30 of 37 elements used* <br/>remaining elements:<br/>`Condition.asserter`, `Condition.evidence.code`, `Condition.evidence.detail`, `Condition.evidence.extension`, `Condition.evidence.id`, `Condition.evidence.modifierExtension`, `Condition.recorder`| | *36 of 36 elements used* 
 

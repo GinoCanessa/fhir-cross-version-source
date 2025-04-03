@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Count
 
@@ -52,5 +52,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Count.unit`**| _Equivalent_<br/>(9293/9294)| `Count.unit`| _Equivalent_<br/>(20638/20639)| `Count.unit`| _Equivalent_<br/>(35763/35764)| `Count.unit`
 | | | **`Count.system`**| _Equivalent_<br/>(9295/9296)| `Count.system`| _Equivalent_<br/>(20640/20641)| `Count.system`| _Equivalent_<br/>(35765/35766)| `Count.system`
 | | | **`Count.code`**| _Equivalent_<br/>(9297/9298)| `Count.code`| _Equivalent_<br/>(20642/20643)| `Count.code`| _Equivalent_<br/>(35767/35768)| `Count.code`
-| *0 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
+| *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
 

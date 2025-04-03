@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### CoverageEligibilityRequest
 
@@ -152,5 +152,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `CoverageEligibilityRequest.item.diagnosis.modifierExtension`| _Equivalent_<br/>(25207/25208)| `CoverageEligibilityRequest.item.diagnosis.modifierExtension`| _Equivalent_<br/>(40242/40243)| **`CoverageEligibilityRequest.item.diagnosis.modifierExtension`**
 | | | | | `CoverageEligibilityRequest.item.diagnosis.diagnosis[x]`| _Equivalent_<br/>(25209/25210)| `CoverageEligibilityRequest.item.diagnosis.diagnosis[x]`| _Equivalent_<br/>(40244/40245)| **`CoverageEligibilityRequest.item.diagnosis.diagnosis[x]`**
 | | | | | `CoverageEligibilityRequest.item.detail`| _Equivalent_<br/>(25211/25212)| `CoverageEligibilityRequest.item.detail`| _Equivalent_<br/>(40246/40247)| **`CoverageEligibilityRequest.item.detail`**
-| *1 of 16 elements used* | | *3 of 24 elements used* | | *52 of 52 elements used* | | *52 of 52 elements used* | | *58 of 58 elements used* 
+| *1 of 16 elements used* <br/>remaining elements:<br/>`EligibilityRequest`, `EligibilityRequest.contained`, `EligibilityRequest.created`, `EligibilityRequest.extension`, `EligibilityRequest.id`, `EligibilityRequest.identifier`, `EligibilityRequest.implicitRules`, `EligibilityRequest.language`, `EligibilityRequest.meta`, `EligibilityRequest.modifierExtension`, `EligibilityRequest.originalRuleset`, `EligibilityRequest.provider`, `EligibilityRequest.ruleset`, `EligibilityRequest.target`, `EligibilityRequest.text`| | *3 of 24 elements used* <br/>remaining elements:<br/>`EligibilityRequest`, `EligibilityRequest.benefitCategory`, `EligibilityRequest.benefitSubCategory`, `EligibilityRequest.contained`, `EligibilityRequest.created`, `EligibilityRequest.enterer`, `EligibilityRequest.extension`, `EligibilityRequest.facility`, `EligibilityRequest.id`, `EligibilityRequest.identifier`, `EligibilityRequest.implicitRules`, `EligibilityRequest.insurer`, `EligibilityRequest.language`, `EligibilityRequest.meta`, `EligibilityRequest.modifierExtension`, `EligibilityRequest.patient`, `EligibilityRequest.priority`, `EligibilityRequest.provider`, `EligibilityRequest.serviced[x]`, `EligibilityRequest.status`, `EligibilityRequest.text`| | *52 of 52 elements used* | | *52 of 52 elements used* | | *58 of 58 elements used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Account
 
@@ -100,5 +100,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Account.guarantor.party`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(9942)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(9943)| `Account.guarantor.party`| _Equivalent_<br/>(21421/21422)| `Account.guarantor.party`| _Equivalent_<br/>(36485/36486)| `Account.guarantor.party`
 | | | **`Account.guarantor.onHold`**| _Equivalent_<br/>(9944/9945)| `Account.guarantor.onHold`| _Equivalent_<br/>(21423/21424)| `Account.guarantor.onHold`| _Equivalent_<br/>(36487/36488)| `Account.guarantor.onHold`
 | | | **`Account.guarantor.period`**| _Equivalent_<br/>(9946/9947)| `Account.guarantor.period`| _Equivalent_<br/>(21425/21426)| `Account.guarantor.period`| _Equivalent_<br/>(36489/36490)| `Account.guarantor.period`
-| *18 of 20 elements used* | | *32 of 32 elements used* | | *30 of 31 elements used* | | *30 of 31 elements used* | | *30 of 67 elements used* 
+| *18 of 20 elements used* <br/>remaining elements:<br/>`Account.coveragePeriod`, `Account.currency`| | *32 of 32 elements used* | | *30 of 31 elements used* <br/>remaining elements:<br/>`Account.partOf`| | *30 of 31 elements used* <br/>remaining elements:<br/>`Account.partOf`| | *30 of 67 elements used* <br/>remaining elements:<br/>`Account.balance`, `Account.balance.aggregate`, `Account.balance.amount`, `Account.balance.estimate`, `Account.balance.extension`, `Account.balance.id`, `Account.balance.modifierExtension`, `Account.balance.term`, `Account.billingStatus`, `Account.calculatedAt`, `Account.currency`, `Account.diagnosis`, `Account.diagnosis.condition`, `Account.diagnosis.dateOfDiagnosis`, `Account.diagnosis.extension`, `Account.diagnosis.id`, `Account.diagnosis.modifierExtension`, `Account.diagnosis.onAdmission`, `Account.diagnosis.packageCode`, `Account.diagnosis.sequence`, `Account.diagnosis.type`, `Account.procedure`, `Account.procedure.code`, `Account.procedure.dateOfService`, `Account.procedure.device`, `Account.procedure.extension`, `Account.procedure.id`, `Account.procedure.modifierExtension`, `Account.procedure.packageCode`, `Account.procedure.sequence`, `Account.procedure.type`, `Account.relatedAccount`, `Account.relatedAccount.account`, `Account.relatedAccount.extension`, `Account.relatedAccount.id`, `Account.relatedAccount.modifierExtension`, `Account.relatedAccount.relationship`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:25 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### ClinicalImpressionStatus
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | `in-progress`| _Equivalent_ <br/>(87/1456)| `draft`| _Equivalent_ <br/>(2985/5200)| `in-progress`| _Equivalent_ <br/>(14658/14659)| **`in-progress`**| _Equivalent_ <br/>(7528/9794)| `in-progress`
 | `completed`| _Equivalent_ <br/>(85/1455)| `completed`| _Equivalent_ <br/>(2986/5198)| `completed`| _Equivalent_ <br/>(14660/14661)| **`completed`**| _Equivalent_ <br/>(7526/9791)| `completed`
 | `entered-in-error`| _Equivalent_ <br/>(86/1457)| `entered-in-error`| _Equivalent_ <br/>(2987/5199)| `entered-in-error`| _Equivalent_ <br/>(14662/14663)| **`entered-in-error`**| _Equivalent_ <br/>(7527/9793)| `entered-in-error`
-| *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 8 codes used* 
+| *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 8 codes used* <br/>remaining codes:<br/>`not-done`, `on-hold`, `preparation`, `stopped`, `unknown`
 

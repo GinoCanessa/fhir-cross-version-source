@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:35 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### DetectedIssueStatus
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | `entered-in-error`| _Equivalent_ <br/>(906/2271)| `entered-in-error`| _Equivalent_ <br/>(3579/5865)| `entered-in-error`| _Equivalent_ <br/>(16718/16719)| `entered-in-error`| _Equivalent_ <br/>(7977/10281)| **`entered-in-error`**
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/detectedissue-status`
 | | | | | | | | | **`mitigated`**
-| *3 of 7 codes used* | | *3 of 8 codes used* | | *3 of 8 codes used* | | *3 of 8 codes used* | | *4 of 4 codes used* 
+| *3 of 7 codes used* <br/>remaining codes:<br/>`amended`, `cancelled`, `registered`, `unknown`| | *3 of 8 codes used* <br/>remaining codes:<br/>`amended`, `cancelled`, `corrected`, `registered`, `unknown`| | *3 of 8 codes used* <br/>remaining codes:<br/>`amended`, `cancelled`, `corrected`, `registered`, `unknown`| | *3 of 8 codes used* <br/>remaining codes:<br/>`amended`, `cancelled`, `corrected`, `registered`, `unknown`| | *4 of 4 codes used* 
 

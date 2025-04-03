@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:18 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### status
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | **`req-revalid`**| _Equivalent_ <br/>(18412/18413)| `req-revalid`| _Equivalent_ <br/>(9655/11979)| `req-revalid`
 | | | | | **`val-fail`**| _Equivalent_ <br/>(18414/18415)| `val-fail`| _Equivalent_ <br/>(9653/11981)| `val-fail`
 | | | | | **`reval-fail`**| _Equivalent_ <br/>(18416/18417)| `reval-fail`| _Equivalent_ <br/>(9656/11980)| `reval-fail`
-| | | | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* 
+| | | | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`
 

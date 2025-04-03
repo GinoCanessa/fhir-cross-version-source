@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### AllergyIntolerance
 
@@ -107,5 +107,5 @@ All elements from this structure are listed while other structures only show con
 | `AllergyIntolerance.reaction.severity`| _Equivalent_<br/>(2977/2978)| `AllergyIntolerance.reaction.severity`| _Equivalent_<br/>(10170/10171)| `AllergyIntolerance.reaction.severity`| _Equivalent_<br/>(21726/21727)| **`AllergyIntolerance.reaction.severity`**| _Equivalent_<br/>(36840/36841)| `AllergyIntolerance.reaction.severity`
 | `AllergyIntolerance.reaction.exposureRoute`| _Equivalent_<br/>(2979/2980)| `AllergyIntolerance.reaction.exposureRoute`| _Equivalent_<br/>(10172/10173)| `AllergyIntolerance.reaction.exposureRoute`| _Equivalent_<br/>(21728/21729)| **`AllergyIntolerance.reaction.exposureRoute`**| _Equivalent_<br/>(36842/36843)| `AllergyIntolerance.reaction.exposureRoute`
 | `AllergyIntolerance.reaction.note`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(2981)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2982)| `AllergyIntolerance.reaction.note`| _Equivalent_<br/>(10174/10175)| `AllergyIntolerance.reaction.note`| _Equivalent_<br/>(21730/21731)| **`AllergyIntolerance.reaction.note`**| _Equivalent_<br/>(36844/36845)| `AllergyIntolerance.reaction.note`
-| *33 of 34 elements used* | | *34 of 34 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *33 of 39 elements used* 
+| *33 of 34 elements used* <br/>remaining elements:<br/>`AllergyIntolerance.status`| | *34 of 34 elements used* | | *35 of 35 elements used* | | *35 of 35 elements used* | | *33 of 39 elements used* <br/>remaining elements:<br/>`AllergyIntolerance.participant`, `AllergyIntolerance.participant.actor`, `AllergyIntolerance.participant.extension`, `AllergyIntolerance.participant.function`, `AllergyIntolerance.participant.id`, `AllergyIntolerance.participant.modifierExtension`
 

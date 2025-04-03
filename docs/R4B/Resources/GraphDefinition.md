@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### GraphDefinition
 
@@ -134,5 +134,5 @@ All elements from this structure are listed while other structures only show con
 | | | `GraphDefinition.link.target.compartment.expression`| _Equivalent_<br/>(14652/14653)| `GraphDefinition.link.target.compartment.expression`| _Equivalent_<br/>(27684/27685)| **`GraphDefinition.link.target.compartment.expression`**| | | 
 | | | `GraphDefinition.link.target.compartment.description`| _Equivalent_<br/>(14654/14655)| `GraphDefinition.link.target.compartment.description`| _Equivalent_<br/>(27686/27687)| **`GraphDefinition.link.target.compartment.description`**| | | 
 | | | `GraphDefinition.link.target.link`| _Equivalent_<br/>(14656/14657)| `GraphDefinition.link.target.link`| _Equivalent_<br/>(27688/27689)| **`GraphDefinition.link.target.link`**| | | 
-| | | *47 of 47 elements used* | | *49 of 49 elements used* | | *49 of 49 elements used* | | *31 of 56 elements used* 
+| | | *47 of 47 elements used* | | *49 of 49 elements used* | | *49 of 49 elements used* | | *31 of 56 elements used* <br/>remaining elements:<br/>`GraphDefinition.copyright`, `GraphDefinition.copyrightLabel`, `GraphDefinition.identifier`, `GraphDefinition.link.compartment`, `GraphDefinition.link.compartment.code`, `GraphDefinition.link.compartment.description`, `GraphDefinition.link.compartment.expression`, `GraphDefinition.link.compartment.extension`, `GraphDefinition.link.compartment.id`, `GraphDefinition.link.compartment.modifierExtension`, `GraphDefinition.link.compartment.rule`, `GraphDefinition.link.compartment.use`, `GraphDefinition.link.params`, `GraphDefinition.link.sourceId`, `GraphDefinition.link.targetId`, `GraphDefinition.node`, `GraphDefinition.node.description`, `GraphDefinition.node.extension`, `GraphDefinition.node.id`, `GraphDefinition.node.modifierExtension`, `GraphDefinition.node.nodeId`, `GraphDefinition.node.profile`, `GraphDefinition.node.type`, `GraphDefinition.title`, `GraphDefinition.versionAlgorithm[x]`
 

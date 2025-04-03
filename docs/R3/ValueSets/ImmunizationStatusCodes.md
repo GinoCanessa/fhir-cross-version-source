@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### Immunization Status Codes
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/medication-admin-status`
 | `completed`| _Equivalent_ <br/>(615/1976)| **`completed`**| _Equivalent_ <br/>(3786/6104)| `completed`| _Equivalent_ <br/>(16222/16223)| `completed`| _Equivalent_ <br/>(8705/11014)| `completed`
 | `entered-in-error`| _Equivalent_ <br/>(616/1977)| **`entered-in-error`**| _Equivalent_ <br/>(3787/6106)| `entered-in-error`| _Equivalent_ <br/>(16224/16225)| `entered-in-error`| _Equivalent_ <br/>(8707/11016)| `entered-in-error`
-| *2 of 5 codes used* | | *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 3 codes used* | | *2 of 3 codes used* 
+| *2 of 5 codes used* <br/>remaining codes:<br/>`in-progress`, `on-hold`, `stopped`| | *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`not-done`| | *2 of 3 codes used* <br/>remaining codes:<br/>`not-done`| | *2 of 3 codes used* <br/>remaining codes:<br/>`not-done`
 

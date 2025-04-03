@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### SupplyItemType
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R4B** System: `http://terminology.hl7.org/CodeSystem/supply-item-type`
 | `medication`| _Equivalent_ <br/>(1292/2739)| `medication`| _Equivalent_ <br/>(4861/7184)| `medication`| _Equivalent_ <br/>(18268/18269)| **`medication`**| _Equivalent_ <br/>(9439/11777)| `medication`
 | `device`| _Equivalent_ <br/>(1293/2740)| `device`| _Equivalent_ <br/>(4862/7185)| `device`| _Equivalent_ <br/>(18270/18271)| **`device`**| _Equivalent_ <br/>(9440/11776)| `device`
-| *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 3 codes used* 
+| *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`biologicallyderivedproduct`
 

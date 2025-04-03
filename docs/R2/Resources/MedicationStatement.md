@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### MedicationStatement
 
@@ -107,5 +107,5 @@ All elements from this structure are listed while other structures only show con
 | **`MedicationStatement.dosage.quantity[x]`**| | | | | | | | | 
 | **`MedicationStatement.dosage.rate[x]`**| | | | | | | | | 
 | **`MedicationStatement.dosage.maxDosePerPeriod`**| | | | | | | | | 
-| *34 of 34 elements used* | | *24 of 27 elements used* | | *21 of 26 elements used* | | *21 of 26 elements used* | | *20 of 31 elements used* 
+| *34 of 34 elements used* | | *24 of 27 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.category`, `MedicationStatement.context`, `MedicationStatement.partOf`| | *21 of 26 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.category`, `MedicationStatement.context`, `MedicationStatement.partOf`, `MedicationStatement.statusReason`| | *21 of 26 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.category`, `MedicationStatement.context`, `MedicationStatement.partOf`, `MedicationStatement.statusReason`| | *20 of 31 elements used* <br/>remaining elements:<br/>`MedicationStatement.adherence`, `MedicationStatement.adherence.code`, `MedicationStatement.adherence.extension`, `MedicationStatement.adherence.id`, `MedicationStatement.adherence.modifierExtension`, `MedicationStatement.adherence.reason`, `MedicationStatement.category`, `MedicationStatement.encounter`, `MedicationStatement.partOf`, `MedicationStatement.relatedClinicalInformation`, `MedicationStatement.renderedDosageInstruction`
 

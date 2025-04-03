@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### ExampleScenario
 
@@ -226,5 +226,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `ExampleScenario.process.step.alternative.description`| _Equivalent_<br/>(26853/26854)| `ExampleScenario.process.step.alternative.description`| _Equivalent_<br/>(41909/41910)| **`ExampleScenario.process.step.alternative.description`**
 | | | | | `ExampleScenario.process.step.alternative.step`| _Equivalent_<br/>(26855/26856)| `ExampleScenario.process.step.alternative.step`| _Equivalent_<br/>(41911/41912)| **`ExampleScenario.process.step.alternative.step`**
 | | | | | `ExampleScenario.process.step.pause`| _Equivalent_<br/>(26813/26814)| `ExampleScenario.process.step.pause`| _Equivalent_<br/>(41872/41873)| **`ExampleScenario.process.step.pause`**
-| | | | | *84 of 86 elements used* | | *84 of 86 elements used* | | *95 of 95 elements used* 
+| | | | | *84 of 86 elements used* <br/>remaining elements:<br/>`ExampleScenario.process.step.operation.number`, `ExampleScenario.workflow`| | *84 of 86 elements used* <br/>remaining elements:<br/>`ExampleScenario.process.step.operation.number`, `ExampleScenario.workflow`| | *95 of 95 elements used* 
 

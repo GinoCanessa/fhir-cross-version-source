@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### CareTeam
 
@@ -92,5 +92,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`CareTeam.reasonReference`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11113)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11114)| `CareTeam.reasonReference`| _Equivalent_<br/>(22701/22702)| `CareTeam.reasonReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1856)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2099)| `CareTeam.reason`
 | | | **`CareTeam.managingOrganization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11115)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11116)| `CareTeam.managingOrganization`| _Equivalent_<br/>(22703/22704)| `CareTeam.managingOrganization`| _Equivalent_<br/>(37685/37686)| `CareTeam.managingOrganization`
 | | | **`CareTeam.note`**| _Equivalent_<br/>(11117/11118)| `CareTeam.note`| _Equivalent_<br/>(22707/22708)| `CareTeam.note`| _Equivalent_<br/>(37689/37690)| `CareTeam.note`
-| | | *28 of 28 elements used* | | *28 of 29 elements used* | | *28 of 29 elements used* | | *26 of 27 elements used* 
+| | | *28 of 28 elements used* | | *28 of 29 elements used* <br/>remaining elements:<br/>`CareTeam.telecom`| | *28 of 29 elements used* <br/>remaining elements:<br/>`CareTeam.telecom`| | *26 of 27 elements used* <br/>remaining elements:<br/>`CareTeam.telecom`
 

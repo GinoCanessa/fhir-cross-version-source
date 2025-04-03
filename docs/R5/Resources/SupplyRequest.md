@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### SupplyRequest
 
@@ -101,5 +101,5 @@ All elements from this structure are listed while other structures only show con
 | `SupplyRequest.reason[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8133)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8134)| `SupplyRequest.reason[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1290)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1678)| `SupplyRequest.reasonReference`| _Equivalent_<br/>(33937/33938)| `SupplyRequest.reasonReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1853)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2096)| **`SupplyRequest.reason`**
 | | | `SupplyRequest.deliverFrom`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(19060)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(19061)| `SupplyRequest.deliverFrom`| _Equivalent_<br/>(33939/33940)| `SupplyRequest.deliverFrom`| _Equivalent_<br/>(48479/48480)| **`SupplyRequest.deliverFrom`**
 | | | `SupplyRequest.deliverTo`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(19062)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(19063)| `SupplyRequest.deliverTo`| _Equivalent_<br/>(33941/33942)| `SupplyRequest.deliverTo`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(48481)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(48482)| **`SupplyRequest.deliverTo`**
-| *20 of 24 elements used* | | *24 of 31 elements used* | | *29 of 29 elements used* | | *29 of 29 elements used* | | *30 of 30 elements used* 
+| *20 of 24 elements used* <br/>remaining elements:<br/>`SupplyRequest.when.code`, `SupplyRequest.when.extension`, `SupplyRequest.when.id`, `SupplyRequest.when.modifierExtension`| | *24 of 31 elements used* <br/>remaining elements:<br/>`SupplyRequest.orderedItem.extension`, `SupplyRequest.orderedItem.id`, `SupplyRequest.orderedItem.modifierExtension`, `SupplyRequest.requester.extension`, `SupplyRequest.requester.id`, `SupplyRequest.requester.modifierExtension`, `SupplyRequest.requester.onBehalfOf`| | *29 of 29 elements used* | | *29 of 29 elements used* | | *30 of 30 elements used* 
 

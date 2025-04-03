@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### ResearchSubject
 
@@ -70,5 +70,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ResearchSubject.assignedArm`**| _Equivalent_<br/>(18134/18135)| `ResearchSubject.assignedArm`| _Equivalent_<br/>(32774/32775)| `ResearchSubject.assignedArm`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1943)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2180)| `ResearchSubject.assignedComparisonGroup`
 | | | **`ResearchSubject.actualArm`**| _Equivalent_<br/>(18136/18137)| `ResearchSubject.actualArm`| _Equivalent_<br/>(32776/32777)| `ResearchSubject.actualArm`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1944)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2181)| `ResearchSubject.actualComparisonGroup`
 | | | **`ResearchSubject.consent`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18138)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18139)| `ResearchSubject.consent`| _Equivalent_<br/>(32778/32779)| `ResearchSubject.consent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(47106)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(47107)| `ResearchSubject.consent`
-| | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 27 elements used* 
+| | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 27 elements used* <br/>remaining elements:<br/>`ResearchSubject.progress`, `ResearchSubject.progress.endDate`, `ResearchSubject.progress.extension`, `ResearchSubject.progress.id`, `ResearchSubject.progress.milestone`, `ResearchSubject.progress.modifierExtension`, `ResearchSubject.progress.reason`, `ResearchSubject.progress.startDate`, `ResearchSubject.progress.subjectState`, `ResearchSubject.progress.type`
 

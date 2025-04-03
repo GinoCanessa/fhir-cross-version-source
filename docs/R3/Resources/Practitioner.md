@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:16 PM
+Generated at Thursday, April 3, 2025 8:18:14 AM
 
 ### Practitioner
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | `Practitioner.qualification.period`| _Equivalent_<br/>(7235/7236)| **`Practitioner.qualification.period`**| _Equivalent_<br/>(17279/17280)| `Practitioner.qualification.period`| _Equivalent_<br/>(31819/31820)| `Practitioner.qualification.period`| _Equivalent_<br/>(46435/46436)| `Practitioner.qualification.period`
 | `Practitioner.qualification.issuer`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7237)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7238)| **`Practitioner.qualification.issuer`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17281)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17282)| `Practitioner.qualification.issuer`| _Equivalent_<br/>(31821/31822)| `Practitioner.qualification.issuer`| _Equivalent_<br/>(46437/46438)| `Practitioner.qualification.issuer`
 | `Practitioner.communication`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7239)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7240)| **`Practitioner.communication`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17283)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(17284)| `Practitioner.communication`| _Equivalent_<br/>(31823/31824)| `Practitioner.communication`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(46439)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(46440)| `Practitioner.communication`
-| *26 of 36 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 32 elements used* 
+| *26 of 36 elements used* <br/>remaining elements:<br/>`Practitioner.practitionerRole`, `Practitioner.practitionerRole.extension`, `Practitioner.practitionerRole.healthcareService`, `Practitioner.practitionerRole.id`, `Practitioner.practitionerRole.location`, `Practitioner.practitionerRole.managingOrganization`, `Practitioner.practitionerRole.modifierExtension`, `Practitioner.practitionerRole.period`, `Practitioner.practitionerRole.role`, `Practitioner.practitionerRole.specialty`| | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 32 elements used* <br/>remaining elements:<br/>`Practitioner.communication.extension`, `Practitioner.communication.id`, `Practitioner.communication.language`, `Practitioner.communication.modifierExtension`, `Practitioner.communication.preferred`, `Practitioner.deceased[x]`
 

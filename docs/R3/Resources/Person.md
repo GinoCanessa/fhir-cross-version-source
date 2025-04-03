@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Person
 
@@ -84,5 +84,5 @@ All elements from this structure are listed while other structures only show con
 | `Person.link.modifierExtension`| _Equivalent_<br/>(7179/7180)| **`Person.link.modifierExtension`**| _Equivalent_<br/>(17031/17032)| `Person.link.modifierExtension`| _Equivalent_<br/>(31545/31546)| `Person.link.modifierExtension`| _Equivalent_<br/>(46175/46176)| `Person.link.modifierExtension`
 | `Person.link.target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7181)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7182)| **`Person.link.target`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17033)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17034)| `Person.link.target`| _Equivalent_<br/>(31547/31548)| `Person.link.target`| _Equivalent_<br/>(46177/46178)| `Person.link.target`
 | `Person.link.assurance`| _Equivalent_<br/>(7183/7184)| **`Person.link.assurance`**| _Equivalent_<br/>(17035/17036)| `Person.link.assurance`| _Equivalent_<br/>(31549/31550)| `Person.link.assurance`| _Equivalent_<br/>(46179/46180)| `Person.link.assurance`
-| *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 32 elements used* 
+| *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 24 elements used* | | *24 of 32 elements used* <br/>remaining elements:<br/>`Person.communication`, `Person.communication.extension`, `Person.communication.id`, `Person.communication.language`, `Person.communication.modifierExtension`, `Person.communication.preferred`, `Person.deceased[x]`, `Person.maritalStatus`
 

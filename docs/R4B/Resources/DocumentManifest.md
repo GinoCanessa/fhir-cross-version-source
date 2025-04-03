@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### DocumentManifest
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | `DocumentManifest.related.modifierExtension`| _Equivalent_<br/>(4818/4819)| `DocumentManifest.related.modifierExtension`| _Equivalent_<br/>(13211/13212)| `DocumentManifest.related.modifierExtension`| _Equivalent_<br/>(26032/26033)| **`DocumentManifest.related.modifierExtension`**| | | 
 | `DocumentManifest.related.identifier`| _Equivalent_<br/>(4820/4821)| `DocumentManifest.related.identifier`| _Equivalent_<br/>(13213/13214)| `DocumentManifest.related.identifier`| _Equivalent_<br/>(26034/26035)| **`DocumentManifest.related.identifier`**| | | 
 | `DocumentManifest.related.ref`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4822)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4823)| `DocumentManifest.related.ref`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13215)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13216)| `DocumentManifest.related.ref`| _Equivalent_<br/>(26036/26037)| **`DocumentManifest.related.ref`**| | | 
-| *27 of 30 elements used* | | *27 of 30 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | 
+| *27 of 30 elements used* <br/>remaining elements:<br/>`DocumentManifest.content.extension`, `DocumentManifest.content.id`, `DocumentManifest.content.modifierExtension`| | *27 of 30 elements used* <br/>remaining elements:<br/>`DocumentManifest.content.extension`, `DocumentManifest.content.id`, `DocumentManifest.content.modifierExtension`| | *26 of 26 elements used* | | *26 of 26 elements used* | | 
 

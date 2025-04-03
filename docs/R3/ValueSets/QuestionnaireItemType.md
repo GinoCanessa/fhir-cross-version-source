@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### QuestionnaireItemType
 
@@ -58,5 +58,5 @@ All codes from this value set are listed while other value sets only show conten
 | `attachment`| _Equivalent_ <br/>(1079/2484)| **`attachment`**| _Equivalent_ <br/>(4544/6854)| `attachment`| _Equivalent_ <br/>(16352/16353)| `attachment`| _Equivalent_ <br/>(9264/11579)| `attachment`
 | `reference`| _Equivalent_ <br/>(1077/2496)| **`reference`**| _Equivalent_ <br/>(4542/6852)| `reference`| _Equivalent_ <br/>(16354/16355)| `reference`| _Equivalent_ <br/>(9262/11590)| `reference`
 | `quantity`| _Equivalent_ <br/>(1071/2495)| **`quantity`**| _Equivalent_ <br/>(4536/6846)| `quantity`| _Equivalent_ <br/>(16356/16357)| `quantity`| _Equivalent_ <br/>(9256/11589)| `quantity`
-| *15 of 15 codes used* | | *16 of 16 codes used* | | *16 of 16 codes used* | | *16 of 17 codes used* | | *15 of 16 codes used* 
+| *15 of 15 codes used* | | *16 of 16 codes used* | | *16 of 16 codes used* | | *16 of 17 codes used* <br/>remaining codes:<br/>`question`| | *15 of 16 codes used* <br/>remaining codes:<br/>`question`
 

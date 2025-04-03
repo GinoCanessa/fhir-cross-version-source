@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### Schedule
 
@@ -70,5 +70,5 @@ All elements from this structure are listed while other structures only show con
 | `Schedule.actor`| →→→→ _RelatedTo_ →→→→ <br/>(7727)<hr/>←←←← _RelatedTo_ ←←←← <br/>(7728)| `Schedule.actor`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18250)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18251)| **`Schedule.actor`**| _Equivalent_<br/>(32888/32889)| `Schedule.actor`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(47212)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(47213)| `Schedule.actor`
 | `Schedule.planningHorizon`| _Equivalent_<br/>(7729/7730)| `Schedule.planningHorizon`| _Equivalent_<br/>(18252/18253)| **`Schedule.planningHorizon`**| _Equivalent_<br/>(32890/32891)| `Schedule.planningHorizon`| _Equivalent_<br/>(47214/47215)| `Schedule.planningHorizon`
 | `Schedule.comment`| _Equivalent_<br/>(7731/7732)| `Schedule.comment`| _Equivalent_<br/>(18254/18255)| **`Schedule.comment`**| _Equivalent_<br/>(32892/32893)| `Schedule.comment`| _Equivalent_<br/>(47216/47217)| `Schedule.comment`
-| *14 of 14 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 18 elements used* 
+| *14 of 14 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 18 elements used* <br/>remaining elements:<br/>`Schedule.name`
 

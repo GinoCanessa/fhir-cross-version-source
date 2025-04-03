@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### DataRequirement
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`DataRequirement.sort.extension`**| _Equivalent_<br/>(20699/20700)| `DataRequirement.sort.extension`| _Equivalent_<br/>(35815/35816)| `DataRequirement.sort.extension`
 | | | | | **`DataRequirement.sort.path`**| _Equivalent_<br/>(20701/20702)| `DataRequirement.sort.path`| _Equivalent_<br/>(35817/35818)| `DataRequirement.sort.path`
 | | | | | **`DataRequirement.sort.direction`**| _Equivalent_<br/>(20703/20704)| `DataRequirement.sort.direction`| _Equivalent_<br/>(35819/35820)| `DataRequirement.sort.direction`
-| | | *17 of 19 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 33 elements used* 
+| | | *17 of 19 elements used* <br/>remaining elements:<br/>`DataRequirement.codeFilter.valueCode`, `DataRequirement.codeFilter.valueCodeableConcept`| | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 33 elements used* <br/>remaining elements:<br/>`DataRequirement.valueFilter`, `DataRequirement.valueFilter.comparator`, `DataRequirement.valueFilter.extension`, `DataRequirement.valueFilter.id`, `DataRequirement.valueFilter.path`, `DataRequirement.valueFilter.searchParam`, `DataRequirement.valueFilter.value[x]`
 

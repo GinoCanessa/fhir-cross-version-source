@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### NamingSystem
 
@@ -96,5 +96,5 @@ All elements from this structure are listed while other structures only show con
 | `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(6484/6485)| `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(16324/16325)| **`NamingSystem.uniqueId.preferred`**| _Equivalent_<br/>(30636/30637)| `NamingSystem.uniqueId.preferred`| _Equivalent_<br/>(45228/45229)| `NamingSystem.uniqueId.preferred`
 | | | `NamingSystem.uniqueId.comment`| _Equivalent_<br/>(16326/16327)| **`NamingSystem.uniqueId.comment`**| _Equivalent_<br/>(30638/30639)| `NamingSystem.uniqueId.comment`| _Equivalent_<br/>(45230/45231)| `NamingSystem.uniqueId.comment`
 | `NamingSystem.uniqueId.period`| _Equivalent_<br/>(6486/6487)| `NamingSystem.uniqueId.period`| _Equivalent_<br/>(16328/16329)| **`NamingSystem.uniqueId.period`**| _Equivalent_<br/>(30640/30641)| `NamingSystem.uniqueId.period`| _Equivalent_<br/>(45232/45233)| `NamingSystem.uniqueId.period`
-| *28 of 34 elements used* | | *30 of 31 elements used* | | *30 of 30 elements used* | | *30 of 30 elements used* | | *30 of 49 elements used* 
+| *28 of 34 elements used* <br/>remaining elements:<br/>`NamingSystem.contact.extension`, `NamingSystem.contact.id`, `NamingSystem.contact.modifierExtension`, `NamingSystem.contact.name`, `NamingSystem.contact.telecom`, `NamingSystem.replacedBy`| | *30 of 31 elements used* <br/>remaining elements:<br/>`NamingSystem.replacedBy`| | *30 of 30 elements used* | | *30 of 30 elements used* | | *30 of 49 elements used* <br/>remaining elements:<br/>`NamingSystem.approvalDate`, `NamingSystem.author`, `NamingSystem.copyright`, `NamingSystem.copyrightLabel`, `NamingSystem.editor`, `NamingSystem.effectivePeriod`, `NamingSystem.endorser`, `NamingSystem.experimental`, `NamingSystem.identifier`, `NamingSystem.lastReviewDate`, `NamingSystem.purpose`, `NamingSystem.relatedArtifact`, `NamingSystem.reviewer`, `NamingSystem.title`, `NamingSystem.topic`, `NamingSystem.uniqueId.authoritative`, `NamingSystem.url`, `NamingSystem.version`, `NamingSystem.versionAlgorithm[x]`
 

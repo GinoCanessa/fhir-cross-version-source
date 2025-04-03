@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:27 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### ResourceType
 
@@ -196,5 +196,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | `VerificationResult`| _Equivalent_ <br/>(17404/17405)| **`VerificationResult`**| _Equivalent_ <br/>(18834/18835)| `VerificationResult`
 | `VisionPrescription`| _Equivalent_ <br/>(12747/12748)| `VisionPrescription`| _Equivalent_ <br/>(13812/13813)| `VisionPrescription`| _Equivalent_ <br/>(17406/17407)| **`VisionPrescription`**| _Equivalent_ <br/>(18836/18837)| `VisionPrescription`
 | `Parameters`| _Equivalent_ <br/>(12691/12692)| `Parameters`| _Equivalent_ <br/>(13742/13743)| `Parameters`| _Equivalent_ <br/>(17323/17324)| **`Parameters`**| _Equivalent_ <br/>(18838/18839)| `Parameters`
-| *80 of 96 codes used* | | *106 of 119 codes used* | | *130 of 148 codes used* | | *143 of 143 codes used* | | *134 of 158 codes used* 
+| *80 of 96 codes used* <br/>remaining codes:<br/>`BodySite`, `Conformance`, `DataElement`, `DeviceComponent`, `DeviceUseRequest`, `DiagnosticOrder`, `EligibilityRequest`, `EligibilityResponse`, `ImagingObjectSelection`, `MedicationOrder`, `Order`, `OrderResponse`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`| | *106 of 119 codes used* <br/>remaining codes:<br/>`BodySite`, `DataElement`, `DeviceComponent`, `EligibilityRequest`, `EligibilityResponse`, `ExpansionProfile`, `ImagingManifest`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `Sequence`, `ServiceDefinition`| | *130 of 148 codes used* <br/>remaining codes:<br/>`EffectEvidenceSynthesis`, `MedicinalProduct`, `MedicinalProductAuthorization`, `MedicinalProductContraindication`, `MedicinalProductIndication`, `MedicinalProductIngredient`, `MedicinalProductInteraction`, `MedicinalProductManufactured`, `MedicinalProductPackaged`, `MedicinalProductPharmaceutical`, `MedicinalProductUndesirableEffect`, `RiskEvidenceSynthesis`, `SubstanceNucleicAcid`, `SubstancePolymer`, `SubstanceProtein`, `SubstanceReferenceInformation`, `SubstanceSourceMaterial`, `SubstanceSpecification`| | *143 of 143 codes used* | | *134 of 158 codes used* <br/>remaining codes:<br/>`ActorDefinition`, `ArtifactAssessment`, `BiologicallyDerivedProductDispense`, `ConditionDefinition`, `DeviceAssociation`, `DeviceDispense`, `DeviceUsage`, `EncounterHistory`, `FormularyItem`, `GenomicStudy`, `ImagingSelection`, `InventoryItem`, `InventoryReport`, `NutritionIntake`, `Permission`, `RequestOrchestration`, `Requirements`, `SubstanceNucleicAcid`, `SubstancePolymer`, `SubstanceProtein`, `SubstanceReferenceInformation`, `SubstanceSourceMaterial`, `TestPlan`, `Transport`
 

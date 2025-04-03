@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### MedicationStatementStatus
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | `intended`| _Equivalent_ <br/>(812/2179)| **`intended`**| _Equivalent_ <br/>(4000/6335)| `intended`| _Equivalent_ <br/>(16506/16507)| `intended`| →→→→ _Equivalent_ →→→→ <br/>(9012)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11321) | `draft`
 | | | **`stopped`**| _Equivalent_ <br/>(3999/6338)| `stopped`| _Equivalent_ <br/>(16508/16509)| `stopped`| →→→→ _Equivalent_ →→→→ <br/>(9011)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11327) | `recorded`
 | | | **`on-hold`**| _Equivalent_ <br/>(4004/6337)| `on-hold`| _Equivalent_ <br/>(16510/16511)| `on-hold`| →→→→ _Equivalent_ →→→→ <br/>(9017)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11322) | `draft`
-| *4 of 4 codes used* | | *6 of 6 codes used* | | *6 of 8 codes used* | | *6 of 8 codes used* | | *3 of 3 codes used* 
+| *4 of 4 codes used* | | *6 of 6 codes used* | | *6 of 8 codes used* <br/>remaining codes:<br/>`not-taken`, `unknown`| | *6 of 8 codes used* <br/>remaining codes:<br/>`not-taken`, `unknown`| | *3 of 3 codes used* 
 

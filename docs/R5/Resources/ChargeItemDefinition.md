@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### ChargeItemDefinition
 
@@ -128,5 +128,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `ChargeItemDefinition.propertyGroup.modifierExtension`| _Equivalent_<br/>(22929/22930)| `ChargeItemDefinition.propertyGroup.modifierExtension`| _Equivalent_<br/>(37841/37842)| **`ChargeItemDefinition.propertyGroup.modifierExtension`**
 | | | | | `ChargeItemDefinition.propertyGroup.applicability`| _Equivalent_<br/>(22931/22932)| `ChargeItemDefinition.propertyGroup.applicability`| _Equivalent_<br/>(37843/37844)| **`ChargeItemDefinition.propertyGroup.applicability`**
 | | | | | `ChargeItemDefinition.propertyGroup.priceComponent`| _Equivalent_<br/>(22933/22934)| `ChargeItemDefinition.propertyGroup.priceComponent`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(37845)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(37846)| **`ChargeItemDefinition.propertyGroup.priceComponent`**
-| | | | | *40 of 50 elements used* | | *40 of 50 elements used* | | *46 of 46 elements used* 
+| | | | | *40 of 50 elements used* <br/>remaining elements:<br/>`ChargeItemDefinition.applicability.description`, `ChargeItemDefinition.applicability.language`, `ChargeItemDefinition.effectivePeriod`, `ChargeItemDefinition.propertyGroup.priceComponent.amount`, `ChargeItemDefinition.propertyGroup.priceComponent.code`, `ChargeItemDefinition.propertyGroup.priceComponent.extension`, `ChargeItemDefinition.propertyGroup.priceComponent.factor`, `ChargeItemDefinition.propertyGroup.priceComponent.id`, `ChargeItemDefinition.propertyGroup.priceComponent.modifierExtension`, `ChargeItemDefinition.propertyGroup.priceComponent.type`| | *40 of 50 elements used* <br/>remaining elements:<br/>`ChargeItemDefinition.applicability.description`, `ChargeItemDefinition.applicability.language`, `ChargeItemDefinition.effectivePeriod`, `ChargeItemDefinition.propertyGroup.priceComponent.amount`, `ChargeItemDefinition.propertyGroup.priceComponent.code`, `ChargeItemDefinition.propertyGroup.priceComponent.extension`, `ChargeItemDefinition.propertyGroup.priceComponent.factor`, `ChargeItemDefinition.propertyGroup.priceComponent.id`, `ChargeItemDefinition.propertyGroup.priceComponent.modifierExtension`, `ChargeItemDefinition.propertyGroup.priceComponent.type`| | *46 of 46 elements used* 
 

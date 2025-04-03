@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### MessageHeader
 
@@ -116,5 +116,5 @@ All elements from this structure are listed while other structures only show con
 | **`MessageHeader.responsible`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6425)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6426)| `MessageHeader.responsible`| →→→→ _RelatedTo_ →→→→ <br/>(16247)<hr/>←←←← _RelatedTo_ ←←←← <br/>(16248)| `MessageHeader.responsible`| _Equivalent_<br/>(30257/30258)| `MessageHeader.responsible`| _Equivalent_<br/>(45038/45039)| `MessageHeader.responsible`
 | **`MessageHeader.reason`**| _Equivalent_<br/>(6427/6428)| `MessageHeader.reason`| _Equivalent_<br/>(16249/16250)| `MessageHeader.reason`| _Equivalent_<br/>(30259/30260)| `MessageHeader.reason`| _Equivalent_<br/>(45040/45041)| `MessageHeader.reason`
 | **`MessageHeader.data`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(296)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(673)| `MessageHeader.focus`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16265)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16266)| `MessageHeader.focus`| _Equivalent_<br/>(30275/30276)| `MessageHeader.focus`| _Equivalent_<br/>(45056/45057)| `MessageHeader.focus`
-| *40 of 40 elements used* | | *40 of 41 elements used* | | *39 of 41 elements used* | | *39 of 41 elements used* | | *38 of 40 elements used* 
+| *40 of 40 elements used* | | *40 of 41 elements used* <br/>remaining elements:<br/>`MessageHeader.sender`| | *39 of 41 elements used* <br/>remaining elements:<br/>`MessageHeader.definition`, `MessageHeader.sender`| | *39 of 41 elements used* <br/>remaining elements:<br/>`MessageHeader.definition`, `MessageHeader.sender`| | *38 of 40 elements used* <br/>remaining elements:<br/>`MessageHeader.definition`, `MessageHeader.sender`
 

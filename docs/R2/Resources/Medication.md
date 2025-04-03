@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### Medication
 
@@ -116,5 +116,5 @@ All elements from this structure are listed while other structures only show con
 | **`Medication.package.content.modifierExtension`**| _Equivalent_<br/>(6139/6140)| `Medication.package.content.modifierExtension`| | | | | | | 
 | **`Medication.package.content.item`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(263)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(651)| `Medication.package.content.item[x]`| | | | | | | 
 | **`Medication.package.content.amount`**| _Equivalent_<br/>(6141/6142)| `Medication.package.content.amount`| | | | | | | 
-| *40 of 40 elements used* | | *29 of 40 elements used* | | *14 of 28 elements used* | | *14 of 28 elements used* | | *14 of 29 elements used* 
+| *40 of 40 elements used* | | *29 of 40 elements used* <br/>remaining elements:<br/>`Medication.image`, `Medication.ingredient.extension`, `Medication.ingredient.id`, `Medication.ingredient.isActive`, `Medication.ingredient.item[x]`, `Medication.ingredient.modifierExtension`, `Medication.isOverTheCounter`, `Medication.package.batch.extension`, `Medication.package.batch.id`, `Medication.package.batch.modifierExtension`, `Medication.status`| | *14 of 28 elements used* <br/>remaining elements:<br/>`Medication.amount`, `Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.identifier`, `Medication.ingredient.extension`, `Medication.ingredient.id`, `Medication.ingredient.isActive`, `Medication.ingredient.item[x]`, `Medication.ingredient.modifierExtension`, `Medication.status`| | *14 of 28 elements used* <br/>remaining elements:<br/>`Medication.amount`, `Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.identifier`, `Medication.ingredient.extension`, `Medication.ingredient.id`, `Medication.ingredient.isActive`, `Medication.ingredient.item[x]`, `Medication.ingredient.modifierExtension`, `Medication.status`| | *14 of 29 elements used* <br/>remaining elements:<br/>`Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.definition`, `Medication.identifier`, `Medication.ingredient.extension`, `Medication.ingredient.id`, `Medication.ingredient.isActive`, `Medication.ingredient.item`, `Medication.ingredient.modifierExtension`, `Medication.status`, `Medication.totalVolume`
 

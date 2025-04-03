@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### Procedure
 
@@ -130,5 +130,5 @@ All elements from this structure are listed while other structures only show con
 | `Procedure.focalDevice.manipulated`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7305)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7306)| **`Procedure.focalDevice.manipulated`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17436)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17437)| `Procedure.focalDevice.manipulated`| _Equivalent_<br/>(31990/31991)| `Procedure.focalDevice.manipulated`| _Equivalent_<br/>(46577/46578)| `Procedure.focalDevice.manipulated`
 | `Procedure.used`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(339)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(693)| **`Procedure.usedReference`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17438)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17439)| `Procedure.usedReference`| _Equivalent_<br/>(31992/31993)| `Procedure.usedReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1937)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2174)| `Procedure.used`
 | | | **`Procedure.usedCode`**| _Equivalent_<br/>(17440/17441)| `Procedure.usedCode`| _Equivalent_<br/>(31994/31995)| `Procedure.usedCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1936)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2173)| `Procedure.used`
-| *40 of 40 elements used* | | *46 of 46 elements used* | | *45 of 48 elements used* | | *44 of 48 elements used* | | *41 of 49 elements used* 
+| *40 of 40 elements used* | | *46 of 46 elements used* | | *45 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.recorder`| | *44 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.recorder`| | *41 of 49 elements used* <br/>remaining elements:<br/>`Procedure.focus`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.performer.period`, `Procedure.recorded`, `Procedure.recorder`, `Procedure.reported[x]`, `Procedure.supportingInfo`
 

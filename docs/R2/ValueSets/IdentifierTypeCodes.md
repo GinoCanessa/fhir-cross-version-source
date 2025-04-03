@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### Identifier Type Codes
 
@@ -75,5 +75,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`PLAC`**| _Equivalent_ <br/>(596/1958)| `PLAC`| _Equivalent_ <br/>(3777/6081)| `PLAC`| | | | | 
 | **`FILL`**| _Equivalent_ <br/>(595/1957)| `FILL`| _Equivalent_ <br/>(3776/6082)| `FILL`| | | | | 
 | **`FILL`**| _Equivalent_ <br/>(595/1957)| `FILL`| _Equivalent_ <br/>(3776/6082)| `FILL`| | | | | 
-| *16 of 16 codes used* | | *16 of 17 codes used* | | *16 of 18 codes used* | | | | 
+| *16 of 16 codes used* | | *16 of 17 codes used* <br/>remaining codes:<br/>`ACSN`| | *16 of 18 codes used* <br/>remaining codes:<br/>`ACSN`, `JHN`| | | | 
 

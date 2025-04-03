@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### Media
 
@@ -97,5 +97,5 @@ All elements from this structure are listed while other structures only show con
 | `Media.duration`| _Equivalent_<br/>(6085/6086)| `Media.duration`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15665)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15666)| `Media.duration`| _Equivalent_<br/>(29427/29428)| **`Media.duration`**| | | 
 | `Media.content`| _Equivalent_<br/>(6087/6088)| `Media.content`| _Equivalent_<br/>(15667/15668)| `Media.content`| _Equivalent_<br/>(29429/29430)| **`Media.content`**| | | 
 | | | `Media.note`| _Equivalent_<br/>(15669/15670)| `Media.note`| _Equivalent_<br/>(29431/29432)| **`Media.note`**| | | 
-| *20 of 21 elements used* | | *27 of 27 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* | | 
+| *20 of 21 elements used* <br/>remaining elements:<br/>`Media.deviceName`| | *27 of 27 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* | | 
 

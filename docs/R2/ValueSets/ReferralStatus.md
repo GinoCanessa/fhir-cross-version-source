@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### ReferralStatus
 
@@ -48,5 +48,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`accepted`**| →→→→ _Equivalent_ →→→→ <br/>(1088)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2505) | `active`| _Equivalent_ <br/>(3047/5254)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`
 | **`rejected`**| →→→→ _Equivalent_ →→→→ <br/>(1093)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2509) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`completed`**| →→→→ _Equivalent_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2510) | `completed`| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
-| *7 of 7 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* 
+| *7 of 7 codes used* | | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `suspended`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:33 AM
 
 ### RelatedArtifact
 
@@ -62,5 +62,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`RelatedArtifact.resourceReference`**
 | | | | | | | | | **`RelatedArtifact.publicationStatus`**
 | | | | | | | | | **`RelatedArtifact.publicationDate`**
-| | | *8 of 9 elements used* | | *9 of 10 elements used* | | *9 of 10 elements used* | | *13 of 13 elements used* 
+| | | *8 of 9 elements used* <br/>remaining elements:<br/>`RelatedArtifact.url`| | *9 of 10 elements used* <br/>remaining elements:<br/>`RelatedArtifact.url`| | *9 of 10 elements used* <br/>remaining elements:<br/>`RelatedArtifact.url`| | *13 of 13 elements used* 
 

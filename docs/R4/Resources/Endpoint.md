@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### Endpoint
 
@@ -76,5 +76,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Endpoint.payloadMimeType`| _Equivalent_<br/>(13602/13603)| **`Endpoint.payloadMimeType`**| _Equivalent_<br/>(26330/26331)| `Endpoint.payloadMimeType`| | | 
 | | | `Endpoint.address`| _Equivalent_<br/>(13604/13605)| **`Endpoint.address`**| _Equivalent_<br/>(26332/26333)| `Endpoint.address`| _Equivalent_<br/>(41068/41069)| `Endpoint.address`
 | | | `Endpoint.header`| _Equivalent_<br/>(13606/13607)| **`Endpoint.header`**| _Equivalent_<br/>(26334/26335)| `Endpoint.header`| _Equivalent_<br/>(41070/41071)| `Endpoint.header`
-| | | *20 of 20 elements used* | | *20 of 20 elements used* | | *20 of 20 elements used* | | *18 of 26 elements used* 
+| | | *20 of 20 elements used* | | *20 of 20 elements used* | | *20 of 20 elements used* | | *18 of 26 elements used* <br/>remaining elements:<br/>`Endpoint.description`, `Endpoint.environmentType`, `Endpoint.payload`, `Endpoint.payload.extension`, `Endpoint.payload.id`, `Endpoint.payload.mimeType`, `Endpoint.payload.modifierExtension`, `Endpoint.payload.type`
 

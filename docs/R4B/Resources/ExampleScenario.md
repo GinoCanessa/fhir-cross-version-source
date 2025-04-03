@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### ExampleScenario
 
@@ -208,5 +208,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `ExampleScenario.process.step.alternative.description`| _Equivalent_<br/>(26853/26854)| **`ExampleScenario.process.step.alternative.description`**| _Equivalent_<br/>(41909/41910)| `ExampleScenario.process.step.alternative.description`
 | | | | | `ExampleScenario.process.step.alternative.step`| _Equivalent_<br/>(26855/26856)| **`ExampleScenario.process.step.alternative.step`**| _Equivalent_<br/>(41911/41912)| `ExampleScenario.process.step.alternative.step`
 | | | | | `ExampleScenario.workflow`| _Equivalent_<br/>(26857/26858)| **`ExampleScenario.workflow`**| | | 
-| | | | | *86 of 86 elements used* | | *86 of 86 elements used* | | *84 of 95 elements used* 
+| | | | | *86 of 86 elements used* | | *86 of 86 elements used* | | *84 of 95 elements used* <br/>remaining elements:<br/>`ExampleScenario.copyrightLabel`, `ExampleScenario.description`, `ExampleScenario.instance.content`, `ExampleScenario.instance.structureProfile[x]`, `ExampleScenario.instance.structureVersion`, `ExampleScenario.instance.version.content`, `ExampleScenario.instance.version.title`, `ExampleScenario.process.step.number`, `ExampleScenario.process.step.workflow`, `ExampleScenario.title`, `ExampleScenario.versionAlgorithm[x]`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### Audit Active Participant Role ID Code
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`110153`**| _Equivalent_ <br/>(1254/2553)| `110153`| _Equivalent_ <br/>(4254/6596)| `110153`| | | | | 
 | **`110154`**| _Equivalent_ <br/>(1259/2551)| `110154`| _Equivalent_ <br/>(4255/6597)| `110154`| | | | | 
 | **`110155`**| _Equivalent_ <br/>(1255/2556)| `110155`| _Equivalent_ <br/>(4256/6598)| `110155`| | | | | 
-| *6 of 6 codes used* | | *6 of 76 codes used* | | *6 of 76 codes used* | | | | 
+| *6 of 6 codes used* | | *6 of 76 codes used* <br/>remaining codes:<br/>`authserver`, `datacollector`, `dataprocessor`, `datasubject`, `AUCG`, `AULR`, `AUTM`, `AUWA`, `PROMSK`, `AUT`, `CST`, `INF`, `IRCP`, `LA`, `TRC`, `WIT`, `AFFL`, `AGNT`, `ASSIGNED`, `CLAIM`, `COVPTY`, `DEPEN`, `ECON`, `EMP`, `GUARD`, `INVSBJ`, `NAMED`, `NOK`, `NOT`, `PAT`, `PROV`, `CAS`, `CASM`, `CLASSIFIER`, `CN`, `CNRP`, `CNRPM`, `CONSENTER`, `CONSWIT`, `COPART`, `CPCA`, `CRP`, `CRPM`, `DECLASSIFIER`, `DELEGATEE`, `DELEGATOR`, `DOWNGRDER`, `DPOWATT`, `EXCEST`, `GRANTEE`, `GRANTOR`, `GT`, `GUADLTM`, `HPOWATT`, `INTPRTER`, `POWATT`, `RESPRSN`, `SPOWATT`, `_CitizenRoleType`, `AMENDER`, `COAUTH`, `CONT`, `EVTWIT`, `PRIMAUTH`, `REVIEWER`, `SOURCE`, `TRANS`, `VALID`, `VERF`| | *6 of 76 codes used* <br/>remaining codes:<br/>`AMENDER`, `COAUTH`, `CONT`, `EVTWIT`, `PRIMAUTH`, `REVIEWER`, `SOURCE`, `TRANS`, `VALID`, `VERF`, `authserver`, `datacollector`, `dataprocessor`, `datasubject`, `humanuser`, `AUCG`, `AULR`, `AUTM`, `AUWA`, `PROMSK`, `AUT`, `CST`, `INF`, `IRCP`, `LA`, `TRC`, `WIT`, `AFFL`, `AGNT`, `ASSIGNED`, `CLAIM`, `COVPTY`, `DEPEN`, `ECON`, `EMP`, `GUARD`, `INVSBJ`, `NAMED`, `NOK`, `NOT`, `PAT`, `PROV`, `CAS`, `CASM`, `CLASSIFIER`, `CN`, `CNRP`, `CNRPM`, `CONSENTER`, `CONSWIT`, `COPART`, `CPCA`, `CRP`, `CRPM`, `DECLASSIFIER`, `DELEGATEE`, `DELEGATOR`, `DOWNGRDER`, `DPOWATT`, `EXCEST`, `GRANTEE`, `GRANTOR`, `GT`, `GUADLTM`, `HPOWATT`, `INTPRTER`, `POWATT`, `RESPRSN`, `SPOWATT`, `_CitizenRoleType`| | | | 
 

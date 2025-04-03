@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### Invoice
 
@@ -114,5 +114,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `Invoice.totalGross`| _Equivalent_<br/>(28791/28792)| `Invoice.totalGross`| _Equivalent_<br/>(43668/43669)| **`Invoice.totalGross`**
 | | | | | `Invoice.paymentTerms`| _Equivalent_<br/>(28793/28794)| `Invoice.paymentTerms`| _Equivalent_<br/>(43670/43671)| **`Invoice.paymentTerms`**
 | | | | | `Invoice.note`| _Equivalent_<br/>(28795/28796)| `Invoice.note`| _Equivalent_<br/>(43672/43673)| **`Invoice.note`**
-| | | | | *36 of 43 elements used* | | *36 of 43 elements used* | | *39 of 39 elements used* 
+| | | | | *36 of 43 elements used* <br/>remaining elements:<br/>`Invoice.lineItem.priceComponent.amount`, `Invoice.lineItem.priceComponent.code`, `Invoice.lineItem.priceComponent.extension`, `Invoice.lineItem.priceComponent.factor`, `Invoice.lineItem.priceComponent.id`, `Invoice.lineItem.priceComponent.modifierExtension`, `Invoice.lineItem.priceComponent.type`| | *36 of 43 elements used* <br/>remaining elements:<br/>`Invoice.lineItem.priceComponent.amount`, `Invoice.lineItem.priceComponent.code`, `Invoice.lineItem.priceComponent.extension`, `Invoice.lineItem.priceComponent.factor`, `Invoice.lineItem.priceComponent.id`, `Invoice.lineItem.priceComponent.modifierExtension`, `Invoice.lineItem.priceComponent.type`| | *39 of 39 elements used* 
 

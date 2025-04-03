@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:19 AM
 
 ### ChargeItemDefinition
 
@@ -136,5 +136,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`ChargeItemDefinition.propertyGroup.priceComponent.code`**| _Equivalent_<br/>(22943/22944)| `ChargeItemDefinition.propertyGroup.priceComponent.code`| | | 
 | | | | | **`ChargeItemDefinition.propertyGroup.priceComponent.factor`**| _Equivalent_<br/>(22945/22946)| `ChargeItemDefinition.propertyGroup.priceComponent.factor`| | | 
 | | | | | **`ChargeItemDefinition.propertyGroup.priceComponent.amount`**| _Equivalent_<br/>(22947/22948)| `ChargeItemDefinition.propertyGroup.priceComponent.amount`| | | 
-| | | | | *50 of 50 elements used* | | *50 of 50 elements used* | | *40 of 46 elements used* 
+| | | | | *50 of 50 elements used* | | *50 of 50 elements used* | | *40 of 46 elements used* <br/>remaining elements:<br/>`ChargeItemDefinition.applicability.effectivePeriod`, `ChargeItemDefinition.applicability.relatedArtifact`, `ChargeItemDefinition.copyrightLabel`, `ChargeItemDefinition.name`, `ChargeItemDefinition.purpose`, `ChargeItemDefinition.versionAlgorithm[x]`
 

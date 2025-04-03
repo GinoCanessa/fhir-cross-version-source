@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:19 AM
 
 ### AppointmentResponse
 
@@ -70,5 +70,5 @@ All elements from this structure are listed while other structures only show con
 | `AppointmentResponse.actor`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3065)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3066)| `AppointmentResponse.actor`| →→→→ _RelatedTo_ →→→→ <br/>(10278)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10279)| **`AppointmentResponse.actor`**| _Equivalent_<br/>(21841/21842)| `AppointmentResponse.actor`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(36945)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36946)| `AppointmentResponse.actor`
 | `AppointmentResponse.participantStatus`| →→→→ _RelatedTo_ →→→→ <br/>(3067)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3068)| `AppointmentResponse.participantStatus`| _Equivalent_<br/>(10280/10281)| **`AppointmentResponse.participantStatus`**| _Equivalent_<br/>(21843/21844)| `AppointmentResponse.participantStatus`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36947)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36948)| `AppointmentResponse.participantStatus`
 | `AppointmentResponse.comment`| _Equivalent_<br/>(3069/3070)| `AppointmentResponse.comment`| _Equivalent_<br/>(10282/10283)| **`AppointmentResponse.comment`**| _Equivalent_<br/>(21845/21846)| `AppointmentResponse.comment`| _Equivalent_<br/>(36949/36950)| `AppointmentResponse.comment`
-| *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 21 elements used* 
+| *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 17 elements used* | | *17 of 21 elements used* <br/>remaining elements:<br/>`AppointmentResponse.occurrenceDate`, `AppointmentResponse.proposedNewTime`, `AppointmentResponse.recurrenceId`, `AppointmentResponse.recurring`
 

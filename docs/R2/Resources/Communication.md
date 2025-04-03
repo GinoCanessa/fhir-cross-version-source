@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Communication
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | **`Communication.reason`**| _Equivalent_<br/>(136/556)| `Communication.reasonCode`| _Equivalent_<br/>(12043/12044)| `Communication.reasonCode`| _Equivalent_<br/>(23867/23868)| `Communication.reasonCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1866)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2108)| `Communication.reason`
 | **`Communication.subject`**| →→→→ _RelatedTo_ →→→→ <br/>(3784)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3785)| `Communication.subject`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12032)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12033)| `Communication.subject`| _Equivalent_<br/>(23851/23852)| `Communication.subject`| _Equivalent_<br/>(39171/39172)| `Communication.subject`
 | **`Communication.requestDetail`**| →→→→ _RelatedTo_ →→→→ <br/>(137)<hr/>←←←← _RelatedTo_ ←←←← <br/>(554)| `Communication.basedOn`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12022)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12023)| `Communication.basedOn`| _Equivalent_<br/>(23835/23836)| `Communication.basedOn`| _Equivalent_<br/>(39155/39156)| `Communication.basedOn`
-| *26 of 26 elements used* | | *26 of 33 elements used* | | *26 of 36 elements used* | | *26 of 36 elements used* | | *26 of 35 elements used* 
+| *26 of 26 elements used* | | *26 of 33 elements used* <br/>remaining elements:<br/>`Communication.definition`, `Communication.notDone`, `Communication.notDoneReason`, `Communication.note`, `Communication.partOf`, `Communication.reasonReference`, `Communication.topic`| | *26 of 36 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesCanonical`, `Communication.instantiatesUri`, `Communication.note`, `Communication.partOf`, `Communication.priority`, `Communication.reasonReference`, `Communication.statusReason`, `Communication.topic`| | *26 of 36 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesCanonical`, `Communication.instantiatesUri`, `Communication.note`, `Communication.partOf`, `Communication.priority`, `Communication.reasonReference`, `Communication.statusReason`, `Communication.topic`| | *26 of 35 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesCanonical`, `Communication.instantiatesUri`, `Communication.note`, `Communication.partOf`, `Communication.priority`, `Communication.statusReason`, `Communication.topic`
 

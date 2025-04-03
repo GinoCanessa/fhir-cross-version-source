@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### SearchProcessingModeType
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | `normal`| _Equivalent_ <br/>(1273/2719)| `normal`| _Equivalent_ <br/>(4838/7161)| `normal`| _Equivalent_ <br/>(17484/17485)| `normal`| _Equivalent_ <br/>(9416/11752)| **`normal`**
 | `phonetic`| _Equivalent_ <br/>(1275/2721)| `phonetic`| _Equivalent_ <br/>(4840/7163)| `phonetic`| _Equivalent_ <br/>(17486/17487)| `phonetic`| _Equivalent_ <br/>(9418/11754)| **`phonetic`**
 | `other`| _Equivalent_ <br/>(1274/2720)| `other`| _Equivalent_ <br/>(4839/7162)| `other`| _Equivalent_ <br/>(17492/17493)| `other`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9417)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11753) | **`other`**
-| *3 of 5 codes used* | | *3 of 5 codes used* | | *3 of 5 codes used* | | *3 of 5 codes used* | | *3 of 3 codes used* 
+| *3 of 5 codes used* <br/>remaining codes:<br/>`distance`, `nearby`| | *3 of 5 codes used* <br/>remaining codes:<br/>`distance`, `nearby`| | *3 of 5 codes used* <br/>remaining codes:<br/>`distance`, `nearby`| | *3 of 5 codes used* <br/>remaining codes:<br/>`distance`, `nearby`| | *3 of 3 codes used* 
 

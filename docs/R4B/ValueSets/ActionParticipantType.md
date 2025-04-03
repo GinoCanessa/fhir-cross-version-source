@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### ActionParticipantType
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `practitioner`| _Equivalent_ <br/>(2887/5076)| `practitioner`| _Equivalent_ <br/>(13884/13885)| **`practitioner`**| _Equivalent_ <br/>(7423/9681)| `practitioner`
 | | | `related-person`| _Equivalent_ <br/>(2886/5077)| `related-person`| _Equivalent_ <br/>(13886/13887)| **`related-person`**| _Equivalent_ <br/>(7424/9686)| `relatedperson`
 | | | | | `device`| _Equivalent_ <br/>(13888/13889)| **`device`**| _Equivalent_ <br/>(7421/9687)| `device`
-| | | *3 of 3 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 10 codes used* 
+| | | *3 of 3 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 10 codes used* <br/>remaining codes:<br/>`careteam`, `group`, `healthcareservice`, `location`, `organization`, `practitionerrole`
 

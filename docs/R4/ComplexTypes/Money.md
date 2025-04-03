@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### Money
 
@@ -47,5 +47,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Money.value`| _Equivalent_<br/>(9666/9667)| **`Money.value`**| _Equivalent_<br/>(21071/21072)| `Money.value`| _Equivalent_<br/>(36180/36181)| `Money.value`
 | | | `Money.unit`| →→→→ _Equivalent_ →→→→ <br/>(21064)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1709)| **`Money.currency`**| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| `Money.currency`
 | | | `Money.code`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1334)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1709)| **`Money.currency`**| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| `Money.currency`
-| *0 of 8 elements used* | | *6 of 8 elements used* | | *5 of 5 elements used* | | *5 of 5 elements used* | | *5 of 5 elements used* 
+| *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *6 of 8 elements used* <br/>remaining elements:<br/>`Money.comparator`, `Money.system`| | *5 of 5 elements used* | | *5 of 5 elements used* | | *5 of 5 elements used* 
 

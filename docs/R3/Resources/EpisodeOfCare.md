@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### EpisodeOfCare
 
@@ -101,5 +101,5 @@ All elements from this structure are listed while other structures only show con
 | `EpisodeOfCare`| →→→→ _Equivalent_ →→→→ <br/>(13680)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(619)| **`EpisodeOfCare.team`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13742)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13743)| `EpisodeOfCare.team`| _Equivalent_<br/>(26462/26463)| `EpisodeOfCare.team`| _Equivalent_<br/>(1784/2028)| `EpisodeOfCare.careTeam`
 | `EpisodeOfCare.careTeam`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(227)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(619)| **`EpisodeOfCare.team`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13742)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13743)| `EpisodeOfCare.team`| _Equivalent_<br/>(26462/26463)| `EpisodeOfCare.team`| _Equivalent_<br/>(1784/2028)| `EpisodeOfCare.careTeam`
 | | | **`EpisodeOfCare.account`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13744)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13745)| `EpisodeOfCare.account`| _Equivalent_<br/>(26464/26465)| `EpisodeOfCare.account`| _Equivalent_<br/>(41195/41196)| `EpisodeOfCare.account`
-| *25 of 31 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *31 of 37 elements used* 
+| *25 of 31 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.careTeam.extension`, `EpisodeOfCare.careTeam.id`, `EpisodeOfCare.careTeam.member`, `EpisodeOfCare.careTeam.modifierExtension`, `EpisodeOfCare.careTeam.period`, `EpisodeOfCare.careTeam.role`| | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *31 of 37 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.reason`, `EpisodeOfCare.reason.extension`, `EpisodeOfCare.reason.id`, `EpisodeOfCare.reason.modifierExtension`, `EpisodeOfCare.reason.use`, `EpisodeOfCare.reason.value`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### OperationOutcome
 
@@ -72,5 +72,5 @@ All elements from this structure are listed while other structures only show con
 | **`OperationOutcome.issue.details`**| _Equivalent_<br/>(6831/6832)| `OperationOutcome.issue.details`| _Equivalent_<br/>(16703/16704)| `OperationOutcome.issue.details`| _Equivalent_<br/>(31138/31139)| `OperationOutcome.issue.details`| _Equivalent_<br/>(45754/45755)| `OperationOutcome.issue.details`
 | **`OperationOutcome.issue.diagnostics`**| _Equivalent_<br/>(6833/6834)| `OperationOutcome.issue.diagnostics`| _Equivalent_<br/>(16705/16706)| `OperationOutcome.issue.diagnostics`| _Equivalent_<br/>(31140/31141)| `OperationOutcome.issue.diagnostics`| _Equivalent_<br/>(45756/45757)| `OperationOutcome.issue.diagnostics`
 | **`OperationOutcome.issue.location`**| _Equivalent_<br/>(6835/6836)| `OperationOutcome.issue.location`| _Equivalent_<br/>(16707/16708)| `OperationOutcome.issue.location`| _Equivalent_<br/>(31142/31143)| `OperationOutcome.issue.location`| _Equivalent_<br/>(45758/45759)| `OperationOutcome.issue.location`
-| *18 of 18 elements used* | | *18 of 19 elements used* | | *18 of 19 elements used* | | *18 of 19 elements used* | | *18 of 19 elements used* 
+| *18 of 18 elements used* | | *18 of 19 elements used* <br/>remaining elements:<br/>`OperationOutcome.issue.expression`| | *18 of 19 elements used* <br/>remaining elements:<br/>`OperationOutcome.issue.expression`| | *18 of 19 elements used* <br/>remaining elements:<br/>`OperationOutcome.issue.expression`| | *18 of 19 elements used* <br/>remaining elements:<br/>`OperationOutcome.issue.expression`
 

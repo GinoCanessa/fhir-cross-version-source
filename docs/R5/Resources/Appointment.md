@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### Appointment
 
@@ -204,5 +204,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Appointment.recurrenceTemplate.yearlyTemplate.yearInterval`**
 | | | | | | | | | **`Appointment.recurrenceTemplate.excludingDate`**
 | | | | | | | | | **`Appointment.recurrenceTemplate.excludingRecurrenceId`**
-| *28 of 28 elements used* | | *35 of 36 elements used* | | *38 of 39 elements used* | | *38 of 39 elements used* | | *84 of 84 elements used* 
+| *28 of 28 elements used* | | *35 of 36 elements used* <br/>remaining elements:<br/>`Appointment.indication`| | *38 of 39 elements used* <br/>remaining elements:<br/>`Appointment.reasonReference`| | *38 of 39 elements used* <br/>remaining elements:<br/>`Appointment.reasonReference`| | *84 of 84 elements used* 
 

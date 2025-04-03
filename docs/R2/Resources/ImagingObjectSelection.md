@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### ImagingObjectSelection
 
@@ -117,5 +117,5 @@ All elements from this structure are listed while other structures only show con
 | **`ImagingObjectSelection.study.series.instance.frames.modifierExtension`**| | | | | | | | | 
 | **`ImagingObjectSelection.study.series.instance.frames.frameNumbers`**| | | | | | | | | 
 | **`ImagingObjectSelection.study.series.instance.frames.url`**| | | | | | | | | 
-| *41 of 41 elements used* | | *0 of 33 elements used* | | | | | | 
+| *41 of 41 elements used* | | *0 of 33 elements used* <br/>remaining elements:<br/>`ImagingManifest`, `ImagingManifest.author`, `ImagingManifest.authoringTime`, `ImagingManifest.contained`, `ImagingManifest.description`, `ImagingManifest.extension`, `ImagingManifest.id`, `ImagingManifest.identifier`, `ImagingManifest.implicitRules`, `ImagingManifest.language`, `ImagingManifest.meta`, `ImagingManifest.modifierExtension`, `ImagingManifest.patient`, `ImagingManifest.study`, `ImagingManifest.study.endpoint`, `ImagingManifest.study.extension`, `ImagingManifest.study.id`, `ImagingManifest.study.imagingStudy`, `ImagingManifest.study.modifierExtension`, `ImagingManifest.study.series`, `ImagingManifest.study.series.endpoint`, `ImagingManifest.study.series.extension`, `ImagingManifest.study.series.id`, `ImagingManifest.study.series.instance`, `ImagingManifest.study.series.instance.extension`, `ImagingManifest.study.series.instance.id`, `ImagingManifest.study.series.instance.modifierExtension`, `ImagingManifest.study.series.instance.sopClass`, `ImagingManifest.study.series.instance.uid`, `ImagingManifest.study.series.modifierExtension`, `ImagingManifest.study.series.uid`, `ImagingManifest.study.uid`, `ImagingManifest.text`| | | | | | 
 

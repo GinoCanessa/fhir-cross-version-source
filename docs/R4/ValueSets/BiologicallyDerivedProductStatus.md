@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:18 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### BiologicallyDerivedProductStatus
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R4** System: `http://hl7.org/fhir/product-status`
 | | | | | **`available`**| _Equivalent_ <br/>(16780/16781)| `available`| | | 
 | | | | | **`unavailable`**| _Equivalent_ <br/>(16782/16783)| `unavailable`| | | 
-| | | | | *2 of 2 codes used* | | *2 of 2 codes used* | | *0 of 2 codes used* 
+| | | | | *2 of 2 codes used* | | *2 of 2 codes used* | | *0 of 2 codes used* <br/>remaining codes:<br/>`active`, `entered-in-error`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:19 AM
 
 ### Encounter
 
@@ -184,5 +184,5 @@ All elements from this structure are listed while other structures only show con
 | `Encounter.location.period`| _Equivalent_<br/>(5104/5105)| `Encounter.location.period`| _Equivalent_<br/>(13562/13563)| **`Encounter.location.period`**| _Equivalent_<br/>(26290/26291)| `Encounter.location.period`| _Equivalent_<br/>(41028/41029)| `Encounter.location.period`
 | `Encounter.serviceProvider`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5106)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5107)| `Encounter.serviceProvider`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13564)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13565)| **`Encounter.serviceProvider`**| _Equivalent_<br/>(26292/26293)| `Encounter.serviceProvider`| _Equivalent_<br/>(41030/41031)| `Encounter.serviceProvider`
 | `Encounter.partOf`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5108)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5109)| `Encounter.partOf`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13566)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13567)| **`Encounter.partOf`**| _Equivalent_<br/>(26294/26295)| `Encounter.partOf`| _Equivalent_<br/>(41032/41033)| `Encounter.partOf`
-| *58 of 59 elements used* | | *70 of 70 elements used* | | *73 of 73 elements used* | | *73 of 73 elements used* | | *53 of 69 elements used* 
+| *58 of 59 elements used* <br/>remaining elements:<br/>`Encounter.hospitalization.dischargeDiagnosis`| | *70 of 70 elements used* | | *73 of 73 elements used* | | *73 of 73 elements used* | | *53 of 69 elements used* <br/>remaining elements:<br/>`Encounter.admission.extension`, `Encounter.admission.id`, `Encounter.admission.modifierExtension`, `Encounter.careTeam`, `Encounter.dietPreference`, `Encounter.plannedEndDate`, `Encounter.plannedStartDate`, `Encounter.reason.extension`, `Encounter.reason.id`, `Encounter.reason.modifierExtension`, `Encounter.reason.use`, `Encounter.reason.value`, `Encounter.specialArrangement`, `Encounter.specialCourtesy`, `Encounter.subjectStatus`, `Encounter.virtualService`
 

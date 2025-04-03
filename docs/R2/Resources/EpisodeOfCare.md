@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### EpisodeOfCare
 
@@ -99,5 +99,5 @@ All elements from this structure are listed while other structures only show con
 | **`EpisodeOfCare.careTeam.role`**| | | | | | | | | 
 | **`EpisodeOfCare.careTeam.period`**| | | | | | | | | 
 | **`EpisodeOfCare.careTeam.member`**| | | | | | | | | 
-| *31 of 31 elements used* | | *25 of 32 elements used* | | *25 of 32 elements used* | | *25 of 32 elements used* | | *25 of 37 elements used* 
+| *31 of 31 elements used* | | *25 of 32 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.account`, `EpisodeOfCare.diagnosis`, `EpisodeOfCare.diagnosis.extension`, `EpisodeOfCare.diagnosis.id`, `EpisodeOfCare.diagnosis.modifierExtension`, `EpisodeOfCare.diagnosis.rank`, `EpisodeOfCare.diagnosis.role`| | *25 of 32 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.account`, `EpisodeOfCare.diagnosis`, `EpisodeOfCare.diagnosis.extension`, `EpisodeOfCare.diagnosis.id`, `EpisodeOfCare.diagnosis.modifierExtension`, `EpisodeOfCare.diagnosis.rank`, `EpisodeOfCare.diagnosis.role`| | *25 of 32 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.account`, `EpisodeOfCare.diagnosis`, `EpisodeOfCare.diagnosis.extension`, `EpisodeOfCare.diagnosis.id`, `EpisodeOfCare.diagnosis.modifierExtension`, `EpisodeOfCare.diagnosis.rank`, `EpisodeOfCare.diagnosis.role`| | *25 of 37 elements used* <br/>remaining elements:<br/>`EpisodeOfCare.account`, `EpisodeOfCare.diagnosis`, `EpisodeOfCare.diagnosis.extension`, `EpisodeOfCare.diagnosis.id`, `EpisodeOfCare.diagnosis.modifierExtension`, `EpisodeOfCare.diagnosis.use`, `EpisodeOfCare.reason`, `EpisodeOfCare.reason.extension`, `EpisodeOfCare.reason.id`, `EpisodeOfCare.reason.modifierExtension`, `EpisodeOfCare.reason.use`, `EpisodeOfCare.reason.value`
 

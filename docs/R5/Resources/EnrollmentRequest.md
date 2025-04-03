@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:36 AM
 
 ### EnrollmentRequest
 
@@ -69,5 +69,5 @@ All elements from this structure are listed while other structures only show con
 | `EnrollmentRequest.organization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5134)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5135)| `EnrollmentRequest.organization`| →→→→ _RelatedTo_ →→→→ <br/>(1041)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1502)| `EnrollmentRequest.provider`| _Equivalent_<br/>(26362/26363)| `EnrollmentRequest.provider`| _Equivalent_<br/>(41098/41099)| **`EnrollmentRequest.provider`**
 | `EnrollmentRequest.subject`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5136)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5137)| `EnrollmentRequest.subject`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1042)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1501)| `EnrollmentRequest.candidate`| _Equivalent_<br/>(26364/26365)| `EnrollmentRequest.candidate`| _Equivalent_<br/>(41100/41101)| **`EnrollmentRequest.candidate`**
 | `EnrollmentRequest.coverage`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5138)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(5139)| `EnrollmentRequest.coverage`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13637)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13638)| `EnrollmentRequest.coverage`| _Equivalent_<br/>(26366/26367)| `EnrollmentRequest.coverage`| _Equivalent_<br/>(41102/41103)| **`EnrollmentRequest.coverage`**
-| *16 of 19 elements used* | | *17 of 17 elements used* | | *16 of 16 elements used* | | *16 of 16 elements used* | | *16 of 16 elements used* 
+| *16 of 19 elements used* <br/>remaining elements:<br/>`EnrollmentRequest.originalRuleset`, `EnrollmentRequest.relationship`, `EnrollmentRequest.ruleset`| | *17 of 17 elements used* | | *16 of 16 elements used* | | *16 of 16 elements used* | | *16 of 16 elements used* 
 

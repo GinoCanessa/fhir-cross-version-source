@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### DataRequirement
 
@@ -74,5 +74,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`DataRequirement.dateFilter.extension`**| _Equivalent_<br/>(9323/9324)| `DataRequirement.dateFilter.extension`| _Equivalent_<br/>(20685/20686)| `DataRequirement.dateFilter.extension`| _Equivalent_<br/>(35801/35802)| `DataRequirement.dateFilter.extension`
 | | | **`DataRequirement.dateFilter.path`**| →→→→ _Equivalent_ →→→→ <br/>(9325)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(9326)| `DataRequirement.dateFilter.path`| _Equivalent_<br/>(20687/20688)| `DataRequirement.dateFilter.path`| _Equivalent_<br/>(35803/35804)| `DataRequirement.dateFilter.path`
 | | | **`DataRequirement.dateFilter.value[x]`**| _Equivalent_<br/>(9327/9328)| `DataRequirement.dateFilter.value[x]`| _Equivalent_<br/>(20691/20692)| `DataRequirement.dateFilter.value[x]`| _Equivalent_<br/>(35807/35808)| `DataRequirement.dateFilter.value[x]`
-| | | *19 of 19 elements used* | | *17 of 26 elements used* | | *17 of 26 elements used* | | *17 of 33 elements used* 
+| | | *19 of 19 elements used* | | *17 of 26 elements used* <br/>remaining elements:<br/>`DataRequirement.codeFilter.searchParam`, `DataRequirement.dateFilter.searchParam`, `DataRequirement.limit`, `DataRequirement.sort`, `DataRequirement.sort.direction`, `DataRequirement.sort.extension`, `DataRequirement.sort.id`, `DataRequirement.sort.path`, `DataRequirement.subject[x]`| | *17 of 26 elements used* <br/>remaining elements:<br/>`DataRequirement.codeFilter.searchParam`, `DataRequirement.dateFilter.searchParam`, `DataRequirement.limit`, `DataRequirement.sort`, `DataRequirement.sort.direction`, `DataRequirement.sort.extension`, `DataRequirement.sort.id`, `DataRequirement.sort.path`, `DataRequirement.subject[x]`| | *17 of 33 elements used* <br/>remaining elements:<br/>`DataRequirement.codeFilter.searchParam`, `DataRequirement.dateFilter.searchParam`, `DataRequirement.limit`, `DataRequirement.sort`, `DataRequirement.sort.direction`, `DataRequirement.sort.extension`, `DataRequirement.sort.id`, `DataRequirement.sort.path`, `DataRequirement.subject[x]`, `DataRequirement.valueFilter`, `DataRequirement.valueFilter.comparator`, `DataRequirement.valueFilter.extension`, `DataRequirement.valueFilter.id`, `DataRequirement.valueFilter.path`, `DataRequirement.valueFilter.searchParam`, `DataRequirement.valueFilter.value[x]`
 

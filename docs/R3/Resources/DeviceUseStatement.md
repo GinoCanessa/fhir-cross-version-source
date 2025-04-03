@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### DeviceUseStatement
 
@@ -76,5 +76,5 @@ All elements from this structure are listed while other structures only show con
 | `DeviceUseStatement.indication`| _Equivalent_<br/>(4675/4676)| **`DeviceUseStatement.indication`**| _Equivalent_<br/>(999/1484)| `DeviceUseStatement.reasonCode`| _Equivalent_<br/>(25910/25911)| `DeviceUseStatement.reasonCode`| | | 
 | `DeviceUseStatement.bodySite[x]`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(189)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(601)| **`DeviceUseStatement.bodySite`**| _Equivalent_<br/>(13101/13102)| `DeviceUseStatement.bodySite`| _Equivalent_<br/>(25914/25915)| `DeviceUseStatement.bodySite`| | | 
 | `DeviceUseStatement.notes`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(190)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(602)| **`DeviceUseStatement.note`**| _Equivalent_<br/>(13103/13104)| `DeviceUseStatement.note`| _Equivalent_<br/>(25916/25917)| `DeviceUseStatement.note`| | | 
-| *18 of 18 elements used* | | *20 of 20 elements used* | | *19 of 22 elements used* | | *19 of 22 elements used* | | *0 of 31 elements used* 
+| *18 of 18 elements used* | | *20 of 20 elements used* | | *19 of 22 elements used* <br/>remaining elements:<br/>`DeviceUseStatement.basedOn`, `DeviceUseStatement.derivedFrom`, `DeviceUseStatement.reasonReference`| | *19 of 22 elements used* <br/>remaining elements:<br/>`DeviceUseStatement.basedOn`, `DeviceUseStatement.derivedFrom`, `DeviceUseStatement.reasonReference`| | *0 of 31 elements used* <br/>remaining elements:<br/>`DeviceUsage`, `DeviceUsage.adherence`, `DeviceUsage.adherence.code`, `DeviceUsage.adherence.extension`, `DeviceUsage.adherence.id`, `DeviceUsage.adherence.modifierExtension`, `DeviceUsage.adherence.reason`, `DeviceUsage.basedOn`, `DeviceUsage.bodySite`, `DeviceUsage.category`, `DeviceUsage.contained`, `DeviceUsage.context`, `DeviceUsage.dateAsserted`, `DeviceUsage.derivedFrom`, `DeviceUsage.device`, `DeviceUsage.extension`, `DeviceUsage.id`, `DeviceUsage.identifier`, `DeviceUsage.implicitRules`, `DeviceUsage.informationSource`, `DeviceUsage.language`, `DeviceUsage.meta`, `DeviceUsage.modifierExtension`, `DeviceUsage.note`, `DeviceUsage.patient`, `DeviceUsage.reason`, `DeviceUsage.status`, `DeviceUsage.text`, `DeviceUsage.timing[x]`, `DeviceUsage.usageReason`, `DeviceUsage.usageStatus`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### AuditEventOutcome
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | `4`| _Equivalent_ <br/>(1119/2647)| `4`| _Equivalent_ <br/>(4709/7030)| **`4`**| _Equivalent_ <br/>(14548/14549)| `4`| | | 
 | `8`| _Equivalent_ <br/>(1120/2648)| `8`| _Equivalent_ <br/>(4710/7031)| **`8`**| _Equivalent_ <br/>(14550/14551)| `8`| | | 
 | `12`| _Equivalent_ <br/>(1118/2646)| `12`| _Equivalent_ <br/>(4708/7029)| **`12`**| _Equivalent_ <br/>(14552/14553)| `12`| | | 
-| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *0 of 5 codes used* 
+| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *0 of 5 codes used* <br/>remaining codes:<br/>`error`, `fatal`, `information`, `success`, `warning`
 

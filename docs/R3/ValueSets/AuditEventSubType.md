@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### Audit Event Sub-Type
 
@@ -82,5 +82,5 @@ All codes from this value set are listed while other value sets only show conten
 | `transaction`| _Equivalent_ <br/>(1156/2695)| **`transaction`**| _Equivalent_ <br/>(4757/7078)| `transaction`| | | | | 
 | | | **`batch`**| _Equivalent_ <br/>(4743/7064)| `batch`| | | | | 
 | `operation`| _Equivalent_ <br/>(1151/2689)| **`operation`**| _Equivalent_ <br/>(4751/7072)| `operation`| | | | | 
-| *38 of 39 codes used* | | *40 of 40 codes used* | | *40 of 40 codes used* | | | | 
+| *38 of 39 codes used* <br/>remaining codes:<br/>`validate`| | *40 of 40 codes used* | | *40 of 40 codes used* | | | | 
 

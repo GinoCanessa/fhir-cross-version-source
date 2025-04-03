@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### NutritionOrderStatus
 
@@ -50,5 +50,5 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| _Equivalent_ <br/>(838/2200)| **`completed`**| _Equivalent_ <br/>(4023/6357)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | `cancelled`| _Equivalent_ <br/>(836/2199)| **`cancelled`**| _Equivalent_ <br/>(4022/6362)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(4025/6360)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
-| *8 of 8 codes used* | | *9 of 9 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* 
+| *8 of 8 codes used* | | *9 of 9 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`
 

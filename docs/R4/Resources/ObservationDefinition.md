@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### ObservationDefinition
 
@@ -116,5 +116,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`ObservationDefinition.normalCodedValueSet`**| _Equivalent_<br/>(30965/30966)| `ObservationDefinition.normalCodedValueSet`| | | 
 | | | | | **`ObservationDefinition.abnormalCodedValueSet`**| _Equivalent_<br/>(30967/30968)| `ObservationDefinition.abnormalCodedValueSet`| | | 
 | | | | | **`ObservationDefinition.criticalCodedValueSet`**| _Equivalent_<br/>(30969/30970)| `ObservationDefinition.criticalCodedValueSet`| | | 
-| | | | | *40 of 40 elements used* | | *40 of 40 elements used* | | *24 of 68 elements used* 
+| | | | | *40 of 40 elements used* | | *40 of 40 elements used* | | *24 of 68 elements used* <br/>remaining elements:<br/>`ObservationDefinition.approvalDate`, `ObservationDefinition.bodySite`, `ObservationDefinition.component`, `ObservationDefinition.component.code`, `ObservationDefinition.component.extension`, `ObservationDefinition.component.id`, `ObservationDefinition.component.modifierExtension`, `ObservationDefinition.component.permittedDataType`, `ObservationDefinition.component.permittedUnit`, `ObservationDefinition.component.qualifiedValue`, `ObservationDefinition.contact`, `ObservationDefinition.copyright`, `ObservationDefinition.copyrightLabel`, `ObservationDefinition.date`, `ObservationDefinition.derivedFromCanonical`, `ObservationDefinition.derivedFromUri`, `ObservationDefinition.description`, `ObservationDefinition.device`, `ObservationDefinition.effectivePeriod`, `ObservationDefinition.experimental`, `ObservationDefinition.hasMember`, `ObservationDefinition.jurisdiction`, `ObservationDefinition.lastReviewDate`, `ObservationDefinition.name`, `ObservationDefinition.performerType`, `ObservationDefinition.permittedUnit`, `ObservationDefinition.publisher`, `ObservationDefinition.purpose`, `ObservationDefinition.qualifiedValue`, `ObservationDefinition.qualifiedValue.abnormalCodedValueSet`, `ObservationDefinition.qualifiedValue.criticalCodedValueSet`, `ObservationDefinition.qualifiedValue.extension`, `ObservationDefinition.qualifiedValue.id`, `ObservationDefinition.qualifiedValue.modifierExtension`, `ObservationDefinition.qualifiedValue.normalCodedValueSet`, `ObservationDefinition.qualifiedValue.validCodedValueSet`, `ObservationDefinition.specimen`, `ObservationDefinition.status`, `ObservationDefinition.subject`, `ObservationDefinition.title`, `ObservationDefinition.url`, `ObservationDefinition.useContext`, `ObservationDefinition.version`, `ObservationDefinition.versionAlgorithm[x]`
 

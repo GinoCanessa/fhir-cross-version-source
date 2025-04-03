@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### ElementDefinition
 
@@ -204,5 +204,5 @@ All elements from this structure are listed while other structures only show con
 | `ElementDefinition.mapping.language`| _Equivalent_<br/>(2653/2654)| `ElementDefinition.mapping.language`| _Equivalent_<br/>(9580/9581)| `ElementDefinition.mapping.language`| _Equivalent_<br/>(20957/20958)| **`ElementDefinition.mapping.language`**| _Equivalent_<br/>(36068/36069)| `ElementDefinition.mapping.language`
 | `ElementDefinition.mapping.map`| _Equivalent_<br/>(2655/2656)| `ElementDefinition.mapping.map`| _Equivalent_<br/>(9582/9583)| `ElementDefinition.mapping.map`| _Equivalent_<br/>(20959/20960)| **`ElementDefinition.mapping.map`**| _Equivalent_<br/>(36070/36071)| `ElementDefinition.mapping.map`
 | | | `ElementDefinition.mapping.comment`| _Equivalent_<br/>(9584/9585)| `ElementDefinition.mapping.comment`| _Equivalent_<br/>(20961/20962)| **`ElementDefinition.mapping.comment`**| _Equivalent_<br/>(36072/36073)| `ElementDefinition.mapping.comment`
-| *67 of 67 elements used* | | *81 of 81 elements used* | | *84 of 84 elements used* | | *84 of 84 elements used* | | *83 of 95 elements used* 
+| *67 of 67 elements used* | | *81 of 81 elements used* | | *84 of 84 elements used* | | *84 of 84 elements used* | | *83 of 95 elements used* <br/>remaining elements:<br/>`ElementDefinition.binding.additional`, `ElementDefinition.binding.additional.any`, `ElementDefinition.binding.additional.documentation`, `ElementDefinition.binding.additional.extension`, `ElementDefinition.binding.additional.id`, `ElementDefinition.binding.additional.purpose`, `ElementDefinition.binding.additional.shortDoco`, `ElementDefinition.binding.additional.usage`, `ElementDefinition.binding.additional.valueSet`, `ElementDefinition.constraint.suppress`, `ElementDefinition.mustHaveValue`, `ElementDefinition.valueAlternatives`
 

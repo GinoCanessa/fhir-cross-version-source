@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### PublicationStatus
 
@@ -98,7 +98,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`active`**
 | | | | | | | `withdrawn`| _Equivalent_ <br/>(9281/11633)| **`retired`**
 | | | | | | | | | **`unknown`**
-| *0 of 3 codes used* | | *0 of 4 codes used* | | *0 of 4 codes used* | | *1 of 4 codes used* | | *4 of 4 codes used* 
+| *0 of 3 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`| | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *1 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *4 of 4 codes used* 
 
 
 #### Map Group 1
@@ -113,7 +113,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`active`**
 | | | | | | | `withdrawn`| _Equivalent_ <br/>(9281/11633)| **`retired`**
 | | | | | | | | | **`unknown`**
-| *0 of 3 codes used* | | *0 of 4 codes used* | | *0 of 4 codes used* | | *1 of 4 codes used* | | *4 of 4 codes used* 
+| *0 of 3 codes used* <br/>remaining codes:<br/>`draft`, `published`, `retired`| | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *1 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `retired`, `unknown`| | *4 of 4 codes used* 
 
 
 #### Map Group 2
@@ -128,7 +128,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`active`**
 | | | | | | | `withdrawn`| _Equivalent_ <br/>(9281/11633)| **`retired`**
 | | | | | | | | | **`unknown`**
-| | | *0 of 6 codes used* | | *0 of 11 codes used* | | *1 of 11 codes used* | | *4 of 4 codes used* 
+| | | *0 of 6 codes used* <br/>remaining codes:<br/>`completed`, `draft`, `entered-in-error`, `in-progress`, `stopped`, `suspended`| | *0 of 11 codes used* <br/>remaining codes:<br/>`active`, `administratively-completed`, `approved`, `closed-to-accrual`, `closed-to-accrual-and-intervention`, `completed`, `disapproved`, `in-review`, `temporarily-closed-to-accrual`, `temporarily-closed-to-accrual-and-intervention`, `withdrawn`| | *1 of 11 codes used* <br/>remaining codes:<br/>`active`, `administratively-completed`, `approved`, `closed-to-accrual`, `closed-to-accrual-and-intervention`, `completed`, `disapproved`, `in-review`, `temporarily-closed-to-accrual`, `temporarily-closed-to-accrual-and-intervention`, `withdrawn`| | *4 of 4 codes used* 
 
 
 #### Map Group 3
@@ -144,5 +144,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `candidate`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4561)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6883) | `withdrawn`| _Equivalent_ <br/>(17074/17075)| `withdrawn`| _Equivalent_ <br/>(9281/11633)| **`retired`**
 | | | `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4562)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6883) | `withdrawn`| _Equivalent_ <br/>(17074/17075)| `withdrawn`| _Equivalent_ <br/>(9281/11633)| **`retired`**
 | | | | | | | | | **`unknown`**
-| | | *2 of 6 codes used* | | *1 of 13 codes used* | | *1 of 13 codes used* | | *4 of 4 codes used* 
+| | | *2 of 6 codes used* <br/>remaining codes:<br/>`active`, `completed`, `enrolled`, `suspended`| | *1 of 13 codes used* <br/>remaining codes:<br/>`candidate`, `eligible`, `follow-up`, `ineligible`, `not-registered`, `off-study`, `on-study`, `on-study-intervention`, `on-study-observation`, `pending-on-study`, `potential-candidate`, `screening`| | *1 of 13 codes used* <br/>remaining codes:<br/>`candidate`, `eligible`, `follow-up`, `ineligible`, `not-registered`, `off-study`, `on-study`, `on-study-intervention`, `on-study-observation`, `pending-on-study`, `potential-candidate`, `screening`| | *4 of 4 codes used* 
 

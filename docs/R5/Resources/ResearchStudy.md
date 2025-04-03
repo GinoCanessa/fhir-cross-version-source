@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### ResearchStudy
 
@@ -215,5 +215,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`ResearchStudy.outcomeMeasure.description`**
 | | | | | | | | | **`ResearchStudy.outcomeMeasure.reference`**
 | | | | | | | | | **`ResearchStudy.result`**
-| | | *25 of 35 elements used* | | *33 of 44 elements used* | | *33 of 44 elements used* | | *89 of 89 elements used* 
+| | | *25 of 35 elements used* <br/>remaining elements:<br/>`ResearchStudy.arm`, `ResearchStudy.arm.extension`, `ResearchStudy.arm.id`, `ResearchStudy.arm.modifierExtension`, `ResearchStudy.category`, `ResearchStudy.contact`, `ResearchStudy.enrollment`, `ResearchStudy.principalInvestigator`, `ResearchStudy.reasonStopped`, `ResearchStudy.sponsor`| | *33 of 44 elements used* <br/>remaining elements:<br/>`ResearchStudy.arm`, `ResearchStudy.arm.extension`, `ResearchStudy.arm.id`, `ResearchStudy.arm.modifierExtension`, `ResearchStudy.category`, `ResearchStudy.contact`, `ResearchStudy.enrollment`, `ResearchStudy.location`, `ResearchStudy.principalInvestigator`, `ResearchStudy.reasonStopped`, `ResearchStudy.sponsor`| | *33 of 44 elements used* <br/>remaining elements:<br/>`ResearchStudy.arm`, `ResearchStudy.arm.extension`, `ResearchStudy.arm.id`, `ResearchStudy.arm.modifierExtension`, `ResearchStudy.category`, `ResearchStudy.contact`, `ResearchStudy.enrollment`, `ResearchStudy.location`, `ResearchStudy.principalInvestigator`, `ResearchStudy.reasonStopped`, `ResearchStudy.sponsor`| | *89 of 89 elements used* 
 

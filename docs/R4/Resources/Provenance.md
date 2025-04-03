@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### Provenance
 
@@ -101,5 +101,5 @@ All elements from this structure are listed while other structures only show con
 | `Provenance.entity.reference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(360)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(707)| `Provenance.entity.what[x]`| →→→→ _RelatedTo_ →→→→ <br/>(1244)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1642)| **`Provenance.entity.what`**| _Equivalent_<br/>(32055/32056)| `Provenance.entity.what`| _Equivalent_<br/>(46635/46636)| `Provenance.entity.what`
 | `Provenance.entity.agent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7492)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7493)| `Provenance.entity.agent`| _Equivalent_<br/>(17641/17642)| **`Provenance.entity.agent`**| _Equivalent_<br/>(32057/32058)| `Provenance.entity.agent`| _Equivalent_<br/>(46637/46638)| `Provenance.entity.agent`
 | `Provenance.signature`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7494)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7495)| `Provenance.signature`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17643)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17644)| **`Provenance.signature`**| _Equivalent_<br/>(32059/32060)| `Provenance.signature`| _Equivalent_<br/>(46639/46640)| `Provenance.signature`
-| *32 of 39 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 35 elements used* 
+| *32 of 39 elements used* <br/>remaining elements:<br/>`Provenance.agent.relatedAgent.extension`, `Provenance.agent.relatedAgent.id`, `Provenance.agent.relatedAgent.modifierExtension`, `Provenance.agent.relatedAgent.target`, `Provenance.agent.userId`, `Provenance.entity.display`, `Provenance.entity.type`| | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 35 elements used* <br/>remaining elements:<br/>`Provenance.basedOn`, `Provenance.encounter`, `Provenance.patient`
 

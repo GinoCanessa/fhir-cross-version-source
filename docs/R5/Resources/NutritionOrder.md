@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### NutritionOrder
 
@@ -238,5 +238,5 @@ All elements from this structure are listed while other structures only show con
 | `NutritionOrder.enteralFormula.maxVolumeToDeliver`| _Equivalent_<br/>(6618/6619)| `NutritionOrder.enteralFormula.maxVolumeToDeliver`| _Equivalent_<br/>(16458/16459)| `NutritionOrder.enteralFormula.maxVolumeToDeliver`| _Equivalent_<br/>(30783/30784)| `NutritionOrder.enteralFormula.maxVolumeToDeliver`| _Equivalent_<br/>(45364/45365)| **`NutritionOrder.enteralFormula.maxVolumeToDeliver`**
 | `NutritionOrder.enteralFormula.administrationInstruction`| _Equivalent_<br/>(6620/6621)| `NutritionOrder.enteralFormula.administrationInstruction`| _Equivalent_<br/>(16460/16461)| `NutritionOrder.enteralFormula.administrationInstruction`| _Equivalent_<br/>(30785/30786)| `NutritionOrder.enteralFormula.administrationInstruction`| _Equivalent_<br/>(45366/45367)| **`NutritionOrder.enteralFormula.administrationInstruction`**
 | | | | | `NutritionOrder.note`| _Equivalent_<br/>(30787/30788)| `NutritionOrder.note`| _Equivalent_<br/>(45368/45369)| **`NutritionOrder.note`**
-| *64 of 66 elements used* | | *64 of 66 elements used* | | *69 of 71 elements used* | | *69 of 71 elements used* | | *101 of 101 elements used* 
+| *64 of 66 elements used* <br/>remaining elements:<br/>`NutritionOrder.enteralFormula.additiveProductName`, `NutritionOrder.enteralFormula.additiveType`| | *64 of 66 elements used* <br/>remaining elements:<br/>`NutritionOrder.enteralFormula.additiveProductName`, `NutritionOrder.enteralFormula.additiveType`| | *69 of 71 elements used* <br/>remaining elements:<br/>`NutritionOrder.enteralFormula.additiveProductName`, `NutritionOrder.enteralFormula.additiveType`| | *69 of 71 elements used* <br/>remaining elements:<br/>`NutritionOrder.enteralFormula.additiveProductName`, `NutritionOrder.enteralFormula.additiveType`| | *101 of 101 elements used* 
 

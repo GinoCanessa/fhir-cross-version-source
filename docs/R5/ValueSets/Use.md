@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### Use
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | `complete`| _Equivalent_ <br/>(100/1470)| `complete`| _Equivalent_ <br/>(3001/5210)| `claim`| _Equivalent_ <br/>(14652/14653)| `claim`| _Equivalent_ <br/>(7536/9805)| **`claim`**
 | `proposed`| _Equivalent_ <br/>(99/1469)| `proposed`| _Equivalent_ <br/>(3004/5211)| `preauthorization`| _Equivalent_ <br/>(14654/14655)| `preauthorization`| _Equivalent_ <br/>(7535/9804)| **`preauthorization`**
 | `exploratory`| _Equivalent_ <br/>(97/1467)| `exploratory`| _Equivalent_ <br/>(3002/5212)| `predetermination`| _Equivalent_ <br/>(14656/14657)| `predetermination`| _Equivalent_ <br/>(7534/9803)| **`predetermination`**
-| *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* 
+| *3 of 4 codes used* <br/>remaining codes:<br/>`other`| | *3 of 4 codes used* <br/>remaining codes:<br/>`other`| | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* 
 

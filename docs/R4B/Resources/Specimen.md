@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:29 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### Specimen
 
@@ -132,5 +132,5 @@ All elements from this structure are listed while other structures only show con
 | `Specimen.container.additive[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7885)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7886)| `Specimen.container.additive[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18551)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18552)| `Specimen.container.additive[x]`| _Equivalent_<br/>(33269/33270)| **`Specimen.container.additive[x]`**| | | 
 | | | | | `Specimen.condition`| _Equivalent_<br/>(33271/33272)| **`Specimen.condition`**| _Equivalent_<br/>(47496/47497)| `Specimen.condition`
 | | | `Specimen.note`| _Equivalent_<br/>(18553/18554)| `Specimen.note`| _Equivalent_<br/>(33273/33274)| **`Specimen.note`**| _Equivalent_<br/>(47498/47499)| `Specimen.note`
-| *39 of 43 elements used* | | *45 of 45 elements used* | | *48 of 48 elements used* | | *48 of 48 elements used* | | *43 of 55 elements used* 
+| *39 of 43 elements used* <br/>remaining elements:<br/>`Specimen.collection.comment`, `Specimen.treatment.extension`, `Specimen.treatment.id`, `Specimen.treatment.modifierExtension`| | *45 of 45 elements used* | | *48 of 48 elements used* | | *48 of 48 elements used* | | *43 of 55 elements used* <br/>remaining elements:<br/>`Specimen.collection.device`, `Specimen.collection.procedure`, `Specimen.combined`, `Specimen.container.device`, `Specimen.container.location`, `Specimen.feature`, `Specimen.feature.description`, `Specimen.feature.extension`, `Specimen.feature.id`, `Specimen.feature.modifierExtension`, `Specimen.feature.type`, `Specimen.role`
 

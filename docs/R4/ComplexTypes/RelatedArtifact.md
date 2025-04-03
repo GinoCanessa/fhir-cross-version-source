@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### RelatedArtifact
 
@@ -56,5 +56,5 @@ All elements from this structure are listed while other structures only show con
 | | | `RelatedArtifact.url`| _Equivalent_<br/>(9772/9773)| **`RelatedArtifact.url`**| _Equivalent_<br/>(21243/21244)| `RelatedArtifact.url`| | | 
 | | | `RelatedArtifact.document`| _Equivalent_<br/>(9774/9775)| **`RelatedArtifact.document`**| _Equivalent_<br/>(21245/21246)| `RelatedArtifact.document`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36314)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36315)| `RelatedArtifact.document`
 | | | `RelatedArtifact.resource`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9776)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(9777)| **`RelatedArtifact.resource`**| _Equivalent_<br/>(21247/21248)| `RelatedArtifact.resource`| _Equivalent_<br/>(36316/36317)| `RelatedArtifact.resource`
-| | | *9 of 9 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *9 of 13 elements used* 
+| | | *9 of 9 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *9 of 13 elements used* <br/>remaining elements:<br/>`RelatedArtifact.classifier`, `RelatedArtifact.publicationDate`, `RelatedArtifact.publicationStatus`, `RelatedArtifact.resourceReference`
 

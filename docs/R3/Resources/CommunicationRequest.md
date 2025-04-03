@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:16 PM
+Generated at Thursday, April 3, 2025 8:18:14 AM
 
 ### CommunicationRequest
 
@@ -113,5 +113,5 @@ All elements from this structure are listed while other structures only show con
 | `CommunicationRequest.reason`| _Equivalent_<br/>(139/560)| **`CommunicationRequest.reasonCode`**| _Equivalent_<br/>(12129/12130)| `CommunicationRequest.reasonCode`| _Equivalent_<br/>(23950/23951)| `CommunicationRequest.reasonCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1740)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1984)| `CommunicationRequest.reason`
 | | | **`CommunicationRequest.reasonReference`**| →→→→ _RelatedTo_ →→→→ <br/>(12131)<hr/>←←←← _RelatedTo_ ←←←← <br/>(12132)| `CommunicationRequest.reasonReference`| _Equivalent_<br/>(23952/23953)| `CommunicationRequest.reasonReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1741)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1985)| `CommunicationRequest.reason`
 | | | **`CommunicationRequest.note`**| _Equivalent_<br/>(12133/12134)| `CommunicationRequest.note`| _Equivalent_<br/>(23954/23955)| `CommunicationRequest.note`| _Equivalent_<br/>(39261/39262)| `CommunicationRequest.note`
-| *27 of 27 elements used* | | *38 of 38 elements used* | | *34 of 35 elements used* | | *33 of 35 elements used* | | *32 of 35 elements used* 
+| *27 of 27 elements used* | | *38 of 38 elements used* | | *34 of 35 elements used* <br/>remaining elements:<br/>`CommunicationRequest.doNotPerform`, `CommunicationRequest.statusReason`| | *33 of 35 elements used* <br/>remaining elements:<br/>`CommunicationRequest.doNotPerform`, `CommunicationRequest.statusReason`| | *32 of 35 elements used* <br/>remaining elements:<br/>`CommunicationRequest.doNotPerform`, `CommunicationRequest.intent`, `CommunicationRequest.statusReason`
 

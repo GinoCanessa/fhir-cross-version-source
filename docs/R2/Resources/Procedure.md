@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Procedure
 
@@ -119,5 +119,5 @@ All elements from this structure are listed while other structures only show con
 | **`Procedure.focalDevice.action`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7303)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7304)| `Procedure.focalDevice.action`| _Equivalent_<br/>(17434/17435)| `Procedure.focalDevice.action`| _Equivalent_<br/>(31988/31989)| `Procedure.focalDevice.action`| _Equivalent_<br/>(46575/46576)| `Procedure.focalDevice.action`
 | **`Procedure.focalDevice.manipulated`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7305)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7306)| `Procedure.focalDevice.manipulated`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17436)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17437)| `Procedure.focalDevice.manipulated`| _Equivalent_<br/>(31990/31991)| `Procedure.focalDevice.manipulated`| _Equivalent_<br/>(46577/46578)| `Procedure.focalDevice.manipulated`
 | **`Procedure.used`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(339)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(693)| `Procedure.usedReference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17438)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17439)| `Procedure.usedReference`| _Equivalent_<br/>(31992/31993)| `Procedure.usedReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1937)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2174)| `Procedure.used`
-| *40 of 40 elements used* | | *41 of 46 elements used* | | *41 of 48 elements used* | | *40 of 48 elements used* | | *39 of 49 elements used* 
+| *40 of 40 elements used* | | *41 of 46 elements used* <br/>remaining elements:<br/>`Procedure.complicationDetail`, `Procedure.definition`, `Procedure.partOf`, `Procedure.performer.onBehalfOf`, `Procedure.usedCode`| | *41 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.complicationDetail`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.partOf`, `Procedure.performer.onBehalfOf`, `Procedure.recorder`, `Procedure.usedCode`| | *40 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.complicationDetail`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.partOf`, `Procedure.performer.onBehalfOf`, `Procedure.recorder`, `Procedure.usedCode`| | *39 of 49 elements used* <br/>remaining elements:<br/>`Procedure.focus`, `Procedure.instantiatesCanonical`, `Procedure.instantiatesUri`, `Procedure.partOf`, `Procedure.performer.onBehalfOf`, `Procedure.performer.period`, `Procedure.recorded`, `Procedure.recorder`, `Procedure.reported[x]`, `Procedure.supportingInfo`
 

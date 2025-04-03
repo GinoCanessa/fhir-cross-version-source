@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### MedicinalProductDefinition
 
@@ -190,5 +190,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`MedicinalProductDefinition.characteristic.modifierExtension`**| _Equivalent_<br/>(44887/44888)| `MedicinalProductDefinition.characteristic.modifierExtension`
 | | | | | | | **`MedicinalProductDefinition.characteristic.type`**| _Equivalent_<br/>(44889/44890)| `MedicinalProductDefinition.characteristic.type`
 | | | | | | | **`MedicinalProductDefinition.characteristic.value[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(44891)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(44892)| `MedicinalProductDefinition.characteristic.value[x]`
-| | | | | | | *77 of 77 elements used* | | *69 of 78 elements used* 
+| | | | | | | *77 of 77 elements used* | | *69 of 78 elements used* <br/>remaining elements:<br/>`MedicinalProductDefinition.comprisedOf`, `MedicinalProductDefinition.name.part`, `MedicinalProductDefinition.name.part.extension`, `MedicinalProductDefinition.name.part.id`, `MedicinalProductDefinition.name.part.modifierExtension`, `MedicinalProductDefinition.name.usage`, `MedicinalProductDefinition.name.usage.extension`, `MedicinalProductDefinition.name.usage.id`, `MedicinalProductDefinition.name.usage.modifierExtension`
 

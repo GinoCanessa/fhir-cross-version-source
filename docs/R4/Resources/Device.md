@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:23 PM
+Generated at Thursday, April 3, 2025 8:18:21 AM
 
 ### Device
 
@@ -168,5 +168,5 @@ All elements from this structure are listed while other structures only show con
 | `Device.note`| _Equivalent_<br/>(4512/4513)| `Device.note`| _Equivalent_<br/>(12925/12926)| **`Device.note`**| _Equivalent_<br/>(25602/25603)| `Device.note`| _Equivalent_<br/>(40529/40530)| `Device.note`
 | | | `Device.safety`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12927)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12928)| **`Device.safety`**| _Equivalent_<br/>(25604/25605)| `Device.safety`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(40531)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(40532)| `Device.safety`
 | | | | | **`Device.parent`**| _Equivalent_<br/>(25606/25607)| `Device.parent`| _Equivalent_<br/>(40533/40534)| `Device.parent`
-| *25 of 25 elements used* | | *32 of 36 elements used* | | *66 of 66 elements used* | | *66 of 66 elements used* | | *54 of 74 elements used* 
+| *25 of 25 elements used* | | *32 of 36 elements used* <br/>remaining elements:<br/>`Device.udi.extension`, `Device.udi.id`, `Device.udi.modifierExtension`, `Device.udi.name`| | *66 of 66 elements used* | | *66 of 66 elements used* | | *54 of 74 elements used* <br/>remaining elements:<br/>`Device.availabilityStatus`, `Device.biologicalSourceEvent`, `Device.category`, `Device.conformsTo.category`, `Device.conformsTo.extension`, `Device.conformsTo.id`, `Device.conformsTo.modifierExtension`, `Device.conformsTo.specification`, `Device.conformsTo.version`, `Device.cycle`, `Device.displayName`, `Device.duration`, `Device.endpoint`, `Device.gateway`, `Device.mode`, `Device.name.display`, `Device.name.extension`, `Device.name.id`, `Device.name.modifierExtension`, `Device.version.installDate`
 

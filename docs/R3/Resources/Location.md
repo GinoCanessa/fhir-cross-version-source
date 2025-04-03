@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Location
 
@@ -96,5 +96,5 @@ All elements from this structure are listed while other structures only show con
 | `Location.managingOrganization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6045)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6046)| **`Location.managingOrganization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15394)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15395)| `Location.managingOrganization`| _Equivalent_<br/>(29038/29039)| `Location.managingOrganization`| _Equivalent_<br/>(43897/43898)| `Location.managingOrganization`
 | `Location.partOf`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(6047)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6048)| **`Location.partOf`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15396)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15397)| `Location.partOf`| _Equivalent_<br/>(29040/29041)| `Location.partOf`| _Equivalent_<br/>(43899/43900)| `Location.partOf`
 | | | **`Location.endpoint`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15398)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15399)| `Location.endpoint`| _Equivalent_<br/>(29060/29061)| `Location.endpoint`| _Equivalent_<br/>(43911/43912)| `Location.endpoint`
-| *27 of 27 elements used* | | *30 of 30 elements used* | | *30 of 39 elements used* | | *30 of 39 elements used* | | *30 of 33 elements used* 
+| *27 of 27 elements used* | | *30 of 30 elements used* | | *30 of 39 elements used* <br/>remaining elements:<br/>`Location.availabilityExceptions`, `Location.hoursOfOperation`, `Location.hoursOfOperation.allDay`, `Location.hoursOfOperation.closingTime`, `Location.hoursOfOperation.daysOfWeek`, `Location.hoursOfOperation.extension`, `Location.hoursOfOperation.id`, `Location.hoursOfOperation.modifierExtension`, `Location.hoursOfOperation.openingTime`| | *30 of 39 elements used* <br/>remaining elements:<br/>`Location.availabilityExceptions`, `Location.hoursOfOperation`, `Location.hoursOfOperation.allDay`, `Location.hoursOfOperation.closingTime`, `Location.hoursOfOperation.daysOfWeek`, `Location.hoursOfOperation.extension`, `Location.hoursOfOperation.id`, `Location.hoursOfOperation.modifierExtension`, `Location.hoursOfOperation.openingTime`| | *30 of 33 elements used* <br/>remaining elements:<br/>`Location.characteristic`, `Location.hoursOfOperation`, `Location.virtualService`
 

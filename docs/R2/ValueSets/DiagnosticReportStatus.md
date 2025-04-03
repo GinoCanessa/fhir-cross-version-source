@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### DiagnosticReportStatus
 
@@ -50,5 +50,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`appended`**| _Equivalent_ <br/>(455/1797)| `appended`| _Equivalent_ <br/>(3562/5848)| `appended`| _Equivalent_ <br/>(15792/15793)| `appended`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7959)<hr/>←←←← _Equivalent_ ←←←← <br/>(10266) | `appended`
 | **`cancelled`**| _Equivalent_ <br/>(458/1798)| `cancelled`| _Equivalent_ <br/>(3565/5851)| `cancelled`| _Equivalent_ <br/>(15794/15795)| `cancelled`| _Equivalent_ <br/>(7963/10270)| `cancelled`
 | **`entered-in-error`**| _Equivalent_ <br/>(459/1800)| `entered-in-error`| _Equivalent_ <br/>(3567/5853)| `entered-in-error`| _Equivalent_ <br/>(15796/15797)| `entered-in-error`| _Equivalent_ <br/>(7965/10272)| `entered-in-error`
-| *7 of 7 codes used* | | *8 of 10 codes used* | | *8 of 10 codes used* | | *8 of 10 codes used* | | *9 of 11 codes used* 
+| *7 of 7 codes used* | | *8 of 10 codes used* <br/>remaining codes:<br/>`amended`, `unknown`| | *8 of 10 codes used* <br/>remaining codes:<br/>`amended`, `unknown`| | *8 of 10 codes used* <br/>remaining codes:<br/>`amended`, `unknown`| | *9 of 11 codes used* <br/>remaining codes:<br/>`amended`, `unknown`
 

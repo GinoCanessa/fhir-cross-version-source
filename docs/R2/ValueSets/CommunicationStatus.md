@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### CommunicationStatus
 
@@ -51,5 +51,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
 | **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
-| *5 of 5 codes used* | | *4 of 7 codes used* | | *5 of 8 codes used* | | *5 of 8 codes used* | | *5 of 8 codes used* 
+| *5 of 5 codes used* | | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`
 

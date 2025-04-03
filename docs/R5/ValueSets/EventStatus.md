@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### EventStatus
 
@@ -54,7 +54,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | `completed`| _Equivalent_ <br/>(7570/9840)| **`completed`**
 | | | | | | | `entered-in-error`| _Equivalent_ <br/>(7572/9842)| **`entered-in-error`**
 | | | | | | | `unknown`| _Equivalent_ <br/>(7576/9846)| **`unknown`**
-| *0 of 3 codes used* | | *0 of 3 codes used* | | *0 of 3 codes used* | | *8 of 3 codes used* | | *8 of 8 codes used* 
+| *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `entered-in-error`, `in-progress`| | *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `draft`, `entered-in-error`| | *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `entered-in-error`, `in-progress`| | *8 of 3 codes used* | | *8 of 8 codes used* 
 
 
 #### Map Group 1
@@ -73,7 +73,7 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| _Equivalent_ <br/>(993/2394)| `completed`| _Equivalent_ <br/>(3056/5261)| `completed`| _Equivalent_ <br/>(15910/15911)| `completed`| _Equivalent_ <br/>(7570/9840)| **`completed`**
 | `entered-in-error`| _Equivalent_ <br/>(994/2395)| `entered-in-error`| _Equivalent_ <br/>(3057/5262)| `entered-in-error`| _Equivalent_ <br/>(15912/15913)| `entered-in-error`| _Equivalent_ <br/>(7572/9842)| **`entered-in-error`**
 | | | `unknown`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3062)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5268) | `unknown`| _Equivalent_ <br/>(15914/15915)| `unknown`| _Equivalent_ <br/>(7576/9846)| **`unknown`**
-| *4 of 5 codes used* | | *7 of 7 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* 
+| *4 of 5 codes used* <br/>remaining codes:<br/>`completed`, `failed`, `in-progress`, `rejected`, `suspended`| | *7 of 7 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* 
 
 
 #### Map Group 2

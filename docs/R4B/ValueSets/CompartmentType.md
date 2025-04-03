@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### CompartmentType
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `RelatedPerson`| _Equivalent_ <br/>(3132/5340)| `RelatedPerson`| _Equivalent_ <br/>(14690/14691)| **`RelatedPerson`**| _Equivalent_ <br/>(7703/10004)| `RelatedPerson`
 | | | `Practitioner`| _Equivalent_ <br/>(3128/5336)| `Practitioner`| _Equivalent_ <br/>(14692/14693)| **`Practitioner`**| _Equivalent_ <br/>(7699/10003)| `Practitioner`
 | | | `Device`| _Equivalent_ <br/>(3129/5337)| `Device`| _Equivalent_ <br/>(14694/14695)| **`Device`**| _Equivalent_ <br/>(7700/9999)| `Device`
-| | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 6 codes used* 
+| | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 5 codes used* | | *5 of 6 codes used* <br/>remaining codes:<br/>`EpisodeOfCare`
 

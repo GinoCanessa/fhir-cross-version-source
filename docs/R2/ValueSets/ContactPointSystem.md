@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### ContactPointSystem
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`email`**| _Equivalent_ <br/>(231/1598)| `email`| _Equivalent_ <br/>(3156/5366)| `email`| _Equivalent_ <br/>(14822/14823)| `email`| _Equivalent_ <br/>(7713/10015)| `email`
 | **`pager`**| _Equivalent_ <br/>(228/1601)| `pager`| _Equivalent_ <br/>(3152/5362)| `pager`| _Equivalent_ <br/>(14824/14825)| `pager`| _Equivalent_ <br/>(7709/10011)| `pager`
 | **`other`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(227)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1600) | `other`| _Equivalent_ <br/>(3151/5361)| `other`| _Equivalent_ <br/>(14830/14831)| `other`| _Equivalent_ <br/>(7708/10010)| `other`
-| *5 of 5 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* 
+| *5 of 5 codes used* | | *5 of 7 codes used* <br/>remaining codes:<br/>`sms`, `url`| | *5 of 7 codes used* <br/>remaining codes:<br/>`sms`, `url`| | *5 of 7 codes used* <br/>remaining codes:<br/>`sms`, `url`| | *5 of 7 codes used* <br/>remaining codes:<br/>`sms`, `url`
 

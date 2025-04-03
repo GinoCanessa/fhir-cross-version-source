@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### TestReport
 
@@ -170,5 +170,5 @@ All elements from this structure are listed while other structures only show con
 | | | `TestReport.teardown.action.extension`| _Equivalent_<br/>(19401/19402)| `TestReport.teardown.action.extension`| _Equivalent_<br/>(34476/34477)| **`TestReport.teardown.action.extension`**| _Equivalent_<br/>(48895/48896)| `TestReport.teardown.action.extension`
 | | | `TestReport.teardown.action.modifierExtension`| _Equivalent_<br/>(19403/19404)| `TestReport.teardown.action.modifierExtension`| _Equivalent_<br/>(34478/34479)| **`TestReport.teardown.action.modifierExtension`**| _Equivalent_<br/>(48897/48898)| `TestReport.teardown.action.modifierExtension`
 | | | `TestReport.teardown.action.operation`| _Equivalent_<br/>(19405/19406)| `TestReport.teardown.action.operation`| _Equivalent_<br/>(34480/34481)| **`TestReport.teardown.action.operation`**| _Equivalent_<br/>(48899/48900)| `TestReport.teardown.action.operation`
-| | | *67 of 67 elements used* | | *67 of 67 elements used* | | *67 of 67 elements used* | | *67 of 72 elements used* 
+| | | *67 of 67 elements used* | | *67 of 67 elements used* | | *67 of 67 elements used* | | *67 of 72 elements used* <br/>remaining elements:<br/>`TestReport.setup.action.assert.requirement`, `TestReport.setup.action.assert.requirement.extension`, `TestReport.setup.action.assert.requirement.id`, `TestReport.setup.action.assert.requirement.link[x]`, `TestReport.setup.action.assert.requirement.modifierExtension`
 

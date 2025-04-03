@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### ProcedureStatus
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`completed`**| _Equivalent_ <br/>(993/2394)| `completed`| _Equivalent_ <br/>(3056/5261)| `completed`| _Equivalent_ <br/>(15910/15911)| `completed`| _Equivalent_ <br/>(7570/9840)| `completed`
 | **`entered-in-error`**| _Equivalent_ <br/>(994/2395)| `entered-in-error`| _Equivalent_ <br/>(3057/5262)| `entered-in-error`| _Equivalent_ <br/>(15912/15913)| `entered-in-error`| _Equivalent_ <br/>(7572/9842)| `entered-in-error`
-| *4 of 4 codes used* | | *4 of 7 codes used* | | *5 of 8 codes used* | | *5 of 8 codes used* | | *5 of 8 codes used* 
+| *4 of 4 codes used* | | *4 of 7 codes used* <br/>remaining codes:<br/>`preparation`, `suspended`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`on-hold`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`on-hold`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`on-hold`, `preparation`, `unknown`
 

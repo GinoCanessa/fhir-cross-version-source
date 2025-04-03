@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### ParticipantType
 
@@ -54,5 +54,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/participant-type`
 | | | | | | | `translator`| _Equivalent_ <br/>(7460/9725)| **`translator`**
 | | | | | | | `emergency`| _Equivalent_ <br/>(7459/9724)| **`emergency`**
-| | | | | | | *9 of 12 codes used* | | *9 of 9 codes used* 
+| | | | | | | *9 of 12 codes used* <br/>remaining codes:<br/>`PART`, `PPRF`, `SPRF`| | *9 of 9 codes used* 
 

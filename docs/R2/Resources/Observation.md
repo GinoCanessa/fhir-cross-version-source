@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### Observation
 
@@ -135,5 +135,5 @@ All elements from this structure are listed while other structures only show con
 | **`Observation.component.value[x]`**| _Equivalent_<br/>(6708/6709)| `Observation.component.value[x]`| →→→→ _RelatedTo_ →→→→ <br/>(16548)<hr/>←←←← _RelatedTo_ ←←←← <br/>(16549)| `Observation.component.value[x]`| _Equivalent_<br/>(30883/30884)| `Observation.component.value[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(45540)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45541)| `Observation.component.value[x]`
 | **`Observation.component.dataAbsentReason`**| _Equivalent_<br/>(6710/6711)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(16550/16551)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(30885/30886)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(45542/45543)| `Observation.component.dataAbsentReason`
 | **`Observation.component.referenceRange`**| _Equivalent_<br/>(6712/6713)| `Observation.component.referenceRange`| _Equivalent_<br/>(16554/16555)| `Observation.component.referenceRange`| _Equivalent_<br/>(30889/30890)| `Observation.component.referenceRange`| _Equivalent_<br/>(45546/45547)| `Observation.component.referenceRange`
-| *49 of 49 elements used* | | *49 of 52 elements used* | | *45 of 50 elements used* | | *45 of 50 elements used* | | *45 of 60 elements used* 
+| *49 of 49 elements used* | | *49 of 52 elements used* <br/>remaining elements:<br/>`Observation.basedOn`, `Observation.component.interpretation`, `Observation.referenceRange.type`| | *45 of 50 elements used* <br/>remaining elements:<br/>`Observation.basedOn`, `Observation.component.interpretation`, `Observation.focus`, `Observation.partOf`, `Observation.referenceRange.type`| | *45 of 50 elements used* <br/>remaining elements:<br/>`Observation.basedOn`, `Observation.component.interpretation`, `Observation.focus`, `Observation.partOf`, `Observation.referenceRange.type`| | *45 of 60 elements used* <br/>remaining elements:<br/>`Observation.basedOn`, `Observation.bodyStructure`, `Observation.component.interpretation`, `Observation.focus`, `Observation.instantiates[x]`, `Observation.partOf`, `Observation.referenceRange.normalValue`, `Observation.referenceRange.type`, `Observation.triggeredBy`, `Observation.triggeredBy.extension`, `Observation.triggeredBy.id`, `Observation.triggeredBy.modifierExtension`, `Observation.triggeredBy.observation`, `Observation.triggeredBy.reason`, `Observation.triggeredBy.type`
 

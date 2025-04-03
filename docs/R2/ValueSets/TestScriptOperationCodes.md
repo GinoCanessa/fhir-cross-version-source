@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### TestScriptOperationCodes
 
@@ -64,5 +64,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`translate`**| _Equivalent_ <br/>(1364/2851)| `translate`| _Equivalent_ <br/>(5037/7374)| `translate`| | | | | 
 | **`validate`**| _Equivalent_ <br/>(1366/2854)| `validate`| _Equivalent_ <br/>(5040/7377)| `validate`| | | | | 
 | **`validate-code`**| _Equivalent_ <br/>(1367/2855)| `validate-code`| _Equivalent_ <br/>(5041/7378)| `validate-code`| | | | | 
-| *24 of 24 codes used* | | *24 of 53 codes used* | | *24 of 45 codes used* | | | | 
+| *24 of 24 codes used* | | *24 of 53 codes used* <br/>remaining codes:<br/>`apply`, `batch`, `cancel`, `compose`, `conforms`, `data-requirements`, `deleteCondMultiple`, `deleteCondSingle`, `evaluate`, `evaluate-measure`, `fail`, `finish`, `implements`, `match`, `populatehtml`, `populatelink`, `release`, `reserve`, `resume`, `set-input`, `set-output`, `start`, `stats`, `stop`, `subset`, `subsumes`, `suspend`, `transform`, `updateCreate`| | *24 of 45 codes used* <br/>remaining codes:<br/>`apply`, `batch`, `conforms`, `data-requirements`, `deleteCondMultiple`, `deleteCondSingle`, `evaluate`, `evaluate-measure`, `find-matches`, `graphql`, `implements`, `lastn`, `match`, `patch`, `populatehtml`, `populatelink`, `stats`, `subset`, `subsumes`, `transform`, `updateCreate`| | | | 
 

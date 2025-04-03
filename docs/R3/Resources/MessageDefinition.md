@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### MessageDefinition
 
@@ -124,5 +124,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`MessageDefinition.allowedResponse.modifierExtension`**| _Equivalent_<br/>(16184/16185)| `MessageDefinition.allowedResponse.modifierExtension`| _Equivalent_<br/>(30188/30189)| `MessageDefinition.allowedResponse.modifierExtension`| _Equivalent_<br/>(44975/44976)| `MessageDefinition.allowedResponse.modifierExtension`
 | | | **`MessageDefinition.allowedResponse.message`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(16186)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16187)| `MessageDefinition.allowedResponse.message`| _Equivalent_<br/>(30190/30191)| `MessageDefinition.allowedResponse.message`| _Equivalent_<br/>(44977/44978)| `MessageDefinition.allowedResponse.message`
 | | | **`MessageDefinition.allowedResponse.situation`**| _Equivalent_<br/>(16188/16189)| `MessageDefinition.allowedResponse.situation`| _Equivalent_<br/>(30192/30193)| `MessageDefinition.allowedResponse.situation`| _Equivalent_<br/>(44979/44980)| `MessageDefinition.allowedResponse.situation`
-| | | *44 of 44 elements used* | | *44 of 45 elements used* | | *44 of 45 elements used* | | *44 of 47 elements used* 
+| | | *44 of 44 elements used* | | *44 of 45 elements used* <br/>remaining elements:<br/>`MessageDefinition.graph`| | *44 of 45 elements used* <br/>remaining elements:<br/>`MessageDefinition.graph`| | *44 of 47 elements used* <br/>remaining elements:<br/>`MessageDefinition.copyrightLabel`, `MessageDefinition.graph`, `MessageDefinition.versionAlgorithm[x]`
 

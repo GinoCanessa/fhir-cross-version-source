@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:29 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### Measure
 
@@ -204,5 +204,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Measure.supplementalData.usage`| _Equivalent_<br/>(15527/15528)| `Measure.supplementalData.usage`| _Equivalent_<br/>(29240/29241)| **`Measure.supplementalData.usage`**| _Equivalent_<br/>(44114/44115)| `Measure.supplementalData.usage`
 | | | | | `Measure.supplementalData.description`| _Equivalent_<br/>(29242/29243)| **`Measure.supplementalData.description`**| _Equivalent_<br/>(44116/44117)| `Measure.supplementalData.description`
 | | | `Measure.supplementalData.criteria`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15529)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15530)| `Measure.supplementalData.criteria`| _Equivalent_<br/>(29244/29245)| **`Measure.supplementalData.criteria`**| _Equivalent_<br/>(44118/44119)| `Measure.supplementalData.criteria`
-| | | *71 of 75 elements used* | | *83 of 83 elements used* | | *83 of 83 elements used* | | *82 of 110 elements used* 
+| | | *71 of 75 elements used* <br/>remaining elements:<br/>`Measure.group.name`, `Measure.group.population.identifier`, `Measure.group.population.name`, `Measure.set`| | *83 of 83 elements used* | | *83 of 83 elements used* | | *82 of 110 elements used* <br/>remaining elements:<br/>`Measure.basis`, `Measure.copyrightLabel`, `Measure.group.basis`, `Measure.group.improvementNotation`, `Measure.group.library`, `Measure.group.linkId`, `Measure.group.population.aggregateMethod`, `Measure.group.population.groupDefinition`, `Measure.group.population.inputPopulationId`, `Measure.group.population.linkId`, `Measure.group.rateAggregation`, `Measure.group.scoring`, `Measure.group.scoringUnit`, `Measure.group.stratifier.component.groupDefinition`, `Measure.group.stratifier.component.linkId`, `Measure.group.stratifier.groupDefinition`, `Measure.group.stratifier.linkId`, `Measure.group.subject[x]`, `Measure.group.type`, `Measure.scoringUnit`, `Measure.supplementalData.linkId`, `Measure.term`, `Measure.term.code`, `Measure.term.definition`, `Measure.term.extension`, `Measure.term.id`, `Measure.term.modifierExtension`, `Measure.versionAlgorithm[x]`
 

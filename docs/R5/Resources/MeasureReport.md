@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### MeasureReport
 
@@ -180,5 +180,5 @@ All elements from this structure are listed while other structures only show con
 | | | `MeasureReport.group.stratifier.stratum.measureScore`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(15614)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15615)| `MeasureReport.group.stratifier.stratum.measureScore`| _Equivalent_<br/>(29363/29364)| `MeasureReport.group.stratifier.stratum.measureScore`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1818)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2061)| **`MeasureReport.group.stratifier.stratum.measureScore[x]`**
 | | | | | | | | | **`MeasureReport.supplementalData`**
 | | | `MeasureReport.evaluatedResources`| →→→→ _RelatedTo_ →→→→ <br/>(1158)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1589)| `MeasureReport.evaluatedResource`| _Equivalent_<br/>(29365/29366)| `MeasureReport.evaluatedResource`| _Equivalent_<br/>(44222/44223)| **`MeasureReport.evaluatedResource`**
-| | | *49 of 51 elements used* | | *56 of 56 elements used* | | *56 of 56 elements used* | | *72 of 72 elements used* 
+| | | *49 of 51 elements used* <br/>remaining elements:<br/>`MeasureReport.group.population.identifier`, `MeasureReport.group.stratifier.stratum.population.identifier`| | *56 of 56 elements used* | | *56 of 56 elements used* | | *72 of 72 elements used* 
 

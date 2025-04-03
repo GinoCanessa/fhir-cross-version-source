@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### CodeSystemContentMode
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`example`**| _Equivalent_ <br/>(3166/5374)| `example`| _Equivalent_ <br/>(14670/14671)| `example`| _Equivalent_ <br/>(7724/10026)| `example`
 | | | **`fragment`**| _Equivalent_ <br/>(3163/5375)| `fragment`| _Equivalent_ <br/>(14672/14673)| `fragment`| _Equivalent_ <br/>(7720/10022)| `fragment`
 | | | **`complete`**| _Equivalent_ <br/>(3165/5373)| `complete`| _Equivalent_ <br/>(14674/14675)| `complete`| _Equivalent_ <br/>(7723/10025)| `complete`
-| | | *4 of 4 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* 
+| | | *4 of 4 codes used* | | *4 of 5 codes used* <br/>remaining codes:<br/>`supplement`| | *4 of 5 codes used* <br/>remaining codes:<br/>`supplement`| | *4 of 5 codes used* <br/>remaining codes:<br/>`supplement`
 

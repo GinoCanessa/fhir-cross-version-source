@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### Observation Value Absent Reason
 
@@ -53,5 +53,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`NaN`**| _Equivalent_ <br/>(851/2214)| `NaN`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4039)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6377) | `negative-infinity`| | | | | 
 | **`NaN`**| _Equivalent_ <br/>(851/2214)| `NaN`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4039)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6377) | `positive-infinity`| | | | | 
 | **`error`**| _Equivalent_ <br/>(852/2217)| `error`| _Equivalent_ <br/>(4043/6374)| `error`| | | | | 
-| *9 of 9 codes used* | | *9 of 10 codes used* | | *12 of 15 codes used* | | | | 
+| *9 of 9 codes used* | | *9 of 10 codes used* <br/>remaining codes:<br/>`not-performed`| | *12 of 15 codes used* <br/>remaining codes:<br/>`not-applicable`, `not-performed`, `not-permitted`| | | | 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### CharacteristicCombination
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R4B** System: `http://hl7.org/fhir/characteristic-combination`
 | | | | | | | **`intersection`**| | | 
 | | | | | | | **`union`**| | | 
-| | | | | | | *2 of 2 codes used* | | *0 of 7 codes used* 
+| | | | | | | *2 of 2 codes used* | | *0 of 7 codes used* <br/>remaining codes:<br/>`all-of`, `any-of`, `at-least`, `at-most`, `dataset`, `net-effect`, `statistical`
 

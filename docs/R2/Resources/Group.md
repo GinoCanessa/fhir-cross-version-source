@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Group
 
@@ -96,5 +96,5 @@ All elements from this structure are listed while other structures only show con
 | **`Group.member.entity`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5438)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5439)| `Group.member.entity`| →→→→ _RelatedTo_ →→→→ <br/>(14715)<hr/>←←←← _RelatedTo_ ←←←← <br/>(14716)| `Group.member.entity`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(27749)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(27750)| `Group.member.entity`| →→→→ _RelatedTo_ →→→→ <br/>(42713)<hr/>←←←← _RelatedTo_ ←←←← <br/>(42714)| `Group.member.entity`
 | **`Group.member.period`**| _Equivalent_<br/>(5440/5441)| `Group.member.period`| _Equivalent_<br/>(14717/14718)| `Group.member.period`| _Equivalent_<br/>(27751/27752)| `Group.member.period`| _Equivalent_<br/>(42715/42716)| `Group.member.period`
 | **`Group.member.inactive`**| _Equivalent_<br/>(5442/5443)| `Group.member.inactive`| _Equivalent_<br/>(14719/14720)| `Group.member.inactive`| _Equivalent_<br/>(27753/27754)| `Group.member.inactive`| _Equivalent_<br/>(42717/42718)| `Group.member.inactive`
-| *30 of 30 elements used* | | *30 of 31 elements used* | | *30 of 32 elements used* | | *30 of 32 elements used* | | *29 of 33 elements used* 
+| *30 of 30 elements used* | | *30 of 31 elements used* <br/>remaining elements:<br/>`Group.active`| | *30 of 32 elements used* <br/>remaining elements:<br/>`Group.active`, `Group.managingEntity`| | *30 of 32 elements used* <br/>remaining elements:<br/>`Group.active`, `Group.managingEntity`| | *29 of 33 elements used* <br/>remaining elements:<br/>`Group.active`, `Group.description`, `Group.managingEntity`, `Group.membership`
 

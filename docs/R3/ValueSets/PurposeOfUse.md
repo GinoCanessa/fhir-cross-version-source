@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### PurposeOfUse
 
@@ -89,5 +89,5 @@ All codes from this value set are listed while other value sets only show conten
 | `CLINTRL`| _Equivalent_ <br/>(1052/2465)| **`CLINTRL`**| _Equivalent_ <br/>(4366/6683)| `CLINTRL`| | | | | 
 | `ETREAT`| _Equivalent_ <br/>(1023/2436)| **`ETREAT`**| _Equivalent_ <br/>(4337/6695)| `ETREAT`| | | | | 
 | `POPHLTH`| _Equivalent_ <br/>(1046/2459)| **`POPHLTH`**| _Equivalent_ <br/>(4360/6724)| `POPHLTH`| | | | | 
-| *43 of 43 codes used* | | *43 of 43 codes used* | | *43 of 60 codes used* | | | | 
+| *43 of 43 codes used* | | *43 of 43 codes used* | | *43 of 60 codes used* <br/>remaining codes:<br/>`BIORCH`, `BTG`, `CLINTRCHNPC`, `CLINTRCHPC`, `COC`, `DSRCH`, `ERTREAT`, `HDM`, `HTEST`, `LABELING`, `METAMGT`, `MILCDM`, `MILDCRG`, `POARCH`, `PRECLINTRCH`, `SYSDEV`, `TRANSRCH`| | | | 
 

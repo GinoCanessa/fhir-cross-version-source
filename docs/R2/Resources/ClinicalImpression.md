@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### ClinicalImpression
 
@@ -120,5 +120,5 @@ All elements from this structure are listed while other structures only show con
 | **`ClinicalImpression.prognosis`**| | | | | | | | | 
 | **`ClinicalImpression.plan`**| | | | | | | | | 
 | **`ClinicalImpression.action`**| →→→→ _RelatedTo_ →→→→ <br/>(3738)<hr/>←←←← _RelatedTo_ ←←←← <br/>(3739)| `ClinicalImpression.action`| | | | | | | 
-| *41 of 41 elements used* | | *29 of 38 elements used* | | *28 of 40 elements used* | | *28 of 40 elements used* | | *24 of 33 elements used* 
+| *41 of 41 elements used* | | *29 of 38 elements used* <br/>remaining elements:<br/>`ClinicalImpression.code`, `ClinicalImpression.context`, `ClinicalImpression.effective[x]`, `ClinicalImpression.identifier`, `ClinicalImpression.investigation.extension`, `ClinicalImpression.investigation.id`, `ClinicalImpression.investigation.modifierExtension`, `ClinicalImpression.note`, `ClinicalImpression.prognosisCodeableConcept`, `ClinicalImpression.prognosisReference`| | *28 of 40 elements used* <br/>remaining elements:<br/>`ClinicalImpression.code`, `ClinicalImpression.effective[x]`, `ClinicalImpression.encounter`, `ClinicalImpression.identifier`, `ClinicalImpression.investigation.extension`, `ClinicalImpression.investigation.id`, `ClinicalImpression.investigation.modifierExtension`, `ClinicalImpression.note`, `ClinicalImpression.prognosisCodeableConcept`, `ClinicalImpression.prognosisReference`, `ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`| | *28 of 40 elements used* <br/>remaining elements:<br/>`ClinicalImpression.code`, `ClinicalImpression.effective[x]`, `ClinicalImpression.encounter`, `ClinicalImpression.identifier`, `ClinicalImpression.investigation.extension`, `ClinicalImpression.investigation.id`, `ClinicalImpression.investigation.modifierExtension`, `ClinicalImpression.note`, `ClinicalImpression.prognosisCodeableConcept`, `ClinicalImpression.prognosisReference`, `ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`| | *24 of 33 elements used* <br/>remaining elements:<br/>`ClinicalImpression.changePattern`, `ClinicalImpression.effective[x]`, `ClinicalImpression.encounter`, `ClinicalImpression.identifier`, `ClinicalImpression.note`, `ClinicalImpression.prognosisCodeableConcept`, `ClinicalImpression.prognosisReference`, `ClinicalImpression.statusReason`, `ClinicalImpression.supportingInfo`
 

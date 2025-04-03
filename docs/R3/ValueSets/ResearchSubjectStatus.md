@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### ResearchSubjectStatus
 
@@ -55,5 +55,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`withdrawn`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4562)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6883) | `withdrawn`| _Equivalent_ <br/>(17074/17075)| `withdrawn`| _Equivalent_ <br/>(9281/11633)| `retired`
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4569)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6874) | `follow-up`| _Equivalent_ <br/>(17054/17055)| `follow-up`| | | 
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4569)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6874) | `off-study`| _Equivalent_ <br/>(17060/17061)| `off-study`| | | 
-| | | *6 of 6 codes used* | | *11 of 13 codes used* | | *11 of 13 codes used* | | *1 of 4 codes used* 
+| | | *6 of 6 codes used* | | *11 of 13 codes used* <br/>remaining codes:<br/>`ineligible`, `potential-candidate`| | *11 of 13 codes used* <br/>remaining codes:<br/>`ineligible`, `potential-candidate`| | *1 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `unknown`
 

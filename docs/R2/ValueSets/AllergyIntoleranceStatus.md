@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### AllergyIntoleranceStatus
 
@@ -49,7 +49,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`refuted`**| _Equivalent_ <br/>(27/11991)| `refuted`| | | | | | | 
 | **`entered-in-error`**| _Equivalent_ <br/>(29/11992)| `entered-in-error`| | | | | | | 
 | **`inactive`**| | | | | | | | | 
-| *7 of 7 codes used* | | *4 of 3 codes used* | | *0 of 3 codes used* | | *0 of 3 codes used* | | *0 of 3 codes used* 
+| *7 of 7 codes used* | | *4 of 3 codes used* | | *0 of 3 codes used* <br/>remaining codes:<br/>`active`, `inactive`, `resolved`| | *0 of 3 codes used* <br/>remaining codes:<br/>`active`, `inactive`, `resolved`| | *0 of 3 codes used* <br/>remaining codes:<br/>`active`, `inactive`, `resolved`
 
 
 #### Map Group 1
@@ -67,5 +67,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`refuted`**| _Equivalent_ <br/>(27/11991)| `refuted`| _Equivalent_ <br/>(2917/5118)| `refuted`| _Equivalent_ <br/>(14462/14463)| `refuted`| _Equivalent_ <br/>(7450/9715)| `refuted`
 | **`entered-in-error`**| _Equivalent_ <br/>(29/11992)| `entered-in-error`| _Equivalent_ <br/>(2918/5119)| `entered-in-error`| _Equivalent_ <br/>(14464/14465)| `entered-in-error`| _Equivalent_ <br/>(7449/9714)| `entered-in-error`
 | **`inactive`**| | | | | | | | | 
-| *7 of 7 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* 
+| *7 of 7 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* <br/>remaining codes:<br/>`presumed`
 

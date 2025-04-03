@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### PropertyType
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`integer`**| _Equivalent_ <br/>(3185/5396)| `integer`| _Equivalent_ <br/>(14738/14739)| `integer`| _Equivalent_ <br/>(7743/10047)| `integer`
 | | | **`boolean`**| _Equivalent_ <br/>(3182/5392)| `boolean`| _Equivalent_ <br/>(14740/14741)| `boolean`| _Equivalent_ <br/>(7740/10044)| `boolean`
 | | | **`dateTime`**| _Equivalent_ <br/>(3180/5394)| `dateTime`| _Equivalent_ <br/>(14742/14743)| `dateTime`| _Equivalent_ <br/>(7738/10042)| `dateTime`
-| | | *6 of 6 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* 
+| | | *6 of 6 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`decimal`| | *6 of 7 codes used* <br/>remaining codes:<br/>`decimal`| | *6 of 7 codes used* <br/>remaining codes:<br/>`decimal`
 

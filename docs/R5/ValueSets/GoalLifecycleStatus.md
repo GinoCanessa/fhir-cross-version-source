@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### GoalLifecycleStatus
 
@@ -53,5 +53,5 @@ All codes from this value set are listed while other value sets only show conten
 | `cancelled`| _Equivalent_ <br/>(567/1923)| `cancelled`| _Equivalent_ <br/>(3718/6006)| `cancelled`| _Equivalent_ <br/>(16074/16075)| `cancelled`| _Equivalent_ <br/>(8303/10608)| **`cancelled`**
 | | | `entered-in-error`| _Equivalent_ <br/>(3719/6009)| `entered-in-error`| _Equivalent_ <br/>(16076/16077)| `entered-in-error`| _Equivalent_ <br/>(8306/10611)| **`entered-in-error`**
 | `rejected`| _Equivalent_ <br/>(564/1930)| `rejected`| _Equivalent_ <br/>(3725/6000)| `rejected`| _Equivalent_ <br/>(16078/16079)| `rejected`| _Equivalent_ <br/>(8300/10605)| **`rejected`**
-| *9 of 9 codes used* | | *12 of 13 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
+| *9 of 9 codes used* | | *12 of 13 codes used* <br/>remaining codes:<br/>`on-target`| | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
 

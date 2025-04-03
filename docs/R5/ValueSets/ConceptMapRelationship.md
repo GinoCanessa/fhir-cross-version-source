@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### ConceptMapRelationship
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | `wider`| _Equivalent_ <br/>(107/1483)| `wider`| _Equivalent_ <br/>(3011/5219)| `wider`| _Equivalent_ <br/>(14718/14719)| `wider`| _Equivalent_ <br/>(7547/9816)| **`source-is-narrower-than-target`**
 | `narrower`| _Equivalent_ <br/>(110/1478)| `narrower`| _Equivalent_ <br/>(3014/5222)| `narrower`| _Equivalent_ <br/>(14722/14723)| `narrower`| _Equivalent_ <br/>(7550/9817)| **`source-is-broader-than-target`**
 | `disjoint`| _Equivalent_ <br/>(109/1474)| `disjoint`| _Equivalent_ <br/>(3013/5221)| `disjoint`| _Equivalent_ <br/>(14730/14731)| `disjoint`| _Equivalent_ <br/>(7549/9815)| **`not-related-to`**
-| *5 of 9 codes used* | | *5 of 10 codes used* | | *5 of 10 codes used* | | *5 of 10 codes used* | | *5 of 5 codes used* 
+| *5 of 9 codes used* <br/>remaining codes:<br/>`equal`, `specializes`, `subsumes`, `unmatched`| | *5 of 10 codes used* <br/>remaining codes:<br/>`equal`, `relatedto`, `specializes`, `subsumes`, `unmatched`| | *5 of 10 codes used* <br/>remaining codes:<br/>`equal`, `relatedto`, `specializes`, `subsumes`, `unmatched`| | *5 of 10 codes used* <br/>remaining codes:<br/>`equal`, `relatedto`, `specializes`, `subsumes`, `unmatched`| | *5 of 5 codes used* 
 

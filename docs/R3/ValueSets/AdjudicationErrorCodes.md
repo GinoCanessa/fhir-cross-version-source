@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### Adjudication Error Codes
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/adjudication-error`
 | | | **`a001`**| | | | | | | 
 | | | **`a002`**| | | | | | | 
-| *0 of 2 codes used* | | *2 of 2 codes used* | | | | | | 
+| *0 of 2 codes used* <br/>remaining codes:<br/>`A001`, `A002`| | *2 of 2 codes used* | | | | | | 
 

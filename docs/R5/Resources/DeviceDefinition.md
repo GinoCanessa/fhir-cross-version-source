@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### DeviceDefinition
 
@@ -307,5 +307,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`DeviceDefinition.chargeItem.count`**
 | | | | | | | | | **`DeviceDefinition.chargeItem.effectivePeriod`**
 | | | | | | | | | **`DeviceDefinition.chargeItem.useContext`**
-| | | | | *48 of 64 elements used* | | *48 of 64 elements used* | | *135 of 135 elements used* 
+| | | | | *48 of 64 elements used* <br/>remaining elements:<br/>`DeviceDefinition.capability`, `DeviceDefinition.capability.description`, `DeviceDefinition.capability.extension`, `DeviceDefinition.capability.id`, `DeviceDefinition.capability.modifierExtension`, `DeviceDefinition.capability.type`, `DeviceDefinition.onlineInformation`, `DeviceDefinition.parentDevice`, `DeviceDefinition.physicalCharacteristics`, `DeviceDefinition.quantity`, `DeviceDefinition.specialization.extension`, `DeviceDefinition.specialization.id`, `DeviceDefinition.specialization.modifierExtension`, `DeviceDefinition.specialization.systemType`, `DeviceDefinition.type`, `DeviceDefinition.url`| | *48 of 64 elements used* <br/>remaining elements:<br/>`DeviceDefinition.capability`, `DeviceDefinition.capability.description`, `DeviceDefinition.capability.extension`, `DeviceDefinition.capability.id`, `DeviceDefinition.capability.modifierExtension`, `DeviceDefinition.capability.type`, `DeviceDefinition.onlineInformation`, `DeviceDefinition.parentDevice`, `DeviceDefinition.physicalCharacteristics`, `DeviceDefinition.quantity`, `DeviceDefinition.specialization.extension`, `DeviceDefinition.specialization.id`, `DeviceDefinition.specialization.modifierExtension`, `DeviceDefinition.specialization.systemType`, `DeviceDefinition.type`, `DeviceDefinition.url`| | *135 of 135 elements used* 
 

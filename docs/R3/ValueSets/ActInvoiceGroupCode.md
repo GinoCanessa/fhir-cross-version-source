@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### ActInvoiceGroupCode
 
@@ -58,5 +58,5 @@ All codes from this value set are listed while other value sets only show conten
 | `RXDINV`| _Equivalent_ <br/>(12809/12810)| **`RXDINV`**| _Equivalent_ <br/>(13850/13851)| `RXDINV`| | | | | 
 | `SBFINV`| _Equivalent_ <br/>(12811/12812)| **`SBFINV`**| _Equivalent_ <br/>(13852/13853)| `SBFINV`| | | | | 
 | `VRXINV`| _Equivalent_ <br/>(12813/12814)| **`VRXINV`**| _Equivalent_ <br/>(13854/13855)| `VRXINV`| | | | | 
-| *17 of 19 codes used* | | *17 of 17 codes used* | | *17 of 19 codes used* | | | | 
+| *17 of 19 codes used* <br/>remaining codes:<br/>`_ActInvoiceInterGroupCode`, `_ActInvoiceRootGroupCode`| | *17 of 17 codes used* | | *17 of 19 codes used* <br/>remaining codes:<br/>`_ActInvoiceInterGroupCode`, `_ActInvoiceRootGroupCode`| | | | 
 

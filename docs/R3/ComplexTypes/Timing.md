@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Timing
 
@@ -82,5 +82,5 @@ All elements from this structure are listed while other structures only show con
 | `Timing.repeat.when`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(2891)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2892)| **`Timing.repeat.when`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(9853)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(9854)| `Timing.repeat.when`| _Equivalent_<br/>(21333/21334)| `Timing.repeat.when`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36399)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36400)| `Timing.repeat.when`
 | | | **`Timing.repeat.offset`**| _Equivalent_<br/>(9855/9856)| `Timing.repeat.offset`| _Equivalent_<br/>(21335/21336)| `Timing.repeat.offset`| _Equivalent_<br/>(36401/36402)| `Timing.repeat.offset`
 | `Timing.code`| _Equivalent_<br/>(2893/2894)| **`Timing.code`**| _Equivalent_<br/>(9857/9858)| `Timing.code`| _Equivalent_<br/>(21337/21338)| `Timing.code`| _Equivalent_<br/>(36403/36404)| `Timing.code`
-| *19 of 19 elements used* | | *23 of 23 elements used* | | *23 of 24 elements used* | | *23 of 24 elements used* | | *23 of 24 elements used* 
+| *19 of 19 elements used* | | *23 of 23 elements used* | | *23 of 24 elements used* <br/>remaining elements:<br/>`Timing.modifierExtension`| | *23 of 24 elements used* <br/>remaining elements:<br/>`Timing.modifierExtension`| | *23 of 24 elements used* <br/>remaining elements:<br/>`Timing.modifierExtension`
 

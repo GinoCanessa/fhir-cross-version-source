@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Slot
 
@@ -70,5 +70,5 @@ All elements from this structure are listed while other structures only show con
 | **`Slot.end`**| _Equivalent_<br/>(7808/7809)| `Slot.end`| _Equivalent_<br/>(18453/18454)| `Slot.end`| _Equivalent_<br/>(33170/33171)| `Slot.end`| _Equivalent_<br/>(47405/47406)| `Slot.end`
 | **`Slot.overbooked`**| _Equivalent_<br/>(7810/7811)| `Slot.overbooked`| _Equivalent_<br/>(18455/18456)| `Slot.overbooked`| _Equivalent_<br/>(33172/33173)| `Slot.overbooked`| _Equivalent_<br/>(47407/47408)| `Slot.overbooked`
 | **`Slot.comment`**| _Equivalent_<br/>(7812/7813)| `Slot.comment`| _Equivalent_<br/>(18457/18458)| `Slot.comment`| _Equivalent_<br/>(33174/33175)| `Slot.comment`| _Equivalent_<br/>(47409/47410)| `Slot.comment`
-| *17 of 17 elements used* | | *17 of 20 elements used* | | *17 of 20 elements used* | | *17 of 20 elements used* | | *17 of 20 elements used* 
+| *17 of 17 elements used* | | *17 of 20 elements used* <br/>remaining elements:<br/>`Slot.appointmentType`, `Slot.serviceCategory`, `Slot.specialty`| | *17 of 20 elements used* <br/>remaining elements:<br/>`Slot.appointmentType`, `Slot.serviceCategory`, `Slot.specialty`| | *17 of 20 elements used* <br/>remaining elements:<br/>`Slot.appointmentType`, `Slot.serviceCategory`, `Slot.specialty`| | *17 of 20 elements used* <br/>remaining elements:<br/>`Slot.appointmentType`, `Slot.serviceCategory`, `Slot.specialty`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### ActivityDefinition
 
@@ -178,5 +178,5 @@ All elements from this structure are listed while other structures only show con
 | | | `ActivityDefinition.dynamicValue.modifierExtension`| _Equivalent_<br/>(10046/10047)| `ActivityDefinition.dynamicValue.modifierExtension`| _Equivalent_<br/>(21566/21567)| `ActivityDefinition.dynamicValue.modifierExtension`| _Equivalent_<br/>(36615/36616)| **`ActivityDefinition.dynamicValue.modifierExtension`**
 | | | `ActivityDefinition.dynamicValue.path`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10049)<hr/>←←←← _Equivalent_ ←←←← <br/>(10050)| `ActivityDefinition.dynamicValue.path`| _Equivalent_<br/>(21568/21569)| `ActivityDefinition.dynamicValue.path`| _Equivalent_<br/>(36617/36618)| **`ActivityDefinition.dynamicValue.path`**
 | | | `ActivityDefinition.dynamicValue.expression`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10052)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10053)| `ActivityDefinition.dynamicValue.expression`| _Equivalent_<br/>(21570/21571)| `ActivityDefinition.dynamicValue.expression`| _Equivalent_<br/>(36619/36620)| **`ActivityDefinition.dynamicValue.expression`**
-| | | *53 of 55 elements used* | | *65 of 65 elements used* | | *65 of 65 elements used* | | *71 of 71 elements used* 
+| | | *53 of 55 elements used* <br/>remaining elements:<br/>`ActivityDefinition.dynamicValue.description`, `ActivityDefinition.dynamicValue.language`| | *65 of 65 elements used* | | *65 of 65 elements used* | | *71 of 71 elements used* 
 

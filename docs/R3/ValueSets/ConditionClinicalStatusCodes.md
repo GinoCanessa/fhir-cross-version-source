@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### Condition Clinical Status Codes
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`inactive`**| _Equivalent_ <br/>(3064/5270)| `inactive`| _Equivalent_ <br/>(14758/14759)| `inactive`| _Equivalent_ <br/>(7578/9848)| `inactive`
 | `remission`| _Equivalent_ <br/>(13163/13162)| **`remission`**| _Equivalent_ <br/>(3065/5273)| `remission`| _Equivalent_ <br/>(14760/14761)| `remission`| _Equivalent_ <br/>(7581/9851)| `remission`
 | `resolved`| _Equivalent_ <br/>(13165/13164)| **`resolved`**| _Equivalent_ <br/>(3067/5274)| `resolved`| _Equivalent_ <br/>(14762/14763)| `resolved`| _Equivalent_ <br/>(7582/9852)| `resolved`
-| *3 of 4 codes used* | | *5 of 5 codes used* | | *5 of 6 codes used* | | *5 of 6 codes used* | | *5 of 7 codes used* 
+| *3 of 4 codes used* <br/>remaining codes:<br/>`relapse`| | *5 of 5 codes used* | | *5 of 6 codes used* <br/>remaining codes:<br/>`relapse`| | *5 of 6 codes used* <br/>remaining codes:<br/>`relapse`| | *5 of 7 codes used* <br/>remaining codes:<br/>`relapse`, `unknown`
 

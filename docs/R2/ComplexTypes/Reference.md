@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Reference
 
@@ -46,5 +46,5 @@ All elements from this structure are listed while other structures only show con
 | **`Reference.extension`**| _Equivalent_<br/>(2819/2820)| `Reference.extension`| _Equivalent_<br/>(9752/9753)| `Reference.extension`| _Equivalent_<br/>(21218/21219)| `Reference.extension`| _Equivalent_<br/>(36289/36290)| `Reference.extension`
 | **`Reference.reference`**| _Equivalent_<br/>(2821/2822)| `Reference.reference`| _Equivalent_<br/>(9754/9755)| `Reference.reference`| _Equivalent_<br/>(21220/21221)| `Reference.reference`| _Equivalent_<br/>(36291/36292)| `Reference.reference`
 | **`Reference.display`**| _Equivalent_<br/>(2823/2824)| `Reference.display`| _Equivalent_<br/>(9758/9759)| `Reference.display`| _Equivalent_<br/>(21226/21227)| `Reference.display`| _Equivalent_<br/>(36297/36298)| `Reference.display`
-| *5 of 5 elements used* | | *5 of 6 elements used* | | *5 of 7 elements used* | | *5 of 7 elements used* | | *5 of 7 elements used* 
+| *5 of 5 elements used* | | *5 of 6 elements used* <br/>remaining elements:<br/>`Reference.identifier`| | *5 of 7 elements used* <br/>remaining elements:<br/>`Reference.identifier`, `Reference.type`| | *5 of 7 elements used* <br/>remaining elements:<br/>`Reference.identifier`, `Reference.type`| | *5 of 7 elements used* <br/>remaining elements:<br/>`Reference.identifier`, `Reference.type`
 

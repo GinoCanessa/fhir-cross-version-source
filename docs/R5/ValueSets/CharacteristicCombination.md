@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### CharacteristicCombination
 
@@ -48,5 +48,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`statistical`**
 | | | | | | | | | **`net-effect`**
 | | | | | | | | | **`dataset`**
-| | | | | | | *0 of 2 codes used* | | *7 of 7 codes used* 
+| | | | | | | *0 of 2 codes used* <br/>remaining codes:<br/>`intersection`, `union`| | *7 of 7 codes used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### PaymentNotice
 
@@ -74,5 +74,5 @@ All elements from this structure are listed while other structures only show con
 | `PaymentNotice.provider`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7064)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7065)| **`PaymentNotice.provider`**| →→→→ _RelatedTo_ →→→→ <br/>(16915)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16916)| `PaymentNotice.provider`| _Equivalent_<br/>(31400/31401)| `PaymentNotice.provider`| _Equivalent_<br/>(1917/2155)| `PaymentNotice.reporter`
 | `PaymentNotice.organization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7066)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7067)| **`PaymentNotice.organization`**| →→→→ _RelatedTo_ →→→→ <br/>(1215)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1621)| `PaymentNotice.provider`| _Equivalent_<br/>(31400/31401)| `PaymentNotice.provider`| _Equivalent_<br/>(1917/2155)| `PaymentNotice.reporter`
 | `PaymentNotice.paymentStatus`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7072)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7073)| **`PaymentNotice.paymentStatus`**| _Equivalent_<br/>(16917/16918)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(31412/31413)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(46074/46075)| `PaymentNotice.paymentStatus`
-| *17 of 19 elements used* | | *19 of 19 elements used* | | *18 of 21 elements used* | | *18 of 21 elements used* | | *18 of 21 elements used* 
+| *17 of 19 elements used* <br/>remaining elements:<br/>`PaymentNotice.originalRuleset`, `PaymentNotice.ruleset`| | *19 of 19 elements used* | | *18 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`| | *18 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`| | *18 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`
 

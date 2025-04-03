@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:17 PM
+Generated at Thursday, April 3, 2025 8:18:16 AM
 
 ### ProvenanceActivityType
 
@@ -127,5 +127,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | **`VRF`**| | | | | 
 | | | | | **`AUTHEN`**| | | | | 
 | `LA`| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4507/6756)| **`LA`**| | | | | 
-| *1 of 11 codes used* | | *11 of 83 codes used* | | *70 of 70 codes used* | | | | 
+| *1 of 11 codes used* <br/>remaining codes:<br/>`aborted`, `cancelled`, `completed`, `new`, `nullified`, `obsolete`, `AU`, `DI`, `DO`, `UC`| | *11 of 83 codes used* <br/>remaining codes:<br/>`aggregate`, `compose`, `label`, `AOD`, `AUDIT`, `AUDTR`, `CPLYCC`, `CPLYCD`, `CPLYJPP`, `CPLYOPP`, `CPLYOSP`, `CPLYPOL`, `DECLASSIFYLABEL`, `DELAU`, `DOWNGRDLABEL`, `DRIVLABEL`, `ENCRYPT`, `ENCRYPTR`, `ENCRYPTT`, `ENCRYPTU`, `HUAPRV`, `MINEC`, `ObligationPolicy`, `PERSISTLABEL`, `PRIVMARK`, `REDACT`, `UPGRDLABEL`, `aborted`, `active`, `cancelled`, `completed`, `held`, `new`, `normal`, `nullified`, `obsolete`, `suspended`, `ABORT`, `ACTIVATE`, `CANCEL`, `COMPLETE`, `EXECUTE`, `HOLD`, `JUMP`, `MODIFYSTATUS`, `OBSOLETE`, `OPERATE`, `REACTIVATE`, `READ`, `RELEASE`, `RESUME`, `SUSPEND`, `AU`, `DI`, `DO`, `IN`, `IP`, `NU`, `PA`, `UC`, `Attribution`, `Collection`, `Communication`, `Derivation`, `End`, `Generation`, `Invalidation`, `Primary-Source`, `Quotation`, `Revision`, `Start`, `Usage`| | *70 of 70 codes used* | | | | 
 

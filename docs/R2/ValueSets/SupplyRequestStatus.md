@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### SupplyRequestStatus
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`completed`**| _Equivalent_ <br/>(1295/2744)| `completed`| _Equivalent_ <br/>(4866/7189)| `completed`| _Equivalent_ <br/>(18280/18281)| `completed`| _Equivalent_ <br/>(9444/11781)| `completed`
 | **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1296)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2743) | `cancelled`| _Equivalent_ <br/>(4865/7188)| `cancelled`| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
 | **`cancelled`**| →→→→ _Equivalent_ →→→→ <br/>(1294)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2742) | `cancelled`| _Equivalent_ <br/>(4865/7188)| `cancelled`| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
-| *4 of 4 codes used* | | *3 of 7 codes used* | | *3 of 7 codes used* | | *3 of 7 codes used* | | *3 of 7 codes used* 
+| *4 of 4 codes used* | | *3 of 7 codes used* <br/>remaining codes:<br/>`active`, `entered-in-error`, `suspended`, `unknown`| | *3 of 7 codes used* <br/>remaining codes:<br/>`active`, `entered-in-error`, `suspended`, `unknown`| | *3 of 7 codes used* <br/>remaining codes:<br/>`active`, `entered-in-error`, `suspended`, `unknown`| | *3 of 7 codes used* <br/>remaining codes:<br/>`active`, `entered-in-error`, `suspended`, `unknown`
 

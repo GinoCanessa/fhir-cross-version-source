@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### PurposeOfUse
 
@@ -87,5 +87,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`POPHLTH`**| _Equivalent_ <br/>(1046/2459)| `POPHLTH`| _Equivalent_ <br/>(4360/6724)| `POPHLTH`| | | | | 
 | **`TREAT`**| _Equivalent_ <br/>(1040/2453)| `TREAT`| _Equivalent_ <br/>(4354/6736)| `TREAT`| | | | | 
 | **`PurposeOfUse`**| _Equivalent_ <br/>(1022/2435)| `PurposeOfUse`| _Equivalent_ <br/>(4336/6728)| `PurposeOfUse`| | | | | 
-| *43 of 43 codes used* | | *43 of 43 codes used* | | *43 of 60 codes used* | | | | 
+| *43 of 43 codes used* | | *43 of 43 codes used* | | *43 of 60 codes used* <br/>remaining codes:<br/>`BIORCH`, `BTG`, `CLINTRCHNPC`, `CLINTRCHPC`, `COC`, `DSRCH`, `ERTREAT`, `HDM`, `HTEST`, `LABELING`, `METAMGT`, `MILCDM`, `MILDCRG`, `POARCH`, `PRECLINTRCH`, `SYSDEV`, `TRANSRCH`| | | | 
 

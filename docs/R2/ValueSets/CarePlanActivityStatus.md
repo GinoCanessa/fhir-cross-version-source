@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### CarePlanActivityStatus
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`on-hold`**| _Equivalent_ <br/>(221/1587)| `on-hold`| _Equivalent_ <br/>(3138/5346)| `on-hold`| _Equivalent_ <br/>(14608/14609)| `on-hold`| | | 
 | **`completed`**| _Equivalent_ <br/>(219/1584)| `completed`| _Equivalent_ <br/>(3136/5342)| `completed`| _Equivalent_ <br/>(14610/14611)| `completed`| | | 
 | **`cancelled`**| _Equivalent_ <br/>(218/1583)| `cancelled`| _Equivalent_ <br/>(3135/5341)| `cancelled`| _Equivalent_ <br/>(14612/14613)| `cancelled`| | | 
-| *6 of 6 codes used* | | *6 of 7 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* | | 
+| *6 of 6 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `stopped`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `stopped`, `unknown`| | 
 

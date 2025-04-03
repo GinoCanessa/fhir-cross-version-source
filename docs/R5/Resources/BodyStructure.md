@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### BodyStructure
 
@@ -110,5 +110,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `BodyStructure.description`| _Equivalent_<br/>(22151/22152)| `BodyStructure.description`| _Equivalent_<br/>(37187/37188)| **`BodyStructure.description`**
 | | | | | `BodyStructure.image`| _Equivalent_<br/>(22153/22154)| `BodyStructure.image`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(37189)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(37190)| **`BodyStructure.image`**
 | | | | | `BodyStructure.patient`| _Equivalent_<br/>(22155/22156)| `BodyStructure.patient`| _Equivalent_<br/>(37191/37192)| **`BodyStructure.patient`**
-| *0 of 15 elements used* | | *0 of 16 elements used* | | *15 of 17 elements used* | | *15 of 17 elements used* | | *37 of 37 elements used* 
+| *0 of 15 elements used* <br/>remaining elements:<br/>`BodySite`, `BodySite.code`, `BodySite.contained`, `BodySite.description`, `BodySite.extension`, `BodySite.id`, `BodySite.identifier`, `BodySite.image`, `BodySite.implicitRules`, `BodySite.language`, `BodySite.meta`, `BodySite.modifier`, `BodySite.modifierExtension`, `BodySite.patient`, `BodySite.text`| | *0 of 16 elements used* <br/>remaining elements:<br/>`BodySite`, `BodySite.active`, `BodySite.code`, `BodySite.contained`, `BodySite.description`, `BodySite.extension`, `BodySite.id`, `BodySite.identifier`, `BodySite.image`, `BodySite.implicitRules`, `BodySite.language`, `BodySite.meta`, `BodySite.modifierExtension`, `BodySite.patient`, `BodySite.qualifier`, `BodySite.text`| | *15 of 17 elements used* <br/>remaining elements:<br/>`BodyStructure.location`, `BodyStructure.locationQualifier`| | *15 of 17 elements used* <br/>remaining elements:<br/>`BodyStructure.location`, `BodyStructure.locationQualifier`| | *37 of 37 elements used* 
 

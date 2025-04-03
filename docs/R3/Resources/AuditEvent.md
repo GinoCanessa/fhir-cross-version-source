@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### AuditEvent
 
@@ -162,5 +162,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`AuditEvent.entity.detail.modifierExtension`**| _Equivalent_<br/>(10404/10405)| `AuditEvent.entity.detail.modifierExtension`| _Equivalent_<br/>(21968/21969)| `AuditEvent.entity.detail.modifierExtension`| _Equivalent_<br/>(37045/37046)| `AuditEvent.entity.detail.modifierExtension`
 | `AuditEvent.object.detail.type`| _Equivalent_<br/>(24/487)| **`AuditEvent.entity.detail.type`**| _Equivalent_<br/>(10406/10407)| `AuditEvent.entity.detail.type`| _Equivalent_<br/>(21970/21971)| `AuditEvent.entity.detail.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(37047)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(37048)| `AuditEvent.entity.detail.type`
 | `AuditEvent.object.detail.value`| _Equivalent_<br/>(25/488)| **`AuditEvent.entity.detail.value`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(816)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1354)| `AuditEvent.entity.detail.value[x]`| _Equivalent_<br/>(21972/21973)| `AuditEvent.entity.detail.value[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(37049)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(37050)| `AuditEvent.entity.detail.value[x]`
-| *51 of 66 elements used* | | *62 of 62 elements used* | | *61 of 62 elements used* | | *60 of 62 elements used* | | *47 of 59 elements used* 
+| *51 of 66 elements used* <br/>remaining elements:<br/>`AuditEvent.event.extension`, `AuditEvent.event.id`, `AuditEvent.event.modifierExtension`, `AuditEvent.object.detail.extension`, `AuditEvent.object.detail.id`, `AuditEvent.object.detail.modifierExtension`, `AuditEvent.object.extension`, `AuditEvent.object.id`, `AuditEvent.object.modifierExtension`, `AuditEvent.participant.extension`, `AuditEvent.participant.id`, `AuditEvent.participant.modifierExtension`, `AuditEvent.participant.network.extension`, `AuditEvent.participant.network.id`, `AuditEvent.participant.network.modifierExtension`| | *62 of 62 elements used* | | *61 of 62 elements used* <br/>remaining elements:<br/>`AuditEvent.agent.type`, `AuditEvent.period`| | *60 of 62 elements used* <br/>remaining elements:<br/>`AuditEvent.agent.type`, `AuditEvent.period`| | *47 of 59 elements used* <br/>remaining elements:<br/>`AuditEvent.agent.type`, `AuditEvent.basedOn`, `AuditEvent.encounter`, `AuditEvent.entity.agent`, `AuditEvent.occurred[x]`, `AuditEvent.outcome.code`, `AuditEvent.outcome.detail`, `AuditEvent.outcome.extension`, `AuditEvent.outcome.id`, `AuditEvent.outcome.modifierExtension`, `AuditEvent.patient`, `AuditEvent.severity`
 

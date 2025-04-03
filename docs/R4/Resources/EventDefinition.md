@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:19 AM
 
 ### EventDefinition
 
@@ -110,5 +110,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`EventDefinition.endorser`**| _Equivalent_<br/>(26534/26535)| `EventDefinition.endorser`| _Equivalent_<br/>(41265/41266)| `EventDefinition.endorser`
 | | | | | **`EventDefinition.relatedArtifact`**| _Equivalent_<br/>(26536/26537)| `EventDefinition.relatedArtifact`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(41267)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(41268)| `EventDefinition.relatedArtifact`
 | | | | | **`EventDefinition.trigger`**| _Equivalent_<br/>(26538/26539)| `EventDefinition.trigger`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(41269)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(41270)| `EventDefinition.trigger`
-| | | | | *37 of 37 elements used* | | *37 of 37 elements used* | | *37 of 39 elements used* 
+| | | | | *37 of 37 elements used* | | *37 of 37 elements used* | | *37 of 39 elements used* <br/>remaining elements:<br/>`EventDefinition.copyrightLabel`, `EventDefinition.versionAlgorithm[x]`
 

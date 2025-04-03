@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:21 AM
 
 ### Location
 
@@ -114,5 +114,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`Location.hoursOfOperation.closingTime`**| _Equivalent_<br/>(29056/29057)| `Location.hoursOfOperation.closingTime`| | | 
 | | | | | **`Location.availabilityExceptions`**| _Equivalent_<br/>(29058/29059)| `Location.availabilityExceptions`| | | 
 | | | `Location.endpoint`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15398)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15399)| **`Location.endpoint`**| _Equivalent_<br/>(29060/29061)| `Location.endpoint`| _Equivalent_<br/>(43911/43912)| `Location.endpoint`
-| *27 of 27 elements used* | | *30 of 30 elements used* | | *39 of 39 elements used* | | *39 of 39 elements used* | | *31 of 33 elements used* 
+| *27 of 27 elements used* | | *30 of 30 elements used* | | *39 of 39 elements used* | | *39 of 39 elements used* | | *31 of 33 elements used* <br/>remaining elements:<br/>`Location.characteristic`, `Location.virtualService`
 

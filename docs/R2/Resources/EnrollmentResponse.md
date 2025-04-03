@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### EnrollmentResponse
 
@@ -74,5 +74,5 @@ All elements from this structure are listed while other structures only show con
 | **`EnrollmentResponse.organization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5168)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5169)| `EnrollmentResponse.organization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13670)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13671)| `EnrollmentResponse.organization`| _Equivalent_<br/>(26398/26399)| `EnrollmentResponse.organization`| _Equivalent_<br/>(41134/41135)| `EnrollmentResponse.organization`
 | **`EnrollmentResponse.requestProvider`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5170)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5171)| `EnrollmentResponse.requestProvider`| →→→→ _RelatedTo_ →→→→ <br/>(13672)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13673)| `EnrollmentResponse.requestProvider`| _Equivalent_<br/>(26400/26401)| `EnrollmentResponse.requestProvider`| _Equivalent_<br/>(41136/41137)| `EnrollmentResponse.requestProvider`
 | **`EnrollmentResponse.requestOrganization`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(5172)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5173)| `EnrollmentResponse.requestOrganization`| →→→→ _RelatedTo_ →→→→ <br/>(1043)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1503)| `EnrollmentResponse.requestProvider`| _Equivalent_<br/>(26400/26401)| `EnrollmentResponse.requestProvider`| _Equivalent_<br/>(41136/41137)| `EnrollmentResponse.requestProvider`
-| *19 of 19 elements used* | | *17 of 18 elements used* | | *16 of 17 elements used* | | *16 of 17 elements used* | | *16 of 17 elements used* 
+| *19 of 19 elements used* | | *17 of 18 elements used* <br/>remaining elements:<br/>`EnrollmentResponse.status`| | *16 of 17 elements used* <br/>remaining elements:<br/>`EnrollmentResponse.status`| | *16 of 17 elements used* <br/>remaining elements:<br/>`EnrollmentResponse.status`| | *16 of 17 elements used* <br/>remaining elements:<br/>`EnrollmentResponse.status`
 

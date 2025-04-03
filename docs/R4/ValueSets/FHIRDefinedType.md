@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### FHIRDefinedType
 
@@ -256,5 +256,5 @@ All codes from this value set are listed while other value sets only show conten
 | `ValueSet`| _Equivalent_ <br/>(12266/12267)| `ValueSet`| _Equivalent_ <br/>(13533/13534)| **`ValueSet`**| _Equivalent_ <br/>(15736/15737)| `ValueSet`| | | 
 | | | | | **`VerificationResult`**| _Equivalent_ <br/>(15738/15739)| `VerificationResult`| | | 
 | `VisionPrescription`| _Equivalent_ <br/>(12268/12269)| `VisionPrescription`| _Equivalent_ <br/>(13535/13536)| **`VisionPrescription`**| _Equivalent_ <br/>(15740/15741)| `VisionPrescription`| | | 
-| *126 of 142 codes used* | | *160 of 173 codes used* | | *211 of 211 codes used* | | *192 of 207 codes used* | | 
+| *126 of 142 codes used* <br/>remaining codes:<br/>`BodySite`, `Conformance`, `DataElement`, `DeviceComponent`, `DeviceUseRequest`, `DiagnosticOrder`, `EligibilityRequest`, `EligibilityResponse`, `ImagingObjectSelection`, `MedicationOrder`, `Order`, `OrderResponse`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`| | *160 of 173 codes used* <br/>remaining codes:<br/>`BodySite`, `DataElement`, `DeviceComponent`, `EligibilityRequest`, `EligibilityResponse`, `ExpansionProfile`, `ImagingManifest`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `Sequence`, `ServiceDefinition`| | *211 of 211 codes used* | | *192 of 207 codes used* <br/>remaining codes:<br/>`CodeableReference`, `RatioRange`, `AdministrableProductDefinition`, `Citation`, `ClinicalUseDefinition`, `EvidenceReport`, `Ingredient`, `ManufacturedItemDefinition`, `MedicinalProductDefinition`, `NutritionProduct`, `PackagedProductDefinition`, `RegulatedAuthorization`, `SubscriptionStatus`, `SubscriptionTopic`, `SubstanceDefinition`| | 
 

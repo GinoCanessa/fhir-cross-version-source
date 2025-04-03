@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### Practitioner
 
@@ -100,5 +100,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Practitioner.communication.modifierExtension`**
 | | | | | | | | | **`Practitioner.communication.language`**
 | | | | | | | | | **`Practitioner.communication.preferred`**
-| *26 of 36 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *32 of 32 elements used* 
+| *26 of 36 elements used* <br/>remaining elements:<br/>`Practitioner.practitionerRole`, `Practitioner.practitionerRole.extension`, `Practitioner.practitionerRole.healthcareService`, `Practitioner.practitionerRole.id`, `Practitioner.practitionerRole.location`, `Practitioner.practitionerRole.managingOrganization`, `Practitioner.practitionerRole.modifierExtension`, `Practitioner.practitionerRole.period`, `Practitioner.practitionerRole.role`, `Practitioner.practitionerRole.specialty`| | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *32 of 32 elements used* 
 

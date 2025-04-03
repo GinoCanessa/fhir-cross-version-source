@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:25 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### Coverage
 
@@ -124,5 +124,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`Coverage.costToBeneficiary.exception.period`**| _Equivalent_<br/>(25054/25055)| `Coverage.costToBeneficiary.exception.period`| _Equivalent_<br/>(40138/40139)| `Coverage.costToBeneficiary.exception.period`
 | | | | | **`Coverage.subrogation`**| _Equivalent_<br/>(25056/25057)| `Coverage.subrogation`| _Equivalent_<br/>(40140/40141)| `Coverage.subrogation`
 | `Coverage.contract`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4375)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4376)| `Coverage.contract`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12784)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12785)| **`Coverage.contract`**| _Equivalent_<br/>(25058/25059)| `Coverage.contract`| _Equivalent_<br/>(40142/40143)| `Coverage.contract`
-| *19 of 23 elements used* | | *24 of 40 elements used* | | *43 of 43 elements used* | | *43 of 43 elements used* | | *42 of 55 elements used* 
+| *19 of 23 elements used* <br/>remaining elements:<br/>`Coverage.group`, `Coverage.plan`, `Coverage.sequence`, `Coverage.subPlan`| | *24 of 40 elements used* <br/>remaining elements:<br/>`Coverage.grouping.class`, `Coverage.grouping.classDisplay`, `Coverage.grouping.extension`, `Coverage.grouping.group`, `Coverage.grouping.groupDisplay`, `Coverage.grouping.id`, `Coverage.grouping.modifierExtension`, `Coverage.grouping.plan`, `Coverage.grouping.planDisplay`, `Coverage.grouping.subClass`, `Coverage.grouping.subClassDisplay`, `Coverage.grouping.subGroup`, `Coverage.grouping.subGroupDisplay`, `Coverage.grouping.subPlan`, `Coverage.grouping.subPlanDisplay`, `Coverage.sequence`| | *43 of 43 elements used* | | *43 of 43 elements used* | | *42 of 55 elements used* <br/>remaining elements:<br/>`Coverage.costToBeneficiary.category`, `Coverage.costToBeneficiary.network`, `Coverage.costToBeneficiary.term`, `Coverage.costToBeneficiary.unit`, `Coverage.insurancePlan`, `Coverage.insurer`, `Coverage.kind`, `Coverage.paymentBy`, `Coverage.paymentBy.extension`, `Coverage.paymentBy.id`, `Coverage.paymentBy.modifierExtension`, `Coverage.paymentBy.party`, `Coverage.paymentBy.responsibility`
 

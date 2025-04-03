@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### ObservationInterpretationCodes
 
@@ -99,5 +99,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`ObservationInterpretationDetection`**
 | | | | | | | | | **`ObservationInterpretationExpectation`**
 | | | | | | | | | **`ReactivityObservationInterpretation`**
-| | | | | | | *39 of 47 codes used* | | *57 of 57 codes used* 
+| | | | | | | *39 of 47 codes used* <br/>remaining codes:<br/>`ObservationInterpretationDetection`, `ObservationInterpretationExpectation`, `ReactivityObservationInterpretation`, `_GeneticObservationInterpretation`, `_ObservationInterpretationChange`, `_ObservationInterpretationExceptions`, `_ObservationInterpretationNormality`, `_ObservationInterpretationSusceptibility`| | *57 of 57 codes used* 
 

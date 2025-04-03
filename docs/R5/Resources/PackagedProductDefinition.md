@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### PackagedProductDefinition
 
@@ -142,5 +142,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | `PackagedProductDefinition.package.containedItem.amount`| _Equivalent_<br/>(1916/2154)| **`PackagedProductDefinition.packaging.containedItem.amount`**
 | | | | | | | | | **`PackagedProductDefinition.packaging.packaging`**
 | | | | | | | `PackagedProductDefinition.characteristic`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(45894)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45895)| **`PackagedProductDefinition.characteristic`**
-| | | | | | | *37 of 57 elements used* | | *53 of 53 elements used* 
+| | | | | | | *37 of 57 elements used* <br/>remaining elements:<br/>`PackagedProductDefinition.package`, `PackagedProductDefinition.package.containedItem`, `PackagedProductDefinition.package.containedItem.extension`, `PackagedProductDefinition.package.containedItem.id`, `PackagedProductDefinition.package.containedItem.modifierExtension`, `PackagedProductDefinition.package.extension`, `PackagedProductDefinition.package.id`, `PackagedProductDefinition.package.modifierExtension`, `PackagedProductDefinition.package.package`, `PackagedProductDefinition.package.property`, `PackagedProductDefinition.package.property.extension`, `PackagedProductDefinition.package.property.id`, `PackagedProductDefinition.package.property.modifierExtension`, `PackagedProductDefinition.package.shelfLifeStorage`, `PackagedProductDefinition.package.shelfLifeStorage.extension`, `PackagedProductDefinition.package.shelfLifeStorage.id`, `PackagedProductDefinition.package.shelfLifeStorage.modifierExtension`, `PackagedProductDefinition.package.shelfLifeStorage.period[x]`, `PackagedProductDefinition.package.shelfLifeStorage.specialPrecautionsForStorage`, `PackagedProductDefinition.package.shelfLifeStorage.type`| | *53 of 53 elements used* 
 

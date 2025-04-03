@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### AppointmentStatus
 
@@ -49,5 +49,5 @@ All codes from this value set are listed while other value sets only show conten
 | `cancelled`| _Equivalent_ <br/>(61/1428)| **`cancelled`**| _Equivalent_ <br/>(2959/5157)| `cancelled`| _Equivalent_ <br/>(14476/14477)| `cancelled`| _Equivalent_ <br/>(7476/9738)| `cancelled`
 | `noshow`| _Equivalent_ <br/>(62/1431)| **`noshow`**| _Equivalent_ <br/>(2960/5161)| `noshow`| _Equivalent_ <br/>(14478/14479)| `noshow`| _Equivalent_ <br/>(7477/9739)| `noshow`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(2961/5159)| `entered-in-error`| _Equivalent_ <br/>(14480/14481)| `entered-in-error`| _Equivalent_ <br/>(7479/9741)| `entered-in-error`
-| *7 of 7 codes used* | | *8 of 8 codes used* | | *8 of 10 codes used* | | *8 of 10 codes used* | | *8 of 10 codes used* 
+| *7 of 7 codes used* | | *8 of 8 codes used* | | *8 of 10 codes used* <br/>remaining codes:<br/>`checked-in`, `waitlist`| | *8 of 10 codes used* <br/>remaining codes:<br/>`checked-in`, `waitlist`| | *8 of 10 codes used* <br/>remaining codes:<br/>`checked-in`, `waitlist`
 

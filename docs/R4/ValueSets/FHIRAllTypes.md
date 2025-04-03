@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### FHIRAllTypes
 
@@ -259,5 +259,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R4** System: `http://hl7.org/fhir/abstract-types`
 | | | `Type`| _Equivalent_ <br/>(13154/13155)| **`Type`**| _Equivalent_ <br/>(14430/14431)| `Type`| | | 
 | | | `Any`| _Equivalent_ <br/>(13156/13157)| **`Any`**| _Equivalent_ <br/>(14432/14433)| `Any`| | | 
-| | | *162 of 175 codes used* | | *213 of 213 codes used* | | *194 of 209 codes used* | | 
+| | | *162 of 175 codes used* <br/>remaining codes:<br/>`BodySite`, `DataElement`, `DeviceComponent`, `EligibilityRequest`, `EligibilityResponse`, `ExpansionProfile`, `ImagingManifest`, `ProcedureRequest`, `ProcessRequest`, `ProcessResponse`, `ReferralRequest`, `Sequence`, `ServiceDefinition`| | *213 of 213 codes used* | | *194 of 209 codes used* <br/>remaining codes:<br/>`CodeableReference`, `RatioRange`, `AdministrableProductDefinition`, `Citation`, `ClinicalUseDefinition`, `EvidenceReport`, `Ingredient`, `ManufacturedItemDefinition`, `MedicinalProductDefinition`, `NutritionProduct`, `PackagedProductDefinition`, `RegulatedAuthorization`, `SubscriptionStatus`, `SubscriptionTopic`, `SubstanceDefinition`| | 
 

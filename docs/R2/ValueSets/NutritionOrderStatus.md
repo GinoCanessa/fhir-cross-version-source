@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### NutritionOrderStatus
 
@@ -49,5 +49,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`on-hold`**| _Equivalent_ <br/>(839/2203)| `on-hold`| _Equivalent_ <br/>(4026/6361)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | **`completed`**| _Equivalent_ <br/>(838/2200)| `completed`| _Equivalent_ <br/>(4023/6357)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | **`cancelled`**| _Equivalent_ <br/>(836/2199)| `cancelled`| _Equivalent_ <br/>(4022/6362)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
-| *8 of 8 codes used* | | *8 of 9 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* 
+| *8 of 8 codes used* | | *8 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`
 

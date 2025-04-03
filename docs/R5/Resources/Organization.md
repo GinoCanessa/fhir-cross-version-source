@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:36 AM
 
 ### Organization
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Organization.qualification.code`**
 | | | | | | | | | **`Organization.qualification.period`**
 | | | | | | | | | **`Organization.qualification.issuer`**
-| *15 of 24 elements used* | | *17 of 26 elements used* | | *17 of 26 elements used* | | *17 of 26 elements used* | | *26 of 26 elements used* 
+| *15 of 24 elements used* <br/>remaining elements:<br/>`Organization.address`, `Organization.contact.address`, `Organization.contact.extension`, `Organization.contact.id`, `Organization.contact.modifierExtension`, `Organization.contact.name`, `Organization.contact.purpose`, `Organization.contact.telecom`, `Organization.telecom`| | *17 of 26 elements used* <br/>remaining elements:<br/>`Organization.address`, `Organization.contact.address`, `Organization.contact.extension`, `Organization.contact.id`, `Organization.contact.modifierExtension`, `Organization.contact.name`, `Organization.contact.purpose`, `Organization.contact.telecom`, `Organization.telecom`| | *17 of 26 elements used* <br/>remaining elements:<br/>`Organization.address`, `Organization.contact.address`, `Organization.contact.extension`, `Organization.contact.id`, `Organization.contact.modifierExtension`, `Organization.contact.name`, `Organization.contact.purpose`, `Organization.contact.telecom`, `Organization.telecom`| | *17 of 26 elements used* <br/>remaining elements:<br/>`Organization.address`, `Organization.contact.address`, `Organization.contact.extension`, `Organization.contact.id`, `Organization.contact.modifierExtension`, `Organization.contact.name`, `Organization.contact.purpose`, `Organization.contact.telecom`, `Organization.telecom`| | *26 of 26 elements used* 
 

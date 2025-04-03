@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### StructureMapGroupTypeMode
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/map-group-type-mode`
 | | | `types`| _Equivalent_ <br/>(4812/7133)| `types`| _Equivalent_ <br/>(16400/16401)| `types`| _Equivalent_ <br/>(9386/11722)| **`types`**
 | | | `type-and-types`| _Equivalent_ <br/>(4814/7135)| `type-and-types`| _Equivalent_ <br/>(16402/16403)| `type-and-types`| _Equivalent_ <br/>(9385/11723)| **`type-and-types`**
-| | | *2 of 3 codes used* | | *2 of 3 codes used* | | *2 of 3 codes used* | | *2 of 2 codes used* 
+| | | *2 of 3 codes used* <br/>remaining codes:<br/>`none`| | *2 of 3 codes used* <br/>remaining codes:<br/>`none`| | *2 of 3 codes used* <br/>remaining codes:<br/>`none`| | *2 of 2 codes used* 
 

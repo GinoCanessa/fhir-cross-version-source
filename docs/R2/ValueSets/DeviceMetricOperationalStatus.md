@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### DeviceMetricOperationalStatus
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`on`**| _Equivalent_ <br/>(513/1858)| `on`| _Equivalent_ <br/>(3619/5906)| `on`| _Equivalent_ <br/>(16640/16641)| `on`| _Equivalent_ <br/>(8003/10307)| `on`
 | **`off`**| _Equivalent_ <br/>(512/1857)| `off`| _Equivalent_ <br/>(3618/5905)| `off`| _Equivalent_ <br/>(16642/16643)| `off`| _Equivalent_ <br/>(8002/10306)| `off`
 | **`standby`**| _Equivalent_ <br/>(511/1859)| `standby`| _Equivalent_ <br/>(3616/5903)| `standby`| _Equivalent_ <br/>(16644/16645)| `standby`| _Equivalent_ <br/>(8000/10304)| `standby`
-| *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### Financial Resource Status Codes
 
@@ -64,7 +64,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`draft`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4381)<hr/>←←←← _Equivalent_ ←←←← <br/>(7280) | `draft`| | | | | 
 | | | **`draft`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4381)<hr/>←←←← _Equivalent_ ←←←← <br/>(7280) | `requested`| | | | | 
 | | | **`entered-in-error`**| _Equivalent_ <br/>(4390/7273)| `entered-in-error`| | | | | 
-| | | *4 of 4 codes used* | | *11 of 4 codes used* | | *0 of 4 codes used* | | *0 of 4 codes used* 
+| | | *4 of 4 codes used* | | *11 of 4 codes used* | | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `cancelled`, `draft`, `entered-in-error`| | *0 of 4 codes used* <br/>remaining codes:<br/>`active`, `cancelled`, `draft`, `entered-in-error`
 
 
 #### Map Group 1
@@ -86,5 +86,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`draft`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4381)<hr/>←←←← _Equivalent_ ←←←← <br/>(7280) | `draft`| _Equivalent_ <br/>(18312/18313)| `draft`| _Equivalent_ <br/>(9512/11851)| `draft`
 | | | **`draft`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4381)<hr/>←←←← _Equivalent_ ←←←← <br/>(7280) | `requested`| _Equivalent_ <br/>(18314/18315)| `requested`| _Equivalent_ <br/>(9509/11848)| `requested`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(4390/7273)| `entered-in-error`| _Equivalent_ <br/>(18334/18335)| `entered-in-error`| _Equivalent_ <br/>(9518/11857)| `entered-in-error`
-| | | *4 of 4 codes used* | | *11 of 12 codes used* | | *11 of 12 codes used* | | *11 of 12 codes used* 
+| | | *4 of 4 codes used* | | *11 of 12 codes used* <br/>remaining codes:<br/>`on-hold`| | *11 of 12 codes used* <br/>remaining codes:<br/>`on-hold`| | *11 of 12 codes used* <br/>remaining codes:<br/>`on-hold`
 

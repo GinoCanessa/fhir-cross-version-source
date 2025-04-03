@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### Ingredient
 
@@ -124,5 +124,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`Ingredient.substance.strength.referenceStrength.strength[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(43436)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(43437)| `Ingredient.substance.strength.referenceStrength.strength[x]`
 | | | | | | | **`Ingredient.substance.strength.referenceStrength.measurementPoint`**| _Equivalent_<br/>(43438/43439)| `Ingredient.substance.strength.referenceStrength.measurementPoint`
 | | | | | | | **`Ingredient.substance.strength.referenceStrength.country`**| _Equivalent_<br/>(43440/43441)| `Ingredient.substance.strength.referenceStrength.country`
-| | | | | | | *44 of 44 elements used* | | *44 of 47 elements used* 
+| | | | | | | *44 of 44 elements used* | | *44 of 47 elements used* <br/>remaining elements:<br/>`Ingredient.comment`, `Ingredient.group`, `Ingredient.substance.strength.basis`
 

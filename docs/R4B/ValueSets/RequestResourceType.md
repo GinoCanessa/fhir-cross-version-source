@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:27 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### RequestResourceType
 
@@ -56,5 +56,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | `SupplyRequest`| _Equivalent_ <br/>(17002/17003)| **`SupplyRequest`**| _Equivalent_ <br/>(18544/18545)| `SupplyRequest`
 | | | | | `Task`| _Equivalent_ <br/>(17004/17005)| **`Task`**| _Equivalent_ <br/>(18546/18547)| `Task`
 | | | | | `VisionPrescription`| _Equivalent_ <br/>(17006/17007)| **`VisionPrescription`**| _Equivalent_ <br/>(18548/18549)| `VisionPrescription`
-| | | | | *15 of 15 codes used* | | *15 of 15 codes used* | | *14 of 17 codes used* 
+| | | | | *15 of 15 codes used* | | *15 of 15 codes used* | | *14 of 17 codes used* <br/>remaining codes:<br/>`CoverageEligibilityRequest`, `RequestOrchestration`, `Transport`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### Endpoint
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Endpoint.payload.mimeType`**
 | | | `Endpoint.address`| _Equivalent_<br/>(13604/13605)| `Endpoint.address`| _Equivalent_<br/>(26332/26333)| `Endpoint.address`| _Equivalent_<br/>(41068/41069)| **`Endpoint.address`**
 | | | `Endpoint.header`| _Equivalent_<br/>(13606/13607)| `Endpoint.header`| _Equivalent_<br/>(26334/26335)| `Endpoint.header`| _Equivalent_<br/>(41070/41071)| **`Endpoint.header`**
-| | | *18 of 20 elements used* | | *18 of 20 elements used* | | *18 of 20 elements used* | | *26 of 26 elements used* 
+| | | *18 of 20 elements used* <br/>remaining elements:<br/>`Endpoint.payloadMimeType`, `Endpoint.payloadType`| | *18 of 20 elements used* <br/>remaining elements:<br/>`Endpoint.payloadMimeType`, `Endpoint.payloadType`| | *18 of 20 elements used* <br/>remaining elements:<br/>`Endpoint.payloadMimeType`, `Endpoint.payloadType`| | *26 of 26 elements used* 
 

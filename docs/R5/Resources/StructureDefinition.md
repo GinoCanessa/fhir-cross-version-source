@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:36 AM
 
 ### StructureDefinition
 
@@ -153,7 +153,7 @@ All elements from this structure are listed while other structures only show con
 | | | `StructureDefinition.differential.extension`| _Equivalent_<br/>(18658/18659)| `StructureDefinition.differential.extension`| _Equivalent_<br/>(33536/33537)| `StructureDefinition.differential.extension`| _Equivalent_<br/>(47702/47703)| **`StructureDefinition.differential.extension`**
 | | | `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(18660/18661)| `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(33538/33539)| `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(47704/47705)| **`StructureDefinition.differential.modifierExtension`**
 | | | `StructureDefinition.differential.element`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18662)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18663)| `StructureDefinition.differential.element`| _Equivalent_<br/>(33540/33541)| `StructureDefinition.differential.element`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(47706)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(47707)| **`StructureDefinition.differential.element`**
-| *0 of 35 elements used* | | *52 of 32 elements used* | | *56 of 56 elements used* | | *56 of 56 elements used* | | *58 of 58 elements used* 
+| *0 of 35 elements used* <br/>remaining elements:<br/>`DataElement`, `DataElement.contact`, `DataElement.contact.extension`, `DataElement.contact.id`, `DataElement.contact.modifierExtension`, `DataElement.contact.name`, `DataElement.contact.telecom`, `DataElement.contained`, `DataElement.copyright`, `DataElement.date`, `DataElement.element`, `DataElement.experimental`, `DataElement.extension`, `DataElement.id`, `DataElement.identifier`, `DataElement.implicitRules`, `DataElement.language`, `DataElement.mapping`, `DataElement.mapping.comments`, `DataElement.mapping.extension`, `DataElement.mapping.id`, `DataElement.mapping.identity`, `DataElement.mapping.modifierExtension`, `DataElement.mapping.name`, `DataElement.mapping.uri`, `DataElement.meta`, `DataElement.modifierExtension`, `DataElement.name`, `DataElement.publisher`, `DataElement.status`, `DataElement.stringency`, `DataElement.text`, `DataElement.url`, `DataElement.useContext`, `DataElement.version`| | *52 of 32 elements used* | | *56 of 56 elements used* | | *56 of 56 elements used* | | *58 of 58 elements used* 
 
 
 #### Map Group 1
@@ -222,5 +222,5 @@ All elements from this structure are listed while other structures only show con
 | `StructureDefinition.differential.extension`| _Equivalent_<br/>(7969/7970)| `StructureDefinition.differential.extension`| _Equivalent_<br/>(18658/18659)| `StructureDefinition.differential.extension`| _Equivalent_<br/>(33536/33537)| `StructureDefinition.differential.extension`| _Equivalent_<br/>(47702/47703)| **`StructureDefinition.differential.extension`**
 | `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(7971/7972)| `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(18660/18661)| `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(33538/33539)| `StructureDefinition.differential.modifierExtension`| _Equivalent_<br/>(47704/47705)| **`StructureDefinition.differential.modifierExtension`**
 | `StructureDefinition.differential.element`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7973)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7974)| `StructureDefinition.differential.element`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18662)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18663)| `StructureDefinition.differential.element`| _Equivalent_<br/>(33540/33541)| `StructureDefinition.differential.element`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(47706)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(47707)| **`StructureDefinition.differential.element`**
-| *49 of 54 elements used* | | *52 of 52 elements used* | | *56 of 56 elements used* | | *56 of 56 elements used* | | *58 of 58 elements used* 
+| *49 of 54 elements used* <br/>remaining elements:<br/>`StructureDefinition.contact.extension`, `StructureDefinition.contact.id`, `StructureDefinition.contact.modifierExtension`, `StructureDefinition.contact.name`, `StructureDefinition.contact.telecom`| | *52 of 52 elements used* | | *56 of 56 elements used* | | *56 of 56 elements used* | | *58 of 58 elements used* 
 

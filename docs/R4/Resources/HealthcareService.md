@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### HealthcareService
 
@@ -137,5 +137,5 @@ All elements from this structure are listed while other structures only show con
 | `HealthcareService.notAvailable.during`| _Equivalent_<br/>(5521/5522)| `HealthcareService.notAvailable.during`| _Equivalent_<br/>(14840/14841)| **`HealthcareService.notAvailable.during`**| _Equivalent_<br/>(27903/27904)| `HealthcareService.notAvailable.during`| | | 
 | `HealthcareService.availabilityExceptions`| _Equivalent_<br/>(5523/5524)| `HealthcareService.availabilityExceptions`| _Equivalent_<br/>(14842/14843)| **`HealthcareService.availabilityExceptions`**| _Equivalent_<br/>(27905/27906)| `HealthcareService.availabilityExceptions`| | | 
 | | | `HealthcareService.endpoint`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14845)| **`HealthcareService.endpoint`**| _Equivalent_<br/>(27907/27908)| `HealthcareService.endpoint`| _Equivalent_<br/>(42845/42846)| `HealthcareService.endpoint`
-| *44 of 48 elements used* | | *45 of 45 elements used* | | *50 of 50 elements used* | | *50 of 50 elements used* | | *34 of 37 elements used* 
+| *44 of 48 elements used* <br/>remaining elements:<br/>`HealthcareService.publicKey`, `HealthcareService.serviceType.extension`, `HealthcareService.serviceType.id`, `HealthcareService.serviceType.modifierExtension`| | *45 of 45 elements used* | | *50 of 50 elements used* | | *50 of 50 elements used* | | *34 of 37 elements used* <br/>remaining elements:<br/>`HealthcareService.availability`, `HealthcareService.contact`, `HealthcareService.offeredIn`
 

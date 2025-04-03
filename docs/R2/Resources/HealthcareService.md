@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:09 PM
+Generated at Thursday, April 3, 2025 8:18:08 AM
 
 ### HealthcareService
 
@@ -133,5 +133,5 @@ All elements from this structure are listed while other structures only show con
 | **`HealthcareService.notAvailable.description`**| _Equivalent_<br/>(5519/5520)| `HealthcareService.notAvailable.description`| _Equivalent_<br/>(14838/14839)| `HealthcareService.notAvailable.description`| _Equivalent_<br/>(27901/27902)| `HealthcareService.notAvailable.description`| | | 
 | **`HealthcareService.notAvailable.during`**| _Equivalent_<br/>(5521/5522)| `HealthcareService.notAvailable.during`| _Equivalent_<br/>(14840/14841)| `HealthcareService.notAvailable.during`| _Equivalent_<br/>(27903/27904)| `HealthcareService.notAvailable.during`| | | 
 | **`HealthcareService.availabilityExceptions`**| _Equivalent_<br/>(5523/5524)| `HealthcareService.availabilityExceptions`| _Equivalent_<br/>(14842/14843)| `HealthcareService.availabilityExceptions`| _Equivalent_<br/>(27905/27906)| `HealthcareService.availabilityExceptions`| | | 
-| *48 of 48 elements used* | | *43 of 45 elements used* | | *44 of 50 elements used* | | *44 of 50 elements used* | | *28 of 37 elements used* 
+| *48 of 48 elements used* | | *43 of 45 elements used* <br/>remaining elements:<br/>`HealthcareService.active`, `HealthcareService.endpoint`| | *44 of 50 elements used* <br/>remaining elements:<br/>`HealthcareService.active`, `HealthcareService.communication`, `HealthcareService.eligibility.extension`, `HealthcareService.eligibility.id`, `HealthcareService.eligibility.modifierExtension`, `HealthcareService.endpoint`| | *44 of 50 elements used* <br/>remaining elements:<br/>`HealthcareService.active`, `HealthcareService.communication`, `HealthcareService.eligibility.extension`, `HealthcareService.eligibility.id`, `HealthcareService.eligibility.modifierExtension`, `HealthcareService.endpoint`| | *28 of 37 elements used* <br/>remaining elements:<br/>`HealthcareService.active`, `HealthcareService.availability`, `HealthcareService.communication`, `HealthcareService.contact`, `HealthcareService.eligibility.extension`, `HealthcareService.eligibility.id`, `HealthcareService.eligibility.modifierExtension`, `HealthcareService.endpoint`, `HealthcareService.offeredIn`
 

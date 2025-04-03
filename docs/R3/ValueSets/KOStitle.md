@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### KOStitle
 
@@ -59,5 +59,5 @@ All codes from this value set are listed while other value sets only show conten
 | `113034`| _Equivalent_ <br/>(12320/12321)| **`113034`**| | | | | | | 
 | `113035`| _Equivalent_ <br/>(12322/12323)| **`113035`**| | | | | | | 
 | `113036`| _Equivalent_ <br/>(12324/12325)| **`113036`**| | | | | | | 
-| *20 of 25 codes used* | | *20 of 20 codes used* | | | | | | 
+| *20 of 25 codes used* <br/>remaining codes:<br/>`113001`, `113010`, `113037`, `113038`, `113039`| | *20 of 20 codes used* | | | | | | 
 

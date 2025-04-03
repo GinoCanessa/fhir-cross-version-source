@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### ContentType
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/content-type`
 | **`xml`**| _Equivalent_ <br/>(1319/2778)| `xml`| | | | | | | 
 | **`json`**| _Equivalent_ <br/>(1320/2775)| `json`| | | | | | | 
-| *2 of 2 codes used* | | *2 of 4 codes used* | | | | | | 
+| *2 of 2 codes used* | | *2 of 4 codes used* <br/>remaining codes:<br/>`none`, `ttl`| | | | | | 
 

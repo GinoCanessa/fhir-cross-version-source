@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### ValueSet
 
@@ -286,5 +286,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`ValueSet.scope.modifierExtension`**
 | | | | | | | | | **`ValueSet.scope.inclusionCriteria`**
 | | | | | | | | | **`ValueSet.scope.exclusionCriteria`**
-| *74 of 103 elements used* | | *85 of 86 elements used* | | *85 of 85 elements used* | | *85 of 85 elements used* | | *124 of 124 elements used* 
+| *74 of 103 elements used* <br/>remaining elements:<br/>`ValueSet.codeSystem`, `ValueSet.codeSystem.caseSensitive`, `ValueSet.codeSystem.concept`, `ValueSet.codeSystem.concept.abstract`, `ValueSet.codeSystem.concept.code`, `ValueSet.codeSystem.concept.concept`, `ValueSet.codeSystem.concept.definition`, `ValueSet.codeSystem.concept.designation`, `ValueSet.codeSystem.concept.designation.extension`, `ValueSet.codeSystem.concept.designation.id`, `ValueSet.codeSystem.concept.designation.language`, `ValueSet.codeSystem.concept.designation.modifierExtension`, `ValueSet.codeSystem.concept.designation.use`, `ValueSet.codeSystem.concept.designation.value`, `ValueSet.codeSystem.concept.display`, `ValueSet.codeSystem.concept.extension`, `ValueSet.codeSystem.concept.id`, `ValueSet.codeSystem.concept.modifierExtension`, `ValueSet.codeSystem.extension`, `ValueSet.codeSystem.id`, `ValueSet.codeSystem.system`, `ValueSet.codeSystem.version`, `ValueSet.compose.import`, `ValueSet.contact.extension`, `ValueSet.contact.id`, `ValueSet.contact.modifierExtension`, `ValueSet.contact.name`, `ValueSet.contact.telecom`, `ValueSet.extensible`| | *85 of 86 elements used* <br/>remaining elements:<br/>`ValueSet.extensible`| | *85 of 85 elements used* | | *85 of 85 elements used* | | *124 of 124 elements used* 
 

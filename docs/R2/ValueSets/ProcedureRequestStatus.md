@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### ProcedureRequestStatus
 
@@ -52,5 +52,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`suspended`**| _Equivalent_ <br/>(991/2377)| `suspended`| _Equivalent_ <br/>(3051/5258)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(988)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2369) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`aborted`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(981)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2370) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
-| *10 of 10 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* 
+| *10 of 10 codes used* | | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`
 

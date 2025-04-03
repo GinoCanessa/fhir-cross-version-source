@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:23 PM
+Generated at Thursday, April 3, 2025 8:18:21 AM
 
 ### Subscription
 
@@ -82,5 +82,5 @@ All elements from this structure are listed while other structures only show con
 | `Subscription.channel.endpoint`| _Equivalent_<br/>(8013/8014)| `Subscription.channel.endpoint`| _Equivalent_<br/>(18888/18889)| **`Subscription.channel.endpoint`**| _Equivalent_<br/>(33769/33770)| `Subscription.channel.endpoint`| | | 
 | `Subscription.channel.payload`| →→→→ _Equivalent_ →→→→ <br/>(8015)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(8016)| `Subscription.channel.payload`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18890)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(18891)| **`Subscription.channel.payload`**| _Equivalent_<br/>(33771/33772)| `Subscription.channel.payload`| | | 
 | `Subscription.channel.header`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8017)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8018)| `Subscription.channel.header`| _Equivalent_<br/>(18892/18893)| **`Subscription.channel.header`**| _Equivalent_<br/>(33773/33774)| `Subscription.channel.header`| | | 
-| *23 of 24 elements used* | | *23 of 24 elements used* | | *23 of 23 elements used* | | *23 of 23 elements used* | | *13 of 39 elements used* 
+| *23 of 24 elements used* <br/>remaining elements:<br/>`Subscription.tag`| | *23 of 24 elements used* <br/>remaining elements:<br/>`Subscription.tag`| | *23 of 23 elements used* | | *23 of 23 elements used* | | *13 of 39 elements used* <br/>remaining elements:<br/>`Subscription.channelType`, `Subscription.content`, `Subscription.contentType`, `Subscription.endpoint`, `Subscription.filterBy`, `Subscription.filterBy.comparator`, `Subscription.filterBy.extension`, `Subscription.filterBy.filterParameter`, `Subscription.filterBy.id`, `Subscription.filterBy.modifier`, `Subscription.filterBy.modifierExtension`, `Subscription.filterBy.resourceType`, `Subscription.filterBy.value`, `Subscription.heartbeatPeriod`, `Subscription.identifier`, `Subscription.managingEntity`, `Subscription.maxCount`, `Subscription.name`, `Subscription.parameter`, `Subscription.parameter.extension`, `Subscription.parameter.id`, `Subscription.parameter.modifierExtension`, `Subscription.parameter.name`, `Subscription.parameter.value`, `Subscription.timeout`, `Subscription.topic`
 

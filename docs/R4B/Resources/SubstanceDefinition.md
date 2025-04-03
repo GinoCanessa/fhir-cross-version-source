@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:32 PM
+Generated at Thursday, April 3, 2025 8:18:30 AM
 
 ### SubstanceDefinition
 
@@ -264,5 +264,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`SubstanceDefinition.sourceMaterial.species`**| _Equivalent_<br/>(48375/48376)| `SubstanceDefinition.sourceMaterial.species`
 | | | | | | | **`SubstanceDefinition.sourceMaterial.part`**| _Equivalent_<br/>(48377/48378)| `SubstanceDefinition.sourceMaterial.part`
 | | | | | | | **`SubstanceDefinition.sourceMaterial.countryOfOrigin`**| _Equivalent_<br/>(48379/48380)| `SubstanceDefinition.sourceMaterial.countryOfOrigin`
-| | | | | | | *114 of 114 elements used* | | *114 of 126 elements used* 
+| | | | | | | *114 of 114 elements used* | | *114 of 126 elements used* <br/>remaining elements:<br/>`SubstanceDefinition.characterization`, `SubstanceDefinition.characterization.description`, `SubstanceDefinition.characterization.extension`, `SubstanceDefinition.characterization.file`, `SubstanceDefinition.characterization.form`, `SubstanceDefinition.characterization.id`, `SubstanceDefinition.characterization.modifierExtension`, `SubstanceDefinition.characterization.technique`, `SubstanceDefinition.nucleicAcid`, `SubstanceDefinition.polymer`, `SubstanceDefinition.protein`, `SubstanceDefinition.referenceInformation`
 

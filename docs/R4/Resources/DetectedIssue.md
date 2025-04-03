@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:22 PM
+Generated at Thursday, April 3, 2025 8:18:20 AM
 
 ### DetectedIssue
 
@@ -100,5 +100,5 @@ All elements from this structure are listed while other structures only show con
 | `DetectedIssue.mitigation.action`| _Equivalent_<br/>(4484/4485)| `DetectedIssue.mitigation.action`| _Equivalent_<br/>(12861/12862)| **`DetectedIssue.mitigation.action`**| _Equivalent_<br/>(25436/25437)| `DetectedIssue.mitigation.action`| _Equivalent_<br/>(40420/40421)| `DetectedIssue.mitigation.action`
 | `DetectedIssue.mitigation.date`| _Equivalent_<br/>(4486/4487)| `DetectedIssue.mitigation.date`| _Equivalent_<br/>(12863/12864)| **`DetectedIssue.mitigation.date`**| _Equivalent_<br/>(25438/25439)| `DetectedIssue.mitigation.date`| _Equivalent_<br/>(40422/40423)| `DetectedIssue.mitigation.date`
 | `DetectedIssue.mitigation.author`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4488)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4489)| `DetectedIssue.mitigation.author`| →→→→ _RelatedTo_ →→→→ <br/>(12865)<hr/>←←←← _RelatedTo_ ←←←← <br/>(12866)| **`DetectedIssue.mitigation.author`**| _Equivalent_<br/>(25440/25441)| `DetectedIssue.mitigation.author`| _Equivalent_<br/>(40424/40425)| `DetectedIssue.mitigation.author`
-| *25 of 25 elements used* | | *26 of 26 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 35 elements used* 
+| *25 of 25 elements used* | | *26 of 26 elements used* | | *32 of 32 elements used* | | *32 of 32 elements used* | | *32 of 35 elements used* <br/>remaining elements:<br/>`DetectedIssue.category`, `DetectedIssue.encounter`, `DetectedIssue.mitigation.note`
 

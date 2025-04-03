@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:35 PM
+Generated at Thursday, April 3, 2025 8:18:33 AM
 
 ### Distance
 
@@ -52,5 +52,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Distance.unit`| _Equivalent_<br/>(9347/9348)| `Distance.unit`| _Equivalent_<br/>(20715/20716)| `Distance.unit`| _Equivalent_<br/>(35837/35838)| **`Distance.unit`**
 | | | `Distance.system`| _Equivalent_<br/>(9349/9350)| `Distance.system`| _Equivalent_<br/>(20717/20718)| `Distance.system`| _Equivalent_<br/>(35839/35840)| **`Distance.system`**
 | | | `Distance.code`| _Equivalent_<br/>(9351/9352)| `Distance.code`| _Equivalent_<br/>(20719/20720)| `Distance.code`| _Equivalent_<br/>(35841/35842)| **`Distance.code`**
-| *0 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
+| *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* | | *8 of 8 elements used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### DeviceUseStatement
 
@@ -72,5 +72,5 @@ All elements from this structure are listed while other structures only show con
 | **`DeviceUseStatement.recordedOn`**| _Equivalent_<br/>(4677/4678)| `DeviceUseStatement.recordedOn`| _Equivalent_<br/>(13095/13096)| `DeviceUseStatement.recordedOn`| _Equivalent_<br/>(25904/25905)| `DeviceUseStatement.recordedOn`| | | 
 | **`DeviceUseStatement.subject`**| →→→→ _RelatedTo_ →→→→ <br/>(4679)<hr/>←←←← _RelatedTo_ ←←←← <br/>(4680)| `DeviceUseStatement.subject`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13092)| `DeviceUseStatement.subject`| _Equivalent_<br/>(25898/25899)| `DeviceUseStatement.subject`| | | 
 | **`DeviceUseStatement.timing[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4681)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4682)| `DeviceUseStatement.timing[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13093)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13094)| `DeviceUseStatement.timing[x]`| _Equivalent_<br/>(25902/25903)| `DeviceUseStatement.timing[x]`| | | 
-| *18 of 18 elements used* | | *18 of 20 elements used* | | *17 of 22 elements used* | | *17 of 22 elements used* | | *0 of 31 elements used* 
+| *18 of 18 elements used* | | *18 of 20 elements used* <br/>remaining elements:<br/>`DeviceUseStatement.source`, `DeviceUseStatement.status`| | *17 of 22 elements used* <br/>remaining elements:<br/>`DeviceUseStatement.basedOn`, `DeviceUseStatement.derivedFrom`, `DeviceUseStatement.reasonReference`, `DeviceUseStatement.source`, `DeviceUseStatement.status`| | *17 of 22 elements used* <br/>remaining elements:<br/>`DeviceUseStatement.basedOn`, `DeviceUseStatement.derivedFrom`, `DeviceUseStatement.reasonReference`, `DeviceUseStatement.source`, `DeviceUseStatement.status`| | *0 of 31 elements used* <br/>remaining elements:<br/>`DeviceUsage`, `DeviceUsage.adherence`, `DeviceUsage.adherence.code`, `DeviceUsage.adherence.extension`, `DeviceUsage.adherence.id`, `DeviceUsage.adherence.modifierExtension`, `DeviceUsage.adherence.reason`, `DeviceUsage.basedOn`, `DeviceUsage.bodySite`, `DeviceUsage.category`, `DeviceUsage.contained`, `DeviceUsage.context`, `DeviceUsage.dateAsserted`, `DeviceUsage.derivedFrom`, `DeviceUsage.device`, `DeviceUsage.extension`, `DeviceUsage.id`, `DeviceUsage.identifier`, `DeviceUsage.implicitRules`, `DeviceUsage.informationSource`, `DeviceUsage.language`, `DeviceUsage.meta`, `DeviceUsage.modifierExtension`, `DeviceUsage.note`, `DeviceUsage.patient`, `DeviceUsage.reason`, `DeviceUsage.status`, `DeviceUsage.text`, `DeviceUsage.timing[x]`, `DeviceUsage.usageReason`, `DeviceUsage.usageStatus`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:36 AM
 
 ### PaymentReconciliation
 
@@ -155,5 +155,5 @@ All elements from this structure are listed while other structures only show con
 | | | `PaymentReconciliation.processNote.modifierExtension`| _Equivalent_<br/>(16983/16984)| `PaymentReconciliation.processNote.modifierExtension`| _Equivalent_<br/>(31497/31498)| `PaymentReconciliation.processNote.modifierExtension`| _Equivalent_<br/>(46127/46128)| **`PaymentReconciliation.processNote.modifierExtension`**
 | `PaymentReconciliation.note.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(323)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(685)| `PaymentReconciliation.processNote.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(16985)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16986)| `PaymentReconciliation.processNote.type`| _Equivalent_<br/>(31499/31500)| `PaymentReconciliation.processNote.type`| _Equivalent_<br/>(46129/46130)| **`PaymentReconciliation.processNote.type`**
 | `PaymentReconciliation.note.text`| _Equivalent_<br/>(322/684)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(16987/16988)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(31501/31502)| `PaymentReconciliation.processNote.text`| _Equivalent_<br/>(46131/46132)| **`PaymentReconciliation.processNote.text`**
-| *29 of 39 elements used* | | *33 of 38 elements used* | | *37 of 42 elements used* | | *37 of 42 elements used* | | *59 of 59 elements used* 
+| *29 of 39 elements used* <br/>remaining elements:<br/>`PaymentReconciliation.detail`, `PaymentReconciliation.detail.extension`, `PaymentReconciliation.detail.id`, `PaymentReconciliation.detail.modifierExtension`, `PaymentReconciliation.detail.request`, `PaymentReconciliation.note.extension`, `PaymentReconciliation.note.id`, `PaymentReconciliation.note.modifierExtension`, `PaymentReconciliation.originalRuleset`, `PaymentReconciliation.ruleset`| | *33 of 38 elements used* <br/>remaining elements:<br/>`PaymentReconciliation.detail`, `PaymentReconciliation.detail.extension`, `PaymentReconciliation.detail.id`, `PaymentReconciliation.detail.modifierExtension`, `PaymentReconciliation.detail.request`| | *37 of 42 elements used* <br/>remaining elements:<br/>`PaymentReconciliation.detail`, `PaymentReconciliation.detail.extension`, `PaymentReconciliation.detail.id`, `PaymentReconciliation.detail.modifierExtension`, `PaymentReconciliation.detail.request`| | *37 of 42 elements used* <br/>remaining elements:<br/>`PaymentReconciliation.detail`, `PaymentReconciliation.detail.extension`, `PaymentReconciliation.detail.id`, `PaymentReconciliation.detail.modifierExtension`, `PaymentReconciliation.detail.request`| | *59 of 59 elements used* 
 

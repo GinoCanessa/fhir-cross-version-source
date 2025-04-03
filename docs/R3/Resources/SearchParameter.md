@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:15 PM
+Generated at Thursday, April 3, 2025 8:18:14 AM
 
 ### SearchParameter
 
@@ -112,5 +112,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`SearchParameter.component.modifierExtension`**| _Equivalent_<br/>(18340/18341)| `SearchParameter.component.modifierExtension`| _Equivalent_<br/>(32970/32971)| `SearchParameter.component.modifierExtension`| _Equivalent_<br/>(47289/47290)| `SearchParameter.component.modifierExtension`
 | | | **`SearchParameter.component.definition`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(18342)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18343)| `SearchParameter.component.definition`| _Equivalent_<br/>(32972/32973)| `SearchParameter.component.definition`| _Equivalent_<br/>(47291/47292)| `SearchParameter.component.definition`
 | | | **`SearchParameter.component.expression`**| _Equivalent_<br/>(18344/18345)| `SearchParameter.component.expression`| _Equivalent_<br/>(32974/32975)| `SearchParameter.component.expression`| _Equivalent_<br/>(47293/47294)| `SearchParameter.component.expression`
-| *24 of 29 elements used* | | *38 of 38 elements used* | | *38 of 40 elements used* | | *38 of 40 elements used* | | *37 of 45 elements used* 
+| *24 of 29 elements used* <br/>remaining elements:<br/>`SearchParameter.contact.extension`, `SearchParameter.contact.id`, `SearchParameter.contact.modifierExtension`, `SearchParameter.contact.name`, `SearchParameter.contact.telecom`| | *38 of 38 elements used* | | *38 of 40 elements used* <br/>remaining elements:<br/>`SearchParameter.multipleAnd`, `SearchParameter.multipleOr`| | *38 of 40 elements used* <br/>remaining elements:<br/>`SearchParameter.multipleAnd`, `SearchParameter.multipleOr`| | *37 of 45 elements used* <br/>remaining elements:<br/>`SearchParameter.constraint`, `SearchParameter.copyright`, `SearchParameter.copyrightLabel`, `SearchParameter.identifier`, `SearchParameter.multipleAnd`, `SearchParameter.multipleOr`, `SearchParameter.title`, `SearchParameter.versionAlgorithm[x]`
 

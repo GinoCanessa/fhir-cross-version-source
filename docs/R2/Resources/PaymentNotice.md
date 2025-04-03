@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### PaymentNotice
 
@@ -74,5 +74,5 @@ All elements from this structure are listed while other structures only show con
 | **`PaymentNotice.request`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7068)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7069)| `PaymentNotice.request`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16909)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16910)| `PaymentNotice.request`| _Equivalent_<br/>(31394/31395)| `PaymentNotice.request`| _Equivalent_<br/>(46058/46059)| `PaymentNotice.request`
 | **`PaymentNotice.response`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7070)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7071)| `PaymentNotice.response`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16911)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16912)| `PaymentNotice.response`| _Equivalent_<br/>(31396/31397)| `PaymentNotice.response`| _Equivalent_<br/>(46060/46061)| `PaymentNotice.response`
 | **`PaymentNotice.paymentStatus`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7072)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7073)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(16917/16918)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(31412/31413)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(46074/46075)| `PaymentNotice.paymentStatus`
-| *19 of 19 elements used* | | *17 of 19 elements used* | | *16 of 21 elements used* | | *16 of 21 elements used* | | *16 of 21 elements used* 
+| *19 of 19 elements used* | | *17 of 19 elements used* <br/>remaining elements:<br/>`PaymentNotice.status`, `PaymentNotice.statusDate`| | *16 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`, `PaymentNotice.paymentDate`, `PaymentNotice.status`| | *16 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`, `PaymentNotice.paymentDate`, `PaymentNotice.status`| | *16 of 21 elements used* <br/>remaining elements:<br/>`PaymentNotice.amount`, `PaymentNotice.payee`, `PaymentNotice.payment`, `PaymentNotice.paymentDate`, `PaymentNotice.status`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### BiologicallyDerivedProduct
 
@@ -126,5 +126,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`BiologicallyDerivedProduct.storage.temperature`**| _Equivalent_<br/>(22102/22103)| `BiologicallyDerivedProduct.storage.temperature`| | | 
 | | | | | **`BiologicallyDerivedProduct.storage.scale`**| _Equivalent_<br/>(22104/22105)| `BiologicallyDerivedProduct.storage.scale`| | | 
 | | | | | **`BiologicallyDerivedProduct.storage.duration`**| _Equivalent_<br/>(22106/22107)| `BiologicallyDerivedProduct.storage.duration`| | | 
-| | | | | *45 of 45 elements used* | | *45 of 45 elements used* | | *21 of 33 elements used* 
+| | | | | *45 of 45 elements used* | | *45 of 45 elements used* | | *21 of 33 elements used* <br/>remaining elements:<br/>`BiologicallyDerivedProduct.biologicalSourceEvent`, `BiologicallyDerivedProduct.division`, `BiologicallyDerivedProduct.expirationDate`, `BiologicallyDerivedProduct.processingFacility`, `BiologicallyDerivedProduct.productStatus`, `BiologicallyDerivedProduct.property`, `BiologicallyDerivedProduct.property.extension`, `BiologicallyDerivedProduct.property.id`, `BiologicallyDerivedProduct.property.modifierExtension`, `BiologicallyDerivedProduct.property.type`, `BiologicallyDerivedProduct.property.value[x]`, `BiologicallyDerivedProduct.storageTempRequirements`
 

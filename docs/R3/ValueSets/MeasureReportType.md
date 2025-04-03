@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### MeasureReportType
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`individual`**| _Equivalent_ <br/>(3990/6315)| `individual`| _Equivalent_ <br/>(16478/16479)| `individual`| _Equivalent_ <br/>(8991/11300)| `individual`
 | | | **`patient-list`**| _Equivalent_ <br/>(3991/6317)| `subject-list`| _Equivalent_ <br/>(16480/16481)| `subject-list`| _Equivalent_ <br/>(8993/11301)| `subject-list`
 | | | **`summary`**| _Equivalent_ <br/>(3992/6314)| `summary`| _Equivalent_ <br/>(16482/16483)| `summary`| _Equivalent_ <br/>(8990/11302)| `summary`
-| | | *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| | | *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`data-collection`| | *3 of 4 codes used* <br/>remaining codes:<br/>`data-collection`| | *3 of 4 codes used* <br/>remaining codes:<br/>`data-exchange`
 

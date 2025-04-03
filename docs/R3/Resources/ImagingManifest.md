@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### ImagingManifest
 
@@ -101,5 +101,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ImagingManifest.study.series.instance.modifierExtension`**| | | | | | | 
 | | | **`ImagingManifest.study.series.instance.sopClass`**| | | | | | | 
 | | | **`ImagingManifest.study.series.instance.uid`**| | | | | | | 
-| *0 of 41 elements used* | | *33 of 33 elements used* | | | | | | 
+| *0 of 41 elements used* <br/>remaining elements:<br/>`ImagingObjectSelection`, `ImagingObjectSelection.author`, `ImagingObjectSelection.authoringTime`, `ImagingObjectSelection.contained`, `ImagingObjectSelection.description`, `ImagingObjectSelection.extension`, `ImagingObjectSelection.id`, `ImagingObjectSelection.implicitRules`, `ImagingObjectSelection.language`, `ImagingObjectSelection.meta`, `ImagingObjectSelection.modifierExtension`, `ImagingObjectSelection.patient`, `ImagingObjectSelection.study`, `ImagingObjectSelection.study.extension`, `ImagingObjectSelection.study.id`, `ImagingObjectSelection.study.imagingStudy`, `ImagingObjectSelection.study.modifierExtension`, `ImagingObjectSelection.study.series`, `ImagingObjectSelection.study.series.extension`, `ImagingObjectSelection.study.series.id`, `ImagingObjectSelection.study.series.instance`, `ImagingObjectSelection.study.series.instance.extension`, `ImagingObjectSelection.study.series.instance.frames`, `ImagingObjectSelection.study.series.instance.frames.extension`, `ImagingObjectSelection.study.series.instance.frames.frameNumbers`, `ImagingObjectSelection.study.series.instance.frames.id`, `ImagingObjectSelection.study.series.instance.frames.modifierExtension`, `ImagingObjectSelection.study.series.instance.frames.url`, `ImagingObjectSelection.study.series.instance.id`, `ImagingObjectSelection.study.series.instance.modifierExtension`, `ImagingObjectSelection.study.series.instance.sopClass`, `ImagingObjectSelection.study.series.instance.uid`, `ImagingObjectSelection.study.series.instance.url`, `ImagingObjectSelection.study.series.modifierExtension`, `ImagingObjectSelection.study.series.uid`, `ImagingObjectSelection.study.series.url`, `ImagingObjectSelection.study.uid`, `ImagingObjectSelection.study.url`, `ImagingObjectSelection.text`, `ImagingObjectSelection.title`, `ImagingObjectSelection.uid`| | *33 of 33 elements used* | | | | | | 
 

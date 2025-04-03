@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:39 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### Observation
 
@@ -157,5 +157,5 @@ All elements from this structure are listed while other structures only show con
 | `Observation.component.dataAbsentReason`| _Equivalent_<br/>(6710/6711)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(16550/16551)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(30885/30886)| `Observation.component.dataAbsentReason`| _Equivalent_<br/>(45542/45543)| **`Observation.component.dataAbsentReason`**
 | | | `Observation.component.interpretation`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16552)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16553)| `Observation.component.interpretation`| _Equivalent_<br/>(30887/30888)| `Observation.component.interpretation`| _Equivalent_<br/>(45544/45545)| **`Observation.component.interpretation`**
 | `Observation.component.referenceRange`| _Equivalent_<br/>(6712/6713)| `Observation.component.referenceRange`| _Equivalent_<br/>(16554/16555)| `Observation.component.referenceRange`| _Equivalent_<br/>(30889/30890)| `Observation.component.referenceRange`| _Equivalent_<br/>(45546/45547)| **`Observation.component.referenceRange`**
-| *45 of 49 elements used* | | *48 of 52 elements used* | | *50 of 50 elements used* | | *50 of 50 elements used* | | *60 of 60 elements used* 
+| *45 of 49 elements used* <br/>remaining elements:<br/>`Observation.related.extension`, `Observation.related.id`, `Observation.related.modifierExtension`, `Observation.related.type`| | *48 of 52 elements used* <br/>remaining elements:<br/>`Observation.related.extension`, `Observation.related.id`, `Observation.related.modifierExtension`, `Observation.related.type`| | *50 of 50 elements used* | | *50 of 50 elements used* | | *60 of 60 elements used* 
 

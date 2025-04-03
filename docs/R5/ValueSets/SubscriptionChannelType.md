@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:35 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### SubscriptionChannelType
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | `websocket`| _Equivalent_ <br/>(1096/2516)| `websocket`| _Equivalent_ <br/>(4586/6898)| `websocket`| _Equivalent_ <br/>(18238/18239)| `websocket`| _Equivalent_ <br/>(18842/18843)| **`websocket`**
 | `email`| _Equivalent_ <br/>(1099/2519)| `email`| _Equivalent_ <br/>(4589/6901)| `email`| _Equivalent_ <br/>(18240/18241)| `email`| _Equivalent_ <br/>(18844/18845)| **`email`**
 | `message`| _Equivalent_ <br/>(1098/2518)| `message`| _Equivalent_ <br/>(4588/6900)| `message`| _Equivalent_ <br/>(18244/18245)| `message`| _Equivalent_ <br/>(18847/18848)| **`message`**
-| *4 of 5 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* | | *4 of 4 codes used* 
+| *4 of 5 codes used* <br/>remaining codes:<br/>`sms`| | *4 of 5 codes used* <br/>remaining codes:<br/>`sms`| | *4 of 5 codes used* <br/>remaining codes:<br/>`sms`| | *4 of 5 codes used* <br/>remaining codes:<br/>`sms`| | *4 of 4 codes used* 
 

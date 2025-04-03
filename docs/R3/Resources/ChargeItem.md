@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:15 PM
+Generated at Thursday, April 3, 2025 8:18:14 AM
 
 ### ChargeItem
 
@@ -111,5 +111,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ChargeItem.account`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11176)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11177)| `ChargeItem.account`| _Equivalent_<br/>(22843/22844)| `ChargeItem.account`| _Equivalent_<br/>(37759/37760)| `ChargeItem.account`
 | | | **`ChargeItem.note`**| _Equivalent_<br/>(11178/11179)| `ChargeItem.note`| _Equivalent_<br/>(22845/22846)| `ChargeItem.note`| _Equivalent_<br/>(37761/37762)| `ChargeItem.note`
 | | | **`ChargeItem.supportingInformation`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11180)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11181)| `ChargeItem.supportingInformation`| _Equivalent_<br/>(22847/22848)| `ChargeItem.supportingInformation`| _Equivalent_<br/>(37763/37764)| `ChargeItem.supportingInformation`
-| | | *37 of 37 elements used* | | *34 of 40 elements used* | | *34 of 40 elements used* | | *33 of 40 elements used* 
+| | | *37 of 37 elements used* | | *34 of 40 elements used* <br/>remaining elements:<br/>`ChargeItem.costCenter`, `ChargeItem.definitionCanonical`, `ChargeItem.performer.extension`, `ChargeItem.performer.id`, `ChargeItem.performer.modifierExtension`, `ChargeItem.product[x]`| | *34 of 40 elements used* <br/>remaining elements:<br/>`ChargeItem.costCenter`, `ChargeItem.definitionCanonical`, `ChargeItem.performer.extension`, `ChargeItem.performer.id`, `ChargeItem.performer.modifierExtension`, `ChargeItem.product[x]`| | *33 of 40 elements used* <br/>remaining elements:<br/>`ChargeItem.costCenter`, `ChargeItem.definitionCanonical`, `ChargeItem.performer.extension`, `ChargeItem.performer.id`, `ChargeItem.performer.modifierExtension`, `ChargeItem.product`, `ChargeItem.unitPriceComponent`
 

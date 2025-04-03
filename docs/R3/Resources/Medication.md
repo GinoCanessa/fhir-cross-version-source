@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### Medication
 
@@ -118,5 +118,5 @@ All elements from this structure are listed while other structures only show con
 | `Medication.product.batch.lotNumber`| _Equivalent_<br/>(267/650)| **`Medication.package.batch.lotNumber`**| | | | | | | 
 | `Medication.product.batch.expirationDate`| _Equivalent_<br/>(266/649)| **`Medication.package.batch.expirationDate`**| | | | | | | 
 | | | **`Medication.image`**| | | | | | | 
-| *30 of 40 elements used* | | *40 of 40 elements used* | | *20 of 28 elements used* | | *20 of 28 elements used* | | *20 of 29 elements used* 
+| *30 of 40 elements used* <br/>remaining elements:<br/>`Medication.product.batch.extension`, `Medication.product.batch.id`, `Medication.product.batch.modifierExtension`, `Medication.product.extension`, `Medication.product.id`, `Medication.product.ingredient.extension`, `Medication.product.ingredient.id`, `Medication.product.ingredient.item`, `Medication.product.ingredient.modifierExtension`, `Medication.product.modifierExtension`| | *40 of 40 elements used* | | *20 of 28 elements used* <br/>remaining elements:<br/>`Medication.amount`, `Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.identifier`| | *20 of 28 elements used* <br/>remaining elements:<br/>`Medication.amount`, `Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.identifier`| | *20 of 29 elements used* <br/>remaining elements:<br/>`Medication.batch`, `Medication.batch.expirationDate`, `Medication.batch.extension`, `Medication.batch.id`, `Medication.batch.lotNumber`, `Medication.batch.modifierExtension`, `Medication.definition`, `Medication.identifier`, `Medication.totalVolume`
 

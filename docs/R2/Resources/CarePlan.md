@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### CarePlan
 
@@ -159,5 +159,5 @@ All elements from this structure are listed while other structures only show con
 | **`CarePlan.activity.detail.quantity`**| _Equivalent_<br/>(3370/3371)| `CarePlan.activity.detail.quantity`| _Equivalent_<br/>(11059/11060)| `CarePlan.activity.detail.quantity`| _Equivalent_<br/>(22644/22645)| `CarePlan.activity.detail.quantity`| | | 
 | **`CarePlan.activity.detail.description`**| _Equivalent_<br/>(3372/3373)| `CarePlan.activity.detail.description`| _Equivalent_<br/>(11061/11062)| `CarePlan.activity.detail.description`| _Equivalent_<br/>(22646/22647)| `CarePlan.activity.detail.description`| | | 
 | **`CarePlan.note`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3374)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3375)| `CarePlan.note`| _Equivalent_<br/>(11063/11064)| `CarePlan.note`| _Equivalent_<br/>(22648/22649)| `CarePlan.note`| _Equivalent_<br/>(37638/37639)| `CarePlan.note`
-| *60 of 60 elements used* | | *49 of 56 elements used* | | *48 of 60 elements used* | | *48 of 60 elements used* | | *29 of 38 elements used* 
+| *60 of 60 elements used* | | *49 of 56 elements used* <br/>remaining elements:<br/>`CarePlan.activity.detail.definition`, `CarePlan.activity.outcomeCodeableConcept`, `CarePlan.basedOn`, `CarePlan.definition`, `CarePlan.intent`, `CarePlan.partOf`, `CarePlan.replaces`, `CarePlan.title`| | *48 of 60 elements used* <br/>remaining elements:<br/>`CarePlan.activity.detail.instantiatesCanonical`, `CarePlan.activity.detail.instantiatesUri`, `CarePlan.activity.outcomeCodeableConcept`, `CarePlan.basedOn`, `CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesCanonical`, `CarePlan.instantiatesUri`, `CarePlan.intent`, `CarePlan.partOf`, `CarePlan.replaces`, `CarePlan.title`| | *48 of 60 elements used* <br/>remaining elements:<br/>`CarePlan.activity.detail.instantiatesCanonical`, `CarePlan.activity.detail.instantiatesUri`, `CarePlan.activity.outcomeCodeableConcept`, `CarePlan.basedOn`, `CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesCanonical`, `CarePlan.instantiatesUri`, `CarePlan.intent`, `CarePlan.partOf`, `CarePlan.replaces`, `CarePlan.title`| | *29 of 38 elements used* <br/>remaining elements:<br/>`CarePlan.basedOn`, `CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesCanonical`, `CarePlan.instantiatesUri`, `CarePlan.intent`, `CarePlan.partOf`, `CarePlan.replaces`, `CarePlan.title`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### RegulatedAuthorization
 
@@ -98,5 +98,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`RegulatedAuthorization.case.status`**| _Equivalent_<br/>(46891/46892)| `RegulatedAuthorization.case.status`
 | | | | | | | **`RegulatedAuthorization.case.date[x]`**| _Equivalent_<br/>(46893/46894)| `RegulatedAuthorization.case.date[x]`
 | | | | | | | **`RegulatedAuthorization.case.application`**| _Equivalent_<br/>(46895/46896)| `RegulatedAuthorization.case.application`
-| | | | | | | *31 of 31 elements used* | | *31 of 32 elements used* 
+| | | | | | | *31 of 31 elements used* | | *31 of 32 elements used* <br/>remaining elements:<br/>`RegulatedAuthorization.attachedDocument`
 

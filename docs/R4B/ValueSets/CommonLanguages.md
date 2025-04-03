@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### CommonLanguages
 
@@ -99,5 +99,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | **`zh-HK`**| _Equivalent_ <br/>(19005/19004)| `zh-HK`
 | | | | | | | **`zh-SG`**| _Equivalent_ <br/>(19007/19006)| `zh-SG`
 | | | | | | | **`zh-TW`**| _Equivalent_ <br/>(19009/19008)| `zh-TW`
-| | | | | | | *56 of 56 codes used* | | *56 of 82 codes used* 
+| | | | | | | *56 of 56 codes used* | | *56 of 82 codes used* <br/>remaining codes:<br/>`bg`, `bg-BG`, `bs`, `bs-BA`, `cs-CZ`, `da-DK`, `el-GR`, `et`, `et-EE`, `fi-FI`, `fr-CA`, `hr-HR`, `is`, `is-IS`, `lt`, `lt-LT`, `lv`, `lv-LV`, `pl-PL`, `pt-PT`, `ro`, `ro-RO`, `sk`, `sk-SK`, `sl`, `sl-SI`
 

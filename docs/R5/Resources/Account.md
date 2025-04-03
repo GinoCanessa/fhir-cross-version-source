@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### Account
 
@@ -170,5 +170,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Account.balance.estimate`**
 | | | | | | | | | **`Account.balance.amount`**
 | | | | | | | | | **`Account.calculatedAt`**
-| *17 of 20 elements used* | | *30 of 32 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* | | *67 of 67 elements used* 
+| *17 of 20 elements used* <br/>remaining elements:<br/>`Account.balance`, `Account.coveragePeriod`, `Account.currency`| | *30 of 32 elements used* <br/>remaining elements:<br/>`Account.active`, `Account.balance`| | *31 of 31 elements used* | | *31 of 31 elements used* | | *67 of 67 elements used* 
 

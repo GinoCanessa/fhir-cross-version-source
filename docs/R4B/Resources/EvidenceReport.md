@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:29 PM
+Generated at Thursday, April 3, 2025 8:18:27 AM
 
 ### EvidenceReport
 
@@ -154,5 +154,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`EvidenceReport.section.entryQuantity`**| _Equivalent_<br/>(41647/41648)| `EvidenceReport.section.entryQuantity`
 | | | | | | | **`EvidenceReport.section.emptyReason`**| _Equivalent_<br/>(41649/41650)| `EvidenceReport.section.emptyReason`
 | | | | | | | **`EvidenceReport.section.section`**| _Equivalent_<br/>(41651/41652)| `EvidenceReport.section.section`
-| | | | | | | *59 of 59 elements used* | | *59 of 66 elements used* 
+| | | | | | | *59 of 59 elements used* | | *59 of 66 elements used* <br/>remaining elements:<br/>`EvidenceReport.relatesTo.target.display`, `EvidenceReport.relatesTo.target.extension`, `EvidenceReport.relatesTo.target.id`, `EvidenceReport.relatesTo.target.identifier`, `EvidenceReport.relatesTo.target.modifierExtension`, `EvidenceReport.relatesTo.target.resource`, `EvidenceReport.relatesTo.target.url`
 

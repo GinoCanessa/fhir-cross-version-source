@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### AllergyIntoleranceCertainty
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`unlikely`**| _Equivalent_ <br/>(12329/12330)| `unlikely`| | | | | | | 
 | **`likely`**| _Equivalent_ <br/>(12331/12332)| `likely`| | | | | | | 
 | **`confirmed`**| _Equivalent_ <br/>(12333/12334)| `confirmed`| | | | | | | 
-| *3 of 3 codes used* | | *3 of 4 codes used* | | | | | | 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`unknown`| | | | | | 
 

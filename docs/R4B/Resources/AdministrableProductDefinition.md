@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### AdministrableProductDefinition
 
@@ -128,5 +128,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.tissue`**| _Equivalent_<br/>(36707/36708)| `AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.tissue`
 | | | | | | | **`AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.value`**| _Equivalent_<br/>(36709/36710)| `AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.value`
 | | | | | | | **`AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation`**| _Equivalent_<br/>(36711/36712)| `AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation`
-| | | | | | | *46 of 46 elements used* | | *46 of 47 elements used* 
+| | | | | | | *46 of 46 elements used* | | *46 of 47 elements used* <br/>remaining elements:<br/>`AdministrableProductDefinition.description`
 

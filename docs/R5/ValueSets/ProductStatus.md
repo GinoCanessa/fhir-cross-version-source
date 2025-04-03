@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### ProductStatus
 
@@ -42,5 +42,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/product-status`
 | | | | | | | | | **`active`**
 | | | | | | | | | **`entered-in-error`**
-| | | | | *0 of 2 codes used* | | *0 of 2 codes used* | | *2 of 2 codes used* 
+| | | | | *0 of 2 codes used* <br/>remaining codes:<br/>`available`, `unavailable`| | *0 of 2 codes used* <br/>remaining codes:<br/>`available`, `unavailable`| | *2 of 2 codes used* 
 

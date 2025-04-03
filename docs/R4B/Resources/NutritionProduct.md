@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### NutritionProduct
 
@@ -120,5 +120,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`NutritionProduct.instance.expiry`**| _Equivalent_<br/>(45442/45443)| `NutritionProduct.instance.expiry`
 | | | | | | | **`NutritionProduct.instance.useBy`**| _Equivalent_<br/>(45444/45445)| `NutritionProduct.instance.useBy`
 | | | | | | | **`NutritionProduct.note`**| _Equivalent_<br/>(45446/45447)| `NutritionProduct.note`
-| | | | | | | *42 of 42 elements used* | | *36 of 44 elements used* 
+| | | | | | | *42 of 42 elements used* | | *36 of 44 elements used* <br/>remaining elements:<br/>`NutritionProduct.characteristic`, `NutritionProduct.characteristic.extension`, `NutritionProduct.characteristic.id`, `NutritionProduct.characteristic.modifierExtension`, `NutritionProduct.characteristic.type`, `NutritionProduct.characteristic.value[x]`, `NutritionProduct.instance.biologicalSourceEvent`, `NutritionProduct.instance.name`
 

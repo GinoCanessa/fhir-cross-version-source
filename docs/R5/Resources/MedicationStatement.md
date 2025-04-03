@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:41 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### MedicationStatement
 
@@ -101,5 +101,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`MedicationStatement.adherence.modifierExtension`**
 | | | | | | | | | **`MedicationStatement.adherence.code`**
 | | | | | | | | | **`MedicationStatement.adherence.reason`**
-| *21 of 34 elements used* | | *25 of 27 elements used* | | *24 of 26 elements used* | | *24 of 26 elements used* | | *31 of 31 elements used* 
+| *21 of 34 elements used* <br/>remaining elements:<br/>`MedicationStatement.dosage.asNeeded[x]`, `MedicationStatement.dosage.extension`, `MedicationStatement.dosage.id`, `MedicationStatement.dosage.maxDosePerPeriod`, `MedicationStatement.dosage.method`, `MedicationStatement.dosage.modifierExtension`, `MedicationStatement.dosage.quantity[x]`, `MedicationStatement.dosage.rate[x]`, `MedicationStatement.dosage.route`, `MedicationStatement.dosage.site[x]`, `MedicationStatement.dosage.text`, `MedicationStatement.dosage.timing`, `MedicationStatement.wasNotTaken`| | *25 of 27 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.taken`| | *24 of 26 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.statusReason`| | *24 of 26 elements used* <br/>remaining elements:<br/>`MedicationStatement.basedOn`, `MedicationStatement.statusReason`| | *31 of 31 elements used* 
 

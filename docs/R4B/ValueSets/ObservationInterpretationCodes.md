@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### ObservationInterpretationCodes
 
@@ -89,5 +89,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | **`ObservationInterpretationDetection`**| | | 
 | | | | | | | **`ObservationInterpretationExpectation`**| | | 
 | | | | | | | **`ReactivityObservationInterpretation`**| | | 
-| | | | | | | *47 of 47 codes used* | | *39 of 57 codes used* 
+| | | | | | | *47 of 47 codes used* | | *39 of 57 codes used* <br/>remaining codes:<br/>`AC`, `Carrier`, `H>`, `HM`, `L<`, `MS`, `OBX`, `ObservationInterpretationDetection`, `ObservationInterpretationExpectation`, `QCF`, `ReactivityObservationInterpretation`, `TOX`, `VS`, `_GeneticObservationInterpretation`, `_ObservationInterpretationChange`, `_ObservationInterpretationExceptions`, `_ObservationInterpretationNormality`, `_ObservationInterpretationSusceptibility`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### DeviceUseRequestStatus
 
@@ -51,5 +51,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`suspended`**| _Equivalent_ <br/>(479/1823)| `suspended`| _Equivalent_ <br/>(3051/5258)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | **`rejected`**| →→→→ _Equivalent_ →→→→ <br/>(477)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1817) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`aborted`**| →→→→ _Equivalent_ →→→→ <br/>(470)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1816) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
-| *10 of 10 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* | | *5 of 7 codes used* 
+| *10 of 10 codes used* | | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`| | *5 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `unknown`
 

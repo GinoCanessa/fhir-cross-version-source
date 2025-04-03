@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:30 AM
 
 ### ClinicalImpression
 
@@ -116,5 +116,5 @@ All elements from this structure are listed while other structures only show con
 | | | `ClinicalImpression.prognosisReference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11787)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11788)| `ClinicalImpression.prognosisReference`| _Equivalent_<br/>(23657/23658)| **`ClinicalImpression.prognosisReference`**| _Equivalent_<br/>(38857/38858)| `ClinicalImpression.prognosisReference`
 | | | | | `ClinicalImpression.supportingInfo`| _Equivalent_<br/>(23659/23660)| **`ClinicalImpression.supportingInfo`**| _Equivalent_<br/>(38859/38860)| `ClinicalImpression.supportingInfo`
 | | | `ClinicalImpression.note`| _Equivalent_<br/>(11789/11790)| `ClinicalImpression.note`| _Equivalent_<br/>(23661/23662)| **`ClinicalImpression.note`**| _Equivalent_<br/>(38861/38862)| `ClinicalImpression.note`
-| *27 of 41 elements used* | | *37 of 38 elements used* | | *40 of 40 elements used* | | *40 of 40 elements used* | | *32 of 33 elements used* 
+| *27 of 41 elements used* <br/>remaining elements:<br/>`ClinicalImpression.action`, `ClinicalImpression.investigations.extension`, `ClinicalImpression.investigations.id`, `ClinicalImpression.investigations.modifierExtension`, `ClinicalImpression.plan`, `ClinicalImpression.prognosis`, `ClinicalImpression.resolved`, `ClinicalImpression.ruledOut`, `ClinicalImpression.ruledOut.extension`, `ClinicalImpression.ruledOut.id`, `ClinicalImpression.ruledOut.item`, `ClinicalImpression.ruledOut.modifierExtension`, `ClinicalImpression.ruledOut.reason`, `ClinicalImpression.trigger[x]`| | *37 of 38 elements used* <br/>remaining elements:<br/>`ClinicalImpression.action`| | *40 of 40 elements used* | | *40 of 40 elements used* | | *32 of 33 elements used* <br/>remaining elements:<br/>`ClinicalImpression.changePattern`
 

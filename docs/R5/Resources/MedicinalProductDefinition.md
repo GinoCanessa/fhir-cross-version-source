@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### MedicinalProductDefinition
 
@@ -192,5 +192,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | `MedicinalProductDefinition.characteristic.modifierExtension`| _Equivalent_<br/>(44887/44888)| **`MedicinalProductDefinition.characteristic.modifierExtension`**
 | | | | | | | `MedicinalProductDefinition.characteristic.type`| _Equivalent_<br/>(44889/44890)| **`MedicinalProductDefinition.characteristic.type`**
 | | | | | | | `MedicinalProductDefinition.characteristic.value[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(44891)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(44892)| **`MedicinalProductDefinition.characteristic.value[x]`**
-| | | | | | | *69 of 77 elements used* | | *78 of 78 elements used* 
+| | | | | | | *69 of 77 elements used* <br/>remaining elements:<br/>`MedicinalProductDefinition.name.countryLanguage`, `MedicinalProductDefinition.name.countryLanguage.extension`, `MedicinalProductDefinition.name.countryLanguage.id`, `MedicinalProductDefinition.name.countryLanguage.modifierExtension`, `MedicinalProductDefinition.name.namePart`, `MedicinalProductDefinition.name.namePart.extension`, `MedicinalProductDefinition.name.namePart.id`, `MedicinalProductDefinition.name.namePart.modifierExtension`| | *78 of 78 elements used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:15 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### ImagingStudy
 
@@ -139,5 +139,5 @@ All elements from this structure are listed while other structures only show con
 | `ImagingStudy.series.instance.number`| _Equivalent_<br/>(5642/5643)| **`ImagingStudy.series.instance.number`**| _Equivalent_<br/>(14965/14966)| `ImagingStudy.series.instance.number`| _Equivalent_<br/>(28027/28028)| `ImagingStudy.series.instance.number`| _Equivalent_<br/>(42946/42947)| `ImagingStudy.series.instance.number`
 | `ImagingStudy.series.instance.sopClass`| _Equivalent_<br/>(5646/5647)| **`ImagingStudy.series.instance.sopClass`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(14967)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(14968)| `ImagingStudy.series.instance.sopClass`| _Equivalent_<br/>(28025/28026)| `ImagingStudy.series.instance.sopClass`| _Equivalent_<br/>(42944/42945)| `ImagingStudy.series.instance.sopClass`
 | `ImagingStudy.series.instance.title`| _Equivalent_<br/>(5648/5649)| **`ImagingStudy.series.instance.title`**| _Equivalent_<br/>(14969/14970)| `ImagingStudy.series.instance.title`| _Equivalent_<br/>(28029/28030)| `ImagingStudy.series.instance.title`| _Equivalent_<br/>(42948/42949)| `ImagingStudy.series.instance.title`
-| *46 of 48 elements used* | | *50 of 50 elements used* | | *48 of 56 elements used* | | *47 of 56 elements used* | | *45 of 54 elements used* 
+| *46 of 48 elements used* <br/>remaining elements:<br/>`ImagingStudy.series.instance.content`, `ImagingStudy.series.instance.type`| | *50 of 50 elements used* | | *48 of 56 elements used* <br/>remaining elements:<br/>`ImagingStudy.location`, `ImagingStudy.note`, `ImagingStudy.reasonReference`, `ImagingStudy.series.performer.actor`, `ImagingStudy.series.performer.extension`, `ImagingStudy.series.performer.function`, `ImagingStudy.series.performer.id`, `ImagingStudy.series.performer.modifierExtension`, `ImagingStudy.series.specimen`| | *47 of 56 elements used* <br/>remaining elements:<br/>`ImagingStudy.location`, `ImagingStudy.note`, `ImagingStudy.reasonReference`, `ImagingStudy.series.performer.actor`, `ImagingStudy.series.performer.extension`, `ImagingStudy.series.performer.function`, `ImagingStudy.series.performer.id`, `ImagingStudy.series.performer.modifierExtension`, `ImagingStudy.series.specimen`| | *45 of 54 elements used* <br/>remaining elements:<br/>`ImagingStudy.location`, `ImagingStudy.note`, `ImagingStudy.partOf`, `ImagingStudy.series.performer.actor`, `ImagingStudy.series.performer.extension`, `ImagingStudy.series.performer.function`, `ImagingStudy.series.performer.id`, `ImagingStudy.series.performer.modifierExtension`, `ImagingStudy.series.specimen`
 

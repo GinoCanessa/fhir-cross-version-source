@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:21 PM
+Generated at Thursday, April 3, 2025 8:18:19 AM
 
 ### DeviceRequest
 
@@ -114,5 +114,5 @@ All elements from this structure are listed while other structures only show con
 | | | `DeviceRequest.supportingInfo`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13061)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13062)| **`DeviceRequest.supportingInfo`**| _Equivalent_<br/>(25865/25866)| `DeviceRequest.supportingInfo`| _Equivalent_<br/>(40744/40745)| `DeviceRequest.supportingInfo`
 | `DeviceUseRequest.notes`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(184)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(597)| `DeviceRequest.note`| _Equivalent_<br/>(13063/13064)| **`DeviceRequest.note`**| _Equivalent_<br/>(25867/25868)| `DeviceRequest.note`| _Equivalent_<br/>(40746/40747)| `DeviceRequest.note`
 | | | `DeviceRequest.relevantHistory`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(13065)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(13066)| **`DeviceRequest.relevantHistory`**| _Equivalent_<br/>(25869/25870)| `DeviceRequest.relevantHistory`| _Equivalent_<br/>(40748/40749)| `DeviceRequest.relevantHistory`
-| *7 of 22 elements used* | | *30 of 35 elements used* | | *38 of 38 elements used* | | *38 of 38 elements used* | | *36 of 40 elements used* 
+| *7 of 22 elements used* <br/>remaining elements:<br/>`DeviceUseRequest`, `DeviceUseRequest.bodySite[x]`, `DeviceUseRequest.contained`, `DeviceUseRequest.extension`, `DeviceUseRequest.id`, `DeviceUseRequest.identifier`, `DeviceUseRequest.implicitRules`, `DeviceUseRequest.language`, `DeviceUseRequest.meta`, `DeviceUseRequest.modifierExtension`, `DeviceUseRequest.priority`, `DeviceUseRequest.prnReason`, `DeviceUseRequest.status`, `DeviceUseRequest.subject`, `DeviceUseRequest.text`| | *30 of 35 elements used* <br/>remaining elements:<br/>`DeviceRequest.definition`, `DeviceRequest.requester.extension`, `DeviceRequest.requester.id`, `DeviceRequest.requester.modifierExtension`, `DeviceRequest.requester.onBehalfOf`| | *38 of 38 elements used* | | *38 of 38 elements used* | | *36 of 40 elements used* <br/>remaining elements:<br/>`DeviceRequest.asNeeded`, `DeviceRequest.asNeededFor`, `DeviceRequest.doNotPerform`, `DeviceRequest.quantity`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:17 PM
+Generated at Thursday, April 3, 2025 8:18:16 AM
 
 ### AllergyIntoleranceVerificationStatusCodes
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | `confirmed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(30)<hr/>←←←← _Equivalent_ ←←←← <br/>(11990) | `confirmed`| _Equivalent_ <br/>(2919/5120)| **`confirmed`**| _Equivalent_ <br/>(14460/14461)| `confirmed`| _Equivalent_ <br/>(7448/9713)| `confirmed`
 | `refuted`| _Equivalent_ <br/>(27/11991)| `refuted`| _Equivalent_ <br/>(2917/5118)| **`refuted`**| _Equivalent_ <br/>(14462/14463)| `refuted`| _Equivalent_ <br/>(7450/9715)| `refuted`
 | `entered-in-error`| _Equivalent_ <br/>(29/11992)| `entered-in-error`| _Equivalent_ <br/>(2918/5119)| **`entered-in-error`**| _Equivalent_ <br/>(14464/14465)| `entered-in-error`| _Equivalent_ <br/>(7449/9714)| `entered-in-error`
-| *4 of 7 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* 
+| *4 of 7 codes used* <br/>remaining codes:<br/>`active`, `inactive`, `resolved`| | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* <br/>remaining codes:<br/>`presumed`
 

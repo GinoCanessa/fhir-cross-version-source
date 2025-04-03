@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### CompartmentDefinition
 
@@ -102,5 +102,5 @@ All elements from this structure are listed while other structures only show con
 | | | `CompartmentDefinition.resource.documentation`| _Equivalent_<br/>(12189/12190)| `CompartmentDefinition.resource.documentation`| _Equivalent_<br/>(24013/24014)| `CompartmentDefinition.resource.documentation`| _Equivalent_<br/>(39319/39320)| **`CompartmentDefinition.resource.documentation`**
 | | | | | | | | | **`CompartmentDefinition.resource.startParam`**
 | | | | | | | | | **`CompartmentDefinition.resource.endParam`**
-| | | *28 of 30 elements used* | | *29 of 29 elements used* | | *29 of 29 elements used* | | *33 of 33 elements used* 
+| | | *28 of 30 elements used* <br/>remaining elements:<br/>`CompartmentDefinition.jurisdiction`, `CompartmentDefinition.title`| | *29 of 29 elements used* | | *29 of 29 elements used* | | *33 of 33 elements used* 
 

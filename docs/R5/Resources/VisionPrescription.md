@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:41 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### VisionPrescription
 
@@ -114,5 +114,5 @@ All elements from this structure are listed while other structures only show con
 | `VisionPrescription.dispense.color`| _Equivalent_<br/>(8727/8728)| `VisionPrescription.dispense.color`| _Equivalent_<br/>(1322/1694)| `VisionPrescription.lensSpecification.color`| _Equivalent_<br/>(35149/35150)| `VisionPrescription.lensSpecification.color`| _Equivalent_<br/>(49559/49560)| **`VisionPrescription.lensSpecification.color`**
 | `VisionPrescription.dispense.brand`| _Equivalent_<br/>(8729/8730)| `VisionPrescription.dispense.brand`| _Equivalent_<br/>(1321/1693)| `VisionPrescription.lensSpecification.brand`| _Equivalent_<br/>(35151/35152)| `VisionPrescription.lensSpecification.brand`| _Equivalent_<br/>(49561/49562)| **`VisionPrescription.lensSpecification.brand`**
 | `VisionPrescription.dispense.notes`| →→→→ _RelatedTo_ →→→→ <br/>(456)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8731)| `VisionPrescription.dispense.note`| _Equivalent_<br/>(1327/1699)| `VisionPrescription.lensSpecification.note`| _Equivalent_<br/>(35153/35154)| `VisionPrescription.lensSpecification.note`| _Equivalent_<br/>(49563/49564)| **`VisionPrescription.lensSpecification.note`**
-| *30 of 34 elements used* | | *31 of 35 elements used* | | *39 of 39 elements used* | | *39 of 39 elements used* | | *39 of 39 elements used* 
+| *30 of 34 elements used* <br/>remaining elements:<br/>`VisionPrescription.dispense.extension`, `VisionPrescription.dispense.id`, `VisionPrescription.dispense.modifierExtension`, `VisionPrescription.reason[x]`| | *31 of 35 elements used* <br/>remaining elements:<br/>`VisionPrescription.dispense.extension`, `VisionPrescription.dispense.id`, `VisionPrescription.dispense.modifierExtension`, `VisionPrescription.reason[x]`| | *39 of 39 elements used* | | *39 of 39 elements used* | | *39 of 39 elements used* 
 

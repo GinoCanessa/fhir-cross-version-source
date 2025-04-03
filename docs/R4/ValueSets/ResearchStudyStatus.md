@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:18 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### ResearchStudyStatus
 
@@ -54,5 +54,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `suspended`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | **`temporarily-closed-to-accrual-and-intervention`**| _Equivalent_ <br/>(17046/17047)| `temporarily-closed-to-accrual-and-intervention`| | | 
 | | | `stopped`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4579)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6887) | **`withdrawn`**| _Equivalent_ <br/>(17048/17049)| `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9301)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11637) | `retired`
 | | | `entered-in-error`| →→→→ _Equivalent_ →→→→ <br/>(4575)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6887) | **`withdrawn`**| _Equivalent_ <br/>(17048/17049)| `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9301)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11637) | `retired`
-| | | *6 of 6 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | *2 of 4 codes used* 
+| | | *6 of 6 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | *2 of 4 codes used* <br/>remaining codes:<br/>`draft`, `unknown`
 

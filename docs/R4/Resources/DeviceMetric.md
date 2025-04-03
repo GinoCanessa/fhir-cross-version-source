@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### DeviceMetric
 
@@ -86,5 +86,5 @@ All elements from this structure are listed while other structures only show con
 | `DeviceMetric.calibration.type`| _Equivalent_<br/>(4632/4633)| `DeviceMetric.calibration.type`| _Equivalent_<br/>(12973/12974)| **`DeviceMetric.calibration.type`**| _Equivalent_<br/>(25780/25781)| `DeviceMetric.calibration.type`| _Equivalent_<br/>(40677/40678)| `DeviceMetric.calibration.type`
 | `DeviceMetric.calibration.state`| _Equivalent_<br/>(4634/4635)| `DeviceMetric.calibration.state`| _Equivalent_<br/>(12975/12976)| **`DeviceMetric.calibration.state`**| _Equivalent_<br/>(25782/25783)| `DeviceMetric.calibration.state`| _Equivalent_<br/>(40679/40680)| `DeviceMetric.calibration.state`
 | `DeviceMetric.calibration.time`| _Equivalent_<br/>(4636/4637)| `DeviceMetric.calibration.time`| _Equivalent_<br/>(12977/12978)| **`DeviceMetric.calibration.time`**| _Equivalent_<br/>(25784/25785)| `DeviceMetric.calibration.time`| _Equivalent_<br/>(40681/40682)| `DeviceMetric.calibration.time`
-| *25 of 25 elements used* | | *25 of 25 elements used* | | *25 of 25 elements used* | | *25 of 25 elements used* | | *23 of 24 elements used* 
+| *25 of 25 elements used* | | *25 of 25 elements used* | | *25 of 25 elements used* | | *25 of 25 elements used* | | *23 of 24 elements used* <br/>remaining elements:<br/>`DeviceMetric.measurementFrequency`
 

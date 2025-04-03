@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### Measure
 
@@ -258,5 +258,5 @@ All elements from this structure are listed while other structures only show con
 | | | `Measure.supplementalData.usage`| _Equivalent_<br/>(15527/15528)| `Measure.supplementalData.usage`| _Equivalent_<br/>(29240/29241)| `Measure.supplementalData.usage`| _Equivalent_<br/>(44114/44115)| **`Measure.supplementalData.usage`**
 | | | | | `Measure.supplementalData.description`| _Equivalent_<br/>(29242/29243)| `Measure.supplementalData.description`| _Equivalent_<br/>(44116/44117)| **`Measure.supplementalData.description`**
 | | | `Measure.supplementalData.criteria`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15529)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15530)| `Measure.supplementalData.criteria`| _Equivalent_<br/>(29244/29245)| `Measure.supplementalData.criteria`| _Equivalent_<br/>(44118/44119)| **`Measure.supplementalData.criteria`**
-| | | *70 of 75 elements used* | | *82 of 83 elements used* | | *82 of 83 elements used* | | *110 of 110 elements used* 
+| | | *70 of 75 elements used* <br/>remaining elements:<br/>`Measure.definition`, `Measure.group.name`, `Measure.group.population.identifier`, `Measure.group.population.name`, `Measure.set`| | *82 of 83 elements used* <br/>remaining elements:<br/>`Measure.definition`| | *82 of 83 elements used* <br/>remaining elements:<br/>`Measure.definition`| | *110 of 110 elements used* 
 

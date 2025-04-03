@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### CitedArtifactStatusType
 
@@ -57,5 +57,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | **`draft`**| _Equivalent_ <br/>(7838/10143)| `draft`
 | | | | | | | **`active`**| _Equivalent_ <br/>(7833/10137)| `active`
 | | | | | | | **`approved`**| _Equivalent_ <br/>(7836/10141)| `approved`
-| | | | | | | *15 of 15 codes used* | | *15 of 16 codes used* 
+| | | | | | | *15 of 15 codes used* | | *15 of 16 codes used* <br/>remaining codes:<br/>`unknown`
 

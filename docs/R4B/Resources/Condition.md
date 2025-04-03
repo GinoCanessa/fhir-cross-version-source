@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:32 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### Condition
 
@@ -110,5 +110,5 @@ All elements from this structure are listed while other structures only show con
 | `Condition.evidence.code`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4038)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4039)| `Condition.evidence.code`| _Equivalent_<br/>(12517/12518)| `Condition.evidence.code`| _Equivalent_<br/>(24325/24326)| **`Condition.evidence.code`**| | | 
 | `Condition.evidence.detail`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4040)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(4041)| `Condition.evidence.detail`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12519)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12520)| `Condition.evidence.detail`| _Equivalent_<br/>(24327/24328)| **`Condition.evidence.detail`**| | | 
 | `Condition.notes`| →→→→ _RelatedTo_ →→→→ <br/>(159)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(578)| `Condition.note`| _Equivalent_<br/>(12521/12522)| `Condition.note`| _Equivalent_<br/>(24329/24330)| **`Condition.note`**| _Equivalent_<br/>(39601/39602)| `Condition.note`
-| *35 of 35 elements used* | | *35 of 35 elements used* | | *37 of 37 elements used* | | *37 of 37 elements used* | | *30 of 36 elements used* 
+| *35 of 35 elements used* | | *35 of 35 elements used* | | *37 of 37 elements used* | | *37 of 37 elements used* | | *30 of 36 elements used* <br/>remaining elements:<br/>`Condition.participant`, `Condition.participant.actor`, `Condition.participant.extension`, `Condition.participant.function`, `Condition.participant.id`, `Condition.participant.modifierExtension`
 

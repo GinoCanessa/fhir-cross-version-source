@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:20 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### SpecimenDefinition
 
@@ -132,5 +132,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`SpecimenDefinition.typeTested.handling.temperatureRange`**| _Equivalent_<br/>(33365/33366)| `SpecimenDefinition.typeTested.handling.temperatureRange`| _Equivalent_<br/>(47590/47591)| `SpecimenDefinition.typeTested.handling.temperatureRange`
 | | | | | **`SpecimenDefinition.typeTested.handling.maxDuration`**| _Equivalent_<br/>(33367/33368)| `SpecimenDefinition.typeTested.handling.maxDuration`| _Equivalent_<br/>(47592/47593)| `SpecimenDefinition.typeTested.handling.maxDuration`
 | | | | | **`SpecimenDefinition.typeTested.handling.instruction`**| _Equivalent_<br/>(33369/33370)| `SpecimenDefinition.typeTested.handling.instruction`| _Equivalent_<br/>(47594/47595)| `SpecimenDefinition.typeTested.handling.instruction`
-| | | | | *48 of 48 elements used* | | *48 of 48 elements used* | | *48 of 72 elements used* 
+| | | | | *48 of 48 elements used* | | *48 of 48 elements used* | | *48 of 72 elements used* <br/>remaining elements:<br/>`SpecimenDefinition.approvalDate`, `SpecimenDefinition.contact`, `SpecimenDefinition.copyright`, `SpecimenDefinition.copyrightLabel`, `SpecimenDefinition.date`, `SpecimenDefinition.derivedFromCanonical`, `SpecimenDefinition.derivedFromUri`, `SpecimenDefinition.description`, `SpecimenDefinition.effectivePeriod`, `SpecimenDefinition.experimental`, `SpecimenDefinition.jurisdiction`, `SpecimenDefinition.lastReviewDate`, `SpecimenDefinition.name`, `SpecimenDefinition.publisher`, `SpecimenDefinition.purpose`, `SpecimenDefinition.status`, `SpecimenDefinition.subject[x]`, `SpecimenDefinition.title`, `SpecimenDefinition.typeTested.singleUse`, `SpecimenDefinition.typeTested.testingDestination`, `SpecimenDefinition.url`, `SpecimenDefinition.useContext`, `SpecimenDefinition.version`, `SpecimenDefinition.versionAlgorithm[x]`
 

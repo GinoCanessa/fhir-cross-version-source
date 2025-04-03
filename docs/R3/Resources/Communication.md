@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:15 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### Communication
 
@@ -106,5 +106,5 @@ All elements from this structure are listed while other structures only show con
 | `Communication.payload.modifierExtension`| _Equivalent_<br/>(3772/3773)| **`Communication.payload.modifierExtension`**| _Equivalent_<br/>(12053/12054)| `Communication.payload.modifierExtension`| _Equivalent_<br/>(23877/23878)| `Communication.payload.modifierExtension`| _Equivalent_<br/>(39193/39194)| `Communication.payload.modifierExtension`
 | `Communication.payload.content[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3774)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3775)| **`Communication.payload.content[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12055)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12056)| `Communication.payload.content[x]`| _Equivalent_<br/>(23879/23880)| `Communication.payload.content[x]`| →→→→ _RelatedTo_ →→→→ <br/>(39195)<hr/>←←←← _RelatedTo_ ←←←← <br/>(39196)| `Communication.payload.content[x]`
 | | | **`Communication.note`**| _Equivalent_<br/>(12057/12058)| `Communication.note`| _Equivalent_<br/>(23881/23882)| `Communication.note`| _Equivalent_<br/>(39197/39198)| `Communication.note`
-| *26 of 26 elements used* | | *33 of 33 elements used* | | *33 of 36 elements used* | | *32 of 36 elements used* | | *31 of 35 elements used* 
+| *26 of 26 elements used* | | *33 of 33 elements used* | | *33 of 36 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesUri`, `Communication.priority`| | *32 of 36 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesUri`, `Communication.priority`| | *31 of 35 elements used* <br/>remaining elements:<br/>`Communication.about`, `Communication.inResponseTo`, `Communication.instantiatesUri`, `Communication.priority`
 

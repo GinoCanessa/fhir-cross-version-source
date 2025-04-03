@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### Specimen
 
@@ -146,5 +146,5 @@ All elements from this structure are listed while other structures only show con
 | `Specimen.container.specimenQuantity`| _Equivalent_<br/>(7883/7884)| `Specimen.container.specimenQuantity`| _Equivalent_<br/>(18549/18550)| `Specimen.container.specimenQuantity`| _Equivalent_<br/>(33267/33268)| `Specimen.container.specimenQuantity`| _Equivalent_<br/>(47493/47494)| **`Specimen.container.specimenQuantity`**
 | | | | | `Specimen.condition`| _Equivalent_<br/>(33271/33272)| `Specimen.condition`| _Equivalent_<br/>(47496/47497)| **`Specimen.condition`**
 | | | `Specimen.note`| _Equivalent_<br/>(18553/18554)| `Specimen.note`| _Equivalent_<br/>(33273/33274)| `Specimen.note`| _Equivalent_<br/>(47498/47499)| **`Specimen.note`**
-| *34 of 43 elements used* | | *40 of 45 elements used* | | *43 of 48 elements used* | | *43 of 48 elements used* | | *55 of 55 elements used* 
+| *34 of 43 elements used* <br/>remaining elements:<br/>`Specimen.collection.comment`, `Specimen.container.additive[x]`, `Specimen.container.capacity`, `Specimen.container.description`, `Specimen.container.identifier`, `Specimen.container.type`, `Specimen.treatment.extension`, `Specimen.treatment.id`, `Specimen.treatment.modifierExtension`| | *40 of 45 elements used* <br/>remaining elements:<br/>`Specimen.container.additive[x]`, `Specimen.container.capacity`, `Specimen.container.description`, `Specimen.container.identifier`, `Specimen.container.type`| | *43 of 48 elements used* <br/>remaining elements:<br/>`Specimen.container.additive[x]`, `Specimen.container.capacity`, `Specimen.container.description`, `Specimen.container.identifier`, `Specimen.container.type`| | *43 of 48 elements used* <br/>remaining elements:<br/>`Specimen.container.additive[x]`, `Specimen.container.capacity`, `Specimen.container.description`, `Specimen.container.identifier`, `Specimen.container.type`| | *55 of 55 elements used* 
 

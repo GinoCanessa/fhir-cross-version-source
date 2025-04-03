@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### RequestStatus
 
@@ -59,7 +59,7 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| →→→→ _Equivalent_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2510) | **`completed`**| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
 | | | **`unknown`**| _Equivalent_ <br/>(3052/5260)| `unknown`| _Equivalent_ <br/>(17020/17021)| `unknown`| _Equivalent_ <br/>(7568/9838)| `unknown`
-| *7 of 10 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
+| *7 of 10 codes used* <br/>remaining codes:<br/>`accepted`, `completed`, `failed`, `in-progress`, `planned`, `proposed`, `received`, `rejected`, `requested`, `suspended`| | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
 
 
 #### Map Group 1
@@ -80,7 +80,7 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| →→→→ _Equivalent_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2510) | **`completed`**| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
 | | | **`unknown`**| _Equivalent_ <br/>(3052/5260)| `unknown`| _Equivalent_ <br/>(17020/17021)| `unknown`| _Equivalent_ <br/>(7568/9838)| `unknown`
-| *7 of 10 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
+| *7 of 10 codes used* <br/>remaining codes:<br/>`aborted`, `accepted`, `completed`, `in-progress`, `planned`, `proposed`, `received`, `rejected`, `requested`, `suspended`| | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
 
 
 #### Map Group 2
@@ -101,7 +101,7 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| →→→→ _Equivalent_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2510) | **`completed`**| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
 | | | **`unknown`**| _Equivalent_ <br/>(3052/5260)| `unknown`| _Equivalent_ <br/>(17020/17021)| `unknown`| _Equivalent_ <br/>(7568/9838)| `unknown`
-| *7 of 13 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
+| *7 of 13 codes used* <br/>remaining codes:<br/>`accepted`, `cancelled`, `completed`, `draft`, `failed`, `in-progress`, `planned`, `proposed`, `received`, `rejected`, `requested`, `review`, `suspended`| | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
 
 
 #### Map Group 3
@@ -122,7 +122,7 @@ All codes from this value set are listed while other value sets only show conten
 | `completed`| →→→→ _Equivalent_ →→→→ <br/>(1091)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2510) | **`completed`**| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
 | | | **`unknown`**| _Equivalent_ <br/>(3052/5260)| `unknown`| _Equivalent_ <br/>(17020/17021)| `unknown`| _Equivalent_ <br/>(7568/9838)| `unknown`
-| *7 of 10 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
+| *7 of 10 codes used* <br/>remaining codes:<br/>`aborted`, `accepted`, `completed`, `draft`, `in-progress`, `proposed`, `received`, `rejected`, `requested`, `suspended`| | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 
 
 
 #### Map Group 4

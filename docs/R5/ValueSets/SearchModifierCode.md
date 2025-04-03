@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### SearchModifierCode
 
@@ -59,7 +59,7 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`code-text`**
 | | | | | | | | | **`text-advanced`**
 | | | | | | | | | **`iterate`**
-| *0 of 10 codes used* | | *0 of 10 codes used* | | *0 of 12 codes used* | | *5 of 12 codes used* | | *15 of 15 codes used* 
+| *0 of 10 codes used* <br/>remaining codes:<br/>`above`, `below`, `contains`, `exact`, `in`, `missing`, `not`, `not-in`, `text`, `type`| | *0 of 10 codes used* <br/>remaining codes:<br/>`above`, `below`, `contains`, `exact`, `in`, `missing`, `not`, `not-in`, `text`, `type`| | *0 of 12 codes used* <br/>remaining codes:<br/>`above`, `below`, `contains`, `exact`, `identifier`, `in`, `missing`, `not`, `not-in`, `ofType`, `text`, `type`| | *5 of 12 codes used* <br/>remaining codes:<br/>`above`, `below`, `contains`, `exact`, `identifier`, `in`, `missing`, `not`, `not-in`, `ofType`, `text`, `type`| | *15 of 15 codes used* 
 
 
 #### Map Group 1
@@ -85,5 +85,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`code-text`**
 | | | | | | | | | **`text-advanced`**
 | | | | | | | | | **`iterate`**
-| | | | | | | *5 of 15 codes used* | | *15 of 15 codes used* 
+| | | | | | | *5 of 15 codes used* <br/>remaining codes:<br/>`=`, `ap`, `eb`, `eq`, `ge`, `gt`, `le`, `lt`, `ne`, `sa`| | *15 of 15 codes used* 
 

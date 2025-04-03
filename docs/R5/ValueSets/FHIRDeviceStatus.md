@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### FHIRDeviceStatus
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | `available`| _Equivalent_ <br/>(422/1792)| `active`| _Equivalent_ <br/>(3552/5838)| `active`| _Equivalent_ <br/>(15772/15773)| `active`| _Equivalent_ <br/>(7948/10256)| **`active`**
 | `not-available`| _Equivalent_ <br/>(424/1794)| `inactive`| _Equivalent_ <br/>(3551/5837)| `inactive`| _Equivalent_ <br/>(15774/15775)| `inactive`| _Equivalent_ <br/>(7950/10255)| **`inactive`**
 | `entered-in-error`| _Equivalent_ <br/>(423/1793)| `entered-in-error`| _Equivalent_ <br/>(3553/5839)| `entered-in-error`| _Equivalent_ <br/>(15776/15777)| `entered-in-error`| _Equivalent_ <br/>(7949/10257)| **`entered-in-error`**
-| *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 3 codes used* 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`unknown`| | *3 of 4 codes used* <br/>remaining codes:<br/>`unknown`| | *3 of 4 codes used* <br/>remaining codes:<br/>`unknown`| | *3 of 3 codes used* 
 

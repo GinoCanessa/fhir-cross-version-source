@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Dosage
 
@@ -71,5 +71,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Dosage.maxDosePerAdministration`**| _Equivalent_<br/>(9379/9380)| `Dosage.maxDosePerAdministration`| _Equivalent_<br/>(20766/20767)| `Dosage.maxDosePerAdministration`| _Equivalent_<br/>(35881/35882)| `Dosage.maxDosePerAdministration`
 | | | **`Dosage.maxDosePerLifetime`**| _Equivalent_<br/>(9381/9382)| `Dosage.maxDosePerLifetime`| _Equivalent_<br/>(20768/20769)| `Dosage.maxDosePerLifetime`| _Equivalent_<br/>(35883/35884)| `Dosage.maxDosePerLifetime`
 | | | **`Dosage.rate[x]`**| _Equivalent_<br/>(1014/1496)| `Dosage.doseAndRate.rate[x]`| _Equivalent_<br/>(20762/20763)| `Dosage.doseAndRate.rate[x]`| _Equivalent_<br/>(35877/35878)| `Dosage.doseAndRate.rate[x]`
-| | | *17 of 17 elements used* | | *17 of 22 elements used* | | *17 of 22 elements used* | | *18 of 23 elements used* 
+| | | *17 of 17 elements used* | | *17 of 22 elements used* <br/>remaining elements:<br/>`Dosage.doseAndRate`, `Dosage.doseAndRate.extension`, `Dosage.doseAndRate.id`, `Dosage.doseAndRate.type`, `Dosage.modifierExtension`| | *17 of 22 elements used* <br/>remaining elements:<br/>`Dosage.doseAndRate`, `Dosage.doseAndRate.extension`, `Dosage.doseAndRate.id`, `Dosage.doseAndRate.type`, `Dosage.modifierExtension`| | *18 of 23 elements used* <br/>remaining elements:<br/>`Dosage.doseAndRate`, `Dosage.doseAndRate.extension`, `Dosage.doseAndRate.id`, `Dosage.doseAndRate.type`, `Dosage.modifierExtension`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### CarePlan
 
@@ -152,5 +152,5 @@ All elements from this structure are listed while other structures only show con
 | `CarePlan.activity.detail.quantity`| _Equivalent_<br/>(3370/3371)| **`CarePlan.activity.detail.quantity`**| _Equivalent_<br/>(11059/11060)| `CarePlan.activity.detail.quantity`| _Equivalent_<br/>(22644/22645)| `CarePlan.activity.detail.quantity`| | | 
 | `CarePlan.activity.detail.description`| _Equivalent_<br/>(3372/3373)| **`CarePlan.activity.detail.description`**| _Equivalent_<br/>(11061/11062)| `CarePlan.activity.detail.description`| _Equivalent_<br/>(22646/22647)| `CarePlan.activity.detail.description`| | | 
 | `CarePlan.note`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3374)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3375)| **`CarePlan.note`**| _Equivalent_<br/>(11063/11064)| `CarePlan.note`| _Equivalent_<br/>(22648/22649)| `CarePlan.note`| _Equivalent_<br/>(37638/37639)| `CarePlan.note`
-| *48 of 60 elements used* | | *56 of 56 elements used* | | *57 of 60 elements used* | | *56 of 60 elements used* | | *35 of 38 elements used* 
+| *48 of 60 elements used* <br/>remaining elements:<br/>`CarePlan.participant`, `CarePlan.participant.extension`, `CarePlan.participant.id`, `CarePlan.participant.member`, `CarePlan.participant.modifierExtension`, `CarePlan.participant.role`, `CarePlan.relatedPlan`, `CarePlan.relatedPlan.code`, `CarePlan.relatedPlan.extension`, `CarePlan.relatedPlan.id`, `CarePlan.relatedPlan.modifierExtension`, `CarePlan.relatedPlan.plan`| | *56 of 56 elements used* | | *57 of 60 elements used* <br/>remaining elements:<br/>`CarePlan.activity.detail.instantiatesUri`, `CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesUri`| | *56 of 60 elements used* <br/>remaining elements:<br/>`CarePlan.activity.detail.instantiatesUri`, `CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesUri`| | *35 of 38 elements used* <br/>remaining elements:<br/>`CarePlan.contributor`, `CarePlan.created`, `CarePlan.instantiatesUri`
 

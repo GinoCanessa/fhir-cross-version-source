@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### TriggerDefinition
 
@@ -50,5 +50,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`TriggerDefinition.eventName`**| _Equivalent_<br/>(1313/1687)| `TriggerDefinition.name`| _Equivalent_<br/>(21348/21349)| `TriggerDefinition.name`| _Equivalent_<br/>(36413/36414)| `TriggerDefinition.name`
 | | | **`TriggerDefinition.eventTiming[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1314)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1688)| `TriggerDefinition.timing[x]`| _Equivalent_<br/>(21350/21351)| `TriggerDefinition.timing[x]`| _Equivalent_<br/>(36415/36416)| `TriggerDefinition.timing[x]`
 | | | **`TriggerDefinition.eventData`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1312)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1686)| `TriggerDefinition.data`| _Equivalent_<br/>(21352/21353)| `TriggerDefinition.data`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(36417)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(36418)| `TriggerDefinition.data`
-| | | *7 of 7 elements used* | | *7 of 8 elements used* | | *7 of 8 elements used* | | *7 of 10 elements used* 
+| | | *7 of 7 elements used* | | *7 of 8 elements used* <br/>remaining elements:<br/>`TriggerDefinition.condition`| | *7 of 8 elements used* <br/>remaining elements:<br/>`TriggerDefinition.condition`| | *7 of 10 elements used* <br/>remaining elements:<br/>`TriggerDefinition.code`, `TriggerDefinition.condition`, `TriggerDefinition.subscriptionTopic`
 

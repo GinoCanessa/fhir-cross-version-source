@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:35 PM
+Generated at Thursday, April 3, 2025 8:18:33 AM
 
 ### ProductShelfLife
 
@@ -50,5 +50,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `ProductShelfLife.type`| _Equivalent_<br/>(21171/21172)| `ProductShelfLife.type`| →→→→ _Equivalent_ →→→→ <br/>(36233)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36234)| **`ProductShelfLife.type`**
 | | | | | `ProductShelfLife.period`| _Equivalent_<br/>(21173/21174)| `ProductShelfLife.period`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1713)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1957)| **`ProductShelfLife.period[x]`**
 | | | | | `ProductShelfLife.specialPrecautionsForStorage`| _Equivalent_<br/>(21175/21176)| `ProductShelfLife.specialPrecautionsForStorage`| _Equivalent_<br/>(36235/36236)| **`ProductShelfLife.specialPrecautionsForStorage`**
-| | | | | *7 of 8 elements used* | | *7 of 8 elements used* | | *7 of 7 elements used* 
+| | | | | *7 of 8 elements used* <br/>remaining elements:<br/>`ProductShelfLife.identifier`| | *7 of 8 elements used* <br/>remaining elements:<br/>`ProductShelfLife.identifier`| | *7 of 7 elements used* 
 

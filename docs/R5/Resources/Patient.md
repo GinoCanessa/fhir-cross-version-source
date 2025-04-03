@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### Patient
 
@@ -126,5 +126,5 @@ All elements from this structure are listed while other structures only show con
 | `Patient.link.modifierExtension`| _Equivalent_<br/>(7034/7035)| `Patient.link.modifierExtension`| _Equivalent_<br/>(16879/16880)| `Patient.link.modifierExtension`| _Equivalent_<br/>(31363/31364)| `Patient.link.modifierExtension`| _Equivalent_<br/>(46030/46031)| **`Patient.link.modifierExtension`**
 | `Patient.link.other`| →→→→ _RelatedTo_ →→→→ <br/>(7036)<hr/>←←←← _RelatedTo_ ←←←← <br/>(7037)| `Patient.link.other`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16881)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16882)| `Patient.link.other`| _Equivalent_<br/>(31365/31366)| `Patient.link.other`| _Equivalent_<br/>(46032/46033)| **`Patient.link.other`**
 | `Patient.link.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7038)<hr/>←←←← _RelatedTo_ ←←←← <br/>(7039)| `Patient.link.type`| _Equivalent_<br/>(16883/16884)| `Patient.link.type`| _Equivalent_<br/>(31367/31368)| `Patient.link.type`| _Equivalent_<br/>(46034/46035)| **`Patient.link.type`**
-| *45 of 52 elements used* | | *45 of 52 elements used* | | *45 of 45 elements used* | | *45 of 45 elements used* | | *45 of 45 elements used* 
+| *45 of 52 elements used* <br/>remaining elements:<br/>`Patient.animal`, `Patient.animal.breed`, `Patient.animal.extension`, `Patient.animal.genderStatus`, `Patient.animal.id`, `Patient.animal.modifierExtension`, `Patient.animal.species`| | *45 of 52 elements used* <br/>remaining elements:<br/>`Patient.animal`, `Patient.animal.breed`, `Patient.animal.extension`, `Patient.animal.genderStatus`, `Patient.animal.id`, `Patient.animal.modifierExtension`, `Patient.animal.species`| | *45 of 45 elements used* | | *45 of 45 elements used* | | *45 of 45 elements used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### Composition
 
@@ -144,5 +144,5 @@ All elements from this structure are listed while other structures only show con
 | `Composition.section.entry`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3918)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3919)| `Composition.section.entry`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12293)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12294)| `Composition.section.entry`| _Equivalent_<br/>(24119/24120)| **`Composition.section.entry`**| _Equivalent_<br/>(39415/39416)| `Composition.section.entry`
 | `Composition.section.emptyReason`| _Equivalent_<br/>(3920/3921)| `Composition.section.emptyReason`| _Equivalent_<br/>(12295/12296)| `Composition.section.emptyReason`| _Equivalent_<br/>(24121/24122)| **`Composition.section.emptyReason`**| _Equivalent_<br/>(39417/39418)| `Composition.section.emptyReason`
 | `Composition.section.section`| _Equivalent_<br/>(3922/3923)| `Composition.section.section`| _Equivalent_<br/>(12297/12298)| `Composition.section.section`| _Equivalent_<br/>(24123/24124)| **`Composition.section.section`**| _Equivalent_<br/>(39419/39420)| `Composition.section.section`
-| *46 of 46 elements used* | | *52 of 52 elements used* | | *54 of 54 elements used* | | *54 of 54 elements used* | | *46 of 51 elements used* 
+| *46 of 46 elements used* | | *52 of 52 elements used* | | *54 of 54 elements used* | | *54 of 54 elements used* | | *46 of 51 elements used* <br/>remaining elements:<br/>`Composition.name`, `Composition.note`, `Composition.url`, `Composition.useContext`, `Composition.version`
 

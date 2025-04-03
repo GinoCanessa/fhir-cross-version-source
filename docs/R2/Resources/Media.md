@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Media
 
@@ -77,5 +77,5 @@ All elements from this structure are listed while other structures only show con
 | **`Media.frames`**| _Equivalent_<br/>(6083/6084)| `Media.frames`| _Equivalent_<br/>(15663/15664)| `Media.frames`| _Equivalent_<br/>(29425/29426)| `Media.frames`| | | 
 | **`Media.duration`**| _Equivalent_<br/>(6085/6086)| `Media.duration`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15665)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15666)| `Media.duration`| _Equivalent_<br/>(29427/29428)| `Media.duration`| | | 
 | **`Media.content`**| _Equivalent_<br/>(6087/6088)| `Media.content`| _Equivalent_<br/>(15667/15668)| `Media.content`| _Equivalent_<br/>(29429/29430)| `Media.content`| | | 
-| *21 of 21 elements used* | | *20 of 27 elements used* | | *20 of 31 elements used* | | *20 of 31 elements used* | | 
+| *21 of 21 elements used* | | *20 of 27 elements used* <br/>remaining elements:<br/>`Media.basedOn`, `Media.bodySite`, `Media.context`, `Media.device`, `Media.note`, `Media.occurrence[x]`, `Media.reasonCode`| | *20 of 31 elements used* <br/>remaining elements:<br/>`Media.basedOn`, `Media.bodySite`, `Media.created[x]`, `Media.device`, `Media.deviceName`, `Media.encounter`, `Media.issued`, `Media.note`, `Media.partOf`, `Media.reasonCode`, `Media.status`| | *20 of 31 elements used* <br/>remaining elements:<br/>`Media.basedOn`, `Media.bodySite`, `Media.created[x]`, `Media.device`, `Media.deviceName`, `Media.encounter`, `Media.issued`, `Media.note`, `Media.partOf`, `Media.reasonCode`, `Media.status`| | 
 

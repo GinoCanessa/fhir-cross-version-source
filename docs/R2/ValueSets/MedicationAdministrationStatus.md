@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### MedicationAdministrationStatus
 
@@ -48,7 +48,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`completed`**| _Equivalent_ <br/>(790/2150)| `completed`| | | | | | | 
 | **`entered-in-error`**| _Equivalent_ <br/>(791/2151)| `entered-in-error`| | | | | | | 
 | **`stopped`**| _Equivalent_ <br/>(789/2154)| `stopped`| | | | | | | 
-| *5 of 5 codes used* | | *5 of 2 codes used* | | *0 of 3 codes used* | | *0 of 3 codes used* | | *0 of 3 codes used* 
+| *5 of 5 codes used* | | *5 of 2 codes used* | | *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `entered-in-error`, `not-done`| | *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `entered-in-error`, `not-done`| | *0 of 3 codes used* <br/>remaining codes:<br/>`completed`, `entered-in-error`, `not-done`
 
 
 #### Map Group 1
@@ -65,5 +65,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`entered-in-error`**| _Equivalent_ <br/>(791/2151)| `entered-in-error`| _Equivalent_ <br/>(3929/6248)| `entered-in-error`| _Equivalent_ <br/>(16494/16495)| `entered-in-error`| _Equivalent_ <br/>(8747/11056)| `entered-in-error`
 | **`stopped`**| _Equivalent_ <br/>(789/2154)| `stopped`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3926)<hr/>←←←← _Equivalent_ ←←←← <br/>(6245) | `not-done`| _Equivalent_ <br/>(16488/16489)| `not-done`| _Equivalent_ <br/>(8746/11055)| `not-done`
 | **`stopped`**| _Equivalent_ <br/>(789/2154)| `stopped`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3926)<hr/>←←←← _Equivalent_ ←←←← <br/>(6245) | `stopped`| _Equivalent_ <br/>(16496/16497)| `stopped`| _Equivalent_ <br/>(8744/11053)| `stopped`
-| *5 of 5 codes used* | | *5 of 6 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* | | *6 of 7 codes used* 
+| *5 of 5 codes used* | | *5 of 6 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`
 

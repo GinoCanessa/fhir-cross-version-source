@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### PropertyRepresentation
 
@@ -42,5 +42,5 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/property-representation`
 | **`xmlAttr`**| _Equivalent_ <br/>(520/1869)| `xmlAttr`| _Equivalent_ <br/>(3628/5915)| `xmlAttr`| _Equivalent_ <br/>(16790/16791)| `xmlAttr`| _Equivalent_ <br/>(8012/10316)| `xmlAttr`
-| *1 of 1 codes used* | | *1 of 5 codes used* | | *1 of 5 codes used* | | *1 of 5 codes used* | | *1 of 5 codes used* 
+| *1 of 1 codes used* | | *1 of 5 codes used* <br/>remaining codes:<br/>`cdaText`, `typeAttr`, `xhtml`, `xmlText`| | *1 of 5 codes used* <br/>remaining codes:<br/>`cdaText`, `typeAttr`, `xhtml`, `xmlText`| | *1 of 5 codes used* <br/>remaining codes:<br/>`cdaText`, `typeAttr`, `xhtml`, `xmlText`| | *1 of 5 codes used* <br/>remaining codes:<br/>`cdaText`, `typeAttr`, `xhtml`, `xmlText`
 

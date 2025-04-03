@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### AdverseEvent
 
@@ -118,5 +118,5 @@ All elements from this structure are listed while other structures only show con
 | | | `AdverseEvent.subjectMedicalHistory`| →→→→ _RelatedTo_ →→→→ <br/>(10100)<hr/>←←←← _RelatedTo_ ←←←← <br/>(10101)| `AdverseEvent.subjectMedicalHistory`| _Equivalent_<br/>(21655/21656)| **`AdverseEvent.subjectMedicalHistory`**| | | 
 | | | `AdverseEvent.referenceDocument`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10102)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10103)| `AdverseEvent.referenceDocument`| _Equivalent_<br/>(21657/21658)| **`AdverseEvent.referenceDocument`**| | | 
 | | | `AdverseEvent.study`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10104)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10105)| `AdverseEvent.study`| _Equivalent_<br/>(21659/21660)| **`AdverseEvent.study`**| _Equivalent_<br/>(36776/36777)| `AdverseEvent.study`
-| | | *33 of 35 elements used* | | *41 of 41 elements used* | | *41 of 41 elements used* | | *36 of 65 elements used* 
+| | | *33 of 35 elements used* <br/>remaining elements:<br/>`AdverseEvent.description`, `AdverseEvent.suspectEntity.causalityResult`| | *41 of 41 elements used* | | *41 of 41 elements used* | | *36 of 65 elements used* <br/>remaining elements:<br/>`AdverseEvent.contributingFactor`, `AdverseEvent.contributingFactor.extension`, `AdverseEvent.contributingFactor.id`, `AdverseEvent.contributingFactor.item[x]`, `AdverseEvent.contributingFactor.modifierExtension`, `AdverseEvent.expectedInResearchStudy`, `AdverseEvent.mitigatingAction`, `AdverseEvent.mitigatingAction.extension`, `AdverseEvent.mitigatingAction.id`, `AdverseEvent.mitigatingAction.item[x]`, `AdverseEvent.mitigatingAction.modifierExtension`, `AdverseEvent.note`, `AdverseEvent.participant`, `AdverseEvent.participant.actor`, `AdverseEvent.participant.extension`, `AdverseEvent.participant.function`, `AdverseEvent.participant.id`, `AdverseEvent.participant.modifierExtension`, `AdverseEvent.preventiveAction`, `AdverseEvent.preventiveAction.extension`, `AdverseEvent.preventiveAction.id`, `AdverseEvent.preventiveAction.item[x]`, `AdverseEvent.preventiveAction.modifierExtension`, `AdverseEvent.status`, `AdverseEvent.supportingInfo`, `AdverseEvent.supportingInfo.extension`, `AdverseEvent.supportingInfo.id`, `AdverseEvent.supportingInfo.item[x]`, `AdverseEvent.supportingInfo.modifierExtension`
 

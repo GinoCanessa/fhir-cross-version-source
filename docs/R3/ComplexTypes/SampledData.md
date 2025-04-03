@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### SampledData
 
@@ -57,5 +57,5 @@ All elements from this structure are listed while other structures only show con
 | `SampledData.upperLimit`| _Equivalent_<br/>(2839/2840)| **`SampledData.upperLimit`**| _Equivalent_<br/>(9792/9793)| `SampledData.upperLimit`| _Equivalent_<br/>(21263/21264)| `SampledData.upperLimit`| _Equivalent_<br/>(36331/36332)| `SampledData.upperLimit`
 | `SampledData.dimensions`| _Equivalent_<br/>(2841/2842)| **`SampledData.dimensions`**| _Equivalent_<br/>(9794/9795)| `SampledData.dimensions`| _Equivalent_<br/>(21265/21266)| `SampledData.dimensions`| _Equivalent_<br/>(36333/36334)| `SampledData.dimensions`
 | `SampledData.data`| _Equivalent_<br/>(2843/2844)| **`SampledData.data`**| →→→→ _Equivalent_ →→→→ <br/>(9796)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(9797)| `SampledData.data`| _Equivalent_<br/>(21267/21268)| `SampledData.data`| _Equivalent_<br/>(36335/36336)| `SampledData.data`
-| *10 of 10 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *11 of 13 elements used* 
+| *10 of 10 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *10 of 10 elements used* | | *11 of 13 elements used* <br/>remaining elements:<br/>`SampledData.codeMap`, `SampledData.offsets`
 

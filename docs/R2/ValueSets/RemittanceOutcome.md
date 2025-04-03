@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### RemittanceOutcome
 
@@ -50,7 +50,7 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/remittance-outcome`
 | **`complete`**| _Equivalent_ <br/>(527/1877)| `complete`| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | **`error`**| _Equivalent_ <br/>(528/1878)| `error`| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
-| *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* 
+| *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`partial`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 1
@@ -63,7 +63,7 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/remittance-outcome`
 | **`complete`**| _Equivalent_ <br/>(527/1877)| `complete`| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | **`error`**| _Equivalent_ <br/>(528/1878)| `error`| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
-| *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* 
+| *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`partial`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 2
@@ -76,7 +76,7 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/remittance-outcome`
 | **`complete`**| _Equivalent_ <br/>(527/1877)| `complete`| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | **`error`**| _Equivalent_ <br/>(528/1878)| `error`| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
-| *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* 
+| *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`partial`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 3
@@ -89,5 +89,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/remittance-outcome`
 | **`complete`**| _Equivalent_ <br/>(527/1877)| `complete`| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | **`error`**| _Equivalent_ <br/>(528/1878)| `error`| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
-| *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* | | *2 of 4 codes used* 
+| *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`partial`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`| | *2 of 4 codes used* <br/>remaining codes:<br/>`partial`, `queued`
 

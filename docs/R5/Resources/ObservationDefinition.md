@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### ObservationDefinition
 
@@ -174,5 +174,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`ObservationDefinition.component.permittedDataType`**
 | | | | | | | | | **`ObservationDefinition.component.permittedUnit`**
 | | | | | | | | | **`ObservationDefinition.component.qualifiedValue`**
-| | | | | *26 of 40 elements used* | | *26 of 40 elements used* | | *68 of 68 elements used* 
+| | | | | *26 of 40 elements used* <br/>remaining elements:<br/>`ObservationDefinition.abnormalCodedValueSet`, `ObservationDefinition.criticalCodedValueSet`, `ObservationDefinition.normalCodedValueSet`, `ObservationDefinition.qualifiedInterval`, `ObservationDefinition.qualifiedInterval.extension`, `ObservationDefinition.qualifiedInterval.id`, `ObservationDefinition.qualifiedInterval.modifierExtension`, `ObservationDefinition.quantitativeDetails`, `ObservationDefinition.quantitativeDetails.conversionFactor`, `ObservationDefinition.quantitativeDetails.decimalPrecision`, `ObservationDefinition.quantitativeDetails.extension`, `ObservationDefinition.quantitativeDetails.id`, `ObservationDefinition.quantitativeDetails.modifierExtension`, `ObservationDefinition.validCodedValueSet`| | *26 of 40 elements used* <br/>remaining elements:<br/>`ObservationDefinition.abnormalCodedValueSet`, `ObservationDefinition.criticalCodedValueSet`, `ObservationDefinition.normalCodedValueSet`, `ObservationDefinition.qualifiedInterval`, `ObservationDefinition.qualifiedInterval.extension`, `ObservationDefinition.qualifiedInterval.id`, `ObservationDefinition.qualifiedInterval.modifierExtension`, `ObservationDefinition.quantitativeDetails`, `ObservationDefinition.quantitativeDetails.conversionFactor`, `ObservationDefinition.quantitativeDetails.decimalPrecision`, `ObservationDefinition.quantitativeDetails.extension`, `ObservationDefinition.quantitativeDetails.id`, `ObservationDefinition.quantitativeDetails.modifierExtension`, `ObservationDefinition.validCodedValueSet`| | *68 of 68 elements used* 
 

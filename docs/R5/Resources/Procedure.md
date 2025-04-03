@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### Procedure
 
@@ -138,5 +138,5 @@ All elements from this structure are listed while other structures only show con
 | `Procedure.used`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(339)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(693)| `Procedure.usedReference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17438)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17439)| `Procedure.usedReference`| _Equivalent_<br/>(31992/31993)| `Procedure.usedReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1937)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2173)| **`Procedure.used`**
 | | | `Procedure.usedCode`| _Equivalent_<br/>(17440/17441)| `Procedure.usedCode`| _Equivalent_<br/>(31994/31995)| `Procedure.usedCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1936)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2173)| **`Procedure.used`**
 | | | | | | | | | **`Procedure.supportingInfo`**
-| *40 of 40 elements used* | | *44 of 46 elements used* | | *46 of 48 elements used* | | *46 of 48 elements used* | | *49 of 49 elements used* 
+| *40 of 40 elements used* | | *44 of 46 elements used* <br/>remaining elements:<br/>`Procedure.complicationDetail`, `Procedure.definition`| | *46 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.complicationDetail`| | *46 of 48 elements used* <br/>remaining elements:<br/>`Procedure.asserter`, `Procedure.complicationDetail`| | *49 of 49 elements used* 
 

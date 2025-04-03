@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### RequestIntent
 
@@ -60,5 +60,5 @@ All codes from this value set are listed while other value sets only show conten
 | `in-progress`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(435)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
 | `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(433)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
 | | | `option`| _Equivalent_ <br/>(3589/5871)| `option`| _Equivalent_ <br/>(16968/16969)| `option`| _Equivalent_ <br/>(7420/9679)| **`option`**
-| *7 of 13 codes used* | | *8 of 8 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
+| *7 of 13 codes used* <br/>remaining codes:<br/>`cancelled`, `draft`, `failed`, `rejected`, `review`, `suspended`| | *8 of 8 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
 

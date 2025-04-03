@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### ExtensionContext
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | `resource`| _Equivalent_ <br/>(1107/2525)| **`resource`**| | | | | | | 
 | `datatype`| _Equivalent_ <br/>(1104/2526)| **`datatype`**| | | | | | | 
 | `extension`| _Equivalent_ <br/>(1105/2524)| **`extension`**| | | | | | | 
-| *3 of 4 codes used* | | *3 of 3 codes used* | | | | | | 
+| *3 of 4 codes used* <br/>remaining codes:<br/>`mapping`| | *3 of 3 codes used* | | | | | | 
 

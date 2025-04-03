@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### DiagnosticReport
 
@@ -108,5 +108,5 @@ All elements from this structure are listed while other structures only show con
 | `DiagnosticReport.conclusion`| _Equivalent_<br/>(4758/4759)| **`DiagnosticReport.conclusion`**| _Equivalent_<br/>(13158/13159)| `DiagnosticReport.conclusion`| _Equivalent_<br/>(25980/25981)| `DiagnosticReport.conclusion`| _Equivalent_<br/>(40829/40830)| `DiagnosticReport.conclusion`
 | `DiagnosticReport.codedDiagnosis`| _Equivalent_<br/>(4760/4761)| **`DiagnosticReport.codedDiagnosis`**| _Equivalent_<br/>(1001/1485)| `DiagnosticReport.conclusionCode`| _Equivalent_<br/>(25982/25983)| `DiagnosticReport.conclusionCode`| _Equivalent_<br/>(40831/40832)| `DiagnosticReport.conclusionCode`
 | `DiagnosticReport.presentedForm`| _Equivalent_<br/>(4762/4763)| **`DiagnosticReport.presentedForm`**| _Equivalent_<br/>(13160/13161)| `DiagnosticReport.presentedForm`| _Equivalent_<br/>(25984/25985)| `DiagnosticReport.presentedForm`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(40833)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(40834)| `DiagnosticReport.presentedForm`
-| *31 of 31 elements used* | | *36 of 36 elements used* | | *28 of 32 elements used* | | *28 of 32 elements used* | | *27 of 40 elements used* 
+| *31 of 31 elements used* | | *36 of 36 elements used* | | *28 of 32 elements used* <br/>remaining elements:<br/>`DiagnosticReport.media.extension`, `DiagnosticReport.media.id`, `DiagnosticReport.media.modifierExtension`, `DiagnosticReport.resultsInterpreter`| | *28 of 32 elements used* <br/>remaining elements:<br/>`DiagnosticReport.media.extension`, `DiagnosticReport.media.id`, `DiagnosticReport.media.modifierExtension`, `DiagnosticReport.resultsInterpreter`| | *27 of 40 elements used* <br/>remaining elements:<br/>`DiagnosticReport.composition`, `DiagnosticReport.media.extension`, `DiagnosticReport.media.id`, `DiagnosticReport.media.modifierExtension`, `DiagnosticReport.note`, `DiagnosticReport.resultsInterpreter`, `DiagnosticReport.study`, `DiagnosticReport.supportingInfo`, `DiagnosticReport.supportingInfo.extension`, `DiagnosticReport.supportingInfo.id`, `DiagnosticReport.supportingInfo.modifierExtension`, `DiagnosticReport.supportingInfo.reference`, `DiagnosticReport.supportingInfo.type`
 

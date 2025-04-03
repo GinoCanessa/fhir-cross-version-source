@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:15 PM
+Generated at Thursday, April 3, 2025 8:18:13 AM
 
 ### MedicationAdministration
 
@@ -124,5 +124,5 @@ All elements from this structure are listed while other structures only show con
 | `MedicationAdministration.dosage.quantity`| _Equivalent_<br/>(271/653)| **`MedicationAdministration.dosage.dose`**| _Equivalent_<br/>(15811/15812)| `MedicationAdministration.dosage.dose`| _Equivalent_<br/>(29582/29583)| `MedicationAdministration.dosage.dose`| _Equivalent_<br/>(44338/44339)| `MedicationAdministration.dosage.dose`
 | `MedicationAdministration.dosage.rate[x]`| →→→→ _RelatedTo_ →→→→ <br/>(6189)<hr/>←←←← _RelatedTo_ ←←←← <br/>(6190)| **`MedicationAdministration.dosage.rate[x]`**| _Equivalent_<br/>(15813/15814)| `MedicationAdministration.dosage.rate[x]`| _Equivalent_<br/>(29584/29585)| `MedicationAdministration.dosage.rate[x]`| _Equivalent_<br/>(44340/44341)| `MedicationAdministration.dosage.rate[x]`
 | | | **`MedicationAdministration.eventHistory`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15815)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15816)| `MedicationAdministration.eventHistory`| _Equivalent_<br/>(29586/29587)| `MedicationAdministration.eventHistory`| _Equivalent_<br/>(44342/44343)| `MedicationAdministration.eventHistory`
-| *32 of 32 elements used* | | *43 of 43 elements used* | | *41 of 42 elements used* | | *40 of 42 elements used* | | *38 of 44 elements used* 
+| *32 of 32 elements used* | | *43 of 43 elements used* | | *41 of 42 elements used* <br/>remaining elements:<br/>`MedicationAdministration.performer.function`, `MedicationAdministration.statusReason`| | *40 of 42 elements used* <br/>remaining elements:<br/>`MedicationAdministration.performer.function`, `MedicationAdministration.statusReason`| | *38 of 44 elements used* <br/>remaining elements:<br/>`MedicationAdministration.basedOn`, `MedicationAdministration.isSubPotent`, `MedicationAdministration.performer.function`, `MedicationAdministration.recorded`, `MedicationAdministration.statusReason`, `MedicationAdministration.subPotentReason`
 

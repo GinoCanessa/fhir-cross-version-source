@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### EncounterState
 
@@ -49,5 +49,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`finished`**| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8036)<hr/>←←←← _Equivalent_ ←←←← <br/>(10342) | `discharged`
 | **`finished`**| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8036)<hr/>←←←← _Equivalent_ ←←←← <br/>(10342) | `completed`
 | **`cancelled`**| _Equivalent_ <br/>(544/1896)| `cancelled`| _Equivalent_ <br/>(3665/5950)| `cancelled`| _Equivalent_ <br/>(15864/15865)| `cancelled`| _Equivalent_ <br/>(8034/10339)| `cancelled`
-| *6 of 6 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* | | *6 of 9 codes used* 
+| *6 of 6 codes used* | | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`discontinued`, `entered-in-error`, `unknown`
 

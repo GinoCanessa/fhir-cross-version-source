@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:37 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### CareTeam
 
@@ -91,5 +91,5 @@ All elements from this structure are listed while other structures only show con
 | | | `CareTeam.managingOrganization`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11115)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11116)| `CareTeam.managingOrganization`| _Equivalent_<br/>(22703/22704)| `CareTeam.managingOrganization`| _Equivalent_<br/>(37685/37686)| **`CareTeam.managingOrganization`**
 | | | | | `CareTeam.telecom`| _Equivalent_<br/>(22705/22706)| `CareTeam.telecom`| _Equivalent_<br/>(37687/37688)| **`CareTeam.telecom`**
 | | | `CareTeam.note`| _Equivalent_<br/>(11117/11118)| `CareTeam.note`| _Equivalent_<br/>(22707/22708)| `CareTeam.note`| _Equivalent_<br/>(37689/37690)| **`CareTeam.note`**
-| | | *27 of 28 elements used* | | *28 of 29 elements used* | | *28 of 29 elements used* | | *27 of 27 elements used* 
+| | | *27 of 28 elements used* <br/>remaining elements:<br/>`CareTeam.context`| | *28 of 29 elements used* <br/>remaining elements:<br/>`CareTeam.encounter`| | *28 of 29 elements used* <br/>remaining elements:<br/>`CareTeam.encounter`| | *27 of 27 elements used* 
 

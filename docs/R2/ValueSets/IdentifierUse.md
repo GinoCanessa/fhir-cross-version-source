@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### IdentifierUse
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`official`**| _Equivalent_ <br/>(603/1965)| `official`| _Equivalent_ <br/>(3783/6097)| `official`| _Equivalent_ <br/>(16192/16193)| `official`| _Equivalent_ <br/>(8342/10651)| `official`
 | **`temp`**| _Equivalent_ <br/>(601/1963)| `temp`| _Equivalent_ <br/>(3781/6100)| `temp`| _Equivalent_ <br/>(16194/16195)| `temp`| _Equivalent_ <br/>(8339/10648)| `temp`
 | **`secondary`**| _Equivalent_ <br/>(600/1962)| `secondary`| _Equivalent_ <br/>(3780/6099)| `secondary`| _Equivalent_ <br/>(16196/16197)| `secondary`| _Equivalent_ <br/>(8338/10647)| `secondary`
-| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* | | *4 of 5 codes used* 
+| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* <br/>remaining codes:<br/>`old`| | *4 of 5 codes used* <br/>remaining codes:<br/>`old`| | *4 of 5 codes used* <br/>remaining codes:<br/>`old`
 

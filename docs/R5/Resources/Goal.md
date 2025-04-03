@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### Goal
 
@@ -100,5 +100,5 @@ All elements from this structure are listed while other structures only show con
 | `Goal.note`| _Equivalent_<br/>(5379/5380)| `Goal.note`| _Equivalent_<br/>(14558/14559)| `Goal.note`| _Equivalent_<br/>(27584/27585)| `Goal.note`| _Equivalent_<br/>(42574/42575)| **`Goal.note`**
 | `Goal.outcome.result[x]`| →→→→ _RelatedTo_ →→→→ <br/>(239)<hr/>←←←← _RelatedTo_ ←←←← <br/>(624)| `Goal.outcomeCode`| _Equivalent_<br/>(14560/14561)| `Goal.outcomeCode`| _Equivalent_<br/>(27586/27587)| `Goal.outcomeCode`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1796)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2041)| **`Goal.outcome`**
 | `Goal.outcome.result[x]`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(240)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(625)| `Goal.outcomeReference`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(14562)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(14563)| `Goal.outcomeReference`| _Equivalent_<br/>(27588/27589)| `Goal.outcomeReference`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1797)<hr/>←←←← _RelatedTo_ ←←←← <br/>(2041)| **`Goal.outcome`**
-| *24 of 27 elements used* | | *30 of 30 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* 
+| *24 of 27 elements used* <br/>remaining elements:<br/>`Goal.outcome.extension`, `Goal.outcome.id`, `Goal.outcome.modifierExtension`| | *30 of 30 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* | | *31 of 31 elements used* 
 

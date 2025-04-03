@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:08 PM
+Generated at Thursday, April 3, 2025 8:18:07 AM
 
 ### Bundle
 
@@ -126,5 +126,5 @@ All elements from this structure are listed while other structures only show con
 | **`Bundle.entry.response.etag`**| _Equivalent_<br/>(3272/3273)| `Bundle.entry.response.etag`| _Equivalent_<br/>(10554/10555)| `Bundle.entry.response.etag`| _Equivalent_<br/>(22246/22247)| `Bundle.entry.response.etag`| _Equivalent_<br/>(37281/37282)| `Bundle.entry.response.etag`
 | **`Bundle.entry.response.lastModified`**| _Equivalent_<br/>(3274/3275)| `Bundle.entry.response.lastModified`| _Equivalent_<br/>(10556/10557)| `Bundle.entry.response.lastModified`| _Equivalent_<br/>(22248/22249)| `Bundle.entry.response.lastModified`| _Equivalent_<br/>(37283/37284)| `Bundle.entry.response.lastModified`
 | **`Bundle.signature`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3276)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(3277)| `Bundle.signature`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10560)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10561)| `Bundle.signature`| _Equivalent_<br/>(22252/22253)| `Bundle.signature`| _Equivalent_<br/>(37287/37288)| `Bundle.signature`
-| *45 of 45 elements used* | | *45 of 47 elements used* | | *45 of 48 elements used* | | *45 of 48 elements used* | | *45 of 49 elements used* 
+| *45 of 45 elements used* | | *45 of 47 elements used* <br/>remaining elements:<br/>`Bundle.entry.response.outcome`, `Bundle.identifier`| | *45 of 48 elements used* <br/>remaining elements:<br/>`Bundle.entry.response.outcome`, `Bundle.identifier`, `Bundle.timestamp`| | *45 of 48 elements used* <br/>remaining elements:<br/>`Bundle.entry.response.outcome`, `Bundle.identifier`, `Bundle.timestamp`| | *45 of 49 elements used* <br/>remaining elements:<br/>`Bundle.entry.response.outcome`, `Bundle.identifier`, `Bundle.issues`, `Bundle.timestamp`
 

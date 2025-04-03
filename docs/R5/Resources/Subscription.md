@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:41 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### Subscription
 
@@ -114,5 +114,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | | | **`Subscription.contentType`**
 | | | | | | | | | **`Subscription.content`**
 | | | | | | | | | **`Subscription.maxCount`**
-| *13 of 24 elements used* | | *13 of 24 elements used* | | *13 of 23 elements used* | | *13 of 23 elements used* | | *39 of 39 elements used* 
+| *13 of 24 elements used* <br/>remaining elements:<br/>`Subscription.channel`, `Subscription.channel.endpoint`, `Subscription.channel.extension`, `Subscription.channel.header`, `Subscription.channel.id`, `Subscription.channel.modifierExtension`, `Subscription.channel.payload`, `Subscription.channel.type`, `Subscription.criteria`, `Subscription.error`, `Subscription.tag`| | *13 of 24 elements used* <br/>remaining elements:<br/>`Subscription.channel`, `Subscription.channel.endpoint`, `Subscription.channel.extension`, `Subscription.channel.header`, `Subscription.channel.id`, `Subscription.channel.modifierExtension`, `Subscription.channel.payload`, `Subscription.channel.type`, `Subscription.criteria`, `Subscription.error`, `Subscription.tag`| | *13 of 23 elements used* <br/>remaining elements:<br/>`Subscription.channel`, `Subscription.channel.endpoint`, `Subscription.channel.extension`, `Subscription.channel.header`, `Subscription.channel.id`, `Subscription.channel.modifierExtension`, `Subscription.channel.payload`, `Subscription.channel.type`, `Subscription.criteria`, `Subscription.error`| | *13 of 23 elements used* <br/>remaining elements:<br/>`Subscription.channel`, `Subscription.channel.endpoint`, `Subscription.channel.extension`, `Subscription.channel.header`, `Subscription.channel.id`, `Subscription.channel.modifierExtension`, `Subscription.channel.payload`, `Subscription.channel.type`, `Subscription.criteria`, `Subscription.error`| | *39 of 39 elements used* 
 

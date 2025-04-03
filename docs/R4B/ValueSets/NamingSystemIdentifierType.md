@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:25 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### NamingSystemIdentifierType
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | `uuid`| _Equivalent_ <br/>(845/2212)| `uuid`| _Equivalent_ <br/>(4035/6369)| `uuid`| _Equivalent_ <br/>(16664/16665)| **`uuid`**| _Equivalent_ <br/>(9031/11342)| `uuid`
 | `uri`| _Equivalent_ <br/>(846/2213)| `uri`| _Equivalent_ <br/>(4036/6370)| `uri`| _Equivalent_ <br/>(16666/16667)| **`uri`**| _Equivalent_ <br/>(9032/11341)| `uri`
 | `other`| _Equivalent_ <br/>(843/2210)| `other`| _Equivalent_ <br/>(4033/6367)| `other`| _Equivalent_ <br/>(16668/16669)| **`other`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(9029)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11340) | `other`
-| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 6 codes used* 
+| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 6 codes used* <br/>remaining codes:<br/>`iri-stem`, `v2csmnemonic`
 

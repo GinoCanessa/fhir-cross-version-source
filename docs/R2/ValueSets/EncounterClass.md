@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### EncounterClass
 
@@ -49,5 +49,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`daytime`**| _Equivalent_ <br/>(535/1889)| `SS`| _Equivalent_ <br/>(3656/5941)| `SS`| | | | | 
 | **`virtual`**| _Equivalent_ <br/>(536/1890)| `VR`| _Equivalent_ <br/>(3657/5942)| `VR`| | | | | 
 | **`other`**| | | | | | | | | 
-| *9 of 9 codes used* | | *7 of 10 codes used* | | *7 of 11 codes used* | | | | 
+| *9 of 9 codes used* | | *7 of 10 codes used* <br/>remaining codes:<br/>`ACUTE`, `NONAC`, `PRENC`| | *7 of 11 codes used* <br/>remaining codes:<br/>`ACUTE`, `NONAC`, `OBSENC`, `PRENC`| | | | 
 

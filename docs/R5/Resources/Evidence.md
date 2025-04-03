@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:38 PM
+Generated at Thursday, April 3, 2025 8:18:35 AM
 
 ### Evidence
 
@@ -244,5 +244,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | `Evidence.certainty.rating`| _Equivalent_<br/>(41531/41532)| **`Evidence.certainty.rating`**
 | | | | | | | `Evidence.certainty.rater`| _Equivalent_<br/>(41533/41534)| **`Evidence.certainty.rater`**
 | | | | | | | `Evidence.certainty.subcomponent`| _Equivalent_<br/>(41535/41536)| **`Evidence.certainty.subcomponent`**
-| | | | | *27 of 37 elements used* | | *97 of 98 elements used* | | *104 of 104 elements used* 
+| | | | | *27 of 37 elements used* <br/>remaining elements:<br/>`Evidence.copyright`, `Evidence.effectivePeriod`, `Evidence.exposureBackground`, `Evidence.exposureVariant`, `Evidence.jurisdiction`, `Evidence.name`, `Evidence.outcome`, `Evidence.shortTitle`, `Evidence.subtitle`, `Evidence.topic`| | *97 of 98 elements used* <br/>remaining elements:<br/>`Evidence.studyType`| | *104 of 104 elements used* 
 

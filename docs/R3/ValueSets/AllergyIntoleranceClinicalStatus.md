@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:10 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### AllergyIntoleranceClinicalStatus
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | `active`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(21)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11986) | **`active`**| _Equivalent_ <br/>(2906/5107)| `active`| _Equivalent_ <br/>(14452/14453)| `active`| _Equivalent_ <br/>(7439/9704)| `active`
 | `inactive`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(19)<hr/>←←←← _Equivalent_ ←←←← <br/>(11988) | **`inactive`**| _Equivalent_ <br/>(2905/5106)| `inactive`| _Equivalent_ <br/>(14454/14455)| `inactive`| _Equivalent_ <br/>(7440/9705)| `inactive`
 | `resolved`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(24)<hr/>←←←← _Equivalent_ ←←←← <br/>(11987) | **`resolved`**| _Equivalent_ <br/>(2907/5108)| `resolved`| _Equivalent_ <br/>(14456/14457)| `resolved`| _Equivalent_ <br/>(7441/9706)| `resolved`
-| *4 of 7 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* 
+| *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `refuted`, `unconfirmed`| | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* 
 

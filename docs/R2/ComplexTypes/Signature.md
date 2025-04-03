@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Signature
 
@@ -52,5 +52,5 @@ All elements from this structure are listed while other structures only show con
 | **`Signature.who[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(2855)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2856)| `Signature.who[x]`| →→→→ _RelatedTo_ →→→→ <br/>(1283)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1673)| `Signature.who`| _Equivalent_<br/>(21280/21281)| `Signature.who`| →→→→ _Equivalent_ →→→→ <br/>(36347)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(36348)| `Signature.who`
 | **`Signature.contentType`**| →→→→ _Equivalent_ →→→→ <br/>(2857)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2858)| `Signature.contentType`| _Equivalent_<br/>(1281/1672)| `Signature.sigFormat`| _Equivalent_<br/>(21286/21287)| `Signature.sigFormat`| _Equivalent_<br/>(36353/36354)| `Signature.sigFormat`
 | **`Signature.blob`**| →→→→ _Equivalent_ →→→→ <br/>(2859)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2860)| `Signature.blob`| _Equivalent_<br/>(1280/1670)| `Signature.data`| _Equivalent_<br/>(21288/21289)| `Signature.data`| _Equivalent_<br/>(36355/36356)| `Signature.data`
-| *8 of 8 elements used* | | *8 of 9 elements used* | | *8 of 10 elements used* | | *8 of 10 elements used* | | *8 of 10 elements used* 
+| *8 of 8 elements used* | | *8 of 9 elements used* <br/>remaining elements:<br/>`Signature.onBehalfOf[x]`| | *8 of 10 elements used* <br/>remaining elements:<br/>`Signature.onBehalfOf`, `Signature.targetFormat`| | *8 of 10 elements used* <br/>remaining elements:<br/>`Signature.onBehalfOf`, `Signature.targetFormat`| | *8 of 10 elements used* <br/>remaining elements:<br/>`Signature.onBehalfOf`, `Signature.targetFormat`
 

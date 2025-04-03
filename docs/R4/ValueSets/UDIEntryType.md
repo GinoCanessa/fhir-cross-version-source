@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### UDIEntryType
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `card`| _Equivalent_ <br/>(3559/5845)| **`card`**| _Equivalent_ <br/>(18380/18381)| `card`| _Equivalent_ <br/>(7956/10259)| `card`
 | | | `self-reported`| _Equivalent_ <br/>(3555/5841)| **`self-reported`**| _Equivalent_ <br/>(18382/18383)| `self-reported`| _Equivalent_ <br/>(7952/10263)| `self-reported`
 | | | `unknown`| _Equivalent_ <br/>(3560/5846)| **`unknown`**| _Equivalent_ <br/>(18384/18385)| `unknown`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7957)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10264) | `unknown`
-| | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* 
+| | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`electronic-transmission`
 

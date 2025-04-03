@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### CompartmentDefinition
 
@@ -96,5 +96,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`CompartmentDefinition.resource.code`**| →→→→ _Equivalent_ →→→→ <br/>(12185)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12186)| `CompartmentDefinition.resource.code`| →→→→ _Equivalent_ →→→→ <br/>(24009)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(24010)| `CompartmentDefinition.resource.code`| →→→→ _Equivalent_ →→→→ <br/>(39315)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(39316)| `CompartmentDefinition.resource.code`
 | | | **`CompartmentDefinition.resource.param`**| _Equivalent_<br/>(12187/12188)| `CompartmentDefinition.resource.param`| _Equivalent_<br/>(24011/24012)| `CompartmentDefinition.resource.param`| _Equivalent_<br/>(39317/39318)| `CompartmentDefinition.resource.param`
 | | | **`CompartmentDefinition.resource.documentation`**| _Equivalent_<br/>(12189/12190)| `CompartmentDefinition.resource.documentation`| _Equivalent_<br/>(24013/24014)| `CompartmentDefinition.resource.documentation`| _Equivalent_<br/>(39319/39320)| `CompartmentDefinition.resource.documentation`
-| | | *30 of 30 elements used* | | *28 of 29 elements used* | | *28 of 29 elements used* | | *28 of 33 elements used* 
+| | | *30 of 30 elements used* | | *28 of 29 elements used* <br/>remaining elements:<br/>`CompartmentDefinition.version`| | *28 of 29 elements used* <br/>remaining elements:<br/>`CompartmentDefinition.version`| | *28 of 33 elements used* <br/>remaining elements:<br/>`CompartmentDefinition.resource.endParam`, `CompartmentDefinition.resource.startParam`, `CompartmentDefinition.title`, `CompartmentDefinition.version`, `CompartmentDefinition.versionAlgorithm[x]`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### LinkType
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`replace`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(964)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2335) | `replaces`| _Equivalent_ <br/>(4133/6478)| `replaces`| _Equivalent_ <br/>(16360/16361)| `replaces`| _Equivalent_ <br/>(9163/11477)| `replaces`
 | **`refer`**| _Equivalent_ <br/>(963/2333)| `refer`| _Equivalent_ <br/>(4132/6477)| `refer`| _Equivalent_ <br/>(16362/16363)| `refer`| _Equivalent_ <br/>(9162/11476)| `refer`
 | **`seealso`**| _Equivalent_ <br/>(965/2336)| `seealso`| _Equivalent_ <br/>(4134/6479)| `seealso`| _Equivalent_ <br/>(16364/16365)| `seealso`| _Equivalent_ <br/>(9164/11478)| `seealso`
-| *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`replaced-by`| | *3 of 4 codes used* <br/>remaining codes:<br/>`replaced-by`| | *3 of 4 codes used* <br/>remaining codes:<br/>`replaced-by`| | *3 of 4 codes used* <br/>remaining codes:<br/>`replaced-by`
 

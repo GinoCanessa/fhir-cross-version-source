@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:37 AM
 
 ### EvidenceVariable
 
@@ -202,5 +202,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | `EvidenceVariable.category.modifierExtension`| _Equivalent_<br/>(41756/41757)| **`EvidenceVariable.category.modifierExtension`**
 | | | | | | | `EvidenceVariable.category.name`| _Equivalent_<br/>(41758/41759)| **`EvidenceVariable.category.name`**
 | | | | | | | `EvidenceVariable.category.value[x]`| _Equivalent_<br/>(41760/41761)| **`EvidenceVariable.category.value[x]`**
-| | | | | *34 of 46 elements used* | | *46 of 55 elements used* | | *83 of 83 elements used* 
+| | | | | *34 of 46 elements used* <br/>remaining elements:<br/>`EvidenceVariable.approvalDate`, `EvidenceVariable.characteristic.groupMeasure`, `EvidenceVariable.characteristic.participantEffective[x]`, `EvidenceVariable.characteristic.timeFromStart`, `EvidenceVariable.characteristic.usageContext`, `EvidenceVariable.copyright`, `EvidenceVariable.effectivePeriod`, `EvidenceVariable.jurisdiction`, `EvidenceVariable.lastReviewDate`, `EvidenceVariable.subtitle`, `EvidenceVariable.topic`, `EvidenceVariable.type`| | *46 of 55 elements used* <br/>remaining elements:<br/>`EvidenceVariable.characteristic.device`, `EvidenceVariable.characteristic.groupMeasure`, `EvidenceVariable.characteristic.method`, `EvidenceVariable.characteristic.timeFromStart`, `EvidenceVariable.characteristic.timeFromStart.extension`, `EvidenceVariable.characteristic.timeFromStart.id`, `EvidenceVariable.characteristic.timeFromStart.modifierExtension`, `EvidenceVariable.characteristicCombination`, `EvidenceVariable.subtitle`| | *83 of 83 elements used* 
 

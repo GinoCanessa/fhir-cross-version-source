@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### ActivityDefinition
 
@@ -150,5 +150,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ActivityDefinition.dynamicValue.path`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10049)<hr/>←←←← _Equivalent_ ←←←← <br/>(10050)| `ActivityDefinition.dynamicValue.path`| _Equivalent_<br/>(21568/21569)| `ActivityDefinition.dynamicValue.path`| _Equivalent_<br/>(36617/36618)| `ActivityDefinition.dynamicValue.path`
 | | | **`ActivityDefinition.dynamicValue.language`**| | | | | | | 
 | | | **`ActivityDefinition.dynamicValue.expression`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10052)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10053)| `ActivityDefinition.dynamicValue.expression`| _Equivalent_<br/>(21570/21571)| `ActivityDefinition.dynamicValue.expression`| _Equivalent_<br/>(36619/36620)| `ActivityDefinition.dynamicValue.expression`
-| | | *55 of 55 elements used* | | *57 of 65 elements used* | | *56 of 65 elements used* | | *56 of 71 elements used* 
+| | | *55 of 55 elements used* | | *57 of 65 elements used* <br/>remaining elements:<br/>`ActivityDefinition.doNotPerform`, `ActivityDefinition.intent`, `ActivityDefinition.observationRequirement`, `ActivityDefinition.observationResultRequirement`, `ActivityDefinition.priority`, `ActivityDefinition.profile`, `ActivityDefinition.specimenRequirement`, `ActivityDefinition.subject[x]`, `ActivityDefinition.subtitle`| | *56 of 65 elements used* <br/>remaining elements:<br/>`ActivityDefinition.doNotPerform`, `ActivityDefinition.intent`, `ActivityDefinition.observationRequirement`, `ActivityDefinition.observationResultRequirement`, `ActivityDefinition.priority`, `ActivityDefinition.profile`, `ActivityDefinition.specimenRequirement`, `ActivityDefinition.subject[x]`, `ActivityDefinition.subtitle`| | *56 of 71 elements used* <br/>remaining elements:<br/>`ActivityDefinition.asNeeded[x]`, `ActivityDefinition.copyrightLabel`, `ActivityDefinition.doNotPerform`, `ActivityDefinition.intent`, `ActivityDefinition.observationRequirement`, `ActivityDefinition.observationResultRequirement`, `ActivityDefinition.participant.function`, `ActivityDefinition.participant.typeCanonical`, `ActivityDefinition.participant.typeReference`, `ActivityDefinition.priority`, `ActivityDefinition.profile`, `ActivityDefinition.specimenRequirement`, `ActivityDefinition.subject[x]`, `ActivityDefinition.subtitle`, `ActivityDefinition.versionAlgorithm[x]`
 

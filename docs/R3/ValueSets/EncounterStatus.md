@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:09 AM
 
 ### EncounterStatus
 
@@ -52,5 +52,5 @@ All codes from this value set are listed while other value sets only show conten
 | `cancelled`| _Equivalent_ <br/>(544/1896)| **`cancelled`**| _Equivalent_ <br/>(3665/5950)| `cancelled`| _Equivalent_ <br/>(15864/15865)| `cancelled`| _Equivalent_ <br/>(8034/10339)| `cancelled`
 | | | **`entered-in-error`**| _Equivalent_ <br/>(3668/5953)| `entered-in-error`| _Equivalent_ <br/>(15866/15867)| `entered-in-error`| _Equivalent_ <br/>(8035/10344)| `entered-in-error`
 | | | **`unknown`**| _Equivalent_ <br/>(3670/5955)| `unknown`| _Equivalent_ <br/>(15868/15869)| `unknown`| _Equivalent_ <br/>(8042/10348)| `unknown`
-| *6 of 6 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *8 of 9 codes used* 
+| *6 of 6 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *8 of 9 codes used* <br/>remaining codes:<br/>`discontinued`
 

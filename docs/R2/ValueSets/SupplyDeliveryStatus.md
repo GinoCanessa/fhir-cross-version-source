@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### SupplyDeliveryStatus
 
@@ -44,5 +44,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`in-progress`**| _Equivalent_ <br/>(1291/2738)| `in-progress`| _Equivalent_ <br/>(4860/7183)| `in-progress`| _Equivalent_ <br/>(18260/18261)| `in-progress`| _Equivalent_ <br/>(9438/11774)| `in-progress`
 | **`completed`**| _Equivalent_ <br/>(1289/2736)| `completed`| _Equivalent_ <br/>(4857/7180)| `completed`| _Equivalent_ <br/>(18262/18263)| `completed`| _Equivalent_ <br/>(9435/11771)| `completed`
 | **`abandoned`**| _Equivalent_ <br/>(1290/2735)| `abandoned`| _Equivalent_ <br/>(4858/7181)| `abandoned`| _Equivalent_ <br/>(18264/18265)| `abandoned`| _Equivalent_ <br/>(9436/11772)| `abandoned`
-| *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *3 of 4 codes used* <br/>remaining codes:<br/>`entered-in-error`
 

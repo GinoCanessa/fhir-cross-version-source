@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:18 AM
 
 ### SecurityRoleType
 
@@ -189,5 +189,5 @@ All codes from this value set are listed while other value sets only show conten
 | `110153`| _Equivalent_ <br/>(1254/2553)| `110153`| _Equivalent_ <br/>(4254/6596)| **`110153`**| | | | | 
 | `110154`| _Equivalent_ <br/>(1259/2551)| `110154`| _Equivalent_ <br/>(4255/6597)| **`110154`**| | | | | 
 | `110155`| _Equivalent_ <br/>(1255/2556)| `110155`| _Equivalent_ <br/>(4256/6598)| **`110155`**| | | | | 
-| *6 of 6 codes used* | | *75 of 76 codes used* | | *76 of 76 codes used* | | | | 
+| *6 of 6 codes used* | | *75 of 76 codes used* <br/>remaining codes:<br/>`_CitizenRoleType`| | *76 of 76 codes used* | | | | 
 

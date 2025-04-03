@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:32 AM
 
 ### TestScriptOperationCode
 
@@ -60,5 +60,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | `transaction`| _Equivalent_ <br/>(9634/11963)| **`transaction`**
 | | | | | | | `batch`| _Equivalent_ <br/>(9598/11948)| **`batch`**
 | | | | | | | | | **`operation`**
-| | | | | | | *11 of 45 codes used* | | *18 of 18 codes used* 
+| | | | | | | *11 of 45 codes used* <br/>remaining codes:<br/>`apply`, `closure`, `conforms`, `data-requirements`, `deleteCondMultiple`, `deleteCondSingle`, `document`, `evaluate`, `evaluate-measure`, `everything`, `expand`, `find`, `find-matches`, `graphql`, `implements`, `lastn`, `lookup`, `match`, `meta`, `meta-add`, `meta-delete`, `populate`, `populatehtml`, `populatelink`, `process-message`, `questionnaire`, `stats`, `subset`, `subsumes`, `transform`, `translate`, `updateCreate`, `validate`, `validate-code`| | *18 of 18 codes used* 
 

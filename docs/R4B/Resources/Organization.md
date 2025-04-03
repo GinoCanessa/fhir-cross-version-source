@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:26 AM
 
 ### Organization
 
@@ -88,5 +88,5 @@ All elements from this structure are listed while other structures only show con
 | `Organization.contact.telecom`| _Equivalent_<br/>(6908/6909)| `Organization.contact.telecom`| _Equivalent_<br/>(16759/16760)| `Organization.contact.telecom`| _Equivalent_<br/>(31192/31193)| **`Organization.contact.telecom`**| | | 
 | `Organization.contact.address`| _Equivalent_<br/>(6910/6911)| `Organization.contact.address`| _Equivalent_<br/>(16761/16762)| `Organization.contact.address`| _Equivalent_<br/>(31194/31195)| **`Organization.contact.address`**| | | 
 | | | `Organization.endpoint`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(16763)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(16764)| `Organization.endpoint`| _Equivalent_<br/>(31196/31197)| **`Organization.endpoint`**| _Equivalent_<br/>(45803/45804)| `Organization.endpoint`
-| *24 of 24 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *17 of 26 elements used* 
+| *24 of 24 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *26 of 26 elements used* | | *17 of 26 elements used* <br/>remaining elements:<br/>`Organization.description`, `Organization.qualification`, `Organization.qualification.code`, `Organization.qualification.extension`, `Organization.qualification.id`, `Organization.qualification.identifier`, `Organization.qualification.issuer`, `Organization.qualification.modifierExtension`, `Organization.qualification.period`
 

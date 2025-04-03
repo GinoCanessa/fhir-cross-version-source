@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:36 PM
+Generated at Thursday, April 3, 2025 8:18:34 AM
 
 ### Device
 
@@ -185,5 +185,5 @@ All elements from this structure are listed while other structures only show con
 | `Device.note`| _Equivalent_<br/>(4512/4513)| `Device.note`| _Equivalent_<br/>(12925/12926)| `Device.note`| _Equivalent_<br/>(25602/25603)| `Device.note`| _Equivalent_<br/>(40529/40530)| **`Device.note`**
 | | | `Device.safety`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(12927)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12928)| `Device.safety`| _Equivalent_<br/>(25604/25605)| `Device.safety`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(40531)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(40532)| **`Device.safety`**
 | | | | | `Device.parent`| _Equivalent_<br/>(25606/25607)| `Device.parent`| _Equivalent_<br/>(40533/40534)| **`Device.parent`**
-| *24 of 25 elements used* | | *31 of 36 elements used* | | *55 of 66 elements used* | | *55 of 66 elements used* | | *74 of 74 elements used* 
+| *24 of 25 elements used* <br/>remaining elements:<br/>`Device.patient`| | *31 of 36 elements used* <br/>remaining elements:<br/>`Device.patient`, `Device.udi.extension`, `Device.udi.id`, `Device.udi.modifierExtension`, `Device.udi.name`| | *55 of 66 elements used* <br/>remaining elements:<br/>`Device.deviceName.extension`, `Device.deviceName.id`, `Device.deviceName.modifierExtension`, `Device.distinctIdentifier`, `Device.patient`, `Device.specialization.extension`, `Device.specialization.id`, `Device.specialization.modifierExtension`, `Device.specialization.systemType`, `Device.specialization.version`, `Device.statusReason`| | *55 of 66 elements used* <br/>remaining elements:<br/>`Device.deviceName.extension`, `Device.deviceName.id`, `Device.deviceName.modifierExtension`, `Device.distinctIdentifier`, `Device.patient`, `Device.specialization.extension`, `Device.specialization.id`, `Device.specialization.modifierExtension`, `Device.specialization.systemType`, `Device.specialization.version`, `Device.statusReason`| | *74 of 74 elements used* 
 

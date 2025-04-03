@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:05 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### AccountStatus
 
@@ -43,5 +43,5 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/account-status`
 | **`active`**| _Equivalent_ <br/>(12817/12816)| `active`| _Equivalent_ <br/>(2877/5061)| `active`| _Equivalent_ <br/>(13856/13857)| `active`| _Equivalent_ <br/>(7400/9659)| `active`
 | **`inactive`**| _Equivalent_ <br/>(12819/12818)| `inactive`| _Equivalent_ <br/>(2876/5063)| `inactive`| _Equivalent_ <br/>(13858/13859)| `inactive`| _Equivalent_ <br/>(7399/9658)| `inactive`
-| *2 of 2 codes used* | | *2 of 3 codes used* | | *2 of 5 codes used* | | *2 of 5 codes used* | | *2 of 5 codes used* 
+| *2 of 2 codes used* | | *2 of 3 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *2 of 5 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *2 of 5 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *2 of 5 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`
 

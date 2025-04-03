@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:14 PM
+Generated at Thursday, April 3, 2025 8:18:12 AM
 
 ### ExpansionProfile
 
@@ -168,5 +168,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`ExpansionProfile.excludePostCoordinated`**| | | | | | | 
 | | | **`ExpansionProfile.displayLanguage`**| | | | | | | 
 | | | **`ExpansionProfile.limitedExpansion`**| | | | | | | 
-| | | *66 of 66 elements used* | | *0 of 13 elements used* | | *0 of 13 elements used* | | *0 of 13 elements used* 
+| | | *66 of 66 elements used* | | *0 of 13 elements used* <br/>remaining elements:<br/>`Parameters`, `Parameters.id`, `Parameters.implicitRules`, `Parameters.language`, `Parameters.meta`, `Parameters.parameter`, `Parameters.parameter.extension`, `Parameters.parameter.id`, `Parameters.parameter.modifierExtension`, `Parameters.parameter.name`, `Parameters.parameter.part`, `Parameters.parameter.resource`, `Parameters.parameter.value[x]`| | *0 of 13 elements used* <br/>remaining elements:<br/>`Parameters`, `Parameters.id`, `Parameters.implicitRules`, `Parameters.language`, `Parameters.meta`, `Parameters.parameter`, `Parameters.parameter.extension`, `Parameters.parameter.id`, `Parameters.parameter.modifierExtension`, `Parameters.parameter.name`, `Parameters.parameter.part`, `Parameters.parameter.resource`, `Parameters.parameter.value[x]`| | *0 of 13 elements used* <br/>remaining elements:<br/>`Parameters`, `Parameters.id`, `Parameters.implicitRules`, `Parameters.language`, `Parameters.meta`, `Parameters.parameter`, `Parameters.parameter.extension`, `Parameters.parameter.id`, `Parameters.parameter.modifierExtension`, `Parameters.parameter.name`, `Parameters.parameter.part`, `Parameters.parameter.resource`, `Parameters.parameter.value[x]`
 

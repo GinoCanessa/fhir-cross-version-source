@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:27 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### DeviceUseStatementStatus
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `intended`| _Equivalent_ <br/>(3591/5878)| `intended`| _Equivalent_ <br/>(15766/15767)| **`intended`**| _Equivalent_ <br/>(7983/10288)| `intended`
 | | | `stopped`| _Equivalent_ <br/>(3590/5877)| `stopped`| _Equivalent_ <br/>(15768/15769)| **`stopped`**| _Equivalent_ <br/>(7982/10291)| `stopped`
 | | | `on-hold`| _Equivalent_ <br/>(3595/5882)| `on-hold`| _Equivalent_ <br/>(15770/15771)| **`on-hold`**| _Equivalent_ <br/>(7987/10290)| `on-hold`
-| | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* 
+| | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`not-done`
 

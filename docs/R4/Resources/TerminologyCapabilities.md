@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:25 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### TerminologyCapabilities
 
@@ -212,5 +212,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | **`TerminologyCapabilities.closure.extension`**| _Equivalent_<br/>(34342/34343)| `TerminologyCapabilities.closure.extension`| _Equivalent_<br/>(48761/48762)| `TerminologyCapabilities.closure.extension`
 | | | | | **`TerminologyCapabilities.closure.modifierExtension`**| _Equivalent_<br/>(34344/34345)| `TerminologyCapabilities.closure.modifierExtension`| _Equivalent_<br/>(48763/48764)| `TerminologyCapabilities.closure.modifierExtension`
 | | | | | **`TerminologyCapabilities.closure.translation`**| _Equivalent_<br/>(34346/34347)| `TerminologyCapabilities.closure.translation`| _Equivalent_<br/>(48765/48766)| `TerminologyCapabilities.closure.translation`
-| | | | | *88 of 88 elements used* | | *88 of 88 elements used* | | *88 of 92 elements used* 
+| | | | | *88 of 88 elements used* | | *88 of 88 elements used* | | *88 of 92 elements used* <br/>remaining elements:<br/>`TerminologyCapabilities.codeSystem.content`, `TerminologyCapabilities.copyrightLabel`, `TerminologyCapabilities.identifier`, `TerminologyCapabilities.versionAlgorithm[x]`
 

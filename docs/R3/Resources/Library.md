@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:13 PM
+Generated at Thursday, April 3, 2025 8:18:11 AM
 
 ### Library
 
@@ -110,5 +110,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Library.parameter`**| _Equivalent_<br/>(15239/15240)| `Library.parameter`| _Equivalent_<br/>(28877/28878)| `Library.parameter`| _Equivalent_<br/>(43748/43749)| `Library.parameter`
 | | | **`Library.dataRequirement`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(15241)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(15242)| `Library.dataRequirement`| _Equivalent_<br/>(28879/28880)| `Library.dataRequirement`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(43750)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(43751)| `Library.dataRequirement`
 | | | **`Library.content`**| _Equivalent_<br/>(15243/15244)| `Library.content`| _Equivalent_<br/>(28881/28882)| `Library.content`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(43752)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(43753)| `Library.content`
-| | | *35 of 35 elements used* | | *39 of 40 elements used* | | *38 of 40 elements used* | | *38 of 42 elements used* 
+| | | *35 of 35 elements used* | | *39 of 40 elements used* <br/>remaining elements:<br/>`Library.subject[x]`, `Library.subtitle`| | *38 of 40 elements used* <br/>remaining elements:<br/>`Library.subject[x]`, `Library.subtitle`| | *38 of 42 elements used* <br/>remaining elements:<br/>`Library.copyrightLabel`, `Library.subject[x]`, `Library.subtitle`, `Library.versionAlgorithm[x]`
 

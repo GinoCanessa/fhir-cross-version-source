@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:34 PM
+Generated at Thursday, April 3, 2025 8:18:31 AM
 
 ### ParticipationStatus
 
@@ -46,7 +46,7 @@ All codes from this value set are listed while other value sets only show conten
 | `declined`| _Equivalent_ <br/>(40/1410)| `declined`| _Equivalent_ <br/>(2926/5127)| `declined`| _Equivalent_ <br/>(16742/16743)| `declined`| _Equivalent_ <br/>(7455/9720)| **`declined`**
 | `tentative`| _Equivalent_ <br/>(43/1413)| `tentative`| _Equivalent_ <br/>(2929/5130)| `tentative`| _Equivalent_ <br/>(16744/16745)| `tentative`| _Equivalent_ <br/>(7458/9723)| **`tentative`**
 | `needs-action`| _Equivalent_ <br/>(41/1411)| `needs-action`| _Equivalent_ <br/>(2927/5128)| `needs-action`| _Equivalent_ <br/>(16746/16747)| `needs-action`| _Equivalent_ <br/>(7456/9721)| **`needs-action`**
-| *4 of 6 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* 
+| *4 of 6 codes used* <br/>remaining codes:<br/>`accepted`, `completed`, `declined`, `in-process`, `needs-action`, `tentative`| | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* 
 
 
 #### Map Group 1

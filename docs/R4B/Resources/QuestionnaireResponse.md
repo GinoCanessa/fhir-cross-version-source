@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:32 PM
+Generated at Thursday, April 3, 2025 8:18:29 AM
 
 ### QuestionnaireResponse
 
@@ -108,5 +108,5 @@ All elements from this structure are listed while other structures only show con
 | | | `QuestionnaireResponse.item.answer.item`| _Equivalent_<br/>(17848/17849)| `QuestionnaireResponse.item.answer.item`| _Equivalent_<br/>(32263/32264)| **`QuestionnaireResponse.item.answer.item`**| _Equivalent_<br/>(46831/46832)| `QuestionnaireResponse.item.answer.item`
 | `QuestionnaireResponse.group.group`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(383)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(732)| `QuestionnaireResponse.item.item`| _Equivalent_<br/>(17850/17851)| `QuestionnaireResponse.item.item`| _Equivalent_<br/>(32265/32266)| **`QuestionnaireResponse.item.item`**| _Equivalent_<br/>(46833/46834)| `QuestionnaireResponse.item.item`
 | `QuestionnaireResponse.group.question.answer.group`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(387)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(732)| `QuestionnaireResponse.item.item`| _Equivalent_<br/>(17850/17851)| `QuestionnaireResponse.item.item`| _Equivalent_<br/>(32265/32266)| **`QuestionnaireResponse.item.item`**| _Equivalent_<br/>(46833/46834)| `QuestionnaireResponse.item.item`
-| *29 of 38 elements used* | | *33 of 34 elements used* | | *33 of 33 elements used* | | *33 of 33 elements used* | | *33 of 33 elements used* 
+| *29 of 38 elements used* <br/>remaining elements:<br/>`QuestionnaireResponse.group.extension`, `QuestionnaireResponse.group.id`, `QuestionnaireResponse.group.modifierExtension`, `QuestionnaireResponse.group.question.answer.extension`, `QuestionnaireResponse.group.question.answer.id`, `QuestionnaireResponse.group.question.answer.modifierExtension`, `QuestionnaireResponse.group.question.extension`, `QuestionnaireResponse.group.question.id`, `QuestionnaireResponse.group.question.modifierExtension`| | *33 of 34 elements used* <br/>remaining elements:<br/>`QuestionnaireResponse.item.subject`| | *33 of 33 elements used* | | *33 of 33 elements used* | | *33 of 33 elements used* 
 

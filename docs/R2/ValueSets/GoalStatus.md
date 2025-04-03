@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### GoalStatus
 
@@ -50,5 +50,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`sustaining`**| _Equivalent_ <br/>(562/1931)| `sustaining`| →→→→ _Equivalent_ →→→→ <br/>(3726)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6005) | `active`| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
 | **`on-hold`**| _Equivalent_ <br/>(570/1926)| `on-hold`| _Equivalent_ <br/>(3721/6010)| `on-hold`| _Equivalent_ <br/>(16070/16071)| `on-hold`| _Equivalent_ <br/>(8307/10612)| `on-hold`
 | **`cancelled`**| _Equivalent_ <br/>(567/1923)| `cancelled`| _Equivalent_ <br/>(3718/6006)| `cancelled`| _Equivalent_ <br/>(16074/16075)| `cancelled`| _Equivalent_ <br/>(8303/10608)| `cancelled`
-| *9 of 9 codes used* | | *9 of 13 codes used* | | *8 of 9 codes used* | | *8 of 9 codes used* | | *8 of 9 codes used* 
+| *9 of 9 codes used* | | *9 of 13 codes used* <br/>remaining codes:<br/>`ahead-of-target`, `behind-target`, `entered-in-error`, `on-target`| | *8 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *8 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`| | *8 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`
 

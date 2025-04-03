@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### TypeRestfulInteraction
 
@@ -50,5 +50,5 @@ All codes from this value set are listed while other value sets only show conten
 | `history-type`| _Equivalent_ <br/>(193/1560)| `history-type`| _Equivalent_ <br/>(3105/5312)| **`history-type`**| _Equivalent_ <br/>(18368/18369)| `history-type`| _Equivalent_ <br/>(7675/9975)| `history-type`
 | `create`| _Equivalent_ <br/>(190/1557)| `create`| _Equivalent_ <br/>(3103/5310)| **`create`**| _Equivalent_ <br/>(18370/18371)| `create`| _Equivalent_ <br/>(7673/9973)| `create`
 | `search-type`| _Equivalent_ <br/>(195/1563)| `search-type`| _Equivalent_ <br/>(3098/5305)| **`search-type`**| _Equivalent_ <br/>(18372/18373)| `search-type`| _Equivalent_ <br/>(7668/9968)| `search-type`
-| *8 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
+| *8 of 9 codes used* <br/>remaining codes:<br/>`validate`| | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
 

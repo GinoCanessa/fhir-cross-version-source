@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:40 PM
+Generated at Thursday, April 3, 2025 8:18:38 AM
 
 ### Medication
 
@@ -97,5 +97,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | `Medication.batch.lotNumber`| _Equivalent_<br/>(29495/29496)| `Medication.batch.lotNumber`| _Equivalent_<br/>(44267/44268)| **`Medication.batch.lotNumber`**
 | | | | | `Medication.batch.expirationDate`| _Equivalent_<br/>(29497/29498)| `Medication.batch.expirationDate`| _Equivalent_<br/>(44269/44270)| **`Medication.batch.expirationDate`**
 | | | | | | | | | **`Medication.definition`**
-| *15 of 40 elements used* | | *20 of 40 elements used* | | *28 of 28 elements used* | | *28 of 28 elements used* | | *29 of 29 elements used* 
+| *15 of 40 elements used* <br/>remaining elements:<br/>`Medication.isBrand`, `Medication.package`, `Medication.package.container`, `Medication.package.content`, `Medication.package.content.amount`, `Medication.package.content.extension`, `Medication.package.content.id`, `Medication.package.content.item`, `Medication.package.content.modifierExtension`, `Medication.package.extension`, `Medication.package.id`, `Medication.package.modifierExtension`, `Medication.product.batch`, `Medication.product.batch.expirationDate`, `Medication.product.batch.extension`, `Medication.product.batch.id`, `Medication.product.batch.lotNumber`, `Medication.product.batch.modifierExtension`, `Medication.product.extension`, `Medication.product.id`, `Medication.product.ingredient.extension`, `Medication.product.ingredient.id`, `Medication.product.ingredient.item`, `Medication.product.ingredient.modifierExtension`, `Medication.product.modifierExtension`| | *20 of 40 elements used* <br/>remaining elements:<br/>`Medication.image`, `Medication.isBrand`, `Medication.isOverTheCounter`, `Medication.package`, `Medication.package.batch`, `Medication.package.batch.expirationDate`, `Medication.package.batch.extension`, `Medication.package.batch.id`, `Medication.package.batch.lotNumber`, `Medication.package.batch.modifierExtension`, `Medication.package.container`, `Medication.package.content`, `Medication.package.content.amount`, `Medication.package.content.extension`, `Medication.package.content.id`, `Medication.package.content.item[x]`, `Medication.package.content.modifierExtension`, `Medication.package.extension`, `Medication.package.id`, `Medication.package.modifierExtension`| | *28 of 28 elements used* | | *28 of 28 elements used* | | *29 of 29 elements used* 
 

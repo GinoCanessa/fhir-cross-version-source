@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### GroupType
 
@@ -47,5 +47,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`device`**| _Equivalent_ <br/>(576/1937)| `device`| _Equivalent_ <br/>(3732/6016)| `device`| _Equivalent_ <br/>(16110/16111)| `device`| _Equivalent_ <br/>(8309/10615)| `device`
 | **`medication`**| _Equivalent_ <br/>(575/1936)| `medication`| _Equivalent_ <br/>(3731/6015)| `medication`| _Equivalent_ <br/>(16112/16113)| `medication`| | | 
 | **`substance`**| _Equivalent_ <br/>(573/1934)| `substance`| _Equivalent_ <br/>(3729/6013)| `substance`| _Equivalent_ <br/>(16114/16115)| `substance`| | | 
-| *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *4 of 10 codes used* 
+| *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *6 of 6 codes used* | | *4 of 10 codes used* <br/>remaining codes:<br/>`careteam`, `healthcareservice`, `location`, `organization`, `relatedperson`, `specimen`
 

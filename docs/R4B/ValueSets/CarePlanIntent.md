@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:26 PM
+Generated at Thursday, April 3, 2025 8:18:24 AM
 
 ### CarePlanIntent
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `plan`| _Equivalent_ <br/>(3141/5352)| `plan`| _Equivalent_ <br/>(14622/14623)| **`plan`**| _Equivalent_ <br/>(7705/10006)| `plan`
 | | | `order`| _Equivalent_ <br/>(3142/5351)| `order`| _Equivalent_ <br/>(14624/14625)| **`order`**| _Equivalent_ <br/>(7706/10008)| `order`
 | | | `option`| _Equivalent_ <br/>(3143/5350)| `option`| _Equivalent_ <br/>(14626/14627)| **`option`**| _Equivalent_ <br/>(7707/10009)| `option`
-| | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* 
+| | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 5 codes used* <br/>remaining codes:<br/>`directive`
 

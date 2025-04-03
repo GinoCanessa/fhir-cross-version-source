@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### SubscriptionTopic
 
@@ -170,5 +170,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`SubscriptionTopic.notificationShape.resource`**| _Equivalent_<br/>(48099/48100)| `SubscriptionTopic.notificationShape.resource`
 | | | | | | | **`SubscriptionTopic.notificationShape.include`**| _Equivalent_<br/>(48101/48102)| `SubscriptionTopic.notificationShape.include`
 | | | | | | | **`SubscriptionTopic.notificationShape.revInclude`**| _Equivalent_<br/>(48103/48104)| `SubscriptionTopic.notificationShape.revInclude`
-| | | | | | | *67 of 67 elements used* | | *67 of 71 elements used* 
+| | | | | | | *67 of 67 elements used* | | *67 of 71 elements used* <br/>remaining elements:<br/>`SubscriptionTopic.canFilterBy.comparator`, `SubscriptionTopic.copyrightLabel`, `SubscriptionTopic.name`, `SubscriptionTopic.versionAlgorithm[x]`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Organization
 
@@ -84,5 +84,5 @@ All elements from this structure are listed while other structures only show con
 | **`Organization.contact.name`**| _Equivalent_<br/>(6906/6907)| `Organization.contact.name`| _Equivalent_<br/>(16757/16758)| `Organization.contact.name`| _Equivalent_<br/>(31190/31191)| `Organization.contact.name`| | | 
 | **`Organization.contact.telecom`**| _Equivalent_<br/>(6908/6909)| `Organization.contact.telecom`| _Equivalent_<br/>(16759/16760)| `Organization.contact.telecom`| _Equivalent_<br/>(31192/31193)| `Organization.contact.telecom`| | | 
 | **`Organization.contact.address`**| _Equivalent_<br/>(6910/6911)| `Organization.contact.address`| _Equivalent_<br/>(16761/16762)| `Organization.contact.address`| _Equivalent_<br/>(31194/31195)| `Organization.contact.address`| | | 
-| *24 of 24 elements used* | | *24 of 26 elements used* | | *24 of 26 elements used* | | *24 of 26 elements used* | | *15 of 26 elements used* 
+| *24 of 24 elements used* | | *24 of 26 elements used* <br/>remaining elements:<br/>`Organization.alias`, `Organization.endpoint`| | *24 of 26 elements used* <br/>remaining elements:<br/>`Organization.alias`, `Organization.endpoint`| | *24 of 26 elements used* <br/>remaining elements:<br/>`Organization.alias`, `Organization.endpoint`| | *15 of 26 elements used* <br/>remaining elements:<br/>`Organization.alias`, `Organization.description`, `Organization.endpoint`, `Organization.qualification`, `Organization.qualification.code`, `Organization.qualification.extension`, `Organization.qualification.id`, `Organization.qualification.identifier`, `Organization.qualification.issuer`, `Organization.qualification.modifierExtension`, `Organization.qualification.period`
 

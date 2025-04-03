@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:12 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### Claim Processing Codes
 
@@ -51,7 +51,7 @@ All codes from this value set are listed while other value sets only show conten
 | `complete`| _Equivalent_ <br/>(527/1877)| **`complete`**| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | `error`| _Equivalent_ <br/>(528/1878)| **`error`**| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
 | | | **`partial`**| _Equivalent_ <br/>(3647/5189)| `partial`| _Equivalent_ <br/>(16908/16909)| `partial`| _Equivalent_ <br/>(9216/11530)| `partial`
-| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 1
@@ -65,7 +65,7 @@ All codes from this value set are listed while other value sets only show conten
 | `complete`| _Equivalent_ <br/>(527/1877)| **`complete`**| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | `error`| _Equivalent_ <br/>(528/1878)| **`error`**| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
 | | | **`partial`**| _Equivalent_ <br/>(3647/5189)| `partial`| _Equivalent_ <br/>(16908/16909)| `partial`| _Equivalent_ <br/>(9216/11530)| `partial`
-| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 2
@@ -79,7 +79,7 @@ All codes from this value set are listed while other value sets only show conten
 | `complete`| _Equivalent_ <br/>(527/1877)| **`complete`**| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | `error`| _Equivalent_ <br/>(528/1878)| **`error`**| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
 | | | **`partial`**| _Equivalent_ <br/>(3647/5189)| `partial`| _Equivalent_ <br/>(16908/16909)| `partial`| _Equivalent_ <br/>(9216/11530)| `partial`
-| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`complete`, `error`, `partial`, `queued`
 
 
 #### Map Group 3
@@ -93,5 +93,5 @@ All codes from this value set are listed while other value sets only show conten
 | `complete`| _Equivalent_ <br/>(527/1877)| **`complete`**| _Equivalent_ <br/>(3645/5187)| `complete`| _Equivalent_ <br/>(16904/16905)| `complete`| _Equivalent_ <br/>(9214/11528)| `complete`
 | `error`| _Equivalent_ <br/>(528/1878)| **`error`**| _Equivalent_ <br/>(3646/5188)| `error`| _Equivalent_ <br/>(16906/16907)| `error`| _Equivalent_ <br/>(9215/11529)| `error`
 | | | **`partial`**| _Equivalent_ <br/>(3647/5189)| `partial`| _Equivalent_ <br/>(16908/16909)| `partial`| _Equivalent_ <br/>(9216/11530)| `partial`
-| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* | | *3 of 4 codes used* 
+| *2 of 2 codes used* | | *3 of 3 codes used* | | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`| | *3 of 4 codes used* <br/>remaining codes:<br/>`queued`
 

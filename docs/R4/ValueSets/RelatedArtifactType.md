@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:19 PM
+Generated at Thursday, April 3, 2025 8:18:17 AM
 
 ### RelatedArtifactType
 
@@ -49,5 +49,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | `derived-from`| _Equivalent_ <br/>(4554/6864)| **`derived-from`**| _Equivalent_ <br/>(16892/16893)| `derived-from`| _Equivalent_ <br/>(9274/11612)| `derived-from`
 | | | `depends-on`| _Equivalent_ <br/>(4550/6860)| **`depends-on`**| _Equivalent_ <br/>(16894/16895)| `depends-on`| _Equivalent_ <br/>(9270/11611)| `depends-on`
 | | | `composed-of`| _Equivalent_ <br/>(4557/6867)| **`composed-of`**| _Equivalent_ <br/>(16896/16897)| `composed-of`| _Equivalent_ <br/>(9277/11605)| `composed-of`
-| | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 36 codes used* 
+| | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 8 codes used* | | *8 of 36 codes used* <br/>remaining codes:<br/>`amended-with`, `amends`, `appended-with`, `appends`, `cite-as`, `cited-by`, `cites`, `comment-in`, `comments-on`, `contained-in`, `contains`, `correction-in`, `corrects`, `created-with`, `documents`, `part-of`, `replaced-with`, `replaces`, `retracted-by`, `retracts`, `signs`, `similar-to`, `specification-of`, `supported-with`, `supports`, `transformed-into`, `transformed-with`, `transforms`
 

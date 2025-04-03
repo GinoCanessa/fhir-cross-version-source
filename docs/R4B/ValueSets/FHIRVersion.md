@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:25 PM
+Generated at Thursday, April 3, 2025 8:18:23 AM
 
 ### FHIRVersion
 
@@ -73,5 +73,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | **`4.3.0-cibuild`**| _Equivalent_ <br/>(7635/9930)| `4.3.0-cibuild`
 | | | | | | | **`4.3.0-snapshot1`**| _Equivalent_ <br/>(7621/9931)| `4.3.0-snapshot1`
 | | | | | | | **`4.3.0`**| _Equivalent_ <br/>(7623/9929)| `4.3.0`
-| | | | | *22 of 22 codes used* | | *27 of 27 codes used* | | *27 of 57 codes used* 
+| | | | | *22 of 22 codes used* | | *27 of 27 codes used* | | *27 of 57 codes used* <br/>remaining codes:<br/>`0.0`, `0.4`, `0.5`, `1.0`, `1.1`, `1.4`, `1.6`, `1.8`, `3.0`, `3.3`, `3.5`, `4.0`, `4.1`, `4.2`, `4.2.0`, `4.3`, `4.4`, `4.4.0`, `4.5`, `4.5.0`, `4.6`, `4.6.0`, `5.0`, `5.0.0`, `5.0.0-ballot`, `5.0.0-cibuild`, `5.0.0-draft-final`, `5.0.0-snapshot1`, `5.0.0-snapshot2`, `5.0.0-snapshot3`
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:30 PM
+Generated at Thursday, April 3, 2025 8:18:27 AM
 
 ### PaymentNotice
 
@@ -79,5 +79,5 @@ All elements from this structure are listed while other structures only show con
 | `PaymentNotice.target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(7062)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(7063)| `PaymentNotice.target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1217)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1622)| `PaymentNotice.recipient`| _Equivalent_<br/>(31408/31409)| **`PaymentNotice.recipient`**| _Equivalent_<br/>(46070/46071)| `PaymentNotice.recipient`
 | | | | | `PaymentNotice.amount`| _Equivalent_<br/>(31410/31411)| **`PaymentNotice.amount`**| _Equivalent_<br/>(46072/46073)| `PaymentNotice.amount`
 | `PaymentNotice.paymentStatus`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7072)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(7073)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(16917/16918)| `PaymentNotice.paymentStatus`| _Equivalent_<br/>(31412/31413)| **`PaymentNotice.paymentStatus`**| _Equivalent_<br/>(46074/46075)| `PaymentNotice.paymentStatus`
-| *17 of 19 elements used* | | *19 of 19 elements used* | | *21 of 21 elements used* | | *21 of 21 elements used* | | *21 of 21 elements used* 
+| *17 of 19 elements used* <br/>remaining elements:<br/>`PaymentNotice.originalRuleset`, `PaymentNotice.ruleset`| | *19 of 19 elements used* | | *21 of 21 elements used* | | *21 of 21 elements used* | | *21 of 21 elements used* 
 

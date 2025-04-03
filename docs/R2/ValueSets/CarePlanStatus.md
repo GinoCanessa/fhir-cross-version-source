@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### CarePlanStatus
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`active`**| _Equivalent_ <br/>(222/1590)| `active`| _Equivalent_ <br/>(3144/5355)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`
 | **`completed`**| _Equivalent_ <br/>(224/1592)| `completed`| _Equivalent_ <br/>(3146/5356)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | **`cancelled`**| _Equivalent_ <br/>(223/1591)| `cancelled`| _Equivalent_ <br/>(3145/5357)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
-| *5 of 5 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* | | *4 of 7 codes used* 
+| *5 of 5 codes used* | | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `suspended`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`| | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `on-hold`, `unknown`
 

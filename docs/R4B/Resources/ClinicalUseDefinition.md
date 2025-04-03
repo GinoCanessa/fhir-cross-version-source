@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:33 PM
+Generated at Thursday, April 3, 2025 8:18:30 AM
 
 ### ClinicalUseDefinition
 
@@ -168,5 +168,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`ClinicalUseDefinition.warning.modifierExtension`**| _Equivalent_<br/>(38987/38988)| `ClinicalUseDefinition.warning.modifierExtension`
 | | | | | | | **`ClinicalUseDefinition.warning.description`**| _Equivalent_<br/>(38989/38990)| `ClinicalUseDefinition.warning.description`
 | | | | | | | **`ClinicalUseDefinition.warning.code`**| _Equivalent_<br/>(38991/38992)| `ClinicalUseDefinition.warning.code`
-| | | | | | | *66 of 66 elements used* | | *66 of 69 elements used* 
+| | | | | | | *66 of 66 elements used* | | *66 of 69 elements used* <br/>remaining elements:<br/>`ClinicalUseDefinition.contraindication.applicability`, `ClinicalUseDefinition.indication.applicability`, `ClinicalUseDefinition.library`
 

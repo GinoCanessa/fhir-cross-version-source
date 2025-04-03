@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:16 PM
+Generated at Thursday, April 3, 2025 8:18:14 AM
 
 ### Task
 
@@ -153,7 +153,7 @@ All elements from this structure are listed while other structures only show con
 | | | **`Task.output.modifierExtension`**| _Equivalent_<br/>(19267/19268)| `Task.output.modifierExtension`| _Equivalent_<br/>(34166/34167)| `Task.output.modifierExtension`| _Equivalent_<br/>(48585/48586)| `Task.output.modifierExtension`
 | | | **`Task.output.type`**| _Equivalent_<br/>(19269/19270)| `Task.output.type`| _Equivalent_<br/>(34168/34169)| `Task.output.type`| _Equivalent_<br/>(48587/48588)| `Task.output.type`
 | | | **`Task.output.value[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(19271)<hr/>←←←← _RelatedTo_ ←←←← <br/>(19272)| `Task.output.value[x]`| _Equivalent_<br/>(34170/34171)| `Task.output.value[x]`| →→→→ _RelatedTo_ →→→→ <br/>(48589)<hr/>←←←← _RelatedTo_ ←←←← <br/>(48590)| `Task.output.value[x]`
-| *2 of 22 elements used* | | *57 of 57 elements used* | | *54 of 56 elements used* | | *53 of 56 elements used* | | *52 of 63 elements used* 
+| *2 of 22 elements used* <br/>remaining elements:<br/>`Order`, `Order.contained`, `Order.date`, `Order.detail`, `Order.extension`, `Order.id`, `Order.identifier`, `Order.implicitRules`, `Order.language`, `Order.meta`, `Order.modifierExtension`, `Order.reason[x]`, `Order.source`, `Order.subject`, `Order.target`, `Order.text`, `Order.when`, `Order.when.code`, `Order.when.extension`, `Order.when.id`, `Order.when.modifierExtension`, `Order.when.schedule`| | *57 of 57 elements used* | | *54 of 56 elements used* <br/>remaining elements:<br/>`Task.insurance`, `Task.location`, `Task.reasonReference`| | *53 of 56 elements used* <br/>remaining elements:<br/>`Task.insurance`, `Task.location`, `Task.reasonReference`| | *52 of 63 elements used* <br/>remaining elements:<br/>`Task.doNotPerform`, `Task.insurance`, `Task.location`, `Task.performer`, `Task.performer.actor`, `Task.performer.extension`, `Task.performer.function`, `Task.performer.id`, `Task.performer.modifierExtension`, `Task.requestedPerformer`, `Task.requestedPeriod`
 
 
 #### Map Group 1
@@ -222,5 +222,5 @@ All elements from this structure are listed while other structures only show con
 | | | **`Task.output.modifierExtension`**| _Equivalent_<br/>(19267/19268)| `Task.output.modifierExtension`| _Equivalent_<br/>(34166/34167)| `Task.output.modifierExtension`| _Equivalent_<br/>(48585/48586)| `Task.output.modifierExtension`
 | | | **`Task.output.type`**| _Equivalent_<br/>(19269/19270)| `Task.output.type`| _Equivalent_<br/>(34168/34169)| `Task.output.type`| _Equivalent_<br/>(48587/48588)| `Task.output.type`
 | | | **`Task.output.value[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(19271)<hr/>←←←← _RelatedTo_ ←←←← <br/>(19272)| `Task.output.value[x]`| _Equivalent_<br/>(34170/34171)| `Task.output.value[x]`| →→→→ _RelatedTo_ →→→→ <br/>(48589)<hr/>←←←← _RelatedTo_ ←←←← <br/>(48590)| `Task.output.value[x]`
-| *2 of 16 elements used* | | *57 of 57 elements used* | | *54 of 56 elements used* | | *53 of 56 elements used* | | *52 of 63 elements used* 
+| *2 of 16 elements used* <br/>remaining elements:<br/>`OrderResponse`, `OrderResponse.contained`, `OrderResponse.description`, `OrderResponse.extension`, `OrderResponse.fulfillment`, `OrderResponse.id`, `OrderResponse.identifier`, `OrderResponse.implicitRules`, `OrderResponse.language`, `OrderResponse.meta`, `OrderResponse.modifierExtension`, `OrderResponse.orderStatus`, `OrderResponse.text`, `OrderResponse.who`| | *57 of 57 elements used* | | *54 of 56 elements used* <br/>remaining elements:<br/>`Task.insurance`, `Task.location`, `Task.reasonReference`| | *53 of 56 elements used* <br/>remaining elements:<br/>`Task.insurance`, `Task.location`, `Task.reasonReference`| | *52 of 63 elements used* <br/>remaining elements:<br/>`Task.doNotPerform`, `Task.insurance`, `Task.location`, `Task.performer`, `Task.performer.actor`, `Task.performer.extension`, `Task.performer.function`, `Task.performer.id`, `Task.performer.modifierExtension`, `Task.requestedPerformer`, `Task.requestedPeriod`
 

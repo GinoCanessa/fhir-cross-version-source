@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:06 AM
 
 ### Binary
 
@@ -50,5 +50,5 @@ All elements from this structure are listed while other structures only show con
 | **`Binary.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3154)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(3155)| `Binary.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(10445)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(10446)| `Binary.language`| _Equivalent_<br/>(22010/22011)| `Binary.language`| _Equivalent_<br/>(37087/37088)| `Binary.language`
 | **`Binary.contentType`**| _Equivalent_<br/>(3156/3157)| `Binary.contentType`| _Equivalent_<br/>(10447/10448)| `Binary.contentType`| _Equivalent_<br/>(22012/22013)| `Binary.contentType`| _Equivalent_<br/>(37089/37090)| `Binary.contentType`
 | **`Binary.content`**| _Equivalent_<br/>(3158/3159)| `Binary.content`| →→→→ _Equivalent_ →→→→ <br/>(820)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1358)| `Binary.data`| _Equivalent_<br/>(22016/22017)| `Binary.data`| _Equivalent_<br/>(37093/37094)| `Binary.data`
-| *7 of 7 elements used* | | *7 of 8 elements used* | | *7 of 8 elements used* | | *7 of 8 elements used* | | *7 of 8 elements used* 
+| *7 of 7 elements used* | | *7 of 8 elements used* <br/>remaining elements:<br/>`Binary.securityContext`| | *7 of 8 elements used* <br/>remaining elements:<br/>`Binary.securityContext`| | *7 of 8 elements used* <br/>remaining elements:<br/>`Binary.securityContext`| | *7 of 8 elements used* <br/>remaining elements:<br/>`Binary.securityContext`
 

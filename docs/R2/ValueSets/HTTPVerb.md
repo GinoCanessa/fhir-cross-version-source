@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:06 PM
+Generated at Thursday, April 3, 2025 8:18:04 AM
 
 ### HTTPVerb
 
@@ -45,5 +45,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`POST`**| _Equivalent_ <br/>(70/1440)| `POST`| _Equivalent_ <br/>(2963/5169)| `POST`| _Equivalent_ <br/>(16182/16183)| `POST`| _Equivalent_ <br/>(7487/9750)| `POST`
 | **`PUT`**| _Equivalent_ <br/>(72/1442)| `PUT`| _Equivalent_ <br/>(2965/5170)| `PUT`| _Equivalent_ <br/>(16184/16185)| `PUT`| _Equivalent_ <br/>(7489/9752)| `PUT`
 | **`DELETE`**| _Equivalent_ <br/>(69/1439)| `DELETE`| _Equivalent_ <br/>(2962/5165)| `DELETE`| _Equivalent_ <br/>(16186/16187)| `DELETE`| _Equivalent_ <br/>(7486/9749)| `DELETE`
-| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 6 codes used* | | *4 of 6 codes used* | | *4 of 6 codes used* 
+| *4 of 4 codes used* | | *4 of 4 codes used* | | *4 of 6 codes used* <br/>remaining codes:<br/>`HEAD`, `PATCH`| | *4 of 6 codes used* <br/>remaining codes:<br/>`HEAD`, `PATCH`| | *4 of 6 codes used* <br/>remaining codes:<br/>`HEAD`, `PATCH`
 

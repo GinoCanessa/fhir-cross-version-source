@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:07 PM
+Generated at Thursday, April 3, 2025 8:18:05 AM
 
 ### PatientRelationshipType
 
@@ -163,5 +163,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`ONESELF`**| _Equivalent_ <br/>(12560/12561)| `ONESELF`| | | | | | | 
 | **`ROOM`**| _Equivalent_ <br/>(12562/12563)| `ROOM`| | | | | | | 
 | **`_PersonalRelationshipRoleType`**| | | | | | | | | 
-| *121 of 121 codes used* | | *109 of 121 codes used* | | | | | | 
+| *121 of 121 codes used* | | *109 of 121 codes used* <br/>remaining codes:<br/>`BP`, `C`, `CP`, `E`, `EP`, `F`, `I`, `N`, `O`, `PR`, `S`, `U`| | | | | | 
 

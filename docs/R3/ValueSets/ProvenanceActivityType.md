@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:11 PM
+Generated at Thursday, April 3, 2025 8:18:10 AM
 
 ### ProvenanceActivityType
 
@@ -200,5 +200,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | **`aggregate`**| | | | | | | 
 | | | **`compose`**| | | | | | | 
 | | | **`label`**| | | | | | | 
-| *11 of 11 codes used* | | *83 of 83 codes used* | | *13 of 70 codes used* | | | | 
+| *11 of 11 codes used* | | *83 of 83 codes used* | | *13 of 70 codes used* <br/>remaining codes:<br/>`ADM`, `ALY`, `ATND`, `AUT`, `AUTHEN`, `BBY`, `BEN`, `CAGNT`, `CALLBCK`, `CAT`, `CON`, `COV`, `CSM`, `CST`, `DEV`, `DIR`, `DIS`, `DIST`, `DON`, `DST`, `ELOC`, `ENT`, `ESC`, `EXPAGNT`, `EXPART`, `EXPTRGT`, `EXSRC`, `GUAR`, `HLD`, `IND`, `INF`, `IRCP`, `LOC`, `NOT`, `NRD`, `ORG`, `PART`, `PPRF`, `PRCP`, `PRD`, `PRF`, `RCT`, `RCV`, `RDV`, `REF`, `REFB`, `REFT`, `RESP`, `RML`, `SBJ`, `SPC`, `SPRF`, `TPA`, `TRANS`, `TRC`, `VIA`, `VRF`, `WIT`| | | | 
 

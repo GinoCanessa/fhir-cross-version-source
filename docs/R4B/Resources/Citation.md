@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:31 PM
+Generated at Thursday, April 3, 2025 8:18:28 AM
 
 ### Citation
 
@@ -457,5 +457,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`Citation.citedArtifact.contributorship.summary.source`**| _Equivalent_<br/>(38212/38213)| `Citation.citedArtifact.contributorship.summary.source`
 | | | | | | | **`Citation.citedArtifact.contributorship.summary.value`**| _Equivalent_<br/>(38214/38215)| `Citation.citedArtifact.contributorship.summary.value`
 | | | | | | | **`Citation.citedArtifact.note`**| _Equivalent_<br/>(38216/38217)| `Citation.citedArtifact.note`
-| | | | | | | *210 of 210 elements used* | | *166 of 181 elements used* 
+| | | | | | | *210 of 210 elements used* | | *166 of 181 elements used* <br/>remaining elements:<br/>`Citation.citedArtifact.classification.artifactAssessment`, `Citation.citedArtifact.contributorship.entry.affiliation`, `Citation.citedArtifact.contributorship.entry.contributor`, `Citation.citedArtifact.publicationForm.citedMedium`, `Citation.citedArtifact.publicationForm.issue`, `Citation.citedArtifact.publicationForm.publicationDateSeason`, `Citation.citedArtifact.publicationForm.publicationDateText`, `Citation.citedArtifact.publicationForm.volume`, `Citation.citedArtifact.relatesTo.citation`, `Citation.citedArtifact.relatesTo.display`, `Citation.citedArtifact.relatesTo.document`, `Citation.citedArtifact.relatesTo.label`, `Citation.citedArtifact.relatesTo.resource`, `Citation.copyrightLabel`, `Citation.relatedArtifact`, `Citation.versionAlgorithm[x]`
 

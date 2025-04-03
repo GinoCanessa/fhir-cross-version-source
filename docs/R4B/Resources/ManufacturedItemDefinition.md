@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Tuesday, April 1, 2025 1:39:28 PM
+Generated at Thursday, April 3, 2025 8:18:25 AM
 
 ### ManufacturedItemDefinition
 
@@ -78,5 +78,5 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`ManufacturedItemDefinition.property.modifierExtension`**| _Equivalent_<br/>(43949/43950)| `ManufacturedItemDefinition.property.modifierExtension`
 | | | | | | | **`ManufacturedItemDefinition.property.type`**| _Equivalent_<br/>(43951/43952)| `ManufacturedItemDefinition.property.type`
 | | | | | | | **`ManufacturedItemDefinition.property.value[x]`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(43953)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(43954)| `ManufacturedItemDefinition.property.value[x]`
-| | | | | | | *21 of 21 elements used* | | *21 of 40 elements used* 
+| | | | | | | *21 of 21 elements used* | | *21 of 40 elements used* <br/>remaining elements:<br/>`ManufacturedItemDefinition.component`, `ManufacturedItemDefinition.component.amount`, `ManufacturedItemDefinition.component.component`, `ManufacturedItemDefinition.component.constituent`, `ManufacturedItemDefinition.component.constituent.amount`, `ManufacturedItemDefinition.component.constituent.extension`, `ManufacturedItemDefinition.component.constituent.function`, `ManufacturedItemDefinition.component.constituent.hasIngredient`, `ManufacturedItemDefinition.component.constituent.id`, `ManufacturedItemDefinition.component.constituent.location`, `ManufacturedItemDefinition.component.constituent.modifierExtension`, `ManufacturedItemDefinition.component.extension`, `ManufacturedItemDefinition.component.function`, `ManufacturedItemDefinition.component.id`, `ManufacturedItemDefinition.component.modifierExtension`, `ManufacturedItemDefinition.component.property`, `ManufacturedItemDefinition.component.type`, `ManufacturedItemDefinition.marketingStatus`, `ManufacturedItemDefinition.name`
 
