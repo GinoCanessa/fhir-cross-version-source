@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:09 AM
+Generated at Friday, April 4, 2025 2:58:36 PM
 
 ### CarePlanStatus
 
@@ -41,8 +41,8 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 CarePlanStatus](/docs/R2/ValueSets/CarePlanStatus.md)| Relationship | R3 CarePlanStatus| Relationship | [R4 RequestStatus](/docs/R4/ValueSets/RequestStatus.md)| Relationship | [R4B RequestStatus](/docs/R4B/ValueSets/RequestStatus.md)| Relationship | [R5 RequestStatus](/docs/R5/ValueSets/RequestStatus.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/care-plan-status`
-| `proposed`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(226)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1594) | **`draft`**| _Equivalent_ <br/>(3147/5354)| `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
-| `draft`| →→→→ _Equivalent_ →→→→ <br/>(225)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1594) | **`draft`**| _Equivalent_ <br/>(3147/5354)| `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
+| `proposed`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(226)<hr/>←←←← __ ←←←← <br/>() | **`draft`**| _Equivalent_ <br/>(3147/5354)| `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
+| `draft`| →→→→ _Equivalent_ →→→→ <br/>(225)<hr/>←←←← __ ←←←← <br/>() | **`draft`**| _Equivalent_ <br/>(3147/5354)| `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
 | `active`| _Equivalent_ <br/>(222/1590)| **`active`**| _Equivalent_ <br/>(3144/5355)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`
 | | | **`suspended`**| _Equivalent_ <br/>(3149/5359)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | `completed`| _Equivalent_ <br/>(224/1592)| **`completed`**| _Equivalent_ <br/>(3146/5356)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`

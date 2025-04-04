@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:31 AM
+Generated at Friday, April 4, 2025 2:58:58 PM
 
 ### RequestIntent
 
@@ -46,19 +46,19 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 DiagnosticOrderStatus](/docs/R2/ValueSets/DiagnosticOrderStatus.md)| Relationship | [R3 RequestIntent](/docs/R3/ValueSets/RequestIntent.md)| Relationship | [R4 RequestIntent](/docs/R4/ValueSets/RequestIntent.md)| Relationship | [R4B RequestIntent](/docs/R4B/ValueSets/RequestIntent.md)| Relationship | R5 RequestIntent
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/request-intent`
-| `proposed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(438)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12276) | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
-| `planned`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(432)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12276) | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
-| `requested`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(437)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12276) | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
-| `received`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(431)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12276) | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
+| `proposed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(438)<hr/>←←←← __ ←←←← <br/>() | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
+| `planned`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(432)<hr/>←←←← __ ←←←← <br/>() | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
+| `requested`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(437)<hr/>←←←← __ ←←←← <br/>() | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
+| `received`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(431)<hr/>←←←← __ ←←←← <br/>() | `proposal`| _Equivalent_ <br/>(3582/5875)| `proposal`| _Equivalent_ <br/>(16952/16953)| `proposal`| _Equivalent_ <br/>(7412/9671)| **`proposal`**
 | | | `plan`| _Equivalent_ <br/>(3587/5874)| `plan`| _Equivalent_ <br/>(16954/16955)| `plan`| _Equivalent_ <br/>(7417/9676)| **`plan`**
 | | | | | `directive`| _Equivalent_ <br/>(16956/16957)| `directive`| _Equivalent_ <br/>(7418/9677)| **`directive`**
 | | | `order`| _Equivalent_ <br/>(3588/5872)| `order`| _Equivalent_ <br/>(16958/16959)| `order`| _Equivalent_ <br/>(7419/9678)| **`order`**
 | | | `original-order`| _Equivalent_ <br/>(3585/5873)| `original-order`| _Equivalent_ <br/>(16960/16961)| `original-order`| _Equivalent_ <br/>(7415/9674)| **`original-order`**
 | | | `reflex-order`| _Equivalent_ <br/>(3586/5876)| `reflex-order`| _Equivalent_ <br/>(16962/16963)| `reflex-order`| _Equivalent_ <br/>(7416/9675)| **`reflex-order`**
 | | | `filler-order`| _Equivalent_ <br/>(3584/5869)| `filler-order`| _Equivalent_ <br/>(16964/16965)| `filler-order`| _Equivalent_ <br/>(7414/9673)| **`filler-order`**
-| `accepted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(430)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
-| `in-progress`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(435)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
-| `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(433)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(12279) | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
+| `accepted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(430)<hr/>←←←← __ ←←←← <br/>() | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
+| `in-progress`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(435)<hr/>←←←← __ ←←←← <br/>() | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
+| `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(433)<hr/>←←←← __ ←←←← <br/>() | `instance-order`| _Equivalent_ <br/>(3583/5870)| `instance-order`| _Equivalent_ <br/>(16966/16967)| `instance-order`| _Equivalent_ <br/>(7413/9672)| **`instance-order`**
 | | | `option`| _Equivalent_ <br/>(3589/5871)| `option`| _Equivalent_ <br/>(16968/16969)| `option`| _Equivalent_ <br/>(7420/9679)| **`option`**
 | *7 of 13 codes used* <br/>remaining codes:<br/>`cancelled`, `draft`, `failed`, `rejected`, `review`, `suspended`| | *8 of 8 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* | | *9 of 9 codes used* 
 

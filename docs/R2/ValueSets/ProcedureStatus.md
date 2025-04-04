@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:31 PM
 
 ### ProcedureStatus
 
@@ -42,8 +42,8 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/procedure-status`
 | **`in-progress`**| _Equivalent_ <br/>(995/2396)| `in-progress`| _Equivalent_ <br/>(3058/5263)| `in-progress`| _Equivalent_ <br/>(15902/15903)| `in-progress`| _Equivalent_ <br/>(7573/9843)| `in-progress`
-| **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
-| **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
+| **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3054)<hr/>←←←← _Equivalent_ ←←←← <br/>(5264) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
+| **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3053)<hr/>←←←← __ ←←←← <br/>() | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`aborted`**| _Equivalent_ <br/>(992/2393)| `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`completed`**| _Equivalent_ <br/>(993/2394)| `completed`| _Equivalent_ <br/>(3056/5261)| `completed`| _Equivalent_ <br/>(15910/15911)| `completed`| _Equivalent_ <br/>(7570/9840)| `completed`
 | **`entered-in-error`**| _Equivalent_ <br/>(994/2395)| `entered-in-error`| _Equivalent_ <br/>(3057/5262)| `entered-in-error`| _Equivalent_ <br/>(15912/15913)| `entered-in-error`| _Equivalent_ <br/>(7572/9842)| `entered-in-error`

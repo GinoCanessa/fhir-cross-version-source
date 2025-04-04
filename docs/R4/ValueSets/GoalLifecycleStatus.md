@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:16 AM
+Generated at Friday, April 4, 2025 2:58:43 PM
 
 ### GoalLifecycleStatus
 
@@ -44,10 +44,10 @@ All codes from this value set are listed while other value sets only show conten
 | `proposed`| _Equivalent_ <br/>(563/1929)| `proposed`| _Equivalent_ <br/>(3724/5999)| **`proposed`**| _Equivalent_ <br/>(16062/16063)| `proposed`| _Equivalent_ <br/>(8299/10604)| `proposed`
 | `planned`| _Equivalent_ <br/>(568/1928)| `planned`| _Equivalent_ <br/>(3723/6007)| **`planned`**| _Equivalent_ <br/>(16064/16065)| `planned`| _Equivalent_ <br/>(8304/10609)| `planned`
 | `accepted`| _Equivalent_ <br/>(565/1919)| `accepted`| _Equivalent_ <br/>(3714/6001)| **`accepted`**| _Equivalent_ <br/>(16066/16067)| `accepted`| _Equivalent_ <br/>(8301/10606)| `accepted`
-| `in-progress`| _Equivalent_ <br/>(569/1925)| `in-progress`| →→→→ _Equivalent_ →→→→ <br/>(3720)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6005) | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
-| | | `ahead-of-target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3716)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6005) | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
-| | | `behind-target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3717)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6005) | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
-| `sustaining`| _Equivalent_ <br/>(562/1931)| `sustaining`| →→→→ _Equivalent_ →→→→ <br/>(3726)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6005) | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
+| `in-progress`| _Equivalent_ <br/>(569/1925)| `in-progress`| →→→→ _Equivalent_ →→→→ <br/>(3720)<hr/>←←←← __ ←←←← <br/>() | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
+| | | `ahead-of-target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3716)<hr/>←←←← __ ←←←← <br/>() | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
+| | | `behind-target`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3717)<hr/>←←←← __ ←←←← <br/>() | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
+| `sustaining`| _Equivalent_ <br/>(562/1931)| `sustaining`| →→→→ _Equivalent_ →→→→ <br/>(3726)<hr/>←←←← __ ←←←← <br/>() | **`active`**| _Equivalent_ <br/>(16068/16069)| `active`| _Equivalent_ <br/>(8302/10607)| `active`
 | `on-hold`| _Equivalent_ <br/>(570/1926)| `on-hold`| _Equivalent_ <br/>(3721/6010)| **`on-hold`**| _Equivalent_ <br/>(16070/16071)| `on-hold`| _Equivalent_ <br/>(8307/10612)| `on-hold`
 | `achieved`| _Equivalent_ <br/>(566/1920)| `achieved`| _Equivalent_ <br/>(3715/6008)| **`completed`**| _Equivalent_ <br/>(16072/16073)| `completed`| _Equivalent_ <br/>(8305/10610)| `completed`
 | `cancelled`| _Equivalent_ <br/>(567/1923)| `cancelled`| _Equivalent_ <br/>(3718/6006)| **`cancelled`**| _Equivalent_ <br/>(16074/16075)| `cancelled`| _Equivalent_ <br/>(8303/10608)| `cancelled`

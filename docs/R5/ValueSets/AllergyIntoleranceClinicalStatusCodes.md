@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:31 AM
+Generated at Friday, April 4, 2025 2:58:58 PM
 
 ### AllergyIntoleranceClinicalStatusCodes
 
@@ -41,8 +41,8 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 AllergyIntoleranceStatus](/docs/R2/ValueSets/AllergyIntoleranceStatus.md)| Relationship | [R3 AllergyIntoleranceClinicalStatus](/docs/R3/ValueSets/AllergyIntoleranceClinicalStatus.md)| Relationship | [R4 AllergyIntoleranceClinicalStatusCodes](/docs/R4/ValueSets/AllergyIntoleranceClinicalStatusCodes.md)| Relationship | [R4B AllergyIntoleranceClinicalStatusCodes](/docs/R4B/ValueSets/AllergyIntoleranceClinicalStatusCodes.md)| Relationship | R5 AllergyIntoleranceClinicalStatusCodes
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical`
-| `confirmed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(23)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11986) | `active`| _Equivalent_ <br/>(2906/5107)| `active`| _Equivalent_ <br/>(14452/14453)| `active`| _Equivalent_ <br/>(7439/9704)| **`active`**
-| `active`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(21)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11986) | `active`| _Equivalent_ <br/>(2906/5107)| `active`| _Equivalent_ <br/>(14452/14453)| `active`| _Equivalent_ <br/>(7439/9704)| **`active`**
+| `confirmed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(23)<hr/>←←←← __ ←←←← <br/>() | `active`| _Equivalent_ <br/>(2906/5107)| `active`| _Equivalent_ <br/>(14452/14453)| `active`| _Equivalent_ <br/>(7439/9704)| **`active`**
+| `active`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(21)<hr/>←←←← __ ←←←← <br/>() | `active`| _Equivalent_ <br/>(2906/5107)| `active`| _Equivalent_ <br/>(14452/14453)| `active`| _Equivalent_ <br/>(7439/9704)| **`active`**
 | `inactive`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(19)<hr/>←←←← _Equivalent_ ←←←← <br/>(11988) | `inactive`| _Equivalent_ <br/>(2905/5106)| `inactive`| _Equivalent_ <br/>(14454/14455)| `inactive`| _Equivalent_ <br/>(7440/9705)| **`inactive`**
 | `resolved`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(24)<hr/>←←←← _Equivalent_ ←←←← <br/>(11987) | `resolved`| _Equivalent_ <br/>(2907/5108)| `resolved`| _Equivalent_ <br/>(14456/14457)| `resolved`| _Equivalent_ <br/>(7441/9706)| **`resolved`**
 | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `refuted`, `unconfirmed`| | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* | | *3 of 3 codes used* 

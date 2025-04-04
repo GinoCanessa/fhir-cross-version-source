@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### EncounterState
 
@@ -46,7 +46,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`arrived`**| _Equivalent_ <br/>(542/1895)| `arrived`| _Equivalent_ <br/>(3663/5948)| `arrived`| _Equivalent_ <br/>(15854/15855)| `arrived`| →→→→ _Equivalent_ →→→→ <br/>(8033)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10341) | `planned`
 | **`in-progress`**| _Equivalent_ <br/>(547/1899)| `in-progress`| _Equivalent_ <br/>(3669/5954)| `in-progress`| _Equivalent_ <br/>(15858/15859)| `in-progress`| →→→→ _Equivalent_ →→→→ <br/>(8038)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10345) | `in-progress`
 | **`onleave`**| _Equivalent_ <br/>(543/1900)| `onleave`| _Equivalent_ <br/>(3664/5949)| `onleave`| _Equivalent_ <br/>(15860/15861)| `onleave`| _Equivalent_ <br/>(8039/10347)| `on-hold`
-| **`finished`**| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8036)<hr/>←←←← _Equivalent_ ←←←← <br/>(10342) | `discharged`
+| **`finished`**| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8037)<hr/>←←←← _Equivalent_ ←←←← <br/>(10338) | `discharged`
 | **`finished`**| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8036)<hr/>←←←← _Equivalent_ ←←←← <br/>(10342) | `completed`
 | **`cancelled`**| _Equivalent_ <br/>(544/1896)| `cancelled`| _Equivalent_ <br/>(3665/5950)| `cancelled`| _Equivalent_ <br/>(15864/15865)| `cancelled`| _Equivalent_ <br/>(8034/10339)| `cancelled`
 | *6 of 6 codes used* | | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`entered-in-error`, `triaged`, `unknown`| | *6 of 9 codes used* <br/>remaining codes:<br/>`discontinued`, `entered-in-error`, `unknown`

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:37 PM
 
 ### MedicationAdministrationStatus
 
@@ -45,7 +45,7 @@ All codes from this value set are listed while other value sets only show conten
 | `on-hold`| _Equivalent_ <br/>(793/2153)| **`on-hold`**| _Equivalent_ <br/>(3931/6250)| `on-hold`| _Equivalent_ <br/>(16490/16491)| `on-hold`| _Equivalent_ <br/>(8749/11058)| `on-hold`
 | `completed`| _Equivalent_ <br/>(790/2150)| **`completed`**| _Equivalent_ <br/>(3928/6246)| `completed`| _Equivalent_ <br/>(16492/16493)| `completed`| _Equivalent_ <br/>(8745/11054)| `completed`
 | `entered-in-error`| _Equivalent_ <br/>(791/2151)| **`entered-in-error`**| _Equivalent_ <br/>(3929/6248)| `entered-in-error`| _Equivalent_ <br/>(16494/16495)| `entered-in-error`| _Equivalent_ <br/>(8747/11056)| `entered-in-error`
-| `stopped`| _Equivalent_ <br/>(789/2154)| **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3926)<hr/>←←←← _Equivalent_ ←←←← <br/>(6245) | `not-done`| _Equivalent_ <br/>(16488/16489)| `not-done`| _Equivalent_ <br/>(8746/11055)| `not-done`
+| `stopped`| _Equivalent_ <br/>(789/2154)| **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3927)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6247) | `not-done`| _Equivalent_ <br/>(16488/16489)| `not-done`| _Equivalent_ <br/>(8746/11055)| `not-done`
 | `stopped`| _Equivalent_ <br/>(789/2154)| **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3926)<hr/>←←←← _Equivalent_ ←←←← <br/>(6245) | `stopped`| _Equivalent_ <br/>(16496/16497)| `stopped`| _Equivalent_ <br/>(8744/11053)| `stopped`
 | | | **`unknown`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(3932)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6251) | `unknown`| _Equivalent_ <br/>(16498/16499)| `unknown`| _Equivalent_ <br/>(8750/11059)| `unknown`
 | *5 of 5 codes used* | | *6 of 6 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* | | *7 of 7 codes used* 

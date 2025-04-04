@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### CommunicationStatus
 
@@ -43,13 +43,13 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/communication-status`
 | **`in-progress`**| _Equivalent_ <br/>(156/1521)| `in-progress`| _Equivalent_ <br/>(3058/5263)| `in-progress`| _Equivalent_ <br/>(15902/15903)| `in-progress`| _Equivalent_ <br/>(7573/9843)| `in-progress`
 | **`completed`**| _Equivalent_ <br/>(154/1519)| `completed`| _Equivalent_ <br/>(3056/5261)| `completed`| _Equivalent_ <br/>(15910/15911)| `completed`| _Equivalent_ <br/>(7570/9840)| `completed`
+| **`suspended`**| _Equivalent_ <br/>(158/1523)| `suspended`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3059)<hr/>←←←← __ ←←←← <br/>() | `on-hold`| _Equivalent_ <br/>(15906/15907)| `on-hold`| _Equivalent_ <br/>(7574/9844)| `on-hold`
 | **`suspended`**| _Equivalent_ <br/>(158/1523)| `suspended`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3060)<hr/>←←←← _Equivalent_ ←←←← <br/>(5265) | `on-hold`| _Equivalent_ <br/>(15906/15907)| `on-hold`| _Equivalent_ <br/>(7574/9844)| `on-hold`
-| **`suspended`**| _Equivalent_ <br/>(158/1523)| `suspended`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3060)<hr/>←←←← _Equivalent_ ←←←← <br/>(5265) | `on-hold`| _Equivalent_ <br/>(15906/15907)| `on-hold`| _Equivalent_ <br/>(7574/9844)| `on-hold`
-| **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(157)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1518) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
+| **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(157)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1518) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3054)<hr/>←←←← _Equivalent_ ←←←← <br/>(5264) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
+| **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(157)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1518) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3053)<hr/>←←←← __ ←←←← <br/>() | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(157)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1518) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
-| **`rejected`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(157)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1518) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
-| **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
-| **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
+| **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3054)<hr/>←←←← _Equivalent_ ←←←← <br/>(5264) | `not-done`| _Equivalent_ <br/>(15904/15905)| `not-done`| _Equivalent_ <br/>(7571/9841)| `not-done`
+| **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3053)<hr/>←←←← __ ←←←← <br/>() | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | **`failed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(155)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1517) | `aborted`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(3055)<hr/>←←←← _Equivalent_ ←←←← <br/>(5267) | `stopped`| _Equivalent_ <br/>(15908/15909)| `stopped`| _Equivalent_ <br/>(7569/9839)| `stopped`
 | *5 of 5 codes used* | | *4 of 7 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`| | *5 of 8 codes used* <br/>remaining codes:<br/>`entered-in-error`, `preparation`, `unknown`
 

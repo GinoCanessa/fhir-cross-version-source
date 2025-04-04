@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:37 PM
 
 ### v2 Contact Role
 
@@ -47,9 +47,9 @@ All codes from this value set are listed while other value sets only show conten
 | `emergency`| _Equivalent_ <br/>(954/2323)| **`EP`**| | | | | | | 
 | | | **`F`**| _Equivalent_ <br/>(4128/6474)| `F`| | | | | 
 | | | **`I`**| _Equivalent_ <br/>(4129/6475)| `I`| | | | | 
-| `family`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(955)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2327) | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
-| `partner`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(961)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2327) | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
-| `parent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(960)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2327) | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
+| `family`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(955)<hr/>←←←← __ ←←←← <br/>() | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
+| `partner`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(961)<hr/>←←←← __ ←←←← <br/>() | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
+| `parent`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(960)<hr/>←←←← __ ←←←← <br/>() | **`N`**| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
 | | | **`O`**| | | | | | | 
 | | | **`PR`**| | | | | | | 
 | | | **`S`**| _Equivalent_ <br/>(4125/6471)| `S`| | | | | 

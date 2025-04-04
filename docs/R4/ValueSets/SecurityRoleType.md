@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:18 AM
+Generated at Friday, April 4, 2025 2:58:45 PM
 
 ### SecurityRoleType
 
@@ -59,127 +59,127 @@ All codes from this value set are listed while other value sets only show conten
 | | | `VALID`| _Equivalent_ <br/>(4322/6669)| **`VALID`**| | | | | 
 | | | `VERF`| _Equivalent_ <br/>(4323/6672)| **`VERF`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-RoleClass`
-| | | `AFFL`| _Equivalent_ <br/>(4292/6611)| **`AFFL`**| | | | | 
-| | | `AFFL`| _Equivalent_ <br/>(4292/6611)| **`AFFL`**| | | | | 
-| | | `AGNT`| _Equivalent_ <br/>(4293/6610)| **`AGNT`**| | | | | 
-| | | `AGNT`| _Equivalent_ <br/>(4293/6610)| **`AGNT`**| | | | | 
-| | | `ASSIGNED`| _Equivalent_ <br/>(4298/6607)| **`ASSIGNED`**| | | | | 
-| | | `ASSIGNED`| _Equivalent_ <br/>(4298/6607)| **`ASSIGNED`**| | | | | 
-| | | `CLAIM`| _Equivalent_ <br/>(4291/6617)| **`CLAIM`**| | | | | 
-| | | `CLAIM`| _Equivalent_ <br/>(4291/6617)| **`CLAIM`**| | | | | 
-| | | `COVPTY`| _Equivalent_ <br/>(4294/6614)| **`COVPTY`**| | | | | 
-| | | `COVPTY`| _Equivalent_ <br/>(4294/6614)| **`COVPTY`**| | | | | 
-| | | `DEPEN`| _Equivalent_ <br/>(4296/6604)| **`DEPEN`**| | | | | 
-| | | `DEPEN`| _Equivalent_ <br/>(4296/6604)| **`DEPEN`**| | | | | 
-| | | `ECON`| _Equivalent_ <br/>(4284/6605)| **`ECON`**| | | | | 
-| | | `ECON`| _Equivalent_ <br/>(4284/6605)| **`ECON`**| | | | | 
-| | | `EMP`| _Equivalent_ <br/>(4295/6606)| **`EMP`**| | | | | 
-| | | `EMP`| _Equivalent_ <br/>(4295/6606)| **`EMP`**| | | | | 
-| | | `GUARD`| _Equivalent_ <br/>(4286/6616)| **`GUARD`**| | | | | 
-| | | `GUARD`| _Equivalent_ <br/>(4286/6616)| **`GUARD`**| | | | | 
-| | | `INVSBJ`| _Equivalent_ <br/>(4288/6612)| **`INVSBJ`**| | | | | 
-| | | `INVSBJ`| _Equivalent_ <br/>(4288/6612)| **`INVSBJ`**| | | | | 
-| | | `NAMED`| _Equivalent_ <br/>(4290/6609)| **`NAMED`**| | | | | 
-| | | `NAMED`| _Equivalent_ <br/>(4290/6609)| **`NAMED`**| | | | | 
-| | | `NOK`| _Equivalent_ <br/>(4289/6618)| **`NOK`**| | | | | 
-| | | `NOK`| _Equivalent_ <br/>(4289/6618)| **`NOK`**| | | | | 
-| | | `PAT`| _Equivalent_ <br/>(4297/6613)| **`PAT`**| | | | | 
-| | | `PAT`| _Equivalent_ <br/>(4297/6613)| **`PAT`**| | | | | 
-| | | `PROV`| _Equivalent_ <br/>(4287/6615)| **`PROV`**| | | | | 
-| | | `PROV`| _Equivalent_ <br/>(4287/6615)| **`PROV`**| | | | | 
-| | | `NOT`| _Equivalent_ <br/>(4285/6608)| **`NOT`**| | | | | 
-| | | `NOT`| _Equivalent_ <br/>(4285/6608)| **`NOT`**| | | | | 
+| | | `AFFL`| →→→→ _Equivalent_ →→→→ <br/>(4292)<hr/>←←←← __ ←←←← <br/>() | **`AFFL`**| | | | | 
+| | | `AFFL`| →→→→ _Equivalent_ →→→→ <br/>(4292)<hr/>←←←← __ ←←←← <br/>() | **`AFFL`**| | | | | 
+| | | `AGNT`| →→→→ _Equivalent_ →→→→ <br/>(4293)<hr/>←←←← __ ←←←← <br/>() | **`AGNT`**| | | | | 
+| | | `AGNT`| →→→→ _Equivalent_ →→→→ <br/>(4293)<hr/>←←←← __ ←←←← <br/>() | **`AGNT`**| | | | | 
+| | | `ASSIGNED`| →→→→ _Equivalent_ →→→→ <br/>(4298)<hr/>←←←← __ ←←←← <br/>() | **`ASSIGNED`**| | | | | 
+| | | `ASSIGNED`| →→→→ _Equivalent_ →→→→ <br/>(4298)<hr/>←←←← __ ←←←← <br/>() | **`ASSIGNED`**| | | | | 
+| | | `CLAIM`| →→→→ _Equivalent_ →→→→ <br/>(4291)<hr/>←←←← __ ←←←← <br/>() | **`CLAIM`**| | | | | 
+| | | `CLAIM`| →→→→ _Equivalent_ →→→→ <br/>(4291)<hr/>←←←← __ ←←←← <br/>() | **`CLAIM`**| | | | | 
+| | | `COVPTY`| →→→→ _Equivalent_ →→→→ <br/>(4294)<hr/>←←←← __ ←←←← <br/>() | **`COVPTY`**| | | | | 
+| | | `COVPTY`| →→→→ _Equivalent_ →→→→ <br/>(4294)<hr/>←←←← __ ←←←← <br/>() | **`COVPTY`**| | | | | 
+| | | `DEPEN`| →→→→ _Equivalent_ →→→→ <br/>(4296)<hr/>←←←← __ ←←←← <br/>() | **`DEPEN`**| | | | | 
+| | | `DEPEN`| →→→→ _Equivalent_ →→→→ <br/>(4296)<hr/>←←←← __ ←←←← <br/>() | **`DEPEN`**| | | | | 
+| | | `ECON`| →→→→ _Equivalent_ →→→→ <br/>(4284)<hr/>←←←← __ ←←←← <br/>() | **`ECON`**| | | | | 
+| | | `ECON`| →→→→ _Equivalent_ →→→→ <br/>(4284)<hr/>←←←← __ ←←←← <br/>() | **`ECON`**| | | | | 
+| | | `EMP`| →→→→ _Equivalent_ →→→→ <br/>(4295)<hr/>←←←← __ ←←←← <br/>() | **`EMP`**| | | | | 
+| | | `EMP`| →→→→ _Equivalent_ →→→→ <br/>(4295)<hr/>←←←← __ ←←←← <br/>() | **`EMP`**| | | | | 
+| | | `GUARD`| →→→→ _Equivalent_ →→→→ <br/>(4286)<hr/>←←←← __ ←←←← <br/>() | **`GUARD`**| | | | | 
+| | | `GUARD`| →→→→ _Equivalent_ →→→→ <br/>(4286)<hr/>←←←← __ ←←←← <br/>() | **`GUARD`**| | | | | 
+| | | `INVSBJ`| →→→→ _Equivalent_ →→→→ <br/>(4288)<hr/>←←←← __ ←←←← <br/>() | **`INVSBJ`**| | | | | 
+| | | `INVSBJ`| →→→→ _Equivalent_ →→→→ <br/>(4288)<hr/>←←←← __ ←←←← <br/>() | **`INVSBJ`**| | | | | 
+| | | `NAMED`| →→→→ _Equivalent_ →→→→ <br/>(4290)<hr/>←←←← __ ←←←← <br/>() | **`NAMED`**| | | | | 
+| | | `NAMED`| →→→→ _Equivalent_ →→→→ <br/>(4290)<hr/>←←←← __ ←←←← <br/>() | **`NAMED`**| | | | | 
+| | | `NOK`| →→→→ _Equivalent_ →→→→ <br/>(4289)<hr/>←←←← __ ←←←← <br/>() | **`NOK`**| | | | | 
+| | | `NOK`| →→→→ _Equivalent_ →→→→ <br/>(4289)<hr/>←←←← __ ←←←← <br/>() | **`NOK`**| | | | | 
+| | | `PAT`| →→→→ _Equivalent_ →→→→ <br/>(4297)<hr/>←←←← __ ←←←← <br/>() | **`PAT`**| | | | | 
+| | | `PAT`| →→→→ _Equivalent_ →→→→ <br/>(4297)<hr/>←←←← __ ←←←← <br/>() | **`PAT`**| | | | | 
+| | | `PROV`| →→→→ _Equivalent_ →→→→ <br/>(4287)<hr/>←←←← __ ←←←← <br/>() | **`PROV`**| | | | | 
+| | | `PROV`| →→→→ _Equivalent_ →→→→ <br/>(4287)<hr/>←←←← __ ←←←← <br/>() | **`PROV`**| | | | | 
+| | | `NOT`| →→→→ _Equivalent_ →→→→ <br/>(4285)<hr/>←←←← __ ←←←← <br/>() | **`NOT`**| | | | | 
+| | | `NOT`| →→→→ _Equivalent_ →→→→ <br/>(4285)<hr/>←←←← __ ←←←← <br/>() | **`NOT`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-RoleCode`
-| | | `CLASSIFIER`| _Equivalent_ <br/>(4271/6652)| **`CLASSIFIER`**| | | | | 
-| | | `CLASSIFIER`| _Equivalent_ <br/>(4271/6652)| **`CLASSIFIER`**| | | | | 
-| | | `CONSENTER`| _Equivalent_ <br/>(4277/6639)| **`CONSENTER`**| | | | | 
-| | | `CONSENTER`| _Equivalent_ <br/>(4277/6639)| **`CONSENTER`**| | | | | 
-| | | `CONSWIT`| _Equivalent_ <br/>(4259/6631)| **`CONSWIT`**| | | | | 
-| | | `CONSWIT`| _Equivalent_ <br/>(4259/6631)| **`CONSWIT`**| | | | | 
-| | | `COPART`| _Equivalent_ <br/>(4270/6640)| **`COPART`**| | | | | 
-| | | `COPART`| _Equivalent_ <br/>(4270/6640)| **`COPART`**| | | | | 
-| | | `DECLASSIFIER`| _Equivalent_ <br/>(4274/6649)| **`DECLASSIFIER`**| | | | | 
-| | | `DECLASSIFIER`| _Equivalent_ <br/>(4274/6649)| **`DECLASSIFIER`**| | | | | 
-| | | `DELEGATEE`| _Equivalent_ <br/>(4261/6656)| **`DELEGATEE`**| | | | | 
-| | | `DELEGATEE`| _Equivalent_ <br/>(4261/6656)| **`DELEGATEE`**| | | | | 
-| | | `DELEGATOR`| _Equivalent_ <br/>(4264/6654)| **`DELEGATOR`**| | | | | 
-| | | `DELEGATOR`| _Equivalent_ <br/>(4264/6654)| **`DELEGATOR`**| | | | | 
-| | | `DOWNGRDER`| _Equivalent_ <br/>(4266/6638)| **`DOWNGRDER`**| | | | | 
-| | | `DOWNGRDER`| _Equivalent_ <br/>(4266/6638)| **`DOWNGRDER`**| | | | | 
-| | | `DPOWATT`| _Equivalent_ <br/>(4265/6655)| **`DPOWATT`**| | | | | 
-| | | `DPOWATT`| _Equivalent_ <br/>(4265/6655)| **`DPOWATT`**| | | | | 
-| | | `EXCEST`| _Equivalent_ <br/>(4275/6632)| **`EXCEST`**| | | | | 
-| | | `EXCEST`| _Equivalent_ <br/>(4275/6632)| **`EXCEST`**| | | | | 
-| | | `GRANTEE`| _Equivalent_ <br/>(4280/6647)| **`GRANTEE`**| | | | | 
-| | | `GRANTEE`| _Equivalent_ <br/>(4280/6647)| **`GRANTEE`**| | | | | 
-| | | `GRANTOR`| _Equivalent_ <br/>(4267/6642)| **`GRANTOR`**| | | | | 
-| | | `GRANTOR`| _Equivalent_ <br/>(4267/6642)| **`GRANTOR`**| | | | | 
-| | | `GT`| _Equivalent_ <br/>(4258/6648)| **`GT`**| | | | | 
-| | | `GT`| _Equivalent_ <br/>(4258/6648)| **`GT`**| | | | | 
-| | | `GUADLTM`| _Equivalent_ <br/>(4273/6653)| **`GUADLTM`**| | | | | 
-| | | `GUADLTM`| _Equivalent_ <br/>(4273/6653)| **`GUADLTM`**| | | | | 
-| | | `HPOWATT`| _Equivalent_ <br/>(4268/6644)| **`HPOWATT`**| | | | | 
-| | | `HPOWATT`| _Equivalent_ <br/>(4268/6644)| **`HPOWATT`**| | | | | 
-| | | `INTPRTER`| _Equivalent_ <br/>(4279/6643)| **`INTPRTER`**| | | | | 
-| | | `INTPRTER`| _Equivalent_ <br/>(4279/6643)| **`INTPRTER`**| | | | | 
-| | | `POWATT`| _Equivalent_ <br/>(4283/6633)| **`POWATT`**| | | | | 
-| | | `POWATT`| _Equivalent_ <br/>(4283/6633)| **`POWATT`**| | | | | 
-| | | `RESPRSN`| _Equivalent_ <br/>(4278/6650)| **`RESPRSN`**| | | | | 
-| | | `RESPRSN`| _Equivalent_ <br/>(4278/6650)| **`RESPRSN`**| | | | | 
-| | | `SPOWATT`| _Equivalent_ <br/>(4269/6651)| **`SPOWATT`**| | | | | 
-| | | `SPOWATT`| _Equivalent_ <br/>(4269/6651)| **`SPOWATT`**| | | | | 
+| | | `CLASSIFIER`| →→→→ _Equivalent_ →→→→ <br/>(4271)<hr/>←←←← __ ←←←← <br/>() | **`CLASSIFIER`**| | | | | 
+| | | `CLASSIFIER`| →→→→ _Equivalent_ →→→→ <br/>(4271)<hr/>←←←← __ ←←←← <br/>() | **`CLASSIFIER`**| | | | | 
+| | | `CONSENTER`| →→→→ _Equivalent_ →→→→ <br/>(4277)<hr/>←←←← __ ←←←← <br/>() | **`CONSENTER`**| | | | | 
+| | | `CONSENTER`| →→→→ _Equivalent_ →→→→ <br/>(4277)<hr/>←←←← __ ←←←← <br/>() | **`CONSENTER`**| | | | | 
+| | | `CONSWIT`| →→→→ _Equivalent_ →→→→ <br/>(4259)<hr/>←←←← __ ←←←← <br/>() | **`CONSWIT`**| | | | | 
+| | | `CONSWIT`| →→→→ _Equivalent_ →→→→ <br/>(4259)<hr/>←←←← __ ←←←← <br/>() | **`CONSWIT`**| | | | | 
+| | | `COPART`| →→→→ _Equivalent_ →→→→ <br/>(4270)<hr/>←←←← __ ←←←← <br/>() | **`COPART`**| | | | | 
+| | | `COPART`| →→→→ _Equivalent_ →→→→ <br/>(4270)<hr/>←←←← __ ←←←← <br/>() | **`COPART`**| | | | | 
+| | | `DECLASSIFIER`| →→→→ _Equivalent_ →→→→ <br/>(4274)<hr/>←←←← __ ←←←← <br/>() | **`DECLASSIFIER`**| | | | | 
+| | | `DECLASSIFIER`| →→→→ _Equivalent_ →→→→ <br/>(4274)<hr/>←←←← __ ←←←← <br/>() | **`DECLASSIFIER`**| | | | | 
+| | | `DELEGATEE`| →→→→ _Equivalent_ →→→→ <br/>(4261)<hr/>←←←← __ ←←←← <br/>() | **`DELEGATEE`**| | | | | 
+| | | `DELEGATEE`| →→→→ _Equivalent_ →→→→ <br/>(4261)<hr/>←←←← __ ←←←← <br/>() | **`DELEGATEE`**| | | | | 
+| | | `DELEGATOR`| →→→→ _Equivalent_ →→→→ <br/>(4264)<hr/>←←←← __ ←←←← <br/>() | **`DELEGATOR`**| | | | | 
+| | | `DELEGATOR`| →→→→ _Equivalent_ →→→→ <br/>(4264)<hr/>←←←← __ ←←←← <br/>() | **`DELEGATOR`**| | | | | 
+| | | `DOWNGRDER`| →→→→ _Equivalent_ →→→→ <br/>(4266)<hr/>←←←← __ ←←←← <br/>() | **`DOWNGRDER`**| | | | | 
+| | | `DOWNGRDER`| →→→→ _Equivalent_ →→→→ <br/>(4266)<hr/>←←←← __ ←←←← <br/>() | **`DOWNGRDER`**| | | | | 
+| | | `DPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4265)<hr/>←←←← __ ←←←← <br/>() | **`DPOWATT`**| | | | | 
+| | | `DPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4265)<hr/>←←←← __ ←←←← <br/>() | **`DPOWATT`**| | | | | 
+| | | `EXCEST`| →→→→ _Equivalent_ →→→→ <br/>(4275)<hr/>←←←← __ ←←←← <br/>() | **`EXCEST`**| | | | | 
+| | | `EXCEST`| →→→→ _Equivalent_ →→→→ <br/>(4275)<hr/>←←←← __ ←←←← <br/>() | **`EXCEST`**| | | | | 
+| | | `GRANTEE`| →→→→ _Equivalent_ →→→→ <br/>(4280)<hr/>←←←← __ ←←←← <br/>() | **`GRANTEE`**| | | | | 
+| | | `GRANTEE`| →→→→ _Equivalent_ →→→→ <br/>(4280)<hr/>←←←← __ ←←←← <br/>() | **`GRANTEE`**| | | | | 
+| | | `GRANTOR`| →→→→ _Equivalent_ →→→→ <br/>(4267)<hr/>←←←← __ ←←←← <br/>() | **`GRANTOR`**| | | | | 
+| | | `GRANTOR`| →→→→ _Equivalent_ →→→→ <br/>(4267)<hr/>←←←← __ ←←←← <br/>() | **`GRANTOR`**| | | | | 
+| | | `GT`| →→→→ _Equivalent_ →→→→ <br/>(4258)<hr/>←←←← __ ←←←← <br/>() | **`GT`**| | | | | 
+| | | `GT`| →→→→ _Equivalent_ →→→→ <br/>(4258)<hr/>←←←← __ ←←←← <br/>() | **`GT`**| | | | | 
+| | | `GUADLTM`| →→→→ _Equivalent_ →→→→ <br/>(4273)<hr/>←←←← __ ←←←← <br/>() | **`GUADLTM`**| | | | | 
+| | | `GUADLTM`| →→→→ _Equivalent_ →→→→ <br/>(4273)<hr/>←←←← __ ←←←← <br/>() | **`GUADLTM`**| | | | | 
+| | | `HPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4268)<hr/>←←←← __ ←←←← <br/>() | **`HPOWATT`**| | | | | 
+| | | `HPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4268)<hr/>←←←← __ ←←←← <br/>() | **`HPOWATT`**| | | | | 
+| | | `INTPRTER`| →→→→ _Equivalent_ →→→→ <br/>(4279)<hr/>←←←← __ ←←←← <br/>() | **`INTPRTER`**| | | | | 
+| | | `INTPRTER`| →→→→ _Equivalent_ →→→→ <br/>(4279)<hr/>←←←← __ ←←←← <br/>() | **`INTPRTER`**| | | | | 
+| | | `POWATT`| →→→→ _Equivalent_ →→→→ <br/>(4283)<hr/>←←←← __ ←←←← <br/>() | **`POWATT`**| | | | | 
+| | | `POWATT`| →→→→ _Equivalent_ →→→→ <br/>(4283)<hr/>←←←← __ ←←←← <br/>() | **`POWATT`**| | | | | 
+| | | `RESPRSN`| →→→→ _Equivalent_ →→→→ <br/>(4278)<hr/>←←←← __ ←←←← <br/>() | **`RESPRSN`**| | | | | 
+| | | `RESPRSN`| →→→→ _Equivalent_ →→→→ <br/>(4278)<hr/>←←←← __ ←←←← <br/>() | **`RESPRSN`**| | | | | 
+| | | `SPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4269)<hr/>←←←← __ ←←←← <br/>() | **`SPOWATT`**| | | | | 
+| | | `SPOWATT`| →→→→ _Equivalent_ →→→→ <br/>(4269)<hr/>←←←← __ ←←←← <br/>() | **`SPOWATT`**| | | | | 
 | | | | | **`_CitizenRoleType`**| | | | | 
-| | | `CAS`| _Equivalent_ <br/>(4272/6634)| **`CAS`**| | | | | 
-| | | `CAS`| _Equivalent_ <br/>(4272/6634)| **`CAS`**| | | | | 
-| | | `CASM`| _Equivalent_ <br/>(4257/6646)| **`CASM`**| | | | | 
-| | | `CASM`| _Equivalent_ <br/>(4257/6646)| **`CASM`**| | | | | 
-| | | `CN`| _Equivalent_ <br/>(4276/6635)| **`CN`**| | | | | 
-| | | `CN`| _Equivalent_ <br/>(4276/6635)| **`CN`**| | | | | 
-| | | `CNRP`| _Equivalent_ <br/>(4281/6645)| **`CNRP`**| | | | | 
-| | | `CNRP`| _Equivalent_ <br/>(4281/6645)| **`CNRP`**| | | | | 
-| | | `CNRPM`| _Equivalent_ <br/>(4282/6657)| **`CNRPM`**| | | | | 
-| | | `CNRPM`| _Equivalent_ <br/>(4282/6657)| **`CNRPM`**| | | | | 
-| | | `CPCA`| _Equivalent_ <br/>(4260/6636)| **`CPCA`**| | | | | 
-| | | `CPCA`| _Equivalent_ <br/>(4260/6636)| **`CPCA`**| | | | | 
-| | | `CRP`| _Equivalent_ <br/>(4262/6641)| **`CRP`**| | | | | 
-| | | `CRP`| _Equivalent_ <br/>(4262/6641)| **`CRP`**| | | | | 
-| | | `CRPM`| _Equivalent_ <br/>(4263/6637)| **`CRPM`**| | | | | 
-| | | `CRPM`| _Equivalent_ <br/>(4263/6637)| **`CRPM`**| | | | | 
+| | | `CAS`| →→→→ _Equivalent_ →→→→ <br/>(4272)<hr/>←←←← __ ←←←← <br/>() | **`CAS`**| | | | | 
+| | | `CAS`| →→→→ _Equivalent_ →→→→ <br/>(4272)<hr/>←←←← __ ←←←← <br/>() | **`CAS`**| | | | | 
+| | | `CASM`| →→→→ _Equivalent_ →→→→ <br/>(4257)<hr/>←←←← __ ←←←← <br/>() | **`CASM`**| | | | | 
+| | | `CASM`| →→→→ _Equivalent_ →→→→ <br/>(4257)<hr/>←←←← __ ←←←← <br/>() | **`CASM`**| | | | | 
+| | | `CN`| →→→→ _Equivalent_ →→→→ <br/>(4276)<hr/>←←←← __ ←←←← <br/>() | **`CN`**| | | | | 
+| | | `CN`| →→→→ _Equivalent_ →→→→ <br/>(4276)<hr/>←←←← __ ←←←← <br/>() | **`CN`**| | | | | 
+| | | `CNRP`| →→→→ _Equivalent_ →→→→ <br/>(4281)<hr/>←←←← __ ←←←← <br/>() | **`CNRP`**| | | | | 
+| | | `CNRP`| →→→→ _Equivalent_ →→→→ <br/>(4281)<hr/>←←←← __ ←←←← <br/>() | **`CNRP`**| | | | | 
+| | | `CNRPM`| →→→→ _Equivalent_ →→→→ <br/>(4282)<hr/>←←←← __ ←←←← <br/>() | **`CNRPM`**| | | | | 
+| | | `CNRPM`| →→→→ _Equivalent_ →→→→ <br/>(4282)<hr/>←←←← __ ←←←← <br/>() | **`CNRPM`**| | | | | 
+| | | `CPCA`| →→→→ _Equivalent_ →→→→ <br/>(4260)<hr/>←←←← __ ←←←← <br/>() | **`CPCA`**| | | | | 
+| | | `CPCA`| →→→→ _Equivalent_ →→→→ <br/>(4260)<hr/>←←←← __ ←←←← <br/>() | **`CPCA`**| | | | | 
+| | | `CRP`| →→→→ _Equivalent_ →→→→ <br/>(4262)<hr/>←←←← __ ←←←← <br/>() | **`CRP`**| | | | | 
+| | | `CRP`| →→→→ _Equivalent_ →→→→ <br/>(4262)<hr/>←←←← __ ←←←← <br/>() | **`CRP`**| | | | | 
+| | | `CRPM`| →→→→ _Equivalent_ →→→→ <br/>(4263)<hr/>←←←← __ ←←←← <br/>() | **`CRPM`**| | | | | 
+| | | `CRPM`| →→→→ _Equivalent_ →→→→ <br/>(4263)<hr/>←←←← __ ←←←← <br/>() | **`CRPM`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction`
-| | | `AUCG`| _Equivalent_ <br/>(4301/6659)| **`AUCG`**| | | | | 
-| | | `AUCG`| _Equivalent_ <br/>(4301/6659)| **`AUCG`**| | | | | 
-| | | `AULR`| _Equivalent_ <br/>(4299/6662)| **`AULR`**| | | | | 
-| | | `AULR`| _Equivalent_ <br/>(4299/6662)| **`AULR`**| | | | | 
-| | | `AUTM`| _Equivalent_ <br/>(4303/6660)| **`AUTM`**| | | | | 
-| | | `AUTM`| _Equivalent_ <br/>(4303/6660)| **`AUTM`**| | | | | 
-| | | `AUWA`| _Equivalent_ <br/>(4302/6658)| **`AUWA`**| | | | | 
-| | | `AUWA`| _Equivalent_ <br/>(4302/6658)| **`AUWA`**| | | | | 
-| | | `PROMSK`| _Equivalent_ <br/>(4300/6661)| **`PROMSK`**| | | | | 
-| | | `PROMSK`| _Equivalent_ <br/>(4300/6661)| **`PROMSK`**| | | | | 
+| | | `AUCG`| →→→→ _Equivalent_ →→→→ <br/>(4301)<hr/>←←←← __ ←←←← <br/>() | **`AUCG`**| | | | | 
+| | | `AUCG`| →→→→ _Equivalent_ →→→→ <br/>(4301)<hr/>←←←← __ ←←←← <br/>() | **`AUCG`**| | | | | 
+| | | `AULR`| →→→→ _Equivalent_ →→→→ <br/>(4299)<hr/>←←←← __ ←←←← <br/>() | **`AULR`**| | | | | 
+| | | `AULR`| →→→→ _Equivalent_ →→→→ <br/>(4299)<hr/>←←←← __ ←←←← <br/>() | **`AULR`**| | | | | 
+| | | `AUTM`| →→→→ _Equivalent_ →→→→ <br/>(4303)<hr/>←←←← __ ←←←← <br/>() | **`AUTM`**| | | | | 
+| | | `AUTM`| →→→→ _Equivalent_ →→→→ <br/>(4303)<hr/>←←←← __ ←←←← <br/>() | **`AUTM`**| | | | | 
+| | | `AUWA`| →→→→ _Equivalent_ →→→→ <br/>(4302)<hr/>←←←← __ ←←←← <br/>() | **`AUWA`**| | | | | 
+| | | `AUWA`| →→→→ _Equivalent_ →→→→ <br/>(4302)<hr/>←←←← __ ←←←← <br/>() | **`AUWA`**| | | | | 
+| | | `PROMSK`| →→→→ _Equivalent_ →→→→ <br/>(4300)<hr/>←←←← __ ←←←← <br/>() | **`PROMSK`**| | | | | 
+| | | `PROMSK`| →→→→ _Equivalent_ →→→→ <br/>(4300)<hr/>←←←← __ ←←←← <br/>() | **`PROMSK`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ParticipationType`
-| | | `AUT`| _Equivalent_ <br/>(4308/6622)| **`AUT`**| | | | | 
-| | | `AUT`| _Equivalent_ <br/>(4308/6622)| **`AUT`**| | | | | 
-| | | `CST`| _Equivalent_ <br/>(4310/6620)| **`CST`**| | | | | 
-| | | `CST`| _Equivalent_ <br/>(4310/6620)| **`CST`**| | | | | 
-| | | `INF`| _Equivalent_ <br/>(4307/6623)| **`INF`**| | | | | 
-| | | `INF`| _Equivalent_ <br/>(4307/6623)| **`INF`**| | | | | 
-| | | `IRCP`| _Equivalent_ <br/>(4304/6621)| **`IRCP`**| | | | | 
-| | | `IRCP`| _Equivalent_ <br/>(4304/6621)| **`IRCP`**| | | | | 
-| | | `LA`| _Equivalent_ <br/>(4305/6625)| **`LA`**| | | | | 
-| | | `LA`| _Equivalent_ <br/>(4305/6625)| **`LA`**| | | | | 
-| | | `TRC`| _Equivalent_ <br/>(4309/6624)| **`TRC`**| | | | | 
-| | | `TRC`| _Equivalent_ <br/>(4309/6624)| **`TRC`**| | | | | 
-| | | `WIT`| _Equivalent_ <br/>(4306/6619)| **`WIT`**| | | | | 
-| | | `WIT`| _Equivalent_ <br/>(4306/6619)| **`WIT`**| | | | | 
+| | | `AUT`| →→→→ _Equivalent_ →→→→ <br/>(4308)<hr/>←←←← __ ←←←← <br/>() | **`AUT`**| | | | | 
+| | | `AUT`| →→→→ _Equivalent_ →→→→ <br/>(4308)<hr/>←←←← __ ←←←← <br/>() | **`AUT`**| | | | | 
+| | | `CST`| →→→→ _Equivalent_ →→→→ <br/>(4310)<hr/>←←←← __ ←←←← <br/>() | **`CST`**| | | | | 
+| | | `CST`| →→→→ _Equivalent_ →→→→ <br/>(4310)<hr/>←←←← __ ←←←← <br/>() | **`CST`**| | | | | 
+| | | `INF`| →→→→ _Equivalent_ →→→→ <br/>(4307)<hr/>←←←← __ ←←←← <br/>() | **`INF`**| | | | | 
+| | | `INF`| →→→→ _Equivalent_ →→→→ <br/>(4307)<hr/>←←←← __ ←←←← <br/>() | **`INF`**| | | | | 
+| | | `IRCP`| →→→→ _Equivalent_ →→→→ <br/>(4304)<hr/>←←←← __ ←←←← <br/>() | **`IRCP`**| | | | | 
+| | | `IRCP`| →→→→ _Equivalent_ →→→→ <br/>(4304)<hr/>←←←← __ ←←←← <br/>() | **`IRCP`**| | | | | 
+| | | `LA`| →→→→ _Equivalent_ →→→→ <br/>(4305)<hr/>←←←← __ ←←←← <br/>() | **`LA`**| | | | | 
+| | | `LA`| →→→→ _Equivalent_ →→→→ <br/>(4305)<hr/>←←←← __ ←←←← <br/>() | **`LA`**| | | | | 
+| | | `TRC`| →→→→ _Equivalent_ →→→→ <br/>(4309)<hr/>←←←← __ ←←←← <br/>() | **`TRC`**| | | | | 
+| | | `TRC`| →→→→ _Equivalent_ →→→→ <br/>(4309)<hr/>←←←← __ ←←←← <br/>() | **`TRC`**| | | | | 
+| | | `WIT`| →→→→ _Equivalent_ →→→→ <br/>(4306)<hr/>←←←← __ ←←←← <br/>() | **`WIT`**| | | | | 
+| | | `WIT`| →→→→ _Equivalent_ →→→→ <br/>(4306)<hr/>←←←← __ ←←←← <br/>() | **`WIT`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/extra-security-role-type`
-| | | `authserver`| _Equivalent_ <br/>(4314/6626)| **`authserver`**| | | | | 
-| | | `authserver`| _Equivalent_ <br/>(4314/6626)| **`authserver`**| | | | | 
-| | | `datacollector`| _Equivalent_ <br/>(4311/6628)| **`datacollector`**| | | | | 
-| | | `datacollector`| _Equivalent_ <br/>(4311/6628)| **`datacollector`**| | | | | 
-| | | `dataprocessor`| _Equivalent_ <br/>(4313/6627)| **`dataprocessor`**| | | | | 
-| | | `dataprocessor`| _Equivalent_ <br/>(4313/6627)| **`dataprocessor`**| | | | | 
-| | | `datasubject`| _Equivalent_ <br/>(4312/6629)| **`datasubject`**| | | | | 
-| | | `datasubject`| _Equivalent_ <br/>(4312/6629)| **`datasubject`**| | | | | 
+| | | `authserver`| →→→→ _Equivalent_ →→→→ <br/>(4314)<hr/>←←←← __ ←←←← <br/>() | **`authserver`**| | | | | 
+| | | `authserver`| →→→→ _Equivalent_ →→→→ <br/>(4314)<hr/>←←←← __ ←←←← <br/>() | **`authserver`**| | | | | 
+| | | `datacollector`| →→→→ _Equivalent_ →→→→ <br/>(4311)<hr/>←←←← __ ←←←← <br/>() | **`datacollector`**| | | | | 
+| | | `datacollector`| →→→→ _Equivalent_ →→→→ <br/>(4311)<hr/>←←←← __ ←←←← <br/>() | **`datacollector`**| | | | | 
+| | | `dataprocessor`| →→→→ _Equivalent_ →→→→ <br/>(4313)<hr/>←←←← __ ←←←← <br/>() | **`dataprocessor`**| | | | | 
+| | | `dataprocessor`| →→→→ _Equivalent_ →→→→ <br/>(4313)<hr/>←←←← __ ←←←← <br/>() | **`dataprocessor`**| | | | | 
+| | | `datasubject`| →→→→ _Equivalent_ →→→→ <br/>(4312)<hr/>←←←← __ ←←←← <br/>() | **`datasubject`**| | | | | 
+| | | `datasubject`| →→→→ _Equivalent_ →→→→ <br/>(4312)<hr/>←←←← __ ←←←← <br/>() | **`datasubject`**| | | | | 
 | | | `active`| | **`humanuser`**| | | | | 
 | | | `active`| | **`humanuser`**| | | | | 
 | <td colspan="8">**R4** System: `http://dicom.nema.org/resources/ontology/DCM`

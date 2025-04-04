@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:37 PM
 
 ### Observation Value Absent Reason
 
@@ -42,7 +42,7 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/data-absent-reason`
 | `unknown`| _Equivalent_ <br/>(854/2222)| **`unknown`**| _Equivalent_ <br/>(4048/6378)| `unknown`| | | | | 
-| `asked`| _Equivalent_ <br/>(849/2215)| **`asked`**| _Equivalent_ <br/>(4040/6381)| `asked-unknown`| | | | | 
+| `asked`| _Equivalent_ <br/>(849/2215)| **`asked`**| _Equivalent_ <br/>(4041/6373)| `asked-unknown`| | | | | 
 | `asked`| _Equivalent_ <br/>(849/2215)| **`asked`**| _Equivalent_ <br/>(4040/6381)| `asked-declined`| | | | | 
 | `temp`| _Equivalent_ <br/>(847/2221)| **`temp`**| _Equivalent_ <br/>(4047/6383)| `temp-unknown`| | | | | 
 | `not-asked`| _Equivalent_ <br/>(853/2219)| **`not-asked`**| _Equivalent_ <br/>(4045/6375)| `not-asked`| | | | | 
@@ -50,8 +50,8 @@ All codes from this value set are listed while other value sets only show conten
 | `unsupported`| _Equivalent_ <br/>(848/2223)| **`unsupported`**| _Equivalent_ <br/>(4049/6379)| `unsupported`| | | | | 
 | `astext`| _Equivalent_ <br/>(855/2216)| **`astext`**| _Equivalent_ <br/>(4042/6371)| `as-text`| | | | | 
 | `error`| _Equivalent_ <br/>(852/2217)| **`error`**| _Equivalent_ <br/>(4043/6374)| `error`| | | | | 
-| `NaN`| _Equivalent_ <br/>(851/2214)| **`NaN`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4039)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6377) | `not-a-number`| | | | | 
-| `NaN`| _Equivalent_ <br/>(851/2214)| **`NaN`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4039)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6377) | `negative-infinity`| | | | | 
+| `NaN`| _Equivalent_ <br/>(851/2214)| **`NaN`**| _Equivalent_ <br/>(4038/6385)| `not-a-number`| | | | | 
+| `NaN`| _Equivalent_ <br/>(851/2214)| **`NaN`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4037)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6380) | `negative-infinity`| | | | | 
 | `NaN`| _Equivalent_ <br/>(851/2214)| **`NaN`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4039)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6377) | `positive-infinity`| | | | | 
 | | | **`not-performed`**| _Equivalent_ <br/>(4046/6376)| `not-performed`| | | | | 
 | *9 of 9 codes used* | | *10 of 10 codes used* | | *13 of 15 codes used* <br/>remaining codes:<br/>`not-applicable`, `not-permitted`| | | | 

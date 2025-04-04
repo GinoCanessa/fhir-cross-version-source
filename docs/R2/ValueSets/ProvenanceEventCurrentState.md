@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### ProvenanceEventCurrentState
 
@@ -48,20 +48,20 @@ All codes from this value set are listed while other value sets only show conten
 | **`nullified`**| _Equivalent_ <br/>(1004/2411)| `nullified`| | | | | | | 
 | **`obsolete`**| _Equivalent_ <br/>(1005/2412)| `obsolete`| | | | | | | 
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/DocumentCompletion`
+| **`AU`**| _Equivalent_ <br/>(1006/2414)| `AU`| →→→→ __ →→→→ <br/>(4443)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`AU`**| _Equivalent_ <br/>(1006/2414)| `AU`| →→→→ __ →→→→ <br/>(4452)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
 | **`AU`**| _Equivalent_ <br/>(1006/2414)| `AU`| →→→→ __ →→→→ <br/>(4510)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`AU`**| _Equivalent_ <br/>(1006/2414)| `AU`| →→→→ __ →→→→ <br/>(4510)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`AU`**| _Equivalent_ <br/>(1006/2414)| `AU`| →→→→ __ →→→→ <br/>(4510)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`DI`**| _Equivalent_ <br/>(1007/2415)| `DI`| →→→→ __ →→→→ <br/>(4444)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`DI`**| _Equivalent_ <br/>(1007/2415)| `DI`| →→→→ __ →→→→ <br/>(4453)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
 | **`DI`**| _Equivalent_ <br/>(1007/2415)| `DI`| →→→→ __ →→→→ <br/>(4511)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`DI`**| _Equivalent_ <br/>(1007/2415)| `DI`| →→→→ __ →→→→ <br/>(4511)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`DI`**| _Equivalent_ <br/>(1007/2415)| `DI`| →→→→ __ →→→→ <br/>(4511)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`DO`**| _Equivalent_ <br/>(1008/2416)| `DO`| →→→→ __ →→→→ <br/>(4447)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`DO`**| _Equivalent_ <br/>(1008/2416)| `DO`| →→→→ __ →→→→ <br/>(4456)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
 | **`DO`**| _Equivalent_ <br/>(1008/2416)| `DO`| →→→→ __ →→→→ <br/>(4514)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`DO`**| _Equivalent_ <br/>(1008/2416)| `DO`| →→→→ __ →→→→ <br/>(4514)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`DO`**| _Equivalent_ <br/>(1008/2416)| `DO`| →→→→ __ →→→→ <br/>(4514)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`LA`**| _Equivalent_ <br/>(1009/2419)| `LA`| →→→→ _Equivalent_ →→→→ <br/>(4440)<hr/>←←←← __ ←←←← <br/>() | `LA`| | | | | 
+| **`LA`**| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4449/6825)| `LA`| | | | | 
 | **`LA`**| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4507/6756)| `LA`| | | | | 
-| **`LA`**| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4507/6756)| `LA`| | | | | 
-| **`LA`**| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4507/6756)| `LA`| | | | | 
-| **`UC`**| _Equivalent_ <br/>(1010/2422)| `UC`| →→→→ __ →→→→ <br/>(4515)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
-| **`UC`**| _Equivalent_ <br/>(1010/2422)| `UC`| →→→→ __ →→→→ <br/>(4515)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`UC`**| _Equivalent_ <br/>(1010/2422)| `UC`| →→→→ __ →→→→ <br/>(4448)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
+| **`UC`**| _Equivalent_ <br/>(1010/2422)| `UC`| →→→→ __ →→→→ <br/>(4457)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
 | **`UC`**| _Equivalent_ <br/>(1010/2422)| `UC`| →→→→ __ →→→→ <br/>(4515)<hr/>←←←← __ ←←←← <br/>() | `active`| | | | | 
 | *11 of 11 codes used* | | *11 of 83 codes used* <br/>remaining codes:<br/>`aggregate`, `compose`, `label`, `ANONY`, `AOD`, `AUDIT`, `AUDTR`, `CPLYCC`, `CPLYCD`, `CPLYJPP`, `CPLYOPP`, `CPLYOSP`, `CPLYPOL`, `DECLASSIFYLABEL`, `DEID`, `DELAU`, `DOWNGRDLABEL`, `DRIVLABEL`, `ENCRYPT`, `ENCRYPTR`, `ENCRYPTT`, `ENCRYPTU`, `HUAPRV`, `LABEL`, `MASK`, `MINEC`, `ObligationPolicy`, `PERSISTLABEL`, `PRIVMARK`, `PSEUD`, `REDACT`, `UPGRDLABEL`, `active`, `held`, `normal`, `suspended`, `ABORT`, `ACTIVATE`, `APPEND`, `CANCEL`, `COMPLETE`, `CREATE`, `DELETE`, `EXECUTE`, `HOLD`, `JUMP`, `MODIFYSTATUS`, `NULLIFY`, `OBSOLETE`, `OPERATE`, `REACTIVATE`, `READ`, `RELEASE`, `RESUME`, `SUSPEND`, `UPDATE`, `IN`, `IP`, `NU`, `PA`, `Attribution`, `Collection`, `Communication`, `Derivation`, `End`, `Generation`, `Invalidation`, `Primary-Source`, `Quotation`, `Revision`, `Start`, `Usage`| | *3 of 70 codes used* <br/>remaining codes:<br/>`ANONY`, `DEID`, `LABEL`, `MASK`, `PSEUD`, `APPEND`, `CREATE`, `DELETE`, `NULLIFY`, `UPDATE`, `ADM`, `ALY`, `ATND`, `AUT`, `AUTHEN`, `BBY`, `BEN`, `CAGNT`, `CALLBCK`, `CAT`, `CON`, `COV`, `CSM`, `CST`, `DEV`, `DIR`, `DIS`, `DIST`, `DON`, `DST`, `ELOC`, `ENT`, `ESC`, `EXPAGNT`, `EXPART`, `EXPTRGT`, `EXSRC`, `GUAR`, `HLD`, `IND`, `INF`, `IRCP`, `LOC`, `NOT`, `NRD`, `ORG`, `PART`, `PPRF`, `PRCP`, `PRD`, `PRF`, `RCT`, `RCV`, `RDV`, `REF`, `REFB`, `REFT`, `RESP`, `RML`, `SBJ`, `SPC`, `SPRF`, `TPA`, `TRANS`, `TRC`, `VIA`, `VRF`, `WIT`| | | | 
 

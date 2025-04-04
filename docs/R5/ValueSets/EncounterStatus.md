@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:31 AM
+Generated at Friday, April 4, 2025 2:58:58 PM
 
 ### EncounterStatus
 
@@ -42,10 +42,10 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 EncounterState](/docs/R2/ValueSets/EncounterState.md)| Relationship | [R3 EncounterStatus](/docs/R3/ValueSets/EncounterStatus.md)| Relationship | [R4 EncounterStatus](/docs/R4/ValueSets/EncounterStatus.md)| Relationship | [R4B EncounterStatus](/docs/R4B/ValueSets/EncounterStatus.md)| Relationship | R5 EncounterStatus
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/encounter-status`
-| `planned`| _Equivalent_ <br/>(546/1901)| `planned`| _Equivalent_ <br/>(3667/5952)| `planned`| _Equivalent_ <br/>(15852/15853)| `planned`| →→→→ _Equivalent_ →→→→ <br/>(8040)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10341) | **`planned`**
-| `arrived`| _Equivalent_ <br/>(542/1895)| `arrived`| _Equivalent_ <br/>(3663/5948)| `arrived`| _Equivalent_ <br/>(15854/15855)| `arrived`| →→→→ _Equivalent_ →→→→ <br/>(8033)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10341) | **`planned`**
-| | | `triaged`| _Equivalent_ <br/>(3662/5947)| `triaged`| _Equivalent_ <br/>(15856/15857)| `triaged`| →→→→ _Equivalent_ →→→→ <br/>(8041)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10345) | **`in-progress`**
-| `in-progress`| _Equivalent_ <br/>(547/1899)| `in-progress`| _Equivalent_ <br/>(3669/5954)| `in-progress`| _Equivalent_ <br/>(15858/15859)| `in-progress`| →→→→ _Equivalent_ →→→→ <br/>(8038)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10345) | **`in-progress`**
+| `planned`| _Equivalent_ <br/>(546/1901)| `planned`| _Equivalent_ <br/>(3667/5952)| `planned`| _Equivalent_ <br/>(15852/15853)| `planned`| →→→→ _Equivalent_ →→→→ <br/>(8040)<hr/>←←←← __ ←←←← <br/>() | **`planned`**
+| `arrived`| _Equivalent_ <br/>(542/1895)| `arrived`| _Equivalent_ <br/>(3663/5948)| `arrived`| _Equivalent_ <br/>(15854/15855)| `arrived`| →→→→ _Equivalent_ →→→→ <br/>(8033)<hr/>←←←← __ ←←←← <br/>() | **`planned`**
+| | | `triaged`| _Equivalent_ <br/>(3662/5947)| `triaged`| _Equivalent_ <br/>(15856/15857)| `triaged`| →→→→ _Equivalent_ →→→→ <br/>(8041)<hr/>←←←← __ ←←←← <br/>() | **`in-progress`**
+| `in-progress`| _Equivalent_ <br/>(547/1899)| `in-progress`| _Equivalent_ <br/>(3669/5954)| `in-progress`| _Equivalent_ <br/>(15858/15859)| `in-progress`| →→→→ _Equivalent_ →→→→ <br/>(8038)<hr/>←←←← __ ←←←← <br/>() | **`in-progress`**
 | `onleave`| _Equivalent_ <br/>(543/1900)| `onleave`| _Equivalent_ <br/>(3664/5949)| `onleave`| _Equivalent_ <br/>(15860/15861)| `onleave`| _Equivalent_ <br/>(8039/10347)| **`on-hold`**
 | `finished`| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8037)<hr/>←←←← _Equivalent_ ←←←← <br/>(10338) | **`discharged`**
 | `finished`| _Equivalent_ <br/>(545/1898)| `finished`| _Equivalent_ <br/>(3666/5951)| `finished`| _Equivalent_ <br/>(15862/15863)| `finished`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8036)<hr/>←←←← _Equivalent_ ←←←← <br/>(10342) | **`completed`**

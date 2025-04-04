@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:38 PM
 
 ### ResearchStudyStatus
 
@@ -42,16 +42,16 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/research-study-status`
 | | | **`draft`**| _Equivalent_ <br/>(4574/6890)| `in-review`| _Equivalent_ <br/>(17042/17043)| `in-review`| | | 
-| | | **`in-progress`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4577)<hr/>←←←← _Equivalent_ ←←←← <br/>(6885) | `active`| _Equivalent_ <br/>(17028/17029)| `active`| _Equivalent_ <br/>(9291/11635)| `active`
+| | | **`in-progress`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4576)<hr/>←←←← _Equivalent_ ←←←← <br/>(6889) | `active`| _Equivalent_ <br/>(17028/17029)| `active`| _Equivalent_ <br/>(9291/11635)| `active`
 | | | **`in-progress`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4577)<hr/>←←←← _Equivalent_ ←←←← <br/>(6885) | `approved`| _Equivalent_ <br/>(17032/17033)| `approved`| | | 
-| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | `closed-to-accrual`| _Equivalent_ <br/>(17034/17035)| `closed-to-accrual`| | | 
-| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | `closed-to-accrual-and-intervention`| _Equivalent_ <br/>(17036/17037)| `closed-to-accrual-and-intervention`| | | 
-| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | `disapproved`| _Equivalent_ <br/>(17040/17041)| `disapproved`| | | 
-| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | `temporarily-closed-to-accrual`| _Equivalent_ <br/>(17044/17045)| `temporarily-closed-to-accrual`| | | 
+| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4580)<hr/>←←←← _Equivalent_ ←←←← <br/>(6892) | `closed-to-accrual`| _Equivalent_ <br/>(17034/17035)| `closed-to-accrual`| | | 
+| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4581)<hr/>←←←← _Equivalent_ ←←←← <br/>(6884) | `closed-to-accrual-and-intervention`| _Equivalent_ <br/>(17036/17037)| `closed-to-accrual-and-intervention`| | | 
+| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4582)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6895) | `disapproved`| _Equivalent_ <br/>(17040/17041)| `disapproved`| | | 
+| | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4583)<hr/>←←←← _Equivalent_ ←←←← <br/>(6891) | `temporarily-closed-to-accrual`| _Equivalent_ <br/>(17044/17045)| `temporarily-closed-to-accrual`| | | 
 | | | **`suspended`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4584)<hr/>←←←← _Equivalent_ ←←←← <br/>(6896) | `temporarily-closed-to-accrual-and-intervention`| _Equivalent_ <br/>(17046/17047)| `temporarily-closed-to-accrual-and-intervention`| | | 
-| | | **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4579)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6888) | `disapproved`| _Equivalent_ <br/>(17040/17041)| `disapproved`| | | 
+| | | **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4578)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6894) | `disapproved`| _Equivalent_ <br/>(17040/17041)| `disapproved`| | | 
 | | | **`stopped`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4579)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6888) | `withdrawn`| _Equivalent_ <br/>(17048/17049)| `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9301)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11637) | `retired`
-| | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4573)<hr/>←←←← _Equivalent_ ←←←← <br/>(6893) | `administratively-completed`| _Equivalent_ <br/>(17030/17031)| `administratively-completed`| | | 
+| | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4572)<hr/>←←←← _Equivalent_ ←←←← <br/>(6886) | `administratively-completed`| _Equivalent_ <br/>(17030/17031)| `administratively-completed`| | | 
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4573)<hr/>←←←← _Equivalent_ ←←←← <br/>(6893) | `completed`| _Equivalent_ <br/>(17038/17039)| `completed`| | | 
 | | | **`entered-in-error`**| →→→→ _Equivalent_ →→→→ <br/>(4575)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6887) | `withdrawn`| _Equivalent_ <br/>(17048/17049)| `withdrawn`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(9301)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11637) | `retired`
 | | | *6 of 6 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | *2 of 4 codes used* <br/>remaining codes:<br/>`draft`, `unknown`

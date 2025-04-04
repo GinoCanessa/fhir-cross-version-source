@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:37 PM
 
 ### MedicationRequestStatus
 
@@ -44,7 +44,7 @@ All codes from this value set are listed while other value sets only show conten
 | `active`| _Equivalent_ <br/>(805/2165)| **`active`**| _Equivalent_ <br/>(3981/6305)| `active`| _Equivalent_ <br/>(16562/16563)| `active`| _Equivalent_ <br/>(8980/11287)| `active`
 | `on-hold`| _Equivalent_ <br/>(808/2170)| **`on-hold`**| _Equivalent_ <br/>(3985/6309)| `on-hold`| _Equivalent_ <br/>(16564/16565)| `on-hold`| _Equivalent_ <br/>(8985/11293)| `on-hold`
 | `stopped`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(803)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2166) | **`cancelled`**| _Equivalent_ <br/>(3982/6306)| `cancelled`| _Equivalent_ <br/>(16566/16567)| `cancelled`| _Equivalent_ <br/>(8981/11288)| `cancelled`
-| `completed`| _Equivalent_ <br/>(806/2167)| **`completed`**| _Equivalent_ <br/>(3983/6307)| `completed`| _Equivalent_ <br/>(16568/16569)| `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8982)<hr/>←←←← _Equivalent_ ←←←← <br/>(11289) | `ended`
+| `completed`| _Equivalent_ <br/>(806/2167)| **`completed`**| _Equivalent_ <br/>(3983/6307)| `completed`| _Equivalent_ <br/>(16568/16569)| `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8983)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11291) | `ended`
 | `completed`| _Equivalent_ <br/>(806/2167)| **`completed`**| _Equivalent_ <br/>(3983/6307)| `completed`| _Equivalent_ <br/>(16568/16569)| `completed`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8982)<hr/>←←←← _Equivalent_ ←←←← <br/>(11289) | `completed`
 | `entered-in-error`| _Equivalent_ <br/>(807/2169)| **`entered-in-error`**| _Equivalent_ <br/>(3984/6308)| `entered-in-error`| _Equivalent_ <br/>(16570/16571)| `entered-in-error`| _Equivalent_ <br/>(8984/11292)| `entered-in-error`
 | `stopped`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(802)<hr/>←←←← _Equivalent_ ←←←← <br/>(2171) | **`stopped`**| _Equivalent_ <br/>(3979/6303)| `stopped`| _Equivalent_ <br/>(16572/16573)| `stopped`| _Equivalent_ <br/>(8978/11294)| `stopped`

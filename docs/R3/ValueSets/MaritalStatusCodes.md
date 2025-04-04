@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:09 AM
+Generated at Friday, April 4, 2025 2:58:36 PM
 
 ### Marital Status Codes
 
@@ -41,48 +41,48 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 Marital Status Codes](/docs/R2/ValueSets/MaritalStatusCodes.md)| Relationship | R3 Marital Status Codes| Relationship | [R4 Marital Status Codes](/docs/R4/ValueSets/MaritalStatusCodes.md)| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/v3/MaritalStatus`
+| `active`| | **`A`**| →→→→ _Equivalent_ →→→→ <br/>(4139)<hr/>←←←← __ ←←←← <br/>() | `A`| | | | | 
+| `A`| →→→→ _Equivalent_ →→→→ <br/>(968)<hr/>←←←← __ ←←←← <br/>() | **`A`**| →→→→ _Equivalent_ →→→→ <br/>(4139)<hr/>←←←← __ ←←←← <br/>() | `A`| | | | | 
 | `active`| | **`A`**| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
-| `A`| _Equivalent_ <br/>(968/2338)| **`A`**| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
-| `active`| | **`A`**| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
-| `A`| _Equivalent_ <br/>(968/2338)| **`A`**| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
+| `A`| →→→→ _Equivalent_ →→→→ <br/>(968)<hr/>←←←← __ ←←←← <br/>() | **`A`**| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
+| `active`| | **`D`**| →→→→ _Equivalent_ →→→→ <br/>(4141)<hr/>←←←← __ ←←←← <br/>() | `D`| | | | | 
+| `D`| →→→→ _Equivalent_ →→→→ <br/>(969)<hr/>←←←← __ ←←←← <br/>() | **`D`**| →→→→ _Equivalent_ →→→→ <br/>(4141)<hr/>←←←← __ ←←←← <br/>() | `D`| | | | | 
 | `active`| | **`D`**| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
-| `D`| _Equivalent_ <br/>(969/2339)| **`D`**| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
-| `active`| | **`D`**| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
-| `D`| _Equivalent_ <br/>(969/2339)| **`D`**| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
+| `D`| →→→→ _Equivalent_ →→→→ <br/>(969)<hr/>←←←← __ ←←←← <br/>() | **`D`**| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
+| `active`| | **`I`**| →→→→ _Equivalent_ →→→→ <br/>(4144)<hr/>←←←← __ ←←←← <br/>() | `I`| | | | | 
+| `I`| →→→→ _Equivalent_ →→→→ <br/>(970)<hr/>←←←← __ ←←←← <br/>() | **`I`**| →→→→ _Equivalent_ →→→→ <br/>(4144)<hr/>←←←← __ ←←←← <br/>() | `I`| | | | | 
 | `active`| | **`I`**| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
-| `I`| _Equivalent_ <br/>(970/2340)| **`I`**| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
-| `active`| | **`I`**| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
-| `I`| _Equivalent_ <br/>(970/2340)| **`I`**| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
+| `I`| →→→→ _Equivalent_ →→→→ <br/>(970)<hr/>←←←← __ ←←←← <br/>() | **`I`**| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
+| `active`| | **`L`**| →→→→ _Equivalent_ →→→→ <br/>(4142)<hr/>←←←← __ ←←←← <br/>() | `L`| | | | | 
+| `L`| →→→→ _Equivalent_ →→→→ <br/>(971)<hr/>←←←← __ ←←←← <br/>() | **`L`**| →→→→ _Equivalent_ →→→→ <br/>(4142)<hr/>←←←← __ ←←←← <br/>() | `L`| | | | | 
 | `active`| | **`L`**| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
-| `L`| _Equivalent_ <br/>(971/2341)| **`L`**| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
-| `active`| | **`L`**| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
-| `L`| _Equivalent_ <br/>(971/2341)| **`L`**| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
+| `L`| →→→→ _Equivalent_ →→→→ <br/>(971)<hr/>←←←← __ ←←←← <br/>() | **`L`**| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
+| `active`| | **`M`**| →→→→ _Equivalent_ →→→→ <br/>(4146)<hr/>←←←← __ ←←←← <br/>() | `M`| | | | | 
+| `M`| →→→→ _Equivalent_ →→→→ <br/>(972)<hr/>←←←← __ ←←←← <br/>() | **`M`**| →→→→ _Equivalent_ →→→→ <br/>(4146)<hr/>←←←← __ ←←←← <br/>() | `M`| | | | | 
 | `active`| | **`M`**| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
-| `M`| _Equivalent_ <br/>(972/2342)| **`M`**| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
-| `active`| | **`M`**| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
-| `M`| _Equivalent_ <br/>(972/2342)| **`M`**| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
+| `M`| →→→→ _Equivalent_ →→→→ <br/>(972)<hr/>←←←← __ ←←←← <br/>() | **`M`**| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
+| `active`| | **`P`**| →→→→ _Equivalent_ →→→→ <br/>(4140)<hr/>←←←← __ ←←←← <br/>() | `P`| | | | | 
+| `P`| →→→→ _Equivalent_ →→→→ <br/>(973)<hr/>←←←← __ ←←←← <br/>() | **`P`**| →→→→ _Equivalent_ →→→→ <br/>(4140)<hr/>←←←← __ ←←←← <br/>() | `P`| | | | | 
 | `active`| | **`P`**| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
-| `P`| _Equivalent_ <br/>(973/2343)| **`P`**| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
-| `active`| | **`P`**| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
-| `P`| _Equivalent_ <br/>(973/2343)| **`P`**| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
+| `P`| →→→→ _Equivalent_ →→→→ <br/>(973)<hr/>←←←← __ ←←←← <br/>() | **`P`**| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
+| `active`| | **`S`**| →→→→ _Equivalent_ →→→→ <br/>(4138)<hr/>←←←← __ ←←←← <br/>() | `S`| | | | | 
+| `S`| →→→→ _Equivalent_ →→→→ <br/>(974)<hr/>←←←← __ ←←←← <br/>() | **`S`**| →→→→ _Equivalent_ →→→→ <br/>(4138)<hr/>←←←← __ ←←←← <br/>() | `S`| | | | | 
 | `active`| | **`S`**| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
-| `S`| _Equivalent_ <br/>(974/2344)| **`S`**| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
-| `active`| | **`S`**| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
-| `S`| _Equivalent_ <br/>(974/2344)| **`S`**| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
+| `S`| →→→→ _Equivalent_ →→→→ <br/>(974)<hr/>←←←← __ ←←←← <br/>() | **`S`**| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
+| `active`| | **`T`**| →→→→ _Equivalent_ →→→→ <br/>(4145)<hr/>←←←← __ ←←←← <br/>() | `T`| | | | | 
+| `T`| →→→→ _Equivalent_ →→→→ <br/>(975)<hr/>←←←← __ ←←←← <br/>() | **`T`**| →→→→ _Equivalent_ →→→→ <br/>(4145)<hr/>←←←← __ ←←←← <br/>() | `T`| | | | | 
 | `active`| | **`T`**| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
-| `T`| _Equivalent_ <br/>(975/2345)| **`T`**| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
-| `active`| | **`T`**| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
-| `T`| _Equivalent_ <br/>(975/2345)| **`T`**| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
+| `T`| →→→→ _Equivalent_ →→→→ <br/>(975)<hr/>←←←← __ ←←←← <br/>() | **`T`**| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
+| `active`| | **`U`**| →→→→ _Equivalent_ →→→→ <br/>(4137)<hr/>←←←← __ ←←←← <br/>() | `U`| | | | | 
+| `U`| →→→→ _Equivalent_ →→→→ <br/>(966)<hr/>←←←← __ ←←←← <br/>() | **`U`**| →→→→ _Equivalent_ →→→→ <br/>(4137)<hr/>←←←← __ ←←←← <br/>() | `U`| | | | | 
 | `active`| | **`U`**| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
-| `U`| _Equivalent_ <br/>(966/2348)| **`U`**| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
-| `active`| | **`U`**| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
-| `U`| _Equivalent_ <br/>(966/2348)| **`U`**| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
+| `U`| →→→→ _Equivalent_ →→→→ <br/>(966)<hr/>←←←← __ ←←←← <br/>() | **`U`**| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
+| `active`| | **`W`**| →→→→ _Equivalent_ →→→→ <br/>(4143)<hr/>←←←← __ ←←←← <br/>() | `W`| | | | | 
+| `W`| →→→→ _Equivalent_ →→→→ <br/>(976)<hr/>←←←← __ ←←←← <br/>() | **`W`**| →→→→ _Equivalent_ →→→→ <br/>(4143)<hr/>←←←← __ ←←←← <br/>() | `W`| | | | | 
 | `active`| | **`W`**| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
-| `W`| _Equivalent_ <br/>(976/2347)| **`W`**| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
-| `active`| | **`W`**| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
-| `W`| _Equivalent_ <br/>(976/2347)| **`W`**| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
+| `W`| →→→→ _Equivalent_ →→→→ <br/>(976)<hr/>←←←← __ ←←←← <br/>() | **`W`**| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/v3/NullFlavor`
-| `UNK`| _Equivalent_ <br/>(967/2337)| **`UNK`**| _Equivalent_ <br/>(4157/6492)| `UNK`| | | | | 
+| `UNK`| _Equivalent_ <br/>(967/2337)| **`UNK`**| →→→→ _Equivalent_ →→→→ <br/>(4136)<hr/>←←←← __ ←←←← <br/>() | `UNK`| | | | | 
 | `UNK`| _Equivalent_ <br/>(967/2337)| **`UNK`**| _Equivalent_ <br/>(4157/6492)| `UNK`| | | | | 
 | *12 of 11 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | | | 
 

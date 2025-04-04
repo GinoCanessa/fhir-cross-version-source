@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:16 AM
+Generated at Friday, April 4, 2025 2:58:43 PM
 
 ### ProvenanceActivityType
 
@@ -43,30 +43,30 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 ProvenanceEventCurrentState](/docs/R2/ValueSets/ProvenanceEventCurrentState.md)| Relationship | [R3 ProvenanceActivityType](/docs/R3/ValueSets/ProvenanceActivityType.md)| Relationship | R4 ProvenanceActivityType| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion`
-| `LA`| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4449/6825)| **`LA`**| | | | | 
-| `LA`| _Equivalent_ <br/>(1009/2419)| `LA`| _Equivalent_ <br/>(4449/6825)| **`LA`**| | | | | 
+| `LA`| _Equivalent_ <br/>(1009/2419)| `LA`| →→→→ _Equivalent_ →→→→ <br/>(4449)<hr/>←←←← __ ←←←← <br/>() | **`LA`**| | | | | 
+| `LA`| _Equivalent_ <br/>(1009/2419)| `LA`| →→→→ _Equivalent_ →→→→ <br/>(4449)<hr/>←←←← __ ←←←← <br/>() | **`LA`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ActCode`
-| | | `ANONY`| _Equivalent_ <br/>(4478/6815)| **`ANONY`**| | | | | 
-| | | `ANONY`| _Equivalent_ <br/>(4478/6815)| **`ANONY`**| | | | | 
-| | | `DEID`| _Equivalent_ <br/>(4481/6818)| **`DEID`**| | | | | 
-| | | `DEID`| _Equivalent_ <br/>(4481/6818)| **`DEID`**| | | | | 
-| | | `MASK`| _Equivalent_ <br/>(4480/6819)| **`MASK`**| | | | | 
-| | | `MASK`| _Equivalent_ <br/>(4480/6819)| **`MASK`**| | | | | 
-| | | `LABEL`| _Equivalent_ <br/>(4479/6816)| **`LABEL`**| | | | | 
-| | | `LABEL`| _Equivalent_ <br/>(4479/6816)| **`LABEL`**| | | | | 
-| | | `PSEUD`| _Equivalent_ <br/>(4482/6817)| **`PSEUD`**| | | | | 
-| | | `PSEUD`| _Equivalent_ <br/>(4482/6817)| **`PSEUD`**| | | | | 
+| | | `ANONY`| →→→→ _Equivalent_ →→→→ <br/>(4478)<hr/>←←←← __ ←←←← <br/>() | **`ANONY`**| | | | | 
+| | | `ANONY`| →→→→ _Equivalent_ →→→→ <br/>(4478)<hr/>←←←← __ ←←←← <br/>() | **`ANONY`**| | | | | 
+| | | `DEID`| →→→→ _Equivalent_ →→→→ <br/>(4481)<hr/>←←←← __ ←←←← <br/>() | **`DEID`**| | | | | 
+| | | `DEID`| →→→→ _Equivalent_ →→→→ <br/>(4481)<hr/>←←←← __ ←←←← <br/>() | **`DEID`**| | | | | 
+| | | `MASK`| →→→→ _Equivalent_ →→→→ <br/>(4480)<hr/>←←←← __ ←←←← <br/>() | **`MASK`**| | | | | 
+| | | `MASK`| →→→→ _Equivalent_ →→→→ <br/>(4480)<hr/>←←←← __ ←←←← <br/>() | **`MASK`**| | | | | 
+| | | `LABEL`| →→→→ _Equivalent_ →→→→ <br/>(4479)<hr/>←←←← __ ←←←← <br/>() | **`LABEL`**| | | | | 
+| | | `LABEL`| →→→→ _Equivalent_ →→→→ <br/>(4479)<hr/>←←←← __ ←←←← <br/>() | **`LABEL`**| | | | | 
+| | | `PSEUD`| →→→→ _Equivalent_ →→→→ <br/>(4482)<hr/>←←←← __ ←←←← <br/>() | **`PSEUD`**| | | | | 
+| | | `PSEUD`| →→→→ _Equivalent_ →→→→ <br/>(4482)<hr/>←←←← __ ←←←← <br/>() | **`PSEUD`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-DataOperation`
-| | | `CREATE`| _Equivalent_ <br/>(4458/6823)| **`CREATE`**| | | | | 
-| | | `CREATE`| _Equivalent_ <br/>(4458/6823)| **`CREATE`**| | | | | 
-| | | `DELETE`| _Equivalent_ <br/>(4462/6822)| **`DELETE`**| | | | | 
-| | | `DELETE`| _Equivalent_ <br/>(4462/6822)| **`DELETE`**| | | | | 
-| | | `UPDATE`| _Equivalent_ <br/>(4460/6821)| **`UPDATE`**| | | | | 
-| | | `UPDATE`| _Equivalent_ <br/>(4460/6821)| **`UPDATE`**| | | | | 
-| | | `APPEND`| _Equivalent_ <br/>(4461/6824)| **`APPEND`**| | | | | 
-| | | `APPEND`| _Equivalent_ <br/>(4461/6824)| **`APPEND`**| | | | | 
-| | | `NULLIFY`| _Equivalent_ <br/>(4459/6820)| **`NULLIFY`**| | | | | 
-| | | `NULLIFY`| _Equivalent_ <br/>(4459/6820)| **`NULLIFY`**| | | | | 
+| | | `CREATE`| →→→→ _Equivalent_ →→→→ <br/>(4458)<hr/>←←←← __ ←←←← <br/>() | **`CREATE`**| | | | | 
+| | | `CREATE`| →→→→ _Equivalent_ →→→→ <br/>(4458)<hr/>←←←← __ ←←←← <br/>() | **`CREATE`**| | | | | 
+| | | `DELETE`| →→→→ _Equivalent_ →→→→ <br/>(4462)<hr/>←←←← __ ←←←← <br/>() | **`DELETE`**| | | | | 
+| | | `DELETE`| →→→→ _Equivalent_ →→→→ <br/>(4462)<hr/>←←←← __ ←←←← <br/>() | **`DELETE`**| | | | | 
+| | | `UPDATE`| →→→→ _Equivalent_ →→→→ <br/>(4460)<hr/>←←←← __ ←←←← <br/>() | **`UPDATE`**| | | | | 
+| | | `UPDATE`| →→→→ _Equivalent_ →→→→ <br/>(4460)<hr/>←←←← __ ←←←← <br/>() | **`UPDATE`**| | | | | 
+| | | `APPEND`| →→→→ _Equivalent_ →→→→ <br/>(4461)<hr/>←←←← __ ←←←← <br/>() | **`APPEND`**| | | | | 
+| | | `APPEND`| →→→→ _Equivalent_ →→→→ <br/>(4461)<hr/>←←←← __ ←←←← <br/>() | **`APPEND`**| | | | | 
+| | | `NULLIFY`| →→→→ _Equivalent_ →→→→ <br/>(4459)<hr/>←←←← __ ←←←← <br/>() | **`NULLIFY`**| | | | | 
+| | | `NULLIFY`| →→→→ _Equivalent_ →→→→ <br/>(4459)<hr/>←←←← __ ←←←← <br/>() | **`NULLIFY`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ParticipationType`
 | | | | | **`PART`**| | | | | 
 | | | | | **`ADM`**| | | | | 

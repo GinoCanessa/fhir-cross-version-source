@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:17 AM
+Generated at Friday, April 4, 2025 2:58:45 PM
 
 ### AuditEventID
 
@@ -58,8 +58,8 @@ All codes from this value set are listed while other value sets only show conten
 | `110113`| _Equivalent_ <br/>(1166/2704)| `110113`| _Equivalent_ <br/>(4774/7095)| **`110113`**| | | | | 
 | `110114`| _Equivalent_ <br/>(1169/2710)| `110114`| _Equivalent_ <br/>(4775/7096)| **`110114`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/audit-event-type`
-| `rest`| _Equivalent_ <br/>(1175/2698)| `rest`| _Equivalent_ <br/>(4776/7097)| **`rest`**| | | | | 
-| `rest`| _Equivalent_ <br/>(1175/2698)| `rest`| _Equivalent_ <br/>(4776/7097)| **`rest`**| | | | | 
+| `rest`| _Equivalent_ <br/>(1175/2698)| `rest`| →→→→ _Equivalent_ →→→→ <br/>(4776)<hr/>←←←← __ ←←←← <br/>() | **`rest`**| | | | | 
+| `rest`| _Equivalent_ <br/>(1175/2698)| `rest`| →→→→ _Equivalent_ →→→→ <br/>(4776)<hr/>←←←← __ ←←←← <br/>() | **`rest`**| | | | | 
 | <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle`
 | | | | | **`access`**| | | | | 
 | | | | | **`hold`**| | | | | 

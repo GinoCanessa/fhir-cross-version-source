@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:09 AM
+Generated at Friday, April 4, 2025 2:58:36 PM
 
 ### ResearchSubjectStatus
 
@@ -41,19 +41,19 @@ All codes from this value set are listed while other value sets only show conten
 | *No Map* | Relationship | R3 ResearchSubjectStatus| Relationship | [R4 ResearchSubjectStatus](/docs/R4/ValueSets/ResearchSubjectStatus.md)| Relationship | [R4B ResearchSubjectStatus](/docs/R4B/ValueSets/ResearchSubjectStatus.md)| Relationship | [R5 PublicationStatus](/docs/R5/ValueSets/PublicationStatus.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/research-subject-status`
-| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4561)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6882) | `candidate`| _Equivalent_ <br/>(17050/17051)| `candidate`| | | 
-| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4561)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6882) | `eligible`| _Equivalent_ <br/>(17052/17053)| `eligible`| | | 
-| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4561)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6882) | `screening`| _Equivalent_ <br/>(17072/17073)| `screening`| | | 
+| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4558)<hr/>←←←← _Equivalent_ ←←←← <br/>(6868) | `candidate`| _Equivalent_ <br/>(17050/17051)| `candidate`| | | 
+| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4559)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6869) | `eligible`| _Equivalent_ <br/>(17052/17053)| `eligible`| | | 
+| | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4560)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6881) | `screening`| _Equivalent_ <br/>(17072/17073)| `screening`| | | 
 | | | **`candidate`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4561)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6882) | `withdrawn`| _Equivalent_ <br/>(17074/17075)| `withdrawn`| _Equivalent_ <br/>(9281/11633)| `retired`
 | | | **`enrolled`**| →→→→ _Equivalent_ →→→→ <br/>(4570)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6876) | `on-study`| _Equivalent_ <br/>(17062/17063)| `on-study`| | | 
-| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4567)<hr/>←←←← _Equivalent_ ←←←← <br/>(6879) | `on-study`| _Equivalent_ <br/>(17062/17063)| `on-study`| | | 
-| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4567)<hr/>←←←← _Equivalent_ ←←←← <br/>(6879) | `on-study-intervention`| _Equivalent_ <br/>(17064/17065)| `on-study-intervention`| | | 
-| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4567)<hr/>←←←← _Equivalent_ ←←←← <br/>(6879) | `on-study-observation`| _Equivalent_ <br/>(17066/17067)| `on-study-observation`| | | 
+| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4564)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6875) | `on-study`| _Equivalent_ <br/>(17062/17063)| `on-study`| | | 
+| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4565)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6877) | `on-study-intervention`| _Equivalent_ <br/>(17064/17065)| `on-study-intervention`| | | 
+| | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4566)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6878) | `on-study-observation`| _Equivalent_ <br/>(17066/17067)| `on-study-observation`| | | 
 | | | **`active`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4567)<hr/>←←←← _Equivalent_ ←←←← <br/>(6879) | `pending-on-study`| _Equivalent_ <br/>(17068/17069)| `pending-on-study`| | | 
 | | | **`suspended`**| →→→→ _Equivalent_ →→→→ <br/>(4571)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6871) | `follow-up`| _Equivalent_ <br/>(17054/17055)| `follow-up`| | | 
-| | | **`withdrawn`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4562)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6883) | `not-registered`| _Equivalent_ <br/>(17058/17059)| `not-registered`| | | 
+| | | **`withdrawn`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4563)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6873) | `not-registered`| _Equivalent_ <br/>(17058/17059)| `not-registered`| | | 
 | | | **`withdrawn`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4562)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6883) | `withdrawn`| _Equivalent_ <br/>(17074/17075)| `withdrawn`| _Equivalent_ <br/>(9281/11633)| `retired`
-| | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4569)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6874) | `follow-up`| _Equivalent_ <br/>(17054/17055)| `follow-up`| | | 
+| | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4568)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6870) | `follow-up`| _Equivalent_ <br/>(17054/17055)| `follow-up`| | | 
 | | | **`completed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4569)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(6874) | `off-study`| _Equivalent_ <br/>(17060/17061)| `off-study`| | | 
 | | | *6 of 6 codes used* | | *11 of 13 codes used* <br/>remaining codes:<br/>`ineligible`, `potential-candidate`| | *11 of 13 codes used* <br/>remaining codes:<br/>`ineligible`, `potential-candidate`| | *1 of 4 codes used* <br/>remaining codes:<br/>`active`, `draft`, `unknown`
 

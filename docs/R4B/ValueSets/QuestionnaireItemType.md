@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:24 AM
+Generated at Friday, April 4, 2025 2:58:51 PM
 
 ### QuestionnaireItemType
 
@@ -47,8 +47,8 @@ All codes from this value set are listed while other value sets only show conten
 | `decimal`| _Equivalent_ <br/>(1083/2490)| `decimal`| _Equivalent_ <br/>(4547/6857)| `decimal`| _Equivalent_ <br/>(16332/16333)| **`decimal`**| _Equivalent_ <br/>(9267/11585)| `decimal`
 | `integer`| _Equivalent_ <br/>(1074/2493)| `integer`| _Equivalent_ <br/>(4540/6850)| `integer`| _Equivalent_ <br/>(16334/16335)| **`integer`**| _Equivalent_ <br/>(9260/11588)| `integer`
 | `date`| _Equivalent_ <br/>(1069/2487)| `date`| _Equivalent_ <br/>(4534/6844)| `date`| _Equivalent_ <br/>(16336/16337)| **`date`**| _Equivalent_ <br/>(9254/11583)| `date`
-| `dateTime`| →→→→ _Equivalent_ →→→→ <br/>(1070)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2489) | `dateTime`| _Equivalent_ <br/>(4535/6845)| `dateTime`| _Equivalent_ <br/>(16338/16339)| **`dateTime`**| _Equivalent_ <br/>(9255/11584)| `dateTime`
-| `instant`| →→→→ _Equivalent_ →→→→ <br/>(1076)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2489) | `dateTime`| _Equivalent_ <br/>(4535/6845)| `dateTime`| _Equivalent_ <br/>(16338/16339)| **`dateTime`**| _Equivalent_ <br/>(9255/11584)| `dateTime`
+| `dateTime`| →→→→ _Equivalent_ →→→→ <br/>(1070)<hr/>←←←← __ ←←←← <br/>() | `dateTime`| _Equivalent_ <br/>(4535/6845)| `dateTime`| _Equivalent_ <br/>(16338/16339)| **`dateTime`**| _Equivalent_ <br/>(9255/11584)| `dateTime`
+| `instant`| →→→→ _Equivalent_ →→→→ <br/>(1076)<hr/>←←←← __ ←←←← <br/>() | `dateTime`| _Equivalent_ <br/>(4535/6845)| `dateTime`| _Equivalent_ <br/>(16338/16339)| **`dateTime`**| _Equivalent_ <br/>(9255/11584)| `dateTime`
 | `time`| _Equivalent_ <br/>(1080/2499)| `time`| _Equivalent_ <br/>(4545/6855)| `time`| _Equivalent_ <br/>(16340/16341)| **`time`**| _Equivalent_ <br/>(9265/11593)| `time`
 | `string`| _Equivalent_ <br/>(1072/2497)| `string`| _Equivalent_ <br/>(4537/6847)| `string`| _Equivalent_ <br/>(16342/16343)| **`string`**| _Equivalent_ <br/>(9257/11591)| `string`
 | `text`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1081)<hr/>←←←← _Equivalent_ ←←←← <br/>(2498) | `text`| _Equivalent_ <br/>(4546/6856)| `text`| _Equivalent_ <br/>(16344/16345)| **`text`**| _Equivalent_ <br/>(9266/11592)| `text`

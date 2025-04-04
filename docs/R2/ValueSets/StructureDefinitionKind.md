@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:04 AM
+Generated at Friday, April 4, 2025 2:58:31 PM
 
 ### StructureDefinitionKind
 
@@ -41,7 +41,7 @@ All codes from this value set are listed while other value sets only show conten
 | R2 StructureDefinitionKind| Relationship | [R3 StructureDefinitionKind](/docs/R3/ValueSets/StructureDefinitionKind.md)| Relationship | [R4 StructureDefinitionKind](/docs/R4/ValueSets/StructureDefinitionKind.md)| Relationship | [R4B StructureDefinitionKind](/docs/R4B/ValueSets/StructureDefinitionKind.md)| Relationship | [R5 StructureDefinitionKind](/docs/R5/ValueSets/StructureDefinitionKind.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/structure-definition-kind`
-| **`datatype`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1108)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2527) | `primitive-type`| _Equivalent_ <br/>(4596/6908)| `primitive-type`| _Equivalent_ <br/>(18228/18229)| `primitive-type`| _Equivalent_ <br/>(9342/11680)| `primitive-type`
+| **`datatype`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1109)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2529) | `primitive-type`| _Equivalent_ <br/>(4596/6908)| `primitive-type`| _Equivalent_ <br/>(18228/18229)| `primitive-type`| _Equivalent_ <br/>(9342/11680)| `primitive-type`
 | **`datatype`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1108)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2527) | `complex-type`| _Equivalent_ <br/>(4598/6910)| `complex-type`| _Equivalent_ <br/>(18230/18231)| `complex-type`| _Equivalent_ <br/>(9344/11682)| `complex-type`
 | **`resource`**| _Equivalent_ <br/>(1111/2530)| `resource`| _Equivalent_ <br/>(4597/6909)| `resource`| _Equivalent_ <br/>(18232/18233)| `resource`| _Equivalent_ <br/>(9343/11681)| `resource`
 | **`logical`**| _Equivalent_ <br/>(1110/2528)| `logical`| _Equivalent_ <br/>(4599/6911)| `logical`| _Equivalent_ <br/>(18234/18235)| `logical`| _Equivalent_ <br/>(9345/11683)| `logical`

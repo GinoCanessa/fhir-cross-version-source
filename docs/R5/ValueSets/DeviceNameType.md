@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:32 AM
+Generated at Friday, April 4, 2025 2:58:59 PM
 
 ### DeviceNameType
 
@@ -42,10 +42,10 @@ All codes from this value set are listed while other value sets only show conten
 | *No Map* | Relationship | *No Map* | Relationship | [R4 DeviceNameType](/docs/R4/ValueSets/DeviceNameType.md)| Relationship | [R4B DeviceNameType](/docs/R4B/ValueSets/DeviceNameType.md)| Relationship | R5 DeviceNameType
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R5** System: `http://hl7.org/fhir/device-nametype`
-| | | | | `udi-label-name`| _Equivalent_ <br/>(15748/15749)| `udi-label-name`| →→→→ _Equivalent_ →→→→ <br/>(7946)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10251) | **`registered-name`**
-| | | | | `manufacturer-name`| _Equivalent_ <br/>(15754/15755)| `manufacturer-name`| →→→→ _Equivalent_ →→→→ <br/>(7942)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10251) | **`registered-name`**
-| | | | | `model-name`| _Equivalent_ <br/>(15756/15757)| `model-name`| →→→→ _Equivalent_ →→→→ <br/>(7943)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10251) | **`registered-name`**
-| | | | | `other`| _Equivalent_ <br/>(15758/15759)| `other`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7944)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10251) | **`registered-name`**
+| | | | | `udi-label-name`| _Equivalent_ <br/>(15748/15749)| `udi-label-name`| →→→→ _Equivalent_ →→→→ <br/>(7946)<hr/>←←←← __ ←←←← <br/>() | **`registered-name`**
+| | | | | `manufacturer-name`| _Equivalent_ <br/>(15754/15755)| `manufacturer-name`| →→→→ _Equivalent_ →→→→ <br/>(7942)<hr/>←←←← __ ←←←← <br/>() | **`registered-name`**
+| | | | | `model-name`| _Equivalent_ <br/>(15756/15757)| `model-name`| →→→→ _Equivalent_ →→→→ <br/>(7943)<hr/>←←←← __ ←←←← <br/>() | **`registered-name`**
+| | | | | `other`| _Equivalent_ <br/>(15758/15759)| `other`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7944)<hr/>←←←← __ ←←←← <br/>() | **`registered-name`**
 | | | | | `user-friendly-name`| _Equivalent_ <br/>(15750/15751)| `user-friendly-name`| _Equivalent_ <br/>(7947/10253)| **`user-friendly-name`**
 | | | | | `patient-reported-name`| _Equivalent_ <br/>(15752/15753)| `patient-reported-name`| _Equivalent_ <br/>(7945/10254)| **`patient-reported-name`**
 | | | | | *6 of 6 codes used* | | *6 of 6 codes used* | | *3 of 3 codes used* 

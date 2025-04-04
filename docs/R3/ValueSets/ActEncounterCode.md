@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:38 PM
 
 ### ActEncounterCode
 
@@ -41,8 +41,8 @@ All codes from this value set are listed while other value sets only show conten
 | [R2 EncounterClass](/docs/R2/ValueSets/EncounterClass.md)| Relationship | R3 ActEncounterCode| Relationship | [R4 v3.ActEncounterCode](/docs/R4/ValueSets/V3ActEncounterCode.md)| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/v3/ActCode`
-| `outpatient`| _Equivalent_ <br/>(530/1882)| **`AMB`**| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
-| `ambulatory`| _Equivalent_ <br/>(531/1882)| **`AMB`**| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
+| `outpatient`| →→→→ _Equivalent_ →→→→ <br/>(530)<hr/>←←←← __ ←←←← <br/>() | **`AMB`**| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
+| `ambulatory`| →→→→ _Equivalent_ →→→→ <br/>(531)<hr/>←←←← __ ←←←← <br/>() | **`AMB`**| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
 | `emergency`| _Equivalent_ <br/>(532/1883)| **`EMER`**| _Equivalent_ <br/>(3650/5934)| `EMER`| | | | | 
 | `field`| _Equivalent_ <br/>(534/1884)| **`FLD`**| _Equivalent_ <br/>(3651/5935)| `FLD`| | | | | 
 | `home`| _Equivalent_ <br/>(533/1885)| **`HH`**| _Equivalent_ <br/>(3652/5936)| `HH`| | | | | 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:06 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### ParticipantType
 
@@ -43,31 +43,31 @@ All codes from this value set are listed while other value sets only show conten
 | R2 ParticipantType| Relationship | [R3 ParticipantType](/docs/R3/ValueSets/ParticipantType.md)| Relationship | [R4 ParticipantType](/docs/R4/ValueSets/ParticipantType.md)| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/ParticipationType`
+| **`SPRF`**| _Equivalent_ <br/>(53/1423)| `SPRF`| →→→→ _Equivalent_ →→→→ <br/>(2937)<hr/>←←←← __ ←←←← <br/>() | `SPRF`| | | | | 
 | **`SPRF`**| _Equivalent_ <br/>(53/1423)| `SPRF`| _Equivalent_ <br/>(2951/5150)| `SPRF`| | | | | 
-| **`SPRF`**| _Equivalent_ <br/>(53/1423)| `SPRF`| _Equivalent_ <br/>(2951/5150)| `SPRF`| | | | | 
+| **`PPRF`**| _Equivalent_ <br/>(51/1421)| `PPRF`| →→→→ _Equivalent_ →→→→ <br/>(2939)<hr/>←←←← __ ←←←← <br/>() | `PPRF`| | | | | 
 | **`PPRF`**| _Equivalent_ <br/>(51/1421)| `PPRF`| _Equivalent_ <br/>(2949/5152)| `PPRF`| | | | | 
-| **`PPRF`**| _Equivalent_ <br/>(51/1421)| `PPRF`| _Equivalent_ <br/>(2949/5152)| `PPRF`| | | | | 
-| **`PART`**| _Equivalent_ <br/>(50/1420)| `PART`| _Equivalent_ <br/>(2953/5149)| `PART`| | | | | 
+| **`PART`**| _Equivalent_ <br/>(50/1420)| `PART`| →→→→ _Equivalent_ →→→→ <br/>(2936)<hr/>←←←← __ ←←←← <br/>() | `PART`| | | | | 
 | **`PART`**| _Equivalent_ <br/>(50/1420)| `PART`| _Equivalent_ <br/>(2953/5149)| `PART`| | | | | 
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/participant-type`
+| **`translator`**| _Equivalent_ <br/>(55/1425)| `translator`| →→→→ _Equivalent_ →→→→ <br/>(2940)<hr/>←←←← __ ←←←← <br/>() | `translator`| | | | | 
 | **`translator`**| _Equivalent_ <br/>(55/1425)| `translator`| _Equivalent_ <br/>(2942/5153)| `translator`| | | | | 
-| **`translator`**| _Equivalent_ <br/>(55/1425)| `translator`| _Equivalent_ <br/>(2942/5153)| `translator`| | | | | 
-| **`emergency`**| _Equivalent_ <br/>(54/1424)| `emergency`| _Equivalent_ <br/>(2943/5154)| `emergency`| | | | | 
+| **`emergency`**| _Equivalent_ <br/>(54/1424)| `emergency`| →→→→ _Equivalent_ →→→→ <br/>(2941)<hr/>←←←← __ ←←←← <br/>() | `emergency`| | | | | 
 | **`emergency`**| _Equivalent_ <br/>(54/1424)| `emergency`| _Equivalent_ <br/>(2943/5154)| `emergency`| | | | | 
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/ParticipationType`
+| **`ADM`**| _Equivalent_ <br/>(44/1414)| `ADM`| →→→→ _Equivalent_ →→→→ <br/>(2938)<hr/>←←←← __ ←←←← <br/>() | `ADM`| | | | | 
 | **`ADM`**| _Equivalent_ <br/>(44/1414)| `ADM`| _Equivalent_ <br/>(2947/5151)| `ADM`| | | | | 
-| **`ADM`**| _Equivalent_ <br/>(44/1414)| `ADM`| _Equivalent_ <br/>(2947/5151)| `ADM`| | | | | 
+| **`ATND`**| _Equivalent_ <br/>(45/1415)| `ATND`| →→→→ _Equivalent_ →→→→ <br/>(2930)<hr/>←←←← __ ←←←← <br/>() | `ATND`| | | | | 
 | **`ATND`**| _Equivalent_ <br/>(45/1415)| `ATND`| _Equivalent_ <br/>(2944/5143)| `ATND`| | | | | 
-| **`ATND`**| _Equivalent_ <br/>(45/1415)| `ATND`| _Equivalent_ <br/>(2944/5143)| `ATND`| | | | | 
+| **`CALLBCK`**| _Equivalent_ <br/>(46/1416)| `CALLBCK`| →→→→ _Equivalent_ →→→→ <br/>(2931)<hr/>←←←← __ ←←←← <br/>() | `CALLBCK`| | | | | 
 | **`CALLBCK`**| _Equivalent_ <br/>(46/1416)| `CALLBCK`| _Equivalent_ <br/>(2946/5144)| `CALLBCK`| | | | | 
-| **`CALLBCK`**| _Equivalent_ <br/>(46/1416)| `CALLBCK`| _Equivalent_ <br/>(2946/5144)| `CALLBCK`| | | | | 
+| **`CON`**| _Equivalent_ <br/>(47/1417)| `CON`| →→→→ _Equivalent_ →→→→ <br/>(2934)<hr/>←←←← __ ←←←← <br/>() | `CON`| | | | | 
 | **`CON`**| _Equivalent_ <br/>(47/1417)| `CON`| _Equivalent_ <br/>(2945/5147)| `CON`| | | | | 
-| **`CON`**| _Equivalent_ <br/>(47/1417)| `CON`| _Equivalent_ <br/>(2945/5147)| `CON`| | | | | 
+| **`DIS`**| _Equivalent_ <br/>(48/1418)| `DIS`| →→→→ _Equivalent_ →→→→ <br/>(2935)<hr/>←←←← __ ←←←← <br/>() | `DIS`| | | | | 
 | **`DIS`**| _Equivalent_ <br/>(48/1418)| `DIS`| _Equivalent_ <br/>(2950/5148)| `DIS`| | | | | 
-| **`DIS`**| _Equivalent_ <br/>(48/1418)| `DIS`| _Equivalent_ <br/>(2950/5148)| `DIS`| | | | | 
+| **`ESC`**| _Equivalent_ <br/>(49/1419)| `ESC`| →→→→ _Equivalent_ →→→→ <br/>(2933)<hr/>←←←← __ ←←←← <br/>() | `ESC`| | | | | 
 | **`ESC`**| _Equivalent_ <br/>(49/1419)| `ESC`| _Equivalent_ <br/>(2952/5146)| `ESC`| | | | | 
-| **`ESC`**| _Equivalent_ <br/>(49/1419)| `ESC`| _Equivalent_ <br/>(2952/5146)| `ESC`| | | | | 
-| **`REF`**| _Equivalent_ <br/>(52/1422)| `REF`| _Equivalent_ <br/>(2948/5145)| `REF`| | | | | 
+| **`REF`**| _Equivalent_ <br/>(52/1422)| `REF`| →→→→ _Equivalent_ →→→→ <br/>(2932)<hr/>←←←← __ ←←←← <br/>() | `REF`| | | | | 
 | **`REF`**| _Equivalent_ <br/>(52/1422)| `REF`| _Equivalent_ <br/>(2948/5145)| `REF`| | | | | 
 | *12 of 12 codes used* | | *12 of 12 codes used* | | *12 of 12 codes used* | | | | 
 

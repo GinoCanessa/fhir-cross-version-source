@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### CommunicationRequestStatus
 
@@ -50,7 +50,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`completed`**| _Equivalent_ <br/>(144/1510)| `completed`| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | **`suspended`**| _Equivalent_ <br/>(153/1515)| `suspended`| _Equivalent_ <br/>(3051/5258)| `on-hold`| _Equivalent_ <br/>(17012/17013)| `on-hold`| _Equivalent_ <br/>(7567/9837)| `on-hold`
 | **`rejected`**| →→→→ _Equivalent_ →→→→ <br/>(151)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1509) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
-| **`failed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(146)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1514) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
+| **`failed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(145)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1508) | `cancelled`| _Equivalent_ <br/>(3048/5259)| `revoked`| _Equivalent_ <br/>(17014/17015)| `revoked`| _Equivalent_ <br/>(7565/9835)| `revoked`
 | **`failed`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(146)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1514) | `entered-in-error`| _Equivalent_ <br/>(3050/5257)| `entered-in-error`| _Equivalent_ <br/>(17018/17019)| `entered-in-error`| _Equivalent_ <br/>(7566/9836)| `entered-in-error`
 | *10 of 10 codes used* | | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`| | *6 of 7 codes used* <br/>remaining codes:<br/>`unknown`
 

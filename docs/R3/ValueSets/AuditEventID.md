@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:10 AM
+Generated at Friday, April 4, 2025 2:58:37 PM
 
 ### Audit Event ID
 
@@ -57,7 +57,7 @@ All codes from this value set are listed while other value sets only show conten
 | `110113`| _Equivalent_ <br/>(1166/2704)| **`110113`**| _Equivalent_ <br/>(4774/7095)| `110113`| | | | | 
 | `110114`| _Equivalent_ <br/>(1169/2710)| **`110114`**| _Equivalent_ <br/>(4775/7096)| `110114`| | | | | 
 | <td colspan="8">**R3** System: `http://hl7.org/fhir/audit-event-type`
-| `rest`| _Equivalent_ <br/>(1175/2698)| **`rest`**| _Equivalent_ <br/>(4776/7097)| `rest`| | | | | 
+| `rest`| _Equivalent_ <br/>(1175/2698)| **`rest`**| →→→→ _Equivalent_ →→→→ <br/>(4760)<hr/>←←←← __ ←←←← <br/>() | `rest`| | | | | 
 | `rest`| _Equivalent_ <br/>(1175/2698)| **`rest`**| _Equivalent_ <br/>(4776/7097)| `rest`| | | | | 
 | *16 of 16 codes used* | | *16 of 16 codes used* | | *16 of 43 codes used* <br/>remaining codes:<br/>`access`, `amend`, `archive`, `attest`, `decrypt`, `deidentify`, `deprecate`, `destroy`, `disclose`, `encrypt`, `extract`, `hold`, `link`, `merge`, `originate`, `pseudonymize`, `reactivate`, `receive`, `reidentify`, `report`, `restore`, `transform`, `transmit`, `unhold`, `unlink`, `unmerge`, `verify`| | | | 
 

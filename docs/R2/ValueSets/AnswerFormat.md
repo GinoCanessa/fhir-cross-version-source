@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### AnswerFormat
 
@@ -49,7 +49,7 @@ All codes from this value set are listed while other value sets only show conten
 | **`instant`**| →→→→ _Equivalent_ →→→→ <br/>(1076)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2489) | `dateTime`| _Equivalent_ <br/>(4535/6845)| `dateTime`| _Equivalent_ <br/>(16338/16339)| `dateTime`| _Equivalent_ <br/>(9255/11584)| `dateTime`
 | **`time`**| _Equivalent_ <br/>(1080/2499)| `time`| _Equivalent_ <br/>(4545/6855)| `time`| _Equivalent_ <br/>(16340/16341)| `time`| _Equivalent_ <br/>(9265/11593)| `time`
 | **`string`**| _Equivalent_ <br/>(1072/2497)| `string`| _Equivalent_ <br/>(4537/6847)| `string`| _Equivalent_ <br/>(16342/16343)| `string`| _Equivalent_ <br/>(9257/11591)| `string`
-| **`text`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1081)<hr/>←←←← _Equivalent_ ←←←← <br/>(2498) | `display`| _Equivalent_ <br/>(4539/6849)| `display`| _Equivalent_ <br/>(16328/16329)| `display`| _Equivalent_ <br/>(9259/11586)| `display`
+| **`text`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1082)<hr/>←←←← _Equivalent_ ←←←← <br/>(2491) | `display`| _Equivalent_ <br/>(4539/6849)| `display`| _Equivalent_ <br/>(16328/16329)| `display`| _Equivalent_ <br/>(9259/11586)| `display`
 | **`text`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1081)<hr/>←←←← _Equivalent_ ←←←← <br/>(2498) | `text`| _Equivalent_ <br/>(4546/6856)| `text`| _Equivalent_ <br/>(16344/16345)| `text`| _Equivalent_ <br/>(9266/11592)| `text`
 | **`url`**| _Equivalent_ <br/>(1075/2500)| `url`| _Equivalent_ <br/>(4541/6851)| `url`| _Equivalent_ <br/>(16346/16347)| `url`| _Equivalent_ <br/>(9261/11594)| `url`
 | **`choice`**| _Equivalent_ <br/>(1084/2486)| `choice`| _Equivalent_ <br/>(4548/6858)| `choice`| _Equivalent_ <br/>(16348/16349)| `choice`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(9268)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11581) | `coding`

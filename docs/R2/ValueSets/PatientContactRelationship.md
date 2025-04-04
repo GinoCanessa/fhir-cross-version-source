@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### PatientContactRelationship
 
@@ -40,7 +40,7 @@ All codes from this value set are listed while other value sets only show conten
 | R2 PatientContactRelationship| Relationship | [R3 v2 Contact Role](/docs/R3/ValueSets/V2ContactRole.md)| Relationship | [R4 PatientContactRelationship](/docs/R4/ValueSets/PatientContactRelationship.md)| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/patient-contact-relationship`
-| **`emergency`**| _Equivalent_ <br/>(954/2323)| `C`| _Equivalent_ <br/>(4124/6470)| `C`| | | | | 
+| **`emergency`**| _Equivalent_ <br/>(953/2320)| `C`| _Equivalent_ <br/>(4124/6470)| `C`| | | | | 
 | **`emergency`**| _Equivalent_ <br/>(954/2323)| `EP`| | | | | | | 
 | **`family`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(955)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2326) | `N`| _Equivalent_ <br/>(4130/6476)| `N`| | | | | 
 | **`guardian`**| | | | | | | | | 

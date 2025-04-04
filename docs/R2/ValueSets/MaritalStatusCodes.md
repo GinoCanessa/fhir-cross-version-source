@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:05 AM
+Generated at Friday, April 4, 2025 2:58:32 PM
 
 ### Marital Status Codes
 
@@ -42,29 +42,29 @@ All codes from this value set are listed while other value sets only show conten
 | R2 Marital Status Codes| Relationship | [R3 Marital Status Codes](/docs/R3/ValueSets/MaritalStatusCodes.md)| Relationship | [R4 Marital Status Codes](/docs/R4/ValueSets/MaritalStatusCodes.md)| Relationship | *No Map* | Relationship | *No Map* 
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/MaritalStatus`
+| **`A`**| _Equivalent_ <br/>(968/2338)| `A`| →→→→ _Equivalent_ →→→→ <br/>(4139)<hr/>←←←← __ ←←←← <br/>() | `A`| | | | | 
 | **`A`**| _Equivalent_ <br/>(968/2338)| `A`| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
-| **`A`**| _Equivalent_ <br/>(968/2338)| `A`| _Equivalent_ <br/>(4148/6495)| `A`| | | | | 
+| **`D`**| _Equivalent_ <br/>(969/2339)| `D`| →→→→ _Equivalent_ →→→→ <br/>(4141)<hr/>←←←← __ ←←←← <br/>() | `D`| | | | | 
 | **`D`**| _Equivalent_ <br/>(969/2339)| `D`| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
-| **`D`**| _Equivalent_ <br/>(969/2339)| `D`| _Equivalent_ <br/>(4154/6497)| `D`| | | | | 
+| **`I`**| _Equivalent_ <br/>(970/2340)| `I`| →→→→ _Equivalent_ →→→→ <br/>(4144)<hr/>←←←← __ ←←←← <br/>() | `I`| | | | | 
 | **`I`**| _Equivalent_ <br/>(970/2340)| `I`| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
-| **`I`**| _Equivalent_ <br/>(970/2340)| `I`| _Equivalent_ <br/>(4155/6500)| `I`| | | | | 
+| **`L`**| _Equivalent_ <br/>(971/2341)| `L`| →→→→ _Equivalent_ →→→→ <br/>(4142)<hr/>←←←← __ ←←←← <br/>() | `L`| | | | | 
 | **`L`**| _Equivalent_ <br/>(971/2341)| `L`| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
-| **`L`**| _Equivalent_ <br/>(971/2341)| `L`| _Equivalent_ <br/>(4149/6498)| `L`| | | | | 
+| **`M`**| _Equivalent_ <br/>(972/2342)| `M`| →→→→ _Equivalent_ →→→→ <br/>(4146)<hr/>←←←← __ ←←←← <br/>() | `M`| | | | | 
 | **`M`**| _Equivalent_ <br/>(972/2342)| `M`| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
-| **`M`**| _Equivalent_ <br/>(972/2342)| `M`| _Equivalent_ <br/>(4152/6502)| `M`| | | | | 
+| **`P`**| _Equivalent_ <br/>(973/2343)| `P`| →→→→ _Equivalent_ →→→→ <br/>(4140)<hr/>←←←← __ ←←←← <br/>() | `P`| | | | | 
 | **`P`**| _Equivalent_ <br/>(973/2343)| `P`| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
-| **`P`**| _Equivalent_ <br/>(973/2343)| `P`| _Equivalent_ <br/>(4153/6496)| `P`| | | | | 
+| **`S`**| _Equivalent_ <br/>(974/2344)| `S`| →→→→ _Equivalent_ →→→→ <br/>(4138)<hr/>←←←← __ ←←←← <br/>() | `S`| | | | | 
 | **`S`**| _Equivalent_ <br/>(974/2344)| `S`| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
-| **`S`**| _Equivalent_ <br/>(974/2344)| `S`| _Equivalent_ <br/>(4151/6494)| `S`| | | | | 
+| **`T`**| _Equivalent_ <br/>(975/2345)| `T`| →→→→ _Equivalent_ →→→→ <br/>(4145)<hr/>←←←← __ ←←←← <br/>() | `T`| | | | | 
 | **`T`**| _Equivalent_ <br/>(975/2345)| `T`| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
-| **`T`**| _Equivalent_ <br/>(975/2345)| `T`| _Equivalent_ <br/>(4150/6501)| `T`| | | | | 
-| **`W`**| _Equivalent_ <br/>(976/2347)| `W`| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
+| **`W`**| _Equivalent_ <br/>(976/2347)| `W`| →→→→ _Equivalent_ →→→→ <br/>(4143)<hr/>←←←← __ ←←←← <br/>() | `W`| | | | | 
 | **`W`**| _Equivalent_ <br/>(976/2347)| `W`| _Equivalent_ <br/>(4156/6499)| `W`| | | | | 
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/NullFlavor`
-| **`UNK`**| _Equivalent_ <br/>(967/2337)| `UNK`| _Equivalent_ <br/>(4157/6492)| `UNK`| | | | | 
+| **`UNK`**| _Equivalent_ <br/>(967/2337)| `UNK`| →→→→ _Equivalent_ →→→→ <br/>(4136)<hr/>←←←← __ ←←←← <br/>() | `UNK`| | | | | 
 | **`UNK`**| _Equivalent_ <br/>(967/2337)| `UNK`| _Equivalent_ <br/>(4157/6492)| `UNK`| | | | | 
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/marital-status`
-| **`U`**| _Equivalent_ <br/>(966/2348)| `U`| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
+| **`U`**| _Equivalent_ <br/>(966/2348)| `U`| →→→→ _Equivalent_ →→→→ <br/>(4137)<hr/>←←←← __ ←←←← <br/>() | `U`| | | | | 
 | **`U`**| _Equivalent_ <br/>(966/2348)| `U`| _Equivalent_ <br/>(4147/6493)| `U`| | | | | 
 | *11 of 11 codes used* | | *11 of 11 codes used* | | *11 of 11 codes used* | | | | 
 

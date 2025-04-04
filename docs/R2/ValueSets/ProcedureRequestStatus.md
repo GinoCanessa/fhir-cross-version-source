@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:04 AM
+Generated at Friday, April 4, 2025 2:58:31 PM
 
 ### ProcedureRequestStatus
 
@@ -43,7 +43,7 @@ All codes from this value set are listed while other value sets only show conten
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/procedure-request-status`
 | **`proposed`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(986)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2374) | `draft`| →→→→ _Equivalent_ →→→→ <br/>(3046)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5256) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
 | **`draft`**| →→→→ _Equivalent_ →→→→ <br/>(984)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2373) | `draft`| →→→→ _Equivalent_ →→→→ <br/>(3046)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5256) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
-| **`requested`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(989)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2368) | `draft`| →→→→ _Equivalent_ →→→→ <br/>(3046)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5256) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
+| **`requested`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(990)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2375) | `draft`| →→→→ _Equivalent_ →→→→ <br/>(3046)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(5256) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
 | **`requested`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(989)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2368) | `active`| _Equivalent_ <br/>(3047/5254)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`
 | **`received`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(987)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2372) | `completed`| _Equivalent_ <br/>(3049/5255)| `completed`| _Equivalent_ <br/>(17016/17017)| `completed`| _Equivalent_ <br/>(7564/9834)| `completed`
 | **`accepted`**| →→→→ _Equivalent_ →→→→ <br/>(982)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2366) | `active`| _Equivalent_ <br/>(3047/5254)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`

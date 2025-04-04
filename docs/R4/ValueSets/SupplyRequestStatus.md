@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Thursday, April 3, 2025 8:18:16 AM
+Generated at Friday, April 4, 2025 2:58:43 PM
 
 ### SupplyRequestStatus
 
@@ -44,8 +44,8 @@ All codes from this value set are listed while other value sets only show conten
 | `requested`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1297)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2745) | `draft`| _Equivalent_ <br/>(4863/7186)| **`draft`**| _Equivalent_ <br/>(18272/18273)| `draft`| _Equivalent_ <br/>(9441/11778)| `draft`
 | | | `active`| _Equivalent_ <br/>(4864/7187)| **`active`**| _Equivalent_ <br/>(18274/18275)| `active`| _Equivalent_ <br/>(9442/11779)| `active`
 | | | `suspended`| _Equivalent_ <br/>(4868/7191)| **`suspended`**| _Equivalent_ <br/>(18276/18277)| `suspended`| _Equivalent_ <br/>(9446/11783)| `suspended`
-| `failed`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1296)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2742) | `cancelled`| _Equivalent_ <br/>(4865/7188)| **`cancelled`**| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
-| `cancelled`| →→→→ _Equivalent_ →→→→ <br/>(1294)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2742) | `cancelled`| _Equivalent_ <br/>(4865/7188)| **`cancelled`**| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
+| `failed`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1296)<hr/>←←←← __ ←←←← <br/>() | `cancelled`| _Equivalent_ <br/>(4865/7188)| **`cancelled`**| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
+| `cancelled`| →→→→ _Equivalent_ →→→→ <br/>(1294)<hr/>←←←← __ ←←←← <br/>() | `cancelled`| _Equivalent_ <br/>(4865/7188)| **`cancelled`**| _Equivalent_ <br/>(18278/18279)| `cancelled`| _Equivalent_ <br/>(9443/11780)| `cancelled`
 | `completed`| _Equivalent_ <br/>(1295/2744)| `completed`| _Equivalent_ <br/>(4866/7189)| **`completed`**| _Equivalent_ <br/>(18280/18281)| `completed`| _Equivalent_ <br/>(9444/11781)| `completed`
 | | | `entered-in-error`| _Equivalent_ <br/>(4867/7190)| **`entered-in-error`**| _Equivalent_ <br/>(18282/18283)| `entered-in-error`| _Equivalent_ <br/>(9445/11782)| `entered-in-error`
 | | | `unknown`| _Equivalent_ <br/>(4869/7192)| **`unknown`**| _Equivalent_ <br/>(18284/18285)| `unknown`| _Equivalent_ <br/>(9447/11784)| `unknown`
