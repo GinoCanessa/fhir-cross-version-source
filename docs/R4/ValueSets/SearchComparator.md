@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### SearchComparator
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [SearchComparator](/docs/R3/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `513`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `734`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SearchComparator](/docs/R4/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1721`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1722`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SearchComparator](/docs/R4B/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `991`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1252`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SearchComparator](/docs/R5/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|5.0.0` 
+| | | [SearchComparator](/docs/R3/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `513`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `734`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SearchComparator](/docs/R4/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1721`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1722`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SearchComparator](/docs/R4B/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `991`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1252`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SearchComparator](/docs/R5/ValueSets/SearchComparator.md)<br/> `http://hl7.org/fhir/ValueSet/search-comparator\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### ActCode
 
@@ -95,14 +95,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ACU` | short term/acute |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ACUTE` | inpatient acute |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADALRT` | adult alert |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNPPELAT` | adjud. nullified prior-period electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNPPELCT` | adjud. nullified prior-period electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNPPMNAT` | adjud. nullified prior-period manual amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNPPMNCT` | adjud. nullified prior-period manual count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNSPELAT` | adjud. nullified same-period electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNSPELCT` | adjud. nullified same-period electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNSPMNAT` | adjud. nullified same-period manual amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADCNSPMNCT` | adjud. nullified same-period manual count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADMDX` | admitting diagnosis |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADNFPPELAT` | adjud. nullified prior-period electronic amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ADNFPPELCT` | adjud. nullified prior-period electronic count |
@@ -190,15 +182,12 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `AUTOATTCH` | auto attachment |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `AUTOPOL` | automobile |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `AVAILABLE` | Available Volume |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ActTrustPolicyType` | trust policy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `Ambulance` | ambulance transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `B` | business information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BDYFLDTRNS` | body fluid contact transmission |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BH` | behavioral health information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BLDTRNS` | blood borne transmission |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BLK` | block funding |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BONUS` | bonus |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BOOSTER` | Booster Immunization |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BR` | breikost (GE) |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `BUS` | business constraint violation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `C` | corrected |
@@ -270,7 +259,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COGC` | certified obstetrics and gynecology care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COGN` | cognitive disability information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COIN` | coinsurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COINS` | co-insurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COJR` | certified orthopedic joint replacement care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COL` | collision coverage policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COMC` | certified occupational medicine care |
@@ -284,7 +272,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CONTF` | contract funding |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CONTROLLED` | CONTROLLED |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CONVEYNC` | Common Conveyance Interaction |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COPAY` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COPAYMENT` | patient co-pay |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COPC` | certified ophthalmology care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COPD` | certified chronic obstructive pulmonary disease care |
@@ -297,7 +284,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COVMX` | coverage maximum |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COVPOL` | benefit policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `COVPRD` | coverage period |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CP` | clinical product invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CPAD` | certified parkinsons disease care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CPEC` | certified pediatrics care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CPGC` | certified Ph.D. medical genetics care |
@@ -326,7 +312,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CROC` | certified radiation oncology care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CRPC` | certified radiological physics care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CRS` | clinical recommendation statement |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CS` | clinical service invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CSDM` | certified stroke disease management care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CSIC` | certified sickle cell care |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CSINV` | clinical service invoice |
@@ -360,13 +345,11 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CommonRule` | Common Rule |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `CompoundResearchCD` | Compound HIPAA Research Authorization and Informed Consent for Research |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ConfidentialMark` | confidential mark |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ControlledUnclassifiedInformation` | ControlledUnclassifiedInformation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DACT` | drug action detected issue |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DALG` | Drug Allergy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DAY` | day |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DDP` | Direct Deposit |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DECLASSIFYLABEL` | declassify security label |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DEDUCT` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DEDUCTIBLE` | deductible |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DEF` | definition |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DEFB` | Defibrination |
@@ -417,7 +400,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEHINDA` | High Dose for Age Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEHINDSA` | High Dose for Height/Surface Area Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEHINDW` | High Dose for Weight Alert |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEIND` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEIVL` | Dose-Interval Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEIVLIND` | Dose-Interval for Indication Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `DOSEL` | Low Dose Alert |
@@ -449,7 +431,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EFORM` | electronic form to follow |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EHCPOL` | extended healthcare |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EINT` | Environmental Intolerance |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ELG` | Eligible |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ELLIPSE` | ellipse |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EM` | Emergency Supply |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EMAUTH` | emergency authorization override |
@@ -479,20 +460,12 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FAST` | fasting |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FAX` | fax to follow |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FD` | food |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDACOATING` | coating |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDACOLOR` | color |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDAIMPRINTCD` | imprint code |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDALOGO` | logo |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDASCORING` | scoring |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDASHAPE` | shape |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FDASIZE` | size |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FECTRNS` | fecal-oral transmission |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FF` | First Fill |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFC` | First Fill - Complete |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFCS` | first fill complete, partial strength |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFP` | First Fill - Part Fill |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFPS` | first fill, part fill, partial strength |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFS` | fee for service |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFSS` | first fill, partial strength |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFSTOP` | fee for service top off |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FIBRIN` | Fibrin |
@@ -518,7 +491,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FS` | Floor stock |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FST` | federal sales tax |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FULFIL` | fulfillment alert |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `Fixed-wingAmbulance` | fixed-wing ambulance transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GARN` | garnishee |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GDIS` | genetic disease information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GDPRCD` | GDPR Consent Directive |
@@ -539,7 +511,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GRANTORCHOICE` | grantor choice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GTIN` | Global Trade Item Number |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GUIDE` | guidance |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `GroundAmbulance` | ground ambulance transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HCPCSA` | HCPCS Level II and Carrier-assigned |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HEALTHREC` | health record |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HELD` | held/suspended alert |
@@ -574,7 +545,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HST` | harmonized sales Tax |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HUAPRV` | human approval |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HUMHUMTRNS` | human to human transmission |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `HelicopterAmbulance` | helicopter ambulance transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `I` | Isolation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ICOL` | information collection |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ICTERUS` | Icterus |
@@ -619,7 +589,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INFPWR` | only if public welfare risk |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INFREG` | regulatory information transfer |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INITIAL` | Initial Volume |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INITIMMUNIZ` | Initial Immunization |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INMATE` | Inmate Interaction |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INT` | Intolerance Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `INTDX` | intermediate diagnosis |
@@ -683,7 +652,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `LTC` | long term care policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `LTRMCARE` | Long Term Care Facility Interaction |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `LU` | limited use |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `LawEnforcementVehicle` | law enforcement transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `M` | Missing |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `MANDPOL` | mandatory health program |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `MANUAL` | manual review |
@@ -742,7 +710,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NAINT` | Non-Allergy Intolerance |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NAT` | Insufficient authorization |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NAUTH` | Not Authorized |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NELG` | Not Eligible |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NETAMT` | Net Amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NEUT` | Neutralization |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NF` | no fat |
@@ -768,7 +735,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NORDSCLCD` | no redisclosure without consent directive |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NORDSCLCDS` | no redisclosure without information subject's consent directive |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NORDSCLW` | no disclosure without jurisdictional authorization |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NORDSLCD` | no redisclosure without consent directive |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NORELINK` | no relinking |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NOREUSE` | no reuse beyond purpose of use |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `NOSTRNS` | nosocomial transmission |
@@ -807,7 +773,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ORTHO` | orthodontic service |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OTC` | non prescription medicine |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `ObligationPolicy` | obligation policy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OnFoot` | pedestrian transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OrgCUI` | organizational basic controlled unclassified information policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OrgDEID` | organizational de-identified informati)on policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OrgIP` | organizational information policy |
@@ -817,7 +782,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OrgSP-CUI` | organizational specified controlled unclassified information policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `OrgUUI` | organizational uncontrolled unclassified information policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `P` | Private |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PA` | preferred accommodation invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PACOMPT` | patient administration compartment |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PAF` | phenylalanine free |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PAINV` | preferred accommodation invoice |
@@ -838,14 +802,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PAYEE` | payee |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PAYOR` | payor |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PBILLACCT` | patient billing account |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNPPELAT` | paid nullified prior-period electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNPPELCT` | paid nullified prior-period electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNPPMNAT` | paid nullified prior-period manual amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNPPMNCT` | paid nullified prior-period manual count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNSPELAT` | paid nullified same-period electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNSPELCT` | paid nullified same-period electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNSPMNAT` | paid nullified same-period manual amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDCNSPMNCT` | paid nullified same-period manual count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDNFPPELAT` | paid nullified prior-period electronic amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDNFPPELCT` | paid nullified prior-period electronic count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PDNFPPMNAT` | paid nullified prior-period manual amount |
@@ -892,7 +848,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `POS` | point of service policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PPO` | preferred provider organization policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PPRD` | prior period adjustment |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PRA` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PRDING` | product invoice group |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PRDMX` | period maximum |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PRE` | Pre-Dilution |
@@ -926,9 +881,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PersLDS` | personal limited data set information policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PersNSI` | personal non-sensitive information policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PersPI` | personal public information policy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PrivacyMark` | privacy mark |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PrivateTransport` | private transport |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PublicTransport` | public transport |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `R` | Process Completed |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RACE` | race information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RADREPE` | radiology report entry task |
@@ -980,10 +932,8 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RSDID` | de-identified information access |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RSREID` | re-identifiable information access |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RX` | prescription only medicine |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RXC` | Rx compound invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RXCAT` | medication category |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RXCINV` | Rx compound invoice |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RXD` | Rx dispense invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RXDINV` | Rx dispense invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RedisclosureProhibitionMark` | prohibition against redisclosure mark |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RefrainPolicy` | refrain policy |
@@ -993,17 +943,11 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SAC` | special access |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SAFNET` | safety net clinic program |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SALE` | Sale |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBBLAT` | submitted billed electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBBLCT` | submitted billed electronic count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBBLELAT` | submitted billed electronic amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBBLELCT` | submitted billed electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBCNAT` | submitted nullified electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBCNCT` | submitted cancelled electronic count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBFINV` | sessional or block fee invoice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBNFELAT` | submitted nullified electronic amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBNFELCT` | submitted cancelled electronic count |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBPDAT` | submitted pending electronic amount |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBPDCT` | submitted pending electronic count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBPDELAT` | submitted pending electronic amount |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SBPDELCT` | submitted pending electronic count |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SCA` | sickle cell anemia information sensitivity |
@@ -1022,17 +966,13 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTCONOBS` | security integrity confidence observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTOBS` | security integrity observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTPRVABOBS` | security integrity provenance asserted by observation |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTPRVOBS` | security integrity provenance observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTPRVRBOBS` | security integrity provenance reported by observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECINTSTOBS` | security integrity status observation |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECOBS` | SecurityObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SECTRSTOBS` | SECTRSTOBS |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SENDAPP` | sending application |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SESS` | sessional funding |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SEV` | Severity Observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SEX` | sexuality and reproductive health information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SEXTRNS` | sexual transmission |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SICKLE` | sickle cell |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SO` | Script Owing |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SOCIAL` | social service program |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SOCIAL2` | Social/Extended Family Interaction |
@@ -1053,7 +993,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SSP` | sensitive service provider information sensitivity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SSTOR` | specimen in storage |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `STD` | sexually transmitted disease information sensitivity |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `STORE` | Storage |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `STRAN` | specimen in transit |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `STRAT` | stratification |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `STRTLATE` | Start Too Late Alert |
@@ -1069,7 +1008,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SUPPRESSED` | record suppressed |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SURG` | Surgical |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SURPL` | surplus line insurance policy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SecurityLabelMark` | Security Label Mark |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SecurityPolicy` | security policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `T` | tea only |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `TB` | Trial Balance |
@@ -1152,185 +1090,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `X` | Container Unavailable |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `XRAY` | x-ray |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `YEAR` | year |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAccountCode` | ActAccountCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdjudicationCode` | ActAdjudicationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdjudicationGroupCode` | ActAdjudicationGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdjudicationInformationCode` | ActAdjudicationInformationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdjudicationResultActionCode` | ActAdjudicationResultActionCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdministrativeAuthorizationDetectedIssueCode` | ActAdministrativeAuthorizationDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdministrativeDetectedIssueCode` | ActAdministrativeDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdministrativeDetectedIssueManagementCode` | ActAdministrativeDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdministrativeRuleDetectedIssueCode` | ActAdministrativeRuleDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActBillableModifierCode` | ActBillableModifierCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActBillableServiceCode` | ActBillableServiceCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActBillableTreatmentPlanCode` | ActBillableTreatmentPlanCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActBillingArrangementCode` | ActBillingArrangementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActBoundedROICode` | ActBoundedROICode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCareProvisionCode` | act care provision |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActClaimAttachmentCategoryCode` | ActClaimAttachmentCategoryCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCognitiveProfessionalServiceCode` | ActCognitiveProfessionalServiceCode |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActConsent` | _ActConsent |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActConsentDirective` | ActConsentDirective |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActConsentType` | ActConsentType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActContainerRegistrationCode` | ActContainerRegistrationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActControlVariable` | ActControlVariable |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageAuthorizationConfirmationCode` | ActCoverageAuthorizationConfirmationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageConfirmationCode` | ActCoverageConfirmationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageEligibilityConfirmationCode` | ActCoverageEligibilityConfirmationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageLimitCode` | ActCoverageLimitCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoveragePartyLimitGroupCode` | ActCoveragePartyLimitGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageQuantityLimitCode` | ActCoverageQuantityLimitCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageTypeCode` | ActCoverageTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoveredPartyLimitCode` | ActCoveredPartyLimitCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCredentialedCareCode` | act credentialed care |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCredentialedCareProvisionPersonCode` | act credentialed care provision peron |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCredentialedCareProvisionProgramCode` | act credentialed care provision program |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActDecision` | _ActDecision |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActDetectedIssueCode` | ActDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActDetectedIssueManagementCode` | ActDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActEncounterAccommodationCode` | ActEncounterAccommodationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActEncounterCode` | ActEncounterCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActExposureCode` | ActExposureCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActFinancialDetectedIssueCode` | ActFinancialDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActFinancialDetectedIssueManagementCode` | ActFinancialDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActFinancialTransactionCode` | ActFinancialTransactionCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActGDPRConsentDirective` | _ActGDPRConsentDirective |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActGDPRPrivacyLaw` | General Data Protection Regulation |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActGenericConsentDirective` | _ActGenericConsentDirective |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActHealthInsuranceTypeCode` | ActHealthInsuranceTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActIdentityDocumentCode` | ActIdentityDocumentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActIncidentCode` | ActIncidentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationAccessCode` | ActInformationAccessCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationAccessContextCode` | ActInformationAccessContextCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationActionPolicy` | _ActInformationActionPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationCategoryCode` | ActInformationCategoryCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationPolicy` | _ActInformationPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInformationSensitivityPolicy` | ActInformationSensitivityPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInsurancePolicyCode` | ActInsurancePolicyCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInsuranceTypeCode` | ActInsuranceTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceAdjudicationPaymentCode` | ActInvoiceAdjudicationPaymentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceAdjudicationPaymentGroupCode` | ActInvoiceAdjudicationPaymentGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceAdjudicationPaymentSummaryCode` | ActInvoiceAdjudicationPaymentSummaryCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailClinicalProductCode` | ActInvoiceDetailClinicalProductCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailClinicalServiceCode` | ActInvoiceDetailClinicalServiceCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailCode` | ActInvoiceDetailCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailDrugProductCode` | ActInvoiceDetailDrugProductCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailGenericAdjudicatorCode` | ActInvoiceDetailGenericAdjudicatorCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailGenericCode` | ActInvoiceDetailGenericCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailGenericModifierCode` | ActInvoiceDetailGenericModifierCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailGenericProviderCode` | ActInvoiceDetailGenericProviderCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailOralHealthProcedureCode` | ActInvoiceDetailOralHealthProcedureCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailPreferredAccommodationCode` | ActInvoiceDetailPreferredAccommodationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceDetailTaxCode` | ActInvoiceDetailTaxCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceElementCode` | ActInvoiceElementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceElementSummaryCode` | ActInvoiceElementSummaryCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceGroupCode` | ActInvoiceGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceInterGroupCode` | ActInvoiceInterGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceOverrideCode` | ActInvoiceOverrideCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoicePaymentCode` | ActInvoiceAdjudicationPaymentGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInvoiceRootGroupCode` | ActInvoiceRootGroupCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActListCode` | ActListCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActMedicalBillableServiceCode` | ActMedicalBillableServiceCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActMedicalServiceCode` | ActMedicalServiceCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActMedicationTherapyDurationWorkingListCode` | act medication therapy duration working list |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActMonitoringProtocolCode` | ActMonitoringProtocolCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActNonMedicalBillableServiceCode` | ActNonMedicalBillableServiceCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActNonObservationIndicationCode` | ActNonObservationIndicationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActObservationList` | ActObservationList |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActObservationVerificationType` | act observation verification |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActOralHealthProcedureCode` | ActOralHealthProcedureCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActOrderCode` | ActOrderCode |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPatientAnnotationType` | ActPatientAnnotationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPatientSafetyIncidentCode` | ActPatientSafetyIncidentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPatientTransportationModeCode` | ActPatientTransportationModeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPaymentCode` | ActPaymentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPharmacySupplyType` | ActPharmacySupplyType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPolicyType` | ActPolicyType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPrivacyConsentDirective` | _ActPrivacyConsentDirective |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPrivacyLaw` | ActPrivacyLaw |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPrivacyPolicy` | ActPrivacyPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPrivilegeCategorization` | ActPrivilegeCategorization |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPrivilegeCategorizationType` | ActPrivilegeCategorizationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActProcedureCategoryList` | ActProcedureCategoryList |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActProcedureCode` | ActProcedureCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActProductAcquisitionCode` | ActProductAcquisitionCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActProgramTypeCode` | ActProgramTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActRegistryCode` | ActRegistryCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSecurityObjectCode` | ActSecurityObjectCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSpecObsCode` | ActSpecObsCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSpecimenTransportCode` | ActSpecimenTransportCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSpecimenTreatmentCode` | ActSpecimenTreatmentCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSubstanceAdministrationCode` | ActSubstanceAdministrationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSuppliedItemDetectedIssueCode` | ActSuppliedItemDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActTaskCode` | ActTaskCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActTherapyDurationWorkingListCode` | ActTherapyDurationWorkingListCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActTransportationModeCode` | ActTransportationModeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActUSPrivacyConsentDirective` | _ActUSPrivacyConsentDirective |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActUSPrivacyLaw` | _ActUSPrivacyLaw |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AdministrationDetectedIssueCode` | AdministrationDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AdvanceBeneficiaryNoticeType` | AdvanceBeneficiaryNoticeType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AdverseSubstanceAdministrationEventActionTakenType` | AdverseSubstanceAdministrationEventActionTakenType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AnnotationType` | AnnotationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AppropriatenessDetectedIssueCode` | AppropriatenessDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AuthorizationIssueManagementCode` | Authorization Issue Management Code |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CPT4` | CPT4 |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CPT5` | CPT5 |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CaseTransmissionMode` | case transmission mode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ClinicalActionDetectedIssueCode` | ClinicalActionDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CommonClinicalObservationType` | CommonClinicalObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CreditCard` | CreditCard |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_DEADrugSchedule` | DEADrugSchedule |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_DrugActionDetectedIssueCode` | DrugActionDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ECGAnnotationType` | ECGAnnotationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ECGControlVariable` | ECGControlVariable |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ECGObservationSequenceType` | ECGObservationSequenceType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ECGObservationSeriesType` | ECGObservationSeriesType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_EntitySensitivityPolicyType` | EntityInformationSensitivityPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ExternallyDefinedActCodes` | ExternallyDefinedActCodes |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_FDALabelData` | FDALabelData |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_GeneticObservationType` | GeneticObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_HCPCS` | HCPCS |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_HCPCSAccommodationCode` | HCPCSAccommodationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_HL7AccommodationCode` | HL7AccommodationCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_HL7DefinedActCodes` | HL7DefinedActCodes |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_HL7TriggerEventCode` | HL7TriggerEventCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ICD10PCS` | ICD10PCS |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ICD9PCS` | ICD9PCS |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ImmunizationObservationType` | ImmunizationObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_IndividualCaseSafetyReportCriteria` | IndividualCaseSafetyReportCriteria |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_IndividualCaseSafetyReportProductCharacteristic` | IndividualCaseSafetyReportProductCharacteristic |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_IndividualCaseSafetyReportType` | Individual Case Safety Report Type |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InformationSensitivityPolicy` | InformationSensitivityPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InteractionDetectedIssueCode` | InteractionDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InvoiceElementAdjudicated` | InvoiceElementAdjudicated |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InvoiceElementPaid` | InvoiceElementPaid |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InvoiceElementSubmitted` | InvoiceElementSubmitted |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_LOINCObservationActContextAgeType` | LOINCObservationActContextAgeType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_MedicationObservationType` | MedicationObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationActAgeGroupType` | ObservationActAgeGroupType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationAllergyTestCode` | observation allergy test |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationAllergyTestType` | ObservationAllergyTestType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationCausalityAssessmentType` | observation causality assessment |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationDiagnosisTypes` | ObservationDiagnosisTypes |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationDosageDefinitionPreconditionType` | observation dosage definition precondition type |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationGenomicFamilyHistoryType` | ObservationGenomicFamilyHistoryType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationIndicationType` | ObservationIndicationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationIssueTriggerCodedObservationType` | ObservationIssueTriggerCodedObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationIssueTriggerMeasuredObservationType` | ObservationIssueTriggerMeasuredObservationType |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationQualityMeasureAttribute` | ObservationQualityMeasureAttribute |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationQueryMatchType` | ObservationQueryMatchType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationSequenceType` | ObservationSequenceType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationSeriesType` | ObservationSeriesType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationType` | ObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ObservationVisionPrescriptionType` | ObservationVisionPrescriptionType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_PatientCharacteristicObservationType` | PatientCharacteristicObservationType |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_PatientImmunizationRelatedObservationType` | PatientImmunizationRelatedObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_PopulationInclusionObservationType` | PopulationInclusionObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_PreferenceObservationType` | _PreferenceObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ROIOverlayShape` | ROIOverlayShape |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_RoleInformationSensitivityPolicy` | RoleInformationSensitivityPolicy |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_SimpleMeasurableClinicalObservationType` | SimpleMeasurableClinicalObservationType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_SubstanceAdministrationActCode` | SubstanceAdministrationActCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_SupplyDetectedIssueCode` | SupplyDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_TimingDetectedIssueCode` | TimingDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `a) HIPAAConsent` | HIPAA Consent |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:33 PM
+Generated at Monday, April 14, 2025 6:17:16 PM
 
 ### DeviceComponent
 
@@ -49,7 +49,7 @@ Generated at Friday, April 4, 2025 2:58:33 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [DeviceComponent](/docs/R2/Resources/DeviceComponent.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceComponent\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `98`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `265`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceComponent](/docs/R3/Resources/DeviceComponent.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceComponent\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [DeviceComponent](/docs/R2/Resources/DeviceComponent.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceComponent\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `98`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `265`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceComponent](/docs/R3/Resources/DeviceComponent.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceComponent\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Element Mappings
 
 

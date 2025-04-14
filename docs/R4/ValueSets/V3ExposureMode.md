@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ExposureMode
 
@@ -35,4 +35,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ExposureMode` | `CONTACT` | contact |
 | `http://terminology.hl7.org/CodeSystem/v3-ExposureMode` | `FOODBORNE` | foodborne |
 | `http://terminology.hl7.org/CodeSystem/v3-ExposureMode` | `WATERBORNE` | waterborne |
-| `http://terminology.hl7.org/CodeSystem/v3-ExposureMode` | `_ExposureMode` | ExposureMode |

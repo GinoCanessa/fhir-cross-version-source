@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:33 PM
 
 ### CareTeam
 
@@ -53,7 +53,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CareTeam](/docs/R3/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `428`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `624`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeam](/docs/R4/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1415`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1416`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeam](/docs/R4B/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `941`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1170`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeam](/docs/R5/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|5.0.0` 
+| | | [CareTeam](/docs/R3/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `428`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `624`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CareTeam](/docs/R4/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1415`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1416`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CareTeam](/docs/R4B/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `941`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1170`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CareTeam](/docs/R5/Resources/CareTeam.md)<br/> `http://hl7.org/fhir/StructureDefinition/CareTeam\|5.0.0` 
 
 ### Element Mappings
 

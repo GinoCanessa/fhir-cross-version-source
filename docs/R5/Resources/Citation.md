@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:01 PM
+Generated at Monday, April 14, 2025 6:17:46 PM
 
 ### Citation
 
@@ -205,7 +205,7 @@ Generated at Friday, April 4, 2025 2:59:01 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [Citation](/docs/R4B/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `944`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1173`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Citation](/docs/R5/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|5.0.0` 
+| | | | | | | [Citation](/docs/R4B/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `944`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1173`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Citation](/docs/R5/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|5.0.0` 
 
 ### Element Mappings
 

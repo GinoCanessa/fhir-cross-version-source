@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### DataRequirement
 
@@ -57,7 +57,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [DataRequirement](/docs/R3/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `392`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `588`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DataRequirement](/docs/R4/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1329`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1330`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DataRequirement](/docs/R4B/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `900`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1129`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DataRequirement](/docs/R5/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|5.0.0` 
+| | | [DataRequirement](/docs/R3/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `392`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `588`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DataRequirement](/docs/R4/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1329`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1330`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DataRequirement](/docs/R4B/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `900`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1129`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DataRequirement](/docs/R5/ComplexTypes/DataRequirement.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataRequirement\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:02 PM
+Generated at Monday, April 14, 2025 6:17:47 PM
 
 ### TestReport
 
@@ -96,7 +96,7 @@ Generated at Friday, April 4, 2025 2:59:02 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [TestReport](/docs/R3/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `721`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TestReport](/docs/R4/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1638`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TestReport](/docs/R4B/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1055`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1284`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TestReport](/docs/R5/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|5.0.0` 
+| | | [TestReport](/docs/R3/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `721`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TestReport](/docs/R4/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1638`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TestReport](/docs/R4B/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1055`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1284`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TestReport](/docs/R5/Resources/TestReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/TestReport\|5.0.0` 
 
 ### Element Mappings
 

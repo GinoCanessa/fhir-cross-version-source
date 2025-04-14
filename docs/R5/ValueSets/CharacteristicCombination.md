@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### CharacteristicCombination
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [CharacteristicCombination](/docs/R4B/ValueSets/CharacteristicCombination.md)<br/> `http://hl7.org/fhir/ValueSet/characteristic-combination\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1799`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1800`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CharacteristicCombination](/docs/R5/ValueSets/CharacteristicCombination.md)<br/> `http://hl7.org/fhir/ValueSet/characteristic-combination\|5.0.0` 
+| | | | | | | [CharacteristicCombination](/docs/R4B/ValueSets/CharacteristicCombination.md)<br/> `http://hl7.org/fhir/ValueSet/characteristic-combination\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1799`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1800`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CharacteristicCombination](/docs/R5/ValueSets/CharacteristicCombination.md)<br/> `http://hl7.org/fhir/ValueSet/characteristic-combination\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ObservationMethod
 
@@ -331,7 +331,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `VREG` | registry verification |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `VTOKEN` | electronic token verification |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `VVOICE` | voice-based verification |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `_DecisionObservationMethod` | DecisionObservationMethod |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `_GeneticObservationMethod` | GeneticObservationMethod |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `_ObservationMethodAggregate` | observation method aggregate |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationMethod` | `_VerificationMethod` | VerificationMethod |

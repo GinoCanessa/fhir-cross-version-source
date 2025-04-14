@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### Device
 
@@ -98,7 +98,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Device](/docs/R2/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `97`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `264`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Device](/docs/R3/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `447`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `642`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Device](/docs/R4/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1456`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Device](/docs/R4B/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `962`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1191`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Device](/docs/R5/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|5.0.0` 
+| [Device](/docs/R2/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `97`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `264`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Device](/docs/R3/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `447`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `642`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Device](/docs/R4/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1456`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Device](/docs/R4B/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `962`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1191`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Device](/docs/R5/Resources/Device.md)<br/> `http://hl7.org/fhir/StructureDefinition/Device\|5.0.0` 
 
 ### Element Mappings
 
@@ -171,8 +171,8 @@ All elements from this structure are listed while other structures only show con
 | | | | | `Device.property.extension`| _Equivalent_<br/>(25582/25583)| `Device.property.extension`| _Equivalent_<br/>(40514/40515)| **`Device.property.extension`**
 | | | | | `Device.property.modifierExtension`| _Equivalent_<br/>(25584/25585)| `Device.property.modifierExtension`| _Equivalent_<br/>(40516/40517)| **`Device.property.modifierExtension`**
 | | | | | `Device.property.type`| _Equivalent_<br/>(25586/25587)| `Device.property.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(40518)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(40519)| **`Device.property.type`**
-| | | | | `Device.property.valueQuantity`| _Equivalent_<br/>(25588/25589)| `Device.property.valueQuantity`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1761)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2005)| **`Device.property.value[x]`**
-| | | | | `Device.property.valueCode`| _Equivalent_<br/>(25590/25591)| `Device.property.valueCode`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1762)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2005)| **`Device.property.value[x]`**
+| | | | | `Device.property.valueQuantity`| _Equivalent_<br/>(25588/25589)| `Device.property.valueQuantity`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1761)<hr/>←←←← __ ←←←← <br/>()| **`Device.property.value[x]`**
+| | | | | `Device.property.valueCode`| _Equivalent_<br/>(25590/25591)| `Device.property.valueCode`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1762)<hr/>←←←← __ ←←←← <br/>()| **`Device.property.value[x]`**
 | | | | | | | | | **`Device.mode`**
 | | | | | | | | | **`Device.cycle`**
 | | | | | | | | | **`Device.duration`**

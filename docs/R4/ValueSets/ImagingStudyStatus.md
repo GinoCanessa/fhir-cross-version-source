@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### ImagingStudyStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ImagingStudyStatus](/docs/R4/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1543`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1544`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudyStatus](/docs/R4B/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `904`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1165`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingStudyStatus](/docs/R5/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|5.0.0` 
+| | | | | [ImagingStudyStatus](/docs/R4/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1543`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1544`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImagingStudyStatus](/docs/R4B/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `904`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1165`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ImagingStudyStatus](/docs/R5/ValueSets/ImagingStudyStatus.md)<br/> `http://hl7.org/fhir/ValueSet/imagingstudy-status\|5.0.0` 
 
 ### Code Mappings
 

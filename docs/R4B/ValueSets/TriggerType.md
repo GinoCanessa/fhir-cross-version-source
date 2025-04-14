@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### TriggerType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [TriggerType](/docs/R3/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `745`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerType](/docs/R4/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1767`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1768`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerType](/docs/R4B/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1007`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1268`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerType](/docs/R5/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|5.0.0` 
+| | | [TriggerType](/docs/R3/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `745`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TriggerType](/docs/R4/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1767`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1768`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TriggerType](/docs/R4B/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1007`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1268`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [TriggerType](/docs/R5/ValueSets/TriggerType.md)<br/> `http://hl7.org/fhir/ValueSet/trigger-type\|5.0.0` 
 
 ### Code Mappings
 

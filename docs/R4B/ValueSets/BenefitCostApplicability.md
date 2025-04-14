@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### BenefitCostApplicability
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [BenefitCostApplicability](/docs/R4/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1549`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1550`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BenefitCostApplicability](/docs/R4B/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `907`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1168`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BenefitCostApplicability](/docs/R5/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|5.0.0` 
+| | | | | [BenefitCostApplicability](/docs/R4/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1549`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1550`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [BenefitCostApplicability](/docs/R4B/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `907`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1168`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [BenefitCostApplicability](/docs/R5/ValueSets/BenefitCostApplicability.md)<br/> `http://hl7.org/fhir/ValueSet/insuranceplan-applicability\|5.0.0` 
 
 ### Code Mappings
 

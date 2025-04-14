@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### ANZSCO -- Australian and New Zealand Standard Classification of Occupations, 2013, Version 1.2
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### CoverageTypeAndSelfPayCodes
 
@@ -86,8 +86,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `VET` | veteran health program |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `VISPOL` | vision care policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `WCBPOL` | worker's compensation |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActCoverageTypeCode` | ActCoverageTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActHealthInsuranceTypeCode` | ActHealthInsuranceTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInsurancePolicyCode` | ActInsurancePolicyCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActInsuranceTypeCode` | ActInsuranceTypeCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActProgramTypeCode` | ActProgramTypeCode |

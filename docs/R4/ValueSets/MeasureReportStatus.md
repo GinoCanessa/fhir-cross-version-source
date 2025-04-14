@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### MeasureReportStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [MeasureReportStatus](/docs/R3/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `446`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `668`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReportStatus](/docs/R4/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1589`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1590`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReportStatus](/docs/R4B/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `926`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1187`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReportStatus](/docs/R5/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|5.0.0` 
+| | | [MeasureReportStatus](/docs/R3/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `446`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `668`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [MeasureReportStatus](/docs/R4/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1589`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1590`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureReportStatus](/docs/R4B/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `926`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1187`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [MeasureReportStatus](/docs/R5/ValueSets/MeasureReportStatus.md)<br/> `http://hl7.org/fhir/ValueSet/measure-report-status\|5.0.0` 
 
 ### Code Mappings
 

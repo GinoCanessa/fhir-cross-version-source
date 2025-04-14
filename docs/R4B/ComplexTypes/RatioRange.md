@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### RatioRange
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [RatioRange](/docs/R4B/ComplexTypes/RatioRange.md)<br/> `http://hl7.org/fhir/StructureDefinition/RatioRange\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `918`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1147`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RatioRange](/docs/R5/ComplexTypes/RatioRange.md)<br/> `http://hl7.org/fhir/StructureDefinition/RatioRange\|5.0.0` 
+| | | | | | | [RatioRange](/docs/R4B/ComplexTypes/RatioRange.md)<br/> `http://hl7.org/fhir/StructureDefinition/RatioRange\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `918`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1147`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RatioRange](/docs/R5/ComplexTypes/RatioRange.md)<br/> `http://hl7.org/fhir/StructureDefinition/RatioRange\|5.0.0` 
 
 ### Element Mappings
 

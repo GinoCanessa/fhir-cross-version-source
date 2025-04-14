@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System orderableDrugForm
 
@@ -61,7 +61,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERCAP` | Extended Release Capsule |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERCAP12` | 12 Hour Extended Release Capsule |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERCAP24` | 24 Hour Extended Release Capsule |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `ERECCAP` | Extended Release Enteric Coated Capsule |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERECTAB` | Extended Release Enteric Coated Tablet |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERENTCAP` | Extended Release Enteric Coated Capsule |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `ERSUSP` | Extended-Release Suspension |
@@ -183,12 +182,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `VAGTAB` | Vaginal Tablet |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `VGELAPL` | Vaginal Gel with Applicator |
 | `http://hl7.org/fhir/v3/orderableDrugForm` | `WAFER` | Wafer |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_AdministrableDrugForm` | AdministrableDrugForm |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_DispensableDrugForm` | DispensableDrugForm |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_GasDrugForm` | GasDrugForm |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_GasLiquidMixture` | GasLiquidMixture |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_GasSolidSpray` | GasSolidSpray |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_Liquid` | Liquid |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_LiquidLiquidEmulsion` | LiquidLiquidEmulsion |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_LiquidSolidSuspension` | LiquidSolidSuspension |
-| `http://hl7.org/fhir/v3/orderableDrugForm` | `_SolidDrugForm` | SolidDrugForm |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System ParticipationFunction
 
@@ -72,11 +72,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ParticipationFunction` | `TASST` | third assistant |
 | `http://hl7.org/fhir/v3/ParticipationFunction` | `UMGT` | utilization management |
 | `http://hl7.org/fhir/v3/ParticipationFunction` | `UNDERWRTNG` | underwriting |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_AuthorizedParticipationFunction` | AuthorizedParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_AuthorizedReceiverParticipationFunction` | AuthorizedReceiverParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_ConsenterParticipationFunction` | ConsenterParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_CoverageParticipationFunction` | CoverageParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_OverriderParticipationFunction` | OverriderParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_PayorParticipationFunction` | PayorParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_SponsorParticipationFunction` | SponsorParticipationFunction |
-| `http://hl7.org/fhir/v3/ParticipationFunction` | `_UnderwriterParticipationFunction` | UnderwriterParticipationFunction |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### AddressType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:31 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [AddressType](/docs/R2/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `162`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AddressType](/docs/R3/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `543`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AddressType](/docs/R4/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1353`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1354`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AddressType](/docs/R4B/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `765`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1026`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AddressType](/docs/R5/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|5.0.0` 
+| [AddressType](/docs/R2/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `162`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [AddressType](/docs/R3/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `543`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [AddressType](/docs/R4/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1353`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1354`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AddressType](/docs/R4B/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `765`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1026`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [AddressType](/docs/R5/ValueSets/AddressType.md)<br/> `http://hl7.org/fhir/ValueSet/address-type\|5.0.0` 
 
 ### Code Mappings
 

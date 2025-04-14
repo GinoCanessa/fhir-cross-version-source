@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### ImmunizationEvaluation
 
@@ -46,7 +46,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ImmunizationEvaluation](/docs/R4/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1512`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImmunizationEvaluation](/docs/R4B/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `989`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImmunizationEvaluation](/docs/R5/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|5.0.0` 
+| | | | | [ImmunizationEvaluation](/docs/R4/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1512`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImmunizationEvaluation](/docs/R4B/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `989`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImmunizationEvaluation](/docs/R5/Resources/ImmunizationEvaluation.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImmunizationEvaluation\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Observation Reference Range Meaning Codes
 
@@ -34,7 +34,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 
 | System | Code | Display |
 | ------ | ---- | ------- |
-| `http://hl7.org/fhir/referencerange-meaning` | `endocrine` | Endocrine |
 | `http://hl7.org/fhir/referencerange-meaning` | `follicular` | Follicular Stage |
 | `http://hl7.org/fhir/referencerange-meaning` | `luteal` | Luteal |
 | `http://hl7.org/fhir/referencerange-meaning` | `midcycle` | MidCycle |
@@ -46,7 +45,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/referencerange-meaning` | `recommended` | Recommended Range |
 | `http://hl7.org/fhir/referencerange-meaning` | `therapeutic` | Therapeutic Desired Level |
 | `http://hl7.org/fhir/referencerange-meaning` | `treatment` | Treatment Range |
-| `http://hl7.org/fhir/referencerange-meaning` | `type` | Type |
 | `http://hl7.org/fhir/v3/Race` | `1002-5` | American Indian or Alaska Native |
 | `http://hl7.org/fhir/v3/Race` | `1004-1` | American Indian |
 | `http://hl7.org/fhir/v3/Race` | `1006-6` | Abenaki |

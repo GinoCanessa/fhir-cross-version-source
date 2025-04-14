@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### ObservationRangeCategory
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ObservationRangeCategory](/docs/R4/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1638`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationRangeCategory](/docs/R4B/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `940`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1201`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationRangeCategory](/docs/R5/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|5.0.0` 
+| | | | | [ObservationRangeCategory](/docs/R4/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1638`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationRangeCategory](/docs/R4B/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `940`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1201`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ObservationRangeCategory](/docs/R5/ValueSets/ObservationRangeCategory.md)<br/> `http://hl7.org/fhir/ValueSet/observation-range-category\|5.0.0` 
 
 ### Code Mappings
 

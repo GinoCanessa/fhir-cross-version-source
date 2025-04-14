@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### EvidenceCertaintyRating
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [EvidenceCertaintyRating](/docs/R4B/ValueSets/EvidenceCertaintyRating.md)<br/> `http://hl7.org/fhir/ValueSet/certainty-rating\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `878`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1139`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceCertaintyRating](/docs/R5/ValueSets/EvidenceCertaintyRating.md)<br/> `http://hl7.org/fhir/ValueSet/certainty-rating\|5.0.0` 
+| | | | | | | [EvidenceCertaintyRating](/docs/R4B/ValueSets/EvidenceCertaintyRating.md)<br/> `http://hl7.org/fhir/ValueSet/certainty-rating\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `878`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1139`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceCertaintyRating](/docs/R5/ValueSets/EvidenceCertaintyRating.md)<br/> `http://hl7.org/fhir/ValueSet/certainty-rating\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:01 PM
+Generated at Monday, April 14, 2025 6:17:46 PM
 
 ### AdministrableProductDefinition
 
@@ -71,7 +71,7 @@ Generated at Friday, April 4, 2025 2:59:01 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [AdministrableProductDefinition](/docs/R4B/Resources/AdministrableProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `930`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1159`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdministrableProductDefinition](/docs/R5/Resources/AdministrableProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition\|5.0.0` 
+| | | | | | | [AdministrableProductDefinition](/docs/R4B/Resources/AdministrableProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `930`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1159`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdministrableProductDefinition](/docs/R5/Resources/AdministrableProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition\|5.0.0` 
 
 ### Element Mappings
 

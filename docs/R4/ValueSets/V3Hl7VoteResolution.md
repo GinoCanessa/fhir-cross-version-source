@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.hl7VoteResolution
 
@@ -33,9 +33,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | ------ | ---- | ------- |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `affdef` | affirmative-deferred |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `affi` | affirmative-incorporated |
-| `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `affirmativeResolution` | affirmative resolution |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `affr` | affirmative-rejected |
-| `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `negativeResolution` | negative resolution |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `nonsubp` | non-substantive proposed |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `nonsubv` | non-substantive voted |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7VoteResolution` | `notrelp` | not related proposed |

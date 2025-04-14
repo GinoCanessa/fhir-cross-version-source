@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### TriggerDefinition
 
@@ -32,7 +32,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [TriggerDefinition](/docs/R3/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `609`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerDefinition](/docs/R4/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1383`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1384`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerDefinition](/docs/R4B/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `924`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1153`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TriggerDefinition](/docs/R5/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|5.0.0` 
+| | | [TriggerDefinition](/docs/R3/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `609`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TriggerDefinition](/docs/R4/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1383`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1384`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TriggerDefinition](/docs/R4B/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `924`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1153`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TriggerDefinition](/docs/R5/ComplexTypes/TriggerDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/TriggerDefinition\|5.0.0` 
 
 ### Element Mappings
 

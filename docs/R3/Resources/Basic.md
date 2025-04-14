@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:40 PM
+Generated at Monday, April 14, 2025 6:17:24 PM
 
 ### Basic
 
@@ -38,7 +38,7 @@ Generated at Friday, April 4, 2025 2:58:40 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Basic](/docs/R2/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `77`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `243`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Basic](/docs/R3/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `422`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `618`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Basic](/docs/R4/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1401`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1402`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Basic](/docs/R4B/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `936`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1165`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Basic](/docs/R5/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|5.0.0` 
+| [Basic](/docs/R2/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `77`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `243`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Basic](/docs/R3/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `422`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `618`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Basic](/docs/R4/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1401`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1402`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Basic](/docs/R4B/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `936`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1165`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Basic](/docs/R5/Resources/Basic.md)<br/> `http://hl7.org/fhir/StructureDefinition/Basic\|5.0.0` 
 
 ### Element Mappings
 

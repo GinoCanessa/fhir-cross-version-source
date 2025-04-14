@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ObservationValue
 
@@ -121,42 +121,34 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LIVEXP` | living expense |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LIVSIT` | living situation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LLD` | left lateral decubitus |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAN` | authentication level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAN1` | low authentication level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAN2` | basic authentication level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAN3` | medium authentication level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAN4` | high authentication level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAP` | authentication process level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAP1` | low authentication process level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAP2` | basic authentication process level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAP3` | medium authentication process level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAP4` | high authentication process level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAS` | assertion level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAS1` | low assertion level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAS2` | basic assertion level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAS3` | medium assertion level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAAS4` | high assertion level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOACM` | token and credential management level of assurance value) |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOACM1` | low token and credential management level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOACM2` | basic token and credential management level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOACM3` | medium token and credential management level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOACM4` | high token and credential management level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAID` | identity proofing level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAID1` | low identity proofing level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAID2` | basic identity proofing level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAID3` | medium identity proofing level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOAID4` | high identity proofing level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOANR` | non-repudiation level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOANR1` | low non-repudiation level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOANR2` | basic non-repudiation level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOANR3` | medium non-repudiation level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOANR4` | high non-repudiation level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOARA` | remote access level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOARA1` | low remote access level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOARA2` | basic remote access level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOARA3` | medium remote access level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOARA4` | high remote access level of assurance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOATK` | token level of assurance value |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOATK1` | low token level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOATK2` | basic token level of assurance |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `LOATK3` | medium token level of assurance |
@@ -214,7 +206,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `S` | Some extent |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SDMAST` | substitute decision maker asserted |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SDMRPT` | substitute decision maker reported |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SECTRSTOBV` | security trust observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SFWL` | Semi-Fowler's |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SIT` | sitting |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `SOECSTAT` | socio economic status |
@@ -238,7 +229,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRSTACCRDOBV` | trust accreditation observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRSTAGREOBV` | trust agreement observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRSTCERTOBV` | trust certificate observation |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRSTLOAOBV` | trust assurance observation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRSTMECOBV` | none supplied 6 |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `TRUST` | trust |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `UNCERTREL` | uncertain reliability |
@@ -252,32 +242,4 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `VLS` | very long shift |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `VS` | variable shift |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `WEIGHTSCR` | Weighted Scoring |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_ActCoverageAssessmentObservationValue` | ActCoverageAssessmentObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_ActFinancialStatusObservationValue` | ActFinancialStatusObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_AllergyTestValue` | AllergyTestValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_AnnotationValue` | AnnotationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_CommonClinicalObservationValue` | common clinical observation |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_CompositeMeasureScoring` | CompositeMeasureScoring |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_CoverageLevelObservationValue` | CoverageLevelObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_CoverageLimitObservationValue` | CoverageLimitObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_CriticalityObservationValue` | CriticalityObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_EmploymentStatus` | _EmploymentStatus |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_GeneticObservationValue` | GeneticObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_IndicationValue` | IndicationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_IndividualCaseSafetyReportValueDomains` | Individual Case Safety Report Value Domains |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_ObservationMeasureScoring` | ObservationMeasureScoring |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_ObservationMeasureType` | ObservationMeasureType |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_ObservationPopulationInclusion` | ObservationPopulationInclusion |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_PartialCompletionScale` | PartialCompletionScale |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECALTINTOBV` | alteration integrity |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECDATINTOBV` | data integrity |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTCONOBV` | integrity confidence |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTOBV` | security integrity |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVABOBV` | provenance asserted by |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVOBV` | provenance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVRBOBV` | provenance reported by |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SecurityObservationValue` | SecurityObservationValue |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SeverityObservation` | SeverityObservation |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SubjectBodyPosition` | _SubjectBodyPosition |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_VerificationOutcomeValue` | verification outcome |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_WorkSchedule` | _WorkSchedule |

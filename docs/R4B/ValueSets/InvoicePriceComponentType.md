@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### InvoicePriceComponentType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [InvoicePriceComponentType](/docs/R4/ValueSets/InvoicePriceComponentType.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-priceComponentType\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1551`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1552`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InvoicePriceComponentType](/docs/R4B/ValueSets/InvoicePriceComponentType.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-priceComponentType\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [InvoicePriceComponentType](/docs/R4/ValueSets/InvoicePriceComponentType.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-priceComponentType\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1551`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1552`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [InvoicePriceComponentType](/docs/R4B/ValueSets/InvoicePriceComponentType.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-priceComponentType\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

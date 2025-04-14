@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### AccountTypes
 
@@ -41,5 +41,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `MC` | Master Card |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `PBILLACCT` | patient billing account |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `V` | Visa |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAccountCode` | ActAccountCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_CreditCard` | CreditCard |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:21 PM
 
 ### ContentType
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ContentType](/docs/R2/ValueSets/ContentType.md)<br/> `http://hl7.org/fhir/ValueSet/content-type\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `153`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `311`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContentType](/docs/R3/ValueSets/ContentType.md)<br/> `http://hl7.org/fhir/ValueSet/content-type\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [ContentType](/docs/R2/ValueSets/ContentType.md)<br/> `http://hl7.org/fhir/ValueSet/content-type\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `153`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `311`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContentType](/docs/R3/ValueSets/ContentType.md)<br/> `http://hl7.org/fhir/ValueSet/content-type\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

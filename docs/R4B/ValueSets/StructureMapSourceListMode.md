@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### StructureMapSourceListMode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [StructureMapSourceListMode](/docs/R3/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `507`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `728`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R4/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1581`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1582`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R4B/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `986`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1247`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R5/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|5.0.0` 
+| | | [StructureMapSourceListMode](/docs/R3/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `507`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `728`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R4/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1581`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1582`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R4B/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `986`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1247`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapSourceListMode](/docs/R5/ValueSets/StructureMapSourceListMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-source-list-mode\|5.0.0` 
 
 ### Code Mappings
 

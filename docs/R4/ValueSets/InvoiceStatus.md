@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### InvoiceStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [InvoiceStatus](/docs/R4/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1553`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1554`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InvoiceStatus](/docs/R4B/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `906`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1167`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InvoiceStatus](/docs/R5/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|5.0.0` 
+| | | | | [InvoiceStatus](/docs/R4/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1553`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1554`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [InvoiceStatus](/docs/R4B/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `906`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1167`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [InvoiceStatus](/docs/R5/ValueSets/InvoiceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/invoice-status\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### AttributeEstimateType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [AttributeEstimateType](/docs/R4B/ValueSets/AttributeEstimateType.md)<br/> `http://hl7.org/fhir/ValueSet/attribute-estimate-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `880`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1141`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AttributeEstimateType](/docs/R5/ValueSets/AttributeEstimateType.md)<br/> `http://hl7.org/fhir/ValueSet/attribute-estimate-type\|5.0.0` 
+| | | | | | | [AttributeEstimateType](/docs/R4B/ValueSets/AttributeEstimateType.md)<br/> `http://hl7.org/fhir/ValueSet/attribute-estimate-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `880`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1141`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AttributeEstimateType](/docs/R5/ValueSets/AttributeEstimateType.md)<br/> `http://hl7.org/fhir/ValueSet/attribute-estimate-type\|5.0.0` 
 
 ### Code Mappings
 

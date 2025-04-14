@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.hl7Realm
 
@@ -34,9 +34,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `AR` | Argentina |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `AT` | Austria |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `AU` | Australia |
-| `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `AffiliateRealms` | Affiliate Realms |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `BR` | Brazil |
-| `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `BindingRealms` | binding realms |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `C1` | Unclassified Realm |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `CA` | Canada |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `CH` | Switzerland |
@@ -61,7 +59,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `MX` | Mexico |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `NL` | The Netherlands |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `NZ` | New Zealand |
-| `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `NamespaceRealms` | namespace realms |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `R1` | Representative Realm |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `RO` | Romania |
 | `http://terminology.hl7.org/CodeSystem/v3-hl7Realm` | `RU` | Russian Federation |

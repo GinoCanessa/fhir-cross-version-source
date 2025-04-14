@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:44 PM
 
 ### AllSecurityLabels
 
@@ -32,7 +32,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [All Security Labels](/docs/R4B/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `921`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1182`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AllSecurityLabels](/docs/R5/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|5.0.0` 
+| | | | | | | [All Security Labels](/docs/R4B/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `921`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1182`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AllSecurityLabels](/docs/R5/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|5.0.0` 
 
 ### Code Mappings
 
@@ -465,86 +465,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | | | **`HIPAASelfPay`**
 | | | | | | | | | **`Title38Section7332`**
 | | | | | | | | | **`Title38Part1`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ActCode`
-| | | | | | | | | **`_InformationSensitivityPolicy`**
-| | | | | | | | | **`_ActInformationSensitivityPolicy`**
-| | | | | | | | | **`_EntitySensitivityPolicyType`**
-| | | | | | | | | **`_RoleInformationSensitivityPolicy`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ObservationValue`
-| | | | | | | | | **`_SECALTINTOBV`**
-| | | | | | | | | **`_SECDATINTOBV`**
-| | | | | | | | | **`_SECINTCONOBV`**
-| | | | | | | | | **`_SECINTPRVOBV`**
-| | | | | | | | | **`_SECINTPRVABOBV`**
-| | | | | | | | | **`_SECINTPRVRBOBV`**
-| | | | | | | | | **`_SECINTSTOBV`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ActCode`
-| | | | | | | | | **`PrivacyMark`**
-| | | | | | | | | **`ControlledUnclassifiedInformation`**
-| | | | | | | | | **`SecurityLabelMark`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ObservationValue`
-| | | | | | | | | **`_ActCoverageAssessmentObservationValue`**
-| | | | | | | | | **`_ActFinancialStatusObservationValue`**
-| | | | | | | | | **`_AllergyTestValue`**
-| | | | | | | | | **`_CompositeMeasureScoring`**
-| | | | | | | | | **`_CoverageLimitObservationValue`**
-| | | | | | | | | **`_CoverageLevelObservationValue`**
-| | | | | | | | | **`_CriticalityObservationValue`**
-| | | | | | | | | **`_EmploymentStatus`**
-| | | | | | | | | **`_GeneticObservationValue`**
-| | | | | | | | | **`_MeasurementImprovementNotation`**
-| | | | | | | | | **`_ObservationMeasureScoring`**
-| | | | | | | | | **`_ObservationMeasureType`**
-| | | | | | | | | **`_PartialCompletionScale`**
-| | | | | | | | | **`_SecurityObservationValue`**
-| | | | | | | | | **`_SECCATOBV`**
-| | | | | | | | | **`_SECCLASSOBV`**
-| | | | | | | | | **`_SECCONOBV`**
-| | | | | | | | | **`_SECINTOBV`**
-| | | | | | | | | **`SECTRSTOBV`**
-| | | | | | | | | **`TRSTFWKOBV`**
-| | | | | | | | | **`TRSTLOAOBV`**
-| | | | | | | | | **`LOAAN`**
-| | | | | | | | | **`LOAAP`**
-| | | | | | | | | **`LOAAS`**
-| | | | | | | | | **`LOACM`**
-| | | | | | | | | **`LOAID`**
-| | | | | | | | | **`LOANR`**
-| | | | | | | | | **`LOARA`**
-| | | | | | | | | **`LOATK`**
-| | | | | | | | | **`_SeverityObservation`**
-| | | | | | | | | **`_SubjectBodyPosition`**
-| | | | | | | | | **`_VerificationOutcomeValue`**
-| | | | | | | | | **`_WorkSchedule`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ActCode`
-| | | | | | | | | **`SICKLE`**
-| | | | | | | | | **`NORDSLCD`**
-| <td colspan="8">**R5** System: `http://terminology.hl7.org/CodeSystem/v3-ObservationValue`
-| | | | | | | | | **`_CoverageItemLimitObservationValue`**
-| | | | | | | | | **`_CoverageLocationLimitObservationValue`**
-| | | | | | | | | **`_AnnotationValue`**
-| | | | | | | | | **`_ECGAnnotationValue`**
-| | | | | | | | | **`_CommonClinicalObservationValue`**
-| | | | | | | | | **`_CommonClinicalObservationAssertionValue`**
-| | | | | | | | | **`_CommonClinicalObservationResultValue`**
-| | | | | | | | | **`_CoverageChemicalDependencyValue`**
-| | | | | | | | | **`_IndividualCaseSafetyReportValueDomains`**
-| | | | | | | | | **`_CaseSeriousnessCriteria`**
-| | | | | | | | | **`_DeviceManufacturerEvaluationInterpretation`**
-| | | | | | | | | **`_DeviceManufacturerEvaluationMethod`**
-| | | | | | | | | **`_DeviceManufacturerEvaluationResult`**
-| | | | | | | | | **`_PertinentReactionRelatedness`**
-| | | | | | | | | **`_ProductCharacterization`**
-| | | | | | | | | **`_ReactionActionTaken`**
-| | | | | | | | | **`_SubjectReaction`**
-| | | | | | | | | **`_SubjectReactionEmphasis`**
-| | | | | | | | | **`_SubjectReactionOutcome`**
-| | | | | | | | | **`_InjuryObservationValue`**
-| | | | | | | | | **`_IntoleranceValue`**
-| | | | | | | | | **`_IssueTriggerObservationValue`**
-| | | | | | | | | **`_OtherIndicationValue`**
-| | | | | | | | | **`_IndicationValue`**
-| | | | | | | | | **`_DiagnosisValue`**
-| | | | | | | | | **`_SymptomValue`**
-| | | | | | | *0 of 0 codes used* | | *489 of 489 codes used* 
+| | | | | | | *0 of 0 codes used* | | *414 of 489 codes used* <br/>remaining codes:<br/>
 

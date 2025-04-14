@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### SubscriptionStatus
 
@@ -47,7 +47,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [SubscriptionStatus](/docs/R4B/Resources/SubscriptionStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubscriptionStatus\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1047`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1276`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SubscriptionStatus](/docs/R5/Resources/SubscriptionStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubscriptionStatus\|5.0.0` 
+| | | | | | | [SubscriptionStatus](/docs/R4B/Resources/SubscriptionStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubscriptionStatus\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1047`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1276`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SubscriptionStatus](/docs/R5/Resources/SubscriptionStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubscriptionStatus\|5.0.0` 
 
 ### Element Mappings
 

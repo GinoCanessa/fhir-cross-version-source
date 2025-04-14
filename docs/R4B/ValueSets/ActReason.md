@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ActReason
 
@@ -44,10 +44,8 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ALTD` | altered decision |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `BIORCH` | biomedical research |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `BLK` | Unexpected Block (of Schedule) |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `BONUS` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `BTG` | break the glass |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CAREMGT` | care management |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CHD` | Children only |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CHGDATA` | information change |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CLARIF` | prescription requires clarification |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CLINMOD` | clinical modification |
@@ -68,7 +66,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `CT` | continuing therapy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DEC` | Patient Deceased |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DECSD` | deceased |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DEP` | Dependents only |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DIS` | disability |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DISASTER` | disaster |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DISCONT` | product discontinued |
@@ -76,21 +73,16 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DOSECHG` | change in medication/dose |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DRUGHIGH` | drug level too high |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `DSRCH` | disease specific healthcare research |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ECH` | Employee and children |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `EDU` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `EIE` | entered in error |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ELIGDTRM` | eligibility determination |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ELIGVER` | eligibility verification |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `EMP` | Employee only |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `EMPLOY` | employment benefit |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ENADMIN` | entity administration |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ENROLLM` | enrollment |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ER` | Error |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ERTREAT` | emergency room treatment |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ESP` | Employee and spouse |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `ETREAT` | Emergency Treatment |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `EXPLOT` | expired lot |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `FAM` | Family |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `FAMPHYS` | family physician must authorize further fills |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `FAMRQT` | family requested |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `FILLED` | fully filled |
@@ -135,11 +127,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INCINVOICE` | incorrect billing |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INCPOLICY` | incorrect policy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INCPROV` | incorrect provider |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `IND` | Individual |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INEFFECT` | ineffective |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INRQSTATE` | in requested state |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INTOL` | intolerance |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `INVOICE` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `LABELING` | labeling |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `LABINT` | lab interference issues |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `LEGAL` | subpoena |
@@ -175,7 +165,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NOTCOVER` | not covered |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NOTPAT` | patient no longer in this practice |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NOUSERPERM` | no user permission |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NOUSRPERM` | no user permission |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NOVERMTCH` | no version match |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `NPT` | non-protocol |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `OFFICE` | office use |
@@ -214,7 +203,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PREG` | parent is pregnant/breast feeding |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PRGRPT` | program reporting |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PRNA` | product not available |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PROA` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PRODRECALL` | product recall |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PROG` | program use |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `PROTUNMET` | protocol not met |
@@ -226,7 +214,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `QUANTCHG` | change supply quantity |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RECALL` | product recalled |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RECORDMGT` | records management |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RECOV` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `REGERR` | registered in error |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `REGUL` | regulatory review |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RELIG` | religious objection |
@@ -235,7 +222,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `REPLACEFIX` | error in order |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RESCH` | research |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RET` | retest |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RETRO` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RQ` | Request |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RR` | regulatory requirement |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `RSRCH` | research |
@@ -244,8 +230,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SDDI` | drug interacts with another drug |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SDUPTHER` | duplicate therapy |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SINTOL` | suspected intolerance |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SPC` | Spouse and children |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SPO` | Spouse only |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `SRVC` | service |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `STATUTORY` | statutory eligibility |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `STOPMED` | prescriber stopped medication for patient |
@@ -257,7 +241,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `THREAT` | threat |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TOOEARLY` | too early |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TRAIN` | training |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TRAN` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TRANSRCH` | translational healthcare research |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TREAT` | treatment |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `TRIAL` | clinical trial drug |
@@ -274,56 +257,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `WASHOUT` | waiting for old drug to wash out |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `WORK` | work related |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `WRNGVER` | wrong version |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActAccommodationReason` | ActAccommodationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActAdjudicationReason` | ActAdjudicationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActBillableClinicalServiceReason` | ActBillableClinicalServiceReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActBillableServiceReason` | ActBillableServiceReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActConsentInformationAccessOverrideReason` | ActConsentInformationAccessOverrideReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActCoverageLevelRasonCode` | ActCoverageLevelRasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActCoverageProviderReason` | ActCoverageProviderReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActCoverageReason` | ActCoverageReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActCoverageServiceReason` | ActCoverageServiceReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActHealthInformationManagementReason` | ActHealthInformationManagementReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActHealthInformationPrivacyReason` | ActHealthInformationPrivacyReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActImmunizationReason` | ActImmunizationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActIneligibilityReason` | ActIneligibilityReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActInformationManagementReason` | ActInformationManagementReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActInformationPrivacyReason` | ActInformationPrivacyReason |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActInvalidReason` | ActInvalidReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActInvoiceCancelReason` | ActInvoiceCancelReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActNoImmunizationReason` | ActNoImmunizationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ActSupplyFulfillmentRefusalReason` | ActSupplyFulfillmentRefusalReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ClinicalResearchEventReason` | ClinicalResearchEventReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ClinicalResearchObservationReason` | ClinicalResearchObservationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_CombinedPharmacyOrderSuspendReasonCode` | CombinedPharmacyOrderSuspendReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ConrolActNullificationReasonCode` | ConrolActNullificationReasonCode |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ControlActNullificationReasonCode` | ControlActNullificationReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ControlActNullificationRefusalReasonType` | ControlActNullificationRefusalReasonType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ControlActReason` | ControlActReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ControlActReasonConditionNullify` | ControlActReasonConditionNullify |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_CoverageEligibilityReason` | CoverageEligibilityReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_CoverageExclusionReason` | CoverageExclusionReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_CoverageFinancialParticipationReason` | CoverageFinancialParticipationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_CoverageLimitationReason` | CoverageLimitationReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_EligibilityActReasonCode` | EligibilityActReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_GenericUpdateReasonCode` | GenericUpdateReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_MedicallyNecessaryDuplicateProcedureReason` | MedicallyNecessaryDuplicateProcedureReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_MedicationOrderAbortReasonCode` | medication order abort reason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_MedicationOrderReleaseReasonCode` | medication order release reason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ModifyPrescriptionReasonType` | ModifyPrescriptionReasonType |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_NonPerformanceReasonCode` | NonPerformanceReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_PatientProfileQueryReasonCode` | patient profile query reason |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_PharmacySupplyEventAbortReason` | PharmacySupplyEventAbortReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_PharmacySupplyEventStockReasonCode` | pharmacy supply event stock reason |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode` | PharmacySupplyRequestFulfillerRevisionRefusalReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_PharmacySupplyRequestRenewalRefusalReasonCode` | pharmacy supply request renewal refusal reason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ReasonForNotEvaluatingDevice` | ReasonForNotEvaluatingDevice |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_ReferralReasonCode` | ReferralReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_RefusalReasonCode` | RefusalReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_SchedulingActReason` | SchedulingActReason |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_StatusRevisionRefusalReasonCode` | StatusRevisionRefusalReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_SubstanceAdminSubstitutionNotAllowedReason` | SubstanceAdminSubstitutionNotAllowedReason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_SubstanceAdminSubstitutionReason` | SubstanceAdminSubstitutionReason |
 | `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_SubstanceAdministrationPermissionRefusalReasonCode` | SubstanceAdministrationPermissionRefusalReasonCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_SupplyOrderAbortReasonCode` | supply order abort reason |
-| `http://terminology.hl7.org/CodeSystem/v3-ActReason` | `_TransferActReason` | TransferActReason |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### CompositeMeasureScoring
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [CompositeMeasureScoring](/docs/R4B/ValueSets/CompositeMeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/composite-measure-scoring\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `915`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1176`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompositeMeasureScoring](/docs/R5/ValueSets/CompositeMeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/composite-measure-scoring\|5.0.0` 
+| | | | | | | [CompositeMeasureScoring](/docs/R4B/ValueSets/CompositeMeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/composite-measure-scoring\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `915`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1176`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompositeMeasureScoring](/docs/R5/ValueSets/CompositeMeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/composite-measure-scoring\|5.0.0` 
 
 ### Code Mappings
 

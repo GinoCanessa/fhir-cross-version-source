@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:39 PM
+Generated at Monday, April 14, 2025 6:17:23 PM
 
 ### Flag
 
@@ -41,7 +41,7 @@ Generated at Friday, April 4, 2025 2:58:39 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Flag](/docs/R2/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `112`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `278`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Flag](/docs/R3/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `462`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `656`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Flag](/docs/R4/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1495`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1496`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Flag](/docs/R4B/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `981`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1210`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Flag](/docs/R5/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|5.0.0` 
+| [Flag](/docs/R2/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `112`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `278`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Flag](/docs/R3/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `462`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `656`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Flag](/docs/R4/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1495`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1496`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Flag](/docs/R4B/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `981`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1210`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Flag](/docs/R5/Resources/Flag.md)<br/> `http://hl7.org/fhir/StructureDefinition/Flag\|5.0.0` 
 
 ### Element Mappings
 

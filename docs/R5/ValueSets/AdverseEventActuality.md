@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### AdverseEventActuality
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [AdverseEventActuality](/docs/R4/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1359`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1360`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEventActuality](/docs/R4B/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `772`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1033`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEventActuality](/docs/R5/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|5.0.0` 
+| | | | | [AdverseEventActuality](/docs/R4/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1359`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1360`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdverseEventActuality](/docs/R4B/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `772`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1033`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [AdverseEventActuality](/docs/R5/ValueSets/AdverseEventActuality.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-actuality\|5.0.0` 
 
 ### Code Mappings
 

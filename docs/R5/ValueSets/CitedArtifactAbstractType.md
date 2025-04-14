@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### CitedArtifactAbstractType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [CitedArtifactAbstractType](/docs/R4B/ValueSets/CitedArtifactAbstractType.md)<br/> `http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `832`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1093`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CitedArtifactAbstractType](/docs/R5/ValueSets/CitedArtifactAbstractType.md)<br/> `http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type\|5.0.0` 
+| | | | | | | [CitedArtifactAbstractType](/docs/R4B/ValueSets/CitedArtifactAbstractType.md)<br/> `http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `832`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1093`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CitedArtifactAbstractType](/docs/R5/ValueSets/CitedArtifactAbstractType.md)<br/> `http://hl7.org/fhir/ValueSet/cited-artifact-abstract-type\|5.0.0` 
 
 ### Code Mappings
 

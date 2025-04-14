@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActClassObservation
 
@@ -67,6 +67,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `SUP` | supine |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `TRD` | trendelenburg |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `VERIF` | Verification |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_ActClassROI` | ActClassROI |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_SubjectBodyPosition` | subject body position |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_SubjectPhysicalPosition` | subject physical position |

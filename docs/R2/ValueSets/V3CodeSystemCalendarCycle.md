@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System CalendarCycle
 
@@ -47,5 +47,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/CalendarCycle` | `S` | second of the minute |
 | `http://hl7.org/fhir/v3/CalendarCycle` | `WM` | week of the month |
 | `http://hl7.org/fhir/v3/CalendarCycle` | `WY` | week of the year |
-| `http://hl7.org/fhir/v3/CalendarCycle` | `_CalendarCycleOneLetter` | CalendarCycleOneLetter |
-| `http://hl7.org/fhir/v3/CalendarCycle` | `_CalendarCycleTwoLetter` | CalendarCycleTwoLetter |

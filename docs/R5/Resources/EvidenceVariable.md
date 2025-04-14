@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:04 PM
+Generated at Monday, April 14, 2025 6:17:49 PM
 
 ### EvidenceVariable
 
@@ -107,7 +107,7 @@ Generated at Friday, April 4, 2025 2:59:04 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [EvidenceVariable](/docs/R4/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1488`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceVariable](/docs/R4B/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1206`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceVariable](/docs/R5/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|5.0.0` 
+| | | | | [EvidenceVariable](/docs/R4/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1488`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceVariable](/docs/R4B/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1206`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceVariable](/docs/R5/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### FHIRDefinedType
 
@@ -32,7 +32,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [FHIRDefinedType](/docs/R2/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1291`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRDefinedType](/docs/R3/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1322`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRDefinedType](/docs/R4/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|4.0.1` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1465`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1466`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRDefinedType](/docs/R4B/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| [FHIRDefinedType](/docs/R2/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1291`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FHIRDefinedType](/docs/R3/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1322`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FHIRDefinedType](/docs/R4/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|4.0.1` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1465`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1466`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FHIRDefinedType](/docs/R4B/ValueSets/FHIRDefinedType.md)<br/> `http://hl7.org/fhir/ValueSet/defined-types\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ContractResourceLegalStateCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ContractResourceLegalStateCodes](/docs/R4B/ValueSets/ContractResourceLegalStateCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-legalstate\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `847`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1108`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourceLegalStateCodes](/docs/R5/ValueSets/ContractResourceLegalStateCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-legalstate\|5.0.0` 
+| | | | | | | [ContractResourceLegalStateCodes](/docs/R4B/ValueSets/ContractResourceLegalStateCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-legalstate\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `847`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1108`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContractResourceLegalStateCodes](/docs/R5/ValueSets/ContractResourceLegalStateCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-legalstate\|5.0.0` 
 
 ### Code Mappings
 

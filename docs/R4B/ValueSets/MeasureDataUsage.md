@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### MeasureDataUsage
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [MeasureDataUsage](/docs/R4B/ValueSets/MeasureDataUsage.md)<br/> `http://hl7.org/fhir/ValueSet/measure-data-usage\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `918`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1179`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureDataUsage](/docs/R5/ValueSets/MeasureDataUsage.md)<br/> `http://hl7.org/fhir/ValueSet/measure-data-usage\|5.0.0` 
+| | | | | | | [MeasureDataUsage](/docs/R4B/ValueSets/MeasureDataUsage.md)<br/> `http://hl7.org/fhir/ValueSet/measure-data-usage\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `918`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1179`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureDataUsage](/docs/R5/ValueSets/MeasureDataUsage.md)<br/> `http://hl7.org/fhir/ValueSet/measure-data-usage\|5.0.0` 
 
 ### Code Mappings
 

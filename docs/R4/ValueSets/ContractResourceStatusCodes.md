@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ContractResourceStatusCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Contract Resource Status Codes](/docs/R3/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `387`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `610`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R4/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R4B/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `848`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1109`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R5/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|5.0.0` 
+| | | [Contract Resource Status Codes](/docs/R3/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `387`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `610`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R4/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R4B/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `848`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1109`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ContractResourceStatusCodes](/docs/R5/ValueSets/ContractResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-status\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:55 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### Citation
 
@@ -234,7 +234,7 @@ Generated at Friday, April 4, 2025 2:58:55 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [Citation](/docs/R4B/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `944`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1173`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Citation](/docs/R5/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|5.0.0` 
+| | | | | | | [Citation](/docs/R4B/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `944`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1173`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Citation](/docs/R5/Resources/Citation.md)<br/> `http://hl7.org/fhir/StructureDefinition/Citation\|5.0.0` 
 
 ### Element Mappings
 
@@ -352,7 +352,7 @@ All elements from this structure are listed while other structures only show con
 | | | | | | | **`Citation.citedArtifact.relatesTo.id`**| _Equivalent_<br/>(38053/38054)| `Citation.citedArtifact.relatesTo.id`
 | | | | | | | **`Citation.citedArtifact.relatesTo.extension`**| _Equivalent_<br/>(38055/38056)| `Citation.citedArtifact.relatesTo.extension`
 | | | | | | | **`Citation.citedArtifact.relatesTo.modifierExtension`**| _Equivalent_<br/>(38057/38058)| `Citation.citedArtifact.relatesTo.modifierExtension`
-| | | | | | | **`Citation.citedArtifact.relatesTo.relationshipType`**| →→→→ _Equivalent_ →→→→ <br/>(49931)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2100)| `base64Binary`
+| | | | | | | **`Citation.citedArtifact.relatesTo.relationshipType`**| →→→→ __ →→→→ <br/>(38059)<hr/>←←←← __ ←←←← <br/>()| `base64Binary`
 | | | | | | | **`Citation.citedArtifact.relatesTo.relationshipType`**| →→→→ _Equivalent_ →→→→ <br/>(49931)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2100)| `Citation.citedArtifact.relatesTo.type`
 | | | | | | | **`Citation.citedArtifact.relatesTo.targetClassifier`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1858)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2101)| `Citation.citedArtifact.relatesTo.classifier`
 | | | | | | | **`Citation.citedArtifact.relatesTo.target[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1859)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2102)| `Citation.citedArtifact.relatesTo.resourceReference`

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### EndpointStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [EndpointStatus](/docs/R3/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EndpointStatus](/docs/R4/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1493`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1494`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EndpointStatus](/docs/R4B/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `874`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1135`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EndpointStatus](/docs/R5/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|5.0.0` 
+| | | [EndpointStatus](/docs/R3/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [EndpointStatus](/docs/R4/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1493`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1494`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EndpointStatus](/docs/R4B/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `874`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1135`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EndpointStatus](/docs/R5/ValueSets/EndpointStatus.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-status\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### Measmnt-Principle
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:31 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Measmnt-Principle](/docs/R2/ValueSets/MeasmntPrinciple.md)<br/> `http://hl7.org/fhir/ValueSet/measurement-principle\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `62`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasmntPrinciple](/docs/R3/ValueSets/MeasmntPrinciple.md)<br/> `http://hl7.org/fhir/ValueSet/measurement-principle\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [Measmnt-Principle](/docs/R2/ValueSets/MeasmntPrinciple.md)<br/> `http://hl7.org/fhir/ValueSet/measurement-principle\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `62`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [MeasmntPrinciple](/docs/R3/ValueSets/MeasmntPrinciple.md)<br/> `http://hl7.org/fhir/ValueSet/measurement-principle\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

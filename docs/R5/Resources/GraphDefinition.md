@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:02 PM
+Generated at Monday, April 14, 2025 6:17:46 PM
 
 ### GraphDefinition
 
@@ -80,7 +80,7 @@ Generated at Friday, April 4, 2025 2:59:02 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [GraphDefinition](/docs/R3/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `464`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `658`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphDefinition](/docs/R4/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1499`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1500`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphDefinition](/docs/R4B/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `983`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphDefinition](/docs/R5/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|5.0.0` 
+| | | [GraphDefinition](/docs/R3/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `464`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `658`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GraphDefinition](/docs/R4/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1499`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1500`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GraphDefinition](/docs/R4B/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `983`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GraphDefinition](/docs/R5/Resources/GraphDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/GraphDefinition\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### DataType
 
@@ -27,7 +27,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [DataType](/docs/R4B/ComplexTypes/DataType.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataType\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1649`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1650`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DataType](/docs/R5/ComplexTypes/DataType.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataType\|5.0.0` 
+| | | | | | | [DataType](/docs/R4B/ComplexTypes/DataType.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataType\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1649`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1650`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DataType](/docs/R5/ComplexTypes/DataType.md)<br/> `http://hl7.org/fhir/StructureDefinition/DataType\|5.0.0` 
 
 ### Element Mappings
 

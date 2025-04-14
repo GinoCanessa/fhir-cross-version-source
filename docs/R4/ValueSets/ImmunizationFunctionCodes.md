@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ImmunizationFunctionCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Immunization Role Codes](/docs/R3/ValueSets/ImmunizationRoleCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-role\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `426`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `648`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImmunizationFunctionCodes](/docs/R4/ValueSets/ImmunizationFunctionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-function\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [Immunization Role Codes](/docs/R3/ValueSets/ImmunizationRoleCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-role\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `426`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `648`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImmunizationFunctionCodes](/docs/R4/ValueSets/ImmunizationFunctionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-function\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

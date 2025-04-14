@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System AcknowledgementDetailCode
 
@@ -58,4 +58,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/AcknowledgementDetailCode` | `SYN112` | Number of attribute repetitions exceeds limit |
 | `http://hl7.org/fhir/v3/AcknowledgementDetailCode` | `SYN113` | Formal constraint violation |
 | `http://hl7.org/fhir/v3/AcknowledgementDetailCode` | `SYN114` | Insufficient repetitions |
-| `http://hl7.org/fhir/v3/AcknowledgementDetailCode` | `_AcknowledgementDetailNotSupportedCode` | AcknowledgementDetailNotSupportedCode |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### InsurancePlan
 
@@ -104,7 +104,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [InsurancePlan](/docs/R4/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1517`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1518`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InsurancePlan](/docs/R4B/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `993`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1222`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InsurancePlan](/docs/R5/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|5.0.0` 
+| | | | | [InsurancePlan](/docs/R4/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1517`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1518`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [InsurancePlan](/docs/R4B/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `993`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1222`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [InsurancePlan](/docs/R5/Resources/InsurancePlan.md)<br/> `http://hl7.org/fhir/StructureDefinition/InsurancePlan\|5.0.0` 
 
 ### Element Mappings
 

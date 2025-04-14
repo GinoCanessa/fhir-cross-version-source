@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### EvidenceVariableType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [EvidenceVariableType](/docs/R4/ValueSets/EvidenceVariableType.md)<br/> `http://hl7.org/fhir/ValueSet/variable-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1781`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1782`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [VariableType](/docs/R4B/ValueSets/VariableType.md)<br/> `http://hl7.org/fhir/ValueSet/variable-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [EvidenceVariableType](/docs/R4/ValueSets/EvidenceVariableType.md)<br/> `http://hl7.org/fhir/ValueSet/variable-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1781`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1782`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [VariableType](/docs/R4B/ValueSets/VariableType.md)<br/> `http://hl7.org/fhir/ValueSet/variable-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.EntityNameUseR2
 
@@ -34,13 +34,11 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `A` | business name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `ABC` | alphabetic |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `ANON` | Anonymous |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `Assumed` | Assumed |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `C` | customary |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `DN` | do not use |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `I` | Indigenous/Tribal |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `IDE` | ideographic |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `M` | maiden name |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `NameRepresentationUse` | NameRepresentationUse |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `OLD` | no longer in use |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `OR` | official registry name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2` | `P` | Other/Pseudonym/Alias |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### Money
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Quantity](/docs/R2/ComplexTypes/Quantity.md)<br/> `http://hl7.org/fhir/StructureDefinition/Quantity\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `64`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `228`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Money](/docs/R3/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `401`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `597`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Money](/docs/R4/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1353`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1354`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Money](/docs/R4B/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `910`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1139`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Money](/docs/R5/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|5.0.0` 
+| [Quantity](/docs/R2/ComplexTypes/Quantity.md)<br/> `http://hl7.org/fhir/StructureDefinition/Quantity\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `64`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `228`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Money](/docs/R3/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `401`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `597`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Money](/docs/R4/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1353`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1354`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Money](/docs/R4B/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `910`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1139`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Money](/docs/R5/ComplexTypes/Money.md)<br/> `http://hl7.org/fhir/StructureDefinition/Money\|5.0.0` 
 
 ### Element Mappings
 
@@ -45,7 +45,7 @@ All elements from this structure are listed while other structures only show con
 | | | `Money.id`| _Equivalent_<br/>(9662/9663)| `Money.id`| _Equivalent_<br/>(21067/21068)| `Money.id`| _Equivalent_<br/>(36176/36177)| **`Money.id`**
 | | | `Money.extension`| _Equivalent_<br/>(9664/9665)| `Money.extension`| _Equivalent_<br/>(21069/21070)| `Money.extension`| _Equivalent_<br/>(36178/36179)| **`Money.extension`**
 | | | `Money.value`| _Equivalent_<br/>(9666/9667)| `Money.value`| _Equivalent_<br/>(21071/21072)| `Money.value`| _Equivalent_<br/>(36180/36181)| **`Money.value`**
-| | | `Money.unit`| →→→→ _Equivalent_ →→→→ <br/>(21064)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1709)| `Money.currency`| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| **`Money.currency`**
-| | | `Money.code`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1334)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1709)| `Money.currency`| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| **`Money.currency`**
+| | | `Money.unit`| →→→→ _Equivalent_ →→→→ <br/>(21064)<hr/>←←←← __ ←←←← <br/>()| `Money.currency`| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| **`Money.currency`**
+| | | `Money.code`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1334)<hr/>←←←← __ ←←←← <br/>()| `Money.currency`| _Equivalent_<br/>(21073/21074)| `Money.currency`| _Equivalent_<br/>(36182/36183)| **`Money.currency`**
 | *0 of 8 elements used* <br/>remaining elements:<br/>`Quantity`, `Quantity.code`, `Quantity.comparator`, `Quantity.extension`, `Quantity.id`, `Quantity.system`, `Quantity.unit`, `Quantity.value`| | *6 of 8 elements used* <br/>remaining elements:<br/>`Money.comparator`, `Money.system`| | *5 of 5 elements used* | | *5 of 5 elements used* | | *5 of 5 elements used* 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System AddressUse
 
@@ -47,6 +47,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/AddressUse` | `PUB` | public |
 | `http://hl7.org/fhir/v3/AddressUse` | `TMP` | temporary address |
 | `http://hl7.org/fhir/v3/AddressUse` | `WP` | work place |
-| `http://hl7.org/fhir/v3/AddressUse` | `_GeneralAddressUse` | _GeneralAddressUse |
-| `http://hl7.org/fhir/v3/AddressUse` | `_PostalAddressUse` | _PostalAddressUse |
-| `http://hl7.org/fhir/v3/AddressUse` | `_TelecommunicationAddressUse` | _TelecommunicationAddressUse |

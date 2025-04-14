@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:33 PM
 
 ### StructureMap
 
@@ -117,7 +117,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [StructureMap](/docs/R3/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `713`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMap](/docs/R4/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1623`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1624`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMap](/docs/R4B/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1045`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1274`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMap](/docs/R5/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|5.0.0` 
+| | | [StructureMap](/docs/R3/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `713`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMap](/docs/R4/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1623`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1624`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMap](/docs/R4B/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1045`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1274`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMap](/docs/R5/Resources/StructureMap.md)<br/> `http://hl7.org/fhir/StructureDefinition/StructureMap\|5.0.0` 
 
 ### Element Mappings
 

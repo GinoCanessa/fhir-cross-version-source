@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.GTSAbbreviation
 
@@ -74,4 +74,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation` | `QOD` | QOD |
 | `http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation` | `TID` | TID |
 | `http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation` | `WK` | weekly |
-| `http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation` | `_GTSAbbreviationHolidaysChristianRoman` | GTSAbbreviationHolidaysChristianRoman |

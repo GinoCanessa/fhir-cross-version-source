@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### ActMoodPredicate
 
@@ -35,10 +35,5 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActMood` | `EVN.CRT` | event criterion |
 | `http://hl7.org/fhir/v3/ActMood` | `EXPEC` | expectation |
 | `http://hl7.org/fhir/v3/ActMood` | `GOL` | Goal |
-| `http://hl7.org/fhir/v3/ActMood` | `GOL.CRT` | goal criterion |
-| `http://hl7.org/fhir/v3/ActMood` | `INT.CRT` | intent criterion |
 | `http://hl7.org/fhir/v3/ActMood` | `OPT` | option |
-| `http://hl7.org/fhir/v3/ActMood` | `PRMS.CRT` | promise criterion |
-| `http://hl7.org/fhir/v3/ActMood` | `RQO.CRT` | request criterion |
 | `http://hl7.org/fhir/v3/ActMood` | `RSK` | risk |
-| `http://hl7.org/fhir/v3/ActMood` | `RSK.CRT` | risk criterion |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:46 PM
+Generated at Monday, April 14, 2025 6:17:29 PM
 
 ### BiologicallyDerivedProduct
 
@@ -69,7 +69,7 @@ Generated at Friday, April 4, 2025 2:58:46 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [BiologicallyDerivedProduct](/docs/R4/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BiologicallyDerivedProduct](/docs/R4B/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `937`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1166`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BiologicallyDerivedProduct](/docs/R5/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|5.0.0` 
+| | | | | [BiologicallyDerivedProduct](/docs/R4/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [BiologicallyDerivedProduct](/docs/R4B/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `937`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1166`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [BiologicallyDerivedProduct](/docs/R5/Resources/BiologicallyDerivedProduct.md)<br/> `http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct\|5.0.0` 
 
 ### Element Mappings
 

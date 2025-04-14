@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ObservationInterpretationCodes
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ObservationInterpretationCodes](/docs/R4B/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1203`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationInterpretationCodes](/docs/R5/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|5.0.0` 
+| | | | | | | [ObservationInterpretationCodes](/docs/R4B/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1203`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationInterpretationCodes](/docs/R5/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|5.0.0` 
 
 ### Code Mappings
 
@@ -81,13 +81,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | **`NR`**| _Equivalent_ <br/>(9091/11402)| `NR`
 | | | | | | | **`RR`**| _Equivalent_ <br/>(9095/11406)| `RR`
 | | | | | | | **`WR`**| _Equivalent_ <br/>(9103/11414)| `WR`
-| | | | | | | **`_GeneticObservationInterpretation`**| | | 
-| | | | | | | **`_ObservationInterpretationChange`**| | | 
-| | | | | | | **`_ObservationInterpretationExceptions`**| | | 
-| | | | | | | **`_ObservationInterpretationNormality`**| | | 
-| | | | | | | **`_ObservationInterpretationSusceptibility`**| | | 
-| | | | | | | **`ObservationInterpretationDetection`**| | | 
-| | | | | | | **`ObservationInterpretationExpectation`**| | | 
-| | | | | | | **`ReactivityObservationInterpretation`**| | | 
-| | | | | | | *47 of 47 codes used* | | *39 of 57 codes used* <br/>remaining codes:<br/>`AC`, `Carrier`, `H>`, `HM`, `L<`, `MS`, `OBX`, `ObservationInterpretationDetection`, `ObservationInterpretationExpectation`, `QCF`, `ReactivityObservationInterpretation`, `TOX`, `VS`, `_GeneticObservationInterpretation`, `_ObservationInterpretationChange`, `_ObservationInterpretationExceptions`, `_ObservationInterpretationNormality`, `_ObservationInterpretationSusceptibility`
+| | | | | | | *39 of 47 codes used* <br/>remaining codes:<br/>| | *39 of 57 codes used* <br/>remaining codes:<br/>`AC`, `Carrier`, `H>`, `HM`, `L<`, `MS`, `OBX`, `QCF`, `TOX`, `VS`
 

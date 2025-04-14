@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### DeviceDefinition
 
@@ -88,7 +88,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [DeviceDefinition](/docs/R4/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceDefinition](/docs/R4B/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `963`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceDefinition](/docs/R5/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|5.0.0` 
+| | | | | [DeviceDefinition](/docs/R4/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceDefinition](/docs/R4B/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `963`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceDefinition](/docs/R5/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|5.0.0` 
 
 ### Element Mappings
 

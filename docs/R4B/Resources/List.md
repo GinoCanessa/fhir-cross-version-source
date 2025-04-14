@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:38 PM
 
 ### List
 
@@ -53,7 +53,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [List](/docs/R2/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `121`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `287`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [List](/docs/R3/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `474`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `668`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [List](/docs/R4/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1526`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [List](/docs/R4B/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `997`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1226`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [List](/docs/R5/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|5.0.0` 
+| [List](/docs/R2/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `121`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `287`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [List](/docs/R3/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `474`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `668`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [List](/docs/R4/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1526`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [List](/docs/R4B/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `997`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1226`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [List](/docs/R5/Resources/List.md)<br/> `http://hl7.org/fhir/StructureDefinition/List\|5.0.0` 
 
 ### Element Mappings
 

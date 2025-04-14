@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### SPDXLicense
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [SPDXLicense](/docs/R4/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1739`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1740`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SPDXLicense](/docs/R4B/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `900`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1161`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SPDXLicense](/docs/R5/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|5.0.0` 
+| | | | | [SPDXLicense](/docs/R4/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1739`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1740`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SPDXLicense](/docs/R4B/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `900`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1161`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SPDXLicense](/docs/R5/ValueSets/SPDXLicense.md)<br/> `http://hl7.org/fhir/ValueSet/spdx-license\|5.0.0` 
 
 ### Code Mappings
 

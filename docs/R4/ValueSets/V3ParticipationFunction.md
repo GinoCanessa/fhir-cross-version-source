@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ParticipationFunction
 
@@ -72,11 +72,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `TASST` | third assistant |
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `UMGT` | utilization management |
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `UNDERWRTNG` | underwriting |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_AuthorizedParticipationFunction` | AuthorizedParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_AuthorizedReceiverParticipationFunction` | AuthorizedReceiverParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_ConsenterParticipationFunction` | ConsenterParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_CoverageParticipationFunction` | CoverageParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_OverriderParticipationFunction` | OverriderParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_PayorParticipationFunction` | PayorParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_SponsorParticipationFunction` | SponsorParticipationFunction |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction` | `_UnderwriterParticipationFunction` | UnderwriterParticipationFunction |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System ActMood
 
@@ -54,8 +54,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActMood` | `RSK` | risk |
 | `http://hl7.org/fhir/v3/ActMood` | `RSK.CRT` | risk criterion |
 | `http://hl7.org/fhir/v3/ActMood` | `SLOT` | resource slot |
-| `http://hl7.org/fhir/v3/ActMood` | `_ActMoodActRequest` | act request |
-| `http://hl7.org/fhir/v3/ActMood` | `_ActMoodCompletionTrack` | ActMoodCompletionTrack |
-| `http://hl7.org/fhir/v3/ActMood` | `_ActMoodDesire` | desire |
-| `http://hl7.org/fhir/v3/ActMood` | `_ActMoodPotential` | potential |
-| `http://hl7.org/fhir/v3/ActMood` | `_ActMoodPredicate` | ActMoodPredicate |

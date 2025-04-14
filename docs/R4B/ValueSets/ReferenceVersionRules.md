@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ReferenceVersionRules
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ReferenceVersionRules](/docs/R3/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `408`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `631`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R4/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1679`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1680`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R4B/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `871`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1132`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R5/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|5.0.0` 
+| | | [ReferenceVersionRules](/docs/R3/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `408`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `631`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R4/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1679`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1680`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R4B/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `871`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1132`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ReferenceVersionRules](/docs/R5/ValueSets/ReferenceVersionRules.md)<br/> `http://hl7.org/fhir/ValueSet/reference-version-rules\|5.0.0` 
 
 ### Code Mappings
 

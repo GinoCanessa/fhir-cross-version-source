@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:44 PM
 
 ### FlagStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [FlagStatus](/docs/R2/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `9`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `168`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FlagStatus](/docs/R3/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `556`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FlagStatus](/docs/R4/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1513`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1514`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FlagStatus](/docs/R4B/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `779`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1040`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FlagStatus](/docs/R5/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|5.0.0` 
+| [FlagStatus](/docs/R2/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `9`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `168`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FlagStatus](/docs/R3/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `556`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FlagStatus](/docs/R4/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1513`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1514`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FlagStatus](/docs/R4B/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `779`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1040`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FlagStatus](/docs/R5/ValueSets/FlagStatus.md)<br/> `http://hl7.org/fhir/ValueSet/flag-status\|5.0.0` 
 
 ### Code Mappings
 

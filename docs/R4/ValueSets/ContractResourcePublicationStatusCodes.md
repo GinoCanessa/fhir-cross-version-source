@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ContractResourcePublicationStatusCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ContractResourcePublicationStatusCodes](/docs/R4/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1456`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourcePublicationStatusCodes](/docs/R4B/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `846`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1107`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContractResourcePublicationStatusCodes](/docs/R5/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|5.0.0` 
+| | | | | [ContractResourcePublicationStatusCodes](/docs/R4/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1456`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContractResourcePublicationStatusCodes](/docs/R4B/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `846`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1107`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ContractResourcePublicationStatusCodes](/docs/R5/ValueSets/ContractResourcePublicationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/contract-publicationstatus\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ChargeItemStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ChargeItemStatus](/docs/R3/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `342`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `566`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItemStatus](/docs/R4/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1411`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1412`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItemStatus](/docs/R4B/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `791`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1052`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItemStatus](/docs/R5/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|5.0.0` 
+| | | [ChargeItemStatus](/docs/R3/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `342`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `566`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ChargeItemStatus](/docs/R4/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1411`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1412`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItemStatus](/docs/R4B/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `791`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1052`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ChargeItemStatus](/docs/R5/ValueSets/ChargeItemStatus.md)<br/> `http://hl7.org/fhir/ValueSet/chargeitem-status\|5.0.0` 
 
 ### Code Mappings
 

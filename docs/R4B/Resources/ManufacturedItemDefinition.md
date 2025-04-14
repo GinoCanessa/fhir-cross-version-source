@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:53 PM
+Generated at Monday, April 14, 2025 6:17:37 PM
 
 ### ManufacturedItemDefinition
 
@@ -45,7 +45,7 @@ Generated at Friday, April 4, 2025 2:58:53 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ManufacturedItemDefinition](/docs/R4B/Resources/ManufacturedItemDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `999`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1228`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ManufacturedItemDefinition](/docs/R5/Resources/ManufacturedItemDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition\|5.0.0` 
+| | | | | | | [ManufacturedItemDefinition](/docs/R4B/Resources/ManufacturedItemDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `999`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1228`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ManufacturedItemDefinition](/docs/R5/Resources/ManufacturedItemDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition\|5.0.0` 
 
 ### Element Mappings
 

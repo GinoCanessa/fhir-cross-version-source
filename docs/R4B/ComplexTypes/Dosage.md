@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### Dosage
 
@@ -46,7 +46,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Dosage](/docs/R3/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `394`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `590`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Dosage](/docs/R4/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1333`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Dosage](/docs/R4B/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `902`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1131`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Dosage](/docs/R5/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|5.0.0` 
+| | | [Dosage](/docs/R3/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `394`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `590`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Dosage](/docs/R4/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1333`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Dosage](/docs/R4B/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `902`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1131`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Dosage](/docs/R5/ComplexTypes/Dosage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Dosage\|5.0.0` 
 
 ### Element Mappings
 
@@ -67,7 +67,7 @@ All elements from this structure are listed while other structures only show con
 | | | `Dosage.additionalInstruction`| _Equivalent_<br/>(9363/9364)| `Dosage.additionalInstruction`| _Equivalent_<br/>(20738/20739)| **`Dosage.additionalInstruction`**| _Equivalent_<br/>(35855/35856)| `Dosage.additionalInstruction`
 | | | `Dosage.patientInstruction`| _Equivalent_<br/>(9365/9366)| `Dosage.patientInstruction`| _Equivalent_<br/>(20740/20741)| **`Dosage.patientInstruction`**| _Equivalent_<br/>(35857/35858)| `Dosage.patientInstruction`
 | | | `Dosage.timing`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(9367)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(9368)| `Dosage.timing`| _Equivalent_<br/>(20742/20743)| **`Dosage.timing`**| _Equivalent_<br/>(35859/35860)| `Dosage.timing`
-| | | `Dosage.asNeeded[x]`| _Equivalent_<br/>(9369/9370)| `Dosage.asNeeded[x]`| _Equivalent_<br/>(20744/20745)| **`Dosage.asNeeded[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1712)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1956)| `Dosage.asNeeded`
+| | | `Dosage.asNeeded[x]`| _Equivalent_<br/>(9369/9370)| `Dosage.asNeeded[x]`| _Equivalent_<br/>(20744/20745)| **`Dosage.asNeeded[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1711)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1955)| `Dosage.asNeeded`
 | | | `Dosage.asNeeded[x]`| _Equivalent_<br/>(9369/9370)| `Dosage.asNeeded[x]`| _Equivalent_<br/>(20744/20745)| **`Dosage.asNeeded[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1712)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1956)| `Dosage.asNeededFor`
 | | | `Dosage.site`| _Equivalent_<br/>(9371/9372)| `Dosage.site`| _Equivalent_<br/>(20746/20747)| **`Dosage.site`**| _Equivalent_<br/>(35861/35862)| `Dosage.site`
 | | | `Dosage.route`| _Equivalent_<br/>(9373/9374)| `Dosage.route`| _Equivalent_<br/>(20748/20749)| **`Dosage.route`**| _Equivalent_<br/>(35863/35864)| `Dosage.route`

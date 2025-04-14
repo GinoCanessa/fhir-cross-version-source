@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### DetectedIssueCategory
 
@@ -108,10 +108,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `TOOSOON` | Refill Too Soon Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `TPROD` | Therapeutic Product Alert |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `WGHT` |  |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActSuppliedItemDetectedIssueCode` | ActSuppliedItemDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AdministrationDetectedIssueCode` | AdministrationDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AppropriatenessDetectedIssueCode` | AppropriatenessDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_DrugActionDetectedIssueCode` | DrugActionDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_InteractionDetectedIssueCode` | InteractionDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_SupplyDetectedIssueCode` | SupplyDetectedIssueCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_TimingDetectedIssueCode` | TimingDetectedIssueCode |

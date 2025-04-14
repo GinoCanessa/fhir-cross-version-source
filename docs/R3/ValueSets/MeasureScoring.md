@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### MeasureScoring
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [MeasureScoring](/docs/R3/ValueSets/MeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/measure-scoring\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `439`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `661`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureScoring](/docs/R4/ValueSets/MeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/measure-scoring\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [MeasureScoring](/docs/R3/ValueSets/MeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/measure-scoring\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `439`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `661`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureScoring](/docs/R4/ValueSets/MeasureScoring.md)<br/> `http://hl7.org/fhir/ValueSet/measure-scoring\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

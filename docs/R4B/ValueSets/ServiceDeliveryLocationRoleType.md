@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ServiceDeliveryLocationRoleType
 
@@ -156,7 +156,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `URO` | Urology clinic |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `WND` | Wound clinic |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `WORK` | work site |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedClinicalLocationRoleType` | DedicatedClinicalLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedNonClinicalLocationRoleType` | DedicatedNonClinicalLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedServiceDeliveryLocationRoleType` | DedicatedServiceDeliveryLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_IncidentalServiceDeliveryLocationRoleType` | IncidentalServiceDeliveryLocationRoleType |

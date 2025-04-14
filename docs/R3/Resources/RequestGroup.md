@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:39 PM
+Generated at Monday, April 14, 2025 6:17:23 PM
 
 ### RequestGroup
 
@@ -82,7 +82,7 @@ Generated at Friday, April 4, 2025 2:58:39 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [RequestGroup](/docs/R3/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `509`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`RelatedTo`<br/>- DBKey: `701`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestGroup](/docs/R4/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1595`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1596`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestGroup](/docs/R4B/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1034`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1263`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestOrchestration](/docs/R5/Resources/RequestOrchestration.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestOrchestration\|5.0.0` 
+| | | [RequestGroup](/docs/R3/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `509`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`RelatedTo`<br/>- DBKey: `701`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestGroup](/docs/R4/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1595`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1596`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestGroup](/docs/R4B/Resources/RequestGroup.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestGroup\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1034`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1263`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestOrchestration](/docs/R5/Resources/RequestOrchestration.md)<br/> `http://hl7.org/fhir/StructureDefinition/RequestOrchestration\|5.0.0` 
 
 ### Element Mappings
 
@@ -104,7 +104,7 @@ All elements from this structure are listed while other structures only show con
 | | | **`RequestGroup.extension`**| _Equivalent_<br/>(17947/17948)| `RequestGroup.extension`| _Equivalent_<br/>(32343/32344)| `RequestGroup.extension`| | | 
 | | | **`RequestGroup.modifierExtension`**| _Equivalent_<br/>(17949/17950)| `RequestGroup.modifierExtension`| _Equivalent_<br/>(32345/32346)| `RequestGroup.modifierExtension`| | | 
 | | | **`RequestGroup.identifier`**| _Equivalent_<br/>(17951/17952)| `RequestGroup.identifier`| _Equivalent_<br/>(32347/32348)| `RequestGroup.identifier`| | | 
-| | | **`RequestGroup.definition`**| →→→→ _Equivalent_ →→→→ <br/>(32325)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1657)| `base64Binary`| | | | | 
+| | | **`RequestGroup.definition`**| →→→→ __ →→→→ <br/>(1270)<hr/>←←←← __ ←←←← <br/>()| `base64Binary`| | | | | 
 | | | **`RequestGroup.definition`**| →→→→ _Equivalent_ →→→→ <br/>(32325)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1657)| `RequestGroup.instantiatesCanonical`| _Equivalent_<br/>(32349/32350)| `RequestGroup.instantiatesCanonical`| | | 
 | | | **`RequestGroup.basedOn`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17953)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17954)| `RequestGroup.basedOn`| _Equivalent_<br/>(32353/32354)| `RequestGroup.basedOn`| | | 
 | | | **`RequestGroup.replaces`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(17955)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(17956)| `RequestGroup.replaces`| _Equivalent_<br/>(32355/32356)| `RequestGroup.replaces`| | | 
@@ -116,7 +116,7 @@ All elements from this structure are listed while other structures only show con
 | | | **`RequestGroup.context`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1269)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1654)| `RequestGroup.encounter`| _Equivalent_<br/>(32369/32370)| `RequestGroup.encounter`| | | 
 | | | **`RequestGroup.authoredOn`**| _Equivalent_<br/>(17967/17968)| `RequestGroup.authoredOn`| _Equivalent_<br/>(32371/32372)| `RequestGroup.authoredOn`| | | 
 | | | **`RequestGroup.author`**| →→→→ _RelatedTo_ →→→→ <br/>(17969)<hr/>←←←← _RelatedTo_ ←←←← <br/>(17970)| `RequestGroup.author`| _Equivalent_<br/>(32373/32374)| `RequestGroup.author`| | | 
-| | | **`RequestGroup.reason[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1272)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1656)| `RequestGroup.reasonCode`| _Equivalent_<br/>(32375/32376)| `RequestGroup.reasonCode`| | | 
+| | | **`RequestGroup.reason[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1271)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1655)| `RequestGroup.reasonCode`| _Equivalent_<br/>(32375/32376)| `RequestGroup.reasonCode`| | | 
 | | | **`RequestGroup.reason[x]`**| →→→→ _RelatedTo_ →→→→ <br/>(1272)<hr/>←←←← _RelatedTo_ ←←←← <br/>(1656)| `RequestGroup.reasonReference`| _Equivalent_<br/>(32377/32378)| `RequestGroup.reasonReference`| | | 
 | | | **`RequestGroup.note`**| _Equivalent_<br/>(17971/17972)| `RequestGroup.note`| _Equivalent_<br/>(32379/32380)| `RequestGroup.note`| | | 
 | | | **`RequestGroup.action`**| _Equivalent_<br/>(17973/17974)| `RequestGroup.action`| _Equivalent_<br/>(32381/32382)| `RequestGroup.action`| | | 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.SetOperator
 
@@ -36,4 +36,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-SetOperator` | `H` | convex hull |
 | `http://terminology.hl7.org/CodeSystem/v3-SetOperator` | `I` | include |
 | `http://terminology.hl7.org/CodeSystem/v3-SetOperator` | `P` | periodic hull |
-| `http://terminology.hl7.org/CodeSystem/v3-SetOperator` | `_ValueSetOperator` | ValueSetOperator |

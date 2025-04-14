@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### Identifier Type Codes
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:31 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Identifier Type Codes](/docs/R2/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `83`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `239`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Identifier Type Codes](/docs/R3/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `646`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Identifier Type Codes](/docs/R4/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [Identifier Type Codes](/docs/R2/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `83`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `239`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Identifier Type Codes](/docs/R3/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `646`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Identifier Type Codes](/docs/R4/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

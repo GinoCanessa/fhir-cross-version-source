@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### Example Hierarchical ValueSet
 
@@ -35,16 +35,13 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/hacked` | `conflict` | Edit Version Conflict |
 | `http://hl7.org/fhir/hacked` | `duplicate` | Duplicate |
 | `http://hl7.org/fhir/hacked` | `exception` | Exception |
-| `http://hl7.org/fhir/hacked` | `invalid` | Invalid Content |
 | `http://hl7.org/fhir/hacked` | `lock-error` | Lock Error |
 | `http://hl7.org/fhir/hacked` | `login` | Login Required |
 | `http://hl7.org/fhir/hacked` | `login` | Login Required |
 | `http://hl7.org/fhir/hacked` | `not-found` | Not Found |
 | `http://hl7.org/fhir/hacked` | `processing` | Processing Failure |
 | `http://hl7.org/fhir/hacked` | `required` | Required element missing |
-| `http://hl7.org/fhir/hacked` | `security` | Security Problem |
 | `http://hl7.org/fhir/hacked` | `structure` | Structural Issue |
 | `http://hl7.org/fhir/hacked` | `throttled` | Throttled |
-| `http://hl7.org/fhir/hacked` | `transient` | Transient Issue |
 | `http://hl7.org/fhir/hacked` | `unknown` | Unknown User |
 | `http://hl7.org/fhir/hacked` | `value` | Element value invalid |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### DiscriminatorType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [DiscriminatorType](/docs/R3/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `628`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DiscriminatorType](/docs/R4/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1477`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DiscriminatorType](/docs/R4B/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `868`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1129`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DiscriminatorType](/docs/R5/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|5.0.0` 
+| | | [DiscriminatorType](/docs/R3/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `628`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [DiscriminatorType](/docs/R4/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1477`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DiscriminatorType](/docs/R4B/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `868`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1129`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DiscriminatorType](/docs/R5/ValueSets/DiscriminatorType.md)<br/> `http://hl7.org/fhir/ValueSet/discriminator-type\|5.0.0` 
 
 ### Code Mappings
 

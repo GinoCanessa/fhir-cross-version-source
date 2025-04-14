@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:53 PM
+Generated at Monday, April 14, 2025 6:17:37 PM
 
 ### ResearchElementDefinition
 
@@ -81,7 +81,7 @@ Generated at Friday, April 4, 2025 2:58:53 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ResearchElementDefinition](/docs/R4/Resources/ResearchElementDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1599`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1600`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchElementDefinition](/docs/R4B/Resources/ResearchElementDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [ResearchElementDefinition](/docs/R4/Resources/ResearchElementDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1599`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1600`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchElementDefinition](/docs/R4B/Resources/ResearchElementDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchElementDefinition\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Element Mappings
 
 

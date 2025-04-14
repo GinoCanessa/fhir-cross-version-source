@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:34 PM
+Generated at Monday, April 14, 2025 6:17:17 PM
 
 ### Provenance
 
@@ -63,7 +63,7 @@ Generated at Friday, April 4, 2025 2:58:34 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Provenance](/docs/R2/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `147`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`RelatedTo`<br/>- DBKey: `313`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Provenance](/docs/R3/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `504`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `697`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Provenance](/docs/R4/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1587`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1588`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Provenance](/docs/R4B/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1029`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1258`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Provenance](/docs/R5/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|5.0.0` 
+| [Provenance](/docs/R2/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `147`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`RelatedTo`<br/>- DBKey: `313`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Provenance](/docs/R3/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `504`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `697`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Provenance](/docs/R4/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1587`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1588`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Provenance](/docs/R4B/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1029`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1258`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Provenance](/docs/R5/Resources/Provenance.md)<br/> `http://hl7.org/fhir/StructureDefinition/Provenance\|5.0.0` 
 
 ### Element Mappings
 
@@ -102,7 +102,7 @@ All elements from this structure are listed while other structures only show con
 | **`Provenance.agent.relatedAgent.id`**| | | | | | | | | 
 | **`Provenance.agent.relatedAgent.extension`**| | | | | | | | | 
 | **`Provenance.agent.relatedAgent.modifierExtension`**| | | | | | | | | 
-| **`Provenance.agent.relatedAgent.type`**| →→→→ _Equivalent_ →→→→ <br/>(357)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(705)| `Provenance.agent.relatedAgentType`| →→→→ _Equivalent_ →→→→ <br/>(31996)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1644)| `base64Binary`| | | | | 
+| **`Provenance.agent.relatedAgent.type`**| →→→→ _Equivalent_ →→→→ <br/>(357)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(705)| `Provenance.agent.relatedAgentType`| →→→→ __ →→→→ <br/>(1242)<hr/>←←←← __ ←←←← <br/>()| `base64Binary`| | | | | 
 | **`Provenance.agent.relatedAgent.type`**| →→→→ _Equivalent_ →→→→ <br/>(357)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(705)| `Provenance.agent.relatedAgentType`| →→→→ _Equivalent_ →→→→ <br/>(31996)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(1644)| `Provenance.agent.type`| _Equivalent_<br/>(32037/32038)| `Provenance.agent.type`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(46617)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(46618)| `Provenance.agent.type`
 | **`Provenance.agent.relatedAgent.target`**| | | | | | | | | 
 | **`Provenance.entity`**| _Equivalent_<br/>(7482/7483)| `Provenance.entity`| _Equivalent_<br/>(17631/17632)| `Provenance.entity`| _Equivalent_<br/>(32045/32046)| `Provenance.entity`| _Equivalent_<br/>(46625/46626)| `Provenance.entity`

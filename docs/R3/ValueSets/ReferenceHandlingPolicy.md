@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### ReferenceHandlingPolicy
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ReferenceHandlingPolicy](/docs/R3/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `370`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `593`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R4/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1677`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1678`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R4B/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `817`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1078`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R5/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|5.0.0` 
+| | | [ReferenceHandlingPolicy](/docs/R3/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `370`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `593`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R4/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1677`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1678`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R4B/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `817`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1078`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ReferenceHandlingPolicy](/docs/R5/ValueSets/ReferenceHandlingPolicy.md)<br/> `http://hl7.org/fhir/ValueSet/reference-handling-policy\|5.0.0` 
 
 ### Code Mappings
 

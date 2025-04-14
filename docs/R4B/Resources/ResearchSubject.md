@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:39 PM
 
 ### ResearchSubject
 
@@ -41,7 +41,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ResearchSubject](/docs/R3/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `703`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchSubject](/docs/R4/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchSubject](/docs/R4B/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1036`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1265`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchSubject](/docs/R5/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|5.0.0` 
+| | | [ResearchSubject](/docs/R3/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `703`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchSubject](/docs/R4/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchSubject](/docs/R4B/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1036`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1265`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchSubject](/docs/R5/Resources/ResearchSubject.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchSubject\|5.0.0` 
 
 ### Element Mappings
 

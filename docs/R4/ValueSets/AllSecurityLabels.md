@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### All Security Labels
 
@@ -35,7 +35,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [All Security Labels](/docs/R2/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `53`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [All Security Labels](/docs/R3/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [All Security Labels](/docs/R4/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [All Security Labels](/docs/R2/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `53`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [All Security Labels](/docs/R3/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [All Security Labels](/docs/R4/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 
@@ -521,17 +521,5 @@ All codes from this value set are listed while other value sets only show conten
 | `Title38Section7332`| _Equivalent_ <br/>(288/1661)| `Title38Section7332`| →→→→ _Equivalent_ →→→→ <br/>(3387)<hr/>←←←← __ ←←←← <br/>() | **`Title38Section7332`**| | | | | 
 | `Title38Section7332`| _Equivalent_ <br/>(288/1661)| `Title38Section7332`| →→→→ _Equivalent_ →→→→ <br/>(3387)<hr/>←←←← __ ←←←← <br/>() | **`Title38Section7332`**| | | | | 
 | | | | | **`_ActUSPrivacyLaw`**| | | | | 
-| <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ActCode`
-| | | | | **`_ActInformationSensitivityPolicy`**| | | | | 
-| | | | | **`_EntitySensitivityPolicyType`**| | | | | 
-| | | | | **`_RoleInformationSensitivityPolicy`**| | | | | 
-| | | | | **`_InformationSensitivityPolicy`**| | | | | 
-| <td colspan="8">**R4** System: `http://terminology.hl7.org/CodeSystem/v3-ObservationValue`
-| | | | | **`_SECALTINTOBV`**| | | | | 
-| | | | | **`_SECDATINTOBV`**| | | | | 
-| | | | | **`_SECINTCONOBV`**| | | | | 
-| | | | | **`_SECINTPRVABOBV`**| | | | | 
-| | | | | **`_SECINTPRVRBOBV`**| | | | | 
-| | | | | **`_SECINTPRVOBV`**| | | | | 
-| *162 of 237 codes used* <br/>remaining codes:<br/>`_ActInformationSensitivityPolicy`, `_EntitySensitivityPolicyType`, `_InformationSensitivityPolicy`, `_RoleInformationSensitivityPolicy`, `_ActUSPrivacyLaw`, `B`, `C`, `D`, `ETH`, `HIV`, `I`, `PSY`, `S`, `SDV`, `T`, `_Confidentiality`, `_ConfidentialityByAccessKind`, `_ConfidentialityByInfoType`, `_ConfidentialityModifiers`, `_SECALTINTOBV`, `_SECDATINTOBV`, `_SECINTCONOBV`, `_SECINTPRVABOBV`, `_SECINTPRVOBV`, `_SECINTPRVRBOBV`| | *169 of 170 codes used* <br/>remaining codes:<br/>`SOC`, `_ActUSPrivacyLaw`| | *217 of 273 codes used* <br/>remaining codes:<br/>| | | | 
+| *162 of 237 codes used* <br/>remaining codes:<br/>`_ActUSPrivacyLaw`, `B`, `C`, `D`, `ETH`, `HIV`, `I`, `PSY`, `S`, `SDV`, `T`, `_Confidentiality`| | *169 of 170 codes used* <br/>remaining codes:<br/>`SOC`, `_ActUSPrivacyLaw`| | *207 of 273 codes used* <br/>remaining codes:<br/>| | | | 
 

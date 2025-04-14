@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:02 PM
+Generated at Monday, April 14, 2025 6:17:50 PM
 
 ### ChargeItem
 
@@ -64,7 +64,7 @@ Generated at Friday, April 4, 2025 2:59:02 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ChargeItem](/docs/R3/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `625`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R4/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R4B/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1171`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R5/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|5.0.0` 
+| | | [ChargeItem](/docs/R3/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `625`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R4/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R4B/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1171`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R5/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|5.0.0` 
 
 ### Element Mappings
 
@@ -106,8 +106,8 @@ All elements from this structure are listed while other structures only show con
 | | | `ChargeItem.quantity`| _Equivalent_<br/>(11158/11159)| `ChargeItem.quantity`| _Equivalent_<br/>(22823/22824)| `ChargeItem.quantity`| _Equivalent_<br/>(37743/37744)| **`ChargeItem.quantity`**
 | | | `ChargeItem.bodysite`| _Equivalent_<br/>(11160/11161)| `ChargeItem.bodysite`| _Equivalent_<br/>(22825/22826)| `ChargeItem.bodysite`| _Equivalent_<br/>(37745/37746)| **`ChargeItem.bodysite`**
 | | | | | | | | | **`ChargeItem.unitPriceComponent`**
-| | | `ChargeItem`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11119)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11120)| `ChargeItem`| _Equivalent_<br/>(22769/22770)| `ChargeItem`| →→→→ _Equivalent_ →→→→ <br/>(49921)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(37748)| **`ChargeItem.totalPriceComponent`**
-| | | `ChargeItem.priceOverride`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11164)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11165)| `ChargeItem.priceOverride`| _Equivalent_<br/>(22829/22830)| `ChargeItem.priceOverride`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1735)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(37748)| **`ChargeItem.totalPriceComponent`**
+| | | `ChargeItem`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11119)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11120)| `ChargeItem`| _Equivalent_<br/>(22769/22770)| `ChargeItem`| →→→→ _Equivalent_ →→→→ <br/>(49921)<hr/>←←←← __ ←←←← <br/>()| **`ChargeItem.totalPriceComponent`**
+| | | `ChargeItem.priceOverride`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(11164)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(11165)| `ChargeItem.priceOverride`| _Equivalent_<br/>(22829/22830)| `ChargeItem.priceOverride`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1735)<hr/>←←←← __ ←←←← <br/>()| **`ChargeItem.totalPriceComponent`**
 | | | `ChargeItem.overrideReason`| _Equivalent_<br/>(11166/11167)| `ChargeItem.overrideReason`| _Equivalent_<br/>(22831/22832)| `ChargeItem.overrideReason`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(37749)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(37750)| **`ChargeItem.overrideReason`**
 | | | `ChargeItem.enterer`| →→→→ _RelatedTo_ →→→→ <br/>(11168)<hr/>←←←← _RelatedTo_ ←←←← <br/>(11169)| `ChargeItem.enterer`| _Equivalent_<br/>(22833/22834)| `ChargeItem.enterer`| _Equivalent_<br/>(37751/37752)| **`ChargeItem.enterer`**
 | | | `ChargeItem.enteredDate`| _Equivalent_<br/>(11170/11171)| `ChargeItem.enteredDate`| _Equivalent_<br/>(22835/22836)| `ChargeItem.enteredDate`| _Equivalent_<br/>(37753/37754)| **`ChargeItem.enteredDate`**

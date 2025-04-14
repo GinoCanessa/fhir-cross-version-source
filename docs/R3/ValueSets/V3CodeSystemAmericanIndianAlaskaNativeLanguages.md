@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System AmericanIndianAlaskaNativeLanguages
 
@@ -31,102 +31,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 
 | System | Code | Display |
 | ------ | ---- | ------- |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Abenakian` | Abenakian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Aleut` | Aleut |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Algic` | Algic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Algonquian` | Algonquian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Apachean` | Apachean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_ArapahoGrosVentre` | ArapahoGrosVentre |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Arapahoan` | Arapahoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Athapaskan` | Athapaskan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_AthapaskanEyak` | AthapaskanEyak |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Caddoan` | Caddoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Cahitan` | Cahitan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CaliforniaAthapaskan` | CaliforniaAthapaskan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CentralAlaskaYukon` | CentralAlaskaYukon |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CentralMuskogean` | CentralMuskogean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CentralNumic` | CentralNumic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CentralSalish` | CentralSalish |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Chimakuan` | Chimakuan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Chinookan` | Chinookan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_ChiwereWinnebago` | ChiwereWinnebago |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CochimiYuman` | CochimiYuman |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Coosan` | Coosan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Cree` | Cree |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_CreeMontagnais` | CreeMontagnais |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Cupan` | Cupan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Dakotan` | Dakotan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Delawaran` | Delawaran |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_DeltaCalifornia` | DeltaCalifornia |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Dhegiha` | Dhegiha |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Diegueno` | Diegueno |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_EasternAlgonquin` | EasternAlgonquin |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_EasternApachean` | EasternApachean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_EasternMiwok` | EasternMiwok |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_EskimoAleut` | EskimoAleut |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Eskimoan` | Eskimoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Hokan` | Hokan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_InteriorSalish` | InteriorSalish |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_InuitInupiaq` | InuitInupiaq |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Iroquoian` | Iroquoian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Kalapuyan` | Kalapuyan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Keresan` | Keresan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_KiowaTanoan` | KiowaTanoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_KoyukonIngalik` | KoyukonIngalik |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_KutchinHan` | KutchinHan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Maiduan` | Maiduan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_MississippiValley` | MississippiValley |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_MissouriRiver` | MissouriRiver |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Miwokan` | Miwokan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Muskogean` | Muskogean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Nadene` | Nadene |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Nootkan` | Nootkan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_NorthernCaddoan` | NorthernCaddoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_NorthernIroquoian` | NorthernIroquoian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Numic` | Numic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Ojibwayan` | Ojibwayan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_OregonAthapaskan` | OregonAthapaskan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_PacificCoastAthapaskan` | PacificCoastAthapaskan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Pai` | Pai |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Palaihnihan` | Palaihnihan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Penutian` | Penutian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Pidgin` | Pidgin |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_PlateauPenutian` | PlateauPenutian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Pomoan` | Pomoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Ritwan` | Ritwan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_River` | River |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Sahaptian` | Sahaptian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Salishan` | Salishan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SaukFoxKickapoo` | SaukFoxKickapoo |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SerranoGabrielino` | SerranoGabrielino |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Shasta` | Shasta |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Siouan` | Siouan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SiouanCatawba` | SiouanCatawba |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SirenikskiYupik` | SirenikskiYupik |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SouthernAlaska` | SouthernAlaska |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SouthernCaddoan` | SouthernCaddoan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_SouthernNumic` | SouthernNumic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Takelman` | Takelman |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Takic` | Takic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Tanana` | Tanana |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_TananaTutchone` | TananaTutchone |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Taracahitan` | Taracahitan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Tepiman` | Tepiman |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Tiwa` | Tiwa |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Tsamosan` | Tsamosan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Tsimshianic` | Tsimshianic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_UpperChinook` | UpperChinook |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Utian` | Utian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_UtoAztecan` | UtoAztecan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Wakashan` | Wakashan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_WesternApachean` | WesternApachean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_WesternMiwok` | WesternMiwok |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_WesternMuskogean` | WesternMuskogean |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_WesternNumic` | WesternNumic |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Wintuan` | Wintuan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Yokutsan` | Yokutsan |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Yukian` | Yukian |
-| `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `_Yuman` | Yuman |
 | `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `x-AAQ` | Eastern Abenaki |
 | `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `x-ABE` | Western Abenaki |
 | `http://hl7.org/fhir/v3/AmericanIndianAlaskaNativeLanguages` | `x-ACH` | Achumawi |

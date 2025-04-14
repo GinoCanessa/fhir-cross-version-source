@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### GroupType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [GroupType](/docs/R2/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `81`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `237`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GroupType](/docs/R3/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `421`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `643`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GroupType](/docs/R4/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1526`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GroupType](/docs/R4B/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `894`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1155`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GroupType](/docs/R5/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|5.0.0` 
+| [GroupType](/docs/R2/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `81`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `237`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [GroupType](/docs/R3/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `421`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `643`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [GroupType](/docs/R4/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1525`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1526`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GroupType](/docs/R4B/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `894`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1155`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GroupType](/docs/R5/ValueSets/GroupType.md)<br/> `http://hl7.org/fhir/ValueSet/group-type\|5.0.0` 
 
 ### Code Mappings
 

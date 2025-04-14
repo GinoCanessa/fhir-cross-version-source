@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### FHIRSubstanceStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [FHIRSubstanceStatus](/docs/R3/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `518`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `739`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R4/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1753`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1754`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R4B/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `998`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1259`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R5/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|5.0.0` 
+| | | [FHIRSubstanceStatus](/docs/R3/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `518`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `739`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R4/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1753`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1754`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R4B/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `998`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1259`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FHIRSubstanceStatus](/docs/R5/ValueSets/FHIRSubstanceStatus.md)<br/> `http://hl7.org/fhir/ValueSet/substance-status\|5.0.0` 
 
 ### Code Mappings
 

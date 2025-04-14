@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### Currencies
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [Currencies](/docs/R4/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1461`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1462`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Currencies](/docs/R4B/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `923`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1184`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Currencies](/docs/R5/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|5.0.0` 
+| | | | | [Currencies](/docs/R4/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1461`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1462`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Currencies](/docs/R4B/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `923`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1184`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [Currencies](/docs/R5/ValueSets/Currencies.md)<br/> `http://hl7.org/fhir/ValueSet/currencies\|5.0.0` 
 
 ### Code Mappings
 

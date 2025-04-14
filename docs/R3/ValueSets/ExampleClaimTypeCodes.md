@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### Example Claim Type Codes
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ClaimType](/docs/R2/ValueSets/ClaimType.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type-link\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `20`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `179`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Example Claim Type Codes](/docs/R3/ValueSets/ExampleClaimTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `346`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `569`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ClaimTypeCodes](/docs/R4/ValueSets/ClaimTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [ClaimType](/docs/R2/ValueSets/ClaimType.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type-link\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `20`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `179`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Example Claim Type Codes](/docs/R3/ValueSets/ExampleClaimTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `346`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `569`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ClaimTypeCodes](/docs/R4/ValueSets/ClaimTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/claim-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

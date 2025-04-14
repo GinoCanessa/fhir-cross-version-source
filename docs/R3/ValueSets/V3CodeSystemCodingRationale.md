@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System CodingRationale
 
@@ -31,11 +31,8 @@ This Value Set resulted in no projection (no mappings to other packages).
 
 | System | Code | Display |
 | ------ | ---- | ------- |
-| `http://hl7.org/fhir/v3/CodingRationale` | `HL7` | HL7 Specified or Mandated |
 | `http://hl7.org/fhir/v3/CodingRationale` | `O` | originally produced code |
 | `http://hl7.org/fhir/v3/CodingRationale` | `OR` | original and required |
 | `http://hl7.org/fhir/v3/CodingRationale` | `P` | post-coded |
 | `http://hl7.org/fhir/v3/CodingRationale` | `PR` | post-coded and required |
 | `http://hl7.org/fhir/v3/CodingRationale` | `R` | required |
-| `http://hl7.org/fhir/v3/CodingRationale` | `SH` | Both HL7 mandated and the original code |
-| `http://hl7.org/fhir/v3/CodingRationale` | `SRC` | Source (or original) code |

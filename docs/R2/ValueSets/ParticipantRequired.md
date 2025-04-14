@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### ParticipantRequired
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ParticipantRequired](/docs/R2/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `10`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `169`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ParticipantRequired](/docs/R3/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `335`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `557`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ParticipantRequired](/docs/R4/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1647`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1648`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ParticipantRequired](/docs/R4B/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| [ParticipantRequired](/docs/R2/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `10`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `169`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ParticipantRequired](/docs/R3/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `335`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `557`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ParticipantRequired](/docs/R4/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1647`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1648`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ParticipantRequired](/docs/R4B/ValueSets/ParticipantRequired.md)<br/> `http://hl7.org/fhir/ValueSet/participantrequired\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

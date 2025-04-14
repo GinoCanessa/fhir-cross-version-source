@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System HL7UpdateMode
 
@@ -46,4 +46,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `REF` | Reference |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `U` | Unknown |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `V` | Verify |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `_SetUpdateMode` | SetUpdateMode |

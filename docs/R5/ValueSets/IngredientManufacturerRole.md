@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### IngredientManufacturerRole
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [IngredientManufacturerRole](/docs/R4B/ValueSets/IngredientManufacturerRole.md)<br/> `http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `905`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1166`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [IngredientManufacturerRole](/docs/R5/ValueSets/IngredientManufacturerRole.md)<br/> `http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role\|5.0.0` 
+| | | | | | | [IngredientManufacturerRole](/docs/R4B/ValueSets/IngredientManufacturerRole.md)<br/> `http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `905`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1166`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [IngredientManufacturerRole](/docs/R5/ValueSets/IngredientManufacturerRole.md)<br/> `http://hl7.org/fhir/ValueSet/ingredient-manufacturer-role\|5.0.0` 
 
 ### Code Mappings
 

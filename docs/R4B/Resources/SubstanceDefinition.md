@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:57 PM
+Generated at Monday, April 14, 2025 6:17:38 PM
 
 ### SubstanceDefinition
 
@@ -138,7 +138,7 @@ Generated at Friday, April 4, 2025 2:58:57 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [SubstanceDefinition](/docs/R4B/Resources/SubstanceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubstanceDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1050`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1279`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SubstanceDefinition](/docs/R5/Resources/SubstanceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubstanceDefinition\|5.0.0` 
+| | | | | | | [SubstanceDefinition](/docs/R4B/Resources/SubstanceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubstanceDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1050`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1279`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SubstanceDefinition](/docs/R5/Resources/SubstanceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/SubstanceDefinition\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System Confidentiality
 
@@ -31,23 +31,10 @@ This Value Set resulted in no projection (no mappings to other packages).
 
 | System | Code | Display |
 | ------ | ---- | ------- |
-| `http://hl7.org/fhir/v3/Confidentiality` | `B` | business |
-| `http://hl7.org/fhir/v3/Confidentiality` | `C` | celebrity |
-| `http://hl7.org/fhir/v3/Confidentiality` | `D` | clinician |
-| `http://hl7.org/fhir/v3/Confidentiality` | `ETH` | substance abuse related |
-| `http://hl7.org/fhir/v3/Confidentiality` | `HIV` | HIV related |
-| `http://hl7.org/fhir/v3/Confidentiality` | `I` | individual |
 | `http://hl7.org/fhir/v3/Confidentiality` | `L` | low |
 | `http://hl7.org/fhir/v3/Confidentiality` | `M` | moderate |
 | `http://hl7.org/fhir/v3/Confidentiality` | `N` | normal |
-| `http://hl7.org/fhir/v3/Confidentiality` | `PSY` | psychiatry relate |
 | `http://hl7.org/fhir/v3/Confidentiality` | `R` | restricted |
-| `http://hl7.org/fhir/v3/Confidentiality` | `S` | sensitive |
-| `http://hl7.org/fhir/v3/Confidentiality` | `SDV` | sexual and domestic violence related |
-| `http://hl7.org/fhir/v3/Confidentiality` | `T` | taboo |
 | `http://hl7.org/fhir/v3/Confidentiality` | `U` | unrestricted |
 | `http://hl7.org/fhir/v3/Confidentiality` | `V` | very restricted |
 | `http://hl7.org/fhir/v3/Confidentiality` | `_Confidentiality` | Confidentiality |
-| `http://hl7.org/fhir/v3/Confidentiality` | `_ConfidentialityByAccessKind` | ConfidentialityByAccessKind |
-| `http://hl7.org/fhir/v3/Confidentiality` | `_ConfidentialityByInfoType` | ConfidentialityByInfoType |
-| `http://hl7.org/fhir/v3/Confidentiality` | `_ConfidentialityModifiers` | ConfidentialityModifiers |

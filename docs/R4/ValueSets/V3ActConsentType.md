@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.ActConsentType
 
@@ -40,4 +40,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RESEARCH` | research information access |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RSDID` | de-identified information access |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RSREID` | re-identifiable information access |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActConsentType` | ActConsentType |

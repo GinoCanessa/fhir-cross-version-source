@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.AcknowledgementDetailCode
 
@@ -58,4 +58,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-AcknowledgementDetailCode` | `SYN112` | Number of attribute repetitions exceeds limit |
 | `http://terminology.hl7.org/CodeSystem/v3-AcknowledgementDetailCode` | `SYN113` | Formal constraint violation |
 | `http://terminology.hl7.org/CodeSystem/v3-AcknowledgementDetailCode` | `SYN114` | Insufficient repetitions |
-| `http://terminology.hl7.org/CodeSystem/v3-AcknowledgementDetailCode` | `_AcknowledgementDetailNotSupportedCode` | AcknowledgementDetailNotSupportedCode |

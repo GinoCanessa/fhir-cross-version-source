@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### NoteType
 
@@ -31,7 +31,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [NoteType](/docs/R2/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `22`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `181`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [NoteType](/docs/R3/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `348`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `571`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [NoteType](/docs/R4/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [NoteType](/docs/R4B/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `796`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1057`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [NoteType](/docs/R5/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|5.0.0` 
+| [NoteType](/docs/R2/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `22`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `181`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [NoteType](/docs/R3/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `348`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `571`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [NoteType](/docs/R4/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [NoteType](/docs/R4B/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `796`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1057`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [NoteType](/docs/R5/ValueSets/NoteType.md)<br/> `http://hl7.org/fhir/ValueSet/note-type\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System ActCode
 
@@ -176,7 +176,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `AUTOATTCH` | auto attachment |
 | `http://hl7.org/fhir/v3/ActCode` | `AUTOPOL` | automobile |
 | `http://hl7.org/fhir/v3/ActCode` | `AVAILABLE` | Available Volume |
-| `http://hl7.org/fhir/v3/ActCode` | `ActTrustPolicyType` | trust policy |
 | `http://hl7.org/fhir/v3/ActCode` | `B` | business information sensitivity |
 | `http://hl7.org/fhir/v3/ActCode` | `BDYFLDTRNS` | body fluid contact transmission |
 | `http://hl7.org/fhir/v3/ActCode` | `BLDTRNS` | blood borne transmission |
@@ -870,11 +869,8 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `SECINTCONOBS` | security integrity confidence observation |
 | `http://hl7.org/fhir/v3/ActCode` | `SECINTOBS` | security integrity observation |
 | `http://hl7.org/fhir/v3/ActCode` | `SECINTPRVABOBS` | security integrity provenance asserted by observation |
-| `http://hl7.org/fhir/v3/ActCode` | `SECINTPRVOBS` | security integrity provenance observation |
 | `http://hl7.org/fhir/v3/ActCode` | `SECINTPRVRBOBS` | security integrity provenance reported by observation |
 | `http://hl7.org/fhir/v3/ActCode` | `SECINTSTOBS` | security integrity status observation |
-| `http://hl7.org/fhir/v3/ActCode` | `SECOBS` | SecurityObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `SECTRSTOBS` | SECTRSTOBS |
 | `http://hl7.org/fhir/v3/ActCode` | `SENDAPP` | sending application |
 | `http://hl7.org/fhir/v3/ActCode` | `SESS` | sessional funding |
 | `http://hl7.org/fhir/v3/ActCode` | `SEV` | Severity Observation |
@@ -988,119 +984,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `X` | Container Unavailable |
 | `http://hl7.org/fhir/v3/ActCode` | `XRAY` | x-ray |
 | `http://hl7.org/fhir/v3/ActCode` | `YEAR` | year |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAccountCode` | ActAccountCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdjudicationCode` | ActAdjudicationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdjudicationGroupCode` | ActAdjudicationGroupCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdjudicationResultActionCode` | ActAdjudicationResultActionCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdministrativeAuthorizationDetectedIssueCode` | ActAdministrativeAuthorizationDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdministrativeDetectedIssueCode` | ActAdministrativeDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdministrativeDetectedIssueManagementCode` | ActAdministrativeDetectedIssueManagementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdministrativeRuleDetectedIssueCode` | ActAdministrativeRuleDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActBillableModifierCode` | ActBillableModifierCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActBillableServiceCode` | ActBillableServiceCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActBillingArrangementCode` | ActBillingArrangementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActBoundedROICode` | ActBoundedROICode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCareProvisionCode` | act care provision |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActClaimAttachmentCategoryCode` | ActClaimAttachmentCategoryCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActConsentDirective` | ActConsentDirective |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActConsentType` | ActConsentType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActContainerRegistrationCode` | ActContainerRegistrationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActControlVariable` | ActControlVariable |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageAuthorizationConfirmationCode` | ActCoverageAuthorizationConfirmationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageConfirmationCode` | ActCoverageConfirmationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageEligibilityConfirmationCode` | ActCoverageEligibilityConfirmationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageLimitCode` | ActCoverageLimitCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageQuantityLimitCode` | ActCoverageQuantityLimitCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageTypeCode` | ActCoverageTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoveredPartyLimitCode` | ActCoveredPartyLimitCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCredentialedCareCode` | act credentialed care |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCredentialedCareProvisionPersonCode` | act credentialed care provision peron |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCredentialedCareProvisionProgramCode` | act credentialed care provision program |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActDetectedIssueManagementCode` | ActDetectedIssueManagementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActEncounterAccommodationCode` | ActEncounterAccommodationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActEncounterCode` | ActEncounterCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActExposureCode` | ActExposureCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActFinancialTransactionCode` | ActFinancialTransactionCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActHealthInsuranceTypeCode` | ActHealthInsuranceTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActIncidentCode` | ActIncidentCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInformationAccessCode` | ActInformationAccessCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInformationAccessContextCode` | ActInformationAccessContextCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInformationCategoryCode` | ActInformationCategoryCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInformationSensitivityPolicy` | ActInformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInsurancePolicyCode` | ActInsurancePolicyCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInsuranceTypeCode` | ActInsuranceTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceAdjudicationPaymentCode` | ActInvoiceAdjudicationPaymentCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceAdjudicationPaymentGroupCode` | ActInvoiceAdjudicationPaymentGroupCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceAdjudicationPaymentSummaryCode` | ActInvoiceAdjudicationPaymentSummaryCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailClinicalProductCode` | ActInvoiceDetailClinicalProductCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailClinicalServiceCode` | ActInvoiceDetailClinicalServiceCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailCode` | ActInvoiceDetailCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailDrugProductCode` | ActInvoiceDetailDrugProductCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailGenericAdjudicatorCode` | ActInvoiceDetailGenericAdjudicatorCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailGenericCode` | ActInvoiceDetailGenericCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailGenericModifierCode` | ActInvoiceDetailGenericModifierCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailGenericProviderCode` | ActInvoiceDetailGenericProviderCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailPreferredAccommodationCode` | ActInvoiceDetailPreferredAccommodationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceDetailTaxCode` | ActInvoiceDetailTaxCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceElementCode` | ActInvoiceElementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceElementSummaryCode` | ActInvoiceElementSummaryCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceGroupCode` | ActInvoiceGroupCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceInterGroupCode` | ActInvoiceInterGroupCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceOverrideCode` | ActInvoiceOverrideCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInvoiceRootGroupCode` | ActInvoiceRootGroupCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActListCode` | ActListCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActMedicalServiceCode` | ActMedicalServiceCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActMedicationTherapyDurationWorkingListCode` | act medication therapy duration working list |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActMonitoringProtocolCode` | ActMonitoringProtocolCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActNonObservationIndicationCode` | ActNonObservationIndicationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActObservationList` | ActObservationList |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActObservationVerificationType` | act observation verification |
 | `http://hl7.org/fhir/v3/ActCode` | `_ActPatientAnnotationType` | ActPatientAnnotationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActPatientTransportationModeCode` | ActPatientTransportationModeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActPaymentCode` | ActPaymentCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActPharmacySupplyType` | ActPharmacySupplyType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActPolicyType` | ActPolicyType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActPrivacyPolicy` | ActPrivacyPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActProcedureCode` | ActProcedureCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActProductAcquisitionCode` | ActProductAcquisitionCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActProgramTypeCode` | ActProgramTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActSpecObsCode` | ActSpecObsCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActSpecimenTransportCode` | ActSpecimenTransportCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActSpecimenTreatmentCode` | ActSpecimenTreatmentCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActSubstanceAdministrationCode` | ActSubstanceAdministrationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActSuppliedItemDetectedIssueCode` | ActSuppliedItemDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActTaskCode` | ActTaskCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActTherapyDurationWorkingListCode` | ActTherapyDurationWorkingListCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActTransportationModeCode` | ActTransportationModeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_AdministrationDetectedIssueCode` | AdministrationDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_AnnotationType` | AnnotationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_AppropriatenessDetectedIssueCode` | AppropriatenessDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_AuthorizationIssueManagementCode` | Authorization Issue Management Code |
-| `http://hl7.org/fhir/v3/ActCode` | `_CaseTransmissionMode` | case transmission mode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ECGObservationSeriesType` | ECGObservationSeriesType |
-| `http://hl7.org/fhir/v3/ActCode` | `_EntitySensitivityPolicyType` | EntityInformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_FDALabelData` | FDALabelData |
-| `http://hl7.org/fhir/v3/ActCode` | `_GeneticObservationType` | GeneticObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_HL7AccommodationCode` | HL7AccommodationCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_HL7DefinedActCodes` | HL7DefinedActCodes |
 | `http://hl7.org/fhir/v3/ActCode` | `_ImmunizationObservationType` | ImmunizationObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_IndividualCaseSafetyReportType` | Individual Case Safety Report Type |
-| `http://hl7.org/fhir/v3/ActCode` | `_InformationSensitivityPolicy` | InformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_InteractionDetectedIssueCode` | InteractionDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_InvoiceElementAdjudicated` | InvoiceElementAdjudicated |
-| `http://hl7.org/fhir/v3/ActCode` | `_InvoiceElementPaid` | InvoiceElementPaid |
-| `http://hl7.org/fhir/v3/ActCode` | `_InvoiceElementSubmitted` | InvoiceElementSubmitted |
-| `http://hl7.org/fhir/v3/ActCode` | `_LOINCObservationActContextAgeType` | LOINCObservationActContextAgeType |
-| `http://hl7.org/fhir/v3/ActCode` | `_MedicationObservationType` | MedicationObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ObservationIssueTriggerCodedObservationType` | ObservationIssueTriggerCodedObservationType |
 | `http://hl7.org/fhir/v3/ActCode` | `_ObservationQualityMeasureAttribute` | ObservationQualityMeasureAttribute |
-| `http://hl7.org/fhir/v3/ActCode` | `_ObservationSequenceType` | ObservationSequenceType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ObservationSeriesType` | ObservationSeriesType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ObservationType` | ObservationType |
 | `http://hl7.org/fhir/v3/ActCode` | `_PatientImmunizationRelatedObservationType` | PatientImmunizationRelatedObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_PopulationInclusionObservationType` | PopulationInclusionObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_PreferenceObservationType` | _PreferenceObservationType |
-| `http://hl7.org/fhir/v3/ActCode` | `_ROIOverlayShape` | ROIOverlayShape |
-| `http://hl7.org/fhir/v3/ActCode` | `_RoleInformationSensitivityPolicy` | RoleInformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_SupplyDetectedIssueCode` | SupplyDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_TimingDetectedIssueCode` | TimingDetectedIssueCode |

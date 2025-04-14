@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### v3 Code System EntityDeterminer
 
@@ -35,4 +35,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/EntityDeterminer` | `GROUPKIND` | described group |
 | `http://hl7.org/fhir/v3/EntityDeterminer` | `INSTANCE` | specific |
 | `http://hl7.org/fhir/v3/EntityDeterminer` | `KIND` | described |
-| `http://hl7.org/fhir/v3/EntityDeterminer` | `QUANTIFIED_KIND` | described quantified |

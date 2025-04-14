@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### orientationType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [orientationType](/docs/R4/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1645`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1646`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [orientationType](/docs/R4B/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `931`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OrientationType](/docs/R5/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|5.0.0` 
+| | | | | [orientationType](/docs/R4/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1645`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1646`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [orientationType](/docs/R4B/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `931`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [OrientationType](/docs/R5/ValueSets/OrientationType.md)<br/> `http://hl7.org/fhir/ValueSet/orientation-type\|5.0.0` 
 
 ### Code Mappings
 

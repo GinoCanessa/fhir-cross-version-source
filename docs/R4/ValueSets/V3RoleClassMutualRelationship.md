@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.RoleClassMutualRelationship
 
@@ -70,4 +70,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `STD` | student |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `SUBSCR` | subscriber |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `UNDWRT` | underwriter |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassRelationshipFormal` | RoleClassRelationshipFormal |

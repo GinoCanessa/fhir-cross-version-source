@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Detected Issue Mitigation Action
 
@@ -56,6 +56,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `8` | Other Action Taken |
 | `http://hl7.org/fhir/v3/ActCode` | `9` | Instituted Ongoing Monitoring Program |
 | `http://hl7.org/fhir/v3/ActCode` | `EMAUTH` | emergency authorization override |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActAdministrativeDetectedIssueManagementCode` | ActAdministrativeDetectedIssueManagementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActDetectedIssueManagementCode` | ActDetectedIssueManagementCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_AuthorizationIssueManagementCode` | Authorization Issue Management Code |

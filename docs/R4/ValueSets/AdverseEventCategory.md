@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### AdverseEventCategory
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [AdverseEventCategory](/docs/R3/ValueSets/AdverseEventCategory.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-category\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `326`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `548`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEventCategory](/docs/R4/ValueSets/AdverseEventCategory.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-category\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [AdverseEventCategory](/docs/R3/ValueSets/AdverseEventCategory.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-category\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `326`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `548`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdverseEventCategory](/docs/R4/ValueSets/AdverseEventCategory.md)<br/> `http://hl7.org/fhir/ValueSet/adverse-event-category\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

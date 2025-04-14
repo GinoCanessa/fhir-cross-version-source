@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### NutritionOrderStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:31 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [NutritionOrderStatus](/docs/R2/ValueSets/NutritionOrderStatus.md)<br/> `http://hl7.org/fhir/ValueSet/nutrition-order-status\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `102`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `258`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [NutritionOrderStatus](/docs/R3/ValueSets/NutritionOrderStatus.md)<br/> `http://hl7.org/fhir/ValueSet/nutrition-request-status\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `453`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `677`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestStatus](/docs/R4/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1703`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1704`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestStatus](/docs/R4B/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `800`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestStatus](/docs/R5/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|5.0.0` 
+| [NutritionOrderStatus](/docs/R2/ValueSets/NutritionOrderStatus.md)<br/> `http://hl7.org/fhir/ValueSet/nutrition-order-status\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `102`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `258`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [NutritionOrderStatus](/docs/R3/ValueSets/NutritionOrderStatus.md)<br/> `http://hl7.org/fhir/ValueSet/nutrition-request-status\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `453`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `677`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestStatus](/docs/R4/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1703`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1704`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestStatus](/docs/R4B/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `800`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [RequestStatus](/docs/R5/ValueSets/RequestStatus.md)<br/> `http://hl7.org/fhir/ValueSet/request-status\|5.0.0` 
 
 ### Code Mappings
 
@@ -42,7 +42,7 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/nutrition-order-status`
 | **`proposed`**| _Equivalent_ <br/>(833/2205)| `proposed`| | | | | | | 
-| **`draft`**| _Equivalent_ <br/>(834/2201)| `draft`| →→→→ _Equivalent_ →→→→ <br/>(4024)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6358) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
+| **`draft`**| _Equivalent_ <br/>(834/2201)| `draft`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(4024)<hr/>←←←← _Equivalent_ ←←←← <br/>(6358) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
 | **`planned`**| _Equivalent_ <br/>(837/2204)| `planned`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(4027)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(6359) | `draft`| _Equivalent_ <br/>(17008/17009)| `draft`| _Equivalent_ <br/>(7562/9832)| `draft`
 | **`requested`**| _Equivalent_ <br/>(832/2206)| `requested`| | | | | | | 
 | **`active`**| _Equivalent_ <br/>(835/2198)| `active`| _Equivalent_ <br/>(4021/6356)| `active`| _Equivalent_ <br/>(17010/17011)| `active`| _Equivalent_ <br/>(7563/9833)| `active`

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.orderableDrugForm
 
@@ -183,12 +183,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `VAGTAB` | Vaginal Tablet |
 | `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `VGELAPL` | Vaginal Gel with Applicator |
 | `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `WAFER` | Wafer |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_AdministrableDrugForm` | AdministrableDrugForm |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_DispensableDrugForm` | DispensableDrugForm |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_GasDrugForm` | GasDrugForm |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_GasLiquidMixture` | GasLiquidMixture |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_GasSolidSpray` | GasSolidSpray |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_Liquid` | Liquid |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_LiquidLiquidEmulsion` | LiquidLiquidEmulsion |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_LiquidSolidSuspension` | LiquidSolidSuspension |
-| `http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm` | `_SolidDrugForm` | SolidDrugForm |

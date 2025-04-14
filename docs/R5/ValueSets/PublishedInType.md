@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### PublishedInType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [PublishedInType](/docs/R4B/ValueSets/PublishedInType.md)<br/> `http://hl7.org/fhir/ValueSet/published-in-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `842`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1103`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PublishedInType](/docs/R5/ValueSets/PublishedInType.md)<br/> `http://hl7.org/fhir/ValueSet/published-in-type\|5.0.0` 
+| | | | | | | [PublishedInType](/docs/R4B/ValueSets/PublishedInType.md)<br/> `http://hl7.org/fhir/ValueSet/published-in-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `842`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1103`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PublishedInType](/docs/R5/ValueSets/PublishedInType.md)<br/> `http://hl7.org/fhir/ValueSet/published-in-type\|5.0.0` 
 
 ### Code Mappings
 

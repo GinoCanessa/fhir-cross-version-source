@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:39 PM
+Generated at Monday, April 14, 2025 6:17:23 PM
 
 ### Linkage
 
@@ -41,7 +41,7 @@ Generated at Friday, April 4, 2025 2:58:39 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Linkage](/docs/R3/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `473`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `667`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Linkage](/docs/R4/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1523`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Linkage](/docs/R4B/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `996`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1225`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Linkage](/docs/R5/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|5.0.0` 
+| | | [Linkage](/docs/R3/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `473`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `667`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Linkage](/docs/R4/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1523`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Linkage](/docs/R4B/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `996`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1225`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Linkage](/docs/R5/Resources/Linkage.md)<br/> `http://hl7.org/fhir/StructureDefinition/Linkage\|5.0.0` 
 
 ### Element Mappings
 

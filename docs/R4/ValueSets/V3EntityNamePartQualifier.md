@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.EntityNamePartQualifier
 
@@ -46,7 +46,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `NB` | nobility |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `POPUL` | TargetPopulationName |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `PR` | professional |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `PharmaceuticalEntityNamePartQualifiers` | PharmaceuticalEntityNamePartQualifiers |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `SCI` | scientific name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `SP` | spouse |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `STR` | strength name |
@@ -55,8 +54,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `TMK` | trademark name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `USE` | intended use name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `VV` | voorvoegsel |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `_OrganizationNamePartQualifier` | OrganizationNamePartQualifier |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `_PersonNamePartAffixTypes` | PersonNamePartAffixTypes |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `_PersonNamePartChangeQualifier` | PersonNamePartChangeQualifier |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `_PersonNamePartMiscQualifier` | PersonNamePartMiscQualifier |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier` | `_PersonNamePartQualifier` | PersonNamePartQualifier |

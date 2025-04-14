@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### Example-inactive
 
@@ -31,7 +31,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 
 | System | Code | Display |
 | ------ | ---- | ------- |
-| `http://hl7.org/fhir/v3/ActMood` | `CRT` | criterion |
 | `http://hl7.org/fhir/v3/ActMood` | `EXPEC` | expectation |
 | `http://hl7.org/fhir/v3/ActMood` | `GOL` | goal |
 | `http://hl7.org/fhir/v3/ActMood` | `OPT` | option |

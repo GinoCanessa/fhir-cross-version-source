@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System QueryParameterValue
 
@@ -43,7 +43,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/QueryParameterValue` | `ONR` | orders without results |
 | `http://hl7.org/fhir/v3/QueryParameterValue` | `OWR` | orders with results |
 | `http://hl7.org/fhir/v3/QueryParameterValue` | `R` | Dispensed with remaining fills |
-| `http://hl7.org/fhir/v3/QueryParameterValue` | `_DispenseQueryFilterCode` | dispense query filter code |
-| `http://hl7.org/fhir/v3/QueryParameterValue` | `_OrderFilterCode` | _OrderFilterCode |
-| `http://hl7.org/fhir/v3/QueryParameterValue` | `_PrescriptionDispenseFilterCode` | Prescription Dispense Filter Code |
-| `http://hl7.org/fhir/v3/QueryParameterValue` | `_QueryParameterValue` | QueryParameterValue |

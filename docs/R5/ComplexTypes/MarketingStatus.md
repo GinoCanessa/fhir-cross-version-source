@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### MarketingStatus
 
@@ -33,7 +33,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [MarketingStatus](/docs/R4/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1349`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MarketingStatus](/docs/R4B/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1653`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1654`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MarketingStatus](/docs/R5/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|5.0.0` 
+| | | | | [MarketingStatus](/docs/R4/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1349`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MarketingStatus](/docs/R4B/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1653`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1654`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MarketingStatus](/docs/R5/ComplexTypes/MarketingStatus.md)<br/> `http://hl7.org/fhir/StructureDefinition/MarketingStatus\|5.0.0` 
 
 ### Element Mappings
 

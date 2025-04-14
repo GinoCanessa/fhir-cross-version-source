@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActSite
 
@@ -83,5 +83,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActSite` | `RUFA` | right upper forearm |
 | `http://terminology.hl7.org/CodeSystem/v3-ActSite` | `RVG` | right ventragluteal |
 | `http://terminology.hl7.org/CodeSystem/v3-ActSite` | `RVL` | right vastus lateralis |
-| `http://terminology.hl7.org/CodeSystem/v3-ActSite` | `_HumanActSite` | HumanActSite |
-| `http://terminology.hl7.org/CodeSystem/v3-ActSite` | `_HumanSubstanceAdministrationSite` | HumanSubstanceAdministrationSite |

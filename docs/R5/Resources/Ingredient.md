@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:03 PM
+Generated at Monday, April 14, 2025 6:17:49 PM
 
 ### Ingredient
 
@@ -71,7 +71,7 @@ Generated at Friday, April 4, 2025 2:59:03 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [Ingredient](/docs/R4B/Resources/Ingredient.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ingredient\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `992`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1221`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Ingredient](/docs/R5/Resources/Ingredient.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ingredient\|5.0.0` 
+| | | | | | | [Ingredient](/docs/R4B/Resources/Ingredient.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ingredient\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `992`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1221`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Ingredient](/docs/R5/Resources/Ingredient.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ingredient\|5.0.0` 
 
 ### Element Mappings
 

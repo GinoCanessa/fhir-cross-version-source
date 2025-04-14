@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### TerminologyCapabilities
 
@@ -112,7 +112,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [TerminologyCapabilities](/docs/R4/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TerminologyCapabilities](/docs/R4B/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1054`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1283`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [TerminologyCapabilities](/docs/R5/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|5.0.0` 
+| | | | | [TerminologyCapabilities](/docs/R4/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1636`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TerminologyCapabilities](/docs/R4B/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1054`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1283`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [TerminologyCapabilities](/docs/R5/Resources/TerminologyCapabilities.md)<br/> `http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities\|5.0.0` 
 
 ### Element Mappings
 

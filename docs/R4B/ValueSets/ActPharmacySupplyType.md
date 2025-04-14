@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### ActPharmacySupplyType
 
@@ -39,7 +39,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFCS` | first fill complete, partial strength |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFP` | First Fill - Part Fill |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFPS` | first fill, part fill, partial strength |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFS` | fee for service |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FFSS` | first fill, partial strength |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `FS` | Floor stock |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `MS` | Manufacturer Sample |

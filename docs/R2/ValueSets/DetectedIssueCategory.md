@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Detected Issue Category
 
@@ -56,8 +56,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `TOOLATE` | Refill Too Late Alert |
 | `http://hl7.org/fhir/v3/ActCode` | `TOOSOON` | Refill Too Soon Alert |
 | `http://hl7.org/fhir/v3/ActCode` | `TPROD` | Therapeutic Product Alert |
-| `http://hl7.org/fhir/v3/ActCode` | `_AdministrationDetectedIssueCode` | AdministrationDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_AppropriatenessDetectedIssueCode` | AppropriatenessDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_InteractionDetectedIssueCode` | InteractionDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_SupplyDetectedIssueCode` | SupplyDetectedIssueCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_TimingDetectedIssueCode` | TimingDetectedIssueCode |

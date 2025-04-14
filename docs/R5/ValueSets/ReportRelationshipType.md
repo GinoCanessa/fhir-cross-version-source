@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### ReportRelationshipType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ReportRelationshipType](/docs/R4B/ValueSets/ReportRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/report-relation-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `885`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1146`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ReportRelationshipType](/docs/R5/ValueSets/ReportRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/report-relation-type\|5.0.0` 
+| | | | | | | [ReportRelationshipType](/docs/R4B/ValueSets/ReportRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/report-relation-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `885`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1146`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ReportRelationshipType](/docs/R5/ValueSets/ReportRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/report-relation-type\|5.0.0` 
 
 ### Code Mappings
 

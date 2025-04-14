@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:21 PM
 
 ### ActCoverageTypeCode
 
@@ -83,8 +83,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `VET` | veteran health program |
 | `http://hl7.org/fhir/v3/ActCode` | `VISPOL` | vision care policy |
 | `http://hl7.org/fhir/v3/ActCode` | `WCBPOL` | worker's compensation |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActCoverageTypeCode` | ActCoverageTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActHealthInsuranceTypeCode` | ActHealthInsuranceTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInsurancePolicyCode` | ActInsurancePolicyCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInsuranceTypeCode` | ActInsuranceTypeCode |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActProgramTypeCode` | ActProgramTypeCode |

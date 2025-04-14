@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### CodeSystemHierarchyMeaning
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CodeSystemHierarchyMeaning](/docs/R3/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `383`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `606`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R4/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1421`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1422`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R4B/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `828`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1089`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R5/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|5.0.0` 
+| | | [CodeSystemHierarchyMeaning](/docs/R3/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `383`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `606`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R4/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1421`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1422`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R4B/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `828`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1089`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CodeSystemHierarchyMeaning](/docs/R5/ValueSets/CodeSystemHierarchyMeaning.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-hierarchy-meaning\|5.0.0` 
 
 ### Code Mappings
 

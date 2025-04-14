@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:55 PM
+Generated at Monday, April 14, 2025 6:17:39 PM
 
 ### EvidenceVariable
 
@@ -79,7 +79,7 @@ Generated at Friday, April 4, 2025 2:58:55 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [EvidenceVariable](/docs/R4/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1488`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceVariable](/docs/R4B/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1206`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceVariable](/docs/R5/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|5.0.0` 
+| | | | | [EvidenceVariable](/docs/R4/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1488`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceVariable](/docs/R4B/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1206`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceVariable](/docs/R5/Resources/EvidenceVariable.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceVariable\|5.0.0` 
 
 ### Element Mappings
 
@@ -126,9 +126,9 @@ All elements from this structure are listed while other structures only show con
 | | | | | `EvidenceVariable.characteristic.extension`| _Equivalent_<br/>(26671/26672)| **`EvidenceVariable.characteristic.extension`**| _Equivalent_<br/>(41733/41734)| `EvidenceVariable.characteristic.extension`
 | | | | | `EvidenceVariable.characteristic.modifierExtension`| _Equivalent_<br/>(26673/26674)| **`EvidenceVariable.characteristic.modifierExtension`**| _Equivalent_<br/>(41735/41736)| `EvidenceVariable.characteristic.modifierExtension`
 | | | | | `EvidenceVariable.characteristic.description`| _Equivalent_<br/>(26675/26676)| **`EvidenceVariable.characteristic.description`**| _Equivalent_<br/>(41737/41738)| `EvidenceVariable.characteristic.description`
-| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1874)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2116)| `EvidenceVariable.characteristic.definitionReference`
-| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1874)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2116)| `EvidenceVariable.characteristic.definitionCanonical`
-| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1874)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2116)| `EvidenceVariable.characteristic.definitionCodeableConcept`
+| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1871)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2113)| `EvidenceVariable.characteristic.definitionReference`
+| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1872)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2114)| `EvidenceVariable.characteristic.definitionCanonical`
+| | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1873)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2115)| `EvidenceVariable.characteristic.definitionCodeableConcept`
 | | | | | `EvidenceVariable.characteristic.definition[x]`| →→→→ _RelatedTo_ →→→→ <br/>(26677)<hr/>←←←← _RelatedTo_ ←←←← <br/>(26678)| **`EvidenceVariable.characteristic.definition[x]`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(1874)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(2116)| `EvidenceVariable.characteristic.definitionExpression`
 | | | | | | | **`EvidenceVariable.characteristic.method`**| | | 
 | | | | | | | **`EvidenceVariable.characteristic.device`**| | | 

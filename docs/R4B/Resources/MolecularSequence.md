@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:39 PM
 
 ### MolecularSequence
 
@@ -125,7 +125,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Sequence](/docs/R3/Resources/Sequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/Sequence\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `486`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `680`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R4/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1551`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1552`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R4B/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1011`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1240`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MolecularSequence](/docs/R5/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|5.0.0` 
+| | | [Sequence](/docs/R3/Resources/Sequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/Sequence\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `486`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `680`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MolecularSequence](/docs/R4/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1551`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1552`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MolecularSequence](/docs/R4B/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1011`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1240`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MolecularSequence](/docs/R5/Resources/MolecularSequence.md)<br/> `http://hl7.org/fhir/StructureDefinition/MolecularSequence\|5.0.0` 
 
 ### Element Mappings
 

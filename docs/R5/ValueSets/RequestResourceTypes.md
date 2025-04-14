@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### RequestResourceTypes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [RequestResourceType](/docs/R4/ValueSets/RequestResourceType.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1701`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestResourceType](/docs/R4B/ValueSets/RequestResourceType.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1815`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1816`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RequestResourceTypes](/docs/R5/ValueSets/RequestResourceTypes.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|5.0.0` 
+| | | | | [RequestResourceType](/docs/R4/ValueSets/RequestResourceType.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1701`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestResourceType](/docs/R4B/ValueSets/RequestResourceType.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1815`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1816`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RequestResourceTypes](/docs/R5/ValueSets/RequestResourceTypes.md)<br/> `http://hl7.org/fhir/ValueSet/request-resource-types\|5.0.0` 
 
 ### Code Mappings
 

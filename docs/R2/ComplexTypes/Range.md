@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:33 PM
+Generated at Monday, April 14, 2025 6:17:16 PM
 
 ### Range
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:33 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Range](/docs/R2/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `66`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `232`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Range](/docs/R3/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Range](/docs/R4/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1369`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1370`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Range](/docs/R4B/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `916`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1145`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Range](/docs/R5/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|5.0.0` 
+| [Range](/docs/R2/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `66`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `232`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Range](/docs/R3/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Range](/docs/R4/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1369`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1370`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Range](/docs/R4B/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `916`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1145`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Range](/docs/R5/ComplexTypes/Range.md)<br/> `http://hl7.org/fhir/StructureDefinition/Range\|5.0.0` 
 
 ### Element Mappings
 

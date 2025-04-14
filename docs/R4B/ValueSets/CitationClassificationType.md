@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### CitationClassificationType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [CitationClassificationType](/docs/R4B/ValueSets/CitationClassificationType.md)<br/> `http://hl7.org/fhir/ValueSet/citation-classification-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `844`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1105`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CitationClassificationType](/docs/R5/ValueSets/CitationClassificationType.md)<br/> `http://hl7.org/fhir/ValueSet/citation-classification-type\|5.0.0` 
+| | | | | | | [CitationClassificationType](/docs/R4B/ValueSets/CitationClassificationType.md)<br/> `http://hl7.org/fhir/ValueSet/citation-classification-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `844`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1105`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CitationClassificationType](/docs/R5/ValueSets/CitationClassificationType.md)<br/> `http://hl7.org/fhir/ValueSet/citation-classification-type\|5.0.0` 
 
 ### Code Mappings
 

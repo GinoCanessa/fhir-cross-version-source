@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### DeviceUseStatementStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [DeviceUseStatementStatus](/docs/R3/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `396`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `619`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceUseStatementStatus](/docs/R4/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1471`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1472`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceUseStatementStatus](/docs/R4B/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `860`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1121`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceUsageStatus](/docs/R5/ValueSets/DeviceUsageStatus.md)<br/> `http://hl7.org/fhir/ValueSet/deviceusage-status\|5.0.0` 
+| | | [DeviceUseStatementStatus](/docs/R3/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `396`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `619`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [DeviceUseStatementStatus](/docs/R4/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1471`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1472`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceUseStatementStatus](/docs/R4B/ValueSets/DeviceUseStatementStatus.md)<br/> `http://hl7.org/fhir/ValueSet/device-statement-status\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `860`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1121`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceUsageStatus](/docs/R5/ValueSets/DeviceUsageStatus.md)<br/> `http://hl7.org/fhir/ValueSet/deviceusage-status\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### VerificationResult
 
@@ -74,7 +74,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [VerificationResult](/docs/R4/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1643`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1644`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [VerificationResult](/docs/R4B/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1058`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1287`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [VerificationResult](/docs/R5/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|5.0.0` 
+| | | | | [VerificationResult](/docs/R4/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1643`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1644`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [VerificationResult](/docs/R4B/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1058`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1287`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [VerificationResult](/docs/R5/Resources/VerificationResult.md)<br/> `http://hl7.org/fhir/StructureDefinition/VerificationResult\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### MeasureType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [MeasureType](/docs/R3/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `441`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `663`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureType](/docs/R4/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [MeasureType](/docs/R3/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `441`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `663`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureType](/docs/R4/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:04 PM
+Generated at Monday, April 14, 2025 6:17:48 PM
 
 ### CompartmentDefinition
 
@@ -57,7 +57,7 @@ Generated at Friday, April 4, 2025 2:59:04 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CompartmentDefinition](/docs/R3/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `436`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `632`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentDefinition](/docs/R4/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1435`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1436`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentDefinition](/docs/R4B/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `952`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1181`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentDefinition](/docs/R5/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|5.0.0` 
+| | | [CompartmentDefinition](/docs/R3/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `436`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `632`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompartmentDefinition](/docs/R4/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1435`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1436`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompartmentDefinition](/docs/R4B/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `952`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1181`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompartmentDefinition](/docs/R5/Resources/CompartmentDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/CompartmentDefinition\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:02 PM
+Generated at Monday, April 14, 2025 6:17:47 PM
 
 ### DeviceDefinition
 
@@ -159,7 +159,7 @@ Generated at Friday, April 4, 2025 2:59:02 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [DeviceDefinition](/docs/R4/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceDefinition](/docs/R4B/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `963`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceDefinition](/docs/R5/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|5.0.0` 
+| | | | | [DeviceDefinition](/docs/R4/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1458`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceDefinition](/docs/R4B/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `963`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1192`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceDefinition](/docs/R5/Resources/DeviceDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/DeviceDefinition\|5.0.0` 
 
 ### Element Mappings
 
@@ -262,8 +262,8 @@ All elements from this structure are listed while other structures only show con
 | | | | | `DeviceDefinition.property.extension`| _Equivalent_<br/>(25698/25699)| `DeviceDefinition.property.extension`| _Equivalent_<br/>(40607/40608)| **`DeviceDefinition.property.extension`**
 | | | | | `DeviceDefinition.property.modifierExtension`| _Equivalent_<br/>(25700/25701)| `DeviceDefinition.property.modifierExtension`| _Equivalent_<br/>(40609/40610)| **`DeviceDefinition.property.modifierExtension`**
 | | | | | `DeviceDefinition.property.type`| _Equivalent_<br/>(25702/25703)| `DeviceDefinition.property.type`| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(40611)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(40612)| **`DeviceDefinition.property.type`**
-| | | | | `DeviceDefinition.property.valueQuantity`| _Equivalent_<br/>(25704/25705)| `DeviceDefinition.property.valueQuantity`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1766)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2010)| **`DeviceDefinition.property.value[x]`**
-| | | | | `DeviceDefinition.property.valueCode`| _Equivalent_<br/>(25706/25707)| `DeviceDefinition.property.valueCode`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1767)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(2010)| **`DeviceDefinition.property.value[x]`**
+| | | | | `DeviceDefinition.property.valueQuantity`| _Equivalent_<br/>(25704/25705)| `DeviceDefinition.property.valueQuantity`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1766)<hr/>←←←← __ ←←←← <br/>()| **`DeviceDefinition.property.value[x]`**
+| | | | | `DeviceDefinition.property.valueCode`| _Equivalent_<br/>(25706/25707)| `DeviceDefinition.property.valueCode`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1767)<hr/>←←←← __ ←←←← <br/>()| **`DeviceDefinition.property.value[x]`**
 | | | | | `DeviceDefinition.owner`| _Equivalent_<br/>(25708/25709)| `DeviceDefinition.owner`| _Equivalent_<br/>(40613/40614)| **`DeviceDefinition.owner`**
 | | | | | `DeviceDefinition.contact`| _Equivalent_<br/>(25710/25711)| `DeviceDefinition.contact`| _Equivalent_<br/>(40615/40616)| **`DeviceDefinition.contact`**
 | | | | | | | | | **`DeviceDefinition.link`**

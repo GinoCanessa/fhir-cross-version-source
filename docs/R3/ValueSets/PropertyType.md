@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### PropertyType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [PropertyType](/docs/R3/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `384`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `607`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PropertyType](/docs/R4/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1431`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1432`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PropertyType](/docs/R4B/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `829`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1090`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PropertyType](/docs/R5/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|5.0.0` 
+| | | [PropertyType](/docs/R3/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `384`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `607`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PropertyType](/docs/R4/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1431`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1432`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PropertyType](/docs/R4B/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `829`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1090`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [PropertyType](/docs/R5/ValueSets/PropertyType.md)<br/> `http://hl7.org/fhir/ValueSet/concept-property-type\|5.0.0` 
 
 ### Code Mappings
 

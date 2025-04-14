@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### ActionList
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:31 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ActionList](/docs/R2/ValueSets/ActionList.md)<br/> `http://hl7.org/fhir/ValueSet/actionlist\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `120`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `278`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionList](/docs/R3/ValueSets/ActionList.md)<br/> `http://hl7.org/fhir/ValueSet/actionlist\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [ActionList](/docs/R2/ValueSets/ActionList.md)<br/> `http://hl7.org/fhir/ValueSet/actionlist\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `120`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `278`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionList](/docs/R3/ValueSets/ActionList.md)<br/> `http://hl7.org/fhir/ValueSet/actionlist\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

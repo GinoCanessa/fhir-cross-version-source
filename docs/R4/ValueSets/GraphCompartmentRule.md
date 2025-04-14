@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### GraphCompartmentRule
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [GraphCompartmentRule](/docs/R3/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `641`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R4/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1520`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R4B/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1805`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1806`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R5/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|5.0.0` 
+| | | [GraphCompartmentRule](/docs/R3/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `641`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R4/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1520`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R4B/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1805`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1806`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GraphCompartmentRule](/docs/R5/ValueSets/GraphCompartmentRule.md)<br/> `http://hl7.org/fhir/ValueSet/graph-compartment-rule\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Enteral Route Codes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Enteral Route Codes](/docs/R2/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `101`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `257`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Enteral Route Codes](/docs/R3/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `452`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `676`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EnteralRouteCodes](/docs/R4/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [Enteral Route Codes](/docs/R2/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `101`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `257`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Enteral Route Codes](/docs/R3/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `452`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `676`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EnteralRouteCodes](/docs/R4/ValueSets/EnteralRouteCodes.md)<br/> `http://hl7.org/fhir/ValueSet/enteral-route\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

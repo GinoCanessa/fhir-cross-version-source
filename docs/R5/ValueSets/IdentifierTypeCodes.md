@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### IdentifierTypeCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [Identifier Type Codes](/docs/R4B/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `896`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1157`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [IdentifierTypeCodes](/docs/R5/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|5.0.0` 
+| | | | | | | [Identifier Type Codes](/docs/R4B/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `896`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1157`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [IdentifierTypeCodes](/docs/R5/ValueSets/IdentifierTypeCodes.md)<br/> `http://hl7.org/fhir/ValueSet/identifier-type\|5.0.0` 
 
 ### Code Mappings
 

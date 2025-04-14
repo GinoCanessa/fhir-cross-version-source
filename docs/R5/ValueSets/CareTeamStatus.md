@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### CareTeamStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CareTeamStatus](/docs/R3/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `386`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `609`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeamStatus](/docs/R4/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1409`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1410`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeamStatus](/docs/R4B/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `831`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1092`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CareTeamStatus](/docs/R5/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|5.0.0` 
+| | | [CareTeamStatus](/docs/R3/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `386`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `609`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CareTeamStatus](/docs/R4/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1409`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1410`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CareTeamStatus](/docs/R4B/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `831`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1092`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CareTeamStatus](/docs/R5/ValueSets/CareTeamStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-team-status\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### CarePlanIntent
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CarePlanIntent](/docs/R3/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `376`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `599`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanIntent](/docs/R4/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1407`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1408`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanIntent](/docs/R4B/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `822`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1083`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanIntent](/docs/R5/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|5.0.0` 
+| | | [CarePlanIntent](/docs/R3/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `376`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `599`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanIntent](/docs/R4/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1407`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1408`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanIntent](/docs/R4B/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `822`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1083`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanIntent](/docs/R5/ValueSets/CarePlanIntent.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-intent\|5.0.0` 
 
 ### Code Mappings
 

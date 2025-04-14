@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:49 PM
+Generated at Monday, April 14, 2025 6:17:32 PM
 
 ### MedicationKnowledge
 
@@ -140,7 +140,7 @@ Generated at Friday, April 4, 2025 2:58:49 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [MedicationKnowledge](/docs/R4/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1541`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1542`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicationKnowledge](/docs/R4B/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1005`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1234`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicationKnowledge](/docs/R5/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|5.0.0` 
+| | | | | [MedicationKnowledge](/docs/R4/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1541`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1542`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MedicationKnowledge](/docs/R4B/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1005`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1234`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MedicationKnowledge](/docs/R5/Resources/MedicationKnowledge.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicationKnowledge\|5.0.0` 
 
 ### Element Mappings
 

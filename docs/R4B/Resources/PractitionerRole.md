@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### PractitionerRole
 
@@ -59,7 +59,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [PractitionerRole](/docs/R3/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `500`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PractitionerRole](/docs/R4/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1583`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1584`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PractitionerRole](/docs/R4B/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1027`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1256`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PractitionerRole](/docs/R5/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|5.0.0` 
+| | | [PractitionerRole](/docs/R3/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `500`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PractitionerRole](/docs/R4/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1583`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1584`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PractitionerRole](/docs/R4B/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1027`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1256`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PractitionerRole](/docs/R5/Resources/PractitionerRole.md)<br/> `http://hl7.org/fhir/StructureDefinition/PractitionerRole\|5.0.0` 
 
 ### Element Mappings
 

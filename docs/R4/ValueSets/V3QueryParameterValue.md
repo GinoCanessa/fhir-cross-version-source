@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.QueryParameterValue
 
@@ -43,7 +43,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `ONR` | orders without results |
 | `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `OWR` | orders with results |
 | `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `R` | Dispensed with remaining fills |
-| `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `_DispenseQueryFilterCode` | dispense query filter code |
-| `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `_OrderFilterCode` | _OrderFilterCode |
-| `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `_PrescriptionDispenseFilterCode` | Prescription Dispense Filter Code |
-| `http://terminology.hl7.org/CodeSystem/v3-QueryParameterValue` | `_QueryParameterValue` | QueryParameterValue |

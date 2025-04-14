@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:41 PM
 
 ### AdverseEvent
 
@@ -65,7 +65,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [AdverseEvent](/docs/R3/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `417`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `613`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R4/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1391`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1392`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R4B/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `931`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1160`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [AdverseEvent](/docs/R5/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|5.0.0` 
+| | | [AdverseEvent](/docs/R3/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `417`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `613`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdverseEvent](/docs/R4/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1391`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1392`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdverseEvent](/docs/R4B/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `931`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1160`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [AdverseEvent](/docs/R5/Resources/AdverseEvent.md)<br/> `http://hl7.org/fhir/StructureDefinition/AdverseEvent\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ActionParticipantType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActionParticipantType](/docs/R3/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `324`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `546`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionParticipantType](/docs/R4/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1343`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1344`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionParticipantType](/docs/R4B/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `769`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1030`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionParticipantType](/docs/R5/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|5.0.0` 
+| | | [ActionParticipantType](/docs/R3/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `324`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `546`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionParticipantType](/docs/R4/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1343`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1344`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionParticipantType](/docs/R4B/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `769`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1030`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionParticipantType](/docs/R5/ValueSets/ActionParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/action-participant-type\|5.0.0` 
 
 ### Code Mappings
 

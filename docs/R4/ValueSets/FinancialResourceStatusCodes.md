@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### FinancialResourceStatusCodes
 
@@ -37,7 +37,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Financial Resource Status Codes](/docs/R3/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `345`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `564`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R4/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1515`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1516`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R4B/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `788`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1049`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R5/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|5.0.0` 
+| | | [Financial Resource Status Codes](/docs/R3/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `345`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `564`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R4/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1515`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1516`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R4B/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `788`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1049`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [FinancialResourceStatusCodes](/docs/R5/ValueSets/FinancialResourceStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/fm-status\|5.0.0` 
 
 ### Code Mappings
 

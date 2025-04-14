@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### UsageContextType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [UsageContextType](/docs/R3/ValueSets/UsageContextType.md)<br/> `http://hl7.org/fhir/ValueSet/usage-context-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `539`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `761`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UsageContextType](/docs/R4/ValueSets/UsageContextType.md)<br/> `http://hl7.org/fhir/ValueSet/usage-context-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [UsageContextType](/docs/R3/ValueSets/UsageContextType.md)<br/> `http://hl7.org/fhir/ValueSet/usage-context-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `539`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `761`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UsageContextType](/docs/R4/ValueSets/UsageContextType.md)<br/> `http://hl7.org/fhir/ValueSet/usage-context-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

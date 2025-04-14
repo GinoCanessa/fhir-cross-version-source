@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:47 PM
+Generated at Monday, April 14, 2025 6:17:30 PM
 
 ### EventDefinition
 
@@ -61,7 +61,7 @@ Generated at Friday, April 4, 2025 2:58:47 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [EventDefinition](/docs/R4/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1483`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1484`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EventDefinition](/docs/R4B/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `974`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1203`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EventDefinition](/docs/R5/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|5.0.0` 
+| | | | | [EventDefinition](/docs/R4/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1483`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1484`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EventDefinition](/docs/R4B/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `974`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1203`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EventDefinition](/docs/R5/Resources/EventDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/EventDefinition\|5.0.0` 
 
 ### Element Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### v3 Code System NullFlavor
 
@@ -42,7 +42,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/NullFlavor` | `NAVU` | Not available |
 | `http://hl7.org/fhir/v3/NullFlavor` | `NI` | NoInformation |
 | `http://hl7.org/fhir/v3/NullFlavor` | `NINF` | negative infinity |
-| `http://hl7.org/fhir/v3/NullFlavor` | `NP` | not present |
 | `http://hl7.org/fhir/v3/NullFlavor` | `OTH` | other |
 | `http://hl7.org/fhir/v3/NullFlavor` | `PINF` | positive infinity |
 | `http://hl7.org/fhir/v3/NullFlavor` | `QS` | Sufficient Quantity |

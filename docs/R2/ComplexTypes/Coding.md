@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:33 PM
+Generated at Monday, April 14, 2025 6:17:16 PM
 
 ### Coding
 
@@ -32,7 +32,7 @@ Generated at Friday, April 4, 2025 2:58:33 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Coding](/docs/R2/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `51`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Coding](/docs/R3/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `387`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `583`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Coding](/docs/R4/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1319`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1320`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Coding](/docs/R4B/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `895`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1124`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Coding](/docs/R5/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|5.0.0` 
+| [Coding](/docs/R2/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `51`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `218`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Coding](/docs/R3/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `387`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `583`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Coding](/docs/R4/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1319`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1320`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Coding](/docs/R4B/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `895`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1124`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Coding](/docs/R5/ComplexTypes/Coding.md)<br/> `http://hl7.org/fhir/StructureDefinition/Coding\|5.0.0` 
 
 ### Element Mappings
 

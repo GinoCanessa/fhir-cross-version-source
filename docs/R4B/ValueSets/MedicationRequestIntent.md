@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### medicationRequest Intent
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [MedicationRequestIntent](/docs/R3/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medication-request-intent\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `443`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `665`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [medicationRequest Intent](/docs/R4/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [medicationRequest Intent](/docs/R4B/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `924`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1185`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicationRequestIntent](/docs/R5/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|5.0.0` 
+| | | [MedicationRequestIntent](/docs/R3/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medication-request-intent\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `443`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `665`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [medicationRequest Intent](/docs/R4/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [medicationRequest Intent](/docs/R4B/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `924`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1185`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [MedicationRequestIntent](/docs/R5/ValueSets/MedicationRequestIntent.md)<br/> `http://hl7.org/fhir/ValueSet/medicationrequest-intent\|5.0.0` 
 
 ### Code Mappings
 

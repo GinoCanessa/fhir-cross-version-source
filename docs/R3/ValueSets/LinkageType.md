@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:21 PM
 
 ### LinkageType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:38 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [LinkageType](/docs/R3/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `651`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [LinkageType](/docs/R4/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1563`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1564`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [LinkageType](/docs/R4B/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `909`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1170`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [LinkageType](/docs/R5/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|5.0.0` 
+| | | [LinkageType](/docs/R3/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `651`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [LinkageType](/docs/R4/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1563`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1564`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [LinkageType](/docs/R4B/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `909`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1170`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [LinkageType](/docs/R5/ValueSets/LinkageType.md)<br/> `http://hl7.org/fhir/ValueSet/linkage-type\|5.0.0` 
 
 ### Code Mappings
 

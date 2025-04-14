@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System ObservationInterpretation
 
@@ -60,13 +60,10 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `NEG` | Negative |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `NR` | Non-reactive |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `NS` | Non-susceptible |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `ObservationInterpretationDetection` | ObservationInterpretationDetection |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `ObservationInterpretationExpectation` | ObservationInterpretationExpectation |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `POS` | Positive |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `QCF` | Quality control failure |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `R` | Resistant |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `RR` | Reactive |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `ReactivityObservationInterpretation` | ReactivityObservationInterpretation |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `S` | Susceptible |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `SDD` | Susceptible-dose dependent |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `SYN-R` | Synergy - resistant |
@@ -77,8 +74,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `VS` | very susceptible |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `W` | Worse |
 | `http://hl7.org/fhir/v3/ObservationInterpretation` | `WR` | Weakly reactive |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `_GeneticObservationInterpretation` | GeneticObservationInterpretation |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `_ObservationInterpretationChange` | ObservationInterpretationChange |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `_ObservationInterpretationExceptions` | ObservationInterpretationExceptions |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `_ObservationInterpretationNormality` | ObservationInterpretationNormality |
-| `http://hl7.org/fhir/v3/ObservationInterpretation` | `_ObservationInterpretationSusceptibility` | ObservationInterpretationSusceptibility |

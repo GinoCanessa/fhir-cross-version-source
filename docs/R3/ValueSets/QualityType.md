@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### qualityType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [qualityType](/docs/R3/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `494`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `672`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [qualityType](/docs/R4/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1665`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1666`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [qualityType](/docs/R4B/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | [qualityType](/docs/R3/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `494`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `672`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [qualityType](/docs/R4/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1665`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1666`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [qualityType](/docs/R4B/ValueSets/QualityType.md)<br/> `http://hl7.org/fhir/ValueSet/quality-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

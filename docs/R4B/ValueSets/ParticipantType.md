@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ParticipantType
 
@@ -31,7 +31,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ParticipantType](/docs/R4B/ValueSets/ParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-participant-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `781`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1042`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ParticipantType](/docs/R5/ValueSets/ParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-participant-type\|5.0.0` 
+| | | | | | | [ParticipantType](/docs/R4B/ValueSets/ParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-participant-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `781`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1042`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ParticipantType](/docs/R5/ValueSets/ParticipantType.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-participant-type\|5.0.0` 
 
 ### Code Mappings
 

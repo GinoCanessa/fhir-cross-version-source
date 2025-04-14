@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Acquisition Modality Codes
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Acquisition Modality Codes](/docs/R2/ValueSets/AcquisitionModalityCodes.md)<br/> `http://hl7.org/fhir/ValueSet/dicom-cid29\|20121129` | →→→→→→→<br/>``<br/>- DBKey: `89`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `245`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Acquisition Modality Codes](/docs/R3/ValueSets/AcquisitionModalityCodes.md)<br/> `http://hl7.org/fhir/ValueSet/dicom-cid29\|20121129` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [Acquisition Modality Codes](/docs/R2/ValueSets/AcquisitionModalityCodes.md)<br/> `http://hl7.org/fhir/ValueSet/dicom-cid29\|20121129` | →→→→→→→<br/>``<br/>- DBKey: `89`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `245`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Acquisition Modality Codes](/docs/R3/ValueSets/AcquisitionModalityCodes.md)<br/> `http://hl7.org/fhir/ValueSet/dicom-cid29\|20121129` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

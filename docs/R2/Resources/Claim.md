@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:35 PM
+Generated at Monday, April 14, 2025 6:17:18 PM
 
 ### Claim
 
@@ -142,7 +142,7 @@ Generated at Friday, April 4, 2025 2:58:35 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Claim](/docs/R2/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `83`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `249`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R3/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `626`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R4/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1423`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R4B/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `945`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1174`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Claim](/docs/R5/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|5.0.0` 
+| [Claim](/docs/R2/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `83`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `249`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Claim](/docs/R3/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `626`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Claim](/docs/R4/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1423`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Claim](/docs/R4B/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `945`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1174`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Claim](/docs/R5/Resources/Claim.md)<br/> `http://hl7.org/fhir/StructureDefinition/Claim\|5.0.0` 
 
 ### Element Mappings
 

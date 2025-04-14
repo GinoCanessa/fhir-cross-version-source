@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### UsageContext
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [UsageContext](/docs/R3/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `610`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UsageContext](/docs/R4/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1385`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1386`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UsageContext](/docs/R4B/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `925`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1154`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UsageContext](/docs/R5/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|5.0.0` 
+| | | [UsageContext](/docs/R3/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `610`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UsageContext](/docs/R4/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1385`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1386`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UsageContext](/docs/R4B/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `925`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1154`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UsageContext](/docs/R5/ComplexTypes/UsageContext.md)<br/> `http://hl7.org/fhir/StructureDefinition/UsageContext\|5.0.0` 
 
 ### Element Mappings
 

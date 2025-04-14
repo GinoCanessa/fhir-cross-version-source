@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### EndpointConnectionType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Endpoint Connection Type](/docs/R3/ValueSets/EndpointConnectionType.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-connection-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EndpointConnectionType](/docs/R4/ValueSets/EndpointConnectionType.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-connection-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| | | [Endpoint Connection Type](/docs/R3/ValueSets/EndpointConnectionType.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-connection-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `635`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EndpointConnectionType](/docs/R4/ValueSets/EndpointConnectionType.md)<br/> `http://hl7.org/fhir/ValueSet/endpoint-connection-type\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

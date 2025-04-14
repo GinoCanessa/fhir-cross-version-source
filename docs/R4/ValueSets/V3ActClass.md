@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActClass
 
@@ -145,11 +145,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `TRNS` | transportation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `VERIF` | Verification |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `XACT` | financial transaction |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_ActClassContainer` | ActClassContainer |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_ActClassROI` | ActClassROI |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_ActClassRecordOrganizer` | record organizer |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_SubjectBodyPosition` | subject body position |
-| `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `_SubjectPhysicalPosition` | subject physical position |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `ordered` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `tbody` |  |
 | `http://terminology.hl7.org/CodeSystem/v3-ActClass` | `tfoot` |  |

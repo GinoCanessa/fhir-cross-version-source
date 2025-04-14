@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### DataElementStringency
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [DataElementStringency](/docs/R2/ValueSets/DataElementStringency.md)<br/> `http://hl7.org/fhir/ValueSet/dataelement-stringency\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `50`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `209`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DataElementStringency](/docs/R3/ValueSets/DataElementStringency.md)<br/> `http://hl7.org/fhir/ValueSet/dataelement-stringency\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [DataElementStringency](/docs/R2/ValueSets/DataElementStringency.md)<br/> `http://hl7.org/fhir/ValueSet/dataelement-stringency\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `50`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `209`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [DataElementStringency](/docs/R3/ValueSets/DataElementStringency.md)<br/> `http://hl7.org/fhir/ValueSet/dataelement-stringency\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

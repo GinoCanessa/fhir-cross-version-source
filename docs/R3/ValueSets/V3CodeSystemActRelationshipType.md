@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System ActRelationshipType
 
@@ -49,8 +49,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `COVBY` | covered by |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `CREDIT` | has credit |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `CTRLV` | has control variable |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `CURE` | curative indication |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `CURE.ADJ` | adjunct curative indication |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `DEBIT` | has debit |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `DEP` | departure |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `DIAG` | diagnoses |
@@ -90,7 +88,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `MITGT` | mitigates |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `MOD` | modifies |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `MTCH` | matches (trigger) |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `MTGT.ADJ` | adjunct mitigation |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `MTREAT` | maintenance treatment |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `NAME` | assigns name |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `OBJC` | has continuing objective |
@@ -108,7 +105,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `PREV` | has previous instance |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `PRYLX` | prophylaxis of |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `QUALF` | has qualifier |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `RACT` |  |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `RCHAL` | re-challenge |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `RCVY` | recovers |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `REFR` | refers to |
@@ -149,7 +145,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `STEP` | has step |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `SUBJ` | has subject |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `SUCC` | succeeds |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `SUGG` |  |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `SUMM` | summarized by |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `SYMP` | symptomatic relief |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `TREAT` | treats |
@@ -160,11 +155,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `VRXCRPT` | Excerpt verbatim |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `XCRPT` | Excerpts |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `XFRM` | transformation |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActClassTemporallyPertains` | ActClassTemporallyPertains |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipAccounting` | ActRelationshipAccounting |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipConditional` | ActRelationshipConditional |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipCostTracking` | ActRelationshipCostTracking |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipPosting` | ActRelationshipPosting |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipTemporallyPertains` | ActRelationshipTemporallyPertains |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipTemporallyPertainsApproximates` | ActRelationshipTemporallyPertainsApproximates |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationsipObjective` | Act Relationsip Objective |

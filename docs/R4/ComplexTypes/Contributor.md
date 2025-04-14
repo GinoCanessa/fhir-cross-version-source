@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:29 PM
 
 ### Contributor
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Contributor](/docs/R3/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `390`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `586`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Contributor](/docs/R4/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1325`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1326`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Contributor](/docs/R4B/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `898`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1127`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Contributor](/docs/R5/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|5.0.0` 
+| | | [Contributor](/docs/R3/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `390`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `586`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Contributor](/docs/R4/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1325`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1326`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Contributor](/docs/R4B/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `898`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1127`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Contributor](/docs/R5/ComplexTypes/Contributor.md)<br/> `http://hl7.org/fhir/StructureDefinition/Contributor\|5.0.0` 
 
 ### Element Mappings
 
@@ -44,8 +44,8 @@ All elements from this structure are listed while other structures only show con
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | | | `Contributor`| _Equivalent_<br/>(9264/9265)| **`Contributor`**| _Equivalent_<br/>(20616/20617)| `Contributor`| _Equivalent_<br/>(35741/35742)| `Contributor`
 | | | `Contributor.id`| _Equivalent_<br/>(9266/9267)| **`Contributor.id`**| _Equivalent_<br/>(20618/20619)| `Contributor.id`| _Equivalent_<br/>(35743/35744)| `Contributor.id`
-| | | `Contributor.extension`| →→→→ _Equivalent_ →→→→ <br/>(9268)<hr/>←←←← _RelatedTo_ ←←←← <br/>(9272)| **`Contributor.extension`**| _Equivalent_<br/>(20620/20621)| `Contributor.extension`| _Equivalent_<br/>(35745/35746)| `Contributor.extension`
-| | | `Contributor.name`| →→→→ _RelatedTo_ →→→→ <br/>(1333)<hr/>←←←← _RelatedTo_ ←←←← <br/>(9272)| **`Contributor.extension`**| _Equivalent_<br/>(20620/20621)| `Contributor.extension`| _Equivalent_<br/>(35745/35746)| `Contributor.extension`
+| | | `Contributor.extension`| →→→→ _Equivalent_ →→→→ <br/>(9268)<hr/>←←←← __ ←←←← <br/>()| **`Contributor.extension`**| _Equivalent_<br/>(20620/20621)| `Contributor.extension`| _Equivalent_<br/>(35745/35746)| `Contributor.extension`
+| | | `Contributor.name`| →→→→ _RelatedTo_ →→→→ <br/>(1333)<hr/>←←←← __ ←←←← <br/>()| **`Contributor.extension`**| _Equivalent_<br/>(20620/20621)| `Contributor.extension`| _Equivalent_<br/>(35745/35746)| `Contributor.extension`
 | | | `Contributor.type`| _Equivalent_<br/>(9270/9271)| **`Contributor.type`**| _Equivalent_<br/>(20622/20623)| `Contributor.type`| _Equivalent_<br/>(35747/35748)| `Contributor.type`
 | | | `Contributor.name`| _Equivalent_<br/>(20615/20614)| **`Contributor.name`**| _Equivalent_<br/>(20624/20625)| `Contributor.name`| _Equivalent_<br/>(35749/35750)| `Contributor.name`
 | | | `Contributor.contact`| _Equivalent_<br/>(9273/9274)| **`Contributor.contact`**| _Equivalent_<br/>(20626/20627)| `Contributor.contact`| _Equivalent_<br/>(35751/35752)| `Contributor.contact`

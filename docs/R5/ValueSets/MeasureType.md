@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### MeasureType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [MeasureType](/docs/R4B/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `919`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1180`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureType](/docs/R5/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|5.0.0` 
+| | | | | | | [MeasureType](/docs/R4B/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `919`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1180`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureType](/docs/R5/ValueSets/MeasureType.md)<br/> `http://hl7.org/fhir/ValueSet/measure-type\|5.0.0` 
 
 ### Code Mappings
 
@@ -46,6 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | | | `outcome`| _Equivalent_ <br/>(8778/11087)| **`outcome`**
 | | | | | | | `structure`| _Equivalent_ <br/>(8781/11090)| **`structure`**
 | | | | | | | `patient-reported-outcome`| _Equivalent_ <br/>(8779/11088)| **`patient-reported-outcome`**
-| | | | | | | `composite`| _Equivalent_ <br/>(8777/11086)| **`composite`**
-| | | | | | | *5 of 5 codes used* | | *5 of 5 codes used* 
+| | | | | | | *4 of 5 codes used* <br/>remaining codes:<br/>`composite`| | *4 of 5 codes used* <br/>remaining codes:<br/>
 

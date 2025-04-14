@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ExtensionContextType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ExtensionContextType](/docs/R4/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1507`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1508`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExtensionContextType](/docs/R4B/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `979`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1240`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExtensionContextType](/docs/R5/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|5.0.0` 
+| | | | | [ExtensionContextType](/docs/R4/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1507`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1508`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ExtensionContextType](/docs/R4B/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `979`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1240`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ExtensionContextType](/docs/R5/ValueSets/ExtensionContextType.md)<br/> `http://hl7.org/fhir/ValueSet/extension-context-type\|5.0.0` 
 
 ### Code Mappings
 

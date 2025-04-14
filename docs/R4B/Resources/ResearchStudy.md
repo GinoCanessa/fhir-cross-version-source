@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:38 PM
 
 ### ResearchStudy
 
@@ -68,7 +68,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ResearchStudy](/docs/R3/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `510`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchStudy](/docs/R4/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1601`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchStudy](/docs/R4B/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1035`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1264`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchStudy](/docs/R5/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|5.0.0` 
+| | | [ResearchStudy](/docs/R3/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `510`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchStudy](/docs/R4/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1601`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchStudy](/docs/R4B/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1035`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1264`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchStudy](/docs/R5/Resources/ResearchStudy.md)<br/> `http://hl7.org/fhir/StructureDefinition/ResearchStudy\|5.0.0` 
 
 ### Element Mappings
 
@@ -87,8 +87,8 @@ All elements from this structure are listed while other structures only show con
 | | | `ResearchStudy.language`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(18047)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(18048)| `ResearchStudy.language`| _Equivalent_<br/>(32666/32667)| **`ResearchStudy.language`**| _Equivalent_<br/>(47017/47018)| `ResearchStudy.language`
 | | | `ResearchStudy.text`| _Equivalent_<br/>(18049/18050)| `ResearchStudy.text`| _Equivalent_<br/>(32668/32669)| **`ResearchStudy.text`**| _Equivalent_<br/>(47019/47020)| `ResearchStudy.text`
 | | | `ResearchStudy.contained`| _Equivalent_<br/>(18051/18052)| `ResearchStudy.contained`| _Equivalent_<br/>(32670/32671)| **`ResearchStudy.contained`**| _Equivalent_<br/>(47021/47022)| `ResearchStudy.contained`
-| | | `ResearchStudy.extension`| →→→→ _Equivalent_ →→→→ <br/>(18053)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18077)| `ResearchStudy.extension`| _Equivalent_<br/>(32672/32673)| **`ResearchStudy.extension`**| _Equivalent_<br/>(47023/47024)| `ResearchStudy.extension`
-| | | `ResearchStudy.jurisdiction`| →→→→ _RelatedTo_ →→→→ <br/>(1275)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(18077)| `ResearchStudy.extension`| _Equivalent_<br/>(32672/32673)| **`ResearchStudy.extension`**| _Equivalent_<br/>(47023/47024)| `ResearchStudy.extension`
+| | | `ResearchStudy.extension`| →→→→ _Equivalent_ →→→→ <br/>(18053)<hr/>←←←← __ ←←←← <br/>()| `ResearchStudy.extension`| _Equivalent_<br/>(32672/32673)| **`ResearchStudy.extension`**| _Equivalent_<br/>(47023/47024)| `ResearchStudy.extension`
+| | | `ResearchStudy.jurisdiction`| →→→→ _RelatedTo_ →→→→ <br/>(1275)<hr/>←←←← __ ←←←← <br/>()| `ResearchStudy.extension`| _Equivalent_<br/>(32672/32673)| **`ResearchStudy.extension`**| _Equivalent_<br/>(47023/47024)| `ResearchStudy.extension`
 | | | `ResearchStudy.modifierExtension`| _Equivalent_<br/>(18055/18056)| `ResearchStudy.modifierExtension`| _Equivalent_<br/>(32674/32675)| **`ResearchStudy.modifierExtension`**| _Equivalent_<br/>(47025/47026)| `ResearchStudy.modifierExtension`
 | | | `ResearchStudy.identifier`| _Equivalent_<br/>(18057/18058)| `ResearchStudy.identifier`| _Equivalent_<br/>(32676/32677)| **`ResearchStudy.identifier`**| _Equivalent_<br/>(47027/47028)| `ResearchStudy.identifier`
 | | | `ResearchStudy.title`| _Equivalent_<br/>(18059/18060)| `ResearchStudy.title`| _Equivalent_<br/>(32678/32679)| **`ResearchStudy.title`**| _Equivalent_<br/>(47029/47030)| `ResearchStudy.title`

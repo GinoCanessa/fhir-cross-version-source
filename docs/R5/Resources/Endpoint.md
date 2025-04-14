@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:02 PM
+Generated at Monday, April 14, 2025 6:17:47 PM
 
 ### Endpoint
 
@@ -50,7 +50,7 @@ Generated at Friday, April 4, 2025 2:59:02 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Endpoint](/docs/R3/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `650`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Endpoint](/docs/R4/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1475`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1476`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Endpoint](/docs/R4B/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `970`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1199`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Endpoint](/docs/R5/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|5.0.0` 
+| | | [Endpoint](/docs/R3/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `455`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `650`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Endpoint](/docs/R4/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1475`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1476`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Endpoint](/docs/R4B/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `970`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1199`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Endpoint](/docs/R5/Resources/Endpoint.md)<br/> `http://hl7.org/fhir/StructureDefinition/Endpoint\|5.0.0` 
 
 ### Element Mappings
 

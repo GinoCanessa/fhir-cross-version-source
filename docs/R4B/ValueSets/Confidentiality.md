@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### Confidentiality
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [v3.Confidentiality](/docs/R4/ValueSets/V3Confidentiality.md)<br/> `http://terminology.hl7.org/ValueSet/v3-Confidentiality\|2018-08-12` | →→→→→→→<br/>``<br/>- DBKey: `1824`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1823`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Confidentiality](/docs/R4B/ValueSets/Confidentiality.md)<br/> `http://terminology.hl7.org/ValueSet/v3-Confidentiality\|2.0.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [v3.Confidentiality](/docs/R4/ValueSets/V3Confidentiality.md)<br/> `http://terminology.hl7.org/ValueSet/v3-Confidentiality\|2018-08-12` | →→→→→→→<br/>``<br/>- DBKey: `1824`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1823`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Confidentiality](/docs/R4B/ValueSets/Confidentiality.md)<br/> `http://terminology.hl7.org/ValueSet/v3-Confidentiality\|2.0.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 
@@ -46,5 +46,5 @@ All codes from this value set are listed while other value sets only show conten
 | | | | | `R`| _Equivalent_ <br/>(18856/18855)| **`R`**| | | 
 | | | | | `U`| _Equivalent_ <br/>(18858/18857)| **`U`**| | | 
 | | | | | `V`| _Equivalent_ <br/>(18860/18859)| **`V`**| | | 
-| | | | | *6 of 20 codes used* <br/>remaining codes:<br/>`B`, `C`, `D`, `ETH`, `HIV`, `I`, `PSY`, `S`, `SDV`, `T`, `_Confidentiality`, `_ConfidentialityByAccessKind`, `_ConfidentialityByInfoType`, `_ConfidentialityModifiers`| | *6 of 6 codes used* | | 
+| | | | | *6 of 20 codes used* <br/>remaining codes:<br/>`B`, `C`, `D`, `ETH`, `HIV`, `I`, `PSY`, `S`, `SDV`, `T`, `_Confidentiality`| | *6 of 6 codes used* | | 
 

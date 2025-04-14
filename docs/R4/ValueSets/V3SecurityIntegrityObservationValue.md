@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.SecurityIntegrityObservationValue
 
@@ -64,9 +64,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `UNCERTREL` | uncertain reliability |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `UNRELIABLE` | unreliable |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `VERSIONED` | versioned |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECALTINTOBV` | alteration integrity |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECDATINTOBV` | data integrity |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTCONOBV` | integrity confidence |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVABOBV` | provenance asserted by |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVOBV` | provenance |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationValue` | `_SECINTPRVRBOBV` | provenance reported by |

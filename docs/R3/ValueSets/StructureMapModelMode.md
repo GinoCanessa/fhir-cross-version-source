@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### StructureMapModelMode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [StructureMapModelMode](/docs/R3/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `512`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `733`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapModelMode](/docs/R4/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1579`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1580`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapModelMode](/docs/R4B/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `990`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1251`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapModelMode](/docs/R5/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|5.0.0` 
+| | | [StructureMapModelMode](/docs/R3/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `512`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `733`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapModelMode](/docs/R4/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1579`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1580`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMapModelMode](/docs/R4B/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `990`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1251`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapModelMode](/docs/R5/ValueSets/StructureMapModelMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-model-mode\|5.0.0` 
 
 ### Code Mappings
 

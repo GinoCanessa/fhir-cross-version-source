@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### InteractionTrigger
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [InteractionTrigger](/docs/R4B/ValueSets/InteractionTrigger.md)<br/> `http://hl7.org/fhir/ValueSet/interaction-trigger\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `978`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1239`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [InteractionTrigger](/docs/R5/ValueSets/InteractionTrigger.md)<br/> `http://hl7.org/fhir/ValueSet/interaction-trigger\|5.0.0` 
+| | | | | | | [InteractionTrigger](/docs/R4B/ValueSets/InteractionTrigger.md)<br/> `http://hl7.org/fhir/ValueSet/interaction-trigger\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `978`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1239`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [InteractionTrigger](/docs/R5/ValueSets/InteractionTrigger.md)<br/> `http://hl7.org/fhir/ValueSet/interaction-trigger\|5.0.0` 
 
 ### Code Mappings
 

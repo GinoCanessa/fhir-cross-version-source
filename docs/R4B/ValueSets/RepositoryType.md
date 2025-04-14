@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### repositoryType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [repositoryType](/docs/R3/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `495`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `673`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [repositoryType](/docs/R4/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1696`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [repositoryType](/docs/R4B/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | [repositoryType](/docs/R3/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `495`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `673`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [repositoryType](/docs/R4/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1696`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [repositoryType](/docs/R4B/ValueSets/RepositoryType.md)<br/> `http://hl7.org/fhir/ValueSet/repository-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

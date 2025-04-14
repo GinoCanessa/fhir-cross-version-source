@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActInvoiceGroupCode
 
@@ -27,7 +27,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ActInvoiceGroupCode](/docs/R2/ValueSets/ActInvoiceGroupCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1313`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1314`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActInvoiceGroupCode](/docs/R3/ValueSets/ActInvoiceGroupCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `1333`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [v3.ActInvoiceGroupCode](/docs/R4/ValueSets/V3ActInvoiceGroupCode.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [ActInvoiceGroupCode](/docs/R2/ValueSets/ActInvoiceGroupCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1313`<br/>- Reviewed: `2025-04-14T21:48:21.3459717`<br/>- By: `ginoc`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1314`<br/>- Reviewed: `2025-04-14T21:48:25.0162804`<br/>- By: `ginoc`<br/>- Identical: `False`<br/>←←←←←←←| [ActInvoiceGroupCode](/docs/R3/ValueSets/ActInvoiceGroupCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `1333`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1334`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [v3.ActInvoiceGroupCode](/docs/R4/ValueSets/V3ActInvoiceGroupCode.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ActInvoiceGroupCode\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 
@@ -56,7 +56,5 @@ All codes from this value set are listed while other value sets only show conten
 | `RXDINV`| _Equivalent_ <br/>(12809/12810)| `RXDINV`| _Equivalent_ <br/>(13850/13851)| **`RXDINV`**| | | | | 
 | `SBFINV`| _Equivalent_ <br/>(12811/12812)| `SBFINV`| _Equivalent_ <br/>(13852/13853)| **`SBFINV`**| | | | | 
 | `VRXINV`| _Equivalent_ <br/>(12813/12814)| `VRXINV`| _Equivalent_ <br/>(13854/13855)| **`VRXINV`**| | | | | 
-| | | | | **`_ActInvoiceInterGroupCode`**| | | | | 
-| | | | | **`_ActInvoiceRootGroupCode`**| | | | | 
-| *17 of 19 codes used* <br/>remaining codes:<br/>`_ActInvoiceInterGroupCode`, `_ActInvoiceRootGroupCode`| | *17 of 17 codes used* | | *19 of 19 codes used* | | | | 
+| *17 of 19 codes used* <br/>remaining codes:<br/>| | *17 of 17 codes used* | | *17 of 19 codes used* <br/>remaining codes:<br/>| | | | 
 

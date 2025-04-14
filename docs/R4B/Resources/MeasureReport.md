@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:55 PM
+Generated at Monday, April 14, 2025 6:17:39 PM
 
 ### MeasureReport
 
@@ -80,7 +80,7 @@ Generated at Friday, April 4, 2025 2:58:55 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [MeasureReport](/docs/R3/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `477`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `671`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReport](/docs/R4/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|4.0.1` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1531`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1532`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReport](/docs/R4B/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1001`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MeasureReport](/docs/R5/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|5.0.0` 
+| | | [MeasureReport](/docs/R3/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `477`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `671`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureReport](/docs/R4/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|4.0.1` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1531`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1532`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureReport](/docs/R4B/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1001`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MeasureReport](/docs/R5/Resources/MeasureReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/MeasureReport\|5.0.0` 
 
 ### Element Mappings
 

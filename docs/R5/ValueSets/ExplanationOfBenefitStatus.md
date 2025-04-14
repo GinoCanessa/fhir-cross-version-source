@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### ExplanationOfBenefitStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ExplanationOfBenefitStatus](/docs/R3/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `415`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R4/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1505`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1506`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R4B/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `876`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1137`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R5/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|5.0.0` 
+| | | [ExplanationOfBenefitStatus](/docs/R3/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `415`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `637`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R4/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1505`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1506`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R4B/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `876`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1137`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ExplanationOfBenefitStatus](/docs/R5/ValueSets/ExplanationOfBenefitStatus.md)<br/> `http://hl7.org/fhir/ValueSet/explanationofbenefit-status\|5.0.0` 
 
 ### Code Mappings
 

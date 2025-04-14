@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ActionType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ActionType](/docs/R4B/ValueSets/ActionType.md)<br/> `http://hl7.org/fhir/ValueSet/action-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `958`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1219`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionType](/docs/R5/ValueSets/ActionType.md)<br/> `http://hl7.org/fhir/ValueSet/action-type\|5.0.0` 
+| | | | | | | [ActionType](/docs/R4B/ValueSets/ActionType.md)<br/> `http://hl7.org/fhir/ValueSet/action-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `958`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1219`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionType](/docs/R5/ValueSets/ActionType.md)<br/> `http://hl7.org/fhir/ValueSet/action-type\|5.0.0` 
 
 ### Code Mappings
 

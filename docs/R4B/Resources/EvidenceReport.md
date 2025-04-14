@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:38 PM
 
 ### EvidenceReport
 
@@ -83,7 +83,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [EvidenceReport](/docs/R4B/Resources/EvidenceReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `976`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1205`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceReport](/docs/R5/Resources/EvidenceReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceReport\|5.0.0` 
+| | | | | | | [EvidenceReport](/docs/R4B/Resources/EvidenceReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceReport\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `976`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1205`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [EvidenceReport](/docs/R5/Resources/EvidenceReport.md)<br/> `http://hl7.org/fhir/StructureDefinition/EvidenceReport\|5.0.0` 
 
 ### Element Mappings
 

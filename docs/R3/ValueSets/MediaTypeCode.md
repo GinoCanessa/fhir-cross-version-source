@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### Media Type Code
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Media Type Code](/docs/R2/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|20100826` | →→→→→→→<br/>``<br/>- DBKey: `140`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `293`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Media Type Code](/docs/R3/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|20100826` | →→→→→→→<br/>``<br/>- DBKey: `497`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `718`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MediaTypeCode](/docs/R4/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [Media Type Code](/docs/R2/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|20100826` | →→→→→→→<br/>``<br/>- DBKey: `140`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `293`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Media Type Code](/docs/R3/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|20100826` | →→→→→→→<br/>``<br/>- DBKey: `497`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `718`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MediaTypeCode](/docs/R4/ValueSets/MediaTypeCode.md)<br/> `http://hl7.org/fhir/ValueSet/dicm-405-mediatype\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

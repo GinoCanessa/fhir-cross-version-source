@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System RoleCode
 
@@ -34,7 +34,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `ACC` | accident site |
 | `http://hl7.org/fhir/v3/RoleCode` | `ACHFID` | accreditation location identifier |
 | `http://hl7.org/fhir/v3/RoleCode` | `ACTMIL` | active duty military |
-| `http://hl7.org/fhir/v3/RoleCode` | `ADOPT` | adopted child |
 | `http://hl7.org/fhir/v3/RoleCode` | `ADOPTF` | adoptive father |
 | `http://hl7.org/fhir/v3/RoleCode` | `ADOPTM` | adoptive mother |
 | `http://hl7.org/fhir/v3/RoleCode` | `ADOPTP` | adoptive parent |
@@ -103,8 +102,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `DECLASSIFIER` | declassifier |
 | `http://hl7.org/fhir/v3/RoleCode` | `DELEGATEE` | delegatee |
 | `http://hl7.org/fhir/v3/RoleCode` | `DELEGATOR` | delegator |
-| `http://hl7.org/fhir/v3/RoleCode` | `DEP` |  |
-| `http://hl7.org/fhir/v3/RoleCode` | `DEPEN` | dependent |
 | `http://hl7.org/fhir/v3/RoleCode` | `DERM` | Dermatology clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `DIFFABL` | differently abled |
 | `http://hl7.org/fhir/v3/RoleCode` | `DOMPART` | domestic partner |
@@ -131,7 +128,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `FAMDEP` | family dependent |
 | `http://hl7.org/fhir/v3/RoleCode` | `FAMMEMB` | family member |
 | `http://hl7.org/fhir/v3/RoleCode` | `FI` | Fiber |
-| `http://hl7.org/fhir/v3/RoleCode` | `FM` | Family Member |
 | `http://hl7.org/fhir/v3/RoleCode` | `FMC` | Family medicine clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `FMRSPS` | former spouse |
 | `http://hl7.org/fhir/v3/RoleCode` | `FRND` | unrelated friend |
@@ -145,7 +141,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `FULLINS` | Fully insured coverage sponsor |
 | `http://hl7.org/fhir/v3/RoleCode` | `G` | Group |
 | `http://hl7.org/fhir/v3/RoleCode` | `GACH` | Hospitals; General Acute Care Hospital |
-| `http://hl7.org/fhir/v3/RoleCode` | `GCHILD` | grandchild |
 | `http://hl7.org/fhir/v3/RoleCode` | `GD` | generic drug |
 | `http://hl7.org/fhir/v3/RoleCode` | `GDF` | generic drug form |
 | `http://hl7.org/fhir/v3/RoleCode` | `GDS` | generic drug strength |
@@ -157,7 +152,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `GI` | Gastroenterology clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `GIDX` | Gastroenterology diagnostics or therapeutics lab |
 | `http://hl7.org/fhir/v3/RoleCode` | `GIM` | General internal medicine clinic |
-| `http://hl7.org/fhir/v3/RoleCode` | `GPARNT` | grandparent |
 | `http://hl7.org/fhir/v3/RoleCode` | `GRANTEE` | grantee |
 | `http://hl7.org/fhir/v3/RoleCode` | `GRANTOR` | grantor |
 | `http://hl7.org/fhir/v3/RoleCode` | `GRFTH` | grandfather |
@@ -188,7 +182,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `ICU` | Intensive care unit |
 | `http://hl7.org/fhir/v3/RoleCode` | `IEC` | Impairment evaluation center |
 | `http://hl7.org/fhir/v3/RoleCode` | `INDIG` | member of an indigenous people |
-| `http://hl7.org/fhir/v3/RoleCode` | `INDIV` | individual |
 | `http://hl7.org/fhir/v3/RoleCode` | `INFD` | Infectious disease clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `INJ` | injured plaintiff |
 | `http://hl7.org/fhir/v3/RoleCode` | `INJWKR` | injured worker |
@@ -225,8 +218,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `MTHINLAW` | mother-in-law |
 | `http://hl7.org/fhir/v3/RoleCode` | `MU` | Multiplier |
 | `http://hl7.org/fhir/v3/RoleCode` | `MUNCLE` | maternal uncle |
-| `http://hl7.org/fhir/v3/RoleCode` | `NAMED` | named insured |
-| `http://hl7.org/fhir/v3/RoleCode` | `NAT` | natural child |
 | `http://hl7.org/fhir/v3/RoleCode` | `NBOR` | neighbor |
 | `http://hl7.org/fhir/v3/RoleCode` | `NBRO` | natural brother |
 | `http://hl7.org/fhir/v3/RoleCode` | `NCCF` | Nursing or custodial care facility |
@@ -238,7 +229,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `NFTH` | natural father |
 | `http://hl7.org/fhir/v3/RoleCode` | `NFTHF` | natural father of fetus |
 | `http://hl7.org/fhir/v3/RoleCode` | `NIECE` | niece |
-| `http://hl7.org/fhir/v3/RoleCode` | `NIENE` | niece/nephew |
 | `http://hl7.org/fhir/v3/RoleCode` | `NIENEPH` | niece/nephew |
 | `http://hl7.org/fhir/v3/RoleCode` | `NMTH` | natural mother |
 | `http://hl7.org/fhir/v3/RoleCode` | `NMTHF` | natural mother of fetus |
@@ -261,7 +251,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `OUTPHARM` | outpatient pharmacy |
 | `http://hl7.org/fhir/v3/RoleCode` | `P` | Patient |
 | `http://hl7.org/fhir/v3/RoleCode` | `PAINCL` | Pain clinic |
-| `http://hl7.org/fhir/v3/RoleCode` | `PARNT` | parent |
 | `http://hl7.org/fhir/v3/RoleCode` | `PAUNT` | paternal aunt |
 | `http://hl7.org/fhir/v3/RoleCode` | `PAYOR` | Payor Contact |
 | `http://hl7.org/fhir/v3/RoleCode` | `PC` | Primary care clinic |
@@ -303,7 +292,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `PSI` | Psychology clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `PSTUD` | part-time student |
 | `http://hl7.org/fhir/v3/RoleCode` | `PSY` | Psychiatry clinic |
-| `http://hl7.org/fhir/v3/RoleCode` | `PSYCHCF` |  |
 | `http://hl7.org/fhir/v3/RoleCode` | `PSYCHF` | Psychatric Care Facility |
 | `http://hl7.org/fhir/v3/RoleCode` | `PT` | Patient |
 | `http://hl7.org/fhir/v3/RoleCode` | `PTRES` | Patient's Residence |
@@ -354,8 +342,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `SPON` | sponsored dependent |
 | `http://hl7.org/fhir/v3/RoleCode` | `SPOWATT` | special power of attorney |
 | `http://hl7.org/fhir/v3/RoleCode` | `SPS` | spouse |
-| `http://hl7.org/fhir/v3/RoleCode` | `SPSE` | spouse |
-| `http://hl7.org/fhir/v3/RoleCode` | `STEP` | step child |
 | `http://hl7.org/fhir/v3/RoleCode` | `STPBRO` | stepbrother |
 | `http://hl7.org/fhir/v3/RoleCode` | `STPCHLD` | step child |
 | `http://hl7.org/fhir/v3/RoleCode` | `STPDAU` | stepdaughter |
@@ -367,7 +353,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `STPSON` | stepson |
 | `http://hl7.org/fhir/v3/RoleCode` | `STUD` | student |
 | `http://hl7.org/fhir/v3/RoleCode` | `SU` | Surgery clinic |
-| `http://hl7.org/fhir/v3/RoleCode` | `SUBSCR` | subscriber |
 | `http://hl7.org/fhir/v3/RoleCode` | `SURF` | Substance use rehabilitation facility |
 | `http://hl7.org/fhir/v3/RoleCode` | `TPA` | Third party administrator |
 | `http://hl7.org/fhir/v3/RoleCode` | `TR` | Transplant clinic |
@@ -390,37 +375,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `WND` | Wound clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `WO` | Working |
 | `http://hl7.org/fhir/v3/RoleCode` | `WORK` | work site |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AdministrativeContactRoleType` | AdministrativeContactRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AffiliationRoleType` | AffiliationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AgentRoleType` | AgentRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AssignedNonPersonLivingSubjectRoleType` | AssignedNonPersonLivingSubjectRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AssignedRoleType` | AssignedRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CertifiedEntityType` | CertifiedEntityType |
 | `http://hl7.org/fhir/v3/RoleCode` | `_CitizenRoleType` | CitizenRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ClaimantCoveredPartyRoleType` | ClaimantCoveredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ContactRoleType` | ContactRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoverageRoleType` | CoverageRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoverageSponsorRoleType` | CoverageSponsorRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoveredPartyRoleType` | covered party role type |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedClinicalLocationRoleType` | DedicatedClinicalLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedNonClinicalLocationRoleType` | DedicatedNonClinicalLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedServiceDeliveryLocationRoleType` | DedicatedServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DependentCoveredPartyRoleType` | DependentCoveredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IdentifiedEntityType` | IdentifiedEntityType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IncidentalServiceDeliveryLocationRoleType` | IncidentalServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IndividualInsuredPartyRoleType` | IndividualInsuredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_LivingSubjectProductionClass` | LivingSubjectProductionClass |
-| `http://hl7.org/fhir/v3/RoleCode` | `_LocationIdentifiedEntityRoleCode` | LocationIdentifiedEntityRoleCode |
-| `http://hl7.org/fhir/v3/RoleCode` | `_MedicationGeneralizationRoleType` | MedicationGeneralizationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_MemberRoleType` | MemberRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PayorRoleType` | PayorRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PersonalRelationshipRoleType` | PersonalRelationshipRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PolicyOrProgramCoverageRoleType` | PolicyOrProgramCoverageRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ProgramEligiblePartyRoleType` | ProgramEligiblePartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ResearchSubjectRoleBasis` | ResearchSubjectRoleBasis |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ServiceDeliveryLocationRoleType` | ServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_SpecimenRoleType` | SpecimenRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_SubscriberCoveredPartyRoleType` | SubscriberCoveredPartyRoleType |
 | `http://hl7.org/fhir/v3/RoleCode` | `communityLaboratory` | Community Laboratory |
 | `http://hl7.org/fhir/v3/RoleCode` | `homeHealth` | Home Health |
 | `http://hl7.org/fhir/v3/RoleCode` | `laboratory` | Laboratory |

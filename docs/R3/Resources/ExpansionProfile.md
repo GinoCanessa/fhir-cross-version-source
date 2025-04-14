@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:39 PM
+Generated at Monday, April 14, 2025 6:17:23 PM
 
 ### ExpansionProfile
 
@@ -90,7 +90,7 @@ Generated at Friday, April 4, 2025 2:58:39 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ExpansionProfile](/docs/R3/Resources/ExpansionProfile.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExpansionProfile\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `459`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `688`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Parameters](/docs/R4/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1569`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1570`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Parameters](/docs/R4B/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1060`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1289`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Parameters](/docs/R5/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|5.0.0` 
+| | | [ExpansionProfile](/docs/R3/Resources/ExpansionProfile.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExpansionProfile\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `459`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `688`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Parameters](/docs/R4/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1569`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1570`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Parameters](/docs/R4B/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1060`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1289`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Parameters](/docs/R5/Resources/Parameters.md)<br/> `http://hl7.org/fhir/StructureDefinition/Parameters\|5.0.0` 
 
 ### Element Mappings
 

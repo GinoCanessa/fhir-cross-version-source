@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ContextControl
 
@@ -35,7 +35,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `AP` | additive, propagating |
 | `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `ON` | overriding, non-propagating |
 | `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `OP` | overriding, propagating |
-| `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `_ContextControlAdditive` | ContextControlAdditive |
-| `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `_ContextControlNonPropagating` | ContextControlNonPropagating |
-| `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `_ContextControlOverriding` | ContextControlOverriding |
-| `http://terminology.hl7.org/CodeSystem/v3-ContextControl` | `_ContextControlPropagating` | ContextControlPropagating |

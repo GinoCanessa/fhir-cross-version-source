@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:29 PM
 
 ### ContactDetail
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ContactDetail](/docs/R3/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `388`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `584`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContactDetail](/docs/R4/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1322`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContactDetail](/docs/R4B/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `896`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1125`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ContactDetail](/docs/R5/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|5.0.0` 
+| | | [ContactDetail](/docs/R3/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `388`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `584`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContactDetail](/docs/R4/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1321`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1322`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContactDetail](/docs/R4B/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `896`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1125`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ContactDetail](/docs/R5/ComplexTypes/ContactDetail.md)<br/> `http://hl7.org/fhir/StructureDefinition/ContactDetail\|5.0.0` 
 
 ### Element Mappings
 

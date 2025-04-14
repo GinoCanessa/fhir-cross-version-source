@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:35 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### ValueSet
 
@@ -127,8 +127,8 @@ Generated at Friday, April 4, 2025 2:58:35 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ValueSet](/docs/R2/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `164`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `331`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystem](/docs/R3/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `433`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `629`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystem](/docs/R4/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystem](/docs/R4B/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `949`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1178`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystem](/docs/R5/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|5.0.0` 
-| [ValueSet](/docs/R2/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `164`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `331`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ValueSet](/docs/R3/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `527`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `723`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ValueSet](/docs/R4/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1641`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1642`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ValueSet](/docs/R4B/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1057`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1286`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ValueSet](/docs/R5/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|5.0.0` 
+| [ValueSet](/docs/R2/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `165`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `252`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystem](/docs/R3/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `433`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `629`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystem](/docs/R4/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1430`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystem](/docs/R4B/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `949`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1178`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystem](/docs/R5/Resources/CodeSystem.md)<br/> `http://hl7.org/fhir/StructureDefinition/CodeSystem\|5.0.0` 
+| [ValueSet](/docs/R2/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `164`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `331`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ValueSet](/docs/R3/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `527`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `723`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ValueSet](/docs/R4/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1641`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1642`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ValueSet](/docs/R4B/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1057`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1286`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ValueSet](/docs/R5/Resources/ValueSet.md)<br/> `http://hl7.org/fhir/StructureDefinition/ValueSet\|5.0.0` 
 
 ### Element Mappings
 
@@ -140,41 +140,40 @@ All elements from this structure are listed while other structures only show con
 
 | R2 ValueSet| Relationship | [R3 CodeSystem](/docs/R3/Resources/CodeSystem.md)| Relationship | [R4 CodeSystem](/docs/R4/Resources/CodeSystem.md)| Relationship | [R4B CodeSystem](/docs/R4B/Resources/CodeSystem.md)| Relationship | [R5 CodeSystem](/docs/R5/Resources/CodeSystem.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| **`ValueSet`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8506)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(8507)| `ValueSet`| | | | | | | 
-| **`ValueSet.id`**| _Equivalent_<br/>(8508/8509)| `ValueSet.id`| | | | | | | 
-| **`ValueSet.meta`**| _Equivalent_<br/>(8510/8511)| `ValueSet.meta`| | | | | | | 
-| **`ValueSet.implicitRules`**| _Equivalent_<br/>(8512/8513)| `ValueSet.implicitRules`| | | | | | | 
-| **`ValueSet.language`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8514)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(8515)| `ValueSet.language`| | | | | | | 
-| **`ValueSet.text`**| _Equivalent_<br/>(8516/8517)| `ValueSet.text`| | | | | | | 
-| **`ValueSet.contained`**| _Equivalent_<br/>(8518/8519)| `ValueSet.contained`| | | | | | | 
-| **`ValueSet.extension`**| _Equivalent_<br/>(8520/8521)| `ValueSet.extension`| | | | | | | 
-| **`ValueSet.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(8522)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8523)| `ValueSet.modifierExtension`| | | | | | | 
-| **`ValueSet.url`**| _Equivalent_<br/>(8524/8525)| `ValueSet.url`| | | | | | | 
-| **`ValueSet.identifier`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8526)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8527)| `ValueSet.identifier`| | | | | | | 
-| **`ValueSet.version`**| _Equivalent_<br/>(8528/8529)| `ValueSet.version`| | | | | | | 
-| **`ValueSet.name`**| _Equivalent_<br/>(8530/8531)| `ValueSet.name`| | | | | | | 
-| **`ValueSet.status`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8532)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8533)| `ValueSet.status`| | | | | | | 
-| **`ValueSet.experimental`**| _Equivalent_<br/>(8534/8535)| `ValueSet.experimental`| | | | | | | 
-| **`ValueSet.publisher`**| _Equivalent_<br/>(8536/8537)| `ValueSet.publisher`| | | | | | | 
-| **`ValueSet.contact`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8538)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8539)| `ValueSet.contact`| | | | | | | 
+| **`ValueSet`**| | | | | | | | | 
+| **`ValueSet.id`**| | | | | | | | | 
+| **`ValueSet.meta`**| | | | | | | | | 
+| **`ValueSet.implicitRules`**| | | | | | | | | 
+| **`ValueSet.language`**| | | | | | | | | 
+| **`ValueSet.text`**| | | | | | | | | 
+| **`ValueSet.contained`**| | | | | | | | | 
+| **`ValueSet.extension`**| | | | | | | | | 
+| **`ValueSet.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.url`**| | | | | | | | | 
+| **`ValueSet.identifier`**| | | | | | | | | 
+| **`ValueSet.version`**| | | | | | | | | 
+| **`ValueSet.name`**| | | | | | | | | 
+| **`ValueSet.status`**| | | | | | | | | 
+| **`ValueSet.experimental`**| | | | | | | | | 
+| **`ValueSet.publisher`**| | | | | | | | | 
+| **`ValueSet.contact`**| | | | | | | | | 
 | **`ValueSet.contact.id`**| | | | | | | | | 
 | **`ValueSet.contact.extension`**| | | | | | | | | 
 | **`ValueSet.contact.modifierExtension`**| | | | | | | | | 
 | **`ValueSet.contact.name`**| | | | | | | | | 
 | **`ValueSet.contact.telecom`**| | | | | | | | | 
-| **`ValueSet.date`**| _Equivalent_<br/>(8545/8546)| `ValueSet.date`| | | | | | | 
-| **`ValueSet.lockedDate`**| _Equivalent_<br/>(452/784)| `ValueSet.compose.lockedDate`| | | | | | | 
-| **`ValueSet.description`**| _Equivalent_<br/>(8547/8548)| `ValueSet.description`| | | | | | | 
-| **`ValueSet.useContext`**| _Equivalent_<br/>(454/786)| `ValueSet.useContext`| | | | | | | 
-| **`ValueSet.useContext`**| _Equivalent_<br/>(454/786)| `ValueSet.jurisdiction`| | | | | | | 
-| **`ValueSet.immutable`**| _Equivalent_<br/>(8549/8550)| `ValueSet.immutable`| | | | | | | 
-| **`ValueSet.requirements`**| _Equivalent_<br/>(453/785)| `ValueSet.purpose`| | | | | | | 
-| **`ValueSet.copyright`**| _Equivalent_<br/>(8551/8552)| `ValueSet.copyright`| | | | | | | 
-| **`ValueSet.extensible`**| _Equivalent_<br/>(8553/8554)| `ValueSet.extensible`| | | | | | | 
+| **`ValueSet.date`**| | | | | | | | | 
+| **`ValueSet.lockedDate`**| | | | | | | | | 
+| **`ValueSet.description`**| | | | | | | | | 
+| **`ValueSet.useContext`**| | | | | | | | | 
+| **`ValueSet.immutable`**| | | | | | | | | 
+| **`ValueSet.requirements`**| | | | | | | | | 
+| **`ValueSet.copyright`**| | | | | | | | | 
+| **`ValueSet.extensible`**| | | | | | | | | 
 | **`ValueSet.codeSystem`**| | | | | | | | | 
 | **`ValueSet.codeSystem.id`**| | | | | | | | | 
 | **`ValueSet.codeSystem.extension`**| | | | | | | | | 
-| **`ValueSet.codeSystem.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(455)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8558)| `ValueSet.modifierExtension`| | | | | | | 
+| **`ValueSet.codeSystem.modifierExtension`**| | | | | | | | | 
 | **`ValueSet.codeSystem.system`**| | | | | | | | | 
 | **`ValueSet.codeSystem.version`**| | | | | | | | | 
 | **`ValueSet.codeSystem.caseSensitive`**| | | | | | | | | 
@@ -194,58 +193,57 @@ All elements from this structure are listed while other structures only show con
 | **`ValueSet.codeSystem.concept.designation.use`**| | | | | | | | | 
 | **`ValueSet.codeSystem.concept.designation.value`**| | | | | | | | | 
 | **`ValueSet.codeSystem.concept.concept`**| | | | | | | | | 
-| **`ValueSet.compose`**| _Equivalent_<br/>(8567/8568)| `ValueSet.compose`| | | | | | | 
-| **`ValueSet.compose.id`**| _Equivalent_<br/>(8569/8570)| `ValueSet.compose.id`| | | | | | | 
-| **`ValueSet.compose.extension`**| _Equivalent_<br/>(8571/8572)| `ValueSet.compose.extension`| | | | | | | 
-| **`ValueSet.compose.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(19844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(787)| `ValueSet.compose.modifierExtension`| | | | | | | 
-| **`ValueSet.compose.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(19844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(787)| `ValueSet.compose.include.modifierExtension`| | | | | | | 
+| **`ValueSet.compose`**| | | | | | | | | 
+| **`ValueSet.compose.id`**| | | | | | | | | 
+| **`ValueSet.compose.extension`**| | | | | | | | | 
+| **`ValueSet.compose.modifierExtension`**| | | | | | | | | 
 | **`ValueSet.compose.import`**| | | | | | | | | 
-| **`ValueSet.compose.include`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8575)<hr/>←←←← _Equivalent_ ←←←← <br/>(8576)| `ValueSet.compose.include`| | | | | | | 
-| **`ValueSet.compose.include.id`**| _Equivalent_<br/>(8577/8578)| `ValueSet.compose.include.id`| | | | | | | 
-| **`ValueSet.compose.include.extension`**| _Equivalent_<br/>(8579/8580)| `ValueSet.compose.include.extension`| | | | | | | 
-| **`ValueSet.compose.include.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(8581)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8582)| `ValueSet.compose.include.modifierExtension`| | | | | | | 
-| **`ValueSet.compose.include.system`**| →→→→ _Equivalent_ →→→→ <br/>(8583)<hr/>←←←← _SourceIsNarrowerThanTarget_ ←←←← <br/>(8584)| `ValueSet.compose.include.system`| | | | | | | 
-| **`ValueSet.compose.include.version`**| _Equivalent_<br/>(8585/8586)| `ValueSet.compose.include.version`| | | | | | | 
-| **`ValueSet.compose.include.concept`**| _Equivalent_<br/>(8587/8588)| `ValueSet.compose.include.concept`| | | | | | | 
-| **`ValueSet.compose.include.concept.id`**| _Equivalent_<br/>(8589/8590)| `ValueSet.compose.include.concept.id`| | | | | | | 
-| **`ValueSet.compose.include.concept.extension`**| _Equivalent_<br/>(8591/8592)| `ValueSet.compose.include.concept.extension`| | | | | | | 
-| **`ValueSet.compose.include.concept.modifierExtension`**| _Equivalent_<br/>(8593/8594)| `ValueSet.compose.include.concept.modifierExtension`| | | | | | | 
-| **`ValueSet.compose.include.concept.code`**| _Equivalent_<br/>(8595/8596)| `ValueSet.compose.include.concept.code`| | | | | | | 
-| **`ValueSet.compose.include.concept.display`**| _Equivalent_<br/>(8597/8598)| `ValueSet.compose.include.concept.display`| | | | | | | 
-| **`ValueSet.compose.include.concept.designation`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(8599)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8600)| `ValueSet.compose.include.concept.designation`| | | | | | | 
-| **`ValueSet.compose.include.filter`**| _Equivalent_<br/>(8601/8602)| `ValueSet.compose.include.filter`| | | | | | | 
-| **`ValueSet.compose.include.filter.id`**| _Equivalent_<br/>(8603/8604)| `ValueSet.compose.include.filter.id`| | | | | | | 
-| **`ValueSet.compose.include.filter.extension`**| _Equivalent_<br/>(8605/8606)| `ValueSet.compose.include.filter.extension`| | | | | | | 
-| **`ValueSet.compose.include.filter.modifierExtension`**| _Equivalent_<br/>(8607/8608)| `ValueSet.compose.include.filter.modifierExtension`| | | | | | | 
-| **`ValueSet.compose.include.filter.property`**| _Equivalent_<br/>(8609/8610)| `ValueSet.compose.include.filter.property`| | | | | | | 
-| **`ValueSet.compose.include.filter.op`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8611)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(8612)| `ValueSet.compose.include.filter.op`| | | | | | | 
-| **`ValueSet.compose.include.filter.value`**| _Equivalent_<br/>(8613/8614)| `ValueSet.compose.include.filter.value`| | | | | | | 
-| **`ValueSet.compose.exclude`**| _Equivalent_<br/>(8615/8616)| `ValueSet.compose.exclude`| | | | | | | 
-| **`ValueSet.expansion`**| _Equivalent_<br/>(8617/8618)| `ValueSet.expansion`| | | | | | | 
-| **`ValueSet.expansion.id`**| _Equivalent_<br/>(8619/8620)| `ValueSet.expansion.id`| | | | | | | 
-| **`ValueSet.expansion.extension`**| _Equivalent_<br/>(8621/8622)| `ValueSet.expansion.extension`| | | | | | | 
-| **`ValueSet.expansion.modifierExtension`**| _Equivalent_<br/>(8623/8624)| `ValueSet.expansion.modifierExtension`| | | | | | | 
-| **`ValueSet.expansion.identifier`**| _Equivalent_<br/>(8625/8626)| `ValueSet.expansion.identifier`| | | | | | | 
-| **`ValueSet.expansion.timestamp`**| _Equivalent_<br/>(8627/8628)| `ValueSet.expansion.timestamp`| | | | | | | 
-| **`ValueSet.expansion.total`**| _Equivalent_<br/>(8629/8630)| `ValueSet.expansion.total`| | | | | | | 
-| **`ValueSet.expansion.offset`**| _Equivalent_<br/>(8631/8632)| `ValueSet.expansion.offset`| | | | | | | 
-| **`ValueSet.expansion.parameter`**| _Equivalent_<br/>(8633/8634)| `ValueSet.expansion.parameter`| | | | | | | 
-| **`ValueSet.expansion.parameter.id`**| _Equivalent_<br/>(8635/8636)| `ValueSet.expansion.parameter.id`| | | | | | | 
-| **`ValueSet.expansion.parameter.extension`**| _Equivalent_<br/>(8637/8638)| `ValueSet.expansion.parameter.extension`| | | | | | | 
-| **`ValueSet.expansion.parameter.modifierExtension`**| _Equivalent_<br/>(8639/8640)| `ValueSet.expansion.parameter.modifierExtension`| | | | | | | 
-| **`ValueSet.expansion.parameter.name`**| _Equivalent_<br/>(8641/8642)| `ValueSet.expansion.parameter.name`| | | | | | | 
-| **`ValueSet.expansion.parameter.value[x]`**| _Equivalent_<br/>(8643/8644)| `ValueSet.expansion.parameter.value[x]`| | | | | | | 
-| **`ValueSet.expansion.contains`**| _Equivalent_<br/>(8645/8646)| `ValueSet.expansion.contains`| | | | | | | 
-| **`ValueSet.expansion.contains.id`**| _Equivalent_<br/>(8647/8648)| `ValueSet.expansion.contains.id`| | | | | | | 
-| **`ValueSet.expansion.contains.extension`**| _Equivalent_<br/>(8649/8650)| `ValueSet.expansion.contains.extension`| | | | | | | 
-| **`ValueSet.expansion.contains.modifierExtension`**| _Equivalent_<br/>(8651/8652)| `ValueSet.expansion.contains.modifierExtension`| | | | | | | 
-| **`ValueSet.expansion.contains.system`**| _Equivalent_<br/>(8653/8654)| `ValueSet.expansion.contains.system`| | | | | | | 
-| **`ValueSet.expansion.contains.abstract`**| _Equivalent_<br/>(8655/8656)| `ValueSet.expansion.contains.abstract`| | | | | | | 
-| **`ValueSet.expansion.contains.version`**| _Equivalent_<br/>(8657/8658)| `ValueSet.expansion.contains.version`| | | | | | | 
-| **`ValueSet.expansion.contains.code`**| _Equivalent_<br/>(8659/8660)| `ValueSet.expansion.contains.code`| | | | | | | 
-| **`ValueSet.expansion.contains.display`**| _Equivalent_<br/>(8661/8662)| `ValueSet.expansion.contains.display`| | | | | | | 
-| **`ValueSet.expansion.contains.contains`**| _Equivalent_<br/>(8663/8664)| `ValueSet.expansion.contains.contains`| | | | | | | 
-| *103 of 103 elements used* | | *75 of 68 elements used* | | *0 of 69 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionNeeded`| | *0 of 69 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionNeeded`| | *0 of 81 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.approvalDate`, `CodeSystem.author`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.additionalUse`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.copyrightLabel`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.editor`, `CodeSystem.effectivePeriod`, `CodeSystem.endorser`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.lastReviewDate`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.relatedArtifact`, `CodeSystem.reviewer`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.topic`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionAlgorithm[x]`, `CodeSystem.versionNeeded`
+| **`ValueSet.compose.include`**| | | | | | | | | 
+| **`ValueSet.compose.include.id`**| | | | | | | | | 
+| **`ValueSet.compose.include.extension`**| | | | | | | | | 
+| **`ValueSet.compose.include.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.compose.include.system`**| | | | | | | | | 
+| **`ValueSet.compose.include.version`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.id`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.extension`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.code`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.display`**| | | | | | | | | 
+| **`ValueSet.compose.include.concept.designation`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.id`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.extension`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.property`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.op`**| | | | | | | | | 
+| **`ValueSet.compose.include.filter.value`**| | | | | | | | | 
+| **`ValueSet.compose.exclude`**| | | | | | | | | 
+| **`ValueSet.expansion`**| | | | | | | | | 
+| **`ValueSet.expansion.id`**| | | | | | | | | 
+| **`ValueSet.expansion.extension`**| | | | | | | | | 
+| **`ValueSet.expansion.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.expansion.identifier`**| | | | | | | | | 
+| **`ValueSet.expansion.timestamp`**| | | | | | | | | 
+| **`ValueSet.expansion.total`**| | | | | | | | | 
+| **`ValueSet.expansion.offset`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter.id`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter.extension`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter.name`**| | | | | | | | | 
+| **`ValueSet.expansion.parameter.value[x]`**| | | | | | | | | 
+| **`ValueSet.expansion.contains`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.id`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.extension`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.modifierExtension`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.system`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.abstract`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.version`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.code`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.display`**| | | | | | | | | 
+| **`ValueSet.expansion.contains.contains`**| | | | | | | | | 
+| *103 of 103 elements used* | | *0 of 68 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.status`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionNeeded`| | *0 of 69 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionNeeded`| | *0 of 69 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionNeeded`| | *0 of 81 elements used* <br/>remaining elements:<br/>`CodeSystem`, `CodeSystem.approvalDate`, `CodeSystem.author`, `CodeSystem.caseSensitive`, `CodeSystem.compositional`, `CodeSystem.concept`, `CodeSystem.concept.code`, `CodeSystem.concept.concept`, `CodeSystem.concept.definition`, `CodeSystem.concept.designation`, `CodeSystem.concept.designation.additionalUse`, `CodeSystem.concept.designation.extension`, `CodeSystem.concept.designation.id`, `CodeSystem.concept.designation.language`, `CodeSystem.concept.designation.modifierExtension`, `CodeSystem.concept.designation.use`, `CodeSystem.concept.designation.value`, `CodeSystem.concept.display`, `CodeSystem.concept.extension`, `CodeSystem.concept.id`, `CodeSystem.concept.modifierExtension`, `CodeSystem.concept.property`, `CodeSystem.concept.property.code`, `CodeSystem.concept.property.extension`, `CodeSystem.concept.property.id`, `CodeSystem.concept.property.modifierExtension`, `CodeSystem.concept.property.value[x]`, `CodeSystem.contact`, `CodeSystem.contained`, `CodeSystem.content`, `CodeSystem.copyright`, `CodeSystem.copyrightLabel`, `CodeSystem.count`, `CodeSystem.date`, `CodeSystem.description`, `CodeSystem.editor`, `CodeSystem.effectivePeriod`, `CodeSystem.endorser`, `CodeSystem.experimental`, `CodeSystem.extension`, `CodeSystem.filter`, `CodeSystem.filter.code`, `CodeSystem.filter.description`, `CodeSystem.filter.extension`, `CodeSystem.filter.id`, `CodeSystem.filter.modifierExtension`, `CodeSystem.filter.operator`, `CodeSystem.filter.value`, `CodeSystem.hierarchyMeaning`, `CodeSystem.id`, `CodeSystem.identifier`, `CodeSystem.implicitRules`, `CodeSystem.jurisdiction`, `CodeSystem.language`, `CodeSystem.lastReviewDate`, `CodeSystem.meta`, `CodeSystem.modifierExtension`, `CodeSystem.name`, `CodeSystem.property`, `CodeSystem.property.code`, `CodeSystem.property.description`, `CodeSystem.property.extension`, `CodeSystem.property.id`, `CodeSystem.property.modifierExtension`, `CodeSystem.property.type`, `CodeSystem.property.uri`, `CodeSystem.publisher`, `CodeSystem.purpose`, `CodeSystem.relatedArtifact`, `CodeSystem.reviewer`, `CodeSystem.status`, `CodeSystem.supplements`, `CodeSystem.text`, `CodeSystem.title`, `CodeSystem.topic`, `CodeSystem.url`, `CodeSystem.useContext`, `CodeSystem.valueSet`, `CodeSystem.version`, `CodeSystem.versionAlgorithm[x]`, `CodeSystem.versionNeeded`
 
 
 #### Map Group 1
@@ -280,7 +278,7 @@ All elements from this structure are listed while other structures only show con
 | **`ValueSet.date`**| _Equivalent_<br/>(8545/8546)| `ValueSet.date`| _Equivalent_<br/>(19886/19887)| `ValueSet.date`| _Equivalent_<br/>(34831/34832)| `ValueSet.date`| _Equivalent_<br/>(49249/49250)| `ValueSet.date`
 | **`ValueSet.lockedDate`**| _Equivalent_<br/>(452/784)| `ValueSet.compose.lockedDate`| _Equivalent_<br/>(19912/19913)| `ValueSet.compose.lockedDate`| _Equivalent_<br/>(34857/34858)| `ValueSet.compose.lockedDate`| _Equivalent_<br/>(49275/49276)| `ValueSet.compose.lockedDate`
 | **`ValueSet.description`**| _Equivalent_<br/>(8547/8548)| `ValueSet.description`| _Equivalent_<br/>(19892/19893)| `ValueSet.description`| _Equivalent_<br/>(34837/34838)| `ValueSet.description`| _Equivalent_<br/>(49255/49256)| `ValueSet.description`
-| **`ValueSet.useContext`**| _Equivalent_<br/>(454/786)| `ValueSet.useContext`| _Equivalent_<br/>(19894/19895)| `ValueSet.useContext`| _Equivalent_<br/>(34839/34840)| `ValueSet.useContext`| _Equivalent_<br/>(49257/49258)| `ValueSet.useContext`
+| **`ValueSet.useContext`**| →→→→ _Equivalent_ →→→→ <br/>(19842)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(19841)| `ValueSet.useContext`| _Equivalent_<br/>(19894/19895)| `ValueSet.useContext`| _Equivalent_<br/>(34839/34840)| `ValueSet.useContext`| _Equivalent_<br/>(49257/49258)| `ValueSet.useContext`
 | **`ValueSet.useContext`**| _Equivalent_<br/>(454/786)| `ValueSet.jurisdiction`| _Equivalent_<br/>(19896/19897)| `ValueSet.jurisdiction`| _Equivalent_<br/>(34841/34842)| `ValueSet.jurisdiction`| _Equivalent_<br/>(49259/49260)| `ValueSet.jurisdiction`
 | **`ValueSet.immutable`**| _Equivalent_<br/>(8549/8550)| `ValueSet.immutable`| _Equivalent_<br/>(19898/19899)| `ValueSet.immutable`| _Equivalent_<br/>(34843/34844)| `ValueSet.immutable`| _Equivalent_<br/>(49261/49262)| `ValueSet.immutable`
 | **`ValueSet.requirements`**| _Equivalent_<br/>(453/785)| `ValueSet.purpose`| _Equivalent_<br/>(19900/19901)| `ValueSet.purpose`| _Equivalent_<br/>(34845/34846)| `ValueSet.purpose`| _Equivalent_<br/>(49263/49264)| `ValueSet.purpose`
@@ -312,7 +310,7 @@ All elements from this structure are listed while other structures only show con
 | **`ValueSet.compose`**| _Equivalent_<br/>(8567/8568)| `ValueSet.compose`| _Equivalent_<br/>(19904/19905)| `ValueSet.compose`| _Equivalent_<br/>(34849/34850)| `ValueSet.compose`| _Equivalent_<br/>(49267/49268)| `ValueSet.compose`
 | **`ValueSet.compose.id`**| _Equivalent_<br/>(8569/8570)| `ValueSet.compose.id`| _Equivalent_<br/>(19906/19907)| `ValueSet.compose.id`| _Equivalent_<br/>(34851/34852)| `ValueSet.compose.id`| _Equivalent_<br/>(49269/49270)| `ValueSet.compose.id`
 | **`ValueSet.compose.extension`**| _Equivalent_<br/>(8571/8572)| `ValueSet.compose.extension`| _Equivalent_<br/>(19908/19909)| `ValueSet.compose.extension`| _Equivalent_<br/>(34853/34854)| `ValueSet.compose.extension`| _Equivalent_<br/>(49271/49272)| `ValueSet.compose.extension`
-| **`ValueSet.compose.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(19844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(787)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(19910/19911)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(34855/34856)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(49273/49274)| `ValueSet.compose.modifierExtension`
+| **`ValueSet.compose.modifierExtension`**| _Equivalent_<br/>(8573/8574)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(19910/19911)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(34855/34856)| `ValueSet.compose.modifierExtension`| _Equivalent_<br/>(49273/49274)| `ValueSet.compose.modifierExtension`
 | **`ValueSet.compose.modifierExtension`**| →→→→ _Equivalent_ →→→→ <br/>(19844)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(787)| `ValueSet.compose.include.modifierExtension`| _Equivalent_<br/>(19922/19923)| `ValueSet.compose.include.modifierExtension`| _Equivalent_<br/>(34867/34868)| `ValueSet.compose.include.modifierExtension`| _Equivalent_<br/>(49285/49286)| `ValueSet.compose.include.modifierExtension`
 | **`ValueSet.compose.import`**| | | | | | | | | 
 | **`ValueSet.compose.include`**| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(8575)<hr/>←←←← _Equivalent_ ←←←← <br/>(8576)| `ValueSet.compose.include`| _Equivalent_<br/>(19916/19917)| `ValueSet.compose.include`| _Equivalent_<br/>(34861/34862)| `ValueSet.compose.include`| _Equivalent_<br/>(49279/49280)| `ValueSet.compose.include`

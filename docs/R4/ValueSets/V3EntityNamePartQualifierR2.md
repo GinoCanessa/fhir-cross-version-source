@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.EntityNamePartQualifierR2
 
@@ -49,12 +49,10 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `PFX` | prefix |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `POPUL` | TargetPopulationName |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `PR` | professional |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `PharmaceuticalEntityNamePartQualifiers` | PharmaceuticalEntityNamePartQualifiers |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `SCI` | scientific name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `SFX` | suffix |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `SP` | spouse |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `STR` | strength name |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `TIME` | TimeOrPeriodName |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `TMK` | trademark name |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `TitleStyles` | TitleStyles |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2` | `USE` | intended use name |

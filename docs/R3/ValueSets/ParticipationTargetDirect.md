@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### ParticipationTargetDirect
 
@@ -47,4 +47,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ParticipationType` | `RDV` | reusable device |
 | `http://hl7.org/fhir/v3/ParticipationType` | `SBJ` | subject |
 | `http://hl7.org/fhir/v3/ParticipationType` | `SPC` | specimen |
-| `http://hl7.org/fhir/v3/ParticipationType` | `TPA` | therapeutic agent |

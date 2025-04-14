@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### DeviceMetricColor
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [DeviceMetricColor](/docs/R2/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `66`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `222`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceMetricColor](/docs/R3/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `400`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `623`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceMetricColor](/docs/R4/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1619`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1620`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceMetricColor](/docs/R4B/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| [DeviceMetricColor](/docs/R2/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `66`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `222`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [DeviceMetricColor](/docs/R3/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `400`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `623`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [DeviceMetricColor](/docs/R4/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1619`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1620`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceMetricColor](/docs/R4B/ValueSets/DeviceMetricColor.md)<br/> `http://hl7.org/fhir/ValueSet/metric-color\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System ActClass
 
@@ -145,11 +145,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `TRNS` | transportation |
 | `http://hl7.org/fhir/v3/ActClass` | `VERIF` | Verification |
 | `http://hl7.org/fhir/v3/ActClass` | `XACT` | financial transaction |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassContainer` | ActClassContainer |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassROI` | ActClassROI |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassRecordOrganizer` | record organizer |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectBodyPosition` | subject body position |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectPhysicalPosition` | subject physical position |
 | `http://hl7.org/fhir/v3/ActClass` | `ordered` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `tbody` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `tfoot` |  |

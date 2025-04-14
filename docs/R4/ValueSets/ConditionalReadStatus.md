@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ConditionalReadStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ConditionalReadStatus](/docs/R3/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `368`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `591`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R4/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1441`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1442`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R4B/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `815`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1076`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R5/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|5.0.0` 
+| | | [ConditionalReadStatus](/docs/R3/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `368`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `591`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R4/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1441`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1442`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R4B/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `815`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1076`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ConditionalReadStatus](/docs/R5/ValueSets/ConditionalReadStatus.md)<br/> `http://hl7.org/fhir/ValueSet/conditional-read-status\|5.0.0` 
 
 ### Code Mappings
 

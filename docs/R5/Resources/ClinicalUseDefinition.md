@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### ClinicalUseDefinition
 
@@ -93,7 +93,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [ClinicalUseDefinition](/docs/R4B/Resources/ClinicalUseDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `948`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1177`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ClinicalUseDefinition](/docs/R5/Resources/ClinicalUseDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition\|5.0.0` 
+| | | | | | | [ClinicalUseDefinition](/docs/R4B/Resources/ClinicalUseDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `948`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1177`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ClinicalUseDefinition](/docs/R5/Resources/ClinicalUseDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition\|5.0.0` 
 
 ### Element Mappings
 

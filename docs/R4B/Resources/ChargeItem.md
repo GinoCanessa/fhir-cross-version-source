@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:53 PM
+Generated at Monday, April 14, 2025 6:17:37 PM
 
 ### ChargeItem
 
@@ -64,7 +64,7 @@ Generated at Friday, April 4, 2025 2:58:53 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ChargeItem](/docs/R3/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `625`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R4/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R4B/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1171`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ChargeItem](/docs/R5/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|5.0.0` 
+| | | [ChargeItem](/docs/R3/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `429`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `625`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R4/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R4B/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `942`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1171`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ChargeItem](/docs/R5/Resources/ChargeItem.md)<br/> `http://hl7.org/fhir/StructureDefinition/ChargeItem\|5.0.0` 
 
 ### Element Mappings
 
@@ -76,7 +76,7 @@ All elements from this structure are listed while other structures only show con
 
 | *No Map* | Relationship | [R3 ChargeItem](/docs/R3/Resources/ChargeItem.md)| Relationship | [R4 ChargeItem](/docs/R4/Resources/ChargeItem.md)| Relationship | R4B ChargeItem| Relationship | [R5 ChargeItem](/docs/R5/Resources/ChargeItem.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | `ChargeItem`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11119)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11120)| `ChargeItem`| _Equivalent_<br/>(22769/22770)| **`ChargeItem`**| →→→→ _Equivalent_ →→→→ <br/>(49921)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1979)| `ChargeItem`
+| | | `ChargeItem`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11119)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11120)| `ChargeItem`| _Equivalent_<br/>(22769/22770)| **`ChargeItem`**| _Equivalent_<br/>(37691/37692)| `ChargeItem`
 | | | `ChargeItem`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11119)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11120)| `ChargeItem`| _Equivalent_<br/>(22769/22770)| **`ChargeItem`**| →→→→ _Equivalent_ →→→→ <br/>(49921)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1979)| `ChargeItem.totalPriceComponent`
 | | | `ChargeItem.id`| _Equivalent_<br/>(11121/11122)| `ChargeItem.id`| _Equivalent_<br/>(22771/22772)| **`ChargeItem.id`**| _Equivalent_<br/>(37693/37694)| `ChargeItem.id`
 | | | `ChargeItem.meta`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(11123)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(11124)| `ChargeItem.meta`| _Equivalent_<br/>(22773/22774)| **`ChargeItem.meta`**| _Equivalent_<br/>(37695/37696)| `ChargeItem.meta`

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System ActReason
 
@@ -255,41 +255,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActReason` | `WASHOUT` | waiting for old drug to wash out |
 | `http://hl7.org/fhir/v3/ActReason` | `WORK` | work related |
 | `http://hl7.org/fhir/v3/ActReason` | `WRNGVER` | wrong version |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActAccommodationReason` | ActAccommodationReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActBillableClinicalServiceReason` | ActBillableClinicalServiceReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActBillableServiceReason` | ActBillableServiceReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActConsentInformationAccessOverrideReason` | ActConsentInformationAccessOverrideReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActCoverageReason` | ActCoverageReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActHealthInformationManagementReason` | ActHealthInformationManagementReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActIneligibilityReason` | ActIneligibilityReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActInformationManagementReason` | ActInformationManagementReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActInformationPrivacyReason` | ActInformationPrivacyReason |
 | `http://hl7.org/fhir/v3/ActReason` | `_ActInvalidReason` | ActInvalidReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActInvoiceCancelReason` | ActInvoiceCancelReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActNoImmunizationReason` | ActNoImmunizationReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ActSupplyFulfillmentRefusalReason` | ActSupplyFulfillmentRefusalReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ClinicalResearchEventReason` | ClinicalResearchEventReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ClinicalResearchObservationReason` | ClinicalResearchObservationReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_CombinedPharmacyOrderSuspendReasonCode` | CombinedPharmacyOrderSuspendReasonCode |
 | `http://hl7.org/fhir/v3/ActReason` | `_ControlActNullificationReasonCode` | ControlActNullificationReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_ControlActNullificationRefusalReasonType` | ControlActNullificationRefusalReasonType |
-| `http://hl7.org/fhir/v3/ActReason` | `_ControlActReason` | ControlActReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_CoverageEligibilityReason` | CoverageEligibilityReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_EligibilityActReasonCode` | EligibilityActReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_GenericUpdateReasonCode` | GenericUpdateReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_MedicationOrderAbortReasonCode` | medication order abort reason |
-| `http://hl7.org/fhir/v3/ActReason` | `_MedicationOrderReleaseReasonCode` | medication order release reason |
-| `http://hl7.org/fhir/v3/ActReason` | `_ModifyPrescriptionReasonType` | ModifyPrescriptionReasonType |
-| `http://hl7.org/fhir/v3/ActReason` | `_PatientProfileQueryReasonCode` | patient profile query reason |
 | `http://hl7.org/fhir/v3/ActReason` | `_PharmacySupplyEventAbortReason` | PharmacySupplyEventAbortReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_PharmacySupplyEventStockReasonCode` | pharmacy supply event stock reason |
 | `http://hl7.org/fhir/v3/ActReason` | `_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode` | PharmacySupplyRequestFulfillerRevisionRefusalReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_PharmacySupplyRequestRenewalRefusalReasonCode` | pharmacy supply request renewal refusal reason |
-| `http://hl7.org/fhir/v3/ActReason` | `_RefusalReasonCode` | RefusalReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_SchedulingActReason` | SchedulingActReason |
 | `http://hl7.org/fhir/v3/ActReason` | `_StatusRevisionRefusalReasonCode` | StatusRevisionRefusalReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_SubstanceAdminSubstitutionNotAllowedReason` | SubstanceAdminSubstitutionNotAllowedReason |
-| `http://hl7.org/fhir/v3/ActReason` | `_SubstanceAdminSubstitutionReason` | SubstanceAdminSubstitutionReason |
 | `http://hl7.org/fhir/v3/ActReason` | `_SubstanceAdministrationPermissionRefusalReasonCode` | SubstanceAdministrationPermissionRefusalReasonCode |
-| `http://hl7.org/fhir/v3/ActReason` | `_SupplyOrderAbortReasonCode` | supply order abort reason |
-| `http://hl7.org/fhir/v3/ActReason` | `_TransferActReason` | TransferActReason |

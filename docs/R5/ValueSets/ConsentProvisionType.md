@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### ConsentProvisionType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ConsentExceptType](/docs/R3/ValueSets/ConsentExceptType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-except-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConsentProvisionType](/docs/R4/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1445`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1446`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConsentProvisionType](/docs/R4B/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1803`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1804`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConsentProvisionType](/docs/R5/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|5.0.0` 
+| | | [ConsentExceptType](/docs/R3/ValueSets/ConsentExceptType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-except-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `702`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConsentProvisionType](/docs/R4/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1445`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1446`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConsentProvisionType](/docs/R4B/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1803`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1804`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConsentProvisionType](/docs/R5/ValueSets/ConsentProvisionType.md)<br/> `http://hl7.org/fhir/ValueSet/consent-provision-type\|5.0.0` 
 
 ### Code Mappings
 

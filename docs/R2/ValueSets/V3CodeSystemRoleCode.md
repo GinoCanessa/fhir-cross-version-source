@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System RoleCode
 
@@ -375,36 +375,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleCode` | `WND` | Wound clinic |
 | `http://hl7.org/fhir/v3/RoleCode` | `WO` | Working |
 | `http://hl7.org/fhir/v3/RoleCode` | `WORK` | work site |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AdministrativeContactRoleType` | AdministrativeContactRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AffiliationRoleType` | AffiliationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AssignedNonPersonLivingSubjectRoleType` | AssignedNonPersonLivingSubjectRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_AssignedRoleType` | AssignedRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CertifiedEntityType` | CertifiedEntityType |
 | `http://hl7.org/fhir/v3/RoleCode` | `_CitizenRoleType` | CitizenRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ClaimantCoveredPartyRoleType` | ClaimantCoveredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ContactRoleType` | ContactRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoverageRoleType` | CoverageRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoverageSponsorRoleType` | CoverageSponsorRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_CoveredPartyRoleType` | covered party role type |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedClinicalLocationRoleType` | DedicatedClinicalLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedNonClinicalLocationRoleType` | DedicatedNonClinicalLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DedicatedServiceDeliveryLocationRoleType` | DedicatedServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_DependentCoveredPartyRoleType` | DependentCoveredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IdentifiedEntityType` | IdentifiedEntityType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IncidentalServiceDeliveryLocationRoleType` | IncidentalServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_IndividualInsuredPartyRoleType` | IndividualInsuredPartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_LivingSubjectProductionClass` | LivingSubjectProductionClass |
-| `http://hl7.org/fhir/v3/RoleCode` | `_LocationIdentifiedEntityRoleCode` | LocationIdentifiedEntityRoleCode |
-| `http://hl7.org/fhir/v3/RoleCode` | `_MedicationGeneralizationRoleType` | MedicationGeneralizationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_MemberRoleType` | MemberRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PayorRoleType` | PayorRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PersonalRelationshipRoleType` | PersonalRelationshipRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_PolicyOrProgramCoverageRoleType` | PolicyOrProgramCoverageRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ProgramEligiblePartyRoleType` | ProgramEligiblePartyRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ResearchSubjectRoleBasis` | ResearchSubjectRoleBasis |
-| `http://hl7.org/fhir/v3/RoleCode` | `_ServiceDeliveryLocationRoleType` | ServiceDeliveryLocationRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_SpecimenRoleType` | SpecimenRoleType |
-| `http://hl7.org/fhir/v3/RoleCode` | `_SubscriberCoveredPartyRoleType` | SubscriberCoveredPartyRoleType |
 | `http://hl7.org/fhir/v3/RoleCode` | `communityLaboratory` | Community Laboratory |
 | `http://hl7.org/fhir/v3/RoleCode` | `homeHealth` | Home Health |
 | `http://hl7.org/fhir/v3/RoleCode` | `laboratory` | Laboratory |

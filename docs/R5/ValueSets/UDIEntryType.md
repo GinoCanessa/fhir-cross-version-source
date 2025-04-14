@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### UDIEntryType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [UDIEntryType](/docs/R3/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `391`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `614`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UDIEntryType](/docs/R4/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1777`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1778`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UDIEntryType](/docs/R4B/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `854`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1115`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [UDIEntryType](/docs/R5/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|5.0.0` 
+| | | [UDIEntryType](/docs/R3/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `391`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `614`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [UDIEntryType](/docs/R4/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1777`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1778`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UDIEntryType](/docs/R4B/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `854`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1115`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [UDIEntryType](/docs/R5/ValueSets/UDIEntryType.md)<br/> `http://hl7.org/fhir/ValueSet/udi-entry-type\|5.0.0` 
 
 ### Code Mappings
 

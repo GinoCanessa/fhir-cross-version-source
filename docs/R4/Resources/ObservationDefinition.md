@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:47 PM
+Generated at Monday, April 14, 2025 6:17:30 PM
 
 ### ObservationDefinition
 
@@ -64,7 +64,7 @@ Generated at Friday, April 4, 2025 2:58:47 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ObservationDefinition](/docs/R4/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1559`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1560`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationDefinition](/docs/R4B/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationDefinition](/docs/R5/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|5.0.0` 
+| | | | | [ObservationDefinition](/docs/R4/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1559`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1560`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationDefinition](/docs/R4B/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationDefinition](/docs/R5/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|5.0.0` 
 
 ### Element Mappings
 

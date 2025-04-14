@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### SecurityIntegrityObservationValue
 
@@ -64,9 +64,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ObservationValue` | `UNCERTREL` | uncertain reliability |
 | `http://hl7.org/fhir/v3/ObservationValue` | `UNRELIABLE` | unreliable |
 | `http://hl7.org/fhir/v3/ObservationValue` | `VERSIONED` | versioned |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECALTINTOBV` | alteration integrity |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECDATINTOBV` | data integrity |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECINTCONOBV` | integrity confidence |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECINTPRVABOBV` | provenance asserted by |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECINTPRVOBV` | provenance |
-| `http://hl7.org/fhir/v3/ObservationValue` | `_SECINTPRVRBOBV` | provenance reported by |

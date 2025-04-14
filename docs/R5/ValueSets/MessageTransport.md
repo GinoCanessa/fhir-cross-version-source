@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### MessageTransport
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [MessageTransport](/docs/R4B/ValueSets/MessageTransport.md)<br/> `http://hl7.org/fhir/ValueSet/message-transport\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `810`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1071`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MessageTransport](/docs/R5/ValueSets/MessageTransport.md)<br/> `http://hl7.org/fhir/ValueSet/message-transport\|5.0.0` 
+| | | | | | | [MessageTransport](/docs/R4B/ValueSets/MessageTransport.md)<br/> `http://hl7.org/fhir/ValueSet/message-transport\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `810`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1071`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MessageTransport](/docs/R5/ValueSets/MessageTransport.md)<br/> `http://hl7.org/fhir/ValueSet/message-transport\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:53 PM
+Generated at Monday, April 14, 2025 6:17:37 PM
 
 ### CatalogEntry
 
@@ -51,7 +51,7 @@ Generated at Friday, April 4, 2025 2:58:53 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [CatalogEntry](/docs/R4/Resources/CatalogEntry.md)<br/> `http://hl7.org/fhir/StructureDefinition/CatalogEntry\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1417`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1418`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CatalogEntry](/docs/R4B/Resources/CatalogEntry.md)<br/> `http://hl7.org/fhir/StructureDefinition/CatalogEntry\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [CatalogEntry](/docs/R4/Resources/CatalogEntry.md)<br/> `http://hl7.org/fhir/StructureDefinition/CatalogEntry\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1417`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1418`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CatalogEntry](/docs/R4B/Resources/CatalogEntry.md)<br/> `http://hl7.org/fhir/StructureDefinition/CatalogEntry\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Element Mappings
 
 

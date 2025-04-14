@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ParticipationType
 
@@ -90,5 +90,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationType` | `VIA` | via |
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationType` | `VRF` | verifier |
 | `http://terminology.hl7.org/CodeSystem/v3-ParticipationType` | `WIT` | witness |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationType` | `_ParticipationAncillary` | ParticipationAncillary |
-| `http://terminology.hl7.org/CodeSystem/v3-ParticipationType` | `_ParticipationInformationGenerator` | ParticipationInformationGenerator |

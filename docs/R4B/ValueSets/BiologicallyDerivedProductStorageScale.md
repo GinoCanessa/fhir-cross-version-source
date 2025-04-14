@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### BiologicallyDerivedProductStorageScale
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [BiologicallyDerivedProductStorageScale](/docs/R4/ValueSets/BiologicallyDerivedProductStorageScale.md)<br/> `http://hl7.org/fhir/ValueSet/product-storage-scale\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1657`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1658`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BiologicallyDerivedProductStorageScale](/docs/R4B/ValueSets/BiologicallyDerivedProductStorageScale.md)<br/> `http://hl7.org/fhir/ValueSet/product-storage-scale\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [BiologicallyDerivedProductStorageScale](/docs/R4/ValueSets/BiologicallyDerivedProductStorageScale.md)<br/> `http://hl7.org/fhir/ValueSet/product-storage-scale\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1657`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1658`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [BiologicallyDerivedProductStorageScale](/docs/R4B/ValueSets/BiologicallyDerivedProductStorageScale.md)<br/> `http://hl7.org/fhir/ValueSet/product-storage-scale\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

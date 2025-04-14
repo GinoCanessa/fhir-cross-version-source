@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System ActClass
 
@@ -63,15 +63,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `DOC` | document |
 | `http://hl7.org/fhir/v3/ActClass` | `DOCBODY` | document body |
 | `http://hl7.org/fhir/v3/ActClass` | `DOCCLIN` | clinical document |
-| `http://hl7.org/fhir/v3/ActClass` | `DOCCNTNT` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `DOCLIST` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `DOCLSTITM` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `DOCPARA` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `DOCSECT` | document section |
-| `http://hl7.org/fhir/v3/ActClass` | `DOCTBL` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `EHR` | electronic health record |
 | `http://hl7.org/fhir/v3/ActClass` | `ENC` | encounter |
-| `http://hl7.org/fhir/v3/ActClass` | `ENTRY` | entry |
 | `http://hl7.org/fhir/v3/ActClass` | `EXP` | expression level |
 | `http://hl7.org/fhir/v3/ActClass` | `EXPOS` | exposure |
 | `http://hl7.org/fhir/v3/ActClass` | `EXTRACT` | extract |
@@ -86,17 +80,13 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `INVE` | invoice element |
 | `http://hl7.org/fhir/v3/ActClass` | `INVSTG` | investigation |
 | `http://hl7.org/fhir/v3/ActClass` | `JURISPOL` | jurisdictional policy |
-| `http://hl7.org/fhir/v3/ActClass` | `LINKHTML` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `LIST` | working list |
 | `http://hl7.org/fhir/v3/ActClass` | `LLD` | left lateral decubitus |
 | `http://hl7.org/fhir/v3/ActClass` | `LOC` | locus |
-| `http://hl7.org/fhir/v3/ActClass` | `LOCALATTR` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `LOCALMRKP` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `MPROT` | monitoring program |
 | `http://hl7.org/fhir/v3/ActClass` | `OBS` | observation |
 | `http://hl7.org/fhir/v3/ActClass` | `OBSCOR` | correlated observation sequences |
 | `http://hl7.org/fhir/v3/ActClass` | `OBSSER` | observation series |
-| `http://hl7.org/fhir/v3/ActClass` | `ORGANIZER` | organizer |
 | `http://hl7.org/fhir/v3/ActClass` | `ORGPOL` | organizational policy |
 | `http://hl7.org/fhir/v3/ActClass` | `OUTB` | outbreak |
 | `http://hl7.org/fhir/v3/ActClass` | `OUTBR` | outbreak |
@@ -109,7 +99,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `POSCOORD` | position coordinate |
 | `http://hl7.org/fhir/v3/ActClass` | `PRN` | prone |
 | `http://hl7.org/fhir/v3/ActClass` | `PROC` | procedure |
-| `http://hl7.org/fhir/v3/ActClass` | `REFR` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `REG` | registration |
 | `http://hl7.org/fhir/v3/ActClass` | `REV` | review |
 | `http://hl7.org/fhir/v3/ActClass` | `RLD` | right lateral decubitus |
@@ -133,11 +122,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `STORE` | storage |
 | `http://hl7.org/fhir/v3/ActClass` | `SUBST` | Substitution |
 | `http://hl7.org/fhir/v3/ActClass` | `SUP` | supine |
-| `http://hl7.org/fhir/v3/ActClass` | `TBLCOL` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `TBLCOLGP` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `TBLDATA` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `TBLHDR` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `TBLROW` |  |
 | `http://hl7.org/fhir/v3/ActClass` | `TEXPOS` | transmission exposure |
 | `http://hl7.org/fhir/v3/ActClass` | `TOPIC` | topic |
 | `http://hl7.org/fhir/v3/ActClass` | `TRD` | trendelenburg |
@@ -145,13 +129,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `TRNS` | transportation |
 | `http://hl7.org/fhir/v3/ActClass` | `VERIF` | Verification |
 | `http://hl7.org/fhir/v3/ActClass` | `XACT` | financial transaction |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassContainer` | ActClassContainer |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassROI` | ActClassROI |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassRecordOrganizer` | record organizer |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectBodyPosition` | subject body position |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectPhysicalPosition` | subject physical position |
-| `http://hl7.org/fhir/v3/ActClass` | `ordered` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `tbody` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `tfoot` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `thead` |  |
-| `http://hl7.org/fhir/v3/ActClass` | `unordered` |  |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### CarePlanActivityKind
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [CarePlanActivityKind](/docs/R4/ValueSets/CarePlanActivityKind.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-kind\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1403`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1404`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanActivityKind](/docs/R4B/ValueSets/CarePlanActivityKind.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-kind\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [CarePlanActivityKind](/docs/R4/ValueSets/CarePlanActivityKind.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-kind\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1403`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1404`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanActivityKind](/docs/R4B/ValueSets/CarePlanActivityKind.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-kind\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

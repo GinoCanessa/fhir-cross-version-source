@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### ResearchElementType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ResearchElementType](/docs/R4/ValueSets/ResearchElementType.md)<br/> `http://hl7.org/fhir/ValueSet/research-element-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1705`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1706`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ResearchElementType](/docs/R4B/ValueSets/ResearchElementType.md)<br/> `http://hl7.org/fhir/ValueSet/research-element-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [ResearchElementType](/docs/R4/ValueSets/ResearchElementType.md)<br/> `http://hl7.org/fhir/ValueSet/research-element-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1705`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1706`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ResearchElementType](/docs/R4B/ValueSets/ResearchElementType.md)<br/> `http://hl7.org/fhir/ValueSet/research-element-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### ConceptMapGroupUnmappedMode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ConceptMapGroupUnmappedMode](/docs/R3/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `573`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R4/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1433`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1434`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R4B/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `798`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1059`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R5/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|5.0.0` 
+| | | [ConceptMapGroupUnmappedMode](/docs/R3/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `573`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R4/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1433`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1434`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R4B/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `798`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1059`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ConceptMapGroupUnmappedMode](/docs/R5/ValueSets/ConceptMapGroupUnmappedMode.md)<br/> `http://hl7.org/fhir/ValueSet/conceptmap-unmapped-mode\|5.0.0` 
 
 ### Code Mappings
 

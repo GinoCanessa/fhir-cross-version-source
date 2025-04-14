@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### CompartmentType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CompartmentType](/docs/R3/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `374`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `597`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentType](/docs/R4/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1423`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentType](/docs/R4B/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `821`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1082`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CompartmentType](/docs/R5/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|5.0.0` 
+| | | [CompartmentType](/docs/R3/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `374`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `597`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CompartmentType](/docs/R4/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1423`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1424`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompartmentType](/docs/R4B/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `821`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1082`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CompartmentType](/docs/R5/ValueSets/CompartmentType.md)<br/> `http://hl7.org/fhir/ValueSet/compartment-type\|5.0.0` 
 
 ### Code Mappings
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### CodeSystemContentMode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:37 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [CodeSystemContentMode](/docs/R3/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `381`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R4/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R4B/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `826`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1087`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R5/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|5.0.0` 
+| | | [CodeSystemContentMode](/docs/R3/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `381`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `604`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R4/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1419`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1420`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R4B/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `826`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1087`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CodeSystemContentMode](/docs/R5/ValueSets/CodeSystemContentMode.md)<br/> `http://hl7.org/fhir/ValueSet/codesystem-content-mode\|5.0.0` 
 
 ### Code Mappings
 

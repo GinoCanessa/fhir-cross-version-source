@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.TribalEntityUS
 
@@ -597,5 +597,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS` | `97` | Grindstone Indian Rancheria of Wintun-Wailaki Indi |
 | `http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS` | `98` | Guidiville Rancheria of California |
 | `http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS` | `99` | Hannahville Indian Community of Wisconsin Potawato |
-| `http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS` | `_NativeEntityAlaska` | NativeEntityAlaska |
-| `http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS` | `_NativeEntityContiguous` | NativeEntityContiguous |

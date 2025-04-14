@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### SubscriptionNotificationType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [SubscriptionNotificationType](/docs/R4B/ValueSets/SubscriptionNotificationType.md)<br/> `http://hl7.org/fhir/ValueSet/subscription-notification-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `975`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1236`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SubscriptionNotificationType](/docs/R5/ValueSets/SubscriptionNotificationType.md)<br/> `http://hl7.org/fhir/ValueSet/subscription-notification-type\|5.0.0` 
+| | | | | | | [SubscriptionNotificationType](/docs/R4B/ValueSets/SubscriptionNotificationType.md)<br/> `http://hl7.org/fhir/ValueSet/subscription-notification-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `975`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1236`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SubscriptionNotificationType](/docs/R5/ValueSets/SubscriptionNotificationType.md)<br/> `http://hl7.org/fhir/ValueSet/subscription-notification-type\|5.0.0` 
 
 ### Code Mappings
 

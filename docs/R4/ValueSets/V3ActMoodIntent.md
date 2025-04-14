@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActMoodIntent
 
@@ -39,5 +39,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `PRP` | proposal |
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `RMD` | recommendation |
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `RQO` | request |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodActRequest` | act request |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodDesire` | desire |

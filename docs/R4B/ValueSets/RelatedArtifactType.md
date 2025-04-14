@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### RelatedArtifactType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [RelatedArtifactType](/docs/R3/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `710`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifactType](/docs/R4/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1681`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1682`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifactType](/docs/R4B/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `971`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1232`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifactType](/docs/R5/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|5.0.0` 
+| | | [RelatedArtifactType](/docs/R3/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `487`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `710`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [RelatedArtifactType](/docs/R4/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1681`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1682`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RelatedArtifactType](/docs/R4B/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `971`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1232`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RelatedArtifactType](/docs/R5/ValueSets/RelatedArtifactType.md)<br/> `http://hl7.org/fhir/ValueSet/related-artifact-type\|5.0.0` 
 
 ### Code Mappings
 

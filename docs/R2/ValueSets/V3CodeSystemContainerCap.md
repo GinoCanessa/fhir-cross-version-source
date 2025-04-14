@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### v3 Code System ContainerCap
 
@@ -37,4 +37,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ContainerCap` | `FOIL` | Foil |
 | `http://hl7.org/fhir/v3/ContainerCap` | `PUSH` | Push Cap |
 | `http://hl7.org/fhir/v3/ContainerCap` | `SCR` | Screw Cap |
-| `http://hl7.org/fhir/v3/ContainerCap` | `_MedicationCap` | MedicationCap |

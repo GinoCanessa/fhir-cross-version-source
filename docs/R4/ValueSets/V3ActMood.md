@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActMood
 
@@ -54,8 +54,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `RSK` | risk |
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `RSK.CRT` | risk criterion |
 | `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `SLOT` | resource slot |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodActRequest` | act request |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodCompletionTrack` | ActMoodCompletionTrack |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodDesire` | desire |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodPotential` | potential |
-| `http://terminology.hl7.org/CodeSystem/v3-ActMood` | `_ActMoodPredicate` | ActMoodPredicate |

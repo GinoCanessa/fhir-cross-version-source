@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### CriteriaNotExistsBehavior
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [CriteriaNotExistsBehavior](/docs/R4B/ValueSets/CriteriaNotExistsBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1238`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CriteriaNotExistsBehavior](/docs/R5/ValueSets/CriteriaNotExistsBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior\|5.0.0` 
+| | | | | | | [CriteriaNotExistsBehavior](/docs/R4B/ValueSets/CriteriaNotExistsBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `977`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1238`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [CriteriaNotExistsBehavior](/docs/R5/ValueSets/CriteriaNotExistsBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/subscriptiontopic-cr-behavior\|5.0.0` 
 
 ### Code Mappings
 

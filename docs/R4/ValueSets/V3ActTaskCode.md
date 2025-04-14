@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActTaskCode
 
@@ -68,4 +68,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `RISKASSESS` | risk assessment instrument task |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `WELLREMLE` | wellness reminder list entry |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `WELLREMLREV` | wellness reminder list review |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActTaskCode` | ActTaskCode |

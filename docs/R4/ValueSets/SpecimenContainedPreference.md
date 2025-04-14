@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:45 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### SpecimenContainedPreference
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:45 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [SpecimenContainedPreference](/docs/R4/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1741`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1742`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SpecimenContainedPreference](/docs/R4B/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `994`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1255`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SpecimenContainedPreference](/docs/R5/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|5.0.0` 
+| | | | | [SpecimenContainedPreference](/docs/R4/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1741`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1742`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SpecimenContainedPreference](/docs/R4B/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `994`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1255`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SpecimenContainedPreference](/docs/R5/ValueSets/SpecimenContainedPreference.md)<br/> `http://hl7.org/fhir/ValueSet/specimen-contained-preference\|5.0.0` 
 
 ### Code Mappings
 

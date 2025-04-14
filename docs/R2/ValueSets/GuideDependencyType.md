@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### GuideDependencyType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [GuideDependencyType](/docs/R2/ValueSets/GuideDependencyType.md)<br/> `http://hl7.org/fhir/ValueSet/guide-dependency-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `85`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `241`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GuideDependencyType](/docs/R3/ValueSets/GuideDependencyType.md)<br/> `http://hl7.org/fhir/ValueSet/guide-dependency-type\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [GuideDependencyType](/docs/R2/ValueSets/GuideDependencyType.md)<br/> `http://hl7.org/fhir/ValueSet/guide-dependency-type\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `85`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `241`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [GuideDependencyType](/docs/R3/ValueSets/GuideDependencyType.md)<br/> `http://hl7.org/fhir/ValueSet/guide-dependency-type\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

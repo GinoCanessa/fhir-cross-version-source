@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:05 PM
+Generated at Monday, April 14, 2025 6:17:50 PM
 
 ### ObservationDefinition
 
@@ -92,7 +92,7 @@ Generated at Friday, April 4, 2025 2:59:05 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ObservationDefinition](/docs/R4/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1559`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1560`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationDefinition](/docs/R4B/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationDefinition](/docs/R5/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|5.0.0` 
+| | | | | [ObservationDefinition](/docs/R4/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1559`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1560`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationDefinition](/docs/R4B/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1061`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1290`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationDefinition](/docs/R5/Resources/ObservationDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ObservationDefinition\|5.0.0` 
 
 ### Element Mappings
 
@@ -104,9 +104,9 @@ All elements from this structure are listed while other structures only show con
 
 | *No Map* | Relationship | *No Map* | Relationship | [R4 ObservationDefinition](/docs/R4/Resources/ObservationDefinition.md)| Relationship | [R4B ObservationDefinition](/docs/R4B/Resources/ObservationDefinition.md)| Relationship | R5 ObservationDefinition
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | `ObservationDefinition`| _Equivalent_<br/>(30891/30892)| `ObservationDefinition`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(45548)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45585)| **`ObservationDefinition`**
-| | | | | `ObservationDefinition.quantitativeDetails.customaryUnit`| _Equivalent_<br/>(30931/30932)| `ObservationDefinition.quantitativeDetails.customaryUnit`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1896)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45585)| **`ObservationDefinition`**
-| | | | | `ObservationDefinition.quantitativeDetails.unit`| _Equivalent_<br/>(30933/30934)| `ObservationDefinition.quantitativeDetails.unit`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1897)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(45585)| **`ObservationDefinition`**
+| | | | | `ObservationDefinition`| _Equivalent_<br/>(30891/30892)| `ObservationDefinition`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(45548)<hr/>←←←← __ ←←←← <br/>()| **`ObservationDefinition`**
+| | | | | `ObservationDefinition.quantitativeDetails.customaryUnit`| _Equivalent_<br/>(30931/30932)| `ObservationDefinition.quantitativeDetails.customaryUnit`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1896)<hr/>←←←← __ ←←←← <br/>()| **`ObservationDefinition`**
+| | | | | `ObservationDefinition.quantitativeDetails.unit`| _Equivalent_<br/>(30933/30934)| `ObservationDefinition.quantitativeDetails.unit`| →→→→ _SourceIsNarrowerThanTarget_ →→→→ <br/>(1897)<hr/>←←←← __ ←←←← <br/>()| **`ObservationDefinition`**
 | | | | | `ObservationDefinition.id`| _Equivalent_<br/>(30893/30894)| `ObservationDefinition.id`| _Equivalent_<br/>(45550/45551)| **`ObservationDefinition.id`**
 | | | | | `ObservationDefinition.meta`| _Equivalent_<br/>(30895/30896)| `ObservationDefinition.meta`| _Equivalent_<br/>(45552/45553)| **`ObservationDefinition.meta`**
 | | | | | `ObservationDefinition.implicitRules`| _Equivalent_<br/>(30897/30898)| `ObservationDefinition.implicitRules`| _Equivalent_<br/>(45554/45555)| **`ObservationDefinition.implicitRules`**

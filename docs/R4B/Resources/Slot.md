@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:53 PM
+Generated at Monday, April 14, 2025 6:17:37 PM
 
 ### Slot
 
@@ -44,7 +44,7 @@ Generated at Friday, April 4, 2025 2:58:53 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Slot](/docs/R2/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `156`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `323`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Slot](/docs/R3/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `516`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `709`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Slot](/docs/R4/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1615`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1616`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Slot](/docs/R4B/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1041`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1270`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Slot](/docs/R5/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|5.0.0` 
+| [Slot](/docs/R2/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `156`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `323`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Slot](/docs/R3/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `516`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `709`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Slot](/docs/R4/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1615`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1616`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Slot](/docs/R4B/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1041`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1270`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Slot](/docs/R5/Resources/Slot.md)<br/> `http://hl7.org/fhir/StructureDefinition/Slot\|5.0.0` 
 
 ### Element Mappings
 

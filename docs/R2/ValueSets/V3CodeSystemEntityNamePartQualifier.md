@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System EntityNamePartQualifier
 
@@ -46,7 +46,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `NB` | nobility |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `POPUL` | TargetPopulationName |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `PR` | professional |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `PharmaceuticalEntityNamePartQualifiers` | PharmaceuticalEntityNamePartQualifiers |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `SCI` | scientific name |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `SP` | spouse |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `STR` | strength name |
@@ -55,8 +54,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `TMK` | trademark name |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `USE` | intended use name |
 | `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `VV` | voorvoegsel |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `_OrganizationNamePartQualifier` | OrganizationNamePartQualifier |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `_PersonNamePartAffixTypes` | PersonNamePartAffixTypes |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `_PersonNamePartChangeQualifier` | PersonNamePartChangeQualifier |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `_PersonNamePartMiscQualifier` | PersonNamePartMiscQualifier |
-| `http://hl7.org/fhir/v3/EntityNamePartQualifier` | `_PersonNamePartQualifier` | PersonNamePartQualifier |

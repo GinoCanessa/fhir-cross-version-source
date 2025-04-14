@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System AcknowledgementDetailType
 
@@ -32,8 +32,5 @@ This Value Set resulted in no projection (no mappings to other packages).
 | System | Code | Display |
 | ------ | ---- | ------- |
 | `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `E` | Error |
-| `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `ERR` |  |
 | `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `I` | Information |
-| `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `INFO` |  |
 | `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `W` | Warning |
-| `http://hl7.org/fhir/v3/AcknowledgementDetailType` | `WARN` |  |

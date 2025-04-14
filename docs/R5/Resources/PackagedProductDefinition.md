@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:04 PM
+Generated at Monday, April 14, 2025 6:17:49 PM
 
 ### PackagedProductDefinition
 
@@ -77,7 +77,7 @@ Generated at Friday, April 4, 2025 2:59:04 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [PackagedProductDefinition](/docs/R4B/Resources/PackagedProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1020`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1249`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PackagedProductDefinition](/docs/R5/Resources/PackagedProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition\|5.0.0` 
+| | | | | | | [PackagedProductDefinition](/docs/R4B/Resources/PackagedProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1020`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1249`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PackagedProductDefinition](/docs/R5/Resources/PackagedProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition\|5.0.0` 
 
 ### Element Mappings
 

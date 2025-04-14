@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### ProductShelfLife
 
@@ -32,7 +32,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ProductShelfLife](/docs/R4/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1365`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1366`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ProductShelfLife](/docs/R4B/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `914`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1143`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ProductShelfLife](/docs/R5/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|5.0.0` 
+| | | | | [ProductShelfLife](/docs/R4/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1365`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1366`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ProductShelfLife](/docs/R4B/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `914`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1143`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ProductShelfLife](/docs/R5/ComplexTypes/ProductShelfLife.md)<br/> `http://hl7.org/fhir/StructureDefinition/ProductShelfLife\|5.0.0` 
 
 ### Element Mappings
 

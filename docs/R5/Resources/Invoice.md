@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### Invoice
 
@@ -63,7 +63,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [Invoice](/docs/R4/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1520`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Invoice](/docs/R4B/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `994`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1223`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Invoice](/docs/R5/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|5.0.0` 
+| | | | | [Invoice](/docs/R4/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1519`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1520`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Invoice](/docs/R4B/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `994`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1223`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Invoice](/docs/R5/Resources/Invoice.md)<br/> `http://hl7.org/fhir/StructureDefinition/Invoice\|5.0.0` 
 
 ### Element Mappings
 

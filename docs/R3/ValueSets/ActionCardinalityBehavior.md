@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### ActionCardinalityBehavior
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActionCardinalityBehavior](/docs/R3/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `466`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `690`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R4/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1337`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1338`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R4B/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `951`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R5/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|5.0.0` 
+| | | [ActionCardinalityBehavior](/docs/R3/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `466`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `690`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R4/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1337`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1338`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R4B/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `951`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionCardinalityBehavior](/docs/R5/ValueSets/ActionCardinalityBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-cardinality-behavior\|5.0.0` 
 
 ### Code Mappings
 

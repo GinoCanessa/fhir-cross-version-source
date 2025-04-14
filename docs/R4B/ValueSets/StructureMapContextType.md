@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### StructureMapContextType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [StructureMapContextType](/docs/R3/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `508`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `729`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapContextType](/docs/R4/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1573`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1574`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapContextType](/docs/R4B/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | [StructureMapContextType](/docs/R3/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `508`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `729`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapContextType](/docs/R4/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1573`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1574`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMapContextType](/docs/R4B/ValueSets/StructureMapContextType.md)<br/> `http://hl7.org/fhir/ValueSet/map-context-type\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

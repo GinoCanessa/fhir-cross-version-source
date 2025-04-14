@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### StatisticType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [StatisticType](/docs/R4B/ValueSets/StatisticType.md)<br/> `http://hl7.org/fhir/ValueSet/statistic-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `883`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1144`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StatisticType](/docs/R5/ValueSets/StatisticType.md)<br/> `http://hl7.org/fhir/ValueSet/statistic-type\|5.0.0` 
+| | | | | | | [StatisticType](/docs/R4B/ValueSets/StatisticType.md)<br/> `http://hl7.org/fhir/ValueSet/statistic-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `883`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1144`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StatisticType](/docs/R5/ValueSets/StatisticType.md)<br/> `http://hl7.org/fhir/ValueSet/statistic-type\|5.0.0` 
 
 ### Code Mappings
 

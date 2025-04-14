@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System AcknowledgementCondition
 
@@ -34,4 +34,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/AcknowledgementCondition` | `AL` | Always |
 | `http://hl7.org/fhir/v3/AcknowledgementCondition` | `ER` | Error/reject only |
 | `http://hl7.org/fhir/v3/AcknowledgementCondition` | `NE` | Never |
-| `http://hl7.org/fhir/v3/AcknowledgementCondition` | `SU` | Successful only |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### ImmunizationEvaluationStatusCodes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ImmunizationEvaluationStatusCodes](/docs/R4/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1545`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1546`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImmunizationEvaluationStatusCodes](/docs/R4B/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1006`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1267`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImmunizationEvaluationStatusCodes](/docs/R5/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|5.0.0` 
+| | | | | [ImmunizationEvaluationStatusCodes](/docs/R4/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1545`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1546`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImmunizationEvaluationStatusCodes](/docs/R4B/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1006`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1267`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImmunizationEvaluationStatusCodes](/docs/R5/ValueSets/ImmunizationEvaluationStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/immunization-evaluation-status\|5.0.0` 
 
 ### Code Mappings
 

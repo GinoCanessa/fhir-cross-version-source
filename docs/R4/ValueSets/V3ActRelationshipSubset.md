@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActRelationshipSubset
 
@@ -44,4 +44,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipSubset` | `PREVSUM` | previous summary |
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipSubset` | `RECENT` | most recent |
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipSubset` | `SUM` | summary |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipSubset` | `_ParticipationSubset` | ParticipationSubset |

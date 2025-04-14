@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System ObservationMethod
 
@@ -157,7 +157,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0124` | Ligase Chain Reaction |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0125` | Ligation Activated Transcription |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0126` | Nucleic Acid Probe |
-| `http://hl7.org/fhir/v3/ObservationMethod` | `0127` | Nucleic acid probe |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0128` | Nucleic acid probe with amplification |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0129` | Nucleic acid probe with target amplification |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `0130` | Nucleic acid reverse transcription |
@@ -331,7 +330,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ObservationMethod` | `VREG` | registry verification |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `VTOKEN` | electronic token verification |
 | `http://hl7.org/fhir/v3/ObservationMethod` | `VVOICE` | voice-based verification |
-| `http://hl7.org/fhir/v3/ObservationMethod` | `_DecisionObservationMethod` | DecisionObservationMethod |
-| `http://hl7.org/fhir/v3/ObservationMethod` | `_GeneticObservationMethod` | GeneticObservationMethod |
-| `http://hl7.org/fhir/v3/ObservationMethod` | `_ObservationMethodAggregate` | observation method aggregate |
-| `http://hl7.org/fhir/v3/ObservationMethod` | `_VerificationMethod` | VerificationMethod |

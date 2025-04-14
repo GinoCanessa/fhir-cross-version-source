@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### v3.ObservationInterpretation
 
@@ -66,13 +66,10 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `NR` | Non-reactive |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `NS` | Non-susceptible |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `OBX` | Interpretation qualifiers in separate OBX segments |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `ObservationInterpretationDetection` | ObservationInterpretationDetection |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `ObservationInterpretationExpectation` | ObservationInterpretationExpectation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `POS` | Positive |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `QCF` | Quality control failure |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `R` | Resistant |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `RR` | Reactive |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `ReactivityObservationInterpretation` | ReactivityObservationInterpretation |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `S` | Susceptible |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `SDD` | Susceptible-dose dependent |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `SYN-R` | Synergy - resistant |
@@ -83,8 +80,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `VS` | very susceptible |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `W` | Worse |
 | `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `WR` | Weakly reactive |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `_GeneticObservationInterpretation` | GeneticObservationInterpretation |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `_ObservationInterpretationChange` | ObservationInterpretationChange |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `_ObservationInterpretationExceptions` | ObservationInterpretationExceptions |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `_ObservationInterpretationNormality` | ObservationInterpretationNormality |
-| `http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation` | `_ObservationInterpretationSusceptibility` | ObservationInterpretationSusceptibility |

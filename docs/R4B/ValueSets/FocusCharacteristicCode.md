@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:50 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### FocusCharacteristicCode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:50 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [FocusCharacteristicCode](/docs/R4B/ValueSets/FocusCharacteristicCode.md)<br/> `http://hl7.org/fhir/ValueSet/focus-characteristic-code\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `889`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1150`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [FocusCharacteristicCode](/docs/R5/ValueSets/FocusCharacteristicCode.md)<br/> `http://hl7.org/fhir/ValueSet/focus-characteristic-code\|5.0.0` 
+| | | | | | | [FocusCharacteristicCode](/docs/R4B/ValueSets/FocusCharacteristicCode.md)<br/> `http://hl7.org/fhir/ValueSet/focus-characteristic-code\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `889`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1150`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [FocusCharacteristicCode](/docs/R5/ValueSets/FocusCharacteristicCode.md)<br/> `http://hl7.org/fhir/ValueSet/focus-characteristic-code\|5.0.0` 
 
 ### Code Mappings
 

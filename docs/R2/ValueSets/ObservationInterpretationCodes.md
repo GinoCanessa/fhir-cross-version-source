@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Observation Interpretation Codes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Observation Interpretation Codes](/docs/R2/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `106`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `262`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Observation Interpretation Codes](/docs/R3/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `681`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ObservationInterpretationCodes](/docs/R4/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [Observation Interpretation Codes](/docs/R2/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `106`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `262`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Observation Interpretation Codes](/docs/R3/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `457`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `681`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ObservationInterpretationCodes](/docs/R4/ValueSets/ObservationInterpretationCodes.md)<br/> `http://hl7.org/fhir/ValueSet/observation-interpretation\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 

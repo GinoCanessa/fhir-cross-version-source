@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### StructureMapGroupTypeMode
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [StructureMapGroupTypeMode](/docs/R3/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `732`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R4/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1575`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1576`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R4B/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `989`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1250`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R5/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|5.0.0` 
+| | | [StructureMapGroupTypeMode](/docs/R3/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `511`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `732`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R4/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1575`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1576`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R4B/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `989`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1250`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [StructureMapGroupTypeMode](/docs/R5/ValueSets/StructureMapGroupTypeMode.md)<br/> `http://hl7.org/fhir/ValueSet/map-group-type-mode\|5.0.0` 
 
 ### Code Mappings
 

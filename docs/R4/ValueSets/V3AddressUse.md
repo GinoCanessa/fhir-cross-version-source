@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.AddressUse
 
@@ -47,6 +47,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `PUB` | public |
 | `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `TMP` | temporary address |
 | `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `WP` | work place |
-| `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `_GeneralAddressUse` | _GeneralAddressUse |
-| `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `_PostalAddressUse` | _PostalAddressUse |
-| `http://terminology.hl7.org/CodeSystem/v3-AddressUse` | `_TelecommunicationAddressUse` | _TelecommunicationAddressUse |

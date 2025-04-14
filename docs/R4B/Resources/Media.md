@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:56 PM
+Generated at Monday, April 14, 2025 6:17:40 PM
 
 ### Media
 
@@ -55,7 +55,7 @@ Generated at Friday, April 4, 2025 2:58:56 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Media](/docs/R2/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `123`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `289`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Media](/docs/R3/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `672`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Media](/docs/R4/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1533`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1534`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Media](/docs/R4B/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| [Media](/docs/R2/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|1.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `123`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `289`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Media](/docs/R3/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `478`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `672`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Media](/docs/R4/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1533`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1534`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Media](/docs/R4B/Resources/Media.md)<br/> `http://hl7.org/fhir/StructureDefinition/Media\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Element Mappings
 
 

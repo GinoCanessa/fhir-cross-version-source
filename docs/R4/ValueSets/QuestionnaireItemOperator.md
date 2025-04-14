@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### QuestionnaireItemOperator
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:44 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [QuestionnaireItemOperator](/docs/R4/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1673`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1674`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [QuestionnaireItemOperator](/docs/R4B/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `968`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1229`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [QuestionnaireItemOperator](/docs/R5/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|5.0.0` 
+| | | | | [QuestionnaireItemOperator](/docs/R4/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1673`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1674`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [QuestionnaireItemOperator](/docs/R4B/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `968`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1229`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [QuestionnaireItemOperator](/docs/R5/ValueSets/QuestionnaireItemOperator.md)<br/> `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator\|5.0.0` 
 
 ### Code Mappings
 

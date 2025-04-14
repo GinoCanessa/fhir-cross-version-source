@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### PlanDefinitionType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [PlanDefinitionType](/docs/R4B/ValueSets/PlanDefinitionType.md)<br/> `http://hl7.org/fhir/ValueSet/plan-definition-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `959`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1220`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PlanDefinitionType](/docs/R5/ValueSets/PlanDefinitionType.md)<br/> `http://hl7.org/fhir/ValueSet/plan-definition-type\|5.0.0` 
+| | | | | | | [PlanDefinitionType](/docs/R4B/ValueSets/PlanDefinitionType.md)<br/> `http://hl7.org/fhir/ValueSet/plan-definition-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `959`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1220`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PlanDefinitionType](/docs/R5/ValueSets/PlanDefinitionType.md)<br/> `http://hl7.org/fhir/ValueSet/plan-definition-type\|5.0.0` 
 
 ### Code Mappings
 

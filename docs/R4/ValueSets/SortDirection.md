@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### SortDirection
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:43 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [SortDirection](/docs/R4/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1737`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1738`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SortDirection](/docs/R4B/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `857`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1118`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SortDirection](/docs/R5/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|5.0.0` 
+| | | | | [SortDirection](/docs/R4/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1737`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1738`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [SortDirection](/docs/R4B/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `857`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1118`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SortDirection](/docs/R5/ValueSets/SortDirection.md)<br/> `http://hl7.org/fhir/ValueSet/sort-direction\|5.0.0` 
 
 ### Code Mappings
 

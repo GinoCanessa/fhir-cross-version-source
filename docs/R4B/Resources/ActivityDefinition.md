@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:54 PM
+Generated at Monday, April 14, 2025 6:17:38 PM
 
 ### ActivityDefinition
 
@@ -89,7 +89,7 @@ Generated at Friday, April 4, 2025 2:58:54 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActivityDefinition](/docs/R3/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `416`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActivityDefinition](/docs/R4/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1390`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActivityDefinition](/docs/R4B/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `929`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1158`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActivityDefinition](/docs/R5/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|5.0.0` 
+| | | [ActivityDefinition](/docs/R3/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `416`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActivityDefinition](/docs/R4/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|4.0.1` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1390`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActivityDefinition](/docs/R4B/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `929`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1158`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActivityDefinition](/docs/R5/Resources/ActivityDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/ActivityDefinition\|5.0.0` 
 
 ### Element Mappings
 

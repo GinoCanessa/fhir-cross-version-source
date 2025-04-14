@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActRelationshipType
 
@@ -160,11 +160,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `VRXCRPT` | Excerpt verbatim |
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `XCRPT` | Excerpts |
 | `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `XFRM` | transformation |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActClassTemporallyPertains` | ActClassTemporallyPertains |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipAccounting` | ActRelationshipAccounting |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipConditional` | ActRelationshipConditional |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipCostTracking` | ActRelationshipCostTracking |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipPosting` | ActRelationshipPosting |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipTemporallyPertains` | ActRelationshipTemporallyPertains |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationshipTemporallyPertainsApproximates` | ActRelationshipTemporallyPertainsApproximates |
-| `http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType` | `_ActRelationsipObjective` | Act Relationsip Objective |

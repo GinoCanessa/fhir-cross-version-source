@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### EvidenceVariableHandling
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [EvidenceVariableHandling](/docs/R4B/ValueSets/EvidenceVariableHandling.md)<br/> `http://hl7.org/fhir/ValueSet/variable-handling\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `882`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1143`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [EvidenceVariableHandling](/docs/R5/ValueSets/EvidenceVariableHandling.md)<br/> `http://hl7.org/fhir/ValueSet/variable-handling\|5.0.0` 
+| | | | | | | [EvidenceVariableHandling](/docs/R4B/ValueSets/EvidenceVariableHandling.md)<br/> `http://hl7.org/fhir/ValueSet/variable-handling\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `882`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1143`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [EvidenceVariableHandling](/docs/R5/ValueSets/EvidenceVariableHandling.md)<br/> `http://hl7.org/fhir/ValueSet/variable-handling\|5.0.0` 
 
 ### Code Mappings
 

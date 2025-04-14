@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System HL7UpdateMode
 
@@ -33,17 +33,9 @@ This Value Set resulted in no projection (no mappings to other packages).
 | ------ | ---- | ------- |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `A` | Add |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `AR` | Add or Replace |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `AU` | Add or Update |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `D` | Remove |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `ESA` | Set Add |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `ESAC` | Set Add or Change |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `ESC` | Set Change |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `ESD` | Set Delete |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `I` | Ignore |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `K` | Key |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `N` | No Change |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `R` | Replace |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `REF` | Reference |
 | `http://hl7.org/fhir/v3/HL7UpdateMode` | `U` | Unknown |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `V` | Verify |
-| `http://hl7.org/fhir/v3/HL7UpdateMode` | `_SetUpdateMode` | SetUpdateMode |

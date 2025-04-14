@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System substanceAdminSubstitution
 
@@ -40,4 +40,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/substanceAdminSubstitution` | `TB` | therapeutic brand |
 | `http://hl7.org/fhir/v3/substanceAdminSubstitution` | `TE` | therapeutic alternative |
 | `http://hl7.org/fhir/v3/substanceAdminSubstitution` | `TG` | therapeutic generic |
-| `http://hl7.org/fhir/v3/substanceAdminSubstitution` | `_ActSubstanceAdminSubstitutionCode` | ActSubstanceAdminSubstitutionCode |

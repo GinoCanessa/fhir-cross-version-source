@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.ActExposureLevelCode
 
@@ -34,4 +34,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActExposureLevelCode` | `HIGH` | high |
 | `http://terminology.hl7.org/CodeSystem/v3-ActExposureLevelCode` | `LOW` | low |
 | `http://terminology.hl7.org/CodeSystem/v3-ActExposureLevelCode` | `MEDIUM` | medium |
-| `http://terminology.hl7.org/CodeSystem/v3-ActExposureLevelCode` | `_ActExposureLevelCode` | ActExposureLevelCode |

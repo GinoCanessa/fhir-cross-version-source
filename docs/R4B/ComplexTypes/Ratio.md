@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### Ratio
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Ratio](/docs/R2/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `67`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `233`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Ratio](/docs/R3/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `407`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Ratio](/docs/R4/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1371`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1372`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Ratio](/docs/R4B/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `917`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1146`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Ratio](/docs/R5/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|5.0.0` 
+| [Ratio](/docs/R2/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `67`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `233`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Ratio](/docs/R3/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `407`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `603`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Ratio](/docs/R4/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1371`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1372`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Ratio](/docs/R4B/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `917`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1146`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Ratio](/docs/R5/ComplexTypes/Ratio.md)<br/> `http://hl7.org/fhir/StructureDefinition/Ratio\|5.0.0` 
 
 ### Element Mappings
 

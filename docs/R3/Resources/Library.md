@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:22 PM
 
 ### Library
 
@@ -59,7 +59,7 @@ Generated at Friday, April 4, 2025 2:58:38 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [Library](/docs/R3/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `472`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `666`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Library](/docs/R4/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1521`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1522`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Library](/docs/R4B/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `995`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1224`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Library](/docs/R5/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|5.0.0` 
+| | | [Library](/docs/R3/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `472`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `666`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Library](/docs/R4/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1521`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1522`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Library](/docs/R4B/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|4.3.0` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `995`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1224`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Library](/docs/R5/Resources/Library.md)<br/> `http://hl7.org/fhir/StructureDefinition/Library\|5.0.0` 
 
 ### Element Mappings
 
@@ -99,10 +99,10 @@ All elements from this structure are listed while other structures only show con
 | | | **`Library.useContext`**| _Equivalent_<br/>(15227/15228)| `Library.useContext`| _Equivalent_<br/>(28849/28850)| `Library.useContext`| _Equivalent_<br/>(43720/43721)| `Library.useContext`
 | | | **`Library.jurisdiction`**| _Equivalent_<br/>(15229/15230)| `Library.jurisdiction`| _Equivalent_<br/>(28851/28852)| `Library.jurisdiction`| _Equivalent_<br/>(43722/43723)| `Library.jurisdiction`
 | | | **`Library.topic`**| _Equivalent_<br/>(15231/15232)| `Library.topic`| _Equivalent_<br/>(28865/28866)| `Library.topic`| _Equivalent_<br/>(43736/43737)| `Library.topic`
-| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1708)| `base64Binary`| | | | | 
-| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1708)| `Library.author`| _Equivalent_<br/>(28867/28868)| `Library.author`| _Equivalent_<br/>(43738/43739)| `Library.author`
-| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1708)| `Library.editor`| _Equivalent_<br/>(28869/28870)| `Library.editor`| _Equivalent_<br/>(43740/43741)| `Library.editor`
-| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1708)| `Library.reviewer`| _Equivalent_<br/>(28871/28872)| `Library.reviewer`| _Equivalent_<br/>(43742/43743)| `Library.reviewer`
+| | | **`Library.contributor`**| →→→→ __ →→→→ <br/>(1147)<hr/>←←←← __ ←←←← <br/>()| `base64Binary`| | | | | 
+| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28799)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1705)| `Library.author`| _Equivalent_<br/>(28867/28868)| `Library.author`| _Equivalent_<br/>(43738/43739)| `Library.author`
+| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28800)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1706)| `Library.editor`| _Equivalent_<br/>(28869/28870)| `Library.editor`| _Equivalent_<br/>(43740/43741)| `Library.editor`
+| | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28801)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1707)| `Library.reviewer`| _Equivalent_<br/>(28871/28872)| `Library.reviewer`| _Equivalent_<br/>(43742/43743)| `Library.reviewer`
 | | | **`Library.contributor`**| →→→→ _Equivalent_ →→→→ <br/>(28802)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(1708)| `Library.endorser`| _Equivalent_<br/>(28873/28874)| `Library.endorser`| _Equivalent_<br/>(43744/43745)| `Library.endorser`
 | | | **`Library.contact`**| _Equivalent_<br/>(15233/15234)| `Library.contact`| _Equivalent_<br/>(28845/28846)| `Library.contact`| _Equivalent_<br/>(43716/43717)| `Library.contact`
 | | | **`Library.copyright`**| _Equivalent_<br/>(15235/15236)| `Library.copyright`| _Equivalent_<br/>(28857/28858)| `Library.copyright`| _Equivalent_<br/>(43728/43729)| `Library.copyright`

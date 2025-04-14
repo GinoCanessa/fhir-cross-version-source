@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:46 PM
+Generated at Monday, April 14, 2025 6:17:29 PM
 
 ### ExampleScenario
 
@@ -110,7 +110,7 @@ Generated at Friday, April 4, 2025 2:58:46 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [ExampleScenario](/docs/R4/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1489`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1490`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExampleScenario](/docs/R4B/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `978`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1207`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ExampleScenario](/docs/R5/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|5.0.0` 
+| | | | | [ExampleScenario](/docs/R4/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1489`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1490`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ExampleScenario](/docs/R4B/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `978`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1207`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ExampleScenario](/docs/R5/Resources/ExampleScenario.md)<br/> `http://hl7.org/fhir/StructureDefinition/ExampleScenario\|5.0.0` 
 
 ### Element Mappings
 

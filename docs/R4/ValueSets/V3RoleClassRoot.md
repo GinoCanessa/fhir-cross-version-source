@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.RoleClassRoot
 
@@ -131,9 +131,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `UNDWRT` | underwriter |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `USED` | used entity |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `WRTE` | warranted product |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassAssociative` | RoleClassAssociative |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassMutualRelationship` | RoleClassMutualRelationship |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassOntological` | RoleClassOntological |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassPartitive` | RoleClassPartitive |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassPassive` | RoleClassPassive |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleClass` | `_RoleClassRelationshipFormal` | RoleClassRelationshipFormal |

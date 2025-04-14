@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:33 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### EncounterClass
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:33 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [EncounterClass](/docs/R2/ValueSets/EncounterClass.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-class\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `74`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActEncounterCode](/docs/R3/ValueSets/ActEncounterCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActEncounterCode\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `410`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `632`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [v3.ActEncounterCode](/docs/R4/ValueSets/V3ActEncounterCode.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ActEncounterCode\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [EncounterClass](/docs/R2/ValueSets/EncounterClass.md)<br/> `http://hl7.org/fhir/ValueSet/encounter-class\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `74`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActEncounterCode](/docs/R3/ValueSets/ActEncounterCode.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ActEncounterCode\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `410`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `632`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [v3.ActEncounterCode](/docs/R4/ValueSets/V3ActEncounterCode.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ActEncounterCode\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 
@@ -41,8 +41,8 @@ All codes from this value set are listed while other value sets only show conten
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R2** System: `http://hl7.org/fhir/encounter-class`
 | **`inpatient`**| _Equivalent_ <br/>(529/1886)| `IMP`| _Equivalent_ <br/>(3653/5937)| `IMP`| | | | | 
-| **`outpatient`**| _Equivalent_ <br/>(530/1881)| `AMB`| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
-| **`ambulatory`**| _Equivalent_ <br/>(531/1882)| `AMB`| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
+| **`outpatient`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(530)<hr/>←←←← _Equivalent_ ←←←← <br/>(1881) | `AMB`| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
+| **`ambulatory`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(531)<hr/>←←←← _Equivalent_ ←←←← <br/>(1882) | `AMB`| _Equivalent_ <br/>(3649/5933)| `AMB`| | | | | 
 | **`emergency`**| _Equivalent_ <br/>(532/1883)| `EMER`| _Equivalent_ <br/>(3650/5934)| `EMER`| | | | | 
 | **`home`**| _Equivalent_ <br/>(533/1885)| `HH`| _Equivalent_ <br/>(3652/5936)| `HH`| | | | | 
 | **`field`**| _Equivalent_ <br/>(534/1884)| `FLD`| _Equivalent_ <br/>(3651/5935)| `FLD`| | | | | 

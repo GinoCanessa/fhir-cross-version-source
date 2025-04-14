@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### CarePlanActivityStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [CarePlanActivityStatus](/docs/R2/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `46`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `205`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R3/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `375`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `598`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R4/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R4B/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| [CarePlanActivityStatus](/docs/R2/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|1.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `46`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `205`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R3/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|3.0.2` | →→→→→→→<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `375`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `598`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R4/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1405`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1406`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [CarePlanActivityStatus](/docs/R4B/ValueSets/CarePlanActivityStatus.md)<br/> `http://hl7.org/fhir/ValueSet/care-plan-activity-status\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

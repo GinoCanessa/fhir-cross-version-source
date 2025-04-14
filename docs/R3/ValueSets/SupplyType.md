@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### Supply Type
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:36 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Supply Type](/docs/R2/ValueSets/SupplyType.md)<br/> `http://hl7.org/fhir/ValueSet/supplyrequest-kind\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1309`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1310`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Supply Type](/docs/R3/ValueSets/SupplyType.md)<br/> `http://hl7.org/fhir/ValueSet/supplyrequest-kind\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [Supply Type](/docs/R2/ValueSets/SupplyType.md)<br/> `http://hl7.org/fhir/ValueSet/supplyrequest-kind\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1309`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1310`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Supply Type](/docs/R3/ValueSets/SupplyType.md)<br/> `http://hl7.org/fhir/ValueSet/supplyrequest-kind\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

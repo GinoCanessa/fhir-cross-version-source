@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System ActRelationshipType
 
@@ -160,11 +160,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `VRXCRPT` | Excerpt verbatim |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `XCRPT` | Excerpts |
 | `http://hl7.org/fhir/v3/ActRelationshipType` | `XFRM` | transformation |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActClassTemporallyPertains` | ActClassTemporallyPertains |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipAccounting` | ActRelationshipAccounting |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipConditional` | ActRelationshipConditional |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipCostTracking` | ActRelationshipCostTracking |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipPosting` | ActRelationshipPosting |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipTemporallyPertains` | ActRelationshipTemporallyPertains |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationshipTemporallyPertainsApproximates` | ActRelationshipTemporallyPertainsApproximates |
-| `http://hl7.org/fhir/v3/ActRelationshipType` | `_ActRelationsipObjective` | Act Relationsip Objective |

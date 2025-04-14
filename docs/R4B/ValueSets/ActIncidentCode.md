@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### ActIncidentCode
 
@@ -37,4 +37,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SCHOOL` | School Accident |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `SPT` | Sporting Accident |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `WPA` | Workplace accident |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActPatientSafetyIncidentCode` | ActPatientSafetyIncidentCode |

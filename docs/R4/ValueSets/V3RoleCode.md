@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:27 PM
 
 ### v3.RoleCode
 
@@ -390,37 +390,7 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `WND` | Wound clinic |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `WO` | Working |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `WORK` | work site |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_AdministrativeContactRoleType` | AdministrativeContactRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_AffiliationRoleType` | AffiliationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_AgentRoleType` | AgentRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_AssignedNonPersonLivingSubjectRoleType` | AssignedNonPersonLivingSubjectRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_AssignedRoleType` | AssignedRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_CertifiedEntityType` | CertifiedEntityType |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_CitizenRoleType` | CitizenRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_ClaimantCoveredPartyRoleType` | ClaimantCoveredPartyRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_ContactRoleType` | ContactRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_CoverageRoleType` | CoverageRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_CoverageSponsorRoleType` | CoverageSponsorRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_CoveredPartyRoleType` | covered party role type |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedClinicalLocationRoleType` | DedicatedClinicalLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedNonClinicalLocationRoleType` | DedicatedNonClinicalLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DedicatedServiceDeliveryLocationRoleType` | DedicatedServiceDeliveryLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_DependentCoveredPartyRoleType` | DependentCoveredPartyRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_IdentifiedEntityType` | IdentifiedEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_IncidentalServiceDeliveryLocationRoleType` | IncidentalServiceDeliveryLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_IndividualInsuredPartyRoleType` | IndividualInsuredPartyRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_LivingSubjectProductionClass` | LivingSubjectProductionClass |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_LocationIdentifiedEntityRoleCode` | LocationIdentifiedEntityRoleCode |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_MedicationGeneralizationRoleType` | MedicationGeneralizationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_MemberRoleType` | MemberRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_PayorRoleType` | PayorRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_PersonalRelationshipRoleType` | PersonalRelationshipRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_PolicyOrProgramCoverageRoleType` | PolicyOrProgramCoverageRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_ProgramEligiblePartyRoleType` | ProgramEligiblePartyRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_ResearchSubjectRoleBasis` | ResearchSubjectRoleBasis |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_ServiceDeliveryLocationRoleType` | ServiceDeliveryLocationRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_SpecimenRoleType` | SpecimenRoleType |
-| `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `_SubscriberCoveredPartyRoleType` | SubscriberCoveredPartyRoleType |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `communityLaboratory` | Community Laboratory |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `homeHealth` | Home Health |
 | `http://terminology.hl7.org/CodeSystem/v3-RoleCode` | `laboratory` | Laboratory |

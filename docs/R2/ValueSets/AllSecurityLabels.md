@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### All Security Labels
 
@@ -34,7 +34,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [All Security Labels](/docs/R2/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `53`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [All Security Labels](/docs/R3/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [All Security Labels](/docs/R4/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [All Security Labels](/docs/R2/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `53`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `212`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [All Security Labels](/docs/R3/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `389`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `612`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [All Security Labels](/docs/R4/ValueSets/AllSecurityLabels.md)<br/> `http://hl7.org/fhir/ValueSet/security-labels\|4.0.1` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 
@@ -437,21 +437,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`Title38Section7332`**| _Equivalent_ <br/>(288/1661)| `Title38Section7332`| →→→→ _Equivalent_ →→→→ <br/>(3250)<hr/>←←←← __ ←←←← <br/>() | `Title38Section7332`| | | | | 
 | **`Title38Section7332`**| _Equivalent_ <br/>(288/1661)| `Title38Section7332`| _Equivalent_ <br/>(3387/5668)| `Title38Section7332`| | | | | 
 | **`_ActUSPrivacyLaw`**| | | | | | | | | 
-| <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/Confidentiality`
-| **`_ConfidentialityByAccessKind`**| | | | | | | | | 
-| **`_ConfidentialityByInfoType`**| | | | | | | | | 
-| **`_ConfidentialityModifiers`**| | | | | | | | | 
-| <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/ActCode`
-| **`_ActInformationSensitivityPolicy`**| | | | | | | | | 
-| **`_EntitySensitivityPolicyType`**| | | | | | | | | 
-| **`_RoleInformationSensitivityPolicy`**| | | | | | | | | 
-| **`_InformationSensitivityPolicy`**| | | | | | | | | 
-| <td colspan="8">**R2** System: `http://hl7.org/fhir/v3/ObservationValue`
-| **`_SECALTINTOBV`**| | | | | | | | | 
-| **`_SECDATINTOBV`**| | | | | | | | | 
-| **`_SECINTCONOBV`**| | | | | | | | | 
-| **`_SECINTPRVABOBV`**| | | | | | | | | 
-| **`_SECINTPRVRBOBV`**| | | | | | | | | 
-| **`_SECINTPRVOBV`**| | | | | | | | | 
-| *187 of 237 codes used* <br/>remaining codes:<br/>| | *162 of 170 codes used* <br/>remaining codes:<br/>`DECLASSIFYLABEL`, `DOWNGRDLABEL`, `DRIVLABEL`, `LABEL`, `PERSISTLABEL`, `SOC`, `UPGRDLABEL`, `_ActUSPrivacyLaw`| | *162 of 273 codes used* <br/>remaining codes:<br/>`ACCESSCONSCHEME`, `ACOCOMPT`, `AUTHPOL`, `BH`, `COGN`, `CTCOMPT`, `DECLASSIFYLABEL`, `DELEPOL`, `DOWNGRDLABEL`, `DRIVLABEL`, `DVD`, `EMOTDIS`, `ETHUD`, `FMCOMPT`, `LABEL`, `LRCOMPT`, `MH`, `MST`, `OPIOIDUD`, `PACOMPT`, `PERSISTLABEL`, `PHY`, `PSYTHPN`, `SPI`, `SUD`, `UPGRDLABEL`, `VIO`, `_ActInformationSensitivityPolicy`, `_EntitySensitivityPolicyType`, `_InformationSensitivityPolicy`, `_RoleInformationSensitivityPolicy`, `BIORCH`, `BTG`, `CLINTRCHNPC`, `CLINTRCHPC`, `COC`, `DSRCH`, `ERTREAT`, `HDM`, `HTEST`, `LABELING`, `METAMGT`, `MILCDM`, `MILDCRG`, `POARCH`, `PRECLINTRCH`, `SYSDEV`, `TRANSRCH`, `_ActUSPrivacyLaw`, `_SECALTINTOBV`, `_SECDATINTOBV`, `_SECINTCONOBV`, `_SECINTPRVABOBV`, `_SECINTPRVOBV`, `_SECINTPRVRBOBV`| | | | 
+| *174 of 237 codes used* <br/>remaining codes:<br/>| | *162 of 170 codes used* <br/>remaining codes:<br/>`DECLASSIFYLABEL`, `DOWNGRDLABEL`, `DRIVLABEL`, `LABEL`, `PERSISTLABEL`, `SOC`, `UPGRDLABEL`, `_ActUSPrivacyLaw`| | *162 of 273 codes used* <br/>remaining codes:<br/>`ACCESSCONSCHEME`, `ACOCOMPT`, `AUTHPOL`, `BH`, `COGN`, `CTCOMPT`, `DECLASSIFYLABEL`, `DELEPOL`, `DOWNGRDLABEL`, `DRIVLABEL`, `DVD`, `EMOTDIS`, `ETHUD`, `FMCOMPT`, `LABEL`, `LRCOMPT`, `MH`, `MST`, `OPIOIDUD`, `PACOMPT`, `PERSISTLABEL`, `PHY`, `PSYTHPN`, `SPI`, `SUD`, `UPGRDLABEL`, `VIO`, `BIORCH`, `BTG`, `CLINTRCHNPC`, `CLINTRCHPC`, `COC`, `DSRCH`, `ERTREAT`, `HDM`, `HTEST`, `LABELING`, `METAMGT`, `MILCDM`, `MILDCRG`, `POARCH`, `PRECLINTRCH`, `SYSDEV`, `TRANSRCH`, `_ActUSPrivacyLaw`| | | | 
 

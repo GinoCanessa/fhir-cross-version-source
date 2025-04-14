@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### Procedure Device Action Codes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Procedure Device Action Codes](/docs/R2/ValueSets/ProcedureDeviceActionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/device-action\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1292`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1293`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Procedure Device Action Codes](/docs/R3/ValueSets/ProcedureDeviceActionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/device-action\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [Procedure Device Action Codes](/docs/R2/ValueSets/ProcedureDeviceActionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/device-action\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1292`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1293`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Procedure Device Action Codes](/docs/R3/ValueSets/ProcedureDeviceActionCodes.md)<br/> `http://hl7.org/fhir/ValueSet/device-action\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 

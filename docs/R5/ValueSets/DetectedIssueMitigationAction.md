@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:44 PM
 
 ### DetectedIssueMitigationAction
 
@@ -56,7 +56,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `8` | Other Action Taken |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `9` | Instituted Ongoing Monitoring Program |
 | `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `EMAUTH` | emergency authorization override |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActAdministrativeDetectedIssueManagementCode` | ActAdministrativeDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActDetectedIssueManagementCode` | ActDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_ActFinancialDetectedIssueManagementCode` | ActFinancialDetectedIssueManagementCode |
-| `http://terminology.hl7.org/CodeSystem/v3-ActCode` | `_AuthorizationIssueManagementCode` | Authorization Issue Management Code |

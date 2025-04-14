@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System EntityNameUseR2
 
@@ -34,13 +34,11 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `A` | business name |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `ABC` | alphabetic |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `ANON` | Anonymous |
-| `http://hl7.org/fhir/v3/EntityNameUseR2` | `Assumed` | Assumed |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `C` | customary |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `DN` | do not use |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `I` | Indigenous/Tribal |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `IDE` | ideographic |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `M` | maiden name |
-| `http://hl7.org/fhir/v3/EntityNameUseR2` | `NameRepresentationUse` | NameRepresentationUse |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `OLD` | no longer in use |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `OR` | official registry name |
 | `http://hl7.org/fhir/v3/EntityNameUseR2` | `P` | Other/Pseudonym/Alias |

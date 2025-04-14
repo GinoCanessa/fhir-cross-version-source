@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### PatientRelationshipType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [PatientRelationshipType](/docs/R2/ValueSets/PatientRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1303`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1304`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [PatientRelationshipType](/docs/R3/ValueSets/PatientRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [PatientRelationshipType](/docs/R2/ValueSets/PatientRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype\|1.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1303`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1304`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [PatientRelationshipType](/docs/R3/ValueSets/PatientRelationshipType.md)<br/> `http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Code Mappings
 
 
@@ -162,6 +162,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`NBOR`**| _Equivalent_ <br/>(12558/12559)| `NBOR`| | | | | | | 
 | **`ONESELF`**| _Equivalent_ <br/>(12560/12561)| `ONESELF`| | | | | | | 
 | **`ROOM`**| _Equivalent_ <br/>(12562/12563)| `ROOM`| | | | | | | 
-| **`_PersonalRelationshipRoleType`**| | | | | | | | | 
-| *121 of 121 codes used* | | *109 of 121 codes used* <br/>remaining codes:<br/>`BP`, `C`, `CP`, `E`, `EP`, `F`, `I`, `N`, `O`, `PR`, `S`, `U`| | | | | | 
+| *120 of 121 codes used* <br/>remaining codes:<br/>| | *109 of 121 codes used* <br/>remaining codes:<br/>`BP`, `C`, `CP`, `E`, `EP`, `F`, `I`, `N`, `O`, `PR`, `S`, `U`| | | | | | 
 

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### GroupMeasure
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [GroupMeasure](/docs/R4/ValueSets/GroupMeasure.md)<br/> `http://hl7.org/fhir/ValueSet/group-measure\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1523`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [GroupMeasure](/docs/R4B/ValueSets/GroupMeasure.md)<br/> `http://hl7.org/fhir/ValueSet/group-measure\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
+| | | | | [GroupMeasure](/docs/R4/ValueSets/GroupMeasure.md)<br/> `http://hl7.org/fhir/ValueSet/group-measure\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1523`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1524`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [GroupMeasure](/docs/R4B/ValueSets/GroupMeasure.md)<br/> `http://hl7.org/fhir/ValueSet/group-measure\|4.3.0` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | 
 ### Code Mappings
 
 

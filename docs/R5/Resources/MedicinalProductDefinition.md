@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### MedicinalProductDefinition
 
@@ -102,7 +102,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [MedicinalProductDefinition](/docs/R4B/Resources/MedicinalProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1008`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1237`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicinalProductDefinition](/docs/R5/Resources/MedicinalProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition\|5.0.0` 
+| | | | | | | [MedicinalProductDefinition](/docs/R4B/Resources/MedicinalProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `1008`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1237`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MedicinalProductDefinition](/docs/R5/Resources/MedicinalProductDefinition.md)<br/> `http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition\|5.0.0` 
 
 ### Element Mappings
 

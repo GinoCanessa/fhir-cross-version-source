@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:46 PM
+Generated at Monday, April 14, 2025 6:17:30 PM
 
 ### OrganizationAffiliation
 
@@ -45,7 +45,7 @@ Generated at Friday, April 4, 2025 2:58:46 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [OrganizationAffiliation](/docs/R4/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1567`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1568`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OrganizationAffiliation](/docs/R4B/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1019`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1248`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [OrganizationAffiliation](/docs/R5/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|5.0.0` 
+| | | | | [OrganizationAffiliation](/docs/R4/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1567`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1568`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [OrganizationAffiliation](/docs/R4B/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1019`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1248`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [OrganizationAffiliation](/docs/R5/Resources/OrganizationAffiliation.md)<br/> `http://hl7.org/fhir/StructureDefinition/OrganizationAffiliation\|5.0.0` 
 
 ### Element Mappings
 

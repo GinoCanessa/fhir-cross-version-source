@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### ActClassObservation
 
@@ -67,6 +67,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActClass` | `SUP` | supine |
 | `http://hl7.org/fhir/v3/ActClass` | `TRD` | trendelenburg |
 | `http://hl7.org/fhir/v3/ActClass` | `VERIF` | Verification |
-| `http://hl7.org/fhir/v3/ActClass` | `_ActClassROI` | ActClassROI |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectBodyPosition` | subject body position |
-| `http://hl7.org/fhir/v3/ActClass` | `_SubjectPhysicalPosition` | subject physical position |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### v3 Code System RoleClass
 
@@ -50,7 +50,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `BOND` | molecular bond |
 | `http://hl7.org/fhir/v3/RoleClass` | `CAREGIVER` | caregiver |
 | `http://hl7.org/fhir/v3/RoleClass` | `CASEBJ` | Case Subject |
-| `http://hl7.org/fhir/v3/RoleClass` | `CHILD` | child |
 | `http://hl7.org/fhir/v3/RoleClass` | `CIT` | citizen |
 | `http://hl7.org/fhir/v3/RoleClass` | `CLAIM` | claimant |
 | `http://hl7.org/fhir/v3/RoleClass` | `CNTM` | contaminant ingredient |
@@ -61,7 +60,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `CONT` | content |
 | `http://hl7.org/fhir/v3/RoleClass` | `CONY` | continuity |
 | `http://hl7.org/fhir/v3/RoleClass` | `COVPTY` | covered party |
-| `http://hl7.org/fhir/v3/RoleClass` | `CRED` | credentialed entity |
 | `http://hl7.org/fhir/v3/RoleClass` | `CRINV` | clinical research investigator |
 | `http://hl7.org/fhir/v3/RoleClass` | `CRSPNSR` | clinical research sponsor |
 | `http://hl7.org/fhir/v3/RoleClass` | `DEATHPLC` | place of death |
@@ -101,15 +99,11 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `NAMED` | named insured |
 | `http://hl7.org/fhir/v3/RoleClass` | `NOK` | next of kin |
 | `http://hl7.org/fhir/v3/RoleClass` | `NOT` | notary public |
-| `http://hl7.org/fhir/v3/RoleClass` | `NURPRAC` | nurse practitioner |
-| `http://hl7.org/fhir/v3/RoleClass` | `NURS` | nurse |
 | `http://hl7.org/fhir/v3/RoleClass` | `OWN` | owned entity |
-| `http://hl7.org/fhir/v3/RoleClass` | `PA` | physician assistant |
 | `http://hl7.org/fhir/v3/RoleClass` | `PART` | part |
 | `http://hl7.org/fhir/v3/RoleClass` | `PAT` | patient |
 | `http://hl7.org/fhir/v3/RoleClass` | `PAYEE` | payee |
 | `http://hl7.org/fhir/v3/RoleClass` | `PAYOR` | invoice payor |
-| `http://hl7.org/fhir/v3/RoleClass` | `PHYS` | physician |
 | `http://hl7.org/fhir/v3/RoleClass` | `POLHOLD` | policy holder |
 | `http://hl7.org/fhir/v3/RoleClass` | `PROG` | program eligible |
 | `http://hl7.org/fhir/v3/RoleClass` | `PROV` | healthcare provider |
@@ -122,14 +116,12 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `ROL` | role |
 | `http://hl7.org/fhir/v3/RoleClass` | `SAME` | same |
 | `http://hl7.org/fhir/v3/RoleClass` | `SDLOC` | service delivery location |
-| `http://hl7.org/fhir/v3/RoleClass` | `SELF` | self |
 | `http://hl7.org/fhir/v3/RoleClass` | `SGNOFF` | signing authority or officer |
 | `http://hl7.org/fhir/v3/RoleClass` | `SPEC` | specimen |
 | `http://hl7.org/fhir/v3/RoleClass` | `SPNSR` | coverage sponsor |
 | `http://hl7.org/fhir/v3/RoleClass` | `STBL` | stabilizer |
 | `http://hl7.org/fhir/v3/RoleClass` | `STD` | student |
 | `http://hl7.org/fhir/v3/RoleClass` | `STOR` | stored entity |
-| `http://hl7.org/fhir/v3/RoleClass` | `SUBS` | subsumer |
 | `http://hl7.org/fhir/v3/RoleClass` | `SUBSCR` | subscriber |
 | `http://hl7.org/fhir/v3/RoleClass` | `SUBY` | subsumed by |
 | `http://hl7.org/fhir/v3/RoleClass` | `TERR` | territory of authority |
@@ -137,9 +129,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `UNDWRT` | underwriter |
 | `http://hl7.org/fhir/v3/RoleClass` | `USED` | used entity |
 | `http://hl7.org/fhir/v3/RoleClass` | `WRTE` | warranted product |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassAssociative` | RoleClassAssociative |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassMutualRelationship` | RoleClassMutualRelationship |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassOntological` | RoleClassOntological |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassPartitive` | RoleClassPartitive |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassPassive` | RoleClassPassive |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassRelationshipFormal` | RoleClassRelationshipFormal |

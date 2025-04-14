@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### ActionConditionKind
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActionConditionKind](/docs/R3/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `467`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `691`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionConditionKind](/docs/R4/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1339`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1340`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionConditionKind](/docs/R4B/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `952`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1213`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionConditionKind](/docs/R5/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|5.0.0` 
+| | | [ActionConditionKind](/docs/R3/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `467`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `691`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionConditionKind](/docs/R4/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1339`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1340`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionConditionKind](/docs/R4B/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `952`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1213`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionConditionKind](/docs/R5/ValueSets/ActionConditionKind.md)<br/> `http://hl7.org/fhir/ValueSet/action-condition-kind\|5.0.0` 
 
 ### Code Mappings
 

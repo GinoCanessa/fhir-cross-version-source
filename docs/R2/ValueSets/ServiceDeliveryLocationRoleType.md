@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### ServiceDeliveryLocationRoleType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:32 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ServiceDeliveryLocationRoleType](/docs/R2/ValueSets/ServiceDeliveryLocationRoleType.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `92`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `248`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ServiceDeliveryLocationRoleType](/docs/R3/ValueSets/ServiceDeliveryLocationRoleType.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `432`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `654`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [v3.ServiceDeliveryLocationRoleType](/docs/R4/ValueSets/V3ServiceDeliveryLocationRoleType.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
+| [ServiceDeliveryLocationRoleType](/docs/R2/ValueSets/ServiceDeliveryLocationRoleType.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `92`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `248`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ServiceDeliveryLocationRoleType](/docs/R3/ValueSets/ServiceDeliveryLocationRoleType.md)<br/> `http://hl7.org/fhir/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | →→→→→→→<br/>``<br/>- DBKey: `432`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `654`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [v3.ServiceDeliveryLocationRoleType](/docs/R4/ValueSets/V3ServiceDeliveryLocationRoleType.md)<br/> `http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType\|2014-03-26` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | 
 ### Code Mappings
 
 
@@ -163,9 +163,5 @@ All codes from this value set are listed while other value sets only show conten
 | **`SCHOOL`**| _Equivalent_ <br/>(664/2135)| `SCHOOL`| _Equivalent_ <br/>(3868/6187)| `SCHOOL`| | | | | 
 | **`UPC`**| _Equivalent_ <br/>(730/2143)| `UPC`| _Equivalent_ <br/>(3832/6151)| `UPC`| | | | | 
 | **`WORK`**| _Equivalent_ <br/>(741/2146)| `WORK`| _Equivalent_ <br/>(3906/6225)| `WORK`| | | | | 
-| **`_DedicatedClinicalLocationRoleType`**| | | | | | | | | 
-| **`_DedicatedNonClinicalLocationRoleType`**| | | | | | | | | 
-| **`_DedicatedServiceDeliveryLocationRoleType`**| | | | | | | | | 
-| **`_IncidentalServiceDeliveryLocationRoleType`**| | | | | | | | | 
-| *127 of 127 codes used* | | *123 of 123 codes used* | | *123 of 123 codes used* | | | | 
+| *123 of 127 codes used* <br/>remaining codes:<br/>| | *123 of 123 codes used* | | *123 of 123 codes used* | | | | 
 

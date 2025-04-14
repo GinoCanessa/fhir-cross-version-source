@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:34 PM
 
 ### BiologicallyDerivedProductStatus
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [BiologicallyDerivedProductStatus](/docs/R4/ValueSets/BiologicallyDerivedProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1655`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1656`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [BiologicallyDerivedProductStatus](/docs/R4B/ValueSets/BiologicallyDerivedProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `1813`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1814`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ProductStatus](/docs/R5/ValueSets/ProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|5.0.0` 
+| | | | | [BiologicallyDerivedProductStatus](/docs/R4/ValueSets/BiologicallyDerivedProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1655`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1656`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [BiologicallyDerivedProductStatus](/docs/R4B/ValueSets/BiologicallyDerivedProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `1813`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1814`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ProductStatus](/docs/R5/ValueSets/ProductStatus.md)<br/> `http://hl7.org/fhir/ValueSet/product-status\|5.0.0` 
 
 ### Code Mappings
 

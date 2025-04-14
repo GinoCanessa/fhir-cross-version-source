@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:43 PM
+Generated at Monday, April 14, 2025 6:17:26 PM
 
 ### v3.EntityCode
 
@@ -159,20 +159,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `VIRTM` | Viral Transport medium |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `WEST` | Buffered Citrate |
 | `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `WING` | Wing Location |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_AccessMedicalDevice` | AccessMedicalDevice |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_AdministrationMedicalDevice` | AdministrationMedicalDevice |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_ClinicalDrug` | ClinicalDrug |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_ContainerEntityType` | ContainerEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_DrugEntity` | DrugEntity |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_IndividualPackageEntityType` | IndividualPackageEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_InjectionMedicalDevice` | InjectionMedicalDevice |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_MaterialEntityClassType` | MaterialEntityClassType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_MedicalDevice` | MedicalDevice |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_MultiUseContainerEntityType` | MultiUseContainerEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_NonDrugAgentEntity` | NonDrugAgentEntity |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_NonRigidContainerEntityType` | NonRigidContainerEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_OrganizationEntityType` | OrganizationEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_PlaceEntityType` | PlaceEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_ResourceGroupEntityType` | ResourceGroupEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_RigidContainerEntityType` | RigidContainerEntityType |
-| `http://terminology.hl7.org/CodeSystem/v3-EntityCode` | `_SpecimenAdditiveEntity` | SpecimenAdditiveEntity |

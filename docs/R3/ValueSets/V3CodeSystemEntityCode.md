@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:36 PM
+Generated at Monday, April 14, 2025 6:17:19 PM
 
 ### v3 Code System EntityCode
 
@@ -159,20 +159,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/EntityCode` | `VIRTM` | Viral Transport medium |
 | `http://hl7.org/fhir/v3/EntityCode` | `WEST` | Buffered Citrate |
 | `http://hl7.org/fhir/v3/EntityCode` | `WING` | Wing Location |
-| `http://hl7.org/fhir/v3/EntityCode` | `_AccessMedicalDevice` | AccessMedicalDevice |
-| `http://hl7.org/fhir/v3/EntityCode` | `_AdministrationMedicalDevice` | AdministrationMedicalDevice |
-| `http://hl7.org/fhir/v3/EntityCode` | `_ClinicalDrug` | ClinicalDrug |
-| `http://hl7.org/fhir/v3/EntityCode` | `_ContainerEntityType` | ContainerEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_DrugEntity` | DrugEntity |
-| `http://hl7.org/fhir/v3/EntityCode` | `_IndividualPackageEntityType` | IndividualPackageEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_InjectionMedicalDevice` | InjectionMedicalDevice |
-| `http://hl7.org/fhir/v3/EntityCode` | `_MaterialEntityClassType` | MaterialEntityClassType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_MedicalDevice` | MedicalDevice |
-| `http://hl7.org/fhir/v3/EntityCode` | `_MultiUseContainerEntityType` | MultiUseContainerEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_NonDrugAgentEntity` | NonDrugAgentEntity |
-| `http://hl7.org/fhir/v3/EntityCode` | `_NonRigidContainerEntityType` | NonRigidContainerEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_OrganizationEntityType` | OrganizationEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_PlaceEntityType` | PlaceEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_ResourceGroupEntityType` | ResourceGroupEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_RigidContainerEntityType` | RigidContainerEntityType |
-| `http://hl7.org/fhir/v3/EntityCode` | `_SpecimenAdditiveEntity` | SpecimenAdditiveEntity |

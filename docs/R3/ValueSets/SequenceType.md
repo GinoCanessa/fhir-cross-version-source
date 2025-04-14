@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:38 PM
+Generated at Monday, April 14, 2025 6:17:21 PM
 
 ### sequenceType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:38 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [sequenceType](/docs/R3/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1732`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1731`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [sequenceType](/docs/R4/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1733`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1734`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [sequenceType](/docs/R4B/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `933`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1194`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [SequenceType](/docs/R5/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|5.0.0` 
+| | | [sequenceType](/docs/R3/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|3.0.2` | →→→→→→→<br/>``<br/>- DBKey: `1732`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1731`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [sequenceType](/docs/R4/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1733`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1734`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [sequenceType](/docs/R4B/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `933`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1194`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [SequenceType](/docs/R5/ValueSets/SequenceType.md)<br/> `http://hl7.org/fhir/ValueSet/sequence-type\|5.0.0` 
 
 ### Code Mappings
 

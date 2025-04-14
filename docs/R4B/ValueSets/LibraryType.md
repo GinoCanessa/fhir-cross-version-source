@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### LibraryType
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | | | [LibraryType](/docs/R4B/ValueSets/LibraryType.md)<br/> `http://hl7.org/fhir/ValueSet/library-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `908`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1169`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [LibraryType](/docs/R5/ValueSets/LibraryType.md)<br/> `http://hl7.org/fhir/ValueSet/library-type\|5.0.0` 
+| | | | | | | [LibraryType](/docs/R4B/ValueSets/LibraryType.md)<br/> `http://hl7.org/fhir/ValueSet/library-type\|4.3.0` | →→→→→→→<br/>``<br/>- DBKey: `908`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>``<br/>- DBKey: `1169`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [LibraryType](/docs/R5/ValueSets/LibraryType.md)<br/> `http://hl7.org/fhir/ValueSet/library-type\|5.0.0` 
 
 ### Code Mappings
 

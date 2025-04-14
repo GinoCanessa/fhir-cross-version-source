@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:31 PM
+Generated at Monday, April 14, 2025 6:17:14 PM
 
 ### v3 Code System ParticipationType
 
@@ -90,5 +90,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ParticipationType` | `VIA` | via |
 | `http://hl7.org/fhir/v3/ParticipationType` | `VRF` | verifier |
 | `http://hl7.org/fhir/v3/ParticipationType` | `WIT` | witness |
-| `http://hl7.org/fhir/v3/ParticipationType` | `_ParticipationAncillary` | ParticipationAncillary |
-| `http://hl7.org/fhir/v3/ParticipationType` | `_ParticipationInformationGenerator` | ParticipationInformationGenerator |

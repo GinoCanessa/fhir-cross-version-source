@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### Period
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Period](/docs/R2/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `59`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Period](/docs/R3/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `404`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `600`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Period](/docs/R4/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1359`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1360`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Period](/docs/R4B/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `913`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1142`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Period](/docs/R5/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|5.0.0` 
+| [Period](/docs/R2/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `59`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `230`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Period](/docs/R3/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `404`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `600`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Period](/docs/R4/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1359`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1360`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Period](/docs/R4B/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `913`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1142`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Period](/docs/R5/ComplexTypes/Period.md)<br/> `http://hl7.org/fhir/StructureDefinition/Period\|5.0.0` 
 
 ### Element Mappings
 

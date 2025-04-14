@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:37 PM
+Generated at Monday, April 14, 2025 6:17:20 PM
 
 ### RoleClassMutualRelationship
 
@@ -64,10 +64,8 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/RoleClass` | `PRS` | personal relationship |
 | `http://hl7.org/fhir/v3/RoleClass` | `QUAL` | qualified entity |
 | `http://hl7.org/fhir/v3/RoleClass` | `RESBJ` | research subject |
-| `http://hl7.org/fhir/v3/RoleClass` | `SELF` | self |
 | `http://hl7.org/fhir/v3/RoleClass` | `SGNOFF` | signing authority or officer |
 | `http://hl7.org/fhir/v3/RoleClass` | `SPNSR` | coverage sponsor |
 | `http://hl7.org/fhir/v3/RoleClass` | `STD` | student |
 | `http://hl7.org/fhir/v3/RoleClass` | `SUBSCR` | subscriber |
 | `http://hl7.org/fhir/v3/RoleClass` | `UNDWRT` | underwriter |
-| `http://hl7.org/fhir/v3/RoleClass` | `_RoleClassRelationshipFormal` | RoleClassRelationshipFormal |

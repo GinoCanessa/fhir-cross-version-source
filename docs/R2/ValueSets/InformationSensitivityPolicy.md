@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:32 PM
+Generated at Monday, April 14, 2025 6:17:15 PM
 
 ### InformationSensitivityPolicy
 
@@ -59,7 +59,3 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://hl7.org/fhir/v3/ActCode` | `SSP` | sensitive service provider information sensitivity |
 | `http://hl7.org/fhir/v3/ActCode` | `STD` | sexually transmitted disease information sensitivity |
 | `http://hl7.org/fhir/v3/ActCode` | `TBOO` | taboo |
-| `http://hl7.org/fhir/v3/ActCode` | `_ActInformationSensitivityPolicy` | ActInformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_EntitySensitivityPolicyType` | EntityInformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_InformationSensitivityPolicy` | InformationSensitivityPolicy |
-| `http://hl7.org/fhir/v3/ActCode` | `_RoleInformationSensitivityPolicy` | RoleInformationSensitivityPolicy |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### ActionRequiredBehavior
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActionRequiredBehavior](/docs/R3/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `471`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R4/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1349`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R4B/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `956`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1217`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R5/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|5.0.0` 
+| | | [ActionRequiredBehavior](/docs/R3/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `471`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `695`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R4/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1349`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1350`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R4B/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `956`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1217`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionRequiredBehavior](/docs/R5/ValueSets/ActionRequiredBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-required-behavior\|5.0.0` 
 
 ### Code Mappings
 

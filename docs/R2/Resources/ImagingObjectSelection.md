@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:33 PM
+Generated at Monday, April 14, 2025 6:17:16 PM
 
 ### ImagingObjectSelection
 
@@ -65,7 +65,7 @@ Generated at Friday, April 4, 2025 2:58:33 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [ImagingObjectSelection](/docs/R2/Resources/ImagingObjectSelection.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingObjectSelection\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `116`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`NotRelatedTo`<br/>- DBKey: `282`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ImagingManifest](/docs/R3/Resources/ImagingManifest.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingManifest\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
+| [ImagingObjectSelection](/docs/R2/Resources/ImagingObjectSelection.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingObjectSelection\|1.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `116`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`NotRelatedTo`<br/>- DBKey: `282`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ImagingManifest](/docs/R3/Resources/ImagingManifest.md)<br/> `http://hl7.org/fhir/StructureDefinition/ImagingManifest\|3.0.2` | <br/>*no map*<br/><hr/><br/>*no map*<br/>| | | | | | 
 ### Element Mappings
 
 

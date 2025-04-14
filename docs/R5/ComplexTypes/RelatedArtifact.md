@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:59:00 PM
+Generated at Monday, April 14, 2025 6:17:45 PM
 
 ### RelatedArtifact
 
@@ -37,7 +37,7 @@ Generated at Friday, April 4, 2025 2:59:00 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [RelatedArtifact](/docs/R3/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `409`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `605`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifact](/docs/R4/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1375`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1376`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifact](/docs/R4B/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `920`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1149`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [RelatedArtifact](/docs/R5/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|5.0.0` 
+| | | [RelatedArtifact](/docs/R3/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|3.0.2` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `409`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `605`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RelatedArtifact](/docs/R4/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1375`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1376`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RelatedArtifact](/docs/R4B/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|4.3.0` | →→→→→→→<br/>`RelatedTo`<br/>- DBKey: `920`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `1149`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [RelatedArtifact](/docs/R5/ComplexTypes/RelatedArtifact.md)<br/> `http://hl7.org/fhir/StructureDefinition/RelatedArtifact\|5.0.0` 
 
 ### Element Mappings
 

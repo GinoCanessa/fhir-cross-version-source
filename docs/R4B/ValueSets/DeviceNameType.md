@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:52 PM
+Generated at Monday, April 14, 2025 6:17:36 PM
 
 ### DeviceNameType
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:52 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [DeviceNameType](/docs/R4/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1469`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1470`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceNameType](/docs/R4B/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `852`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1113`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [DeviceNameType](/docs/R5/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|5.0.0` 
+| | | | | [DeviceNameType](/docs/R4/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1469`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1470`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceNameType](/docs/R4B/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|4.3.0` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `852`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `1113`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [DeviceNameType](/docs/R5/ValueSets/DeviceNameType.md)<br/> `http://hl7.org/fhir/ValueSet/device-nametype\|5.0.0` 
 
 ### Code Mappings
 
@@ -42,11 +42,11 @@ All codes from this value set are listed while other value sets only show conten
 | *No Map* | Relationship | *No Map* | Relationship | [R4 DeviceNameType](/docs/R4/ValueSets/DeviceNameType.md)| Relationship | R4B DeviceNameType| Relationship | [R5 DeviceNameType](/docs/R5/ValueSets/DeviceNameType.md)
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
 | <td colspan="8">**R4B** System: `http://hl7.org/fhir/device-nametype`
-| | | | | `udi-label-name`| _Equivalent_ <br/>(15748/15749)| **`udi-label-name`**| →→→→ _Equivalent_ →→→→ <br/>(7946)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10252) | `registered-name`
+| | | | | `udi-label-name`| _Equivalent_ <br/>(15748/15749)| **`udi-label-name`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7946)<hr/>←←←← _Equivalent_ ←←←← <br/>(10252) | `registered-name`
 | | | | | `user-friendly-name`| _Equivalent_ <br/>(15750/15751)| **`user-friendly-name`**| _Equivalent_ <br/>(7947/10253)| `user-friendly-name`
 | | | | | `patient-reported-name`| _Equivalent_ <br/>(15752/15753)| **`patient-reported-name`**| _Equivalent_ <br/>(7945/10254)| `patient-reported-name`
-| | | | | `manufacturer-name`| _Equivalent_ <br/>(15754/15755)| **`manufacturer-name`**| →→→→ _Equivalent_ →→→→ <br/>(7942)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10249) | `registered-name`
-| | | | | `model-name`| _Equivalent_ <br/>(15756/15757)| **`model-name`**| →→→→ _Equivalent_ →→→→ <br/>(7943)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10250) | `registered-name`
-| | | | | `other`| _Equivalent_ <br/>(15758/15759)| **`other`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7944)<hr/>←←←← _SourceIsBroaderThanTarget_ ←←←← <br/>(10251) | `registered-name`
+| | | | | `manufacturer-name`| _Equivalent_ <br/>(15754/15755)| **`manufacturer-name`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7942)<hr/>←←←← _Equivalent_ ←←←← <br/>(10249) | `registered-name`
+| | | | | `model-name`| _Equivalent_ <br/>(15756/15757)| **`model-name`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7943)<hr/>←←←← _Equivalent_ ←←←← <br/>(10250) | `registered-name`
+| | | | | `other`| _Equivalent_ <br/>(15758/15759)| **`other`**| →→→→ _SourceIsBroaderThanTarget_ →→→→ <br/>(7944)<hr/>←←←← _Equivalent_ ←←←← <br/>(10251) | `registered-name`
 | | | | | *6 of 6 codes used* | | *6 of 6 codes used* | | *3 of 3 codes used* 
 

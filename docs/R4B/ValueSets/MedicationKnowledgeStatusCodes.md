@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:51 PM
+Generated at Monday, April 14, 2025 6:17:35 PM
 
 ### MedicationKnowledge Status Codes
 
@@ -28,7 +28,7 @@ Generated at Friday, April 4, 2025 2:58:51 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | | | [MedicationKnowledge Status Codes](/docs/R4/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1601`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicationKnowledge Status Codes](/docs/R4B/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `922`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1183`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [MedicationKnowledgeStatusCodes](/docs/R5/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|5.0.0` 
+| | | | | [MedicationKnowledge Status Codes](/docs/R4/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1601`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1602`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MedicationKnowledge Status Codes](/docs/R4B/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `922`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1183`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [MedicationKnowledgeStatusCodes](/docs/R5/ValueSets/MedicationKnowledgeStatusCodes.md)<br/> `http://hl7.org/fhir/ValueSet/medicationknowledge-status\|5.0.0` 
 
 ### Code Mappings
 

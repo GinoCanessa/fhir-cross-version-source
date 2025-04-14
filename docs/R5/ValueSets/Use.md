@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:58 PM
+Generated at Monday, April 14, 2025 6:17:43 PM
 
 ### Use
 
@@ -30,7 +30,7 @@ Generated at Friday, April 4, 2025 2:58:58 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| [Use](/docs/R2/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use-link\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `21`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `180`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Use](/docs/R3/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `347`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `570`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Use](/docs/R4/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Use](/docs/R4B/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `794`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1055`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [Use](/docs/R5/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|5.0.0` 
+| [Use](/docs/R2/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use-link\|1.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `21`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `180`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Use](/docs/R3/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|3.0.2` | →→→→→→→<br/>`SourceIsBroaderThanTarget`<br/>- DBKey: `347`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`SourceIsNarrowerThanTarget`<br/>- DBKey: `570`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Use](/docs/R4/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1413`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1414`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [Use](/docs/R4B/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `794`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1055`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [Use](/docs/R5/ValueSets/Use.md)<br/> `http://hl7.org/fhir/ValueSet/claim-use\|5.0.0` 
 
 ### Code Mappings
 

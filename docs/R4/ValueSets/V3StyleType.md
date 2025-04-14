@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:44 PM
+Generated at Monday, April 14, 2025 6:17:28 PM
 
 ### v3.styleType
 
@@ -43,11 +43,6 @@ This Value Set resulted in no projection (no mappings to other packages).
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `Rrule` | Right-sided rule |
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `Square` | Square |
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `Toprule` | Top Rule |
-| `http://terminology.hl7.org/CodeSystem/v3-styleType` | `_FontStyle` | Font Style |
-| `http://terminology.hl7.org/CodeSystem/v3-styleType` | `_ListStyle` | List Style |
-| `http://terminology.hl7.org/CodeSystem/v3-styleType` | `_OrderedListStyle` | Ordered List Style |
-| `http://terminology.hl7.org/CodeSystem/v3-styleType` | `_TableRuleStyle` | Table Rule Style |
-| `http://terminology.hl7.org/CodeSystem/v3-styleType` | `_UnorderedListStyle` | Unordered List Style |
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `bold` | Bold Font |
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `emphasis` | Emphasised Font |
 | `http://terminology.hl7.org/CodeSystem/v3-styleType` | `italics` | Italics Font |

@@ -1,5 +1,5 @@
 Comparison of 
-Generated at Friday, April 4, 2025 2:58:59 PM
+Generated at Monday, April 14, 2025 6:17:42 PM
 
 ### ActionGroupingBehavior
 
@@ -29,7 +29,7 @@ Generated at Friday, April 4, 2025 2:58:59 PM
 
 | R2 | Comparison | R3 | Comparison | R4 | Comparison | R4B | Comparison | R5
 | --- | --- | --- | --- | --- | --- | --- | --- | ---
-| | | [ActionGroupingBehavior](/docs/R3/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `468`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `692`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R4/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1341`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1342`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R4B/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `953`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1214`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R5/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|5.0.0` 
+| | | [ActionGroupingBehavior](/docs/R3/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|3.0.2` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `468`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `692`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R4/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|4.0.1` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `1341`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1342`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `False`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R4B/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|4.3.0` | →→→→→→→<br/>`Equivalent`<br/>- DBKey: `953`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>→→→→→→→<hr/>←←←←←←←<br/>`Equivalent`<br/>- DBKey: `1214`<br/>- Reviewed: `n/a`<br/>- By: `n/a`<br/>- Identical: `True`<br/>←←←←←←←| [ActionGroupingBehavior](/docs/R5/ValueSets/ActionGroupingBehavior.md)<br/> `http://hl7.org/fhir/ValueSet/action-grouping-behavior\|5.0.0` 
 
 ### Code Mappings
 
