@@ -1,0 +1,44 @@
+### Lookup for FHIR R4 AdverseEvent for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| AdverseEvent.id | UseElementSameName | AdverseEvent.id |
+| AdverseEvent.meta | UseElementSameName | AdverseEvent.meta |
+| AdverseEvent.implicitRules | UseElementSameName | AdverseEvent.implicitRules |
+| AdverseEvent.language | UseElementSameName | AdverseEvent.language |
+| AdverseEvent.text | UseElementSameName | AdverseEvent.text |
+| AdverseEvent.contained | UseElementSameName | AdverseEvent.contained |
+| AdverseEvent.extension | UseElementSameName | AdverseEvent.extension |
+| AdverseEvent.modifierExtension | UseElementSameName | AdverseEvent.modifierExtension |
+| AdverseEvent.identifier | UseElementSameName | AdverseEvent.identifier |
+| AdverseEvent.actuality | UseElementSameName | AdverseEvent.actuality |
+| AdverseEvent.category | UseElementSameName | AdverseEvent.category |
+| AdverseEvent.event | UseElementSameName | AdverseEvent.event |
+| AdverseEvent.subject | UseElementSameName | AdverseEvent.subject |
+| AdverseEvent.encounter | UseElementSameName | AdverseEvent.encounter |
+| AdverseEvent.date | UseElementSameName | AdverseEvent.date |
+| AdverseEvent.detected | UseElementSameName | AdverseEvent.detected |
+| AdverseEvent.recordedDate | UseElementSameName | AdverseEvent.recordedDate |
+| AdverseEvent.resultingCondition | UseElementSameName | AdverseEvent.resultingCondition |
+| AdverseEvent.location | UseElementSameName | AdverseEvent.location |
+| AdverseEvent.seriousness | UseElementSameName | AdverseEvent.seriousness |
+| AdverseEvent.severity | UseElementSameName | AdverseEvent.severity |
+| AdverseEvent.outcome | UseElementSameName | AdverseEvent.outcome |
+| AdverseEvent.recorder | UseElementSameName | AdverseEvent.recorder |
+| AdverseEvent.contributor | UseElementSameName | AdverseEvent.contributor |
+| AdverseEvent.suspectEntity | UseElementSameName | AdverseEvent.suspectEntity |
+| AdverseEvent.suspectEntity.id | UseElementSameName | AdverseEvent.suspectEntity.id |
+| AdverseEvent.suspectEntity.extension | UseElementSameName | AdverseEvent.suspectEntity.extension |
+| AdverseEvent.suspectEntity.modifierExtension | UseElementSameName | AdverseEvent.suspectEntity.modifierExtension |
+| AdverseEvent.suspectEntity.instance | UseElementSameName | AdverseEvent.suspectEntity.instance |
+| AdverseEvent.suspectEntity.causality | UseElementSameName | AdverseEvent.suspectEntity.causality |
+| AdverseEvent.suspectEntity.causality.id | UseElementSameName | AdverseEvent.suspectEntity.causality.id |
+| AdverseEvent.suspectEntity.causality.extension | UseElementSameName | AdverseEvent.suspectEntity.causality.extension |
+| AdverseEvent.suspectEntity.causality.modifierExtension | UseElementSameName | AdverseEvent.suspectEntity.causality.modifierExtension |
+| AdverseEvent.suspectEntity.causality.assessment | UseElementSameName | AdverseEvent.suspectEntity.causality.assessment |
+| AdverseEvent.suspectEntity.causality.productRelatedness | UseElementSameName | AdverseEvent.suspectEntity.causality.productRelatedness |
+| AdverseEvent.suspectEntity.causality.author | UseElementSameName | AdverseEvent.suspectEntity.causality.author |
+| AdverseEvent.suspectEntity.causality.method | UseElementSameName | AdverseEvent.suspectEntity.causality.method |
+| AdverseEvent.subjectMedicalHistory | UseElementSameName | AdverseEvent.subjectMedicalHistory |
+| AdverseEvent.referenceDocument | UseElementSameName | AdverseEvent.referenceDocument |
+| AdverseEvent.study | UseElementSameName | AdverseEvent.study |

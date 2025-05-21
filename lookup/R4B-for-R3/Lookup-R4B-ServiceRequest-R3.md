@@ -1,0 +1,45 @@
+### Lookup for FHIR R4B ServiceRequest for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ServiceRequest.id | UseElementSameName | ProcedureRequest.id |
+| ServiceRequest.meta | UseElementSameName | ProcedureRequest.meta |
+| ServiceRequest.implicitRules | UseElementSameName | ProcedureRequest.implicitRules |
+| ServiceRequest.language | UseElementSameName | ProcedureRequest.language |
+| ServiceRequest.text | UseElementSameName | ProcedureRequest.text |
+| ServiceRequest.contained | UseElementSameName | ProcedureRequest.contained |
+| ServiceRequest.extension | UseElementSameName | ProcedureRequest.extension |
+| ServiceRequest.modifierExtension | UseElementSameName | ProcedureRequest.modifierExtension |
+| ServiceRequest.identifier | UseElementSameName | ProcedureRequest.identifier |
+| ServiceRequest.instantiatesCanonical | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.instantiatesCanonical |
+| ServiceRequest.instantiatesUri | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.instantiatesUri |
+| ServiceRequest.basedOn | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.basedOn |
+| ServiceRequest.replaces | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.replaces |
+| ServiceRequest.requisition | UseElementSameName | ProcedureRequest.requisition |
+| ServiceRequest.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.status |
+| ServiceRequest.intent | UseElementSameName | ProcedureRequest.intent |
+| ServiceRequest.category | UseElementSameName | ProcedureRequest.category |
+| ServiceRequest.priority | UseElementSameName | ProcedureRequest.priority |
+| ServiceRequest.doNotPerform | UseElementSameName | ProcedureRequest.doNotPerform |
+| ServiceRequest.code | UseElementSameName | ProcedureRequest.code |
+| ServiceRequest.orderDetail | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.orderDetail |
+| ServiceRequest.quantity[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.quantity |
+| ServiceRequest.subject | UseElementSameName | ProcedureRequest.subject |
+| ServiceRequest.encounter | UseElementSameName | ProcedureRequest.context |
+| ServiceRequest.occurrence[x] | UseElementSameName | ProcedureRequest.occurrence[x] |
+| ServiceRequest.asNeeded[x] | UseElementSameName | ProcedureRequest.asNeeded[x] |
+| ServiceRequest.authoredOn | UseElementSameName | ProcedureRequest.authoredOn |
+| ServiceRequest.requester | UseElementSameName | ProcedureRequest.requester |
+| ServiceRequest.performerType | UseElementSameName | ProcedureRequest.performerType |
+| ServiceRequest.performer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.performer |
+| ServiceRequest.locationCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.locationCode |
+| ServiceRequest.locationReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.locationReference |
+| ServiceRequest.reasonCode | UseElementSameName | ProcedureRequest.reasonCode |
+| ServiceRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.reasonReference |
+| ServiceRequest.insurance | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.insurance |
+| ServiceRequest.supportingInfo | UseElementSameName | ProcedureRequest.supportingInfo |
+| ServiceRequest.specimen | UseElementSameName | ProcedureRequest.specimen |
+| ServiceRequest.bodySite | UseElementSameName | ProcedureRequest.bodySite |
+| ServiceRequest.note | UseElementSameName | ProcedureRequest.note |
+| ServiceRequest.patientInstruction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.patientInstruction |
+| ServiceRequest.relevantHistory | UseElementSameName | ProcedureRequest.relevantHistory |

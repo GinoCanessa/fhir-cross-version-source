@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 MessageHeader for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MessageHeader.id | UseElementRenamed | MessageHeader.id |
+| MessageHeader.meta | UseElementRenamed | MessageHeader.meta |
+| MessageHeader.implicitRules | UseElementRenamed | MessageHeader.implicitRules |
+| MessageHeader.language | UseElementRenamed | MessageHeader.language |
+| MessageHeader.text | UseElementRenamed | MessageHeader.text |
+| MessageHeader.contained | UseElementRenamed | MessageHeader.contained |
+| MessageHeader.extension | UseElementRenamed | MessageHeader.extension |
+| MessageHeader.modifierExtension | UseElementRenamed | MessageHeader.modifierExtension |
+| MessageHeader.event[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.event |
+| MessageHeader.destination | UseElementRenamed | MessageHeader.destination |
+| MessageHeader.destination.id | UseElementRenamed | MessageHeader.destination.id |
+| MessageHeader.destination.extension | UseElementRenamed | MessageHeader.destination.extension |
+| MessageHeader.destination.modifierExtension | UseElementRenamed | MessageHeader.destination.modifierExtension |
+| MessageHeader.destination.endpoint[x] | UseElementRenamed | MessageHeader.destination.endpoint |
+| MessageHeader.destination.name | UseElementRenamed | MessageHeader.destination.name |
+| MessageHeader.destination.target | UseElementRenamed | MessageHeader.destination.target |
+| MessageHeader.destination.receiver | UseElementRenamed | MessageHeader.destination.receiver |
+| MessageHeader.sender | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.sender |
+| MessageHeader.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.author |
+| MessageHeader.source | UseElementRenamed | MessageHeader.source |
+| MessageHeader.source.id | UseElementRenamed | MessageHeader.source.id |
+| MessageHeader.source.extension | UseElementRenamed | MessageHeader.source.extension |
+| MessageHeader.source.modifierExtension | UseElementRenamed | MessageHeader.source.modifierExtension |
+| MessageHeader.source.endpoint[x] | UseElementRenamed | MessageHeader.source.endpoint |
+| MessageHeader.source.name | UseElementRenamed | MessageHeader.source.name |
+| MessageHeader.source.software | UseElementRenamed | MessageHeader.source.software |
+| MessageHeader.source.version | UseElementRenamed | MessageHeader.source.version |
+| MessageHeader.source.contact | UseElementRenamed | MessageHeader.source.contact |
+| MessageHeader.responsible | UseElementRenamed | MessageHeader.responsible |
+| MessageHeader.reason | UseElementRenamed | MessageHeader.reason |
+| MessageHeader.response | UseElementRenamed | MessageHeader.response |
+| MessageHeader.response.id | UseElementRenamed | MessageHeader.response.id |
+| MessageHeader.response.extension | UseElementRenamed | MessageHeader.response.extension |
+| MessageHeader.response.modifierExtension | UseElementRenamed | MessageHeader.response.modifierExtension |
+| MessageHeader.response.identifier | UseElementRenamed | MessageHeader.response.identifier |
+| MessageHeader.response.code | UseElementRenamed | MessageHeader.response.code |
+| MessageHeader.response.details | UseElementRenamed | MessageHeader.response.details |
+| MessageHeader.focus | UseElementRenamed | MessageHeader.focus |
+| MessageHeader.definition | UseElementRenamed | MessageHeader.definition |

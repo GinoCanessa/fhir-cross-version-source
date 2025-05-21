@@ -1,0 +1,42 @@
+### Lookup for FHIR R5 VisionPrescription for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| VisionPrescription.id | UseElementRenamed | VisionPrescription.id |
+| VisionPrescription.meta | UseElementRenamed | VisionPrescription.meta |
+| VisionPrescription.implicitRules | UseElementRenamed | VisionPrescription.implicitRules |
+| VisionPrescription.language | UseElementRenamed | VisionPrescription.language |
+| VisionPrescription.text | UseElementRenamed | VisionPrescription.text |
+| VisionPrescription.contained | UseElementRenamed | VisionPrescription.contained |
+| VisionPrescription.extension | UseElementRenamed | VisionPrescription.extension |
+| VisionPrescription.modifierExtension | UseElementRenamed | VisionPrescription.modifierExtension |
+| VisionPrescription.identifier | UseElementRenamed | VisionPrescription.identifier |
+| VisionPrescription.status | UseElementRenamed | VisionPrescription.status |
+| VisionPrescription.created | UseElementRenamed | VisionPrescription.created |
+| VisionPrescription.patient | UseElementRenamed | VisionPrescription.patient |
+| VisionPrescription.encounter | UseElementRenamed | VisionPrescription.encounter |
+| VisionPrescription.dateWritten | UseElementRenamed | VisionPrescription.dateWritten |
+| VisionPrescription.prescriber | UseElementRenamed | VisionPrescription.prescriber |
+| VisionPrescription.lensSpecification | UseElementRenamed | VisionPrescription.lensSpecification |
+| VisionPrescription.lensSpecification.id | UseElementRenamed | VisionPrescription.lensSpecification.id |
+| VisionPrescription.lensSpecification.extension | UseElementRenamed | VisionPrescription.lensSpecification.extension |
+| VisionPrescription.lensSpecification.modifierExtension | UseElementRenamed | VisionPrescription.lensSpecification.modifierExtension |
+| VisionPrescription.lensSpecification.product | UseElementRenamed | VisionPrescription.lensSpecification.product |
+| VisionPrescription.lensSpecification.eye | UseElementRenamed | VisionPrescription.lensSpecification.eye |
+| VisionPrescription.lensSpecification.sphere | UseElementRenamed | VisionPrescription.lensSpecification.sphere |
+| VisionPrescription.lensSpecification.cylinder | UseElementRenamed | VisionPrescription.lensSpecification.cylinder |
+| VisionPrescription.lensSpecification.axis | UseElementRenamed | VisionPrescription.lensSpecification.axis |
+| VisionPrescription.lensSpecification.prism | UseElementRenamed | VisionPrescription.lensSpecification.prism |
+| VisionPrescription.lensSpecification.prism.id | UseElementRenamed | VisionPrescription.lensSpecification.prism.id |
+| VisionPrescription.lensSpecification.prism.extension | UseElementRenamed | VisionPrescription.lensSpecification.prism.extension |
+| VisionPrescription.lensSpecification.prism.modifierExtension | UseElementRenamed | VisionPrescription.lensSpecification.prism.modifierExtension |
+| VisionPrescription.lensSpecification.prism.amount | UseElementRenamed | VisionPrescription.lensSpecification.prism.amount |
+| VisionPrescription.lensSpecification.prism.base | UseElementRenamed | VisionPrescription.lensSpecification.prism.base |
+| VisionPrescription.lensSpecification.add | UseElementRenamed | VisionPrescription.lensSpecification.add |
+| VisionPrescription.lensSpecification.power | UseElementRenamed | VisionPrescription.lensSpecification.power |
+| VisionPrescription.lensSpecification.backCurve | UseElementRenamed | VisionPrescription.lensSpecification.backCurve |
+| VisionPrescription.lensSpecification.diameter | UseElementRenamed | VisionPrescription.lensSpecification.diameter |
+| VisionPrescription.lensSpecification.duration | UseElementRenamed | VisionPrescription.lensSpecification.duration |
+| VisionPrescription.lensSpecification.color | UseElementRenamed | VisionPrescription.lensSpecification.color |
+| VisionPrescription.lensSpecification.brand | UseElementRenamed | VisionPrescription.lensSpecification.brand |
+| VisionPrescription.lensSpecification.note | UseElementRenamed | VisionPrescription.lensSpecification.note |

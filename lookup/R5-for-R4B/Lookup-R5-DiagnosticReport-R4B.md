@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 DiagnosticReport for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| DiagnosticReport.id | UseElementRenamed | DiagnosticReport.id |
+| DiagnosticReport.meta | UseElementRenamed | DiagnosticReport.meta |
+| DiagnosticReport.implicitRules | UseElementRenamed | DiagnosticReport.implicitRules |
+| DiagnosticReport.language | UseElementRenamed | DiagnosticReport.language |
+| DiagnosticReport.text | UseElementRenamed | DiagnosticReport.text |
+| DiagnosticReport.contained | UseElementRenamed | DiagnosticReport.contained |
+| DiagnosticReport.extension | UseElementRenamed | DiagnosticReport.extension |
+| DiagnosticReport.modifierExtension | UseElementRenamed | DiagnosticReport.modifierExtension |
+| DiagnosticReport.identifier | UseElementRenamed | DiagnosticReport.identifier |
+| DiagnosticReport.basedOn | UseElementRenamed | DiagnosticReport.basedOn |
+| DiagnosticReport.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.status |
+| DiagnosticReport.category | UseElementRenamed | DiagnosticReport.category |
+| DiagnosticReport.code | UseElementRenamed | DiagnosticReport.code |
+| DiagnosticReport.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.subject |
+| DiagnosticReport.encounter | UseElementRenamed | DiagnosticReport.encounter |
+| DiagnosticReport.effective[x] | UseElementRenamed | DiagnosticReport.effective[x] |
+| DiagnosticReport.issued | UseElementRenamed | DiagnosticReport.issued |
+| DiagnosticReport.performer | UseElementRenamed | DiagnosticReport.performer |
+| DiagnosticReport.resultsInterpreter | UseElementRenamed | DiagnosticReport.resultsInterpreter |
+| DiagnosticReport.specimen | UseElementRenamed | DiagnosticReport.specimen |
+| DiagnosticReport.result | UseElementRenamed | DiagnosticReport.result |
+| DiagnosticReport.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note |
+| DiagnosticReport.study | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.study |
+| DiagnosticReport.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo |
+| DiagnosticReport.supportingInfo.id | UseExtensionFromAncestor | - |
+| DiagnosticReport.supportingInfo.extension | UseExtensionFromAncestor | - |
+| DiagnosticReport.supportingInfo.modifierExtension | UseExtensionFromAncestor | - |
+| DiagnosticReport.supportingInfo.type | UseExtensionFromAncestor | - |
+| DiagnosticReport.supportingInfo.reference | UseExtensionFromAncestor | - |
+| DiagnosticReport.media | UseElementRenamed | DiagnosticReport.media |
+| DiagnosticReport.media.id | UseElementRenamed | DiagnosticReport.media.id |
+| DiagnosticReport.media.extension | UseElementRenamed | DiagnosticReport.media.extension |
+| DiagnosticReport.media.modifierExtension | UseElementRenamed | DiagnosticReport.media.modifierExtension |
+| DiagnosticReport.media.comment | UseElementRenamed | DiagnosticReport.media.comment |
+| DiagnosticReport.media.link | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link |
+| DiagnosticReport.composition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition |
+| DiagnosticReport.conclusion | UseElementRenamed | DiagnosticReport.conclusion |
+| DiagnosticReport.conclusionCode | UseElementRenamed | DiagnosticReport.conclusionCode |
+| DiagnosticReport.presentedForm | UseElementRenamed | DiagnosticReport.presentedForm |

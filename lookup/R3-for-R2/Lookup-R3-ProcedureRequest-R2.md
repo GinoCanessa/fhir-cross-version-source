@@ -1,0 +1,43 @@
+### Lookup for FHIR R3 ProcedureRequest for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ProcedureRequest.id | UseElementRenamed | DiagnosticOrder.id |
+| ProcedureRequest.meta | UseElementRenamed | DiagnosticOrder.meta |
+| ProcedureRequest.implicitRules | UseElementRenamed | DiagnosticOrder.implicitRules |
+| ProcedureRequest.language | UseElementRenamed | DiagnosticOrder.language |
+| ProcedureRequest.text | UseElementRenamed | DiagnosticOrder.text |
+| ProcedureRequest.contained | UseElementRenamed | DiagnosticOrder.contained |
+| ProcedureRequest.extension | UseElementRenamed | DiagnosticOrder.extension |
+| ProcedureRequest.modifierExtension | UseElementRenamed | DiagnosticOrder.modifierExtension |
+| ProcedureRequest.identifier | UseElementRenamed | DiagnosticOrder.identifier |
+| ProcedureRequest.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.definition |
+| ProcedureRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.basedOn |
+| ProcedureRequest.replaces | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.replaces |
+| ProcedureRequest.requisition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requisition |
+| ProcedureRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.status |
+| ProcedureRequest.intent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.intent |
+| ProcedureRequest.priority | UseElementRenamed | DiagnosticOrder.priority |
+| ProcedureRequest.doNotPerform | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.doNotPerform |
+| ProcedureRequest.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.category |
+| ProcedureRequest.code | UseElementRenamed | DiagnosticOrder.item.code |
+| ProcedureRequest.subject | UseElementRenamed | DiagnosticOrder.subject |
+| ProcedureRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.context |
+| ProcedureRequest.occurrence[x] | UseElementRenamed | ProcedureRequest.scheduled[x] |
+| ProcedureRequest.asNeeded[x] | UseElementRenamed | ProcedureRequest.asNeeded[x] |
+| ProcedureRequest.authoredOn | UseElementRenamed | ProcedureRequest.orderedOn |
+| ProcedureRequest.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester |
+| ProcedureRequest.requester.id | UseExtensionFromAncestor | - |
+| ProcedureRequest.requester.extension | UseExtensionFromAncestor | - |
+| ProcedureRequest.requester.modifierExtension | UseExtensionFromAncestor | - |
+| ProcedureRequest.requester.agent | UseExtensionFromAncestor | - |
+| ProcedureRequest.requester.onBehalfOf | UseExtensionFromAncestor | - |
+| ProcedureRequest.performerType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.performerType |
+| ProcedureRequest.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.performer |
+| ProcedureRequest.reasonCode | UseElementRenamed | DiagnosticOrder.reason |
+| ProcedureRequest.reasonReference | UseElementRenamed | DiagnosticOrder.supportingInformation |
+| ProcedureRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.supportingInfo |
+| ProcedureRequest.specimen | UseElementRenamed | DiagnosticOrder.specimen |
+| ProcedureRequest.bodySite | UseElementRenamed | DiagnosticOrder.item.bodySite |
+| ProcedureRequest.note | UseElementRenamed | DiagnosticOrder.note |
+| ProcedureRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.relevantHistory |

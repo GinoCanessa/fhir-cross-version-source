@@ -1,0 +1,47 @@
+### Lookup for FHIR R4B ResearchDefinition for use in FHIR R5
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ResearchDefinition | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchDefinition |
+| ResearchDefinition.id | UseExtensionFromAncestor | - |
+| ResearchDefinition.meta | UseExtensionFromAncestor | - |
+| ResearchDefinition.implicitRules | UseExtensionFromAncestor | - |
+| ResearchDefinition.language | UseExtensionFromAncestor | - |
+| ResearchDefinition.text | UseExtensionFromAncestor | - |
+| ResearchDefinition.contained | UseExtensionFromAncestor | - |
+| ResearchDefinition.extension | UseExtensionFromAncestor | - |
+| ResearchDefinition.modifierExtension | UseExtensionFromAncestor | - |
+| ResearchDefinition.url | UseExtensionFromAncestor | - |
+| ResearchDefinition.identifier | UseExtensionFromAncestor | - |
+| ResearchDefinition.version | UseExtensionFromAncestor | - |
+| ResearchDefinition.name | UseExtensionFromAncestor | - |
+| ResearchDefinition.title | UseExtensionFromAncestor | - |
+| ResearchDefinition.shortTitle | UseExtensionFromAncestor | - |
+| ResearchDefinition.subtitle | UseExtensionFromAncestor | - |
+| ResearchDefinition.status | UseExtensionFromAncestor | - |
+| ResearchDefinition.experimental | UseExtensionFromAncestor | - |
+| ResearchDefinition.subject[x] | UseExtensionFromAncestor | - |
+| ResearchDefinition.date | UseExtensionFromAncestor | - |
+| ResearchDefinition.publisher | UseExtensionFromAncestor | - |
+| ResearchDefinition.contact | UseExtensionFromAncestor | - |
+| ResearchDefinition.description | UseExtensionFromAncestor | - |
+| ResearchDefinition.comment | UseExtensionFromAncestor | - |
+| ResearchDefinition.useContext | UseExtensionFromAncestor | - |
+| ResearchDefinition.jurisdiction | UseExtensionFromAncestor | - |
+| ResearchDefinition.purpose | UseExtensionFromAncestor | - |
+| ResearchDefinition.usage | UseExtensionFromAncestor | - |
+| ResearchDefinition.copyright | UseExtensionFromAncestor | - |
+| ResearchDefinition.approvalDate | UseExtensionFromAncestor | - |
+| ResearchDefinition.lastReviewDate | UseExtensionFromAncestor | - |
+| ResearchDefinition.effectivePeriod | UseExtensionFromAncestor | - |
+| ResearchDefinition.topic | UseExtensionFromAncestor | - |
+| ResearchDefinition.author | UseExtensionFromAncestor | - |
+| ResearchDefinition.editor | UseExtensionFromAncestor | - |
+| ResearchDefinition.reviewer | UseExtensionFromAncestor | - |
+| ResearchDefinition.endorser | UseExtensionFromAncestor | - |
+| ResearchDefinition.relatedArtifact | UseExtensionFromAncestor | - |
+| ResearchDefinition.library | UseExtensionFromAncestor | - |
+| ResearchDefinition.population | UseExtensionFromAncestor | - |
+| ResearchDefinition.exposure | UseExtensionFromAncestor | - |
+| ResearchDefinition.exposureAlternative | UseExtensionFromAncestor | - |
+| ResearchDefinition.outcome | UseExtensionFromAncestor | - |

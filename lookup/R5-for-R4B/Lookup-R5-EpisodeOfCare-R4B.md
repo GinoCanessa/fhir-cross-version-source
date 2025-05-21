@@ -1,0 +1,40 @@
+### Lookup for FHIR R5 EpisodeOfCare for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| EpisodeOfCare.id | UseElementRenamed | EpisodeOfCare.id |
+| EpisodeOfCare.meta | UseElementRenamed | EpisodeOfCare.meta |
+| EpisodeOfCare.implicitRules | UseElementRenamed | EpisodeOfCare.implicitRules |
+| EpisodeOfCare.language | UseElementRenamed | EpisodeOfCare.language |
+| EpisodeOfCare.text | UseElementRenamed | EpisodeOfCare.text |
+| EpisodeOfCare.contained | UseElementRenamed | EpisodeOfCare.contained |
+| EpisodeOfCare.extension | UseElementRenamed | EpisodeOfCare.extension |
+| EpisodeOfCare.modifierExtension | UseElementRenamed | EpisodeOfCare.modifierExtension |
+| EpisodeOfCare.identifier | UseElementRenamed | EpisodeOfCare.identifier |
+| EpisodeOfCare.status | UseElementRenamed | EpisodeOfCare.status |
+| EpisodeOfCare.statusHistory | UseElementRenamed | EpisodeOfCare.statusHistory |
+| EpisodeOfCare.statusHistory.id | UseElementRenamed | EpisodeOfCare.statusHistory.id |
+| EpisodeOfCare.statusHistory.extension | UseElementRenamed | EpisodeOfCare.statusHistory.extension |
+| EpisodeOfCare.statusHistory.modifierExtension | UseElementRenamed | EpisodeOfCare.statusHistory.modifierExtension |
+| EpisodeOfCare.statusHistory.status | UseElementRenamed | EpisodeOfCare.statusHistory.status |
+| EpisodeOfCare.statusHistory.period | UseElementRenamed | EpisodeOfCare.statusHistory.period |
+| EpisodeOfCare.type | UseElementRenamed | EpisodeOfCare.type |
+| EpisodeOfCare.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.reason |
+| EpisodeOfCare.reason.id | UseExtensionFromAncestor | - |
+| EpisodeOfCare.reason.extension | UseExtensionFromAncestor | - |
+| EpisodeOfCare.reason.modifierExtension | UseExtensionFromAncestor | - |
+| EpisodeOfCare.reason.use | UseExtensionFromAncestor | - |
+| EpisodeOfCare.reason.value | UseExtensionFromAncestor | - |
+| EpisodeOfCare.diagnosis | UseElementRenamed | EpisodeOfCare.diagnosis |
+| EpisodeOfCare.diagnosis.id | UseElementRenamed | EpisodeOfCare.diagnosis.id |
+| EpisodeOfCare.diagnosis.extension | UseElementRenamed | EpisodeOfCare.diagnosis.extension |
+| EpisodeOfCare.diagnosis.modifierExtension | UseElementRenamed | EpisodeOfCare.diagnosis.modifierExtension |
+| EpisodeOfCare.diagnosis.condition | UseElementRenamed | EpisodeOfCare.diagnosis.condition |
+| EpisodeOfCare.diagnosis.use | UseElementRenamed | EpisodeOfCare.diagnosis.role |
+| EpisodeOfCare.patient | UseElementRenamed | EpisodeOfCare.patient |
+| EpisodeOfCare.managingOrganization | UseElementRenamed | EpisodeOfCare.managingOrganization |
+| EpisodeOfCare.period | UseElementRenamed | EpisodeOfCare.period |
+| EpisodeOfCare.referralRequest | UseElementRenamed | EpisodeOfCare.referralRequest |
+| EpisodeOfCare.careManager | UseElementRenamed | EpisodeOfCare.careManager |
+| EpisodeOfCare.careTeam | UseElementRenamed | EpisodeOfCare.team |
+| EpisodeOfCare.account | UseElementRenamed | EpisodeOfCare.account |

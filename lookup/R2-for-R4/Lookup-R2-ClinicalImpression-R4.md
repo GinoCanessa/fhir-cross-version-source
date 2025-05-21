@@ -1,0 +1,44 @@
+### Lookup for FHIR R2 ClinicalImpression for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ClinicalImpression.id | UseElementSameName | ClinicalImpression.id |
+| ClinicalImpression.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.meta |
+| ClinicalImpression.implicitRules | UseElementSameName | ClinicalImpression.implicitRules |
+| ClinicalImpression.language | UseElementSameName | ClinicalImpression.language |
+| ClinicalImpression.text | UseElementSameName | ClinicalImpression.text |
+| ClinicalImpression.contained | UseElementSameName | ClinicalImpression.contained |
+| ClinicalImpression.extension | UseElementSameName | ClinicalImpression.extension |
+| ClinicalImpression.modifierExtension | UseElementSameName | ClinicalImpression.modifierExtension |
+| ClinicalImpression.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.patient |
+| ClinicalImpression.assessor | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.assessor |
+| ClinicalImpression.status | UseElementSameName | ClinicalImpression.status |
+| ClinicalImpression.date | UseElementSameName | ClinicalImpression.date |
+| ClinicalImpression.description | UseElementSameName | ClinicalImpression.description |
+| ClinicalImpression.previous | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.previous |
+| ClinicalImpression.problem | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.problem |
+| ClinicalImpression.trigger[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.trigger |
+| ClinicalImpression.investigations | UseElementRenamed | ClinicalImpression.investigation |
+| ClinicalImpression.investigations.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.investigations.id |
+| ClinicalImpression.investigations.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.investigations.extension |
+| ClinicalImpression.investigations.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.investigations.modifierExtension |
+| ClinicalImpression.investigations.code | UseElementRenamed | ClinicalImpression.investigation.code |
+| ClinicalImpression.investigations.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.investigations.item |
+| ClinicalImpression.protocol | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.protocol |
+| ClinicalImpression.summary | UseElementSameName | ClinicalImpression.summary |
+| ClinicalImpression.finding | UseElementSameName | ClinicalImpression.finding |
+| ClinicalImpression.finding.id | UseElementSameName | ClinicalImpression.finding.id |
+| ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
+| ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
+| ClinicalImpression.finding.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.finding.item |
+| ClinicalImpression.finding.cause | UseElementRenamed | ClinicalImpression.finding.basis |
+| ClinicalImpression.resolved | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.resolved |
+| ClinicalImpression.ruledOut | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.ruledOut |
+| ClinicalImpression.ruledOut.id | UseExtensionFromAncestor | - |
+| ClinicalImpression.ruledOut.extension | UseExtensionFromAncestor | - |
+| ClinicalImpression.ruledOut.modifierExtension | UseExtensionFromAncestor | - |
+| ClinicalImpression.ruledOut.item | UseExtensionFromAncestor | - |
+| ClinicalImpression.ruledOut.reason | UseExtensionFromAncestor | - |
+| ClinicalImpression.prognosis | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.prognosis |
+| ClinicalImpression.plan | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.plan |
+| ClinicalImpression.action | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.action |

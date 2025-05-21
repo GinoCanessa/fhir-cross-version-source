@@ -1,0 +1,41 @@
+### Lookup for FHIR R2 QuestionnaireResponse for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| QuestionnaireResponse.id | UseElementSameName | QuestionnaireResponse.id |
+| QuestionnaireResponse.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.meta |
+| QuestionnaireResponse.implicitRules | UseElementSameName | QuestionnaireResponse.implicitRules |
+| QuestionnaireResponse.language | UseElementSameName | QuestionnaireResponse.language |
+| QuestionnaireResponse.text | UseElementSameName | QuestionnaireResponse.text |
+| QuestionnaireResponse.contained | UseElementSameName | QuestionnaireResponse.contained |
+| QuestionnaireResponse.extension | UseElementSameName | QuestionnaireResponse.extension |
+| QuestionnaireResponse.modifierExtension | UseElementSameName | QuestionnaireResponse.modifierExtension |
+| QuestionnaireResponse.identifier | UseElementSameName | QuestionnaireResponse.identifier |
+| QuestionnaireResponse.questionnaire | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.questionnaire |
+| QuestionnaireResponse.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.status |
+| QuestionnaireResponse.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.subject |
+| QuestionnaireResponse.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.author |
+| QuestionnaireResponse.authored | UseElementSameName | QuestionnaireResponse.authored |
+| QuestionnaireResponse.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.source |
+| QuestionnaireResponse.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.encounter |
+| QuestionnaireResponse.group | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-QuestionnaireResponse.group |
+| QuestionnaireResponse.group.id | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.extension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.modifierExtension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.linkId | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.title | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.text | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.subject | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.group | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.id | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.extension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.modifierExtension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.linkId | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.text | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer.id | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer.extension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer.modifierExtension | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer.value[x] | UseExtensionFromAncestor | - |
+| QuestionnaireResponse.group.question.answer.group | UseExtensionFromAncestor | - |

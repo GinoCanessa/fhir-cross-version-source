@@ -1,0 +1,40 @@
+### Lookup for FHIR R5 SubstanceReferenceInformation for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| SubstanceReferenceInformation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceReferenceInformation |
+| SubstanceReferenceInformation.id | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.meta | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.implicitRules | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.language | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.text | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.contained | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.extension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.modifierExtension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.comment | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.id | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.extension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.modifierExtension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.geneSequenceOrigin | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.gene | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.gene.source | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.id | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.extension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.modifierExtension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.type | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.element | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.geneElement.source | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.id | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.extension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.modifierExtension | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.target | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.type | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.interaction | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.organism | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.organismType | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.amount[x] | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.amountType | UseExtensionFromAncestor | - |
+| SubstanceReferenceInformation.target.source | UseExtensionFromAncestor | - |

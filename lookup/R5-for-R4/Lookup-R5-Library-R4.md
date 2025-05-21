@@ -1,0 +1,45 @@
+### Lookup for FHIR R5 Library for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Library.id | UseElementSameName | Library.id |
+| Library.meta | UseElementSameName | Library.meta |
+| Library.implicitRules | UseElementSameName | Library.implicitRules |
+| Library.language | UseElementSameName | Library.language |
+| Library.text | UseElementSameName | Library.text |
+| Library.contained | UseElementSameName | Library.contained |
+| Library.extension | UseElementSameName | Library.extension |
+| Library.modifierExtension | UseElementSameName | Library.modifierExtension |
+| Library.url | UseElementSameName | Library.url |
+| Library.identifier | UseElementSameName | Library.identifier |
+| Library.version | UseElementSameName | Library.version |
+| Library.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.versionAlgorithm |
+| Library.name | UseElementSameName | Library.name |
+| Library.title | UseElementSameName | Library.title |
+| Library.subtitle | UseElementSameName | Library.subtitle |
+| Library.status | UseElementSameName | Library.status |
+| Library.experimental | UseElementSameName | Library.experimental |
+| Library.type | UseElementSameName | Library.type |
+| Library.subject[x] | UseElementSameName | Library.subject[x] |
+| Library.date | UseElementSameName | Library.date |
+| Library.publisher | UseElementSameName | Library.publisher |
+| Library.contact | UseElementSameName | Library.contact |
+| Library.description | UseElementSameName | Library.description |
+| Library.useContext | UseElementSameName | Library.useContext |
+| Library.jurisdiction | UseElementSameName | Library.jurisdiction |
+| Library.purpose | UseElementSameName | Library.purpose |
+| Library.usage | UseElementSameName | Library.usage |
+| Library.copyright | UseElementSameName | Library.copyright |
+| Library.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.copyrightLabel |
+| Library.approvalDate | UseElementSameName | Library.approvalDate |
+| Library.lastReviewDate | UseElementSameName | Library.lastReviewDate |
+| Library.effectivePeriod | UseElementSameName | Library.effectivePeriod |
+| Library.topic | UseElementSameName | Library.topic |
+| Library.author | UseElementSameName | Library.author |
+| Library.editor | UseElementSameName | Library.editor |
+| Library.reviewer | UseElementSameName | Library.reviewer |
+| Library.endorser | UseElementSameName | Library.endorser |
+| Library.relatedArtifact | UseElementSameName | Library.relatedArtifact |
+| Library.parameter | UseElementSameName | Library.parameter |
+| Library.dataRequirement | UseElementSameName | Library.dataRequirement |
+| Library.content | UseElementSameName | Library.content |

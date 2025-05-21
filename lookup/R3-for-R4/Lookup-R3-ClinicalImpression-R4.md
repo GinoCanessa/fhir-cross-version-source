@@ -1,0 +1,41 @@
+### Lookup for FHIR R3 ClinicalImpression for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ClinicalImpression.id | UseElementSameName | ClinicalImpression.id |
+| ClinicalImpression.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.meta |
+| ClinicalImpression.implicitRules | UseElementSameName | ClinicalImpression.implicitRules |
+| ClinicalImpression.language | UseElementSameName | ClinicalImpression.language |
+| ClinicalImpression.text | UseElementSameName | ClinicalImpression.text |
+| ClinicalImpression.contained | UseElementSameName | ClinicalImpression.contained |
+| ClinicalImpression.extension | UseElementSameName | ClinicalImpression.extension |
+| ClinicalImpression.modifierExtension | UseElementSameName | ClinicalImpression.modifierExtension |
+| ClinicalImpression.identifier | UseElementSameName | ClinicalImpression.identifier |
+| ClinicalImpression.status | UseElementSameName | ClinicalImpression.status |
+| ClinicalImpression.code | UseElementSameName | ClinicalImpression.code |
+| ClinicalImpression.description | UseElementSameName | ClinicalImpression.description |
+| ClinicalImpression.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.subject |
+| ClinicalImpression.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.context |
+| ClinicalImpression.effective[x] | UseElementSameName | ClinicalImpression.effective[x] |
+| ClinicalImpression.date | UseElementSameName | ClinicalImpression.date |
+| ClinicalImpression.assessor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.assessor |
+| ClinicalImpression.previous | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.previous |
+| ClinicalImpression.problem | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.problem |
+| ClinicalImpression.investigation | UseElementSameName | ClinicalImpression.investigation |
+| ClinicalImpression.investigation.id | UseElementSameName | ClinicalImpression.investigation.id |
+| ClinicalImpression.investigation.extension | UseElementSameName | ClinicalImpression.investigation.extension |
+| ClinicalImpression.investigation.modifierExtension | UseElementSameName | ClinicalImpression.investigation.modifierExtension |
+| ClinicalImpression.investigation.code | UseElementSameName | ClinicalImpression.investigation.code |
+| ClinicalImpression.investigation.item | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.investigation.item |
+| ClinicalImpression.protocol | UseElementSameName | ClinicalImpression.protocol |
+| ClinicalImpression.summary | UseElementSameName | ClinicalImpression.summary |
+| ClinicalImpression.finding | UseElementSameName | ClinicalImpression.finding |
+| ClinicalImpression.finding.id | UseElementSameName | ClinicalImpression.finding.id |
+| ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
+| ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
+| ClinicalImpression.finding.item[x] | UseElementRenamed | ClinicalImpression.finding.itemCodeableConcept |
+| ClinicalImpression.finding.basis | UseElementSameName | ClinicalImpression.finding.basis |
+| ClinicalImpression.prognosisCodeableConcept | UseElementSameName | ClinicalImpression.prognosisCodeableConcept |
+| ClinicalImpression.prognosisReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.prognosisReference |
+| ClinicalImpression.action | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.action |
+| ClinicalImpression.note | UseElementSameName | ClinicalImpression.note |

@@ -1,0 +1,47 @@
+### Lookup for FHIR R2 MedicationDispense for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MedicationDispense.id | UseElementSameName | MedicationDispense.id |
+| MedicationDispense.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.meta |
+| MedicationDispense.implicitRules | UseElementSameName | MedicationDispense.implicitRules |
+| MedicationDispense.language | UseElementSameName | MedicationDispense.language |
+| MedicationDispense.text | UseElementSameName | MedicationDispense.text |
+| MedicationDispense.contained | UseElementSameName | MedicationDispense.contained |
+| MedicationDispense.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.extension |
+| MedicationDispense.modifierExtension | UseElementSameName | MedicationDispense.modifierExtension |
+| MedicationDispense.identifier | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.identifier |
+| MedicationDispense.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.status |
+| MedicationDispense.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.patient |
+| MedicationDispense.dispenser | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.dispenser |
+| MedicationDispense.authorizingPrescription | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.authorizingPrescription |
+| MedicationDispense.type | UseElementSameName | MedicationDispense.type |
+| MedicationDispense.quantity | UseElementSameName | MedicationDispense.quantity |
+| MedicationDispense.daysSupply | UseElementSameName | MedicationDispense.daysSupply |
+| MedicationDispense.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.medication |
+| MedicationDispense.whenPrepared | UseElementSameName | MedicationDispense.whenPrepared |
+| MedicationDispense.whenHandedOver | UseElementSameName | MedicationDispense.whenHandedOver |
+| MedicationDispense.destination | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.destination |
+| MedicationDispense.receiver | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.receiver |
+| MedicationDispense.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.note |
+| MedicationDispense.dosageInstruction | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.dosageInstruction |
+| MedicationDispense.dosageInstruction.id | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.extension | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.modifierExtension | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.text | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.additionalInstructions | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.timing | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.asNeeded[x] | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.site[x] | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.route | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.method | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.dose[x] | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.rate[x] | UseExtensionFromAncestor | - |
+| MedicationDispense.dosageInstruction.maxDosePerPeriod | UseExtensionFromAncestor | - |
+| MedicationDispense.substitution | UseElementSameName | MedicationDispense.substitution |
+| MedicationDispense.substitution.id | UseElementSameName | MedicationDispense.substitution.id |
+| MedicationDispense.substitution.extension | UseElementSameName | MedicationDispense.substitution.extension |
+| MedicationDispense.substitution.modifierExtension | UseElementSameName | MedicationDispense.substitution.modifierExtension |
+| MedicationDispense.substitution.type | UseElementSameName | MedicationDispense.substitution.type |
+| MedicationDispense.substitution.reason | UseElementSameName | MedicationDispense.substitution.reason |
+| MedicationDispense.substitution.responsibleParty | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.substitution.responsibleParty |

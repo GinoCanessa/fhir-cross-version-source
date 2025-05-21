@@ -1,0 +1,41 @@
+### Lookup for FHIR R4 DeviceRequest for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| DeviceRequest.id | UseElementSameName | DeviceRequest.id |
+| DeviceRequest.meta | UseElementSameName | DeviceRequest.meta |
+| DeviceRequest.implicitRules | UseElementSameName | DeviceRequest.implicitRules |
+| DeviceRequest.language | UseElementSameName | DeviceRequest.language |
+| DeviceRequest.text | UseElementSameName | DeviceRequest.text |
+| DeviceRequest.contained | UseElementSameName | DeviceRequest.contained |
+| DeviceRequest.extension | UseElementSameName | DeviceRequest.extension |
+| DeviceRequest.modifierExtension | UseElementSameName | DeviceRequest.modifierExtension |
+| DeviceRequest.identifier | UseElementSameName | DeviceRequest.identifier |
+| DeviceRequest.instantiatesCanonical | UseElementSameName | DeviceRequest.instantiatesCanonical |
+| DeviceRequest.instantiatesUri | UseElementSameName | DeviceRequest.instantiatesUri |
+| DeviceRequest.basedOn | UseElementSameName | DeviceRequest.basedOn |
+| DeviceRequest.priorRequest | UseElementSameName | DeviceRequest.priorRequest |
+| DeviceRequest.groupIdentifier | UseElementSameName | DeviceRequest.groupIdentifier |
+| DeviceRequest.status | UseElementSameName | DeviceRequest.status |
+| DeviceRequest.intent | UseElementSameName | DeviceRequest.intent |
+| DeviceRequest.priority | UseElementSameName | DeviceRequest.priority |
+| DeviceRequest.code[x] | UseElementSameName | DeviceRequest.code[x] |
+| DeviceRequest.parameter | UseElementSameName | DeviceRequest.parameter |
+| DeviceRequest.parameter.id | UseElementSameName | DeviceRequest.parameter.id |
+| DeviceRequest.parameter.extension | UseElementSameName | DeviceRequest.parameter.extension |
+| DeviceRequest.parameter.modifierExtension | UseElementSameName | DeviceRequest.parameter.modifierExtension |
+| DeviceRequest.parameter.code | UseElementSameName | DeviceRequest.parameter.code |
+| DeviceRequest.parameter.value[x] | UseElementSameName | DeviceRequest.parameter.value[x] |
+| DeviceRequest.subject | UseElementSameName | DeviceRequest.subject |
+| DeviceRequest.encounter | UseElementSameName | DeviceRequest.encounter |
+| DeviceRequest.occurrence[x] | UseElementSameName | DeviceRequest.occurrence[x] |
+| DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
+| DeviceRequest.requester | UseElementSameName | DeviceRequest.requester |
+| DeviceRequest.performerType | UseElementSameName | DeviceRequest.performerType |
+| DeviceRequest.performer | UseElementSameName | DeviceRequest.performer |
+| DeviceRequest.reasonCode | UseElementSameName | DeviceRequest.reasonCode |
+| DeviceRequest.reasonReference | UseElementSameName | DeviceRequest.reasonReference |
+| DeviceRequest.insurance | UseElementSameName | DeviceRequest.insurance |
+| DeviceRequest.supportingInfo | UseElementSameName | DeviceRequest.supportingInfo |
+| DeviceRequest.note | UseElementSameName | DeviceRequest.note |
+| DeviceRequest.relevantHistory | UseElementSameName | DeviceRequest.relevantHistory |

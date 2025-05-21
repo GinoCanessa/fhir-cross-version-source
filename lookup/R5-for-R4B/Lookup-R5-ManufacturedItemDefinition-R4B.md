@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 ManufacturedItemDefinition for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ManufacturedItemDefinition.id | UseElementRenamed | ManufacturedItemDefinition.id |
+| ManufacturedItemDefinition.meta | UseElementRenamed | ManufacturedItemDefinition.meta |
+| ManufacturedItemDefinition.implicitRules | UseElementRenamed | ManufacturedItemDefinition.implicitRules |
+| ManufacturedItemDefinition.language | UseElementRenamed | ManufacturedItemDefinition.language |
+| ManufacturedItemDefinition.text | UseElementRenamed | ManufacturedItemDefinition.text |
+| ManufacturedItemDefinition.contained | UseElementRenamed | ManufacturedItemDefinition.contained |
+| ManufacturedItemDefinition.extension | UseElementRenamed | ManufacturedItemDefinition.extension |
+| ManufacturedItemDefinition.modifierExtension | UseElementRenamed | ManufacturedItemDefinition.modifierExtension |
+| ManufacturedItemDefinition.identifier | UseElementRenamed | ManufacturedItemDefinition.identifier |
+| ManufacturedItemDefinition.status | UseElementRenamed | ManufacturedItemDefinition.status |
+| ManufacturedItemDefinition.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.name |
+| ManufacturedItemDefinition.manufacturedDoseForm | UseElementRenamed | ManufacturedItemDefinition.manufacturedDoseForm |
+| ManufacturedItemDefinition.unitOfPresentation | UseElementRenamed | ManufacturedItemDefinition.unitOfPresentation |
+| ManufacturedItemDefinition.manufacturer | UseElementRenamed | ManufacturedItemDefinition.manufacturer |
+| ManufacturedItemDefinition.marketingStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.marketingStatus |
+| ManufacturedItemDefinition.ingredient | UseElementRenamed | ManufacturedItemDefinition.ingredient |
+| ManufacturedItemDefinition.property | UseElementRenamed | ManufacturedItemDefinition.property |
+| ManufacturedItemDefinition.property.id | UseElementRenamed | ManufacturedItemDefinition.property.id |
+| ManufacturedItemDefinition.property.extension | UseElementRenamed | ManufacturedItemDefinition.property.extension |
+| ManufacturedItemDefinition.property.modifierExtension | UseElementRenamed | ManufacturedItemDefinition.property.modifierExtension |
+| ManufacturedItemDefinition.property.type | UseElementRenamed | ManufacturedItemDefinition.property.type |
+| ManufacturedItemDefinition.property.value[x] | UseElementRenamed | ManufacturedItemDefinition.property.value[x] |
+| ManufacturedItemDefinition.component | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.component |
+| ManufacturedItemDefinition.component.id | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.extension | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.modifierExtension | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.type | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.function | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.amount | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.id | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.extension | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.modifierExtension | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.amount | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.location | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.function | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.constituent.hasIngredient | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.property | UseExtensionFromAncestor | - |
+| ManufacturedItemDefinition.component.component | UseExtensionFromAncestor | - |

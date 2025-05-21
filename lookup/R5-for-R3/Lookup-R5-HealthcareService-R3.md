@@ -1,0 +1,40 @@
+### Lookup for FHIR R5 HealthcareService for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| HealthcareService.id | UseElementSameName | HealthcareService.id |
+| HealthcareService.meta | UseElementSameName | HealthcareService.meta |
+| HealthcareService.implicitRules | UseElementSameName | HealthcareService.implicitRules |
+| HealthcareService.language | UseElementSameName | HealthcareService.language |
+| HealthcareService.text | UseElementSameName | HealthcareService.text |
+| HealthcareService.contained | UseElementSameName | HealthcareService.contained |
+| HealthcareService.extension | UseElementSameName | HealthcareService.extension |
+| HealthcareService.modifierExtension | UseElementSameName | HealthcareService.modifierExtension |
+| HealthcareService.identifier | UseElementSameName | HealthcareService.identifier |
+| HealthcareService.active | UseElementSameName | HealthcareService.active |
+| HealthcareService.providedBy | UseElementSameName | HealthcareService.providedBy |
+| HealthcareService.offeredIn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.offeredIn |
+| HealthcareService.category | UseElementSameName | HealthcareService.category |
+| HealthcareService.type | UseElementSameName | HealthcareService.type |
+| HealthcareService.specialty | UseElementSameName | HealthcareService.specialty |
+| HealthcareService.location | UseElementSameName | HealthcareService.location |
+| HealthcareService.name | UseElementSameName | HealthcareService.name |
+| HealthcareService.comment | UseElementSameName | HealthcareService.comment |
+| HealthcareService.extraDetails | UseElementSameName | HealthcareService.extraDetails |
+| HealthcareService.photo | UseElementSameName | HealthcareService.photo |
+| HealthcareService.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.contact |
+| HealthcareService.coverageArea | UseElementSameName | HealthcareService.coverageArea |
+| HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |
+| HealthcareService.eligibility | UseElementSameName | HealthcareService.eligibility |
+| HealthcareService.eligibility.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.eligibility.id |
+| HealthcareService.eligibility.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.eligibility.extension |
+| HealthcareService.eligibility.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.eligibility.modifierExtension |
+| HealthcareService.eligibility.code | UseElementSameName | HealthcareService.eligibility |
+| HealthcareService.eligibility.comment | UseElementSameName | HealthcareService.eligibilityNote |
+| HealthcareService.program | UseElementSameName | HealthcareService.programName |
+| HealthcareService.characteristic | UseElementSameName | HealthcareService.characteristic |
+| HealthcareService.communication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.communication |
+| HealthcareService.referralMethod | UseElementSameName | HealthcareService.referralMethod |
+| HealthcareService.appointmentRequired | UseElementSameName | HealthcareService.appointmentRequired |
+| HealthcareService.availability | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.availability |
+| HealthcareService.endpoint | UseElementSameName | HealthcareService.endpoint |

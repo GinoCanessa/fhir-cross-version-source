@@ -1,0 +1,41 @@
+### Lookup for FHIR R3 ClinicalImpression for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ClinicalImpression.id | UseElementSameName | ClinicalImpression.id |
+| ClinicalImpression.meta | UseElementSameName | ClinicalImpression.meta |
+| ClinicalImpression.implicitRules | UseElementSameName | ClinicalImpression.implicitRules |
+| ClinicalImpression.language | UseElementSameName | ClinicalImpression.language |
+| ClinicalImpression.text | UseElementSameName | ClinicalImpression.text |
+| ClinicalImpression.contained | UseElementSameName | ClinicalImpression.contained |
+| ClinicalImpression.extension | UseElementSameName | ClinicalImpression.extension |
+| ClinicalImpression.modifierExtension | UseElementSameName | ClinicalImpression.modifierExtension |
+| ClinicalImpression.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.identifier |
+| ClinicalImpression.status | UseElementSameName | ClinicalImpression.status |
+| ClinicalImpression.code | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.code |
+| ClinicalImpression.description | UseElementSameName | ClinicalImpression.description |
+| ClinicalImpression.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.subject |
+| ClinicalImpression.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.context |
+| ClinicalImpression.effective[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.effective |
+| ClinicalImpression.date | UseElementSameName | ClinicalImpression.date |
+| ClinicalImpression.assessor | UseElementSameName | ClinicalImpression.assessor |
+| ClinicalImpression.previous | UseElementSameName | ClinicalImpression.previous |
+| ClinicalImpression.problem | UseElementSameName | ClinicalImpression.problem |
+| ClinicalImpression.investigation | UseElementSameName | ClinicalImpression.investigations |
+| ClinicalImpression.investigation.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.investigation.id |
+| ClinicalImpression.investigation.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.investigation.extension |
+| ClinicalImpression.investigation.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.investigation.modifierExtension |
+| ClinicalImpression.investigation.code | UseElementSameName | ClinicalImpression.investigations.code |
+| ClinicalImpression.investigation.item | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.investigation.item |
+| ClinicalImpression.protocol | UseElementSameName | ClinicalImpression.protocol |
+| ClinicalImpression.summary | UseElementSameName | ClinicalImpression.summary |
+| ClinicalImpression.finding | UseElementSameName | ClinicalImpression.finding |
+| ClinicalImpression.finding.id | UseElementSameName | ClinicalImpression.finding.id |
+| ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
+| ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
+| ClinicalImpression.finding.item[x] | UseElementRenamed | ClinicalImpression.finding.item |
+| ClinicalImpression.finding.basis | UseElementSameName | ClinicalImpression.finding.cause |
+| ClinicalImpression.prognosisCodeableConcept | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.prognosisCodeableConcept |
+| ClinicalImpression.prognosisReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.prognosisReference |
+| ClinicalImpression.action | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.action |
+| ClinicalImpression.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClinicalImpression.note |

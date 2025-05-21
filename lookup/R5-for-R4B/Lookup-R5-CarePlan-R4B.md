@@ -1,0 +1,41 @@
+### Lookup for FHIR R5 CarePlan for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| CarePlan.id | UseElementRenamed | CarePlan.id |
+| CarePlan.meta | UseElementRenamed | CarePlan.meta |
+| CarePlan.implicitRules | UseElementRenamed | CarePlan.implicitRules |
+| CarePlan.language | UseElementRenamed | CarePlan.language |
+| CarePlan.text | UseElementRenamed | CarePlan.text |
+| CarePlan.contained | UseElementRenamed | CarePlan.contained |
+| CarePlan.extension | UseElementRenamed | CarePlan.extension |
+| CarePlan.modifierExtension | UseElementRenamed | CarePlan.modifierExtension |
+| CarePlan.identifier | UseElementRenamed | CarePlan.identifier |
+| CarePlan.instantiatesCanonical | UseElementRenamed | CarePlan.instantiatesCanonical |
+| CarePlan.instantiatesUri | UseElementRenamed | CarePlan.instantiatesUri |
+| CarePlan.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.basedOn |
+| CarePlan.replaces | UseElementRenamed | CarePlan.replaces |
+| CarePlan.partOf | UseElementRenamed | CarePlan.partOf |
+| CarePlan.status | UseElementRenamed | CarePlan.status |
+| CarePlan.intent | UseElementRenamed | CarePlan.intent |
+| CarePlan.category | UseElementRenamed | CarePlan.category |
+| CarePlan.title | UseElementRenamed | CarePlan.title |
+| CarePlan.description | UseElementRenamed | CarePlan.description |
+| CarePlan.subject | UseElementRenamed | CarePlan.subject |
+| CarePlan.encounter | UseElementRenamed | CarePlan.encounter |
+| CarePlan.period | UseElementRenamed | CarePlan.period |
+| CarePlan.created | UseElementRenamed | CarePlan.created |
+| CarePlan.custodian | UseElementRenamed | CarePlan.author |
+| CarePlan.contributor | UseElementRenamed | CarePlan.contributor |
+| CarePlan.careTeam | UseElementRenamed | CarePlan.careTeam |
+| CarePlan.addresses | UseElementRenamed | CarePlan.addresses |
+| CarePlan.supportingInfo | UseElementRenamed | CarePlan.supportingInfo |
+| CarePlan.goal | UseElementRenamed | CarePlan.goal |
+| CarePlan.activity | UseElementRenamed | CarePlan.activity |
+| CarePlan.activity.id | UseElementRenamed | CarePlan.activity.id |
+| CarePlan.activity.extension | UseElementRenamed | CarePlan.activity.extension |
+| CarePlan.activity.modifierExtension | UseElementRenamed | CarePlan.activity.modifierExtension |
+| CarePlan.activity.performedActivity | UseElementRenamed | CarePlan.activity.outcomeCodeableConcept |
+| CarePlan.activity.progress | UseElementRenamed | CarePlan.activity.progress |
+| CarePlan.activity.plannedActivityReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.plannedActivityReference |
+| CarePlan.note | UseElementRenamed | CarePlan.note |

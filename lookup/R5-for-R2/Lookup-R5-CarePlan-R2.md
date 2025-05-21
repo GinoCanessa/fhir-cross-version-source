@@ -1,0 +1,41 @@
+### Lookup for FHIR R5 CarePlan for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| CarePlan.id | UseElementSameName | CarePlan.id |
+| CarePlan.meta | UseElementSameName | CarePlan.meta |
+| CarePlan.implicitRules | UseElementSameName | CarePlan.implicitRules |
+| CarePlan.language | UseElementSameName | CarePlan.language |
+| CarePlan.text | UseElementSameName | CarePlan.text |
+| CarePlan.contained | UseElementSameName | CarePlan.contained |
+| CarePlan.extension | UseElementSameName | CarePlan.extension |
+| CarePlan.modifierExtension | UseElementSameName | CarePlan.modifierExtension |
+| CarePlan.identifier | UseElementSameName | CarePlan.identifier |
+| CarePlan.instantiatesCanonical | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.instantiatesCanonical |
+| CarePlan.instantiatesUri | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.instantiatesUri |
+| CarePlan.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.basedOn |
+| CarePlan.replaces | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.replaces |
+| CarePlan.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.partOf |
+| CarePlan.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.status |
+| CarePlan.intent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.intent |
+| CarePlan.category | UseElementSameName | CarePlan.category |
+| CarePlan.title | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.title |
+| CarePlan.description | UseElementSameName | CarePlan.description |
+| CarePlan.subject | UseElementSameName | CarePlan.subject |
+| CarePlan.encounter | UseElementSameName | CarePlan.context |
+| CarePlan.period | UseElementSameName | CarePlan.period |
+| CarePlan.created | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.created |
+| CarePlan.custodian | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.custodian |
+| CarePlan.contributor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.contributor |
+| CarePlan.careTeam | UseElementSameName | CarePlan |
+| CarePlan.addresses | UseElementSameName | CarePlan.addresses |
+| CarePlan.supportingInfo | UseElementSameName | CarePlan.support |
+| CarePlan.goal | UseElementSameName | CarePlan.goal |
+| CarePlan.activity | UseElementSameName | CarePlan.activity |
+| CarePlan.activity.id | UseElementSameName | CarePlan.activity.id |
+| CarePlan.activity.extension | UseElementSameName | CarePlan.activity.extension |
+| CarePlan.activity.modifierExtension | UseElementSameName | CarePlan.activity.modifierExtension |
+| CarePlan.activity.performedActivity | UseElementRenamed | CarePlan.activity.actionResulting |
+| CarePlan.activity.progress | UseElementSameName | CarePlan.activity.progress |
+| CarePlan.activity.plannedActivityReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.plannedActivityReference |
+| CarePlan.note | UseElementSameName | CarePlan.note |

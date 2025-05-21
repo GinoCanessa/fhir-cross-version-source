@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 DeviceRequest for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| DeviceRequest.id | UseElementRenamed | DeviceRequest.id |
+| DeviceRequest.meta | UseElementRenamed | DeviceRequest.meta |
+| DeviceRequest.implicitRules | UseElementRenamed | DeviceRequest.implicitRules |
+| DeviceRequest.language | UseElementRenamed | DeviceRequest.language |
+| DeviceRequest.text | UseElementRenamed | DeviceRequest.text |
+| DeviceRequest.contained | UseElementRenamed | DeviceRequest.contained |
+| DeviceRequest.extension | UseElementRenamed | DeviceRequest.extension |
+| DeviceRequest.modifierExtension | UseElementRenamed | DeviceRequest.modifierExtension |
+| DeviceRequest.identifier | UseElementRenamed | DeviceRequest.identifier |
+| DeviceRequest.instantiatesCanonical | UseElementRenamed | DeviceRequest.instantiatesCanonical |
+| DeviceRequest.instantiatesUri | UseElementRenamed | DeviceRequest.instantiatesUri |
+| DeviceRequest.basedOn | UseElementRenamed | DeviceRequest.basedOn |
+| DeviceRequest.replaces | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.replaces |
+| DeviceRequest.groupIdentifier | UseElementRenamed | DeviceRequest.groupIdentifier |
+| DeviceRequest.status | UseElementRenamed | DeviceRequest.status |
+| DeviceRequest.intent | UseElementRenamed | DeviceRequest.intent |
+| DeviceRequest.priority | UseElementRenamed | DeviceRequest.priority |
+| DeviceRequest.doNotPerform | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform |
+| DeviceRequest.code | UseElementRenamed | DeviceRequest.code[x] |
+| DeviceRequest.quantity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.quantity |
+| DeviceRequest.parameter | UseElementRenamed | DeviceRequest.parameter |
+| DeviceRequest.parameter.id | UseElementRenamed | DeviceRequest.parameter.id |
+| DeviceRequest.parameter.extension | UseElementRenamed | DeviceRequest.parameter.extension |
+| DeviceRequest.parameter.modifierExtension | UseElementRenamed | DeviceRequest.parameter.modifierExtension |
+| DeviceRequest.parameter.code | UseElementRenamed | DeviceRequest.parameter.code |
+| DeviceRequest.parameter.value[x] | UseElementRenamed | DeviceRequest.parameter.value[x] |
+| DeviceRequest.subject | UseElementRenamed | DeviceRequest.subject |
+| DeviceRequest.encounter | UseElementRenamed | DeviceRequest.encounter |
+| DeviceRequest.occurrence[x] | UseElementRenamed | DeviceRequest.occurrence[x] |
+| DeviceRequest.authoredOn | UseElementRenamed | DeviceRequest.authoredOn |
+| DeviceRequest.requester | UseElementRenamed | DeviceRequest.requester |
+| DeviceRequest.performer | UseElementRenamed | DeviceRequest.performer |
+| DeviceRequest.reason | UseElementRenamed | DeviceRequest.reasonCode |
+| DeviceRequest.asNeeded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeeded |
+| DeviceRequest.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeededFor |
+| DeviceRequest.insurance | UseElementRenamed | DeviceRequest.insurance |
+| DeviceRequest.supportingInfo | UseElementRenamed | DeviceRequest.supportingInfo |
+| DeviceRequest.note | UseElementRenamed | DeviceRequest.note |
+| DeviceRequest.relevantHistory | UseElementRenamed | DeviceRequest.relevantHistory |

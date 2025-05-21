@@ -1,0 +1,42 @@
+### Lookup for FHIR R4B Appointment for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Appointment.id | UseElementSameName | Appointment.id |
+| Appointment.meta | UseElementSameName | Appointment.meta |
+| Appointment.implicitRules | UseElementSameName | Appointment.implicitRules |
+| Appointment.language | UseElementSameName | Appointment.language |
+| Appointment.text | UseElementSameName | Appointment.text |
+| Appointment.contained | UseElementSameName | Appointment.contained |
+| Appointment.extension | UseElementSameName | Appointment.extension |
+| Appointment.modifierExtension | UseElementSameName | Appointment.modifierExtension |
+| Appointment.identifier | UseElementSameName | Appointment.identifier |
+| Appointment.status | UseElementSameName | Appointment.status |
+| Appointment.cancelationReason | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.cancelationReason |
+| Appointment.serviceCategory | UseElementSameName | Appointment.serviceCategory |
+| Appointment.serviceType | UseElementSameName | Appointment.serviceType |
+| Appointment.specialty | UseElementSameName | Appointment.specialty |
+| Appointment.appointmentType | UseElementSameName | Appointment.appointmentType |
+| Appointment.reasonCode | UseElementSameName | Appointment.reason |
+| Appointment.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.reasonReference |
+| Appointment.priority | UseElementSameName | Appointment.priority |
+| Appointment.description | UseElementSameName | Appointment.description |
+| Appointment.supportingInformation | UseElementSameName | Appointment.supportingInformation |
+| Appointment.start | UseElementSameName | Appointment.start |
+| Appointment.end | UseElementSameName | Appointment.end |
+| Appointment.minutesDuration | UseElementSameName | Appointment.minutesDuration |
+| Appointment.slot | UseElementSameName | Appointment.slot |
+| Appointment.created | UseElementSameName | Appointment.created |
+| Appointment.comment | UseElementSameName | Appointment.comment |
+| Appointment.patientInstruction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.patientInstruction |
+| Appointment.basedOn | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.basedOn |
+| Appointment.participant | UseElementSameName | Appointment.participant |
+| Appointment.participant.id | UseElementSameName | Appointment.participant.id |
+| Appointment.participant.extension | UseElementSameName | Appointment.participant.extension |
+| Appointment.participant.modifierExtension | UseElementSameName | Appointment.participant.modifierExtension |
+| Appointment.participant.type | UseElementSameName | Appointment.participant.type |
+| Appointment.participant.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.participant.actor |
+| Appointment.participant.required | UseElementSameName | Appointment.participant.required |
+| Appointment.participant.status | UseElementSameName | Appointment.participant.status |
+| Appointment.participant.period | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.participant.period |
+| Appointment.requestedPeriod | UseElementSameName | Appointment.requestedPeriod |

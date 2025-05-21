@@ -1,0 +1,929 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-NutritionOrder.su.schedule",
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule",
+  "version": "0.0.1-snapshot-0",
+  "name": "ext_R5_NutritionOrder_su_schedule",
+  "title": "Cross-version Extension for R5.NutritionOrder.supplement.schedule for use in FHIR R3",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-05-21T17:12:21.6098793+02:00",
+  "description": "This cross-version extension represents NutritionOrder.supplement.schedule from http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0 for use in FHIR R3.",
+  "fhirVersion": "3.0.2",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "NutritionOrder.supplement.schedule"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Scheduling information for supplements",
+        "definition": "Schedule information for a supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "source": "Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "ordered": false,
+          "rules": "closed"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing",
+        "path": "Extension.extension",
+        "sliceName": "timing",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "timing",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:timing.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded",
+        "path": "Extension.extension",
+        "sliceName": "asNeeded",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "asNeeded",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor",
+        "path": "Extension.extension",
+        "sliceName": "asNeededFor",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor.id",
+        "path": "Extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "id"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor.url",
+        "path": "Extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "asNeededFor",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying the precondition that should be met or evaluated prior to       consuming a supplement.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Meta"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Scheduling information for supplements",
+        "definition": "Schedule information for a supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:timing",
+        "path": "Extension.extension",
+        "sliceName": "timing",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:timing.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]"
+        },
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded",
+        "path": "Extension.extension",
+        "sliceName": "asNeeded",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:asNeeded.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor",
+        "path": "Extension.extension",
+        "sliceName": "asNeededFor",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R3 `NutritionOrder.supplement.schedule`.  So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying the precondition that should be met or evaluated prior to       consuming a supplement.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule"
+      }
+    ]
+  }
+}

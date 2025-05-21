@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 MessageHeader for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MessageHeader.id | UseElementSameName | MessageHeader.id |
+| MessageHeader.meta | UseElementSameName | MessageHeader.meta |
+| MessageHeader.implicitRules | UseElementSameName | MessageHeader.implicitRules |
+| MessageHeader.language | UseElementSameName | MessageHeader.language |
+| MessageHeader.text | UseElementSameName | MessageHeader.text |
+| MessageHeader.contained | UseElementSameName | MessageHeader.contained |
+| MessageHeader.extension | UseElementSameName | MessageHeader.extension |
+| MessageHeader.modifierExtension | UseElementSameName | MessageHeader.modifierExtension |
+| MessageHeader.event[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.event |
+| MessageHeader.destination | UseElementSameName | MessageHeader.destination |
+| MessageHeader.destination.id | UseElementSameName | MessageHeader.destination.id |
+| MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
+| MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
+| MessageHeader.destination.endpoint[x] | UseElementSameName | MessageHeader.destination.endpoint |
+| MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
+| MessageHeader.destination.target | UseElementSameName | MessageHeader.destination.target |
+| MessageHeader.destination.receiver | UseElementSameName | MessageHeader.destination.receiver |
+| MessageHeader.sender | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.sender |
+| MessageHeader.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageHeader.author |
+| MessageHeader.source | UseElementSameName | MessageHeader.source |
+| MessageHeader.source.id | UseElementSameName | MessageHeader.source.id |
+| MessageHeader.source.extension | UseElementSameName | MessageHeader.source.extension |
+| MessageHeader.source.modifierExtension | UseElementSameName | MessageHeader.source.modifierExtension |
+| MessageHeader.source.endpoint[x] | UseElementSameName | MessageHeader.source.endpoint |
+| MessageHeader.source.name | UseElementSameName | MessageHeader.source.name |
+| MessageHeader.source.software | UseElementSameName | MessageHeader.source.software |
+| MessageHeader.source.version | UseElementSameName | MessageHeader.source.version |
+| MessageHeader.source.contact | UseElementSameName | MessageHeader.source.contact |
+| MessageHeader.responsible | UseElementSameName | MessageHeader.responsible |
+| MessageHeader.reason | UseElementSameName | MessageHeader.reason |
+| MessageHeader.response | UseElementSameName | MessageHeader.response |
+| MessageHeader.response.id | UseElementSameName | MessageHeader.response.id |
+| MessageHeader.response.extension | UseElementSameName | MessageHeader.response.extension |
+| MessageHeader.response.modifierExtension | UseElementSameName | MessageHeader.response.modifierExtension |
+| MessageHeader.response.identifier | UseElementSameName | MessageHeader.response.identifier |
+| MessageHeader.response.code | UseElementSameName | MessageHeader.response.code |
+| MessageHeader.response.details | UseElementSameName | MessageHeader.response.details |
+| MessageHeader.focus | UseElementSameName | MessageHeader.focus |
+| MessageHeader.definition | UseElementSameName | MessageHeader.definition |

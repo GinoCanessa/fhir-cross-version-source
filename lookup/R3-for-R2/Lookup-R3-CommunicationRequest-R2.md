@@ -1,0 +1,41 @@
+### Lookup for FHIR R3 CommunicationRequest for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| CommunicationRequest.id | UseElementSameName | CommunicationRequest.id |
+| CommunicationRequest.meta | UseElementSameName | CommunicationRequest.meta |
+| CommunicationRequest.implicitRules | UseElementSameName | CommunicationRequest.implicitRules |
+| CommunicationRequest.language | UseElementSameName | CommunicationRequest.language |
+| CommunicationRequest.text | UseElementSameName | CommunicationRequest.text |
+| CommunicationRequest.contained | UseElementSameName | CommunicationRequest.contained |
+| CommunicationRequest.extension | UseElementSameName | CommunicationRequest.extension |
+| CommunicationRequest.modifierExtension | UseElementSameName | CommunicationRequest.modifierExtension |
+| CommunicationRequest.identifier | UseElementSameName | CommunicationRequest.identifier |
+| CommunicationRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.basedOn |
+| CommunicationRequest.replaces | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.replaces |
+| CommunicationRequest.groupIdentifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.groupIdentifier |
+| CommunicationRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.status |
+| CommunicationRequest.category | UseElementSameName | CommunicationRequest.category |
+| CommunicationRequest.priority | UseElementSameName | CommunicationRequest.priority |
+| CommunicationRequest.medium | UseElementSameName | CommunicationRequest.medium |
+| CommunicationRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.subject |
+| CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.recipient |
+| CommunicationRequest.topic | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.topic |
+| CommunicationRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.context |
+| CommunicationRequest.payload | UseElementSameName | CommunicationRequest.payload |
+| CommunicationRequest.payload.id | UseElementSameName | CommunicationRequest.payload.id |
+| CommunicationRequest.payload.extension | UseElementSameName | CommunicationRequest.payload.extension |
+| CommunicationRequest.payload.modifierExtension | UseElementSameName | CommunicationRequest.payload.modifierExtension |
+| CommunicationRequest.payload.content[x] | UseElementSameName | CommunicationRequest.payload.content[x] |
+| CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.scheduled[x] |
+| CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.requestedOn |
+| CommunicationRequest.sender | UseElementSameName | CommunicationRequest.sender |
+| CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
+| CommunicationRequest.requester.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.id |
+| CommunicationRequest.requester.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.extension |
+| CommunicationRequest.requester.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.modifierExtension |
+| CommunicationRequest.requester.agent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.agent |
+| CommunicationRequest.requester.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.requester.onBehalfOf |
+| CommunicationRequest.reasonCode | UseElementSameName | CommunicationRequest.reason |
+| CommunicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.reasonReference |
+| CommunicationRequest.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.note |

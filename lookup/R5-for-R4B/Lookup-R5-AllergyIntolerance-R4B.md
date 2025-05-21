@@ -1,0 +1,42 @@
+### Lookup for FHIR R5 AllergyIntolerance for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| AllergyIntolerance.id | UseElementRenamed | AllergyIntolerance.id |
+| AllergyIntolerance.meta | UseElementRenamed | AllergyIntolerance.meta |
+| AllergyIntolerance.implicitRules | UseElementRenamed | AllergyIntolerance.implicitRules |
+| AllergyIntolerance.language | UseElementRenamed | AllergyIntolerance.language |
+| AllergyIntolerance.text | UseElementRenamed | AllergyIntolerance.text |
+| AllergyIntolerance.contained | UseElementRenamed | AllergyIntolerance.contained |
+| AllergyIntolerance.extension | UseElementRenamed | AllergyIntolerance.extension |
+| AllergyIntolerance.modifierExtension | UseElementRenamed | AllergyIntolerance.modifierExtension |
+| AllergyIntolerance.identifier | UseElementRenamed | AllergyIntolerance.identifier |
+| AllergyIntolerance.clinicalStatus | UseElementRenamed | AllergyIntolerance.clinicalStatus |
+| AllergyIntolerance.verificationStatus | UseElementRenamed | AllergyIntolerance.verificationStatus |
+| AllergyIntolerance.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.type |
+| AllergyIntolerance.category | UseElementRenamed | AllergyIntolerance.category |
+| AllergyIntolerance.criticality | UseElementRenamed | AllergyIntolerance.criticality |
+| AllergyIntolerance.code | UseElementRenamed | AllergyIntolerance.code |
+| AllergyIntolerance.patient | UseElementRenamed | AllergyIntolerance.patient |
+| AllergyIntolerance.encounter | UseElementRenamed | AllergyIntolerance.encounter |
+| AllergyIntolerance.onset[x] | UseElementRenamed | AllergyIntolerance.onset[x] |
+| AllergyIntolerance.recordedDate | UseElementRenamed | AllergyIntolerance.recordedDate |
+| AllergyIntolerance.participant | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AllergyIntolerance.participant |
+| AllergyIntolerance.participant.id | UseExtensionFromAncestor | - |
+| AllergyIntolerance.participant.extension | UseExtensionFromAncestor | - |
+| AllergyIntolerance.participant.modifierExtension | UseExtensionFromAncestor | - |
+| AllergyIntolerance.participant.function | UseExtensionFromAncestor | - |
+| AllergyIntolerance.participant.actor | UseExtensionFromAncestor | - |
+| AllergyIntolerance.lastOccurrence | UseElementRenamed | AllergyIntolerance.lastOccurrence |
+| AllergyIntolerance.note | UseElementRenamed | AllergyIntolerance.note |
+| AllergyIntolerance.reaction | UseElementRenamed | AllergyIntolerance.reaction |
+| AllergyIntolerance.reaction.id | UseElementRenamed | AllergyIntolerance.reaction.id |
+| AllergyIntolerance.reaction.extension | UseElementRenamed | AllergyIntolerance.reaction.extension |
+| AllergyIntolerance.reaction.modifierExtension | UseElementRenamed | AllergyIntolerance.reaction.modifierExtension |
+| AllergyIntolerance.reaction.substance | UseElementRenamed | AllergyIntolerance.reaction.substance |
+| AllergyIntolerance.reaction.manifestation | UseElementRenamed | AllergyIntolerance.reaction.manifestation |
+| AllergyIntolerance.reaction.description | UseElementRenamed | AllergyIntolerance.reaction.description |
+| AllergyIntolerance.reaction.onset | UseElementRenamed | AllergyIntolerance.reaction.onset |
+| AllergyIntolerance.reaction.severity | UseElementRenamed | AllergyIntolerance.reaction.severity |
+| AllergyIntolerance.reaction.exposureRoute | UseElementRenamed | AllergyIntolerance.reaction.exposureRoute |
+| AllergyIntolerance.reaction.note | UseElementRenamed | AllergyIntolerance.reaction.note |

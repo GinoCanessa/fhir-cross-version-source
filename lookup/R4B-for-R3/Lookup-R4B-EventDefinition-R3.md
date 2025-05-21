@@ -1,0 +1,41 @@
+### Lookup for FHIR R4B EventDefinition for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| EventDefinition | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EventDefinition |
+| EventDefinition.id | UseExtensionFromAncestor | - |
+| EventDefinition.meta | UseExtensionFromAncestor | - |
+| EventDefinition.implicitRules | UseExtensionFromAncestor | - |
+| EventDefinition.language | UseExtensionFromAncestor | - |
+| EventDefinition.text | UseExtensionFromAncestor | - |
+| EventDefinition.contained | UseExtensionFromAncestor | - |
+| EventDefinition.extension | UseExtensionFromAncestor | - |
+| EventDefinition.modifierExtension | UseExtensionFromAncestor | - |
+| EventDefinition.url | UseExtensionFromAncestor | - |
+| EventDefinition.identifier | UseExtensionFromAncestor | - |
+| EventDefinition.version | UseExtensionFromAncestor | - |
+| EventDefinition.name | UseExtensionFromAncestor | - |
+| EventDefinition.title | UseExtensionFromAncestor | - |
+| EventDefinition.subtitle | UseExtensionFromAncestor | - |
+| EventDefinition.status | UseExtensionFromAncestor | - |
+| EventDefinition.experimental | UseExtensionFromAncestor | - |
+| EventDefinition.subject[x] | UseExtensionFromAncestor | - |
+| EventDefinition.date | UseExtensionFromAncestor | - |
+| EventDefinition.publisher | UseExtensionFromAncestor | - |
+| EventDefinition.contact | UseExtensionFromAncestor | - |
+| EventDefinition.description | UseExtensionFromAncestor | - |
+| EventDefinition.useContext | UseExtensionFromAncestor | - |
+| EventDefinition.jurisdiction | UseExtensionFromAncestor | - |
+| EventDefinition.purpose | UseExtensionFromAncestor | - |
+| EventDefinition.usage | UseExtensionFromAncestor | - |
+| EventDefinition.copyright | UseExtensionFromAncestor | - |
+| EventDefinition.approvalDate | UseExtensionFromAncestor | - |
+| EventDefinition.lastReviewDate | UseExtensionFromAncestor | - |
+| EventDefinition.effectivePeriod | UseExtensionFromAncestor | - |
+| EventDefinition.topic | UseExtensionFromAncestor | - |
+| EventDefinition.author | UseExtensionFromAncestor | - |
+| EventDefinition.editor | UseExtensionFromAncestor | - |
+| EventDefinition.reviewer | UseExtensionFromAncestor | - |
+| EventDefinition.endorser | UseExtensionFromAncestor | - |
+| EventDefinition.relatedArtifact | UseExtensionFromAncestor | - |
+| EventDefinition.trigger | UseExtensionFromAncestor | - |

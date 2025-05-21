@@ -1,0 +1,44 @@
+### Lookup for FHIR R4 AdverseEvent for use in FHIR R5
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| AdverseEvent.id | UseElementSameName | AdverseEvent.id |
+| AdverseEvent.meta | UseElementSameName | AdverseEvent.meta |
+| AdverseEvent.implicitRules | UseElementSameName | AdverseEvent.implicitRules |
+| AdverseEvent.language | UseElementSameName | AdverseEvent.language |
+| AdverseEvent.text | UseElementSameName | AdverseEvent.text |
+| AdverseEvent.contained | UseElementSameName | AdverseEvent.contained |
+| AdverseEvent.extension | UseElementSameName | AdverseEvent.extension |
+| AdverseEvent.modifierExtension | UseElementSameName | AdverseEvent.modifierExtension |
+| AdverseEvent.identifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.identifier |
+| AdverseEvent.actuality | UseElementSameName | AdverseEvent.actuality |
+| AdverseEvent.category | UseElementSameName | AdverseEvent.category |
+| AdverseEvent.event | UseElementRenamed | AdverseEvent.code |
+| AdverseEvent.subject | UseElementSameName | AdverseEvent.subject |
+| AdverseEvent.encounter | UseElementSameName | AdverseEvent.encounter |
+| AdverseEvent.date | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.date |
+| AdverseEvent.detected | UseElementSameName | AdverseEvent.detected |
+| AdverseEvent.recordedDate | UseElementSameName | AdverseEvent.recordedDate |
+| AdverseEvent.resultingCondition | UseElementRenamed | AdverseEvent.resultingEffect |
+| AdverseEvent.location | UseElementSameName | AdverseEvent.location |
+| AdverseEvent.seriousness | UseElementSameName | AdverseEvent.seriousness |
+| AdverseEvent.severity | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.severity |
+| AdverseEvent.outcome | UseElementSameName | AdverseEvent.outcome |
+| AdverseEvent.recorder | UseElementSameName | AdverseEvent.recorder |
+| AdverseEvent.contributor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.contributor |
+| AdverseEvent.suspectEntity | UseElementSameName | AdverseEvent.suspectEntity |
+| AdverseEvent.suspectEntity.id | UseElementSameName | AdverseEvent.suspectEntity.id |
+| AdverseEvent.suspectEntity.extension | UseElementSameName | AdverseEvent.suspectEntity.extension |
+| AdverseEvent.suspectEntity.modifierExtension | UseElementSameName | AdverseEvent.suspectEntity.modifierExtension |
+| AdverseEvent.suspectEntity.instance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.suspectEntity.instance |
+| AdverseEvent.suspectEntity.causality | UseElementSameName | AdverseEvent.suspectEntity.causality |
+| AdverseEvent.suspectEntity.causality.id | UseElementSameName | AdverseEvent.suspectEntity.causality.id |
+| AdverseEvent.suspectEntity.causality.extension | UseElementSameName | AdverseEvent.suspectEntity.causality.extension |
+| AdverseEvent.suspectEntity.causality.modifierExtension | UseElementSameName | AdverseEvent.suspectEntity.causality.modifierExtension |
+| AdverseEvent.suspectEntity.causality.assessment | UseElementRenamed | AdverseEvent.suspectEntity.causality.assessmentMethod |
+| AdverseEvent.suspectEntity.causality.productRelatedness | UseElementRenamed | AdverseEvent.suspectEntity.causality.entityRelatedness |
+| AdverseEvent.suspectEntity.causality.author | UseElementSameName | AdverseEvent.suspectEntity.causality.author |
+| AdverseEvent.suspectEntity.causality.method | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.method |
+| AdverseEvent.subjectMedicalHistory | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.subjectMedicalHistory |
+| AdverseEvent.referenceDocument | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AdverseEvent.referenceDocument |
+| AdverseEvent.study | UseElementSameName | AdverseEvent.study |

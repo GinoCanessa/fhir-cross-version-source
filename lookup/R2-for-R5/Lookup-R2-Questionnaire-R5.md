@@ -1,0 +1,43 @@
+### Lookup for FHIR R2 Questionnaire for use in FHIR R5
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Questionnaire.id | UseElementSameName | Questionnaire.id |
+| Questionnaire.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Questionnaire.meta |
+| Questionnaire.implicitRules | UseElementSameName | Questionnaire.implicitRules |
+| Questionnaire.language | UseElementSameName | Questionnaire.language |
+| Questionnaire.text | UseElementSameName | Questionnaire.text |
+| Questionnaire.contained | UseElementSameName | Questionnaire.contained |
+| Questionnaire.extension | UseElementSameName | Questionnaire.extension |
+| Questionnaire.modifierExtension | UseElementSameName | Questionnaire.modifierExtension |
+| Questionnaire.identifier | UseElementSameName | Questionnaire.identifier |
+| Questionnaire.version | UseElementSameName | Questionnaire.version |
+| Questionnaire.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Questionnaire.status |
+| Questionnaire.date | UseElementSameName | Questionnaire.date |
+| Questionnaire.publisher | UseElementSameName | Questionnaire.publisher |
+| Questionnaire.telecom | UseElementRenamed | Questionnaire.contact |
+| Questionnaire.subjectType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Questionnaire.subjectType |
+| Questionnaire.group | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Questionnaire.group |
+| Questionnaire.group.id | UseExtensionFromAncestor | - |
+| Questionnaire.group.extension | UseExtensionFromAncestor | - |
+| Questionnaire.group.modifierExtension | UseExtensionFromAncestor | - |
+| Questionnaire.group.linkId | UseExtensionFromAncestor | - |
+| Questionnaire.group.title | UseExtensionFromAncestor | - |
+| Questionnaire.group.concept | UseExtensionFromAncestor | - |
+| Questionnaire.group.text | UseExtensionFromAncestor | - |
+| Questionnaire.group.required | UseExtensionFromAncestor | - |
+| Questionnaire.group.repeats | UseExtensionFromAncestor | - |
+| Questionnaire.group.group | UseExtensionFromAncestor | - |
+| Questionnaire.group.question | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.id | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.extension | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.modifierExtension | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.linkId | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.concept | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.text | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.type | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.required | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.repeats | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.options | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.option | UseExtensionFromAncestor | - |
+| Questionnaire.group.question.group | UseExtensionFromAncestor | - |

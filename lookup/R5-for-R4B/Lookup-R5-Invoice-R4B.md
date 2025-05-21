@@ -1,0 +1,42 @@
+### Lookup for FHIR R5 Invoice for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Invoice.id | UseElementRenamed | Invoice.id |
+| Invoice.meta | UseElementRenamed | Invoice.meta |
+| Invoice.implicitRules | UseElementRenamed | Invoice.implicitRules |
+| Invoice.language | UseElementRenamed | Invoice.language |
+| Invoice.text | UseElementRenamed | Invoice.text |
+| Invoice.contained | UseElementRenamed | Invoice.contained |
+| Invoice.extension | UseElementRenamed | Invoice.extension |
+| Invoice.modifierExtension | UseElementRenamed | Invoice.modifierExtension |
+| Invoice.identifier | UseElementRenamed | Invoice.identifier |
+| Invoice.status | UseElementRenamed | Invoice.status |
+| Invoice.cancelledReason | UseElementRenamed | Invoice.cancelledReason |
+| Invoice.type | UseElementRenamed | Invoice.type |
+| Invoice.subject | UseElementRenamed | Invoice.subject |
+| Invoice.recipient | UseElementRenamed | Invoice.recipient |
+| Invoice.date | UseElementRenamed | Invoice.date |
+| Invoice.creation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.creation |
+| Invoice.period[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.period |
+| Invoice.participant | UseElementRenamed | Invoice.participant |
+| Invoice.participant.id | UseElementRenamed | Invoice.participant.id |
+| Invoice.participant.extension | UseElementRenamed | Invoice.participant.extension |
+| Invoice.participant.modifierExtension | UseElementRenamed | Invoice.participant.modifierExtension |
+| Invoice.participant.role | UseElementRenamed | Invoice.participant.role |
+| Invoice.participant.actor | UseElementRenamed | Invoice.participant.actor |
+| Invoice.issuer | UseElementRenamed | Invoice.issuer |
+| Invoice.account | UseElementRenamed | Invoice.account |
+| Invoice.lineItem | UseElementRenamed | Invoice.lineItem |
+| Invoice.lineItem.id | UseElementRenamed | Invoice.lineItem.id |
+| Invoice.lineItem.extension | UseElementRenamed | Invoice.lineItem.extension |
+| Invoice.lineItem.modifierExtension | UseElementRenamed | Invoice.lineItem.modifierExtension |
+| Invoice.lineItem.sequence | UseElementRenamed | Invoice.lineItem.sequence |
+| Invoice.lineItem.serviced[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.lineItem.serviced |
+| Invoice.lineItem.chargeItem[x] | UseElementRenamed | Invoice.lineItem.chargeItem[x] |
+| Invoice.lineItem.priceComponent | UseElementRenamed | Invoice.lineItem.priceComponent |
+| Invoice.totalPriceComponent | UseElementRenamed | Invoice.totalPriceComponent |
+| Invoice.totalNet | UseElementRenamed | Invoice.totalNet |
+| Invoice.totalGross | UseElementRenamed | Invoice.totalGross |
+| Invoice.paymentTerms | UseElementRenamed | Invoice.paymentTerms |
+| Invoice.note | UseElementRenamed | Invoice.note |

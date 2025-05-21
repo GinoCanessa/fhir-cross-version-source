@@ -1,0 +1,38 @@
+### Lookup for FHIR R5 Communication for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Communication.id | UseElementSameName | Communication.id |
+| Communication.meta | UseElementSameName | Communication.meta |
+| Communication.implicitRules | UseElementSameName | Communication.implicitRules |
+| Communication.language | UseElementSameName | Communication.language |
+| Communication.text | UseElementSameName | Communication.text |
+| Communication.contained | UseElementSameName | Communication.contained |
+| Communication.extension | UseElementSameName | Communication.extension |
+| Communication.modifierExtension | UseElementSameName | Communication.modifierExtension |
+| Communication.identifier | UseElementSameName | Communication.identifier |
+| Communication.instantiatesCanonical | UseElementSameName | Communication.definition |
+| Communication.instantiatesUri | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.instantiatesUri |
+| Communication.basedOn | UseElementSameName | Communication.basedOn |
+| Communication.partOf | UseElementSameName | Communication.partOf |
+| Communication.inResponseTo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.inResponseTo |
+| Communication.status | UseElementSameName | Communication.notDone |
+| Communication.statusReason | UseElementSameName | Communication.notDoneReason |
+| Communication.category | UseElementSameName | Communication.category |
+| Communication.priority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.priority |
+| Communication.medium | UseElementSameName | Communication.medium |
+| Communication.subject | UseElementSameName | Communication.subject |
+| Communication.topic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.topic |
+| Communication.about | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.about |
+| Communication.encounter | UseElementSameName | Communication.context |
+| Communication.sent | UseElementSameName | Communication.sent |
+| Communication.received | UseElementSameName | Communication.received |
+| Communication.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.recipient |
+| Communication.sender | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.sender |
+| Communication.reason | UseElementRenamed | Communication.reasonCode |
+| Communication.payload | UseElementSameName | Communication.payload |
+| Communication.payload.id | UseElementSameName | Communication.payload.id |
+| Communication.payload.extension | UseElementSameName | Communication.payload.extension |
+| Communication.payload.modifierExtension | UseElementSameName | Communication.payload.modifierExtension |
+| Communication.payload.content[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.payload.content |
+| Communication.note | UseElementSameName | Communication.note |

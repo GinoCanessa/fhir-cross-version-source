@@ -1,0 +1,43 @@
+### Lookup for FHIR R3 ProcedureRequest for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ProcedureRequest.id | UseElementRenamed | ServiceRequest.id |
+| ProcedureRequest.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.meta |
+| ProcedureRequest.implicitRules | UseElementRenamed | ServiceRequest.implicitRules |
+| ProcedureRequest.language | UseElementRenamed | ServiceRequest.language |
+| ProcedureRequest.text | UseElementRenamed | ServiceRequest.text |
+| ProcedureRequest.contained | UseElementRenamed | ServiceRequest.contained |
+| ProcedureRequest.extension | UseElementRenamed | ServiceRequest.extension |
+| ProcedureRequest.modifierExtension | UseElementRenamed | ServiceRequest.modifierExtension |
+| ProcedureRequest.identifier | UseElementRenamed | ServiceRequest.identifier |
+| ProcedureRequest.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.definition |
+| ProcedureRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.basedOn |
+| ProcedureRequest.replaces | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.replaces |
+| ProcedureRequest.requisition | UseElementRenamed | ServiceRequest.requisition |
+| ProcedureRequest.status | UseElementRenamed | ServiceRequest.status |
+| ProcedureRequest.intent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.intent |
+| ProcedureRequest.priority | UseElementRenamed | ServiceRequest.priority |
+| ProcedureRequest.doNotPerform | UseElementRenamed | ServiceRequest.doNotPerform |
+| ProcedureRequest.category | UseElementRenamed | ServiceRequest.category |
+| ProcedureRequest.code | UseElementRenamed | ServiceRequest.code |
+| ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.subject |
+| ProcedureRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.context |
+| ProcedureRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.occurrence |
+| ProcedureRequest.asNeeded[x] | UseElementRenamed | ServiceRequest.asNeeded[x] |
+| ProcedureRequest.authoredOn | UseElementRenamed | ServiceRequest.authoredOn |
+| ProcedureRequest.requester | UseElementRenamed | ServiceRequest.requester |
+| ProcedureRequest.requester.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.id |
+| ProcedureRequest.requester.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.extension |
+| ProcedureRequest.requester.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.modifierExtension |
+| ProcedureRequest.requester.agent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.agent |
+| ProcedureRequest.requester.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester.onBehalfOf |
+| ProcedureRequest.performerType | UseElementRenamed | ServiceRequest.performerType |
+| ProcedureRequest.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.performer |
+| ProcedureRequest.reasonCode | UseElementRenamed | ServiceRequest.reasonCode |
+| ProcedureRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.reasonReference |
+| ProcedureRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.supportingInfo |
+| ProcedureRequest.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.specimen |
+| ProcedureRequest.bodySite | UseElementRenamed | ServiceRequest.bodySite |
+| ProcedureRequest.note | UseElementRenamed | ServiceRequest.note |
+| ProcedureRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.relevantHistory |

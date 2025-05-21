@@ -1,0 +1,39 @@
+### Lookup for FHIR R5 Condition for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Condition.id | UseElementRenamed | Condition.id |
+| Condition.meta | UseElementRenamed | Condition.meta |
+| Condition.implicitRules | UseElementRenamed | Condition.implicitRules |
+| Condition.language | UseElementRenamed | Condition.language |
+| Condition.text | UseElementRenamed | Condition.text |
+| Condition.contained | UseElementRenamed | Condition.contained |
+| Condition.extension | UseElementRenamed | Condition.extension |
+| Condition.modifierExtension | UseElementRenamed | Condition.modifierExtension |
+| Condition.identifier | UseElementRenamed | Condition.identifier |
+| Condition.clinicalStatus | UseElementRenamed | Condition.clinicalStatus |
+| Condition.verificationStatus | UseElementRenamed | Condition.verificationStatus |
+| Condition.category | UseElementRenamed | Condition.category |
+| Condition.severity | UseElementRenamed | Condition.severity |
+| Condition.code | UseElementRenamed | Condition.code |
+| Condition.bodySite | UseElementRenamed | Condition.bodySite |
+| Condition.subject | UseElementRenamed | Condition.subject |
+| Condition.encounter | UseElementRenamed | Condition.encounter |
+| Condition.onset[x] | UseElementRenamed | Condition.onset[x] |
+| Condition.abatement[x] | UseElementRenamed | Condition.abatement[x] |
+| Condition.recordedDate | UseElementRenamed | Condition.recordedDate |
+| Condition.participant | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.participant |
+| Condition.participant.id | UseExtensionFromAncestor | - |
+| Condition.participant.extension | UseExtensionFromAncestor | - |
+| Condition.participant.modifierExtension | UseExtensionFromAncestor | - |
+| Condition.participant.function | UseExtensionFromAncestor | - |
+| Condition.participant.actor | UseExtensionFromAncestor | - |
+| Condition.stage | UseElementRenamed | Condition.stage |
+| Condition.stage.id | UseElementRenamed | Condition.stage.id |
+| Condition.stage.extension | UseElementRenamed | Condition.stage.extension |
+| Condition.stage.modifierExtension | UseElementRenamed | Condition.stage.modifierExtension |
+| Condition.stage.summary | UseElementRenamed | Condition.stage.summary |
+| Condition.stage.assessment | UseElementRenamed | Condition.stage.assessment |
+| Condition.stage.type | UseElementRenamed | Condition.stage.type |
+| Condition.evidence | UseElementRenamed | Condition.evidence |
+| Condition.note | UseElementRenamed | Condition.note |

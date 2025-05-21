@@ -1,0 +1,47 @@
+### Lookup for FHIR R5 MedicationAdministration for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MedicationAdministration.id | UseElementRenamed | MedicationAdministration.id |
+| MedicationAdministration.meta | UseElementRenamed | MedicationAdministration.meta |
+| MedicationAdministration.implicitRules | UseElementRenamed | MedicationAdministration.implicitRules |
+| MedicationAdministration.language | UseElementRenamed | MedicationAdministration.language |
+| MedicationAdministration.text | UseElementRenamed | MedicationAdministration.text |
+| MedicationAdministration.contained | UseElementRenamed | MedicationAdministration.contained |
+| MedicationAdministration.extension | UseElementRenamed | MedicationAdministration.extension |
+| MedicationAdministration.modifierExtension | UseElementRenamed | MedicationAdministration.modifierExtension |
+| MedicationAdministration.identifier | UseElementRenamed | MedicationAdministration.identifier |
+| MedicationAdministration.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.basedOn |
+| MedicationAdministration.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.partOf |
+| MedicationAdministration.status | UseElementRenamed | MedicationAdministration.status |
+| MedicationAdministration.statusReason | UseElementRenamed | MedicationAdministration.statusReason |
+| MedicationAdministration.category | UseElementRenamed | MedicationAdministration.category |
+| MedicationAdministration.medication | UseElementRenamed | MedicationAdministration.medication[x] |
+| MedicationAdministration.subject | UseElementRenamed | MedicationAdministration.subject |
+| MedicationAdministration.encounter | UseElementRenamed | MedicationAdministration.context |
+| MedicationAdministration.supportingInformation | UseElementRenamed | MedicationAdministration.supportingInformation |
+| MedicationAdministration.occurence[x] | UseElementRenamed | MedicationAdministration.effective[x] |
+| MedicationAdministration.recorded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.recorded |
+| MedicationAdministration.isSubPotent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.isSubPotent |
+| MedicationAdministration.subPotentReason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.subPotentReason |
+| MedicationAdministration.performer | UseElementRenamed | MedicationAdministration.performer |
+| MedicationAdministration.performer.id | UseElementRenamed | MedicationAdministration.performer.id |
+| MedicationAdministration.performer.extension | UseElementRenamed | MedicationAdministration.performer.extension |
+| MedicationAdministration.performer.modifierExtension | UseElementRenamed | MedicationAdministration.performer.modifierExtension |
+| MedicationAdministration.performer.function | UseElementRenamed | MedicationAdministration.performer.function |
+| MedicationAdministration.performer.actor | UseElementRenamed | MedicationAdministration.performer.actor |
+| MedicationAdministration.reason | UseElementRenamed | MedicationAdministration.reasonCode |
+| MedicationAdministration.request | UseElementRenamed | MedicationAdministration.request |
+| MedicationAdministration.device | UseElementRenamed | MedicationAdministration.device |
+| MedicationAdministration.note | UseElementRenamed | MedicationAdministration.note |
+| MedicationAdministration.dosage | UseElementRenamed | MedicationAdministration.dosage |
+| MedicationAdministration.dosage.id | UseElementRenamed | MedicationAdministration.dosage.id |
+| MedicationAdministration.dosage.extension | UseElementRenamed | MedicationAdministration.dosage.extension |
+| MedicationAdministration.dosage.modifierExtension | UseElementRenamed | MedicationAdministration.dosage.modifierExtension |
+| MedicationAdministration.dosage.text | UseElementRenamed | MedicationAdministration.dosage.text |
+| MedicationAdministration.dosage.site | UseElementRenamed | MedicationAdministration.dosage.site |
+| MedicationAdministration.dosage.route | UseElementRenamed | MedicationAdministration.dosage.route |
+| MedicationAdministration.dosage.method | UseElementRenamed | MedicationAdministration.dosage.method |
+| MedicationAdministration.dosage.dose | UseElementRenamed | MedicationAdministration.dosage.dose |
+| MedicationAdministration.dosage.rate[x] | UseElementRenamed | MedicationAdministration.dosage.rate[x] |
+| MedicationAdministration.eventHistory | UseElementRenamed | MedicationAdministration.eventHistory |

@@ -1,0 +1,42 @@
+### Lookup for FHIR R4B Location for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Location.id | UseElementSameName | Location.id |
+| Location.meta | UseElementSameName | Location.meta |
+| Location.implicitRules | UseElementSameName | Location.implicitRules |
+| Location.language | UseElementSameName | Location.language |
+| Location.text | UseElementSameName | Location.text |
+| Location.contained | UseElementSameName | Location.contained |
+| Location.extension | UseElementSameName | Location.extension |
+| Location.modifierExtension | UseElementSameName | Location.modifierExtension |
+| Location.identifier | UseElementSameName | Location.identifier |
+| Location.status | UseElementSameName | Location.status |
+| Location.operationalStatus | UseElementSameName | Location.operationalStatus |
+| Location.name | UseElementSameName | Location.name |
+| Location.alias | UseElementSameName | Location.alias |
+| Location.description | UseElementSameName | Location.description |
+| Location.mode | UseElementSameName | Location.mode |
+| Location.type | UseElementSameName | Location.type |
+| Location.telecom | UseElementRenamed | Location.telecom |
+| Location.address | UseElementSameName | Location.address |
+| Location.physicalType | UseElementRenamed | Location.physicalType |
+| Location.position | UseElementSameName | Location.position |
+| Location.position.id | UseElementSameName | Location.position.id |
+| Location.position.extension | UseElementSameName | Location.position.extension |
+| Location.position.modifierExtension | UseElementSameName | Location.position.modifierExtension |
+| Location.position.longitude | UseElementSameName | Location.position.longitude |
+| Location.position.latitude | UseElementSameName | Location.position.latitude |
+| Location.position.altitude | UseElementSameName | Location.position.altitude |
+| Location.managingOrganization | UseElementSameName | Location.managingOrganization |
+| Location.partOf | UseElementSameName | Location.partOf |
+| Location.hoursOfOperation | UseElementSameName | Location.hoursOfOperation |
+| Location.hoursOfOperation.id | UseElementRenamed | Location.hoursOfOperation.id |
+| Location.hoursOfOperation.extension | UseElementRenamed | Location.hoursOfOperation.extension |
+| Location.hoursOfOperation.modifierExtension | UseElementRenamed | Location.hoursOfOperation.modifierExtension |
+| Location.hoursOfOperation.daysOfWeek | UseElementRenamed | Location.hoursOfOperation.daysOfWeek |
+| Location.hoursOfOperation.allDay | UseElementRenamed | Location.hoursOfOperation.allDay |
+| Location.hoursOfOperation.openingTime | UseElementRenamed | Location.hoursOfOperation.openingTime |
+| Location.hoursOfOperation.closingTime | UseElementRenamed | Location.hoursOfOperation.closingTime |
+| Location.availabilityExceptions | UseElementRenamed | Location.availabilityExceptions |
+| Location.endpoint | UseElementSameName | Location.endpoint |

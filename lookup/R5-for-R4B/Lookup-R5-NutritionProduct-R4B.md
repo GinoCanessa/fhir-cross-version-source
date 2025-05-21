@@ -1,0 +1,47 @@
+### Lookup for FHIR R5 NutritionProduct for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| NutritionProduct.id | UseElementRenamed | NutritionProduct.id |
+| NutritionProduct.meta | UseElementRenamed | NutritionProduct.meta |
+| NutritionProduct.implicitRules | UseElementRenamed | NutritionProduct.implicitRules |
+| NutritionProduct.language | UseElementRenamed | NutritionProduct.language |
+| NutritionProduct.text | UseElementRenamed | NutritionProduct.text |
+| NutritionProduct.contained | UseElementRenamed | NutritionProduct.contained |
+| NutritionProduct.extension | UseElementRenamed | NutritionProduct.extension |
+| NutritionProduct.modifierExtension | UseElementRenamed | NutritionProduct.modifierExtension |
+| NutritionProduct.code | UseElementRenamed | NutritionProduct.code |
+| NutritionProduct.status | UseElementRenamed | NutritionProduct.status |
+| NutritionProduct.category | UseElementRenamed | NutritionProduct.category |
+| NutritionProduct.manufacturer | UseElementRenamed | NutritionProduct.manufacturer |
+| NutritionProduct.nutrient | UseElementRenamed | NutritionProduct.nutrient |
+| NutritionProduct.nutrient.id | UseElementRenamed | NutritionProduct.nutrient.id |
+| NutritionProduct.nutrient.extension | UseElementRenamed | NutritionProduct.nutrient.extension |
+| NutritionProduct.nutrient.modifierExtension | UseElementRenamed | NutritionProduct.nutrient.modifierExtension |
+| NutritionProduct.nutrient.item | UseElementRenamed | NutritionProduct.nutrient.item |
+| NutritionProduct.nutrient.amount | UseElementRenamed | NutritionProduct.nutrient.amount |
+| NutritionProduct.ingredient | UseElementRenamed | NutritionProduct.ingredient |
+| NutritionProduct.ingredient.id | UseElementRenamed | NutritionProduct.ingredient.id |
+| NutritionProduct.ingredient.extension | UseElementRenamed | NutritionProduct.ingredient.extension |
+| NutritionProduct.ingredient.modifierExtension | UseElementRenamed | NutritionProduct.ingredient.modifierExtension |
+| NutritionProduct.ingredient.item | UseElementRenamed | NutritionProduct.ingredient.item |
+| NutritionProduct.ingredient.amount | UseElementRenamed | NutritionProduct.ingredient.amount |
+| NutritionProduct.knownAllergen | UseElementRenamed | NutritionProduct.knownAllergen |
+| NutritionProduct.characteristic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct.characteristic |
+| NutritionProduct.characteristic.id | UseExtensionFromAncestor | - |
+| NutritionProduct.characteristic.extension | UseExtensionFromAncestor | - |
+| NutritionProduct.characteristic.modifierExtension | UseExtensionFromAncestor | - |
+| NutritionProduct.characteristic.type | UseExtensionFromAncestor | - |
+| NutritionProduct.characteristic.value[x] | UseExtensionFromAncestor | - |
+| NutritionProduct.instance | UseElementRenamed | NutritionProduct.instance |
+| NutritionProduct.instance.id | UseElementRenamed | NutritionProduct.instance.id |
+| NutritionProduct.instance.extension | UseElementRenamed | NutritionProduct.instance.extension |
+| NutritionProduct.instance.modifierExtension | UseElementRenamed | NutritionProduct.instance.modifierExtension |
+| NutritionProduct.instance.quantity | UseElementRenamed | NutritionProduct.instance.quantity |
+| NutritionProduct.instance.identifier | UseElementRenamed | NutritionProduct.instance.identifier |
+| NutritionProduct.instance.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct.instance.name |
+| NutritionProduct.instance.lotNumber | UseElementRenamed | NutritionProduct.instance.lotNumber |
+| NutritionProduct.instance.expiry | UseElementRenamed | NutritionProduct.instance.expiry |
+| NutritionProduct.instance.useBy | UseElementRenamed | NutritionProduct.instance.useBy |
+| NutritionProduct.instance.biologicalSourceEvent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct.instance.biologicalSourceEvent |
+| NutritionProduct.note | UseElementRenamed | NutritionProduct.note |

@@ -1,0 +1,39 @@
+### Lookup for FHIR R3 ResearchStudy for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ResearchStudy | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchStudy |
+| ResearchStudy.id | UseExtensionFromAncestor | - |
+| ResearchStudy.meta | UseExtensionFromAncestor | - |
+| ResearchStudy.implicitRules | UseExtensionFromAncestor | - |
+| ResearchStudy.language | UseExtensionFromAncestor | - |
+| ResearchStudy.text | UseExtensionFromAncestor | - |
+| ResearchStudy.contained | UseExtensionFromAncestor | - |
+| ResearchStudy.extension | UseExtensionFromAncestor | - |
+| ResearchStudy.modifierExtension | UseExtensionFromAncestor | - |
+| ResearchStudy.identifier | UseExtensionFromAncestor | - |
+| ResearchStudy.title | UseExtensionFromAncestor | - |
+| ResearchStudy.protocol | UseExtensionFromAncestor | - |
+| ResearchStudy.partOf | UseExtensionFromAncestor | - |
+| ResearchStudy.status | UseExtensionFromAncestor | - |
+| ResearchStudy.category | UseExtensionFromAncestor | - |
+| ResearchStudy.focus | UseExtensionFromAncestor | - |
+| ResearchStudy.contact | UseExtensionFromAncestor | - |
+| ResearchStudy.relatedArtifact | UseExtensionFromAncestor | - |
+| ResearchStudy.keyword | UseExtensionFromAncestor | - |
+| ResearchStudy.jurisdiction | UseExtensionFromAncestor | - |
+| ResearchStudy.description | UseExtensionFromAncestor | - |
+| ResearchStudy.enrollment | UseExtensionFromAncestor | - |
+| ResearchStudy.period | UseExtensionFromAncestor | - |
+| ResearchStudy.sponsor | UseExtensionFromAncestor | - |
+| ResearchStudy.principalInvestigator | UseExtensionFromAncestor | - |
+| ResearchStudy.site | UseExtensionFromAncestor | - |
+| ResearchStudy.reasonStopped | UseExtensionFromAncestor | - |
+| ResearchStudy.note | UseExtensionFromAncestor | - |
+| ResearchStudy.arm | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.id | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.extension | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.modifierExtension | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.name | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.code | UseExtensionFromAncestor | - |
+| ResearchStudy.arm.description | UseExtensionFromAncestor | - |

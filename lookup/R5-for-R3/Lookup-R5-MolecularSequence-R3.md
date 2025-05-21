@@ -1,0 +1,47 @@
+### Lookup for FHIR R5 MolecularSequence for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MolecularSequence.id | UseElementSameName | Sequence.id |
+| MolecularSequence.meta | UseElementSameName | Sequence.meta |
+| MolecularSequence.implicitRules | UseElementSameName | Sequence.implicitRules |
+| MolecularSequence.language | UseElementSameName | Sequence.language |
+| MolecularSequence.text | UseElementSameName | Sequence.text |
+| MolecularSequence.contained | UseElementSameName | Sequence.contained |
+| MolecularSequence.extension | UseElementSameName | Sequence.extension |
+| MolecularSequence.modifierExtension | UseElementSameName | Sequence.modifierExtension |
+| MolecularSequence.identifier | UseElementSameName | Sequence.identifier |
+| MolecularSequence.type | UseElementSameName | Sequence.type |
+| MolecularSequence.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.subject |
+| MolecularSequence.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.focus |
+| MolecularSequence.specimen | UseElementSameName | Sequence.specimen |
+| MolecularSequence.device | UseElementSameName | Sequence.device |
+| MolecularSequence.performer | UseElementSameName | Sequence.performer |
+| MolecularSequence.literal | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.literal |
+| MolecularSequence.formatted | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.formatted |
+| MolecularSequence.relative | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative |
+| MolecularSequence.relative.id | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.extension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.modifierExtension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.coordinateSystem | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.ordinalPosition | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.sequenceRange | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.id | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.extension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.modifierExtension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.genomeAssembly | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.chromosome | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.sequence[x] | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.windowStart | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.windowEnd | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.orientation | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.startingSequence.strand | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.id | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.extension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.modifierExtension | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.start | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.end | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.replacementSequence | UseExtensionFromAncestor | - |
+| MolecularSequence.relative.edit.replacedSequence | UseExtensionFromAncestor | - |

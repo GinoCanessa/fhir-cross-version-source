@@ -1,0 +1,47 @@
+### Lookup for FHIR R4B ResearchStudy for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ResearchStudy.id | UseElementSameName | ResearchStudy.id |
+| ResearchStudy.meta | UseElementSameName | ResearchStudy.meta |
+| ResearchStudy.implicitRules | UseElementSameName | ResearchStudy.implicitRules |
+| ResearchStudy.language | UseElementSameName | ResearchStudy.language |
+| ResearchStudy.text | UseElementSameName | ResearchStudy.text |
+| ResearchStudy.contained | UseElementSameName | ResearchStudy.contained |
+| ResearchStudy.extension | UseElementSameName | ResearchStudy.extension |
+| ResearchStudy.modifierExtension | UseElementSameName | ResearchStudy.modifierExtension |
+| ResearchStudy.identifier | UseElementSameName | ResearchStudy.identifier |
+| ResearchStudy.title | UseElementSameName | ResearchStudy.title |
+| ResearchStudy.protocol | UseElementSameName | ResearchStudy.protocol |
+| ResearchStudy.partOf | UseElementSameName | ResearchStudy.partOf |
+| ResearchStudy.status | UseElementSameName | ResearchStudy.status |
+| ResearchStudy.primaryPurposeType | UseElementSameName | ResearchStudy.primaryPurposeType |
+| ResearchStudy.phase | UseElementSameName | ResearchStudy.phase |
+| ResearchStudy.category | UseElementRenamed | ResearchStudy.category |
+| ResearchStudy.focus | UseElementSameName | ResearchStudy.focus |
+| ResearchStudy.condition | UseElementSameName | ResearchStudy.condition |
+| ResearchStudy.contact | UseElementRenamed | ResearchStudy.contact |
+| ResearchStudy.relatedArtifact | UseElementSameName | ResearchStudy.relatedArtifact |
+| ResearchStudy.keyword | UseElementSameName | ResearchStudy.keyword |
+| ResearchStudy.location | UseElementRenamed | ResearchStudy.location |
+| ResearchStudy.description | UseElementSameName | ResearchStudy.description |
+| ResearchStudy.enrollment | UseElementRenamed | ResearchStudy.enrollment |
+| ResearchStudy.period | UseElementSameName | ResearchStudy.period |
+| ResearchStudy.sponsor | UseElementRenamed | ResearchStudy.sponsor |
+| ResearchStudy.principalInvestigator | UseElementRenamed | ResearchStudy.principalInvestigator |
+| ResearchStudy.site | UseElementSameName | ResearchStudy.site |
+| ResearchStudy.reasonStopped | UseElementRenamed | ResearchStudy.reasonStopped |
+| ResearchStudy.note | UseElementSameName | ResearchStudy.note |
+| ResearchStudy.arm | UseElementRenamed | ResearchStudy.arm |
+| ResearchStudy.arm.id | UseElementRenamed | ResearchStudy.arm.id |
+| ResearchStudy.arm.extension | UseElementRenamed | ResearchStudy.arm.extension |
+| ResearchStudy.arm.modifierExtension | UseElementRenamed | ResearchStudy.arm.modifierExtension |
+| ResearchStudy.arm.name | UseElementRenamed | ResearchStudy.arm.name |
+| ResearchStudy.arm.type | UseElementRenamed | ResearchStudy.arm.type |
+| ResearchStudy.arm.description | UseElementRenamed | ResearchStudy.arm.description |
+| ResearchStudy.objective | UseElementSameName | ResearchStudy.objective |
+| ResearchStudy.objective.id | UseElementSameName | ResearchStudy.objective.id |
+| ResearchStudy.objective.extension | UseElementSameName | ResearchStudy.objective.extension |
+| ResearchStudy.objective.modifierExtension | UseElementSameName | ResearchStudy.objective.modifierExtension |
+| ResearchStudy.objective.name | UseElementSameName | ResearchStudy.objective.name |
+| ResearchStudy.objective.type | UseElementSameName | ResearchStudy.objective.type |

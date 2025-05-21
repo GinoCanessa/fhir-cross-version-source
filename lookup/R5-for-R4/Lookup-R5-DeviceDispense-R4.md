@@ -1,0 +1,39 @@
+### Lookup for FHIR R5 DeviceDispense for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| DeviceDispense | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDispense |
+| DeviceDispense.id | UseExtensionFromAncestor | - |
+| DeviceDispense.meta | UseExtensionFromAncestor | - |
+| DeviceDispense.implicitRules | UseExtensionFromAncestor | - |
+| DeviceDispense.language | UseExtensionFromAncestor | - |
+| DeviceDispense.text | UseExtensionFromAncestor | - |
+| DeviceDispense.contained | UseExtensionFromAncestor | - |
+| DeviceDispense.extension | UseExtensionFromAncestor | - |
+| DeviceDispense.modifierExtension | UseExtensionFromAncestor | - |
+| DeviceDispense.identifier | UseExtensionFromAncestor | - |
+| DeviceDispense.basedOn | UseExtensionFromAncestor | - |
+| DeviceDispense.partOf | UseExtensionFromAncestor | - |
+| DeviceDispense.status | UseExtensionFromAncestor | - |
+| DeviceDispense.statusReason | UseExtensionFromAncestor | - |
+| DeviceDispense.category | UseExtensionFromAncestor | - |
+| DeviceDispense.device | UseExtensionFromAncestor | - |
+| DeviceDispense.subject | UseExtensionFromAncestor | - |
+| DeviceDispense.receiver | UseExtensionFromAncestor | - |
+| DeviceDispense.encounter | UseExtensionFromAncestor | - |
+| DeviceDispense.supportingInformation | UseExtensionFromAncestor | - |
+| DeviceDispense.performer | UseExtensionFromAncestor | - |
+| DeviceDispense.performer.id | UseExtensionFromAncestor | - |
+| DeviceDispense.performer.extension | UseExtensionFromAncestor | - |
+| DeviceDispense.performer.modifierExtension | UseExtensionFromAncestor | - |
+| DeviceDispense.performer.function | UseExtensionFromAncestor | - |
+| DeviceDispense.performer.actor | UseExtensionFromAncestor | - |
+| DeviceDispense.location | UseExtensionFromAncestor | - |
+| DeviceDispense.type | UseExtensionFromAncestor | - |
+| DeviceDispense.quantity | UseExtensionFromAncestor | - |
+| DeviceDispense.preparedDate | UseExtensionFromAncestor | - |
+| DeviceDispense.whenHandedOver | UseExtensionFromAncestor | - |
+| DeviceDispense.destination | UseExtensionFromAncestor | - |
+| DeviceDispense.note | UseExtensionFromAncestor | - |
+| DeviceDispense.usageInstruction | UseExtensionFromAncestor | - |
+| DeviceDispense.eventHistory | UseExtensionFromAncestor | - |

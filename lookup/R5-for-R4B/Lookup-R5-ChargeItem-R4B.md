@@ -1,0 +1,43 @@
+### Lookup for FHIR R5 ChargeItem for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ChargeItem.id | UseElementRenamed | ChargeItem.id |
+| ChargeItem.meta | UseElementRenamed | ChargeItem.meta |
+| ChargeItem.implicitRules | UseElementRenamed | ChargeItem.implicitRules |
+| ChargeItem.language | UseElementRenamed | ChargeItem.language |
+| ChargeItem.text | UseElementRenamed | ChargeItem.text |
+| ChargeItem.contained | UseElementRenamed | ChargeItem.contained |
+| ChargeItem.extension | UseElementRenamed | ChargeItem.extension |
+| ChargeItem.modifierExtension | UseElementRenamed | ChargeItem.modifierExtension |
+| ChargeItem.identifier | UseElementRenamed | ChargeItem.identifier |
+| ChargeItem.definitionUri | UseElementRenamed | ChargeItem.definitionUri |
+| ChargeItem.definitionCanonical | UseElementRenamed | ChargeItem.definitionCanonical |
+| ChargeItem.status | UseElementRenamed | ChargeItem.status |
+| ChargeItem.partOf | UseElementRenamed | ChargeItem.partOf |
+| ChargeItem.code | UseElementRenamed | ChargeItem.code |
+| ChargeItem.subject | UseElementRenamed | ChargeItem.subject |
+| ChargeItem.encounter | UseElementRenamed | ChargeItem.context |
+| ChargeItem.occurrence[x] | UseElementRenamed | ChargeItem.occurrence[x] |
+| ChargeItem.performer | UseElementRenamed | ChargeItem.performer |
+| ChargeItem.performer.id | UseElementRenamed | ChargeItem.performer.id |
+| ChargeItem.performer.extension | UseElementRenamed | ChargeItem.performer.extension |
+| ChargeItem.performer.modifierExtension | UseElementRenamed | ChargeItem.performer.modifierExtension |
+| ChargeItem.performer.function | UseElementRenamed | ChargeItem.performer.function |
+| ChargeItem.performer.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performer.actor |
+| ChargeItem.performingOrganization | UseElementRenamed | ChargeItem.performingOrganization |
+| ChargeItem.requestingOrganization | UseElementRenamed | ChargeItem.requestingOrganization |
+| ChargeItem.costCenter | UseElementRenamed | ChargeItem.costCenter |
+| ChargeItem.quantity | UseElementRenamed | ChargeItem.quantity |
+| ChargeItem.bodysite | UseElementRenamed | ChargeItem.bodysite |
+| ChargeItem.unitPriceComponent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.unitPriceComponent |
+| ChargeItem.totalPriceComponent | UseElementRenamed | ChargeItem |
+| ChargeItem.overrideReason | UseElementRenamed | ChargeItem.overrideReason |
+| ChargeItem.enterer | UseElementRenamed | ChargeItem.enterer |
+| ChargeItem.enteredDate | UseElementRenamed | ChargeItem.enteredDate |
+| ChargeItem.reason | UseElementRenamed | ChargeItem.reason |
+| ChargeItem.service | UseElementRenamed | ChargeItem.service |
+| ChargeItem.product | UseElementRenamed | ChargeItem.product[x] |
+| ChargeItem.account | UseElementRenamed | ChargeItem.account |
+| ChargeItem.note | UseElementRenamed | ChargeItem.note |
+| ChargeItem.supportingInformation | UseElementRenamed | ChargeItem.supportingInformation |

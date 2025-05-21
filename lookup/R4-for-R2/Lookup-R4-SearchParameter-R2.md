@@ -1,0 +1,43 @@
+### Lookup for FHIR R4 SearchParameter for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| SearchParameter.id | UseElementSameName | SearchParameter.id |
+| SearchParameter.meta | UseElementSameName | SearchParameter.meta |
+| SearchParameter.implicitRules | UseElementSameName | SearchParameter.implicitRules |
+| SearchParameter.language | UseElementSameName | SearchParameter.language |
+| SearchParameter.text | UseElementSameName | SearchParameter.text |
+| SearchParameter.contained | UseElementSameName | SearchParameter.contained |
+| SearchParameter.extension | UseElementSameName | SearchParameter.extension |
+| SearchParameter.modifierExtension | UseElementSameName | SearchParameter.modifierExtension |
+| SearchParameter.url | UseElementSameName | SearchParameter.url |
+| SearchParameter.version | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.version |
+| SearchParameter.name | UseElementSameName | SearchParameter.name |
+| SearchParameter.derivedFrom | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.derivedFrom |
+| SearchParameter.status | UseElementSameName | SearchParameter.status |
+| SearchParameter.experimental | UseElementSameName | SearchParameter.experimental |
+| SearchParameter.date | UseElementSameName | SearchParameter.date |
+| SearchParameter.publisher | UseElementSameName | SearchParameter.publisher |
+| SearchParameter.contact | UseElementSameName | SearchParameter.contact |
+| SearchParameter.description | UseElementSameName | SearchParameter.description |
+| SearchParameter.useContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.useContext |
+| SearchParameter.jurisdiction | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.jurisdiction |
+| SearchParameter.purpose | UseElementSameName | SearchParameter.requirements |
+| SearchParameter.code | UseElementSameName | SearchParameter.code |
+| SearchParameter.base | UseElementSameName | SearchParameter.base |
+| SearchParameter.type | UseElementSameName | SearchParameter.type |
+| SearchParameter.expression | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.expression |
+| SearchParameter.xpath | UseElementSameName | SearchParameter.xpath |
+| SearchParameter.xpathUsage | UseElementSameName | SearchParameter.xpathUsage |
+| SearchParameter.target | UseElementSameName | SearchParameter.target |
+| SearchParameter.multipleOr | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.multipleOr |
+| SearchParameter.multipleAnd | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.multipleAnd |
+| SearchParameter.comparator | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.comparator |
+| SearchParameter.modifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.modifier |
+| SearchParameter.chain | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.chain |
+| SearchParameter.component | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.component |
+| SearchParameter.component.id | UseExtensionFromAncestor | - |
+| SearchParameter.component.extension | UseExtensionFromAncestor | - |
+| SearchParameter.component.modifierExtension | UseExtensionFromAncestor | - |
+| SearchParameter.component.definition | UseExtensionFromAncestor | - |
+| SearchParameter.component.expression | UseExtensionFromAncestor | - |

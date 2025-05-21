@@ -1,0 +1,43 @@
+### Lookup for FHIR R3 Coverage for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Coverage.id | UseElementSameName | Coverage.id |
+| Coverage.meta | UseElementSameName | Coverage.meta |
+| Coverage.implicitRules | UseElementSameName | Coverage.implicitRules |
+| Coverage.language | UseElementSameName | Coverage.language |
+| Coverage.text | UseElementSameName | Coverage.text |
+| Coverage.contained | UseElementSameName | Coverage.contained |
+| Coverage.extension | UseElementSameName | Coverage.extension |
+| Coverage.modifierExtension | UseElementSameName | Coverage.modifierExtension |
+| Coverage.identifier | UseElementSameName | Coverage.bin |
+| Coverage.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.status |
+| Coverage.type | UseElementSameName | Coverage.type |
+| Coverage.policyHolder | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.policyHolder |
+| Coverage.subscriber | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.subscriber |
+| Coverage.subscriberId | UseElementSameName | Coverage.subscriberId |
+| Coverage.beneficiary | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.beneficiary |
+| Coverage.relationship | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.relationship |
+| Coverage.period | UseElementSameName | Coverage.period |
+| Coverage.payor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.payor |
+| Coverage.grouping | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.grouping |
+| Coverage.grouping.id | UseExtensionFromAncestor | - |
+| Coverage.grouping.extension | UseExtensionFromAncestor | - |
+| Coverage.grouping.modifierExtension | UseExtensionFromAncestor | - |
+| Coverage.grouping.group | UseExtensionFromAncestor | - |
+| Coverage.grouping.groupDisplay | UseExtensionFromAncestor | - |
+| Coverage.grouping.subGroup | UseExtensionFromAncestor | - |
+| Coverage.grouping.subGroupDisplay | UseExtensionFromAncestor | - |
+| Coverage.grouping.plan | UseExtensionFromAncestor | - |
+| Coverage.grouping.planDisplay | UseExtensionFromAncestor | - |
+| Coverage.grouping.subPlan | UseExtensionFromAncestor | - |
+| Coverage.grouping.subPlanDisplay | UseExtensionFromAncestor | - |
+| Coverage.grouping.class | UseExtensionFromAncestor | - |
+| Coverage.grouping.classDisplay | UseExtensionFromAncestor | - |
+| Coverage.grouping.subClass | UseExtensionFromAncestor | - |
+| Coverage.grouping.subClassDisplay | UseExtensionFromAncestor | - |
+| Coverage.dependent | UseElementSameName | Coverage.dependent |
+| Coverage.sequence | UseElementRenamed | Coverage.sequence |
+| Coverage.order | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Coverage.order |
+| Coverage.network | UseElementSameName | Coverage.network |
+| Coverage.contract | UseElementSameName | Coverage.contract |

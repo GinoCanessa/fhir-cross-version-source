@@ -1,0 +1,45 @@
+### Lookup for FHIR R4 ServiceRequest for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ServiceRequest.id | UseElementSameName | ServiceRequest.id |
+| ServiceRequest.meta | UseElementSameName | ServiceRequest.meta |
+| ServiceRequest.implicitRules | UseElementSameName | ServiceRequest.implicitRules |
+| ServiceRequest.language | UseElementSameName | ServiceRequest.language |
+| ServiceRequest.text | UseElementSameName | ServiceRequest.text |
+| ServiceRequest.contained | UseElementSameName | ServiceRequest.contained |
+| ServiceRequest.extension | UseElementSameName | ServiceRequest.extension |
+| ServiceRequest.modifierExtension | UseElementSameName | ServiceRequest.modifierExtension |
+| ServiceRequest.identifier | UseElementSameName | ServiceRequest.identifier |
+| ServiceRequest.instantiatesCanonical | UseElementSameName | ServiceRequest.instantiatesCanonical |
+| ServiceRequest.instantiatesUri | UseElementSameName | ServiceRequest.instantiatesUri |
+| ServiceRequest.basedOn | UseElementSameName | ServiceRequest.basedOn |
+| ServiceRequest.replaces | UseElementSameName | ServiceRequest.replaces |
+| ServiceRequest.requisition | UseElementSameName | ServiceRequest.requisition |
+| ServiceRequest.status | UseElementSameName | ServiceRequest.status |
+| ServiceRequest.intent | UseElementSameName | ServiceRequest.intent |
+| ServiceRequest.category | UseElementSameName | ServiceRequest.category |
+| ServiceRequest.priority | UseElementSameName | ServiceRequest.priority |
+| ServiceRequest.doNotPerform | UseElementSameName | ServiceRequest.doNotPerform |
+| ServiceRequest.code | UseElementSameName | ServiceRequest.code |
+| ServiceRequest.orderDetail | UseElementSameName | ServiceRequest.orderDetail |
+| ServiceRequest.quantity[x] | UseElementSameName | ServiceRequest.quantity[x] |
+| ServiceRequest.subject | UseElementSameName | ServiceRequest.subject |
+| ServiceRequest.encounter | UseElementSameName | ServiceRequest.encounter |
+| ServiceRequest.occurrence[x] | UseElementSameName | ServiceRequest.occurrence[x] |
+| ServiceRequest.asNeeded[x] | UseElementSameName | ServiceRequest.asNeeded[x] |
+| ServiceRequest.authoredOn | UseElementSameName | ServiceRequest.authoredOn |
+| ServiceRequest.requester | UseElementSameName | ServiceRequest.requester |
+| ServiceRequest.performerType | UseElementSameName | ServiceRequest.performerType |
+| ServiceRequest.performer | UseElementSameName | ServiceRequest.performer |
+| ServiceRequest.locationCode | UseElementSameName | ServiceRequest.locationCode |
+| ServiceRequest.locationReference | UseElementSameName | ServiceRequest.locationReference |
+| ServiceRequest.reasonCode | UseElementSameName | ServiceRequest.reasonCode |
+| ServiceRequest.reasonReference | UseElementSameName | ServiceRequest.reasonReference |
+| ServiceRequest.insurance | UseElementSameName | ServiceRequest.insurance |
+| ServiceRequest.supportingInfo | UseElementSameName | ServiceRequest.supportingInfo |
+| ServiceRequest.specimen | UseElementSameName | ServiceRequest.specimen |
+| ServiceRequest.bodySite | UseElementSameName | ServiceRequest.bodySite |
+| ServiceRequest.note | UseElementSameName | ServiceRequest.note |
+| ServiceRequest.patientInstruction | UseElementSameName | ServiceRequest.patientInstruction |
+| ServiceRequest.relevantHistory | UseElementSameName | ServiceRequest.relevantHistory |

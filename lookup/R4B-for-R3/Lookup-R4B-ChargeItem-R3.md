@@ -1,0 +1,43 @@
+### Lookup for FHIR R4B ChargeItem for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ChargeItem.id | UseElementSameName | ChargeItem.id |
+| ChargeItem.meta | UseElementSameName | ChargeItem.meta |
+| ChargeItem.implicitRules | UseElementSameName | ChargeItem.implicitRules |
+| ChargeItem.language | UseElementSameName | ChargeItem.language |
+| ChargeItem.text | UseElementSameName | ChargeItem.text |
+| ChargeItem.contained | UseElementSameName | ChargeItem.contained |
+| ChargeItem.extension | UseElementSameName | ChargeItem.extension |
+| ChargeItem.modifierExtension | UseElementSameName | ChargeItem.modifierExtension |
+| ChargeItem.identifier | UseElementSameName | ChargeItem.identifier |
+| ChargeItem.definitionUri | UseElementSameName | ChargeItem.definition |
+| ChargeItem.definitionCanonical | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.definitionCanonical |
+| ChargeItem.status | UseElementSameName | ChargeItem.status |
+| ChargeItem.partOf | UseElementSameName | ChargeItem.partOf |
+| ChargeItem.code | UseElementSameName | ChargeItem.code |
+| ChargeItem.subject | UseElementSameName | ChargeItem.subject |
+| ChargeItem.context | UseElementSameName | ChargeItem.context |
+| ChargeItem.occurrence[x] | UseElementSameName | ChargeItem.occurrence[x] |
+| ChargeItem.performer | UseElementSameName | ChargeItem.participant |
+| ChargeItem.performer.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.performer.id |
+| ChargeItem.performer.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.performer.extension |
+| ChargeItem.performer.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.performer.modifierExtension |
+| ChargeItem.performer.function | UseElementSameName | ChargeItem.participant.role |
+| ChargeItem.performer.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.performer.actor |
+| ChargeItem.performingOrganization | UseElementSameName | ChargeItem.performingOrganization |
+| ChargeItem.requestingOrganization | UseElementSameName | ChargeItem.requestingOrganization |
+| ChargeItem.costCenter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.costCenter |
+| ChargeItem.quantity | UseElementSameName | ChargeItem.quantity |
+| ChargeItem.bodysite | UseElementSameName | ChargeItem.bodysite |
+| ChargeItem.factorOverride | UseElementSameName | ChargeItem.factorOverride |
+| ChargeItem.priceOverride | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.priceOverride |
+| ChargeItem.overrideReason | UseElementSameName | ChargeItem.overrideReason |
+| ChargeItem.enterer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.enterer |
+| ChargeItem.enteredDate | UseElementSameName | ChargeItem.enteredDate |
+| ChargeItem.reason | UseElementSameName | ChargeItem.reason |
+| ChargeItem.service | UseElementSameName | ChargeItem.service |
+| ChargeItem.product[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem.product |
+| ChargeItem.account | UseElementSameName | ChargeItem.account |
+| ChargeItem.note | UseElementSameName | ChargeItem.note |
+| ChargeItem.supportingInformation | UseElementSameName | ChargeItem.supportingInformation |

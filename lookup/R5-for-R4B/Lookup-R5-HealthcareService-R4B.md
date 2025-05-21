@@ -1,0 +1,40 @@
+### Lookup for FHIR R5 HealthcareService for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| HealthcareService.id | UseElementRenamed | HealthcareService.id |
+| HealthcareService.meta | UseElementRenamed | HealthcareService.meta |
+| HealthcareService.implicitRules | UseElementRenamed | HealthcareService.implicitRules |
+| HealthcareService.language | UseElementRenamed | HealthcareService.language |
+| HealthcareService.text | UseElementRenamed | HealthcareService.text |
+| HealthcareService.contained | UseElementRenamed | HealthcareService.contained |
+| HealthcareService.extension | UseElementRenamed | HealthcareService.extension |
+| HealthcareService.modifierExtension | UseElementRenamed | HealthcareService.modifierExtension |
+| HealthcareService.identifier | UseElementRenamed | HealthcareService.identifier |
+| HealthcareService.active | UseElementRenamed | HealthcareService.active |
+| HealthcareService.providedBy | UseElementRenamed | HealthcareService.providedBy |
+| HealthcareService.offeredIn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.offeredIn |
+| HealthcareService.category | UseElementRenamed | HealthcareService.category |
+| HealthcareService.type | UseElementRenamed | HealthcareService.type |
+| HealthcareService.specialty | UseElementRenamed | HealthcareService.specialty |
+| HealthcareService.location | UseElementRenamed | HealthcareService.location |
+| HealthcareService.name | UseElementRenamed | HealthcareService.name |
+| HealthcareService.comment | UseElementRenamed | HealthcareService.comment |
+| HealthcareService.extraDetails | UseElementRenamed | HealthcareService.extraDetails |
+| HealthcareService.photo | UseElementRenamed | HealthcareService.photo |
+| HealthcareService.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.contact |
+| HealthcareService.coverageArea | UseElementRenamed | HealthcareService.coverageArea |
+| HealthcareService.serviceProvisionCode | UseElementRenamed | HealthcareService.serviceProvisionCode |
+| HealthcareService.eligibility | UseElementRenamed | HealthcareService.eligibility |
+| HealthcareService.eligibility.id | UseElementRenamed | HealthcareService.eligibility.id |
+| HealthcareService.eligibility.extension | UseElementRenamed | HealthcareService.eligibility.extension |
+| HealthcareService.eligibility.modifierExtension | UseElementRenamed | HealthcareService.eligibility.modifierExtension |
+| HealthcareService.eligibility.code | UseElementRenamed | HealthcareService.eligibility.code |
+| HealthcareService.eligibility.comment | UseElementRenamed | HealthcareService.eligibility.comment |
+| HealthcareService.program | UseElementRenamed | HealthcareService.program |
+| HealthcareService.characteristic | UseElementRenamed | HealthcareService.characteristic |
+| HealthcareService.communication | UseElementRenamed | HealthcareService.communication |
+| HealthcareService.referralMethod | UseElementRenamed | HealthcareService.referralMethod |
+| HealthcareService.appointmentRequired | UseElementRenamed | HealthcareService.appointmentRequired |
+| HealthcareService.availability | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.availability |
+| HealthcareService.endpoint | UseElementRenamed | HealthcareService.endpoint |

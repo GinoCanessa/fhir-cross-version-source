@@ -1,0 +1,43 @@
+### Lookup for FHIR R2 Medication for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Medication.id | UseElementSameName | Medication.id |
+| Medication.meta | UseElementSameName | Medication.meta |
+| Medication.implicitRules | UseElementSameName | Medication.implicitRules |
+| Medication.language | UseElementSameName | Medication.language |
+| Medication.text | UseElementSameName | Medication.text |
+| Medication.contained | UseElementSameName | Medication.contained |
+| Medication.extension | UseElementSameName | Medication.extension |
+| Medication.modifierExtension | UseElementSameName | Medication.modifierExtension |
+| Medication.code | UseElementSameName | Medication.code |
+| Medication.isBrand | UseElementSameName | Medication.isBrand |
+| Medication.manufacturer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.manufacturer |
+| Medication.product | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.product |
+| Medication.product.id | UseExtensionFromAncestor | - |
+| Medication.product.extension | UseExtensionFromAncestor | - |
+| Medication.product.modifierExtension | UseExtensionFromAncestor | - |
+| Medication.product.form | UseExtensionFromAncestor | - |
+| Medication.product.ingredient | UseExtensionFromAncestor | - |
+| Medication.product.ingredient.id | UseExtensionFromAncestor | - |
+| Medication.product.ingredient.extension | UseExtensionFromAncestor | - |
+| Medication.product.ingredient.modifierExtension | UseExtensionFromAncestor | - |
+| Medication.product.ingredient.item | UseExtensionFromAncestor | - |
+| Medication.product.ingredient.amount | UseExtensionFromAncestor | - |
+| Medication.product.batch | UseExtensionFromAncestor | - |
+| Medication.product.batch.id | UseExtensionFromAncestor | - |
+| Medication.product.batch.extension | UseExtensionFromAncestor | - |
+| Medication.product.batch.modifierExtension | UseExtensionFromAncestor | - |
+| Medication.product.batch.lotNumber | UseExtensionFromAncestor | - |
+| Medication.product.batch.expirationDate | UseExtensionFromAncestor | - |
+| Medication.package | UseElementSameName | Medication.package |
+| Medication.package.id | UseElementSameName | Medication.package.id |
+| Medication.package.extension | UseElementSameName | Medication.package.extension |
+| Medication.package.modifierExtension | UseElementSameName | Medication.package.modifierExtension |
+| Medication.package.container | UseElementSameName | Medication.package.container |
+| Medication.package.content | UseElementSameName | Medication.package.content |
+| Medication.package.content.id | UseElementSameName | Medication.package.content.id |
+| Medication.package.content.extension | UseElementSameName | Medication.package.content.extension |
+| Medication.package.content.modifierExtension | UseElementSameName | Medication.package.content.modifierExtension |
+| Medication.package.content.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.package.content.item |
+| Medication.package.content.amount | UseElementSameName | Medication.package.content.amount |

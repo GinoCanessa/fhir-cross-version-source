@@ -1,0 +1,42 @@
+### Lookup for FHIR R2 Provenance for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Provenance.id | UseElementSameName | Provenance.id |
+| Provenance.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.meta |
+| Provenance.implicitRules | UseElementSameName | Provenance.implicitRules |
+| Provenance.language | UseElementSameName | Provenance.language |
+| Provenance.text | UseElementSameName | Provenance.text |
+| Provenance.contained | UseElementSameName | Provenance.contained |
+| Provenance.extension | UseElementSameName | Provenance.extension |
+| Provenance.modifierExtension | UseElementSameName | Provenance.modifierExtension |
+| Provenance.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.target |
+| Provenance.period | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.period |
+| Provenance.recorded | UseElementSameName | Provenance.recorded |
+| Provenance.reason | UseElementSameName | Provenance.reason |
+| Provenance.activity | UseElementSameName | Provenance.activity |
+| Provenance.location | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.location |
+| Provenance.policy | UseElementSameName | Provenance.policy |
+| Provenance.agent | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.agent |
+| Provenance.agent.id | UseExtensionFromAncestor | - |
+| Provenance.agent.extension | UseExtensionFromAncestor | - |
+| Provenance.agent.modifierExtension | UseExtensionFromAncestor | - |
+| Provenance.agent.role | UseExtensionFromAncestor | - |
+| Provenance.agent.actor | UseExtensionFromAncestor | - |
+| Provenance.agent.userId | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent.id | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent.extension | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent.modifierExtension | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent.type | UseExtensionFromAncestor | - |
+| Provenance.agent.relatedAgent.target | UseExtensionFromAncestor | - |
+| Provenance.entity | UseElementSameName | Provenance.entity |
+| Provenance.entity.id | UseElementSameName | Provenance.entity.id |
+| Provenance.entity.extension | UseElementSameName | Provenance.entity.extension |
+| Provenance.entity.modifierExtension | UseElementSameName | Provenance.entity.modifierExtension |
+| Provenance.entity.role | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.entity.role |
+| Provenance.entity.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.entity.type |
+| Provenance.entity.reference | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.entity.reference |
+| Provenance.entity.display | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.entity.display |
+| Provenance.entity.agent | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.entity.agent |
+| Provenance.signature | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.signature |

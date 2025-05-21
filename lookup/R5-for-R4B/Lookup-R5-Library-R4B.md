@@ -1,0 +1,45 @@
+### Lookup for FHIR R5 Library for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Library.id | UseElementRenamed | Library.id |
+| Library.meta | UseElementRenamed | Library.meta |
+| Library.implicitRules | UseElementRenamed | Library.implicitRules |
+| Library.language | UseElementRenamed | Library.language |
+| Library.text | UseElementRenamed | Library.text |
+| Library.contained | UseElementRenamed | Library.contained |
+| Library.extension | UseElementRenamed | Library.extension |
+| Library.modifierExtension | UseElementRenamed | Library.modifierExtension |
+| Library.url | UseElementRenamed | Library.url |
+| Library.identifier | UseElementRenamed | Library.identifier |
+| Library.version | UseElementRenamed | Library.version |
+| Library.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.versionAlgorithm |
+| Library.name | UseElementRenamed | Library.name |
+| Library.title | UseElementRenamed | Library.title |
+| Library.subtitle | UseElementRenamed | Library.subtitle |
+| Library.status | UseElementRenamed | Library.status |
+| Library.experimental | UseElementRenamed | Library.experimental |
+| Library.type | UseElementRenamed | Library.type |
+| Library.subject[x] | UseElementRenamed | Library.subject[x] |
+| Library.date | UseElementRenamed | Library.date |
+| Library.publisher | UseElementRenamed | Library.publisher |
+| Library.contact | UseElementRenamed | Library.contact |
+| Library.description | UseElementRenamed | Library.description |
+| Library.useContext | UseElementRenamed | Library.useContext |
+| Library.jurisdiction | UseElementRenamed | Library.jurisdiction |
+| Library.purpose | UseElementRenamed | Library.purpose |
+| Library.usage | UseElementRenamed | Library.usage |
+| Library.copyright | UseElementRenamed | Library.copyright |
+| Library.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.copyrightLabel |
+| Library.approvalDate | UseElementRenamed | Library.approvalDate |
+| Library.lastReviewDate | UseElementRenamed | Library.lastReviewDate |
+| Library.effectivePeriod | UseElementRenamed | Library.effectivePeriod |
+| Library.topic | UseElementRenamed | Library.topic |
+| Library.author | UseElementRenamed | Library.author |
+| Library.editor | UseElementRenamed | Library.editor |
+| Library.reviewer | UseElementRenamed | Library.reviewer |
+| Library.endorser | UseElementRenamed | Library.endorser |
+| Library.relatedArtifact | UseElementRenamed | Library.relatedArtifact |
+| Library.parameter | UseElementRenamed | Library.parameter |
+| Library.dataRequirement | UseElementRenamed | Library.dataRequirement |
+| Library.content | UseElementRenamed | Library.content |

@@ -1,0 +1,42 @@
+### Lookup for FHIR R5 EventDefinition for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| EventDefinition.id | UseElementRenamed | EventDefinition.id |
+| EventDefinition.meta | UseElementRenamed | EventDefinition.meta |
+| EventDefinition.implicitRules | UseElementRenamed | EventDefinition.implicitRules |
+| EventDefinition.language | UseElementRenamed | EventDefinition.language |
+| EventDefinition.text | UseElementRenamed | EventDefinition.text |
+| EventDefinition.contained | UseElementRenamed | EventDefinition.contained |
+| EventDefinition.extension | UseElementRenamed | EventDefinition.extension |
+| EventDefinition.modifierExtension | UseElementRenamed | EventDefinition.modifierExtension |
+| EventDefinition.url | UseElementRenamed | EventDefinition.url |
+| EventDefinition.identifier | UseElementRenamed | EventDefinition.identifier |
+| EventDefinition.version | UseElementRenamed | EventDefinition.version |
+| EventDefinition.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EventDefinition.versionAlgorithm |
+| EventDefinition.name | UseElementRenamed | EventDefinition.name |
+| EventDefinition.title | UseElementRenamed | EventDefinition.title |
+| EventDefinition.subtitle | UseElementRenamed | EventDefinition.subtitle |
+| EventDefinition.status | UseElementRenamed | EventDefinition.status |
+| EventDefinition.experimental | UseElementRenamed | EventDefinition.experimental |
+| EventDefinition.subject[x] | UseElementRenamed | EventDefinition.subject[x] |
+| EventDefinition.date | UseElementRenamed | EventDefinition.date |
+| EventDefinition.publisher | UseElementRenamed | EventDefinition.publisher |
+| EventDefinition.contact | UseElementRenamed | EventDefinition.contact |
+| EventDefinition.description | UseElementRenamed | EventDefinition.description |
+| EventDefinition.useContext | UseElementRenamed | EventDefinition.useContext |
+| EventDefinition.jurisdiction | UseElementRenamed | EventDefinition.jurisdiction |
+| EventDefinition.purpose | UseElementRenamed | EventDefinition.purpose |
+| EventDefinition.usage | UseElementRenamed | EventDefinition.usage |
+| EventDefinition.copyright | UseElementRenamed | EventDefinition.copyright |
+| EventDefinition.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EventDefinition.copyrightLabel |
+| EventDefinition.approvalDate | UseElementRenamed | EventDefinition.approvalDate |
+| EventDefinition.lastReviewDate | UseElementRenamed | EventDefinition.lastReviewDate |
+| EventDefinition.effectivePeriod | UseElementRenamed | EventDefinition.effectivePeriod |
+| EventDefinition.topic | UseElementRenamed | EventDefinition.topic |
+| EventDefinition.author | UseElementRenamed | EventDefinition.author |
+| EventDefinition.editor | UseElementRenamed | EventDefinition.editor |
+| EventDefinition.reviewer | UseElementRenamed | EventDefinition.reviewer |
+| EventDefinition.endorser | UseElementRenamed | EventDefinition.endorser |
+| EventDefinition.relatedArtifact | UseElementRenamed | EventDefinition.relatedArtifact |
+| EventDefinition.trigger | UseElementRenamed | EventDefinition.trigger |

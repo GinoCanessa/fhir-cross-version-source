@@ -1,0 +1,40 @@
+### Lookup for FHIR R5 BodyStructure for use in FHIR R3
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| BodyStructure.id | UseElementSameName | BodySite.id |
+| BodyStructure.meta | UseElementSameName | BodySite.meta |
+| BodyStructure.implicitRules | UseElementSameName | BodySite.implicitRules |
+| BodyStructure.language | UseElementSameName | BodySite.language |
+| BodyStructure.text | UseElementSameName | BodySite.text |
+| BodyStructure.contained | UseElementSameName | BodySite.contained |
+| BodyStructure.extension | UseElementSameName | BodySite.extension |
+| BodyStructure.modifierExtension | UseElementSameName | BodySite.modifierExtension |
+| BodyStructure.identifier | UseElementSameName | BodySite.identifier |
+| BodyStructure.active | UseElementSameName | BodySite.active |
+| BodyStructure.morphology | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.morphology |
+| BodyStructure.includedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure |
+| BodyStructure.includedStructure.id | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.extension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.modifierExtension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.structure | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.laterality | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.id | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.extension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.modifierExtension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.id | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.extension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.modifierExtension | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.spatialReference | UseExtensionFromAncestor | - |
+| BodyStructure.includedStructure.qualifier | UseExtensionFromAncestor | - |
+| BodyStructure.excludedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure |
+| BodyStructure.description | UseElementSameName | BodySite.description |
+| BodyStructure.image | UseElementSameName | BodySite.image |
+| BodyStructure.patient | UseElementSameName | BodySite.patient |

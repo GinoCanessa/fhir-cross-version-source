@@ -1,0 +1,39 @@
+### Lookup for FHIR R3 Library for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Library | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library |
+| Library.id | UseExtensionFromAncestor | - |
+| Library.meta | UseExtensionFromAncestor | - |
+| Library.implicitRules | UseExtensionFromAncestor | - |
+| Library.language | UseExtensionFromAncestor | - |
+| Library.text | UseExtensionFromAncestor | - |
+| Library.contained | UseExtensionFromAncestor | - |
+| Library.extension | UseExtensionFromAncestor | - |
+| Library.modifierExtension | UseExtensionFromAncestor | - |
+| Library.url | UseExtensionFromAncestor | - |
+| Library.identifier | UseExtensionFromAncestor | - |
+| Library.version | UseExtensionFromAncestor | - |
+| Library.name | UseExtensionFromAncestor | - |
+| Library.title | UseExtensionFromAncestor | - |
+| Library.status | UseExtensionFromAncestor | - |
+| Library.experimental | UseExtensionFromAncestor | - |
+| Library.type | UseExtensionFromAncestor | - |
+| Library.date | UseExtensionFromAncestor | - |
+| Library.publisher | UseExtensionFromAncestor | - |
+| Library.description | UseExtensionFromAncestor | - |
+| Library.purpose | UseExtensionFromAncestor | - |
+| Library.usage | UseExtensionFromAncestor | - |
+| Library.approvalDate | UseExtensionFromAncestor | - |
+| Library.lastReviewDate | UseExtensionFromAncestor | - |
+| Library.effectivePeriod | UseExtensionFromAncestor | - |
+| Library.useContext | UseExtensionFromAncestor | - |
+| Library.jurisdiction | UseExtensionFromAncestor | - |
+| Library.topic | UseExtensionFromAncestor | - |
+| Library.contributor | UseExtensionFromAncestor | - |
+| Library.contact | UseExtensionFromAncestor | - |
+| Library.copyright | UseExtensionFromAncestor | - |
+| Library.relatedArtifact | UseExtensionFromAncestor | - |
+| Library.parameter | UseExtensionFromAncestor | - |
+| Library.dataRequirement | UseExtensionFromAncestor | - |
+| Library.content | UseExtensionFromAncestor | - |

@@ -1,0 +1,42 @@
+### Lookup for FHIR R5 Subscription for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Subscription.id | UseElementSameName | Subscription.id |
+| Subscription.meta | UseElementSameName | Subscription.meta |
+| Subscription.implicitRules | UseElementSameName | Subscription.implicitRules |
+| Subscription.language | UseElementSameName | Subscription.language |
+| Subscription.text | UseElementSameName | Subscription.text |
+| Subscription.contained | UseElementSameName | Subscription.contained |
+| Subscription.extension | UseElementSameName | Subscription.extension |
+| Subscription.modifierExtension | UseElementSameName | Subscription.modifierExtension |
+| Subscription.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.identifier |
+| Subscription.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.name |
+| Subscription.status | UseElementSameName | Subscription.status |
+| Subscription.topic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.topic |
+| Subscription.contact | UseElementSameName | Subscription.contact |
+| Subscription.end | UseElementSameName | Subscription.end |
+| Subscription.managingEntity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.managingEntity |
+| Subscription.reason | UseElementSameName | Subscription.reason |
+| Subscription.filterBy | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.filterBy |
+| Subscription.filterBy.id | UseExtensionFromAncestor | - |
+| Subscription.filterBy.extension | UseExtensionFromAncestor | - |
+| Subscription.filterBy.modifierExtension | UseExtensionFromAncestor | - |
+| Subscription.filterBy.resourceType | UseExtensionFromAncestor | - |
+| Subscription.filterBy.filterParameter | UseExtensionFromAncestor | - |
+| Subscription.filterBy.comparator | UseExtensionFromAncestor | - |
+| Subscription.filterBy.modifier | UseExtensionFromAncestor | - |
+| Subscription.filterBy.value | UseExtensionFromAncestor | - |
+| Subscription.channelType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.channelType |
+| Subscription.endpoint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.endpoint |
+| Subscription.parameter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.parameter |
+| Subscription.parameter.id | UseExtensionFromAncestor | - |
+| Subscription.parameter.extension | UseExtensionFromAncestor | - |
+| Subscription.parameter.modifierExtension | UseExtensionFromAncestor | - |
+| Subscription.parameter.name | UseExtensionFromAncestor | - |
+| Subscription.parameter.value | UseExtensionFromAncestor | - |
+| Subscription.heartbeatPeriod | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.heartbeatPeriod |
+| Subscription.timeout | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.timeout |
+| Subscription.contentType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.contentType |
+| Subscription.content | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.content |
+| Subscription.maxCount | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.maxCount |

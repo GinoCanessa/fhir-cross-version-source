@@ -1,0 +1,42 @@
+### Lookup for FHIR R2 PaymentReconciliation for use in FHIR R5
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| PaymentReconciliation.id | UseElementSameName | PaymentReconciliation.id |
+| PaymentReconciliation.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.meta |
+| PaymentReconciliation.implicitRules | UseElementSameName | PaymentReconciliation.implicitRules |
+| PaymentReconciliation.language | UseElementSameName | PaymentReconciliation.language |
+| PaymentReconciliation.text | UseElementSameName | PaymentReconciliation.text |
+| PaymentReconciliation.contained | UseElementSameName | PaymentReconciliation.contained |
+| PaymentReconciliation.extension | UseElementSameName | PaymentReconciliation.extension |
+| PaymentReconciliation.modifierExtension | UseElementSameName | PaymentReconciliation.modifierExtension |
+| PaymentReconciliation.identifier | UseElementSameName | PaymentReconciliation.identifier |
+| PaymentReconciliation.request | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.request |
+| PaymentReconciliation.outcome | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.outcome |
+| PaymentReconciliation.disposition | UseElementSameName | PaymentReconciliation.disposition |
+| PaymentReconciliation.ruleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.ruleset |
+| PaymentReconciliation.originalRuleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.originalRuleset |
+| PaymentReconciliation.created | UseElementSameName | PaymentReconciliation.created |
+| PaymentReconciliation.period | UseElementSameName | PaymentReconciliation.period |
+| PaymentReconciliation.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.organization |
+| PaymentReconciliation.requestProvider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.requestProvider |
+| PaymentReconciliation.requestOrganization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.requestOrganization |
+| PaymentReconciliation.detail | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.detail |
+| PaymentReconciliation.detail.id | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.extension | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.modifierExtension | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.type | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.request | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.responce | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.submitter | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.payee | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.date | UseExtensionFromAncestor | - |
+| PaymentReconciliation.detail.amount | UseExtensionFromAncestor | - |
+| PaymentReconciliation.form | UseElementRenamed | PaymentReconciliation.formCode |
+| PaymentReconciliation.total | UseElementRenamed | PaymentReconciliation.amount |
+| PaymentReconciliation.note | UseElementRenamed | PaymentReconciliation.processNote |
+| PaymentReconciliation.note.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.note.id |
+| PaymentReconciliation.note.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.note.extension |
+| PaymentReconciliation.note.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.note.modifierExtension |
+| PaymentReconciliation.note.type | UseElementRenamed | PaymentReconciliation.processNote.type |
+| PaymentReconciliation.note.text | UseElementRenamed | PaymentReconciliation.processNote.text |

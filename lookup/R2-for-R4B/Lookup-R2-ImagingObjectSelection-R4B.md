@@ -1,0 +1,45 @@
+### Lookup for FHIR R2 ImagingObjectSelection for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ImagingObjectSelection | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection |
+| ImagingObjectSelection.id | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.meta | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.implicitRules | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.language | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.text | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.contained | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.extension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.modifierExtension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.uid | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.patient | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.title | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.description | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.author | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.authoringTime | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.id | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.extension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.modifierExtension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.uid | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.url | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.imagingStudy | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.id | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.extension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.modifierExtension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.uid | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.url | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.id | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.extension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.modifierExtension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.sopClass | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.uid | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.url | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames.id | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames.extension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames.modifierExtension | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames.frameNumbers | UseExtensionFromAncestor | - |
+| ImagingObjectSelection.study.series.instance.frames.url | UseExtensionFromAncestor | - |

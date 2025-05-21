@@ -1,0 +1,39 @@
+### Lookup for FHIR R2 DiagnosticOrder for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| DiagnosticOrder.id | UseElementRenamed | ServiceRequest.id |
+| DiagnosticOrder.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.meta |
+| DiagnosticOrder.implicitRules | UseElementRenamed | ServiceRequest.implicitRules |
+| DiagnosticOrder.language | UseElementRenamed | ServiceRequest.language |
+| DiagnosticOrder.text | UseElementRenamed | ServiceRequest.text |
+| DiagnosticOrder.contained | UseElementRenamed | ServiceRequest.contained |
+| DiagnosticOrder.extension | UseElementRenamed | ServiceRequest.extension |
+| DiagnosticOrder.modifierExtension | UseElementRenamed | ServiceRequest.modifierExtension |
+| DiagnosticOrder.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.subject |
+| DiagnosticOrder.orderer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.orderer |
+| DiagnosticOrder.identifier | UseElementRenamed | ServiceRequest.identifier |
+| DiagnosticOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.encounter |
+| DiagnosticOrder.reason | UseElementRenamed | ServiceRequest.reasonCode |
+| DiagnosticOrder.supportingInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.supportingInformation |
+| DiagnosticOrder.specimen | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.specimen |
+| DiagnosticOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.status |
+| DiagnosticOrder.priority | UseElementRenamed | ServiceRequest.priority |
+| DiagnosticOrder.event | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.event |
+| DiagnosticOrder.event.id | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.extension | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.modifierExtension | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.status | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.description | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.dateTime | UseExtensionFromAncestor | - |
+| DiagnosticOrder.event.actor | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.item |
+| DiagnosticOrder.item.id | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.extension | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.modifierExtension | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.code | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.specimen | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.bodySite | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.status | UseExtensionFromAncestor | - |
+| DiagnosticOrder.item.event | UseExtensionFromAncestor | - |
+| DiagnosticOrder.note | UseElementRenamed | ServiceRequest.note |

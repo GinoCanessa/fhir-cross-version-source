@@ -1,0 +1,43 @@
+### Lookup for FHIR R2 MessageHeader for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MessageHeader.id | UseElementSameName | MessageHeader.id |
+| MessageHeader.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.meta |
+| MessageHeader.implicitRules | UseElementSameName | MessageHeader.implicitRules |
+| MessageHeader.language | UseElementSameName | MessageHeader.language |
+| MessageHeader.text | UseElementSameName | MessageHeader.text |
+| MessageHeader.contained | UseElementSameName | MessageHeader.contained |
+| MessageHeader.extension | UseElementSameName | MessageHeader.extension |
+| MessageHeader.modifierExtension | UseElementSameName | MessageHeader.modifierExtension |
+| MessageHeader.timestamp | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.timestamp |
+| MessageHeader.event | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.event |
+| MessageHeader.response | UseElementSameName | MessageHeader.response |
+| MessageHeader.response.id | UseElementSameName | MessageHeader.response.id |
+| MessageHeader.response.extension | UseElementSameName | MessageHeader.response.extension |
+| MessageHeader.response.modifierExtension | UseElementSameName | MessageHeader.response.modifierExtension |
+| MessageHeader.response.identifier | UseElementSameName | MessageHeader.response.identifier |
+| MessageHeader.response.code | UseElementSameName | MessageHeader.response.code |
+| MessageHeader.response.details | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.response.details |
+| MessageHeader.source | UseElementSameName | MessageHeader.source |
+| MessageHeader.source.id | UseElementSameName | MessageHeader.source.id |
+| MessageHeader.source.extension | UseElementSameName | MessageHeader.source.extension |
+| MessageHeader.source.modifierExtension | UseElementSameName | MessageHeader.source.modifierExtension |
+| MessageHeader.source.name | UseElementSameName | MessageHeader.source.name |
+| MessageHeader.source.software | UseElementSameName | MessageHeader.source.software |
+| MessageHeader.source.version | UseElementSameName | MessageHeader.source.version |
+| MessageHeader.source.contact | UseElementSameName | MessageHeader.source.contact |
+| MessageHeader.source.endpoint | UseElementSameName | MessageHeader.source.endpoint |
+| MessageHeader.destination | UseElementSameName | MessageHeader.destination |
+| MessageHeader.destination.id | UseElementSameName | MessageHeader.destination.id |
+| MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
+| MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
+| MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
+| MessageHeader.destination.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.destination.target |
+| MessageHeader.destination.endpoint | UseElementSameName | MessageHeader.destination.endpoint |
+| MessageHeader.enterer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.enterer |
+| MessageHeader.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.author |
+| MessageHeader.receiver | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.receiver |
+| MessageHeader.responsible | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.responsible |
+| MessageHeader.reason | UseElementSameName | MessageHeader.reason |
+| MessageHeader.data | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.data |

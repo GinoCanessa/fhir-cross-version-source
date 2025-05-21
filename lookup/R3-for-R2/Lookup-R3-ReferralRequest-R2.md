@@ -1,0 +1,40 @@
+### Lookup for FHIR R3 ReferralRequest for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ReferralRequest.id | UseElementRenamed | ReferralRequest.id |
+| ReferralRequest.meta | UseElementRenamed | ReferralRequest.meta |
+| ReferralRequest.implicitRules | UseElementRenamed | ReferralRequest.implicitRules |
+| ReferralRequest.language | UseElementRenamed | ReferralRequest.language |
+| ReferralRequest.text | UseElementRenamed | ReferralRequest.text |
+| ReferralRequest.contained | UseElementRenamed | ReferralRequest.contained |
+| ReferralRequest.extension | UseElementRenamed | ReferralRequest.extension |
+| ReferralRequest.modifierExtension | UseElementRenamed | ReferralRequest.modifierExtension |
+| ReferralRequest.identifier | UseElementRenamed | ReferralRequest.identifier |
+| ReferralRequest.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.definition |
+| ReferralRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.basedOn |
+| ReferralRequest.replaces | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.replaces |
+| ReferralRequest.groupIdentifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.groupIdentifier |
+| ReferralRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.status |
+| ReferralRequest.intent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.intent |
+| ReferralRequest.type | UseElementRenamed | ReferralRequest.type |
+| ReferralRequest.priority | UseElementRenamed | ReferralRequest.priority |
+| ReferralRequest.serviceRequested | UseElementRenamed | ReferralRequest.serviceRequested |
+| ReferralRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.subject |
+| ReferralRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.context |
+| ReferralRequest.occurrence[x] | UseElementRenamed | ReferralRequest.fulfillmentTime |
+| ReferralRequest.authoredOn | UseElementRenamed | ReferralRequest.date |
+| ReferralRequest.requester | UseElementRenamed | ReferralRequest.requester |
+| ReferralRequest.requester.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.id |
+| ReferralRequest.requester.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.extension |
+| ReferralRequest.requester.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.modifierExtension |
+| ReferralRequest.requester.agent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.agent |
+| ReferralRequest.requester.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.requester.onBehalfOf |
+| ReferralRequest.specialty | UseElementRenamed | ReferralRequest.specialty |
+| ReferralRequest.recipient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.recipient |
+| ReferralRequest.reasonCode | UseElementRenamed | ReferralRequest.reason |
+| ReferralRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.reasonReference |
+| ReferralRequest.description | UseElementRenamed | ReferralRequest.description |
+| ReferralRequest.supportingInfo | UseElementRenamed | ReferralRequest.supportingInformation |
+| ReferralRequest.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.note |
+| ReferralRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.relevantHistory |

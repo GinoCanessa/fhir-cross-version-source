@@ -1,0 +1,39 @@
+### Lookup for FHIR R3 Device for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Device.id | UseElementSameName | Device.id |
+| Device.meta | UseElementSameName | Device.meta |
+| Device.implicitRules | UseElementSameName | Device.implicitRules |
+| Device.language | UseElementSameName | Device.language |
+| Device.text | UseElementSameName | Device.text |
+| Device.contained | UseElementSameName | Device.contained |
+| Device.extension | UseElementSameName | Device.extension |
+| Device.modifierExtension | UseElementSameName | Device.modifierExtension |
+| Device.identifier | UseElementSameName | Device.identifier |
+| Device.udi | UseElementRenamed | Device.udi |
+| Device.udi.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.id |
+| Device.udi.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.extension |
+| Device.udi.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.modifierExtension |
+| Device.udi.deviceIdentifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.deviceIdentifier |
+| Device.udi.name | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.name |
+| Device.udi.jurisdiction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.jurisdiction |
+| Device.udi.carrierHRF | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.carrierHRF |
+| Device.udi.carrierAIDC | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.carrierAIDC |
+| Device.udi.issuer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.issuer |
+| Device.udi.entryType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.udi.entryType |
+| Device.status | UseElementSameName | Device.status |
+| Device.type | UseElementSameName | Device.type |
+| Device.lotNumber | UseElementSameName | Device.lotNumber |
+| Device.manufacturer | UseElementSameName | Device.manufacturer |
+| Device.manufactureDate | UseElementSameName | Device.manufactureDate |
+| Device.expirationDate | UseElementSameName | Device.expiry |
+| Device.model | UseElementRenamed | Device.model |
+| Device.version | UseElementSameName | Device.version |
+| Device.patient | UseElementSameName | Device.patient |
+| Device.owner | UseElementSameName | Device.owner |
+| Device.contact | UseElementSameName | Device.contact |
+| Device.location | UseElementSameName | Device.location |
+| Device.url | UseElementSameName | Device.url |
+| Device.note | UseElementSameName | Device.note |
+| Device.safety | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Device.safety |

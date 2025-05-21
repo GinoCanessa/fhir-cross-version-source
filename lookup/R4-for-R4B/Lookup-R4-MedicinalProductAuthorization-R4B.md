@@ -1,0 +1,44 @@
+### Lookup for FHIR R4 MedicinalProductAuthorization for use in FHIR R4B
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| MedicinalProductAuthorization | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductAuthorization |
+| MedicinalProductAuthorization.id | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.meta | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.implicitRules | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.language | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.text | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.contained | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.extension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.modifierExtension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.identifier | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.subject | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.country | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdiction | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.status | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.statusDate | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.restoreDate | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.validityPeriod | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.dataExclusivityPeriod | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.dateOfFirstAuthorization | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.internationalBirthDate | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.legalBasis | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.id | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.extension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.modifierExtension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.identifier | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.country | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.jurisdiction | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.legalStatusOfSupply | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.jurisdictionalAuthorization.validityPeriod | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.holder | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.regulator | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.id | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.extension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.modifierExtension | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.identifier | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.type | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.date[x] | UseExtensionFromAncestor | - |
+| MedicinalProductAuthorization.procedure.application | UseExtensionFromAncestor | - |

@@ -1,0 +1,44 @@
+### Lookup for FHIR R4B ChargeItem for use in FHIR R2
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ChargeItem | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ChargeItem |
+| ChargeItem.id | UseExtensionFromAncestor | - |
+| ChargeItem.meta | UseExtensionFromAncestor | - |
+| ChargeItem.implicitRules | UseExtensionFromAncestor | - |
+| ChargeItem.language | UseExtensionFromAncestor | - |
+| ChargeItem.text | UseExtensionFromAncestor | - |
+| ChargeItem.contained | UseExtensionFromAncestor | - |
+| ChargeItem.extension | UseExtensionFromAncestor | - |
+| ChargeItem.modifierExtension | UseExtensionFromAncestor | - |
+| ChargeItem.identifier | UseExtensionFromAncestor | - |
+| ChargeItem.definitionUri | UseExtensionFromAncestor | - |
+| ChargeItem.definitionCanonical | UseExtensionFromAncestor | - |
+| ChargeItem.status | UseExtensionFromAncestor | - |
+| ChargeItem.partOf | UseExtensionFromAncestor | - |
+| ChargeItem.code | UseExtensionFromAncestor | - |
+| ChargeItem.subject | UseExtensionFromAncestor | - |
+| ChargeItem.context | UseExtensionFromAncestor | - |
+| ChargeItem.occurrence[x] | UseExtensionFromAncestor | - |
+| ChargeItem.performer | UseExtensionFromAncestor | - |
+| ChargeItem.performer.id | UseExtensionFromAncestor | - |
+| ChargeItem.performer.extension | UseExtensionFromAncestor | - |
+| ChargeItem.performer.modifierExtension | UseExtensionFromAncestor | - |
+| ChargeItem.performer.function | UseExtensionFromAncestor | - |
+| ChargeItem.performer.actor | UseExtensionFromAncestor | - |
+| ChargeItem.performingOrganization | UseExtensionFromAncestor | - |
+| ChargeItem.requestingOrganization | UseExtensionFromAncestor | - |
+| ChargeItem.costCenter | UseExtensionFromAncestor | - |
+| ChargeItem.quantity | UseExtensionFromAncestor | - |
+| ChargeItem.bodysite | UseExtensionFromAncestor | - |
+| ChargeItem.factorOverride | UseExtensionFromAncestor | - |
+| ChargeItem.priceOverride | UseExtensionFromAncestor | - |
+| ChargeItem.overrideReason | UseExtensionFromAncestor | - |
+| ChargeItem.enterer | UseExtensionFromAncestor | - |
+| ChargeItem.enteredDate | UseExtensionFromAncestor | - |
+| ChargeItem.reason | UseExtensionFromAncestor | - |
+| ChargeItem.service | UseExtensionFromAncestor | - |
+| ChargeItem.product[x] | UseExtensionFromAncestor | - |
+| ChargeItem.account | UseExtensionFromAncestor | - |
+| ChargeItem.note | UseExtensionFromAncestor | - |
+| ChargeItem.supportingInformation | UseExtensionFromAncestor | - |

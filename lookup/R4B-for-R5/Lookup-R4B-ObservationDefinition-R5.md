@@ -1,0 +1,43 @@
+### Lookup for FHIR R4B ObservationDefinition for use in FHIR R5
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ObservationDefinition.id | UseElementSameName | ObservationDefinition.id |
+| ObservationDefinition.meta | UseElementSameName | ObservationDefinition.meta |
+| ObservationDefinition.implicitRules | UseElementSameName | ObservationDefinition.implicitRules |
+| ObservationDefinition.language | UseElementSameName | ObservationDefinition.language |
+| ObservationDefinition.text | UseElementSameName | ObservationDefinition.text |
+| ObservationDefinition.contained | UseElementSameName | ObservationDefinition.contained |
+| ObservationDefinition.extension | UseElementSameName | ObservationDefinition.extension |
+| ObservationDefinition.modifierExtension | UseElementSameName | ObservationDefinition.modifierExtension |
+| ObservationDefinition.category | UseElementSameName | ObservationDefinition.category |
+| ObservationDefinition.code | UseElementSameName | ObservationDefinition.code |
+| ObservationDefinition.identifier | UseElementSameName | ObservationDefinition.identifier |
+| ObservationDefinition.permittedDataType | UseElementSameName | ObservationDefinition.permittedDataType |
+| ObservationDefinition.multipleResultsAllowed | UseElementSameName | ObservationDefinition.multipleResultsAllowed |
+| ObservationDefinition.method | UseElementSameName | ObservationDefinition.method |
+| ObservationDefinition.preferredReportName | UseElementSameName | ObservationDefinition.preferredReportName |
+| ObservationDefinition.quantitativeDetails | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.quantitativeDetails |
+| ObservationDefinition.quantitativeDetails.id | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.extension | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.modifierExtension | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.customaryUnit | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.unit | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.conversionFactor | UseExtensionFromAncestor | - |
+| ObservationDefinition.quantitativeDetails.decimalPrecision | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.qualifiedInterval |
+| ObservationDefinition.qualifiedInterval.id | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.extension | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.modifierExtension | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.category | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.range | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.context | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.appliesTo | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.gender | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.age | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.gestationalAge | UseExtensionFromAncestor | - |
+| ObservationDefinition.qualifiedInterval.condition | UseExtensionFromAncestor | - |
+| ObservationDefinition.validCodedValueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.validCodedValueSet |
+| ObservationDefinition.normalCodedValueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.normalCodedValueSet |
+| ObservationDefinition.abnormalCodedValueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.abnormalCodedValueSet |
+| ObservationDefinition.criticalCodedValueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.criticalCodedValueSet |

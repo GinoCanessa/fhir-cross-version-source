@@ -1,0 +1,43 @@
+### Lookup for FHIR R4B ObservationDefinition for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| ObservationDefinition.id | UseElementSameName | ObservationDefinition.id |
+| ObservationDefinition.meta | UseElementSameName | ObservationDefinition.meta |
+| ObservationDefinition.implicitRules | UseElementSameName | ObservationDefinition.implicitRules |
+| ObservationDefinition.language | UseElementSameName | ObservationDefinition.language |
+| ObservationDefinition.text | UseElementSameName | ObservationDefinition.text |
+| ObservationDefinition.contained | UseElementSameName | ObservationDefinition.contained |
+| ObservationDefinition.extension | UseElementSameName | ObservationDefinition.extension |
+| ObservationDefinition.modifierExtension | UseElementSameName | ObservationDefinition.modifierExtension |
+| ObservationDefinition.category | UseElementSameName | ObservationDefinition.category |
+| ObservationDefinition.code | UseElementSameName | ObservationDefinition.code |
+| ObservationDefinition.identifier | UseElementSameName | ObservationDefinition.identifier |
+| ObservationDefinition.permittedDataType | UseElementSameName | ObservationDefinition.permittedDataType |
+| ObservationDefinition.multipleResultsAllowed | UseElementSameName | ObservationDefinition.multipleResultsAllowed |
+| ObservationDefinition.method | UseElementSameName | ObservationDefinition.method |
+| ObservationDefinition.preferredReportName | UseElementSameName | ObservationDefinition.preferredReportName |
+| ObservationDefinition.quantitativeDetails | UseElementRenamed | ObservationDefinition.quantitativeDetails |
+| ObservationDefinition.quantitativeDetails.id | UseElementRenamed | ObservationDefinition.quantitativeDetails.id |
+| ObservationDefinition.quantitativeDetails.extension | UseElementRenamed | ObservationDefinition.quantitativeDetails.extension |
+| ObservationDefinition.quantitativeDetails.modifierExtension | UseElementRenamed | ObservationDefinition.quantitativeDetails.modifierExtension |
+| ObservationDefinition.quantitativeDetails.customaryUnit | UseElementRenamed | ObservationDefinition.quantitativeDetails.customaryUnit |
+| ObservationDefinition.quantitativeDetails.unit | UseElementRenamed | ObservationDefinition.quantitativeDetails.unit |
+| ObservationDefinition.quantitativeDetails.conversionFactor | UseElementRenamed | ObservationDefinition.quantitativeDetails.conversionFactor |
+| ObservationDefinition.quantitativeDetails.decimalPrecision | UseElementRenamed | ObservationDefinition.quantitativeDetails.decimalPrecision |
+| ObservationDefinition.qualifiedInterval | UseElementRenamed | ObservationDefinition.qualifiedInterval |
+| ObservationDefinition.qualifiedInterval.id | UseElementRenamed | ObservationDefinition.qualifiedInterval.id |
+| ObservationDefinition.qualifiedInterval.extension | UseElementRenamed | ObservationDefinition.qualifiedInterval.extension |
+| ObservationDefinition.qualifiedInterval.modifierExtension | UseElementRenamed | ObservationDefinition.qualifiedInterval.modifierExtension |
+| ObservationDefinition.qualifiedInterval.category | UseElementRenamed | ObservationDefinition.qualifiedInterval.category |
+| ObservationDefinition.qualifiedInterval.range | UseElementRenamed | ObservationDefinition.qualifiedInterval.range |
+| ObservationDefinition.qualifiedInterval.context | UseElementRenamed | ObservationDefinition.qualifiedInterval.context |
+| ObservationDefinition.qualifiedInterval.appliesTo | UseElementRenamed | ObservationDefinition.qualifiedInterval.appliesTo |
+| ObservationDefinition.qualifiedInterval.gender | UseElementRenamed | ObservationDefinition.qualifiedInterval.gender |
+| ObservationDefinition.qualifiedInterval.age | UseElementRenamed | ObservationDefinition.qualifiedInterval.age |
+| ObservationDefinition.qualifiedInterval.gestationalAge | UseElementRenamed | ObservationDefinition.qualifiedInterval.gestationalAge |
+| ObservationDefinition.qualifiedInterval.condition | UseElementRenamed | ObservationDefinition.qualifiedInterval.condition |
+| ObservationDefinition.validCodedValueSet | UseElementRenamed | ObservationDefinition.validCodedValueSet |
+| ObservationDefinition.normalCodedValueSet | UseElementRenamed | ObservationDefinition.normalCodedValueSet |
+| ObservationDefinition.abnormalCodedValueSet | UseElementRenamed | ObservationDefinition.abnormalCodedValueSet |
+| ObservationDefinition.criticalCodedValueSet | UseElementRenamed | ObservationDefinition.criticalCodedValueSet |

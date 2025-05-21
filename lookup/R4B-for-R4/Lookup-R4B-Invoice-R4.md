@@ -1,0 +1,46 @@
+### Lookup for FHIR R4B Invoice for use in FHIR R4
+
+| Source Element | Usage | Target |
+| -------------- | ----- | ------ |
+| Invoice.id | UseElementSameName | Invoice.id |
+| Invoice.meta | UseElementSameName | Invoice.meta |
+| Invoice.implicitRules | UseElementSameName | Invoice.implicitRules |
+| Invoice.language | UseElementSameName | Invoice.language |
+| Invoice.text | UseElementSameName | Invoice.text |
+| Invoice.contained | UseElementSameName | Invoice.contained |
+| Invoice.extension | UseElementSameName | Invoice.extension |
+| Invoice.modifierExtension | UseElementSameName | Invoice.modifierExtension |
+| Invoice.identifier | UseElementSameName | Invoice.identifier |
+| Invoice.status | UseElementSameName | Invoice.status |
+| Invoice.cancelledReason | UseElementSameName | Invoice.cancelledReason |
+| Invoice.type | UseElementSameName | Invoice.type |
+| Invoice.subject | UseElementSameName | Invoice.subject |
+| Invoice.recipient | UseElementSameName | Invoice.recipient |
+| Invoice.date | UseElementSameName | Invoice.date |
+| Invoice.participant | UseElementSameName | Invoice.participant |
+| Invoice.participant.id | UseElementSameName | Invoice.participant.id |
+| Invoice.participant.extension | UseElementSameName | Invoice.participant.extension |
+| Invoice.participant.modifierExtension | UseElementSameName | Invoice.participant.modifierExtension |
+| Invoice.participant.role | UseElementSameName | Invoice.participant.role |
+| Invoice.participant.actor | UseElementSameName | Invoice.participant.actor |
+| Invoice.issuer | UseElementSameName | Invoice.issuer |
+| Invoice.account | UseElementSameName | Invoice.account |
+| Invoice.lineItem | UseElementSameName | Invoice.lineItem |
+| Invoice.lineItem.id | UseElementSameName | Invoice.lineItem.id |
+| Invoice.lineItem.extension | UseElementSameName | Invoice.lineItem.extension |
+| Invoice.lineItem.modifierExtension | UseElementSameName | Invoice.lineItem.modifierExtension |
+| Invoice.lineItem.sequence | UseElementSameName | Invoice.lineItem.sequence |
+| Invoice.lineItem.chargeItem[x] | UseElementSameName | Invoice.lineItem.chargeItem[x] |
+| Invoice.lineItem.priceComponent | UseElementSameName | Invoice.lineItem.priceComponent |
+| Invoice.lineItem.priceComponent.id | UseElementRenamed | Invoice.lineItem.priceComponent.id |
+| Invoice.lineItem.priceComponent.extension | UseElementRenamed | Invoice.lineItem.priceComponent.extension |
+| Invoice.lineItem.priceComponent.modifierExtension | UseElementRenamed | Invoice.lineItem.priceComponent.modifierExtension |
+| Invoice.lineItem.priceComponent.type | UseElementRenamed | Invoice.lineItem.priceComponent.type |
+| Invoice.lineItem.priceComponent.code | UseElementRenamed | Invoice.lineItem.priceComponent.code |
+| Invoice.lineItem.priceComponent.factor | UseElementRenamed | Invoice.lineItem.priceComponent.factor |
+| Invoice.lineItem.priceComponent.amount | UseElementRenamed | Invoice.lineItem.priceComponent.amount |
+| Invoice.totalPriceComponent | UseElementSameName | Invoice.totalPriceComponent |
+| Invoice.totalNet | UseElementSameName | Invoice.totalNet |
+| Invoice.totalGross | UseElementSameName | Invoice.totalGross |
+| Invoice.paymentTerms | UseElementSameName | Invoice.paymentTerms |
+| Invoice.note | UseElementSameName | Invoice.note |
