@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | AllergyIntolerance.id | UseElementSameName | AllergyIntolerance.id |
-| AllergyIntolerance.meta | UseElementSameName | AllergyIntolerance.meta |
+| AllergyIntolerance.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.meta |
 | AllergyIntolerance.implicitRules | UseElementSameName | AllergyIntolerance.implicitRules |
 | AllergyIntolerance.language | UseElementSameName | AllergyIntolerance.language |
 | AllergyIntolerance.text | UseElementSameName | AllergyIntolerance.text |
@@ -11,13 +11,13 @@
 | AllergyIntolerance.extension | UseElementSameName | AllergyIntolerance.extension |
 | AllergyIntolerance.modifierExtension | UseElementSameName | AllergyIntolerance.modifierExtension |
 | AllergyIntolerance.identifier | UseElementSameName | AllergyIntolerance.identifier |
-| AllergyIntolerance.clinicalStatus | UseElementSameName | AllergyIntolerance.clinicalStatus |
-| AllergyIntolerance.verificationStatus | UseElementSameName | AllergyIntolerance.verificationStatus |
+| AllergyIntolerance.clinicalStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.clinicalStatus |
+| AllergyIntolerance.verificationStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.verificationStatus |
 | AllergyIntolerance.type | UseElementSameName | AllergyIntolerance.type |
 | AllergyIntolerance.category | UseElementSameName | AllergyIntolerance.category |
 | AllergyIntolerance.criticality | UseElementSameName | AllergyIntolerance.criticality |
 | AllergyIntolerance.code | UseElementSameName | AllergyIntolerance.code |
-| AllergyIntolerance.patient | UseElementSameName | AllergyIntolerance.patient |
+| AllergyIntolerance.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.patient |
 | AllergyIntolerance.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.encounter |
 | AllergyIntolerance.onset[x] | UseElementSameName | AllergyIntolerance.onset[x] |
 | AllergyIntolerance.recordedDate | UseElementSameName | AllergyIntolerance.assertedDate |

@@ -45,5 +45,5 @@
 | EvidenceVariable.characteristic.usageContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-EvidenceVariable.characteristic.usageContext |
 | EvidenceVariable.characteristic.exclude | UseElementSameName | EvidenceVariable.characteristic.exclude |
 | EvidenceVariable.characteristic.participantEffective[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-EvidenceVariable.characteristic.participantEffective |
-| EvidenceVariable.characteristic.timeFromStart | UseElementSameName | EvidenceVariable.characteristic.timeFromStart |
+| EvidenceVariable.characteristic.timeFromStart | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-EvidenceVariable.characteristic.timeFromStart |
 | EvidenceVariable.characteristic.groupMeasure | UseElementSameName | EvidenceVariable.characteristic.groupMeasure |

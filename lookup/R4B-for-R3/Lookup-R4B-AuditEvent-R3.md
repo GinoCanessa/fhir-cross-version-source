@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | AuditEvent.id | UseElementSameName | AuditEvent.id |
-| AuditEvent.meta | UseElementSameName | AuditEvent.meta |
+| AuditEvent.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.meta |
 | AuditEvent.implicitRules | UseElementSameName | AuditEvent.implicitRules |
 | AuditEvent.language | UseElementSameName | AuditEvent.language |
 | AuditEvent.text | UseElementSameName | AuditEvent.text |
@@ -24,11 +24,11 @@
 | AuditEvent.agent.modifierExtension | UseElementSameName | AuditEvent.agent.modifierExtension |
 | AuditEvent.agent.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.agent.type |
 | AuditEvent.agent.role | UseElementSameName | AuditEvent.agent.role |
-| AuditEvent.agent.who | UseElementSameName | AuditEvent.agent.userId |
+| AuditEvent.agent.who | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.agent.who |
 | AuditEvent.agent.altId | UseElementSameName | AuditEvent.agent.altId |
 | AuditEvent.agent.name | UseElementSameName | AuditEvent.agent.name |
 | AuditEvent.agent.requestor | UseElementSameName | AuditEvent.agent.requestor |
-| AuditEvent.agent.location | UseElementSameName | AuditEvent.agent.location |
+| AuditEvent.agent.location | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.agent.location |
 | AuditEvent.agent.policy | UseElementSameName | AuditEvent.agent.policy |
 | AuditEvent.agent.media | UseElementSameName | AuditEvent.agent.media |
 | AuditEvent.agent.network | UseElementSameName | AuditEvent.agent.network |
@@ -43,13 +43,13 @@
 | AuditEvent.source.extension | UseElementSameName | AuditEvent.source.extension |
 | AuditEvent.source.modifierExtension | UseElementSameName | AuditEvent.source.modifierExtension |
 | AuditEvent.source.site | UseElementSameName | AuditEvent.source.site |
-| AuditEvent.source.observer | UseElementSameName | AuditEvent.source.identifier |
+| AuditEvent.source.observer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.source.observer |
 | AuditEvent.source.type | UseElementSameName | AuditEvent.source.type |
 | AuditEvent.entity | UseElementSameName | AuditEvent.entity |
 | AuditEvent.entity.id | UseElementSameName | AuditEvent.entity.id |
 | AuditEvent.entity.extension | UseElementSameName | AuditEvent.entity.extension |
 | AuditEvent.entity.modifierExtension | UseElementSameName | AuditEvent.entity.modifierExtension |
-| AuditEvent.entity.what | UseElementSameName | AuditEvent.entity.identifier |
+| AuditEvent.entity.what | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.entity.what |
 | AuditEvent.entity.type | UseElementSameName | AuditEvent.entity.type |
 | AuditEvent.entity.role | UseElementSameName | AuditEvent.entity.role |
 | AuditEvent.entity.lifecycle | UseElementSameName | AuditEvent.entity.lifecycle |
@@ -62,4 +62,4 @@
 | AuditEvent.entity.detail.extension | UseElementSameName | AuditEvent.entity.detail.extension |
 | AuditEvent.entity.detail.modifierExtension | UseElementSameName | AuditEvent.entity.detail.modifierExtension |
 | AuditEvent.entity.detail.type | UseElementSameName | AuditEvent.entity.detail.type |
-| AuditEvent.entity.detail.value[x] | UseElementSameName | AuditEvent.entity.detail.value |
+| AuditEvent.entity.detail.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.entity.detail.value |

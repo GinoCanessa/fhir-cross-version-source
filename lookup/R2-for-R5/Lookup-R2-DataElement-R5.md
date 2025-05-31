@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DataElement.id | UseElementRenamed | StructureDefinition.id |
-| DataElement.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.meta |
+| DataElement.meta | UseElementRenamed | StructureDefinition.meta |
 | DataElement.implicitRules | UseElementRenamed | StructureDefinition.implicitRules |
 | DataElement.language | UseElementRenamed | StructureDefinition.language |
 | DataElement.text | UseElementRenamed | StructureDefinition.text |
@@ -14,17 +14,17 @@
 | DataElement.identifier | UseElementRenamed | StructureDefinition.identifier |
 | DataElement.version | UseElementRenamed | StructureDefinition.version |
 | DataElement.name | UseElementRenamed | StructureDefinition.name |
-| DataElement.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.status |
+| DataElement.status | UseElementRenamed | StructureDefinition.status |
 | DataElement.experimental | UseElementRenamed | StructureDefinition.experimental |
 | DataElement.publisher | UseElementRenamed | StructureDefinition.publisher |
-| DataElement.contact | UseElementRenamed | StructureDefinition.contact |
-| DataElement.contact.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact.id |
-| DataElement.contact.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact.extension |
-| DataElement.contact.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact.modifierExtension |
-| DataElement.contact.name | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact.name |
-| DataElement.contact.telecom | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact.telecom |
+| DataElement.contact | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.contact |
+| DataElement.contact.id | UseExtensionFromAncestor | - |
+| DataElement.contact.extension | UseExtensionFromAncestor | - |
+| DataElement.contact.modifierExtension | UseExtensionFromAncestor | - |
+| DataElement.contact.name | UseExtensionFromAncestor | - |
+| DataElement.contact.telecom | UseExtensionFromAncestor | - |
 | DataElement.date | UseElementRenamed | StructureDefinition.date |
-| DataElement.useContext | UseElementRenamed | StructureDefinition.useContext |
+| DataElement.useContext | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.useContext |
 | DataElement.copyright | UseElementRenamed | StructureDefinition.copyright |
 | DataElement.stringency | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.stringency |
 | DataElement.mapping | UseElementRenamed | StructureDefinition.mapping |
@@ -35,4 +35,4 @@
 | DataElement.mapping.uri | UseElementRenamed | StructureDefinition.mapping.uri |
 | DataElement.mapping.name | UseElementRenamed | StructureDefinition.mapping.name |
 | DataElement.mapping.comments | UseElementRenamed | StructureDefinition.mapping.comment |
-| DataElement.element | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DataElement.element |
+| DataElement.element | UseElementRenamed | StructureDefinition.differential.element |

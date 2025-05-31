@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CompartmentDefinition.id | UseElementSameName | CompartmentDefinition.id |
-| CompartmentDefinition.meta | UseElementSameName | CompartmentDefinition.meta |
+| CompartmentDefinition.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CompartmentDefinition.meta |
 | CompartmentDefinition.implicitRules | UseElementSameName | CompartmentDefinition.implicitRules |
 | CompartmentDefinition.language | UseElementSameName | CompartmentDefinition.language |
 | CompartmentDefinition.text | UseElementSameName | CompartmentDefinition.text |

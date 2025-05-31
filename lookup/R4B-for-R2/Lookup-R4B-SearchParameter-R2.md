@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | SearchParameter.id | UseElementSameName | SearchParameter.id |
-| SearchParameter.meta | UseElementSameName | SearchParameter.meta |
+| SearchParameter.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.meta |
 | SearchParameter.implicitRules | UseElementSameName | SearchParameter.implicitRules |
 | SearchParameter.language | UseElementSameName | SearchParameter.language |
 | SearchParameter.text | UseElementSameName | SearchParameter.text |
@@ -14,18 +14,18 @@
 | SearchParameter.version | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.version |
 | SearchParameter.name | UseElementSameName | SearchParameter.name |
 | SearchParameter.derivedFrom | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.derivedFrom |
-| SearchParameter.status | UseElementSameName | SearchParameter.status |
+| SearchParameter.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.status |
 | SearchParameter.experimental | UseElementSameName | SearchParameter.experimental |
 | SearchParameter.date | UseElementSameName | SearchParameter.date |
 | SearchParameter.publisher | UseElementSameName | SearchParameter.publisher |
-| SearchParameter.contact | UseElementSameName | SearchParameter.contact |
+| SearchParameter.contact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.contact |
 | SearchParameter.description | UseElementSameName | SearchParameter.description |
 | SearchParameter.useContext | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.useContext |
 | SearchParameter.jurisdiction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.jurisdiction |
 | SearchParameter.purpose | UseElementSameName | SearchParameter.requirements |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.base |
-| SearchParameter.type | UseElementSameName | SearchParameter.type |
+| SearchParameter.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.type |
 | SearchParameter.expression | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.expression |
 | SearchParameter.xpath | UseElementSameName | SearchParameter.xpath |
 | SearchParameter.xpathUsage | UseElementSameName | SearchParameter.xpathUsage |

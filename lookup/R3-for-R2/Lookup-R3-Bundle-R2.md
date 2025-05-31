@@ -47,4 +47,4 @@
 | Bundle.entry.response.etag | UseElementSameName | Bundle.entry.response.etag |
 | Bundle.entry.response.lastModified | UseElementSameName | Bundle.entry.response.lastModified |
 | Bundle.entry.response.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.entry.response.outcome |
-| Bundle.signature | UseElementSameName | Bundle.signature |
+| Bundle.signature | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.signature |

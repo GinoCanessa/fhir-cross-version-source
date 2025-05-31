@@ -15,6 +15,6 @@
 | Flag.status | UseElementSameName | Flag.status |
 | Flag.period | UseElementSameName | Flag.period |
 | Flag.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Flag.subject |
-| Flag.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Flag.encounter |
-| Flag.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Flag.author |
+| Flag.encounter | UseElementSameName | Flag.encounter |
+| Flag.author | UseElementSameName | Flag.author |
 | Flag.code | UseElementSameName | Flag.code |

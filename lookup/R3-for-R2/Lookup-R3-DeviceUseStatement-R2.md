@@ -14,10 +14,10 @@
 | DeviceUseStatement.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.status |
 | DeviceUseStatement.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.subject |
 | DeviceUseStatement.whenUsed | UseElementRenamed | DeviceUseStatement.whenUsed |
-| DeviceUseStatement.timing[x] | UseElementSameName | DeviceUseStatement.timing[x] |
+| DeviceUseStatement.timing[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.timing |
 | DeviceUseStatement.recordedOn | UseElementSameName | DeviceUseStatement.recordedOn |
 | DeviceUseStatement.source | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.source |
-| DeviceUseStatement.device | UseElementSameName | DeviceUseStatement.device |
+| DeviceUseStatement.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.device |
 | DeviceUseStatement.indication | UseElementRenamed | DeviceUseStatement.indication |
-| DeviceUseStatement.bodySite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.bodySite |
-| DeviceUseStatement.note | UseElementSameName | DeviceUseStatement.notes |
+| DeviceUseStatement.bodySite | UseElementSameName | DeviceUseStatement.bodySite[x] |
+| DeviceUseStatement.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceUseStatement.note |

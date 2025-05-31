@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | NutritionOrder.id | UseElementSameName | NutritionOrder.id |
-| NutritionOrder.meta | UseElementSameName | NutritionOrder.meta |
+| NutritionOrder.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.meta |
 | NutritionOrder.implicitRules | UseElementSameName | NutritionOrder.implicitRules |
 | NutritionOrder.language | UseElementSameName | NutritionOrder.language |
 | NutritionOrder.text | UseElementSameName | NutritionOrder.text |
@@ -20,12 +20,12 @@
 | NutritionOrder.intent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.intent |
 | NutritionOrder.priority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.priority |
 | NutritionOrder.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.subject |
-| NutritionOrder.encounter | UseElementSameName | NutritionOrder.encounter |
+| NutritionOrder.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.encounter |
 | NutritionOrder.supportingInformation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supportingInformation |
 | NutritionOrder.dateTime | UseElementSameName | NutritionOrder.dateTime |
 | NutritionOrder.orderer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.orderer |
 | NutritionOrder.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.performer |
-| NutritionOrder.allergyIntolerance | UseElementSameName | NutritionOrder.allergyIntolerance |
+| NutritionOrder.allergyIntolerance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.allergyIntolerance |
 | NutritionOrder.foodPreferenceModifier | UseElementSameName | NutritionOrder.foodPreferenceModifier |
 | NutritionOrder.excludeFoodModifier | UseElementSameName | NutritionOrder.excludeFoodModifier |
 | NutritionOrder.outsideFoodAllowed | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.outsideFoodAllowed |
@@ -59,7 +59,7 @@
 | NutritionOrder.supplement.id | UseElementSameName | NutritionOrder.supplement.id |
 | NutritionOrder.supplement.extension | UseElementSameName | NutritionOrder.supplement.extension |
 | NutritionOrder.supplement.modifierExtension | UseElementSameName | NutritionOrder.supplement.modifierExtension |
-| NutritionOrder.supplement.type | UseElementSameName | NutritionOrder.supplement.type |
+| NutritionOrder.supplement.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.type |
 | NutritionOrder.supplement.productName | UseElementSameName | NutritionOrder.supplement.productName |
 | NutritionOrder.supplement.schedule | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule |
 | NutritionOrder.supplement.schedule.id | UseExtensionFromAncestor | - |
@@ -74,7 +74,7 @@
 | NutritionOrder.enteralFormula.id | UseElementSameName | NutritionOrder.enteralFormula.id |
 | NutritionOrder.enteralFormula.extension | UseElementSameName | NutritionOrder.enteralFormula.extension |
 | NutritionOrder.enteralFormula.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.modifierExtension |
-| NutritionOrder.enteralFormula.baseFormulaType | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaType |
+| NutritionOrder.enteralFormula.baseFormulaType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType |
 | NutritionOrder.enteralFormula.baseFormulaProductName | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaProductName |
 | NutritionOrder.enteralFormula.deliveryDevice | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.deliveryDevice |
 | NutritionOrder.enteralFormula.additive | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.additive |
@@ -90,13 +90,13 @@
 | NutritionOrder.enteralFormula.administration.id | UseElementSameName | NutritionOrder.enteralFormula.administration.id |
 | NutritionOrder.enteralFormula.administration.extension | UseElementSameName | NutritionOrder.enteralFormula.administration.extension |
 | NutritionOrder.enteralFormula.administration.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.administration.modifierExtension |
-| NutritionOrder.enteralFormula.administration.schedule | UseElementSameName | NutritionOrder.enteralFormula.administration.schedule |
-| NutritionOrder.enteralFormula.administration.schedule.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.id |
-| NutritionOrder.enteralFormula.administration.schedule.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.extension |
-| NutritionOrder.enteralFormula.administration.schedule.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.modifierExtension |
-| NutritionOrder.enteralFormula.administration.schedule.timing | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.timing |
-| NutritionOrder.enteralFormula.administration.schedule.asNeeded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.asNeeded |
-| NutritionOrder.enteralFormula.administration.schedule.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule.asNeededFor |
+| NutritionOrder.enteralFormula.administration.schedule | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule |
+| NutritionOrder.enteralFormula.administration.schedule.id | UseExtensionFromAncestor | - |
+| NutritionOrder.enteralFormula.administration.schedule.extension | UseExtensionFromAncestor | - |
+| NutritionOrder.enteralFormula.administration.schedule.modifierExtension | UseExtensionFromAncestor | - |
+| NutritionOrder.enteralFormula.administration.schedule.timing | UseExtensionFromAncestor | - |
+| NutritionOrder.enteralFormula.administration.schedule.asNeeded | UseExtensionFromAncestor | - |
+| NutritionOrder.enteralFormula.administration.schedule.asNeededFor | UseExtensionFromAncestor | - |
 | NutritionOrder.enteralFormula.administration.quantity | UseElementSameName | NutritionOrder.enteralFormula.administration.quantity |
 | NutritionOrder.enteralFormula.administration.rate[x] | UseElementSameName | NutritionOrder.enteralFormula.administration.rate[x] |
 | NutritionOrder.enteralFormula.maxVolumeToDeliver | UseElementSameName | NutritionOrder.enteralFormula.maxVolumeToDeliver |

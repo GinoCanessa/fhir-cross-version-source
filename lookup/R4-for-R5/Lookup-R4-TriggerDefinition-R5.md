@@ -7,5 +7,5 @@
 | TriggerDefinition.type | UseElementSameName | TriggerDefinition.type |
 | TriggerDefinition.name | UseElementSameName | TriggerDefinition.name |
 | TriggerDefinition.timing[x] | UseElementSameName | TriggerDefinition.timing[x] |
-| TriggerDefinition.data | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-TriggerDefinition.data |
+| TriggerDefinition.data | UseElementSameName | TriggerDefinition.data |
 | TriggerDefinition.condition | UseElementSameName | TriggerDefinition.condition |

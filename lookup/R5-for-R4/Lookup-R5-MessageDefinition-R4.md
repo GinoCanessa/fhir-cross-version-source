@@ -47,4 +47,4 @@
 | MessageDefinition.allowedResponse.modifierExtension | UseElementSameName | MessageDefinition.allowedResponse.modifierExtension |
 | MessageDefinition.allowedResponse.message | UseElementSameName | MessageDefinition.allowedResponse.message |
 | MessageDefinition.allowedResponse.situation | UseElementSameName | MessageDefinition.allowedResponse.situation |
-| MessageDefinition.graph | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageDefinition.graph |
+| MessageDefinition.graph | UseElementSameName | MessageDefinition.graph |

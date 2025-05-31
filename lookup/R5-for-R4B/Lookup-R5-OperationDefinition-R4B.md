@@ -34,7 +34,7 @@
 | OperationDefinition.base | UseElementRenamed | OperationDefinition.base |
 | OperationDefinition.resource | UseElementRenamed | OperationDefinition.resource |
 | OperationDefinition.system | UseElementRenamed | OperationDefinition.system |
-| OperationDefinition.type | UseElementRenamed | OperationDefinition.type |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementRenamed | OperationDefinition.instance |
 | OperationDefinition.inputProfile | UseElementRenamed | OperationDefinition.inputProfile |
 | OperationDefinition.outputProfile | UseElementRenamed | OperationDefinition.outputProfile |

@@ -11,7 +11,7 @@
 | TestScript.extension | UseElementRenamed | TestScript.extension |
 | TestScript.modifierExtension | UseElementRenamed | TestScript.modifierExtension |
 | TestScript.url | UseElementRenamed | TestScript.url |
-| TestScript.identifier | UseElementRenamed | TestScript.identifier |
+| TestScript.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.identifier |
 | TestScript.version | UseElementRenamed | TestScript.version |
 | TestScript.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.versionAlgorithm |
 | TestScript.name | UseElementRenamed | TestScript.name |
@@ -76,7 +76,7 @@
 | TestScript.fixture.autocreate | UseElementRenamed | TestScript.fixture.autocreate |
 | TestScript.fixture.autodelete | UseElementRenamed | TestScript.fixture.autodelete |
 | TestScript.fixture.resource | UseElementRenamed | TestScript.fixture.resource |
-| TestScript.profile | UseElementRenamed | TestScript.profile |
+| TestScript.profile | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.profile |
 | TestScript.variable | UseElementRenamed | TestScript.variable |
 | TestScript.variable.id | UseElementRenamed | TestScript.variable.id |
 | TestScript.variable.extension | UseElementRenamed | TestScript.variable.extension |
@@ -102,7 +102,7 @@
 | TestScript.setup.action.operation.extension | UseElementRenamed | TestScript.setup.action.operation.extension |
 | TestScript.setup.action.operation.modifierExtension | UseElementRenamed | TestScript.setup.action.operation.modifierExtension |
 | TestScript.setup.action.operation.type | UseElementRenamed | TestScript.setup.action.operation.type |
-| TestScript.setup.action.operation.resource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.operation.resource |
+| TestScript.setup.action.operation.resource | UseElementRenamed | TestScript.setup.action.operation.resource |
 | TestScript.setup.action.operation.label | UseElementRenamed | TestScript.setup.action.operation.label |
 | TestScript.setup.action.operation.description | UseElementRenamed | TestScript.setup.action.operation.description |
 | TestScript.setup.action.operation.accept | UseElementRenamed | TestScript.setup.action.operation.accept |
@@ -139,11 +139,11 @@
 | TestScript.setup.action.assert.headerField | UseElementRenamed | TestScript.setup.action.assert.headerField |
 | TestScript.setup.action.assert.minimumId | UseElementRenamed | TestScript.setup.action.assert.minimumId |
 | TestScript.setup.action.assert.navigationLinks | UseElementRenamed | TestScript.setup.action.assert.navigationLinks |
-| TestScript.setup.action.assert.operator | UseElementRenamed | TestScript.setup.action.assert.operator |
+| TestScript.setup.action.assert.operator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.assert.operator |
 | TestScript.setup.action.assert.path | UseElementRenamed | TestScript.setup.action.assert.path |
 | TestScript.setup.action.assert.requestMethod | UseElementRenamed | TestScript.setup.action.assert.requestMethod |
 | TestScript.setup.action.assert.requestURL | UseElementRenamed | TestScript.setup.action.assert.requestURL |
-| TestScript.setup.action.assert.resource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.assert.resource |
+| TestScript.setup.action.assert.resource | UseElementRenamed | TestScript.setup.action.assert.resource |
 | TestScript.setup.action.assert.response | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.assert.response |
 | TestScript.setup.action.assert.responseCode | UseElementRenamed | TestScript.setup.action.assert.responseCode |
 | TestScript.setup.action.assert.sourceId | UseElementRenamed | TestScript.setup.action.assert.sourceId |

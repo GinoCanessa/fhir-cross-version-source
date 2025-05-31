@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Substance.id | UseElementSameName | Substance.id |
-| Substance.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Substance.meta |
+| Substance.meta | UseElementSameName | Substance.meta |
 | Substance.implicitRules | UseElementSameName | Substance.implicitRules |
 | Substance.language | UseElementSameName | Substance.language |
 | Substance.text | UseElementSameName | Substance.text |
@@ -26,4 +26,4 @@
 | Substance.ingredient.extension | UseElementSameName | Substance.ingredient.extension |
 | Substance.ingredient.modifierExtension | UseElementSameName | Substance.ingredient.modifierExtension |
 | Substance.ingredient.quantity | UseElementSameName | Substance.ingredient.quantity |
-| Substance.ingredient.substance | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Substance.ingredient.substance |
+| Substance.ingredient.substance | UseElementRenamed | Substance.ingredient.substance[x] |

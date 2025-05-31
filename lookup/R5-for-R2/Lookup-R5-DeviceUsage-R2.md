@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DeviceUsage.id | UseElementRenamed | DeviceUseStatement.id |
-| DeviceUsage.meta | UseElementRenamed | DeviceUseStatement.meta |
+| DeviceUsage.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.meta |
 | DeviceUsage.implicitRules | UseElementRenamed | DeviceUseStatement.implicitRules |
 | DeviceUsage.language | UseElementRenamed | DeviceUseStatement.language |
 | DeviceUsage.text | UseElementRenamed | DeviceUseStatement.text |
@@ -17,7 +17,7 @@
 | DeviceUsage.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.patient |
 | DeviceUsage.derivedFrom | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.derivedFrom |
 | DeviceUsage.context | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.context |
-| DeviceUsage.timing[x] | UseElementRenamed | DeviceUseStatement.timing[x] |
+| DeviceUsage.timing[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.timing |
 | DeviceUsage.dateAsserted | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.dateAsserted |
 | DeviceUsage.usageStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.usageStatus |
 | DeviceUsage.usageReason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.usageReason |
@@ -28,7 +28,7 @@
 | DeviceUsage.adherence.code | UseExtensionFromAncestor | - |
 | DeviceUsage.adherence.reason | UseExtensionFromAncestor | - |
 | DeviceUsage.informationSource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.informationSource |
-| DeviceUsage.device | UseElementRenamed | DeviceUseStatement.device |
+| DeviceUsage.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.device |
 | DeviceUsage.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.reason |
 | DeviceUsage.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.bodySite |
-| DeviceUsage.note | UseElementRenamed | DeviceUseStatement.notes |
+| DeviceUsage.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.note |

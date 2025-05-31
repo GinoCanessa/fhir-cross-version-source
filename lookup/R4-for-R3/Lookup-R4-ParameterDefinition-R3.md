@@ -9,5 +9,5 @@
 | ParameterDefinition.min | UseElementSameName | ParameterDefinition.min |
 | ParameterDefinition.max | UseElementSameName | ParameterDefinition.max |
 | ParameterDefinition.documentation | UseElementSameName | ParameterDefinition.documentation |
-| ParameterDefinition.type | UseElementSameName | ParameterDefinition.type |
-| ParameterDefinition.profile | UseElementSameName | ParameterDefinition.profile |
+| ParameterDefinition.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ParameterDefinition.type |
+| ParameterDefinition.profile | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ParameterDefinition.profile |

@@ -11,11 +11,11 @@
 | Media.extension | UseElementRenamed | DocumentReference.extension |
 | Media.modifierExtension | UseElementRenamed | DocumentReference.modifierExtension |
 | Media.identifier | UseElementRenamed | DocumentReference.identifier |
-| Media.basedOn | UseElementRenamed | DocumentReference.basedOn |
-| Media.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.partOf |
+| Media.basedOn | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.basedOn |
+| Media.partOf | UseElementRenamed | DocumentReference.event |
 | Media.status | UseElementRenamed | DocumentReference.status |
 | Media.type | UseElementRenamed | DocumentReference.type |
-| Media.modality | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.modality |
+| Media.modality | UseElementRenamed | DocumentReference.modality |
 | Media.view | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.view |
 | Media.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.subject |
 | Media.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.encounter |
@@ -23,7 +23,7 @@
 | Media.issued | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.issued |
 | Media.operator | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.operator |
 | Media.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.reasonCode |
-| Media.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.bodySite |
+| Media.bodySite | UseElementRenamed | DocumentReference.bodySite |
 | Media.deviceName | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.deviceName |
 | Media.device | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.device |
 | Media.height | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.height |

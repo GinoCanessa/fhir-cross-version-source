@@ -14,7 +14,7 @@
 | Specimen.accessionIdentifier | UseElementSameName | Specimen.accessionIdentifier |
 | Specimen.status | UseElementSameName | Specimen.status |
 | Specimen.type | UseElementSameName | Specimen.type |
-| Specimen.subject | UseElementSameName | Specimen.subject |
+| Specimen.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.subject |
 | Specimen.receivedTime | UseElementSameName | Specimen.receivedTime |
 | Specimen.parent | UseElementSameName | Specimen.parent |
 | Specimen.request | UseElementSameName | Specimen.request |
@@ -22,12 +22,12 @@
 | Specimen.collection.id | UseElementSameName | Specimen.collection.id |
 | Specimen.collection.extension | UseElementSameName | Specimen.collection.extension |
 | Specimen.collection.modifierExtension | UseElementSameName | Specimen.collection.modifierExtension |
-| Specimen.collection.collector | UseElementSameName | Specimen.collection.collector |
+| Specimen.collection.collector | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.collection.collector |
 | Specimen.collection.collected[x] | UseElementSameName | Specimen.collection.collected[x] |
 | Specimen.collection.duration | UseElementSameName | Specimen.collection.duration |
 | Specimen.collection.quantity | UseElementSameName | Specimen.collection.quantity |
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
-| Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.collection.bodySite |
 | Specimen.collection.fastingStatus[x] | UseElementSameName | Specimen.collection.fastingStatus[x] |
 | Specimen.processing | UseElementSameName | Specimen.processing |
 | Specimen.processing.id | UseElementSameName | Specimen.processing.id |

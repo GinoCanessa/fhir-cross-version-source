@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Organization.id | UseElementSameName | Organization.id |
-| Organization.meta | UseElementSameName | Organization.meta |
+| Organization.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.meta |
 | Organization.implicitRules | UseElementSameName | Organization.implicitRules |
 | Organization.language | UseElementSameName | Organization.language |
 | Organization.text | UseElementSameName | Organization.text |
@@ -16,9 +16,9 @@
 | Organization.name | UseElementSameName | Organization.name |
 | Organization.alias | UseElementSameName | Organization.alias |
 | Organization.description | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description |
-| Organization.contact | UseElementSameName | Organization.contact |
-| Organization.partOf | UseElementSameName | Organization.partOf |
-| Organization.endpoint | UseElementSameName | Organization.endpoint |
+| Organization.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.contact |
+| Organization.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.partOf |
+| Organization.endpoint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.endpoint |
 | Organization.qualification | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.qualification |
 | Organization.qualification.id | UseExtensionFromAncestor | - |
 | Organization.qualification.extension | UseExtensionFromAncestor | - |

@@ -32,7 +32,7 @@
 | CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.occurrence[x] |
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.authoredOn |
 | CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
-| CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.recipient |
+| CommunicationRequest.recipient | UseElementSameName | CommunicationRequest.recipient |
 | CommunicationRequest.informationProvider | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.informationProvider |
-| CommunicationRequest.reason | UseElementSameName | CommunicationRequest.reasonCode |
+| CommunicationRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.reason |
 | CommunicationRequest.note | UseElementSameName | CommunicationRequest.note |

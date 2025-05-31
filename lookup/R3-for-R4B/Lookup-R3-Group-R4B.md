@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Group.id | UseElementSameName | Group.id |
-| Group.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Group.meta |
+| Group.meta | UseElementSameName | Group.meta |
 | Group.implicitRules | UseElementSameName | Group.implicitRules |
 | Group.language | UseElementSameName | Group.language |
 | Group.text | UseElementSameName | Group.text |
@@ -22,7 +22,7 @@
 | Group.characteristic.extension | UseElementSameName | Group.characteristic.extension |
 | Group.characteristic.modifierExtension | UseElementSameName | Group.characteristic.modifierExtension |
 | Group.characteristic.code | UseElementSameName | Group.characteristic.code |
-| Group.characteristic.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Group.characteristic.value |
+| Group.characteristic.value[x] | UseElementSameName | Group.characteristic.value[x] |
 | Group.characteristic.exclude | UseElementSameName | Group.characteristic.exclude |
 | Group.characteristic.period | UseElementSameName | Group.characteristic.period |
 | Group.member | UseElementSameName | Group.member |

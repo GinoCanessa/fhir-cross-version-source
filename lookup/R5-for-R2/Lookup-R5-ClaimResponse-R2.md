@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ClaimResponse.id | UseElementSameName | ClaimResponse.id |
-| ClaimResponse.meta | UseElementSameName | ClaimResponse.meta |
+| ClaimResponse.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.meta |
 | ClaimResponse.implicitRules | UseElementSameName | ClaimResponse.implicitRules |
 | ClaimResponse.language | UseElementSameName | ClaimResponse.language |
 | ClaimResponse.text | UseElementSameName | ClaimResponse.text |
@@ -18,9 +18,9 @@
 | ClaimResponse.use | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.use |
 | ClaimResponse.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.patient |
 | ClaimResponse.created | UseElementSameName | ClaimResponse.created |
-| ClaimResponse.insurer | UseElementSameName | ClaimResponse.organization |
+| ClaimResponse.insurer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurer |
 | ClaimResponse.requestor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.requestor |
-| ClaimResponse.request | UseElementSameName | ClaimResponse.request |
+| ClaimResponse.request | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.request |
 | ClaimResponse.outcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.outcome |
 | ClaimResponse.decision | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.decision |
 | ClaimResponse.disposition | UseElementSameName | ClaimResponse.disposition |
@@ -32,7 +32,7 @@
 | ClaimResponse.event.modifierExtension | UseExtensionFromAncestor | - |
 | ClaimResponse.event.type | UseExtensionFromAncestor | - |
 | ClaimResponse.event.when[x] | UseExtensionFromAncestor | - |
-| ClaimResponse.payeeType | UseElementSameName | ClaimResponse.payeeType |
+| ClaimResponse.payeeType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.payeeType |
 | ClaimResponse.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.encounter |
 | ClaimResponse.diagnosisRelatedGroup | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.diagnosisRelatedGroup |
 | ClaimResponse.item | UseElementSameName | ClaimResponse.item |
@@ -54,10 +54,10 @@
 | ClaimResponse.item.adjudication.id | UseElementSameName | ClaimResponse.item.adjudication.id |
 | ClaimResponse.item.adjudication.extension | UseElementSameName | ClaimResponse.item.adjudication.extension |
 | ClaimResponse.item.adjudication.modifierExtension | UseElementSameName | ClaimResponse.item.adjudication.modifierExtension |
-| ClaimResponse.item.adjudication.category | UseElementSameName | ClaimResponse.item.adjudication.code |
+| ClaimResponse.item.adjudication.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.category |
 | ClaimResponse.item.adjudication.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.reason |
-| ClaimResponse.item.adjudication.amount | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.quantity | UseElementRenamed | ClaimResponse.item.adjudication.value |
+| ClaimResponse.item.adjudication.amount | UseElementSameName | ClaimResponse.item.adjudication.amount |
+| ClaimResponse.item.adjudication.quantity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.quantity |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |
@@ -66,7 +66,7 @@
 | ClaimResponse.item.detail.traceNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.traceNumber |
 | ClaimResponse.item.detail.noteNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.noteNumber |
 | ClaimResponse.item.detail.reviewOutcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.reviewOutcome |
-| ClaimResponse.item.detail.adjudication | UseElementSameName | ClaimResponse.item.detail.adjudication |
+| ClaimResponse.item.detail.adjudication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.adjudication |
 | ClaimResponse.item.detail.subDetail | UseElementSameName | ClaimResponse.item.detail.subDetail |
 | ClaimResponse.item.detail.subDetail.id | UseElementSameName | ClaimResponse.item.detail.subDetail.id |
 | ClaimResponse.item.detail.subDetail.extension | UseElementSameName | ClaimResponse.item.detail.subDetail.extension |
@@ -75,7 +75,7 @@
 | ClaimResponse.item.detail.subDetail.traceNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.traceNumber |
 | ClaimResponse.item.detail.subDetail.noteNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.noteNumber |
 | ClaimResponse.item.detail.subDetail.reviewOutcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.reviewOutcome |
-| ClaimResponse.item.detail.subDetail.adjudication | UseElementSameName | ClaimResponse.item.detail.subDetail.adjudication |
+| ClaimResponse.item.detail.subDetail.adjudication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.adjudication |
 | ClaimResponse.addItem | UseElementSameName | ClaimResponse.addItem |
 | ClaimResponse.addItem.id | UseElementSameName | ClaimResponse.addItem.id |
 | ClaimResponse.addItem.extension | UseElementSameName | ClaimResponse.addItem.extension |
@@ -86,7 +86,7 @@
 | ClaimResponse.addItem.traceNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.traceNumber |
 | ClaimResponse.addItem.provider | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.provider |
 | ClaimResponse.addItem.revenue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.revenue |
-| ClaimResponse.addItem.productOrService | UseElementSameName | ClaimResponse.addItem.service |
+| ClaimResponse.addItem.productOrService | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.productOrService |
 | ClaimResponse.addItem.productOrServiceEnd | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.productOrServiceEnd |
 | ClaimResponse.addItem.request | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.request |
 | ClaimResponse.addItem.modifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.modifier |
@@ -97,7 +97,7 @@
 | ClaimResponse.addItem.unitPrice | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.unitPrice |
 | ClaimResponse.addItem.factor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.factor |
 | ClaimResponse.addItem.tax | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.tax |
-| ClaimResponse.addItem.net | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.net |
+| ClaimResponse.addItem.net | UseElementSameName | ClaimResponse.addItem.fee |
 | ClaimResponse.addItem.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.bodySite |
 | ClaimResponse.addItem.bodySite.id | UseExtensionFromAncestor | - |
 | ClaimResponse.addItem.bodySite.extension | UseExtensionFromAncestor | - |
@@ -106,14 +106,14 @@
 | ClaimResponse.addItem.bodySite.subSite | UseExtensionFromAncestor | - |
 | ClaimResponse.addItem.noteNumber | UseElementSameName | ClaimResponse.addItem.noteNumberLinkId |
 | ClaimResponse.addItem.reviewOutcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.reviewOutcome |
-| ClaimResponse.addItem.adjudication | UseElementSameName | ClaimResponse.addItem.adjudication |
+| ClaimResponse.addItem.adjudication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.adjudication |
 | ClaimResponse.addItem.detail | UseElementSameName | ClaimResponse.addItem.detail |
 | ClaimResponse.addItem.detail.id | UseElementSameName | ClaimResponse.addItem.detail.id |
 | ClaimResponse.addItem.detail.extension | UseElementSameName | ClaimResponse.addItem.detail.extension |
 | ClaimResponse.addItem.detail.modifierExtension | UseElementSameName | ClaimResponse.addItem.detail.modifierExtension |
 | ClaimResponse.addItem.detail.traceNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.traceNumber |
 | ClaimResponse.addItem.detail.revenue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.revenue |
-| ClaimResponse.addItem.detail.productOrService | UseElementSameName | ClaimResponse.addItem.detail.service |
+| ClaimResponse.addItem.detail.productOrService | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.productOrService |
 | ClaimResponse.addItem.detail.productOrServiceEnd | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.productOrServiceEnd |
 | ClaimResponse.addItem.detail.modifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.modifier |
 | ClaimResponse.addItem.detail.quantity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.quantity |
@@ -123,7 +123,7 @@
 | ClaimResponse.addItem.detail.net | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.net |
 | ClaimResponse.addItem.detail.noteNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.noteNumber |
 | ClaimResponse.addItem.detail.reviewOutcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.reviewOutcome |
-| ClaimResponse.addItem.detail.adjudication | UseElementSameName | ClaimResponse.addItem.detail.adjudication |
+| ClaimResponse.addItem.detail.adjudication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.adjudication |
 | ClaimResponse.addItem.detail.subDetail | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.subDetail |
 | ClaimResponse.addItem.detail.subDetail.id | UseExtensionFromAncestor | - |
 | ClaimResponse.addItem.detail.subDetail.extension | UseExtensionFromAncestor | - |
@@ -158,8 +158,8 @@
 | ClaimResponse.payment.date | UseExtensionFromAncestor | - |
 | ClaimResponse.payment.amount | UseExtensionFromAncestor | - |
 | ClaimResponse.payment.identifier | UseExtensionFromAncestor | - |
-| ClaimResponse.fundsReserve | UseElementSameName | ClaimResponse.reserved |
-| ClaimResponse.formCode | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.formCode |
+| ClaimResponse.fundsReserve | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.fundsReserve |
+| ClaimResponse.formCode | UseElementSameName | ClaimResponse.form |
 | ClaimResponse.form | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.form |
 | ClaimResponse.processNote | UseElementSameName | ClaimResponse.note |
 | ClaimResponse.processNote.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.processNote.id |
@@ -176,9 +176,9 @@
 | ClaimResponse.insurance.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.modifierExtension |
 | ClaimResponse.insurance.sequence | UseElementSameName | ClaimResponse.coverage.sequence |
 | ClaimResponse.insurance.focal | UseElementSameName | ClaimResponse.coverage.focal |
-| ClaimResponse.insurance.coverage | UseElementSameName | ClaimResponse.coverage.coverage |
+| ClaimResponse.insurance.coverage | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.coverage |
 | ClaimResponse.insurance.businessArrangement | UseElementSameName | ClaimResponse.coverage.businessArrangement |
-| ClaimResponse.insurance.claimResponse | UseElementSameName | ClaimResponse.coverage.claimResponse |
+| ClaimResponse.insurance.claimResponse | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.claimResponse |
 | ClaimResponse.error | UseElementSameName | ClaimResponse.error |
 | ClaimResponse.error.id | UseElementSameName | ClaimResponse.error.id |
 | ClaimResponse.error.extension | UseElementSameName | ClaimResponse.error.extension |
@@ -186,5 +186,5 @@
 | ClaimResponse.error.itemSequence | UseElementSameName | ClaimResponse.error.sequenceLinkId |
 | ClaimResponse.error.detailSequence | UseElementSameName | ClaimResponse.error.detailSequenceLinkId |
 | ClaimResponse.error.subDetailSequence | UseElementSameName | ClaimResponse.error.subdetailSequenceLinkId |
-| ClaimResponse.error.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.error.code |
+| ClaimResponse.error.code | UseElementSameName | ClaimResponse.error.code |
 | ClaimResponse.error.expression | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.error.expression |

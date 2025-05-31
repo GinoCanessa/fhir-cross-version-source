@@ -38,7 +38,7 @@
 | SubstanceDefinition.property.extension | UseElementSameName | SubstanceDefinition.property.extension |
 | SubstanceDefinition.property.modifierExtension | UseElementSameName | SubstanceDefinition.property.modifierExtension |
 | SubstanceDefinition.property.type | UseElementSameName | SubstanceDefinition.property.type |
-| SubstanceDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SubstanceDefinition.property.value |
+| SubstanceDefinition.property.value[x] | UseElementSameName | SubstanceDefinition.property.value[x] |
 | SubstanceDefinition.molecularWeight | UseElementSameName | SubstanceDefinition.molecularWeight |
 | SubstanceDefinition.molecularWeight.id | UseElementSameName | SubstanceDefinition.molecularWeight.id |
 | SubstanceDefinition.molecularWeight.extension | UseElementSameName | SubstanceDefinition.molecularWeight.extension |

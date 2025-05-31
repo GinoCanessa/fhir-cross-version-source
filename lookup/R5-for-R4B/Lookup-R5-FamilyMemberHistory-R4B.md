@@ -30,7 +30,7 @@
 | FamilyMemberHistory.age[x] | UseElementRenamed | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseElementRenamed | FamilyMemberHistory.estimatedAge |
 | FamilyMemberHistory.deceased[x] | UseElementRenamed | FamilyMemberHistory.deceased[x] |
-| FamilyMemberHistory.reason | UseElementRenamed | FamilyMemberHistory.reasonCode |
+| FamilyMemberHistory.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.reason |
 | FamilyMemberHistory.note | UseElementRenamed | FamilyMemberHistory.note |
 | FamilyMemberHistory.condition | UseElementRenamed | FamilyMemberHistory.condition |
 | FamilyMemberHistory.condition.id | UseElementRenamed | FamilyMemberHistory.condition.id |

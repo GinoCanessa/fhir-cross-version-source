@@ -20,5 +20,5 @@
 | OrganizationAffiliation.specialty | UseElementRenamed | OrganizationAffiliation.specialty |
 | OrganizationAffiliation.location | UseElementRenamed | OrganizationAffiliation.location |
 | OrganizationAffiliation.healthcareService | UseElementRenamed | OrganizationAffiliation.healthcareService |
-| OrganizationAffiliation.contact | UseElementRenamed | OrganizationAffiliation.telecom |
+| OrganizationAffiliation.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OrganizationAffiliation.contact |
 | OrganizationAffiliation.endpoint | UseElementRenamed | OrganizationAffiliation.endpoint |

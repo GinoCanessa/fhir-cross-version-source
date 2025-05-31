@@ -29,7 +29,7 @@
 | SearchParameter.expression | UseElementSameName | SearchParameter.expression |
 | SearchParameter.xpath | UseElementRenamed | SearchParameter.xpath |
 | SearchParameter.xpathUsage | UseElementRenamed | SearchParameter.xpathUsage |
-| SearchParameter.target | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.target |
+| SearchParameter.target | UseElementSameName | SearchParameter.target |
 | SearchParameter.multipleOr | UseElementSameName | SearchParameter.multipleOr |
 | SearchParameter.multipleAnd | UseElementSameName | SearchParameter.multipleAnd |
 | SearchParameter.comparator | UseElementSameName | SearchParameter.comparator |

@@ -34,7 +34,7 @@
 | Evidence.editor | UseElementSameName | Evidence.editor |
 | Evidence.reviewer | UseElementSameName | Evidence.reviewer |
 | Evidence.endorser | UseElementSameName | Evidence.endorser |
-| Evidence.relatedArtifact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Evidence.relatedArtifact |
+| Evidence.relatedArtifact | UseElementSameName | Evidence.relatedArtifact |
 | Evidence.exposureBackground | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Evidence.exposureBackground |
 | Evidence.exposureVariant | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Evidence.exposureVariant |
 | Evidence.outcome | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Evidence.outcome |

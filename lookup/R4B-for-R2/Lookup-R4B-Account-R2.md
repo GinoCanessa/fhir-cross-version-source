@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Account.id | UseElementSameName | Account.id |
-| Account.meta | UseElementSameName | Account.meta |
+| Account.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.meta |
 | Account.implicitRules | UseElementSameName | Account.implicitRules |
 | Account.language | UseElementSameName | Account.language |
 | Account.text | UseElementSameName | Account.text |
@@ -11,18 +11,18 @@
 | Account.extension | UseElementSameName | Account.extension |
 | Account.modifierExtension | UseElementSameName | Account.modifierExtension |
 | Account.identifier | UseElementSameName | Account.identifier |
-| Account.status | UseElementSameName | Account.status |
+| Account.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.status |
 | Account.type | UseElementSameName | Account.type |
 | Account.name | UseElementSameName | Account.name |
 | Account.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.subject |
-| Account.servicePeriod | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.servicePeriod |
+| Account.servicePeriod | UseElementSameName | Account.activePeriod |
 | Account.coverage | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.coverage |
 | Account.coverage.id | UseExtensionFromAncestor | - |
 | Account.coverage.extension | UseExtensionFromAncestor | - |
 | Account.coverage.modifierExtension | UseExtensionFromAncestor | - |
 | Account.coverage.coverage | UseExtensionFromAncestor | - |
 | Account.coverage.priority | UseExtensionFromAncestor | - |
-| Account.owner | UseElementSameName | Account.owner |
+| Account.owner | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.owner |
 | Account.description | UseElementSameName | Account.description |
 | Account.guarantor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.guarantor |
 | Account.guarantor.id | UseExtensionFromAncestor | - |

@@ -14,7 +14,7 @@
 | Flag.status | UseElementRenamed | Flag.status |
 | Flag.category | UseElementRenamed | Flag.category |
 | Flag.code | UseElementRenamed | Flag.code |
-| Flag.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Flag.subject |
+| Flag.subject | UseElementRenamed | Flag.subject |
 | Flag.period | UseElementRenamed | Flag.period |
 | Flag.encounter | UseElementRenamed | Flag.encounter |
-| Flag.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Flag.author |
+| Flag.author | UseElementRenamed | Flag.author |

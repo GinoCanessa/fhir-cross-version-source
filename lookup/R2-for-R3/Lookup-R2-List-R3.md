@@ -13,9 +13,9 @@
 | List.identifier | UseElementSameName | List.identifier |
 | List.title | UseElementSameName | List.title |
 | List.code | UseElementSameName | List.code |
-| List.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-List.subject |
-| List.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-List.source |
-| List.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-List.encounter |
+| List.subject | UseElementSameName | List.subject |
+| List.source | UseElementSameName | List.source |
+| List.encounter | UseElementSameName | List.encounter |
 | List.status | UseElementSameName | List.status |
 | List.date | UseElementSameName | List.date |
 | List.orderedBy | UseElementSameName | List.orderedBy |
@@ -28,5 +28,5 @@
 | List.entry.flag | UseElementSameName | List.entry.flag |
 | List.entry.deleted | UseElementSameName | List.entry.deleted |
 | List.entry.date | UseElementSameName | List.entry.date |
-| List.entry.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-List.entry.item |
+| List.entry.item | UseElementSameName | List.entry.item |
 | List.emptyReason | UseElementSameName | List.emptyReason |

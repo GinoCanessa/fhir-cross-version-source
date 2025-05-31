@@ -14,9 +14,9 @@
 | PaymentNotice.ruleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.ruleset |
 | PaymentNotice.originalRuleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.originalRuleset |
 | PaymentNotice.created | UseElementSameName | PaymentNotice.created |
-| PaymentNotice.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.target |
-| PaymentNotice.provider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.provider |
-| PaymentNotice.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.organization |
-| PaymentNotice.request | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.request |
-| PaymentNotice.response | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.response |
-| PaymentNotice.paymentStatus | UseElementSameName | PaymentNotice.paymentStatus |
+| PaymentNotice.target | UseElementSameName | PaymentNotice.target |
+| PaymentNotice.provider | UseElementSameName | PaymentNotice.provider |
+| PaymentNotice.organization | UseElementSameName | PaymentNotice.organization |
+| PaymentNotice.request | UseElementSameName | PaymentNotice.request |
+| PaymentNotice.response | UseElementSameName | PaymentNotice.response |
+| PaymentNotice.paymentStatus | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentNotice.paymentStatus |

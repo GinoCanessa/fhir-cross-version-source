@@ -12,7 +12,7 @@
 | Medication.modifierExtension | UseElementSameName | Medication.modifierExtension |
 | Medication.code | UseElementSameName | Medication.code |
 | Medication.isBrand | UseElementSameName | Medication.isBrand |
-| Medication.manufacturer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.manufacturer |
+| Medication.manufacturer | UseElementSameName | Medication.manufacturer |
 | Medication.product | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.product |
 | Medication.product.id | UseExtensionFromAncestor | - |
 | Medication.product.extension | UseExtensionFromAncestor | - |
@@ -39,5 +39,5 @@
 | Medication.package.content.id | UseElementSameName | Medication.package.content.id |
 | Medication.package.content.extension | UseElementSameName | Medication.package.content.extension |
 | Medication.package.content.modifierExtension | UseElementSameName | Medication.package.content.modifierExtension |
-| Medication.package.content.item | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.package.content.item |
+| Medication.package.content.item | UseElementRenamed | Medication.package.content.item[x] |
 | Medication.package.content.amount | UseElementSameName | Medication.package.content.amount |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | OperationDefinition.id | UseElementSameName | OperationDefinition.id |
-| OperationDefinition.meta | UseElementSameName | OperationDefinition.meta |
+| OperationDefinition.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.meta |
 | OperationDefinition.implicitRules | UseElementSameName | OperationDefinition.implicitRules |
 | OperationDefinition.language | UseElementSameName | OperationDefinition.language |
 | OperationDefinition.text | UseElementSameName | OperationDefinition.text |
@@ -14,12 +14,12 @@
 | OperationDefinition.version | UseElementSameName | OperationDefinition.version |
 | OperationDefinition.name | UseElementSameName | OperationDefinition.name |
 | OperationDefinition.title | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.title |
-| OperationDefinition.status | UseElementSameName | OperationDefinition.status |
+| OperationDefinition.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.status |
 | OperationDefinition.kind | UseElementSameName | OperationDefinition.kind |
 | OperationDefinition.experimental | UseElementSameName | OperationDefinition.experimental |
 | OperationDefinition.date | UseElementSameName | OperationDefinition.date |
 | OperationDefinition.publisher | UseElementSameName | OperationDefinition.publisher |
-| OperationDefinition.contact | UseElementSameName | OperationDefinition.contact |
+| OperationDefinition.contact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.contact |
 | OperationDefinition.description | UseElementSameName | OperationDefinition.description |
 | OperationDefinition.useContext | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.useContext |
 | OperationDefinition.jurisdiction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.jurisdiction |
@@ -27,7 +27,7 @@
 | OperationDefinition.affectsState | UseElementSameName | OperationDefinition.idempotent |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
 | OperationDefinition.comment | UseElementSameName | OperationDefinition.notes |
-| OperationDefinition.base | UseElementSameName | OperationDefinition.base |
+| OperationDefinition.base | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.base |
 | OperationDefinition.resource | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
 | OperationDefinition.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.type |
@@ -44,8 +44,8 @@
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
 | OperationDefinition.parameter.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.parameter.type |
-| OperationDefinition.parameter.targetProfile | UseElementSameName | OperationDefinition.parameter.profile |
-| OperationDefinition.parameter.searchType | UseElementSameName | OperationDefinition.parameter.type |
+| OperationDefinition.parameter.targetProfile | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.parameter.targetProfile |
+| OperationDefinition.parameter.searchType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |
 | OperationDefinition.parameter.binding.extension | UseElementSameName | OperationDefinition.parameter.binding.extension |

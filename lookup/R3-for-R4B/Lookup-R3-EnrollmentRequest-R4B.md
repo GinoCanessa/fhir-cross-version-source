@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | EnrollmentRequest.id | UseElementSameName | EnrollmentRequest.id |
-| EnrollmentRequest.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.meta |
+| EnrollmentRequest.meta | UseElementSameName | EnrollmentRequest.meta |
 | EnrollmentRequest.implicitRules | UseElementSameName | EnrollmentRequest.implicitRules |
 | EnrollmentRequest.language | UseElementSameName | EnrollmentRequest.language |
 | EnrollmentRequest.text | UseElementSameName | EnrollmentRequest.text |
@@ -13,8 +13,8 @@
 | EnrollmentRequest.identifier | UseElementSameName | EnrollmentRequest.identifier |
 | EnrollmentRequest.status | UseElementSameName | EnrollmentRequest.status |
 | EnrollmentRequest.created | UseElementSameName | EnrollmentRequest.created |
-| EnrollmentRequest.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.insurer |
+| EnrollmentRequest.insurer | UseElementSameName | EnrollmentRequest.insurer |
 | EnrollmentRequest.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.provider |
 | EnrollmentRequest.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.organization |
-| EnrollmentRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.subject |
-| EnrollmentRequest.coverage | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.coverage |
+| EnrollmentRequest.subject | UseElementRenamed | EnrollmentRequest.candidate |
+| EnrollmentRequest.coverage | UseElementSameName | EnrollmentRequest.coverage |

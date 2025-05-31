@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ConceptMap.id | UseElementSameName | ConceptMap.id |
-| ConceptMap.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ConceptMap.meta |
+| ConceptMap.meta | UseElementSameName | ConceptMap.meta |
 | ConceptMap.implicitRules | UseElementSameName | ConceptMap.implicitRules |
 | ConceptMap.language | UseElementSameName | ConceptMap.language |
 | ConceptMap.text | UseElementSameName | ConceptMap.text |
@@ -54,7 +54,7 @@
 | ConceptMap.group.element.target.dependsOn.extension | UseElementSameName | ConceptMap.group.element.target.dependsOn.extension |
 | ConceptMap.group.element.target.dependsOn.modifierExtension | UseElementSameName | ConceptMap.group.element.target.dependsOn.modifierExtension |
 | ConceptMap.group.element.target.dependsOn.property | UseElementSameName | ConceptMap.group.element.target.dependsOn.property |
-| ConceptMap.group.element.target.dependsOn.system | UseElementSameName | ConceptMap.group.element.target.dependsOn.system |
+| ConceptMap.group.element.target.dependsOn.system | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.system |
 | ConceptMap.group.element.target.dependsOn.code | UseElementRenamed | ConceptMap.group.element.target.dependsOn.value |
 | ConceptMap.group.element.target.dependsOn.display | UseElementSameName | ConceptMap.group.element.target.dependsOn.display |
 | ConceptMap.group.element.target.product | UseElementSameName | ConceptMap.group.element.target.product |
@@ -65,4 +65,4 @@
 | ConceptMap.group.unmapped.mode | UseElementSameName | ConceptMap.group.unmapped.mode |
 | ConceptMap.group.unmapped.code | UseElementSameName | ConceptMap.group.unmapped.code |
 | ConceptMap.group.unmapped.display | UseElementSameName | ConceptMap.group.unmapped.display |
-| ConceptMap.group.unmapped.url | UseElementSameName | ConceptMap.group.unmapped.url |
+| ConceptMap.group.unmapped.url | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ConceptMap.group.unmapped.url |

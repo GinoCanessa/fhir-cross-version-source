@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | QuestionnaireResponse.id | UseElementSameName | QuestionnaireResponse.id |
-| QuestionnaireResponse.meta | UseElementSameName | QuestionnaireResponse.meta |
+| QuestionnaireResponse.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.meta |
 | QuestionnaireResponse.implicitRules | UseElementSameName | QuestionnaireResponse.implicitRules |
 | QuestionnaireResponse.language | UseElementSameName | QuestionnaireResponse.language |
 | QuestionnaireResponse.text | UseElementSameName | QuestionnaireResponse.text |
@@ -12,11 +12,11 @@
 | QuestionnaireResponse.modifierExtension | UseElementSameName | QuestionnaireResponse.modifierExtension |
 | QuestionnaireResponse.identifier | UseElementSameName | QuestionnaireResponse.identifier |
 | QuestionnaireResponse.basedOn | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.basedOn |
-| QuestionnaireResponse.partOf | UseElementSameName | QuestionnaireResponse.parent |
-| QuestionnaireResponse.questionnaire | UseElementSameName | QuestionnaireResponse.questionnaire |
+| QuestionnaireResponse.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.partOf |
+| QuestionnaireResponse.questionnaire | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.questionnaire |
 | QuestionnaireResponse.status | UseElementSameName | QuestionnaireResponse.status |
-| QuestionnaireResponse.subject | UseElementSameName | QuestionnaireResponse.subject |
-| QuestionnaireResponse.encounter | UseElementSameName | QuestionnaireResponse.context |
+| QuestionnaireResponse.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.subject |
+| QuestionnaireResponse.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.encounter |
 | QuestionnaireResponse.authored | UseElementSameName | QuestionnaireResponse.authored |
 | QuestionnaireResponse.author | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.author |
 | QuestionnaireResponse.source | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.source |
@@ -31,6 +31,6 @@
 | QuestionnaireResponse.item.answer.id | UseElementSameName | QuestionnaireResponse.item.answer.id |
 | QuestionnaireResponse.item.answer.extension | UseElementSameName | QuestionnaireResponse.item.answer.extension |
 | QuestionnaireResponse.item.answer.modifierExtension | UseElementSameName | QuestionnaireResponse.item.answer.modifierExtension |
-| QuestionnaireResponse.item.answer.value[x] | UseElementSameName | QuestionnaireResponse.item.answer.value[x] |
+| QuestionnaireResponse.item.answer.value[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.item.answer.value |
 | QuestionnaireResponse.item.answer.item | UseElementSameName | QuestionnaireResponse.item.answer.item |
 | QuestionnaireResponse.item.item | UseElementSameName | QuestionnaireResponse.item.item |

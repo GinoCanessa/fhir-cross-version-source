@@ -18,7 +18,7 @@
 | ActivityDefinition.subtitle | UseElementSameName | ActivityDefinition.subtitle |
 | ActivityDefinition.status | UseElementSameName | ActivityDefinition.status |
 | ActivityDefinition.experimental | UseElementSameName | ActivityDefinition.experimental |
-| ActivityDefinition.subject[x] | UseElementSameName | ActivityDefinition.subject[x] |
+| ActivityDefinition.subject[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ActivityDefinition.subject |
 | ActivityDefinition.date | UseElementSameName | ActivityDefinition.date |
 | ActivityDefinition.publisher | UseElementSameName | ActivityDefinition.publisher |
 | ActivityDefinition.contact | UseElementSameName | ActivityDefinition.contact |

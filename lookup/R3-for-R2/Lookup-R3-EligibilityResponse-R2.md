@@ -13,12 +13,12 @@
 | EligibilityResponse.identifier | UseElementRenamed | EligibilityResponse.identifier |
 | EligibilityResponse.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.status |
 | EligibilityResponse.created | UseElementRenamed | EligibilityResponse.created |
-| EligibilityResponse.requestProvider | UseElementRenamed | EligibilityResponse.requestProvider |
-| EligibilityResponse.requestOrganization | UseElementRenamed | EligibilityResponse.requestOrganization |
-| EligibilityResponse.request | UseElementRenamed | EligibilityResponse.request |
-| EligibilityResponse.outcome | UseElementRenamed | EligibilityResponse.outcome |
+| EligibilityResponse.requestProvider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestProvider |
+| EligibilityResponse.requestOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestOrganization |
+| EligibilityResponse.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.request |
+| EligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.outcome |
 | EligibilityResponse.disposition | UseElementRenamed | EligibilityResponse.disposition |
-| EligibilityResponse.insurer | UseElementRenamed | EligibilityResponse.organization |
+| EligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurer |
 | EligibilityResponse.inforce | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.inforce |
 | EligibilityResponse.insurance | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance |
 | EligibilityResponse.insurance.id | UseExtensionFromAncestor | - |

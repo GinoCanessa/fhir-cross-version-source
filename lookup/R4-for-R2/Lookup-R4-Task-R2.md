@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Task.id | UseElementSameName | ProcessRequest.id |
-| Task.meta | UseElementSameName | ProcessRequest.meta |
+| Task.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.meta |
 | Task.implicitRules | UseElementSameName | ProcessRequest.implicitRules |
 | Task.language | UseElementSameName | ProcessRequest.language |
 | Task.text | UseElementSameName | ProcessRequest.text |
@@ -33,7 +33,7 @@
 | Task.performerType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.performerType |
 | Task.owner | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.owner |
 | Task.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.location |
-| Task.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.reasonCode |
+| Task.reasonCode | UseElementSameName | Order.reason[x] |
 | Task.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.reasonReference |
 | Task.insurance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.insurance |
 | Task.note | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.note |

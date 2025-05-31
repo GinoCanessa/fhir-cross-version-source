@@ -14,7 +14,7 @@
 | Substance.instance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Substance.instance |
 | Substance.status | UseElementRenamed | Substance.status |
 | Substance.category | UseElementRenamed | Substance.category |
-| Substance.code | UseElementRenamed | Substance.code |
+| Substance.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Substance.code |
 | Substance.description | UseElementRenamed | Substance.description |
 | Substance.expiry | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Substance.expiry |
 | Substance.quantity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Substance.quantity |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Library.id | UseElementSameName | Library.id |
-| Library.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library.meta |
+| Library.meta | UseElementSameName | Library.meta |
 | Library.implicitRules | UseElementSameName | Library.implicitRules |
 | Library.language | UseElementSameName | Library.language |
 | Library.text | UseElementSameName | Library.text |
@@ -29,10 +29,10 @@
 | Library.useContext | UseElementSameName | Library.useContext |
 | Library.jurisdiction | UseElementSameName | Library.jurisdiction |
 | Library.topic | UseElementSameName | Library.topic |
-| Library.contributor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library.contributor |
+| Library.contributor | UseElementRenamed | Library.author |
 | Library.contact | UseElementSameName | Library.contact |
 | Library.copyright | UseElementSameName | Library.copyright |
-| Library.relatedArtifact | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library.relatedArtifact |
+| Library.relatedArtifact | UseElementSameName | Library.relatedArtifact |
 | Library.parameter | UseElementSameName | Library.parameter |
-| Library.dataRequirement | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library.dataRequirement |
-| Library.content | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Library.content |
+| Library.dataRequirement | UseElementSameName | Library.dataRequirement |
+| Library.content | UseElementSameName | Library.content |

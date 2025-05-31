@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | EpisodeOfCare.id | UseElementSameName | EpisodeOfCare.id |
-| EpisodeOfCare.meta | UseElementSameName | EpisodeOfCare.meta |
+| EpisodeOfCare.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.meta |
 | EpisodeOfCare.implicitRules | UseElementSameName | EpisodeOfCare.implicitRules |
 | EpisodeOfCare.language | UseElementSameName | EpisodeOfCare.language |
 | EpisodeOfCare.text | UseElementSameName | EpisodeOfCare.text |
@@ -29,12 +29,12 @@
 | EpisodeOfCare.diagnosis.id | UseElementSameName | EpisodeOfCare.diagnosis.id |
 | EpisodeOfCare.diagnosis.extension | UseElementSameName | EpisodeOfCare.diagnosis.extension |
 | EpisodeOfCare.diagnosis.modifierExtension | UseElementSameName | EpisodeOfCare.diagnosis.modifierExtension |
-| EpisodeOfCare.diagnosis.condition | UseElementSameName | EpisodeOfCare.diagnosis.condition |
+| EpisodeOfCare.diagnosis.condition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.condition |
 | EpisodeOfCare.diagnosis.use | UseElementRenamed | EpisodeOfCare.diagnosis.role |
-| EpisodeOfCare.patient | UseElementSameName | EpisodeOfCare.patient |
-| EpisodeOfCare.managingOrganization | UseElementSameName | EpisodeOfCare.managingOrganization |
+| EpisodeOfCare.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.patient |
+| EpisodeOfCare.managingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.managingOrganization |
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.careManager |
-| EpisodeOfCare.careTeam | UseElementRenamed | EpisodeOfCare.team |
-| EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |
+| EpisodeOfCare.careTeam | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.careTeam |
+| EpisodeOfCare.account | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.account |

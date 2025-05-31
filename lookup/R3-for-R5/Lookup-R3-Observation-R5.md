@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Observation.id | UseElementSameName | Observation.id |
-| Observation.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.meta |
+| Observation.meta | UseElementSameName | Observation.meta |
 | Observation.implicitRules | UseElementSameName | Observation.implicitRules |
 | Observation.language | UseElementSameName | Observation.language |
 | Observation.text | UseElementSameName | Observation.text |
@@ -16,18 +16,18 @@
 | Observation.category | UseElementSameName | Observation.category |
 | Observation.code | UseElementSameName | Observation.code |
 | Observation.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.subject |
-| Observation.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.context |
-| Observation.effective[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.effective |
+| Observation.context | UseElementRenamed | Observation.encounter |
+| Observation.effective[x] | UseElementSameName | Observation.effective[x] |
 | Observation.issued | UseElementSameName | Observation.issued |
 | Observation.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.performer |
 | Observation.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.value |
 | Observation.dataAbsentReason | UseElementSameName | Observation.dataAbsentReason |
-| Observation.interpretation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.interpretation |
+| Observation.interpretation | UseElementSameName | Observation.interpretation |
 | Observation.comment | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.comment |
 | Observation.bodySite | UseElementSameName | Observation.bodySite |
 | Observation.method | UseElementSameName | Observation.method |
 | Observation.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.specimen |
-| Observation.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.device |
+| Observation.device | UseElementSameName | Observation.device |
 | Observation.referenceRange | UseElementSameName | Observation.referenceRange |
 | Observation.referenceRange.id | UseElementSameName | Observation.referenceRange.id |
 | Observation.referenceRange.extension | UseElementSameName | Observation.referenceRange.extension |
@@ -51,5 +51,5 @@
 | Observation.component.code | UseElementSameName | Observation.component.code |
 | Observation.component.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.component.value |
 | Observation.component.dataAbsentReason | UseElementSameName | Observation.component.dataAbsentReason |
-| Observation.component.interpretation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.component.interpretation |
+| Observation.component.interpretation | UseElementSameName | Observation.component.interpretation |
 | Observation.component.referenceRange | UseElementSameName | Observation.component.referenceRange |

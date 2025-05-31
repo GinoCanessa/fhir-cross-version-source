@@ -60,7 +60,7 @@
 | SubscriptionTopic.canFilterBy.resource | UseElementSameName | SubscriptionTopic.canFilterBy.resource |
 | SubscriptionTopic.canFilterBy.filterParameter | UseElementSameName | SubscriptionTopic.canFilterBy.filterParameter |
 | SubscriptionTopic.canFilterBy.filterDefinition | UseElementSameName | SubscriptionTopic.canFilterBy.filterDefinition |
-| SubscriptionTopic.canFilterBy.modifier | UseElementSameName | SubscriptionTopic.canFilterBy.modifier |
+| SubscriptionTopic.canFilterBy.modifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionTopic.canFilterBy.modifier |
 | SubscriptionTopic.notificationShape | UseElementSameName | SubscriptionTopic.notificationShape |
 | SubscriptionTopic.notificationShape.id | UseElementSameName | SubscriptionTopic.notificationShape.id |
 | SubscriptionTopic.notificationShape.extension | UseElementSameName | SubscriptionTopic.notificationShape.extension |

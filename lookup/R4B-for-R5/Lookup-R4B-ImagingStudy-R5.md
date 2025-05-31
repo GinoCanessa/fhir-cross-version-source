@@ -12,7 +12,7 @@
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
 | ImagingStudy.identifier | UseElementSameName | ImagingStudy.identifier |
 | ImagingStudy.status | UseElementSameName | ImagingStudy.status |
-| ImagingStudy.modality | UseElementSameName | ImagingStudy.modality |
+| ImagingStudy.modality | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.modality |
 | ImagingStudy.subject | UseElementSameName | ImagingStudy.subject |
 | ImagingStudy.encounter | UseElementSameName | ImagingStudy.encounter |
 | ImagingStudy.started | UseElementSameName | ImagingStudy.started |
@@ -23,10 +23,10 @@
 | ImagingStudy.numberOfSeries | UseElementSameName | ImagingStudy.numberOfSeries |
 | ImagingStudy.numberOfInstances | UseElementSameName | ImagingStudy.numberOfInstances |
 | ImagingStudy.procedureReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.procedureReference |
-| ImagingStudy.procedureCode | UseElementRenamed | ImagingStudy.procedure |
+| ImagingStudy.procedureCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.procedureCode |
 | ImagingStudy.location | UseElementSameName | ImagingStudy.location |
-| ImagingStudy.reasonCode | UseElementRenamed | ImagingStudy.reason |
-| ImagingStudy.reasonReference | UseElementRenamed | ImagingStudy.reason |
+| ImagingStudy.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.reasonCode |
+| ImagingStudy.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.reasonReference |
 | ImagingStudy.note | UseElementSameName | ImagingStudy.note |
 | ImagingStudy.description | UseElementSameName | ImagingStudy.description |
 | ImagingStudy.series | UseElementSameName | ImagingStudy.series |
@@ -35,12 +35,12 @@
 | ImagingStudy.series.modifierExtension | UseElementSameName | ImagingStudy.series.modifierExtension |
 | ImagingStudy.series.uid | UseElementSameName | ImagingStudy.series.uid |
 | ImagingStudy.series.number | UseElementSameName | ImagingStudy.series.number |
-| ImagingStudy.series.modality | UseElementSameName | ImagingStudy.series.modality |
+| ImagingStudy.series.modality | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.series.modality |
 | ImagingStudy.series.description | UseElementSameName | ImagingStudy.series.description |
 | ImagingStudy.series.numberOfInstances | UseElementSameName | ImagingStudy.series.numberOfInstances |
 | ImagingStudy.series.endpoint | UseElementSameName | ImagingStudy.series.endpoint |
-| ImagingStudy.series.bodySite | UseElementSameName | ImagingStudy.series.bodySite |
-| ImagingStudy.series.laterality | UseElementSameName | ImagingStudy.series.laterality |
+| ImagingStudy.series.bodySite | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.series.bodySite |
+| ImagingStudy.series.laterality | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.series.laterality |
 | ImagingStudy.series.specimen | UseElementSameName | ImagingStudy.series.specimen |
 | ImagingStudy.series.started | UseElementSameName | ImagingStudy.series.started |
 | ImagingStudy.series.performer | UseElementSameName | ImagingStudy.series.performer |
@@ -48,7 +48,7 @@
 | ImagingStudy.series.performer.extension | UseElementSameName | ImagingStudy.series.performer.extension |
 | ImagingStudy.series.performer.modifierExtension | UseElementSameName | ImagingStudy.series.performer.modifierExtension |
 | ImagingStudy.series.performer.function | UseElementSameName | ImagingStudy.series.performer.function |
-| ImagingStudy.series.performer.actor | UseElementSameName | ImagingStudy.series.performer.actor |
+| ImagingStudy.series.performer.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.series.performer.actor |
 | ImagingStudy.series.instance | UseElementSameName | ImagingStudy.series.instance |
 | ImagingStudy.series.instance.id | UseElementSameName | ImagingStudy.series.instance.id |
 | ImagingStudy.series.instance.extension | UseElementSameName | ImagingStudy.series.instance.extension |

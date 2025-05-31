@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CapabilityStatement.id | UseElementSameName | CapabilityStatement.id |
-| CapabilityStatement.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.meta |
+| CapabilityStatement.meta | UseElementSameName | CapabilityStatement.meta |
 | CapabilityStatement.implicitRules | UseElementSameName | CapabilityStatement.implicitRules |
 | CapabilityStatement.language | UseElementSameName | CapabilityStatement.language |
 | CapabilityStatement.text | UseElementSameName | CapabilityStatement.text |
@@ -25,7 +25,7 @@
 | CapabilityStatement.purpose | UseElementSameName | CapabilityStatement.purpose |
 | CapabilityStatement.copyright | UseElementSameName | CapabilityStatement.copyright |
 | CapabilityStatement.kind | UseElementSameName | CapabilityStatement.kind |
-| CapabilityStatement.instantiates | UseElementSameName | CapabilityStatement.instantiates |
+| CapabilityStatement.instantiates | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.instantiates |
 | CapabilityStatement.software | UseElementSameName | CapabilityStatement.software |
 | CapabilityStatement.software.id | UseElementSameName | CapabilityStatement.software.id |
 | CapabilityStatement.software.extension | UseElementSameName | CapabilityStatement.software.extension |
@@ -39,12 +39,12 @@
 | CapabilityStatement.implementation.modifierExtension | UseElementSameName | CapabilityStatement.implementation.modifierExtension |
 | CapabilityStatement.implementation.description | UseElementSameName | CapabilityStatement.implementation.description |
 | CapabilityStatement.implementation.url | UseElementSameName | CapabilityStatement.implementation.url |
-| CapabilityStatement.fhirVersion | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.fhirVersion |
+| CapabilityStatement.fhirVersion | UseElementSameName | CapabilityStatement.fhirVersion |
 | CapabilityStatement.acceptUnknown | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.acceptUnknown |
 | CapabilityStatement.format | UseElementSameName | CapabilityStatement.format |
 | CapabilityStatement.patchFormat | UseElementSameName | CapabilityStatement.patchFormat |
-| CapabilityStatement.implementationGuide | UseElementSameName | CapabilityStatement.implementationGuide |
-| CapabilityStatement.profile | UseElementRenamed | CapabilityStatement.rest.resource.supportedProfile |
+| CapabilityStatement.implementationGuide | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.implementationGuide |
+| CapabilityStatement.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.profile |
 | CapabilityStatement.rest | UseElementSameName | CapabilityStatement.rest |
 | CapabilityStatement.rest.id | UseElementSameName | CapabilityStatement.rest.id |
 | CapabilityStatement.rest.extension | UseElementSameName | CapabilityStatement.rest.extension |
@@ -69,7 +69,7 @@
 | CapabilityStatement.rest.resource.extension | UseElementSameName | CapabilityStatement.rest.resource.extension |
 | CapabilityStatement.rest.resource.modifierExtension | UseElementSameName | CapabilityStatement.rest.resource.modifierExtension |
 | CapabilityStatement.rest.resource.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.resource.type |
-| CapabilityStatement.rest.resource.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.resource.profile |
+| CapabilityStatement.rest.resource.profile | UseElementSameName | CapabilityStatement.rest.resource.profile |
 | CapabilityStatement.rest.resource.documentation | UseElementSameName | CapabilityStatement.rest.resource.documentation |
 | CapabilityStatement.rest.resource.interaction | UseElementSameName | CapabilityStatement.rest.resource.interaction |
 | CapabilityStatement.rest.resource.interaction.id | UseElementSameName | CapabilityStatement.rest.resource.interaction.id |
@@ -92,8 +92,8 @@
 | CapabilityStatement.rest.resource.searchParam.extension | UseElementSameName | CapabilityStatement.rest.resource.searchParam.extension |
 | CapabilityStatement.rest.resource.searchParam.modifierExtension | UseElementSameName | CapabilityStatement.rest.resource.searchParam.modifierExtension |
 | CapabilityStatement.rest.resource.searchParam.name | UseElementSameName | CapabilityStatement.rest.resource.searchParam.name |
-| CapabilityStatement.rest.resource.searchParam.definition | UseElementSameName | CapabilityStatement.rest.resource.searchParam.definition |
-| CapabilityStatement.rest.resource.searchParam.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.resource.searchParam.type |
+| CapabilityStatement.rest.resource.searchParam.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.resource.searchParam.definition |
+| CapabilityStatement.rest.resource.searchParam.type | UseElementSameName | CapabilityStatement.rest.resource.searchParam.type |
 | CapabilityStatement.rest.resource.searchParam.documentation | UseElementSameName | CapabilityStatement.rest.resource.searchParam.documentation |
 | CapabilityStatement.rest.interaction | UseElementSameName | CapabilityStatement.rest.interaction |
 | CapabilityStatement.rest.interaction.id | UseElementSameName | CapabilityStatement.rest.interaction.id |
@@ -107,8 +107,8 @@
 | CapabilityStatement.rest.operation.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.extension |
 | CapabilityStatement.rest.operation.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.modifierExtension |
 | CapabilityStatement.rest.operation.name | UseElementRenamed | CapabilityStatement.rest.resource.operation.name |
-| CapabilityStatement.rest.operation.definition | UseElementRenamed | CapabilityStatement.rest.resource.operation.definition |
-| CapabilityStatement.rest.compartment | UseElementSameName | CapabilityStatement.rest.compartment |
+| CapabilityStatement.rest.operation.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.definition |
+| CapabilityStatement.rest.compartment | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.compartment |
 | CapabilityStatement.messaging | UseElementSameName | CapabilityStatement.messaging |
 | CapabilityStatement.messaging.id | UseElementSameName | CapabilityStatement.messaging.id |
 | CapabilityStatement.messaging.extension | UseElementSameName | CapabilityStatement.messaging.extension |
@@ -126,7 +126,7 @@
 | CapabilityStatement.messaging.supportedMessage.extension | UseElementSameName | CapabilityStatement.messaging.supportedMessage.extension |
 | CapabilityStatement.messaging.supportedMessage.modifierExtension | UseElementSameName | CapabilityStatement.messaging.supportedMessage.modifierExtension |
 | CapabilityStatement.messaging.supportedMessage.mode | UseElementSameName | CapabilityStatement.messaging.supportedMessage.mode |
-| CapabilityStatement.messaging.supportedMessage.definition | UseElementSameName | CapabilityStatement.messaging.supportedMessage.definition |
+| CapabilityStatement.messaging.supportedMessage.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.messaging.supportedMessage.definition |
 | CapabilityStatement.messaging.event | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.messaging.event |
 | CapabilityStatement.messaging.event.id | UseExtensionFromAncestor | - |
 | CapabilityStatement.messaging.event.extension | UseExtensionFromAncestor | - |
@@ -144,4 +144,4 @@
 | CapabilityStatement.document.modifierExtension | UseElementSameName | CapabilityStatement.document.modifierExtension |
 | CapabilityStatement.document.mode | UseElementSameName | CapabilityStatement.document.mode |
 | CapabilityStatement.document.documentation | UseElementSameName | CapabilityStatement.document.documentation |
-| CapabilityStatement.document.profile | UseElementSameName | CapabilityStatement.document.profile |
+| CapabilityStatement.document.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.document.profile |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DeviceMetric.id | UseElementSameName | DeviceMetric.id |
-| DeviceMetric.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.meta |
+| DeviceMetric.meta | UseElementSameName | DeviceMetric.meta |
 | DeviceMetric.implicitRules | UseElementSameName | DeviceMetric.implicitRules |
 | DeviceMetric.language | UseElementSameName | DeviceMetric.language |
 | DeviceMetric.text | UseElementSameName | DeviceMetric.text |
@@ -11,12 +11,12 @@
 | DeviceMetric.extension | UseElementSameName | DeviceMetric.extension |
 | DeviceMetric.modifierExtension | UseElementSameName | DeviceMetric.modifierExtension |
 | DeviceMetric.type | UseElementSameName | DeviceMetric.type |
-| DeviceMetric.identifier | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.identifier |
+| DeviceMetric.identifier | UseElementSameName | DeviceMetric.identifier |
 | DeviceMetric.unit | UseElementSameName | DeviceMetric.unit |
 | DeviceMetric.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.source |
 | DeviceMetric.parent | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.parent |
-| DeviceMetric.operationalStatus | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.operationalStatus |
-| DeviceMetric.color | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.color |
+| DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
+| DeviceMetric.color | UseElementSameName | DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |
 | DeviceMetric.measurementPeriod | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceMetric.measurementPeriod |
 | DeviceMetric.calibration | UseElementSameName | DeviceMetric.calibration |

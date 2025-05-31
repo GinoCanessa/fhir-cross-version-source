@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CoverageEligibilityRequest.id | UseElementSameName | EligibilityRequest.id |
-| CoverageEligibilityRequest.meta | UseElementSameName | EligibilityRequest.meta |
+| CoverageEligibilityRequest.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.meta |
 | CoverageEligibilityRequest.implicitRules | UseElementSameName | EligibilityRequest.implicitRules |
 | CoverageEligibilityRequest.language | UseElementSameName | EligibilityRequest.language |
 | CoverageEligibilityRequest.text | UseElementSameName | EligibilityRequest.text |
@@ -14,13 +14,13 @@
 | CoverageEligibilityRequest.status | UseElementSameName | EligibilityRequest.status |
 | CoverageEligibilityRequest.priority | UseElementSameName | EligibilityRequest.priority |
 | CoverageEligibilityRequest.purpose | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.purpose |
-| CoverageEligibilityRequest.patient | UseElementSameName | EligibilityRequest.patient |
+| CoverageEligibilityRequest.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.patient |
 | CoverageEligibilityRequest.serviced[x] | UseElementSameName | EligibilityRequest.serviced[x] |
 | CoverageEligibilityRequest.created | UseElementSameName | EligibilityRequest.created |
 | CoverageEligibilityRequest.enterer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.enterer |
 | CoverageEligibilityRequest.provider | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.provider |
-| CoverageEligibilityRequest.insurer | UseElementSameName | EligibilityRequest.insurer |
-| CoverageEligibilityRequest.facility | UseElementSameName | EligibilityRequest.facility |
+| CoverageEligibilityRequest.insurer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.insurer |
+| CoverageEligibilityRequest.facility | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.facility |
 | CoverageEligibilityRequest.supportingInfo | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.supportingInfo |
 | CoverageEligibilityRequest.supportingInfo.id | UseExtensionFromAncestor | - |
 | CoverageEligibilityRequest.supportingInfo.extension | UseExtensionFromAncestor | - |

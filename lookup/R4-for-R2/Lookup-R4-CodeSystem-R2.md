@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CodeSystem.id | UseElementSameName | ValueSet.id |
-| CodeSystem.meta | UseElementSameName | ValueSet.meta |
+| CodeSystem.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.meta |
 | CodeSystem.implicitRules | UseElementSameName | ValueSet.implicitRules |
 | CodeSystem.language | UseElementSameName | ValueSet.language |
 | CodeSystem.text | UseElementSameName | ValueSet.text |
@@ -11,17 +11,17 @@
 | CodeSystem.extension | UseElementSameName | ValueSet.extension |
 | CodeSystem.modifierExtension | UseElementSameName | ValueSet.modifierExtension |
 | CodeSystem.url | UseElementSameName | ValueSet.url |
-| CodeSystem.identifier | UseElementSameName | ValueSet.identifier |
+| CodeSystem.identifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.identifier |
 | CodeSystem.version | UseElementSameName | ValueSet.version |
 | CodeSystem.name | UseElementSameName | ValueSet.name |
 | CodeSystem.title | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.title |
-| CodeSystem.status | UseElementSameName | ValueSet.status |
+| CodeSystem.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.status |
 | CodeSystem.experimental | UseElementSameName | ValueSet.experimental |
 | CodeSystem.date | UseElementSameName | ValueSet.date |
 | CodeSystem.publisher | UseElementSameName | ValueSet.publisher |
-| CodeSystem.contact | UseElementSameName | ValueSet.contact |
+| CodeSystem.contact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.contact |
 | CodeSystem.description | UseElementSameName | ValueSet.description |
-| CodeSystem.useContext | UseElementSameName | ValueSet.useContext |
+| CodeSystem.useContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.useContext |
 | CodeSystem.jurisdiction | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.jurisdiction |
 | CodeSystem.purpose | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CodeSystem.purpose |
 | CodeSystem.copyright | UseElementSameName | ValueSet.copyright |

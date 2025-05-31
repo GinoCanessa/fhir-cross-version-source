@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ProcedureRequest.id | UseElementRenamed | ServiceRequest.id |
-| ProcedureRequest.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.meta |
+| ProcedureRequest.meta | UseElementRenamed | ServiceRequest.meta |
 | ProcedureRequest.implicitRules | UseElementRenamed | ServiceRequest.implicitRules |
 | ProcedureRequest.language | UseElementRenamed | ServiceRequest.language |
 | ProcedureRequest.text | UseElementRenamed | ServiceRequest.text |
@@ -12,10 +12,10 @@
 | ProcedureRequest.modifierExtension | UseElementRenamed | ServiceRequest.modifierExtension |
 | ProcedureRequest.identifier | UseElementRenamed | ServiceRequest.identifier |
 | ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.subject |
-| ProcedureRequest.code | UseElementRenamed | ServiceRequest.code |
+| ProcedureRequest.code | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.code |
 | ProcedureRequest.bodySite | UseElementRenamed | ServiceRequest.bodySite |
 | ProcedureRequest.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.reason |
-| ProcedureRequest.scheduled[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.scheduled |
+| ProcedureRequest.scheduled[x] | UseElementRenamed | ServiceRequest.occurrence[x] |
 | ProcedureRequest.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.encounter |
 | ProcedureRequest.performer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.performer |
 | ProcedureRequest.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.status |

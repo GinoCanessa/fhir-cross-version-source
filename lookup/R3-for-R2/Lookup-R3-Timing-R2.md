@@ -8,7 +8,7 @@
 | Timing.repeat | UseElementSameName | Timing.repeat |
 | Timing.repeat.id | UseElementSameName | Timing.repeat.id |
 | Timing.repeat.extension | UseElementSameName | Timing.repeat.extension |
-| Timing.repeat.bounds[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.bounds |
+| Timing.repeat.bounds[x] | UseElementSameName | Timing.repeat.bounds[x] |
 | Timing.repeat.count | UseElementSameName | Timing.repeat.count |
 | Timing.repeat.countMax | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.countMax |
 | Timing.repeat.duration | UseElementSameName | Timing.repeat.duration |
@@ -21,6 +21,6 @@
 | Timing.repeat.periodUnit | UseElementSameName | Timing.repeat.periodUnits |
 | Timing.repeat.dayOfWeek | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.dayOfWeek |
 | Timing.repeat.timeOfDay | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.timeOfDay |
-| Timing.repeat.when | UseElementSameName | Timing.repeat.when |
+| Timing.repeat.when | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.when |
 | Timing.repeat.offset | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.offset |
 | Timing.code | UseElementSameName | Timing.code |

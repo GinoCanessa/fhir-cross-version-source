@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DocumentManifest.id | UseElementSameName | DocumentManifest.id |
-| DocumentManifest.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.meta |
+| DocumentManifest.meta | UseElementSameName | DocumentManifest.meta |
 | DocumentManifest.implicitRules | UseElementSameName | DocumentManifest.implicitRules |
 | DocumentManifest.language | UseElementSameName | DocumentManifest.language |
 | DocumentManifest.text | UseElementSameName | DocumentManifest.text |
@@ -12,7 +12,7 @@
 | DocumentManifest.modifierExtension | UseElementSameName | DocumentManifest.modifierExtension |
 | DocumentManifest.masterIdentifier | UseElementSameName | DocumentManifest.masterIdentifier |
 | DocumentManifest.identifier | UseElementSameName | DocumentManifest.identifier |
-| DocumentManifest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.subject |
+| DocumentManifest.subject | UseElementSameName | DocumentManifest.subject |
 | DocumentManifest.recipient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.recipient |
 | DocumentManifest.type | UseElementSameName | DocumentManifest.type |
 | DocumentManifest.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.author |
@@ -20,14 +20,14 @@
 | DocumentManifest.source | UseElementSameName | DocumentManifest.source |
 | DocumentManifest.status | UseElementSameName | DocumentManifest.status |
 | DocumentManifest.description | UseElementSameName | DocumentManifest.description |
-| DocumentManifest.content | UseElementSameName | DocumentManifest.content |
-| DocumentManifest.content.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content.id |
-| DocumentManifest.content.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content.extension |
-| DocumentManifest.content.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content.modifierExtension |
-| DocumentManifest.content.p[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content.p |
+| DocumentManifest.content | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content |
+| DocumentManifest.content.id | UseExtensionFromAncestor | - |
+| DocumentManifest.content.extension | UseExtensionFromAncestor | - |
+| DocumentManifest.content.modifierExtension | UseExtensionFromAncestor | - |
+| DocumentManifest.content.p[x] | UseExtensionFromAncestor | - |
 | DocumentManifest.related | UseElementSameName | DocumentManifest.related |
 | DocumentManifest.related.id | UseElementSameName | DocumentManifest.related.id |
 | DocumentManifest.related.extension | UseElementSameName | DocumentManifest.related.extension |
 | DocumentManifest.related.modifierExtension | UseElementSameName | DocumentManifest.related.modifierExtension |
 | DocumentManifest.related.identifier | UseElementSameName | DocumentManifest.related.identifier |
-| DocumentManifest.related.ref | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.related.ref |
+| DocumentManifest.related.ref | UseElementSameName | DocumentManifest.related.ref |

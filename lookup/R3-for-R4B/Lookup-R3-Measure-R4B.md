@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Measure.id | UseElementSameName | Measure.id |
-| Measure.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.meta |
+| Measure.meta | UseElementSameName | Measure.meta |
 | Measure.implicitRules | UseElementSameName | Measure.implicitRules |
 | Measure.language | UseElementSameName | Measure.language |
 | Measure.text | UseElementSameName | Measure.text |
@@ -28,11 +28,11 @@
 | Measure.useContext | UseElementSameName | Measure.useContext |
 | Measure.jurisdiction | UseElementSameName | Measure.jurisdiction |
 | Measure.topic | UseElementSameName | Measure.topic |
-| Measure.contributor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.contributor |
+| Measure.contributor | UseElementRenamed | Measure.author |
 | Measure.contact | UseElementSameName | Measure.contact |
 | Measure.copyright | UseElementSameName | Measure.copyright |
-| Measure.relatedArtifact | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.relatedArtifact |
-| Measure.library | UseElementSameName | Measure.library |
+| Measure.relatedArtifact | UseElementSameName | Measure.relatedArtifact |
+| Measure.library | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.library |
 | Measure.disclaimer | UseElementSameName | Measure.disclaimer |
 | Measure.scoring | UseElementSameName | Measure.scoring |
 | Measure.compositeScoring | UseElementSameName | Measure.compositeScoring |
@@ -41,7 +41,7 @@
 | Measure.rateAggregation | UseElementSameName | Measure.rateAggregation |
 | Measure.rationale | UseElementSameName | Measure.rationale |
 | Measure.clinicalRecommendationStatement | UseElementSameName | Measure.clinicalRecommendationStatement |
-| Measure.improvementNotation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.improvementNotation |
+| Measure.improvementNotation | UseElementSameName | Measure.improvementNotation |
 | Measure.definition | UseElementSameName | Measure.definition |
 | Measure.guidance | UseElementSameName | Measure.guidance |
 | Measure.set | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.set |
@@ -49,7 +49,7 @@
 | Measure.group.id | UseElementSameName | Measure.group.id |
 | Measure.group.extension | UseElementSameName | Measure.group.extension |
 | Measure.group.modifierExtension | UseElementSameName | Measure.group.modifierExtension |
-| Measure.group.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.identifier |
+| Measure.group.identifier | UseElementRenamed | Measure.group.code |
 | Measure.group.name | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.name |
 | Measure.group.description | UseElementSameName | Measure.group.description |
 | Measure.group.population | UseElementSameName | Measure.group.population |
@@ -60,19 +60,19 @@
 | Measure.group.population.code | UseElementSameName | Measure.group.population.code |
 | Measure.group.population.name | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.population.name |
 | Measure.group.population.description | UseElementSameName | Measure.group.population.description |
-| Measure.group.population.criteria | UseElementSameName | Measure.group.population.criteria |
+| Measure.group.population.criteria | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.population.criteria |
 | Measure.group.stratifier | UseElementSameName | Measure.group.stratifier |
 | Measure.group.stratifier.id | UseElementSameName | Measure.group.stratifier.id |
-| Measure.group.stratifier.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.stratifier.extension |
+| Measure.group.stratifier.extension | UseElementSameName | Measure.group.stratifier.extension |
 | Measure.group.stratifier.modifierExtension | UseElementSameName | Measure.group.stratifier.modifierExtension |
-| Measure.group.stratifier.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.stratifier.identifier |
+| Measure.group.stratifier.identifier | UseElementRenamed | Measure.group.stratifier.code |
 | Measure.group.stratifier.criteria | UseElementSameName | Measure.group.stratifier.criteria |
 | Measure.group.stratifier.path | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.group.stratifier.path |
 | Measure.supplementalData | UseElementSameName | Measure.supplementalData |
 | Measure.supplementalData.id | UseElementSameName | Measure.supplementalData.id |
-| Measure.supplementalData.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.extension |
+| Measure.supplementalData.extension | UseElementSameName | Measure.supplementalData.extension |
 | Measure.supplementalData.modifierExtension | UseElementSameName | Measure.supplementalData.modifierExtension |
-| Measure.supplementalData.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.identifier |
+| Measure.supplementalData.identifier | UseElementRenamed | Measure.supplementalData.code |
 | Measure.supplementalData.usage | UseElementSameName | Measure.supplementalData.usage |
-| Measure.supplementalData.criteria | UseElementSameName | Measure.supplementalData.criteria |
+| Measure.supplementalData.criteria | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.criteria |
 | Measure.supplementalData.path | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Measure.supplementalData.path |

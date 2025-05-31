@@ -11,10 +11,10 @@
 | ImagingObjectSelection.extension | UseElementRenamed | ImagingManifest.extension |
 | ImagingObjectSelection.modifierExtension | UseElementRenamed | ImagingManifest.modifierExtension |
 | ImagingObjectSelection.uid | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.uid |
-| ImagingObjectSelection.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.patient |
+| ImagingObjectSelection.patient | UseElementRenamed | ImagingManifest.patient |
 | ImagingObjectSelection.title | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.title |
 | ImagingObjectSelection.description | UseElementRenamed | ImagingManifest.description |
-| ImagingObjectSelection.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.author |
+| ImagingObjectSelection.author | UseElementRenamed | ImagingManifest.author |
 | ImagingObjectSelection.authoringTime | UseElementRenamed | ImagingManifest.authoringTime |
 | ImagingObjectSelection.study | UseElementRenamed | ImagingManifest.study |
 | ImagingObjectSelection.study.id | UseElementRenamed | ImagingManifest.study.id |
@@ -22,7 +22,7 @@
 | ImagingObjectSelection.study.modifierExtension | UseElementRenamed | ImagingManifest.study.modifierExtension |
 | ImagingObjectSelection.study.uid | UseElementRenamed | ImagingManifest.study.uid |
 | ImagingObjectSelection.study.url | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.study.url |
-| ImagingObjectSelection.study.imagingStudy | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection.study.imagingStudy |
+| ImagingObjectSelection.study.imagingStudy | UseElementRenamed | ImagingManifest.study.imagingStudy |
 | ImagingObjectSelection.study.series | UseElementRenamed | ImagingManifest.study.series |
 | ImagingObjectSelection.study.series.id | UseElementRenamed | ImagingManifest.study.series.id |
 | ImagingObjectSelection.study.series.extension | UseElementRenamed | ImagingManifest.study.series.extension |

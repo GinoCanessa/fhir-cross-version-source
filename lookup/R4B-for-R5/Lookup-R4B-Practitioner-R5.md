@@ -17,7 +17,7 @@
 | Practitioner.address | UseElementSameName | Practitioner.address |
 | Practitioner.gender | UseElementSameName | Practitioner.gender |
 | Practitioner.birthDate | UseElementSameName | Practitioner.birthDate |
-| Practitioner.photo | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Practitioner.photo |
+| Practitioner.photo | UseElementSameName | Practitioner.photo |
 | Practitioner.qualification | UseElementSameName | Practitioner.qualification |
 | Practitioner.qualification.id | UseElementSameName | Practitioner.qualification.id |
 | Practitioner.qualification.extension | UseElementSameName | Practitioner.qualification.extension |
@@ -26,4 +26,4 @@
 | Practitioner.qualification.code | UseElementSameName | Practitioner.qualification.code |
 | Practitioner.qualification.period | UseElementSameName | Practitioner.qualification.period |
 | Practitioner.qualification.issuer | UseElementSameName | Practitioner.qualification.issuer |
-| Practitioner.communication | UseElementSameName | Practitioner.communication |
+| Practitioner.communication | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Practitioner.communication |

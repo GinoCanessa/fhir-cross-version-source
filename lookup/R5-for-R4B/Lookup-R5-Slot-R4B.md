@@ -12,9 +12,9 @@
 | Slot.modifierExtension | UseElementRenamed | Slot.modifierExtension |
 | Slot.identifier | UseElementRenamed | Slot.identifier |
 | Slot.serviceCategory | UseElementRenamed | Slot.serviceCategory |
-| Slot.serviceType | UseElementRenamed | Slot.serviceType |
+| Slot.serviceType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.serviceType |
 | Slot.specialty | UseElementRenamed | Slot.specialty |
-| Slot.appointmentType | UseElementRenamed | Slot.appointmentType |
+| Slot.appointmentType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Slot.appointmentType |
 | Slot.schedule | UseElementRenamed | Slot.schedule |
 | Slot.status | UseElementRenamed | Slot.status |
 | Slot.start | UseElementRenamed | Slot.start |

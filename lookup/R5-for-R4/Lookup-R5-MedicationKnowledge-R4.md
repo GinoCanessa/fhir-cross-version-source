@@ -29,7 +29,7 @@
 | MedicationKnowledge.monograph.extension | UseElementSameName | MedicationKnowledge.monograph.extension |
 | MedicationKnowledge.monograph.modifierExtension | UseElementSameName | MedicationKnowledge.monograph.modifierExtension |
 | MedicationKnowledge.monograph.type | UseElementSameName | MedicationKnowledge.monograph.type |
-| MedicationKnowledge.monograph.source | UseElementSameName | MedicationKnowledge.monograph.source |
+| MedicationKnowledge.monograph.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.monograph.source |
 | MedicationKnowledge.preparationInstruction | UseElementSameName | MedicationKnowledge.preparationInstruction |
 | MedicationKnowledge.cost | UseElementSameName | MedicationKnowledge.cost |
 | MedicationKnowledge.cost.id | UseElementSameName | MedicationKnowledge.cost.id |
@@ -38,7 +38,7 @@
 | MedicationKnowledge.cost.effectiveDate | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.cost.effectiveDate |
 | MedicationKnowledge.cost.type | UseElementSameName | MedicationKnowledge.cost.type |
 | MedicationKnowledge.cost.source | UseElementSameName | MedicationKnowledge.cost.source |
-| MedicationKnowledge.cost.cost[x] | UseElementSameName | MedicationKnowledge.cost.cost |
+| MedicationKnowledge.cost.cost[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.cost.cost |
 | MedicationKnowledge.monitoringProgram | UseElementSameName | MedicationKnowledge.monitoringProgram |
 | MedicationKnowledge.monitoringProgram.id | UseElementSameName | MedicationKnowledge.monitoringProgram.id |
 | MedicationKnowledge.monitoringProgram.extension | UseElementSameName | MedicationKnowledge.monitoringProgram.extension |
@@ -75,12 +75,12 @@
 | MedicationKnowledge.medicineClassification.type | UseElementSameName | MedicationKnowledge.medicineClassification.type |
 | MedicationKnowledge.medicineClassification.source[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.medicineClassification.source |
 | MedicationKnowledge.medicineClassification.classification | UseElementSameName | MedicationKnowledge.medicineClassification.classification |
-| MedicationKnowledge.packaging | UseElementSameName | MedicationKnowledge.packaging |
-| MedicationKnowledge.packaging.id | UseElementSameName | MedicationKnowledge.packaging.id |
-| MedicationKnowledge.packaging.extension | UseElementSameName | MedicationKnowledge.packaging.extension |
-| MedicationKnowledge.packaging.modifierExtension | UseElementSameName | MedicationKnowledge.packaging.modifierExtension |
-| MedicationKnowledge.packaging.cost | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.packaging.cost |
-| MedicationKnowledge.packaging.packagedProduct | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.packaging.packagedProduct |
+| MedicationKnowledge.packaging | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.packaging |
+| MedicationKnowledge.packaging.id | UseExtensionFromAncestor | - |
+| MedicationKnowledge.packaging.extension | UseExtensionFromAncestor | - |
+| MedicationKnowledge.packaging.modifierExtension | UseExtensionFromAncestor | - |
+| MedicationKnowledge.packaging.cost | UseExtensionFromAncestor | - |
+| MedicationKnowledge.packaging.packagedProduct | UseExtensionFromAncestor | - |
 | MedicationKnowledge.clinicalUseIssue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.clinicalUseIssue |
 | MedicationKnowledge.storageGuideline | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.storageGuideline |
 | MedicationKnowledge.storageGuideline.id | UseExtensionFromAncestor | - |
@@ -106,7 +106,7 @@
 | MedicationKnowledge.regulatory.substitution.modifierExtension | UseElementSameName | MedicationKnowledge.regulatory.substitution.modifierExtension |
 | MedicationKnowledge.regulatory.substitution.type | UseElementSameName | MedicationKnowledge.regulatory.substitution.type |
 | MedicationKnowledge.regulatory.substitution.allowed | UseElementSameName | MedicationKnowledge.regulatory.substitution.allowed |
-| MedicationKnowledge.regulatory.schedule | UseElementSameName | MedicationKnowledge.regulatory.schedule |
+| MedicationKnowledge.regulatory.schedule | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.regulatory.schedule |
 | MedicationKnowledge.regulatory.maxDispense | UseElementSameName | MedicationKnowledge.regulatory.maxDispense |
 | MedicationKnowledge.regulatory.maxDispense.id | UseElementSameName | MedicationKnowledge.regulatory.maxDispense.id |
 | MedicationKnowledge.regulatory.maxDispense.extension | UseElementSameName | MedicationKnowledge.regulatory.maxDispense.extension |

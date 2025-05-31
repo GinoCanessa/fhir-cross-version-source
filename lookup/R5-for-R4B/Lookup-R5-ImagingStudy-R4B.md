@@ -12,7 +12,7 @@
 | ImagingStudy.modifierExtension | UseElementRenamed | ImagingStudy.modifierExtension |
 | ImagingStudy.identifier | UseElementRenamed | ImagingStudy.identifier |
 | ImagingStudy.status | UseElementRenamed | ImagingStudy.status |
-| ImagingStudy.modality | UseElementRenamed | ImagingStudy.modality |
+| ImagingStudy.modality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.modality |
 | ImagingStudy.subject | UseElementRenamed | ImagingStudy.subject |
 | ImagingStudy.encounter | UseElementRenamed | ImagingStudy.encounter |
 | ImagingStudy.started | UseElementRenamed | ImagingStudy.started |
@@ -22,9 +22,9 @@
 | ImagingStudy.endpoint | UseElementRenamed | ImagingStudy.endpoint |
 | ImagingStudy.numberOfSeries | UseElementRenamed | ImagingStudy.numberOfSeries |
 | ImagingStudy.numberOfInstances | UseElementRenamed | ImagingStudy.numberOfInstances |
-| ImagingStudy.procedure | UseElementRenamed | ImagingStudy.procedureReference |
+| ImagingStudy.procedure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.procedure |
 | ImagingStudy.location | UseElementRenamed | ImagingStudy.location |
-| ImagingStudy.reason | UseElementRenamed | ImagingStudy.reasonCode |
+| ImagingStudy.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.reason |
 | ImagingStudy.note | UseElementRenamed | ImagingStudy.note |
 | ImagingStudy.description | UseElementRenamed | ImagingStudy.description |
 | ImagingStudy.series | UseElementRenamed | ImagingStudy.series |
@@ -33,12 +33,12 @@
 | ImagingStudy.series.modifierExtension | UseElementRenamed | ImagingStudy.series.modifierExtension |
 | ImagingStudy.series.uid | UseElementRenamed | ImagingStudy.series.uid |
 | ImagingStudy.series.number | UseElementRenamed | ImagingStudy.series.number |
-| ImagingStudy.series.modality | UseElementRenamed | ImagingStudy.series.modality |
+| ImagingStudy.series.modality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series.modality |
 | ImagingStudy.series.description | UseElementRenamed | ImagingStudy.series.description |
 | ImagingStudy.series.numberOfInstances | UseElementRenamed | ImagingStudy.series.numberOfInstances |
 | ImagingStudy.series.endpoint | UseElementRenamed | ImagingStudy.series.endpoint |
-| ImagingStudy.series.bodySite | UseElementRenamed | ImagingStudy.series.bodySite |
-| ImagingStudy.series.laterality | UseElementRenamed | ImagingStudy.series.laterality |
+| ImagingStudy.series.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series.bodySite |
+| ImagingStudy.series.laterality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series.laterality |
 | ImagingStudy.series.specimen | UseElementRenamed | ImagingStudy.series.specimen |
 | ImagingStudy.series.started | UseElementRenamed | ImagingStudy.series.started |
 | ImagingStudy.series.performer | UseElementRenamed | ImagingStudy.series.performer |
@@ -46,7 +46,7 @@
 | ImagingStudy.series.performer.extension | UseElementRenamed | ImagingStudy.series.performer.extension |
 | ImagingStudy.series.performer.modifierExtension | UseElementRenamed | ImagingStudy.series.performer.modifierExtension |
 | ImagingStudy.series.performer.function | UseElementRenamed | ImagingStudy.series.performer.function |
-| ImagingStudy.series.performer.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.series.performer.actor |
+| ImagingStudy.series.performer.actor | UseElementRenamed | ImagingStudy.series.performer.actor |
 | ImagingStudy.series.instance | UseElementRenamed | ImagingStudy.series.instance |
 | ImagingStudy.series.instance.id | UseElementRenamed | ImagingStudy.series.instance.id |
 | ImagingStudy.series.instance.extension | UseElementRenamed | ImagingStudy.series.instance.extension |

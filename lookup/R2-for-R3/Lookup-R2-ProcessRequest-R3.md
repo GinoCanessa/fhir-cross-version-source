@@ -15,11 +15,11 @@
 | ProcessRequest.ruleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.ruleset |
 | ProcessRequest.originalRuleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.originalRuleset |
 | ProcessRequest.created | UseElementSameName | ProcessRequest.created |
-| ProcessRequest.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.target |
-| ProcessRequest.provider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.provider |
-| ProcessRequest.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.organization |
-| ProcessRequest.request | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.request |
-| ProcessRequest.response | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.response |
+| ProcessRequest.target | UseElementSameName | ProcessRequest.target |
+| ProcessRequest.provider | UseElementSameName | ProcessRequest.provider |
+| ProcessRequest.organization | UseElementSameName | ProcessRequest.organization |
+| ProcessRequest.request | UseElementSameName | ProcessRequest.request |
+| ProcessRequest.response | UseElementSameName | ProcessRequest.response |
 | ProcessRequest.nullify | UseElementSameName | ProcessRequest.nullify |
 | ProcessRequest.reference | UseElementSameName | ProcessRequest.reference |
 | ProcessRequest.item | UseElementSameName | ProcessRequest.item |

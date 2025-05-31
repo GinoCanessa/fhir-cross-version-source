@@ -12,7 +12,7 @@
 | Group.modifierExtension | UseElementRenamed | Group.modifierExtension |
 | Group.identifier | UseElementRenamed | Group.identifier |
 | Group.active | UseElementRenamed | Group.active |
-| Group.type | UseElementRenamed | Group.type |
+| Group.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.type |
 | Group.membership | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.membership |
 | Group.code | UseElementRenamed | Group.code |
 | Group.name | UseElementRenamed | Group.name |

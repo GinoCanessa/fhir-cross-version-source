@@ -16,7 +16,7 @@
 | Person.gender | UseElementSameName | Person.gender |
 | Person.birthDate | UseElementSameName | Person.birthDate |
 | Person.address | UseElementSameName | Person.address |
-| Person.photo | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Person.photo |
+| Person.photo | UseElementSameName | Person.photo |
 | Person.managingOrganization | UseElementSameName | Person.managingOrganization |
 | Person.active | UseElementSameName | Person.active |
 | Person.link | UseElementSameName | Person.link |

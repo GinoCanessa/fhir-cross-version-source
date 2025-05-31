@@ -21,5 +21,5 @@
 | ImmunizationEvaluation.doseStatusReason | UseElementSameName | ImmunizationEvaluation.doseStatusReason |
 | ImmunizationEvaluation.description | UseElementSameName | ImmunizationEvaluation.description |
 | ImmunizationEvaluation.series | UseElementSameName | ImmunizationEvaluation.series |
-| ImmunizationEvaluation.doseNumber[x] | UseElementRenamed | ImmunizationEvaluation.doseNumber |
-| ImmunizationEvaluation.seriesDoses[x] | UseElementRenamed | ImmunizationEvaluation.seriesDoses |
+| ImmunizationEvaluation.doseNumber[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImmunizationEvaluation.doseNumber |
+| ImmunizationEvaluation.seriesDoses[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImmunizationEvaluation.seriesDoses |

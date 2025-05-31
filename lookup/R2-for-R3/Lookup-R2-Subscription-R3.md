@@ -22,6 +22,6 @@
 | Subscription.channel.type | UseElementSameName | Subscription.channel.type |
 | Subscription.channel.endpoint | UseElementSameName | Subscription.channel.endpoint |
 | Subscription.channel.payload | UseElementSameName | Subscription.channel.payload |
-| Subscription.channel.header | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.channel.header |
+| Subscription.channel.header | UseElementSameName | Subscription.channel.header |
 | Subscription.end | UseElementSameName | Subscription.end |
 | Subscription.tag | UseElementSameName | Subscription.tag |

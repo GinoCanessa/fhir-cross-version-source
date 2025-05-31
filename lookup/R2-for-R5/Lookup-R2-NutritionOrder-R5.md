@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | NutritionOrder.id | UseElementSameName | NutritionOrder.id |
-| NutritionOrder.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.meta |
+| NutritionOrder.meta | UseElementSameName | NutritionOrder.meta |
 | NutritionOrder.implicitRules | UseElementSameName | NutritionOrder.implicitRules |
 | NutritionOrder.language | UseElementSameName | NutritionOrder.language |
 | NutritionOrder.text | UseElementSameName | NutritionOrder.text |
@@ -13,10 +13,10 @@
 | NutritionOrder.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.patient |
 | NutritionOrder.orderer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.orderer |
 | NutritionOrder.identifier | UseElementSameName | NutritionOrder.identifier |
-| NutritionOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.encounter |
+| NutritionOrder.encounter | UseElementSameName | NutritionOrder.encounter |
 | NutritionOrder.dateTime | UseElementSameName | NutritionOrder.dateTime |
 | NutritionOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.status |
-| NutritionOrder.allergyIntolerance | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.allergyIntolerance |
+| NutritionOrder.allergyIntolerance | UseElementSameName | NutritionOrder.allergyIntolerance |
 | NutritionOrder.foodPreferenceModifier | UseElementSameName | NutritionOrder.foodPreferenceModifier |
 | NutritionOrder.excludeFoodModifier | UseElementSameName | NutritionOrder.excludeFoodModifier |
 | NutritionOrder.oralDiet | UseElementSameName | NutritionOrder.oralDiet |
@@ -43,7 +43,7 @@
 | NutritionOrder.supplement.id | UseElementSameName | NutritionOrder.supplement.id |
 | NutritionOrder.supplement.extension | UseElementSameName | NutritionOrder.supplement.extension |
 | NutritionOrder.supplement.modifierExtension | UseElementSameName | NutritionOrder.supplement.modifierExtension |
-| NutritionOrder.supplement.type | UseElementSameName | NutritionOrder.supplement.type |
+| NutritionOrder.supplement.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.supplement.type |
 | NutritionOrder.supplement.productName | UseElementSameName | NutritionOrder.supplement.productName |
 | NutritionOrder.supplement.schedule | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.supplement.schedule |
 | NutritionOrder.supplement.quantity | UseElementSameName | NutritionOrder.supplement.quantity |
@@ -52,7 +52,7 @@
 | NutritionOrder.enteralFormula.id | UseElementSameName | NutritionOrder.enteralFormula.id |
 | NutritionOrder.enteralFormula.extension | UseElementSameName | NutritionOrder.enteralFormula.extension |
 | NutritionOrder.enteralFormula.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.modifierExtension |
-| NutritionOrder.enteralFormula.baseFormulaType | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaType |
+| NutritionOrder.enteralFormula.baseFormulaType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType |
 | NutritionOrder.enteralFormula.baseFormulaProductName | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaProductName |
 | NutritionOrder.enteralFormula.additiveType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.enteralFormula.additiveType |
 | NutritionOrder.enteralFormula.additiveProductName | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NutritionOrder.enteralFormula.additiveProductName |

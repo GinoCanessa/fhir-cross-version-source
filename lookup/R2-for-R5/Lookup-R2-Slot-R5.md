@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Slot.id | UseElementSameName | Slot.id |
-| Slot.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.meta |
+| Slot.meta | UseElementSameName | Slot.meta |
 | Slot.implicitRules | UseElementSameName | Slot.implicitRules |
 | Slot.language | UseElementSameName | Slot.language |
 | Slot.text | UseElementSameName | Slot.text |
@@ -12,8 +12,8 @@
 | Slot.modifierExtension | UseElementSameName | Slot.modifierExtension |
 | Slot.identifier | UseElementSameName | Slot.identifier |
 | Slot.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.type |
-| Slot.schedule | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.schedule |
-| Slot.freeBusyType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.freeBusyType |
+| Slot.schedule | UseElementSameName | Slot.schedule |
+| Slot.freeBusyType | UseElementRenamed | Slot.status |
 | Slot.start | UseElementSameName | Slot.start |
 | Slot.end | UseElementSameName | Slot.end |
 | Slot.overbooked | UseElementSameName | Slot.overbooked |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CoverageEligibilityResponse.id | UseElementSameName | EligibilityResponse.id |
-| CoverageEligibilityResponse.meta | UseElementSameName | EligibilityResponse.meta |
+| CoverageEligibilityResponse.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.meta |
 | CoverageEligibilityResponse.implicitRules | UseElementSameName | EligibilityResponse.implicitRules |
 | CoverageEligibilityResponse.language | UseElementSameName | EligibilityResponse.language |
 | CoverageEligibilityResponse.text | UseElementSameName | EligibilityResponse.text |
@@ -18,9 +18,9 @@
 | CoverageEligibilityResponse.created | UseElementSameName | EligibilityResponse.created |
 | CoverageEligibilityResponse.requestor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.requestor |
 | CoverageEligibilityResponse.request | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.request |
-| CoverageEligibilityResponse.outcome | UseElementSameName | EligibilityResponse.outcome |
+| CoverageEligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.outcome |
 | CoverageEligibilityResponse.disposition | UseElementSameName | EligibilityResponse.disposition |
-| CoverageEligibilityResponse.insurer | UseElementSameName | EligibilityResponse.organization |
+| CoverageEligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurer |
 | CoverageEligibilityResponse.insurance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance |
 | CoverageEligibilityResponse.insurance.id | UseExtensionFromAncestor | - |
 | CoverageEligibilityResponse.insurance.extension | UseExtensionFromAncestor | - |

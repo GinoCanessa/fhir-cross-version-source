@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Person.id | UseElementSameName | Person.id |
-| Person.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Person.meta |
+| Person.meta | UseElementSameName | Person.meta |
 | Person.implicitRules | UseElementSameName | Person.implicitRules |
 | Person.language | UseElementSameName | Person.language |
 | Person.text | UseElementSameName | Person.text |
@@ -16,12 +16,12 @@
 | Person.gender | UseElementSameName | Person.gender |
 | Person.birthDate | UseElementSameName | Person.birthDate |
 | Person.address | UseElementSameName | Person.address |
-| Person.photo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Person.photo |
-| Person.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Person.managingOrganization |
+| Person.photo | UseElementSameName | Person.photo |
+| Person.managingOrganization | UseElementSameName | Person.managingOrganization |
 | Person.active | UseElementSameName | Person.active |
 | Person.link | UseElementSameName | Person.link |
 | Person.link.id | UseElementSameName | Person.link.id |
 | Person.link.extension | UseElementSameName | Person.link.extension |
 | Person.link.modifierExtension | UseElementSameName | Person.link.modifierExtension |
-| Person.link.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Person.link.target |
+| Person.link.target | UseElementSameName | Person.link.target |
 | Person.link.assurance | UseElementSameName | Person.link.assurance |

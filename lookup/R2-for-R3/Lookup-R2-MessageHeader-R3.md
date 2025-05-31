@@ -18,7 +18,7 @@
 | MessageHeader.response.modifierExtension | UseElementSameName | MessageHeader.response.modifierExtension |
 | MessageHeader.response.identifier | UseElementSameName | MessageHeader.response.identifier |
 | MessageHeader.response.code | UseElementSameName | MessageHeader.response.code |
-| MessageHeader.response.details | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.response.details |
+| MessageHeader.response.details | UseElementSameName | MessageHeader.response.details |
 | MessageHeader.source | UseElementSameName | MessageHeader.source |
 | MessageHeader.source.id | UseElementSameName | MessageHeader.source.id |
 | MessageHeader.source.extension | UseElementSameName | MessageHeader.source.extension |
@@ -33,11 +33,11 @@
 | MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
 | MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
 | MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
-| MessageHeader.destination.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.destination.target |
+| MessageHeader.destination.target | UseElementSameName | MessageHeader.destination.target |
 | MessageHeader.destination.endpoint | UseElementSameName | MessageHeader.destination.endpoint |
-| MessageHeader.enterer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.enterer |
-| MessageHeader.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.author |
-| MessageHeader.receiver | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.receiver |
-| MessageHeader.responsible | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.responsible |
+| MessageHeader.enterer | UseElementSameName | MessageHeader.enterer |
+| MessageHeader.author | UseElementSameName | MessageHeader.author |
+| MessageHeader.receiver | UseElementSameName | MessageHeader.receiver |
+| MessageHeader.responsible | UseElementSameName | MessageHeader.responsible |
 | MessageHeader.reason | UseElementSameName | MessageHeader.reason |
-| MessageHeader.data | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MessageHeader.data |
+| MessageHeader.data | UseElementRenamed | MessageHeader.focus |

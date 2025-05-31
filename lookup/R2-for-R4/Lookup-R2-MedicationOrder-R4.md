@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MedicationOrder.id | UseElementRenamed | MedicationRequest.id |
-| MedicationOrder.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.meta |
+| MedicationOrder.meta | UseElementRenamed | MedicationRequest.meta |
 | MedicationOrder.implicitRules | UseElementRenamed | MedicationRequest.implicitRules |
 | MedicationOrder.language | UseElementRenamed | MedicationRequest.language |
 | MedicationOrder.text | UseElementRenamed | MedicationRequest.text |
@@ -12,7 +12,7 @@
 | MedicationOrder.modifierExtension | UseElementRenamed | MedicationRequest.modifierExtension |
 | MedicationOrder.identifier | UseElementRenamed | MedicationRequest.identifier |
 | MedicationOrder.dateWritten | UseElementRenamed | MedicationRequest.authoredOn |
-| MedicationOrder.status | UseElementRenamed | MedicationRequest.status |
+| MedicationOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.status |
 | MedicationOrder.dateEnded | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dateEnded |
 | MedicationOrder.reasonEnded | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reasonEnded |
 | MedicationOrder.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.patient |
@@ -20,7 +20,7 @@
 | MedicationOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.encounter |
 | MedicationOrder.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reason |
 | MedicationOrder.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.note |
-| MedicationOrder.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.medication |
+| MedicationOrder.medication[x] | UseElementRenamed | MedicationRequest.medication[x] |
 | MedicationOrder.dosageInstruction | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dosageInstruction |
 | MedicationOrder.dosageInstruction.id | UseExtensionFromAncestor | - |
 | MedicationOrder.dosageInstruction.extension | UseExtensionFromAncestor | - |
@@ -41,9 +41,9 @@
 | MedicationOrder.dispenseRequest.modifierExtension | UseElementRenamed | MedicationRequest.dispenseRequest.modifierExtension |
 | MedicationOrder.dispenseRequest.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dispenseRequest.medication |
 | MedicationOrder.dispenseRequest.validityPeriod | UseElementRenamed | MedicationRequest.dispenseRequest.validityPeriod |
-| MedicationOrder.dispenseRequest.numberOfRepeatsAllowed | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dispenseRequest.numberOfRepeatsAllowed |
+| MedicationOrder.dispenseRequest.numberOfRepeatsAllowed | UseElementRenamed | MedicationRequest.dispenseRequest.numberOfRepeatsAllowed |
 | MedicationOrder.dispenseRequest.quantity | UseElementRenamed | MedicationRequest.dispenseRequest.quantity |
-| MedicationOrder.dispenseRequest.expectedSupplyDuration | UseElementRenamed | MedicationRequest.dispenseRequest.expectedSupplyDuration |
+| MedicationOrder.dispenseRequest.expectedSupplyDuration | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dispenseRequest.expectedSupplyDuration |
 | MedicationOrder.substitution | UseElementRenamed | MedicationRequest.substitution |
 | MedicationOrder.substitution.id | UseElementRenamed | MedicationRequest.substitution.id |
 | MedicationOrder.substitution.extension | UseElementRenamed | MedicationRequest.substitution.extension |

@@ -46,7 +46,7 @@
 | SubstanceDefinition.property.extension | UseElementRenamed | SubstanceDefinition.property.extension |
 | SubstanceDefinition.property.modifierExtension | UseElementRenamed | SubstanceDefinition.property.modifierExtension |
 | SubstanceDefinition.property.type | UseElementRenamed | SubstanceDefinition.property.type |
-| SubstanceDefinition.property.value[x] | UseElementRenamed | SubstanceDefinition.property.value[x] |
+| SubstanceDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.property.value |
 | SubstanceDefinition.referenceInformation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.referenceInformation |
 | SubstanceDefinition.molecularWeight | UseElementRenamed | SubstanceDefinition.molecularWeight |
 | SubstanceDefinition.molecularWeight.id | UseElementRenamed | SubstanceDefinition.molecularWeight.id |

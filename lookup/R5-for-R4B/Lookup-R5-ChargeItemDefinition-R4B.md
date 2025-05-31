@@ -33,12 +33,12 @@
 | ChargeItemDefinition.approvalDate | UseElementRenamed | ChargeItemDefinition.approvalDate |
 | ChargeItemDefinition.lastReviewDate | UseElementRenamed | ChargeItemDefinition.lastReviewDate |
 | ChargeItemDefinition.code | UseElementRenamed | ChargeItemDefinition.code |
-| ChargeItemDefinition.instance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItemDefinition.instance |
+| ChargeItemDefinition.instance | UseElementRenamed | ChargeItemDefinition.instance |
 | ChargeItemDefinition.applicability | UseElementRenamed | ChargeItemDefinition.applicability |
 | ChargeItemDefinition.applicability.id | UseElementRenamed | ChargeItemDefinition.applicability.id |
 | ChargeItemDefinition.applicability.extension | UseElementRenamed | ChargeItemDefinition.applicability.extension |
 | ChargeItemDefinition.applicability.modifierExtension | UseElementRenamed | ChargeItemDefinition.applicability.modifierExtension |
-| ChargeItemDefinition.applicability.condition | UseElementRenamed | ChargeItemDefinition.applicability.expression |
+| ChargeItemDefinition.applicability.condition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItemDefinition.applicability.condition |
 | ChargeItemDefinition.applicability.effectivePeriod | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItemDefinition.applicability.effectivePeriod |
 | ChargeItemDefinition.applicability.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItemDefinition.applicability.relatedArtifact |
 | ChargeItemDefinition.propertyGroup | UseElementRenamed | ChargeItemDefinition.propertyGroup |
@@ -46,4 +46,4 @@
 | ChargeItemDefinition.propertyGroup.extension | UseElementRenamed | ChargeItemDefinition.propertyGroup.extension |
 | ChargeItemDefinition.propertyGroup.modifierExtension | UseElementRenamed | ChargeItemDefinition.propertyGroup.modifierExtension |
 | ChargeItemDefinition.propertyGroup.applicability | UseElementRenamed | ChargeItemDefinition.propertyGroup.applicability |
-| ChargeItemDefinition.propertyGroup.priceComponent | UseElementRenamed | ChargeItemDefinition.propertyGroup.priceComponent |
+| ChargeItemDefinition.propertyGroup.priceComponent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItemDefinition.propertyGroup.priceComponent |

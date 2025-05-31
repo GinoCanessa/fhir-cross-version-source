@@ -16,8 +16,8 @@
 | AppointmentResponse.start | UseElementRenamed | AppointmentResponse.start |
 | AppointmentResponse.end | UseElementRenamed | AppointmentResponse.end |
 | AppointmentResponse.participantType | UseElementRenamed | AppointmentResponse.participantType |
-| AppointmentResponse.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AppointmentResponse.actor |
-| AppointmentResponse.participantStatus | UseElementRenamed | AppointmentResponse.participantStatus |
+| AppointmentResponse.actor | UseElementRenamed | AppointmentResponse.actor |
+| AppointmentResponse.participantStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AppointmentResponse.participantStatus |
 | AppointmentResponse.comment | UseElementRenamed | AppointmentResponse.comment |
 | AppointmentResponse.recurring | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AppointmentResponse.recurring |
 | AppointmentResponse.occurrenceDate | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AppointmentResponse.occurrenceDate |

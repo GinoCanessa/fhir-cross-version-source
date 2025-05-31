@@ -4,10 +4,10 @@
 | -------------- | ----- | ------ |
 | RelatedArtifact.id | UseElementSameName | RelatedArtifact.id |
 | RelatedArtifact.extension | UseElementSameName | RelatedArtifact.extension |
-| RelatedArtifact.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RelatedArtifact.type |
+| RelatedArtifact.type | UseElementSameName | RelatedArtifact.type |
 | RelatedArtifact.label | UseElementSameName | RelatedArtifact.label |
 | RelatedArtifact.display | UseElementSameName | RelatedArtifact.display |
 | RelatedArtifact.citation | UseElementSameName | RelatedArtifact.citation |
 | RelatedArtifact.url | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RelatedArtifact.url |
-| RelatedArtifact.document | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RelatedArtifact.document |
+| RelatedArtifact.document | UseElementSameName | RelatedArtifact.document |
 | RelatedArtifact.resource | UseElementSameName | RelatedArtifact.resource |

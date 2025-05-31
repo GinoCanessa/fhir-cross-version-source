@@ -18,7 +18,7 @@
 | List.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-List.subject |
 | List.encounter | UseElementRenamed | List.encounter |
 | List.date | UseElementRenamed | List.date |
-| List.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-List.source |
+| List.source | UseElementRenamed | List.source |
 | List.orderedBy | UseElementRenamed | List.orderedBy |
 | List.note | UseElementRenamed | List.note |
 | List.entry | UseElementRenamed | List.entry |

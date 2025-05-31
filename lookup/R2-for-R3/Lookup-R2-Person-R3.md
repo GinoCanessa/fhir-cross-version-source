@@ -17,11 +17,11 @@
 | Person.birthDate | UseElementSameName | Person.birthDate |
 | Person.address | UseElementSameName | Person.address |
 | Person.photo | UseElementSameName | Person.photo |
-| Person.managingOrganization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Person.managingOrganization |
+| Person.managingOrganization | UseElementSameName | Person.managingOrganization |
 | Person.active | UseElementSameName | Person.active |
 | Person.link | UseElementSameName | Person.link |
 | Person.link.id | UseElementSameName | Person.link.id |
 | Person.link.extension | UseElementSameName | Person.link.extension |
 | Person.link.modifierExtension | UseElementSameName | Person.link.modifierExtension |
-| Person.link.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Person.link.target |
+| Person.link.target | UseElementSameName | Person.link.target |
 | Person.link.assurance | UseElementSameName | Person.link.assurance |

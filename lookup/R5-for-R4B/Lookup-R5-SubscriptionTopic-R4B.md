@@ -64,7 +64,7 @@
 | SubscriptionTopic.canFilterBy.filterParameter | UseElementRenamed | SubscriptionTopic.canFilterBy.filterParameter |
 | SubscriptionTopic.canFilterBy.filterDefinition | UseElementRenamed | SubscriptionTopic.canFilterBy.filterDefinition |
 | SubscriptionTopic.canFilterBy.comparator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.canFilterBy.comparator |
-| SubscriptionTopic.canFilterBy.modifier | UseElementRenamed | SubscriptionTopic.canFilterBy.modifier |
+| SubscriptionTopic.canFilterBy.modifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.canFilterBy.modifier |
 | SubscriptionTopic.notificationShape | UseElementRenamed | SubscriptionTopic.notificationShape |
 | SubscriptionTopic.notificationShape.id | UseElementRenamed | SubscriptionTopic.notificationShape.id |
 | SubscriptionTopic.notificationShape.extension | UseElementRenamed | SubscriptionTopic.notificationShape.extension |

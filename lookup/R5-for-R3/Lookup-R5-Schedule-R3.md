@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Schedule.id | UseElementSameName | Schedule.id |
-| Schedule.meta | UseElementSameName | Schedule.meta |
+| Schedule.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.meta |
 | Schedule.implicitRules | UseElementSameName | Schedule.implicitRules |
 | Schedule.language | UseElementSameName | Schedule.language |
 | Schedule.text | UseElementSameName | Schedule.text |
@@ -12,8 +12,8 @@
 | Schedule.modifierExtension | UseElementSameName | Schedule.modifierExtension |
 | Schedule.identifier | UseElementSameName | Schedule.identifier |
 | Schedule.active | UseElementSameName | Schedule.active |
-| Schedule.serviceCategory | UseElementSameName | Schedule.serviceCategory |
-| Schedule.serviceType | UseElementSameName | Schedule.serviceType |
+| Schedule.serviceCategory | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.serviceCategory |
+| Schedule.serviceType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.serviceType |
 | Schedule.specialty | UseElementSameName | Schedule.specialty |
 | Schedule.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name |
 | Schedule.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.actor |

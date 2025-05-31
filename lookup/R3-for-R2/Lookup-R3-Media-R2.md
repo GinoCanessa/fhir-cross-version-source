@@ -15,10 +15,10 @@
 | Media.type | UseElementSameName | Media.type |
 | Media.subtype | UseElementRenamed | Media.subtype |
 | Media.view | UseElementSameName | Media.view |
-| Media.subject | UseElementSameName | Media.subject |
+| Media.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.subject |
 | Media.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.context |
 | Media.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.occurrence |
-| Media.operator | UseElementSameName | Media.operator |
+| Media.operator | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.operator |
 | Media.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.reasonCode |
 | Media.bodySite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.bodySite |
 | Media.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.device |

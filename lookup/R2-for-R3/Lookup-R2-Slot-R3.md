@@ -11,9 +11,9 @@
 | Slot.extension | UseElementSameName | Slot.extension |
 | Slot.modifierExtension | UseElementSameName | Slot.modifierExtension |
 | Slot.identifier | UseElementSameName | Slot.identifier |
-| Slot.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.type |
-| Slot.schedule | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.schedule |
-| Slot.freeBusyType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Slot.freeBusyType |
+| Slot.type | UseElementRenamed | Slot.serviceType |
+| Slot.schedule | UseElementSameName | Slot.schedule |
+| Slot.freeBusyType | UseElementRenamed | Slot.status |
 | Slot.start | UseElementSameName | Slot.start |
 | Slot.end | UseElementSameName | Slot.end |
 | Slot.overbooked | UseElementSameName | Slot.overbooked |

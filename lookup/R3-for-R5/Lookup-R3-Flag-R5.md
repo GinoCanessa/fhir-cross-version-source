@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Flag.id | UseElementSameName | Flag.id |
-| Flag.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Flag.meta |
+| Flag.meta | UseElementSameName | Flag.meta |
 | Flag.implicitRules | UseElementSameName | Flag.implicitRules |
 | Flag.language | UseElementSameName | Flag.language |
 | Flag.text | UseElementSameName | Flag.text |
@@ -12,9 +12,9 @@
 | Flag.modifierExtension | UseElementSameName | Flag.modifierExtension |
 | Flag.identifier | UseElementSameName | Flag.identifier |
 | Flag.status | UseElementSameName | Flag.status |
-| Flag.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Flag.category |
+| Flag.category | UseElementSameName | Flag.category |
 | Flag.code | UseElementSameName | Flag.code |
 | Flag.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Flag.subject |
 | Flag.period | UseElementSameName | Flag.period |
-| Flag.encounter | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Flag.encounter |
+| Flag.encounter | UseElementSameName | Flag.encounter |
 | Flag.author | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Flag.author |

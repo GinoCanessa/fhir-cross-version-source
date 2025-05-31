@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MolecularSequence.id | UseElementSameName | Sequence.id |
-| MolecularSequence.meta | UseElementSameName | Sequence.meta |
+| MolecularSequence.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.meta |
 | MolecularSequence.implicitRules | UseElementSameName | Sequence.implicitRules |
 | MolecularSequence.language | UseElementSameName | Sequence.language |
 | MolecularSequence.text | UseElementSameName | Sequence.text |
@@ -11,12 +11,12 @@
 | MolecularSequence.extension | UseElementSameName | Sequence.extension |
 | MolecularSequence.modifierExtension | UseElementSameName | Sequence.modifierExtension |
 | MolecularSequence.identifier | UseElementSameName | Sequence.identifier |
-| MolecularSequence.type | UseElementSameName | Sequence.type |
+| MolecularSequence.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.type |
 | MolecularSequence.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.subject |
 | MolecularSequence.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.focus |
-| MolecularSequence.specimen | UseElementSameName | Sequence.specimen |
-| MolecularSequence.device | UseElementSameName | Sequence.device |
-| MolecularSequence.performer | UseElementSameName | Sequence.performer |
+| MolecularSequence.specimen | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.specimen |
+| MolecularSequence.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.device |
+| MolecularSequence.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.performer |
 | MolecularSequence.literal | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.literal |
 | MolecularSequence.formatted | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.formatted |
 | MolecularSequence.relative | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CareTeam.id | UseElementSameName | CareTeam.id |
-| CareTeam.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.meta |
+| CareTeam.meta | UseElementSameName | CareTeam.meta |
 | CareTeam.implicitRules | UseElementSameName | CareTeam.implicitRules |
 | CareTeam.language | UseElementSameName | CareTeam.language |
 | CareTeam.text | UseElementSameName | CareTeam.text |
@@ -14,18 +14,18 @@
 | CareTeam.status | UseElementSameName | CareTeam.status |
 | CareTeam.category | UseElementSameName | CareTeam.category |
 | CareTeam.name | UseElementSameName | CareTeam.name |
-| CareTeam.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.subject |
-| CareTeam.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.context |
+| CareTeam.subject | UseElementSameName | CareTeam.subject |
+| CareTeam.context | UseElementRenamed | CareTeam.encounter |
 | CareTeam.period | UseElementSameName | CareTeam.period |
 | CareTeam.participant | UseElementSameName | CareTeam.participant |
 | CareTeam.participant.id | UseElementSameName | CareTeam.participant.id |
 | CareTeam.participant.extension | UseElementSameName | CareTeam.participant.extension |
 | CareTeam.participant.modifierExtension | UseElementSameName | CareTeam.participant.modifierExtension |
-| CareTeam.participant.role | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.role |
+| CareTeam.participant.role | UseElementSameName | CareTeam.participant.role |
 | CareTeam.participant.member | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.member |
-| CareTeam.participant.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.onBehalfOf |
+| CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
 | CareTeam.participant.period | UseElementSameName | CareTeam.participant.period |
 | CareTeam.reasonCode | UseElementSameName | CareTeam.reasonCode |
-| CareTeam.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.reasonReference |
-| CareTeam.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.managingOrganization |
+| CareTeam.reasonReference | UseElementSameName | CareTeam.reasonReference |
+| CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
 | CareTeam.note | UseElementSameName | CareTeam.note |

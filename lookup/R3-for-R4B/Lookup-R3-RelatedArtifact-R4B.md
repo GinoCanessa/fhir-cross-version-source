@@ -9,4 +9,4 @@
 | RelatedArtifact.citation | UseElementSameName | RelatedArtifact.citation |
 | RelatedArtifact.url | UseElementSameName | RelatedArtifact.url |
 | RelatedArtifact.document | UseElementSameName | RelatedArtifact.document |
-| RelatedArtifact.resource | UseElementSameName | RelatedArtifact.resource |
+| RelatedArtifact.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RelatedArtifact.resource |

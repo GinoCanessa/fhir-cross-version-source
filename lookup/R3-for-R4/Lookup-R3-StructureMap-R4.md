@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | StructureMap.id | UseElementSameName | StructureMap.id |
-| StructureMap.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.meta |
+| StructureMap.meta | UseElementSameName | StructureMap.meta |
 | StructureMap.implicitRules | UseElementSameName | StructureMap.implicitRules |
 | StructureMap.language | UseElementSameName | StructureMap.language |
 | StructureMap.text | UseElementSameName | StructureMap.text |
@@ -29,11 +29,11 @@
 | StructureMap.structure.id | UseElementSameName | StructureMap.structure.id |
 | StructureMap.structure.extension | UseElementSameName | StructureMap.structure.extension |
 | StructureMap.structure.modifierExtension | UseElementSameName | StructureMap.structure.modifierExtension |
-| StructureMap.structure.url | UseElementSameName | StructureMap.structure.url |
+| StructureMap.structure.url | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.structure.url |
 | StructureMap.structure.mode | UseElementSameName | StructureMap.structure.mode |
 | StructureMap.structure.alias | UseElementSameName | StructureMap.structure.alias |
 | StructureMap.structure.documentation | UseElementSameName | StructureMap.structure.documentation |
-| StructureMap.import | UseElementSameName | StructureMap.import |
+| StructureMap.import | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.import |
 | StructureMap.group | UseElementSameName | StructureMap.group |
 | StructureMap.group.id | UseElementSameName | StructureMap.group.id |
 | StructureMap.group.extension | UseElementSameName | StructureMap.group.extension |

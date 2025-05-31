@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CareTeam.id | UseElementSameName | CareTeam.id |
-| CareTeam.meta | UseElementSameName | CareTeam.meta |
+| CareTeam.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.meta |
 | CareTeam.implicitRules | UseElementSameName | CareTeam.implicitRules |
 | CareTeam.language | UseElementSameName | CareTeam.language |
 | CareTeam.text | UseElementSameName | CareTeam.text |
@@ -14,7 +14,7 @@
 | CareTeam.status | UseElementSameName | CareTeam.status |
 | CareTeam.category | UseElementSameName | CareTeam.category |
 | CareTeam.name | UseElementSameName | CareTeam.name |
-| CareTeam.subject | UseElementSameName | CareTeam.subject |
+| CareTeam.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.subject |
 | CareTeam.period | UseElementSameName | CareTeam.period |
 | CareTeam.participant | UseElementSameName | CareTeam.participant |
 | CareTeam.participant.id | UseElementSameName | CareTeam.participant.id |
@@ -22,9 +22,9 @@
 | CareTeam.participant.modifierExtension | UseElementSameName | CareTeam.participant.modifierExtension |
 | CareTeam.participant.role | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.role |
 | CareTeam.participant.member | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.member |
-| CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
-| CareTeam.participant.coverage[x] | UseElementRenamed | CareTeam.participant.period |
-| CareTeam.reason | UseElementRenamed | CareTeam.reasonCode |
-| CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
+| CareTeam.participant.onBehalfOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.onBehalfOf |
+| CareTeam.participant.coverage[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.coverage |
+| CareTeam.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.reason |
+| CareTeam.managingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.managingOrganization |
 | CareTeam.telecom | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.telecom |
 | CareTeam.note | UseElementSameName | CareTeam.note |

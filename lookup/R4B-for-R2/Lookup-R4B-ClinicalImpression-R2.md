@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ClinicalImpression.id | UseElementSameName | ClinicalImpression.id |
-| ClinicalImpression.meta | UseElementSameName | ClinicalImpression.meta |
+| ClinicalImpression.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.meta |
 | ClinicalImpression.implicitRules | UseElementSameName | ClinicalImpression.implicitRules |
 | ClinicalImpression.language | UseElementSameName | ClinicalImpression.language |
 | ClinicalImpression.text | UseElementSameName | ClinicalImpression.text |
@@ -20,15 +20,15 @@
 | ClinicalImpression.effective[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.effective |
 | ClinicalImpression.date | UseElementSameName | ClinicalImpression.date |
 | ClinicalImpression.assessor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.assessor |
-| ClinicalImpression.previous | UseElementSameName | ClinicalImpression.previous |
-| ClinicalImpression.problem | UseElementSameName | ClinicalImpression.problem |
+| ClinicalImpression.previous | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.previous |
+| ClinicalImpression.problem | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.problem |
 | ClinicalImpression.investigation | UseElementSameName | ClinicalImpression.investigations |
 | ClinicalImpression.investigation.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.investigation.id |
 | ClinicalImpression.investigation.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.investigation.extension |
 | ClinicalImpression.investigation.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.investigation.modifierExtension |
 | ClinicalImpression.investigation.code | UseElementSameName | ClinicalImpression.investigations.code |
 | ClinicalImpression.investigation.item | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.investigation.item |
-| ClinicalImpression.protocol | UseElementSameName | ClinicalImpression.protocol |
+| ClinicalImpression.protocol | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalImpression.protocol |
 | ClinicalImpression.summary | UseElementSameName | ClinicalImpression.summary |
 | ClinicalImpression.finding | UseElementSameName | ClinicalImpression.finding |
 | ClinicalImpression.finding.id | UseElementSameName | ClinicalImpression.finding.id |

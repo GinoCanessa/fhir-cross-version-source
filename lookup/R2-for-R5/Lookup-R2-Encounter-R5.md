@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Encounter.id | UseElementSameName | Encounter.id |
-| Encounter.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.meta |
+| Encounter.meta | UseElementSameName | Encounter.meta |
 | Encounter.implicitRules | UseElementSameName | Encounter.implicitRules |
 | Encounter.language | UseElementSameName | Encounter.language |
 | Encounter.text | UseElementSameName | Encounter.text |
@@ -22,7 +22,7 @@
 | Encounter.type | UseElementSameName | Encounter.type |
 | Encounter.priority | UseElementSameName | Encounter.priority |
 | Encounter.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.patient |
-| Encounter.episodeOfCare | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.episodeOfCare |
+| Encounter.episodeOfCare | UseElementSameName | Encounter.episodeOfCare |
 | Encounter.incomingReferral | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.incomingReferral |
 | Encounter.participant | UseElementSameName | Encounter.participant |
 | Encounter.participant.id | UseElementSameName | Encounter.participant.id |
@@ -31,11 +31,11 @@
 | Encounter.participant.type | UseElementSameName | Encounter.participant.type |
 | Encounter.participant.period | UseElementSameName | Encounter.participant.period |
 | Encounter.participant.individual | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.participant.individual |
-| Encounter.appointment | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.appointment |
+| Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementRenamed | Encounter.actualPeriod |
-| Encounter.length | UseElementSameName | Encounter.length |
+| Encounter.length | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.length |
 | Encounter.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.reason |
-| Encounter.indication | UseElementRenamed | Encounter.reason |
+| Encounter.indication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.indication |
 | Encounter.hospitalization | UseElementRenamed | Encounter.diagnosis |
 | Encounter.hospitalization.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.id |
 | Encounter.hospitalization.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.extension |
@@ -55,8 +55,8 @@
 | Encounter.location.id | UseElementSameName | Encounter.location.id |
 | Encounter.location.extension | UseElementSameName | Encounter.location.extension |
 | Encounter.location.modifierExtension | UseElementSameName | Encounter.location.modifierExtension |
-| Encounter.location.location | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.location.location |
+| Encounter.location.location | UseElementSameName | Encounter.location.location |
 | Encounter.location.status | UseElementSameName | Encounter.location.status |
 | Encounter.location.period | UseElementSameName | Encounter.location.period |
-| Encounter.serviceProvider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.serviceProvider |
-| Encounter.partOf | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.partOf |
+| Encounter.serviceProvider | UseElementSameName | Encounter.serviceProvider |
+| Encounter.partOf | UseElementSameName | Encounter.partOf |

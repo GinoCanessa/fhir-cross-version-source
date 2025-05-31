@@ -12,10 +12,10 @@
 | DocumentManifest.modifierExtension | UseElementSameName | DocumentManifest.modifierExtension |
 | DocumentManifest.masterIdentifier | UseElementSameName | DocumentManifest.masterIdentifier |
 | DocumentManifest.identifier | UseElementSameName | DocumentManifest.identifier |
-| DocumentManifest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.subject |
-| DocumentManifest.recipient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.recipient |
+| DocumentManifest.subject | UseElementSameName | DocumentManifest.subject |
+| DocumentManifest.recipient | UseElementSameName | DocumentManifest.recipient |
 | DocumentManifest.type | UseElementSameName | DocumentManifest.type |
-| DocumentManifest.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.author |
+| DocumentManifest.author | UseElementSameName | DocumentManifest.author |
 | DocumentManifest.created | UseElementSameName | DocumentManifest.created |
 | DocumentManifest.source | UseElementSameName | DocumentManifest.source |
 | DocumentManifest.status | UseElementSameName | DocumentManifest.status |
@@ -24,10 +24,10 @@
 | DocumentManifest.content.id | UseElementSameName | DocumentManifest.content.id |
 | DocumentManifest.content.extension | UseElementSameName | DocumentManifest.content.extension |
 | DocumentManifest.content.modifierExtension | UseElementSameName | DocumentManifest.content.modifierExtension |
-| DocumentManifest.content.p[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.content.p |
+| DocumentManifest.content.p[x] | UseElementSameName | DocumentManifest.content.p[x] |
 | DocumentManifest.related | UseElementSameName | DocumentManifest.related |
 | DocumentManifest.related.id | UseElementSameName | DocumentManifest.related.id |
 | DocumentManifest.related.extension | UseElementSameName | DocumentManifest.related.extension |
 | DocumentManifest.related.modifierExtension | UseElementSameName | DocumentManifest.related.modifierExtension |
 | DocumentManifest.related.identifier | UseElementSameName | DocumentManifest.related.identifier |
-| DocumentManifest.related.ref | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentManifest.related.ref |
+| DocumentManifest.related.ref | UseElementSameName | DocumentManifest.related.ref |

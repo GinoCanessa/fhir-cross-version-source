@@ -15,7 +15,7 @@
 | DiagnosticReport.status | UseElementSameName | DiagnosticReport.status |
 | DiagnosticReport.category | UseElementSameName | DiagnosticReport.category |
 | DiagnosticReport.code | UseElementSameName | DiagnosticReport.code |
-| DiagnosticReport.subject | UseElementSameName | DiagnosticReport.subject |
+| DiagnosticReport.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DiagnosticReport.subject |
 | DiagnosticReport.encounter | UseElementSameName | DiagnosticReport.encounter |
 | DiagnosticReport.effective[x] | UseElementSameName | DiagnosticReport.effective[x] |
 | DiagnosticReport.issued | UseElementSameName | DiagnosticReport.issued |

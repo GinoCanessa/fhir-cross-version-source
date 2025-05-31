@@ -9,5 +9,5 @@
 | TriggerDefinition.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TriggerDefinition.code |
 | TriggerDefinition.subscriptionTopic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TriggerDefinition.subscriptionTopic |
 | TriggerDefinition.timing[x] | UseElementSameName | TriggerDefinition.timing[x] |
-| TriggerDefinition.data | UseElementSameName | TriggerDefinition.data |
+| TriggerDefinition.data | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TriggerDefinition.data |
 | TriggerDefinition.condition | UseElementSameName | TriggerDefinition.condition |

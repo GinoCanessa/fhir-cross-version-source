@@ -11,7 +11,7 @@
 | BiologicallyDerivedProduct.extension | UseElementSameName | BiologicallyDerivedProduct.extension |
 | BiologicallyDerivedProduct.modifierExtension | UseElementSameName | BiologicallyDerivedProduct.modifierExtension |
 | BiologicallyDerivedProduct.identifier | UseElementSameName | BiologicallyDerivedProduct.identifier |
-| BiologicallyDerivedProduct.productCategory | UseElementSameName | BiologicallyDerivedProduct.productCategory |
+| BiologicallyDerivedProduct.productCategory | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-BiologicallyDerivedProduct.productCategory |
 | BiologicallyDerivedProduct.productCode | UseElementSameName | BiologicallyDerivedProduct.productCode |
 | BiologicallyDerivedProduct.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-BiologicallyDerivedProduct.status |
 | BiologicallyDerivedProduct.request | UseElementSameName | BiologicallyDerivedProduct.request |

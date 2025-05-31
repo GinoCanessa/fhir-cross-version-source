@@ -20,7 +20,7 @@
 | Patient.address | UseElementRenamed | Patient.address |
 | Patient.maritalStatus | UseElementRenamed | Patient.maritalStatus |
 | Patient.multipleBirth[x] | UseElementRenamed | Patient.multipleBirth[x] |
-| Patient.photo | UseElementRenamed | Patient.photo |
+| Patient.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Patient.photo |
 | Patient.contact | UseElementRenamed | Patient.contact |
 | Patient.contact.id | UseElementRenamed | Patient.contact.id |
 | Patient.contact.extension | UseElementRenamed | Patient.contact.extension |

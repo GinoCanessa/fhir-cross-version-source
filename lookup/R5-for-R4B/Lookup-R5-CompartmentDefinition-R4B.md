@@ -23,13 +23,13 @@
 | CompartmentDefinition.description | UseElementRenamed | CompartmentDefinition.description |
 | CompartmentDefinition.useContext | UseElementRenamed | CompartmentDefinition.useContext |
 | CompartmentDefinition.purpose | UseElementRenamed | CompartmentDefinition.purpose |
-| CompartmentDefinition.code | UseElementRenamed | CompartmentDefinition.code |
+| CompartmentDefinition.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.code |
 | CompartmentDefinition.search | UseElementRenamed | CompartmentDefinition.search |
 | CompartmentDefinition.resource | UseElementRenamed | CompartmentDefinition.resource |
 | CompartmentDefinition.resource.id | UseElementRenamed | CompartmentDefinition.resource.id |
 | CompartmentDefinition.resource.extension | UseElementRenamed | CompartmentDefinition.resource.extension |
 | CompartmentDefinition.resource.modifierExtension | UseElementRenamed | CompartmentDefinition.resource.modifierExtension |
-| CompartmentDefinition.resource.code | UseElementRenamed | CompartmentDefinition.resource.code |
+| CompartmentDefinition.resource.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.resource.code |
 | CompartmentDefinition.resource.param | UseElementRenamed | CompartmentDefinition.resource.param |
 | CompartmentDefinition.resource.documentation | UseElementRenamed | CompartmentDefinition.resource.documentation |
 | CompartmentDefinition.resource.startParam | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.resource.startParam |

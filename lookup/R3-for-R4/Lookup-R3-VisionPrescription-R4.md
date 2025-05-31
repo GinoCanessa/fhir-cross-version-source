@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | VisionPrescription.id | UseElementSameName | VisionPrescription.id |
-| VisionPrescription.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.meta |
+| VisionPrescription.meta | UseElementSameName | VisionPrescription.meta |
 | VisionPrescription.implicitRules | UseElementSameName | VisionPrescription.implicitRules |
 | VisionPrescription.language | UseElementSameName | VisionPrescription.language |
 | VisionPrescription.text | UseElementSameName | VisionPrescription.text |
@@ -12,8 +12,8 @@
 | VisionPrescription.modifierExtension | UseElementSameName | VisionPrescription.modifierExtension |
 | VisionPrescription.identifier | UseElementSameName | VisionPrescription.identifier |
 | VisionPrescription.status | UseElementSameName | VisionPrescription.status |
-| VisionPrescription.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.patient |
-| VisionPrescription.encounter | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.encounter |
+| VisionPrescription.patient | UseElementSameName | VisionPrescription.patient |
+| VisionPrescription.encounter | UseElementSameName | VisionPrescription.encounter |
 | VisionPrescription.dateWritten | UseElementSameName | VisionPrescription.dateWritten |
 | VisionPrescription.prescriber | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.prescriber |
 | VisionPrescription.reason[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-VisionPrescription.reason |

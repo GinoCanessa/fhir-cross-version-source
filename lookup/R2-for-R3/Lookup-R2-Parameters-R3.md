@@ -11,6 +11,6 @@
 | Parameters.parameter.extension | UseElementSameName | Parameters.parameter.extension |
 | Parameters.parameter.modifierExtension | UseElementSameName | Parameters.parameter.modifierExtension |
 | Parameters.parameter.name | UseElementSameName | Parameters.parameter.name |
-| Parameters.parameter.value[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Parameters.parameter.value |
+| Parameters.parameter.value[x] | UseElementSameName | Parameters.parameter.value[x] |
 | Parameters.parameter.resource | UseElementSameName | Parameters.parameter.resource |
 | Parameters.parameter.part | UseElementSameName | Parameters.parameter.part |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CoverageEligibilityResponse.id | UseElementSameName | EligibilityResponse.id |
-| CoverageEligibilityResponse.meta | UseElementSameName | EligibilityResponse.meta |
+| CoverageEligibilityResponse.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.meta |
 | CoverageEligibilityResponse.implicitRules | UseElementSameName | EligibilityResponse.implicitRules |
 | CoverageEligibilityResponse.language | UseElementSameName | EligibilityResponse.language |
 | CoverageEligibilityResponse.text | UseElementSameName | EligibilityResponse.text |
@@ -18,14 +18,14 @@
 | CoverageEligibilityResponse.created | UseElementSameName | EligibilityResponse.created |
 | CoverageEligibilityResponse.requestor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.requestor |
 | CoverageEligibilityResponse.request | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.request |
-| CoverageEligibilityResponse.outcome | UseElementSameName | EligibilityResponse.outcome |
+| CoverageEligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.outcome |
 | CoverageEligibilityResponse.disposition | UseElementSameName | EligibilityResponse.disposition |
-| CoverageEligibilityResponse.insurer | UseElementSameName | EligibilityResponse.insurer |
+| CoverageEligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurer |
 | CoverageEligibilityResponse.insurance | UseElementSameName | EligibilityResponse.insurance |
 | CoverageEligibilityResponse.insurance.id | UseElementSameName | EligibilityResponse.insurance.id |
 | CoverageEligibilityResponse.insurance.extension | UseElementSameName | EligibilityResponse.insurance.extension |
 | CoverageEligibilityResponse.insurance.modifierExtension | UseElementSameName | EligibilityResponse.insurance.modifierExtension |
-| CoverageEligibilityResponse.insurance.coverage | UseElementSameName | EligibilityResponse.insurance.coverage |
+| CoverageEligibilityResponse.insurance.coverage | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.coverage |
 | CoverageEligibilityResponse.insurance.inforce | UseElementSameName | EligibilityResponse.inforce |
 | CoverageEligibilityResponse.insurance.benefitPeriod | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.benefitPeriod |
 | CoverageEligibilityResponse.insurance.item | UseElementSameName | EligibilityResponse.insurance.benefitBalance |
@@ -47,7 +47,7 @@
 | CoverageEligibilityResponse.insurance.item.benefit.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.benefit.extension |
 | CoverageEligibilityResponse.insurance.item.benefit.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.benefit.modifierExtension |
 | CoverageEligibilityResponse.insurance.item.benefit.type | UseElementSameName | EligibilityResponse.insurance.benefitBalance.financial.type |
-| CoverageEligibilityResponse.insurance.item.benefit.allowed[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.benefit.allowed |
+| CoverageEligibilityResponse.insurance.item.benefit.allowed[x] | UseElementSameName | EligibilityResponse.insurance.benefitBalance.financial.allowed[x] |
 | CoverageEligibilityResponse.insurance.item.benefit.used[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.benefit.used |
 | CoverageEligibilityResponse.insurance.item.authorizationRequired | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.authorizationRequired |
 | CoverageEligibilityResponse.insurance.item.authorizationSupporting | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance.item.authorizationSupporting |

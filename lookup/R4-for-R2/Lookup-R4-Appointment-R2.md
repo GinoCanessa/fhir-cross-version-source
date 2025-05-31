@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Appointment.id | UseElementSameName | Appointment.id |
-| Appointment.meta | UseElementSameName | Appointment.meta |
+| Appointment.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.meta |
 | Appointment.implicitRules | UseElementSameName | Appointment.implicitRules |
 | Appointment.language | UseElementSameName | Appointment.language |
 | Appointment.text | UseElementSameName | Appointment.text |
@@ -11,13 +11,13 @@
 | Appointment.extension | UseElementSameName | Appointment.extension |
 | Appointment.modifierExtension | UseElementSameName | Appointment.modifierExtension |
 | Appointment.identifier | UseElementSameName | Appointment.identifier |
-| Appointment.status | UseElementSameName | Appointment.status |
+| Appointment.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.status |
 | Appointment.cancelationReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.cancelationReason |
 | Appointment.serviceCategory | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.serviceCategory |
-| Appointment.serviceType | UseElementSameName | Appointment.type |
+| Appointment.serviceType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.serviceType |
 | Appointment.specialty | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.specialty |
 | Appointment.appointmentType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.appointmentType |
-| Appointment.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.reasonCode |
+| Appointment.reasonCode | UseElementSameName | Appointment.reason |
 | Appointment.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.reasonReference |
 | Appointment.priority | UseElementSameName | Appointment.priority |
 | Appointment.description | UseElementSameName | Appointment.description |
@@ -25,7 +25,7 @@
 | Appointment.start | UseElementSameName | Appointment.start |
 | Appointment.end | UseElementSameName | Appointment.end |
 | Appointment.minutesDuration | UseElementSameName | Appointment.minutesDuration |
-| Appointment.slot | UseElementSameName | Appointment.slot |
+| Appointment.slot | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.slot |
 | Appointment.created | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.created |
 | Appointment.comment | UseElementSameName | Appointment.comment |
 | Appointment.patientInstruction | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.patientInstruction |
@@ -34,9 +34,9 @@
 | Appointment.participant.id | UseElementSameName | Appointment.participant.id |
 | Appointment.participant.extension | UseElementSameName | Appointment.participant.extension |
 | Appointment.participant.modifierExtension | UseElementSameName | Appointment.participant.modifierExtension |
-| Appointment.participant.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.participant.type |
+| Appointment.participant.type | UseElementSameName | Appointment.participant.type |
 | Appointment.participant.actor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.participant.actor |
 | Appointment.participant.required | UseElementSameName | Appointment.participant.required |
-| Appointment.participant.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.participant.status |
+| Appointment.participant.status | UseElementSameName | Appointment.participant.status |
 | Appointment.participant.period | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.participant.period |
 | Appointment.requestedPeriod | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Appointment.requestedPeriod |

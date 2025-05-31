@@ -34,7 +34,7 @@
 | MessageDefinition.focus.id | UseElementSameName | MessageDefinition.focus.id |
 | MessageDefinition.focus.extension | UseElementSameName | MessageDefinition.focus.extension |
 | MessageDefinition.focus.modifierExtension | UseElementSameName | MessageDefinition.focus.modifierExtension |
-| MessageDefinition.focus.code | UseElementSameName | MessageDefinition.focus.code |
+| MessageDefinition.focus.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MessageDefinition.focus.code |
 | MessageDefinition.focus.profile | UseElementSameName | MessageDefinition.focus.profile |
 | MessageDefinition.focus.min | UseElementSameName | MessageDefinition.focus.min |
 | MessageDefinition.focus.max | UseElementSameName | MessageDefinition.focus.max |

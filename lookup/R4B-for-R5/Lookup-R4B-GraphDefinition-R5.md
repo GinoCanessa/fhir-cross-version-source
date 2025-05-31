@@ -22,7 +22,7 @@
 | GraphDefinition.useContext | UseElementSameName | GraphDefinition.useContext |
 | GraphDefinition.jurisdiction | UseElementSameName | GraphDefinition.jurisdiction |
 | GraphDefinition.purpose | UseElementSameName | GraphDefinition.purpose |
-| GraphDefinition.start | UseElementSameName | GraphDefinition.start |
+| GraphDefinition.start | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GraphDefinition.start |
 | GraphDefinition.profile | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GraphDefinition.profile |
 | GraphDefinition.link | UseElementSameName | GraphDefinition.link |
 | GraphDefinition.link.id | UseElementSameName | GraphDefinition.link.id |

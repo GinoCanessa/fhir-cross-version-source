@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | PaymentReconciliation.id | UseElementSameName | PaymentReconciliation.id |
-| PaymentReconciliation.meta | UseElementSameName | PaymentReconciliation.meta |
+| PaymentReconciliation.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.meta |
 | PaymentReconciliation.implicitRules | UseElementSameName | PaymentReconciliation.implicitRules |
 | PaymentReconciliation.language | UseElementSameName | PaymentReconciliation.language |
 | PaymentReconciliation.text | UseElementSameName | PaymentReconciliation.text |
@@ -14,13 +14,13 @@
 | PaymentReconciliation.status | UseElementSameName | PaymentReconciliation.status |
 | PaymentReconciliation.period | UseElementSameName | PaymentReconciliation.period |
 | PaymentReconciliation.created | UseElementSameName | PaymentReconciliation.created |
-| PaymentReconciliation.paymentIssuer | UseElementSameName | PaymentReconciliation.organization |
+| PaymentReconciliation.paymentIssuer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.paymentIssuer |
 | PaymentReconciliation.request | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.request |
 | PaymentReconciliation.requestor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.requestor |
-| PaymentReconciliation.outcome | UseElementSameName | PaymentReconciliation.outcome |
+| PaymentReconciliation.outcome | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.outcome |
 | PaymentReconciliation.disposition | UseElementSameName | PaymentReconciliation.disposition |
 | PaymentReconciliation.paymentDate | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.paymentDate |
-| PaymentReconciliation.paymentAmount | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.paymentAmount |
+| PaymentReconciliation.paymentAmount | UseElementSameName | PaymentReconciliation.total |
 | PaymentReconciliation.paymentIdentifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.paymentIdentifier |
 | PaymentReconciliation.detail | UseElementSameName | PaymentReconciliation.detail |
 | PaymentReconciliation.detail.id | UseElementSameName | PaymentReconciliation.detail.id |
@@ -29,17 +29,17 @@
 | PaymentReconciliation.detail.identifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.identifier |
 | PaymentReconciliation.detail.predecessor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.predecessor |
 | PaymentReconciliation.detail.type | UseElementSameName | PaymentReconciliation.detail.type |
-| PaymentReconciliation.detail.request | UseElementSameName | PaymentReconciliation.detail.request |
+| PaymentReconciliation.detail.request | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.request |
 | PaymentReconciliation.detail.submitter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.submitter |
-| PaymentReconciliation.detail.response | UseElementSameName | PaymentReconciliation.detail.response |
+| PaymentReconciliation.detail.response | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.response |
 | PaymentReconciliation.detail.date | UseElementSameName | PaymentReconciliation.detail.date |
 | PaymentReconciliation.detail.responsible | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.responsible |
 | PaymentReconciliation.detail.payee | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.payee |
-| PaymentReconciliation.detail.amount | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.detail.amount |
+| PaymentReconciliation.detail.amount | UseElementSameName | PaymentReconciliation.detail.amount |
 | PaymentReconciliation.formCode | UseElementSameName | PaymentReconciliation.form |
 | PaymentReconciliation.processNote | UseElementSameName | PaymentReconciliation.processNote |
 | PaymentReconciliation.processNote.id | UseElementSameName | PaymentReconciliation.processNote.id |
 | PaymentReconciliation.processNote.extension | UseElementSameName | PaymentReconciliation.processNote.extension |
 | PaymentReconciliation.processNote.modifierExtension | UseElementSameName | PaymentReconciliation.processNote.modifierExtension |
-| PaymentReconciliation.processNote.type | UseElementSameName | PaymentReconciliation.processNote.type |
+| PaymentReconciliation.processNote.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PaymentReconciliation.processNote.type |
 | PaymentReconciliation.processNote.text | UseElementSameName | PaymentReconciliation.processNote.text |

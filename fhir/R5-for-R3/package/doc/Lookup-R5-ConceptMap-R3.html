@@ -3,7 +3,7 @@
 <table border="1">
 <tr><th>Source Element</th><th>Usage</th><th>Target</th></tr>
 <tr><td>ConceptMap.id</td><td>UseElementSameName</td><td>ConceptMap.id</td></tr>
-<tr><td>ConceptMap.meta</td><td>UseElementSameName</td><td>ConceptMap.meta</td></tr>
+<tr><td>ConceptMap.meta</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.meta</td></tr>
 <tr><td>ConceptMap.implicitRules</td><td>UseElementSameName</td><td>ConceptMap.implicitRules</td></tr>
 <tr><td>ConceptMap.language</td><td>UseElementSameName</td><td>ConceptMap.language</td></tr>
 <tr><td>ConceptMap.text</td><td>UseElementSameName</td><td>ConceptMap.text</td></tr>
@@ -11,7 +11,7 @@
 <tr><td>ConceptMap.extension</td><td>UseElementSameName</td><td>ConceptMap.extension</td></tr>
 <tr><td>ConceptMap.modifierExtension</td><td>UseElementSameName</td><td>ConceptMap.modifierExtension</td></tr>
 <tr><td>ConceptMap.url</td><td>UseElementSameName</td><td>ConceptMap.url</td></tr>
-<tr><td>ConceptMap.identifier</td><td>UseElementSameName</td><td>ConceptMap.identifier</td></tr>
+<tr><td>ConceptMap.identifier</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.identifier</td></tr>
 <tr><td>ConceptMap.version</td><td>UseElementSameName</td><td>ConceptMap.version</td></tr>
 <tr><td>ConceptMap.versionAlgorithm[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.versionAlgorithm</td></tr>
 <tr><td>ConceptMap.name</td><td>UseElementSameName</td><td>ConceptMap.name</td></tr>
@@ -53,14 +53,14 @@
 <tr><td>ConceptMap.additionalAttribute.uri</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ConceptMap.additionalAttribute.description</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ConceptMap.additionalAttribute.type</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
-<tr><td>ConceptMap.sourceScope[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.sourceScope</td></tr>
-<tr><td>ConceptMap.targetScope[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.targetScope</td></tr>
+<tr><td>ConceptMap.sourceScope[x]</td><td>UseElementRenamed</td><td>ConceptMap.source[x]</td></tr>
+<tr><td>ConceptMap.targetScope[x]</td><td>UseElementRenamed</td><td>ConceptMap.target[x]</td></tr>
 <tr><td>ConceptMap.group</td><td>UseElementSameName</td><td>ConceptMap.group</td></tr>
 <tr><td>ConceptMap.group.id</td><td>UseElementSameName</td><td>ConceptMap.group.id</td></tr>
 <tr><td>ConceptMap.group.extension</td><td>UseElementSameName</td><td>ConceptMap.group.extension</td></tr>
 <tr><td>ConceptMap.group.modifierExtension</td><td>UseElementSameName</td><td>ConceptMap.group.modifierExtension</td></tr>
-<tr><td>ConceptMap.group.source</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.source</td></tr>
-<tr><td>ConceptMap.group.target</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.target</td></tr>
+<tr><td>ConceptMap.group.source</td><td>UseElementSameName</td><td>ConceptMap.group.source</td></tr>
+<tr><td>ConceptMap.group.target</td><td>UseElementSameName</td><td>ConceptMap.group.target</td></tr>
 <tr><td>ConceptMap.group.element</td><td>UseElementSameName</td><td>ConceptMap.group.element</td></tr>
 <tr><td>ConceptMap.group.element.id</td><td>UseElementSameName</td><td>ConceptMap.group.element.id</td></tr>
 <tr><td>ConceptMap.group.element.extension</td><td>UseElementSameName</td><td>ConceptMap.group.element.extension</td></tr>
@@ -88,18 +88,18 @@
 <tr><td>ConceptMap.group.element.target.dependsOn.id</td><td>UseElementSameName</td><td>ConceptMap.group.element.target.dependsOn.id</td></tr>
 <tr><td>ConceptMap.group.element.target.dependsOn.extension</td><td>UseElementSameName</td><td>ConceptMap.group.element.target.dependsOn.extension</td></tr>
 <tr><td>ConceptMap.group.element.target.dependsOn.modifierExtension</td><td>UseElementSameName</td><td>ConceptMap.group.element.target.dependsOn.modifierExtension</td></tr>
-<tr><td>ConceptMap.group.element.target.dependsOn.attribute</td><td>UseElementRenamed</td><td>ConceptMap.group.element.target.dependsOn.property</td></tr>
-<tr><td>ConceptMap.group.element.target.dependsOn.value[x]</td><td>UseElementRenamed</td><td>ConceptMap.group.element.target.dependsOn.code</td></tr>
+<tr><td>ConceptMap.group.element.target.dependsOn.attribute</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.attribute</td></tr>
+<tr><td>ConceptMap.group.element.target.dependsOn.value[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.value</td></tr>
 <tr><td>ConceptMap.group.element.target.dependsOn.valueSet</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.valueSet</td></tr>
 <tr><td>ConceptMap.group.element.target.product</td><td>UseElementSameName</td><td>ConceptMap.group.element.target.product</td></tr>
 <tr><td>ConceptMap.group.unmapped</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped</td></tr>
 <tr><td>ConceptMap.group.unmapped.id</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.id</td></tr>
 <tr><td>ConceptMap.group.unmapped.extension</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.extension</td></tr>
 <tr><td>ConceptMap.group.unmapped.modifierExtension</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.modifierExtension</td></tr>
-<tr><td>ConceptMap.group.unmapped.mode</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.mode</td></tr>
+<tr><td>ConceptMap.group.unmapped.mode</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.mode</td></tr>
 <tr><td>ConceptMap.group.unmapped.code</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.code</td></tr>
 <tr><td>ConceptMap.group.unmapped.display</td><td>UseElementSameName</td><td>ConceptMap.group.unmapped.display</td></tr>
 <tr><td>ConceptMap.group.unmapped.valueSet</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.valueSet</td></tr>
 <tr><td>ConceptMap.group.unmapped.relationship</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.relationship</td></tr>
-<tr><td>ConceptMap.group.unmapped.otherMap</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.otherMap</td></tr>
+<tr><td>ConceptMap.group.unmapped.otherMap</td><td>UseElementRenamed</td><td>ConceptMap.group.unmapped.url</td></tr>
 </table>

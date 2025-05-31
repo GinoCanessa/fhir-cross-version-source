@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | HealthcareService.id | UseElementSameName | HealthcareService.id |
-| HealthcareService.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.meta |
+| HealthcareService.meta | UseElementSameName | HealthcareService.meta |
 | HealthcareService.implicitRules | UseElementSameName | HealthcareService.implicitRules |
 | HealthcareService.language | UseElementSameName | HealthcareService.language |
 | HealthcareService.text | UseElementSameName | HealthcareService.text |
@@ -12,21 +12,21 @@
 | HealthcareService.modifierExtension | UseElementSameName | HealthcareService.modifierExtension |
 | HealthcareService.identifier | UseElementSameName | HealthcareService.identifier |
 | HealthcareService.active | UseElementSameName | HealthcareService.active |
-| HealthcareService.providedBy | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.providedBy |
-| HealthcareService.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.category |
+| HealthcareService.providedBy | UseElementSameName | HealthcareService.providedBy |
+| HealthcareService.category | UseElementSameName | HealthcareService.category |
 | HealthcareService.type | UseElementSameName | HealthcareService.type |
 | HealthcareService.specialty | UseElementSameName | HealthcareService.specialty |
-| HealthcareService.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.location |
+| HealthcareService.location | UseElementSameName | HealthcareService.location |
 | HealthcareService.name | UseElementSameName | HealthcareService.name |
 | HealthcareService.comment | UseElementSameName | HealthcareService.comment |
 | HealthcareService.extraDetails | UseElementSameName | HealthcareService.extraDetails |
 | HealthcareService.photo | UseElementSameName | HealthcareService.photo |
 | HealthcareService.telecom | UseElementSameName | HealthcareService.telecom |
-| HealthcareService.coverageArea | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.coverageArea |
+| HealthcareService.coverageArea | UseElementSameName | HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |
-| HealthcareService.eligibility | UseElementRenamed | HealthcareService.eligibility.code |
+| HealthcareService.eligibility | UseElementSameName | HealthcareService.eligibility |
 | HealthcareService.eligibilityNote | UseElementRenamed | HealthcareService.eligibility.comment |
-| HealthcareService.programName | UseElementRenamed | HealthcareService.program |
+| HealthcareService.programName | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.programName |
 | HealthcareService.characteristic | UseElementSameName | HealthcareService.characteristic |
 | HealthcareService.referralMethod | UseElementSameName | HealthcareService.referralMethod |
 | HealthcareService.appointmentRequired | UseElementSameName | HealthcareService.appointmentRequired |
@@ -45,4 +45,4 @@
 | HealthcareService.notAvailable.description | UseElementSameName | HealthcareService.notAvailable.description |
 | HealthcareService.notAvailable.during | UseElementSameName | HealthcareService.notAvailable.during |
 | HealthcareService.availabilityExceptions | UseElementSameName | HealthcareService.availabilityExceptions |
-| HealthcareService.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.endpoint |
+| HealthcareService.endpoint | UseElementSameName | HealthcareService.endpoint |

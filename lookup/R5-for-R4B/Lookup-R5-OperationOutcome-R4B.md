@@ -14,8 +14,8 @@
 | OperationOutcome.issue.id | UseElementRenamed | OperationOutcome.issue.id |
 | OperationOutcome.issue.extension | UseElementRenamed | OperationOutcome.issue.extension |
 | OperationOutcome.issue.modifierExtension | UseElementRenamed | OperationOutcome.issue.modifierExtension |
-| OperationOutcome.issue.severity | UseElementRenamed | OperationOutcome.issue.severity |
-| OperationOutcome.issue.code | UseElementRenamed | OperationOutcome.issue.code |
+| OperationOutcome.issue.severity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationOutcome.issue.severity |
+| OperationOutcome.issue.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationOutcome.issue.code |
 | OperationOutcome.issue.details | UseElementRenamed | OperationOutcome.issue.details |
 | OperationOutcome.issue.diagnostics | UseElementRenamed | OperationOutcome.issue.diagnostics |
 | OperationOutcome.issue.location | UseElementRenamed | OperationOutcome.issue.location |

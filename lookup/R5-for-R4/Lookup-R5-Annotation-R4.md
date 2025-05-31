@@ -4,6 +4,6 @@
 | -------------- | ----- | ------ |
 | Annotation.id | UseElementSameName | Annotation.id |
 | Annotation.extension | UseElementSameName | Annotation.extension |
-| Annotation.author[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Annotation.author |
+| Annotation.author[x] | UseElementSameName | Annotation.author[x] |
 | Annotation.time | UseElementSameName | Annotation.time |
 | Annotation.text | UseElementSameName | Annotation.text |

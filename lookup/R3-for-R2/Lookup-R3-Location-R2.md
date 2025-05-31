@@ -28,6 +28,6 @@
 | Location.position.longitude | UseElementSameName | Location.position.longitude |
 | Location.position.latitude | UseElementSameName | Location.position.latitude |
 | Location.position.altitude | UseElementSameName | Location.position.altitude |
-| Location.managingOrganization | UseElementSameName | Location.managingOrganization |
-| Location.partOf | UseElementSameName | Location.partOf |
+| Location.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.managingOrganization |
+| Location.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.partOf |
 | Location.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.endpoint |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | BodySite.id | UseElementRenamed | BodyStructure.id |
-| BodySite.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-BodySite.meta |
+| BodySite.meta | UseElementRenamed | BodyStructure.meta |
 | BodySite.implicitRules | UseElementRenamed | BodyStructure.implicitRules |
 | BodySite.language | UseElementRenamed | BodyStructure.language |
 | BodySite.text | UseElementRenamed | BodyStructure.text |
@@ -16,4 +16,4 @@
 | BodySite.qualifier | UseElementRenamed | BodyStructure.locationQualifier |
 | BodySite.description | UseElementRenamed | BodyStructure.description |
 | BodySite.image | UseElementRenamed | BodyStructure.image |
-| BodySite.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-BodySite.patient |
+| BodySite.patient | UseElementRenamed | BodyStructure.patient |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ConceptMap.id | UseElementSameName | ConceptMap.id |
-| ConceptMap.meta | UseElementSameName | ConceptMap.meta |
+| ConceptMap.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.meta |
 | ConceptMap.implicitRules | UseElementSameName | ConceptMap.implicitRules |
 | ConceptMap.language | UseElementSameName | ConceptMap.language |
 | ConceptMap.text | UseElementSameName | ConceptMap.text |
@@ -25,8 +25,8 @@
 | ConceptMap.jurisdiction | UseElementSameName | ConceptMap.jurisdiction |
 | ConceptMap.purpose | UseElementSameName | ConceptMap.purpose |
 | ConceptMap.copyright | UseElementSameName | ConceptMap.copyright |
-| ConceptMap.source[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.source |
-| ConceptMap.target[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.target |
+| ConceptMap.source[x] | UseElementSameName | ConceptMap.source[x] |
+| ConceptMap.target[x] | UseElementSameName | ConceptMap.target[x] |
 | ConceptMap.group | UseElementSameName | ConceptMap.group |
 | ConceptMap.group.id | UseElementSameName | ConceptMap.group.id |
 | ConceptMap.group.extension | UseElementSameName | ConceptMap.group.extension |
@@ -54,7 +54,7 @@
 | ConceptMap.group.element.target.dependsOn.extension | UseElementSameName | ConceptMap.group.element.target.dependsOn.extension |
 | ConceptMap.group.element.target.dependsOn.modifierExtension | UseElementSameName | ConceptMap.group.element.target.dependsOn.modifierExtension |
 | ConceptMap.group.element.target.dependsOn.property | UseElementSameName | ConceptMap.group.element.target.dependsOn.property |
-| ConceptMap.group.element.target.dependsOn.system | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.system |
+| ConceptMap.group.element.target.dependsOn.system | UseElementSameName | ConceptMap.group.element.target.dependsOn.system |
 | ConceptMap.group.element.target.dependsOn.value | UseElementSameName | ConceptMap.group.element.target.dependsOn.code |
 | ConceptMap.group.element.target.dependsOn.display | UseElementSameName | ConceptMap.group.element.target.dependsOn.display |
 | ConceptMap.group.element.target.product | UseElementSameName | ConceptMap.group.element.target.product |
@@ -65,4 +65,4 @@
 | ConceptMap.group.unmapped.mode | UseElementSameName | ConceptMap.group.unmapped.mode |
 | ConceptMap.group.unmapped.code | UseElementSameName | ConceptMap.group.unmapped.code |
 | ConceptMap.group.unmapped.display | UseElementSameName | ConceptMap.group.unmapped.display |
-| ConceptMap.group.unmapped.url | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.group.unmapped.url |
+| ConceptMap.group.unmapped.url | UseElementSameName | ConceptMap.group.unmapped.url |

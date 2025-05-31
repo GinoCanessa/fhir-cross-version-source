@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Questionnaire.id | UseElementSameName | Questionnaire.id |
-| Questionnaire.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.meta |
+| Questionnaire.meta | UseElementSameName | Questionnaire.meta |
 | Questionnaire.implicitRules | UseElementSameName | Questionnaire.implicitRules |
 | Questionnaire.language | UseElementSameName | Questionnaire.language |
 | Questionnaire.text | UseElementSameName | Questionnaire.text |
@@ -46,16 +46,16 @@
 | Questionnaire.item.enableWhen.modifierExtension | UseElementSameName | Questionnaire.item.enableWhen.modifierExtension |
 | Questionnaire.item.enableWhen.question | UseElementSameName | Questionnaire.item.enableWhen.question |
 | Questionnaire.item.enableWhen.hasAnswer | UseElementRenamed | Questionnaire.item.enableWhen.operator |
-| Questionnaire.item.enableWhen.answer[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.enableWhen.answer |
+| Questionnaire.item.enableWhen.answer[x] | UseElementRenamed | Questionnaire.item.enableWhen.operator |
 | Questionnaire.item.required | UseElementSameName | Questionnaire.item.required |
 | Questionnaire.item.repeats | UseElementSameName | Questionnaire.item.repeats |
 | Questionnaire.item.readOnly | UseElementSameName | Questionnaire.item.readOnly |
 | Questionnaire.item.maxLength | UseElementSameName | Questionnaire.item.maxLength |
-| Questionnaire.item.options | UseElementRenamed | Questionnaire.item.answerValueSet |
+| Questionnaire.item.options | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.options |
 | Questionnaire.item.option | UseElementRenamed | Questionnaire.item.answerOption |
 | Questionnaire.item.option.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.option.id |
 | Questionnaire.item.option.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.option.extension |
 | Questionnaire.item.option.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.option.modifierExtension |
-| Questionnaire.item.option.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.option.value |
+| Questionnaire.item.option.value[x] | UseElementRenamed | Questionnaire.item.answerOption.value[x] |
 | Questionnaire.item.initial[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.initial |
 | Questionnaire.item.item | UseElementSameName | Questionnaire.item.item |

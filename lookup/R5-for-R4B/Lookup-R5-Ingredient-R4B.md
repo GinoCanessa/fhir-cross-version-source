@@ -33,9 +33,9 @@
 | Ingredient.substance.strength.id | UseElementRenamed | Ingredient.substance.strength.id |
 | Ingredient.substance.strength.extension | UseElementRenamed | Ingredient.substance.strength.extension |
 | Ingredient.substance.strength.modifierExtension | UseElementRenamed | Ingredient.substance.strength.modifierExtension |
-| Ingredient.substance.strength.presentation[x] | UseElementRenamed | Ingredient.substance.strength.presentation[x] |
+| Ingredient.substance.strength.presentation[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance.strength.presentation |
 | Ingredient.substance.strength.textPresentation | UseElementRenamed | Ingredient.substance.strength.textPresentation |
-| Ingredient.substance.strength.concentration[x] | UseElementRenamed | Ingredient.substance.strength.concentration[x] |
+| Ingredient.substance.strength.concentration[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance.strength.concentration |
 | Ingredient.substance.strength.textConcentration | UseElementRenamed | Ingredient.substance.strength.textConcentration |
 | Ingredient.substance.strength.basis | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance.strength.basis |
 | Ingredient.substance.strength.measurementPoint | UseElementRenamed | Ingredient.substance.strength.measurementPoint |
@@ -45,6 +45,6 @@
 | Ingredient.substance.strength.referenceStrength.extension | UseElementRenamed | Ingredient.substance.strength.referenceStrength.extension |
 | Ingredient.substance.strength.referenceStrength.modifierExtension | UseElementRenamed | Ingredient.substance.strength.referenceStrength.modifierExtension |
 | Ingredient.substance.strength.referenceStrength.substance | UseElementRenamed | Ingredient.substance.strength.referenceStrength.substance |
-| Ingredient.substance.strength.referenceStrength.strength[x] | UseElementRenamed | Ingredient.substance.strength.referenceStrength.strength[x] |
+| Ingredient.substance.strength.referenceStrength.strength[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Ingredient.substance.strength.referenceStrength.strength |
 | Ingredient.substance.strength.referenceStrength.measurementPoint | UseElementRenamed | Ingredient.substance.strength.referenceStrength.measurementPoint |
 | Ingredient.substance.strength.referenceStrength.country | UseElementRenamed | Ingredient.substance.strength.referenceStrength.country |

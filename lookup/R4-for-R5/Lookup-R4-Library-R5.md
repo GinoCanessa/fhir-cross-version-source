@@ -37,7 +37,7 @@
 | Library.editor | UseElementSameName | Library.editor |
 | Library.reviewer | UseElementSameName | Library.reviewer |
 | Library.endorser | UseElementSameName | Library.endorser |
-| Library.relatedArtifact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Library.relatedArtifact |
+| Library.relatedArtifact | UseElementSameName | Library.relatedArtifact |
 | Library.parameter | UseElementSameName | Library.parameter |
-| Library.dataRequirement | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Library.dataRequirement |
-| Library.content | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Library.content |
+| Library.dataRequirement | UseElementSameName | Library.dataRequirement |
+| Library.content | UseElementSameName | Library.content |

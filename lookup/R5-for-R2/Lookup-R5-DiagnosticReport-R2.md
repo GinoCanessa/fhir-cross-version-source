@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DiagnosticReport.id | UseElementSameName | DiagnosticReport.id |
-| DiagnosticReport.meta | UseElementSameName | DiagnosticReport.meta |
+| DiagnosticReport.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.meta |
 | DiagnosticReport.implicitRules | UseElementSameName | DiagnosticReport.implicitRules |
 | DiagnosticReport.language | UseElementSameName | DiagnosticReport.language |
 | DiagnosticReport.text | UseElementSameName | DiagnosticReport.text |
@@ -13,16 +13,16 @@
 | DiagnosticReport.identifier | UseElementSameName | DiagnosticReport.identifier |
 | DiagnosticReport.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.basedOn |
 | DiagnosticReport.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.status |
-| DiagnosticReport.category | UseElementSameName | DiagnosticReport.category |
+| DiagnosticReport.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.category |
 | DiagnosticReport.code | UseElementSameName | DiagnosticReport.code |
 | DiagnosticReport.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.subject |
 | DiagnosticReport.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.encounter |
 | DiagnosticReport.effective[x] | UseElementSameName | DiagnosticReport.effective[x] |
 | DiagnosticReport.issued | UseElementSameName | DiagnosticReport.issued |
-| DiagnosticReport.performer | UseElementSameName | DiagnosticReport.performer |
+| DiagnosticReport.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.performer |
 | DiagnosticReport.resultsInterpreter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.resultsInterpreter |
-| DiagnosticReport.specimen | UseElementSameName | DiagnosticReport.specimen |
-| DiagnosticReport.result | UseElementSameName | DiagnosticReport.result |
+| DiagnosticReport.specimen | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.specimen |
+| DiagnosticReport.result | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.result |
 | DiagnosticReport.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.note |
 | DiagnosticReport.study | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.study |
 | DiagnosticReport.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo |
@@ -40,4 +40,4 @@
 | DiagnosticReport.composition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition |
 | DiagnosticReport.conclusion | UseElementSameName | DiagnosticReport.conclusion |
 | DiagnosticReport.conclusionCode | UseElementSameName | DiagnosticReport.codedDiagnosis |
-| DiagnosticReport.presentedForm | UseElementSameName | DiagnosticReport.presentedForm |
+| DiagnosticReport.presentedForm | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.presentedForm |

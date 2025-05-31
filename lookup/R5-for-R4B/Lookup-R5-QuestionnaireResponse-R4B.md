@@ -10,7 +10,7 @@
 | QuestionnaireResponse.contained | UseElementRenamed | QuestionnaireResponse.contained |
 | QuestionnaireResponse.extension | UseElementRenamed | QuestionnaireResponse.extension |
 | QuestionnaireResponse.modifierExtension | UseElementRenamed | QuestionnaireResponse.modifierExtension |
-| QuestionnaireResponse.identifier | UseElementRenamed | QuestionnaireResponse.identifier |
+| QuestionnaireResponse.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-QuestionnaireResponse.identifier |
 | QuestionnaireResponse.basedOn | UseElementRenamed | QuestionnaireResponse.basedOn |
 | QuestionnaireResponse.partOf | UseElementRenamed | QuestionnaireResponse.partOf |
 | QuestionnaireResponse.questionnaire | UseElementRenamed | QuestionnaireResponse.questionnaire |
@@ -19,7 +19,7 @@
 | QuestionnaireResponse.encounter | UseElementRenamed | QuestionnaireResponse.encounter |
 | QuestionnaireResponse.authored | UseElementRenamed | QuestionnaireResponse.authored |
 | QuestionnaireResponse.author | UseElementRenamed | QuestionnaireResponse.author |
-| QuestionnaireResponse.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-QuestionnaireResponse.source |
+| QuestionnaireResponse.source | UseElementRenamed | QuestionnaireResponse.source |
 | QuestionnaireResponse.item | UseElementRenamed | QuestionnaireResponse.item |
 | QuestionnaireResponse.item.id | UseElementRenamed | QuestionnaireResponse.item.id |
 | QuestionnaireResponse.item.extension | UseElementRenamed | QuestionnaireResponse.item.extension |

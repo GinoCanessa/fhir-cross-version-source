@@ -4,9 +4,9 @@
 | -------------- | ----- | ------ |
 | Identifier.id | UseElementSameName | Identifier.id |
 | Identifier.extension | UseElementSameName | Identifier.extension |
-| Identifier.use | UseElementSameName | Identifier.use |
+| Identifier.use | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Identifier.use |
 | Identifier.type | UseElementSameName | Identifier.type |
 | Identifier.system | UseElementSameName | Identifier.system |
 | Identifier.value | UseElementSameName | Identifier.value |
 | Identifier.period | UseElementSameName | Identifier.period |
-| Identifier.assigner | UseElementSameName | Identifier.assigner |
+| Identifier.assigner | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Identifier.assigner |

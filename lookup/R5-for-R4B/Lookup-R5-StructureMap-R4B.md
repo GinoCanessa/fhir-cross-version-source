@@ -48,7 +48,7 @@
 | StructureMap.group.modifierExtension | UseElementRenamed | StructureMap.group.modifierExtension |
 | StructureMap.group.name | UseElementRenamed | StructureMap.group.name |
 | StructureMap.group.extends | UseElementRenamed | StructureMap.group.extends |
-| StructureMap.group.typeMode | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.typeMode |
+| StructureMap.group.typeMode | UseElementRenamed | StructureMap.group.typeMode |
 | StructureMap.group.documentation | UseElementRenamed | StructureMap.group.documentation |
 | StructureMap.group.input | UseElementRenamed | StructureMap.group.input |
 | StructureMap.group.input.id | UseElementRenamed | StructureMap.group.input.id |
@@ -71,7 +71,7 @@
 | StructureMap.group.rule.source.min | UseElementRenamed | StructureMap.group.rule.source.min |
 | StructureMap.group.rule.source.max | UseElementRenamed | StructureMap.group.rule.source.max |
 | StructureMap.group.rule.source.type | UseElementRenamed | StructureMap.group.rule.source.type |
-| StructureMap.group.rule.source.defaultValue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.source.defaultValue |
+| StructureMap.group.rule.source.defaultValue | UseElementRenamed | StructureMap.group.rule.source.defaultValue[x] |
 | StructureMap.group.rule.source.element | UseElementRenamed | StructureMap.group.rule.source.element |
 | StructureMap.group.rule.source.listMode | UseElementRenamed | StructureMap.group.rule.source.listMode |
 | StructureMap.group.rule.source.variable | UseElementRenamed | StructureMap.group.rule.source.variable |
@@ -82,7 +82,7 @@
 | StructureMap.group.rule.target.id | UseElementRenamed | StructureMap.group.rule.target.id |
 | StructureMap.group.rule.target.extension | UseElementRenamed | StructureMap.group.rule.target.extension |
 | StructureMap.group.rule.target.modifierExtension | UseElementRenamed | StructureMap.group.rule.target.modifierExtension |
-| StructureMap.group.rule.target.context | UseElementRenamed | StructureMap.group.rule.target.context |
+| StructureMap.group.rule.target.context | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.target.context |
 | StructureMap.group.rule.target.element | UseElementRenamed | StructureMap.group.rule.target.element |
 | StructureMap.group.rule.target.variable | UseElementRenamed | StructureMap.group.rule.target.variable |
 | StructureMap.group.rule.target.listMode | UseElementRenamed | StructureMap.group.rule.target.listMode |
@@ -92,12 +92,12 @@
 | StructureMap.group.rule.target.parameter.id | UseElementRenamed | StructureMap.group.rule.target.parameter.id |
 | StructureMap.group.rule.target.parameter.extension | UseElementRenamed | StructureMap.group.rule.target.parameter.extension |
 | StructureMap.group.rule.target.parameter.modifierExtension | UseElementRenamed | StructureMap.group.rule.target.parameter.modifierExtension |
-| StructureMap.group.rule.target.parameter.value[x] | UseElementRenamed | StructureMap.group.rule.target.parameter.value[x] |
+| StructureMap.group.rule.target.parameter.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.target.parameter.value |
 | StructureMap.group.rule.rule | UseElementRenamed | StructureMap.group.rule.rule |
 | StructureMap.group.rule.dependent | UseElementRenamed | StructureMap.group.rule.dependent |
 | StructureMap.group.rule.dependent.id | UseElementRenamed | StructureMap.group.rule.dependent.id |
 | StructureMap.group.rule.dependent.extension | UseElementRenamed | StructureMap.group.rule.dependent.extension |
 | StructureMap.group.rule.dependent.modifierExtension | UseElementRenamed | StructureMap.group.rule.dependent.modifierExtension |
 | StructureMap.group.rule.dependent.name | UseElementRenamed | StructureMap.group.rule.dependent.name |
-| StructureMap.group.rule.dependent.parameter | UseElementRenamed | StructureMap.group.rule.dependent.variable |
+| StructureMap.group.rule.dependent.parameter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureMap.group.rule.dependent.parameter |
 | StructureMap.group.rule.documentation | UseElementRenamed | StructureMap.group.rule.documentation |

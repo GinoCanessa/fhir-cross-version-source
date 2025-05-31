@@ -27,6 +27,6 @@
 | CompartmentDefinition.resource.id | UseElementSameName | CompartmentDefinition.resource.id |
 | CompartmentDefinition.resource.extension | UseElementSameName | CompartmentDefinition.resource.extension |
 | CompartmentDefinition.resource.modifierExtension | UseElementSameName | CompartmentDefinition.resource.modifierExtension |
-| CompartmentDefinition.resource.code | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CompartmentDefinition.resource.code |
+| CompartmentDefinition.resource.code | UseElementSameName | CompartmentDefinition.resource.code |
 | CompartmentDefinition.resource.param | UseElementSameName | CompartmentDefinition.resource.param |
 | CompartmentDefinition.resource.documentation | UseElementSameName | CompartmentDefinition.resource.documentation |

@@ -19,7 +19,7 @@
 | Claim.patient | UseElementRenamed | Claim.patient |
 | Claim.billablePeriod | UseElementRenamed | Claim.billablePeriod |
 | Claim.created | UseElementRenamed | Claim.created |
-| Claim.enterer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.enterer |
+| Claim.enterer | UseElementRenamed | Claim.enterer |
 | Claim.insurer | UseElementRenamed | Claim.insurer |
 | Claim.provider | UseElementRenamed | Claim.provider |
 | Claim.priority | UseElementRenamed | Claim.priority |
@@ -41,7 +41,7 @@
 | Claim.payee.party | UseElementRenamed | Claim.payee.party |
 | Claim.referral | UseElementRenamed | Claim.referral |
 | Claim.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.encounter |
-| Claim.facility | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.facility |
+| Claim.facility | UseElementRenamed | Claim.facility |
 | Claim.diagnosisRelatedGroup | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.diagnosisRelatedGroup |
 | Claim.event | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.event |
 | Claim.event.id | UseExtensionFromAncestor | - |
@@ -66,7 +66,7 @@
 | Claim.supportingInfo.category | UseElementRenamed | Claim.supportingInfo.category |
 | Claim.supportingInfo.code | UseElementRenamed | Claim.supportingInfo.code |
 | Claim.supportingInfo.timing[x] | UseElementRenamed | Claim.supportingInfo.timing[x] |
-| Claim.supportingInfo.value[x] | UseElementRenamed | Claim.supportingInfo.value[x] |
+| Claim.supportingInfo.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.supportingInfo.value |
 | Claim.supportingInfo.reason | UseElementRenamed | Claim.supportingInfo.reason |
 | Claim.diagnosis | UseElementRenamed | Claim.diagnosis |
 | Claim.diagnosis.id | UseElementRenamed | Claim.diagnosis.id |
@@ -130,12 +130,12 @@
 | Claim.item.tax | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.tax |
 | Claim.item.net | UseElementRenamed | Claim.item.net |
 | Claim.item.udi | UseElementRenamed | Claim.item.udi |
-| Claim.item.bodySite | UseElementRenamed | Claim.item.bodySite |
-| Claim.item.bodySite.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite.id |
-| Claim.item.bodySite.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite.extension |
-| Claim.item.bodySite.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite.modifierExtension |
-| Claim.item.bodySite.site | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite.site |
-| Claim.item.bodySite.subSite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite.subSite |
+| Claim.item.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.bodySite |
+| Claim.item.bodySite.id | UseExtensionFromAncestor | - |
+| Claim.item.bodySite.extension | UseExtensionFromAncestor | - |
+| Claim.item.bodySite.modifierExtension | UseExtensionFromAncestor | - |
+| Claim.item.bodySite.site | UseExtensionFromAncestor | - |
+| Claim.item.bodySite.subSite | UseExtensionFromAncestor | - |
 | Claim.item.encounter | UseElementRenamed | Claim.item.encounter |
 | Claim.item.detail | UseElementRenamed | Claim.item.detail |
 | Claim.item.detail.id | UseElementRenamed | Claim.item.detail.id |

@@ -40,7 +40,7 @@
 | ExampleScenario.instance.extension | UseElementSameName | ExampleScenario.instance.extension |
 | ExampleScenario.instance.modifierExtension | UseElementSameName | ExampleScenario.instance.modifierExtension |
 | ExampleScenario.instance.key | UseElementSameName | ExampleScenario.instance.resourceId |
-| ExampleScenario.instance.structureType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance.structureType |
+| ExampleScenario.instance.structureType | UseElementSameName | ExampleScenario.instance.resourceType |
 | ExampleScenario.instance.structureVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance.structureVersion |
 | ExampleScenario.instance.structureProfile[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.instance.structureProfile |
 | ExampleScenario.instance.title | UseElementSameName | ExampleScenario.instance.name |
@@ -73,13 +73,13 @@
 | ExampleScenario.process.step.extension | UseElementSameName | ExampleScenario.process.step.extension |
 | ExampleScenario.process.step.modifierExtension | UseElementSameName | ExampleScenario.process.step.modifierExtension |
 | ExampleScenario.process.step.number | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step.number |
-| ExampleScenario.process.step.process | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step.process |
+| ExampleScenario.process.step.process | UseElementSameName | ExampleScenario.process.step.process |
 | ExampleScenario.process.step.workflow | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step.workflow |
 | ExampleScenario.process.step.operation | UseElementSameName | ExampleScenario.process.step.operation |
 | ExampleScenario.process.step.operation.id | UseElementSameName | ExampleScenario.process.step.operation.id |
 | ExampleScenario.process.step.operation.extension | UseElementSameName | ExampleScenario.process.step.operation.extension |
 | ExampleScenario.process.step.operation.modifierExtension | UseElementSameName | ExampleScenario.process.step.operation.modifierExtension |
-| ExampleScenario.process.step.operation.type | UseElementSameName | ExampleScenario.process.step.operation.type |
+| ExampleScenario.process.step.operation.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExampleScenario.process.step.operation.type |
 | ExampleScenario.process.step.operation.title | UseElementSameName | ExampleScenario.process.step.operation.name |
 | ExampleScenario.process.step.operation.initiator | UseElementSameName | ExampleScenario.process.step.operation.initiator |
 | ExampleScenario.process.step.operation.receiver | UseElementSameName | ExampleScenario.process.step.operation.receiver |

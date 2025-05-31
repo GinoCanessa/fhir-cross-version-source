@@ -13,9 +13,9 @@
 | Schedule.identifier | UseElementRenamed | Schedule.identifier |
 | Schedule.active | UseElementRenamed | Schedule.active |
 | Schedule.serviceCategory | UseElementRenamed | Schedule.serviceCategory |
-| Schedule.serviceType | UseElementRenamed | Schedule.serviceType |
+| Schedule.serviceType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.serviceType |
 | Schedule.specialty | UseElementRenamed | Schedule.specialty |
 | Schedule.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.name |
-| Schedule.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Schedule.actor |
+| Schedule.actor | UseElementRenamed | Schedule.actor |
 | Schedule.planningHorizon | UseElementRenamed | Schedule.planningHorizon |
 | Schedule.comment | UseElementRenamed | Schedule.comment |

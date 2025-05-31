@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Subscription.id | UseElementSameName | Subscription.id |
-| Subscription.meta | UseElementSameName | Subscription.meta |
+| Subscription.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Subscription.meta |
 | Subscription.implicitRules | UseElementSameName | Subscription.implicitRules |
 | Subscription.language | UseElementSameName | Subscription.language |
 | Subscription.text | UseElementSameName | Subscription.text |
@@ -22,5 +22,5 @@
 | Subscription.channel.modifierExtension | UseElementSameName | Subscription.channel.modifierExtension |
 | Subscription.channel.type | UseElementSameName | Subscription.channel.type |
 | Subscription.channel.endpoint | UseElementSameName | Subscription.channel.endpoint |
-| Subscription.channel.payload | UseElementSameName | Subscription.channel.payload |
-| Subscription.channel.header | UseElementSameName | Subscription.channel.header |
+| Subscription.channel.payload | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Subscription.channel.payload |
+| Subscription.channel.header | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Subscription.channel.header |

@@ -11,7 +11,7 @@
 | ClinicalImpression.extension | UseElementRenamed | ClinicalImpression.extension |
 | ClinicalImpression.modifierExtension | UseElementRenamed | ClinicalImpression.modifierExtension |
 | ClinicalImpression.identifier | UseElementRenamed | ClinicalImpression.identifier |
-| ClinicalImpression.status | UseElementRenamed | ClinicalImpression.status |
+| ClinicalImpression.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.status |
 | ClinicalImpression.statusReason | UseElementRenamed | ClinicalImpression.statusReason |
 | ClinicalImpression.description | UseElementRenamed | ClinicalImpression.description |
 | ClinicalImpression.subject | UseElementRenamed | ClinicalImpression.subject |
@@ -28,7 +28,7 @@
 | ClinicalImpression.finding.id | UseElementRenamed | ClinicalImpression.finding.id |
 | ClinicalImpression.finding.extension | UseElementRenamed | ClinicalImpression.finding.extension |
 | ClinicalImpression.finding.modifierExtension | UseElementRenamed | ClinicalImpression.finding.modifierExtension |
-| ClinicalImpression.finding.item | UseElementRenamed | ClinicalImpression.finding.itemCodeableConcept |
+| ClinicalImpression.finding.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.finding.item |
 | ClinicalImpression.finding.basis | UseElementRenamed | ClinicalImpression.finding.basis |
 | ClinicalImpression.prognosisCodeableConcept | UseElementRenamed | ClinicalImpression.prognosisCodeableConcept |
 | ClinicalImpression.prognosisReference | UseElementRenamed | ClinicalImpression.prognosisReference |

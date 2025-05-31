@@ -82,7 +82,7 @@
 | Contract.term.offer.answer.id | UseElementSameName | Contract.term.offer.answer.id |
 | Contract.term.offer.answer.extension | UseElementSameName | Contract.term.offer.answer.extension |
 | Contract.term.offer.answer.modifierExtension | UseElementSameName | Contract.term.offer.answer.modifierExtension |
-| Contract.term.offer.answer.value[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.offer.answer.value |
+| Contract.term.offer.answer.value[x] | UseElementSameName | Contract.term.offer.answer.value[x] |
 | Contract.term.offer.text | UseElementSameName | Contract.term.offer.text |
 | Contract.term.offer.linkId | UseElementSameName | Contract.term.offer.linkId |
 | Contract.term.offer.securityLabelNumber | UseElementSameName | Contract.term.offer.securityLabelNumber |
@@ -154,7 +154,7 @@
 | Contract.term.action.performerLinkId | UseElementSameName | Contract.term.action.performerLinkId |
 | Contract.term.action.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reasonCode |
 | Contract.term.action.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reasonReference |
-| Contract.term.action.reason | UseElementSameName | Contract.term.action.reason |
+| Contract.term.action.reason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reason |
 | Contract.term.action.reasonLinkId | UseElementSameName | Contract.term.action.reasonLinkId |
 | Contract.term.action.note | UseElementSameName | Contract.term.action.note |
 | Contract.term.action.securityLabelNumber | UseElementSameName | Contract.term.action.securityLabelNumber |
@@ -172,15 +172,15 @@
 | Contract.friendly.id | UseElementSameName | Contract.friendly.id |
 | Contract.friendly.extension | UseElementSameName | Contract.friendly.extension |
 | Contract.friendly.modifierExtension | UseElementSameName | Contract.friendly.modifierExtension |
-| Contract.friendly.content[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.friendly.content |
+| Contract.friendly.content[x] | UseElementSameName | Contract.friendly.content[x] |
 | Contract.legal | UseElementSameName | Contract.legal |
 | Contract.legal.id | UseElementSameName | Contract.legal.id |
 | Contract.legal.extension | UseElementSameName | Contract.legal.extension |
 | Contract.legal.modifierExtension | UseElementSameName | Contract.legal.modifierExtension |
-| Contract.legal.content[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.legal.content |
+| Contract.legal.content[x] | UseElementSameName | Contract.legal.content[x] |
 | Contract.rule | UseElementSameName | Contract.rule |
 | Contract.rule.id | UseElementSameName | Contract.rule.id |
 | Contract.rule.extension | UseElementSameName | Contract.rule.extension |
 | Contract.rule.modifierExtension | UseElementSameName | Contract.rule.modifierExtension |
-| Contract.rule.content[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.rule.content |
-| Contract.legallyBinding[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.legallyBinding |
+| Contract.rule.content[x] | UseElementSameName | Contract.rule.content[x] |
+| Contract.legallyBinding[x] | UseElementSameName | Contract.legallyBinding[x] |

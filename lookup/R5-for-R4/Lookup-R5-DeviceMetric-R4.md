@@ -15,7 +15,7 @@
 | DeviceMetric.unit | UseElementSameName | DeviceMetric.unit |
 | DeviceMetric.device | UseElementSameName | DeviceMetric.parent |
 | DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
-| DeviceMetric.color | UseElementSameName | DeviceMetric.color |
+| DeviceMetric.color | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |
 | DeviceMetric.measurementFrequency | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceMetric.measurementFrequency |
 | DeviceMetric.calibration | UseElementSameName | DeviceMetric.calibration |

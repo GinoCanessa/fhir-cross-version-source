@@ -39,7 +39,7 @@
 | CodeSystem.filter.modifierExtension | UseElementSameName | CodeSystem.filter.modifierExtension |
 | CodeSystem.filter.code | UseElementSameName | CodeSystem.filter.code |
 | CodeSystem.filter.description | UseElementSameName | CodeSystem.filter.description |
-| CodeSystem.filter.operator | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CodeSystem.filter.operator |
+| CodeSystem.filter.operator | UseElementSameName | CodeSystem.filter.operator |
 | CodeSystem.filter.value | UseElementSameName | CodeSystem.filter.value |
 | CodeSystem.property | UseElementSameName | CodeSystem.property |
 | CodeSystem.property.id | UseElementSameName | CodeSystem.property.id |

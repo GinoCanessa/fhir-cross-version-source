@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | EpisodeOfCare.id | UseElementSameName | EpisodeOfCare.id |
-| EpisodeOfCare.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.meta |
+| EpisodeOfCare.meta | UseElementSameName | EpisodeOfCare.meta |
 | EpisodeOfCare.implicitRules | UseElementSameName | EpisodeOfCare.implicitRules |
 | EpisodeOfCare.language | UseElementSameName | EpisodeOfCare.language |
 | EpisodeOfCare.text | UseElementSameName | EpisodeOfCare.text |
@@ -26,10 +26,10 @@
 | EpisodeOfCare.diagnosis.condition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.condition |
 | EpisodeOfCare.diagnosis.role | UseElementRenamed | EpisodeOfCare.diagnosis.use |
 | EpisodeOfCare.diagnosis.rank | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.rank |
-| EpisodeOfCare.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.patient |
-| EpisodeOfCare.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.managingOrganization |
+| EpisodeOfCare.patient | UseElementSameName | EpisodeOfCare.patient |
+| EpisodeOfCare.managingOrganization | UseElementSameName | EpisodeOfCare.managingOrganization |
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.careManager |
-| EpisodeOfCare.team | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.team |
-| EpisodeOfCare.account | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.account |
+| EpisodeOfCare.team | UseElementRenamed | EpisodeOfCare.careTeam |
+| EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

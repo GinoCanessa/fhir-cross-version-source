@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ExplanationOfBenefit.id | UseElementSameName | ExplanationOfBenefit.id |
-| ExplanationOfBenefit.meta | UseElementSameName | ExplanationOfBenefit.meta |
+| ExplanationOfBenefit.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ExplanationOfBenefit.meta |
 | ExplanationOfBenefit.implicitRules | UseElementSameName | ExplanationOfBenefit.implicitRules |
 | ExplanationOfBenefit.language | UseElementSameName | ExplanationOfBenefit.language |
 | ExplanationOfBenefit.text | UseElementSameName | ExplanationOfBenefit.text |

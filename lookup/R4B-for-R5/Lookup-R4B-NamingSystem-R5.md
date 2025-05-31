@@ -26,7 +26,7 @@
 | NamingSystem.uniqueId.id | UseElementSameName | NamingSystem.uniqueId.id |
 | NamingSystem.uniqueId.extension | UseElementSameName | NamingSystem.uniqueId.extension |
 | NamingSystem.uniqueId.modifierExtension | UseElementSameName | NamingSystem.uniqueId.modifierExtension |
-| NamingSystem.uniqueId.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NamingSystem.uniqueId.type |
+| NamingSystem.uniqueId.type | UseElementSameName | NamingSystem.uniqueId.type |
 | NamingSystem.uniqueId.value | UseElementSameName | NamingSystem.uniqueId.value |
 | NamingSystem.uniqueId.preferred | UseElementSameName | NamingSystem.uniqueId.preferred |
 | NamingSystem.uniqueId.comment | UseElementSameName | NamingSystem.uniqueId.comment |

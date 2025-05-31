@@ -35,7 +35,7 @@
 | EvidenceVariable.editor | UseElementSameName | EvidenceVariable.editor |
 | EvidenceVariable.reviewer | UseElementSameName | EvidenceVariable.reviewer |
 | EvidenceVariable.endorser | UseElementSameName | EvidenceVariable.endorser |
-| EvidenceVariable.relatedArtifact | UseElementSameName | EvidenceVariable.relatedArtifact |
+| EvidenceVariable.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.relatedArtifact |
 | EvidenceVariable.actual | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.actual |
 | EvidenceVariable.characteristic | UseElementSameName | EvidenceVariable.characteristic |
 | EvidenceVariable.characteristic.id | UseElementSameName | EvidenceVariable.characteristic.id |

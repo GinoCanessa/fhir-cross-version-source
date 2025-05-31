@@ -50,7 +50,7 @@
 | CodeSystem.filter.modifierExtension | UseElementRenamed | CodeSystem.filter.modifierExtension |
 | CodeSystem.filter.code | UseElementRenamed | CodeSystem.filter.code |
 | CodeSystem.filter.description | UseElementRenamed | CodeSystem.filter.description |
-| CodeSystem.filter.operator | UseElementRenamed | CodeSystem.filter.operator |
+| CodeSystem.filter.operator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CodeSystem.filter.operator |
 | CodeSystem.filter.value | UseElementRenamed | CodeSystem.filter.value |
 | CodeSystem.property | UseElementRenamed | CodeSystem.property |
 | CodeSystem.property.id | UseElementRenamed | CodeSystem.property.id |

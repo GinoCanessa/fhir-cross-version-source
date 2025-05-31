@@ -16,7 +16,7 @@
 | SupplyRequest.category | UseElementRenamed | SupplyRequest.category |
 | SupplyRequest.priority | UseElementRenamed | SupplyRequest.priority |
 | SupplyRequest.deliverFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.deliverFor |
-| SupplyRequest.item | UseElementRenamed | SupplyRequest.item[x] |
+| SupplyRequest.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.item |
 | SupplyRequest.quantity | UseElementRenamed | SupplyRequest.quantity |
 | SupplyRequest.parameter | UseElementRenamed | SupplyRequest.parameter |
 | SupplyRequest.parameter.id | UseElementRenamed | SupplyRequest.parameter.id |
@@ -26,8 +26,8 @@
 | SupplyRequest.parameter.value[x] | UseElementRenamed | SupplyRequest.parameter.value[x] |
 | SupplyRequest.occurrence[x] | UseElementRenamed | SupplyRequest.occurrence[x] |
 | SupplyRequest.authoredOn | UseElementRenamed | SupplyRequest.authoredOn |
-| SupplyRequest.requester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.requester |
+| SupplyRequest.requester | UseElementRenamed | SupplyRequest.requester |
 | SupplyRequest.supplier | UseElementRenamed | SupplyRequest.supplier |
-| SupplyRequest.reason | UseElementRenamed | SupplyRequest.reasonCode |
+| SupplyRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.reason |
 | SupplyRequest.deliverFrom | UseElementRenamed | SupplyRequest.deliverFrom |
-| SupplyRequest.deliverTo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.deliverTo |
+| SupplyRequest.deliverTo | UseElementRenamed | SupplyRequest.deliverTo |

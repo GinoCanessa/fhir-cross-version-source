@@ -29,7 +29,7 @@
 | ImplementationGuide.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.copyrightLabel |
 | ImplementationGuide.packageId | UseElementRenamed | ImplementationGuide.packageId |
 | ImplementationGuide.license | UseElementRenamed | ImplementationGuide.license |
-| ImplementationGuide.fhirVersion | UseElementRenamed | ImplementationGuide.fhirVersion |
+| ImplementationGuide.fhirVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependsOn | UseElementRenamed | ImplementationGuide.dependsOn |
 | ImplementationGuide.dependsOn.id | UseElementRenamed | ImplementationGuide.dependsOn.id |
 | ImplementationGuide.dependsOn.extension | UseElementRenamed | ImplementationGuide.dependsOn.extension |
@@ -42,7 +42,7 @@
 | ImplementationGuide.global.id | UseElementRenamed | ImplementationGuide.global.id |
 | ImplementationGuide.global.extension | UseElementRenamed | ImplementationGuide.global.extension |
 | ImplementationGuide.global.modifierExtension | UseElementRenamed | ImplementationGuide.global.modifierExtension |
-| ImplementationGuide.global.type | UseElementRenamed | ImplementationGuide.global.type |
+| ImplementationGuide.global.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.global.type |
 | ImplementationGuide.global.profile | UseElementRenamed | ImplementationGuide.global.profile |
 | ImplementationGuide.definition | UseElementRenamed | ImplementationGuide.definition |
 | ImplementationGuide.definition.id | UseElementRenamed | ImplementationGuide.definition.id |
@@ -59,10 +59,10 @@
 | ImplementationGuide.definition.resource.extension | UseElementRenamed | ImplementationGuide.definition.resource.extension |
 | ImplementationGuide.definition.resource.modifierExtension | UseElementRenamed | ImplementationGuide.definition.resource.modifierExtension |
 | ImplementationGuide.definition.resource.reference | UseElementRenamed | ImplementationGuide.definition.resource.reference |
-| ImplementationGuide.definition.resource.fhirVersion | UseElementRenamed | ImplementationGuide.definition.resource.fhirVersion |
+| ImplementationGuide.definition.resource.fhirVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.resource.fhirVersion |
 | ImplementationGuide.definition.resource.name | UseElementRenamed | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.definition.resource.description | UseElementRenamed | ImplementationGuide.definition.resource.description |
-| ImplementationGuide.definition.resource.isExample | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.resource.isExample |
+| ImplementationGuide.definition.resource.isExample | UseElementRenamed | ImplementationGuide.definition.resource.example[x] |
 | ImplementationGuide.definition.resource.profile | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.resource.profile |
 | ImplementationGuide.definition.resource.groupingId | UseElementRenamed | ImplementationGuide.definition.resource.groupingId |
 | ImplementationGuide.definition.page | UseElementRenamed | ImplementationGuide.definition.page |
@@ -70,7 +70,7 @@
 | ImplementationGuide.definition.page.extension | UseElementRenamed | ImplementationGuide.definition.page.extension |
 | ImplementationGuide.definition.page.modifierExtension | UseElementRenamed | ImplementationGuide.definition.page.modifierExtension |
 | ImplementationGuide.definition.page.source[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.page.source |
-| ImplementationGuide.definition.page.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.page.name |
+| ImplementationGuide.definition.page.name | UseElementRenamed | ImplementationGuide.definition.page.name[x] |
 | ImplementationGuide.definition.page.title | UseElementRenamed | ImplementationGuide.definition.page.title |
 | ImplementationGuide.definition.page.generation | UseElementRenamed | ImplementationGuide.definition.page.generation |
 | ImplementationGuide.definition.page.page | UseElementRenamed | ImplementationGuide.definition.page.page |
@@ -78,7 +78,7 @@
 | ImplementationGuide.definition.parameter.id | UseElementRenamed | ImplementationGuide.definition.parameter.id |
 | ImplementationGuide.definition.parameter.extension | UseElementRenamed | ImplementationGuide.definition.parameter.extension |
 | ImplementationGuide.definition.parameter.modifierExtension | UseElementRenamed | ImplementationGuide.definition.parameter.modifierExtension |
-| ImplementationGuide.definition.parameter.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.parameter.code |
+| ImplementationGuide.definition.parameter.code | UseElementRenamed | ImplementationGuide.definition.parameter.code |
 | ImplementationGuide.definition.parameter.value | UseElementRenamed | ImplementationGuide.definition.parameter.value |
 | ImplementationGuide.definition.template | UseElementRenamed | ImplementationGuide.definition.template |
 | ImplementationGuide.definition.template.id | UseElementRenamed | ImplementationGuide.definition.template.id |
@@ -97,7 +97,7 @@
 | ImplementationGuide.manifest.resource.extension | UseElementRenamed | ImplementationGuide.manifest.resource.extension |
 | ImplementationGuide.manifest.resource.modifierExtension | UseElementRenamed | ImplementationGuide.manifest.resource.modifierExtension |
 | ImplementationGuide.manifest.resource.reference | UseElementRenamed | ImplementationGuide.manifest.resource.reference |
-| ImplementationGuide.manifest.resource.isExample | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.manifest.resource.isExample |
+| ImplementationGuide.manifest.resource.isExample | UseElementRenamed | ImplementationGuide.manifest.resource.example[x] |
 | ImplementationGuide.manifest.resource.profile | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.manifest.resource.profile |
 | ImplementationGuide.manifest.resource.relativePath | UseElementRenamed | ImplementationGuide.manifest.resource.relativePath |
 | ImplementationGuide.manifest.page | UseElementRenamed | ImplementationGuide.manifest.page |

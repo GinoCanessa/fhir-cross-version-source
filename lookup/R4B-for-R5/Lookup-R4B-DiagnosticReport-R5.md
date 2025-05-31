@@ -12,7 +12,7 @@
 | DiagnosticReport.modifierExtension | UseElementSameName | DiagnosticReport.modifierExtension |
 | DiagnosticReport.identifier | UseElementSameName | DiagnosticReport.identifier |
 | DiagnosticReport.basedOn | UseElementSameName | DiagnosticReport.basedOn |
-| DiagnosticReport.status | UseElementSameName | DiagnosticReport.status |
+| DiagnosticReport.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.status |
 | DiagnosticReport.category | UseElementSameName | DiagnosticReport.category |
 | DiagnosticReport.code | UseElementSameName | DiagnosticReport.code |
 | DiagnosticReport.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.subject |
@@ -32,4 +32,4 @@
 | DiagnosticReport.media.link | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.media.link |
 | DiagnosticReport.conclusion | UseElementSameName | DiagnosticReport.conclusion |
 | DiagnosticReport.conclusionCode | UseElementSameName | DiagnosticReport.conclusionCode |
-| DiagnosticReport.presentedForm | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.presentedForm |
+| DiagnosticReport.presentedForm | UseElementSameName | DiagnosticReport.presentedForm |

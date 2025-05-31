@@ -10,13 +10,13 @@
 | Timing.repeat.id | UseElementSameName | Timing.repeat.id |
 | Timing.repeat.extension | UseElementSameName | Timing.repeat.extension |
 | Timing.repeat.bounds[x] | UseElementSameName | Timing.repeat.bounds[x] |
-| Timing.repeat.count | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Timing.repeat.count |
-| Timing.repeat.countMax | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Timing.repeat.countMax |
+| Timing.repeat.count | UseElementSameName | Timing.repeat.count |
+| Timing.repeat.countMax | UseElementSameName | Timing.repeat.countMax |
 | Timing.repeat.duration | UseElementSameName | Timing.repeat.duration |
 | Timing.repeat.durationMax | UseElementSameName | Timing.repeat.durationMax |
 | Timing.repeat.durationUnit | UseElementSameName | Timing.repeat.durationUnit |
-| Timing.repeat.frequency | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Timing.repeat.frequency |
-| Timing.repeat.frequencyMax | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Timing.repeat.frequencyMax |
+| Timing.repeat.frequency | UseElementSameName | Timing.repeat.frequency |
+| Timing.repeat.frequencyMax | UseElementSameName | Timing.repeat.frequencyMax |
 | Timing.repeat.period | UseElementSameName | Timing.repeat.period |
 | Timing.repeat.periodMax | UseElementSameName | Timing.repeat.periodMax |
 | Timing.repeat.periodUnit | UseElementSameName | Timing.repeat.periodUnit |

@@ -10,7 +10,7 @@
 | BodySite.contained | UseElementSameName | BodySite.contained |
 | BodySite.extension | UseElementSameName | BodySite.extension |
 | BodySite.modifierExtension | UseElementSameName | BodySite.modifierExtension |
-| BodySite.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-BodySite.patient |
+| BodySite.patient | UseElementSameName | BodySite.patient |
 | BodySite.identifier | UseElementSameName | BodySite.identifier |
 | BodySite.code | UseElementSameName | BodySite.code |
 | BodySite.modifier | UseElementRenamed | BodySite.qualifier |

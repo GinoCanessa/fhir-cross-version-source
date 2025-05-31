@@ -20,11 +20,11 @@
 | CareTeam.participant.id | UseElementRenamed | CareTeam.participant.id |
 | CareTeam.participant.extension | UseElementRenamed | CareTeam.participant.extension |
 | CareTeam.participant.modifierExtension | UseElementRenamed | CareTeam.participant.modifierExtension |
-| CareTeam.participant.role | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.role |
+| CareTeam.participant.role | UseElementRenamed | CareTeam.participant.role |
 | CareTeam.participant.member | UseElementRenamed | CareTeam.participant.member |
 | CareTeam.participant.onBehalfOf | UseElementRenamed | CareTeam.participant.onBehalfOf |
-| CareTeam.participant.coverage[x] | UseElementRenamed | CareTeam.participant.period |
-| CareTeam.reason | UseElementRenamed | CareTeam.reasonCode |
+| CareTeam.participant.coverage[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.participant.coverage |
+| CareTeam.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CareTeam.reason |
 | CareTeam.managingOrganization | UseElementRenamed | CareTeam.managingOrganization |
 | CareTeam.telecom | UseElementRenamed | CareTeam.telecom |
 | CareTeam.note | UseElementRenamed | CareTeam.note |

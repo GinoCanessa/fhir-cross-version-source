@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DataElement.id | UseElementRenamed | StructureDefinition.id |
-| DataElement.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.meta |
+| DataElement.meta | UseElementRenamed | StructureDefinition.meta |
 | DataElement.implicitRules | UseElementRenamed | StructureDefinition.implicitRules |
 | DataElement.language | UseElementRenamed | StructureDefinition.language |
 | DataElement.text | UseElementRenamed | StructureDefinition.text |
@@ -32,4 +32,4 @@
 | DataElement.mapping.uri | UseElementRenamed | StructureDefinition.mapping.uri |
 | DataElement.mapping.name | UseElementRenamed | StructureDefinition.mapping.name |
 | DataElement.mapping.comment | UseElementRenamed | StructureDefinition.mapping.comment |
-| DataElement.element | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.element |
+| DataElement.element | UseElementRenamed | StructureDefinition.differential.element |

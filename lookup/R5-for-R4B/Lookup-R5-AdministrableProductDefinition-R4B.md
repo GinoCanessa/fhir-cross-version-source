@@ -24,7 +24,7 @@
 | AdministrableProductDefinition.property.extension | UseElementRenamed | AdministrableProductDefinition.property.extension |
 | AdministrableProductDefinition.property.modifierExtension | UseElementRenamed | AdministrableProductDefinition.property.modifierExtension |
 | AdministrableProductDefinition.property.type | UseElementRenamed | AdministrableProductDefinition.property.type |
-| AdministrableProductDefinition.property.value[x] | UseElementRenamed | AdministrableProductDefinition.property.value[x] |
+| AdministrableProductDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AdministrableProductDefinition.property.value |
 | AdministrableProductDefinition.property.status | UseElementRenamed | AdministrableProductDefinition.property.status |
 | AdministrableProductDefinition.routeOfAdministration | UseElementRenamed | AdministrableProductDefinition.routeOfAdministration |
 | AdministrableProductDefinition.routeOfAdministration.id | UseElementRenamed | AdministrableProductDefinition.routeOfAdministration.id |

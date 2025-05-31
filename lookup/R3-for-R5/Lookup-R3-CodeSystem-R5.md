@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CodeSystem.id | UseElementSameName | CodeSystem.id |
-| CodeSystem.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.meta |
+| CodeSystem.meta | UseElementSameName | CodeSystem.meta |
 | CodeSystem.implicitRules | UseElementSameName | CodeSystem.implicitRules |
 | CodeSystem.language | UseElementSameName | CodeSystem.language |
 | CodeSystem.text | UseElementSameName | CodeSystem.text |
@@ -11,7 +11,7 @@
 | CodeSystem.extension | UseElementSameName | CodeSystem.extension |
 | CodeSystem.modifierExtension | UseElementSameName | CodeSystem.modifierExtension |
 | CodeSystem.url | UseElementSameName | CodeSystem.url |
-| CodeSystem.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.identifier |
+| CodeSystem.identifier | UseElementSameName | CodeSystem.identifier |
 | CodeSystem.version | UseElementSameName | CodeSystem.version |
 | CodeSystem.name | UseElementSameName | CodeSystem.name |
 | CodeSystem.title | UseElementSameName | CodeSystem.title |
@@ -26,11 +26,11 @@
 | CodeSystem.purpose | UseElementSameName | CodeSystem.purpose |
 | CodeSystem.copyright | UseElementSameName | CodeSystem.copyright |
 | CodeSystem.caseSensitive | UseElementSameName | CodeSystem.caseSensitive |
-| CodeSystem.valueSet | UseElementSameName | CodeSystem.valueSet |
+| CodeSystem.valueSet | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.valueSet |
 | CodeSystem.hierarchyMeaning | UseElementSameName | CodeSystem.hierarchyMeaning |
 | CodeSystem.compositional | UseElementSameName | CodeSystem.compositional |
 | CodeSystem.versionNeeded | UseElementSameName | CodeSystem.versionNeeded |
-| CodeSystem.content | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.content |
+| CodeSystem.content | UseElementSameName | CodeSystem.content |
 | CodeSystem.count | UseElementSameName | CodeSystem.count |
 | CodeSystem.filter | UseElementSameName | CodeSystem.filter |
 | CodeSystem.filter.id | UseElementSameName | CodeSystem.filter.id |
@@ -38,7 +38,7 @@
 | CodeSystem.filter.modifierExtension | UseElementSameName | CodeSystem.filter.modifierExtension |
 | CodeSystem.filter.code | UseElementSameName | CodeSystem.filter.code |
 | CodeSystem.filter.description | UseElementSameName | CodeSystem.filter.description |
-| CodeSystem.filter.operator | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.filter.operator |
+| CodeSystem.filter.operator | UseElementSameName | CodeSystem.filter.operator |
 | CodeSystem.filter.value | UseElementSameName | CodeSystem.filter.value |
 | CodeSystem.property | UseElementSameName | CodeSystem.property |
 | CodeSystem.property.id | UseElementSameName | CodeSystem.property.id |
@@ -47,7 +47,7 @@
 | CodeSystem.property.code | UseElementSameName | CodeSystem.property.code |
 | CodeSystem.property.uri | UseElementSameName | CodeSystem.property.uri |
 | CodeSystem.property.description | UseElementSameName | CodeSystem.property.description |
-| CodeSystem.property.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.property.type |
+| CodeSystem.property.type | UseElementSameName | CodeSystem.property.type |
 | CodeSystem.concept | UseElementSameName | CodeSystem.concept |
 | CodeSystem.concept.id | UseElementSameName | CodeSystem.concept.id |
 | CodeSystem.concept.extension | UseElementSameName | CodeSystem.concept.extension |
@@ -67,5 +67,5 @@
 | CodeSystem.concept.property.extension | UseElementSameName | CodeSystem.concept.property.extension |
 | CodeSystem.concept.property.modifierExtension | UseElementSameName | CodeSystem.concept.property.modifierExtension |
 | CodeSystem.concept.property.code | UseElementSameName | CodeSystem.concept.property.code |
-| CodeSystem.concept.property.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CodeSystem.concept.property.value |
+| CodeSystem.concept.property.value[x] | UseElementSameName | CodeSystem.concept.property.value[x] |
 | CodeSystem.concept.concept | UseElementSameName | CodeSystem.concept.concept |

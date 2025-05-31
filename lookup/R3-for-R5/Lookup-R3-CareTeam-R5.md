@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CareTeam.id | UseElementSameName | CareTeam.id |
-| CareTeam.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.meta |
+| CareTeam.meta | UseElementSameName | CareTeam.meta |
 | CareTeam.implicitRules | UseElementSameName | CareTeam.implicitRules |
 | CareTeam.language | UseElementSameName | CareTeam.language |
 | CareTeam.text | UseElementSameName | CareTeam.text |
@@ -14,7 +14,7 @@
 | CareTeam.status | UseElementSameName | CareTeam.status |
 | CareTeam.category | UseElementSameName | CareTeam.category |
 | CareTeam.name | UseElementSameName | CareTeam.name |
-| CareTeam.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.subject |
+| CareTeam.subject | UseElementSameName | CareTeam.subject |
 | CareTeam.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.context |
 | CareTeam.period | UseElementSameName | CareTeam.period |
 | CareTeam.participant | UseElementSameName | CareTeam.participant |
@@ -23,9 +23,9 @@
 | CareTeam.participant.modifierExtension | UseElementSameName | CareTeam.participant.modifierExtension |
 | CareTeam.participant.role | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.role |
 | CareTeam.participant.member | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.member |
-| CareTeam.participant.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.onBehalfOf |
-| CareTeam.participant.period | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.participant.period |
-| CareTeam.reasonCode | UseElementRenamed | CareTeam.reason |
+| CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
+| CareTeam.participant.period | UseElementRenamed | CareTeam.participant.coverage[x] |
+| CareTeam.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.reasonCode |
 | CareTeam.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.reasonReference |
-| CareTeam.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CareTeam.managingOrganization |
+| CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
 | CareTeam.note | UseElementSameName | CareTeam.note |

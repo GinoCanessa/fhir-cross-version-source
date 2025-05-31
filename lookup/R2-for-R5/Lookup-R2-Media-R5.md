@@ -3,15 +3,15 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Media.id | UseElementRenamed | DocumentReference.id |
-| Media.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.meta |
+| Media.meta | UseElementRenamed | DocumentReference.meta |
 | Media.implicitRules | UseElementRenamed | DocumentReference.implicitRules |
 | Media.language | UseElementRenamed | DocumentReference.language |
 | Media.text | UseElementRenamed | DocumentReference.text |
 | Media.contained | UseElementRenamed | DocumentReference.contained |
 | Media.extension | UseElementRenamed | DocumentReference.extension |
 | Media.modifierExtension | UseElementRenamed | DocumentReference.modifierExtension |
-| Media.type | UseElementRenamed | DocumentReference.type |
-| Media.subtype | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.subtype |
+| Media.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.type |
+| Media.subtype | UseElementRenamed | DocumentReference.modality |
 | Media.identifier | UseElementRenamed | DocumentReference.identifier |
 | Media.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.subject |
 | Media.operator | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.operator |

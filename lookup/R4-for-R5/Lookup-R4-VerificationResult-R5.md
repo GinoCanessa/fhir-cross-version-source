@@ -13,7 +13,7 @@
 | VerificationResult.target | UseElementSameName | VerificationResult.target |
 | VerificationResult.targetLocation | UseElementSameName | VerificationResult.targetLocation |
 | VerificationResult.need | UseElementSameName | VerificationResult.need |
-| VerificationResult.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-VerificationResult.status |
+| VerificationResult.status | UseElementSameName | VerificationResult.status |
 | VerificationResult.statusDate | UseElementSameName | VerificationResult.statusDate |
 | VerificationResult.validationType | UseElementSameName | VerificationResult.validationType |
 | VerificationResult.validationProcess | UseElementSameName | VerificationResult.validationProcess |

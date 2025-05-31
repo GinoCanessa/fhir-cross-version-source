@@ -23,7 +23,7 @@
 | ManufacturedItemDefinition.property.extension | UseElementRenamed | ManufacturedItemDefinition.property.extension |
 | ManufacturedItemDefinition.property.modifierExtension | UseElementRenamed | ManufacturedItemDefinition.property.modifierExtension |
 | ManufacturedItemDefinition.property.type | UseElementRenamed | ManufacturedItemDefinition.property.type |
-| ManufacturedItemDefinition.property.value[x] | UseElementRenamed | ManufacturedItemDefinition.property.value[x] |
+| ManufacturedItemDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.property.value |
 | ManufacturedItemDefinition.component | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.component |
 | ManufacturedItemDefinition.component.id | UseExtensionFromAncestor | - |
 | ManufacturedItemDefinition.component.extension | UseExtensionFromAncestor | - |

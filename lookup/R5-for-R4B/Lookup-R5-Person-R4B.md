@@ -19,7 +19,7 @@
 | Person.deceased[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.deceased |
 | Person.address | UseElementRenamed | Person.address |
 | Person.maritalStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.maritalStatus |
-| Person.photo | UseElementRenamed | Person.photo |
+| Person.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.photo |
 | Person.communication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.communication |
 | Person.communication.id | UseExtensionFromAncestor | - |
 | Person.communication.extension | UseExtensionFromAncestor | - |

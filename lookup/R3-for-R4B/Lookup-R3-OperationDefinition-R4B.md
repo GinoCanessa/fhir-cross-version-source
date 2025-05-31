@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | OperationDefinition.id | UseElementSameName | OperationDefinition.id |
-| OperationDefinition.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.meta |
+| OperationDefinition.meta | UseElementSameName | OperationDefinition.meta |
 | OperationDefinition.implicitRules | UseElementSameName | OperationDefinition.implicitRules |
 | OperationDefinition.language | UseElementSameName | OperationDefinition.language |
 | OperationDefinition.text | UseElementSameName | OperationDefinition.text |
@@ -26,10 +26,10 @@
 | OperationDefinition.idempotent | UseElementRenamed | OperationDefinition.affectsState |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
 | OperationDefinition.comment | UseElementSameName | OperationDefinition.comment |
-| OperationDefinition.base | UseElementSameName | OperationDefinition.base |
+| OperationDefinition.base | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.base |
 | OperationDefinition.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
-| OperationDefinition.type | UseElementSameName | OperationDefinition.type |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementSameName | OperationDefinition.instance |
 | OperationDefinition.parameter | UseElementSameName | OperationDefinition.parameter |
 | OperationDefinition.parameter.id | UseElementSameName | OperationDefinition.parameter.id |
@@ -41,14 +41,14 @@
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
 | OperationDefinition.parameter.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.parameter.type |
-| OperationDefinition.parameter.searchType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.parameter.searchType |
+| OperationDefinition.parameter.searchType | UseElementSameName | OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.parameter.profile |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |
 | OperationDefinition.parameter.binding.extension | UseElementSameName | OperationDefinition.parameter.binding.extension |
 | OperationDefinition.parameter.binding.modifierExtension | UseElementSameName | OperationDefinition.parameter.binding.modifierExtension |
 | OperationDefinition.parameter.binding.strength | UseElementSameName | OperationDefinition.parameter.binding.strength |
-| OperationDefinition.parameter.binding.valueSet[x] | UseElementRenamed | OperationDefinition.parameter.binding.valueSet |
+| OperationDefinition.parameter.binding.valueSet[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.parameter.binding.valueSet |
 | OperationDefinition.parameter.part | UseElementSameName | OperationDefinition.parameter.part |
 | OperationDefinition.overload | UseElementSameName | OperationDefinition.overload |
 | OperationDefinition.overload.id | UseElementSameName | OperationDefinition.overload.id |

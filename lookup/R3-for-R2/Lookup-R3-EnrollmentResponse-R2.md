@@ -12,10 +12,10 @@
 | EnrollmentResponse.modifierExtension | UseElementSameName | EnrollmentResponse.modifierExtension |
 | EnrollmentResponse.identifier | UseElementSameName | EnrollmentResponse.identifier |
 | EnrollmentResponse.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.status |
-| EnrollmentResponse.request | UseElementSameName | EnrollmentResponse.request |
-| EnrollmentResponse.outcome | UseElementSameName | EnrollmentResponse.outcome |
+| EnrollmentResponse.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.request |
+| EnrollmentResponse.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.outcome |
 | EnrollmentResponse.disposition | UseElementSameName | EnrollmentResponse.disposition |
 | EnrollmentResponse.created | UseElementSameName | EnrollmentResponse.created |
-| EnrollmentResponse.organization | UseElementSameName | EnrollmentResponse.organization |
-| EnrollmentResponse.requestProvider | UseElementSameName | EnrollmentResponse.requestProvider |
-| EnrollmentResponse.requestOrganization | UseElementRenamed | EnrollmentResponse.requestOrganization |
+| EnrollmentResponse.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.organization |
+| EnrollmentResponse.requestProvider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.requestProvider |
+| EnrollmentResponse.requestOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentResponse.requestOrganization |

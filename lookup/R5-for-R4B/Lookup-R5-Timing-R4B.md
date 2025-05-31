@@ -22,6 +22,6 @@
 | Timing.repeat.periodUnit | UseElementRenamed | Timing.repeat.periodUnit |
 | Timing.repeat.dayOfWeek | UseElementRenamed | Timing.repeat.dayOfWeek |
 | Timing.repeat.timeOfDay | UseElementRenamed | Timing.repeat.timeOfDay |
-| Timing.repeat.when | UseElementRenamed | Timing.repeat.when |
+| Timing.repeat.when | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Timing.repeat.when |
 | Timing.repeat.offset | UseElementRenamed | Timing.repeat.offset |
 | Timing.code | UseElementRenamed | Timing.code |

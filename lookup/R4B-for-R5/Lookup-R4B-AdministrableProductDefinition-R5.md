@@ -23,7 +23,7 @@
 | AdministrableProductDefinition.property.extension | UseElementSameName | AdministrableProductDefinition.property.extension |
 | AdministrableProductDefinition.property.modifierExtension | UseElementSameName | AdministrableProductDefinition.property.modifierExtension |
 | AdministrableProductDefinition.property.type | UseElementSameName | AdministrableProductDefinition.property.type |
-| AdministrableProductDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdministrableProductDefinition.property.value |
+| AdministrableProductDefinition.property.value[x] | UseElementSameName | AdministrableProductDefinition.property.value[x] |
 | AdministrableProductDefinition.property.status | UseElementSameName | AdministrableProductDefinition.property.status |
 | AdministrableProductDefinition.routeOfAdministration | UseElementSameName | AdministrableProductDefinition.routeOfAdministration |
 | AdministrableProductDefinition.routeOfAdministration.id | UseElementSameName | AdministrableProductDefinition.routeOfAdministration.id |

@@ -16,5 +16,5 @@
 | BodyStructure.location | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-BodyStructure.location |
 | BodyStructure.locationQualifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-BodyStructure.locationQualifier |
 | BodyStructure.description | UseElementSameName | BodyStructure.description |
-| BodyStructure.image | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-BodyStructure.image |
+| BodyStructure.image | UseElementSameName | BodyStructure.image |
 | BodyStructure.patient | UseElementSameName | BodyStructure.patient |

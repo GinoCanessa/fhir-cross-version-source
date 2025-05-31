@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Location.id | UseElementSameName | Location.id |
-| Location.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.meta |
+| Location.meta | UseElementSameName | Location.meta |
 | Location.implicitRules | UseElementSameName | Location.implicitRules |
 | Location.language | UseElementSameName | Location.language |
 | Location.text | UseElementSameName | Location.text |
@@ -17,7 +17,7 @@
 | Location.alias | UseElementSameName | Location.alias |
 | Location.description | UseElementSameName | Location.description |
 | Location.mode | UseElementSameName | Location.mode |
-| Location.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.type |
+| Location.type | UseElementSameName | Location.type |
 | Location.telecom | UseElementSameName | Location.telecom |
 | Location.address | UseElementSameName | Location.address |
 | Location.physicalType | UseElementSameName | Location.physicalType |
@@ -28,6 +28,6 @@
 | Location.position.longitude | UseElementSameName | Location.position.longitude |
 | Location.position.latitude | UseElementSameName | Location.position.latitude |
 | Location.position.altitude | UseElementSameName | Location.position.altitude |
-| Location.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.managingOrganization |
-| Location.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.partOf |
-| Location.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Location.endpoint |
+| Location.managingOrganization | UseElementSameName | Location.managingOrganization |
+| Location.partOf | UseElementSameName | Location.partOf |
+| Location.endpoint | UseElementSameName | Location.endpoint |

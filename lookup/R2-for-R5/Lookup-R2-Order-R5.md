@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Order.id | UseElementRenamed | Task.id |
-| Order.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.meta |
+| Order.meta | UseElementRenamed | Task.meta |
 | Order.implicitRules | UseElementRenamed | Task.implicitRules |
 | Order.language | UseElementRenamed | Task.language |
 | Order.text | UseElementRenamed | Task.text |

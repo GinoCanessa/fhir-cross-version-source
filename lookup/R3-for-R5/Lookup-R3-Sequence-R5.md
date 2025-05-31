@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Sequence.id | UseElementRenamed | MolecularSequence.id |
-| Sequence.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.meta |
+| Sequence.meta | UseElementRenamed | MolecularSequence.meta |
 | Sequence.implicitRules | UseElementRenamed | MolecularSequence.implicitRules |
 | Sequence.language | UseElementRenamed | MolecularSequence.language |
 | Sequence.text | UseElementRenamed | MolecularSequence.text |
@@ -11,12 +11,12 @@
 | Sequence.extension | UseElementRenamed | MolecularSequence.extension |
 | Sequence.modifierExtension | UseElementRenamed | MolecularSequence.modifierExtension |
 | Sequence.identifier | UseElementRenamed | MolecularSequence.identifier |
-| Sequence.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.type |
+| Sequence.type | UseElementRenamed | MolecularSequence.type |
 | Sequence.coordinateSystem | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.coordinateSystem |
 | Sequence.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.patient |
-| Sequence.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.specimen |
-| Sequence.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.device |
-| Sequence.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.performer |
+| Sequence.specimen | UseElementRenamed | MolecularSequence.specimen |
+| Sequence.device | UseElementRenamed | MolecularSequence.device |
+| Sequence.performer | UseElementRenamed | MolecularSequence.performer |
 | Sequence.quantity | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.quantity |
 | Sequence.referenceSeq | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.referenceSeq |
 | Sequence.referenceSeq.id | UseExtensionFromAncestor | - |

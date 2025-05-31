@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Bundle.id | UseElementSameName | Bundle.id |
-| Bundle.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Bundle.meta |
+| Bundle.meta | UseElementSameName | Bundle.meta |
 | Bundle.implicitRules | UseElementSameName | Bundle.implicitRules |
 | Bundle.language | UseElementSameName | Bundle.language |
 | Bundle.type | UseElementSameName | Bundle.type |
@@ -31,7 +31,7 @@
 | Bundle.entry.request.id | UseElementSameName | Bundle.entry.request.id |
 | Bundle.entry.request.extension | UseElementSameName | Bundle.entry.request.extension |
 | Bundle.entry.request.modifierExtension | UseElementSameName | Bundle.entry.request.modifierExtension |
-| Bundle.entry.request.method | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Bundle.entry.request.method |
+| Bundle.entry.request.method | UseElementSameName | Bundle.entry.request.method |
 | Bundle.entry.request.url | UseElementSameName | Bundle.entry.request.url |
 | Bundle.entry.request.ifNoneMatch | UseElementSameName | Bundle.entry.request.ifNoneMatch |
 | Bundle.entry.request.ifModifiedSince | UseElementSameName | Bundle.entry.request.ifModifiedSince |
@@ -45,4 +45,4 @@
 | Bundle.entry.response.location | UseElementSameName | Bundle.entry.response.location |
 | Bundle.entry.response.etag | UseElementSameName | Bundle.entry.response.etag |
 | Bundle.entry.response.lastModified | UseElementSameName | Bundle.entry.response.lastModified |
-| Bundle.signature | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Bundle.signature |
+| Bundle.signature | UseElementSameName | Bundle.signature |

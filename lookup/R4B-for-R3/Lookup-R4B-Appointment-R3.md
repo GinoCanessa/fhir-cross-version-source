@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Appointment.id | UseElementSameName | Appointment.id |
-| Appointment.meta | UseElementSameName | Appointment.meta |
+| Appointment.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.meta |
 | Appointment.implicitRules | UseElementSameName | Appointment.implicitRules |
 | Appointment.language | UseElementSameName | Appointment.language |
 | Appointment.text | UseElementSameName | Appointment.text |
@@ -11,9 +11,9 @@
 | Appointment.extension | UseElementSameName | Appointment.extension |
 | Appointment.modifierExtension | UseElementSameName | Appointment.modifierExtension |
 | Appointment.identifier | UseElementSameName | Appointment.identifier |
-| Appointment.status | UseElementSameName | Appointment.status |
+| Appointment.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.status |
 | Appointment.cancelationReason | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.cancelationReason |
-| Appointment.serviceCategory | UseElementSameName | Appointment.serviceCategory |
+| Appointment.serviceCategory | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.serviceCategory |
 | Appointment.serviceType | UseElementSameName | Appointment.serviceType |
 | Appointment.specialty | UseElementSameName | Appointment.specialty |
 | Appointment.appointmentType | UseElementSameName | Appointment.appointmentType |
@@ -21,11 +21,11 @@
 | Appointment.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.reasonReference |
 | Appointment.priority | UseElementSameName | Appointment.priority |
 | Appointment.description | UseElementSameName | Appointment.description |
-| Appointment.supportingInformation | UseElementSameName | Appointment.supportingInformation |
+| Appointment.supportingInformation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.supportingInformation |
 | Appointment.start | UseElementSameName | Appointment.start |
 | Appointment.end | UseElementSameName | Appointment.end |
 | Appointment.minutesDuration | UseElementSameName | Appointment.minutesDuration |
-| Appointment.slot | UseElementSameName | Appointment.slot |
+| Appointment.slot | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.slot |
 | Appointment.created | UseElementSameName | Appointment.created |
 | Appointment.comment | UseElementSameName | Appointment.comment |
 | Appointment.patientInstruction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.patientInstruction |

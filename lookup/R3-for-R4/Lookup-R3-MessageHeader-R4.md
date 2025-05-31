@@ -3,20 +3,20 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MessageHeader.id | UseElementSameName | MessageHeader.id |
-| MessageHeader.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.meta |
+| MessageHeader.meta | UseElementSameName | MessageHeader.meta |
 | MessageHeader.implicitRules | UseElementSameName | MessageHeader.implicitRules |
 | MessageHeader.language | UseElementSameName | MessageHeader.language |
 | MessageHeader.text | UseElementSameName | MessageHeader.text |
 | MessageHeader.contained | UseElementSameName | MessageHeader.contained |
 | MessageHeader.extension | UseElementSameName | MessageHeader.extension |
 | MessageHeader.modifierExtension | UseElementSameName | MessageHeader.modifierExtension |
-| MessageHeader.event | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.event |
+| MessageHeader.event | UseElementRenamed | MessageHeader.event[x] |
 | MessageHeader.destination | UseElementSameName | MessageHeader.destination |
 | MessageHeader.destination.id | UseElementSameName | MessageHeader.destination.id |
 | MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
 | MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
 | MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
-| MessageHeader.destination.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.destination.target |
+| MessageHeader.destination.target | UseElementSameName | MessageHeader.destination.target |
 | MessageHeader.destination.endpoint | UseElementSameName | MessageHeader.destination.endpoint |
 | MessageHeader.receiver | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.receiver |
 | MessageHeader.sender | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.sender |
@@ -40,5 +40,5 @@
 | MessageHeader.response.modifierExtension | UseElementSameName | MessageHeader.response.modifierExtension |
 | MessageHeader.response.identifier | UseElementSameName | MessageHeader.response.identifier |
 | MessageHeader.response.code | UseElementSameName | MessageHeader.response.code |
-| MessageHeader.response.details | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.response.details |
-| MessageHeader.focus | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.focus |
+| MessageHeader.response.details | UseElementSameName | MessageHeader.response.details |
+| MessageHeader.focus | UseElementSameName | MessageHeader.focus |

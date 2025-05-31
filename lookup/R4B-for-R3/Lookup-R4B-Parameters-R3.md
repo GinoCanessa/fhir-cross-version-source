@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Parameters.id | UseElementSameName | ExpansionProfile.id |
-| Parameters.meta | UseElementSameName | ExpansionProfile.meta |
+| Parameters.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Parameters.meta |
 | Parameters.implicitRules | UseElementSameName | ExpansionProfile.implicitRules |
 | Parameters.language | UseElementSameName | ExpansionProfile.language |
 | Parameters.parameter | UseElementSameName | Parameters.parameter |

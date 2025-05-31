@@ -15,7 +15,7 @@
 | Provenance.recorded | UseElementSameName | Provenance.recorded |
 | Provenance.policy | UseElementSameName | Provenance.policy |
 | Provenance.location | UseElementSameName | Provenance.location |
-| Provenance.reason | UseElementRenamed | Provenance.authorization |
+| Provenance.reason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.reason |
 | Provenance.activity | UseElementSameName | Provenance.activity |
 | Provenance.agent | UseElementSameName | Provenance.agent |
 | Provenance.agent.id | UseElementSameName | Provenance.agent.id |
@@ -23,13 +23,13 @@
 | Provenance.agent.modifierExtension | UseElementSameName | Provenance.agent.modifierExtension |
 | Provenance.agent.type | UseElementSameName | Provenance.agent.type |
 | Provenance.agent.role | UseElementSameName | Provenance.agent.role |
-| Provenance.agent.who | UseElementSameName | Provenance.agent.who |
+| Provenance.agent.who | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.agent.who |
 | Provenance.agent.onBehalfOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.agent.onBehalfOf |
 | Provenance.entity | UseElementSameName | Provenance.entity |
 | Provenance.entity.id | UseElementSameName | Provenance.entity.id |
 | Provenance.entity.extension | UseElementSameName | Provenance.entity.extension |
 | Provenance.entity.modifierExtension | UseElementSameName | Provenance.entity.modifierExtension |
-| Provenance.entity.role | UseElementSameName | Provenance.entity.role |
+| Provenance.entity.role | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.entity.role |
 | Provenance.entity.what | UseElementSameName | Provenance.entity.what |
 | Provenance.entity.agent | UseElementSameName | Provenance.entity.agent |
 | Provenance.signature | UseElementSameName | Provenance.signature |

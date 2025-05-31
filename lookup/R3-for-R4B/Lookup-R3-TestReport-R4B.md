@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | TestReport.id | UseElementSameName | TestReport.id |
-| TestReport.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestReport.meta |
+| TestReport.meta | UseElementSameName | TestReport.meta |
 | TestReport.implicitRules | UseElementSameName | TestReport.implicitRules |
 | TestReport.language | UseElementSameName | TestReport.language |
 | TestReport.text | UseElementSameName | TestReport.text |
@@ -13,7 +13,7 @@
 | TestReport.identifier | UseElementSameName | TestReport.identifier |
 | TestReport.name | UseElementSameName | TestReport.name |
 | TestReport.status | UseElementSameName | TestReport.status |
-| TestReport.testScript | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestReport.testScript |
+| TestReport.testScript | UseElementSameName | TestReport.testScript |
 | TestReport.result | UseElementSameName | TestReport.result |
 | TestReport.score | UseElementSameName | TestReport.score |
 | TestReport.tester | UseElementSameName | TestReport.tester |

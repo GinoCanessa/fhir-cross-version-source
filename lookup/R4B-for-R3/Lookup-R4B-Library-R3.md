@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Library.id | UseElementSameName | Library.id |
-| Library.meta | UseElementSameName | Library.meta |
+| Library.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.meta |
 | Library.implicitRules | UseElementSameName | Library.implicitRules |
 | Library.language | UseElementSameName | Library.language |
 | Library.text | UseElementSameName | Library.text |
@@ -33,11 +33,11 @@
 | Library.lastReviewDate | UseElementSameName | Library.lastReviewDate |
 | Library.effectivePeriod | UseElementSameName | Library.effectivePeriod |
 | Library.topic | UseElementSameName | Library.topic |
-| Library.author | UseElementSameName | Library.contributor |
-| Library.editor | UseElementSameName | Library.contributor |
-| Library.reviewer | UseElementSameName | Library.contributor |
-| Library.endorser | UseElementSameName | Library.contributor |
-| Library.relatedArtifact | UseElementSameName | Library.relatedArtifact |
+| Library.author | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.author |
+| Library.editor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.editor |
+| Library.reviewer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.reviewer |
+| Library.endorser | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.endorser |
+| Library.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.relatedArtifact |
 | Library.parameter | UseElementSameName | Library.parameter |
-| Library.dataRequirement | UseElementSameName | Library.dataRequirement |
+| Library.dataRequirement | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Library.dataRequirement |
 | Library.content | UseElementSameName | Library.content |

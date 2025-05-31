@@ -15,14 +15,14 @@
 | Medication.status | UseElementSameName | Medication.status |
 | Medication.marketingAuthorizationHolder | UseElementSameName | Medication.manufacturer |
 | Medication.doseForm | UseElementSameName | Medication.form |
-| Medication.totalVolume | UseElementSameName | Medication.amount |
+| Medication.totalVolume | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.totalVolume |
 | Medication.ingredient | UseElementSameName | Medication.ingredient |
 | Medication.ingredient.id | UseElementSameName | Medication.ingredient.id |
 | Medication.ingredient.extension | UseElementSameName | Medication.ingredient.extension |
 | Medication.ingredient.modifierExtension | UseElementSameName | Medication.ingredient.modifierExtension |
-| Medication.ingredient.item | UseElementSameName | Medication.ingredient.item[x] |
+| Medication.ingredient.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.item |
 | Medication.ingredient.isActive | UseElementSameName | Medication.ingredient.isActive |
-| Medication.ingredient.strength[x] | UseElementSameName | Medication.ingredient.strength |
+| Medication.ingredient.strength[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.strength |
 | Medication.batch | UseElementSameName | Medication.batch |
 | Medication.batch.id | UseElementSameName | Medication.batch.id |
 | Medication.batch.extension | UseElementSameName | Medication.batch.extension |

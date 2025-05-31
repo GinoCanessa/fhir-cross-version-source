@@ -19,7 +19,7 @@
 | DeviceRequest.status | UseElementSameName | DeviceRequest.status |
 | DeviceRequest.intent | UseElementSameName | DeviceRequest.intent |
 | DeviceRequest.priority | UseElementSameName | DeviceRequest.priority |
-| DeviceRequest.code[x] | UseElementRenamed | DeviceRequest.code |
+| DeviceRequest.code[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceRequest.code |
 | DeviceRequest.parameter | UseElementSameName | DeviceRequest.parameter |
 | DeviceRequest.parameter.id | UseElementSameName | DeviceRequest.parameter.id |
 | DeviceRequest.parameter.extension | UseElementSameName | DeviceRequest.parameter.extension |
@@ -32,9 +32,9 @@
 | DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
 | DeviceRequest.requester | UseElementSameName | DeviceRequest.requester |
 | DeviceRequest.performerType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceRequest.performerType |
-| DeviceRequest.performer | UseElementSameName | DeviceRequest.performer |
-| DeviceRequest.reasonCode | UseElementRenamed | DeviceRequest.reason |
-| DeviceRequest.reasonReference | UseElementRenamed | DeviceRequest.reason |
+| DeviceRequest.performer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceRequest.performer |
+| DeviceRequest.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceRequest.reasonCode |
+| DeviceRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceRequest.reasonReference |
 | DeviceRequest.insurance | UseElementSameName | DeviceRequest.insurance |
 | DeviceRequest.supportingInfo | UseElementSameName | DeviceRequest.supportingInfo |
 | DeviceRequest.note | UseElementSameName | DeviceRequest.note |

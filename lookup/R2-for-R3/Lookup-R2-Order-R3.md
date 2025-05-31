@@ -15,7 +15,7 @@
 | Order.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.subject |
 | Order.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.source |
 | Order.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.target |
-| Order.reason[x] | UseElementRenamed | Task.reason |
+| Order.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.reason |
 | Order.when | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.when |
 | Order.when.id | UseExtensionFromAncestor | - |
 | Order.when.extension | UseExtensionFromAncestor | - |

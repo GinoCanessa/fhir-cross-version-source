@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | NamingSystem.id | UseElementSameName | NamingSystem.id |
-| NamingSystem.meta | UseElementSameName | NamingSystem.meta |
+| NamingSystem.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-NamingSystem.meta |
 | NamingSystem.implicitRules | UseElementSameName | NamingSystem.implicitRules |
 | NamingSystem.language | UseElementSameName | NamingSystem.language |
 | NamingSystem.text | UseElementSameName | NamingSystem.text |

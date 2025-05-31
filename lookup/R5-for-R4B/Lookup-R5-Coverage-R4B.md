@@ -22,7 +22,7 @@
 | Coverage.type | UseElementRenamed | Coverage.type |
 | Coverage.policyHolder | UseElementRenamed | Coverage.policyHolder |
 | Coverage.subscriber | UseElementRenamed | Coverage.subscriber |
-| Coverage.subscriberId | UseElementRenamed | Coverage |
+| Coverage.subscriberId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.subscriberId |
 | Coverage.beneficiary | UseElementRenamed | Coverage.beneficiary |
 | Coverage.dependent | UseElementRenamed | Coverage.dependent |
 | Coverage.relationship | UseElementRenamed | Coverage.relationship |
@@ -33,7 +33,7 @@
 | Coverage.class.extension | UseElementRenamed | Coverage.class.extension |
 | Coverage.class.modifierExtension | UseElementRenamed | Coverage.class.modifierExtension |
 | Coverage.class.type | UseElementRenamed | Coverage.class.type |
-| Coverage.class.value | UseElementRenamed | Coverage.class.value |
+| Coverage.class.value | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.class.value |
 | Coverage.class.name | UseElementRenamed | Coverage.class.name |
 | Coverage.order | UseElementRenamed | Coverage.order |
 | Coverage.network | UseElementRenamed | Coverage.network |

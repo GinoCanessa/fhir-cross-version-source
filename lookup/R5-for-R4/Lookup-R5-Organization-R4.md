@@ -16,7 +16,7 @@
 | Organization.name | UseElementSameName | Organization.name |
 | Organization.alias | UseElementSameName | Organization.alias |
 | Organization.description | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description |
-| Organization.contact | UseElementSameName | Organization.contact |
+| Organization.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.contact |
 | Organization.partOf | UseElementSameName | Organization.partOf |
 | Organization.endpoint | UseElementSameName | Organization.endpoint |
 | Organization.qualification | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.qualification |

@@ -3,14 +3,14 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Coverage.id | UseElementSameName | Coverage.id |
-| Coverage.meta | UseElementSameName | Coverage.meta |
+| Coverage.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.meta |
 | Coverage.implicitRules | UseElementSameName | Coverage.implicitRules |
 | Coverage.language | UseElementSameName | Coverage.language |
 | Coverage.text | UseElementSameName | Coverage.text |
 | Coverage.contained | UseElementSameName | Coverage.contained |
 | Coverage.extension | UseElementSameName | Coverage.extension |
 | Coverage.modifierExtension | UseElementSameName | Coverage.modifierExtension |
-| Coverage.identifier | UseElementSameName | Coverage.bin |
+| Coverage.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.identifier |
 | Coverage.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.status |
 | Coverage.kind | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.kind |
 | Coverage.paymentBy | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.paymentBy |
@@ -19,12 +19,12 @@
 | Coverage.paymentBy.modifierExtension | UseExtensionFromAncestor | - |
 | Coverage.paymentBy.party | UseExtensionFromAncestor | - |
 | Coverage.paymentBy.responsibility | UseExtensionFromAncestor | - |
-| Coverage.type | UseElementSameName | Coverage.type |
+| Coverage.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.type |
 | Coverage.policyHolder | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.policyHolder |
 | Coverage.subscriber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.subscriber |
-| Coverage.subscriberId | UseElementRenamed | Coverage |
+| Coverage.subscriberId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.subscriberId |
 | Coverage.beneficiary | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.beneficiary |
-| Coverage.dependent | UseElementSameName | Coverage.dependent |
+| Coverage.dependent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.dependent |
 | Coverage.relationship | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.relationship |
 | Coverage.period | UseElementSameName | Coverage.period |
 | Coverage.insurer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.insurer |
@@ -36,7 +36,7 @@
 | Coverage.class.value | UseExtensionFromAncestor | - |
 | Coverage.class.name | UseExtensionFromAncestor | - |
 | Coverage.order | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.order |
-| Coverage.network | UseElementSameName | Coverage.network |
+| Coverage.network | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.network |
 | Coverage.costToBeneficiary | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.costToBeneficiary |
 | Coverage.costToBeneficiary.id | UseExtensionFromAncestor | - |
 | Coverage.costToBeneficiary.extension | UseExtensionFromAncestor | - |
@@ -54,5 +54,5 @@
 | Coverage.costToBeneficiary.exception.type | UseExtensionFromAncestor | - |
 | Coverage.costToBeneficiary.exception.period | UseExtensionFromAncestor | - |
 | Coverage.subrogation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.subrogation |
-| Coverage.contract | UseElementSameName | Coverage.contract |
+| Coverage.contract | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.contract |
 | Coverage.insurancePlan | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.insurancePlan |

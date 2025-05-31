@@ -5,7 +5,7 @@
 | Expression.id | UseElementSameName | Expression.id |
 | Expression.extension | UseElementSameName | Expression.extension |
 | Expression.description | UseElementSameName | Expression.description |
-| Expression.name | UseElementSameName | Expression.name |
+| Expression.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Expression.name |
 | Expression.language | UseElementSameName | Expression.language |
 | Expression.expression | UseElementSameName | Expression.expression |
 | Expression.reference | UseElementSameName | Expression.reference |

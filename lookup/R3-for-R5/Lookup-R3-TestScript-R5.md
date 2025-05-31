@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | TestScript.id | UseElementSameName | TestScript.id |
-| TestScript.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.meta |
+| TestScript.meta | UseElementSameName | TestScript.meta |
 | TestScript.implicitRules | UseElementSameName | TestScript.implicitRules |
 | TestScript.language | UseElementSameName | TestScript.language |
 | TestScript.text | UseElementSameName | TestScript.text |
@@ -11,7 +11,7 @@
 | TestScript.extension | UseElementSameName | TestScript.extension |
 | TestScript.modifierExtension | UseElementSameName | TestScript.modifierExtension |
 | TestScript.url | UseElementSameName | TestScript.url |
-| TestScript.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.identifier |
+| TestScript.identifier | UseElementSameName | TestScript.identifier |
 | TestScript.version | UseElementSameName | TestScript.version |
 | TestScript.name | UseElementSameName | TestScript.name |
 | TestScript.title | UseElementSameName | TestScript.title |
@@ -57,14 +57,14 @@
 | TestScript.metadata.capability.origin | UseElementSameName | TestScript.metadata.capability.origin |
 | TestScript.metadata.capability.destination | UseElementSameName | TestScript.metadata.capability.destination |
 | TestScript.metadata.capability.link | UseElementSameName | TestScript.metadata.capability.link |
-| TestScript.metadata.capability.capabilities | UseElementSameName | TestScript.metadata.capability.capabilities |
+| TestScript.metadata.capability.capabilities | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.metadata.capability.capabilities |
 | TestScript.fixture | UseElementSameName | TestScript.fixture |
 | TestScript.fixture.id | UseElementSameName | TestScript.fixture.id |
 | TestScript.fixture.extension | UseElementSameName | TestScript.fixture.extension |
 | TestScript.fixture.modifierExtension | UseElementSameName | TestScript.fixture.modifierExtension |
 | TestScript.fixture.autocreate | UseElementSameName | TestScript.fixture.autocreate |
 | TestScript.fixture.autodelete | UseElementSameName | TestScript.fixture.autodelete |
-| TestScript.fixture.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.fixture.resource |
+| TestScript.fixture.resource | UseElementSameName | TestScript.fixture.resource |
 | TestScript.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.profile |
 | TestScript.variable | UseElementSameName | TestScript.variable |
 | TestScript.variable.id | UseElementSameName | TestScript.variable.id |
@@ -121,8 +121,8 @@
 | TestScript.setup.action.operation.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.operation.resource |
 | TestScript.setup.action.operation.label | UseElementSameName | TestScript.setup.action.operation.label |
 | TestScript.setup.action.operation.description | UseElementSameName | TestScript.setup.action.operation.description |
-| TestScript.setup.action.operation.accept | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.operation.accept |
-| TestScript.setup.action.operation.contentType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.operation.contentType |
+| TestScript.setup.action.operation.accept | UseElementSameName | TestScript.setup.action.operation.accept |
+| TestScript.setup.action.operation.contentType | UseElementSameName | TestScript.setup.action.operation.contentType |
 | TestScript.setup.action.operation.destination | UseElementSameName | TestScript.setup.action.operation.destination |
 | TestScript.setup.action.operation.encodeRequestUrl | UseElementSameName | TestScript.setup.action.operation.encodeRequestUrl |
 | TestScript.setup.action.operation.origin | UseElementSameName | TestScript.setup.action.operation.origin |
@@ -148,17 +148,17 @@
 | TestScript.setup.action.assert.compareToSourceId | UseElementSameName | TestScript.setup.action.assert.compareToSourceId |
 | TestScript.setup.action.assert.compareToSourceExpression | UseElementSameName | TestScript.setup.action.assert.compareToSourceExpression |
 | TestScript.setup.action.assert.compareToSourcePath | UseElementSameName | TestScript.setup.action.assert.compareToSourcePath |
-| TestScript.setup.action.assert.contentType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.contentType |
+| TestScript.setup.action.assert.contentType | UseElementSameName | TestScript.setup.action.assert.contentType |
 | TestScript.setup.action.assert.expression | UseElementSameName | TestScript.setup.action.assert.expression |
 | TestScript.setup.action.assert.headerField | UseElementSameName | TestScript.setup.action.assert.headerField |
 | TestScript.setup.action.assert.minimumId | UseElementSameName | TestScript.setup.action.assert.minimumId |
 | TestScript.setup.action.assert.navigationLinks | UseElementSameName | TestScript.setup.action.assert.navigationLinks |
-| TestScript.setup.action.assert.operator | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.operator |
+| TestScript.setup.action.assert.operator | UseElementSameName | TestScript.setup.action.assert.operator |
 | TestScript.setup.action.assert.path | UseElementSameName | TestScript.setup.action.assert.path |
-| TestScript.setup.action.assert.requestMethod | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.requestMethod |
+| TestScript.setup.action.assert.requestMethod | UseElementSameName | TestScript.setup.action.assert.requestMethod |
 | TestScript.setup.action.assert.requestURL | UseElementSameName | TestScript.setup.action.assert.requestURL |
 | TestScript.setup.action.assert.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.resource |
-| TestScript.setup.action.assert.response | UseElementSameName | TestScript.setup.action.assert.response |
+| TestScript.setup.action.assert.response | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.response |
 | TestScript.setup.action.assert.responseCode | UseElementSameName | TestScript.setup.action.assert.responseCode |
 | TestScript.setup.action.assert.rule | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.rule |
 | TestScript.setup.action.assert.rule.id | UseExtensionFromAncestor | - |

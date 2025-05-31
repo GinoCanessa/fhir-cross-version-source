@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ConceptMap.id | UseElementSameName | ConceptMap.id |
-| ConceptMap.meta | UseElementSameName | ConceptMap.meta |
+| ConceptMap.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.meta |
 | ConceptMap.implicitRules | UseElementSameName | ConceptMap.implicitRules |
 | ConceptMap.language | UseElementSameName | ConceptMap.language |
 | ConceptMap.text | UseElementSameName | ConceptMap.text |
@@ -11,18 +11,18 @@
 | ConceptMap.extension | UseElementSameName | ConceptMap.extension |
 | ConceptMap.modifierExtension | UseElementSameName | ConceptMap.modifierExtension |
 | ConceptMap.url | UseElementSameName | ConceptMap.url |
-| ConceptMap.identifier | UseElementSameName | ConceptMap.identifier |
+| ConceptMap.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.identifier |
 | ConceptMap.version | UseElementSameName | ConceptMap.version |
 | ConceptMap.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.versionAlgorithm |
 | ConceptMap.name | UseElementSameName | ConceptMap.name |
 | ConceptMap.title | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.title |
-| ConceptMap.status | UseElementSameName | ConceptMap.status |
+| ConceptMap.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.status |
 | ConceptMap.experimental | UseElementSameName | ConceptMap.experimental |
 | ConceptMap.date | UseElementSameName | ConceptMap.date |
 | ConceptMap.publisher | UseElementSameName | ConceptMap.publisher |
-| ConceptMap.contact | UseElementSameName | ConceptMap.contact |
+| ConceptMap.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.contact |
 | ConceptMap.description | UseElementSameName | ConceptMap.description |
-| ConceptMap.useContext | UseElementSameName | ConceptMap.useContext |
+| ConceptMap.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.useContext |
 | ConceptMap.jurisdiction | UseElementSameName | ConceptMap.useContext |
 | ConceptMap.purpose | UseElementSameName | ConceptMap.requirements |
 | ConceptMap.copyright | UseElementSameName | ConceptMap.copyright |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ValueSet.id | UseElementSameName | ValueSet.id |
-| ValueSet.meta | UseElementSameName | ValueSet.meta |
+| ValueSet.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ValueSet.meta |
 | ValueSet.implicitRules | UseElementSameName | ValueSet.implicitRules |
 | ValueSet.language | UseElementSameName | ValueSet.language |
 | ValueSet.text | UseElementSameName | ValueSet.text |
@@ -58,7 +58,7 @@
 | ValueSet.compose.include.filter.property | UseElementSameName | ValueSet.compose.include.filter.property |
 | ValueSet.compose.include.filter.op | UseElementSameName | ValueSet.compose.include.filter.op |
 | ValueSet.compose.include.filter.value | UseElementSameName | ValueSet.compose.include.filter.value |
-| ValueSet.compose.include.valueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ValueSet.compose.include.valueSet |
+| ValueSet.compose.include.valueSet | UseElementSameName | ValueSet.compose.include.valueSet |
 | ValueSet.compose.exclude | UseElementSameName | ValueSet.compose.exclude |
 | ValueSet.expansion | UseElementSameName | ValueSet.expansion |
 | ValueSet.expansion.id | UseElementSameName | ValueSet.expansion.id |
@@ -73,7 +73,7 @@
 | ValueSet.expansion.parameter.extension | UseElementSameName | ValueSet.expansion.parameter.extension |
 | ValueSet.expansion.parameter.modifierExtension | UseElementSameName | ValueSet.expansion.parameter.modifierExtension |
 | ValueSet.expansion.parameter.name | UseElementSameName | ValueSet.expansion.parameter.name |
-| ValueSet.expansion.parameter.value[x] | UseElementSameName | ValueSet.expansion.parameter.value[x] |
+| ValueSet.expansion.parameter.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ValueSet.expansion.parameter.value |
 | ValueSet.expansion.contains | UseElementSameName | ValueSet.expansion.contains |
 | ValueSet.expansion.contains.id | UseElementSameName | ValueSet.expansion.contains.id |
 | ValueSet.expansion.contains.extension | UseElementSameName | ValueSet.expansion.contains.extension |

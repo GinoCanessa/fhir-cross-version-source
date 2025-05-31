@@ -13,8 +13,8 @@
 | EnrollmentRequest.identifier | UseElementSameName | EnrollmentRequest.identifier |
 | EnrollmentRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.status |
 | EnrollmentRequest.created | UseElementSameName | EnrollmentRequest.created |
-| EnrollmentRequest.insurer | UseElementSameName | EnrollmentRequest.target |
-| EnrollmentRequest.provider | UseElementSameName | EnrollmentRequest.provider |
-| EnrollmentRequest.organization | UseElementRenamed | EnrollmentRequest.organization |
-| EnrollmentRequest.subject | UseElementRenamed | EnrollmentRequest.subject |
-| EnrollmentRequest.coverage | UseElementSameName | EnrollmentRequest.coverage |
+| EnrollmentRequest.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.insurer |
+| EnrollmentRequest.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.provider |
+| EnrollmentRequest.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.organization |
+| EnrollmentRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.subject |
+| EnrollmentRequest.coverage | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EnrollmentRequest.coverage |

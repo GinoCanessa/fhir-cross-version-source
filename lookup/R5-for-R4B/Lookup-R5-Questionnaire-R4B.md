@@ -19,7 +19,7 @@
 | Questionnaire.derivedFrom | UseElementRenamed | Questionnaire.derivedFrom |
 | Questionnaire.status | UseElementRenamed | Questionnaire.status |
 | Questionnaire.experimental | UseElementRenamed | Questionnaire.experimental |
-| Questionnaire.subjectType | UseElementRenamed | Questionnaire.subjectType |
+| Questionnaire.subjectType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.subjectType |
 | Questionnaire.date | UseElementRenamed | Questionnaire.date |
 | Questionnaire.publisher | UseElementRenamed | Questionnaire.publisher |
 | Questionnaire.contact | UseElementRenamed | Questionnaire.contact |
@@ -42,7 +42,7 @@
 | Questionnaire.item.code | UseElementRenamed | Questionnaire.item.code |
 | Questionnaire.item.prefix | UseElementRenamed | Questionnaire.item.prefix |
 | Questionnaire.item.text | UseElementRenamed | Questionnaire.item.text |
-| Questionnaire.item.type | UseElementRenamed | Questionnaire.item.type |
+| Questionnaire.item.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.type |
 | Questionnaire.item.enableWhen | UseElementRenamed | Questionnaire.item.enableWhen |
 | Questionnaire.item.enableWhen.id | UseElementRenamed | Questionnaire.item.enableWhen.id |
 | Questionnaire.item.enableWhen.extension | UseElementRenamed | Questionnaire.item.enableWhen.extension |
@@ -68,5 +68,5 @@
 | Questionnaire.item.initial.id | UseElementRenamed | Questionnaire.item.initial.id |
 | Questionnaire.item.initial.extension | UseElementRenamed | Questionnaire.item.initial.extension |
 | Questionnaire.item.initial.modifierExtension | UseElementRenamed | Questionnaire.item.initial.modifierExtension |
-| Questionnaire.item.initial.value[x] | UseElementRenamed | Questionnaire.item.initial.value[x] |
+| Questionnaire.item.initial.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.initial.value |
 | Questionnaire.item.item | UseElementRenamed | Questionnaire.item.item |

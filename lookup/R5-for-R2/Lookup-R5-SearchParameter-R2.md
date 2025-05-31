@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | SearchParameter.id | UseElementSameName | SearchParameter.id |
-| SearchParameter.meta | UseElementSameName | SearchParameter.meta |
+| SearchParameter.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.meta |
 | SearchParameter.implicitRules | UseElementSameName | SearchParameter.implicitRules |
 | SearchParameter.language | UseElementSameName | SearchParameter.language |
 | SearchParameter.text | UseElementSameName | SearchParameter.text |
@@ -17,11 +17,11 @@
 | SearchParameter.name | UseElementSameName | SearchParameter.name |
 | SearchParameter.title | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title |
 | SearchParameter.derivedFrom | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.derivedFrom |
-| SearchParameter.status | UseElementSameName | SearchParameter.status |
+| SearchParameter.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.status |
 | SearchParameter.experimental | UseElementSameName | SearchParameter.experimental |
 | SearchParameter.date | UseElementSameName | SearchParameter.date |
 | SearchParameter.publisher | UseElementSameName | SearchParameter.publisher |
-| SearchParameter.contact | UseElementSameName | SearchParameter.contact |
+| SearchParameter.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.contact |
 | SearchParameter.description | UseElementSameName | SearchParameter.description |
 | SearchParameter.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.useContext |
 | SearchParameter.jurisdiction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.jurisdiction |
@@ -30,9 +30,9 @@
 | SearchParameter.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyrightLabel |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.base |
-| SearchParameter.type | UseElementSameName | SearchParameter.type |
+| SearchParameter.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.type |
 | SearchParameter.expression | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.expression |
-| SearchParameter.processingMode | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.processingMode |
+| SearchParameter.processingMode | UseElementRenamed | SearchParameter.xpathUsage |
 | SearchParameter.constraint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.constraint |
 | SearchParameter.target | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.target |
 | SearchParameter.multipleOr | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.multipleOr |

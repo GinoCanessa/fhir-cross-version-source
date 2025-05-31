@@ -11,7 +11,7 @@
 | ResearchSubject.extension | UseElementSameName | ResearchSubject.extension |
 | ResearchSubject.modifierExtension | UseElementSameName | ResearchSubject.modifierExtension |
 | ResearchSubject.identifier | UseElementSameName | ResearchSubject.identifier |
-| ResearchSubject.status | UseElementSameName | ResearchSubject.status |
+| ResearchSubject.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.status |
 | ResearchSubject.progress | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.progress |
 | ResearchSubject.progress.id | UseExtensionFromAncestor | - |
 | ResearchSubject.progress.extension | UseExtensionFromAncestor | - |
@@ -24,7 +24,7 @@
 | ResearchSubject.progress.endDate | UseExtensionFromAncestor | - |
 | ResearchSubject.period | UseElementSameName | ResearchSubject.period |
 | ResearchSubject.study | UseElementSameName | ResearchSubject.study |
-| ResearchSubject.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.subject |
-| ResearchSubject.assignedComparisonGroup | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.assignedComparisonGroup |
-| ResearchSubject.actualComparisonGroup | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.actualComparisonGroup |
-| ResearchSubject.consent | UseElementSameName | ResearchSubject.consent |
+| ResearchSubject.subject | UseElementSameName | ResearchSubject.individual |
+| ResearchSubject.assignedComparisonGroup | UseElementSameName | ResearchSubject.assignedArm |
+| ResearchSubject.actualComparisonGroup | UseElementSameName | ResearchSubject.actualArm |
+| ResearchSubject.consent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.consent |

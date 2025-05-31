@@ -5,7 +5,7 @@
 | Count.id | UseElementRenamed | Count.id |
 | Count.extension | UseElementRenamed | Count.extension |
 | Count.value | UseElementRenamed | Count.value |
-| Count.comparator | UseElementRenamed | Count.comparator |
+| Count.comparator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Count.comparator |
 | Count.unit | UseElementRenamed | Count.unit |
 | Count.system | UseElementRenamed | Count.system |
 | Count.code | UseElementRenamed | Count.code |

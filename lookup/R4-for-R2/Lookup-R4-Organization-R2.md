@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Organization.id | UseElementSameName | Organization.id |
-| Organization.meta | UseElementSameName | Organization.meta |
+| Organization.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.meta |
 | Organization.implicitRules | UseElementSameName | Organization.implicitRules |
 | Organization.language | UseElementSameName | Organization.language |
 | Organization.text | UseElementSameName | Organization.text |
@@ -12,12 +12,12 @@
 | Organization.modifierExtension | UseElementSameName | Organization.modifierExtension |
 | Organization.identifier | UseElementSameName | Organization.identifier |
 | Organization.active | UseElementSameName | Organization.active |
-| Organization.type | UseElementSameName | Organization.type |
+| Organization.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.type |
 | Organization.name | UseElementSameName | Organization.name |
 | Organization.alias | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.alias |
 | Organization.telecom | UseElementSameName | Organization.telecom |
 | Organization.address | UseElementSameName | Organization.address |
-| Organization.partOf | UseElementSameName | Organization.partOf |
+| Organization.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.partOf |
 | Organization.contact | UseElementSameName | Organization.contact |
 | Organization.contact.id | UseElementSameName | Organization.contact.id |
 | Organization.contact.extension | UseElementSameName | Organization.contact.extension |

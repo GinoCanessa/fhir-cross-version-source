@@ -3,12 +3,12 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ResearchStudy.id | UseElementSameName | ResearchStudy.id |
-| ResearchStudy.meta | UseElementSameName | ResearchStudy.meta |
+| ResearchStudy.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.meta |
 | ResearchStudy.implicitRules | UseElementSameName | ResearchStudy.implicitRules |
 | ResearchStudy.language | UseElementSameName | ResearchStudy.language |
 | ResearchStudy.text | UseElementSameName | ResearchStudy.text |
 | ResearchStudy.contained | UseElementSameName | ResearchStudy.contained |
-| ResearchStudy.extension | UseElementSameName | ResearchStudy.extension |
+| ResearchStudy.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.extension |
 | ResearchStudy.modifierExtension | UseElementSameName | ResearchStudy.modifierExtension |
 | ResearchStudy.url | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.url |
 | ResearchStudy.identifier | UseElementSameName | ResearchStudy.identifier |
@@ -21,15 +21,15 @@
 | ResearchStudy.label.modifierExtension | UseExtensionFromAncestor | - |
 | ResearchStudy.label.type | UseExtensionFromAncestor | - |
 | ResearchStudy.label.value | UseExtensionFromAncestor | - |
-| ResearchStudy.protocol | UseElementSameName | ResearchStudy.protocol |
-| ResearchStudy.partOf | UseElementSameName | ResearchStudy.partOf |
-| ResearchStudy.relatedArtifact | UseElementSameName | ResearchStudy.relatedArtifact |
+| ResearchStudy.protocol | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.protocol |
+| ResearchStudy.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.partOf |
+| ResearchStudy.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.relatedArtifact |
 | ResearchStudy.date | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.date |
 | ResearchStudy.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.status |
 | ResearchStudy.primaryPurposeType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.primaryPurposeType |
 | ResearchStudy.phase | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.phase |
 | ResearchStudy.studyDesign | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.studyDesign |
-| ResearchStudy.focus | UseElementSameName | ResearchStudy.focus |
+| ResearchStudy.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.focus |
 | ResearchStudy.condition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.condition |
 | ResearchStudy.keyword | UseElementSameName | ResearchStudy.keyword |
 | ResearchStudy.region | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.region |

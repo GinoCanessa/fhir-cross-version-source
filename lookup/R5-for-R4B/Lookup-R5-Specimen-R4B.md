@@ -14,7 +14,7 @@
 | Specimen.accessionIdentifier | UseElementRenamed | Specimen.accessionIdentifier |
 | Specimen.status | UseElementRenamed | Specimen.status |
 | Specimen.type | UseElementRenamed | Specimen.type |
-| Specimen.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.subject |
+| Specimen.subject | UseElementRenamed | Specimen.subject |
 | Specimen.receivedTime | UseElementRenamed | Specimen.receivedTime |
 | Specimen.parent | UseElementRenamed | Specimen.parent |
 | Specimen.request | UseElementRenamed | Specimen.request |
@@ -30,14 +30,14 @@
 | Specimen.collection.id | UseElementRenamed | Specimen.collection.id |
 | Specimen.collection.extension | UseElementRenamed | Specimen.collection.extension |
 | Specimen.collection.modifierExtension | UseElementRenamed | Specimen.collection.modifierExtension |
-| Specimen.collection.collector | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.collector |
+| Specimen.collection.collector | UseElementRenamed | Specimen.collection.collector |
 | Specimen.collection.collected[x] | UseElementRenamed | Specimen.collection.collected[x] |
 | Specimen.collection.duration | UseElementRenamed | Specimen.collection.duration |
 | Specimen.collection.quantity | UseElementRenamed | Specimen.collection.quantity |
 | Specimen.collection.method | UseElementRenamed | Specimen.collection.method |
 | Specimen.collection.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.device |
 | Specimen.collection.procedure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.procedure |
-| Specimen.collection.bodySite | UseElementRenamed | Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite |
 | Specimen.collection.fastingStatus[x] | UseElementRenamed | Specimen.collection.fastingStatus[x] |
 | Specimen.processing | UseElementRenamed | Specimen.processing |
 | Specimen.processing.id | UseElementRenamed | Specimen.processing.id |

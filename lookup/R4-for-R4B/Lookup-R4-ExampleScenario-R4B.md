@@ -36,7 +36,7 @@
 | ExampleScenario.instance.extension | UseElementSameName | ExampleScenario.instance.extension |
 | ExampleScenario.instance.modifierExtension | UseElementSameName | ExampleScenario.instance.modifierExtension |
 | ExampleScenario.instance.resourceId | UseElementSameName | ExampleScenario.instance.resourceId |
-| ExampleScenario.instance.resourceType | UseElementSameName | ExampleScenario.instance.resourceType |
+| ExampleScenario.instance.resourceType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExampleScenario.instance.resourceType |
 | ExampleScenario.instance.name | UseElementSameName | ExampleScenario.instance.name |
 | ExampleScenario.instance.description | UseElementSameName | ExampleScenario.instance.description |
 | ExampleScenario.instance.version | UseElementSameName | ExampleScenario.instance.version |

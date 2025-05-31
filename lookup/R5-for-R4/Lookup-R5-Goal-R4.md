@@ -28,7 +28,7 @@
 | Goal.target.due[x] | UseElementSameName | Goal.target.due[x] |
 | Goal.statusDate | UseElementSameName | Goal.statusDate |
 | Goal.statusReason | UseElementSameName | Goal.statusReason |
-| Goal.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.source |
-| Goal.addresses | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.addresses |
+| Goal.source | UseElementSameName | Goal.expressedBy |
+| Goal.addresses | UseElementSameName | Goal.addresses |
 | Goal.note | UseElementSameName | Goal.note |
-| Goal.outcome | UseElementSameName | Goal.outcomeCode |
+| Goal.outcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.outcome |

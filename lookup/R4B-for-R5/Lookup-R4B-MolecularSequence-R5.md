@@ -13,7 +13,7 @@
 | MolecularSequence.identifier | UseElementSameName | MolecularSequence.identifier |
 | MolecularSequence.type | UseElementSameName | MolecularSequence.type |
 | MolecularSequence.coordinateSystem | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MolecularSequence.coordinateSystem |
-| MolecularSequence.patient | UseElementRenamed | MolecularSequence.subject |
+| MolecularSequence.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MolecularSequence.patient |
 | MolecularSequence.specimen | UseElementSameName | MolecularSequence.specimen |
 | MolecularSequence.device | UseElementSameName | MolecularSequence.device |
 | MolecularSequence.performer | UseElementSameName | MolecularSequence.performer |

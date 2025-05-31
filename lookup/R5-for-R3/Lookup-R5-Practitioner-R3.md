@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Practitioner.id | UseElementSameName | Practitioner.id |
-| Practitioner.meta | UseElementSameName | Practitioner.meta |
+| Practitioner.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.meta |
 | Practitioner.implicitRules | UseElementSameName | Practitioner.implicitRules |
 | Practitioner.language | UseElementSameName | Practitioner.language |
 | Practitioner.text | UseElementSameName | Practitioner.text |
@@ -18,7 +18,7 @@
 | Practitioner.birthDate | UseElementSameName | Practitioner.birthDate |
 | Practitioner.deceased[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.deceased |
 | Practitioner.address | UseElementSameName | Practitioner.address |
-| Practitioner.photo | UseElementSameName | Practitioner.photo |
+| Practitioner.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.photo |
 | Practitioner.qualification | UseElementSameName | Practitioner.qualification |
 | Practitioner.qualification.id | UseElementSameName | Practitioner.qualification.id |
 | Practitioner.qualification.extension | UseElementSameName | Practitioner.qualification.extension |
@@ -26,10 +26,10 @@
 | Practitioner.qualification.identifier | UseElementSameName | Practitioner.qualification.identifier |
 | Practitioner.qualification.code | UseElementSameName | Practitioner.qualification.code |
 | Practitioner.qualification.period | UseElementSameName | Practitioner.qualification.period |
-| Practitioner.qualification.issuer | UseElementSameName | Practitioner.qualification.issuer |
-| Practitioner.communication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication |
-| Practitioner.communication.id | UseExtensionFromAncestor | - |
-| Practitioner.communication.extension | UseExtensionFromAncestor | - |
-| Practitioner.communication.modifierExtension | UseExtensionFromAncestor | - |
-| Practitioner.communication.language | UseExtensionFromAncestor | - |
-| Practitioner.communication.preferred | UseExtensionFromAncestor | - |
+| Practitioner.qualification.issuer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.qualification.issuer |
+| Practitioner.communication | UseElementSameName | Practitioner.communication |
+| Practitioner.communication.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication.id |
+| Practitioner.communication.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication.extension |
+| Practitioner.communication.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication.modifierExtension |
+| Practitioner.communication.language | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication.language |
+| Practitioner.communication.preferred | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Practitioner.communication.preferred |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | NamingSystem.id | UseElementSameName | NamingSystem.id |
-| NamingSystem.meta | UseElementSameName | NamingSystem.meta |
+| NamingSystem.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.meta |
 | NamingSystem.implicitRules | UseElementSameName | NamingSystem.implicitRules |
 | NamingSystem.language | UseElementSameName | NamingSystem.language |
 | NamingSystem.text | UseElementSameName | NamingSystem.text |
@@ -16,16 +16,16 @@
 | NamingSystem.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.versionAlgorithm |
 | NamingSystem.name | UseElementSameName | NamingSystem.name |
 | NamingSystem.title | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.title |
-| NamingSystem.status | UseElementSameName | NamingSystem.status |
+| NamingSystem.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.status |
 | NamingSystem.kind | UseElementSameName | NamingSystem.kind |
 | NamingSystem.experimental | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.experimental |
 | NamingSystem.date | UseElementSameName | NamingSystem.date |
 | NamingSystem.publisher | UseElementSameName | NamingSystem.publisher |
-| NamingSystem.contact | UseElementSameName | NamingSystem.contact |
+| NamingSystem.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.contact |
 | NamingSystem.responsible | UseElementSameName | NamingSystem.responsible |
 | NamingSystem.type | UseElementSameName | NamingSystem.type |
 | NamingSystem.description | UseElementSameName | NamingSystem.description |
-| NamingSystem.useContext | UseElementSameName | NamingSystem.useContext |
+| NamingSystem.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.useContext |
 | NamingSystem.jurisdiction | UseElementSameName | NamingSystem.useContext |
 | NamingSystem.purpose | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.purpose |
 | NamingSystem.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.copyright |
@@ -44,7 +44,7 @@
 | NamingSystem.uniqueId.id | UseElementSameName | NamingSystem.uniqueId.id |
 | NamingSystem.uniqueId.extension | UseElementSameName | NamingSystem.uniqueId.extension |
 | NamingSystem.uniqueId.modifierExtension | UseElementSameName | NamingSystem.uniqueId.modifierExtension |
-| NamingSystem.uniqueId.type | UseElementSameName | NamingSystem.uniqueId.type |
+| NamingSystem.uniqueId.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.uniqueId.type |
 | NamingSystem.uniqueId.value | UseElementSameName | NamingSystem.uniqueId.value |
 | NamingSystem.uniqueId.preferred | UseElementSameName | NamingSystem.uniqueId.preferred |
 | NamingSystem.uniqueId.comment | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.uniqueId.comment |

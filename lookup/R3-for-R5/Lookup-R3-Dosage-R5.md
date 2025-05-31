@@ -8,13 +8,13 @@
 | Dosage.text | UseElementSameName | Dosage.text |
 | Dosage.additionalInstruction | UseElementSameName | Dosage.additionalInstruction |
 | Dosage.patientInstruction | UseElementSameName | Dosage.patientInstruction |
-| Dosage.timing | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Dosage.timing |
-| Dosage.asNeeded[x] | UseElementRenamed | Dosage.asNeeded |
+| Dosage.timing | UseElementSameName | Dosage.timing |
+| Dosage.asNeeded[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Dosage.asNeeded |
 | Dosage.site | UseElementSameName | Dosage.site |
 | Dosage.route | UseElementSameName | Dosage.route |
 | Dosage.method | UseElementSameName | Dosage.method |
 | Dosage.dose[x] | UseElementRenamed | Dosage.doseAndRate.dose[x] |
-| Dosage.maxDosePerPeriod | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Dosage.maxDosePerPeriod |
+| Dosage.maxDosePerPeriod | UseElementSameName | Dosage.maxDosePerPeriod |
 | Dosage.maxDosePerAdministration | UseElementSameName | Dosage.maxDosePerAdministration |
 | Dosage.maxDosePerLifetime | UseElementSameName | Dosage.maxDosePerLifetime |
 | Dosage.rate[x] | UseElementRenamed | Dosage.doseAndRate.rate[x] |

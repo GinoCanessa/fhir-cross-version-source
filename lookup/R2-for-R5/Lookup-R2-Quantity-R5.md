@@ -5,7 +5,7 @@
 | Quantity.id | UseElementRenamed | Age.id |
 | Quantity.extension | UseElementRenamed | Age.extension |
 | Quantity.value | UseElementRenamed | Age.value |
-| Quantity.comparator | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Quantity.comparator |
+| Quantity.comparator | UseElementRenamed | Age.comparator |
 | Quantity.unit | UseElementRenamed | Age.unit |
 | Quantity.system | UseElementRenamed | Age.system |
 | Quantity.code | UseElementRenamed | Age.code |

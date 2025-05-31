@@ -3,18 +3,18 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MeasureReport.id | UseElementSameName | MeasureReport.id |
-| MeasureReport.meta | UseElementSameName | MeasureReport.meta |
+| MeasureReport.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.meta |
 | MeasureReport.implicitRules | UseElementSameName | MeasureReport.implicitRules |
 | MeasureReport.language | UseElementSameName | MeasureReport.language |
 | MeasureReport.text | UseElementSameName | MeasureReport.text |
 | MeasureReport.contained | UseElementSameName | MeasureReport.contained |
 | MeasureReport.extension | UseElementSameName | MeasureReport.extension |
 | MeasureReport.modifierExtension | UseElementSameName | MeasureReport.modifierExtension |
-| MeasureReport.identifier | UseElementSameName | MeasureReport.identifier |
+| MeasureReport.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.identifier |
 | MeasureReport.status | UseElementSameName | MeasureReport.status |
-| MeasureReport.type | UseElementSameName | MeasureReport.type |
+| MeasureReport.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.type |
 | MeasureReport.dataUpdateType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.dataUpdateType |
-| MeasureReport.measure | UseElementSameName | MeasureReport.measure |
+| MeasureReport.measure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.measure |
 | MeasureReport.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.subject |
 | MeasureReport.date | UseElementSameName | MeasureReport.date |
 | MeasureReport.reporter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.reporter |
@@ -29,7 +29,7 @@
 | MeasureReport.group.extension | UseElementSameName | MeasureReport.group.extension |
 | MeasureReport.group.modifierExtension | UseElementSameName | MeasureReport.group.modifierExtension |
 | MeasureReport.group.linkId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.linkId |
-| MeasureReport.group.code | UseElementSameName | MeasureReport.group.identifier |
+| MeasureReport.group.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.code |
 | MeasureReport.group.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.subject |
 | MeasureReport.group.population | UseElementSameName | MeasureReport.group.population |
 | MeasureReport.group.population.id | UseElementSameName | MeasureReport.group.population.id |
@@ -38,10 +38,10 @@
 | MeasureReport.group.population.linkId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.population.linkId |
 | MeasureReport.group.population.code | UseElementSameName | MeasureReport.group.population.code |
 | MeasureReport.group.population.count | UseElementSameName | MeasureReport.group.population.count |
-| MeasureReport.group.population.subjectResults | UseElementSameName | MeasureReport.group.population.patients |
+| MeasureReport.group.population.subjectResults | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.population.subjectResults |
 | MeasureReport.group.population.subjectReport | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.population.subjectReport |
 | MeasureReport.group.population.subjects | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.population.subjects |
-| MeasureReport.group.measureScore[x] | UseElementRenamed | MeasureReport.group.measureScore |
+| MeasureReport.group.measureScore[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.measureScore |
 | MeasureReport.group.stratifier | UseElementSameName | MeasureReport.group.stratifier |
 | MeasureReport.group.stratifier.id | UseElementSameName | MeasureReport.group.stratifier.id |
 | MeasureReport.group.stratifier.extension | UseElementSameName | MeasureReport.group.stratifier.extension |
@@ -52,7 +52,7 @@
 | MeasureReport.group.stratifier.stratum.id | UseElementSameName | MeasureReport.group.stratifier.stratum.id |
 | MeasureReport.group.stratifier.stratum.extension | UseElementSameName | MeasureReport.group.stratifier.stratum.extension |
 | MeasureReport.group.stratifier.stratum.modifierExtension | UseElementSameName | MeasureReport.group.stratifier.stratum.modifierExtension |
-| MeasureReport.group.stratifier.stratum.value[x] | UseElementRenamed | MeasureReport.group.stratifier.stratum.value |
+| MeasureReport.group.stratifier.stratum.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.value |
 | MeasureReport.group.stratifier.stratum.component | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.component |
 | MeasureReport.group.stratifier.stratum.component.id | UseExtensionFromAncestor | - |
 | MeasureReport.group.stratifier.stratum.component.extension | UseExtensionFromAncestor | - |
@@ -67,9 +67,9 @@
 | MeasureReport.group.stratifier.stratum.population.linkId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.population.linkId |
 | MeasureReport.group.stratifier.stratum.population.code | UseElementSameName | MeasureReport.group.stratifier.stratum.population.code |
 | MeasureReport.group.stratifier.stratum.population.count | UseElementSameName | MeasureReport.group.stratifier.stratum.population.count |
-| MeasureReport.group.stratifier.stratum.population.subjectResults | UseElementSameName | MeasureReport.group.stratifier.stratum.population.patients |
+| MeasureReport.group.stratifier.stratum.population.subjectResults | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.population.subjectResults |
 | MeasureReport.group.stratifier.stratum.population.subjectReport | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.population.subjectReport |
 | MeasureReport.group.stratifier.stratum.population.subjects | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.population.subjects |
-| MeasureReport.group.stratifier.stratum.measureScore[x] | UseElementRenamed | MeasureReport.group.stratifier.stratum.measureScore |
+| MeasureReport.group.stratifier.stratum.measureScore[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.stratifier.stratum.measureScore |
 | MeasureReport.supplementalData | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.supplementalData |
 | MeasureReport.evaluatedResource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.evaluatedResource |

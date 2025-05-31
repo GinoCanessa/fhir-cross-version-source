@@ -4,7 +4,7 @@
 | -------------- | ----- | ------ |
 | Address.id | UseElementSameName | Address.id |
 | Address.extension | UseElementSameName | Address.extension |
-| Address.use | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Address.use |
+| Address.use | UseElementSameName | Address.use |
 | Address.type | UseElementSameName | Address.type |
 | Address.text | UseElementSameName | Address.text |
 | Address.line | UseElementSameName | Address.line |

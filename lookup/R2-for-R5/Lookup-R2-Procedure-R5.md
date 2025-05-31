@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Procedure.id | UseElementSameName | Procedure.id |
-| Procedure.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.meta |
+| Procedure.meta | UseElementSameName | Procedure.meta |
 | Procedure.implicitRules | UseElementSameName | Procedure.implicitRules |
 | Procedure.language | UseElementSameName | Procedure.language |
 | Procedure.text | UseElementSameName | Procedure.text |
@@ -12,11 +12,11 @@
 | Procedure.modifierExtension | UseElementSameName | Procedure.modifierExtension |
 | Procedure.identifier | UseElementSameName | Procedure.identifier |
 | Procedure.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.subject |
-| Procedure.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.status |
-| Procedure.category | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.category |
+| Procedure.status | UseElementSameName | Procedure.status |
+| Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
-| Procedure.notPerformed | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.notPerformed |
-| Procedure.reasonNotPerformed | UseElementRenamed | Procedure.statusReason |
+| Procedure.notPerformed | UseElementRenamed | Procedure.status |
+| Procedure.reasonNotPerformed | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.reasonNotPerformed |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.reason |
 | Procedure.performer | UseElementSameName | Procedure.performer |
@@ -25,12 +25,12 @@
 | Procedure.performer.modifierExtension | UseElementSameName | Procedure.performer.modifierExtension |
 | Procedure.performer.actor | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.performer.actor |
 | Procedure.performer.role | UseElementRenamed | Procedure.performer.function |
-| Procedure.performed[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.performed |
+| Procedure.performed[x] | UseElementRenamed | Procedure.occurrence[x] |
 | Procedure.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.encounter |
-| Procedure.location | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.location |
+| Procedure.location | UseElementSameName | Procedure.location |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |
 | Procedure.report | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.report |
-| Procedure.complication | UseElementSameName | Procedure.complication |
+| Procedure.complication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.complication |
 | Procedure.followUp | UseElementSameName | Procedure.followUp |
 | Procedure.request | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.request |
 | Procedure.notes | UseElementRenamed | Procedure.note |
@@ -38,6 +38,6 @@
 | Procedure.focalDevice.id | UseElementSameName | Procedure.focalDevice.id |
 | Procedure.focalDevice.extension | UseElementSameName | Procedure.focalDevice.extension |
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
-| Procedure.focalDevice.action | UseElementSameName | Procedure.focalDevice.action |
-| Procedure.focalDevice.manipulated | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.focalDevice.manipulated |
+| Procedure.focalDevice.action | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.focalDevice.action |
+| Procedure.focalDevice.manipulated | UseElementSameName | Procedure.focalDevice.manipulated |
 | Procedure.used | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.used |

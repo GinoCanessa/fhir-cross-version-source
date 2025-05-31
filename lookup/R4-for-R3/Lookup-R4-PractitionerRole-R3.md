@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | PractitionerRole.id | UseElementSameName | PractitionerRole.id |
-| PractitionerRole.meta | UseElementSameName | PractitionerRole.meta |
+| PractitionerRole.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.meta |
 | PractitionerRole.implicitRules | UseElementSameName | PractitionerRole.implicitRules |
 | PractitionerRole.language | UseElementSameName | PractitionerRole.language |
 | PractitionerRole.text | UseElementSameName | PractitionerRole.text |
@@ -13,12 +13,12 @@
 | PractitionerRole.identifier | UseElementSameName | PractitionerRole.identifier |
 | PractitionerRole.active | UseElementSameName | PractitionerRole.active |
 | PractitionerRole.period | UseElementSameName | PractitionerRole.period |
-| PractitionerRole.practitioner | UseElementSameName | PractitionerRole.practitioner |
-| PractitionerRole.organization | UseElementSameName | PractitionerRole.organization |
+| PractitionerRole.practitioner | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.practitioner |
+| PractitionerRole.organization | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.organization |
 | PractitionerRole.code | UseElementSameName | PractitionerRole.code |
 | PractitionerRole.specialty | UseElementSameName | PractitionerRole.specialty |
-| PractitionerRole.location | UseElementSameName | PractitionerRole.location |
-| PractitionerRole.healthcareService | UseElementSameName | PractitionerRole.healthcareService |
+| PractitionerRole.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.location |
+| PractitionerRole.healthcareService | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.healthcareService |
 | PractitionerRole.telecom | UseElementSameName | PractitionerRole.telecom |
 | PractitionerRole.availableTime | UseElementSameName | PractitionerRole.availableTime |
 | PractitionerRole.availableTime.id | UseElementSameName | PractitionerRole.availableTime.id |
@@ -35,4 +35,4 @@
 | PractitionerRole.notAvailable.description | UseElementSameName | PractitionerRole.notAvailable.description |
 | PractitionerRole.notAvailable.during | UseElementSameName | PractitionerRole.notAvailable.during |
 | PractitionerRole.availabilityExceptions | UseElementSameName | PractitionerRole.availabilityExceptions |
-| PractitionerRole.endpoint | UseElementSameName | PractitionerRole.endpoint |
+| PractitionerRole.endpoint | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.endpoint |

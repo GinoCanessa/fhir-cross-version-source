@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | GraphDefinition.id | UseElementSameName | GraphDefinition.id |
-| GraphDefinition.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-GraphDefinition.meta |
+| GraphDefinition.meta | UseElementSameName | GraphDefinition.meta |
 | GraphDefinition.implicitRules | UseElementSameName | GraphDefinition.implicitRules |
 | GraphDefinition.language | UseElementSameName | GraphDefinition.language |
 | GraphDefinition.text | UseElementSameName | GraphDefinition.text |

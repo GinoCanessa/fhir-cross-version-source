@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Binary.id | UseElementSameName | Binary.id |
-| Binary.meta | UseElementSameName | Binary.meta |
+| Binary.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Binary.meta |
 | Binary.implicitRules | UseElementSameName | Binary.implicitRules |
 | Binary.language | UseElementSameName | Binary.language |
 | Binary.contentType | UseElementSameName | Binary.contentType |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Schedule.id | UseElementSameName | Schedule.id |
-| Schedule.meta | UseElementSameName | Schedule.meta |
+| Schedule.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Schedule.meta |
 | Schedule.implicitRules | UseElementSameName | Schedule.implicitRules |
 | Schedule.language | UseElementSameName | Schedule.language |
 | Schedule.text | UseElementSameName | Schedule.text |

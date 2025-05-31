@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Media.id | UseElementSameName | Media.id |
-| Media.meta | UseElementSameName | Media.meta |
+| Media.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.meta |
 | Media.implicitRules | UseElementSameName | Media.implicitRules |
 | Media.language | UseElementSameName | Media.language |
 | Media.text | UseElementSameName | Media.text |
@@ -14,21 +14,21 @@
 | Media.basedOn | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.basedOn |
 | Media.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.partOf |
 | Media.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.status |
-| Media.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.type |
+| Media.type | UseElementSameName | Media.type |
 | Media.modality | UseElementSameName | Media.subtype |
 | Media.view | UseElementSameName | Media.view |
 | Media.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.subject |
-| Media.encounter | UseElementSameName | Media.context |
+| Media.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.encounter |
 | Media.created[x] | UseElementSameName | Media.occurrence[x] |
 | Media.issued | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.issued |
 | Media.operator | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.operator |
 | Media.reasonCode | UseElementSameName | Media.reasonCode |
 | Media.bodySite | UseElementSameName | Media.bodySite |
 | Media.deviceName | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.deviceName |
-| Media.device | UseElementSameName | Media.device |
+| Media.device | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.device |
 | Media.height | UseElementSameName | Media.height |
 | Media.width | UseElementSameName | Media.width |
 | Media.frames | UseElementSameName | Media.frames |
-| Media.duration | UseElementSameName | Media.duration |
+| Media.duration | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.duration |
 | Media.content | UseElementSameName | Media.content |
 | Media.note | UseElementSameName | Media.note |

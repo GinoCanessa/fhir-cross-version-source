@@ -11,10 +11,10 @@
 | ResearchSubject.extension | UseElementSameName | ResearchSubject.extension |
 | ResearchSubject.modifierExtension | UseElementSameName | ResearchSubject.modifierExtension |
 | ResearchSubject.identifier | UseElementSameName | ResearchSubject.identifier |
-| ResearchSubject.status | UseElementSameName | ResearchSubject.status |
+| ResearchSubject.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchSubject.status |
 | ResearchSubject.period | UseElementSameName | ResearchSubject.period |
 | ResearchSubject.study | UseElementSameName | ResearchSubject.study |
-| ResearchSubject.individual | UseElementRenamed | ResearchSubject.subject |
-| ResearchSubject.assignedArm | UseElementRenamed | ResearchSubject.assignedComparisonGroup |
-| ResearchSubject.actualArm | UseElementRenamed | ResearchSubject.actualComparisonGroup |
-| ResearchSubject.consent | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchSubject.consent |
+| ResearchSubject.individual | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchSubject.individual |
+| ResearchSubject.assignedArm | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchSubject.assignedArm |
+| ResearchSubject.actualArm | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchSubject.actualArm |
+| ResearchSubject.consent | UseElementSameName | ResearchSubject.consent |

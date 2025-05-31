@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Person.id | UseElementSameName | Person.id |
-| Person.meta | UseElementSameName | Person.meta |
+| Person.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.meta |
 | Person.implicitRules | UseElementSameName | Person.implicitRules |
 | Person.language | UseElementSameName | Person.language |
 | Person.text | UseElementSameName | Person.text |
@@ -19,17 +19,17 @@
 | Person.deceased[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.deceased |
 | Person.address | UseElementSameName | Person.address |
 | Person.maritalStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.maritalStatus |
-| Person.photo | UseElementSameName | Person.photo |
+| Person.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.photo |
 | Person.communication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.communication |
 | Person.communication.id | UseExtensionFromAncestor | - |
 | Person.communication.extension | UseExtensionFromAncestor | - |
 | Person.communication.modifierExtension | UseExtensionFromAncestor | - |
 | Person.communication.language | UseExtensionFromAncestor | - |
 | Person.communication.preferred | UseExtensionFromAncestor | - |
-| Person.managingOrganization | UseElementSameName | Person.managingOrganization |
+| Person.managingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.managingOrganization |
 | Person.link | UseElementSameName | Person.link |
 | Person.link.id | UseElementSameName | Person.link.id |
 | Person.link.extension | UseElementSameName | Person.link.extension |
 | Person.link.modifierExtension | UseElementSameName | Person.link.modifierExtension |
-| Person.link.target | UseElementSameName | Person.link.target |
+| Person.link.target | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Person.link.target |
 | Person.link.assurance | UseElementSameName | Person.link.assurance |

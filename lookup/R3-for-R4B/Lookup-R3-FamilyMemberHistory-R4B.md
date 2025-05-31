@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | FamilyMemberHistory.id | UseElementSameName | FamilyMemberHistory.id |
-| FamilyMemberHistory.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.meta |
+| FamilyMemberHistory.meta | UseElementSameName | FamilyMemberHistory.meta |
 | FamilyMemberHistory.implicitRules | UseElementSameName | FamilyMemberHistory.implicitRules |
 | FamilyMemberHistory.language | UseElementSameName | FamilyMemberHistory.language |
 | FamilyMemberHistory.text | UseElementSameName | FamilyMemberHistory.text |
@@ -11,15 +11,15 @@
 | FamilyMemberHistory.extension | UseElementSameName | FamilyMemberHistory.extension |
 | FamilyMemberHistory.modifierExtension | UseElementSameName | FamilyMemberHistory.modifierExtension |
 | FamilyMemberHistory.identifier | UseElementSameName | FamilyMemberHistory.identifier |
-| FamilyMemberHistory.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.definition |
+| FamilyMemberHistory.definition | UseElementRenamed | FamilyMemberHistory.instantiatesCanonical |
 | FamilyMemberHistory.status | UseElementSameName | FamilyMemberHistory.status |
-| FamilyMemberHistory.notDone | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDone |
-| FamilyMemberHistory.notDoneReason | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.notDoneReason |
-| FamilyMemberHistory.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.patient |
+| FamilyMemberHistory.notDone | UseElementRenamed | FamilyMemberHistory.dataAbsentReason |
+| FamilyMemberHistory.notDoneReason | UseElementRenamed | FamilyMemberHistory.dataAbsentReason |
+| FamilyMemberHistory.patient | UseElementSameName | FamilyMemberHistory.patient |
 | FamilyMemberHistory.date | UseElementSameName | FamilyMemberHistory.date |
 | FamilyMemberHistory.name | UseElementSameName | FamilyMemberHistory.name |
 | FamilyMemberHistory.relationship | UseElementSameName | FamilyMemberHistory.relationship |
-| FamilyMemberHistory.gender | UseElementRenamed | FamilyMemberHistory.sex |
+| FamilyMemberHistory.gender | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.gender |
 | FamilyMemberHistory.born[x] | UseElementSameName | FamilyMemberHistory.born[x] |
 | FamilyMemberHistory.age[x] | UseElementSameName | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseElementSameName | FamilyMemberHistory.estimatedAge |

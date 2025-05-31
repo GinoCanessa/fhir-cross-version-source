@@ -45,4 +45,4 @@
 | MessageDefinition.allowedResponse.modifierExtension | UseElementSameName | MessageDefinition.allowedResponse.modifierExtension |
 | MessageDefinition.allowedResponse.message | UseElementSameName | MessageDefinition.allowedResponse.message |
 | MessageDefinition.allowedResponse.situation | UseElementSameName | MessageDefinition.allowedResponse.situation |
-| MessageDefinition.graph | UseElementSameName | MessageDefinition.graph |
+| MessageDefinition.graph | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MessageDefinition.graph |

@@ -41,7 +41,7 @@
 | CapabilityStatement.implementation.description | UseElementSameName | CapabilityStatement.implementation.description |
 | CapabilityStatement.implementation.url | UseElementSameName | CapabilityStatement.implementation.url |
 | CapabilityStatement.implementation.custodian | UseElementSameName | CapabilityStatement.implementation.custodian |
-| CapabilityStatement.fhirVersion | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CapabilityStatement.fhirVersion |
+| CapabilityStatement.fhirVersion | UseElementSameName | CapabilityStatement.fhirVersion |
 | CapabilityStatement.format | UseElementSameName | CapabilityStatement.format |
 | CapabilityStatement.patchFormat | UseElementSameName | CapabilityStatement.patchFormat |
 | CapabilityStatement.implementationGuide | UseElementSameName | CapabilityStatement.implementationGuide |

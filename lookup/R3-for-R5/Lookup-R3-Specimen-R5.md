@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Specimen.id | UseElementSameName | Specimen.id |
-| Specimen.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.meta |
+| Specimen.meta | UseElementSameName | Specimen.meta |
 | Specimen.implicitRules | UseElementSameName | Specimen.implicitRules |
 | Specimen.language | UseElementSameName | Specimen.language |
 | Specimen.text | UseElementSameName | Specimen.text |
@@ -16,7 +16,7 @@
 | Specimen.type | UseElementSameName | Specimen.type |
 | Specimen.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.subject |
 | Specimen.receivedTime | UseElementSameName | Specimen.receivedTime |
-| Specimen.parent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.parent |
+| Specimen.parent | UseElementSameName | Specimen.parent |
 | Specimen.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.request |
 | Specimen.collection | UseElementSameName | Specimen.collection |
 | Specimen.collection.id | UseElementSameName | Specimen.collection.id |
@@ -26,14 +26,14 @@
 | Specimen.collection.collected[x] | UseElementSameName | Specimen.collection.collected[x] |
 | Specimen.collection.quantity | UseElementSameName | Specimen.collection.quantity |
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
-| Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.collection.bodySite |
 | Specimen.processing | UseElementSameName | Specimen.processing |
 | Specimen.processing.id | UseElementSameName | Specimen.processing.id |
 | Specimen.processing.extension | UseElementSameName | Specimen.processing.extension |
 | Specimen.processing.modifierExtension | UseElementSameName | Specimen.processing.modifierExtension |
 | Specimen.processing.description | UseElementSameName | Specimen.processing.description |
 | Specimen.processing.procedure | UseElementRenamed | Specimen.processing.method |
-| Specimen.processing.additive | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.processing.additive |
+| Specimen.processing.additive | UseElementSameName | Specimen.processing.additive |
 | Specimen.processing.time[x] | UseElementSameName | Specimen.processing.time[x] |
 | Specimen.container | UseElementSameName | Specimen.container |
 | Specimen.container.id | UseElementSameName | Specimen.container.id |

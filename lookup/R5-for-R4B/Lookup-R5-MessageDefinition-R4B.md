@@ -36,7 +36,7 @@
 | MessageDefinition.focus.id | UseElementRenamed | MessageDefinition.focus.id |
 | MessageDefinition.focus.extension | UseElementRenamed | MessageDefinition.focus.extension |
 | MessageDefinition.focus.modifierExtension | UseElementRenamed | MessageDefinition.focus.modifierExtension |
-| MessageDefinition.focus.code | UseElementRenamed | MessageDefinition.focus.code |
+| MessageDefinition.focus.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageDefinition.focus.code |
 | MessageDefinition.focus.profile | UseElementRenamed | MessageDefinition.focus.profile |
 | MessageDefinition.focus.min | UseElementRenamed | MessageDefinition.focus.min |
 | MessageDefinition.focus.max | UseElementRenamed | MessageDefinition.focus.max |
@@ -47,4 +47,4 @@
 | MessageDefinition.allowedResponse.modifierExtension | UseElementRenamed | MessageDefinition.allowedResponse.modifierExtension |
 | MessageDefinition.allowedResponse.message | UseElementRenamed | MessageDefinition.allowedResponse.message |
 | MessageDefinition.allowedResponse.situation | UseElementRenamed | MessageDefinition.allowedResponse.situation |
-| MessageDefinition.graph | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MessageDefinition.graph |
+| MessageDefinition.graph | UseElementRenamed | MessageDefinition.graph |

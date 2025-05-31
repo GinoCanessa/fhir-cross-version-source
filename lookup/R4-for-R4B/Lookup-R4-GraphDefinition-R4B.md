@@ -22,7 +22,7 @@
 | GraphDefinition.useContext | UseElementSameName | GraphDefinition.useContext |
 | GraphDefinition.jurisdiction | UseElementSameName | GraphDefinition.jurisdiction |
 | GraphDefinition.purpose | UseElementSameName | GraphDefinition.purpose |
-| GraphDefinition.start | UseElementSameName | GraphDefinition.start |
+| GraphDefinition.start | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-GraphDefinition.start |
 | GraphDefinition.profile | UseElementSameName | GraphDefinition.profile |
 | GraphDefinition.link | UseElementSameName | GraphDefinition.link |
 | GraphDefinition.link.id | UseElementSameName | GraphDefinition.link.id |
@@ -37,7 +37,7 @@
 | GraphDefinition.link.target.id | UseElementSameName | GraphDefinition.link.target.id |
 | GraphDefinition.link.target.extension | UseElementSameName | GraphDefinition.link.target.extension |
 | GraphDefinition.link.target.modifierExtension | UseElementSameName | GraphDefinition.link.target.modifierExtension |
-| GraphDefinition.link.target.type | UseElementSameName | GraphDefinition.link.target.type |
+| GraphDefinition.link.target.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-GraphDefinition.link.target.type |
 | GraphDefinition.link.target.params | UseElementSameName | GraphDefinition.link.target.params |
 | GraphDefinition.link.target.profile | UseElementSameName | GraphDefinition.link.target.profile |
 | GraphDefinition.link.target.compartment | UseElementSameName | GraphDefinition.link.target.compartment |

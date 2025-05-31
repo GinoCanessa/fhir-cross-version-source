@@ -16,7 +16,7 @@
 | DeviceMetric.source | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceMetric.source |
 | DeviceMetric.parent | UseElementRenamed | DeviceMetric.device |
 | DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
-| DeviceMetric.color | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceMetric.color |
+| DeviceMetric.color | UseElementSameName | DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |
 | DeviceMetric.measurementPeriod | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DeviceMetric.measurementPeriod |
 | DeviceMetric.calibration | UseElementSameName | DeviceMetric.calibration |

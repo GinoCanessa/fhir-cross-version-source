@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | VisionPrescription.id | UseElementSameName | VisionPrescription.id |
-| VisionPrescription.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.meta |
+| VisionPrescription.meta | UseElementSameName | VisionPrescription.meta |
 | VisionPrescription.implicitRules | UseElementSameName | VisionPrescription.implicitRules |
 | VisionPrescription.language | UseElementSameName | VisionPrescription.language |
 | VisionPrescription.text | UseElementSameName | VisionPrescription.text |
@@ -12,15 +12,15 @@
 | VisionPrescription.modifierExtension | UseElementSameName | VisionPrescription.modifierExtension |
 | VisionPrescription.identifier | UseElementSameName | VisionPrescription.identifier |
 | VisionPrescription.dateWritten | UseElementSameName | VisionPrescription.dateWritten |
-| VisionPrescription.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.patient |
+| VisionPrescription.patient | UseElementSameName | VisionPrescription.patient |
 | VisionPrescription.prescriber | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.prescriber |
-| VisionPrescription.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.encounter |
+| VisionPrescription.encounter | UseElementSameName | VisionPrescription.encounter |
 | VisionPrescription.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.reason |
 | VisionPrescription.dispense | UseElementRenamed | VisionPrescription.lensSpecification |
 | VisionPrescription.dispense.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.id |
 | VisionPrescription.dispense.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.extension |
 | VisionPrescription.dispense.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.modifierExtension |
-| VisionPrescription.dispense.product | UseElementRenamed | VisionPrescription.lensSpecification.product |
+| VisionPrescription.dispense.product | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.product |
 | VisionPrescription.dispense.eye | UseElementRenamed | VisionPrescription.lensSpecification.eye |
 | VisionPrescription.dispense.sphere | UseElementRenamed | VisionPrescription.lensSpecification.sphere |
 | VisionPrescription.dispense.cylinder | UseElementRenamed | VisionPrescription.lensSpecification.cylinder |

@@ -5,4 +5,4 @@
 | Money.id | UseElementSameName | Quantity.id |
 | Money.extension | UseElementSameName | Quantity.extension |
 | Money.value | UseElementSameName | Quantity.value |
-| Money.currency | UseElementSameName | Quantity.unit |
+| Money.currency | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Money.currency |

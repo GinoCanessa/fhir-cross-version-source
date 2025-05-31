@@ -18,7 +18,7 @@
 | Patient.birthDate | UseElementSameName | Patient.birthDate |
 | Patient.deceased[x] | UseElementSameName | Patient.deceased[x] |
 | Patient.address | UseElementSameName | Patient.address |
-| Patient.maritalStatus | UseElementSameName | Patient.maritalStatus |
+| Patient.maritalStatus | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.maritalStatus |
 | Patient.multipleBirth[x] | UseElementSameName | Patient.multipleBirth[x] |
 | Patient.photo | UseElementSameName | Patient.photo |
 | Patient.contact | UseElementSameName | Patient.contact |
@@ -30,7 +30,7 @@
 | Patient.contact.telecom | UseElementSameName | Patient.contact.telecom |
 | Patient.contact.address | UseElementSameName | Patient.contact.address |
 | Patient.contact.gender | UseElementSameName | Patient.contact.gender |
-| Patient.contact.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.contact.organization |
+| Patient.contact.organization | UseElementSameName | Patient.contact.organization |
 | Patient.contact.period | UseElementSameName | Patient.contact.period |
 | Patient.animal | UseElementSameName | Patient.animal |
 | Patient.animal.id | UseElementSameName | Patient.animal.id |
@@ -45,11 +45,11 @@
 | Patient.communication.modifierExtension | UseElementSameName | Patient.communication.modifierExtension |
 | Patient.communication.language | UseElementSameName | Patient.communication.language |
 | Patient.communication.preferred | UseElementSameName | Patient.communication.preferred |
-| Patient.careProvider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.careProvider |
-| Patient.managingOrganization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.managingOrganization |
+| Patient.careProvider | UseElementRenamed | Patient.generalPractitioner |
+| Patient.managingOrganization | UseElementSameName | Patient.managingOrganization |
 | Patient.link | UseElementSameName | Patient.link |
 | Patient.link.id | UseElementSameName | Patient.link.id |
 | Patient.link.extension | UseElementSameName | Patient.link.extension |
 | Patient.link.modifierExtension | UseElementSameName | Patient.link.modifierExtension |
 | Patient.link.other | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.link.other |
-| Patient.link.type | UseElementSameName | Patient.link.type |
+| Patient.link.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Patient.link.type |

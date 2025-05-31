@@ -13,14 +13,14 @@
 | DataElement.url | UseElementRenamed | DataElement.url |
 | DataElement.identifier | UseElementRenamed | DataElement.identifier |
 | DataElement.version | UseElementRenamed | DataElement.version |
-| DataElement.status | UseElementRenamed | DataElement.status |
+| DataElement.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.status |
 | DataElement.experimental | UseElementRenamed | DataElement.experimental |
 | DataElement.date | UseElementRenamed | DataElement.date |
 | DataElement.publisher | UseElementRenamed | DataElement.publisher |
 | DataElement.name | UseElementRenamed | DataElement.name |
 | DataElement.title | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.title |
-| DataElement.contact | UseElementRenamed | DataElement.contact |
-| DataElement.useContext | UseElementRenamed | DataElement.useContext |
+| DataElement.contact | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.contact |
+| DataElement.useContext | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.useContext |
 | DataElement.jurisdiction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.jurisdiction |
 | DataElement.copyright | UseElementRenamed | DataElement.copyright |
 | DataElement.stringency | UseElementRenamed | DataElement.stringency |
@@ -32,4 +32,4 @@
 | DataElement.mapping.uri | UseElementRenamed | DataElement.mapping.uri |
 | DataElement.mapping.name | UseElementRenamed | DataElement.mapping.name |
 | DataElement.mapping.comment | UseElementRenamed | DataElement.mapping.comments |
-| DataElement.element | UseElementRenamed | DataElement.element |
+| DataElement.element | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DataElement.element |

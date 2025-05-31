@@ -11,8 +11,8 @@
 | Endpoint.extension | UseElementRenamed | Endpoint.extension |
 | Endpoint.modifierExtension | UseElementRenamed | Endpoint.modifierExtension |
 | Endpoint.identifier | UseElementRenamed | Endpoint.identifier |
-| Endpoint.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.status |
-| Endpoint.connectionType | UseElementRenamed | Endpoint.connectionType |
+| Endpoint.status | UseElementRenamed | Endpoint.status |
+| Endpoint.connectionType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.connectionType |
 | Endpoint.name | UseElementRenamed | Endpoint.name |
 | Endpoint.description | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.description |
 | Endpoint.environmentType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.environmentType |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Account.id | UseElementSameName | Account.id |
-| Account.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.meta |
+| Account.meta | UseElementSameName | Account.meta |
 | Account.implicitRules | UseElementSameName | Account.implicitRules |
 | Account.language | UseElementSameName | Account.language |
 | Account.text | UseElementSameName | Account.text |
@@ -13,11 +13,11 @@
 | Account.identifier | UseElementSameName | Account.identifier |
 | Account.name | UseElementSameName | Account.name |
 | Account.type | UseElementSameName | Account.type |
-| Account.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.status |
-| Account.activePeriod | UseElementRenamed | Account.servicePeriod |
+| Account.status | UseElementSameName | Account.status |
+| Account.activePeriod | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.activePeriod |
 | Account.currency | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.currency |
 | Account.balance | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.balance |
 | Account.coveragePeriod | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.coveragePeriod |
 | Account.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.subject |
-| Account.owner | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Account.owner |
+| Account.owner | UseElementSameName | Account.owner |
 | Account.description | UseElementSameName | Account.description |

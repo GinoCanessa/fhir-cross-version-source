@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Endpoint.id | UseElementSameName | Endpoint.id |
-| Endpoint.meta | UseElementSameName | Endpoint.meta |
+| Endpoint.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.meta |
 | Endpoint.implicitRules | UseElementSameName | Endpoint.implicitRules |
 | Endpoint.language | UseElementSameName | Endpoint.language |
 | Endpoint.text | UseElementSameName | Endpoint.text |
@@ -11,12 +11,12 @@
 | Endpoint.extension | UseElementSameName | Endpoint.extension |
 | Endpoint.modifierExtension | UseElementSameName | Endpoint.modifierExtension |
 | Endpoint.identifier | UseElementSameName | Endpoint.identifier |
-| Endpoint.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.status |
-| Endpoint.connectionType | UseElementSameName | Endpoint.connectionType |
+| Endpoint.status | UseElementSameName | Endpoint.status |
+| Endpoint.connectionType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.connectionType |
 | Endpoint.name | UseElementSameName | Endpoint.name |
 | Endpoint.description | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.description |
 | Endpoint.environmentType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.environmentType |
-| Endpoint.managingOrganization | UseElementSameName | Endpoint.managingOrganization |
+| Endpoint.managingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.managingOrganization |
 | Endpoint.contact | UseElementSameName | Endpoint.contact |
 | Endpoint.period | UseElementSameName | Endpoint.period |
 | Endpoint.payload | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Endpoint.payload |

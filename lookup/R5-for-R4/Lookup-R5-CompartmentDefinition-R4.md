@@ -23,7 +23,7 @@
 | CompartmentDefinition.description | UseElementSameName | CompartmentDefinition.description |
 | CompartmentDefinition.useContext | UseElementSameName | CompartmentDefinition.useContext |
 | CompartmentDefinition.purpose | UseElementSameName | CompartmentDefinition.purpose |
-| CompartmentDefinition.code | UseElementSameName | CompartmentDefinition.code |
+| CompartmentDefinition.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CompartmentDefinition.code |
 | CompartmentDefinition.search | UseElementSameName | CompartmentDefinition.search |
 | CompartmentDefinition.resource | UseElementSameName | CompartmentDefinition.resource |
 | CompartmentDefinition.resource.id | UseElementSameName | CompartmentDefinition.resource.id |

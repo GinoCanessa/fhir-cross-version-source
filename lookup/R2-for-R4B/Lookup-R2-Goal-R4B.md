@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Goal.id | UseElementSameName | Goal.id |
-| Goal.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.meta |
+| Goal.meta | UseElementSameName | Goal.meta |
 | Goal.implicitRules | UseElementSameName | Goal.implicitRules |
 | Goal.language | UseElementSameName | Goal.language |
 | Goal.text | UseElementSameName | Goal.text |
@@ -11,14 +11,14 @@
 | Goal.extension | UseElementSameName | Goal.extension |
 | Goal.modifierExtension | UseElementSameName | Goal.modifierExtension |
 | Goal.identifier | UseElementSameName | Goal.identifier |
-| Goal.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.subject |
+| Goal.subject | UseElementSameName | Goal.subject |
 | Goal.start[x] | UseElementSameName | Goal.start[x] |
 | Goal.target[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.target |
 | Goal.category | UseElementSameName | Goal.category |
-| Goal.description | UseElementSameName | Goal.description |
+| Goal.description | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.description |
 | Goal.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.status |
 | Goal.statusDate | UseElementSameName | Goal.statusDate |
-| Goal.statusReason | UseElementSameName | Goal.statusReason |
+| Goal.statusReason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.statusReason |
 | Goal.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.author |
 | Goal.priority | UseElementSameName | Goal.priority |
 | Goal.addresses | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.addresses |

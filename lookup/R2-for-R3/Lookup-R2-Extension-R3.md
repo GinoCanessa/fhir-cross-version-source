@@ -5,4 +5,4 @@
 | Extension.id | UseElementSameName | Extension.id |
 | Extension.extension | UseElementSameName | Extension.extension |
 | Extension.url | UseElementSameName | Extension.url |
-| Extension.value[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Extension.value |
+| Extension.value[x] | UseElementSameName | Extension.value[x] |

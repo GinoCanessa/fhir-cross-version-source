@@ -3,17 +3,17 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Medication.id | UseElementSameName | Medication.id |
-| Medication.meta | UseElementSameName | Medication.meta |
+| Medication.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.meta |
 | Medication.implicitRules | UseElementSameName | Medication.implicitRules |
 | Medication.language | UseElementSameName | Medication.language |
 | Medication.text | UseElementSameName | Medication.text |
 | Medication.contained | UseElementSameName | Medication.contained |
-| Medication.extension | UseElementSameName | Medication.extension |
+| Medication.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.extension |
 | Medication.modifierExtension | UseElementSameName | Medication.modifierExtension |
 | Medication.identifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.identifier |
 | Medication.code | UseElementSameName | Medication.code |
 | Medication.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.status |
-| Medication.manufacturer | UseElementSameName | Medication.manufacturer |
+| Medication.manufacturer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.manufacturer |
 | Medication.form | UseElementSameName | Medication.product.form |
 | Medication.amount | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Medication.amount |
 | Medication.ingredient | UseElementSameName | Medication.product.ingredient |

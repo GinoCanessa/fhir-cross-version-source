@@ -17,7 +17,7 @@
 | Task.groupIdentifier | UseElementSameName | Task.groupIdentifier |
 | Task.partOf | UseElementSameName | Task.partOf |
 | Task.status | UseElementSameName | Task.status |
-| Task.statusReason | UseElementSameName | Task.statusReason |
+| Task.statusReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.statusReason |
 | Task.businessStatus | UseElementSameName | Task.businessStatus |
 | Task.intent | UseElementSameName | Task.intent |
 | Task.priority | UseElementSameName | Task.priority |
@@ -31,7 +31,7 @@
 | Task.lastModified | UseElementSameName | Task.lastModified |
 | Task.requester | UseElementSameName | Task.requester |
 | Task.performerType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.performerType |
-| Task.owner | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.owner |
+| Task.owner | UseElementSameName | Task.owner |
 | Task.location | UseElementSameName | Task.location |
 | Task.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.reasonCode |
 | Task.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.reasonReference |

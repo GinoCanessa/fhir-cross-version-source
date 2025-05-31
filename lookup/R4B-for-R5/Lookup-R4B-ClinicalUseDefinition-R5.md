@@ -13,7 +13,7 @@
 | ClinicalUseDefinition.identifier | UseElementSameName | ClinicalUseDefinition.identifier |
 | ClinicalUseDefinition.type | UseElementSameName | ClinicalUseDefinition.type |
 | ClinicalUseDefinition.category | UseElementSameName | ClinicalUseDefinition.category |
-| ClinicalUseDefinition.subject | UseElementSameName | ClinicalUseDefinition.subject |
+| ClinicalUseDefinition.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalUseDefinition.subject |
 | ClinicalUseDefinition.status | UseElementSameName | ClinicalUseDefinition.status |
 | ClinicalUseDefinition.contraindication | UseElementSameName | ClinicalUseDefinition.contraindication |
 | ClinicalUseDefinition.contraindication.id | UseElementSameName | ClinicalUseDefinition.contraindication.id |
@@ -28,7 +28,7 @@
 | ClinicalUseDefinition.contraindication.otherTherapy.extension | UseElementSameName | ClinicalUseDefinition.contraindication.otherTherapy.extension |
 | ClinicalUseDefinition.contraindication.otherTherapy.modifierExtension | UseElementSameName | ClinicalUseDefinition.contraindication.otherTherapy.modifierExtension |
 | ClinicalUseDefinition.contraindication.otherTherapy.relationshipType | UseElementSameName | ClinicalUseDefinition.contraindication.otherTherapy.relationshipType |
-| ClinicalUseDefinition.contraindication.otherTherapy.therapy | UseElementRenamed | ClinicalUseDefinition.contraindication.otherTherapy.treatment |
+| ClinicalUseDefinition.contraindication.otherTherapy.therapy | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalUseDefinition.contraindication.otherTherapy.therapy |
 | ClinicalUseDefinition.indication | UseElementSameName | ClinicalUseDefinition.indication |
 | ClinicalUseDefinition.indication.id | UseElementSameName | ClinicalUseDefinition.indication.id |
 | ClinicalUseDefinition.indication.extension | UseElementSameName | ClinicalUseDefinition.indication.extension |
@@ -48,7 +48,7 @@
 | ClinicalUseDefinition.interaction.interactant.id | UseElementSameName | ClinicalUseDefinition.interaction.interactant.id |
 | ClinicalUseDefinition.interaction.interactant.extension | UseElementSameName | ClinicalUseDefinition.interaction.interactant.extension |
 | ClinicalUseDefinition.interaction.interactant.modifierExtension | UseElementSameName | ClinicalUseDefinition.interaction.interactant.modifierExtension |
-| ClinicalUseDefinition.interaction.interactant.item[x] | UseElementSameName | ClinicalUseDefinition.interaction.interactant.item[x] |
+| ClinicalUseDefinition.interaction.interactant.item[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalUseDefinition.interaction.interactant.item |
 | ClinicalUseDefinition.interaction.type | UseElementSameName | ClinicalUseDefinition.interaction.type |
 | ClinicalUseDefinition.interaction.effect | UseElementSameName | ClinicalUseDefinition.interaction.effect |
 | ClinicalUseDefinition.interaction.incidence | UseElementSameName | ClinicalUseDefinition.interaction.incidence |

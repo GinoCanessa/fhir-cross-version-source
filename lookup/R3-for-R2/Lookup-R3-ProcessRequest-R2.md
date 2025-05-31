@@ -13,12 +13,12 @@
 | ProcessRequest.identifier | UseElementRenamed | ProcessRequest.identifier |
 | ProcessRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.status |
 | ProcessRequest.action | UseElementRenamed | ProcessRequest.action |
-| ProcessRequest.target | UseElementRenamed | ProcessRequest.target |
+| ProcessRequest.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.target |
 | ProcessRequest.created | UseElementRenamed | ProcessRequest.created |
-| ProcessRequest.provider | UseElementRenamed | ProcessRequest.provider |
-| ProcessRequest.organization | UseElementRenamed | ProcessRequest.organization |
-| ProcessRequest.request | UseElementRenamed | ProcessRequest.request |
-| ProcessRequest.response | UseElementRenamed | ProcessRequest.response |
+| ProcessRequest.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.provider |
+| ProcessRequest.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.organization |
+| ProcessRequest.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.request |
+| ProcessRequest.response | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.response |
 | ProcessRequest.nullify | UseElementRenamed | ProcessRequest.nullify |
 | ProcessRequest.reference | UseElementRenamed | ProcessRequest.reference |
 | ProcessRequest.item | UseElementRenamed | ProcessRequest.item |

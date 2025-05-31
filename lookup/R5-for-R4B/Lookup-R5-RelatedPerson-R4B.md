@@ -19,7 +19,7 @@
 | RelatedPerson.gender | UseElementRenamed | RelatedPerson.gender |
 | RelatedPerson.birthDate | UseElementRenamed | RelatedPerson.birthDate |
 | RelatedPerson.address | UseElementRenamed | RelatedPerson.address |
-| RelatedPerson.photo | UseElementRenamed | RelatedPerson.photo |
+| RelatedPerson.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedPerson.photo |
 | RelatedPerson.period | UseElementRenamed | RelatedPerson.period |
 | RelatedPerson.communication | UseElementRenamed | RelatedPerson.communication |
 | RelatedPerson.communication.id | UseElementRenamed | RelatedPerson.communication.id |

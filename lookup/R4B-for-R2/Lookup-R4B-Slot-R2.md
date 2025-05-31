@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Slot.id | UseElementSameName | Slot.id |
-| Slot.meta | UseElementSameName | Slot.meta |
+| Slot.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.meta |
 | Slot.implicitRules | UseElementSameName | Slot.implicitRules |
 | Slot.language | UseElementSameName | Slot.language |
 | Slot.text | UseElementSameName | Slot.text |
@@ -12,11 +12,11 @@
 | Slot.modifierExtension | UseElementSameName | Slot.modifierExtension |
 | Slot.identifier | UseElementSameName | Slot.identifier |
 | Slot.serviceCategory | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.serviceCategory |
-| Slot.serviceType | UseElementSameName | Slot.type |
+| Slot.serviceType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.serviceType |
 | Slot.specialty | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.specialty |
 | Slot.appointmentType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.appointmentType |
-| Slot.schedule | UseElementSameName | Slot.schedule |
-| Slot.status | UseElementSameName | Slot.freeBusyType |
+| Slot.schedule | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.schedule |
+| Slot.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Slot.status |
 | Slot.start | UseElementSameName | Slot.start |
 | Slot.end | UseElementSameName | Slot.end |
 | Slot.overbooked | UseElementSameName | Slot.overbooked |

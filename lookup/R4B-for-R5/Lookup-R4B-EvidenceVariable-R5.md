@@ -28,7 +28,7 @@
 | EvidenceVariable.editor | UseElementSameName | EvidenceVariable.editor |
 | EvidenceVariable.reviewer | UseElementSameName | EvidenceVariable.reviewer |
 | EvidenceVariable.endorser | UseElementSameName | EvidenceVariable.endorser |
-| EvidenceVariable.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.relatedArtifact |
+| EvidenceVariable.relatedArtifact | UseElementSameName | EvidenceVariable.relatedArtifact |
 | EvidenceVariable.actual | UseElementSameName | EvidenceVariable.actual |
 | EvidenceVariable.characteristicCombination | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristicCombination |
 | EvidenceVariable.characteristic | UseElementSameName | EvidenceVariable.characteristic |
@@ -36,7 +36,7 @@
 | EvidenceVariable.characteristic.extension | UseElementSameName | EvidenceVariable.characteristic.extension |
 | EvidenceVariable.characteristic.modifierExtension | UseElementSameName | EvidenceVariable.characteristic.modifierExtension |
 | EvidenceVariable.characteristic.description | UseElementSameName | EvidenceVariable.characteristic.description |
-| EvidenceVariable.characteristic.definition[x] | UseElementRenamed | EvidenceVariable.characteristic.definitionReference |
+| EvidenceVariable.characteristic.definition[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.definition |
 | EvidenceVariable.characteristic.method | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.method |
 | EvidenceVariable.characteristic.device | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.device |
 | EvidenceVariable.characteristic.exclude | UseElementSameName | EvidenceVariable.characteristic.exclude |

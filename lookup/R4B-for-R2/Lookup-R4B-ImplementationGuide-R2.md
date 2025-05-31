@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ImplementationGuide.id | UseElementSameName | ImplementationGuide.id |
-| ImplementationGuide.meta | UseElementSameName | ImplementationGuide.meta |
+| ImplementationGuide.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.meta |
 | ImplementationGuide.implicitRules | UseElementSameName | ImplementationGuide.implicitRules |
 | ImplementationGuide.language | UseElementSameName | ImplementationGuide.language |
 | ImplementationGuide.text | UseElementSameName | ImplementationGuide.text |
@@ -14,23 +14,23 @@
 | ImplementationGuide.version | UseElementSameName | ImplementationGuide.version |
 | ImplementationGuide.name | UseElementSameName | ImplementationGuide.name |
 | ImplementationGuide.title | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.title |
-| ImplementationGuide.status | UseElementSameName | ImplementationGuide.status |
+| ImplementationGuide.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.status |
 | ImplementationGuide.experimental | UseElementSameName | ImplementationGuide.experimental |
 | ImplementationGuide.date | UseElementSameName | ImplementationGuide.date |
 | ImplementationGuide.publisher | UseElementSameName | ImplementationGuide.publisher |
-| ImplementationGuide.contact | UseElementSameName | ImplementationGuide.contact |
+| ImplementationGuide.contact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.contact |
 | ImplementationGuide.description | UseElementSameName | ImplementationGuide.description |
-| ImplementationGuide.useContext | UseElementSameName | ImplementationGuide.useContext |
+| ImplementationGuide.useContext | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.useContext |
 | ImplementationGuide.jurisdiction | UseElementSameName | ImplementationGuide.useContext |
 | ImplementationGuide.copyright | UseElementSameName | ImplementationGuide.copyright |
 | ImplementationGuide.packageId | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.packageId |
 | ImplementationGuide.license | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.license |
-| ImplementationGuide.fhirVersion | UseElementSameName | ImplementationGuide.fhirVersion |
+| ImplementationGuide.fhirVersion | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependsOn | UseElementSameName | ImplementationGuide.dependency |
 | ImplementationGuide.dependsOn.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.id |
 | ImplementationGuide.dependsOn.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.extension |
 | ImplementationGuide.dependsOn.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.modifierExtension |
-| ImplementationGuide.dependsOn.uri | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.uri |
+| ImplementationGuide.dependsOn.uri | UseElementSameName | ImplementationGuide.dependency.uri |
 | ImplementationGuide.dependsOn.packageId | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId |
 | ImplementationGuide.dependsOn.version | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.dependsOn.version |
 | ImplementationGuide.global | UseElementSameName | ImplementationGuide.global |
@@ -38,7 +38,7 @@
 | ImplementationGuide.global.extension | UseElementSameName | ImplementationGuide.global.extension |
 | ImplementationGuide.global.modifierExtension | UseElementSameName | ImplementationGuide.global.modifierExtension |
 | ImplementationGuide.global.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.global.type |
-| ImplementationGuide.global.profile | UseElementSameName | ImplementationGuide.global.profile |
+| ImplementationGuide.global.profile | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.global.profile |
 | ImplementationGuide.definition | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.definition |
 | ImplementationGuide.definition.id | UseExtensionFromAncestor | - |
 | ImplementationGuide.definition.extension | UseExtensionFromAncestor | - |

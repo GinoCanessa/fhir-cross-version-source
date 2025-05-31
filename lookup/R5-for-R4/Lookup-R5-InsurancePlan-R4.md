@@ -19,7 +19,7 @@
 | InsurancePlan.ownedBy | UseElementSameName | InsurancePlan.ownedBy |
 | InsurancePlan.administeredBy | UseElementSameName | InsurancePlan.administeredBy |
 | InsurancePlan.coverageArea | UseElementSameName | InsurancePlan.coverageArea |
-| InsurancePlan.contact | UseElementSameName | InsurancePlan.contact |
+| InsurancePlan.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-InsurancePlan.contact |
 | InsurancePlan.endpoint | UseElementSameName | InsurancePlan.endpoint |
 | InsurancePlan.network | UseElementSameName | InsurancePlan.network |
 | InsurancePlan.coverage | UseElementSameName | InsurancePlan.coverage |

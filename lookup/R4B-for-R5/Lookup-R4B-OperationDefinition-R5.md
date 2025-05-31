@@ -30,7 +30,7 @@
 | OperationDefinition.base | UseElementSameName | OperationDefinition.base |
 | OperationDefinition.resource | UseElementSameName | OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
-| OperationDefinition.type | UseElementSameName | OperationDefinition.type |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementSameName | OperationDefinition.instance |
 | OperationDefinition.inputProfile | UseElementSameName | OperationDefinition.inputProfile |
 | OperationDefinition.outputProfile | UseElementSameName | OperationDefinition.outputProfile |

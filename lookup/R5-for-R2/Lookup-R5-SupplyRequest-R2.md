@@ -3,17 +3,17 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | SupplyRequest.id | UseElementSameName | SupplyRequest.id |
-| SupplyRequest.meta | UseElementSameName | SupplyRequest.meta |
+| SupplyRequest.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.meta |
 | SupplyRequest.implicitRules | UseElementSameName | SupplyRequest.implicitRules |
 | SupplyRequest.language | UseElementSameName | SupplyRequest.language |
 | SupplyRequest.text | UseElementSameName | SupplyRequest.text |
 | SupplyRequest.contained | UseElementSameName | SupplyRequest.contained |
-| SupplyRequest.extension | UseElementSameName | SupplyRequest.extension |
+| SupplyRequest.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.extension |
 | SupplyRequest.modifierExtension | UseElementSameName | SupplyRequest.modifierExtension |
-| SupplyRequest.identifier | UseElementSameName | SupplyRequest.identifier |
+| SupplyRequest.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.identifier |
 | SupplyRequest.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.status |
 | SupplyRequest.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.basedOn |
-| SupplyRequest.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.category |
+| SupplyRequest.category | UseElementSameName | SupplyRequest.kind |
 | SupplyRequest.priority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.priority |
 | SupplyRequest.deliverFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.deliverFor |
 | SupplyRequest.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.item |
@@ -24,7 +24,7 @@
 | SupplyRequest.parameter.modifierExtension | UseExtensionFromAncestor | - |
 | SupplyRequest.parameter.code | UseExtensionFromAncestor | - |
 | SupplyRequest.parameter.value[x] | UseExtensionFromAncestor | - |
-| SupplyRequest.occurrence[x] | UseElementSameName | SupplyRequest.when.schedule |
+| SupplyRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.occurrence |
 | SupplyRequest.authoredOn | UseElementSameName | SupplyRequest.date |
 | SupplyRequest.requester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.requester |
 | SupplyRequest.supplier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.supplier |

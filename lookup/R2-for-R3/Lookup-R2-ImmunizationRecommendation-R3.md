@@ -11,7 +11,7 @@
 | ImmunizationRecommendation.extension | UseElementSameName | ImmunizationRecommendation.extension |
 | ImmunizationRecommendation.modifierExtension | UseElementSameName | ImmunizationRecommendation.modifierExtension |
 | ImmunizationRecommendation.identifier | UseElementSameName | ImmunizationRecommendation.identifier |
-| ImmunizationRecommendation.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImmunizationRecommendation.patient |
+| ImmunizationRecommendation.patient | UseElementSameName | ImmunizationRecommendation.patient |
 | ImmunizationRecommendation.recommendation | UseElementSameName | ImmunizationRecommendation.recommendation |
 | ImmunizationRecommendation.recommendation.id | UseElementSameName | ImmunizationRecommendation.recommendation.id |
 | ImmunizationRecommendation.recommendation.extension | UseElementSameName | ImmunizationRecommendation.recommendation.extension |
@@ -30,9 +30,9 @@
 | ImmunizationRecommendation.recommendation.protocol.id | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.id |
 | ImmunizationRecommendation.recommendation.protocol.extension | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.extension |
 | ImmunizationRecommendation.recommendation.protocol.modifierExtension | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.modifierExtension |
-| ImmunizationRecommendation.recommendation.protocol.doseSequence | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.doseSequence |
+| ImmunizationRecommendation.recommendation.protocol.doseSequence | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation.protocol.doseSequence |
 | ImmunizationRecommendation.recommendation.protocol.description | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.description |
-| ImmunizationRecommendation.recommendation.protocol.authority | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation.protocol.authority |
+| ImmunizationRecommendation.recommendation.protocol.authority | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.authority |
 | ImmunizationRecommendation.recommendation.protocol.series | UseElementSameName | ImmunizationRecommendation.recommendation.protocol.series |
-| ImmunizationRecommendation.recommendation.supportingImmunization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation.supportingImmunization |
-| ImmunizationRecommendation.recommendation.supportingPatientInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImmunizationRecommendation.recommendation.supportingPatientInformation |
+| ImmunizationRecommendation.recommendation.supportingImmunization | UseElementSameName | ImmunizationRecommendation.recommendation.supportingImmunization |
+| ImmunizationRecommendation.recommendation.supportingPatientInformation | UseElementSameName | ImmunizationRecommendation.recommendation.supportingPatientInformation |

@@ -11,7 +11,7 @@
 | Endpoint.extension | UseElementSameName | Endpoint.extension |
 | Endpoint.modifierExtension | UseElementSameName | Endpoint.modifierExtension |
 | Endpoint.identifier | UseElementSameName | Endpoint.identifier |
-| Endpoint.status | UseElementSameName | Endpoint.status |
+| Endpoint.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Endpoint.status |
 | Endpoint.connectionType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Endpoint.connectionType |
 | Endpoint.name | UseElementSameName | Endpoint.name |
 | Endpoint.managingOrganization | UseElementSameName | Endpoint.managingOrganization |

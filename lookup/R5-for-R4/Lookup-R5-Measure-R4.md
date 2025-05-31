@@ -39,7 +39,7 @@
 | Measure.editor | UseElementSameName | Measure.editor |
 | Measure.reviewer | UseElementSameName | Measure.reviewer |
 | Measure.endorser | UseElementSameName | Measure.endorser |
-| Measure.relatedArtifact | UseElementSameName | Measure.relatedArtifact |
+| Measure.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Measure.relatedArtifact |
 | Measure.library | UseElementSameName | Measure.library |
 | Measure.disclaimer | UseElementSameName | Measure.disclaimer |
 | Measure.scoring | UseElementSameName | Measure.scoring |

@@ -6,6 +6,6 @@
 | Meta.extension | UseElementSameName | Meta.extension |
 | Meta.versionId | UseElementSameName | Meta.versionId |
 | Meta.lastUpdated | UseElementSameName | Meta.lastUpdated |
-| Meta.profile | UseElementSameName | Meta.profile |
+| Meta.profile | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Meta.profile |
 | Meta.security | UseElementSameName | Meta.security |
 | Meta.tag | UseElementSameName | Meta.tag |

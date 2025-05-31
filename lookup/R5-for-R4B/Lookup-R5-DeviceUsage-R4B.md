@@ -12,7 +12,7 @@
 | DeviceUsage.modifierExtension | UseElementRenamed | DeviceUseStatement.modifierExtension |
 | DeviceUsage.identifier | UseElementRenamed | DeviceUseStatement.identifier |
 | DeviceUsage.basedOn | UseElementRenamed | DeviceUseStatement.basedOn |
-| DeviceUsage.status | UseElementRenamed | DeviceUseStatement.status |
+| DeviceUsage.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.status |
 | DeviceUsage.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.category |
 | DeviceUsage.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.patient |
 | DeviceUsage.derivedFrom | UseElementRenamed | DeviceUseStatement.derivedFrom |
@@ -28,7 +28,7 @@
 | DeviceUsage.adherence.code | UseExtensionFromAncestor | - |
 | DeviceUsage.adherence.reason | UseExtensionFromAncestor | - |
 | DeviceUsage.informationSource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.informationSource |
-| DeviceUsage.device | UseElementRenamed | DeviceUseStatement.device |
+| DeviceUsage.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.device |
 | DeviceUsage.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.reason |
-| DeviceUsage.bodySite | UseElementRenamed | DeviceUseStatement.bodySite |
+| DeviceUsage.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.bodySite |
 | DeviceUsage.note | UseElementRenamed | DeviceUseStatement.note |

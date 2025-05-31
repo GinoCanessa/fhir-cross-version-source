@@ -45,4 +45,4 @@
 | Bundle.entry.response.location | UseElementSameName | Bundle.entry.response.location |
 | Bundle.entry.response.etag | UseElementSameName | Bundle.entry.response.etag |
 | Bundle.entry.response.lastModified | UseElementSameName | Bundle.entry.response.lastModified |
-| Bundle.signature | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Bundle.signature |
+| Bundle.signature | UseElementSameName | Bundle.signature |

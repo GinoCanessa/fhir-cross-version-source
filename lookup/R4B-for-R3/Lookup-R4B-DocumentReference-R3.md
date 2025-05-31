@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DocumentReference.id | UseElementSameName | DocumentReference.id |
-| DocumentReference.meta | UseElementSameName | DocumentReference.meta |
+| DocumentReference.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.meta |
 | DocumentReference.implicitRules | UseElementSameName | DocumentReference.implicitRules |
 | DocumentReference.language | UseElementSameName | DocumentReference.language |
 | DocumentReference.text | UseElementSameName | DocumentReference.text |
@@ -15,18 +15,18 @@
 | DocumentReference.status | UseElementSameName | DocumentReference.status |
 | DocumentReference.docStatus | UseElementSameName | DocumentReference.docStatus |
 | DocumentReference.type | UseElementSameName | DocumentReference.type |
-| DocumentReference.category | UseElementSameName | DocumentReference.class |
-| DocumentReference.subject | UseElementSameName | DocumentReference.subject |
+| DocumentReference.category | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.category |
+| DocumentReference.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.subject |
 | DocumentReference.date | UseElementSameName | DocumentReference.indexed |
 | DocumentReference.author | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.author |
 | DocumentReference.authenticator | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.authenticator |
-| DocumentReference.custodian | UseElementSameName | DocumentReference.custodian |
+| DocumentReference.custodian | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.custodian |
 | DocumentReference.relatesTo | UseElementSameName | DocumentReference.relatesTo |
 | DocumentReference.relatesTo.id | UseElementSameName | DocumentReference.relatesTo.id |
 | DocumentReference.relatesTo.extension | UseElementSameName | DocumentReference.relatesTo.extension |
 | DocumentReference.relatesTo.modifierExtension | UseElementSameName | DocumentReference.relatesTo.modifierExtension |
 | DocumentReference.relatesTo.code | UseElementSameName | DocumentReference.relatesTo.code |
-| DocumentReference.relatesTo.target | UseElementSameName | DocumentReference.relatesTo.target |
+| DocumentReference.relatesTo.target | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.relatesTo.target |
 | DocumentReference.description | UseElementSameName | DocumentReference.description |
 | DocumentReference.securityLabel | UseElementSameName | DocumentReference.securityLabel |
 | DocumentReference.content | UseElementSameName | DocumentReference.content |
@@ -44,5 +44,5 @@
 | DocumentReference.context.period | UseElementSameName | DocumentReference.context.period |
 | DocumentReference.context.facilityType | UseElementSameName | DocumentReference.context.facilityType |
 | DocumentReference.context.practiceSetting | UseElementSameName | DocumentReference.context.practiceSetting |
-| DocumentReference.context.sourcePatientInfo | UseElementSameName | DocumentReference.context.sourcePatientInfo |
-| DocumentReference.context.related | UseElementSameName | DocumentReference.context.related |
+| DocumentReference.context.sourcePatientInfo | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.context.sourcePatientInfo |
+| DocumentReference.context.related | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.context.related |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MedicationRequest.id | UseElementSameName | MedicationOrder.id |
-| MedicationRequest.meta | UseElementSameName | MedicationOrder.meta |
+| MedicationRequest.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.meta |
 | MedicationRequest.implicitRules | UseElementSameName | MedicationOrder.implicitRules |
 | MedicationRequest.language | UseElementSameName | MedicationOrder.language |
 | MedicationRequest.text | UseElementSameName | MedicationOrder.text |
@@ -21,7 +21,7 @@
 | MedicationRequest.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.category |
 | MedicationRequest.priority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.priority |
 | MedicationRequest.doNotPerform | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.doNotPerform |
-| MedicationRequest.medication | UseElementRenamed | MedicationOrder.medication[x] |
+| MedicationRequest.medication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.medication |
 | MedicationRequest.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.subject |
 | MedicationRequest.informationSource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.informationSource |
 | MedicationRequest.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.encounter |
@@ -36,10 +36,10 @@
 | MedicationRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.reason |
 | MedicationRequest.courseOfTherapyType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.courseOfTherapyType |
 | MedicationRequest.insurance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.insurance |
-| MedicationRequest.note | UseElementSameName | MedicationOrder.note |
+| MedicationRequest.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.note |
 | MedicationRequest.renderedDosageInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction |
 | MedicationRequest.effectiveDosePeriod | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.effectiveDosePeriod |
-| MedicationRequest.dosageInstruction | UseElementSameName | MedicationOrder.dosageInstruction |
+| MedicationRequest.dosageInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dosageInstruction |
 | MedicationRequest.dispenseRequest | UseElementSameName | MedicationOrder.dispenseRequest |
 | MedicationRequest.dispenseRequest.id | UseElementSameName | MedicationOrder.dispenseRequest.id |
 | MedicationRequest.dispenseRequest.extension | UseElementSameName | MedicationOrder.dispenseRequest.extension |
@@ -52,9 +52,9 @@
 | MedicationRequest.dispenseRequest.initialFill.duration | UseExtensionFromAncestor | - |
 | MedicationRequest.dispenseRequest.dispenseInterval | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenseInterval |
 | MedicationRequest.dispenseRequest.validityPeriod | UseElementSameName | MedicationOrder.dispenseRequest.validityPeriod |
-| MedicationRequest.dispenseRequest.numberOfRepeatsAllowed | UseElementSameName | MedicationOrder.dispenseRequest.numberOfRepeatsAllowed |
+| MedicationRequest.dispenseRequest.numberOfRepeatsAllowed | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.numberOfRepeatsAllowed |
 | MedicationRequest.dispenseRequest.quantity | UseElementSameName | MedicationOrder.dispenseRequest.quantity |
-| MedicationRequest.dispenseRequest.expectedSupplyDuration | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.expectedSupplyDuration |
+| MedicationRequest.dispenseRequest.expectedSupplyDuration | UseElementSameName | MedicationOrder.dispenseRequest.expectedSupplyDuration |
 | MedicationRequest.dispenseRequest.dispenser | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenser |
 | MedicationRequest.dispenseRequest.dispenserInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction |
 | MedicationRequest.dispenseRequest.doseAdministrationAid | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.doseAdministrationAid |

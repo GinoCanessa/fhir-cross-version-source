@@ -28,7 +28,7 @@
 | StructureDefinition.copyright | UseElementRenamed | StructureDefinition.copyright |
 | StructureDefinition.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.copyrightLabel |
 | StructureDefinition.keyword | UseElementRenamed | StructureDefinition.keyword |
-| StructureDefinition.fhirVersion | UseElementRenamed | StructureDefinition.fhirVersion |
+| StructureDefinition.fhirVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.fhirVersion |
 | StructureDefinition.mapping | UseElementRenamed | StructureDefinition.mapping |
 | StructureDefinition.mapping.id | UseElementRenamed | StructureDefinition.mapping.id |
 | StructureDefinition.mapping.extension | UseElementRenamed | StructureDefinition.mapping.extension |
@@ -53,9 +53,9 @@
 | StructureDefinition.snapshot.id | UseElementRenamed | StructureDefinition.snapshot.id |
 | StructureDefinition.snapshot.extension | UseElementRenamed | StructureDefinition.snapshot.extension |
 | StructureDefinition.snapshot.modifierExtension | UseElementRenamed | StructureDefinition.snapshot.modifierExtension |
-| StructureDefinition.snapshot.element | UseElementRenamed | StructureDefinition.snapshot.element |
+| StructureDefinition.snapshot.element | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.snapshot.element |
 | StructureDefinition.differential | UseElementRenamed | StructureDefinition.differential |
 | StructureDefinition.differential.id | UseElementRenamed | StructureDefinition.differential.id |
 | StructureDefinition.differential.extension | UseElementRenamed | StructureDefinition.differential.extension |
 | StructureDefinition.differential.modifierExtension | UseElementRenamed | StructureDefinition.differential.modifierExtension |
-| StructureDefinition.differential.element | UseElementRenamed | StructureDefinition.differential.element |
+| StructureDefinition.differential.element | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.differential.element |

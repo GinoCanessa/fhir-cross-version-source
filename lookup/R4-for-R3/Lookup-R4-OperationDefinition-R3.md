@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | OperationDefinition.id | UseElementSameName | OperationDefinition.id |
-| OperationDefinition.meta | UseElementSameName | OperationDefinition.meta |
+| OperationDefinition.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.meta |
 | OperationDefinition.implicitRules | UseElementSameName | OperationDefinition.implicitRules |
 | OperationDefinition.language | UseElementSameName | OperationDefinition.language |
 | OperationDefinition.text | UseElementSameName | OperationDefinition.text |
@@ -27,10 +27,10 @@
 | OperationDefinition.affectsState | UseElementSameName | OperationDefinition.idempotent |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
 | OperationDefinition.comment | UseElementSameName | OperationDefinition.comment |
-| OperationDefinition.base | UseElementSameName | OperationDefinition.base |
-| OperationDefinition.resource | UseElementSameName | OperationDefinition.resource |
+| OperationDefinition.base | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.base |
+| OperationDefinition.resource | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
-| OperationDefinition.type | UseElementSameName | OperationDefinition.type |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementSameName | OperationDefinition.instance |
 | OperationDefinition.inputProfile | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.inputProfile |
 | OperationDefinition.outputProfile | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.outputProfile |
@@ -43,15 +43,15 @@
 | OperationDefinition.parameter.min | UseElementSameName | OperationDefinition.parameter.min |
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
-| OperationDefinition.parameter.type | UseElementSameName | OperationDefinition.parameter.type |
-| OperationDefinition.parameter.targetProfile | UseElementSameName | OperationDefinition.parameter.profile |
-| OperationDefinition.parameter.searchType | UseElementSameName | OperationDefinition.parameter.searchType |
+| OperationDefinition.parameter.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.type |
+| OperationDefinition.parameter.targetProfile | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.targetProfile |
+| OperationDefinition.parameter.searchType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |
 | OperationDefinition.parameter.binding.extension | UseElementSameName | OperationDefinition.parameter.binding.extension |
 | OperationDefinition.parameter.binding.modifierExtension | UseElementSameName | OperationDefinition.parameter.binding.modifierExtension |
 | OperationDefinition.parameter.binding.strength | UseElementSameName | OperationDefinition.parameter.binding.strength |
-| OperationDefinition.parameter.binding.valueSet | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.binding.valueSet |
+| OperationDefinition.parameter.binding.valueSet | UseElementSameName | OperationDefinition.parameter.binding.valueSet[x] |
 | OperationDefinition.parameter.referencedFrom | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.referencedFrom |
 | OperationDefinition.parameter.referencedFrom.id | UseExtensionFromAncestor | - |
 | OperationDefinition.parameter.referencedFrom.extension | UseExtensionFromAncestor | - |

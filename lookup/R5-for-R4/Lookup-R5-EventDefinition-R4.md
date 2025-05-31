@@ -38,5 +38,5 @@
 | EventDefinition.editor | UseElementSameName | EventDefinition.editor |
 | EventDefinition.reviewer | UseElementSameName | EventDefinition.reviewer |
 | EventDefinition.endorser | UseElementSameName | EventDefinition.endorser |
-| EventDefinition.relatedArtifact | UseElementSameName | EventDefinition.relatedArtifact |
-| EventDefinition.trigger | UseElementSameName | EventDefinition.trigger |
+| EventDefinition.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EventDefinition.relatedArtifact |
+| EventDefinition.trigger | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EventDefinition.trigger |

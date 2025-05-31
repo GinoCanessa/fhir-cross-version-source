@@ -40,7 +40,7 @@
 | Questionnaire.item.code | UseElementSameName | Questionnaire.item.code |
 | Questionnaire.item.prefix | UseElementSameName | Questionnaire.item.prefix |
 | Questionnaire.item.text | UseElementSameName | Questionnaire.item.text |
-| Questionnaire.item.type | UseElementRenamed | Questionnaire.item.answerConstraint |
+| Questionnaire.item.type | UseElementSameName | Questionnaire.item.type |
 | Questionnaire.item.enableWhen | UseElementSameName | Questionnaire.item.enableWhen |
 | Questionnaire.item.enableWhen.id | UseElementSameName | Questionnaire.item.enableWhen.id |
 | Questionnaire.item.enableWhen.extension | UseElementSameName | Questionnaire.item.enableWhen.extension |
@@ -64,5 +64,5 @@
 | Questionnaire.item.initial.id | UseElementSameName | Questionnaire.item.initial.id |
 | Questionnaire.item.initial.extension | UseElementSameName | Questionnaire.item.initial.extension |
 | Questionnaire.item.initial.modifierExtension | UseElementSameName | Questionnaire.item.initial.modifierExtension |
-| Questionnaire.item.initial.value[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Questionnaire.item.initial.value |
+| Questionnaire.item.initial.value[x] | UseElementSameName | Questionnaire.item.initial.value[x] |
 | Questionnaire.item.item | UseElementSameName | Questionnaire.item.item |

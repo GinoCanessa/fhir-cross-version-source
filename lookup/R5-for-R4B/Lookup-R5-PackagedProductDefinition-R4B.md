@@ -53,4 +53,4 @@
 | PackagedProductDefinition.packaging.containedItem.item | UseExtensionFromAncestor | - |
 | PackagedProductDefinition.packaging.containedItem.amount | UseExtensionFromAncestor | - |
 | PackagedProductDefinition.packaging.packaging | UseExtensionFromAncestor | - |
-| PackagedProductDefinition.characteristic | UseElementRenamed | PackagedProductDefinition.characteristic |
+| PackagedProductDefinition.characteristic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition.characteristic |

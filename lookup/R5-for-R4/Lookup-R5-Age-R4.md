@@ -5,7 +5,7 @@
 | Age.id | UseElementSameName | Age.id |
 | Age.extension | UseElementSameName | Age.extension |
 | Age.value | UseElementSameName | Age.value |
-| Age.comparator | UseElementSameName | Age.comparator |
+| Age.comparator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Age.comparator |
 | Age.unit | UseElementSameName | Age.unit |
 | Age.system | UseElementSameName | Age.system |
 | Age.code | UseElementSameName | Age.code |

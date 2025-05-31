@@ -18,7 +18,7 @@
 | Location.description | UseElementSameName | Location.description |
 | Location.mode | UseElementSameName | Location.mode |
 | Location.type | UseElementSameName | Location.type |
-| Location.contact | UseElementSameName | Location.telecom |
+| Location.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Location.contact |
 | Location.address | UseElementSameName | Location.address |
 | Location.form | UseElementSameName | Location.physicalType |
 | Location.position | UseElementSameName | Location.position |
@@ -31,6 +31,6 @@
 | Location.managingOrganization | UseElementSameName | Location.managingOrganization |
 | Location.partOf | UseElementSameName | Location.partOf |
 | Location.characteristic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Location.characteristic |
-| Location.hoursOfOperation | UseElementSameName | Location.hoursOfOperation |
+| Location.hoursOfOperation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Location.hoursOfOperation |
 | Location.virtualService | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Location.virtualService |
 | Location.endpoint | UseElementSameName | Location.endpoint |

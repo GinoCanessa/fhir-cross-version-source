@@ -26,7 +26,7 @@
 | StructureDefinition.purpose | UseElementSameName | StructureDefinition.purpose |
 | StructureDefinition.copyright | UseElementSameName | StructureDefinition.copyright |
 | StructureDefinition.keyword | UseElementSameName | StructureDefinition.keyword |
-| StructureDefinition.fhirVersion | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-StructureDefinition.fhirVersion |
+| StructureDefinition.fhirVersion | UseElementSameName | StructureDefinition.fhirVersion |
 | StructureDefinition.mapping | UseElementSameName | StructureDefinition.mapping |
 | StructureDefinition.mapping.id | UseElementSameName | StructureDefinition.mapping.id |
 | StructureDefinition.mapping.extension | UseElementSameName | StructureDefinition.mapping.extension |
@@ -51,9 +51,9 @@
 | StructureDefinition.snapshot.id | UseElementSameName | StructureDefinition.snapshot.id |
 | StructureDefinition.snapshot.extension | UseElementSameName | StructureDefinition.snapshot.extension |
 | StructureDefinition.snapshot.modifierExtension | UseElementSameName | StructureDefinition.snapshot.modifierExtension |
-| StructureDefinition.snapshot.element | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-StructureDefinition.snapshot.element |
+| StructureDefinition.snapshot.element | UseElementSameName | StructureDefinition.snapshot.element |
 | StructureDefinition.differential | UseElementSameName | StructureDefinition.differential |
 | StructureDefinition.differential.id | UseElementSameName | StructureDefinition.differential.id |
 | StructureDefinition.differential.extension | UseElementSameName | StructureDefinition.differential.extension |
 | StructureDefinition.differential.modifierExtension | UseElementSameName | StructureDefinition.differential.modifierExtension |
-| StructureDefinition.differential.element | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-StructureDefinition.differential.element |
+| StructureDefinition.differential.element | UseElementSameName | StructureDefinition.differential.element |

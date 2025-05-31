@@ -77,4 +77,4 @@
 | MedicinalProductDefinition.characteristic.extension | UseElementSameName | MedicinalProductDefinition.characteristic.extension |
 | MedicinalProductDefinition.characteristic.modifierExtension | UseElementSameName | MedicinalProductDefinition.characteristic.modifierExtension |
 | MedicinalProductDefinition.characteristic.type | UseElementSameName | MedicinalProductDefinition.characteristic.type |
-| MedicinalProductDefinition.characteristic.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicinalProductDefinition.characteristic.value |
+| MedicinalProductDefinition.characteristic.value[x] | UseElementSameName | MedicinalProductDefinition.characteristic.value[x] |

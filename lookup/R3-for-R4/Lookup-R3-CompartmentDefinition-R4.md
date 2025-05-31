@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CompartmentDefinition.id | UseElementSameName | CompartmentDefinition.id |
-| CompartmentDefinition.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CompartmentDefinition.meta |
+| CompartmentDefinition.meta | UseElementSameName | CompartmentDefinition.meta |
 | CompartmentDefinition.implicitRules | UseElementSameName | CompartmentDefinition.implicitRules |
 | CompartmentDefinition.language | UseElementSameName | CompartmentDefinition.language |
 | CompartmentDefinition.text | UseElementSameName | CompartmentDefinition.text |
@@ -28,6 +28,6 @@
 | CompartmentDefinition.resource.id | UseElementSameName | CompartmentDefinition.resource.id |
 | CompartmentDefinition.resource.extension | UseElementSameName | CompartmentDefinition.resource.extension |
 | CompartmentDefinition.resource.modifierExtension | UseElementSameName | CompartmentDefinition.resource.modifierExtension |
-| CompartmentDefinition.resource.code | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CompartmentDefinition.resource.code |
+| CompartmentDefinition.resource.code | UseElementSameName | CompartmentDefinition.resource.code |
 | CompartmentDefinition.resource.param | UseElementSameName | CompartmentDefinition.resource.param |
 | CompartmentDefinition.resource.documentation | UseElementSameName | CompartmentDefinition.resource.documentation |

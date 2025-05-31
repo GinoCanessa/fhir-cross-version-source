@@ -14,14 +14,14 @@
 | ResearchStudy.title | UseElementSameName | ResearchStudy.title |
 | ResearchStudy.protocol | UseElementSameName | ResearchStudy.protocol |
 | ResearchStudy.partOf | UseElementSameName | ResearchStudy.partOf |
-| ResearchStudy.status | UseElementSameName | ResearchStudy.status |
+| ResearchStudy.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.status |
 | ResearchStudy.primaryPurposeType | UseElementSameName | ResearchStudy.primaryPurposeType |
 | ResearchStudy.phase | UseElementSameName | ResearchStudy.phase |
 | ResearchStudy.category | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.category |
-| ResearchStudy.focus | UseElementSameName | ResearchStudy.focus |
+| ResearchStudy.focus | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.focus |
 | ResearchStudy.condition | UseElementSameName | ResearchStudy.condition |
 | ResearchStudy.contact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.contact |
-| ResearchStudy.relatedArtifact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.relatedArtifact |
+| ResearchStudy.relatedArtifact | UseElementSameName | ResearchStudy.relatedArtifact |
 | ResearchStudy.keyword | UseElementSameName | ResearchStudy.keyword |
 | ResearchStudy.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.location |
 | ResearchStudy.description | UseElementSameName | ResearchStudy.description |
@@ -29,7 +29,7 @@
 | ResearchStudy.period | UseElementSameName | ResearchStudy.period |
 | ResearchStudy.sponsor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.sponsor |
 | ResearchStudy.principalInvestigator | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.principalInvestigator |
-| ResearchStudy.site | UseElementSameName | ResearchStudy.site |
+| ResearchStudy.site | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.site |
 | ResearchStudy.reasonStopped | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.reasonStopped |
 | ResearchStudy.note | UseElementSameName | ResearchStudy.note |
 | ResearchStudy.arm | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchStudy.arm |

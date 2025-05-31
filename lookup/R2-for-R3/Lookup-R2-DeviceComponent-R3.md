@@ -13,8 +13,8 @@
 | DeviceComponent.type | UseElementSameName | DeviceComponent.type |
 | DeviceComponent.identifier | UseElementSameName | DeviceComponent.identifier |
 | DeviceComponent.lastSystemChange | UseElementSameName | DeviceComponent.lastSystemChange |
-| DeviceComponent.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceComponent.source |
-| DeviceComponent.parent | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceComponent.parent |
+| DeviceComponent.source | UseElementSameName | DeviceComponent.source |
+| DeviceComponent.parent | UseElementSameName | DeviceComponent.parent |
 | DeviceComponent.operationalStatus | UseElementSameName | DeviceComponent.operationalStatus |
 | DeviceComponent.parameterGroup | UseElementSameName | DeviceComponent.parameterGroup |
 | DeviceComponent.measurementPrinciple | UseElementSameName | DeviceComponent.measurementPrinciple |

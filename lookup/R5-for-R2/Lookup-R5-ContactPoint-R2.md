@@ -4,7 +4,7 @@
 | -------------- | ----- | ------ |
 | ContactPoint.id | UseElementSameName | ContactPoint.id |
 | ContactPoint.extension | UseElementSameName | ContactPoint.extension |
-| ContactPoint.system | UseElementSameName | ContactPoint.system |
+| ContactPoint.system | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ContactPoint.system |
 | ContactPoint.value | UseElementSameName | ContactPoint.value |
 | ContactPoint.use | UseElementSameName | ContactPoint.use |
 | ContactPoint.rank | UseElementSameName | ContactPoint.rank |

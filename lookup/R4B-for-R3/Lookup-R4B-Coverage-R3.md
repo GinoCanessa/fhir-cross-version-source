@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Coverage.id | UseElementSameName | Coverage.id |
-| Coverage.meta | UseElementSameName | Coverage.meta |
+| Coverage.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.meta |
 | Coverage.implicitRules | UseElementSameName | Coverage.implicitRules |
 | Coverage.language | UseElementSameName | Coverage.language |
 | Coverage.text | UseElementSameName | Coverage.text |
@@ -13,21 +13,21 @@
 | Coverage.identifier | UseElementSameName | Coverage.identifier |
 | Coverage.status | UseElementSameName | Coverage.status |
 | Coverage.type | UseElementSameName | Coverage.type |
-| Coverage.policyHolder | UseElementSameName | Coverage.policyHolder |
-| Coverage.subscriber | UseElementSameName | Coverage.subscriber |
+| Coverage.policyHolder | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.policyHolder |
+| Coverage.subscriber | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.subscriber |
 | Coverage.subscriberId | UseElementSameName | Coverage.subscriberId |
-| Coverage.beneficiary | UseElementSameName | Coverage.beneficiary |
+| Coverage.beneficiary | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.beneficiary |
 | Coverage.dependent | UseElementSameName | Coverage.dependent |
 | Coverage.relationship | UseElementSameName | Coverage.relationship |
 | Coverage.period | UseElementSameName | Coverage.period |
-| Coverage.payor | UseElementSameName | Coverage.payor |
-| Coverage.class | UseElementSameName | Coverage.grouping |
-| Coverage.class.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.id |
-| Coverage.class.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.extension |
-| Coverage.class.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.modifierExtension |
-| Coverage.class.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.type |
-| Coverage.class.value | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.value |
-| Coverage.class.name | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class.name |
+| Coverage.payor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.payor |
+| Coverage.class | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.class |
+| Coverage.class.id | UseExtensionFromAncestor | - |
+| Coverage.class.extension | UseExtensionFromAncestor | - |
+| Coverage.class.modifierExtension | UseExtensionFromAncestor | - |
+| Coverage.class.type | UseExtensionFromAncestor | - |
+| Coverage.class.value | UseExtensionFromAncestor | - |
+| Coverage.class.name | UseExtensionFromAncestor | - |
 | Coverage.order | UseElementSameName | Coverage.order |
 | Coverage.network | UseElementSameName | Coverage.network |
 | Coverage.costToBeneficiary | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.costToBeneficiary |
@@ -43,4 +43,4 @@
 | Coverage.costToBeneficiary.exception.type | UseExtensionFromAncestor | - |
 | Coverage.costToBeneficiary.exception.period | UseExtensionFromAncestor | - |
 | Coverage.subrogation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.subrogation |
-| Coverage.contract | UseElementSameName | Coverage.contract |
+| Coverage.contract | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Coverage.contract |

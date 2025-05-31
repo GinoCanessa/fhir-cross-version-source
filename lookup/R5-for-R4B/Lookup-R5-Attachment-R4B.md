@@ -8,7 +8,7 @@
 | Attachment.language | UseElementRenamed | Attachment.language |
 | Attachment.data | UseElementRenamed | Attachment.data |
 | Attachment.url | UseElementRenamed | Attachment.url |
-| Attachment.size | UseElementRenamed | Attachment.size |
+| Attachment.size | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment.size |
 | Attachment.hash | UseElementRenamed | Attachment.hash |
 | Attachment.title | UseElementRenamed | Attachment.title |
 | Attachment.creation | UseElementRenamed | Attachment.creation |

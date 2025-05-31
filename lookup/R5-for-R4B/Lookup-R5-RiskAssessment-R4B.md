@@ -20,8 +20,8 @@
 | RiskAssessment.encounter | UseElementRenamed | RiskAssessment.encounter |
 | RiskAssessment.occurrence[x] | UseElementRenamed | RiskAssessment.occurrence[x] |
 | RiskAssessment.condition | UseElementRenamed | RiskAssessment.condition |
-| RiskAssessment.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.performer |
-| RiskAssessment.reason | UseElementRenamed | RiskAssessment.reasonCode |
+| RiskAssessment.performer | UseElementRenamed | RiskAssessment.performer |
+| RiskAssessment.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.reason |
 | RiskAssessment.basis | UseElementRenamed | RiskAssessment.basis |
 | RiskAssessment.prediction | UseElementRenamed | RiskAssessment.prediction |
 | RiskAssessment.prediction.id | UseElementRenamed | RiskAssessment.prediction.id |

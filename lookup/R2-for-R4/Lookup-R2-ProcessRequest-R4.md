@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ProcessRequest.id | UseElementRenamed | Task.id |
-| ProcessRequest.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcessRequest.meta |
+| ProcessRequest.meta | UseElementRenamed | Task.meta |
 | ProcessRequest.implicitRules | UseElementRenamed | Task.implicitRules |
 | ProcessRequest.language | UseElementRenamed | Task.language |
 | ProcessRequest.text | UseElementRenamed | Task.text |

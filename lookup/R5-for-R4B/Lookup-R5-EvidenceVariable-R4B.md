@@ -35,7 +35,7 @@
 | EvidenceVariable.editor | UseElementRenamed | EvidenceVariable.editor |
 | EvidenceVariable.reviewer | UseElementRenamed | EvidenceVariable.reviewer |
 | EvidenceVariable.endorser | UseElementRenamed | EvidenceVariable.endorser |
-| EvidenceVariable.relatedArtifact | UseElementRenamed | EvidenceVariable.relatedArtifact |
+| EvidenceVariable.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.relatedArtifact |
 | EvidenceVariable.actual | UseElementRenamed | EvidenceVariable.actual |
 | EvidenceVariable.characteristic | UseElementRenamed | EvidenceVariable.characteristic |
 | EvidenceVariable.characteristic.id | UseElementRenamed | EvidenceVariable.characteristic.id |
@@ -45,10 +45,10 @@
 | EvidenceVariable.characteristic.description | UseElementRenamed | EvidenceVariable.characteristic.description |
 | EvidenceVariable.characteristic.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.note |
 | EvidenceVariable.characteristic.exclude | UseElementRenamed | EvidenceVariable.characteristic.exclude |
-| EvidenceVariable.characteristic.definitionReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionReference |
+| EvidenceVariable.characteristic.definitionReference | UseElementRenamed | EvidenceVariable.characteristic.definition[x] |
 | EvidenceVariable.characteristic.definitionCanonical | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical |
-| EvidenceVariable.characteristic.definitionCodeableConcept | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCodeableConcept |
-| EvidenceVariable.characteristic.definitionExpression | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionExpression |
+| EvidenceVariable.characteristic.definitionCodeableConcept | UseElementRenamed | EvidenceVariable.characteristic.definition[x] |
+| EvidenceVariable.characteristic.definitionExpression | UseElementRenamed | EvidenceVariable.characteristic.definition[x] |
 | EvidenceVariable.characteristic.definitionId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionId |
 | EvidenceVariable.characteristic.definitionByTypeAndValue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue |
 | EvidenceVariable.characteristic.definitionByTypeAndValue.id | UseExtensionFromAncestor | - |

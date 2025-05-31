@@ -12,11 +12,11 @@
 | PaymentNotice.modifierExtension | UseElementSameName | PaymentNotice.modifierExtension |
 | PaymentNotice.identifier | UseElementSameName | PaymentNotice.identifier |
 | PaymentNotice.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.status |
-| PaymentNotice.request | UseElementSameName | PaymentNotice.request |
-| PaymentNotice.response | UseElementSameName | PaymentNotice.response |
+| PaymentNotice.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.request |
+| PaymentNotice.response | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.response |
 | PaymentNotice.statusDate | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.statusDate |
 | PaymentNotice.created | UseElementSameName | PaymentNotice.created |
-| PaymentNotice.target | UseElementRenamed | PaymentNotice.target |
-| PaymentNotice.provider | UseElementSameName | PaymentNotice.provider |
-| PaymentNotice.organization | UseElementRenamed | PaymentNotice.organization |
-| PaymentNotice.paymentStatus | UseElementSameName | PaymentNotice.paymentStatus |
+| PaymentNotice.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.target |
+| PaymentNotice.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.provider |
+| PaymentNotice.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.organization |
+| PaymentNotice.paymentStatus | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-PaymentNotice.paymentStatus |

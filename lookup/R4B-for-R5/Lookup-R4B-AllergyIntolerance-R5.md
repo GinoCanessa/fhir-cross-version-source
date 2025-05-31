@@ -12,8 +12,8 @@
 | AllergyIntolerance.modifierExtension | UseElementSameName | AllergyIntolerance.modifierExtension |
 | AllergyIntolerance.identifier | UseElementSameName | AllergyIntolerance.identifier |
 | AllergyIntolerance.clinicalStatus | UseElementSameName | AllergyIntolerance.clinicalStatus |
-| AllergyIntolerance.verificationStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.verificationStatus |
-| AllergyIntolerance.type | UseElementSameName | AllergyIntolerance.type |
+| AllergyIntolerance.verificationStatus | UseElementSameName | AllergyIntolerance.verificationStatus |
+| AllergyIntolerance.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.type |
 | AllergyIntolerance.category | UseElementSameName | AllergyIntolerance.category |
 | AllergyIntolerance.criticality | UseElementSameName | AllergyIntolerance.criticality |
 | AllergyIntolerance.code | UseElementSameName | AllergyIntolerance.code |
@@ -30,7 +30,7 @@
 | AllergyIntolerance.reaction.extension | UseElementSameName | AllergyIntolerance.reaction.extension |
 | AllergyIntolerance.reaction.modifierExtension | UseElementSameName | AllergyIntolerance.reaction.modifierExtension |
 | AllergyIntolerance.reaction.substance | UseElementSameName | AllergyIntolerance.reaction.substance |
-| AllergyIntolerance.reaction.manifestation | UseElementSameName | AllergyIntolerance.reaction.manifestation |
+| AllergyIntolerance.reaction.manifestation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.reaction.manifestation |
 | AllergyIntolerance.reaction.description | UseElementSameName | AllergyIntolerance.reaction.description |
 | AllergyIntolerance.reaction.onset | UseElementSameName | AllergyIntolerance.reaction.onset |
 | AllergyIntolerance.reaction.severity | UseElementSameName | AllergyIntolerance.reaction.severity |

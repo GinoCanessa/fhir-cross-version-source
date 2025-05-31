@@ -21,9 +21,9 @@
 | ProcedureRequest.doNotPerform | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.doNotPerform |
 | ProcedureRequest.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.category |
 | ProcedureRequest.code | UseElementRenamed | DiagnosticOrder.item.code |
-| ProcedureRequest.subject | UseElementRenamed | DiagnosticOrder.subject |
+| ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.subject |
 | ProcedureRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.context |
-| ProcedureRequest.occurrence[x] | UseElementRenamed | ProcedureRequest.scheduled[x] |
+| ProcedureRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.occurrence |
 | ProcedureRequest.asNeeded[x] | UseElementRenamed | ProcedureRequest.asNeeded[x] |
 | ProcedureRequest.authoredOn | UseElementRenamed | ProcedureRequest.orderedOn |
 | ProcedureRequest.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester |
@@ -35,9 +35,9 @@
 | ProcedureRequest.performerType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.performerType |
 | ProcedureRequest.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.performer |
 | ProcedureRequest.reasonCode | UseElementRenamed | DiagnosticOrder.reason |
-| ProcedureRequest.reasonReference | UseElementRenamed | DiagnosticOrder.supportingInformation |
+| ProcedureRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.reasonReference |
 | ProcedureRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.supportingInfo |
-| ProcedureRequest.specimen | UseElementRenamed | DiagnosticOrder.specimen |
-| ProcedureRequest.bodySite | UseElementRenamed | DiagnosticOrder.item.bodySite |
+| ProcedureRequest.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.specimen |
+| ProcedureRequest.bodySite | UseElementRenamed | ProcedureRequest.bodySite |
 | ProcedureRequest.note | UseElementRenamed | DiagnosticOrder.note |
 | ProcedureRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.relevantHistory |

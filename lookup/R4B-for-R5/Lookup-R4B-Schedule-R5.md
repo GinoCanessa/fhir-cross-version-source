@@ -13,8 +13,8 @@
 | Schedule.identifier | UseElementSameName | Schedule.identifier |
 | Schedule.active | UseElementSameName | Schedule.active |
 | Schedule.serviceCategory | UseElementSameName | Schedule.serviceCategory |
-| Schedule.serviceType | UseElementSameName | Schedule.serviceType |
+| Schedule.serviceType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Schedule.serviceType |
 | Schedule.specialty | UseElementSameName | Schedule.specialty |
-| Schedule.actor | UseElementSameName | Schedule.actor |
+| Schedule.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Schedule.actor |
 | Schedule.planningHorizon | UseElementSameName | Schedule.planningHorizon |
 | Schedule.comment | UseElementSameName | Schedule.comment |

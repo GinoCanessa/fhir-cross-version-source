@@ -19,7 +19,7 @@
 | PractitionerRole.specialty | UseElementSameName | PractitionerRole.specialty |
 | PractitionerRole.location | UseElementSameName | PractitionerRole.location |
 | PractitionerRole.healthcareService | UseElementSameName | PractitionerRole.healthcareService |
-| PractitionerRole.contact | UseElementSameName | PractitionerRole.telecom |
+| PractitionerRole.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.contact |
 | PractitionerRole.characteristic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.characteristic |
 | PractitionerRole.communication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.communication |
 | PractitionerRole.availability | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.availability |

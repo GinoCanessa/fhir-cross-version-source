@@ -10,14 +10,14 @@
 | SubscriptionStatus.contained | UseElementSameName | SubscriptionStatus.contained |
 | SubscriptionStatus.extension | UseElementSameName | SubscriptionStatus.extension |
 | SubscriptionStatus.modifierExtension | UseElementSameName | SubscriptionStatus.modifierExtension |
-| SubscriptionStatus.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionStatus.status |
+| SubscriptionStatus.status | UseElementSameName | SubscriptionStatus.status |
 | SubscriptionStatus.type | UseElementSameName | SubscriptionStatus.type |
-| SubscriptionStatus.eventsSinceSubscriptionStart | UseElementSameName | SubscriptionStatus.eventsSinceSubscriptionStart |
+| SubscriptionStatus.eventsSinceSubscriptionStart | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionStatus.eventsSinceSubscriptionStart |
 | SubscriptionStatus.notificationEvent | UseElementSameName | SubscriptionStatus.notificationEvent |
 | SubscriptionStatus.notificationEvent.id | UseElementSameName | SubscriptionStatus.notificationEvent.id |
 | SubscriptionStatus.notificationEvent.extension | UseElementSameName | SubscriptionStatus.notificationEvent.extension |
 | SubscriptionStatus.notificationEvent.modifierExtension | UseElementSameName | SubscriptionStatus.notificationEvent.modifierExtension |
-| SubscriptionStatus.notificationEvent.eventNumber | UseElementSameName | SubscriptionStatus.notificationEvent.eventNumber |
+| SubscriptionStatus.notificationEvent.eventNumber | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionStatus.notificationEvent.eventNumber |
 | SubscriptionStatus.notificationEvent.timestamp | UseElementSameName | SubscriptionStatus.notificationEvent.timestamp |
 | SubscriptionStatus.notificationEvent.focus | UseElementSameName | SubscriptionStatus.notificationEvent.focus |
 | SubscriptionStatus.notificationEvent.additionalContext | UseElementSameName | SubscriptionStatus.notificationEvent.additionalContext |

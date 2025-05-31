@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | OperationOutcome.id | UseElementSameName | OperationOutcome.id |
-| OperationOutcome.meta | UseElementSameName | OperationOutcome.meta |
+| OperationOutcome.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationOutcome.meta |
 | OperationOutcome.implicitRules | UseElementSameName | OperationOutcome.implicitRules |
 | OperationOutcome.language | UseElementSameName | OperationOutcome.language |
 | OperationOutcome.text | UseElementSameName | OperationOutcome.text |
@@ -15,7 +15,7 @@
 | OperationOutcome.issue.extension | UseElementSameName | OperationOutcome.issue.extension |
 | OperationOutcome.issue.modifierExtension | UseElementSameName | OperationOutcome.issue.modifierExtension |
 | OperationOutcome.issue.severity | UseElementSameName | OperationOutcome.issue.severity |
-| OperationOutcome.issue.code | UseElementSameName | OperationOutcome.issue.code |
+| OperationOutcome.issue.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationOutcome.issue.code |
 | OperationOutcome.issue.details | UseElementSameName | OperationOutcome.issue.details |
 | OperationOutcome.issue.diagnostics | UseElementSameName | OperationOutcome.issue.diagnostics |
 | OperationOutcome.issue.location | UseElementSameName | OperationOutcome.issue.location |

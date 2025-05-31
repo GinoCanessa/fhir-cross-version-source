@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MolecularSequence.id | UseElementSameName | Sequence.id |
-| MolecularSequence.meta | UseElementSameName | Sequence.meta |
+| MolecularSequence.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.meta |
 | MolecularSequence.implicitRules | UseElementSameName | Sequence.implicitRules |
 | MolecularSequence.language | UseElementSameName | Sequence.language |
 | MolecularSequence.text | UseElementSameName | Sequence.text |
@@ -11,12 +11,12 @@
 | MolecularSequence.extension | UseElementSameName | Sequence.extension |
 | MolecularSequence.modifierExtension | UseElementSameName | Sequence.modifierExtension |
 | MolecularSequence.identifier | UseElementSameName | Sequence.identifier |
-| MolecularSequence.type | UseElementSameName | Sequence.type |
+| MolecularSequence.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.type |
 | MolecularSequence.coordinateSystem | UseElementSameName | Sequence.coordinateSystem |
-| MolecularSequence.patient | UseElementSameName | Sequence.patient |
-| MolecularSequence.specimen | UseElementSameName | Sequence.specimen |
-| MolecularSequence.device | UseElementSameName | Sequence.device |
-| MolecularSequence.performer | UseElementSameName | Sequence.performer |
+| MolecularSequence.patient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.patient |
+| MolecularSequence.specimen | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.specimen |
+| MolecularSequence.device | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.device |
+| MolecularSequence.performer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.performer |
 | MolecularSequence.quantity | UseElementSameName | Sequence.quantity |
 | MolecularSequence.referenceSeq | UseElementSameName | Sequence.referenceSeq |
 | MolecularSequence.referenceSeq.id | UseElementSameName | Sequence.referenceSeq.id |
@@ -28,7 +28,7 @@
 | MolecularSequence.referenceSeq.referenceSeqId | UseElementSameName | Sequence.referenceSeq.referenceSeqId |
 | MolecularSequence.referenceSeq.referenceSeqPointer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.referenceSeq.referenceSeqPointer |
 | MolecularSequence.referenceSeq.referenceSeqString | UseElementSameName | Sequence.referenceSeq.referenceSeqString |
-| MolecularSequence.referenceSeq.strand | UseElementSameName | Sequence.referenceSeq.strand |
+| MolecularSequence.referenceSeq.strand | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.referenceSeq.strand |
 | MolecularSequence.referenceSeq.windowStart | UseElementSameName | Sequence.referenceSeq.windowStart |
 | MolecularSequence.referenceSeq.windowEnd | UseElementSameName | Sequence.referenceSeq.windowEnd |
 | MolecularSequence.variant | UseElementSameName | Sequence.variant |
@@ -40,7 +40,7 @@
 | MolecularSequence.variant.observedAllele | UseElementSameName | Sequence.variant.observedAllele |
 | MolecularSequence.variant.referenceAllele | UseElementSameName | Sequence.variant.referenceAllele |
 | MolecularSequence.variant.cigar | UseElementSameName | Sequence.variant.cigar |
-| MolecularSequence.variant.variantPointer | UseElementSameName | Sequence.variant.variantPointer |
+| MolecularSequence.variant.variantPointer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MolecularSequence.variant.variantPointer |
 | MolecularSequence.observedSeq | UseElementSameName | Sequence.observedSeq |
 | MolecularSequence.quality | UseElementSameName | Sequence.quality |
 | MolecularSequence.quality.id | UseElementSameName | Sequence.quality.id |

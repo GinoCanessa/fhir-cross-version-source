@@ -36,7 +36,7 @@
 | Task.requester.onBehalfOf | UseExtensionFromAncestor | - |
 | Task.performerType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.performerType |
 | Task.owner | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.owner |
-| Task.reason | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.reason |
+| Task.reason | UseElementRenamed | Order.reason[x] |
 | Task.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.note |
 | Task.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.relevantHistory |
 | Task.restriction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.restriction |

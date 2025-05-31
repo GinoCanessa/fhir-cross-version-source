@@ -36,7 +36,7 @@
 | Measure.editor | UseElementSameName | Measure.editor |
 | Measure.reviewer | UseElementSameName | Measure.reviewer |
 | Measure.endorser | UseElementSameName | Measure.endorser |
-| Measure.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Measure.relatedArtifact |
+| Measure.relatedArtifact | UseElementSameName | Measure.relatedArtifact |
 | Measure.library | UseElementSameName | Measure.library |
 | Measure.disclaimer | UseElementSameName | Measure.disclaimer |
 | Measure.scoring | UseElementSameName | Measure.scoring |

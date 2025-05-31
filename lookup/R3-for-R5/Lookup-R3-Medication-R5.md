@@ -3,18 +3,18 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Medication.id | UseElementSameName | Medication.id |
-| Medication.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.meta |
+| Medication.meta | UseElementSameName | Medication.meta |
 | Medication.implicitRules | UseElementSameName | Medication.implicitRules |
 | Medication.language | UseElementSameName | Medication.language |
 | Medication.text | UseElementSameName | Medication.text |
 | Medication.contained | UseElementSameName | Medication.contained |
-| Medication.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.extension |
+| Medication.extension | UseElementSameName | Medication.extension |
 | Medication.modifierExtension | UseElementSameName | Medication.modifierExtension |
 | Medication.code | UseElementSameName | Medication.code |
-| Medication.status | UseElementRenamed | Medication.extension |
+| Medication.status | UseElementSameName | Medication.status |
 | Medication.isBrand | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.isBrand |
 | Medication.isOverTheCounter | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.isOverTheCounter |
-| Medication.manufacturer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.manufacturer |
+| Medication.manufacturer | UseElementRenamed | Medication.marketingAuthorizationHolder |
 | Medication.form | UseElementRenamed | Medication.doseForm |
 | Medication.ingredient | UseElementSameName | Medication.ingredient |
 | Medication.ingredient.id | UseElementSameName | Medication.ingredient.id |
@@ -22,7 +22,7 @@
 | Medication.ingredient.modifierExtension | UseElementSameName | Medication.ingredient.modifierExtension |
 | Medication.ingredient.item[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.ingredient.item |
 | Medication.ingredient.isActive | UseElementSameName | Medication.ingredient.isActive |
-| Medication.ingredient.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.ingredient.amount |
+| Medication.ingredient.amount | UseElementRenamed | Medication.ingredient.strength[x] |
 | Medication.package | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package |
 | Medication.package.id | UseExtensionFromAncestor | - |
 | Medication.package.extension | UseExtensionFromAncestor | - |

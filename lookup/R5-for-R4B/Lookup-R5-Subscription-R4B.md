@@ -12,7 +12,7 @@
 | Subscription.modifierExtension | UseElementRenamed | Subscription.modifierExtension |
 | Subscription.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.identifier |
 | Subscription.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.name |
-| Subscription.status | UseElementRenamed | Subscription.status |
+| Subscription.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.status |
 | Subscription.topic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.topic |
 | Subscription.contact | UseElementRenamed | Subscription.contact |
 | Subscription.end | UseElementRenamed | Subscription.end |

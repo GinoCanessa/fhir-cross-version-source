@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Order.id | UseElementRenamed | Task.id |
-| Order.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.meta |
+| Order.meta | UseElementRenamed | Task.meta |
 | Order.implicitRules | UseElementRenamed | Task.implicitRules |
 | Order.language | UseElementRenamed | Task.language |
 | Order.text | UseElementRenamed | Task.text |
@@ -15,7 +15,7 @@
 | Order.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.subject |
 | Order.source | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.source |
 | Order.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.target |
-| Order.reason[x] | UseElementRenamed | Task.reasonCode |
+| Order.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.reason |
 | Order.when | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Order.when |
 | Order.when.id | UseExtensionFromAncestor | - |
 | Order.when.extension | UseExtensionFromAncestor | - |

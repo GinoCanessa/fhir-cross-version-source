@@ -10,7 +10,7 @@
 | BiologicallyDerivedProduct.contained | UseElementRenamed | BiologicallyDerivedProduct.contained |
 | BiologicallyDerivedProduct.extension | UseElementRenamed | BiologicallyDerivedProduct.extension |
 | BiologicallyDerivedProduct.modifierExtension | UseElementRenamed | BiologicallyDerivedProduct.modifierExtension |
-| BiologicallyDerivedProduct.productCategory | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BiologicallyDerivedProduct.productCategory |
+| BiologicallyDerivedProduct.productCategory | UseElementRenamed | BiologicallyDerivedProduct.productCategory |
 | BiologicallyDerivedProduct.productCode | UseElementRenamed | BiologicallyDerivedProduct.productCode |
 | BiologicallyDerivedProduct.parent | UseElementRenamed | BiologicallyDerivedProduct.parent |
 | BiologicallyDerivedProduct.request | UseElementRenamed | BiologicallyDerivedProduct.request |

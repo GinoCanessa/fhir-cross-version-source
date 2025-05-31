@@ -11,7 +11,7 @@
 | Condition.extension | UseElementRenamed | Condition.extension |
 | Condition.modifierExtension | UseElementRenamed | Condition.modifierExtension |
 | Condition.identifier | UseElementRenamed | Condition.identifier |
-| Condition.clinicalStatus | UseElementRenamed | Condition.clinicalStatus |
+| Condition.clinicalStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.clinicalStatus |
 | Condition.verificationStatus | UseElementRenamed | Condition.verificationStatus |
 | Condition.category | UseElementRenamed | Condition.category |
 | Condition.severity | UseElementRenamed | Condition.severity |
@@ -35,5 +35,5 @@
 | Condition.stage.summary | UseElementRenamed | Condition.stage.summary |
 | Condition.stage.assessment | UseElementRenamed | Condition.stage.assessment |
 | Condition.stage.type | UseElementRenamed | Condition.stage.type |
-| Condition.evidence | UseElementRenamed | Condition.evidence |
+| Condition.evidence | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.evidence |
 | Condition.note | UseElementRenamed | Condition.note |

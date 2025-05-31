@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Endpoint.id | UseElementSameName | Endpoint.id |
-| Endpoint.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Endpoint.meta |
+| Endpoint.meta | UseElementSameName | Endpoint.meta |
 | Endpoint.implicitRules | UseElementSameName | Endpoint.implicitRules |
 | Endpoint.language | UseElementSameName | Endpoint.language |
 | Endpoint.text | UseElementSameName | Endpoint.text |
@@ -14,7 +14,7 @@
 | Endpoint.status | UseElementSameName | Endpoint.status |
 | Endpoint.connectionType | UseElementSameName | Endpoint.connectionType |
 | Endpoint.name | UseElementSameName | Endpoint.name |
-| Endpoint.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Endpoint.managingOrganization |
+| Endpoint.managingOrganization | UseElementSameName | Endpoint.managingOrganization |
 | Endpoint.contact | UseElementSameName | Endpoint.contact |
 | Endpoint.period | UseElementSameName | Endpoint.period |
 | Endpoint.payloadType | UseElementSameName | Endpoint.payloadType |

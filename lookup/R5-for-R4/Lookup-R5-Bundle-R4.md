@@ -7,14 +7,14 @@
 | Bundle.implicitRules | UseElementSameName | Bundle.implicitRules |
 | Bundle.language | UseElementSameName | Bundle.language |
 | Bundle.identifier | UseElementSameName | Bundle.identifier |
-| Bundle.type | UseElementSameName | Bundle.type |
+| Bundle.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Bundle.type |
 | Bundle.timestamp | UseElementSameName | Bundle.timestamp |
 | Bundle.total | UseElementSameName | Bundle.total |
 | Bundle.link | UseElementSameName | Bundle.link |
 | Bundle.link.id | UseElementSameName | Bundle.link.id |
 | Bundle.link.extension | UseElementSameName | Bundle.link.extension |
 | Bundle.link.modifierExtension | UseElementSameName | Bundle.link.modifierExtension |
-| Bundle.link.relation | UseElementSameName | Bundle.link.relation |
+| Bundle.link.relation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Bundle.link.relation |
 | Bundle.link.url | UseElementSameName | Bundle.link.url |
 | Bundle.entry | UseElementSameName | Bundle.entry |
 | Bundle.entry.id | UseElementSameName | Bundle.entry.id |

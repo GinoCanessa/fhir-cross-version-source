@@ -18,7 +18,7 @@
 | EvidenceReport.citeAs[x] | UseElementSameName | EvidenceReport.citeAs[x] |
 | EvidenceReport.type | UseElementSameName | EvidenceReport.type |
 | EvidenceReport.note | UseElementSameName | EvidenceReport.note |
-| EvidenceReport.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceReport.relatedArtifact |
+| EvidenceReport.relatedArtifact | UseElementSameName | EvidenceReport.relatedArtifact |
 | EvidenceReport.subject | UseElementSameName | EvidenceReport.subject |
 | EvidenceReport.subject.id | UseElementSameName | EvidenceReport.subject.id |
 | EvidenceReport.subject.extension | UseElementSameName | EvidenceReport.subject.extension |
@@ -43,7 +43,7 @@
 | EvidenceReport.relatesTo.extension | UseElementSameName | EvidenceReport.relatesTo.extension |
 | EvidenceReport.relatesTo.modifierExtension | UseElementSameName | EvidenceReport.relatesTo.modifierExtension |
 | EvidenceReport.relatesTo.code | UseElementSameName | EvidenceReport.relatesTo.code |
-| EvidenceReport.relatesTo.target[x] | UseElementRenamed | EvidenceReport.relatesTo.target |
+| EvidenceReport.relatesTo.target[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceReport.relatesTo.target |
 | EvidenceReport.section | UseElementSameName | EvidenceReport.section |
 | EvidenceReport.section.id | UseElementSameName | EvidenceReport.section.id |
 | EvidenceReport.section.extension | UseElementSameName | EvidenceReport.section.extension |

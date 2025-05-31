@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Goal.id | UseElementSameName | Goal.id |
-| Goal.meta | UseElementSameName | Goal.meta |
+| Goal.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.meta |
 | Goal.implicitRules | UseElementSameName | Goal.implicitRules |
 | Goal.language | UseElementSameName | Goal.language |
 | Goal.text | UseElementSameName | Goal.text |
@@ -16,18 +16,18 @@
 | Goal.category | UseElementSameName | Goal.category |
 | Goal.continuous | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.continuous |
 | Goal.priority | UseElementSameName | Goal.priority |
-| Goal.description | UseElementSameName | Goal.description |
-| Goal.subject | UseElementSameName | Goal.subject |
+| Goal.description | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.description |
+| Goal.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.subject |
 | Goal.start[x] | UseElementSameName | Goal.start[x] |
-| Goal.target | UseElementSameName | Goal.target[x] |
-| Goal.target.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.id |
-| Goal.target.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.extension |
-| Goal.target.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.modifierExtension |
-| Goal.target.measure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.measure |
-| Goal.target.detail[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.detail |
-| Goal.target.due[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target.due |
+| Goal.target | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.target |
+| Goal.target.id | UseExtensionFromAncestor | - |
+| Goal.target.extension | UseExtensionFromAncestor | - |
+| Goal.target.modifierExtension | UseExtensionFromAncestor | - |
+| Goal.target.measure | UseExtensionFromAncestor | - |
+| Goal.target.detail[x] | UseExtensionFromAncestor | - |
+| Goal.target.due[x] | UseExtensionFromAncestor | - |
 | Goal.statusDate | UseElementSameName | Goal.statusDate |
-| Goal.statusReason | UseElementSameName | Goal.statusReason |
+| Goal.statusReason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.statusReason |
 | Goal.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.source |
 | Goal.addresses | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.addresses |
 | Goal.note | UseElementSameName | Goal.note |

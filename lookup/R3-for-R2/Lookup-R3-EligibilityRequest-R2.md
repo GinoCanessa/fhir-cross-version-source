@@ -17,9 +17,9 @@
 | EligibilityRequest.serviced[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.serviced |
 | EligibilityRequest.created | UseElementRenamed | EligibilityRequest.created |
 | EligibilityRequest.enterer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.enterer |
-| EligibilityRequest.provider | UseElementRenamed | EligibilityRequest.provider |
-| EligibilityRequest.organization | UseElementRenamed | EligibilityRequest.organization |
-| EligibilityRequest.insurer | UseElementRenamed | EligibilityRequest.target |
+| EligibilityRequest.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.provider |
+| EligibilityRequest.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.organization |
+| EligibilityRequest.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.insurer |
 | EligibilityRequest.facility | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.facility |
 | EligibilityRequest.coverage | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.coverage |
 | EligibilityRequest.businessArrangement | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.businessArrangement |

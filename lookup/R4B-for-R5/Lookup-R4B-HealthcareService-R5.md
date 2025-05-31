@@ -20,7 +20,7 @@
 | HealthcareService.name | UseElementSameName | HealthcareService.name |
 | HealthcareService.comment | UseElementSameName | HealthcareService.comment |
 | HealthcareService.extraDetails | UseElementSameName | HealthcareService.extraDetails |
-| HealthcareService.photo | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-HealthcareService.photo |
+| HealthcareService.photo | UseElementSameName | HealthcareService.photo |
 | HealthcareService.telecom | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-HealthcareService.telecom |
 | HealthcareService.coverageArea | UseElementSameName | HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |

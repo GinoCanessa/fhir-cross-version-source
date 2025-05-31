@@ -15,10 +15,10 @@
 | ProcedureRequest.code | UseElementSameName | ProcedureRequest.code |
 | ProcedureRequest.bodySite | UseElementSameName | ProcedureRequest.bodySite |
 | ProcedureRequest.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.reason |
-| ProcedureRequest.scheduled[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.scheduled |
+| ProcedureRequest.scheduled[x] | UseElementRenamed | ProcedureRequest.occurrence[x] |
 | ProcedureRequest.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.encounter |
 | ProcedureRequest.performer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.performer |
-| ProcedureRequest.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.status |
+| ProcedureRequest.status | UseElementSameName | ProcedureRequest.status |
 | ProcedureRequest.notes | UseElementRenamed | ProcedureRequest.note |
 | ProcedureRequest.asNeeded[x] | UseElementSameName | ProcedureRequest.asNeeded[x] |
 | ProcedureRequest.orderedOn | UseElementRenamed | ProcedureRequest.authoredOn |

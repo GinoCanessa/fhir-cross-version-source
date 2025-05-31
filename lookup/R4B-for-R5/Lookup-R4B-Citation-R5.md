@@ -107,7 +107,7 @@
 | Citation.citedArtifact.relatesTo.id | UseElementSameName | Citation.citedArtifact.relatesTo.id |
 | Citation.citedArtifact.relatesTo.extension | UseElementSameName | Citation.citedArtifact.relatesTo.extension |
 | Citation.citedArtifact.relatesTo.modifierExtension | UseElementSameName | Citation.citedArtifact.relatesTo.modifierExtension |
-| Citation.citedArtifact.relatesTo.relationshipType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.relatesTo.relationshipType |
+| Citation.citedArtifact.relatesTo.relationshipType | UseElementRenamed | Citation.citedArtifact.relatesTo.type |
 | Citation.citedArtifact.relatesTo.targetClassifier | UseElementRenamed | Citation.citedArtifact.relatesTo.classifier |
 | Citation.citedArtifact.relatesTo.target[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.relatesTo.target |
 | Citation.citedArtifact.publicationForm | UseElementSameName | Citation.citedArtifact.publicationForm |
@@ -153,7 +153,7 @@
 | Citation.citedArtifact.webLocation.id | UseElementSameName | Citation.citedArtifact.webLocation.id |
 | Citation.citedArtifact.webLocation.extension | UseElementSameName | Citation.citedArtifact.webLocation.extension |
 | Citation.citedArtifact.webLocation.modifierExtension | UseElementSameName | Citation.citedArtifact.webLocation.modifierExtension |
-| Citation.citedArtifact.webLocation.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.webLocation.type |
+| Citation.citedArtifact.webLocation.type | UseElementRenamed | Citation.citedArtifact.webLocation.classifier |
 | Citation.citedArtifact.webLocation.url | UseElementSameName | Citation.citedArtifact.webLocation.url |
 | Citation.citedArtifact.classification | UseElementSameName | Citation.citedArtifact.classification |
 | Citation.citedArtifact.classification.id | UseElementSameName | Citation.citedArtifact.classification.id |

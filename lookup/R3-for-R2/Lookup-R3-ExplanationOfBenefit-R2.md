@@ -19,13 +19,13 @@
 | ExplanationOfBenefit.created | UseElementSameName | ExplanationOfBenefit.created |
 | ExplanationOfBenefit.enterer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.enterer |
 | ExplanationOfBenefit.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.insurer |
-| ExplanationOfBenefit.provider | UseElementSameName | ExplanationOfBenefit.requestProvider |
-| ExplanationOfBenefit.organization | UseElementRenamed | ExplanationOfBenefit.organization |
+| ExplanationOfBenefit.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.provider |
+| ExplanationOfBenefit.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.organization |
 | ExplanationOfBenefit.referral | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.referral |
 | ExplanationOfBenefit.facility | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.facility |
 | ExplanationOfBenefit.claim | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.claim |
 | ExplanationOfBenefit.claimResponse | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.claimResponse |
-| ExplanationOfBenefit.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.outcome |
+| ExplanationOfBenefit.outcome | UseElementSameName | ExplanationOfBenefit.outcome |
 | ExplanationOfBenefit.disposition | UseElementSameName | ExplanationOfBenefit.disposition |
 | ExplanationOfBenefit.related | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.related |
 | ExplanationOfBenefit.related.id | UseExtensionFromAncestor | - |

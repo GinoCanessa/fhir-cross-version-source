@@ -50,7 +50,7 @@
 | TerminologyCapabilities.codeSystem.version.code | UseElementSameName | TerminologyCapabilities.codeSystem.version.code |
 | TerminologyCapabilities.codeSystem.version.isDefault | UseElementSameName | TerminologyCapabilities.codeSystem.version.isDefault |
 | TerminologyCapabilities.codeSystem.version.compositional | UseElementSameName | TerminologyCapabilities.codeSystem.version.compositional |
-| TerminologyCapabilities.codeSystem.version.language | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-TerminologyCapabilities.codeSystem.version.language |
+| TerminologyCapabilities.codeSystem.version.language | UseElementSameName | TerminologyCapabilities.codeSystem.version.language |
 | TerminologyCapabilities.codeSystem.version.filter | UseElementSameName | TerminologyCapabilities.codeSystem.version.filter |
 | TerminologyCapabilities.codeSystem.version.filter.id | UseElementSameName | TerminologyCapabilities.codeSystem.version.filter.id |
 | TerminologyCapabilities.codeSystem.version.filter.extension | UseElementSameName | TerminologyCapabilities.codeSystem.version.filter.extension |
@@ -73,7 +73,7 @@
 | TerminologyCapabilities.expansion.parameter.name | UseElementSameName | TerminologyCapabilities.expansion.parameter.name |
 | TerminologyCapabilities.expansion.parameter.documentation | UseElementSameName | TerminologyCapabilities.expansion.parameter.documentation |
 | TerminologyCapabilities.expansion.textFilter | UseElementSameName | TerminologyCapabilities.expansion.textFilter |
-| TerminologyCapabilities.codeSearch | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-TerminologyCapabilities.codeSearch |
+| TerminologyCapabilities.codeSearch | UseElementSameName | TerminologyCapabilities.codeSearch |
 | TerminologyCapabilities.validateCode | UseElementSameName | TerminologyCapabilities.validateCode |
 | TerminologyCapabilities.validateCode.id | UseElementSameName | TerminologyCapabilities.validateCode.id |
 | TerminologyCapabilities.validateCode.extension | UseElementSameName | TerminologyCapabilities.validateCode.extension |

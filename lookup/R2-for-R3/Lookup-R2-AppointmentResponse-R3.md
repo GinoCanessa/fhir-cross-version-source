@@ -11,10 +11,10 @@
 | AppointmentResponse.extension | UseElementSameName | AppointmentResponse.extension |
 | AppointmentResponse.modifierExtension | UseElementSameName | AppointmentResponse.modifierExtension |
 | AppointmentResponse.identifier | UseElementSameName | AppointmentResponse.identifier |
-| AppointmentResponse.appointment | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AppointmentResponse.appointment |
+| AppointmentResponse.appointment | UseElementSameName | AppointmentResponse.appointment |
 | AppointmentResponse.start | UseElementSameName | AppointmentResponse.start |
 | AppointmentResponse.end | UseElementSameName | AppointmentResponse.end |
-| AppointmentResponse.participantType | UseElementSameName | AppointmentResponse.participantType |
-| AppointmentResponse.actor | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AppointmentResponse.actor |
+| AppointmentResponse.participantType | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AppointmentResponse.participantType |
+| AppointmentResponse.actor | UseElementSameName | AppointmentResponse.actor |
 | AppointmentResponse.participantStatus | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AppointmentResponse.participantStatus |
 | AppointmentResponse.comment | UseElementSameName | AppointmentResponse.comment |

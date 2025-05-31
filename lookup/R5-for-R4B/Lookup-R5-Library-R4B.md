@@ -39,7 +39,7 @@
 | Library.editor | UseElementRenamed | Library.editor |
 | Library.reviewer | UseElementRenamed | Library.reviewer |
 | Library.endorser | UseElementRenamed | Library.endorser |
-| Library.relatedArtifact | UseElementRenamed | Library.relatedArtifact |
+| Library.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.relatedArtifact |
 | Library.parameter | UseElementRenamed | Library.parameter |
-| Library.dataRequirement | UseElementRenamed | Library.dataRequirement |
-| Library.content | UseElementRenamed | Library.content |
+| Library.dataRequirement | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.dataRequirement |
+| Library.content | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Library.content |

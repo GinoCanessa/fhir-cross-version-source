@@ -13,5 +13,5 @@
 | Basic.identifier | UseElementRenamed | Basic.identifier |
 | Basic.code | UseElementRenamed | Basic.code |
 | Basic.subject | UseElementRenamed | Basic.subject |
-| Basic.created | UseElementRenamed | Basic.created |
-| Basic.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Basic.author |
+| Basic.created | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Basic.created |
+| Basic.author | UseElementRenamed | Basic.author |

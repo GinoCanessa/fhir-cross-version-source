@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Specimen.id | UseElementSameName | Specimen.id |
-| Specimen.meta | UseElementSameName | Specimen.meta |
+| Specimen.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.meta |
 | Specimen.implicitRules | UseElementSameName | Specimen.implicitRules |
 | Specimen.language | UseElementSameName | Specimen.language |
 | Specimen.text | UseElementSameName | Specimen.text |
@@ -16,7 +16,7 @@
 | Specimen.type | UseElementSameName | Specimen.type |
 | Specimen.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.subject |
 | Specimen.receivedTime | UseElementSameName | Specimen.receivedTime |
-| Specimen.parent | UseElementSameName | Specimen.parent |
+| Specimen.parent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.parent |
 | Specimen.request | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.request |
 | Specimen.combined | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.combined |
 | Specimen.role | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.role |
@@ -37,7 +37,7 @@
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
 | Specimen.collection.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.device |
 | Specimen.collection.procedure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.procedure |
-| Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.bodySite |
 | Specimen.collection.fastingStatus[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.collection.fastingStatus |
 | Specimen.processing | UseElementSameName | Specimen.treatment |
 | Specimen.processing.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.processing.id |
@@ -45,7 +45,7 @@
 | Specimen.processing.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.processing.modifierExtension |
 | Specimen.processing.description | UseElementSameName | Specimen.treatment.description |
 | Specimen.processing.method | UseElementRenamed | Specimen.treatment.procedure |
-| Specimen.processing.additive | UseElementSameName | Specimen.treatment.additive |
+| Specimen.processing.additive | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.processing.additive |
 | Specimen.processing.time[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.processing.time |
 | Specimen.container | UseElementSameName | Specimen.container |
 | Specimen.container.id | UseElementSameName | Specimen.container.id |

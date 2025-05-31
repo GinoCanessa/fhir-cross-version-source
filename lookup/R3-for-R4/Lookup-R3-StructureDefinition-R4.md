@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | StructureDefinition.id | UseElementSameName | StructureDefinition.id |
-| StructureDefinition.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.meta |
+| StructureDefinition.meta | UseElementSameName | StructureDefinition.meta |
 | StructureDefinition.implicitRules | UseElementSameName | StructureDefinition.implicitRules |
 | StructureDefinition.language | UseElementSameName | StructureDefinition.language |
 | StructureDefinition.text | UseElementSameName | StructureDefinition.text |
@@ -26,7 +26,7 @@
 | StructureDefinition.purpose | UseElementSameName | StructureDefinition.purpose |
 | StructureDefinition.copyright | UseElementSameName | StructureDefinition.copyright |
 | StructureDefinition.keyword | UseElementSameName | StructureDefinition.keyword |
-| StructureDefinition.fhirVersion | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.fhirVersion |
+| StructureDefinition.fhirVersion | UseElementSameName | StructureDefinition.fhirVersion |
 | StructureDefinition.mapping | UseElementSameName | StructureDefinition.mapping |
 | StructureDefinition.mapping.id | UseElementSameName | StructureDefinition.mapping.id |
 | StructureDefinition.mapping.extension | UseElementSameName | StructureDefinition.mapping.extension |
@@ -37,19 +37,19 @@
 | StructureDefinition.mapping.comment | UseElementSameName | StructureDefinition.mapping.comment |
 | StructureDefinition.kind | UseElementSameName | StructureDefinition.kind |
 | StructureDefinition.abstract | UseElementSameName | StructureDefinition.abstract |
-| StructureDefinition.contextType | UseElementRenamed | StructureDefinition.context.expression |
-| StructureDefinition.context | UseElementSameName | StructureDefinition.context |
+| StructureDefinition.contextType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.contextType |
+| StructureDefinition.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.context |
 | StructureDefinition.contextInvariant | UseElementSameName | StructureDefinition.contextInvariant |
-| StructureDefinition.type | UseElementSameName | StructureDefinition.type |
-| StructureDefinition.baseDefinition | UseElementSameName | StructureDefinition.baseDefinition |
+| StructureDefinition.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.type |
+| StructureDefinition.baseDefinition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.baseDefinition |
 | StructureDefinition.derivation | UseElementSameName | StructureDefinition.derivation |
 | StructureDefinition.snapshot | UseElementSameName | StructureDefinition.snapshot |
 | StructureDefinition.snapshot.id | UseElementSameName | StructureDefinition.snapshot.id |
 | StructureDefinition.snapshot.extension | UseElementSameName | StructureDefinition.snapshot.extension |
 | StructureDefinition.snapshot.modifierExtension | UseElementSameName | StructureDefinition.snapshot.modifierExtension |
-| StructureDefinition.snapshot.element | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.snapshot.element |
+| StructureDefinition.snapshot.element | UseElementSameName | StructureDefinition.snapshot.element |
 | StructureDefinition.differential | UseElementSameName | StructureDefinition.differential |
 | StructureDefinition.differential.id | UseElementSameName | StructureDefinition.differential.id |
 | StructureDefinition.differential.extension | UseElementSameName | StructureDefinition.differential.extension |
 | StructureDefinition.differential.modifierExtension | UseElementSameName | StructureDefinition.differential.modifierExtension |
-| StructureDefinition.differential.element | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureDefinition.differential.element |
+| StructureDefinition.differential.element | UseElementSameName | StructureDefinition.differential.element |

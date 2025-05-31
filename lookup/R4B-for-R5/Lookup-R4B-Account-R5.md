@@ -31,4 +31,4 @@
 | Account.guarantor.party | UseElementSameName | Account.guarantor.party |
 | Account.guarantor.onHold | UseElementSameName | Account.guarantor.onHold |
 | Account.guarantor.period | UseElementSameName | Account.guarantor.period |
-| Account.partOf | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Account.partOf |
+| Account.partOf | UseElementRenamed | Account.relatedAccount.account |

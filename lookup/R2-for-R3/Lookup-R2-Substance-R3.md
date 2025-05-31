@@ -26,4 +26,4 @@
 | Substance.ingredient.extension | UseElementSameName | Substance.ingredient.extension |
 | Substance.ingredient.modifierExtension | UseElementSameName | Substance.ingredient.modifierExtension |
 | Substance.ingredient.quantity | UseElementSameName | Substance.ingredient.quantity |
-| Substance.ingredient.substance | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Substance.ingredient.substance |
+| Substance.ingredient.substance | UseElementRenamed | Substance.ingredient.substance[x] |

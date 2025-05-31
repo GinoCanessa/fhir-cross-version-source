@@ -5,7 +5,7 @@
 | DataRequirement.id | UseElementSameName | DataRequirement.id |
 | DataRequirement.extension | UseElementSameName | DataRequirement.extension |
 | DataRequirement.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.type |
-| DataRequirement.profile | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.profile |
+| DataRequirement.profile | UseElementSameName | DataRequirement.profile |
 | DataRequirement.subject[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.subject |
 | DataRequirement.mustSupport | UseElementSameName | DataRequirement.mustSupport |
 | DataRequirement.codeFilter | UseElementSameName | DataRequirement.codeFilter |
@@ -13,7 +13,7 @@
 | DataRequirement.codeFilter.extension | UseElementSameName | DataRequirement.codeFilter.extension |
 | DataRequirement.codeFilter.path | UseElementSameName | DataRequirement.codeFilter.path |
 | DataRequirement.codeFilter.searchParam | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.codeFilter.searchParam |
-| DataRequirement.codeFilter.valueSet | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.codeFilter.valueSet |
+| DataRequirement.codeFilter.valueSet | UseElementSameName | DataRequirement.codeFilter.valueSet[x] |
 | DataRequirement.codeFilter.code | UseElementSameName | DataRequirement.codeFilter.valueCoding |
 | DataRequirement.dateFilter | UseElementSameName | DataRequirement.dateFilter |
 | DataRequirement.dateFilter.id | UseElementSameName | DataRequirement.dateFilter.id |

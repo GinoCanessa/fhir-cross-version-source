@@ -25,7 +25,7 @@
 | ImplementationGuide.copyright | UseElementSameName | ImplementationGuide.copyright |
 | ImplementationGuide.packageId | UseElementSameName | ImplementationGuide.packageId |
 | ImplementationGuide.license | UseElementSameName | ImplementationGuide.license |
-| ImplementationGuide.fhirVersion | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.fhirVersion |
+| ImplementationGuide.fhirVersion | UseElementSameName | ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependsOn | UseElementSameName | ImplementationGuide.dependsOn |
 | ImplementationGuide.dependsOn.id | UseElementSameName | ImplementationGuide.dependsOn.id |
 | ImplementationGuide.dependsOn.extension | UseElementSameName | ImplementationGuide.dependsOn.extension |
@@ -54,16 +54,16 @@
 | ImplementationGuide.definition.resource.extension | UseElementSameName | ImplementationGuide.definition.resource.extension |
 | ImplementationGuide.definition.resource.modifierExtension | UseElementSameName | ImplementationGuide.definition.resource.modifierExtension |
 | ImplementationGuide.definition.resource.reference | UseElementSameName | ImplementationGuide.definition.resource.reference |
-| ImplementationGuide.definition.resource.fhirVersion | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.definition.resource.fhirVersion |
+| ImplementationGuide.definition.resource.fhirVersion | UseElementSameName | ImplementationGuide.definition.resource.fhirVersion |
 | ImplementationGuide.definition.resource.name | UseElementSameName | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.definition.resource.description | UseElementSameName | ImplementationGuide.definition.resource.description |
-| ImplementationGuide.definition.resource.example[x] | UseElementRenamed | ImplementationGuide.definition.resource.isExample |
+| ImplementationGuide.definition.resource.example[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.definition.resource.example |
 | ImplementationGuide.definition.resource.groupingId | UseElementSameName | ImplementationGuide.definition.resource.groupingId |
 | ImplementationGuide.definition.page | UseElementSameName | ImplementationGuide.definition.page |
 | ImplementationGuide.definition.page.id | UseElementSameName | ImplementationGuide.definition.page.id |
 | ImplementationGuide.definition.page.extension | UseElementSameName | ImplementationGuide.definition.page.extension |
 | ImplementationGuide.definition.page.modifierExtension | UseElementSameName | ImplementationGuide.definition.page.modifierExtension |
-| ImplementationGuide.definition.page.name[x] | UseElementRenamed | ImplementationGuide.definition.page.source[x] |
+| ImplementationGuide.definition.page.name[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.definition.page.name |
 | ImplementationGuide.definition.page.title | UseElementSameName | ImplementationGuide.definition.page.title |
 | ImplementationGuide.definition.page.generation | UseElementSameName | ImplementationGuide.definition.page.generation |
 | ImplementationGuide.definition.page.page | UseElementSameName | ImplementationGuide.definition.page.page |
@@ -71,7 +71,7 @@
 | ImplementationGuide.definition.parameter.id | UseElementSameName | ImplementationGuide.definition.parameter.id |
 | ImplementationGuide.definition.parameter.extension | UseElementSameName | ImplementationGuide.definition.parameter.extension |
 | ImplementationGuide.definition.parameter.modifierExtension | UseElementSameName | ImplementationGuide.definition.parameter.modifierExtension |
-| ImplementationGuide.definition.parameter.code | UseElementSameName | ImplementationGuide.definition.parameter.code |
+| ImplementationGuide.definition.parameter.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.definition.parameter.code |
 | ImplementationGuide.definition.parameter.value | UseElementSameName | ImplementationGuide.definition.parameter.value |
 | ImplementationGuide.definition.template | UseElementSameName | ImplementationGuide.definition.template |
 | ImplementationGuide.definition.template.id | UseElementSameName | ImplementationGuide.definition.template.id |
@@ -90,7 +90,7 @@
 | ImplementationGuide.manifest.resource.extension | UseElementSameName | ImplementationGuide.manifest.resource.extension |
 | ImplementationGuide.manifest.resource.modifierExtension | UseElementSameName | ImplementationGuide.manifest.resource.modifierExtension |
 | ImplementationGuide.manifest.resource.reference | UseElementSameName | ImplementationGuide.manifest.resource.reference |
-| ImplementationGuide.manifest.resource.example[x] | UseElementRenamed | ImplementationGuide.manifest.resource.isExample |
+| ImplementationGuide.manifest.resource.example[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.manifest.resource.example |
 | ImplementationGuide.manifest.resource.relativePath | UseElementSameName | ImplementationGuide.manifest.resource.relativePath |
 | ImplementationGuide.manifest.page | UseElementSameName | ImplementationGuide.manifest.page |
 | ImplementationGuide.manifest.page.id | UseElementSameName | ImplementationGuide.manifest.page.id |

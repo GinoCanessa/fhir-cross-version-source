@@ -18,7 +18,7 @@
 | ExplanationOfBenefit.patient | UseElementSameName | ExplanationOfBenefit.patient |
 | ExplanationOfBenefit.billablePeriod | UseElementSameName | ExplanationOfBenefit.billablePeriod |
 | ExplanationOfBenefit.created | UseElementSameName | ExplanationOfBenefit.created |
-| ExplanationOfBenefit.enterer | UseElementSameName | ExplanationOfBenefit.enterer |
+| ExplanationOfBenefit.enterer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.enterer |
 | ExplanationOfBenefit.insurer | UseElementSameName | ExplanationOfBenefit.insurer |
 | ExplanationOfBenefit.provider | UseElementSameName | ExplanationOfBenefit.provider |
 | ExplanationOfBenefit.priority | UseElementSameName | ExplanationOfBenefit.priority |
@@ -40,7 +40,7 @@
 | ExplanationOfBenefit.payee.type | UseElementSameName | ExplanationOfBenefit.payee.type |
 | ExplanationOfBenefit.payee.party | UseElementSameName | ExplanationOfBenefit.payee.party |
 | ExplanationOfBenefit.referral | UseElementSameName | ExplanationOfBenefit.referral |
-| ExplanationOfBenefit.facility | UseElementSameName | ExplanationOfBenefit.facility |
+| ExplanationOfBenefit.facility | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.facility |
 | ExplanationOfBenefit.claim | UseElementSameName | ExplanationOfBenefit.claim |
 | ExplanationOfBenefit.claimResponse | UseElementSameName | ExplanationOfBenefit.claimResponse |
 | ExplanationOfBenefit.outcome | UseElementSameName | ExplanationOfBenefit.outcome |
@@ -64,7 +64,7 @@
 | ExplanationOfBenefit.supportingInfo.category | UseElementSameName | ExplanationOfBenefit.supportingInfo.category |
 | ExplanationOfBenefit.supportingInfo.code | UseElementSameName | ExplanationOfBenefit.supportingInfo.code |
 | ExplanationOfBenefit.supportingInfo.timing[x] | UseElementSameName | ExplanationOfBenefit.supportingInfo.timing[x] |
-| ExplanationOfBenefit.supportingInfo.value[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.supportingInfo.value |
+| ExplanationOfBenefit.supportingInfo.value[x] | UseElementSameName | ExplanationOfBenefit.supportingInfo.value[x] |
 | ExplanationOfBenefit.supportingInfo.reason | UseElementSameName | ExplanationOfBenefit.supportingInfo.reason |
 | ExplanationOfBenefit.diagnosis | UseElementSameName | ExplanationOfBenefit.diagnosis |
 | ExplanationOfBenefit.diagnosis.id | UseElementSameName | ExplanationOfBenefit.diagnosis.id |
@@ -131,7 +131,7 @@
 | ExplanationOfBenefit.item.adjudication.category | UseElementSameName | ExplanationOfBenefit.item.adjudication.category |
 | ExplanationOfBenefit.item.adjudication.reason | UseElementSameName | ExplanationOfBenefit.item.adjudication.reason |
 | ExplanationOfBenefit.item.adjudication.amount | UseElementSameName | ExplanationOfBenefit.item.adjudication.amount |
-| ExplanationOfBenefit.item.adjudication.value | UseElementRenamed | ExplanationOfBenefit.item.adjudication.quantity |
+| ExplanationOfBenefit.item.adjudication.value | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value |
 | ExplanationOfBenefit.item.detail | UseElementSameName | ExplanationOfBenefit.item.detail |
 | ExplanationOfBenefit.item.detail.id | UseElementSameName | ExplanationOfBenefit.item.detail.id |
 | ExplanationOfBenefit.item.detail.extension | UseElementSameName | ExplanationOfBenefit.item.detail.extension |
@@ -229,13 +229,13 @@
 | ExplanationOfBenefit.payment.amount | UseElementSameName | ExplanationOfBenefit.payment.amount |
 | ExplanationOfBenefit.payment.identifier | UseElementSameName | ExplanationOfBenefit.payment.identifier |
 | ExplanationOfBenefit.formCode | UseElementSameName | ExplanationOfBenefit.formCode |
-| ExplanationOfBenefit.form | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.form |
+| ExplanationOfBenefit.form | UseElementSameName | ExplanationOfBenefit.form |
 | ExplanationOfBenefit.processNote | UseElementSameName | ExplanationOfBenefit.processNote |
 | ExplanationOfBenefit.processNote.id | UseElementSameName | ExplanationOfBenefit.processNote.id |
 | ExplanationOfBenefit.processNote.extension | UseElementSameName | ExplanationOfBenefit.processNote.extension |
 | ExplanationOfBenefit.processNote.modifierExtension | UseElementSameName | ExplanationOfBenefit.processNote.modifierExtension |
 | ExplanationOfBenefit.processNote.number | UseElementSameName | ExplanationOfBenefit.processNote.number |
-| ExplanationOfBenefit.processNote.type | UseElementSameName | ExplanationOfBenefit.processNote.type |
+| ExplanationOfBenefit.processNote.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.processNote.type |
 | ExplanationOfBenefit.processNote.text | UseElementSameName | ExplanationOfBenefit.processNote.text |
 | ExplanationOfBenefit.processNote.language | UseElementSameName | ExplanationOfBenefit.processNote.language |
 | ExplanationOfBenefit.benefitPeriod | UseElementSameName | ExplanationOfBenefit.benefitPeriod |

@@ -4,7 +4,7 @@
 | -------------- | ----- | ------ |
 | DataRequirement.id | UseElementSameName | DataRequirement.id |
 | DataRequirement.extension | UseElementSameName | DataRequirement.extension |
-| DataRequirement.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DataRequirement.type |
+| DataRequirement.type | UseElementSameName | DataRequirement.type |
 | DataRequirement.profile | UseElementSameName | DataRequirement.profile |
 | DataRequirement.subject[x] | UseElementSameName | DataRequirement.subject[x] |
 | DataRequirement.mustSupport | UseElementSameName | DataRequirement.mustSupport |

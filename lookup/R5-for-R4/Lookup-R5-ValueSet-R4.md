@@ -68,7 +68,7 @@
 | ValueSet.compose.include.filter.extension | UseElementSameName | ValueSet.compose.include.filter.extension |
 | ValueSet.compose.include.filter.modifierExtension | UseElementSameName | ValueSet.compose.include.filter.modifierExtension |
 | ValueSet.compose.include.filter.property | UseElementSameName | ValueSet.compose.include.filter.property |
-| ValueSet.compose.include.filter.op | UseElementSameName | ValueSet.compose.include.filter.op |
+| ValueSet.compose.include.filter.op | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.include.filter.op |
 | ValueSet.compose.include.filter.value | UseElementSameName | ValueSet.compose.include.filter.value |
 | ValueSet.compose.include.valueSet | UseElementSameName | ValueSet.compose.include.valueSet |
 | ValueSet.compose.include.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.include.copyright |

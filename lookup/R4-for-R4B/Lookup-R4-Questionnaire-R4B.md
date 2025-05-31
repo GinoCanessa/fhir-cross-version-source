@@ -18,7 +18,7 @@
 | Questionnaire.derivedFrom | UseElementSameName | Questionnaire.derivedFrom |
 | Questionnaire.status | UseElementSameName | Questionnaire.status |
 | Questionnaire.experimental | UseElementSameName | Questionnaire.experimental |
-| Questionnaire.subjectType | UseElementSameName | Questionnaire.subjectType |
+| Questionnaire.subjectType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Questionnaire.subjectType |
 | Questionnaire.date | UseElementSameName | Questionnaire.date |
 | Questionnaire.publisher | UseElementSameName | Questionnaire.publisher |
 | Questionnaire.contact | UseElementSameName | Questionnaire.contact |

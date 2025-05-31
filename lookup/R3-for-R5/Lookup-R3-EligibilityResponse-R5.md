@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | EligibilityResponse.id | UseElementRenamed | CoverageEligibilityResponse.id |
-| EligibilityResponse.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.meta |
+| EligibilityResponse.meta | UseElementRenamed | CoverageEligibilityResponse.meta |
 | EligibilityResponse.implicitRules | UseElementRenamed | CoverageEligibilityResponse.implicitRules |
 | EligibilityResponse.language | UseElementRenamed | CoverageEligibilityResponse.language |
 | EligibilityResponse.text | UseElementRenamed | CoverageEligibilityResponse.text |
@@ -16,15 +16,15 @@
 | EligibilityResponse.requestProvider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestProvider |
 | EligibilityResponse.requestOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestOrganization |
 | EligibilityResponse.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.request |
-| EligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.outcome |
+| EligibilityResponse.outcome | UseElementRenamed | CoverageEligibilityResponse.outcome |
 | EligibilityResponse.disposition | UseElementRenamed | CoverageEligibilityResponse.disposition |
-| EligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurer |
+| EligibilityResponse.insurer | UseElementRenamed | CoverageEligibilityResponse.insurer |
 | EligibilityResponse.inforce | UseElementRenamed | CoverageEligibilityResponse.insurance.inforce |
 | EligibilityResponse.insurance | UseElementRenamed | CoverageEligibilityResponse.insurance |
 | EligibilityResponse.insurance.id | UseElementRenamed | CoverageEligibilityResponse.insurance.id |
 | EligibilityResponse.insurance.extension | UseElementRenamed | CoverageEligibilityResponse.insurance.extension |
 | EligibilityResponse.insurance.modifierExtension | UseElementRenamed | CoverageEligibilityResponse.insurance.modifierExtension |
-| EligibilityResponse.insurance.coverage | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.coverage |
+| EligibilityResponse.insurance.coverage | UseElementRenamed | CoverageEligibilityResponse.insurance.coverage |
 | EligibilityResponse.insurance.contract | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.contract |
 | EligibilityResponse.insurance.benefitBalance | UseElementRenamed | CoverageEligibilityResponse.insurance.item |
 | EligibilityResponse.insurance.benefitBalance.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.benefitBalance.id |
@@ -43,7 +43,7 @@
 | EligibilityResponse.insurance.benefitBalance.financial.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.benefitBalance.financial.extension |
 | EligibilityResponse.insurance.benefitBalance.financial.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.benefitBalance.financial.modifierExtension |
 | EligibilityResponse.insurance.benefitBalance.financial.type | UseElementRenamed | CoverageEligibilityResponse.insurance.item.benefit.type |
-| EligibilityResponse.insurance.benefitBalance.financial.allowed[x] | UseElementRenamed | CoverageEligibilityResponse.insurance.item.benefit.allowed[x] |
+| EligibilityResponse.insurance.benefitBalance.financial.allowed[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.benefitBalance.financial.allowed |
 | EligibilityResponse.insurance.benefitBalance.financial.used[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance.benefitBalance.financial.used |
 | EligibilityResponse.form | UseElementRenamed | CoverageEligibilityResponse.form |
 | EligibilityResponse.error | UseElementRenamed | CoverageEligibilityResponse.error |

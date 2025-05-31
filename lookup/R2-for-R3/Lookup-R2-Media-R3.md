@@ -13,8 +13,8 @@
 | Media.type | UseElementSameName | Media.type |
 | Media.subtype | UseElementSameName | Media.subtype |
 | Media.identifier | UseElementSameName | Media.identifier |
-| Media.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.subject |
-| Media.operator | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.operator |
+| Media.subject | UseElementSameName | Media.subject |
+| Media.operator | UseElementSameName | Media.operator |
 | Media.view | UseElementSameName | Media.view |
 | Media.deviceName | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.deviceName |
 | Media.height | UseElementSameName | Media.height |

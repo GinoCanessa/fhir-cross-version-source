@@ -19,7 +19,7 @@
 | PlanDefinition.type | UseElementSameName | PlanDefinition.type |
 | PlanDefinition.status | UseElementSameName | PlanDefinition.status |
 | PlanDefinition.experimental | UseElementSameName | PlanDefinition.experimental |
-| PlanDefinition.subject[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PlanDefinition.subject |
+| PlanDefinition.subject[x] | UseElementSameName | PlanDefinition.subject[x] |
 | PlanDefinition.date | UseElementSameName | PlanDefinition.date |
 | PlanDefinition.publisher | UseElementSameName | PlanDefinition.publisher |
 | PlanDefinition.contact | UseElementSameName | PlanDefinition.contact |
@@ -69,7 +69,7 @@
 | PlanDefinition.action.reason | UseElementSameName | PlanDefinition.action.reason |
 | PlanDefinition.action.documentation | UseElementSameName | PlanDefinition.action.documentation |
 | PlanDefinition.action.goalId | UseElementSameName | PlanDefinition.action.goalId |
-| PlanDefinition.action.subject[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-PlanDefinition.action.subject |
+| PlanDefinition.action.subject[x] | UseElementSameName | PlanDefinition.action.subject[x] |
 | PlanDefinition.action.trigger | UseElementSameName | PlanDefinition.action.trigger |
 | PlanDefinition.action.condition | UseElementSameName | PlanDefinition.action.condition |
 | PlanDefinition.action.condition.id | UseElementSameName | PlanDefinition.action.condition.id |

@@ -10,7 +10,7 @@
 | Subscription.contained | UseElementSameName | Subscription.contained |
 | Subscription.extension | UseElementSameName | Subscription.extension |
 | Subscription.modifierExtension | UseElementSameName | Subscription.modifierExtension |
-| Subscription.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Subscription.status |
+| Subscription.status | UseElementSameName | Subscription.status |
 | Subscription.contact | UseElementSameName | Subscription.contact |
 | Subscription.end | UseElementSameName | Subscription.end |
 | Subscription.reason | UseElementSameName | Subscription.reason |

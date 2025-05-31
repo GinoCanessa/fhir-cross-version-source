@@ -12,9 +12,9 @@
 | RelatedPerson.modifierExtension | UseElementSameName | RelatedPerson.modifierExtension |
 | RelatedPerson.identifier | UseElementSameName | RelatedPerson.identifier |
 | RelatedPerson.active | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RelatedPerson.active |
-| RelatedPerson.patient | UseElementSameName | RelatedPerson.patient |
-| RelatedPerson.relationship | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RelatedPerson.relationship |
-| RelatedPerson.name | UseElementSameName | RelatedPerson.name |
+| RelatedPerson.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RelatedPerson.patient |
+| RelatedPerson.relationship | UseElementSameName | RelatedPerson.relationship |
+| RelatedPerson.name | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RelatedPerson.name |
 | RelatedPerson.telecom | UseElementSameName | RelatedPerson.telecom |
 | RelatedPerson.gender | UseElementSameName | RelatedPerson.gender |
 | RelatedPerson.birthDate | UseElementSameName | RelatedPerson.birthDate |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Practitioner.id | UseElementSameName | Practitioner.id |
-| Practitioner.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Practitioner.meta |
+| Practitioner.meta | UseElementSameName | Practitioner.meta |
 | Practitioner.implicitRules | UseElementSameName | Practitioner.implicitRules |
 | Practitioner.language | UseElementSameName | Practitioner.language |
 | Practitioner.text | UseElementSameName | Practitioner.text |
@@ -12,7 +12,7 @@
 | Practitioner.modifierExtension | UseElementSameName | Practitioner.modifierExtension |
 | Practitioner.identifier | UseElementSameName | Practitioner.identifier |
 | Practitioner.active | UseElementSameName | Practitioner.active |
-| Practitioner.name | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Practitioner.name |
+| Practitioner.name | UseElementSameName | Practitioner.name |
 | Practitioner.telecom | UseElementSameName | Practitioner.telecom |
 | Practitioner.address | UseElementSameName | Practitioner.address |
 | Practitioner.gender | UseElementSameName | Practitioner.gender |
@@ -35,5 +35,5 @@
 | Practitioner.qualification.identifier | UseElementSameName | Practitioner.qualification.identifier |
 | Practitioner.qualification.code | UseElementSameName | Practitioner.qualification.code |
 | Practitioner.qualification.period | UseElementSameName | Practitioner.qualification.period |
-| Practitioner.qualification.issuer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Practitioner.qualification.issuer |
+| Practitioner.qualification.issuer | UseElementSameName | Practitioner.qualification.issuer |
 | Practitioner.communication | UseElementSameName | Practitioner.communication |

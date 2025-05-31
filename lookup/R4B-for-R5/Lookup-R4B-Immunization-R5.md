@@ -21,7 +21,7 @@
 | Immunization.primarySource | UseElementSameName | Immunization.primarySource |
 | Immunization.reportOrigin | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.reportOrigin |
 | Immunization.location | UseElementSameName | Immunization.location |
-| Immunization.manufacturer | UseElementSameName | Immunization.manufacturer |
+| Immunization.manufacturer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.manufacturer |
 | Immunization.lotNumber | UseElementSameName | Immunization.lotNumber |
 | Immunization.expirationDate | UseElementSameName | Immunization.expirationDate |
 | Immunization.site | UseElementSameName | Immunization.site |
@@ -32,10 +32,10 @@
 | Immunization.performer.extension | UseElementSameName | Immunization.performer.extension |
 | Immunization.performer.modifierExtension | UseElementSameName | Immunization.performer.modifierExtension |
 | Immunization.performer.function | UseElementSameName | Immunization.performer.function |
-| Immunization.performer.actor | UseElementSameName | Immunization.performer.actor |
+| Immunization.performer.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.performer.actor |
 | Immunization.note | UseElementSameName | Immunization.note |
-| Immunization.reasonCode | UseElementRenamed | Immunization.reason |
-| Immunization.reasonReference | UseElementRenamed | Immunization.reason |
+| Immunization.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.reasonCode |
+| Immunization.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.reasonReference |
 | Immunization.isSubpotent | UseElementSameName | Immunization.isSubpotent |
 | Immunization.subpotentReason | UseElementSameName | Immunization.subpotentReason |
 | Immunization.education | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.education |
@@ -46,14 +46,14 @@
 | Immunization.education.reference | UseExtensionFromAncestor | - |
 | Immunization.education.publicationDate | UseExtensionFromAncestor | - |
 | Immunization.education.presentationDate | UseExtensionFromAncestor | - |
-| Immunization.programEligibility | UseElementSameName | Immunization.programEligibility |
+| Immunization.programEligibility | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.programEligibility |
 | Immunization.fundingSource | UseElementSameName | Immunization.fundingSource |
 | Immunization.reaction | UseElementSameName | Immunization.reaction |
 | Immunization.reaction.id | UseElementSameName | Immunization.reaction.id |
 | Immunization.reaction.extension | UseElementSameName | Immunization.reaction.extension |
 | Immunization.reaction.modifierExtension | UseElementSameName | Immunization.reaction.modifierExtension |
 | Immunization.reaction.date | UseElementSameName | Immunization.reaction.date |
-| Immunization.reaction.detail | UseElementRenamed | Immunization.reaction.manifestation |
+| Immunization.reaction.detail | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.reaction.detail |
 | Immunization.reaction.reported | UseElementSameName | Immunization.reaction.reported |
 | Immunization.protocolApplied | UseElementSameName | Immunization.protocolApplied |
 | Immunization.protocolApplied.id | UseElementSameName | Immunization.protocolApplied.id |
@@ -62,5 +62,5 @@
 | Immunization.protocolApplied.series | UseElementSameName | Immunization.protocolApplied.series |
 | Immunization.protocolApplied.authority | UseElementSameName | Immunization.protocolApplied.authority |
 | Immunization.protocolApplied.targetDisease | UseElementSameName | Immunization.protocolApplied.targetDisease |
-| Immunization.protocolApplied.doseNumber[x] | UseElementRenamed | Immunization.protocolApplied.doseNumber |
-| Immunization.protocolApplied.seriesDoses[x] | UseElementRenamed | Immunization.protocolApplied.seriesDoses |
+| Immunization.protocolApplied.doseNumber[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.protocolApplied.doseNumber |
+| Immunization.protocolApplied.seriesDoses[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.protocolApplied.seriesDoses |

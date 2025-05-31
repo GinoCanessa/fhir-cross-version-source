@@ -27,10 +27,10 @@
 | Communication.encounter | UseElementSameName | Communication.encounter |
 | Communication.sent | UseElementSameName | Communication.sent |
 | Communication.received | UseElementSameName | Communication.received |
-| Communication.recipient | UseElementSameName | Communication.recipient |
-| Communication.sender | UseElementSameName | Communication.sender |
-| Communication.reasonCode | UseElementRenamed | Communication.reason |
-| Communication.reasonReference | UseElementRenamed | Communication.reason |
+| Communication.recipient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.recipient |
+| Communication.sender | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.sender |
+| Communication.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.reasonCode |
+| Communication.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.reasonReference |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |
 | Communication.payload.extension | UseElementSameName | Communication.payload.extension |

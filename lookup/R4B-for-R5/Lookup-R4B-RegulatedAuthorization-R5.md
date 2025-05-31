@@ -11,14 +11,14 @@
 | RegulatedAuthorization.extension | UseElementSameName | RegulatedAuthorization.extension |
 | RegulatedAuthorization.modifierExtension | UseElementSameName | RegulatedAuthorization.modifierExtension |
 | RegulatedAuthorization.identifier | UseElementSameName | RegulatedAuthorization.identifier |
-| RegulatedAuthorization.subject | UseElementSameName | RegulatedAuthorization.subject |
+| RegulatedAuthorization.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RegulatedAuthorization.subject |
 | RegulatedAuthorization.type | UseElementSameName | RegulatedAuthorization.type |
 | RegulatedAuthorization.description | UseElementSameName | RegulatedAuthorization.description |
 | RegulatedAuthorization.region | UseElementSameName | RegulatedAuthorization.region |
 | RegulatedAuthorization.status | UseElementSameName | RegulatedAuthorization.status |
 | RegulatedAuthorization.statusDate | UseElementSameName | RegulatedAuthorization.statusDate |
 | RegulatedAuthorization.validityPeriod | UseElementSameName | RegulatedAuthorization.validityPeriod |
-| RegulatedAuthorization.indication | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RegulatedAuthorization.indication |
+| RegulatedAuthorization.indication | UseElementSameName | RegulatedAuthorization.indication |
 | RegulatedAuthorization.intendedUse | UseElementSameName | RegulatedAuthorization.intendedUse |
 | RegulatedAuthorization.basis | UseElementSameName | RegulatedAuthorization.basis |
 | RegulatedAuthorization.holder | UseElementSameName | RegulatedAuthorization.holder |

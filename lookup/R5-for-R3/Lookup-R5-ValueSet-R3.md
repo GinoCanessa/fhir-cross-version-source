@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ValueSet.id | UseElementSameName | ValueSet.id |
-| ValueSet.meta | UseElementSameName | ValueSet.meta |
+| ValueSet.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.meta |
 | ValueSet.implicitRules | UseElementSameName | ValueSet.implicitRules |
 | ValueSet.language | UseElementSameName | ValueSet.language |
 | ValueSet.text | UseElementSameName | ValueSet.text |
@@ -68,9 +68,9 @@
 | ValueSet.compose.include.filter.extension | UseElementSameName | ValueSet.compose.include.filter.extension |
 | ValueSet.compose.include.filter.modifierExtension | UseElementSameName | ValueSet.compose.include.filter.modifierExtension |
 | ValueSet.compose.include.filter.property | UseElementSameName | ValueSet.compose.include.filter.property |
-| ValueSet.compose.include.filter.op | UseElementSameName | ValueSet.compose.include.filter.op |
+| ValueSet.compose.include.filter.op | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.include.filter.op |
 | ValueSet.compose.include.filter.value | UseElementSameName | ValueSet.compose.include.filter.value |
-| ValueSet.compose.include.valueSet | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.include.valueSet |
+| ValueSet.compose.include.valueSet | UseElementSameName | ValueSet.compose.include.valueSet |
 | ValueSet.compose.include.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.include.copyright |
 | ValueSet.compose.exclude | UseElementSameName | ValueSet.compose.exclude |
 | ValueSet.compose.property | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.property |
@@ -88,7 +88,7 @@
 | ValueSet.expansion.parameter.extension | UseElementSameName | ValueSet.expansion.parameter.extension |
 | ValueSet.expansion.parameter.modifierExtension | UseElementSameName | ValueSet.expansion.parameter.modifierExtension |
 | ValueSet.expansion.parameter.name | UseElementSameName | ValueSet.expansion.parameter.name |
-| ValueSet.expansion.parameter.value[x] | UseElementSameName | ValueSet.expansion.parameter.value[x] |
+| ValueSet.expansion.parameter.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.parameter.value |
 | ValueSet.expansion.property | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.expansion.property |
 | ValueSet.expansion.property.id | UseExtensionFromAncestor | - |
 | ValueSet.expansion.property.extension | UseExtensionFromAncestor | - |

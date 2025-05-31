@@ -16,7 +16,7 @@
 | Observation.status | UseElementSameName | Observation.status |
 | Observation.category | UseElementSameName | Observation.category |
 | Observation.code | UseElementSameName | Observation.code |
-| Observation.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Observation.subject |
+| Observation.subject | UseElementSameName | Observation.subject |
 | Observation.focus | UseElementSameName | Observation.focus |
 | Observation.encounter | UseElementSameName | Observation.encounter |
 | Observation.effective[x] | UseElementSameName | Observation.effective[x] |

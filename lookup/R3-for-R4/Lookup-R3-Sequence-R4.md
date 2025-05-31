@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Sequence.id | UseElementRenamed | MolecularSequence.id |
-| Sequence.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.meta |
+| Sequence.meta | UseElementRenamed | MolecularSequence.meta |
 | Sequence.implicitRules | UseElementRenamed | MolecularSequence.implicitRules |
 | Sequence.language | UseElementRenamed | MolecularSequence.language |
 | Sequence.text | UseElementRenamed | MolecularSequence.text |
@@ -11,12 +11,12 @@
 | Sequence.extension | UseElementRenamed | MolecularSequence.extension |
 | Sequence.modifierExtension | UseElementRenamed | MolecularSequence.modifierExtension |
 | Sequence.identifier | UseElementRenamed | MolecularSequence.identifier |
-| Sequence.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.type |
+| Sequence.type | UseElementRenamed | MolecularSequence.type |
 | Sequence.coordinateSystem | UseElementRenamed | MolecularSequence.coordinateSystem |
-| Sequence.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.patient |
-| Sequence.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.specimen |
-| Sequence.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.device |
-| Sequence.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.performer |
+| Sequence.patient | UseElementRenamed | MolecularSequence.patient |
+| Sequence.specimen | UseElementRenamed | MolecularSequence.specimen |
+| Sequence.device | UseElementRenamed | MolecularSequence.device |
+| Sequence.performer | UseElementRenamed | MolecularSequence.performer |
 | Sequence.quantity | UseElementRenamed | MolecularSequence.quantity |
 | Sequence.referenceSeq | UseElementRenamed | MolecularSequence.referenceSeq |
 | Sequence.referenceSeq.id | UseElementRenamed | MolecularSequence.referenceSeq.id |
@@ -27,7 +27,7 @@
 | Sequence.referenceSeq.referenceSeqId | UseElementRenamed | MolecularSequence.referenceSeq.referenceSeqId |
 | Sequence.referenceSeq.referenceSeqPointer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.referenceSeq.referenceSeqPointer |
 | Sequence.referenceSeq.referenceSeqString | UseElementRenamed | MolecularSequence.referenceSeq.referenceSeqString |
-| Sequence.referenceSeq.strand | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.referenceSeq.strand |
+| Sequence.referenceSeq.strand | UseElementRenamed | MolecularSequence.referenceSeq.strand |
 | Sequence.referenceSeq.windowStart | UseElementRenamed | MolecularSequence.referenceSeq.windowStart |
 | Sequence.referenceSeq.windowEnd | UseElementRenamed | MolecularSequence.referenceSeq.windowEnd |
 | Sequence.variant | UseElementRenamed | MolecularSequence.variant |
@@ -39,7 +39,7 @@
 | Sequence.variant.observedAllele | UseElementRenamed | MolecularSequence.variant.observedAllele |
 | Sequence.variant.referenceAllele | UseElementRenamed | MolecularSequence.variant.referenceAllele |
 | Sequence.variant.cigar | UseElementRenamed | MolecularSequence.variant.cigar |
-| Sequence.variant.variantPointer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.variant.variantPointer |
+| Sequence.variant.variantPointer | UseElementRenamed | MolecularSequence.variant.variantPointer |
 | Sequence.observedSeq | UseElementRenamed | MolecularSequence.observedSeq |
 | Sequence.quality | UseElementRenamed | MolecularSequence.quality |
 | Sequence.quality.id | UseElementRenamed | MolecularSequence.quality.id |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Group.id | UseElementSameName | Group.id |
-| Group.meta | UseElementSameName | Group.meta |
+| Group.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.meta |
 | Group.implicitRules | UseElementSameName | Group.implicitRules |
 | Group.language | UseElementSameName | Group.language |
 | Group.text | UseElementSameName | Group.text |
@@ -12,7 +12,7 @@
 | Group.modifierExtension | UseElementSameName | Group.modifierExtension |
 | Group.identifier | UseElementSameName | Group.identifier |
 | Group.active | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.active |
-| Group.type | UseElementSameName | Group.type |
+| Group.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.type |
 | Group.membership | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.membership |
 | Group.code | UseElementSameName | Group.code |
 | Group.name | UseElementSameName | Group.name |
@@ -24,7 +24,7 @@
 | Group.characteristic.extension | UseElementSameName | Group.characteristic.extension |
 | Group.characteristic.modifierExtension | UseElementSameName | Group.characteristic.modifierExtension |
 | Group.characteristic.code | UseElementSameName | Group.characteristic.code |
-| Group.characteristic.value[x] | UseElementSameName | Group.characteristic.value[x] |
+| Group.characteristic.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.characteristic.value |
 | Group.characteristic.exclude | UseElementSameName | Group.characteristic.exclude |
 | Group.characteristic.period | UseElementSameName | Group.characteristic.period |
 | Group.member | UseElementSameName | Group.member |

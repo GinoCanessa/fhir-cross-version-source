@@ -14,7 +14,7 @@
 | Medication.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.status |
 | Medication.isBrand | UseElementRenamed | Medication.isBrand |
 | Medication.isOverTheCounter | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.isOverTheCounter |
-| Medication.manufacturer | UseElementSameName | Medication.manufacturer |
+| Medication.manufacturer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.manufacturer |
 | Medication.form | UseElementSameName | Medication.product.form |
 | Medication.ingredient | UseElementSameName | Medication.product.ingredient |
 | Medication.ingredient.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.ingredient.id |
@@ -32,7 +32,7 @@
 | Medication.package.content.id | UseElementRenamed | Medication.package.content.id |
 | Medication.package.content.extension | UseElementRenamed | Medication.package.content.extension |
 | Medication.package.content.modifierExtension | UseElementRenamed | Medication.package.content.modifierExtension |
-| Medication.package.content.item[x] | UseElementRenamed | Medication.package.content.item |
+| Medication.package.content.item[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.content.item |
 | Medication.package.content.amount | UseElementRenamed | Medication.package.content.amount |
 | Medication.package.batch | UseElementRenamed | Medication.product.batch |
 | Medication.package.batch.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package.batch.id |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Encounter.id | UseElementSameName | Encounter.id |
-| Encounter.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.meta |
+| Encounter.meta | UseElementSameName | Encounter.meta |
 | Encounter.implicitRules | UseElementSameName | Encounter.implicitRules |
 | Encounter.language | UseElementSameName | Encounter.language |
 | Encounter.text | UseElementSameName | Encounter.text |
@@ -27,8 +27,8 @@
 | Encounter.classHistory.period | UseElementSameName | Encounter.classHistory.period |
 | Encounter.type | UseElementSameName | Encounter.type |
 | Encounter.priority | UseElementSameName | Encounter.priority |
-| Encounter.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.subject |
-| Encounter.episodeOfCare | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.episodeOfCare |
+| Encounter.subject | UseElementSameName | Encounter.subject |
+| Encounter.episodeOfCare | UseElementSameName | Encounter.episodeOfCare |
 | Encounter.incomingReferral | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.incomingReferral |
 | Encounter.participant | UseElementSameName | Encounter.participant |
 | Encounter.participant.id | UseElementSameName | Encounter.participant.id |
@@ -37,7 +37,7 @@
 | Encounter.participant.type | UseElementSameName | Encounter.participant.type |
 | Encounter.participant.period | UseElementSameName | Encounter.participant.period |
 | Encounter.participant.individual | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.participant.individual |
-| Encounter.appointment | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.appointment |
+| Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementSameName | Encounter.period |
 | Encounter.length | UseElementSameName | Encounter.length |
 | Encounter.reason | UseElementRenamed | Encounter.reasonCode |
@@ -45,10 +45,10 @@
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |
 | Encounter.diagnosis.extension | UseElementSameName | Encounter.diagnosis.extension |
 | Encounter.diagnosis.modifierExtension | UseElementSameName | Encounter.diagnosis.modifierExtension |
-| Encounter.diagnosis.condition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.diagnosis.condition |
+| Encounter.diagnosis.condition | UseElementSameName | Encounter.diagnosis.condition |
 | Encounter.diagnosis.role | UseElementRenamed | Encounter.diagnosis.use |
 | Encounter.diagnosis.rank | UseElementSameName | Encounter.diagnosis.rank |
-| Encounter.account | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.account |
+| Encounter.account | UseElementSameName | Encounter.account |
 | Encounter.hospitalization | UseElementSameName | Encounter.hospitalization |
 | Encounter.hospitalization.id | UseElementSameName | Encounter.hospitalization.id |
 | Encounter.hospitalization.extension | UseElementSameName | Encounter.hospitalization.extension |
@@ -66,8 +66,8 @@
 | Encounter.location.id | UseElementSameName | Encounter.location.id |
 | Encounter.location.extension | UseElementSameName | Encounter.location.extension |
 | Encounter.location.modifierExtension | UseElementSameName | Encounter.location.modifierExtension |
-| Encounter.location.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.location.location |
+| Encounter.location.location | UseElementSameName | Encounter.location.location |
 | Encounter.location.status | UseElementSameName | Encounter.location.status |
 | Encounter.location.period | UseElementSameName | Encounter.location.period |
-| Encounter.serviceProvider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.serviceProvider |
-| Encounter.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.partOf |
+| Encounter.serviceProvider | UseElementSameName | Encounter.serviceProvider |
+| Encounter.partOf | UseElementSameName | Encounter.partOf |

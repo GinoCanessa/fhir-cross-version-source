@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | RelatedPerson.id | UseElementSameName | RelatedPerson.id |
-| RelatedPerson.meta | UseElementSameName | RelatedPerson.meta |
+| RelatedPerson.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RelatedPerson.meta |
 | RelatedPerson.implicitRules | UseElementSameName | RelatedPerson.implicitRules |
 | RelatedPerson.language | UseElementSameName | RelatedPerson.language |
 | RelatedPerson.text | UseElementSameName | RelatedPerson.text |
@@ -12,9 +12,9 @@
 | RelatedPerson.modifierExtension | UseElementSameName | RelatedPerson.modifierExtension |
 | RelatedPerson.identifier | UseElementSameName | RelatedPerson.identifier |
 | RelatedPerson.active | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RelatedPerson.active |
-| RelatedPerson.patient | UseElementSameName | RelatedPerson.patient |
+| RelatedPerson.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RelatedPerson.patient |
 | RelatedPerson.relationship | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RelatedPerson.relationship |
-| RelatedPerson.name | UseElementSameName | RelatedPerson.name |
+| RelatedPerson.name | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RelatedPerson.name |
 | RelatedPerson.telecom | UseElementSameName | RelatedPerson.telecom |
 | RelatedPerson.gender | UseElementSameName | RelatedPerson.gender |
 | RelatedPerson.birthDate | UseElementSameName | RelatedPerson.birthDate |

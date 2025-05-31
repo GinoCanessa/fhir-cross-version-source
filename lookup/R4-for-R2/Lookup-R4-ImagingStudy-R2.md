@@ -3,14 +3,14 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ImagingStudy.id | UseElementSameName | ImagingStudy.id |
-| ImagingStudy.meta | UseElementSameName | ImagingStudy.meta |
+| ImagingStudy.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.meta |
 | ImagingStudy.implicitRules | UseElementSameName | ImagingStudy.implicitRules |
 | ImagingStudy.language | UseElementSameName | ImagingStudy.language |
 | ImagingStudy.text | UseElementSameName | ImagingStudy.text |
 | ImagingStudy.contained | UseElementSameName | ImagingStudy.contained |
-| ImagingStudy.extension | UseElementSameName | ImagingStudy.extension |
+| ImagingStudy.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.extension |
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
-| ImagingStudy.identifier | UseElementSameName | ImagingStudy.uid |
+| ImagingStudy.identifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.identifier |
 | ImagingStudy.status | UseElementSameName | ImagingStudy.availability |
 | ImagingStudy.modality | UseElementSameName | ImagingStudy.modalityList |
 | ImagingStudy.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.subject |
@@ -31,9 +31,9 @@
 | ImagingStudy.description | UseElementSameName | ImagingStudy.description |
 | ImagingStudy.series | UseElementSameName | ImagingStudy.series |
 | ImagingStudy.series.id | UseElementSameName | ImagingStudy.series.id |
-| ImagingStudy.series.extension | UseElementSameName | ImagingStudy.series.extension |
+| ImagingStudy.series.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.extension |
 | ImagingStudy.series.modifierExtension | UseElementSameName | ImagingStudy.series.modifierExtension |
-| ImagingStudy.series.uid | UseElementSameName | ImagingStudy.series.uid |
+| ImagingStudy.series.uid | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.uid |
 | ImagingStudy.series.number | UseElementSameName | ImagingStudy.series.number |
 | ImagingStudy.series.modality | UseElementSameName | ImagingStudy.series.modality |
 | ImagingStudy.series.description | UseElementSameName | ImagingStudy.series.description |
@@ -53,7 +53,7 @@
 | ImagingStudy.series.instance.id | UseElementSameName | ImagingStudy.series.instance.id |
 | ImagingStudy.series.instance.extension | UseElementSameName | ImagingStudy.series.instance.extension |
 | ImagingStudy.series.instance.modifierExtension | UseElementSameName | ImagingStudy.series.instance.modifierExtension |
-| ImagingStudy.series.instance.uid | UseElementSameName | ImagingStudy.series.instance.uid |
-| ImagingStudy.series.instance.sopClass | UseElementSameName | ImagingStudy.series.instance.sopClass |
+| ImagingStudy.series.instance.uid | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.instance.uid |
+| ImagingStudy.series.instance.sopClass | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.instance.sopClass |
 | ImagingStudy.series.instance.number | UseElementSameName | ImagingStudy.series.instance.number |
 | ImagingStudy.series.instance.title | UseElementSameName | ImagingStudy.series.instance.title |

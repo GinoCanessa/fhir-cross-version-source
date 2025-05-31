@@ -18,7 +18,7 @@
 | PaymentReconciliation.created | UseElementRenamed | PaymentReconciliation.created |
 | PaymentReconciliation.enterer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.enterer |
 | PaymentReconciliation.issuerType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.issuerType |
-| PaymentReconciliation.paymentIssuer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.paymentIssuer |
+| PaymentReconciliation.paymentIssuer | UseElementRenamed | PaymentReconciliation.paymentIssuer |
 | PaymentReconciliation.request | UseElementRenamed | PaymentReconciliation.request |
 | PaymentReconciliation.requestor | UseElementRenamed | PaymentReconciliation.requestor |
 | PaymentReconciliation.outcome | UseElementRenamed | PaymentReconciliation.outcome |

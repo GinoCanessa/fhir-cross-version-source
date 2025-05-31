@@ -31,9 +31,9 @@
 | Ingredient.substance.strength.id | UseElementSameName | Ingredient.substance.strength.id |
 | Ingredient.substance.strength.extension | UseElementSameName | Ingredient.substance.strength.extension |
 | Ingredient.substance.strength.modifierExtension | UseElementSameName | Ingredient.substance.strength.modifierExtension |
-| Ingredient.substance.strength.presentation[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Ingredient.substance.strength.presentation |
+| Ingredient.substance.strength.presentation[x] | UseElementSameName | Ingredient.substance.strength.presentation[x] |
 | Ingredient.substance.strength.textPresentation | UseElementSameName | Ingredient.substance.strength.textPresentation |
-| Ingredient.substance.strength.concentration[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Ingredient.substance.strength.concentration |
+| Ingredient.substance.strength.concentration[x] | UseElementSameName | Ingredient.substance.strength.concentration[x] |
 | Ingredient.substance.strength.textConcentration | UseElementSameName | Ingredient.substance.strength.textConcentration |
 | Ingredient.substance.strength.measurementPoint | UseElementSameName | Ingredient.substance.strength.measurementPoint |
 | Ingredient.substance.strength.country | UseElementSameName | Ingredient.substance.strength.country |
@@ -42,6 +42,6 @@
 | Ingredient.substance.strength.referenceStrength.extension | UseElementSameName | Ingredient.substance.strength.referenceStrength.extension |
 | Ingredient.substance.strength.referenceStrength.modifierExtension | UseElementSameName | Ingredient.substance.strength.referenceStrength.modifierExtension |
 | Ingredient.substance.strength.referenceStrength.substance | UseElementSameName | Ingredient.substance.strength.referenceStrength.substance |
-| Ingredient.substance.strength.referenceStrength.strength[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Ingredient.substance.strength.referenceStrength.strength |
+| Ingredient.substance.strength.referenceStrength.strength[x] | UseElementSameName | Ingredient.substance.strength.referenceStrength.strength[x] |
 | Ingredient.substance.strength.referenceStrength.measurementPoint | UseElementSameName | Ingredient.substance.strength.referenceStrength.measurementPoint |
 | Ingredient.substance.strength.referenceStrength.country | UseElementSameName | Ingredient.substance.strength.referenceStrength.country |

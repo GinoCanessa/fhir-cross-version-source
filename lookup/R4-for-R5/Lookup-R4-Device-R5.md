@@ -11,7 +11,7 @@
 | Device.extension | UseElementSameName | Device.extension |
 | Device.modifierExtension | UseElementSameName | Device.modifierExtension |
 | Device.identifier | UseElementSameName | Device.identifier |
-| Device.definition | UseElementSameName | Device.definition |
+| Device.definition | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.definition |
 | Device.udiCarrier | UseElementSameName | Device.udiCarrier |
 | Device.udiCarrier.id | UseElementSameName | Device.udiCarrier.id |
 | Device.udiCarrier.extension | UseElementSameName | Device.udiCarrier.extension |
@@ -21,8 +21,8 @@
 | Device.udiCarrier.jurisdiction | UseElementSameName | Device.udiCarrier.jurisdiction |
 | Device.udiCarrier.carrierAIDC | UseElementSameName | Device.udiCarrier.carrierAIDC |
 | Device.udiCarrier.carrierHRF | UseElementSameName | Device.udiCarrier.carrierHRF |
-| Device.udiCarrier.entryType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.udiCarrier.entryType |
-| Device.status | UseElementSameName | Device.status |
+| Device.udiCarrier.entryType | UseElementSameName | Device.udiCarrier.entryType |
+| Device.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.status |
 | Device.statusReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.statusReason |
 | Device.distinctIdentifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.distinctIdentifier |
 | Device.manufacturer | UseElementSameName | Device.manufacturer |
@@ -35,10 +35,10 @@
 | Device.deviceName.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.deviceName.extension |
 | Device.deviceName.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.deviceName.modifierExtension |
 | Device.deviceName.name | UseElementRenamed | Device.name.value |
-| Device.deviceName.type | UseElementRenamed | Device.name.type |
+| Device.deviceName.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.deviceName.type |
 | Device.modelNumber | UseElementSameName | Device.modelNumber |
 | Device.partNumber | UseElementSameName | Device.partNumber |
-| Device.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.type |
+| Device.type | UseElementSameName | Device.type |
 | Device.specialization | UseElementRenamed | Device.conformsTo |
 | Device.specialization.id | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.specialization.id |
 | Device.specialization.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.specialization.extension |

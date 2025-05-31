@@ -3,7 +3,7 @@
 <table border="1">
 <tr><th>Source Element</th><th>Usage</th><th>Target</th></tr>
 <tr><td>AuditEvent.id</td><td>UseElementSameName</td><td>AuditEvent.id</td></tr>
-<tr><td>AuditEvent.meta</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.meta</td></tr>
+<tr><td>AuditEvent.meta</td><td>UseElementSameName</td><td>AuditEvent.meta</td></tr>
 <tr><td>AuditEvent.implicitRules</td><td>UseElementSameName</td><td>AuditEvent.implicitRules</td></tr>
 <tr><td>AuditEvent.language</td><td>UseElementSameName</td><td>AuditEvent.language</td></tr>
 <tr><td>AuditEvent.text</td><td>UseElementSameName</td><td>AuditEvent.text</td></tr>
@@ -27,11 +27,11 @@
 <tr><td>AuditEvent.participant.modifierExtension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.modifierExtension</td></tr>
 <tr><td>AuditEvent.participant.role</td><td>UseElementRenamed</td><td>AuditEvent.agent.role</td></tr>
 <tr><td>AuditEvent.participant.reference</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.reference</td></tr>
-<tr><td>AuditEvent.participant.userId</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.userId</td></tr>
+<tr><td>AuditEvent.participant.userId</td><td>UseElementRenamed</td><td>AuditEvent.agent.who</td></tr>
 <tr><td>AuditEvent.participant.altId</td><td>UseElementRenamed</td><td>AuditEvent.agent.altId</td></tr>
 <tr><td>AuditEvent.participant.name</td><td>UseElementRenamed</td><td>AuditEvent.agent.name</td></tr>
 <tr><td>AuditEvent.participant.requestor</td><td>UseElementRenamed</td><td>AuditEvent.agent.requestor</td></tr>
-<tr><td>AuditEvent.participant.location</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.location</td></tr>
+<tr><td>AuditEvent.participant.location</td><td>UseElementRenamed</td><td>AuditEvent.agent.location</td></tr>
 <tr><td>AuditEvent.participant.policy</td><td>UseElementRenamed</td><td>AuditEvent.agent.policy</td></tr>
 <tr><td>AuditEvent.participant.media</td><td>UseElementRenamed</td><td>AuditEvent.agent.media</td></tr>
 <tr><td>AuditEvent.participant.network</td><td>UseElementRenamed</td><td>AuditEvent.agent.network</td></tr>
@@ -40,20 +40,20 @@
 <tr><td>AuditEvent.participant.network.modifierExtension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.network.modifierExtension</td></tr>
 <tr><td>AuditEvent.participant.network.address</td><td>UseElementRenamed</td><td>AuditEvent.agent.network.address</td></tr>
 <tr><td>AuditEvent.participant.network.type</td><td>UseElementRenamed</td><td>AuditEvent.agent.network.type</td></tr>
-<tr><td>AuditEvent.participant.purposeOfUse</td><td>UseElementRenamed</td><td>AuditEvent.agent.purposeOfUse</td></tr>
+<tr><td>AuditEvent.participant.purposeOfUse</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.purposeOfUse</td></tr>
 <tr><td>AuditEvent.source</td><td>UseElementSameName</td><td>AuditEvent.source</td></tr>
 <tr><td>AuditEvent.source.id</td><td>UseElementSameName</td><td>AuditEvent.source.id</td></tr>
 <tr><td>AuditEvent.source.extension</td><td>UseElementSameName</td><td>AuditEvent.source.extension</td></tr>
 <tr><td>AuditEvent.source.modifierExtension</td><td>UseElementSameName</td><td>AuditEvent.source.modifierExtension</td></tr>
 <tr><td>AuditEvent.source.site</td><td>UseElementSameName</td><td>AuditEvent.source.site</td></tr>
-<tr><td>AuditEvent.source.identifier</td><td>UseElementRenamed</td><td>AuditEvent.source.observer</td></tr>
+<tr><td>AuditEvent.source.identifier</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.source.identifier</td></tr>
 <tr><td>AuditEvent.source.type</td><td>UseElementSameName</td><td>AuditEvent.source.type</td></tr>
 <tr><td>AuditEvent.object</td><td>UseElementRenamed</td><td>AuditEvent.entity</td></tr>
 <tr><td>AuditEvent.object.id</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.id</td></tr>
 <tr><td>AuditEvent.object.extension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.extension</td></tr>
 <tr><td>AuditEvent.object.modifierExtension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.modifierExtension</td></tr>
-<tr><td>AuditEvent.object.identifier</td><td>UseElementRenamed</td><td>AuditEvent.entity.what</td></tr>
-<tr><td>AuditEvent.object.reference</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.reference</td></tr>
+<tr><td>AuditEvent.object.identifier</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.identifier</td></tr>
+<tr><td>AuditEvent.object.reference</td><td>UseElementRenamed</td><td>AuditEvent.entity.what</td></tr>
 <tr><td>AuditEvent.object.type</td><td>UseElementRenamed</td><td>AuditEvent.entity.type</td></tr>
 <tr><td>AuditEvent.object.role</td><td>UseElementRenamed</td><td>AuditEvent.entity.role</td></tr>
 <tr><td>AuditEvent.object.lifecycle</td><td>UseElementRenamed</td><td>AuditEvent.entity.lifecycle</td></tr>
@@ -66,5 +66,5 @@
 <tr><td>AuditEvent.object.detail.extension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.detail.extension</td></tr>
 <tr><td>AuditEvent.object.detail.modifierExtension</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.detail.modifierExtension</td></tr>
 <tr><td>AuditEvent.object.detail.type</td><td>UseElementRenamed</td><td>AuditEvent.entity.detail.type</td></tr>
-<tr><td>AuditEvent.object.detail.value</td><td>UseExtension</td><td>http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.object.detail.value</td></tr>
+<tr><td>AuditEvent.object.detail.value</td><td>UseElementRenamed</td><td>AuditEvent.entity.detail.value[x]</td></tr>
 </table>

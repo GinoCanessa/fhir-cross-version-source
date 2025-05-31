@@ -3,12 +3,12 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MedicationStatement.id | UseElementSameName | MedicationStatement.id |
-| MedicationStatement.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.meta |
+| MedicationStatement.meta | UseElementSameName | MedicationStatement.meta |
 | MedicationStatement.implicitRules | UseElementSameName | MedicationStatement.implicitRules |
 | MedicationStatement.language | UseElementSameName | MedicationStatement.language |
 | MedicationStatement.text | UseElementSameName | MedicationStatement.text |
 | MedicationStatement.contained | UseElementSameName | MedicationStatement.contained |
-| MedicationStatement.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.extension |
+| MedicationStatement.extension | UseElementSameName | MedicationStatement.extension |
 | MedicationStatement.modifierExtension | UseElementSameName | MedicationStatement.modifierExtension |
 | MedicationStatement.identifier | UseElementSameName | MedicationStatement.identifier |
 | MedicationStatement.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.patient |
@@ -18,9 +18,9 @@
 | MedicationStatement.wasNotTaken | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.wasNotTaken |
 | MedicationStatement.reasonNotTaken | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.reasonNotTaken |
 | MedicationStatement.reasonForUse[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.reasonForUse |
-| MedicationStatement.effective[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.effective |
+| MedicationStatement.effective[x] | UseElementSameName | MedicationStatement.effective[x] |
 | MedicationStatement.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.note |
-| MedicationStatement.supportingInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.supportingInformation |
+| MedicationStatement.supportingInformation | UseElementRenamed | MedicationStatement.derivedFrom |
 | MedicationStatement.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.medication |
 | MedicationStatement.dosage | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.dosage |
 | MedicationStatement.dosage.id | UseExtensionFromAncestor | - |

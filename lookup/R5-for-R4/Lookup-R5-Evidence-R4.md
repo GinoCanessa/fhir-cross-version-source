@@ -32,7 +32,7 @@
 | Evidence.purpose | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.purpose |
 | Evidence.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.copyright |
 | Evidence.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.copyrightLabel |
-| Evidence.relatedArtifact | UseElementSameName | Evidence.relatedArtifact |
+| Evidence.relatedArtifact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.relatedArtifact |
 | Evidence.description | UseElementSameName | Evidence.description |
 | Evidence.assertion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.assertion |
 | Evidence.note | UseElementSameName | Evidence.note |

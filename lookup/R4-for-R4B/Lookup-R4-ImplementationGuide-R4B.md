@@ -25,7 +25,7 @@
 | ImplementationGuide.copyright | UseElementSameName | ImplementationGuide.copyright |
 | ImplementationGuide.packageId | UseElementSameName | ImplementationGuide.packageId |
 | ImplementationGuide.license | UseElementSameName | ImplementationGuide.license |
-| ImplementationGuide.fhirVersion | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.fhirVersion |
+| ImplementationGuide.fhirVersion | UseElementSameName | ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependsOn | UseElementSameName | ImplementationGuide.dependsOn |
 | ImplementationGuide.dependsOn.id | UseElementSameName | ImplementationGuide.dependsOn.id |
 | ImplementationGuide.dependsOn.extension | UseElementSameName | ImplementationGuide.dependsOn.extension |
@@ -37,7 +37,7 @@
 | ImplementationGuide.global.id | UseElementSameName | ImplementationGuide.global.id |
 | ImplementationGuide.global.extension | UseElementSameName | ImplementationGuide.global.extension |
 | ImplementationGuide.global.modifierExtension | UseElementSameName | ImplementationGuide.global.modifierExtension |
-| ImplementationGuide.global.type | UseElementSameName | ImplementationGuide.global.type |
+| ImplementationGuide.global.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.global.type |
 | ImplementationGuide.global.profile | UseElementSameName | ImplementationGuide.global.profile |
 | ImplementationGuide.definition | UseElementSameName | ImplementationGuide.definition |
 | ImplementationGuide.definition.id | UseElementSameName | ImplementationGuide.definition.id |
@@ -54,7 +54,7 @@
 | ImplementationGuide.definition.resource.extension | UseElementSameName | ImplementationGuide.definition.resource.extension |
 | ImplementationGuide.definition.resource.modifierExtension | UseElementSameName | ImplementationGuide.definition.resource.modifierExtension |
 | ImplementationGuide.definition.resource.reference | UseElementSameName | ImplementationGuide.definition.resource.reference |
-| ImplementationGuide.definition.resource.fhirVersion | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.definition.resource.fhirVersion |
+| ImplementationGuide.definition.resource.fhirVersion | UseElementSameName | ImplementationGuide.definition.resource.fhirVersion |
 | ImplementationGuide.definition.resource.name | UseElementSameName | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.definition.resource.description | UseElementSameName | ImplementationGuide.definition.resource.description |
 | ImplementationGuide.definition.resource.example[x] | UseElementSameName | ImplementationGuide.definition.resource.example[x] |

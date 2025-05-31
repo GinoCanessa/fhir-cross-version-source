@@ -91,7 +91,7 @@
 | TestScript.setup.action.operation.extension | UseElementSameName | TestScript.setup.action.operation.extension |
 | TestScript.setup.action.operation.modifierExtension | UseElementSameName | TestScript.setup.action.operation.modifierExtension |
 | TestScript.setup.action.operation.type | UseElementSameName | TestScript.setup.action.operation.type |
-| TestScript.setup.action.operation.resource | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-TestScript.setup.action.operation.resource |
+| TestScript.setup.action.operation.resource | UseElementSameName | TestScript.setup.action.operation.resource |
 | TestScript.setup.action.operation.label | UseElementSameName | TestScript.setup.action.operation.label |
 | TestScript.setup.action.operation.description | UseElementSameName | TestScript.setup.action.operation.description |
 | TestScript.setup.action.operation.accept | UseElementSameName | TestScript.setup.action.operation.accept |
@@ -131,7 +131,7 @@
 | TestScript.setup.action.assert.path | UseElementSameName | TestScript.setup.action.assert.path |
 | TestScript.setup.action.assert.requestMethod | UseElementSameName | TestScript.setup.action.assert.requestMethod |
 | TestScript.setup.action.assert.requestURL | UseElementSameName | TestScript.setup.action.assert.requestURL |
-| TestScript.setup.action.assert.resource | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-TestScript.setup.action.assert.resource |
+| TestScript.setup.action.assert.resource | UseElementSameName | TestScript.setup.action.assert.resource |
 | TestScript.setup.action.assert.response | UseElementSameName | TestScript.setup.action.assert.response |
 | TestScript.setup.action.assert.responseCode | UseElementSameName | TestScript.setup.action.assert.responseCode |
 | TestScript.setup.action.assert.sourceId | UseElementSameName | TestScript.setup.action.assert.sourceId |

@@ -14,6 +14,6 @@
 | EligibilityRequest.ruleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityRequest.ruleset |
 | EligibilityRequest.originalRuleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityRequest.originalRuleset |
 | EligibilityRequest.created | UseElementSameName | EligibilityRequest.created |
-| EligibilityRequest.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityRequest.target |
-| EligibilityRequest.provider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityRequest.provider |
-| EligibilityRequest.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityRequest.organization |
+| EligibilityRequest.target | UseElementRenamed | EligibilityRequest.insurer |
+| EligibilityRequest.provider | UseElementSameName | EligibilityRequest.provider |
+| EligibilityRequest.organization | UseElementSameName | EligibilityRequest.organization |

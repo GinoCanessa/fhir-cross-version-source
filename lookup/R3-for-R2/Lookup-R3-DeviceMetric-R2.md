@@ -13,12 +13,12 @@
 | DeviceMetric.identifier | UseElementSameName | DeviceMetric.identifier |
 | DeviceMetric.type | UseElementSameName | DeviceMetric.type |
 | DeviceMetric.unit | UseElementSameName | DeviceMetric.unit |
-| DeviceMetric.source | UseElementSameName | DeviceMetric.source |
-| DeviceMetric.parent | UseElementSameName | DeviceMetric.parent |
-| DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
+| DeviceMetric.source | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceMetric.source |
+| DeviceMetric.parent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceMetric.parent |
+| DeviceMetric.operationalStatus | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceMetric.operationalStatus |
 | DeviceMetric.color | UseElementSameName | DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |
-| DeviceMetric.measurementPeriod | UseElementSameName | DeviceMetric.measurementPeriod |
+| DeviceMetric.measurementPeriod | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceMetric.measurementPeriod |
 | DeviceMetric.calibration | UseElementSameName | DeviceMetric.calibration |
 | DeviceMetric.calibration.id | UseElementSameName | DeviceMetric.calibration.id |
 | DeviceMetric.calibration.extension | UseElementSameName | DeviceMetric.calibration.extension |

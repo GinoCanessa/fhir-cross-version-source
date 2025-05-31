@@ -21,12 +21,12 @@
 | CareTeam.participant.id | UseElementSameName | CareTeam.participant.id |
 | CareTeam.participant.extension | UseElementSameName | CareTeam.participant.extension |
 | CareTeam.participant.modifierExtension | UseElementSameName | CareTeam.participant.modifierExtension |
-| CareTeam.participant.role | UseElementSameName | CareTeam.participant.role |
+| CareTeam.participant.role | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.participant.role |
 | CareTeam.participant.member | UseElementSameName | CareTeam.participant.member |
 | CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
-| CareTeam.participant.period | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.participant.period |
-| CareTeam.reasonCode | UseElementRenamed | CareTeam.reason |
-| CareTeam.reasonReference | UseElementRenamed | CareTeam.reason |
+| CareTeam.participant.period | UseElementRenamed | CareTeam.participant.coverage[x] |
+| CareTeam.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.reasonCode |
+| CareTeam.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.reasonReference |
 | CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
 | CareTeam.telecom | UseElementSameName | CareTeam.telecom |
 | CareTeam.note | UseElementSameName | CareTeam.note |

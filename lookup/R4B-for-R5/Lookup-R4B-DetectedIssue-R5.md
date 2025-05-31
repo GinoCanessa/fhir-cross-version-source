@@ -11,12 +11,12 @@
 | DetectedIssue.extension | UseElementSameName | DetectedIssue.extension |
 | DetectedIssue.modifierExtension | UseElementSameName | DetectedIssue.modifierExtension |
 | DetectedIssue.identifier | UseElementSameName | DetectedIssue.identifier |
-| DetectedIssue.status | UseElementSameName | DetectedIssue.status |
+| DetectedIssue.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DetectedIssue.status |
 | DetectedIssue.code | UseElementSameName | DetectedIssue.code |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
-| DetectedIssue.patient | UseElementRenamed | DetectedIssue.subject |
+| DetectedIssue.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DetectedIssue.patient |
 | DetectedIssue.identified[x] | UseElementSameName | DetectedIssue.identified[x] |
-| DetectedIssue.author | UseElementSameName | DetectedIssue.author |
+| DetectedIssue.author | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DetectedIssue.author |
 | DetectedIssue.implicated | UseElementSameName | DetectedIssue.implicated |
 | DetectedIssue.evidence | UseElementSameName | DetectedIssue.evidence |
 | DetectedIssue.evidence.id | UseElementSameName | DetectedIssue.evidence.id |

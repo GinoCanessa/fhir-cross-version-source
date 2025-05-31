@@ -65,7 +65,7 @@
 | ElementDefinition.constraint.human | UseElementSameName | ElementDefinition.constraint.human |
 | ElementDefinition.constraint.expression | UseElementSameName | ElementDefinition.constraint.expression |
 | ElementDefinition.constraint.xpath | UseElementSameName | ElementDefinition.constraint.xpath |
-| ElementDefinition.constraint.source | UseElementSameName | ElementDefinition.constraint.source |
+| ElementDefinition.constraint.source | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ElementDefinition.constraint.source |
 | ElementDefinition.mustSupport | UseElementSameName | ElementDefinition.mustSupport |
 | ElementDefinition.isModifier | UseElementSameName | ElementDefinition.isModifier |
 | ElementDefinition.isSummary | UseElementSameName | ElementDefinition.isSummary |

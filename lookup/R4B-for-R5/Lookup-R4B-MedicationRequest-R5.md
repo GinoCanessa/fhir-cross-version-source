@@ -11,14 +11,14 @@
 | MedicationRequest.extension | UseElementSameName | MedicationRequest.extension |
 | MedicationRequest.modifierExtension | UseElementSameName | MedicationRequest.modifierExtension |
 | MedicationRequest.identifier | UseElementSameName | MedicationRequest.identifier |
-| MedicationRequest.status | UseElementSameName | MedicationRequest.status |
+| MedicationRequest.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.status |
 | MedicationRequest.statusReason | UseElementSameName | MedicationRequest.statusReason |
 | MedicationRequest.intent | UseElementSameName | MedicationRequest.intent |
 | MedicationRequest.category | UseElementSameName | MedicationRequest.category |
 | MedicationRequest.priority | UseElementSameName | MedicationRequest.priority |
 | MedicationRequest.doNotPerform | UseElementSameName | MedicationRequest.doNotPerform |
-| MedicationRequest.reported[x] | UseElementRenamed | MedicationRequest.reported |
-| MedicationRequest.medication[x] | UseElementRenamed | MedicationRequest.medication |
+| MedicationRequest.reported[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.reported |
+| MedicationRequest.medication[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.medication |
 | MedicationRequest.subject | UseElementSameName | MedicationRequest.subject |
 | MedicationRequest.encounter | UseElementSameName | MedicationRequest.encounter |
 | MedicationRequest.supportingInformation | UseElementSameName | MedicationRequest.supportingInformation |
@@ -27,8 +27,8 @@
 | MedicationRequest.performer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.performer |
 | MedicationRequest.performerType | UseElementSameName | MedicationRequest.performerType |
 | MedicationRequest.recorder | UseElementSameName | MedicationRequest.recorder |
-| MedicationRequest.reasonCode | UseElementRenamed | MedicationRequest.reason |
-| MedicationRequest.reasonReference | UseElementRenamed | MedicationRequest.reason |
+| MedicationRequest.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.reasonCode |
+| MedicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.reasonReference |
 | MedicationRequest.instantiatesCanonical | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.instantiatesCanonical |
 | MedicationRequest.instantiatesUri | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.instantiatesUri |
 | MedicationRequest.basedOn | UseElementSameName | MedicationRequest.basedOn |
@@ -36,7 +36,7 @@
 | MedicationRequest.courseOfTherapyType | UseElementSameName | MedicationRequest.courseOfTherapyType |
 | MedicationRequest.insurance | UseElementSameName | MedicationRequest.insurance |
 | MedicationRequest.note | UseElementSameName | MedicationRequest.note |
-| MedicationRequest.dosageInstruction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationRequest.dosageInstruction |
+| MedicationRequest.dosageInstruction | UseElementSameName | MedicationRequest.dosageInstruction |
 | MedicationRequest.dispenseRequest | UseElementSameName | MedicationRequest.dispenseRequest |
 | MedicationRequest.dispenseRequest.id | UseElementSameName | MedicationRequest.dispenseRequest.id |
 | MedicationRequest.dispenseRequest.extension | UseElementSameName | MedicationRequest.dispenseRequest.extension |

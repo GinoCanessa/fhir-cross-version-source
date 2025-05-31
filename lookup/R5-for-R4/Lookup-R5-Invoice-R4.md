@@ -34,8 +34,8 @@
 | Invoice.lineItem.sequence | UseElementSameName | Invoice.lineItem.sequence |
 | Invoice.lineItem.serviced[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.lineItem.serviced |
 | Invoice.lineItem.chargeItem[x] | UseElementSameName | Invoice.lineItem.chargeItem[x] |
-| Invoice.lineItem.priceComponent | UseElementSameName | Invoice.lineItem.priceComponent |
-| Invoice.totalPriceComponent | UseElementSameName | Invoice.totalPriceComponent |
+| Invoice.lineItem.priceComponent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.lineItem.priceComponent |
+| Invoice.totalPriceComponent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Invoice.totalPriceComponent |
 | Invoice.totalNet | UseElementSameName | Invoice.totalNet |
 | Invoice.totalGross | UseElementSameName | Invoice.totalGross |
 | Invoice.paymentTerms | UseElementSameName | Invoice.paymentTerms |

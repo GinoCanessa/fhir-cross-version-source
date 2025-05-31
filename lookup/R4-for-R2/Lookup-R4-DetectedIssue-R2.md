@@ -3,21 +3,21 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DetectedIssue.id | UseElementSameName | DetectedIssue.id |
-| DetectedIssue.meta | UseElementSameName | DetectedIssue.meta |
+| DetectedIssue.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.meta |
 | DetectedIssue.implicitRules | UseElementSameName | DetectedIssue.implicitRules |
 | DetectedIssue.language | UseElementSameName | DetectedIssue.language |
 | DetectedIssue.text | UseElementSameName | DetectedIssue.text |
 | DetectedIssue.contained | UseElementSameName | DetectedIssue.contained |
 | DetectedIssue.extension | UseElementSameName | DetectedIssue.extension |
 | DetectedIssue.modifierExtension | UseElementSameName | DetectedIssue.modifierExtension |
-| DetectedIssue.identifier | UseElementSameName | DetectedIssue.identifier |
+| DetectedIssue.identifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.identifier |
 | DetectedIssue.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.status |
 | DetectedIssue.code | UseElementSameName | DetectedIssue.category |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
-| DetectedIssue.patient | UseElementSameName | DetectedIssue.patient |
-| DetectedIssue.identified[x] | UseElementSameName | DetectedIssue.date |
+| DetectedIssue.patient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.patient |
+| DetectedIssue.identified[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.identified |
 | DetectedIssue.author | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.author |
-| DetectedIssue.implicated | UseElementSameName | DetectedIssue.implicated |
+| DetectedIssue.implicated | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.implicated |
 | DetectedIssue.evidence | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DetectedIssue.evidence |
 | DetectedIssue.evidence.id | UseExtensionFromAncestor | - |
 | DetectedIssue.evidence.extension | UseExtensionFromAncestor | - |

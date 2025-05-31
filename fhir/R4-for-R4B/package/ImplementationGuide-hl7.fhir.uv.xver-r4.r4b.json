@@ -10,7 +10,7 @@
     "valueCode" : "fhir"
   }],
   "url" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r4.r4b",
-  "version" : "0.0.1-snapshot-0",
+  "version" : "0.0.1-snapshot-1",
   "name" : "XVer_r4_r4b",
   "title" : "XVer-R4-R4B",
   "status" : "active",
@@ -59,6 +59,16 @@
   "definition" : {
     "resource" : [
     {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-DataRequirement.type"
+    },
+    "name" : "ext_R4_DataRequirement_type",
+    "description" : "This cross-version extension represents DataRequirement.type from http://hl7.org/fhir/StructureDefinition/DataRequirement|4.0.1 for use in FHIR R4B."
+}, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
@@ -114,20 +124,20 @@
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-SubstanceAmount"
+        "reference" : "StructureDefinition/ext-R4-ParameterDefinition.type"
     },
-    "name" : "ext_R4_SubstanceAmount",
-    "description" : "This cross-version extension represents SubstanceAmount from http://hl7.org/fhir/StructureDefinition/SubstanceAmount|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_ParameterDefinition_type",
+    "description" : "This cross-version extension represents ParameterDefinition.type from http://hl7.org/fhir/StructureDefinition/ParameterDefinition|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-ActivityDefinition.subject"
+        "reference" : "StructureDefinition/ext-R4-SubstanceAmount"
     },
-    "name" : "ext_R4_ActivityDefinition_subject",
-    "description" : "This cross-version extension represents ActivityDefinition.subject[x] from http://hl7.org/fhir/StructureDefinition/ActivityDefinition|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_SubstanceAmount",
+    "description" : "This cross-version extension represents SubstanceAmount from http://hl7.org/fhir/StructureDefinition/SubstanceAmount|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -144,10 +154,30 @@
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-CapabilityStatement.fhirVersion"
+        "reference" : "StructureDefinition/ext-R4-CapabilityStatement.re.re.type"
     },
-    "name" : "ext_R4_CapabilityStatement_fhirVersion",
-    "description" : "This cross-version extension represents CapabilityStatement.fhirVersion from http://hl7.org/fhir/StructureDefinition/CapabilityStatement|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_CapabilityStatement_re_re_type",
+    "description" : "This cross-version extension represents CapabilityStatement.rest.resource.type from http://hl7.org/fhir/StructureDefinition/CapabilityStatement|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-CD.re.code"
+    },
+    "name" : "ext_R4_CD_re_code",
+    "description" : "This cross-version extension represents CompartmentDefinition.resource.code from http://hl7.org/fhir/StructureDefinition/CompartmentDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-DiagnosticReport.subject"
+    },
+    "name" : "ext_R4_DiagnosticReport_subject",
+    "description" : "This cross-version extension represents DiagnosticReport.subject from http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -364,20 +394,60 @@
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-ImplementationGuide.fhirVersion"
+        "reference" : "StructureDefinition/ext-R4-EvidenceVariable.ch.timeFromStart"
     },
-    "name" : "ext_R4_ImplementationGuide_fhirVersion",
-    "description" : "This cross-version extension represents ImplementationGuide.fhirVersion from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_EvidenceVariable_ch_timeFromStart",
+    "description" : "This cross-version extension represents EvidenceVariable.characteristic.timeFromStart from http://hl7.org/fhir/StructureDefinition/EvidenceVariable|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-ImplementationGuide.de.re.fhirVersion"
+        "reference" : "StructureDefinition/ext-R4-ExampleScenario.in.resourceType"
     },
-    "name" : "ext_R4_ImplementationGuide_de_re_fhirVersion",
-    "description" : "This cross-version extension represents ImplementationGuide.definition.resource.fhirVersion from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_ExampleScenario_in_resourceType",
+    "description" : "This cross-version extension represents ExampleScenario.instance.resourceType from http://hl7.org/fhir/StructureDefinition/ExampleScenario|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-GraphDefinition.start"
+    },
+    "name" : "ext_R4_GraphDefinition_start",
+    "description" : "This cross-version extension represents GraphDefinition.start from http://hl7.org/fhir/StructureDefinition/GraphDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-GraphDefinition.li.ta.type"
+    },
+    "name" : "ext_R4_GraphDefinition_li_ta_type",
+    "description" : "This cross-version extension represents GraphDefinition.link.target.type from http://hl7.org/fhir/StructureDefinition/GraphDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-Group.me.entity"
+    },
+    "name" : "ext_R4_Group_me_entity",
+    "description" : "This cross-version extension represents Group.member.entity from http://hl7.org/fhir/StructureDefinition/Group|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-ImplementationGuide.gl.type"
+    },
+    "name" : "ext_R4_ImplementationGuide_gl_type",
+    "description" : "This cross-version extension represents ImplementationGuide.global.type from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -484,20 +554,60 @@
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-PlanDefinition.subject"
+        "reference" : "StructureDefinition/ext-R4-MessageDefinition.fo.code"
     },
-    "name" : "ext_R4_PlanDefinition_subject",
-    "description" : "This cross-version extension represents PlanDefinition.subject[x] from http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_MessageDefinition_fo_code",
+    "description" : "This cross-version extension represents MessageDefinition.focus.code from http://hl7.org/fhir/StructureDefinition/MessageDefinition|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-PlanDefinition.ac.subject"
+        "reference" : "StructureDefinition/ext-R4-Observation.subject"
     },
-    "name" : "ext_R4_PlanDefinition_ac_subject",
-    "description" : "This cross-version extension represents PlanDefinition.action.subject[x] from http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_Observation_subject",
+    "description" : "This cross-version extension represents Observation.subject from http://hl7.org/fhir/StructureDefinition/Observation|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-OperationDefinition.resource"
+    },
+    "name" : "ext_R4_OperationDefinition_resource",
+    "description" : "This cross-version extension represents OperationDefinition.resource from http://hl7.org/fhir/StructureDefinition/OperationDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-OperationDefinition.type"
+    },
+    "name" : "ext_R4_OperationDefinition_type",
+    "description" : "This cross-version extension represents OperationDefinition.type from http://hl7.org/fhir/StructureDefinition/OperationDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-OperationDefinition.pa.type"
+    },
+    "name" : "ext_R4_OperationDefinition_pa_type",
+    "description" : "This cross-version extension represents OperationDefinition.parameter.type from http://hl7.org/fhir/StructureDefinition/OperationDefinition|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-Questionnaire.subjectType"
+    },
+    "name" : "ext_R4_Questionnaire_subjectType",
+    "description" : "This cross-version extension represents Questionnaire.subjectType from http://hl7.org/fhir/StructureDefinition/Questionnaire|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -514,10 +624,20 @@
         "valueString" : "StructureDefinition:extension"
     }],
     "reference" : {
-        "reference" : "StructureDefinition/ext-R4-StructureDefinition.fhirVersion"
+        "reference" : "StructureDefinition/ext-R4-SearchParameter.base"
     },
-    "name" : "ext_R4_StructureDefinition_fhirVersion",
-    "description" : "This cross-version extension represents StructureDefinition.fhirVersion from http://hl7.org/fhir/StructureDefinition/StructureDefinition|4.0.1 for use in FHIR R4B."
+    "name" : "ext_R4_SearchParameter_base",
+    "description" : "This cross-version extension represents SearchParameter.base from http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-SearchParameter.target"
+    },
+    "name" : "ext_R4_SearchParameter_target",
+    "description" : "This cross-version extension represents SearchParameter.target from http://hl7.org/fhir/StructureDefinition/SearchParameter|4.0.1 for use in FHIR R4B."
 }, {
     "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -578,6 +698,26 @@
     },
     "name" : "ext_R4_SubstanceSpecification",
     "description" : "This cross-version extension represents SubstanceSpecification from http://hl7.org/fhir/StructureDefinition/SubstanceSpecification|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-TestScript.se.ac.op.resource"
+    },
+    "name" : "ext_R4_TestScript_se_ac_op_resource",
+    "description" : "This cross-version extension represents TestScript.setup.action.operation.resource from http://hl7.org/fhir/StructureDefinition/TestScript|4.0.1 for use in FHIR R4B."
+}, {
+    "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+    }],
+    "reference" : {
+        "reference" : "StructureDefinition/ext-R4-TestScript.se.ac.as.resource"
+    },
+    "name" : "ext_R4_TestScript_se_ac_as_resource",
+    "description" : "This cross-version extension represents TestScript.setup.action.assert.resource from http://hl7.org/fhir/StructureDefinition/TestScript|4.0.1 for use in FHIR R4B."
 },
     {
     "extension" : [{

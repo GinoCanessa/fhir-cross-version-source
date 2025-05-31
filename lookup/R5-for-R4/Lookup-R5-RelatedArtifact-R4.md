@@ -4,12 +4,12 @@
 | -------------- | ----- | ------ |
 | RelatedArtifact.id | UseElementSameName | RelatedArtifact.id |
 | RelatedArtifact.extension | UseElementSameName | RelatedArtifact.extension |
-| RelatedArtifact.type | UseElementSameName | RelatedArtifact.type |
+| RelatedArtifact.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.type |
 | RelatedArtifact.classifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.classifier |
 | RelatedArtifact.label | UseElementSameName | RelatedArtifact.label |
 | RelatedArtifact.display | UseElementSameName | RelatedArtifact.display |
 | RelatedArtifact.citation | UseElementSameName | RelatedArtifact.citation |
-| RelatedArtifact.document | UseElementSameName | RelatedArtifact.document |
+| RelatedArtifact.document | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.document |
 | RelatedArtifact.resource | UseElementSameName | RelatedArtifact.resource |
 | RelatedArtifact.resourceReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.resourceReference |
 | RelatedArtifact.publicationStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.publicationStatus |

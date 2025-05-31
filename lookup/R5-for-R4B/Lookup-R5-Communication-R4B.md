@@ -27,9 +27,9 @@
 | Communication.encounter | UseElementRenamed | Communication.encounter |
 | Communication.sent | UseElementRenamed | Communication.sent |
 | Communication.received | UseElementRenamed | Communication.received |
-| Communication.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.recipient |
-| Communication.sender | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.sender |
-| Communication.reason | UseElementRenamed | Communication.reasonCode |
+| Communication.recipient | UseElementRenamed | Communication.recipient |
+| Communication.sender | UseElementRenamed | Communication.sender |
+| Communication.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.reason |
 | Communication.payload | UseElementRenamed | Communication.payload |
 | Communication.payload.id | UseElementRenamed | Communication.payload.id |
 | Communication.payload.extension | UseElementRenamed | Communication.payload.extension |

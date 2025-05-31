@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MessageHeader.id | UseElementSameName | MessageHeader.id |
-| MessageHeader.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.meta |
+| MessageHeader.meta | UseElementSameName | MessageHeader.meta |
 | MessageHeader.implicitRules | UseElementSameName | MessageHeader.implicitRules |
 | MessageHeader.language | UseElementSameName | MessageHeader.language |
 | MessageHeader.text | UseElementSameName | MessageHeader.text |
@@ -16,8 +16,8 @@
 | MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
 | MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
 | MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
-| MessageHeader.destination.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.destination.target |
-| MessageHeader.destination.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.destination.endpoint |
+| MessageHeader.destination.target | UseElementSameName | MessageHeader.destination.target |
+| MessageHeader.destination.endpoint | UseElementRenamed | MessageHeader.destination.endpoint[x] |
 | MessageHeader.receiver | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.receiver |
 | MessageHeader.sender | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.sender |
 | MessageHeader.timestamp | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.timestamp |
@@ -31,14 +31,14 @@
 | MessageHeader.source.software | UseElementSameName | MessageHeader.source.software |
 | MessageHeader.source.version | UseElementSameName | MessageHeader.source.version |
 | MessageHeader.source.contact | UseElementSameName | MessageHeader.source.contact |
-| MessageHeader.source.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.source.endpoint |
+| MessageHeader.source.endpoint | UseElementRenamed | MessageHeader.source.endpoint[x] |
 | MessageHeader.responsible | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.responsible |
 | MessageHeader.reason | UseElementSameName | MessageHeader.reason |
 | MessageHeader.response | UseElementSameName | MessageHeader.response |
 | MessageHeader.response.id | UseElementSameName | MessageHeader.response.id |
 | MessageHeader.response.extension | UseElementSameName | MessageHeader.response.extension |
 | MessageHeader.response.modifierExtension | UseElementSameName | MessageHeader.response.modifierExtension |
-| MessageHeader.response.identifier | UseElementSameName | MessageHeader.response.identifier |
+| MessageHeader.response.identifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.response.identifier |
 | MessageHeader.response.code | UseElementSameName | MessageHeader.response.code |
-| MessageHeader.response.details | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.response.details |
-| MessageHeader.focus | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.focus |
+| MessageHeader.response.details | UseElementSameName | MessageHeader.response.details |
+| MessageHeader.focus | UseElementSameName | MessageHeader.focus |

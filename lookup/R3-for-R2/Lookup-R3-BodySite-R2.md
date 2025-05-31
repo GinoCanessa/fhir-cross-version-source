@@ -16,4 +16,4 @@
 | BodySite.qualifier | UseElementRenamed | BodySite.modifier |
 | BodySite.description | UseElementRenamed | BodySite.description |
 | BodySite.image | UseElementRenamed | BodySite.image |
-| BodySite.patient | UseElementRenamed | BodySite.patient |
+| BodySite.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-BodySite.patient |

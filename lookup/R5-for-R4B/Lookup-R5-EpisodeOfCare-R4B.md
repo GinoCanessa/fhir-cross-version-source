@@ -29,7 +29,7 @@
 | EpisodeOfCare.diagnosis.id | UseElementRenamed | EpisodeOfCare.diagnosis.id |
 | EpisodeOfCare.diagnosis.extension | UseElementRenamed | EpisodeOfCare.diagnosis.extension |
 | EpisodeOfCare.diagnosis.modifierExtension | UseElementRenamed | EpisodeOfCare.diagnosis.modifierExtension |
-| EpisodeOfCare.diagnosis.condition | UseElementRenamed | EpisodeOfCare.diagnosis.condition |
+| EpisodeOfCare.diagnosis.condition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.condition |
 | EpisodeOfCare.diagnosis.use | UseElementRenamed | EpisodeOfCare.diagnosis.role |
 | EpisodeOfCare.patient | UseElementRenamed | EpisodeOfCare.patient |
 | EpisodeOfCare.managingOrganization | UseElementRenamed | EpisodeOfCare.managingOrganization |

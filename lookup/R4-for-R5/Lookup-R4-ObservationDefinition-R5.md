@@ -12,7 +12,7 @@
 | ObservationDefinition.modifierExtension | UseElementSameName | ObservationDefinition.modifierExtension |
 | ObservationDefinition.category | UseElementSameName | ObservationDefinition.category |
 | ObservationDefinition.code | UseElementSameName | ObservationDefinition.code |
-| ObservationDefinition.identifier | UseElementSameName | ObservationDefinition.identifier |
+| ObservationDefinition.identifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ObservationDefinition.identifier |
 | ObservationDefinition.permittedDataType | UseElementSameName | ObservationDefinition.permittedDataType |
 | ObservationDefinition.multipleResultsAllowed | UseElementSameName | ObservationDefinition.multipleResultsAllowed |
 | ObservationDefinition.method | UseElementSameName | ObservationDefinition.method |

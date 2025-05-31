@@ -9,4 +9,4 @@
 | Identifier.system | UseElementSameName | Identifier.system |
 | Identifier.value | UseElementSameName | Identifier.value |
 | Identifier.period | UseElementSameName | Identifier.period |
-| Identifier.assigner | UseElementSameName | Identifier.assigner |
+| Identifier.assigner | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Identifier.assigner |

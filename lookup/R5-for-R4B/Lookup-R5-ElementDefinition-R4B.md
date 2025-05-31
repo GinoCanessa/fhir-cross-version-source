@@ -17,7 +17,7 @@
 | ElementDefinition.slicing.discriminator | UseElementRenamed | ElementDefinition.slicing.discriminator |
 | ElementDefinition.slicing.discriminator.id | UseElementRenamed | ElementDefinition.slicing.discriminator.id |
 | ElementDefinition.slicing.discriminator.extension | UseElementRenamed | ElementDefinition.slicing.discriminator.extension |
-| ElementDefinition.slicing.discriminator.type | UseElementRenamed | ElementDefinition.slicing.discriminator.type |
+| ElementDefinition.slicing.discriminator.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.slicing.discriminator.type |
 | ElementDefinition.slicing.discriminator.path | UseElementRenamed | ElementDefinition.slicing.discriminator.path |
 | ElementDefinition.slicing.description | UseElementRenamed | ElementDefinition.slicing.description |
 | ElementDefinition.slicing.ordered | UseElementRenamed | ElementDefinition.slicing.ordered |
@@ -54,8 +54,8 @@
 | ElementDefinition.example.extension | UseElementRenamed | ElementDefinition.example.extension |
 | ElementDefinition.example.label | UseElementRenamed | ElementDefinition.example.label |
 | ElementDefinition.example.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.example.value |
-| ElementDefinition.minValue[x] | UseElementRenamed | ElementDefinition.minValue[x] |
-| ElementDefinition.maxValue[x] | UseElementRenamed | ElementDefinition.maxValue[x] |
+| ElementDefinition.minValue[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.minValue |
+| ElementDefinition.maxValue[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.maxValue |
 | ElementDefinition.maxLength | UseElementRenamed | ElementDefinition.maxLength |
 | ElementDefinition.condition | UseElementRenamed | ElementDefinition.condition |
 | ElementDefinition.constraint | UseElementRenamed | ElementDefinition.constraint |

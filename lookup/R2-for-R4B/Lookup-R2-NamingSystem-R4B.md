@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | NamingSystem.id | UseElementSameName | NamingSystem.id |
-| NamingSystem.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.meta |
+| NamingSystem.meta | UseElementSameName | NamingSystem.meta |
 | NamingSystem.implicitRules | UseElementSameName | NamingSystem.implicitRules |
 | NamingSystem.language | UseElementSameName | NamingSystem.language |
 | NamingSystem.text | UseElementSameName | NamingSystem.text |
@@ -11,15 +11,15 @@
 | NamingSystem.extension | UseElementSameName | NamingSystem.extension |
 | NamingSystem.modifierExtension | UseElementSameName | NamingSystem.modifierExtension |
 | NamingSystem.name | UseElementSameName | NamingSystem.name |
-| NamingSystem.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.status |
+| NamingSystem.status | UseElementSameName | NamingSystem.status |
 | NamingSystem.kind | UseElementSameName | NamingSystem.kind |
 | NamingSystem.publisher | UseElementSameName | NamingSystem.publisher |
-| NamingSystem.contact | UseElementSameName | NamingSystem.contact |
-| NamingSystem.contact.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact.id |
-| NamingSystem.contact.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact.extension |
-| NamingSystem.contact.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact.modifierExtension |
-| NamingSystem.contact.name | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact.name |
-| NamingSystem.contact.telecom | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact.telecom |
+| NamingSystem.contact | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-NamingSystem.contact |
+| NamingSystem.contact.id | UseExtensionFromAncestor | - |
+| NamingSystem.contact.extension | UseExtensionFromAncestor | - |
+| NamingSystem.contact.modifierExtension | UseExtensionFromAncestor | - |
+| NamingSystem.contact.name | UseExtensionFromAncestor | - |
+| NamingSystem.contact.telecom | UseExtensionFromAncestor | - |
 | NamingSystem.responsible | UseElementSameName | NamingSystem.responsible |
 | NamingSystem.date | UseElementSameName | NamingSystem.date |
 | NamingSystem.type | UseElementSameName | NamingSystem.type |

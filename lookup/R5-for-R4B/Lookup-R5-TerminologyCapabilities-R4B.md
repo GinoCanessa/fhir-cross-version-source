@@ -53,7 +53,7 @@
 | TerminologyCapabilities.codeSystem.version.code | UseElementRenamed | TerminologyCapabilities.codeSystem.version.code |
 | TerminologyCapabilities.codeSystem.version.isDefault | UseElementRenamed | TerminologyCapabilities.codeSystem.version.isDefault |
 | TerminologyCapabilities.codeSystem.version.compositional | UseElementRenamed | TerminologyCapabilities.codeSystem.version.compositional |
-| TerminologyCapabilities.codeSystem.version.language | UseElementRenamed | TerminologyCapabilities.codeSystem.version.language |
+| TerminologyCapabilities.codeSystem.version.language | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TerminologyCapabilities.codeSystem.version.language |
 | TerminologyCapabilities.codeSystem.version.filter | UseElementRenamed | TerminologyCapabilities.codeSystem.version.filter |
 | TerminologyCapabilities.codeSystem.version.filter.id | UseElementRenamed | TerminologyCapabilities.codeSystem.version.filter.id |
 | TerminologyCapabilities.codeSystem.version.filter.extension | UseElementRenamed | TerminologyCapabilities.codeSystem.version.filter.extension |
@@ -77,7 +77,7 @@
 | TerminologyCapabilities.expansion.parameter.name | UseElementRenamed | TerminologyCapabilities.expansion.parameter.name |
 | TerminologyCapabilities.expansion.parameter.documentation | UseElementRenamed | TerminologyCapabilities.expansion.parameter.documentation |
 | TerminologyCapabilities.expansion.textFilter | UseElementRenamed | TerminologyCapabilities.expansion.textFilter |
-| TerminologyCapabilities.codeSearch | UseElementRenamed | TerminologyCapabilities.codeSearch |
+| TerminologyCapabilities.codeSearch | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TerminologyCapabilities.codeSearch |
 | TerminologyCapabilities.validateCode | UseElementRenamed | TerminologyCapabilities.validateCode |
 | TerminologyCapabilities.validateCode.id | UseElementRenamed | TerminologyCapabilities.validateCode.id |
 | TerminologyCapabilities.validateCode.extension | UseElementRenamed | TerminologyCapabilities.validateCode.extension |

@@ -18,7 +18,7 @@
 | Claim.patient | UseElementSameName | Claim.patient |
 | Claim.billablePeriod | UseElementSameName | Claim.billablePeriod |
 | Claim.created | UseElementSameName | Claim.created |
-| Claim.enterer | UseElementSameName | Claim.enterer |
+| Claim.enterer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Claim.enterer |
 | Claim.insurer | UseElementSameName | Claim.insurer |
 | Claim.provider | UseElementSameName | Claim.provider |
 | Claim.priority | UseElementSameName | Claim.priority |
@@ -39,7 +39,7 @@
 | Claim.payee.type | UseElementSameName | Claim.payee.type |
 | Claim.payee.party | UseElementSameName | Claim.payee.party |
 | Claim.referral | UseElementSameName | Claim.referral |
-| Claim.facility | UseElementSameName | Claim.facility |
+| Claim.facility | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Claim.facility |
 | Claim.careTeam | UseElementSameName | Claim.careTeam |
 | Claim.careTeam.id | UseElementSameName | Claim.careTeam.id |
 | Claim.careTeam.extension | UseElementSameName | Claim.careTeam.extension |
@@ -57,7 +57,7 @@
 | Claim.supportingInfo.category | UseElementSameName | Claim.supportingInfo.category |
 | Claim.supportingInfo.code | UseElementSameName | Claim.supportingInfo.code |
 | Claim.supportingInfo.timing[x] | UseElementSameName | Claim.supportingInfo.timing[x] |
-| Claim.supportingInfo.value[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Claim.supportingInfo.value |
+| Claim.supportingInfo.value[x] | UseElementSameName | Claim.supportingInfo.value[x] |
 | Claim.supportingInfo.reason | UseElementSameName | Claim.supportingInfo.reason |
 | Claim.diagnosis | UseElementSameName | Claim.diagnosis |
 | Claim.diagnosis.id | UseElementSameName | Claim.diagnosis.id |

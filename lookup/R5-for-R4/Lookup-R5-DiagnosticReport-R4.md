@@ -40,4 +40,4 @@
 | DiagnosticReport.composition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition |
 | DiagnosticReport.conclusion | UseElementSameName | DiagnosticReport.conclusion |
 | DiagnosticReport.conclusionCode | UseElementSameName | DiagnosticReport.conclusionCode |
-| DiagnosticReport.presentedForm | UseElementSameName | DiagnosticReport.presentedForm |
+| DiagnosticReport.presentedForm | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.presentedForm |

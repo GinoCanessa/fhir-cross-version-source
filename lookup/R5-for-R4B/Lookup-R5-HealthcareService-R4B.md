@@ -21,7 +21,7 @@
 | HealthcareService.name | UseElementRenamed | HealthcareService.name |
 | HealthcareService.comment | UseElementRenamed | HealthcareService.comment |
 | HealthcareService.extraDetails | UseElementRenamed | HealthcareService.extraDetails |
-| HealthcareService.photo | UseElementRenamed | HealthcareService.photo |
+| HealthcareService.photo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.photo |
 | HealthcareService.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-HealthcareService.contact |
 | HealthcareService.coverageArea | UseElementRenamed | HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementRenamed | HealthcareService.serviceProvisionCode |

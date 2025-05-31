@@ -3,17 +3,17 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Bundle.id | UseElementSameName | Bundle.id |
-| Bundle.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.meta |
+| Bundle.meta | UseElementSameName | Bundle.meta |
 | Bundle.implicitRules | UseElementSameName | Bundle.implicitRules |
 | Bundle.language | UseElementSameName | Bundle.language |
 | Bundle.identifier | UseElementSameName | Bundle.identifier |
-| Bundle.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.type |
+| Bundle.type | UseElementSameName | Bundle.type |
 | Bundle.total | UseElementSameName | Bundle.total |
 | Bundle.link | UseElementSameName | Bundle.link |
 | Bundle.link.id | UseElementSameName | Bundle.link.id |
 | Bundle.link.extension | UseElementSameName | Bundle.link.extension |
 | Bundle.link.modifierExtension | UseElementSameName | Bundle.link.modifierExtension |
-| Bundle.link.relation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.link.relation |
+| Bundle.link.relation | UseElementSameName | Bundle.link.relation |
 | Bundle.link.url | UseElementSameName | Bundle.link.url |
 | Bundle.entry | UseElementSameName | Bundle.entry |
 | Bundle.entry.id | UseElementSameName | Bundle.entry.id |
@@ -32,7 +32,7 @@
 | Bundle.entry.request.id | UseElementSameName | Bundle.entry.request.id |
 | Bundle.entry.request.extension | UseElementSameName | Bundle.entry.request.extension |
 | Bundle.entry.request.modifierExtension | UseElementSameName | Bundle.entry.request.modifierExtension |
-| Bundle.entry.request.method | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.entry.request.method |
+| Bundle.entry.request.method | UseElementSameName | Bundle.entry.request.method |
 | Bundle.entry.request.url | UseElementSameName | Bundle.entry.request.url |
 | Bundle.entry.request.ifNoneMatch | UseElementSameName | Bundle.entry.request.ifNoneMatch |
 | Bundle.entry.request.ifModifiedSince | UseElementSameName | Bundle.entry.request.ifModifiedSince |
@@ -47,4 +47,4 @@
 | Bundle.entry.response.etag | UseElementSameName | Bundle.entry.response.etag |
 | Bundle.entry.response.lastModified | UseElementSameName | Bundle.entry.response.lastModified |
 | Bundle.entry.response.outcome | UseElementSameName | Bundle.entry.response.outcome |
-| Bundle.signature | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Bundle.signature |
+| Bundle.signature | UseElementSameName | Bundle.signature |

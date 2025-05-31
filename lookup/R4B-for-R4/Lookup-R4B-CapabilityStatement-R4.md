@@ -41,7 +41,7 @@
 | CapabilityStatement.implementation.description | UseElementSameName | CapabilityStatement.implementation.description |
 | CapabilityStatement.implementation.url | UseElementSameName | CapabilityStatement.implementation.url |
 | CapabilityStatement.implementation.custodian | UseElementSameName | CapabilityStatement.implementation.custodian |
-| CapabilityStatement.fhirVersion | UseElementSameName | CapabilityStatement.fhirVersion |
+| CapabilityStatement.fhirVersion | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CapabilityStatement.fhirVersion |
 | CapabilityStatement.format | UseElementSameName | CapabilityStatement.format |
 | CapabilityStatement.patchFormat | UseElementSameName | CapabilityStatement.patchFormat |
 | CapabilityStatement.implementationGuide | UseElementSameName | CapabilityStatement.implementationGuide |
@@ -62,7 +62,7 @@
 | CapabilityStatement.rest.resource.id | UseElementSameName | CapabilityStatement.rest.resource.id |
 | CapabilityStatement.rest.resource.extension | UseElementSameName | CapabilityStatement.rest.resource.extension |
 | CapabilityStatement.rest.resource.modifierExtension | UseElementSameName | CapabilityStatement.rest.resource.modifierExtension |
-| CapabilityStatement.rest.resource.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CapabilityStatement.rest.resource.type |
+| CapabilityStatement.rest.resource.type | UseElementSameName | CapabilityStatement.rest.resource.type |
 | CapabilityStatement.rest.resource.profile | UseElementSameName | CapabilityStatement.rest.resource.profile |
 | CapabilityStatement.rest.resource.supportedProfile | UseElementSameName | CapabilityStatement.rest.resource.supportedProfile |
 | CapabilityStatement.rest.resource.documentation | UseElementSameName | CapabilityStatement.rest.resource.documentation |

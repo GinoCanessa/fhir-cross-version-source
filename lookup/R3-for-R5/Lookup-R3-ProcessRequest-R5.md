@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | ProcessRequest.id | UseElementRenamed | Task.id |
-| ProcessRequest.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.meta |
+| ProcessRequest.meta | UseElementRenamed | Task.meta |
 | ProcessRequest.implicitRules | UseElementRenamed | Task.implicitRules |
 | ProcessRequest.language | UseElementRenamed | Task.language |
 | ProcessRequest.text | UseElementRenamed | Task.text |
@@ -11,7 +11,7 @@
 | ProcessRequest.extension | UseElementRenamed | Task.extension |
 | ProcessRequest.modifierExtension | UseElementRenamed | Task.modifierExtension |
 | ProcessRequest.identifier | UseElementRenamed | Task.identifier |
-| ProcessRequest.status | UseElementRenamed | Task.status |
+| ProcessRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.status |
 | ProcessRequest.action | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.action |
 | ProcessRequest.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.target |
 | ProcessRequest.created | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcessRequest.created |

@@ -28,9 +28,9 @@
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
 | OperationDefinition.comment | UseElementSameName | OperationDefinition.comment |
 | OperationDefinition.base | UseElementSameName | OperationDefinition.base |
-| OperationDefinition.resource | UseElementSameName | OperationDefinition.resource |
+| OperationDefinition.resource | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
-| OperationDefinition.type | UseElementSameName | OperationDefinition.type |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementSameName | OperationDefinition.instance |
 | OperationDefinition.inputProfile | UseElementSameName | OperationDefinition.inputProfile |
 | OperationDefinition.outputProfile | UseElementSameName | OperationDefinition.outputProfile |
@@ -43,7 +43,7 @@
 | OperationDefinition.parameter.min | UseElementSameName | OperationDefinition.parameter.min |
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
-| OperationDefinition.parameter.type | UseElementSameName | OperationDefinition.parameter.type |
+| OperationDefinition.parameter.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.type |
 | OperationDefinition.parameter.targetProfile | UseElementSameName | OperationDefinition.parameter.targetProfile |
 | OperationDefinition.parameter.searchType | UseElementSameName | OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |

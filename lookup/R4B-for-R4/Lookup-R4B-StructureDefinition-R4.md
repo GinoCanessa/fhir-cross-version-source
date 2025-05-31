@@ -26,7 +26,7 @@
 | StructureDefinition.purpose | UseElementSameName | StructureDefinition.purpose |
 | StructureDefinition.copyright | UseElementSameName | StructureDefinition.copyright |
 | StructureDefinition.keyword | UseElementSameName | StructureDefinition.keyword |
-| StructureDefinition.fhirVersion | UseElementSameName | StructureDefinition.fhirVersion |
+| StructureDefinition.fhirVersion | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-StructureDefinition.fhirVersion |
 | StructureDefinition.mapping | UseElementSameName | StructureDefinition.mapping |
 | StructureDefinition.mapping.id | UseElementSameName | StructureDefinition.mapping.id |
 | StructureDefinition.mapping.extension | UseElementSameName | StructureDefinition.mapping.extension |

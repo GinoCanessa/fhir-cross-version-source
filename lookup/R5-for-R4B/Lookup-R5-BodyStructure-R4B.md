@@ -36,5 +36,5 @@
 | BodyStructure.includedStructure.qualifier | UseExtensionFromAncestor | - |
 | BodyStructure.excludedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure |
 | BodyStructure.description | UseElementRenamed | BodyStructure.description |
-| BodyStructure.image | UseElementRenamed | BodyStructure.image |
+| BodyStructure.image | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.image |
 | BodyStructure.patient | UseElementRenamed | BodyStructure.patient |

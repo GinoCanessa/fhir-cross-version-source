@@ -3,20 +3,20 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | DiagnosticOrder.id | UseElementRenamed | ServiceRequest.id |
-| DiagnosticOrder.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.meta |
+| DiagnosticOrder.meta | UseElementRenamed | ServiceRequest.meta |
 | DiagnosticOrder.implicitRules | UseElementRenamed | ServiceRequest.implicitRules |
 | DiagnosticOrder.language | UseElementRenamed | ServiceRequest.language |
 | DiagnosticOrder.text | UseElementRenamed | ServiceRequest.text |
 | DiagnosticOrder.contained | UseElementRenamed | ServiceRequest.contained |
 | DiagnosticOrder.extension | UseElementRenamed | ServiceRequest.extension |
 | DiagnosticOrder.modifierExtension | UseElementRenamed | ServiceRequest.modifierExtension |
-| DiagnosticOrder.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.subject |
+| DiagnosticOrder.subject | UseElementRenamed | ServiceRequest.subject |
 | DiagnosticOrder.orderer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.orderer |
 | DiagnosticOrder.identifier | UseElementRenamed | ServiceRequest.identifier |
 | DiagnosticOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.encounter |
-| DiagnosticOrder.reason | UseElementRenamed | ServiceRequest.reason |
+| DiagnosticOrder.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.reason |
 | DiagnosticOrder.supportingInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.supportingInformation |
-| DiagnosticOrder.specimen | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.specimen |
+| DiagnosticOrder.specimen | UseElementRenamed | ServiceRequest.specimen |
 | DiagnosticOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.status |
 | DiagnosticOrder.priority | UseElementRenamed | ServiceRequest.priority |
 | DiagnosticOrder.event | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.event |

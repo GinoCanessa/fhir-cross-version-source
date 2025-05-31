@@ -17,7 +17,7 @@
 | Task.groupIdentifier | UseElementSameName | Task.groupIdentifier |
 | Task.partOf | UseElementSameName | Task.partOf |
 | Task.status | UseElementSameName | Task.status |
-| Task.statusReason | UseElementSameName | Task.statusReason |
+| Task.statusReason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.statusReason |
 | Task.businessStatus | UseElementSameName | Task.businessStatus |
 | Task.intent | UseElementSameName | Task.intent |
 | Task.priority | UseElementSameName | Task.priority |
@@ -33,7 +33,7 @@
 | Task.lastModified | UseElementSameName | Task.lastModified |
 | Task.requester | UseElementSameName | Task.requester |
 | Task.requestedPerformer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.requestedPerformer |
-| Task.owner | UseElementSameName | Task.owner |
+| Task.owner | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.owner |
 | Task.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.performer |
 | Task.performer.id | UseExtensionFromAncestor | - |
 | Task.performer.extension | UseExtensionFromAncestor | - |
@@ -41,7 +41,7 @@
 | Task.performer.function | UseExtensionFromAncestor | - |
 | Task.performer.actor | UseExtensionFromAncestor | - |
 | Task.location | UseElementSameName | Task.location |
-| Task.reason | UseElementSameName | Task.reasonCode |
+| Task.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.reason |
 | Task.insurance | UseElementSameName | Task.insurance |
 | Task.note | UseElementSameName | Task.note |
 | Task.relevantHistory | UseElementSameName | Task.relevantHistory |

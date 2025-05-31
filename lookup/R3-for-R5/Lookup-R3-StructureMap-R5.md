@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | StructureMap.id | UseElementSameName | StructureMap.id |
-| StructureMap.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.meta |
+| StructureMap.meta | UseElementSameName | StructureMap.meta |
 | StructureMap.implicitRules | UseElementSameName | StructureMap.implicitRules |
 | StructureMap.language | UseElementSameName | StructureMap.language |
 | StructureMap.text | UseElementSameName | StructureMap.text |
@@ -29,18 +29,18 @@
 | StructureMap.structure.id | UseElementSameName | StructureMap.structure.id |
 | StructureMap.structure.extension | UseElementSameName | StructureMap.structure.extension |
 | StructureMap.structure.modifierExtension | UseElementSameName | StructureMap.structure.modifierExtension |
-| StructureMap.structure.url | UseElementSameName | StructureMap.structure.url |
+| StructureMap.structure.url | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.structure.url |
 | StructureMap.structure.mode | UseElementSameName | StructureMap.structure.mode |
 | StructureMap.structure.alias | UseElementSameName | StructureMap.structure.alias |
 | StructureMap.structure.documentation | UseElementSameName | StructureMap.structure.documentation |
-| StructureMap.import | UseElementSameName | StructureMap.import |
+| StructureMap.import | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.import |
 | StructureMap.group | UseElementSameName | StructureMap.group |
 | StructureMap.group.id | UseElementSameName | StructureMap.group.id |
 | StructureMap.group.extension | UseElementSameName | StructureMap.group.extension |
 | StructureMap.group.modifierExtension | UseElementSameName | StructureMap.group.modifierExtension |
 | StructureMap.group.name | UseElementSameName | StructureMap.group.name |
 | StructureMap.group.extends | UseElementSameName | StructureMap.group.extends |
-| StructureMap.group.typeMode | UseElementSameName | StructureMap.group.typeMode |
+| StructureMap.group.typeMode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.group.typeMode |
 | StructureMap.group.documentation | UseElementSameName | StructureMap.group.documentation |
 | StructureMap.group.input | UseElementSameName | StructureMap.group.input |
 | StructureMap.group.input.id | UseElementSameName | StructureMap.group.input.id |
@@ -73,7 +73,7 @@
 | StructureMap.group.rule.target.id | UseElementSameName | StructureMap.group.rule.target.id |
 | StructureMap.group.rule.target.extension | UseElementSameName | StructureMap.group.rule.target.extension |
 | StructureMap.group.rule.target.modifierExtension | UseElementSameName | StructureMap.group.rule.target.modifierExtension |
-| StructureMap.group.rule.target.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.group.rule.target.context |
+| StructureMap.group.rule.target.context | UseElementSameName | StructureMap.group.rule.target.context |
 | StructureMap.group.rule.target.contextType | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.group.rule.target.contextType |
 | StructureMap.group.rule.target.element | UseElementSameName | StructureMap.group.rule.target.element |
 | StructureMap.group.rule.target.variable | UseElementSameName | StructureMap.group.rule.target.variable |
@@ -84,7 +84,7 @@
 | StructureMap.group.rule.target.parameter.id | UseElementSameName | StructureMap.group.rule.target.parameter.id |
 | StructureMap.group.rule.target.parameter.extension | UseElementSameName | StructureMap.group.rule.target.parameter.extension |
 | StructureMap.group.rule.target.parameter.modifierExtension | UseElementSameName | StructureMap.group.rule.target.parameter.modifierExtension |
-| StructureMap.group.rule.target.parameter.value[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-StructureMap.group.rule.target.parameter.value |
+| StructureMap.group.rule.target.parameter.value[x] | UseElementSameName | StructureMap.group.rule.target.parameter.value[x] |
 | StructureMap.group.rule.rule | UseElementSameName | StructureMap.group.rule.rule |
 | StructureMap.group.rule.dependent | UseElementSameName | StructureMap.group.rule.dependent |
 | StructureMap.group.rule.dependent.id | UseElementSameName | StructureMap.group.rule.dependent.id |

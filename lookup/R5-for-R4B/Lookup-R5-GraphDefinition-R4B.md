@@ -27,7 +27,7 @@
 | GraphDefinition.purpose | UseElementRenamed | GraphDefinition.purpose |
 | GraphDefinition.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.copyright |
 | GraphDefinition.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.copyrightLabel |
-| GraphDefinition.start | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.start |
+| GraphDefinition.start | UseElementRenamed | GraphDefinition.start |
 | GraphDefinition.node | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.node |
 | GraphDefinition.node.id | UseExtensionFromAncestor | - |
 | GraphDefinition.node.extension | UseExtensionFromAncestor | - |

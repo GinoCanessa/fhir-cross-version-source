@@ -30,6 +30,6 @@
 | Group.member.id | UseElementSameName | Group.member.id |
 | Group.member.extension | UseElementSameName | Group.member.extension |
 | Group.member.modifierExtension | UseElementSameName | Group.member.modifierExtension |
-| Group.member.entity | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Group.member.entity |
+| Group.member.entity | UseElementSameName | Group.member.entity |
 | Group.member.period | UseElementSameName | Group.member.period |
 | Group.member.inactive | UseElementSameName | Group.member.inactive |

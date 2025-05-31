@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | OperationDefinition.id | UseElementSameName | OperationDefinition.id |
-| OperationDefinition.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.meta |
+| OperationDefinition.meta | UseElementSameName | OperationDefinition.meta |
 | OperationDefinition.implicitRules | UseElementSameName | OperationDefinition.implicitRules |
 | OperationDefinition.language | UseElementSameName | OperationDefinition.language |
 | OperationDefinition.text | UseElementSameName | OperationDefinition.text |
@@ -13,16 +13,16 @@
 | OperationDefinition.url | UseElementSameName | OperationDefinition.url |
 | OperationDefinition.version | UseElementSameName | OperationDefinition.version |
 | OperationDefinition.name | UseElementSameName | OperationDefinition.name |
-| OperationDefinition.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.status |
+| OperationDefinition.status | UseElementSameName | OperationDefinition.status |
 | OperationDefinition.kind | UseElementSameName | OperationDefinition.kind |
 | OperationDefinition.experimental | UseElementSameName | OperationDefinition.experimental |
 | OperationDefinition.publisher | UseElementSameName | OperationDefinition.publisher |
-| OperationDefinition.contact | UseElementSameName | OperationDefinition.contact |
-| OperationDefinition.contact.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact.id |
-| OperationDefinition.contact.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact.extension |
-| OperationDefinition.contact.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact.modifierExtension |
-| OperationDefinition.contact.name | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact.name |
-| OperationDefinition.contact.telecom | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact.telecom |
+| OperationDefinition.contact | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.contact |
+| OperationDefinition.contact.id | UseExtensionFromAncestor | - |
+| OperationDefinition.contact.extension | UseExtensionFromAncestor | - |
+| OperationDefinition.contact.modifierExtension | UseExtensionFromAncestor | - |
+| OperationDefinition.contact.name | UseExtensionFromAncestor | - |
+| OperationDefinition.contact.telecom | UseExtensionFromAncestor | - |
 | OperationDefinition.date | UseElementSameName | OperationDefinition.date |
 | OperationDefinition.description | UseElementSameName | OperationDefinition.description |
 | OperationDefinition.requirements | UseElementRenamed | OperationDefinition.purpose |
@@ -31,7 +31,7 @@
 | OperationDefinition.notes | UseElementRenamed | OperationDefinition.comment |
 | OperationDefinition.base | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.base |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
-| OperationDefinition.type | UseElementRenamed | OperationDefinition.resource |
+| OperationDefinition.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.type |
 | OperationDefinition.instance | UseElementSameName | OperationDefinition.instance |
 | OperationDefinition.parameter | UseElementSameName | OperationDefinition.parameter |
 | OperationDefinition.parameter.id | UseElementSameName | OperationDefinition.parameter.id |
@@ -42,7 +42,7 @@
 | OperationDefinition.parameter.min | UseElementSameName | OperationDefinition.parameter.min |
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
-| OperationDefinition.parameter.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.parameter.type |
+| OperationDefinition.parameter.type | UseElementRenamed | OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.profile | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.parameter.profile |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Device.id | UseElementSameName | Device.id |
-| Device.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.meta |
+| Device.meta | UseElementSameName | Device.meta |
 | Device.implicitRules | UseElementSameName | Device.implicitRules |
 | Device.language | UseElementSameName | Device.language |
 | Device.text | UseElementSameName | Device.text |
@@ -13,7 +13,7 @@
 | Device.identifier | UseElementSameName | Device.identifier |
 | Device.type | UseElementSameName | Device.type |
 | Device.note | UseElementSameName | Device.note |
-| Device.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.status |
+| Device.status | UseElementSameName | Device.status |
 | Device.manufacturer | UseElementSameName | Device.manufacturer |
 | Device.model | UseElementRenamed | Device.modelNumber |
 | Device.version | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.version |
@@ -21,8 +21,8 @@
 | Device.expiry | UseElementRenamed | Device.expirationDate |
 | Device.udi | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.udi |
 | Device.lotNumber | UseElementSameName | Device.lotNumber |
-| Device.owner | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.owner |
-| Device.location | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.location |
-| Device.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Device.patient |
+| Device.owner | UseElementSameName | Device.owner |
+| Device.location | UseElementSameName | Device.location |
+| Device.patient | UseElementSameName | Device.patient |
 | Device.contact | UseElementSameName | Device.contact |
 | Device.url | UseElementSameName | Device.url |

@@ -29,10 +29,10 @@
 | SearchParameter.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyright |
 | SearchParameter.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyrightLabel |
 | SearchParameter.code | UseElementRenamed | SearchParameter.code |
-| SearchParameter.base | UseElementRenamed | SearchParameter.base |
+| SearchParameter.base | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.base |
 | SearchParameter.type | UseElementRenamed | SearchParameter.type |
 | SearchParameter.expression | UseElementRenamed | SearchParameter.expression |
-| SearchParameter.processingMode | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.processingMode |
+| SearchParameter.processingMode | UseElementRenamed | SearchParameter.xpathUsage |
 | SearchParameter.constraint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.constraint |
 | SearchParameter.target | UseElementRenamed | SearchParameter.target |
 | SearchParameter.multipleOr | UseElementRenamed | SearchParameter.multipleOr |

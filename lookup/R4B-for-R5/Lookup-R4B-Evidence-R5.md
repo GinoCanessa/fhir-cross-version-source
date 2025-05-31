@@ -26,7 +26,7 @@
 | Evidence.editor | UseElementSameName | Evidence.editor |
 | Evidence.reviewer | UseElementSameName | Evidence.reviewer |
 | Evidence.endorser | UseElementSameName | Evidence.endorser |
-| Evidence.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Evidence.relatedArtifact |
+| Evidence.relatedArtifact | UseElementSameName | Evidence.relatedArtifact |
 | Evidence.description | UseElementSameName | Evidence.description |
 | Evidence.assertion | UseElementSameName | Evidence.assertion |
 | Evidence.note | UseElementSameName | Evidence.note |

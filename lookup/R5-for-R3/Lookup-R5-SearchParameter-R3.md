@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | SearchParameter.id | UseElementSameName | SearchParameter.id |
-| SearchParameter.meta | UseElementSameName | SearchParameter.meta |
+| SearchParameter.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.meta |
 | SearchParameter.implicitRules | UseElementSameName | SearchParameter.implicitRules |
 | SearchParameter.language | UseElementSameName | SearchParameter.language |
 | SearchParameter.text | UseElementSameName | SearchParameter.text |
@@ -16,7 +16,7 @@
 | SearchParameter.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.versionAlgorithm |
 | SearchParameter.name | UseElementSameName | SearchParameter.name |
 | SearchParameter.title | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title |
-| SearchParameter.derivedFrom | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.derivedFrom |
+| SearchParameter.derivedFrom | UseElementSameName | SearchParameter.derivedFrom |
 | SearchParameter.status | UseElementSameName | SearchParameter.status |
 | SearchParameter.experimental | UseElementSameName | SearchParameter.experimental |
 | SearchParameter.date | UseElementSameName | SearchParameter.date |
@@ -30,9 +30,9 @@
 | SearchParameter.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyrightLabel |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.base |
-| SearchParameter.type | UseElementSameName | SearchParameter.type |
+| SearchParameter.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.type |
 | SearchParameter.expression | UseElementSameName | SearchParameter.expression |
-| SearchParameter.processingMode | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.processingMode |
+| SearchParameter.processingMode | UseElementRenamed | SearchParameter.xpathUsage |
 | SearchParameter.constraint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.constraint |
 | SearchParameter.target | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.target |
 | SearchParameter.multipleOr | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.multipleOr |
@@ -44,5 +44,5 @@
 | SearchParameter.component.id | UseElementSameName | SearchParameter.component.id |
 | SearchParameter.component.extension | UseElementSameName | SearchParameter.component.extension |
 | SearchParameter.component.modifierExtension | UseElementSameName | SearchParameter.component.modifierExtension |
-| SearchParameter.component.definition | UseElementSameName | SearchParameter.component.definition |
+| SearchParameter.component.definition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.component.definition |
 | SearchParameter.component.expression | UseElementSameName | SearchParameter.component.expression |

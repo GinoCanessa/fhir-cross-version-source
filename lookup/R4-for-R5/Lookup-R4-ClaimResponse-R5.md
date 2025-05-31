@@ -38,7 +38,7 @@
 | ClaimResponse.item.adjudication.category | UseElementSameName | ClaimResponse.item.adjudication.category |
 | ClaimResponse.item.adjudication.reason | UseElementSameName | ClaimResponse.item.adjudication.reason |
 | ClaimResponse.item.adjudication.amount | UseElementSameName | ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.value | UseElementRenamed | ClaimResponse.item.adjudication.quantity |
+| ClaimResponse.item.adjudication.value | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.item.adjudication.value |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |
@@ -117,13 +117,13 @@
 | ClaimResponse.payment.identifier | UseElementSameName | ClaimResponse.payment.identifier |
 | ClaimResponse.fundsReserve | UseElementSameName | ClaimResponse.fundsReserve |
 | ClaimResponse.formCode | UseElementSameName | ClaimResponse.formCode |
-| ClaimResponse.form | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.form |
+| ClaimResponse.form | UseElementSameName | ClaimResponse.form |
 | ClaimResponse.processNote | UseElementSameName | ClaimResponse.processNote |
 | ClaimResponse.processNote.id | UseElementSameName | ClaimResponse.processNote.id |
 | ClaimResponse.processNote.extension | UseElementSameName | ClaimResponse.processNote.extension |
 | ClaimResponse.processNote.modifierExtension | UseElementSameName | ClaimResponse.processNote.modifierExtension |
 | ClaimResponse.processNote.number | UseElementSameName | ClaimResponse.processNote.number |
-| ClaimResponse.processNote.type | UseElementSameName | ClaimResponse.processNote.type |
+| ClaimResponse.processNote.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.processNote.type |
 | ClaimResponse.processNote.text | UseElementSameName | ClaimResponse.processNote.text |
 | ClaimResponse.processNote.language | UseElementSameName | ClaimResponse.processNote.language |
 | ClaimResponse.communicationRequest | UseElementSameName | ClaimResponse.communicationRequest |

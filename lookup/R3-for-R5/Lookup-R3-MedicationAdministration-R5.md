@@ -3,23 +3,23 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MedicationAdministration.id | UseElementSameName | MedicationAdministration.id |
-| MedicationAdministration.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.meta |
+| MedicationAdministration.meta | UseElementSameName | MedicationAdministration.meta |
 | MedicationAdministration.implicitRules | UseElementSameName | MedicationAdministration.implicitRules |
 | MedicationAdministration.language | UseElementSameName | MedicationAdministration.language |
 | MedicationAdministration.text | UseElementSameName | MedicationAdministration.text |
 | MedicationAdministration.contained | UseElementSameName | MedicationAdministration.contained |
-| MedicationAdministration.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.extension |
+| MedicationAdministration.extension | UseElementSameName | MedicationAdministration.extension |
 | MedicationAdministration.modifierExtension | UseElementSameName | MedicationAdministration.modifierExtension |
 | MedicationAdministration.identifier | UseElementSameName | MedicationAdministration.identifier |
 | MedicationAdministration.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.definition |
 | MedicationAdministration.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.partOf |
-| MedicationAdministration.status | UseElementRenamed | MedicationAdministration.extension |
-| MedicationAdministration.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.category |
+| MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
+| MedicationAdministration.category | UseElementSameName | MedicationAdministration.category |
 | MedicationAdministration.medication[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.medication |
-| MedicationAdministration.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.subject |
-| MedicationAdministration.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.context |
-| MedicationAdministration.supportingInformation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.supportingInformation |
-| MedicationAdministration.effective[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.effective |
+| MedicationAdministration.subject | UseElementSameName | MedicationAdministration.subject |
+| MedicationAdministration.context | UseElementRenamed | MedicationAdministration.encounter |
+| MedicationAdministration.supportingInformation | UseElementSameName | MedicationAdministration.supportingInformation |
+| MedicationAdministration.effective[x] | UseElementRenamed | MedicationAdministration.occurence[x] |
 | MedicationAdministration.performer | UseElementSameName | MedicationAdministration.performer |
 | MedicationAdministration.performer.id | UseElementSameName | MedicationAdministration.performer.id |
 | MedicationAdministration.performer.extension | UseElementSameName | MedicationAdministration.performer.extension |
@@ -30,7 +30,7 @@
 | MedicationAdministration.reasonNotGiven | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.reasonNotGiven |
 | MedicationAdministration.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.reasonCode |
 | MedicationAdministration.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.reasonReference |
-| MedicationAdministration.prescription | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.prescription |
+| MedicationAdministration.prescription | UseElementRenamed | MedicationAdministration.request |
 | MedicationAdministration.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.device |
 | MedicationAdministration.note | UseElementSameName | MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
@@ -43,4 +43,4 @@
 | MedicationAdministration.dosage.method | UseElementSameName | MedicationAdministration.dosage.method |
 | MedicationAdministration.dosage.dose | UseElementSameName | MedicationAdministration.dosage.dose |
 | MedicationAdministration.dosage.rate[x] | UseElementSameName | MedicationAdministration.dosage.rate[x] |
-| MedicationAdministration.eventHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.eventHistory |
+| MedicationAdministration.eventHistory | UseElementSameName | MedicationAdministration.eventHistory |

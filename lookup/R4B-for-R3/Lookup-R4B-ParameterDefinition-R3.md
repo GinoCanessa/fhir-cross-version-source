@@ -10,4 +10,4 @@
 | ParameterDefinition.max | UseElementSameName | ParameterDefinition.max |
 | ParameterDefinition.documentation | UseElementSameName | ParameterDefinition.documentation |
 | ParameterDefinition.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ParameterDefinition.type |
-| ParameterDefinition.profile | UseElementSameName | ParameterDefinition.profile |
+| ParameterDefinition.profile | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ParameterDefinition.profile |

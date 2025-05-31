@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Subscription.id | UseElementSameName | Subscription.id |
-| Subscription.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.meta |
+| Subscription.meta | UseElementSameName | Subscription.meta |
 | Subscription.implicitRules | UseElementSameName | Subscription.implicitRules |
 | Subscription.language | UseElementSameName | Subscription.language |
 | Subscription.text | UseElementSameName | Subscription.text |
@@ -13,7 +13,7 @@
 | Subscription.criteria | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.criteria |
 | Subscription.contact | UseElementSameName | Subscription.contact |
 | Subscription.reason | UseElementSameName | Subscription.reason |
-| Subscription.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.status |
+| Subscription.status | UseElementSameName | Subscription.status |
 | Subscription.error | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.error |
 | Subscription.channel | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Subscription.channel |
 | Subscription.channel.id | UseExtensionFromAncestor | - |

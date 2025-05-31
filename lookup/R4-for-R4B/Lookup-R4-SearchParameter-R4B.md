@@ -24,12 +24,12 @@
 | SearchParameter.jurisdiction | UseElementSameName | SearchParameter.jurisdiction |
 | SearchParameter.purpose | UseElementSameName | SearchParameter.purpose |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |
-| SearchParameter.base | UseElementSameName | SearchParameter.base |
+| SearchParameter.base | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.base |
 | SearchParameter.type | UseElementSameName | SearchParameter.type |
 | SearchParameter.expression | UseElementSameName | SearchParameter.expression |
 | SearchParameter.xpath | UseElementSameName | SearchParameter.xpath |
 | SearchParameter.xpathUsage | UseElementSameName | SearchParameter.xpathUsage |
-| SearchParameter.target | UseElementSameName | SearchParameter.target |
+| SearchParameter.target | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-SearchParameter.target |
 | SearchParameter.multipleOr | UseElementSameName | SearchParameter.multipleOr |
 | SearchParameter.multipleAnd | UseElementSameName | SearchParameter.multipleAnd |
 | SearchParameter.comparator | UseElementSameName | SearchParameter.comparator |

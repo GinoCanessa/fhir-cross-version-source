@@ -44,7 +44,7 @@
 | NamingSystem.uniqueId.id | UseElementRenamed | NamingSystem.uniqueId.id |
 | NamingSystem.uniqueId.extension | UseElementRenamed | NamingSystem.uniqueId.extension |
 | NamingSystem.uniqueId.modifierExtension | UseElementRenamed | NamingSystem.uniqueId.modifierExtension |
-| NamingSystem.uniqueId.type | UseElementRenamed | NamingSystem.uniqueId.type |
+| NamingSystem.uniqueId.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.uniqueId.type |
 | NamingSystem.uniqueId.value | UseElementRenamed | NamingSystem.uniqueId.value |
 | NamingSystem.uniqueId.preferred | UseElementRenamed | NamingSystem.uniqueId.preferred |
 | NamingSystem.uniqueId.comment | UseElementRenamed | NamingSystem.uniqueId.comment |

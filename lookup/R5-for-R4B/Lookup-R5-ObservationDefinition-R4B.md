@@ -11,7 +11,7 @@
 | ObservationDefinition.extension | UseElementRenamed | ObservationDefinition.extension |
 | ObservationDefinition.modifierExtension | UseElementRenamed | ObservationDefinition.modifierExtension |
 | ObservationDefinition.url | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.url |
-| ObservationDefinition.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.identifier |
+| ObservationDefinition.identifier | UseElementRenamed | ObservationDefinition.identifier |
 | ObservationDefinition.version | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.version |
 | ObservationDefinition.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.versionAlgorithm |
 | ObservationDefinition.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.name |

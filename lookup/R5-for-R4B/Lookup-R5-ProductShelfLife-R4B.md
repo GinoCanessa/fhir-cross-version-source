@@ -6,5 +6,5 @@
 | ProductShelfLife.extension | UseElementRenamed | ProductShelfLife.extension |
 | ProductShelfLife.modifierExtension | UseElementRenamed | ProductShelfLife.modifierExtension |
 | ProductShelfLife.type | UseElementRenamed | ProductShelfLife.type |
-| ProductShelfLife.period[x] | UseElementRenamed | ProductShelfLife.period |
+| ProductShelfLife.period[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ProductShelfLife.period |
 | ProductShelfLife.specialPrecautionsForStorage | UseElementRenamed | ProductShelfLife.specialPrecautionsForStorage |

@@ -12,7 +12,7 @@
 | MolecularSequence.modifierExtension | UseElementRenamed | MolecularSequence.modifierExtension |
 | MolecularSequence.identifier | UseElementRenamed | MolecularSequence.identifier |
 | MolecularSequence.type | UseElementRenamed | MolecularSequence.type |
-| MolecularSequence.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.subject |
+| MolecularSequence.subject | UseElementRenamed | MolecularSequence.patient |
 | MolecularSequence.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.focus |
 | MolecularSequence.specimen | UseElementRenamed | MolecularSequence.specimen |
 | MolecularSequence.device | UseElementRenamed | MolecularSequence.device |

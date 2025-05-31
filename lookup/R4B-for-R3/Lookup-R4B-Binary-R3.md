@@ -3,9 +3,9 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Binary.id | UseElementSameName | Binary.id |
-| Binary.meta | UseElementSameName | Binary.meta |
+| Binary.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Binary.meta |
 | Binary.implicitRules | UseElementSameName | Binary.implicitRules |
 | Binary.language | UseElementSameName | Binary.language |
 | Binary.contentType | UseElementSameName | Binary.contentType |
-| Binary.securityContext | UseElementSameName | Binary.securityContext |
+| Binary.securityContext | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Binary.securityContext |
 | Binary.data | UseElementSameName | Binary.content |

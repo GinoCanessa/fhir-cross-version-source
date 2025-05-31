@@ -9,8 +9,8 @@
 | Dosage.text | UseElementSameName | Dosage.text |
 | Dosage.additionalInstruction | UseElementSameName | Dosage.additionalInstruction |
 | Dosage.patientInstruction | UseElementSameName | Dosage.patientInstruction |
-| Dosage.timing | UseElementSameName | Dosage.timing |
-| Dosage.asNeeded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.asNeeded |
+| Dosage.timing | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.timing |
+| Dosage.asNeeded | UseElementRenamed | Dosage.asNeeded[x] |
 | Dosage.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.asNeededFor |
 | Dosage.site | UseElementSameName | Dosage.site |
 | Dosage.route | UseElementSameName | Dosage.route |
@@ -21,6 +21,6 @@
 | Dosage.doseAndRate.type | UseExtensionFromAncestor | - |
 | Dosage.doseAndRate.dose[x] | UseExtensionFromAncestor | - |
 | Dosage.doseAndRate.rate[x] | UseExtensionFromAncestor | - |
-| Dosage.maxDosePerPeriod | UseElementSameName | Dosage.maxDosePerPeriod |
+| Dosage.maxDosePerPeriod | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.maxDosePerPeriod |
 | Dosage.maxDosePerAdministration | UseElementSameName | Dosage.maxDosePerAdministration |
 | Dosage.maxDosePerLifetime | UseElementSameName | Dosage.maxDosePerLifetime |

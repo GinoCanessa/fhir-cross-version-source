@@ -10,13 +10,13 @@
 | DetectedIssue.contained | UseElementSameName | DetectedIssue.contained |
 | DetectedIssue.extension | UseElementSameName | DetectedIssue.extension |
 | DetectedIssue.modifierExtension | UseElementSameName | DetectedIssue.modifierExtension |
-| DetectedIssue.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DetectedIssue.patient |
+| DetectedIssue.patient | UseElementSameName | DetectedIssue.patient |
 | DetectedIssue.category | UseElementSameName | DetectedIssue.category |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
-| DetectedIssue.implicated | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DetectedIssue.implicated |
+| DetectedIssue.implicated | UseElementSameName | DetectedIssue.implicated |
 | DetectedIssue.detail | UseElementSameName | DetectedIssue.detail |
 | DetectedIssue.date | UseElementSameName | DetectedIssue.date |
-| DetectedIssue.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DetectedIssue.author |
+| DetectedIssue.author | UseElementSameName | DetectedIssue.author |
 | DetectedIssue.identifier | UseElementSameName | DetectedIssue.identifier |
 | DetectedIssue.reference | UseElementSameName | DetectedIssue.reference |
 | DetectedIssue.mitigation | UseElementSameName | DetectedIssue.mitigation |
@@ -25,4 +25,4 @@
 | DetectedIssue.mitigation.modifierExtension | UseElementSameName | DetectedIssue.mitigation.modifierExtension |
 | DetectedIssue.mitigation.action | UseElementSameName | DetectedIssue.mitigation.action |
 | DetectedIssue.mitigation.date | UseElementSameName | DetectedIssue.mitigation.date |
-| DetectedIssue.mitigation.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DetectedIssue.mitigation.author |
+| DetectedIssue.mitigation.author | UseElementSameName | DetectedIssue.mitigation.author |

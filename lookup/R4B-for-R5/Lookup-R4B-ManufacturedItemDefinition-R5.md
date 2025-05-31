@@ -21,4 +21,4 @@
 | ManufacturedItemDefinition.property.extension | UseElementSameName | ManufacturedItemDefinition.property.extension |
 | ManufacturedItemDefinition.property.modifierExtension | UseElementSameName | ManufacturedItemDefinition.property.modifierExtension |
 | ManufacturedItemDefinition.property.type | UseElementSameName | ManufacturedItemDefinition.property.type |
-| ManufacturedItemDefinition.property.value[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ManufacturedItemDefinition.property.value |
+| ManufacturedItemDefinition.property.value[x] | UseElementSameName | ManufacturedItemDefinition.property.value[x] |

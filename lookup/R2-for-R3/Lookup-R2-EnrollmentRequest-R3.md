@@ -14,9 +14,9 @@
 | EnrollmentRequest.ruleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.ruleset |
 | EnrollmentRequest.originalRuleset | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.originalRuleset |
 | EnrollmentRequest.created | UseElementSameName | EnrollmentRequest.created |
-| EnrollmentRequest.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.target |
-| EnrollmentRequest.provider | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.provider |
-| EnrollmentRequest.organization | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.organization |
-| EnrollmentRequest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.subject |
-| EnrollmentRequest.coverage | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.coverage |
+| EnrollmentRequest.target | UseElementRenamed | EnrollmentRequest.insurer |
+| EnrollmentRequest.provider | UseElementSameName | EnrollmentRequest.provider |
+| EnrollmentRequest.organization | UseElementSameName | EnrollmentRequest.organization |
+| EnrollmentRequest.subject | UseElementSameName | EnrollmentRequest.subject |
+| EnrollmentRequest.coverage | UseElementSameName | EnrollmentRequest.coverage |
 | EnrollmentRequest.relationship | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-EnrollmentRequest.relationship |

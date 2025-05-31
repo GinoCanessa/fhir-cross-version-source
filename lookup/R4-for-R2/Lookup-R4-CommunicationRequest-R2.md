@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CommunicationRequest.id | UseElementSameName | CommunicationRequest.id |
-| CommunicationRequest.meta | UseElementSameName | CommunicationRequest.meta |
+| CommunicationRequest.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.meta |
 | CommunicationRequest.implicitRules | UseElementSameName | CommunicationRequest.implicitRules |
 | CommunicationRequest.language | UseElementSameName | CommunicationRequest.language |
 | CommunicationRequest.text | UseElementSameName | CommunicationRequest.text |
@@ -16,8 +16,8 @@
 | CommunicationRequest.groupIdentifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.groupIdentifier |
 | CommunicationRequest.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.status |
 | CommunicationRequest.statusReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.statusReason |
-| CommunicationRequest.category | UseElementSameName | CommunicationRequest.category |
-| CommunicationRequest.priority | UseElementSameName | CommunicationRequest.priority |
+| CommunicationRequest.category | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.category |
+| CommunicationRequest.priority | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.priority |
 | CommunicationRequest.doNotPerform | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.doNotPerform |
 | CommunicationRequest.medium | UseElementSameName | CommunicationRequest.medium |
 | CommunicationRequest.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.subject |
@@ -27,10 +27,10 @@
 | CommunicationRequest.payload.id | UseElementSameName | CommunicationRequest.payload.id |
 | CommunicationRequest.payload.extension | UseElementSameName | CommunicationRequest.payload.extension |
 | CommunicationRequest.payload.modifierExtension | UseElementSameName | CommunicationRequest.payload.modifierExtension |
-| CommunicationRequest.payload.content[x] | UseElementSameName | CommunicationRequest.payload.content[x] |
+| CommunicationRequest.payload.content[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.payload.content |
 | CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.scheduled[x] |
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.requestedOn |
-| CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
+| CommunicationRequest.requester | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.recipient |
 | CommunicationRequest.sender | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.sender |
 | CommunicationRequest.reasonCode | UseElementSameName | CommunicationRequest.reason |

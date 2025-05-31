@@ -18,10 +18,10 @@
 | GuidanceResponse.encounter | UseElementSameName | GuidanceResponse.encounter |
 | GuidanceResponse.occurrenceDateTime | UseElementSameName | GuidanceResponse.occurrenceDateTime |
 | GuidanceResponse.performer | UseElementSameName | GuidanceResponse.performer |
-| GuidanceResponse.reasonCode | UseElementRenamed | GuidanceResponse.reason |
-| GuidanceResponse.reasonReference | UseElementRenamed | GuidanceResponse.reason |
+| GuidanceResponse.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GuidanceResponse.reasonCode |
+| GuidanceResponse.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GuidanceResponse.reasonReference |
 | GuidanceResponse.note | UseElementSameName | GuidanceResponse.note |
-| GuidanceResponse.evaluationMessage | UseElementSameName | GuidanceResponse.evaluationMessage |
+| GuidanceResponse.evaluationMessage | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GuidanceResponse.evaluationMessage |
 | GuidanceResponse.outputParameters | UseElementSameName | GuidanceResponse.outputParameters |
 | GuidanceResponse.result | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GuidanceResponse.result |
-| GuidanceResponse.dataRequirement | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-GuidanceResponse.dataRequirement |
+| GuidanceResponse.dataRequirement | UseElementSameName | GuidanceResponse.dataRequirement |

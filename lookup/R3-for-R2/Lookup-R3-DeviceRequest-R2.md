@@ -18,10 +18,10 @@
 | DeviceRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.status |
 | DeviceRequest.intent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.intent |
 | DeviceRequest.priority | UseElementSameName | DeviceUseRequest.priority |
-| DeviceRequest.code[x] | UseElementSameName | DeviceUseRequest.device |
+| DeviceRequest.code[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.code |
 | DeviceRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.subject |
 | DeviceRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.context |
-| DeviceRequest.occurrence[x] | UseElementSameName | DeviceUseRequest.orderedOn |
+| DeviceRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.occurrence |
 | DeviceRequest.authoredOn | UseElementSameName | DeviceUseRequest.recordedOn |
 | DeviceRequest.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.requester |
 | DeviceRequest.requester.id | UseExtensionFromAncestor | - |
@@ -34,5 +34,5 @@
 | DeviceRequest.reasonCode | UseElementSameName | DeviceUseRequest.indication |
 | DeviceRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.reasonReference |
 | DeviceRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.supportingInfo |
-| DeviceRequest.note | UseElementSameName | DeviceUseRequest.notes |
+| DeviceRequest.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.note |
 | DeviceRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.relevantHistory |

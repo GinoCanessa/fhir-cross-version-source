@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Patient.id | UseElementSameName | Patient.id |
-| Patient.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.meta |
+| Patient.meta | UseElementSameName | Patient.meta |
 | Patient.implicitRules | UseElementSameName | Patient.implicitRules |
 | Patient.language | UseElementSameName | Patient.language |
 | Patient.text | UseElementSameName | Patient.text |
@@ -20,7 +20,7 @@
 | Patient.address | UseElementSameName | Patient.address |
 | Patient.maritalStatus | UseElementSameName | Patient.maritalStatus |
 | Patient.multipleBirth[x] | UseElementSameName | Patient.multipleBirth[x] |
-| Patient.photo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.photo |
+| Patient.photo | UseElementSameName | Patient.photo |
 | Patient.contact | UseElementSameName | Patient.contact |
 | Patient.contact.id | UseElementSameName | Patient.contact.id |
 | Patient.contact.extension | UseElementSameName | Patient.contact.extension |
@@ -30,9 +30,9 @@
 | Patient.contact.telecom | UseElementSameName | Patient.contact.telecom |
 | Patient.contact.address | UseElementSameName | Patient.contact.address |
 | Patient.contact.gender | UseElementSameName | Patient.contact.gender |
-| Patient.contact.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.contact.organization |
+| Patient.contact.organization | UseElementSameName | Patient.contact.organization |
 | Patient.contact.period | UseElementSameName | Patient.contact.period |
-| Patient.animal | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.animal |
+| Patient.animal | UseExtension | http://hl7.org/fhir/StructureDefinition/patient-animal |
 | Patient.animal.id | UseExtensionFromAncestor | - |
 | Patient.animal.extension | UseExtensionFromAncestor | - |
 | Patient.animal.modifierExtension | UseExtensionFromAncestor | - |
@@ -46,10 +46,10 @@
 | Patient.communication.language | UseElementSameName | Patient.communication.language |
 | Patient.communication.preferred | UseElementSameName | Patient.communication.preferred |
 | Patient.generalPractitioner | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.generalPractitioner |
-| Patient.managingOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.managingOrganization |
+| Patient.managingOrganization | UseElementSameName | Patient.managingOrganization |
 | Patient.link | UseElementSameName | Patient.link |
 | Patient.link.id | UseElementSameName | Patient.link.id |
 | Patient.link.extension | UseElementSameName | Patient.link.extension |
 | Patient.link.modifierExtension | UseElementSameName | Patient.link.modifierExtension |
-| Patient.link.other | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Patient.link.other |
+| Patient.link.other | UseElementSameName | Patient.link.other |
 | Patient.link.type | UseElementSameName | Patient.link.type |

@@ -5,8 +5,8 @@
 | SampledData.id | UseElementRenamed | SampledData.id |
 | SampledData.extension | UseElementRenamed | SampledData.extension |
 | SampledData.origin | UseElementRenamed | SampledData.origin |
-| SampledData.interval | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SampledData.interval |
-| SampledData.intervalUnit | UseElementRenamed | SampledData.period |
+| SampledData.interval | UseElementRenamed | SampledData.period |
+| SampledData.intervalUnit | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SampledData.intervalUnit |
 | SampledData.factor | UseElementRenamed | SampledData.factor |
 | SampledData.lowerLimit | UseElementRenamed | SampledData.lowerLimit |
 | SampledData.upperLimit | UseElementRenamed | SampledData.upperLimit |

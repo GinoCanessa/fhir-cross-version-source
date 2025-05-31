@@ -3,14 +3,14 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Media.id | UseElementSameName | Media.id |
-| Media.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.meta |
+| Media.meta | UseElementSameName | Media.meta |
 | Media.implicitRules | UseElementSameName | Media.implicitRules |
 | Media.language | UseElementSameName | Media.language |
 | Media.text | UseElementSameName | Media.text |
 | Media.contained | UseElementSameName | Media.contained |
 | Media.extension | UseElementSameName | Media.extension |
 | Media.modifierExtension | UseElementSameName | Media.modifierExtension |
-| Media.type | UseElementSameName | Media.type |
+| Media.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.type |
 | Media.subtype | UseElementRenamed | Media.modality |
 | Media.identifier | UseElementSameName | Media.identifier |
 | Media.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.subject |
@@ -20,5 +20,5 @@
 | Media.height | UseElementSameName | Media.height |
 | Media.width | UseElementSameName | Media.width |
 | Media.frames | UseElementSameName | Media.frames |
-| Media.duration | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Media.duration |
+| Media.duration | UseElementSameName | Media.duration |
 | Media.content | UseElementSameName | Media.content |

@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | CoverageEligibilityRequest.id | UseElementSameName | EligibilityRequest.id |
-| CoverageEligibilityRequest.meta | UseElementSameName | EligibilityRequest.meta |
+| CoverageEligibilityRequest.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.meta |
 | CoverageEligibilityRequest.implicitRules | UseElementSameName | EligibilityRequest.implicitRules |
 | CoverageEligibilityRequest.language | UseElementSameName | EligibilityRequest.language |
 | CoverageEligibilityRequest.text | UseElementSameName | EligibilityRequest.text |
@@ -19,7 +19,7 @@
 | CoverageEligibilityRequest.created | UseElementSameName | EligibilityRequest.created |
 | CoverageEligibilityRequest.enterer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.enterer |
 | CoverageEligibilityRequest.provider | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.provider |
-| CoverageEligibilityRequest.insurer | UseElementSameName | EligibilityRequest.target |
+| CoverageEligibilityRequest.insurer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.insurer |
 | CoverageEligibilityRequest.facility | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.facility |
 | CoverageEligibilityRequest.supportingInfo | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityRequest.supportingInfo |
 | CoverageEligibilityRequest.supportingInfo.id | UseExtensionFromAncestor | - |

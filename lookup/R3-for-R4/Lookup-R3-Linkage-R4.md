@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Linkage.id | UseElementSameName | Linkage.id |
-| Linkage.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Linkage.meta |
+| Linkage.meta | UseElementSameName | Linkage.meta |
 | Linkage.implicitRules | UseElementSameName | Linkage.implicitRules |
 | Linkage.language | UseElementSameName | Linkage.language |
 | Linkage.text | UseElementSameName | Linkage.text |

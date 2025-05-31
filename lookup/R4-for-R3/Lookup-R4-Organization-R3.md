@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Organization.id | UseElementSameName | Organization.id |
-| Organization.meta | UseElementSameName | Organization.meta |
+| Organization.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.meta |
 | Organization.implicitRules | UseElementSameName | Organization.implicitRules |
 | Organization.language | UseElementSameName | Organization.language |
 | Organization.text | UseElementSameName | Organization.text |
@@ -17,7 +17,7 @@
 | Organization.alias | UseElementSameName | Organization.alias |
 | Organization.telecom | UseElementSameName | Organization.telecom |
 | Organization.address | UseElementSameName | Organization.address |
-| Organization.partOf | UseElementSameName | Organization.partOf |
+| Organization.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.partOf |
 | Organization.contact | UseElementSameName | Organization.contact |
 | Organization.contact.id | UseElementSameName | Organization.contact.id |
 | Organization.contact.extension | UseElementSameName | Organization.contact.extension |
@@ -26,4 +26,4 @@
 | Organization.contact.name | UseElementSameName | Organization.contact.name |
 | Organization.contact.telecom | UseElementSameName | Organization.contact.telecom |
 | Organization.contact.address | UseElementSameName | Organization.contact.address |
-| Organization.endpoint | UseElementSameName | Organization.endpoint |
+| Organization.endpoint | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Organization.endpoint |

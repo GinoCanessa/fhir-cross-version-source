@@ -25,7 +25,7 @@
 | PackagedProductDefinition.legalStatusOfSupply.code | UseElementSameName | PackagedProductDefinition.legalStatusOfSupply.code |
 | PackagedProductDefinition.legalStatusOfSupply.jurisdiction | UseElementSameName | PackagedProductDefinition.legalStatusOfSupply.jurisdiction |
 | PackagedProductDefinition.marketingStatus | UseElementSameName | PackagedProductDefinition.marketingStatus |
-| PackagedProductDefinition.characteristic | UseElementSameName | PackagedProductDefinition.characteristic |
+| PackagedProductDefinition.characteristic | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.characteristic |
 | PackagedProductDefinition.copackagedIndicator | UseElementSameName | PackagedProductDefinition.copackagedIndicator |
 | PackagedProductDefinition.manufacturer | UseElementSameName | PackagedProductDefinition.manufacturer |
 | PackagedProductDefinition.package | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.package |

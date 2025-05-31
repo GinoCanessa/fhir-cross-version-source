@@ -13,7 +13,7 @@
 | TestReport.identifier | UseElementRenamed | TestReport.identifier |
 | TestReport.name | UseElementRenamed | TestReport.name |
 | TestReport.status | UseElementRenamed | TestReport.status |
-| TestReport.testScript | UseElementRenamed | TestReport.testScript |
+| TestReport.testScript | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestReport.testScript |
 | TestReport.result | UseElementRenamed | TestReport.result |
 | TestReport.score | UseElementRenamed | TestReport.score |
 | TestReport.tester | UseElementRenamed | TestReport.tester |

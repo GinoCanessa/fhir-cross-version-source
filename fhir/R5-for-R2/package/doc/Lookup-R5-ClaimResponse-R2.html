@@ -3,7 +3,7 @@
 <table border="1">
 <tr><th>Source Element</th><th>Usage</th><th>Target</th></tr>
 <tr><td>ClaimResponse.id</td><td>UseElementSameName</td><td>ClaimResponse.id</td></tr>
-<tr><td>ClaimResponse.meta</td><td>UseElementSameName</td><td>ClaimResponse.meta</td></tr>
+<tr><td>ClaimResponse.meta</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.meta</td></tr>
 <tr><td>ClaimResponse.implicitRules</td><td>UseElementSameName</td><td>ClaimResponse.implicitRules</td></tr>
 <tr><td>ClaimResponse.language</td><td>UseElementSameName</td><td>ClaimResponse.language</td></tr>
 <tr><td>ClaimResponse.text</td><td>UseElementSameName</td><td>ClaimResponse.text</td></tr>
@@ -18,9 +18,9 @@
 <tr><td>ClaimResponse.use</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.use</td></tr>
 <tr><td>ClaimResponse.patient</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.patient</td></tr>
 <tr><td>ClaimResponse.created</td><td>UseElementSameName</td><td>ClaimResponse.created</td></tr>
-<tr><td>ClaimResponse.insurer</td><td>UseElementSameName</td><td>ClaimResponse.organization</td></tr>
+<tr><td>ClaimResponse.insurer</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurer</td></tr>
 <tr><td>ClaimResponse.requestor</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.requestor</td></tr>
-<tr><td>ClaimResponse.request</td><td>UseElementSameName</td><td>ClaimResponse.request</td></tr>
+<tr><td>ClaimResponse.request</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.request</td></tr>
 <tr><td>ClaimResponse.outcome</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.outcome</td></tr>
 <tr><td>ClaimResponse.decision</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.decision</td></tr>
 <tr><td>ClaimResponse.disposition</td><td>UseElementSameName</td><td>ClaimResponse.disposition</td></tr>
@@ -32,7 +32,7 @@
 <tr><td>ClaimResponse.event.modifierExtension</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.event.type</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.event.when[x]</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
-<tr><td>ClaimResponse.payeeType</td><td>UseElementSameName</td><td>ClaimResponse.payeeType</td></tr>
+<tr><td>ClaimResponse.payeeType</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.payeeType</td></tr>
 <tr><td>ClaimResponse.encounter</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.encounter</td></tr>
 <tr><td>ClaimResponse.diagnosisRelatedGroup</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.diagnosisRelatedGroup</td></tr>
 <tr><td>ClaimResponse.item</td><td>UseElementSameName</td><td>ClaimResponse.item</td></tr>
@@ -54,10 +54,10 @@
 <tr><td>ClaimResponse.item.adjudication.id</td><td>UseElementSameName</td><td>ClaimResponse.item.adjudication.id</td></tr>
 <tr><td>ClaimResponse.item.adjudication.extension</td><td>UseElementSameName</td><td>ClaimResponse.item.adjudication.extension</td></tr>
 <tr><td>ClaimResponse.item.adjudication.modifierExtension</td><td>UseElementSameName</td><td>ClaimResponse.item.adjudication.modifierExtension</td></tr>
-<tr><td>ClaimResponse.item.adjudication.category</td><td>UseElementSameName</td><td>ClaimResponse.item.adjudication.code</td></tr>
+<tr><td>ClaimResponse.item.adjudication.category</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.category</td></tr>
 <tr><td>ClaimResponse.item.adjudication.reason</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.reason</td></tr>
-<tr><td>ClaimResponse.item.adjudication.amount</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.amount</td></tr>
-<tr><td>ClaimResponse.item.adjudication.quantity</td><td>UseElementRenamed</td><td>ClaimResponse.item.adjudication.value</td></tr>
+<tr><td>ClaimResponse.item.adjudication.amount</td><td>UseElementSameName</td><td>ClaimResponse.item.adjudication.amount</td></tr>
+<tr><td>ClaimResponse.item.adjudication.quantity</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.adjudication.quantity</td></tr>
 <tr><td>ClaimResponse.item.detail</td><td>UseElementSameName</td><td>ClaimResponse.item.detail</td></tr>
 <tr><td>ClaimResponse.item.detail.id</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.id</td></tr>
 <tr><td>ClaimResponse.item.detail.extension</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.extension</td></tr>
@@ -66,7 +66,7 @@
 <tr><td>ClaimResponse.item.detail.traceNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.traceNumber</td></tr>
 <tr><td>ClaimResponse.item.detail.noteNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.noteNumber</td></tr>
 <tr><td>ClaimResponse.item.detail.reviewOutcome</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.reviewOutcome</td></tr>
-<tr><td>ClaimResponse.item.detail.adjudication</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.adjudication</td></tr>
+<tr><td>ClaimResponse.item.detail.adjudication</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.adjudication</td></tr>
 <tr><td>ClaimResponse.item.detail.subDetail</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.subDetail</td></tr>
 <tr><td>ClaimResponse.item.detail.subDetail.id</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.subDetail.id</td></tr>
 <tr><td>ClaimResponse.item.detail.subDetail.extension</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.subDetail.extension</td></tr>
@@ -75,7 +75,7 @@
 <tr><td>ClaimResponse.item.detail.subDetail.traceNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.traceNumber</td></tr>
 <tr><td>ClaimResponse.item.detail.subDetail.noteNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.noteNumber</td></tr>
 <tr><td>ClaimResponse.item.detail.subDetail.reviewOutcome</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.reviewOutcome</td></tr>
-<tr><td>ClaimResponse.item.detail.subDetail.adjudication</td><td>UseElementSameName</td><td>ClaimResponse.item.detail.subDetail.adjudication</td></tr>
+<tr><td>ClaimResponse.item.detail.subDetail.adjudication</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.adjudication</td></tr>
 <tr><td>ClaimResponse.addItem</td><td>UseElementSameName</td><td>ClaimResponse.addItem</td></tr>
 <tr><td>ClaimResponse.addItem.id</td><td>UseElementSameName</td><td>ClaimResponse.addItem.id</td></tr>
 <tr><td>ClaimResponse.addItem.extension</td><td>UseElementSameName</td><td>ClaimResponse.addItem.extension</td></tr>
@@ -86,7 +86,7 @@
 <tr><td>ClaimResponse.addItem.traceNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.traceNumber</td></tr>
 <tr><td>ClaimResponse.addItem.provider</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.provider</td></tr>
 <tr><td>ClaimResponse.addItem.revenue</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.revenue</td></tr>
-<tr><td>ClaimResponse.addItem.productOrService</td><td>UseElementSameName</td><td>ClaimResponse.addItem.service</td></tr>
+<tr><td>ClaimResponse.addItem.productOrService</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.productOrService</td></tr>
 <tr><td>ClaimResponse.addItem.productOrServiceEnd</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.productOrServiceEnd</td></tr>
 <tr><td>ClaimResponse.addItem.request</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.request</td></tr>
 <tr><td>ClaimResponse.addItem.modifier</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.modifier</td></tr>
@@ -97,7 +97,7 @@
 <tr><td>ClaimResponse.addItem.unitPrice</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.unitPrice</td></tr>
 <tr><td>ClaimResponse.addItem.factor</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.factor</td></tr>
 <tr><td>ClaimResponse.addItem.tax</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.tax</td></tr>
-<tr><td>ClaimResponse.addItem.net</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.net</td></tr>
+<tr><td>ClaimResponse.addItem.net</td><td>UseElementSameName</td><td>ClaimResponse.addItem.fee</td></tr>
 <tr><td>ClaimResponse.addItem.bodySite</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.bodySite</td></tr>
 <tr><td>ClaimResponse.addItem.bodySite.id</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.addItem.bodySite.extension</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
@@ -106,14 +106,14 @@
 <tr><td>ClaimResponse.addItem.bodySite.subSite</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.addItem.noteNumber</td><td>UseElementSameName</td><td>ClaimResponse.addItem.noteNumberLinkId</td></tr>
 <tr><td>ClaimResponse.addItem.reviewOutcome</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.reviewOutcome</td></tr>
-<tr><td>ClaimResponse.addItem.adjudication</td><td>UseElementSameName</td><td>ClaimResponse.addItem.adjudication</td></tr>
+<tr><td>ClaimResponse.addItem.adjudication</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.adjudication</td></tr>
 <tr><td>ClaimResponse.addItem.detail</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail</td></tr>
 <tr><td>ClaimResponse.addItem.detail.id</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail.id</td></tr>
 <tr><td>ClaimResponse.addItem.detail.extension</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail.extension</td></tr>
 <tr><td>ClaimResponse.addItem.detail.modifierExtension</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail.modifierExtension</td></tr>
 <tr><td>ClaimResponse.addItem.detail.traceNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.traceNumber</td></tr>
 <tr><td>ClaimResponse.addItem.detail.revenue</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.revenue</td></tr>
-<tr><td>ClaimResponse.addItem.detail.productOrService</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail.service</td></tr>
+<tr><td>ClaimResponse.addItem.detail.productOrService</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.productOrService</td></tr>
 <tr><td>ClaimResponse.addItem.detail.productOrServiceEnd</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.productOrServiceEnd</td></tr>
 <tr><td>ClaimResponse.addItem.detail.modifier</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.modifier</td></tr>
 <tr><td>ClaimResponse.addItem.detail.quantity</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.quantity</td></tr>
@@ -123,7 +123,7 @@
 <tr><td>ClaimResponse.addItem.detail.net</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.net</td></tr>
 <tr><td>ClaimResponse.addItem.detail.noteNumber</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.noteNumber</td></tr>
 <tr><td>ClaimResponse.addItem.detail.reviewOutcome</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.reviewOutcome</td></tr>
-<tr><td>ClaimResponse.addItem.detail.adjudication</td><td>UseElementSameName</td><td>ClaimResponse.addItem.detail.adjudication</td></tr>
+<tr><td>ClaimResponse.addItem.detail.adjudication</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.adjudication</td></tr>
 <tr><td>ClaimResponse.addItem.detail.subDetail</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.addItem.detail.subDetail</td></tr>
 <tr><td>ClaimResponse.addItem.detail.subDetail.id</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.addItem.detail.subDetail.extension</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
@@ -158,8 +158,8 @@
 <tr><td>ClaimResponse.payment.date</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.payment.amount</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
 <tr><td>ClaimResponse.payment.identifier</td><td>UseExtensionFromAncestor</td><td>-</td></tr>
-<tr><td>ClaimResponse.fundsReserve</td><td>UseElementSameName</td><td>ClaimResponse.reserved</td></tr>
-<tr><td>ClaimResponse.formCode</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.formCode</td></tr>
+<tr><td>ClaimResponse.fundsReserve</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.fundsReserve</td></tr>
+<tr><td>ClaimResponse.formCode</td><td>UseElementSameName</td><td>ClaimResponse.form</td></tr>
 <tr><td>ClaimResponse.form</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.form</td></tr>
 <tr><td>ClaimResponse.processNote</td><td>UseElementSameName</td><td>ClaimResponse.note</td></tr>
 <tr><td>ClaimResponse.processNote.id</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.processNote.id</td></tr>
@@ -176,9 +176,9 @@
 <tr><td>ClaimResponse.insurance.modifierExtension</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.modifierExtension</td></tr>
 <tr><td>ClaimResponse.insurance.sequence</td><td>UseElementSameName</td><td>ClaimResponse.coverage.sequence</td></tr>
 <tr><td>ClaimResponse.insurance.focal</td><td>UseElementSameName</td><td>ClaimResponse.coverage.focal</td></tr>
-<tr><td>ClaimResponse.insurance.coverage</td><td>UseElementSameName</td><td>ClaimResponse.coverage.coverage</td></tr>
+<tr><td>ClaimResponse.insurance.coverage</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.coverage</td></tr>
 <tr><td>ClaimResponse.insurance.businessArrangement</td><td>UseElementSameName</td><td>ClaimResponse.coverage.businessArrangement</td></tr>
-<tr><td>ClaimResponse.insurance.claimResponse</td><td>UseElementSameName</td><td>ClaimResponse.coverage.claimResponse</td></tr>
+<tr><td>ClaimResponse.insurance.claimResponse</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.insurance.claimResponse</td></tr>
 <tr><td>ClaimResponse.error</td><td>UseElementSameName</td><td>ClaimResponse.error</td></tr>
 <tr><td>ClaimResponse.error.id</td><td>UseElementSameName</td><td>ClaimResponse.error.id</td></tr>
 <tr><td>ClaimResponse.error.extension</td><td>UseElementSameName</td><td>ClaimResponse.error.extension</td></tr>
@@ -186,6 +186,6 @@
 <tr><td>ClaimResponse.error.itemSequence</td><td>UseElementSameName</td><td>ClaimResponse.error.sequenceLinkId</td></tr>
 <tr><td>ClaimResponse.error.detailSequence</td><td>UseElementSameName</td><td>ClaimResponse.error.detailSequenceLinkId</td></tr>
 <tr><td>ClaimResponse.error.subDetailSequence</td><td>UseElementSameName</td><td>ClaimResponse.error.subdetailSequenceLinkId</td></tr>
-<tr><td>ClaimResponse.error.code</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.error.code</td></tr>
+<tr><td>ClaimResponse.error.code</td><td>UseElementSameName</td><td>ClaimResponse.error.code</td></tr>
 <tr><td>ClaimResponse.error.expression</td><td>UseExtension</td><td>http://hl7.org/fhir/5.0/StructureDefinition/extension-ClaimResponse.error.expression</td></tr>
 </table>

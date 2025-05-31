@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | AllergyIntolerance.id | UseElementSameName | AllergyIntolerance.id |
-| AllergyIntolerance.meta | UseElementSameName | AllergyIntolerance.meta |
+| AllergyIntolerance.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.meta |
 | AllergyIntolerance.implicitRules | UseElementSameName | AllergyIntolerance.implicitRules |
 | AllergyIntolerance.language | UseElementSameName | AllergyIntolerance.language |
 | AllergyIntolerance.text | UseElementSameName | AllergyIntolerance.text |
@@ -14,20 +14,20 @@
 | AllergyIntolerance.clinicalStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.clinicalStatus |
 | AllergyIntolerance.verificationStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.verificationStatus |
 | AllergyIntolerance.type | UseElementSameName | AllergyIntolerance.type |
-| AllergyIntolerance.category | UseElementSameName | AllergyIntolerance.category |
+| AllergyIntolerance.category | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.category |
 | AllergyIntolerance.criticality | UseElementSameName | AllergyIntolerance.criticality |
 | AllergyIntolerance.code | UseElementSameName | AllergyIntolerance.substance |
-| AllergyIntolerance.patient | UseElementSameName | AllergyIntolerance.patient |
+| AllergyIntolerance.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.patient |
 | AllergyIntolerance.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.encounter |
-| AllergyIntolerance.onset[x] | UseElementSameName | AllergyIntolerance.onset |
+| AllergyIntolerance.onset[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.onset |
 | AllergyIntolerance.recordedDate | UseElementSameName | AllergyIntolerance.recordedDate |
 | AllergyIntolerance.recorder | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.recorder |
 | AllergyIntolerance.asserter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.asserter |
 | AllergyIntolerance.lastOccurrence | UseElementSameName | AllergyIntolerance.lastOccurence |
-| AllergyIntolerance.note | UseElementSameName | AllergyIntolerance.note |
+| AllergyIntolerance.note | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.note |
 | AllergyIntolerance.reaction | UseElementSameName | AllergyIntolerance.reaction |
 | AllergyIntolerance.reaction.id | UseElementSameName | AllergyIntolerance.reaction.id |
-| AllergyIntolerance.reaction.extension | UseElementSameName | AllergyIntolerance.reaction.extension |
+| AllergyIntolerance.reaction.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.reaction.extension |
 | AllergyIntolerance.reaction.modifierExtension | UseElementSameName | AllergyIntolerance.reaction.modifierExtension |
 | AllergyIntolerance.reaction.substance | UseElementSameName | AllergyIntolerance.reaction.substance |
 | AllergyIntolerance.reaction.manifestation | UseElementSameName | AllergyIntolerance.reaction.manifestation |
@@ -35,4 +35,4 @@
 | AllergyIntolerance.reaction.onset | UseElementSameName | AllergyIntolerance.reaction.onset |
 | AllergyIntolerance.reaction.severity | UseElementSameName | AllergyIntolerance.reaction.severity |
 | AllergyIntolerance.reaction.exposureRoute | UseElementSameName | AllergyIntolerance.reaction.exposureRoute |
-| AllergyIntolerance.reaction.note | UseElementSameName | AllergyIntolerance.reaction.note |
+| AllergyIntolerance.reaction.note | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.reaction.note |

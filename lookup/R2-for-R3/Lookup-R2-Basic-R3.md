@@ -12,6 +12,6 @@
 | Basic.modifierExtension | UseElementSameName | Basic.modifierExtension |
 | Basic.identifier | UseElementSameName | Basic.identifier |
 | Basic.code | UseElementSameName | Basic.code |
-| Basic.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Basic.subject |
-| Basic.author | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Basic.author |
+| Basic.subject | UseElementSameName | Basic.subject |
+| Basic.author | UseElementSameName | Basic.author |
 | Basic.created | UseElementSameName | Basic.created |

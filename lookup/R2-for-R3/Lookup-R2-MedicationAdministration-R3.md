@@ -11,7 +11,7 @@
 | MedicationAdministration.extension | UseElementSameName | MedicationAdministration.extension |
 | MedicationAdministration.modifierExtension | UseElementSameName | MedicationAdministration.modifierExtension |
 | MedicationAdministration.identifier | UseElementSameName | MedicationAdministration.identifier |
-| MedicationAdministration.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.status |
+| MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
 | MedicationAdministration.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.patient |
 | MedicationAdministration.practitioner | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.practitioner |
 | MedicationAdministration.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.encounter |
@@ -20,15 +20,15 @@
 | MedicationAdministration.reasonNotGiven | UseElementSameName | MedicationAdministration.reasonNotGiven |
 | MedicationAdministration.reasonGiven | UseElementRenamed | MedicationAdministration.reasonCode |
 | MedicationAdministration.effectiveTime[x] | UseElementRenamed | MedicationAdministration.effective[x] |
-| MedicationAdministration.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.medication |
-| MedicationAdministration.device | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.device |
+| MedicationAdministration.medication[x] | UseElementSameName | MedicationAdministration.medication[x] |
+| MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |
 | MedicationAdministration.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
 | MedicationAdministration.dosage.id | UseElementSameName | MedicationAdministration.dosage.id |
 | MedicationAdministration.dosage.extension | UseElementSameName | MedicationAdministration.dosage.extension |
 | MedicationAdministration.dosage.modifierExtension | UseElementSameName | MedicationAdministration.dosage.modifierExtension |
 | MedicationAdministration.dosage.text | UseElementSameName | MedicationAdministration.dosage.text |
-| MedicationAdministration.dosage.site[x] | UseElementRenamed | MedicationAdministration.dosage.site |
+| MedicationAdministration.dosage.site[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.dosage.site |
 | MedicationAdministration.dosage.route | UseElementSameName | MedicationAdministration.dosage.route |
 | MedicationAdministration.dosage.method | UseElementSameName | MedicationAdministration.dosage.method |
 | MedicationAdministration.dosage.quantity | UseElementRenamed | MedicationAdministration.dosage.dose |

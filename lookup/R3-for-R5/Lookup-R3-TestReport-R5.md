@@ -3,7 +3,7 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | TestReport.id | UseElementSameName | TestReport.id |
-| TestReport.meta | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-TestReport.meta |
+| TestReport.meta | UseElementSameName | TestReport.meta |
 | TestReport.implicitRules | UseElementSameName | TestReport.implicitRules |
 | TestReport.language | UseElementSameName | TestReport.language |
 | TestReport.text | UseElementSameName | TestReport.text |

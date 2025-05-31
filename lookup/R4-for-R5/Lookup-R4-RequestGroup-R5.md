@@ -20,7 +20,7 @@
 | RequestGroup.intent | UseElementRenamed | RequestOrchestration.intent |
 | RequestGroup.priority | UseElementRenamed | RequestOrchestration.priority |
 | RequestGroup.code | UseElementRenamed | RequestOrchestration.code |
-| RequestGroup.subject | UseElementRenamed | RequestOrchestration.subject |
+| RequestGroup.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RequestGroup.subject |
 | RequestGroup.encounter | UseElementRenamed | RequestOrchestration.encounter |
 | RequestGroup.authoredOn | UseElementRenamed | RequestOrchestration.authoredOn |
 | RequestGroup.author | UseElementRenamed | RequestOrchestration.author |
@@ -37,7 +37,7 @@
 | RequestGroup.action.textEquivalent | UseElementRenamed | RequestOrchestration.action.textEquivalent |
 | RequestGroup.action.priority | UseElementRenamed | RequestOrchestration.action.priority |
 | RequestGroup.action.code | UseElementRenamed | RequestOrchestration.action.code |
-| RequestGroup.action.documentation | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RequestGroup.action.documentation |
+| RequestGroup.action.documentation | UseElementRenamed | RequestOrchestration.action.documentation |
 | RequestGroup.action.condition | UseElementRenamed | RequestOrchestration.action.condition |
 | RequestGroup.action.condition.id | UseElementRenamed | RequestOrchestration.action.condition.id |
 | RequestGroup.action.condition.extension | UseElementRenamed | RequestOrchestration.action.condition.extension |
@@ -52,7 +52,7 @@
 | RequestGroup.action.relatedAction.relationship | UseElementRenamed | RequestOrchestration.action.relatedAction.relationship |
 | RequestGroup.action.relatedAction.offset[x] | UseElementRenamed | RequestOrchestration.action.relatedAction.offset[x] |
 | RequestGroup.action.timing[x] | UseElementRenamed | RequestOrchestration.action.timing[x] |
-| RequestGroup.action.participant | UseElementRenamed | RequestOrchestration.action.participant |
+| RequestGroup.action.participant | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RequestGroup.action.participant |
 | RequestGroup.action.type | UseElementRenamed | RequestOrchestration.action.type |
 | RequestGroup.action.groupingBehavior | UseElementRenamed | RequestOrchestration.action.groupingBehavior |
 | RequestGroup.action.selectionBehavior | UseElementRenamed | RequestOrchestration.action.selectionBehavior |
@@ -60,4 +60,4 @@
 | RequestGroup.action.precheckBehavior | UseElementRenamed | RequestOrchestration.action.precheckBehavior |
 | RequestGroup.action.cardinalityBehavior | UseElementRenamed | RequestOrchestration.action.cardinalityBehavior |
 | RequestGroup.action.resource | UseElementRenamed | RequestOrchestration.action.resource |
-| RequestGroup.action.action | UseElementRenamed | RequestOrchestration.action.action |
+| RequestGroup.action.action | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-RequestGroup.action.action |

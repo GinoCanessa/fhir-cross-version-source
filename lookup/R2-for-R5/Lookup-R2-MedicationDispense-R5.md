@@ -3,14 +3,14 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | MedicationDispense.id | UseElementSameName | MedicationDispense.id |
-| MedicationDispense.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.meta |
+| MedicationDispense.meta | UseElementSameName | MedicationDispense.meta |
 | MedicationDispense.implicitRules | UseElementSameName | MedicationDispense.implicitRules |
 | MedicationDispense.language | UseElementSameName | MedicationDispense.language |
 | MedicationDispense.text | UseElementSameName | MedicationDispense.text |
 | MedicationDispense.contained | UseElementSameName | MedicationDispense.contained |
-| MedicationDispense.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.extension |
+| MedicationDispense.extension | UseElementSameName | MedicationDispense.extension |
 | MedicationDispense.modifierExtension | UseElementSameName | MedicationDispense.modifierExtension |
-| MedicationDispense.identifier | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.identifier |
+| MedicationDispense.identifier | UseElementSameName | MedicationDispense.identifier |
 | MedicationDispense.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.status |
 | MedicationDispense.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.patient |
 | MedicationDispense.dispenser | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.dispenser |
@@ -21,7 +21,7 @@
 | MedicationDispense.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.medication |
 | MedicationDispense.whenPrepared | UseElementSameName | MedicationDispense.whenPrepared |
 | MedicationDispense.whenHandedOver | UseElementSameName | MedicationDispense.whenHandedOver |
-| MedicationDispense.destination | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.destination |
+| MedicationDispense.destination | UseElementSameName | MedicationDispense.destination |
 | MedicationDispense.receiver | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.receiver |
 | MedicationDispense.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.note |
 | MedicationDispense.dosageInstruction | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationDispense.dosageInstruction |

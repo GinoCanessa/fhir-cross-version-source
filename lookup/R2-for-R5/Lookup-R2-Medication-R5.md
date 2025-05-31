@@ -3,16 +3,16 @@
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
 | Medication.id | UseElementSameName | Medication.id |
-| Medication.meta | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.meta |
+| Medication.meta | UseElementSameName | Medication.meta |
 | Medication.implicitRules | UseElementSameName | Medication.implicitRules |
 | Medication.language | UseElementSameName | Medication.language |
 | Medication.text | UseElementSameName | Medication.text |
 | Medication.contained | UseElementSameName | Medication.contained |
-| Medication.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.extension |
+| Medication.extension | UseElementSameName | Medication.extension |
 | Medication.modifierExtension | UseElementSameName | Medication.modifierExtension |
 | Medication.code | UseElementSameName | Medication.code |
 | Medication.isBrand | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.isBrand |
-| Medication.manufacturer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.manufacturer |
+| Medication.manufacturer | UseElementRenamed | Medication.marketingAuthorizationHolder |
 | Medication.product | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.product |
 | Medication.product.id | UseExtensionFromAncestor | - |
 | Medication.product.extension | UseExtensionFromAncestor | - |
