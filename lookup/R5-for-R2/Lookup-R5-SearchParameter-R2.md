@@ -25,7 +25,7 @@
 | SearchParameter.description | UseElementSameName | SearchParameter.description |
 | SearchParameter.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.useContext |
 | SearchParameter.jurisdiction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.jurisdiction |
-| SearchParameter.purpose | UseElementSameName | SearchParameter.requirements |
+| SearchParameter.purpose | UseElementRenamed | SearchParameter.requirements |
 | SearchParameter.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyright |
 | SearchParameter.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.copyrightLabel |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |

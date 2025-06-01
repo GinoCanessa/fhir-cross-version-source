@@ -2,11 +2,11 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Meta.id | UseElementRenamed | Meta.id |
-| Meta.extension | UseElementRenamed | Meta.extension |
-| Meta.versionId | UseElementRenamed | Meta.versionId |
-| Meta.lastUpdated | UseElementRenamed | Meta.lastUpdated |
-| Meta.source | UseElementRenamed | Meta.source |
-| Meta.profile | UseElementRenamed | Meta.profile |
-| Meta.security | UseElementRenamed | Meta.security |
-| Meta.tag | UseElementRenamed | Meta.tag |
+| Meta.id | UseElementSameName | Meta.id |
+| Meta.extension | UseElementSameName | Meta.extension |
+| Meta.versionId | UseElementSameName | Meta.versionId |
+| Meta.lastUpdated | UseElementSameName | Meta.lastUpdated |
+| Meta.source | UseElementSameName | Meta.source |
+| Meta.profile | UseElementSameName | Meta.profile |
+| Meta.security | UseElementSameName | Meta.security |
+| Meta.tag | UseElementSameName | Meta.tag |

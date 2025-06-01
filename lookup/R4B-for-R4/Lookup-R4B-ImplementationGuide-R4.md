@@ -57,13 +57,13 @@
 | ImplementationGuide.definition.resource.fhirVersion | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImplementationGuide.definition.resource.fhirVersion |
 | ImplementationGuide.definition.resource.name | UseElementSameName | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.definition.resource.description | UseElementSameName | ImplementationGuide.definition.resource.description |
-| ImplementationGuide.definition.resource.example[x] | UseElementRenamed | ImplementationGuide.definition.resource.example[x] |
+| ImplementationGuide.definition.resource.example[x] | UseElementSameName | ImplementationGuide.definition.resource.example[x] |
 | ImplementationGuide.definition.resource.groupingId | UseElementSameName | ImplementationGuide.definition.resource.groupingId |
 | ImplementationGuide.definition.page | UseElementSameName | ImplementationGuide.definition.page |
 | ImplementationGuide.definition.page.id | UseElementSameName | ImplementationGuide.definition.page.id |
 | ImplementationGuide.definition.page.extension | UseElementSameName | ImplementationGuide.definition.page.extension |
 | ImplementationGuide.definition.page.modifierExtension | UseElementSameName | ImplementationGuide.definition.page.modifierExtension |
-| ImplementationGuide.definition.page.name[x] | UseElementRenamed | ImplementationGuide.definition.page.name[x] |
+| ImplementationGuide.definition.page.name[x] | UseElementSameName | ImplementationGuide.definition.page.name[x] |
 | ImplementationGuide.definition.page.title | UseElementSameName | ImplementationGuide.definition.page.title |
 | ImplementationGuide.definition.page.generation | UseElementSameName | ImplementationGuide.definition.page.generation |
 | ImplementationGuide.definition.page.page | UseElementSameName | ImplementationGuide.definition.page.page |
@@ -90,7 +90,7 @@
 | ImplementationGuide.manifest.resource.extension | UseElementSameName | ImplementationGuide.manifest.resource.extension |
 | ImplementationGuide.manifest.resource.modifierExtension | UseElementSameName | ImplementationGuide.manifest.resource.modifierExtension |
 | ImplementationGuide.manifest.resource.reference | UseElementSameName | ImplementationGuide.manifest.resource.reference |
-| ImplementationGuide.manifest.resource.example[x] | UseElementRenamed | ImplementationGuide.manifest.resource.example[x] |
+| ImplementationGuide.manifest.resource.example[x] | UseElementSameName | ImplementationGuide.manifest.resource.example[x] |
 | ImplementationGuide.manifest.resource.relativePath | UseElementSameName | ImplementationGuide.manifest.resource.relativePath |
 | ImplementationGuide.manifest.page | UseElementSameName | ImplementationGuide.manifest.page |
 | ImplementationGuide.manifest.page.id | UseElementSameName | ImplementationGuide.manifest.page.id |

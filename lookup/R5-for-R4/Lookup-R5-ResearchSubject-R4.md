@@ -24,7 +24,7 @@
 | ResearchSubject.progress.endDate | UseExtensionFromAncestor | - |
 | ResearchSubject.period | UseElementSameName | ResearchSubject.period |
 | ResearchSubject.study | UseElementSameName | ResearchSubject.study |
-| ResearchSubject.subject | UseElementSameName | ResearchSubject.individual |
-| ResearchSubject.assignedComparisonGroup | UseElementSameName | ResearchSubject.assignedArm |
-| ResearchSubject.actualComparisonGroup | UseElementSameName | ResearchSubject.actualArm |
+| ResearchSubject.subject | UseElementRenamed | ResearchSubject.individual |
+| ResearchSubject.assignedComparisonGroup | UseElementRenamed | ResearchSubject.assignedArm |
+| ResearchSubject.actualComparisonGroup | UseElementRenamed | ResearchSubject.actualArm |
 | ResearchSubject.consent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.consent |

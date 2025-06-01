@@ -13,12 +13,12 @@
 | Timing.repeat.countMax | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.countMax |
 | Timing.repeat.duration | UseElementSameName | Timing.repeat.duration |
 | Timing.repeat.durationMax | UseElementSameName | Timing.repeat.durationMax |
-| Timing.repeat.durationUnit | UseElementSameName | Timing.repeat.durationUnits |
+| Timing.repeat.durationUnit | UseElementRenamed | Timing.repeat.durationUnits |
 | Timing.repeat.frequency | UseElementSameName | Timing.repeat.frequency |
 | Timing.repeat.frequencyMax | UseElementSameName | Timing.repeat.frequencyMax |
 | Timing.repeat.period | UseElementSameName | Timing.repeat.period |
 | Timing.repeat.periodMax | UseElementSameName | Timing.repeat.periodMax |
-| Timing.repeat.periodUnit | UseElementSameName | Timing.repeat.periodUnits |
+| Timing.repeat.periodUnit | UseElementRenamed | Timing.repeat.periodUnits |
 | Timing.repeat.dayOfWeek | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.dayOfWeek |
 | Timing.repeat.timeOfDay | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.timeOfDay |
 | Timing.repeat.when | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Timing.repeat.when |

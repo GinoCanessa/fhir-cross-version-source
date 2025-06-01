@@ -31,12 +31,12 @@
 | Device.expirationDate | UseElementSameName | Device.expirationDate |
 | Device.lotNumber | UseElementSameName | Device.lotNumber |
 | Device.serialNumber | UseElementSameName | Device.serialNumber |
-| Device.name | UseElementSameName | Device.deviceName |
+| Device.name | UseElementRenamed | Device.deviceName |
 | Device.name.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.name.id |
 | Device.name.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.name.extension |
 | Device.name.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.name.modifierExtension |
-| Device.name.value | UseElementSameName | Device.deviceName.name |
-| Device.name.type | UseElementSameName | Device.deviceName.type |
+| Device.name.value | UseElementRenamed | Device.deviceName.name |
+| Device.name.type | UseElementRenamed | Device.deviceName.type |
 | Device.name.display | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.name.display |
 | Device.modelNumber | UseElementSameName | Device.modelNumber |
 | Device.partNumber | UseElementSameName | Device.partNumber |
@@ -50,7 +50,7 @@
 | Device.version.component | UseElementSameName | Device.version.component |
 | Device.version.installDate | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.version.installDate |
 | Device.version.value | UseElementSameName | Device.version.value |
-| Device.conformsTo | UseElementSameName | Device.specialization |
+| Device.conformsTo | UseElementRenamed | Device.specialization |
 | Device.conformsTo.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.conformsTo.id |
 | Device.conformsTo.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.conformsTo.extension |
 | Device.conformsTo.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Device.conformsTo.modifierExtension |

@@ -11,8 +11,8 @@
 | ImagingStudy.extension | UseElementSameName | ImagingStudy.extension |
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
 | ImagingStudy.identifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.identifier |
-| ImagingStudy.status | UseElementSameName | ImagingStudy.availability |
-| ImagingStudy.modality | UseElementSameName | ImagingStudy.modalityList |
+| ImagingStudy.status | UseElementRenamed | ImagingStudy.availability |
+| ImagingStudy.modality | UseElementRenamed | ImagingStudy.modalityList |
 | ImagingStudy.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.subject |
 | ImagingStudy.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImagingStudy.encounter |
 | ImagingStudy.started | UseElementSameName | ImagingStudy.started |

@@ -56,7 +56,7 @@
 | Questionnaire.item.repeats | UseElementSameName | Questionnaire.item.repeats |
 | Questionnaire.item.readOnly | UseElementSameName | Questionnaire.item.readOnly |
 | Questionnaire.item.maxLength | UseElementSameName | Questionnaire.item.maxLength |
-| Questionnaire.item.answerConstraint | UseElementSameName | Questionnaire.item.type |
+| Questionnaire.item.answerConstraint | UseElementRenamed | Questionnaire.item.type |
 | Questionnaire.item.answerValueSet | UseElementSameName | Questionnaire.item.answerValueSet |
 | Questionnaire.item.answerOption | UseElementSameName | Questionnaire.item.answerOption |
 | Questionnaire.item.answerOption.id | UseElementSameName | Questionnaire.item.answerOption.id |

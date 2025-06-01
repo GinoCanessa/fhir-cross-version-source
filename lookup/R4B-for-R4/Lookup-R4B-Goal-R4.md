@@ -27,8 +27,8 @@
 | Goal.target.due[x] | UseElementSameName | Goal.target.due[x] |
 | Goal.statusDate | UseElementSameName | Goal.statusDate |
 | Goal.statusReason | UseElementSameName | Goal.statusReason |
-| Goal.expressedBy | UseElementRenamed | Goal.expressedBy |
+| Goal.expressedBy | UseElementSameName | Goal.expressedBy |
 | Goal.addresses | UseElementSameName | Goal.addresses |
 | Goal.note | UseElementSameName | Goal.note |
-| Goal.outcomeCode | UseElementRenamed | Goal.outcomeCode |
-| Goal.outcomeReference | UseElementRenamed | Goal.outcomeReference |
+| Goal.outcomeCode | UseElementSameName | Goal.outcomeCode |
+| Goal.outcomeReference | UseElementSameName | Goal.outcomeReference |

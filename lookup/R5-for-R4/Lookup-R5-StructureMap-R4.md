@@ -71,7 +71,7 @@
 | StructureMap.group.rule.source.min | UseElementSameName | StructureMap.group.rule.source.min |
 | StructureMap.group.rule.source.max | UseElementSameName | StructureMap.group.rule.source.max |
 | StructureMap.group.rule.source.type | UseElementSameName | StructureMap.group.rule.source.type |
-| StructureMap.group.rule.source.defaultValue | UseElementSameName | StructureMap.group.rule.source.defaultValue[x] |
+| StructureMap.group.rule.source.defaultValue | UseElementRenamed | StructureMap.group.rule.source.defaultValue[x] |
 | StructureMap.group.rule.source.element | UseElementSameName | StructureMap.group.rule.source.element |
 | StructureMap.group.rule.source.listMode | UseElementSameName | StructureMap.group.rule.source.listMode |
 | StructureMap.group.rule.source.variable | UseElementSameName | StructureMap.group.rule.source.variable |

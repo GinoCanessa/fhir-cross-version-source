@@ -2,8 +2,8 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| RatioRange.id | UseElementRenamed | RatioRange.id |
-| RatioRange.extension | UseElementRenamed | RatioRange.extension |
-| RatioRange.lowNumerator | UseElementRenamed | RatioRange.lowNumerator |
-| RatioRange.highNumerator | UseElementRenamed | RatioRange.highNumerator |
-| RatioRange.denominator | UseElementRenamed | RatioRange.denominator |
+| RatioRange.id | UseElementSameName | RatioRange.id |
+| RatioRange.extension | UseElementSameName | RatioRange.extension |
+| RatioRange.lowNumerator | UseElementSameName | RatioRange.lowNumerator |
+| RatioRange.highNumerator | UseElementSameName | RatioRange.highNumerator |
+| RatioRange.denominator | UseElementSameName | RatioRange.denominator |

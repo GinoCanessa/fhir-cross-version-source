@@ -12,10 +12,10 @@
 | DetectedIssue.modifierExtension | UseElementSameName | DetectedIssue.modifierExtension |
 | DetectedIssue.identifier | UseElementSameName | DetectedIssue.identifier |
 | DetectedIssue.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DetectedIssue.status |
-| DetectedIssue.category | UseElementRenamed | DetectedIssue.category |
+| DetectedIssue.category | UseElementSameName | DetectedIssue.category |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
 | DetectedIssue.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DetectedIssue.patient |
-| DetectedIssue.date | UseElementRenamed | DetectedIssue.date |
+| DetectedIssue.date | UseElementSameName | DetectedIssue.date |
 | DetectedIssue.author | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DetectedIssue.author |
 | DetectedIssue.implicated | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DetectedIssue.implicated |
 | DetectedIssue.detail | UseElementSameName | DetectedIssue.detail |

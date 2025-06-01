@@ -27,7 +27,7 @@
 | Device.distinctIdentifier | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.distinctIdentifier |
 | Device.manufacturer | UseElementSameName | Device.manufacturer |
 | Device.manufactureDate | UseElementSameName | Device.manufactureDate |
-| Device.expirationDate | UseElementSameName | Device.expiry |
+| Device.expirationDate | UseElementRenamed | Device.expiry |
 | Device.lotNumber | UseElementSameName | Device.lotNumber |
 | Device.serialNumber | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.serialNumber |
 | Device.deviceName | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.deviceName |
@@ -36,7 +36,7 @@
 | Device.deviceName.modifierExtension | UseExtensionFromAncestor | - |
 | Device.deviceName.name | UseExtensionFromAncestor | - |
 | Device.deviceName.type | UseExtensionFromAncestor | - |
-| Device.modelNumber | UseElementSameName | Device.model |
+| Device.modelNumber | UseElementRenamed | Device.model |
 | Device.partNumber | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.partNumber |
 | Device.type | UseElementSameName | Device.type |
 | Device.specialization | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.specialization |

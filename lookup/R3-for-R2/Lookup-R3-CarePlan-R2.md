@@ -40,7 +40,7 @@
 | CarePlan.activity.detail.id | UseElementSameName | CarePlan.activity.detail.id |
 | CarePlan.activity.detail.extension | UseElementSameName | CarePlan.activity.detail.extension |
 | CarePlan.activity.detail.modifierExtension | UseElementSameName | CarePlan.activity.detail.modifierExtension |
-| CarePlan.activity.detail.category | UseElementRenamed | CarePlan.activity.detail.category |
+| CarePlan.activity.detail.category | UseElementSameName | CarePlan.activity.detail.category |
 | CarePlan.activity.detail.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.definition |
 | CarePlan.activity.detail.code | UseElementSameName | CarePlan.activity.detail.code |
 | CarePlan.activity.detail.reasonCode | UseElementSameName | CarePlan.activity.detail.reasonCode |
@@ -48,7 +48,7 @@
 | CarePlan.activity.detail.goal | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.goal |
 | CarePlan.activity.detail.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.status |
 | CarePlan.activity.detail.statusReason | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.statusReason |
-| CarePlan.activity.detail.prohibited | UseElementRenamed | CarePlan.activity.detail.prohibited |
+| CarePlan.activity.detail.prohibited | UseElementSameName | CarePlan.activity.detail.prohibited |
 | CarePlan.activity.detail.scheduled[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.scheduled |
 | CarePlan.activity.detail.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.location |
 | CarePlan.activity.detail.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CarePlan.activity.detail.performer |

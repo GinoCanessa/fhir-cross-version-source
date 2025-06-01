@@ -14,7 +14,7 @@
 | SupplyRequest.status | UseElementSameName | SupplyRequest.status |
 | SupplyRequest.category | UseElementSameName | SupplyRequest.category |
 | SupplyRequest.priority | UseElementSameName | SupplyRequest.priority |
-| SupplyRequest.item[x] | UseElementRenamed | SupplyRequest.item[x] |
+| SupplyRequest.item[x] | UseElementSameName | SupplyRequest.item[x] |
 | SupplyRequest.quantity | UseElementSameName | SupplyRequest.quantity |
 | SupplyRequest.parameter | UseElementSameName | SupplyRequest.parameter |
 | SupplyRequest.parameter.id | UseElementSameName | SupplyRequest.parameter.id |
@@ -26,7 +26,7 @@
 | SupplyRequest.authoredOn | UseElementSameName | SupplyRequest.authoredOn |
 | SupplyRequest.requester | UseElementSameName | SupplyRequest.requester |
 | SupplyRequest.supplier | UseElementSameName | SupplyRequest.supplier |
-| SupplyRequest.reasonCode | UseElementRenamed | SupplyRequest.reasonCode |
-| SupplyRequest.reasonReference | UseElementRenamed | SupplyRequest.reasonReference |
+| SupplyRequest.reasonCode | UseElementSameName | SupplyRequest.reasonCode |
+| SupplyRequest.reasonReference | UseElementSameName | SupplyRequest.reasonReference |
 | SupplyRequest.deliverFrom | UseElementSameName | SupplyRequest.deliverFrom |
 | SupplyRequest.deliverTo | UseElementSameName | SupplyRequest.deliverTo |

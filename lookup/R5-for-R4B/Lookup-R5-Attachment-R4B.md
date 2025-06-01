@@ -2,16 +2,16 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Attachment.id | UseElementRenamed | Attachment.id |
-| Attachment.extension | UseElementRenamed | Attachment.extension |
-| Attachment.contentType | UseElementRenamed | Attachment.contentType |
-| Attachment.language | UseElementRenamed | Attachment.language |
-| Attachment.data | UseElementRenamed | Attachment.data |
-| Attachment.url | UseElementRenamed | Attachment.url |
+| Attachment.id | UseElementSameName | Attachment.id |
+| Attachment.extension | UseElementSameName | Attachment.extension |
+| Attachment.contentType | UseElementSameName | Attachment.contentType |
+| Attachment.language | UseElementSameName | Attachment.language |
+| Attachment.data | UseElementSameName | Attachment.data |
+| Attachment.url | UseElementSameName | Attachment.url |
 | Attachment.size | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment.size |
-| Attachment.hash | UseElementRenamed | Attachment.hash |
-| Attachment.title | UseElementRenamed | Attachment.title |
-| Attachment.creation | UseElementRenamed | Attachment.creation |
+| Attachment.hash | UseElementSameName | Attachment.hash |
+| Attachment.title | UseElementSameName | Attachment.title |
+| Attachment.creation | UseElementSameName | Attachment.creation |
 | Attachment.height | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment.height |
 | Attachment.width | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment.width |
 | Attachment.frames | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Attachment.frames |

@@ -29,7 +29,7 @@
 | ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
 | ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
 | ClinicalImpression.finding.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.finding.item |
-| ClinicalImpression.finding.basis | UseElementSameName | ClinicalImpression.finding.cause |
+| ClinicalImpression.finding.basis | UseElementRenamed | ClinicalImpression.finding.cause |
 | ClinicalImpression.prognosisCodeableConcept | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.prognosisCodeableConcept |
 | ClinicalImpression.prognosisReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.prognosisReference |
 | ClinicalImpression.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.supportingInfo |

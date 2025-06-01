@@ -15,7 +15,7 @@
 | Media.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.partOf |
 | Media.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.status |
 | Media.type | UseElementSameName | Media.type |
-| Media.modality | UseElementSameName | Media.subtype |
+| Media.modality | UseElementRenamed | Media.subtype |
 | Media.view | UseElementSameName | Media.view |
 | Media.subject | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.subject |
 | Media.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Media.encounter |

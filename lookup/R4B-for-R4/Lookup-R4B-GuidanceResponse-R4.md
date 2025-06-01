@@ -18,8 +18,8 @@
 | GuidanceResponse.encounter | UseElementSameName | GuidanceResponse.encounter |
 | GuidanceResponse.occurrenceDateTime | UseElementSameName | GuidanceResponse.occurrenceDateTime |
 | GuidanceResponse.performer | UseElementSameName | GuidanceResponse.performer |
-| GuidanceResponse.reasonCode | UseElementRenamed | GuidanceResponse.reasonCode |
-| GuidanceResponse.reasonReference | UseElementRenamed | GuidanceResponse.reasonReference |
+| GuidanceResponse.reasonCode | UseElementSameName | GuidanceResponse.reasonCode |
+| GuidanceResponse.reasonReference | UseElementSameName | GuidanceResponse.reasonReference |
 | GuidanceResponse.note | UseElementSameName | GuidanceResponse.note |
 | GuidanceResponse.evaluationMessage | UseElementSameName | GuidanceResponse.evaluationMessage |
 | GuidanceResponse.outputParameters | UseElementSameName | GuidanceResponse.outputParameters |

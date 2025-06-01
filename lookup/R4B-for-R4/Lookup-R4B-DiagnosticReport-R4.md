@@ -23,7 +23,7 @@
 | DiagnosticReport.resultsInterpreter | UseElementSameName | DiagnosticReport.resultsInterpreter |
 | DiagnosticReport.specimen | UseElementSameName | DiagnosticReport.specimen |
 | DiagnosticReport.result | UseElementSameName | DiagnosticReport.result |
-| DiagnosticReport.imagingStudy | UseElementRenamed | DiagnosticReport.imagingStudy |
+| DiagnosticReport.imagingStudy | UseElementSameName | DiagnosticReport.imagingStudy |
 | DiagnosticReport.media | UseElementSameName | DiagnosticReport.media |
 | DiagnosticReport.media.id | UseElementSameName | DiagnosticReport.media.id |
 | DiagnosticReport.media.extension | UseElementSameName | DiagnosticReport.media.extension |

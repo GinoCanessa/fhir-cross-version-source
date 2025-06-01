@@ -30,11 +30,11 @@
 | EpisodeOfCare.diagnosis.extension | UseElementSameName | EpisodeOfCare.diagnosis.extension |
 | EpisodeOfCare.diagnosis.modifierExtension | UseElementSameName | EpisodeOfCare.diagnosis.modifierExtension |
 | EpisodeOfCare.diagnosis.condition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.condition |
-| EpisodeOfCare.diagnosis.use | UseElementSameName | EpisodeOfCare.diagnosis.role |
+| EpisodeOfCare.diagnosis.use | UseElementRenamed | EpisodeOfCare.diagnosis.role |
 | EpisodeOfCare.patient | UseElementSameName | EpisodeOfCare.patient |
 | EpisodeOfCare.managingOrganization | UseElementSameName | EpisodeOfCare.managingOrganization |
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseElementSameName | EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseElementSameName | EpisodeOfCare.careManager |
-| EpisodeOfCare.careTeam | UseElementSameName | EpisodeOfCare.team |
+| EpisodeOfCare.careTeam | UseElementRenamed | EpisodeOfCare.team |
 | EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

@@ -17,7 +17,7 @@
 | Endpoint.managingOrganization | UseElementSameName | Endpoint.managingOrganization |
 | Endpoint.contact | UseElementSameName | Endpoint.contact |
 | Endpoint.period | UseElementSameName | Endpoint.period |
-| Endpoint.payloadType | UseElementRenamed | Endpoint.payloadType |
-| Endpoint.payloadMimeType | UseElementRenamed | Endpoint.payloadMimeType |
+| Endpoint.payloadType | UseElementSameName | Endpoint.payloadType |
+| Endpoint.payloadMimeType | UseElementSameName | Endpoint.payloadMimeType |
 | Endpoint.address | UseElementSameName | Endpoint.address |
 | Endpoint.header | UseElementSameName | Endpoint.header |

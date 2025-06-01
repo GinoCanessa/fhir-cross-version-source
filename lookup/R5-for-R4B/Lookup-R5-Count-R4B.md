@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Count.id | UseElementRenamed | Count.id |
-| Count.extension | UseElementRenamed | Count.extension |
-| Count.value | UseElementRenamed | Count.value |
+| Count.id | UseElementSameName | Count.id |
+| Count.extension | UseElementSameName | Count.extension |
+| Count.value | UseElementSameName | Count.value |
 | Count.comparator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Count.comparator |
-| Count.unit | UseElementRenamed | Count.unit |
-| Count.system | UseElementRenamed | Count.system |
-| Count.code | UseElementRenamed | Count.code |
+| Count.unit | UseElementSameName | Count.unit |
+| Count.system | UseElementSameName | Count.system |
+| Count.code | UseElementSameName | Count.code |

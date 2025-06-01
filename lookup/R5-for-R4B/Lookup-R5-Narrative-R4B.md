@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Narrative.id | UseElementRenamed | Narrative.id |
-| Narrative.extension | UseElementRenamed | Narrative.extension |
-| Narrative.status | UseElementRenamed | Narrative.status |
-| Narrative.div | UseElementRenamed | Narrative.div |
+| Narrative.id | UseElementSameName | Narrative.id |
+| Narrative.extension | UseElementSameName | Narrative.extension |
+| Narrative.status | UseElementSameName | Narrative.status |
+| Narrative.div | UseElementSameName | Narrative.div |

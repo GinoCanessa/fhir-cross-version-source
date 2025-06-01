@@ -29,12 +29,12 @@
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
 | Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
 | Specimen.collection.fastingStatus[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.collection.fastingStatus |
-| Specimen.processing | UseElementSameName | Specimen.treatment |
+| Specimen.processing | UseElementRenamed | Specimen.treatment |
 | Specimen.processing.id | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.processing.id |
 | Specimen.processing.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.processing.extension |
 | Specimen.processing.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.processing.modifierExtension |
-| Specimen.processing.description | UseElementSameName | Specimen.treatment.description |
-| Specimen.processing.procedure | UseElementSameName | Specimen.treatment.procedure |
+| Specimen.processing.description | UseElementRenamed | Specimen.treatment.description |
+| Specimen.processing.procedure | UseElementRenamed | Specimen.treatment.procedure |
 | Specimen.processing.additive | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.processing.additive |
 | Specimen.processing.time[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Specimen.processing.time |
 | Specimen.container | UseElementSameName | Specimen.container |

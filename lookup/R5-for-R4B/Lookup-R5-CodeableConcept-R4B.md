@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| CodeableConcept.id | UseElementRenamed | CodeableConcept.id |
-| CodeableConcept.extension | UseElementRenamed | CodeableConcept.extension |
-| CodeableConcept.coding | UseElementRenamed | CodeableConcept.coding |
-| CodeableConcept.text | UseElementRenamed | CodeableConcept.text |
+| CodeableConcept.id | UseElementSameName | CodeableConcept.id |
+| CodeableConcept.extension | UseElementSameName | CodeableConcept.extension |
+| CodeableConcept.coding | UseElementSameName | CodeableConcept.coding |
+| CodeableConcept.text | UseElementSameName | CodeableConcept.text |

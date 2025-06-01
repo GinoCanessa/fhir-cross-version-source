@@ -28,11 +28,11 @@
 | CommunicationRequest.payload.extension | UseElementSameName | CommunicationRequest.payload.extension |
 | CommunicationRequest.payload.modifierExtension | UseElementSameName | CommunicationRequest.payload.modifierExtension |
 | CommunicationRequest.payload.content[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.payload.content |
-| CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.scheduled[x] |
-| CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.requestedOn |
+| CommunicationRequest.occurrence[x] | UseElementRenamed | CommunicationRequest.scheduled[x] |
+| CommunicationRequest.authoredOn | UseElementRenamed | CommunicationRequest.requestedOn |
 | CommunicationRequest.requester | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.recipient |
 | CommunicationRequest.sender | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.sender |
-| CommunicationRequest.reasonCode | UseElementSameName | CommunicationRequest.reason |
+| CommunicationRequest.reasonCode | UseElementRenamed | CommunicationRequest.reason |
 | CommunicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.reasonReference |
 | CommunicationRequest.note | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CommunicationRequest.note |

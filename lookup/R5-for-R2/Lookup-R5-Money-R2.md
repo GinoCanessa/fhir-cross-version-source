@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Money.id | UseElementSameName | Quantity.id |
-| Money.extension | UseElementSameName | Quantity.extension |
-| Money.value | UseElementSameName | Quantity.value |
+| Money.id | UseElementRenamed | Quantity.id |
+| Money.extension | UseElementRenamed | Quantity.extension |
+| Money.value | UseElementRenamed | Quantity.value |
 | Money.currency | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Money.currency |

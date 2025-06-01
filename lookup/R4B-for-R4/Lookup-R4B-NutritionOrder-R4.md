@@ -16,7 +16,7 @@
 | NutritionOrder.instantiates | UseElementSameName | NutritionOrder.instantiates |
 | NutritionOrder.status | UseElementSameName | NutritionOrder.status |
 | NutritionOrder.intent | UseElementSameName | NutritionOrder.intent |
-| NutritionOrder.patient | UseElementRenamed | NutritionOrder.patient |
+| NutritionOrder.patient | UseElementSameName | NutritionOrder.patient |
 | NutritionOrder.encounter | UseElementSameName | NutritionOrder.encounter |
 | NutritionOrder.dateTime | UseElementSameName | NutritionOrder.dateTime |
 | NutritionOrder.orderer | UseElementSameName | NutritionOrder.orderer |
@@ -58,10 +58,10 @@
 | NutritionOrder.enteralFormula.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.modifierExtension |
 | NutritionOrder.enteralFormula.baseFormulaType | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaType |
 | NutritionOrder.enteralFormula.baseFormulaProductName | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaProductName |
-| NutritionOrder.enteralFormula.additiveType | UseElementRenamed | NutritionOrder.enteralFormula.additiveType |
-| NutritionOrder.enteralFormula.additiveProductName | UseElementRenamed | NutritionOrder.enteralFormula.additiveProductName |
+| NutritionOrder.enteralFormula.additiveType | UseElementSameName | NutritionOrder.enteralFormula.additiveType |
+| NutritionOrder.enteralFormula.additiveProductName | UseElementSameName | NutritionOrder.enteralFormula.additiveProductName |
 | NutritionOrder.enteralFormula.caloricDensity | UseElementSameName | NutritionOrder.enteralFormula.caloricDensity |
-| NutritionOrder.enteralFormula.routeofAdministration | UseElementRenamed | NutritionOrder.enteralFormula.routeofAdministration |
+| NutritionOrder.enteralFormula.routeofAdministration | UseElementSameName | NutritionOrder.enteralFormula.routeofAdministration |
 | NutritionOrder.enteralFormula.administration | UseElementSameName | NutritionOrder.enteralFormula.administration |
 | NutritionOrder.enteralFormula.administration.id | UseElementSameName | NutritionOrder.enteralFormula.administration.id |
 | NutritionOrder.enteralFormula.administration.extension | UseElementSameName | NutritionOrder.enteralFormula.administration.extension |

@@ -152,8 +152,8 @@
 | Contract.term.action.performerRole | UseElementSameName | Contract.term.action.performerRole |
 | Contract.term.action.performer | UseElementSameName | Contract.term.action.performer |
 | Contract.term.action.performerLinkId | UseElementSameName | Contract.term.action.performerLinkId |
-| Contract.term.action.reasonCode | UseElementRenamed | Contract.term.action.reasonCode |
-| Contract.term.action.reasonReference | UseElementRenamed | Contract.term.action.reasonReference |
+| Contract.term.action.reasonCode | UseElementSameName | Contract.term.action.reasonCode |
+| Contract.term.action.reasonReference | UseElementSameName | Contract.term.action.reasonReference |
 | Contract.term.action.reason | UseElementSameName | Contract.term.action.reason |
 | Contract.term.action.reasonLinkId | UseElementSameName | Contract.term.action.reasonLinkId |
 | Contract.term.action.note | UseElementSameName | Contract.term.action.note |

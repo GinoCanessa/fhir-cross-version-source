@@ -77,7 +77,7 @@
 | ElementDefinition.binding.extension | UseElementSameName | ElementDefinition.binding.extension |
 | ElementDefinition.binding.strength | UseElementSameName | ElementDefinition.binding.strength |
 | ElementDefinition.binding.description | UseElementSameName | ElementDefinition.binding.description |
-| ElementDefinition.binding.valueSet | UseElementSameName | ElementDefinition.binding.valueSet[x] |
+| ElementDefinition.binding.valueSet | UseElementRenamed | ElementDefinition.binding.valueSet[x] |
 | ElementDefinition.mapping | UseElementSameName | ElementDefinition.mapping |
 | ElementDefinition.mapping.id | UseElementSameName | ElementDefinition.mapping.id |
 | ElementDefinition.mapping.extension | UseElementSameName | ElementDefinition.mapping.extension |

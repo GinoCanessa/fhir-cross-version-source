@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Parameters.id | UseElementSameName | ExpansionProfile.id |
+| Parameters.id | UseElementRenamed | ExpansionProfile.id |
 | Parameters.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Parameters.meta |
-| Parameters.implicitRules | UseElementSameName | ExpansionProfile.implicitRules |
-| Parameters.language | UseElementSameName | ExpansionProfile.language |
+| Parameters.implicitRules | UseElementRenamed | ExpansionProfile.implicitRules |
+| Parameters.language | UseElementRenamed | ExpansionProfile.language |
 | Parameters.parameter | UseElementSameName | Parameters.parameter |
 | Parameters.parameter.id | UseElementSameName | Parameters.parameter.id |
 | Parameters.parameter.extension | UseElementSameName | Parameters.parameter.extension |

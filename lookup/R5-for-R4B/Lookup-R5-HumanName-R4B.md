@@ -2,12 +2,12 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| HumanName.id | UseElementRenamed | HumanName.id |
-| HumanName.extension | UseElementRenamed | HumanName.extension |
-| HumanName.use | UseElementRenamed | HumanName.use |
-| HumanName.text | UseElementRenamed | HumanName.text |
-| HumanName.family | UseElementRenamed | HumanName.family |
-| HumanName.given | UseElementRenamed | HumanName.given |
-| HumanName.prefix | UseElementRenamed | HumanName.prefix |
-| HumanName.suffix | UseElementRenamed | HumanName.suffix |
-| HumanName.period | UseElementRenamed | HumanName.period |
+| HumanName.id | UseElementSameName | HumanName.id |
+| HumanName.extension | UseElementSameName | HumanName.extension |
+| HumanName.use | UseElementSameName | HumanName.use |
+| HumanName.text | UseElementSameName | HumanName.text |
+| HumanName.family | UseElementSameName | HumanName.family |
+| HumanName.given | UseElementSameName | HumanName.given |
+| HumanName.prefix | UseElementSameName | HumanName.prefix |
+| HumanName.suffix | UseElementSameName | HumanName.suffix |
+| HumanName.period | UseElementSameName | HumanName.period |

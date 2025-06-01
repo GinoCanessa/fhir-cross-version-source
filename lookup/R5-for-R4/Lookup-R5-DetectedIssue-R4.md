@@ -15,7 +15,7 @@
 | DetectedIssue.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.category |
 | DetectedIssue.code | UseElementSameName | DetectedIssue.code |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
-| DetectedIssue.subject | UseElementSameName | DetectedIssue.patient |
+| DetectedIssue.subject | UseElementRenamed | DetectedIssue.patient |
 | DetectedIssue.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.encounter |
 | DetectedIssue.identified[x] | UseElementSameName | DetectedIssue.identified[x] |
 | DetectedIssue.author | UseElementSameName | DetectedIssue.author |

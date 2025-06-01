@@ -5,7 +5,7 @@
 | SampledData.id | UseElementSameName | SampledData.id |
 | SampledData.extension | UseElementSameName | SampledData.extension |
 | SampledData.origin | UseElementSameName | SampledData.origin |
-| SampledData.period | UseElementRenamed | SampledData.period |
+| SampledData.period | UseElementSameName | SampledData.period |
 | SampledData.factor | UseElementSameName | SampledData.factor |
 | SampledData.lowerLimit | UseElementSameName | SampledData.lowerLimit |
 | SampledData.upperLimit | UseElementSameName | SampledData.upperLimit |

@@ -2,22 +2,22 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Subscription.id | UseElementRenamed | Subscription.id |
-| Subscription.meta | UseElementRenamed | Subscription.meta |
-| Subscription.implicitRules | UseElementRenamed | Subscription.implicitRules |
-| Subscription.language | UseElementRenamed | Subscription.language |
-| Subscription.text | UseElementRenamed | Subscription.text |
-| Subscription.contained | UseElementRenamed | Subscription.contained |
-| Subscription.extension | UseElementRenamed | Subscription.extension |
-| Subscription.modifierExtension | UseElementRenamed | Subscription.modifierExtension |
+| Subscription.id | UseElementSameName | Subscription.id |
+| Subscription.meta | UseElementSameName | Subscription.meta |
+| Subscription.implicitRules | UseElementSameName | Subscription.implicitRules |
+| Subscription.language | UseElementSameName | Subscription.language |
+| Subscription.text | UseElementSameName | Subscription.text |
+| Subscription.contained | UseElementSameName | Subscription.contained |
+| Subscription.extension | UseElementSameName | Subscription.extension |
+| Subscription.modifierExtension | UseElementSameName | Subscription.modifierExtension |
 | Subscription.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.identifier |
 | Subscription.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.name |
 | Subscription.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.status |
 | Subscription.topic | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.topic |
-| Subscription.contact | UseElementRenamed | Subscription.contact |
-| Subscription.end | UseElementRenamed | Subscription.end |
+| Subscription.contact | UseElementSameName | Subscription.contact |
+| Subscription.end | UseElementSameName | Subscription.end |
 | Subscription.managingEntity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.managingEntity |
-| Subscription.reason | UseElementRenamed | Subscription.reason |
+| Subscription.reason | UseElementSameName | Subscription.reason |
 | Subscription.filterBy | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.filterBy |
 | Subscription.filterBy.id | UseExtensionFromAncestor | - |
 | Subscription.filterBy.extension | UseExtensionFromAncestor | - |

@@ -24,8 +24,8 @@
 | FamilyMemberHistory.age[x] | UseElementSameName | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseElementSameName | FamilyMemberHistory.estimatedAge |
 | FamilyMemberHistory.deceased[x] | UseElementSameName | FamilyMemberHistory.deceased[x] |
-| FamilyMemberHistory.reasonCode | UseElementRenamed | FamilyMemberHistory.reasonCode |
-| FamilyMemberHistory.reasonReference | UseElementRenamed | FamilyMemberHistory.reasonReference |
+| FamilyMemberHistory.reasonCode | UseElementSameName | FamilyMemberHistory.reasonCode |
+| FamilyMemberHistory.reasonReference | UseElementSameName | FamilyMemberHistory.reasonReference |
 | FamilyMemberHistory.note | UseElementSameName | FamilyMemberHistory.note |
 | FamilyMemberHistory.condition | UseElementSameName | FamilyMemberHistory.condition |
 | FamilyMemberHistory.condition.id | UseElementSameName | FamilyMemberHistory.condition.id |

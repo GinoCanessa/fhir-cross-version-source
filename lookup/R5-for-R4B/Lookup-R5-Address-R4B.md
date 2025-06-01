@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Address.id | UseElementRenamed | Address.id |
-| Address.extension | UseElementRenamed | Address.extension |
-| Address.use | UseElementRenamed | Address.use |
-| Address.type | UseElementRenamed | Address.type |
-| Address.text | UseElementRenamed | Address.text |
-| Address.line | UseElementRenamed | Address.line |
-| Address.city | UseElementRenamed | Address.city |
-| Address.district | UseElementRenamed | Address.district |
-| Address.state | UseElementRenamed | Address.state |
-| Address.postalCode | UseElementRenamed | Address.postalCode |
-| Address.country | UseElementRenamed | Address.country |
-| Address.period | UseElementRenamed | Address.period |
+| Address.id | UseElementSameName | Address.id |
+| Address.extension | UseElementSameName | Address.extension |
+| Address.use | UseElementSameName | Address.use |
+| Address.type | UseElementSameName | Address.type |
+| Address.text | UseElementSameName | Address.text |
+| Address.line | UseElementSameName | Address.line |
+| Address.city | UseElementSameName | Address.city |
+| Address.district | UseElementSameName | Address.district |
+| Address.state | UseElementSameName | Address.state |
+| Address.postalCode | UseElementSameName | Address.postalCode |
+| Address.country | UseElementSameName | Address.country |
+| Address.period | UseElementSameName | Address.period |

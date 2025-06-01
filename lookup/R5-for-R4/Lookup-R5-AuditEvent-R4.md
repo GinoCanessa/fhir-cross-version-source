@@ -22,7 +22,7 @@
 | AuditEvent.outcome.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.outcome.modifierExtension |
 | AuditEvent.outcome.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.outcome.code |
 | AuditEvent.outcome.detail | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.outcome.detail |
-| AuditEvent.authorization | UseElementSameName | AuditEvent.purposeOfEvent |
+| AuditEvent.authorization | UseElementRenamed | AuditEvent.purposeOfEvent |
 | AuditEvent.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.basedOn |
 | AuditEvent.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.patient |
 | AuditEvent.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.encounter |
@@ -37,7 +37,7 @@
 | AuditEvent.agent.location | UseElementSameName | AuditEvent.agent.location |
 | AuditEvent.agent.policy | UseElementSameName | AuditEvent.agent.policy |
 | AuditEvent.agent.network[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.agent.network |
-| AuditEvent.agent.authorization | UseElementSameName | AuditEvent.agent.purposeOfUse |
+| AuditEvent.agent.authorization | UseElementRenamed | AuditEvent.agent.purposeOfUse |
 | AuditEvent.source | UseElementSameName | AuditEvent.source |
 | AuditEvent.source.id | UseElementSameName | AuditEvent.source.id |
 | AuditEvent.source.extension | UseElementSameName | AuditEvent.source.extension |

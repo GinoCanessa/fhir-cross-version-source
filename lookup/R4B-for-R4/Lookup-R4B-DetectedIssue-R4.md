@@ -14,7 +14,7 @@
 | DetectedIssue.status | UseElementSameName | DetectedIssue.status |
 | DetectedIssue.code | UseElementSameName | DetectedIssue.code |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
-| DetectedIssue.patient | UseElementRenamed | DetectedIssue.patient |
+| DetectedIssue.patient | UseElementSameName | DetectedIssue.patient |
 | DetectedIssue.identified[x] | UseElementSameName | DetectedIssue.identified[x] |
 | DetectedIssue.author | UseElementSameName | DetectedIssue.author |
 | DetectedIssue.implicated | UseElementSameName | DetectedIssue.implicated |

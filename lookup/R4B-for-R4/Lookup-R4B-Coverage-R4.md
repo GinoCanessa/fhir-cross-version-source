@@ -20,7 +20,7 @@
 | Coverage.dependent | UseElementSameName | Coverage.dependent |
 | Coverage.relationship | UseElementSameName | Coverage.relationship |
 | Coverage.period | UseElementSameName | Coverage.period |
-| Coverage.payor | UseElementRenamed | Coverage.payor |
+| Coverage.payor | UseElementSameName | Coverage.payor |
 | Coverage.class | UseElementSameName | Coverage.class |
 | Coverage.class.id | UseElementSameName | Coverage.class.id |
 | Coverage.class.extension | UseElementSameName | Coverage.class.extension |

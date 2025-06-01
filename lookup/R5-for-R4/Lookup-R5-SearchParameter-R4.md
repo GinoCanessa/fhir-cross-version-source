@@ -32,7 +32,7 @@
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.base |
 | SearchParameter.type | UseElementSameName | SearchParameter.type |
 | SearchParameter.expression | UseElementSameName | SearchParameter.expression |
-| SearchParameter.processingMode | UseElementSameName | SearchParameter.xpathUsage |
+| SearchParameter.processingMode | UseElementRenamed | SearchParameter.xpathUsage |
 | SearchParameter.constraint | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.constraint |
 | SearchParameter.target | UseElementSameName | SearchParameter.target |
 | SearchParameter.multipleOr | UseElementSameName | SearchParameter.multipleOr |

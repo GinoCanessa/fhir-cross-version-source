@@ -29,8 +29,8 @@
 | Communication.received | UseElementSameName | Communication.received |
 | Communication.recipient | UseElementSameName | Communication.recipient |
 | Communication.sender | UseElementSameName | Communication.sender |
-| Communication.reasonCode | UseElementRenamed | Communication.reasonCode |
-| Communication.reasonReference | UseElementRenamed | Communication.reasonReference |
+| Communication.reasonCode | UseElementSameName | Communication.reasonCode |
+| Communication.reasonReference | UseElementSameName | Communication.reasonReference |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |
 | Communication.payload.extension | UseElementSameName | Communication.payload.extension |

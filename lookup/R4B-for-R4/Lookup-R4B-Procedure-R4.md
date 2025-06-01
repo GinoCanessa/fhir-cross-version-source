@@ -21,9 +21,9 @@
 | Procedure.code | UseElementSameName | Procedure.code |
 | Procedure.subject | UseElementSameName | Procedure.subject |
 | Procedure.encounter | UseElementSameName | Procedure.encounter |
-| Procedure.performed[x] | UseElementRenamed | Procedure.performed[x] |
+| Procedure.performed[x] | UseElementSameName | Procedure.performed[x] |
 | Procedure.recorder | UseElementSameName | Procedure.recorder |
-| Procedure.asserter | UseElementRenamed | Procedure.asserter |
+| Procedure.asserter | UseElementSameName | Procedure.asserter |
 | Procedure.performer | UseElementSameName | Procedure.performer |
 | Procedure.performer.id | UseElementSameName | Procedure.performer.id |
 | Procedure.performer.extension | UseElementSameName | Procedure.performer.extension |
@@ -32,13 +32,13 @@
 | Procedure.performer.actor | UseElementSameName | Procedure.performer.actor |
 | Procedure.performer.onBehalfOf | UseElementSameName | Procedure.performer.onBehalfOf |
 | Procedure.location | UseElementSameName | Procedure.location |
-| Procedure.reasonCode | UseElementRenamed | Procedure.reasonCode |
-| Procedure.reasonReference | UseElementRenamed | Procedure.reasonReference |
+| Procedure.reasonCode | UseElementSameName | Procedure.reasonCode |
+| Procedure.reasonReference | UseElementSameName | Procedure.reasonReference |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |
 | Procedure.report | UseElementSameName | Procedure.report |
 | Procedure.complication | UseElementSameName | Procedure.complication |
-| Procedure.complicationDetail | UseElementRenamed | Procedure.complicationDetail |
+| Procedure.complicationDetail | UseElementSameName | Procedure.complicationDetail |
 | Procedure.followUp | UseElementSameName | Procedure.followUp |
 | Procedure.note | UseElementSameName | Procedure.note |
 | Procedure.focalDevice | UseElementSameName | Procedure.focalDevice |
@@ -47,5 +47,5 @@
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
 | Procedure.focalDevice.action | UseElementSameName | Procedure.focalDevice.action |
 | Procedure.focalDevice.manipulated | UseElementSameName | Procedure.focalDevice.manipulated |
-| Procedure.usedReference | UseElementRenamed | Procedure.usedReference |
-| Procedure.usedCode | UseElementRenamed | Procedure.usedCode |
+| Procedure.usedReference | UseElementSameName | Procedure.usedReference |
+| Procedure.usedCode | UseElementSameName | Procedure.usedCode |

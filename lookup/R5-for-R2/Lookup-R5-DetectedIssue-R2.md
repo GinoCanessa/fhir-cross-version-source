@@ -13,7 +13,7 @@
 | DetectedIssue.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.identifier |
 | DetectedIssue.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.status |
 | DetectedIssue.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.category |
-| DetectedIssue.code | UseElementSameName | DetectedIssue.category |
+| DetectedIssue.code | UseElementRenamed | DetectedIssue.category |
 | DetectedIssue.severity | UseElementSameName | DetectedIssue.severity |
 | DetectedIssue.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.subject |
 | DetectedIssue.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DetectedIssue.encounter |

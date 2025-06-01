@@ -13,11 +13,11 @@
 | MedicationDispense.identifier | UseElementSameName | MedicationDispense.identifier |
 | MedicationDispense.partOf | UseElementSameName | MedicationDispense.partOf |
 | MedicationDispense.status | UseElementSameName | MedicationDispense.status |
-| MedicationDispense.statusReason[x] | UseElementRenamed | MedicationDispense.statusReason[x] |
+| MedicationDispense.statusReason[x] | UseElementSameName | MedicationDispense.statusReason[x] |
 | MedicationDispense.category | UseElementSameName | MedicationDispense.category |
-| MedicationDispense.medication[x] | UseElementRenamed | MedicationDispense.medication[x] |
+| MedicationDispense.medication[x] | UseElementSameName | MedicationDispense.medication[x] |
 | MedicationDispense.subject | UseElementSameName | MedicationDispense.subject |
-| MedicationDispense.context | UseElementRenamed | MedicationDispense.context |
+| MedicationDispense.context | UseElementSameName | MedicationDispense.context |
 | MedicationDispense.supportingInformation | UseElementSameName | MedicationDispense.supportingInformation |
 | MedicationDispense.performer | UseElementSameName | MedicationDispense.performer |
 | MedicationDispense.performer.id | UseElementSameName | MedicationDispense.performer.id |
@@ -44,5 +44,5 @@
 | MedicationDispense.substitution.type | UseElementSameName | MedicationDispense.substitution.type |
 | MedicationDispense.substitution.reason | UseElementSameName | MedicationDispense.substitution.reason |
 | MedicationDispense.substitution.responsibleParty | UseElementSameName | MedicationDispense.substitution.responsibleParty |
-| MedicationDispense.detectedIssue | UseElementRenamed | MedicationDispense.detectedIssue |
+| MedicationDispense.detectedIssue | UseElementSameName | MedicationDispense.detectedIssue |
 | MedicationDispense.eventHistory | UseElementSameName | MedicationDispense.eventHistory |

@@ -21,7 +21,7 @@
 | Condition.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Condition.encounter |
 | Condition.onset[x] | UseElementSameName | Condition.onset[x] |
 | Condition.abatement[x] | UseElementSameName | Condition.abatement[x] |
-| Condition.recordedDate | UseElementSameName | Condition.assertedDate |
+| Condition.recordedDate | UseElementRenamed | Condition.assertedDate |
 | Condition.recorder | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Condition.recorder |
 | Condition.asserter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Condition.asserter |
 | Condition.stage | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Condition.stage |

@@ -22,8 +22,8 @@
 | Condition.onset[x] | UseElementSameName | Condition.onset[x] |
 | Condition.abatement[x] | UseElementSameName | Condition.abatement[x] |
 | Condition.recordedDate | UseElementSameName | Condition.recordedDate |
-| Condition.recorder | UseElementRenamed | Condition.recorder |
-| Condition.asserter | UseElementRenamed | Condition.asserter |
+| Condition.recorder | UseElementSameName | Condition.recorder |
+| Condition.asserter | UseElementSameName | Condition.asserter |
 | Condition.stage | UseElementSameName | Condition.stage |
 | Condition.stage.id | UseElementSameName | Condition.stage.id |
 | Condition.stage.extension | UseElementSameName | Condition.stage.extension |
@@ -32,9 +32,9 @@
 | Condition.stage.assessment | UseElementSameName | Condition.stage.assessment |
 | Condition.stage.type | UseElementSameName | Condition.stage.type |
 | Condition.evidence | UseElementSameName | Condition.evidence |
-| Condition.evidence.id | UseElementRenamed | Condition.evidence.id |
-| Condition.evidence.extension | UseElementRenamed | Condition.evidence.extension |
-| Condition.evidence.modifierExtension | UseElementRenamed | Condition.evidence.modifierExtension |
-| Condition.evidence.code | UseElementRenamed | Condition.evidence.code |
-| Condition.evidence.detail | UseElementRenamed | Condition.evidence.detail |
+| Condition.evidence.id | UseElementSameName | Condition.evidence.id |
+| Condition.evidence.extension | UseElementSameName | Condition.evidence.extension |
+| Condition.evidence.modifierExtension | UseElementSameName | Condition.evidence.modifierExtension |
+| Condition.evidence.code | UseElementSameName | Condition.evidence.code |
+| Condition.evidence.detail | UseElementSameName | Condition.evidence.detail |
 | Condition.note | UseElementSameName | Condition.note |

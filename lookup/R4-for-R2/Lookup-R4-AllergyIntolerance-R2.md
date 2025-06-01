@@ -16,14 +16,14 @@
 | AllergyIntolerance.type | UseElementSameName | AllergyIntolerance.type |
 | AllergyIntolerance.category | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.category |
 | AllergyIntolerance.criticality | UseElementSameName | AllergyIntolerance.criticality |
-| AllergyIntolerance.code | UseElementSameName | AllergyIntolerance.substance |
+| AllergyIntolerance.code | UseElementRenamed | AllergyIntolerance.substance |
 | AllergyIntolerance.patient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.patient |
 | AllergyIntolerance.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.encounter |
 | AllergyIntolerance.onset[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.onset |
 | AllergyIntolerance.recordedDate | UseElementSameName | AllergyIntolerance.recordedDate |
 | AllergyIntolerance.recorder | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.recorder |
 | AllergyIntolerance.asserter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.asserter |
-| AllergyIntolerance.lastOccurrence | UseElementSameName | AllergyIntolerance.lastOccurence |
+| AllergyIntolerance.lastOccurrence | UseElementRenamed | AllergyIntolerance.lastOccurence |
 | AllergyIntolerance.note | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.note |
 | AllergyIntolerance.reaction | UseElementSameName | AllergyIntolerance.reaction |
 | AllergyIntolerance.reaction.id | UseElementSameName | AllergyIntolerance.reaction.id |

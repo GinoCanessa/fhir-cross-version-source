@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| ServiceRequest.id | UseElementSameName | DiagnosticOrder.id |
+| ServiceRequest.id | UseElementRenamed | DiagnosticOrder.id |
 | ServiceRequest.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.meta |
-| ServiceRequest.implicitRules | UseElementSameName | DiagnosticOrder.implicitRules |
-| ServiceRequest.language | UseElementSameName | DiagnosticOrder.language |
-| ServiceRequest.text | UseElementSameName | DiagnosticOrder.text |
-| ServiceRequest.contained | UseElementSameName | DiagnosticOrder.contained |
-| ServiceRequest.extension | UseElementSameName | DiagnosticOrder.extension |
-| ServiceRequest.modifierExtension | UseElementSameName | DiagnosticOrder.modifierExtension |
-| ServiceRequest.identifier | UseElementSameName | DiagnosticOrder.identifier |
+| ServiceRequest.implicitRules | UseElementRenamed | DiagnosticOrder.implicitRules |
+| ServiceRequest.language | UseElementRenamed | DiagnosticOrder.language |
+| ServiceRequest.text | UseElementRenamed | DiagnosticOrder.text |
+| ServiceRequest.contained | UseElementRenamed | DiagnosticOrder.contained |
+| ServiceRequest.extension | UseElementRenamed | DiagnosticOrder.extension |
+| ServiceRequest.modifierExtension | UseElementRenamed | DiagnosticOrder.modifierExtension |
+| ServiceRequest.identifier | UseElementRenamed | DiagnosticOrder.identifier |
 | ServiceRequest.instantiatesCanonical | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.instantiatesCanonical |
 | ServiceRequest.instantiatesUri | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.instantiatesUri |
 | ServiceRequest.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.basedOn |
@@ -18,8 +18,8 @@
 | ServiceRequest.requisition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.requisition |
 | ServiceRequest.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.status |
 | ServiceRequest.intent | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.intent |
-| ServiceRequest.category | UseElementSameName | ReferralRequest.type |
-| ServiceRequest.priority | UseElementSameName | DiagnosticOrder.priority |
+| ServiceRequest.category | UseElementRenamed | ReferralRequest.type |
+| ServiceRequest.priority | UseElementRenamed | DiagnosticOrder.priority |
 | ServiceRequest.doNotPerform | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.doNotPerform |
 | ServiceRequest.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.code |
 | ServiceRequest.orderDetail | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.orderDetail |
@@ -38,8 +38,8 @@
 | ServiceRequest.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.focus |
 | ServiceRequest.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.encounter |
 | ServiceRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.occurrence |
-| ServiceRequest.asNeeded[x] | UseElementSameName | ProcedureRequest.asNeeded[x] |
-| ServiceRequest.authoredOn | UseElementSameName | ProcedureRequest.orderedOn |
+| ServiceRequest.asNeeded[x] | UseElementRenamed | ProcedureRequest.asNeeded[x] |
+| ServiceRequest.authoredOn | UseElementRenamed | ProcedureRequest.orderedOn |
 | ServiceRequest.requester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.requester |
 | ServiceRequest.performerType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.performerType |
 | ServiceRequest.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.performer |
@@ -48,9 +48,9 @@
 | ServiceRequest.insurance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.insurance |
 | ServiceRequest.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.supportingInfo |
 | ServiceRequest.specimen | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.specimen |
-| ServiceRequest.bodySite | UseElementSameName | ProcedureRequest.bodySite |
+| ServiceRequest.bodySite | UseElementRenamed | ProcedureRequest.bodySite |
 | ServiceRequest.bodyStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.bodyStructure |
-| ServiceRequest.note | UseElementSameName | DiagnosticOrder.note |
+| ServiceRequest.note | UseElementRenamed | DiagnosticOrder.note |
 | ServiceRequest.patientInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.patientInstruction |
 | ServiceRequest.patientInstruction.id | UseExtensionFromAncestor | - |
 | ServiceRequest.patientInstruction.extension | UseExtensionFromAncestor | - |

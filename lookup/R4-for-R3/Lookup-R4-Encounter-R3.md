@@ -41,14 +41,14 @@
 | Encounter.appointment | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Encounter.appointment |
 | Encounter.period | UseElementSameName | Encounter.period |
 | Encounter.length | UseElementSameName | Encounter.length |
-| Encounter.reasonCode | UseElementSameName | Encounter.reason |
+| Encounter.reasonCode | UseElementRenamed | Encounter.reason |
 | Encounter.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Encounter.reasonReference |
 | Encounter.diagnosis | UseElementSameName | Encounter.diagnosis |
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |
 | Encounter.diagnosis.extension | UseElementSameName | Encounter.diagnosis.extension |
 | Encounter.diagnosis.modifierExtension | UseElementSameName | Encounter.diagnosis.modifierExtension |
 | Encounter.diagnosis.condition | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Encounter.diagnosis.condition |
-| Encounter.diagnosis.use | UseElementSameName | Encounter.diagnosis.role |
+| Encounter.diagnosis.use | UseElementRenamed | Encounter.diagnosis.role |
 | Encounter.diagnosis.rank | UseElementSameName | Encounter.diagnosis.rank |
 | Encounter.account | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Encounter.account |
 | Encounter.hospitalization | UseElementSameName | Encounter.hospitalization |

@@ -22,8 +22,8 @@
 | ConceptMap.contact | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.contact |
 | ConceptMap.description | UseElementSameName | ConceptMap.description |
 | ConceptMap.useContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.useContext |
-| ConceptMap.jurisdiction | UseElementSameName | ConceptMap.useContext |
-| ConceptMap.purpose | UseElementSameName | ConceptMap.requirements |
+| ConceptMap.jurisdiction | UseElementRenamed | ConceptMap.useContext |
+| ConceptMap.purpose | UseElementRenamed | ConceptMap.requirements |
 | ConceptMap.copyright | UseElementSameName | ConceptMap.copyright |
 | ConceptMap.source[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.source |
 | ConceptMap.target[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ConceptMap.target |

@@ -17,8 +17,8 @@
 | MedicationRequest.category | UseElementSameName | MedicationRequest.category |
 | MedicationRequest.priority | UseElementSameName | MedicationRequest.priority |
 | MedicationRequest.doNotPerform | UseElementSameName | MedicationRequest.doNotPerform |
-| MedicationRequest.reported[x] | UseElementRenamed | MedicationRequest.reported[x] |
-| MedicationRequest.medication[x] | UseElementRenamed | MedicationRequest.medication[x] |
+| MedicationRequest.reported[x] | UseElementSameName | MedicationRequest.reported[x] |
+| MedicationRequest.medication[x] | UseElementSameName | MedicationRequest.medication[x] |
 | MedicationRequest.subject | UseElementSameName | MedicationRequest.subject |
 | MedicationRequest.encounter | UseElementSameName | MedicationRequest.encounter |
 | MedicationRequest.supportingInformation | UseElementSameName | MedicationRequest.supportingInformation |
@@ -27,10 +27,10 @@
 | MedicationRequest.performer | UseElementSameName | MedicationRequest.performer |
 | MedicationRequest.performerType | UseElementSameName | MedicationRequest.performerType |
 | MedicationRequest.recorder | UseElementSameName | MedicationRequest.recorder |
-| MedicationRequest.reasonCode | UseElementRenamed | MedicationRequest.reasonCode |
-| MedicationRequest.reasonReference | UseElementRenamed | MedicationRequest.reasonReference |
-| MedicationRequest.instantiatesCanonical | UseElementRenamed | MedicationRequest.instantiatesCanonical |
-| MedicationRequest.instantiatesUri | UseElementRenamed | MedicationRequest.instantiatesUri |
+| MedicationRequest.reasonCode | UseElementSameName | MedicationRequest.reasonCode |
+| MedicationRequest.reasonReference | UseElementSameName | MedicationRequest.reasonReference |
+| MedicationRequest.instantiatesCanonical | UseElementSameName | MedicationRequest.instantiatesCanonical |
+| MedicationRequest.instantiatesUri | UseElementSameName | MedicationRequest.instantiatesUri |
 | MedicationRequest.basedOn | UseElementSameName | MedicationRequest.basedOn |
 | MedicationRequest.groupIdentifier | UseElementSameName | MedicationRequest.groupIdentifier |
 | MedicationRequest.courseOfTherapyType | UseElementSameName | MedicationRequest.courseOfTherapyType |
@@ -52,7 +52,7 @@
 | MedicationRequest.dispenseRequest.numberOfRepeatsAllowed | UseElementSameName | MedicationRequest.dispenseRequest.numberOfRepeatsAllowed |
 | MedicationRequest.dispenseRequest.quantity | UseElementSameName | MedicationRequest.dispenseRequest.quantity |
 | MedicationRequest.dispenseRequest.expectedSupplyDuration | UseElementSameName | MedicationRequest.dispenseRequest.expectedSupplyDuration |
-| MedicationRequest.dispenseRequest.performer | UseElementRenamed | MedicationRequest.dispenseRequest.performer |
+| MedicationRequest.dispenseRequest.performer | UseElementSameName | MedicationRequest.dispenseRequest.performer |
 | MedicationRequest.substitution | UseElementSameName | MedicationRequest.substitution |
 | MedicationRequest.substitution.id | UseElementSameName | MedicationRequest.substitution.id |
 | MedicationRequest.substitution.extension | UseElementSameName | MedicationRequest.substitution.extension |
@@ -60,5 +60,5 @@
 | MedicationRequest.substitution.allowed[x] | UseElementSameName | MedicationRequest.substitution.allowed[x] |
 | MedicationRequest.substitution.reason | UseElementSameName | MedicationRequest.substitution.reason |
 | MedicationRequest.priorPrescription | UseElementSameName | MedicationRequest.priorPrescription |
-| MedicationRequest.detectedIssue | UseElementRenamed | MedicationRequest.detectedIssue |
+| MedicationRequest.detectedIssue | UseElementSameName | MedicationRequest.detectedIssue |
 | MedicationRequest.eventHistory | UseElementSameName | MedicationRequest.eventHistory |

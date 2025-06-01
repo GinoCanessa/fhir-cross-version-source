@@ -31,7 +31,7 @@
 | ImmunizationRecommendation.recommendation.dateCriterion.value | UseElementSameName | ImmunizationRecommendation.recommendation.dateCriterion.value |
 | ImmunizationRecommendation.recommendation.description | UseElementSameName | ImmunizationRecommendation.recommendation.description |
 | ImmunizationRecommendation.recommendation.series | UseElementSameName | ImmunizationRecommendation.recommendation.series |
-| ImmunizationRecommendation.recommendation.doseNumber[x] | UseElementRenamed | ImmunizationRecommendation.recommendation.doseNumber[x] |
-| ImmunizationRecommendation.recommendation.seriesDoses[x] | UseElementRenamed | ImmunizationRecommendation.recommendation.seriesDoses[x] |
+| ImmunizationRecommendation.recommendation.doseNumber[x] | UseElementSameName | ImmunizationRecommendation.recommendation.doseNumber[x] |
+| ImmunizationRecommendation.recommendation.seriesDoses[x] | UseElementSameName | ImmunizationRecommendation.recommendation.seriesDoses[x] |
 | ImmunizationRecommendation.recommendation.supportingImmunization | UseElementSameName | ImmunizationRecommendation.recommendation.supportingImmunization |
 | ImmunizationRecommendation.recommendation.supportingPatientInformation | UseElementSameName | ImmunizationRecommendation.recommendation.supportingPatientInformation |

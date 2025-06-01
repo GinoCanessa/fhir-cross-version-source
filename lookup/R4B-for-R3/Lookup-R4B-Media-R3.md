@@ -15,11 +15,11 @@
 | Media.partOf | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.partOf |
 | Media.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.status |
 | Media.type | UseElementSameName | Media.type |
-| Media.modality | UseElementSameName | Media.subtype |
+| Media.modality | UseElementRenamed | Media.subtype |
 | Media.view | UseElementSameName | Media.view |
 | Media.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.subject |
 | Media.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.encounter |
-| Media.created[x] | UseElementSameName | Media.occurrence[x] |
+| Media.created[x] | UseElementRenamed | Media.occurrence[x] |
 | Media.issued | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.issued |
 | Media.operator | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Media.operator |
 | Media.reasonCode | UseElementSameName | Media.reasonCode |

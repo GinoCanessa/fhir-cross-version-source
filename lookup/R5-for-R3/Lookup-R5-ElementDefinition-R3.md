@@ -79,7 +79,7 @@
 | ElementDefinition.binding.extension | UseElementSameName | ElementDefinition.binding.extension |
 | ElementDefinition.binding.strength | UseElementSameName | ElementDefinition.binding.strength |
 | ElementDefinition.binding.description | UseElementSameName | ElementDefinition.binding.description |
-| ElementDefinition.binding.valueSet | UseElementSameName | ElementDefinition.binding.valueSet[x] |
+| ElementDefinition.binding.valueSet | UseElementRenamed | ElementDefinition.binding.valueSet[x] |
 | ElementDefinition.binding.additional | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional |
 | ElementDefinition.binding.additional.id | UseExtensionFromAncestor | - |
 | ElementDefinition.binding.additional.extension | UseExtensionFromAncestor | - |

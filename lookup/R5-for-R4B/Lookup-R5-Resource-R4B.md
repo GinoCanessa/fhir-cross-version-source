@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Resource.id | UseElementRenamed | Resource.id |
-| Resource.meta | UseElementRenamed | Resource.meta |
-| Resource.implicitRules | UseElementRenamed | Resource.implicitRules |
-| Resource.language | UseElementRenamed | Resource.language |
+| Resource.id | UseElementSameName | Resource.id |
+| Resource.meta | UseElementSameName | Resource.meta |
+| Resource.implicitRules | UseElementSameName | Resource.implicitRules |
+| Resource.language | UseElementSameName | Resource.language |

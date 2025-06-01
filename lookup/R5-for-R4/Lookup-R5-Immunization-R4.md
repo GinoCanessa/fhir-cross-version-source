@@ -60,5 +60,5 @@
 | Immunization.protocolApplied.series | UseElementSameName | Immunization.protocolApplied.series |
 | Immunization.protocolApplied.authority | UseElementSameName | Immunization.protocolApplied.authority |
 | Immunization.protocolApplied.targetDisease | UseElementSameName | Immunization.protocolApplied.targetDisease |
-| Immunization.protocolApplied.doseNumber | UseElementSameName | Immunization.protocolApplied.doseNumber[x] |
-| Immunization.protocolApplied.seriesDoses | UseElementSameName | Immunization.protocolApplied.seriesDoses[x] |
+| Immunization.protocolApplied.doseNumber | UseElementRenamed | Immunization.protocolApplied.doseNumber[x] |
+| Immunization.protocolApplied.seriesDoses | UseElementRenamed | Immunization.protocolApplied.seriesDoses[x] |

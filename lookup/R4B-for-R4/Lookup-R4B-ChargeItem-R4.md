@@ -17,7 +17,7 @@
 | ChargeItem.partOf | UseElementSameName | ChargeItem.partOf |
 | ChargeItem.code | UseElementSameName | ChargeItem.code |
 | ChargeItem.subject | UseElementSameName | ChargeItem.subject |
-| ChargeItem.context | UseElementRenamed | ChargeItem.context |
+| ChargeItem.context | UseElementSameName | ChargeItem.context |
 | ChargeItem.occurrence[x] | UseElementSameName | ChargeItem.occurrence[x] |
 | ChargeItem.performer | UseElementSameName | ChargeItem.performer |
 | ChargeItem.performer.id | UseElementSameName | ChargeItem.performer.id |
@@ -30,14 +30,14 @@
 | ChargeItem.costCenter | UseElementSameName | ChargeItem.costCenter |
 | ChargeItem.quantity | UseElementSameName | ChargeItem.quantity |
 | ChargeItem.bodysite | UseElementSameName | ChargeItem.bodysite |
-| ChargeItem.factorOverride | UseElementRenamed | ChargeItem.factorOverride |
-| ChargeItem.priceOverride | UseElementRenamed | ChargeItem.priceOverride |
+| ChargeItem.factorOverride | UseElementSameName | ChargeItem.factorOverride |
+| ChargeItem.priceOverride | UseElementSameName | ChargeItem.priceOverride |
 | ChargeItem.overrideReason | UseElementSameName | ChargeItem.overrideReason |
 | ChargeItem.enterer | UseElementSameName | ChargeItem.enterer |
 | ChargeItem.enteredDate | UseElementSameName | ChargeItem.enteredDate |
 | ChargeItem.reason | UseElementSameName | ChargeItem.reason |
 | ChargeItem.service | UseElementSameName | ChargeItem.service |
-| ChargeItem.product[x] | UseElementRenamed | ChargeItem.product[x] |
+| ChargeItem.product[x] | UseElementSameName | ChargeItem.product[x] |
 | ChargeItem.account | UseElementSameName | ChargeItem.account |
 | ChargeItem.note | UseElementSameName | ChargeItem.note |
 | ChargeItem.supportingInformation | UseElementSameName | ChargeItem.supportingInformation |

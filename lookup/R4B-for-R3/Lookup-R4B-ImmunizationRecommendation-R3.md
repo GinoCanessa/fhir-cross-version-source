@@ -12,7 +12,7 @@
 | ImmunizationRecommendation.modifierExtension | UseElementSameName | ImmunizationRecommendation.modifierExtension |
 | ImmunizationRecommendation.identifier | UseElementSameName | ImmunizationRecommendation.identifier |
 | ImmunizationRecommendation.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImmunizationRecommendation.patient |
-| ImmunizationRecommendation.date | UseElementSameName | ImmunizationRecommendation.recommendation.date |
+| ImmunizationRecommendation.date | UseElementRenamed | ImmunizationRecommendation.recommendation.date |
 | ImmunizationRecommendation.authority | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImmunizationRecommendation.authority |
 | ImmunizationRecommendation.recommendation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ImmunizationRecommendation.recommendation |
 | ImmunizationRecommendation.recommendation.id | UseExtensionFromAncestor | - |

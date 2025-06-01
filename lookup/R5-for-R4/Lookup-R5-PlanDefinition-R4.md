@@ -112,9 +112,9 @@
 | PlanDefinition.action.relatedAction.id | UseElementSameName | PlanDefinition.action.relatedAction.id |
 | PlanDefinition.action.relatedAction.extension | UseElementSameName | PlanDefinition.action.relatedAction.extension |
 | PlanDefinition.action.relatedAction.modifierExtension | UseElementSameName | PlanDefinition.action.relatedAction.modifierExtension |
-| PlanDefinition.action.relatedAction.targetId | UseElementSameName | PlanDefinition.action.relatedAction.actionId |
+| PlanDefinition.action.relatedAction.targetId | UseElementRenamed | PlanDefinition.action.relatedAction.actionId |
 | PlanDefinition.action.relatedAction.relationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
-| PlanDefinition.action.relatedAction.endRelationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
+| PlanDefinition.action.relatedAction.endRelationship | UseElementRenamed | PlanDefinition.action.relatedAction.relationship |
 | PlanDefinition.action.relatedAction.offset[x] | UseElementSameName | PlanDefinition.action.relatedAction.offset[x] |
 | PlanDefinition.action.timing[x] | UseElementSameName | PlanDefinition.action.timing[x] |
 | PlanDefinition.action.location | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.action.location |

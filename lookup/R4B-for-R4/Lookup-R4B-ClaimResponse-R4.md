@@ -38,7 +38,7 @@
 | ClaimResponse.item.adjudication.category | UseElementSameName | ClaimResponse.item.adjudication.category |
 | ClaimResponse.item.adjudication.reason | UseElementSameName | ClaimResponse.item.adjudication.reason |
 | ClaimResponse.item.adjudication.amount | UseElementSameName | ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.value | UseElementRenamed | ClaimResponse.item.adjudication.value |
+| ClaimResponse.item.adjudication.value | UseElementSameName | ClaimResponse.item.adjudication.value |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |
@@ -71,7 +71,7 @@
 | ClaimResponse.addItem.factor | UseElementSameName | ClaimResponse.addItem.factor |
 | ClaimResponse.addItem.net | UseElementSameName | ClaimResponse.addItem.net |
 | ClaimResponse.addItem.bodySite | UseElementSameName | ClaimResponse.addItem.bodySite |
-| ClaimResponse.addItem.subSite | UseElementRenamed | ClaimResponse.addItem.subSite |
+| ClaimResponse.addItem.subSite | UseElementSameName | ClaimResponse.addItem.subSite |
 | ClaimResponse.addItem.noteNumber | UseElementSameName | ClaimResponse.addItem.noteNumber |
 | ClaimResponse.addItem.adjudication | UseElementSameName | ClaimResponse.addItem.adjudication |
 | ClaimResponse.addItem.detail | UseElementSameName | ClaimResponse.addItem.detail |

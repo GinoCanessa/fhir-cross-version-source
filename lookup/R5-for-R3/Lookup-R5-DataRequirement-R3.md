@@ -13,8 +13,8 @@
 | DataRequirement.codeFilter.extension | UseElementSameName | DataRequirement.codeFilter.extension |
 | DataRequirement.codeFilter.path | UseElementSameName | DataRequirement.codeFilter.path |
 | DataRequirement.codeFilter.searchParam | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DataRequirement.codeFilter.searchParam |
-| DataRequirement.codeFilter.valueSet | UseElementSameName | DataRequirement.codeFilter.valueSet[x] |
-| DataRequirement.codeFilter.code | UseElementSameName | DataRequirement.codeFilter.valueCoding |
+| DataRequirement.codeFilter.valueSet | UseElementRenamed | DataRequirement.codeFilter.valueSet[x] |
+| DataRequirement.codeFilter.code | UseElementRenamed | DataRequirement.codeFilter.valueCoding |
 | DataRequirement.dateFilter | UseElementSameName | DataRequirement.dateFilter |
 | DataRequirement.dateFilter.id | UseElementSameName | DataRequirement.dateFilter.id |
 | DataRequirement.dateFilter.extension | UseElementSameName | DataRequirement.dateFilter.extension |

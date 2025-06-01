@@ -20,5 +20,5 @@
 | OrganizationAffiliation.specialty | UseElementSameName | OrganizationAffiliation.specialty |
 | OrganizationAffiliation.location | UseElementSameName | OrganizationAffiliation.location |
 | OrganizationAffiliation.healthcareService | UseElementSameName | OrganizationAffiliation.healthcareService |
-| OrganizationAffiliation.telecom | UseElementRenamed | OrganizationAffiliation.telecom |
+| OrganizationAffiliation.telecom | UseElementSameName | OrganizationAffiliation.telecom |
 | OrganizationAffiliation.endpoint | UseElementSameName | OrganizationAffiliation.endpoint |

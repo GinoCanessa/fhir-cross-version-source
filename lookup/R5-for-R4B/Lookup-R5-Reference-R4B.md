@@ -2,9 +2,9 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Reference.id | UseElementRenamed | Reference.id |
-| Reference.extension | UseElementRenamed | Reference.extension |
-| Reference.reference | UseElementRenamed | Reference.reference |
-| Reference.type | UseElementRenamed | Reference.type |
-| Reference.identifier | UseElementRenamed | Reference.identifier |
-| Reference.display | UseElementRenamed | Reference.display |
+| Reference.id | UseElementSameName | Reference.id |
+| Reference.extension | UseElementSameName | Reference.extension |
+| Reference.reference | UseElementSameName | Reference.reference |
+| Reference.type | UseElementSameName | Reference.type |
+| Reference.identifier | UseElementSameName | Reference.identifier |
+| Reference.display | UseElementSameName | Reference.display |

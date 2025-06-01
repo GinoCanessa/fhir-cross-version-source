@@ -17,7 +17,7 @@
 | PaymentNotice.created | UseElementSameName | PaymentNotice.created |
 | PaymentNotice.reporter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentNotice.reporter |
 | PaymentNotice.payment | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentNotice.payment |
-| PaymentNotice.paymentDate | UseElementSameName | PaymentNotice.statusDate |
+| PaymentNotice.paymentDate | UseElementRenamed | PaymentNotice.statusDate |
 | PaymentNotice.payee | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentNotice.payee |
 | PaymentNotice.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentNotice.recipient |
 | PaymentNotice.amount | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentNotice.amount |

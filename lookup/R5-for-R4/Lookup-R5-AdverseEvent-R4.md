@@ -14,13 +14,13 @@
 | AdverseEvent.status | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.status |
 | AdverseEvent.actuality | UseElementSameName | AdverseEvent.actuality |
 | AdverseEvent.category | UseElementSameName | AdverseEvent.category |
-| AdverseEvent.code | UseElementSameName | AdverseEvent.event |
+| AdverseEvent.code | UseElementRenamed | AdverseEvent.event |
 | AdverseEvent.subject | UseElementSameName | AdverseEvent.subject |
 | AdverseEvent.encounter | UseElementSameName | AdverseEvent.encounter |
 | AdverseEvent.occurrence[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence |
 | AdverseEvent.detected | UseElementSameName | AdverseEvent.detected |
 | AdverseEvent.recordedDate | UseElementSameName | AdverseEvent.recordedDate |
-| AdverseEvent.resultingEffect | UseElementSameName | AdverseEvent.resultingCondition |
+| AdverseEvent.resultingEffect | UseElementRenamed | AdverseEvent.resultingCondition |
 | AdverseEvent.location | UseElementSameName | AdverseEvent.location |
 | AdverseEvent.seriousness | UseElementSameName | AdverseEvent.seriousness |
 | AdverseEvent.outcome | UseElementSameName | AdverseEvent.outcome |
@@ -42,7 +42,7 @@
 | AdverseEvent.suspectEntity.causality.id | UseElementSameName | AdverseEvent.suspectEntity.causality.id |
 | AdverseEvent.suspectEntity.causality.extension | UseElementSameName | AdverseEvent.suspectEntity.causality.extension |
 | AdverseEvent.suspectEntity.causality.modifierExtension | UseElementSameName | AdverseEvent.suspectEntity.causality.modifierExtension |
-| AdverseEvent.suspectEntity.causality.assessmentMethod | UseElementSameName | AdverseEvent.suspectEntity.causality.assessment |
+| AdverseEvent.suspectEntity.causality.assessmentMethod | UseElementRenamed | AdverseEvent.suspectEntity.causality.assessment |
 | AdverseEvent.suspectEntity.causality.entityRelatedness | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.entityRelatedness |
 | AdverseEvent.suspectEntity.causality.author | UseElementSameName | AdverseEvent.suspectEntity.causality.author |
 | AdverseEvent.contributingFactor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.contributingFactor |

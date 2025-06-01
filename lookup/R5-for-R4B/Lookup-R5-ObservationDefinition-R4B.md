@@ -2,16 +2,16 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| ObservationDefinition.id | UseElementRenamed | ObservationDefinition.id |
-| ObservationDefinition.meta | UseElementRenamed | ObservationDefinition.meta |
-| ObservationDefinition.implicitRules | UseElementRenamed | ObservationDefinition.implicitRules |
-| ObservationDefinition.language | UseElementRenamed | ObservationDefinition.language |
-| ObservationDefinition.text | UseElementRenamed | ObservationDefinition.text |
-| ObservationDefinition.contained | UseElementRenamed | ObservationDefinition.contained |
-| ObservationDefinition.extension | UseElementRenamed | ObservationDefinition.extension |
-| ObservationDefinition.modifierExtension | UseElementRenamed | ObservationDefinition.modifierExtension |
+| ObservationDefinition.id | UseElementSameName | ObservationDefinition.id |
+| ObservationDefinition.meta | UseElementSameName | ObservationDefinition.meta |
+| ObservationDefinition.implicitRules | UseElementSameName | ObservationDefinition.implicitRules |
+| ObservationDefinition.language | UseElementSameName | ObservationDefinition.language |
+| ObservationDefinition.text | UseElementSameName | ObservationDefinition.text |
+| ObservationDefinition.contained | UseElementSameName | ObservationDefinition.contained |
+| ObservationDefinition.extension | UseElementSameName | ObservationDefinition.extension |
+| ObservationDefinition.modifierExtension | UseElementSameName | ObservationDefinition.modifierExtension |
 | ObservationDefinition.url | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.url |
-| ObservationDefinition.identifier | UseElementRenamed | ObservationDefinition.identifier |
+| ObservationDefinition.identifier | UseElementSameName | ObservationDefinition.identifier |
 | ObservationDefinition.version | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.version |
 | ObservationDefinition.versionAlgorithm[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.versionAlgorithm |
 | ObservationDefinition.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.name |
@@ -34,15 +34,15 @@
 | ObservationDefinition.derivedFromUri | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.derivedFromUri |
 | ObservationDefinition.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.subject |
 | ObservationDefinition.performerType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.performerType |
-| ObservationDefinition.category | UseElementRenamed | ObservationDefinition.category |
-| ObservationDefinition.code | UseElementRenamed | ObservationDefinition.code |
-| ObservationDefinition.permittedDataType | UseElementRenamed | ObservationDefinition.permittedDataType |
-| ObservationDefinition.multipleResultsAllowed | UseElementRenamed | ObservationDefinition.multipleResultsAllowed |
+| ObservationDefinition.category | UseElementSameName | ObservationDefinition.category |
+| ObservationDefinition.code | UseElementSameName | ObservationDefinition.code |
+| ObservationDefinition.permittedDataType | UseElementSameName | ObservationDefinition.permittedDataType |
+| ObservationDefinition.multipleResultsAllowed | UseElementSameName | ObservationDefinition.multipleResultsAllowed |
 | ObservationDefinition.bodySite | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.bodySite |
-| ObservationDefinition.method | UseElementRenamed | ObservationDefinition.method |
+| ObservationDefinition.method | UseElementSameName | ObservationDefinition.method |
 | ObservationDefinition.specimen | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.specimen |
 | ObservationDefinition.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.device |
-| ObservationDefinition.preferredReportName | UseElementRenamed | ObservationDefinition.preferredReportName |
+| ObservationDefinition.preferredReportName | UseElementSameName | ObservationDefinition.preferredReportName |
 | ObservationDefinition.permittedUnit | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.permittedUnit |
 | ObservationDefinition.qualifiedValue | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.qualifiedValue |
 | ObservationDefinition.qualifiedValue.id | UseExtensionFromAncestor | - |

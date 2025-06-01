@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Ratio.id | UseElementRenamed | Ratio.id |
-| Ratio.extension | UseElementRenamed | Ratio.extension |
-| Ratio.numerator | UseElementRenamed | Ratio.numerator |
-| Ratio.denominator | UseElementRenamed | Ratio.denominator |
+| Ratio.id | UseElementSameName | Ratio.id |
+| Ratio.extension | UseElementSameName | Ratio.extension |
+| Ratio.numerator | UseElementSameName | Ratio.numerator |
+| Ratio.denominator | UseElementSameName | Ratio.denominator |

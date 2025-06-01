@@ -20,7 +20,7 @@
 | NamingSystem.type | UseElementSameName | NamingSystem.type |
 | NamingSystem.description | UseElementSameName | NamingSystem.description |
 | NamingSystem.useContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-NamingSystem.useContext |
-| NamingSystem.jurisdiction | UseElementSameName | NamingSystem.useContext |
+| NamingSystem.jurisdiction | UseElementRenamed | NamingSystem.useContext |
 | NamingSystem.usage | UseElementSameName | NamingSystem.usage |
 | NamingSystem.uniqueId | UseElementSameName | NamingSystem.uniqueId |
 | NamingSystem.uniqueId.id | UseElementSameName | NamingSystem.uniqueId.id |

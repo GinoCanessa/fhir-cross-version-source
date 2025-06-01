@@ -26,7 +26,7 @@
 | Procedure.performer.id | UseElementSameName | Procedure.performer.id |
 | Procedure.performer.extension | UseElementSameName | Procedure.performer.extension |
 | Procedure.performer.modifierExtension | UseElementSameName | Procedure.performer.modifierExtension |
-| Procedure.performer.role | UseElementRenamed | Procedure.performer.role |
+| Procedure.performer.role | UseElementSameName | Procedure.performer.role |
 | Procedure.performer.actor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.performer.actor |
 | Procedure.performer.onBehalfOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.performer.onBehalfOf |
 | Procedure.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.location |
@@ -38,7 +38,7 @@
 | Procedure.complication | UseElementSameName | Procedure.complication |
 | Procedure.complicationDetail | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.complicationDetail |
 | Procedure.followUp | UseElementSameName | Procedure.followUp |
-| Procedure.note | UseElementSameName | Procedure.notes |
+| Procedure.note | UseElementRenamed | Procedure.notes |
 | Procedure.focalDevice | UseElementSameName | Procedure.focalDevice |
 | Procedure.focalDevice.id | UseElementSameName | Procedure.focalDevice.id |
 | Procedure.focalDevice.extension | UseElementSameName | Procedure.focalDevice.extension |

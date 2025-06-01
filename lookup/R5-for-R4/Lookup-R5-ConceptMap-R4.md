@@ -53,8 +53,8 @@
 | ConceptMap.additionalAttribute.uri | UseExtensionFromAncestor | - |
 | ConceptMap.additionalAttribute.description | UseExtensionFromAncestor | - |
 | ConceptMap.additionalAttribute.type | UseExtensionFromAncestor | - |
-| ConceptMap.sourceScope[x] | UseElementSameName | ConceptMap.source[x] |
-| ConceptMap.targetScope[x] | UseElementSameName | ConceptMap.target[x] |
+| ConceptMap.sourceScope[x] | UseElementRenamed | ConceptMap.source[x] |
+| ConceptMap.targetScope[x] | UseElementRenamed | ConceptMap.target[x] |
 | ConceptMap.group | UseElementSameName | ConceptMap.group |
 | ConceptMap.group.id | UseElementSameName | ConceptMap.group.id |
 | ConceptMap.group.extension | UseElementSameName | ConceptMap.group.extension |
@@ -101,4 +101,4 @@
 | ConceptMap.group.unmapped.display | UseElementSameName | ConceptMap.group.unmapped.display |
 | ConceptMap.group.unmapped.valueSet | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.valueSet |
 | ConceptMap.group.unmapped.relationship | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.unmapped.relationship |
-| ConceptMap.group.unmapped.otherMap | UseElementSameName | ConceptMap.group.unmapped.url |
+| ConceptMap.group.unmapped.otherMap | UseElementRenamed | ConceptMap.group.unmapped.url |

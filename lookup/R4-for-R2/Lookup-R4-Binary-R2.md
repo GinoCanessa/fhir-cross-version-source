@@ -8,4 +8,4 @@
 | Binary.language | UseElementSameName | Binary.language |
 | Binary.contentType | UseElementSameName | Binary.contentType |
 | Binary.securityContext | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Binary.securityContext |
-| Binary.data | UseElementSameName | Binary.content |
+| Binary.data | UseElementRenamed | Binary.content |

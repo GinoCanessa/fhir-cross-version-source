@@ -31,4 +31,4 @@
 | Account.guarantor.party | UseElementSameName | Account.guarantor.party |
 | Account.guarantor.onHold | UseElementSameName | Account.guarantor.onHold |
 | Account.guarantor.period | UseElementSameName | Account.guarantor.period |
-| Account.partOf | UseElementRenamed | Account.partOf |
+| Account.partOf | UseElementSameName | Account.partOf |

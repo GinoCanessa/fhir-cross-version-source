@@ -57,7 +57,7 @@
 | Claim.careTeam.provider | UseElementSameName | Claim.careTeam.provider |
 | Claim.careTeam.responsible | UseElementSameName | Claim.careTeam.responsible |
 | Claim.careTeam.role | UseElementSameName | Claim.careTeam.role |
-| Claim.careTeam.specialty | UseElementSameName | Claim.careTeam.qualification |
+| Claim.careTeam.specialty | UseElementRenamed | Claim.careTeam.qualification |
 | Claim.supportingInfo | UseElementSameName | Claim.supportingInfo |
 | Claim.supportingInfo.id | UseElementSameName | Claim.supportingInfo.id |
 | Claim.supportingInfo.extension | UseElementSameName | Claim.supportingInfo.extension |

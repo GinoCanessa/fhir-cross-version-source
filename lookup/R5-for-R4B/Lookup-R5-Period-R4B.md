@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Period.id | UseElementRenamed | Period.id |
-| Period.extension | UseElementRenamed | Period.extension |
-| Period.start | UseElementRenamed | Period.start |
-| Period.end | UseElementRenamed | Period.end |
+| Period.id | UseElementSameName | Period.id |
+| Period.extension | UseElementSameName | Period.extension |
+| Period.start | UseElementSameName | Period.start |
+| Period.end | UseElementSameName | Period.end |

@@ -13,11 +13,11 @@
 | HealthcareService.identifier | UseElementSameName | HealthcareService.identifier |
 | HealthcareService.active | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.active |
 | HealthcareService.providedBy | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.providedBy |
-| HealthcareService.category | UseElementSameName | HealthcareService.serviceCategory |
+| HealthcareService.category | UseElementRenamed | HealthcareService.serviceCategory |
 | HealthcareService.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.type |
-| HealthcareService.specialty | UseElementSameName | HealthcareService.serviceType.specialty |
+| HealthcareService.specialty | UseElementRenamed | HealthcareService.serviceType.specialty |
 | HealthcareService.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.location |
-| HealthcareService.name | UseElementSameName | HealthcareService.serviceName |
+| HealthcareService.name | UseElementRenamed | HealthcareService.serviceName |
 | HealthcareService.comment | UseElementSameName | HealthcareService.comment |
 | HealthcareService.extraDetails | UseElementSameName | HealthcareService.extraDetails |
 | HealthcareService.photo | UseElementSameName | HealthcareService.photo |
@@ -25,8 +25,8 @@
 | HealthcareService.coverageArea | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |
 | HealthcareService.eligibility | UseElementSameName | HealthcareService.eligibility |
-| HealthcareService.eligibilityNote | UseElementRenamed | HealthcareService.eligibilityNote |
-| HealthcareService.programName | UseElementRenamed | HealthcareService.programName |
+| HealthcareService.eligibilityNote | UseElementSameName | HealthcareService.eligibilityNote |
+| HealthcareService.programName | UseElementSameName | HealthcareService.programName |
 | HealthcareService.characteristic | UseElementSameName | HealthcareService.characteristic |
 | HealthcareService.referralMethod | UseElementSameName | HealthcareService.referralMethod |
 | HealthcareService.appointmentRequired | UseElementSameName | HealthcareService.appointmentRequired |

@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Money.id | UseElementRenamed | Money.id |
-| Money.extension | UseElementRenamed | Money.extension |
-| Money.value | UseElementRenamed | Money.value |
-| Money.currency | UseElementRenamed | Money.currency |
+| Money.id | UseElementSameName | Money.id |
+| Money.extension | UseElementSameName | Money.extension |
+| Money.value | UseElementSameName | Money.value |
+| Money.currency | UseElementSameName | Money.currency |

@@ -2,17 +2,17 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Task.id | UseElementSameName | ProcessRequest.id |
+| Task.id | UseElementRenamed | ProcessRequest.id |
 | Task.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.meta |
-| Task.implicitRules | UseElementSameName | ProcessRequest.implicitRules |
-| Task.language | UseElementSameName | ProcessRequest.language |
-| Task.text | UseElementSameName | ProcessRequest.text |
-| Task.contained | UseElementSameName | ProcessRequest.contained |
-| Task.extension | UseElementSameName | ProcessRequest.extension |
-| Task.modifierExtension | UseElementSameName | ProcessRequest.modifierExtension |
-| Task.identifier | UseElementSameName | ProcessRequest.identifier |
-| Task.instantiatesCanonical | UseElementSameName | Task.definition[x] |
-| Task.instantiatesUri | UseElementSameName | Task.definition[x] |
+| Task.implicitRules | UseElementRenamed | ProcessRequest.implicitRules |
+| Task.language | UseElementRenamed | ProcessRequest.language |
+| Task.text | UseElementRenamed | ProcessRequest.text |
+| Task.contained | UseElementRenamed | ProcessRequest.contained |
+| Task.extension | UseElementRenamed | ProcessRequest.extension |
+| Task.modifierExtension | UseElementRenamed | ProcessRequest.modifierExtension |
+| Task.identifier | UseElementRenamed | ProcessRequest.identifier |
+| Task.instantiatesCanonical | UseElementRenamed | Task.definition[x] |
+| Task.instantiatesUri | UseElementRenamed | Task.definition[x] |
 | Task.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.basedOn |
 | Task.groupIdentifier | UseElementSameName | Task.groupIdentifier |
 | Task.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.partOf |

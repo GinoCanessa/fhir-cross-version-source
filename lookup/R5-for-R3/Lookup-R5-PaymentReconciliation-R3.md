@@ -53,7 +53,7 @@
 | PaymentReconciliation.allocation.responsible | UseExtensionFromAncestor | - |
 | PaymentReconciliation.allocation.payee | UseExtensionFromAncestor | - |
 | PaymentReconciliation.allocation.amount | UseExtensionFromAncestor | - |
-| PaymentReconciliation.formCode | UseElementSameName | PaymentReconciliation.form |
+| PaymentReconciliation.formCode | UseElementRenamed | PaymentReconciliation.form |
 | PaymentReconciliation.processNote | UseElementSameName | PaymentReconciliation.processNote |
 | PaymentReconciliation.processNote.id | UseElementSameName | PaymentReconciliation.processNote.id |
 | PaymentReconciliation.processNote.extension | UseElementSameName | PaymentReconciliation.processNote.extension |

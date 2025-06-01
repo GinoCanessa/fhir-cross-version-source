@@ -13,7 +13,7 @@
 | Media.identifier | UseElementSameName | Media.identifier |
 | Media.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.basedOn |
 | Media.type | UseElementSameName | Media.type |
-| Media.subtype | UseElementRenamed | Media.subtype |
+| Media.subtype | UseElementSameName | Media.subtype |
 | Media.view | UseElementSameName | Media.view |
 | Media.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.subject |
 | Media.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Media.context |

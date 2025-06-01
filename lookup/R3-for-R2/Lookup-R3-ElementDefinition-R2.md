@@ -6,7 +6,7 @@
 | ElementDefinition.extension | UseElementSameName | ElementDefinition.extension |
 | ElementDefinition.path | UseElementSameName | ElementDefinition.path |
 | ElementDefinition.representation | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ElementDefinition.representation |
-| ElementDefinition.sliceName | UseElementSameName | ElementDefinition.name |
+| ElementDefinition.sliceName | UseElementRenamed | ElementDefinition.name |
 | ElementDefinition.label | UseElementSameName | ElementDefinition.label |
 | ElementDefinition.code | UseElementSameName | ElementDefinition.code |
 | ElementDefinition.slicing | UseElementSameName | ElementDefinition.slicing |
@@ -22,7 +22,7 @@
 | ElementDefinition.slicing.rules | UseElementSameName | ElementDefinition.slicing.rules |
 | ElementDefinition.short | UseElementSameName | ElementDefinition.short |
 | ElementDefinition.definition | UseElementSameName | ElementDefinition.definition |
-| ElementDefinition.comment | UseElementSameName | ElementDefinition.comments |
+| ElementDefinition.comment | UseElementRenamed | ElementDefinition.comments |
 | ElementDefinition.requirements | UseElementSameName | ElementDefinition.requirements |
 | ElementDefinition.alias | UseElementSameName | ElementDefinition.alias |
 | ElementDefinition.min | UseElementSameName | ElementDefinition.min |
@@ -33,13 +33,13 @@
 | ElementDefinition.base.path | UseElementSameName | ElementDefinition.base.path |
 | ElementDefinition.base.min | UseElementSameName | ElementDefinition.base.min |
 | ElementDefinition.base.max | UseElementSameName | ElementDefinition.base.max |
-| ElementDefinition.contentReference | UseElementSameName | ElementDefinition.nameReference |
+| ElementDefinition.contentReference | UseElementRenamed | ElementDefinition.nameReference |
 | ElementDefinition.type | UseElementSameName | ElementDefinition.type |
 | ElementDefinition.type.id | UseElementSameName | ElementDefinition.type.id |
 | ElementDefinition.type.extension | UseElementSameName | ElementDefinition.type.extension |
 | ElementDefinition.type.code | UseElementSameName | ElementDefinition.type.code |
 | ElementDefinition.type.profile | UseElementSameName | ElementDefinition.type.profile |
-| ElementDefinition.type.targetProfile | UseElementSameName | ElementDefinition.type.profile |
+| ElementDefinition.type.targetProfile | UseElementRenamed | ElementDefinition.type.profile |
 | ElementDefinition.type.aggregation | UseElementSameName | ElementDefinition.type.aggregation |
 | ElementDefinition.type.versioning | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ElementDefinition.type.versioning |
 | ElementDefinition.defaultValue[x] | UseElementSameName | ElementDefinition.defaultValue[x] |

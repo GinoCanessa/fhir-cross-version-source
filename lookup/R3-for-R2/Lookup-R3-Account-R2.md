@@ -17,7 +17,7 @@
 | Account.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Account.subject |
 | Account.period | UseElementRenamed | Account.activePeriod |
 | Account.active | UseElementRenamed | Account.activePeriod |
-| Account.balance | UseElementRenamed | Account.balance |
+| Account.balance | UseElementSameName | Account.balance |
 | Account.coverage | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Account.coverage |
 | Account.coverage.id | UseExtensionFromAncestor | - |
 | Account.coverage.extension | UseExtensionFromAncestor | - |

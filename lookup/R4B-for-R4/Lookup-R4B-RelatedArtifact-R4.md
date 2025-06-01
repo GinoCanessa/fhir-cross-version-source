@@ -8,6 +8,6 @@
 | RelatedArtifact.label | UseElementSameName | RelatedArtifact.label |
 | RelatedArtifact.display | UseElementSameName | RelatedArtifact.display |
 | RelatedArtifact.citation | UseElementSameName | RelatedArtifact.citation |
-| RelatedArtifact.url | UseElementRenamed | RelatedArtifact.url |
+| RelatedArtifact.url | UseElementSameName | RelatedArtifact.url |
 | RelatedArtifact.document | UseElementSameName | RelatedArtifact.document |
 | RelatedArtifact.resource | UseElementSameName | RelatedArtifact.resource |

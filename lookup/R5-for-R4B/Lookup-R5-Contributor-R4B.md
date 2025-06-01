@@ -2,8 +2,8 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Contributor.id | UseElementRenamed | Contributor.id |
-| Contributor.extension | UseElementRenamed | Contributor.extension |
-| Contributor.type | UseElementRenamed | Contributor.type |
-| Contributor.name | UseElementRenamed | Contributor.name |
-| Contributor.contact | UseElementRenamed | Contributor.contact |
+| Contributor.id | UseElementSameName | Contributor.id |
+| Contributor.extension | UseElementSameName | Contributor.extension |
+| Contributor.type | UseElementSameName | Contributor.type |
+| Contributor.name | UseElementSameName | Contributor.name |
+| Contributor.contact | UseElementSameName | Contributor.contact |

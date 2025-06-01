@@ -20,7 +20,7 @@
 | AllergyIntolerance.patient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.patient |
 | AllergyIntolerance.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.encounter |
 | AllergyIntolerance.onset[x] | UseElementSameName | AllergyIntolerance.onset[x] |
-| AllergyIntolerance.recordedDate | UseElementSameName | AllergyIntolerance.assertedDate |
+| AllergyIntolerance.recordedDate | UseElementRenamed | AllergyIntolerance.assertedDate |
 | AllergyIntolerance.recorder | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.recorder |
 | AllergyIntolerance.asserter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-AllergyIntolerance.asserter |
 | AllergyIntolerance.lastOccurrence | UseElementSameName | AllergyIntolerance.lastOccurrence |

@@ -16,7 +16,7 @@
 | Procedure.basedOn | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.basedOn |
 | Procedure.partOf | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.partOf |
 | Procedure.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.status |
-| Procedure.statusReason | UseElementSameName | Procedure.notDoneReason |
+| Procedure.statusReason | UseElementRenamed | Procedure.notDoneReason |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
 | Procedure.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.subject |
@@ -28,7 +28,7 @@
 | Procedure.performer.id | UseElementSameName | Procedure.performer.id |
 | Procedure.performer.extension | UseElementSameName | Procedure.performer.extension |
 | Procedure.performer.modifierExtension | UseElementSameName | Procedure.performer.modifierExtension |
-| Procedure.performer.function | UseElementSameName | Procedure.performer.role |
+| Procedure.performer.function | UseElementRenamed | Procedure.performer.role |
 | Procedure.performer.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.performer.actor |
 | Procedure.performer.onBehalfOf | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.performer.onBehalfOf |
 | Procedure.location | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Procedure.location |

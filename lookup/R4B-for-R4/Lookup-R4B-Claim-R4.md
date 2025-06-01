@@ -48,7 +48,7 @@
 | Claim.careTeam.provider | UseElementSameName | Claim.careTeam.provider |
 | Claim.careTeam.responsible | UseElementSameName | Claim.careTeam.responsible |
 | Claim.careTeam.role | UseElementSameName | Claim.careTeam.role |
-| Claim.careTeam.qualification | UseElementRenamed | Claim.careTeam.qualification |
+| Claim.careTeam.qualification | UseElementSameName | Claim.careTeam.qualification |
 | Claim.supportingInfo | UseElementSameName | Claim.supportingInfo |
 | Claim.supportingInfo.id | UseElementSameName | Claim.supportingInfo.id |
 | Claim.supportingInfo.extension | UseElementSameName | Claim.supportingInfo.extension |
@@ -67,7 +67,7 @@
 | Claim.diagnosis.diagnosis[x] | UseElementSameName | Claim.diagnosis.diagnosis[x] |
 | Claim.diagnosis.type | UseElementSameName | Claim.diagnosis.type |
 | Claim.diagnosis.onAdmission | UseElementSameName | Claim.diagnosis.onAdmission |
-| Claim.diagnosis.packageCode | UseElementRenamed | Claim.diagnosis.packageCode |
+| Claim.diagnosis.packageCode | UseElementSameName | Claim.diagnosis.packageCode |
 | Claim.procedure | UseElementSameName | Claim.procedure |
 | Claim.procedure.id | UseElementSameName | Claim.procedure.id |
 | Claim.procedure.extension | UseElementSameName | Claim.procedure.extension |
@@ -117,7 +117,7 @@
 | Claim.item.net | UseElementSameName | Claim.item.net |
 | Claim.item.udi | UseElementSameName | Claim.item.udi |
 | Claim.item.bodySite | UseElementSameName | Claim.item.bodySite |
-| Claim.item.subSite | UseElementRenamed | Claim.item.subSite |
+| Claim.item.subSite | UseElementSameName | Claim.item.subSite |
 | Claim.item.encounter | UseElementSameName | Claim.item.encounter |
 | Claim.item.detail | UseElementSameName | Claim.item.detail |
 | Claim.item.detail.id | UseElementSameName | Claim.item.detail.id |

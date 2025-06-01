@@ -10,9 +10,9 @@
 | DocumentReference.contained | UseElementSameName | DocumentReference.contained |
 | DocumentReference.extension | UseElementSameName | DocumentReference.extension |
 | DocumentReference.modifierExtension | UseElementSameName | DocumentReference.modifierExtension |
-| DocumentReference.identifier | UseElementSameName | DocumentReference.masterIdentifier |
+| DocumentReference.identifier | UseElementRenamed | DocumentReference.masterIdentifier |
 | DocumentReference.version | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version |
-| DocumentReference.basedOn | UseElementSameName | Media.basedOn |
+| DocumentReference.basedOn | UseElementRenamed | Media.basedOn |
 | DocumentReference.status | UseElementSameName | DocumentReference.status |
 | DocumentReference.docStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.docStatus |
 | DocumentReference.modality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.modality |

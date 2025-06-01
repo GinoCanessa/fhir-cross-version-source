@@ -2,6 +2,6 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| BackboneElement.id | UseElementRenamed | BackboneElement.id |
-| BackboneElement.extension | UseElementRenamed | BackboneElement.extension |
-| BackboneElement.modifierExtension | UseElementRenamed | BackboneElement.modifierExtension |
+| BackboneElement.id | UseElementSameName | BackboneElement.id |
+| BackboneElement.extension | UseElementSameName | BackboneElement.extension |
+| BackboneElement.modifierExtension | UseElementSameName | BackboneElement.modifierExtension |

@@ -21,9 +21,9 @@
 | DocumentManifest.source | UseElementSameName | DocumentManifest.source |
 | DocumentManifest.description | UseElementSameName | DocumentManifest.description |
 | DocumentManifest.content | UseElementSameName | DocumentManifest.content |
-| DocumentManifest.content.id | UseElementRenamed | DocumentManifest.content.id |
-| DocumentManifest.content.extension | UseElementRenamed | DocumentManifest.content.extension |
-| DocumentManifest.content.modifierExtension | UseElementRenamed | DocumentManifest.content.modifierExtension |
+| DocumentManifest.content.id | UseElementSameName | DocumentManifest.content.id |
+| DocumentManifest.content.extension | UseElementSameName | DocumentManifest.content.extension |
+| DocumentManifest.content.modifierExtension | UseElementSameName | DocumentManifest.content.modifierExtension |
 | DocumentManifest.content.p[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentManifest.content.p |
 | DocumentManifest.related | UseElementSameName | DocumentManifest.related |
 | DocumentManifest.related.id | UseElementSameName | DocumentManifest.related.id |

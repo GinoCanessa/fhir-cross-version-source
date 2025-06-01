@@ -53,12 +53,12 @@
 | Immunization.reaction.date | UseElementSameName | Immunization.reaction.date |
 | Immunization.reaction.manifestation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reaction.manifestation |
 | Immunization.reaction.reported | UseElementSameName | Immunization.reaction.reported |
-| Immunization.protocolApplied | UseElementSameName | Immunization.vaccinationProtocol |
+| Immunization.protocolApplied | UseElementRenamed | Immunization.vaccinationProtocol |
 | Immunization.protocolApplied.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.id |
 | Immunization.protocolApplied.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.extension |
 | Immunization.protocolApplied.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.modifierExtension |
-| Immunization.protocolApplied.series | UseElementSameName | Immunization.vaccinationProtocol.series |
+| Immunization.protocolApplied.series | UseElementRenamed | Immunization.vaccinationProtocol.series |
 | Immunization.protocolApplied.authority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.authority |
-| Immunization.protocolApplied.targetDisease | UseElementSameName | Immunization.vaccinationProtocol.targetDisease |
+| Immunization.protocolApplied.targetDisease | UseElementRenamed | Immunization.vaccinationProtocol.targetDisease |
 | Immunization.protocolApplied.doseNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.doseNumber |
 | Immunization.protocolApplied.seriesDoses | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.protocolApplied.seriesDoses |

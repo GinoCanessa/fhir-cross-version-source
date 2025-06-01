@@ -17,7 +17,7 @@
 | Appointment.serviceType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.serviceType |
 | Appointment.specialty | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.specialty |
 | Appointment.appointmentType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.appointmentType |
-| Appointment.reasonCode | UseElementSameName | Appointment.reason |
+| Appointment.reasonCode | UseElementRenamed | Appointment.reason |
 | Appointment.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.reasonReference |
 | Appointment.priority | UseElementSameName | Appointment.priority |
 | Appointment.description | UseElementSameName | Appointment.description |

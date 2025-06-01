@@ -2,18 +2,18 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| EnrollmentRequest.id | UseElementRenamed | EnrollmentRequest.id |
-| EnrollmentRequest.meta | UseElementRenamed | EnrollmentRequest.meta |
-| EnrollmentRequest.implicitRules | UseElementRenamed | EnrollmentRequest.implicitRules |
-| EnrollmentRequest.language | UseElementRenamed | EnrollmentRequest.language |
-| EnrollmentRequest.text | UseElementRenamed | EnrollmentRequest.text |
-| EnrollmentRequest.contained | UseElementRenamed | EnrollmentRequest.contained |
-| EnrollmentRequest.extension | UseElementRenamed | EnrollmentRequest.extension |
-| EnrollmentRequest.modifierExtension | UseElementRenamed | EnrollmentRequest.modifierExtension |
-| EnrollmentRequest.identifier | UseElementRenamed | EnrollmentRequest.identifier |
-| EnrollmentRequest.status | UseElementRenamed | EnrollmentRequest.status |
-| EnrollmentRequest.created | UseElementRenamed | EnrollmentRequest.created |
-| EnrollmentRequest.insurer | UseElementRenamed | EnrollmentRequest.insurer |
-| EnrollmentRequest.provider | UseElementRenamed | EnrollmentRequest.provider |
-| EnrollmentRequest.candidate | UseElementRenamed | EnrollmentRequest.candidate |
-| EnrollmentRequest.coverage | UseElementRenamed | EnrollmentRequest.coverage |
+| EnrollmentRequest.id | UseElementSameName | EnrollmentRequest.id |
+| EnrollmentRequest.meta | UseElementSameName | EnrollmentRequest.meta |
+| EnrollmentRequest.implicitRules | UseElementSameName | EnrollmentRequest.implicitRules |
+| EnrollmentRequest.language | UseElementSameName | EnrollmentRequest.language |
+| EnrollmentRequest.text | UseElementSameName | EnrollmentRequest.text |
+| EnrollmentRequest.contained | UseElementSameName | EnrollmentRequest.contained |
+| EnrollmentRequest.extension | UseElementSameName | EnrollmentRequest.extension |
+| EnrollmentRequest.modifierExtension | UseElementSameName | EnrollmentRequest.modifierExtension |
+| EnrollmentRequest.identifier | UseElementSameName | EnrollmentRequest.identifier |
+| EnrollmentRequest.status | UseElementSameName | EnrollmentRequest.status |
+| EnrollmentRequest.created | UseElementSameName | EnrollmentRequest.created |
+| EnrollmentRequest.insurer | UseElementSameName | EnrollmentRequest.insurer |
+| EnrollmentRequest.provider | UseElementSameName | EnrollmentRequest.provider |
+| EnrollmentRequest.candidate | UseElementSameName | EnrollmentRequest.candidate |
+| EnrollmentRequest.coverage | UseElementSameName | EnrollmentRequest.coverage |

@@ -23,7 +23,7 @@
 | MedicationStatement.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.subject |
 | MedicationStatement.derivedFrom | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.derivedFrom |
 | MedicationStatement.taken | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.taken |
-| MedicationStatement.reasonNotTaken | UseElementRenamed | MedicationStatement.reasonNotTaken |
+| MedicationStatement.reasonNotTaken | UseElementSameName | MedicationStatement.reasonNotTaken |
 | MedicationStatement.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.reasonCode |
 | MedicationStatement.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.reasonReference |
 | MedicationStatement.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.note |

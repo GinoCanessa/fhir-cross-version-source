@@ -2,8 +2,8 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Annotation.id | UseElementRenamed | Annotation.id |
-| Annotation.extension | UseElementRenamed | Annotation.extension |
-| Annotation.author[x] | UseElementRenamed | Annotation.author[x] |
-| Annotation.time | UseElementRenamed | Annotation.time |
-| Annotation.text | UseElementRenamed | Annotation.text |
+| Annotation.id | UseElementSameName | Annotation.id |
+| Annotation.extension | UseElementSameName | Annotation.extension |
+| Annotation.author[x] | UseElementSameName | Annotation.author[x] |
+| Annotation.time | UseElementSameName | Annotation.time |
+| Annotation.text | UseElementSameName | Annotation.text |

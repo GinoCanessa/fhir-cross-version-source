@@ -25,7 +25,7 @@
 | CarePlan.encounter | UseElementSameName | CarePlan.encounter |
 | CarePlan.period | UseElementSameName | CarePlan.period |
 | CarePlan.created | UseElementSameName | CarePlan.created |
-| CarePlan.custodian | UseElementSameName | CarePlan.author |
+| CarePlan.custodian | UseElementRenamed | CarePlan.author |
 | CarePlan.contributor | UseElementSameName | CarePlan.contributor |
 | CarePlan.careTeam | UseElementSameName | CarePlan.careTeam |
 | CarePlan.addresses | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.addresses |

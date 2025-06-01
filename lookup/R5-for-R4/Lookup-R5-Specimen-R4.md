@@ -44,7 +44,7 @@
 | Specimen.processing.extension | UseElementSameName | Specimen.processing.extension |
 | Specimen.processing.modifierExtension | UseElementSameName | Specimen.processing.modifierExtension |
 | Specimen.processing.description | UseElementSameName | Specimen.processing.description |
-| Specimen.processing.method | UseElementSameName | Specimen.processing.procedure |
+| Specimen.processing.method | UseElementRenamed | Specimen.processing.procedure |
 | Specimen.processing.additive | UseElementSameName | Specimen.processing.additive |
 | Specimen.processing.time[x] | UseElementSameName | Specimen.processing.time[x] |
 | Specimen.container | UseElementSameName | Specimen.container |

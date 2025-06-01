@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Age.id | UseElementSameName | Quantity.id |
-| Age.extension | UseElementSameName | Quantity.extension |
-| Age.value | UseElementSameName | Quantity.value |
-| Age.comparator | UseElementSameName | Quantity.comparator |
-| Age.unit | UseElementSameName | Quantity.unit |
-| Age.system | UseElementSameName | Quantity.system |
-| Age.code | UseElementSameName | Quantity.code |
+| Age.id | UseElementRenamed | Quantity.id |
+| Age.extension | UseElementRenamed | Quantity.extension |
+| Age.value | UseElementRenamed | Quantity.value |
+| Age.comparator | UseElementRenamed | Quantity.comparator |
+| Age.unit | UseElementRenamed | Quantity.unit |
+| Age.system | UseElementRenamed | Quantity.system |
+| Age.code | UseElementRenamed | Quantity.code |

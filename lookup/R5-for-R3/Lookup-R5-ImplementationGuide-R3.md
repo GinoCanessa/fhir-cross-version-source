@@ -30,11 +30,11 @@
 | ImplementationGuide.packageId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.packageId |
 | ImplementationGuide.license | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.license |
 | ImplementationGuide.fhirVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.fhirVersion |
-| ImplementationGuide.dependsOn | UseElementSameName | ImplementationGuide.dependency |
+| ImplementationGuide.dependsOn | UseElementRenamed | ImplementationGuide.dependency |
 | ImplementationGuide.dependsOn.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.id |
 | ImplementationGuide.dependsOn.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.extension |
 | ImplementationGuide.dependsOn.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.modifierExtension |
-| ImplementationGuide.dependsOn.uri | UseElementSameName | ImplementationGuide.dependency.uri |
+| ImplementationGuide.dependsOn.uri | UseElementRenamed | ImplementationGuide.dependency.uri |
 | ImplementationGuide.dependsOn.packageId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId |
 | ImplementationGuide.dependsOn.version | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version |
 | ImplementationGuide.dependsOn.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.dependsOn.reason |

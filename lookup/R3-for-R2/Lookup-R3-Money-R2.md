@@ -2,9 +2,9 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Money.id | UseElementSameName | Quantity.id |
-| Money.extension | UseElementSameName | Quantity.extension |
-| Money.value | UseElementSameName | Quantity.value |
+| Money.id | UseElementRenamed | Quantity.id |
+| Money.extension | UseElementRenamed | Quantity.extension |
+| Money.value | UseElementRenamed | Quantity.value |
 | Money.comparator | UseElementRenamed | Quantity.comparator |
 | Money.unit | UseElementRenamed | Quantity.unit |
 | Money.system | UseElementRenamed | Quantity.system |

@@ -13,12 +13,12 @@
 | DeviceMetric.identifier | UseElementSameName | DeviceMetric.identifier |
 | DeviceMetric.type | UseElementSameName | DeviceMetric.type |
 | DeviceMetric.unit | UseElementSameName | DeviceMetric.unit |
-| DeviceMetric.source | UseElementRenamed | DeviceMetric.source |
-| DeviceMetric.parent | UseElementRenamed | DeviceMetric.parent |
+| DeviceMetric.source | UseElementSameName | DeviceMetric.source |
+| DeviceMetric.parent | UseElementSameName | DeviceMetric.parent |
 | DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
 | DeviceMetric.color | UseElementSameName | DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |
-| DeviceMetric.measurementPeriod | UseElementRenamed | DeviceMetric.measurementPeriod |
+| DeviceMetric.measurementPeriod | UseElementSameName | DeviceMetric.measurementPeriod |
 | DeviceMetric.calibration | UseElementSameName | DeviceMetric.calibration |
 | DeviceMetric.calibration.id | UseElementSameName | DeviceMetric.calibration.id |
 | DeviceMetric.calibration.extension | UseElementSameName | DeviceMetric.calibration.extension |

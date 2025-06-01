@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| BodyStructure.id | UseElementSameName | BodySite.id |
+| BodyStructure.id | UseElementRenamed | BodySite.id |
 | BodyStructure.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.meta |
-| BodyStructure.implicitRules | UseElementSameName | BodySite.implicitRules |
-| BodyStructure.language | UseElementSameName | BodySite.language |
-| BodyStructure.text | UseElementSameName | BodySite.text |
-| BodyStructure.contained | UseElementSameName | BodySite.contained |
-| BodyStructure.extension | UseElementSameName | BodySite.extension |
-| BodyStructure.modifierExtension | UseElementSameName | BodySite.modifierExtension |
-| BodyStructure.identifier | UseElementSameName | BodySite.identifier |
+| BodyStructure.implicitRules | UseElementRenamed | BodySite.implicitRules |
+| BodyStructure.language | UseElementRenamed | BodySite.language |
+| BodyStructure.text | UseElementRenamed | BodySite.text |
+| BodyStructure.contained | UseElementRenamed | BodySite.contained |
+| BodyStructure.extension | UseElementRenamed | BodySite.extension |
+| BodyStructure.modifierExtension | UseElementRenamed | BodySite.modifierExtension |
+| BodyStructure.identifier | UseElementRenamed | BodySite.identifier |
 | BodyStructure.active | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.active |
 | BodyStructure.morphology | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.morphology |
 | BodyStructure.includedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure |
@@ -35,6 +35,6 @@
 | BodyStructure.includedStructure.spatialReference | UseExtensionFromAncestor | - |
 | BodyStructure.includedStructure.qualifier | UseExtensionFromAncestor | - |
 | BodyStructure.excludedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure |
-| BodyStructure.description | UseElementSameName | BodySite.description |
+| BodyStructure.description | UseElementRenamed | BodySite.description |
 | BodyStructure.image | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.image |
 | BodyStructure.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.patient |

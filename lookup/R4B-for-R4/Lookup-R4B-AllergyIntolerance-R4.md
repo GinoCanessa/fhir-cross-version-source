@@ -21,8 +21,8 @@
 | AllergyIntolerance.encounter | UseElementSameName | AllergyIntolerance.encounter |
 | AllergyIntolerance.onset[x] | UseElementSameName | AllergyIntolerance.onset[x] |
 | AllergyIntolerance.recordedDate | UseElementSameName | AllergyIntolerance.recordedDate |
-| AllergyIntolerance.recorder | UseElementRenamed | AllergyIntolerance.recorder |
-| AllergyIntolerance.asserter | UseElementRenamed | AllergyIntolerance.asserter |
+| AllergyIntolerance.recorder | UseElementSameName | AllergyIntolerance.recorder |
+| AllergyIntolerance.asserter | UseElementSameName | AllergyIntolerance.asserter |
 | AllergyIntolerance.lastOccurrence | UseElementSameName | AllergyIntolerance.lastOccurrence |
 | AllergyIntolerance.note | UseElementSameName | AllergyIntolerance.note |
 | AllergyIntolerance.reaction | UseElementSameName | AllergyIntolerance.reaction |

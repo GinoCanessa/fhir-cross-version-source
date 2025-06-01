@@ -24,7 +24,7 @@
 | ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.subject |
 | ProcedureRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.context |
 | ProcedureRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.occurrence |
-| ProcedureRequest.asNeeded[x] | UseElementRenamed | ProcedureRequest.asNeeded[x] |
+| ProcedureRequest.asNeeded[x] | UseElementSameName | ProcedureRequest.asNeeded[x] |
 | ProcedureRequest.authoredOn | UseElementRenamed | ProcedureRequest.orderedOn |
 | ProcedureRequest.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requester |
 | ProcedureRequest.requester.id | UseExtensionFromAncestor | - |
@@ -38,6 +38,6 @@
 | ProcedureRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.reasonReference |
 | ProcedureRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.supportingInfo |
 | ProcedureRequest.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.specimen |
-| ProcedureRequest.bodySite | UseElementRenamed | ProcedureRequest.bodySite |
+| ProcedureRequest.bodySite | UseElementSameName | ProcedureRequest.bodySite |
 | ProcedureRequest.note | UseElementRenamed | DiagnosticOrder.note |
 | ProcedureRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.relevantHistory |

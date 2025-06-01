@@ -23,9 +23,9 @@
 | ValueSet.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.contact |
 | ValueSet.description | UseElementSameName | ValueSet.description |
 | ValueSet.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.useContext |
-| ValueSet.jurisdiction | UseElementSameName | ValueSet.useContext |
+| ValueSet.jurisdiction | UseElementRenamed | ValueSet.useContext |
 | ValueSet.immutable | UseElementSameName | ValueSet.immutable |
-| ValueSet.purpose | UseElementSameName | ValueSet.requirements |
+| ValueSet.purpose | UseElementRenamed | ValueSet.requirements |
 | ValueSet.copyright | UseElementSameName | ValueSet.copyright |
 | ValueSet.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.copyrightLabel |
 | ValueSet.approvalDate | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.approvalDate |
@@ -41,7 +41,7 @@
 | ValueSet.compose.id | UseElementSameName | ValueSet.compose.id |
 | ValueSet.compose.extension | UseElementSameName | ValueSet.compose.extension |
 | ValueSet.compose.modifierExtension | UseElementSameName | ValueSet.compose.modifierExtension |
-| ValueSet.compose.lockedDate | UseElementSameName | ValueSet.lockedDate |
+| ValueSet.compose.lockedDate | UseElementRenamed | ValueSet.lockedDate |
 | ValueSet.compose.inactive | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ValueSet.compose.inactive |
 | ValueSet.compose.include | UseElementSameName | ValueSet.compose.include |
 | ValueSet.compose.include.id | UseElementSameName | ValueSet.compose.include.id |

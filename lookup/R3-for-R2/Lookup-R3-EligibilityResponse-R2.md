@@ -2,22 +2,22 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| EligibilityResponse.id | UseElementRenamed | EligibilityResponse.id |
-| EligibilityResponse.meta | UseElementRenamed | EligibilityResponse.meta |
-| EligibilityResponse.implicitRules | UseElementRenamed | EligibilityResponse.implicitRules |
-| EligibilityResponse.language | UseElementRenamed | EligibilityResponse.language |
-| EligibilityResponse.text | UseElementRenamed | EligibilityResponse.text |
-| EligibilityResponse.contained | UseElementRenamed | EligibilityResponse.contained |
-| EligibilityResponse.extension | UseElementRenamed | EligibilityResponse.extension |
-| EligibilityResponse.modifierExtension | UseElementRenamed | EligibilityResponse.modifierExtension |
-| EligibilityResponse.identifier | UseElementRenamed | EligibilityResponse.identifier |
+| EligibilityResponse.id | UseElementSameName | EligibilityResponse.id |
+| EligibilityResponse.meta | UseElementSameName | EligibilityResponse.meta |
+| EligibilityResponse.implicitRules | UseElementSameName | EligibilityResponse.implicitRules |
+| EligibilityResponse.language | UseElementSameName | EligibilityResponse.language |
+| EligibilityResponse.text | UseElementSameName | EligibilityResponse.text |
+| EligibilityResponse.contained | UseElementSameName | EligibilityResponse.contained |
+| EligibilityResponse.extension | UseElementSameName | EligibilityResponse.extension |
+| EligibilityResponse.modifierExtension | UseElementSameName | EligibilityResponse.modifierExtension |
+| EligibilityResponse.identifier | UseElementSameName | EligibilityResponse.identifier |
 | EligibilityResponse.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.status |
-| EligibilityResponse.created | UseElementRenamed | EligibilityResponse.created |
+| EligibilityResponse.created | UseElementSameName | EligibilityResponse.created |
 | EligibilityResponse.requestProvider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestProvider |
 | EligibilityResponse.requestOrganization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.requestOrganization |
 | EligibilityResponse.request | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.request |
 | EligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.outcome |
-| EligibilityResponse.disposition | UseElementRenamed | EligibilityResponse.disposition |
+| EligibilityResponse.disposition | UseElementSameName | EligibilityResponse.disposition |
 | EligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurer |
 | EligibilityResponse.inforce | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.inforce |
 | EligibilityResponse.insurance | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityResponse.insurance |

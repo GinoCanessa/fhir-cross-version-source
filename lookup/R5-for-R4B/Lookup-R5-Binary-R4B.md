@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Binary.id | UseElementRenamed | Binary.id |
-| Binary.meta | UseElementRenamed | Binary.meta |
-| Binary.implicitRules | UseElementRenamed | Binary.implicitRules |
-| Binary.language | UseElementRenamed | Binary.language |
-| Binary.contentType | UseElementRenamed | Binary.contentType |
-| Binary.securityContext | UseElementRenamed | Binary.securityContext |
-| Binary.data | UseElementRenamed | Binary.data |
+| Binary.id | UseElementSameName | Binary.id |
+| Binary.meta | UseElementSameName | Binary.meta |
+| Binary.implicitRules | UseElementSameName | Binary.implicitRules |
+| Binary.language | UseElementSameName | Binary.language |
+| Binary.contentType | UseElementSameName | Binary.contentType |
+| Binary.securityContext | UseElementSameName | Binary.securityContext |
+| Binary.data | UseElementSameName | Binary.data |

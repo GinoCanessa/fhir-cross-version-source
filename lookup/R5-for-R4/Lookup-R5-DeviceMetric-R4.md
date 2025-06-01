@@ -13,7 +13,7 @@
 | DeviceMetric.identifier | UseElementSameName | DeviceMetric.identifier |
 | DeviceMetric.type | UseElementSameName | DeviceMetric.type |
 | DeviceMetric.unit | UseElementSameName | DeviceMetric.unit |
-| DeviceMetric.device | UseElementSameName | DeviceMetric.parent |
+| DeviceMetric.device | UseElementRenamed | DeviceMetric.parent |
 | DeviceMetric.operationalStatus | UseElementSameName | DeviceMetric.operationalStatus |
 | DeviceMetric.color | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceMetric.color |
 | DeviceMetric.category | UseElementSameName | DeviceMetric.category |

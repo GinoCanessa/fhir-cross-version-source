@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Population.id | UseElementRenamed | Population.id |
-| Population.extension | UseElementRenamed | Population.extension |
-| Population.modifierExtension | UseElementRenamed | Population.modifierExtension |
-| Population.age[x] | UseElementRenamed | Population.age[x] |
-| Population.gender | UseElementRenamed | Population.gender |
-| Population.race | UseElementRenamed | Population.race |
-| Population.physiologicalCondition | UseElementRenamed | Population.physiologicalCondition |
+| Population.id | UseElementSameName | Population.id |
+| Population.extension | UseElementSameName | Population.extension |
+| Population.modifierExtension | UseElementSameName | Population.modifierExtension |
+| Population.age[x] | UseElementSameName | Population.age[x] |
+| Population.gender | UseElementSameName | Population.gender |
+| Population.race | UseElementSameName | Population.race |
+| Population.physiologicalCondition | UseElementSameName | Population.physiologicalCondition |

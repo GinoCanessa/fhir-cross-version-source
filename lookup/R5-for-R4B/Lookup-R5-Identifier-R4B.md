@@ -2,11 +2,11 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Identifier.id | UseElementRenamed | Identifier.id |
-| Identifier.extension | UseElementRenamed | Identifier.extension |
-| Identifier.use | UseElementRenamed | Identifier.use |
-| Identifier.type | UseElementRenamed | Identifier.type |
-| Identifier.system | UseElementRenamed | Identifier.system |
-| Identifier.value | UseElementRenamed | Identifier.value |
-| Identifier.period | UseElementRenamed | Identifier.period |
-| Identifier.assigner | UseElementRenamed | Identifier.assigner |
+| Identifier.id | UseElementSameName | Identifier.id |
+| Identifier.extension | UseElementSameName | Identifier.extension |
+| Identifier.use | UseElementSameName | Identifier.use |
+| Identifier.type | UseElementSameName | Identifier.type |
+| Identifier.system | UseElementSameName | Identifier.system |
+| Identifier.value | UseElementSameName | Identifier.value |
+| Identifier.period | UseElementSameName | Identifier.period |
+| Identifier.assigner | UseElementSameName | Identifier.assigner |

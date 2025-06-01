@@ -22,10 +22,10 @@
 | OperationDefinition.description | UseElementSameName | OperationDefinition.description |
 | OperationDefinition.useContext | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.useContext |
 | OperationDefinition.jurisdiction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.jurisdiction |
-| OperationDefinition.purpose | UseElementSameName | OperationDefinition.requirements |
-| OperationDefinition.idempotent | UseElementRenamed | OperationDefinition.idempotent |
+| OperationDefinition.purpose | UseElementRenamed | OperationDefinition.requirements |
+| OperationDefinition.idempotent | UseElementSameName | OperationDefinition.idempotent |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
-| OperationDefinition.comment | UseElementSameName | OperationDefinition.notes |
+| OperationDefinition.comment | UseElementRenamed | OperationDefinition.notes |
 | OperationDefinition.base | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.base |
 | OperationDefinition.resource | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |
@@ -41,7 +41,7 @@
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
 | OperationDefinition.parameter.type | UseElementSameName | OperationDefinition.parameter.type |
-| OperationDefinition.parameter.searchType | UseElementSameName | OperationDefinition.parameter.type |
+| OperationDefinition.parameter.searchType | UseElementRenamed | OperationDefinition.parameter.type |
 | OperationDefinition.parameter.profile | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-OperationDefinition.parameter.profile |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |

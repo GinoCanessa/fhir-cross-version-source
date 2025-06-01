@@ -16,7 +16,7 @@
 | Medication.marketingAuthorizationHolder | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.marketingAuthorizationHolder |
 | Medication.doseForm | UseElementRenamed | Medication.product.form |
 | Medication.totalVolume | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.totalVolume |
-| Medication.ingredient | UseElementSameName | Medication.product.ingredient |
+| Medication.ingredient | UseElementRenamed | Medication.product.ingredient |
 | Medication.ingredient.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.id |
 | Medication.ingredient.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.extension |
 | Medication.ingredient.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.ingredient.modifierExtension |

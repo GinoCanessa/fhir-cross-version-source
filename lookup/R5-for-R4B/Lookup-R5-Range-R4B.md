@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Range.id | UseElementRenamed | Range.id |
-| Range.extension | UseElementRenamed | Range.extension |
-| Range.low | UseElementRenamed | Range.low |
-| Range.high | UseElementRenamed | Range.high |
+| Range.id | UseElementSameName | Range.id |
+| Range.extension | UseElementSameName | Range.extension |
+| Range.low | UseElementSameName | Range.low |
+| Range.high | UseElementSameName | Range.high |

@@ -24,12 +24,12 @@
 | DiagnosticReport.specimen | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.specimen |
 | DiagnosticReport.result | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.result |
 | DiagnosticReport.imagingStudy | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.imagingStudy |
-| DiagnosticReport.media | UseElementSameName | DiagnosticReport.image |
+| DiagnosticReport.media | UseElementRenamed | DiagnosticReport.image |
 | DiagnosticReport.media.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.media.id |
 | DiagnosticReport.media.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.media.extension |
 | DiagnosticReport.media.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.media.modifierExtension |
-| DiagnosticReport.media.comment | UseElementSameName | DiagnosticReport.image.comment |
+| DiagnosticReport.media.comment | UseElementRenamed | DiagnosticReport.image.comment |
 | DiagnosticReport.media.link | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DiagnosticReport.media.link |
 | DiagnosticReport.conclusion | UseElementSameName | DiagnosticReport.conclusion |
-| DiagnosticReport.conclusionCode | UseElementSameName | DiagnosticReport.codedDiagnosis |
+| DiagnosticReport.conclusionCode | UseElementRenamed | DiagnosticReport.codedDiagnosis |
 | DiagnosticReport.presentedForm | UseElementSameName | DiagnosticReport.presentedForm |

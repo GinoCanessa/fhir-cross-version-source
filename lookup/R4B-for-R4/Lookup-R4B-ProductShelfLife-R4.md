@@ -5,7 +5,7 @@
 | ProductShelfLife.id | UseElementSameName | ProductShelfLife.id |
 | ProductShelfLife.extension | UseElementSameName | ProductShelfLife.extension |
 | ProductShelfLife.modifierExtension | UseElementSameName | ProductShelfLife.modifierExtension |
-| ProductShelfLife.identifier | UseElementRenamed | ProductShelfLife.identifier |
+| ProductShelfLife.identifier | UseElementSameName | ProductShelfLife.identifier |
 | ProductShelfLife.type | UseElementSameName | ProductShelfLife.type |
-| ProductShelfLife.period | UseElementRenamed | ProductShelfLife.period |
+| ProductShelfLife.period | UseElementSameName | ProductShelfLife.period |
 | ProductShelfLife.specialPrecautionsForStorage | UseElementSameName | ProductShelfLife.specialPrecautionsForStorage |

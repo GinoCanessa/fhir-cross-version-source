@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| UsageContext.id | UseElementRenamed | UsageContext.id |
-| UsageContext.extension | UseElementRenamed | UsageContext.extension |
-| UsageContext.code | UseElementRenamed | UsageContext.code |
-| UsageContext.value[x] | UseElementRenamed | UsageContext.value[x] |
+| UsageContext.id | UseElementSameName | UsageContext.id |
+| UsageContext.extension | UseElementSameName | UsageContext.extension |
+| UsageContext.code | UseElementSameName | UsageContext.code |
+| UsageContext.value[x] | UseElementSameName | UsageContext.value[x] |

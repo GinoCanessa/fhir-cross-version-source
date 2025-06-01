@@ -2,5 +2,5 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Element.id | UseElementRenamed | Element.id |
-| Element.extension | UseElementRenamed | Element.extension |
+| Element.id | UseElementSameName | Element.id |
+| Element.extension | UseElementSameName | Element.extension |

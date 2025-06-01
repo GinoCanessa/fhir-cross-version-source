@@ -26,7 +26,7 @@
 | NamingSystem.type | UseElementSameName | NamingSystem.type |
 | NamingSystem.description | UseElementSameName | NamingSystem.description |
 | NamingSystem.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.useContext |
-| NamingSystem.jurisdiction | UseElementSameName | NamingSystem.useContext |
+| NamingSystem.jurisdiction | UseElementRenamed | NamingSystem.useContext |
 | NamingSystem.purpose | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.purpose |
 | NamingSystem.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.copyright |
 | NamingSystem.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.copyrightLabel |

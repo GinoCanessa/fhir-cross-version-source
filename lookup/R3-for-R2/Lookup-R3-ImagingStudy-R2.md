@@ -10,11 +10,11 @@
 | ImagingStudy.contained | UseElementSameName | ImagingStudy.contained |
 | ImagingStudy.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.extension |
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
-| ImagingStudy.uid | UseElementRenamed | ImagingStudy.uid |
-| ImagingStudy.accession | UseElementRenamed | ImagingStudy.accession |
+| ImagingStudy.uid | UseElementSameName | ImagingStudy.uid |
+| ImagingStudy.accession | UseElementSameName | ImagingStudy.accession |
 | ImagingStudy.identifier | UseElementSameName | ImagingStudy.identifier |
-| ImagingStudy.availability | UseElementRenamed | ImagingStudy.availability |
-| ImagingStudy.modalityList | UseElementRenamed | ImagingStudy.modalityList |
+| ImagingStudy.availability | UseElementSameName | ImagingStudy.availability |
+| ImagingStudy.modalityList | UseElementSameName | ImagingStudy.modalityList |
 | ImagingStudy.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.patient |
 | ImagingStudy.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.context |
 | ImagingStudy.started | UseElementSameName | ImagingStudy.started |
@@ -37,7 +37,7 @@
 | ImagingStudy.series.modality | UseElementSameName | ImagingStudy.series.modality |
 | ImagingStudy.series.description | UseElementSameName | ImagingStudy.series.description |
 | ImagingStudy.series.numberOfInstances | UseElementSameName | ImagingStudy.series.numberOfInstances |
-| ImagingStudy.series.availability | UseElementRenamed | ImagingStudy.series.availability |
+| ImagingStudy.series.availability | UseElementSameName | ImagingStudy.series.availability |
 | ImagingStudy.series.endpoint | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.endpoint |
 | ImagingStudy.series.bodySite | UseElementSameName | ImagingStudy.series.bodySite |
 | ImagingStudy.series.laterality | UseElementSameName | ImagingStudy.series.laterality |

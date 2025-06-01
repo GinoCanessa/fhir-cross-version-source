@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| ContactDetail.id | UseElementRenamed | ContactDetail.id |
-| ContactDetail.extension | UseElementRenamed | ContactDetail.extension |
-| ContactDetail.name | UseElementRenamed | ContactDetail.name |
-| ContactDetail.telecom | UseElementRenamed | ContactDetail.telecom |
+| ContactDetail.id | UseElementSameName | ContactDetail.id |
+| ContactDetail.extension | UseElementSameName | ContactDetail.extension |
+| ContactDetail.name | UseElementSameName | ContactDetail.name |
+| ContactDetail.telecom | UseElementSameName | ContactDetail.telecom |

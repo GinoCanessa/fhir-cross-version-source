@@ -13,7 +13,7 @@
 | Composition.identifier | UseElementSameName | Composition.identifier |
 | Composition.status | UseElementSameName | Composition.status |
 | Composition.type | UseElementSameName | Composition.type |
-| Composition.class | UseElementRenamed | Composition.class |
+| Composition.class | UseElementSameName | Composition.class |
 | Composition.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.subject |
 | Composition.encounter | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.encounter |
 | Composition.date | UseElementSameName | Composition.date |

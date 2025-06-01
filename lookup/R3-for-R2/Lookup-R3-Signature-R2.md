@@ -8,5 +8,5 @@
 | Signature.when | UseElementSameName | Signature.when |
 | Signature.who[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Signature.who |
 | Signature.onBehalfOf[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Signature.onBehalfOf |
-| Signature.contentType | UseElementRenamed | Signature.contentType |
-| Signature.blob | UseElementRenamed | Signature.blob |
+| Signature.contentType | UseElementSameName | Signature.contentType |
+| Signature.blob | UseElementSameName | Signature.blob |

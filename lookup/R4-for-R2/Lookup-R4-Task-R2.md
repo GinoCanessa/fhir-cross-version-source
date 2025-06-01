@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Task.id | UseElementSameName | ProcessRequest.id |
+| Task.id | UseElementRenamed | ProcessRequest.id |
 | Task.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.meta |
-| Task.implicitRules | UseElementSameName | ProcessRequest.implicitRules |
-| Task.language | UseElementSameName | ProcessRequest.language |
-| Task.text | UseElementSameName | ProcessRequest.text |
-| Task.contained | UseElementSameName | ProcessRequest.contained |
-| Task.extension | UseElementSameName | ProcessRequest.extension |
-| Task.modifierExtension | UseElementSameName | ProcessRequest.modifierExtension |
-| Task.identifier | UseElementSameName | ProcessRequest.identifier |
+| Task.implicitRules | UseElementRenamed | ProcessRequest.implicitRules |
+| Task.language | UseElementRenamed | ProcessRequest.language |
+| Task.text | UseElementRenamed | ProcessRequest.text |
+| Task.contained | UseElementRenamed | ProcessRequest.contained |
+| Task.extension | UseElementRenamed | ProcessRequest.extension |
+| Task.modifierExtension | UseElementRenamed | ProcessRequest.modifierExtension |
+| Task.identifier | UseElementRenamed | ProcessRequest.identifier |
 | Task.instantiatesCanonical | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.instantiatesCanonical |
 | Task.instantiatesUri | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.instantiatesUri |
 | Task.basedOn | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.basedOn |
@@ -22,18 +22,18 @@
 | Task.intent | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.intent |
 | Task.priority | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.priority |
 | Task.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.code |
-| Task.description | UseElementSameName | OrderResponse.description |
+| Task.description | UseElementRenamed | OrderResponse.description |
 | Task.focus | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.focus |
 | Task.for | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.for |
 | Task.encounter | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.encounter |
 | Task.executionPeriod | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.executionPeriod |
-| Task.authoredOn | UseElementSameName | Order.date |
+| Task.authoredOn | UseElementRenamed | Order.date |
 | Task.lastModified | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.lastModified |
 | Task.requester | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.requester |
 | Task.performerType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.performerType |
 | Task.owner | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.owner |
 | Task.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.location |
-| Task.reasonCode | UseElementSameName | Order.reason[x] |
+| Task.reasonCode | UseElementRenamed | Order.reason[x] |
 | Task.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.reasonReference |
 | Task.insurance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.insurance |
 | Task.note | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Task.note |

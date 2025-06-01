@@ -11,7 +11,7 @@
 | Provenance.extension | UseElementSameName | Provenance.extension |
 | Provenance.modifierExtension | UseElementSameName | Provenance.modifierExtension |
 | Provenance.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Provenance.target |
-| Provenance.period | UseElementRenamed | Provenance.period |
+| Provenance.period | UseElementSameName | Provenance.period |
 | Provenance.recorded | UseElementSameName | Provenance.recorded |
 | Provenance.policy | UseElementSameName | Provenance.policy |
 | Provenance.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Provenance.location |

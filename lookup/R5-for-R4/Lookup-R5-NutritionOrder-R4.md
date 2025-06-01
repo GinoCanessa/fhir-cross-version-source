@@ -19,7 +19,7 @@
 | NutritionOrder.status | UseElementSameName | NutritionOrder.status |
 | NutritionOrder.intent | UseElementSameName | NutritionOrder.intent |
 | NutritionOrder.priority | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.priority |
-| NutritionOrder.subject | UseElementSameName | NutritionOrder.patient |
+| NutritionOrder.subject | UseElementRenamed | NutritionOrder.patient |
 | NutritionOrder.encounter | UseElementSameName | NutritionOrder.encounter |
 | NutritionOrder.supportingInformation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supportingInformation |
 | NutritionOrder.dateTime | UseElementSameName | NutritionOrder.dateTime |
@@ -85,7 +85,7 @@
 | NutritionOrder.enteralFormula.additive.productName | UseExtensionFromAncestor | - |
 | NutritionOrder.enteralFormula.additive.quantity | UseExtensionFromAncestor | - |
 | NutritionOrder.enteralFormula.caloricDensity | UseElementSameName | NutritionOrder.enteralFormula.caloricDensity |
-| NutritionOrder.enteralFormula.routeOfAdministration | UseElementSameName | NutritionOrder.enteralFormula.routeofAdministration |
+| NutritionOrder.enteralFormula.routeOfAdministration | UseElementRenamed | NutritionOrder.enteralFormula.routeofAdministration |
 | NutritionOrder.enteralFormula.administration | UseElementSameName | NutritionOrder.enteralFormula.administration |
 | NutritionOrder.enteralFormula.administration.id | UseElementSameName | NutritionOrder.enteralFormula.administration.id |
 | NutritionOrder.enteralFormula.administration.extension | UseElementSameName | NutritionOrder.enteralFormula.administration.extension |

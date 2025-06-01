@@ -52,7 +52,7 @@
 | CarePlan.activity.detail.goal | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.goal |
 | CarePlan.activity.detail.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.status |
 | CarePlan.activity.detail.statusReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.statusReason |
-| CarePlan.activity.detail.doNotPerform | UseElementSameName | CarePlan.activity.detail.prohibited |
+| CarePlan.activity.detail.doNotPerform | UseElementRenamed | CarePlan.activity.detail.prohibited |
 | CarePlan.activity.detail.scheduled[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.scheduled |
 | CarePlan.activity.detail.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.location |
 | CarePlan.activity.detail.performer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CarePlan.activity.detail.performer |

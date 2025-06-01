@@ -23,8 +23,8 @@
 | TestScript.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.contact |
 | TestScript.description | UseElementSameName | TestScript.description |
 | TestScript.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.useContext |
-| TestScript.jurisdiction | UseElementSameName | TestScript.useContext |
-| TestScript.purpose | UseElementSameName | TestScript.requirements |
+| TestScript.jurisdiction | UseElementRenamed | TestScript.useContext |
+| TestScript.purpose | UseElementRenamed | TestScript.requirements |
 | TestScript.copyright | UseElementSameName | TestScript.copyright |
 | TestScript.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.copyrightLabel |
 | TestScript.origin | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.origin |

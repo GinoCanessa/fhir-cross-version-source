@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| RelatedArtifact.id | UseElementRenamed | RelatedArtifact.id |
-| RelatedArtifact.extension | UseElementRenamed | RelatedArtifact.extension |
+| RelatedArtifact.id | UseElementSameName | RelatedArtifact.id |
+| RelatedArtifact.extension | UseElementSameName | RelatedArtifact.extension |
 | RelatedArtifact.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.type |
 | RelatedArtifact.classifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.classifier |
-| RelatedArtifact.label | UseElementRenamed | RelatedArtifact.label |
-| RelatedArtifact.display | UseElementRenamed | RelatedArtifact.display |
-| RelatedArtifact.citation | UseElementRenamed | RelatedArtifact.citation |
+| RelatedArtifact.label | UseElementSameName | RelatedArtifact.label |
+| RelatedArtifact.display | UseElementSameName | RelatedArtifact.display |
+| RelatedArtifact.citation | UseElementSameName | RelatedArtifact.citation |
 | RelatedArtifact.document | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.document |
-| RelatedArtifact.resource | UseElementRenamed | RelatedArtifact.resource |
+| RelatedArtifact.resource | UseElementSameName | RelatedArtifact.resource |
 | RelatedArtifact.resourceReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.resourceReference |
 | RelatedArtifact.publicationStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.publicationStatus |
 | RelatedArtifact.publicationDate | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RelatedArtifact.publicationDate |

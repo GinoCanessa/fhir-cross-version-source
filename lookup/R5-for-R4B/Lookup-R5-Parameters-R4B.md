@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Parameters.id | UseElementRenamed | Parameters.id |
-| Parameters.meta | UseElementRenamed | Parameters.meta |
-| Parameters.implicitRules | UseElementRenamed | Parameters.implicitRules |
-| Parameters.language | UseElementRenamed | Parameters.language |
-| Parameters.parameter | UseElementRenamed | Parameters.parameter |
-| Parameters.parameter.id | UseElementRenamed | Parameters.parameter.id |
-| Parameters.parameter.extension | UseElementRenamed | Parameters.parameter.extension |
-| Parameters.parameter.modifierExtension | UseElementRenamed | Parameters.parameter.modifierExtension |
-| Parameters.parameter.name | UseElementRenamed | Parameters.parameter.name |
+| Parameters.id | UseElementSameName | Parameters.id |
+| Parameters.meta | UseElementSameName | Parameters.meta |
+| Parameters.implicitRules | UseElementSameName | Parameters.implicitRules |
+| Parameters.language | UseElementSameName | Parameters.language |
+| Parameters.parameter | UseElementSameName | Parameters.parameter |
+| Parameters.parameter.id | UseElementSameName | Parameters.parameter.id |
+| Parameters.parameter.extension | UseElementSameName | Parameters.parameter.extension |
+| Parameters.parameter.modifierExtension | UseElementSameName | Parameters.parameter.modifierExtension |
+| Parameters.parameter.name | UseElementSameName | Parameters.parameter.name |
 | Parameters.parameter.value[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Parameters.parameter.value |
-| Parameters.parameter.resource | UseElementRenamed | Parameters.parameter.resource |
-| Parameters.parameter.part | UseElementRenamed | Parameters.parameter.part |
+| Parameters.parameter.resource | UseElementSameName | Parameters.parameter.resource |
+| Parameters.parameter.part | UseElementSameName | Parameters.parameter.part |

@@ -15,10 +15,10 @@
 | DocumentReference.status | UseElementSameName | DocumentReference.status |
 | DocumentReference.docStatus | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.docStatus |
 | DocumentReference.type | UseElementSameName | DocumentReference.type |
-| DocumentReference.class | UseElementRenamed | DocumentReference.class |
+| DocumentReference.class | UseElementSameName | DocumentReference.class |
 | DocumentReference.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.subject |
-| DocumentReference.created | UseElementRenamed | DocumentReference.created |
-| DocumentReference.indexed | UseElementRenamed | DocumentReference.indexed |
+| DocumentReference.created | UseElementSameName | DocumentReference.created |
+| DocumentReference.indexed | UseElementSameName | DocumentReference.indexed |
 | DocumentReference.author | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.author |
 | DocumentReference.authenticator | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.authenticator |
 | DocumentReference.custodian | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.custodian |
@@ -47,8 +47,8 @@
 | DocumentReference.context.practiceSetting | UseElementSameName | DocumentReference.context.practiceSetting |
 | DocumentReference.context.sourcePatientInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.context.sourcePatientInfo |
 | DocumentReference.context.related | UseElementSameName | DocumentReference.context.related |
-| DocumentReference.context.related.id | UseElementRenamed | DocumentReference.context.related.id |
-| DocumentReference.context.related.extension | UseElementRenamed | DocumentReference.context.related.extension |
-| DocumentReference.context.related.modifierExtension | UseElementRenamed | DocumentReference.context.related.modifierExtension |
-| DocumentReference.context.related.identifier | UseElementRenamed | DocumentReference.context.related.identifier |
+| DocumentReference.context.related.id | UseElementSameName | DocumentReference.context.related.id |
+| DocumentReference.context.related.extension | UseElementSameName | DocumentReference.context.related.extension |
+| DocumentReference.context.related.modifierExtension | UseElementSameName | DocumentReference.context.related.modifierExtension |
+| DocumentReference.context.related.identifier | UseElementSameName | DocumentReference.context.related.identifier |
 | DocumentReference.context.related.ref | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.context.related.ref |

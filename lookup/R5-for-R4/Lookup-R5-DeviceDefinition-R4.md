@@ -34,7 +34,7 @@
 | DeviceDefinition.regulatoryIdentifier.issuer | UseExtensionFromAncestor | - |
 | DeviceDefinition.regulatoryIdentifier.jurisdiction | UseExtensionFromAncestor | - |
 | DeviceDefinition.partNumber | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.partNumber |
-| DeviceDefinition.manufacturer | UseElementSameName | DeviceDefinition.manufacturer[x] |
+| DeviceDefinition.manufacturer | UseElementRenamed | DeviceDefinition.manufacturer[x] |
 | DeviceDefinition.deviceName | UseElementSameName | DeviceDefinition.deviceName |
 | DeviceDefinition.deviceName.id | UseElementSameName | DeviceDefinition.deviceName.id |
 | DeviceDefinition.deviceName.extension | UseElementSameName | DeviceDefinition.deviceName.extension |
@@ -48,7 +48,7 @@
 | DeviceDefinition.classification.modifierExtension | UseExtensionFromAncestor | - |
 | DeviceDefinition.classification.type | UseExtensionFromAncestor | - |
 | DeviceDefinition.classification.justification | UseExtensionFromAncestor | - |
-| DeviceDefinition.conformsTo | UseElementSameName | DeviceDefinition.specialization |
+| DeviceDefinition.conformsTo | UseElementRenamed | DeviceDefinition.specialization |
 | DeviceDefinition.conformsTo.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.conformsTo.id |
 | DeviceDefinition.conformsTo.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.conformsTo.extension |
 | DeviceDefinition.conformsTo.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.conformsTo.modifierExtension |

@@ -83,7 +83,7 @@
 | PlanDefinition.action.relatedAction.id | UseElementSameName | PlanDefinition.action.relatedAction.id |
 | PlanDefinition.action.relatedAction.extension | UseElementSameName | PlanDefinition.action.relatedAction.extension |
 | PlanDefinition.action.relatedAction.modifierExtension | UseElementSameName | PlanDefinition.action.relatedAction.modifierExtension |
-| PlanDefinition.action.relatedAction.actionId | UseElementRenamed | PlanDefinition.action.relatedAction.actionId |
+| PlanDefinition.action.relatedAction.actionId | UseElementSameName | PlanDefinition.action.relatedAction.actionId |
 | PlanDefinition.action.relatedAction.relationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
 | PlanDefinition.action.relatedAction.offset[x] | UseElementSameName | PlanDefinition.action.relatedAction.offset[x] |
 | PlanDefinition.action.timing[x] | UseElementSameName | PlanDefinition.action.timing[x] |

@@ -17,7 +17,7 @@
 | SupplyRequest.priority | UseElementSameName | SupplyRequest.priority |
 | SupplyRequest.deliverFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.deliverFor |
 | SupplyRequest.item | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.item |
-| SupplyRequest.quantity | UseElementSameName | SupplyRequest.orderedItem.quantity |
+| SupplyRequest.quantity | UseElementRenamed | SupplyRequest.orderedItem.quantity |
 | SupplyRequest.parameter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.parameter |
 | SupplyRequest.parameter.id | UseExtensionFromAncestor | - |
 | SupplyRequest.parameter.extension | UseExtensionFromAncestor | - |

@@ -28,7 +28,7 @@
 | MedicationRequest.supportingInformation | UseElementSameName | MedicationRequest.supportingInformation |
 | MedicationRequest.authoredOn | UseElementSameName | MedicationRequest.authoredOn |
 | MedicationRequest.requester | UseElementSameName | MedicationRequest.requester |
-| MedicationRequest.reported | UseElementSameName | MedicationRequest.reported[x] |
+| MedicationRequest.reported | UseElementRenamed | MedicationRequest.reported[x] |
 | MedicationRequest.performerType | UseElementSameName | MedicationRequest.performerType |
 | MedicationRequest.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.performer |
 | MedicationRequest.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.device |
@@ -55,7 +55,7 @@
 | MedicationRequest.dispenseRequest.numberOfRepeatsAllowed | UseElementSameName | MedicationRequest.dispenseRequest.numberOfRepeatsAllowed |
 | MedicationRequest.dispenseRequest.quantity | UseElementSameName | MedicationRequest.dispenseRequest.quantity |
 | MedicationRequest.dispenseRequest.expectedSupplyDuration | UseElementSameName | MedicationRequest.dispenseRequest.expectedSupplyDuration |
-| MedicationRequest.dispenseRequest.dispenser | UseElementSameName | MedicationRequest.dispenseRequest.performer |
+| MedicationRequest.dispenseRequest.dispenser | UseElementRenamed | MedicationRequest.dispenseRequest.performer |
 | MedicationRequest.dispenseRequest.dispenserInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.dispenserInstruction |
 | MedicationRequest.dispenseRequest.doseAdministrationAid | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.dispenseRequest.doseAdministrationAid |
 | MedicationRequest.substitution | UseElementSameName | MedicationRequest.substitution |

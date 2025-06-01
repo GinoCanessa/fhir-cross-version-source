@@ -55,7 +55,7 @@
 | ExplanationOfBenefit.careTeam.provider | UseElementSameName | ExplanationOfBenefit.careTeam.provider |
 | ExplanationOfBenefit.careTeam.responsible | UseElementSameName | ExplanationOfBenefit.careTeam.responsible |
 | ExplanationOfBenefit.careTeam.role | UseElementSameName | ExplanationOfBenefit.careTeam.role |
-| ExplanationOfBenefit.careTeam.qualification | UseElementRenamed | ExplanationOfBenefit.careTeam.qualification |
+| ExplanationOfBenefit.careTeam.qualification | UseElementSameName | ExplanationOfBenefit.careTeam.qualification |
 | ExplanationOfBenefit.supportingInfo | UseElementSameName | ExplanationOfBenefit.supportingInfo |
 | ExplanationOfBenefit.supportingInfo.id | UseElementSameName | ExplanationOfBenefit.supportingInfo.id |
 | ExplanationOfBenefit.supportingInfo.extension | UseElementSameName | ExplanationOfBenefit.supportingInfo.extension |
@@ -74,7 +74,7 @@
 | ExplanationOfBenefit.diagnosis.diagnosis[x] | UseElementSameName | ExplanationOfBenefit.diagnosis.diagnosis[x] |
 | ExplanationOfBenefit.diagnosis.type | UseElementSameName | ExplanationOfBenefit.diagnosis.type |
 | ExplanationOfBenefit.diagnosis.onAdmission | UseElementSameName | ExplanationOfBenefit.diagnosis.onAdmission |
-| ExplanationOfBenefit.diagnosis.packageCode | UseElementRenamed | ExplanationOfBenefit.diagnosis.packageCode |
+| ExplanationOfBenefit.diagnosis.packageCode | UseElementSameName | ExplanationOfBenefit.diagnosis.packageCode |
 | ExplanationOfBenefit.procedure | UseElementSameName | ExplanationOfBenefit.procedure |
 | ExplanationOfBenefit.procedure.id | UseElementSameName | ExplanationOfBenefit.procedure.id |
 | ExplanationOfBenefit.procedure.extension | UseElementSameName | ExplanationOfBenefit.procedure.extension |
@@ -121,7 +121,7 @@
 | ExplanationOfBenefit.item.net | UseElementSameName | ExplanationOfBenefit.item.net |
 | ExplanationOfBenefit.item.udi | UseElementSameName | ExplanationOfBenefit.item.udi |
 | ExplanationOfBenefit.item.bodySite | UseElementSameName | ExplanationOfBenefit.item.bodySite |
-| ExplanationOfBenefit.item.subSite | UseElementRenamed | ExplanationOfBenefit.item.subSite |
+| ExplanationOfBenefit.item.subSite | UseElementSameName | ExplanationOfBenefit.item.subSite |
 | ExplanationOfBenefit.item.encounter | UseElementSameName | ExplanationOfBenefit.item.encounter |
 | ExplanationOfBenefit.item.noteNumber | UseElementSameName | ExplanationOfBenefit.item.noteNumber |
 | ExplanationOfBenefit.item.adjudication | UseElementSameName | ExplanationOfBenefit.item.adjudication |
@@ -131,7 +131,7 @@
 | ExplanationOfBenefit.item.adjudication.category | UseElementSameName | ExplanationOfBenefit.item.adjudication.category |
 | ExplanationOfBenefit.item.adjudication.reason | UseElementSameName | ExplanationOfBenefit.item.adjudication.reason |
 | ExplanationOfBenefit.item.adjudication.amount | UseElementSameName | ExplanationOfBenefit.item.adjudication.amount |
-| ExplanationOfBenefit.item.adjudication.value | UseElementRenamed | ExplanationOfBenefit.item.adjudication.value |
+| ExplanationOfBenefit.item.adjudication.value | UseElementSameName | ExplanationOfBenefit.item.adjudication.value |
 | ExplanationOfBenefit.item.detail | UseElementSameName | ExplanationOfBenefit.item.detail |
 | ExplanationOfBenefit.item.detail.id | UseElementSameName | ExplanationOfBenefit.item.detail.id |
 | ExplanationOfBenefit.item.detail.extension | UseElementSameName | ExplanationOfBenefit.item.detail.extension |
@@ -184,7 +184,7 @@
 | ExplanationOfBenefit.addItem.factor | UseElementSameName | ExplanationOfBenefit.addItem.factor |
 | ExplanationOfBenefit.addItem.net | UseElementSameName | ExplanationOfBenefit.addItem.net |
 | ExplanationOfBenefit.addItem.bodySite | UseElementSameName | ExplanationOfBenefit.addItem.bodySite |
-| ExplanationOfBenefit.addItem.subSite | UseElementRenamed | ExplanationOfBenefit.addItem.subSite |
+| ExplanationOfBenefit.addItem.subSite | UseElementSameName | ExplanationOfBenefit.addItem.subSite |
 | ExplanationOfBenefit.addItem.noteNumber | UseElementSameName | ExplanationOfBenefit.addItem.noteNumber |
 | ExplanationOfBenefit.addItem.adjudication | UseElementSameName | ExplanationOfBenefit.addItem.adjudication |
 | ExplanationOfBenefit.addItem.detail | UseElementSameName | ExplanationOfBenefit.addItem.detail |

@@ -27,8 +27,8 @@
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.base |
 | SearchParameter.type | UseElementSameName | SearchParameter.type |
 | SearchParameter.expression | UseElementSameName | SearchParameter.expression |
-| SearchParameter.xpath | UseElementRenamed | SearchParameter.xpath |
-| SearchParameter.xpathUsage | UseElementRenamed | SearchParameter.xpathUsage |
+| SearchParameter.xpath | UseElementSameName | SearchParameter.xpath |
+| SearchParameter.xpathUsage | UseElementSameName | SearchParameter.xpathUsage |
 | SearchParameter.target | UseElementSameName | SearchParameter.target |
 | SearchParameter.multipleOr | UseElementSameName | SearchParameter.multipleOr |
 | SearchParameter.multipleAnd | UseElementSameName | SearchParameter.multipleAnd |

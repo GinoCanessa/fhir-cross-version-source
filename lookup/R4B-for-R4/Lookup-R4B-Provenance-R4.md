@@ -15,7 +15,7 @@
 | Provenance.recorded | UseElementSameName | Provenance.recorded |
 | Provenance.policy | UseElementSameName | Provenance.policy |
 | Provenance.location | UseElementSameName | Provenance.location |
-| Provenance.reason | UseElementRenamed | Provenance.reason |
+| Provenance.reason | UseElementSameName | Provenance.reason |
 | Provenance.activity | UseElementSameName | Provenance.activity |
 | Provenance.agent | UseElementSameName | Provenance.agent |
 | Provenance.agent.id | UseElementSameName | Provenance.agent.id |

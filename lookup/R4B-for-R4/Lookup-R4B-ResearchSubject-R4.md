@@ -14,7 +14,7 @@
 | ResearchSubject.status | UseElementSameName | ResearchSubject.status |
 | ResearchSubject.period | UseElementSameName | ResearchSubject.period |
 | ResearchSubject.study | UseElementSameName | ResearchSubject.study |
-| ResearchSubject.individual | UseElementRenamed | ResearchSubject.individual |
-| ResearchSubject.assignedArm | UseElementRenamed | ResearchSubject.assignedArm |
-| ResearchSubject.actualArm | UseElementRenamed | ResearchSubject.actualArm |
+| ResearchSubject.individual | UseElementSameName | ResearchSubject.individual |
+| ResearchSubject.assignedArm | UseElementSameName | ResearchSubject.assignedArm |
+| ResearchSubject.actualArm | UseElementSameName | ResearchSubject.actualArm |
 | ResearchSubject.consent | UseElementSameName | ResearchSubject.consent |

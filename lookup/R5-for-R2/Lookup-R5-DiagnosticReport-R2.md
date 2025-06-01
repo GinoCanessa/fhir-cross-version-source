@@ -31,13 +31,13 @@
 | DiagnosticReport.supportingInfo.modifierExtension | UseExtensionFromAncestor | - |
 | DiagnosticReport.supportingInfo.type | UseExtensionFromAncestor | - |
 | DiagnosticReport.supportingInfo.reference | UseExtensionFromAncestor | - |
-| DiagnosticReport.media | UseElementSameName | DiagnosticReport.image |
+| DiagnosticReport.media | UseElementRenamed | DiagnosticReport.image |
 | DiagnosticReport.media.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.id |
 | DiagnosticReport.media.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.extension |
 | DiagnosticReport.media.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.modifierExtension |
-| DiagnosticReport.media.comment | UseElementSameName | DiagnosticReport.image.comment |
+| DiagnosticReport.media.comment | UseElementRenamed | DiagnosticReport.image.comment |
 | DiagnosticReport.media.link | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.media.link |
 | DiagnosticReport.composition | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition |
 | DiagnosticReport.conclusion | UseElementSameName | DiagnosticReport.conclusion |
-| DiagnosticReport.conclusionCode | UseElementSameName | DiagnosticReport.codedDiagnosis |
+| DiagnosticReport.conclusionCode | UseElementRenamed | DiagnosticReport.codedDiagnosis |
 | DiagnosticReport.presentedForm | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.presentedForm |

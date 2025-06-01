@@ -2,21 +2,21 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| CoverageEligibilityRequest.id | UseElementSameName | EligibilityRequest.id |
+| CoverageEligibilityRequest.id | UseElementRenamed | EligibilityRequest.id |
 | CoverageEligibilityRequest.meta | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.meta |
-| CoverageEligibilityRequest.implicitRules | UseElementSameName | EligibilityRequest.implicitRules |
-| CoverageEligibilityRequest.language | UseElementSameName | EligibilityRequest.language |
-| CoverageEligibilityRequest.text | UseElementSameName | EligibilityRequest.text |
-| CoverageEligibilityRequest.contained | UseElementSameName | EligibilityRequest.contained |
-| CoverageEligibilityRequest.extension | UseElementSameName | EligibilityRequest.extension |
-| CoverageEligibilityRequest.modifierExtension | UseElementSameName | EligibilityRequest.modifierExtension |
-| CoverageEligibilityRequest.identifier | UseElementSameName | EligibilityRequest.identifier |
-| CoverageEligibilityRequest.status | UseElementSameName | EligibilityRequest.status |
-| CoverageEligibilityRequest.priority | UseElementSameName | EligibilityRequest.priority |
+| CoverageEligibilityRequest.implicitRules | UseElementRenamed | EligibilityRequest.implicitRules |
+| CoverageEligibilityRequest.language | UseElementRenamed | EligibilityRequest.language |
+| CoverageEligibilityRequest.text | UseElementRenamed | EligibilityRequest.text |
+| CoverageEligibilityRequest.contained | UseElementRenamed | EligibilityRequest.contained |
+| CoverageEligibilityRequest.extension | UseElementRenamed | EligibilityRequest.extension |
+| CoverageEligibilityRequest.modifierExtension | UseElementRenamed | EligibilityRequest.modifierExtension |
+| CoverageEligibilityRequest.identifier | UseElementRenamed | EligibilityRequest.identifier |
+| CoverageEligibilityRequest.status | UseElementRenamed | EligibilityRequest.status |
+| CoverageEligibilityRequest.priority | UseElementRenamed | EligibilityRequest.priority |
 | CoverageEligibilityRequest.purpose | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.purpose |
 | CoverageEligibilityRequest.patient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.patient |
-| CoverageEligibilityRequest.serviced[x] | UseElementSameName | EligibilityRequest.serviced[x] |
-| CoverageEligibilityRequest.created | UseElementSameName | EligibilityRequest.created |
+| CoverageEligibilityRequest.serviced[x] | UseElementRenamed | EligibilityRequest.serviced[x] |
+| CoverageEligibilityRequest.created | UseElementRenamed | EligibilityRequest.created |
 | CoverageEligibilityRequest.enterer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.enterer |
 | CoverageEligibilityRequest.provider | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.provider |
 | CoverageEligibilityRequest.insurer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-CoverageEligibilityRequest.insurer |

@@ -47,7 +47,7 @@
 | Measure.rationale | UseElementSameName | Measure.rationale |
 | Measure.clinicalRecommendationStatement | UseElementSameName | Measure.clinicalRecommendationStatement |
 | Measure.improvementNotation | UseElementSameName | Measure.improvementNotation |
-| Measure.definition | UseElementRenamed | Measure.definition |
+| Measure.definition | UseElementSameName | Measure.definition |
 | Measure.guidance | UseElementSameName | Measure.guidance |
 | Measure.group | UseElementSameName | Measure.group |
 | Measure.group.id | UseElementSameName | Measure.group.id |

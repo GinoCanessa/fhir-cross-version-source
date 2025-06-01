@@ -2,20 +2,20 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| EligibilityRequest.id | UseElementRenamed | EligibilityRequest.id |
-| EligibilityRequest.meta | UseElementRenamed | EligibilityRequest.meta |
-| EligibilityRequest.implicitRules | UseElementRenamed | EligibilityRequest.implicitRules |
-| EligibilityRequest.language | UseElementRenamed | EligibilityRequest.language |
-| EligibilityRequest.text | UseElementRenamed | EligibilityRequest.text |
-| EligibilityRequest.contained | UseElementRenamed | EligibilityRequest.contained |
-| EligibilityRequest.extension | UseElementRenamed | EligibilityRequest.extension |
-| EligibilityRequest.modifierExtension | UseElementRenamed | EligibilityRequest.modifierExtension |
-| EligibilityRequest.identifier | UseElementRenamed | EligibilityRequest.identifier |
+| EligibilityRequest.id | UseElementSameName | EligibilityRequest.id |
+| EligibilityRequest.meta | UseElementSameName | EligibilityRequest.meta |
+| EligibilityRequest.implicitRules | UseElementSameName | EligibilityRequest.implicitRules |
+| EligibilityRequest.language | UseElementSameName | EligibilityRequest.language |
+| EligibilityRequest.text | UseElementSameName | EligibilityRequest.text |
+| EligibilityRequest.contained | UseElementSameName | EligibilityRequest.contained |
+| EligibilityRequest.extension | UseElementSameName | EligibilityRequest.extension |
+| EligibilityRequest.modifierExtension | UseElementSameName | EligibilityRequest.modifierExtension |
+| EligibilityRequest.identifier | UseElementSameName | EligibilityRequest.identifier |
 | EligibilityRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.status |
 | EligibilityRequest.priority | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.priority |
 | EligibilityRequest.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.patient |
 | EligibilityRequest.serviced[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.serviced |
-| EligibilityRequest.created | UseElementRenamed | EligibilityRequest.created |
+| EligibilityRequest.created | UseElementSameName | EligibilityRequest.created |
 | EligibilityRequest.enterer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.enterer |
 | EligibilityRequest.provider | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.provider |
 | EligibilityRequest.organization | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.organization |

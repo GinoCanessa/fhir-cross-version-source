@@ -12,7 +12,7 @@
 | Appointment.modifierExtension | UseElementSameName | Appointment.modifierExtension |
 | Appointment.identifier | UseElementSameName | Appointment.identifier |
 | Appointment.status | UseElementSameName | Appointment.status |
-| Appointment.cancellationReason | UseElementSameName | Appointment.cancelationReason |
+| Appointment.cancellationReason | UseElementRenamed | Appointment.cancelationReason |
 | Appointment.class | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.class |
 | Appointment.serviceCategory | UseElementSameName | Appointment.serviceCategory |
 | Appointment.serviceType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Appointment.serviceType |

@@ -16,7 +16,7 @@
 | EvidenceVariable.name | UseElementSameName | EvidenceVariable.name |
 | EvidenceVariable.title | UseElementSameName | EvidenceVariable.title |
 | EvidenceVariable.shortTitle | UseElementSameName | EvidenceVariable.shortTitle |
-| EvidenceVariable.subtitle | UseElementRenamed | EvidenceVariable.subtitle |
+| EvidenceVariable.subtitle | UseElementSameName | EvidenceVariable.subtitle |
 | EvidenceVariable.status | UseElementSameName | EvidenceVariable.status |
 | EvidenceVariable.date | UseElementSameName | EvidenceVariable.date |
 | EvidenceVariable.description | UseElementSameName | EvidenceVariable.description |
@@ -48,7 +48,7 @@
 | EvidenceVariable.characteristic.timeFromStart.quantity | UseExtensionFromAncestor | - |
 | EvidenceVariable.characteristic.timeFromStart.range | UseExtensionFromAncestor | - |
 | EvidenceVariable.characteristic.timeFromStart.note | UseExtensionFromAncestor | - |
-| EvidenceVariable.characteristic.groupMeasure | UseElementRenamed | EvidenceVariable.characteristic.groupMeasure |
+| EvidenceVariable.characteristic.groupMeasure | UseElementSameName | EvidenceVariable.characteristic.groupMeasure |
 | EvidenceVariable.handling | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.handling |
 | EvidenceVariable.category | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.category |
 | EvidenceVariable.category.id | UseExtensionFromAncestor | - |

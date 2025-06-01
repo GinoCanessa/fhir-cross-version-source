@@ -32,10 +32,10 @@
 | ServiceRequest.requester | UseElementSameName | ServiceRequest.requester |
 | ServiceRequest.performerType | UseElementSameName | ServiceRequest.performerType |
 | ServiceRequest.performer | UseElementSameName | ServiceRequest.performer |
-| ServiceRequest.locationCode | UseElementRenamed | ServiceRequest.locationCode |
-| ServiceRequest.locationReference | UseElementRenamed | ServiceRequest.locationReference |
-| ServiceRequest.reasonCode | UseElementRenamed | ServiceRequest.reasonCode |
-| ServiceRequest.reasonReference | UseElementRenamed | ServiceRequest.reasonReference |
+| ServiceRequest.locationCode | UseElementSameName | ServiceRequest.locationCode |
+| ServiceRequest.locationReference | UseElementSameName | ServiceRequest.locationReference |
+| ServiceRequest.reasonCode | UseElementSameName | ServiceRequest.reasonCode |
+| ServiceRequest.reasonReference | UseElementSameName | ServiceRequest.reasonReference |
 | ServiceRequest.insurance | UseElementSameName | ServiceRequest.insurance |
 | ServiceRequest.supportingInfo | UseElementSameName | ServiceRequest.supportingInfo |
 | ServiceRequest.specimen | UseElementSameName | ServiceRequest.specimen |

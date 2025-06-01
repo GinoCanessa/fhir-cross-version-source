@@ -12,7 +12,7 @@
 | SupplyRequest.modifierExtension | UseElementSameName | SupplyRequest.modifierExtension |
 | SupplyRequest.identifier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.identifier |
 | SupplyRequest.status | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.status |
-| SupplyRequest.category | UseElementSameName | SupplyRequest.kind |
+| SupplyRequest.category | UseElementRenamed | SupplyRequest.kind |
 | SupplyRequest.priority | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.priority |
 | SupplyRequest.item[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.item |
 | SupplyRequest.quantity | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.quantity |
@@ -23,7 +23,7 @@
 | SupplyRequest.parameter.code | UseExtensionFromAncestor | - |
 | SupplyRequest.parameter.value[x] | UseExtensionFromAncestor | - |
 | SupplyRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.occurrence |
-| SupplyRequest.authoredOn | UseElementSameName | SupplyRequest.date |
+| SupplyRequest.authoredOn | UseElementRenamed | SupplyRequest.date |
 | SupplyRequest.requester | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.requester |
 | SupplyRequest.supplier | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.supplier |
 | SupplyRequest.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyRequest.reasonCode |

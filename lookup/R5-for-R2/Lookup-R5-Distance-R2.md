@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Distance.id | UseElementSameName | Quantity.id |
-| Distance.extension | UseElementSameName | Quantity.extension |
-| Distance.value | UseElementSameName | Quantity.value |
+| Distance.id | UseElementRenamed | Quantity.id |
+| Distance.extension | UseElementRenamed | Quantity.extension |
+| Distance.value | UseElementRenamed | Quantity.value |
 | Distance.comparator | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Distance.comparator |
-| Distance.unit | UseElementSameName | Quantity.unit |
-| Distance.system | UseElementSameName | Quantity.system |
-| Distance.code | UseElementSameName | Quantity.code |
+| Distance.unit | UseElementRenamed | Quantity.unit |
+| Distance.system | UseElementRenamed | Quantity.system |
+| Distance.code | UseElementRenamed | Quantity.code |

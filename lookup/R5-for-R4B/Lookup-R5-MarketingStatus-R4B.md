@@ -2,11 +2,11 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| MarketingStatus.id | UseElementRenamed | MarketingStatus.id |
-| MarketingStatus.extension | UseElementRenamed | MarketingStatus.extension |
-| MarketingStatus.modifierExtension | UseElementRenamed | MarketingStatus.modifierExtension |
-| MarketingStatus.country | UseElementRenamed | MarketingStatus.country |
-| MarketingStatus.jurisdiction | UseElementRenamed | MarketingStatus.jurisdiction |
-| MarketingStatus.status | UseElementRenamed | MarketingStatus.status |
-| MarketingStatus.dateRange | UseElementRenamed | MarketingStatus.dateRange |
-| MarketingStatus.restoreDate | UseElementRenamed | MarketingStatus.restoreDate |
+| MarketingStatus.id | UseElementSameName | MarketingStatus.id |
+| MarketingStatus.extension | UseElementSameName | MarketingStatus.extension |
+| MarketingStatus.modifierExtension | UseElementSameName | MarketingStatus.modifierExtension |
+| MarketingStatus.country | UseElementSameName | MarketingStatus.country |
+| MarketingStatus.jurisdiction | UseElementSameName | MarketingStatus.jurisdiction |
+| MarketingStatus.status | UseElementSameName | MarketingStatus.status |
+| MarketingStatus.dateRange | UseElementSameName | MarketingStatus.dateRange |
+| MarketingStatus.restoreDate | UseElementSameName | MarketingStatus.restoreDate |

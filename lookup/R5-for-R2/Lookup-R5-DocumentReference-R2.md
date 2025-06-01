@@ -25,7 +25,7 @@
 | DocumentReference.facilityType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.facilityType |
 | DocumentReference.practiceSetting | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.practiceSetting |
 | DocumentReference.period | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.period |
-| DocumentReference.date | UseElementSameName | DocumentReference.indexed |
+| DocumentReference.date | UseElementRenamed | DocumentReference.indexed |
 | DocumentReference.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.author |
 | DocumentReference.attester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester |
 | DocumentReference.attester.id | UseExtensionFromAncestor | - |

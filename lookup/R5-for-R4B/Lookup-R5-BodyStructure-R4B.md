@@ -2,17 +2,17 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| BodyStructure.id | UseElementRenamed | BodyStructure.id |
-| BodyStructure.meta | UseElementRenamed | BodyStructure.meta |
-| BodyStructure.implicitRules | UseElementRenamed | BodyStructure.implicitRules |
-| BodyStructure.language | UseElementRenamed | BodyStructure.language |
-| BodyStructure.text | UseElementRenamed | BodyStructure.text |
-| BodyStructure.contained | UseElementRenamed | BodyStructure.contained |
-| BodyStructure.extension | UseElementRenamed | BodyStructure.extension |
-| BodyStructure.modifierExtension | UseElementRenamed | BodyStructure.modifierExtension |
-| BodyStructure.identifier | UseElementRenamed | BodyStructure.identifier |
-| BodyStructure.active | UseElementRenamed | BodyStructure.active |
-| BodyStructure.morphology | UseElementRenamed | BodyStructure.morphology |
+| BodyStructure.id | UseElementSameName | BodyStructure.id |
+| BodyStructure.meta | UseElementSameName | BodyStructure.meta |
+| BodyStructure.implicitRules | UseElementSameName | BodyStructure.implicitRules |
+| BodyStructure.language | UseElementSameName | BodyStructure.language |
+| BodyStructure.text | UseElementSameName | BodyStructure.text |
+| BodyStructure.contained | UseElementSameName | BodyStructure.contained |
+| BodyStructure.extension | UseElementSameName | BodyStructure.extension |
+| BodyStructure.modifierExtension | UseElementSameName | BodyStructure.modifierExtension |
+| BodyStructure.identifier | UseElementSameName | BodyStructure.identifier |
+| BodyStructure.active | UseElementSameName | BodyStructure.active |
+| BodyStructure.morphology | UseElementSameName | BodyStructure.morphology |
 | BodyStructure.includedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure |
 | BodyStructure.includedStructure.id | UseExtensionFromAncestor | - |
 | BodyStructure.includedStructure.extension | UseExtensionFromAncestor | - |
@@ -35,6 +35,6 @@
 | BodyStructure.includedStructure.spatialReference | UseExtensionFromAncestor | - |
 | BodyStructure.includedStructure.qualifier | UseExtensionFromAncestor | - |
 | BodyStructure.excludedStructure | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure |
-| BodyStructure.description | UseElementRenamed | BodyStructure.description |
+| BodyStructure.description | UseElementSameName | BodyStructure.description |
 | BodyStructure.image | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.image |
-| BodyStructure.patient | UseElementRenamed | BodyStructure.patient |
+| BodyStructure.patient | UseElementSameName | BodyStructure.patient |

@@ -17,10 +17,10 @@
 | MessageHeader.destination.modifierExtension | UseElementSameName | MessageHeader.destination.modifierExtension |
 | MessageHeader.destination.name | UseElementSameName | MessageHeader.destination.name |
 | MessageHeader.destination.target | UseElementSameName | MessageHeader.destination.target |
-| MessageHeader.destination.endpoint | UseElementRenamed | MessageHeader.destination.endpoint |
+| MessageHeader.destination.endpoint | UseElementSameName | MessageHeader.destination.endpoint |
 | MessageHeader.destination.receiver | UseElementSameName | MessageHeader.destination.receiver |
 | MessageHeader.sender | UseElementSameName | MessageHeader.sender |
-| MessageHeader.enterer | UseElementRenamed | MessageHeader.enterer |
+| MessageHeader.enterer | UseElementSameName | MessageHeader.enterer |
 | MessageHeader.author | UseElementSameName | MessageHeader.author |
 | MessageHeader.source | UseElementSameName | MessageHeader.source |
 | MessageHeader.source.id | UseElementSameName | MessageHeader.source.id |
@@ -30,7 +30,7 @@
 | MessageHeader.source.software | UseElementSameName | MessageHeader.source.software |
 | MessageHeader.source.version | UseElementSameName | MessageHeader.source.version |
 | MessageHeader.source.contact | UseElementSameName | MessageHeader.source.contact |
-| MessageHeader.source.endpoint | UseElementRenamed | MessageHeader.source.endpoint |
+| MessageHeader.source.endpoint | UseElementSameName | MessageHeader.source.endpoint |
 | MessageHeader.responsible | UseElementSameName | MessageHeader.responsible |
 | MessageHeader.reason | UseElementSameName | MessageHeader.reason |
 | MessageHeader.response | UseElementSameName | MessageHeader.response |

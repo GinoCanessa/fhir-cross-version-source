@@ -36,7 +36,7 @@
 | Device.deviceName.modifierExtension | UseExtensionFromAncestor | - |
 | Device.deviceName.name | UseExtensionFromAncestor | - |
 | Device.deviceName.type | UseExtensionFromAncestor | - |
-| Device.modelNumber | UseElementSameName | Device.model |
+| Device.modelNumber | UseElementRenamed | Device.model |
 | Device.partNumber | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Device.partNumber |
 | Device.type | UseElementSameName | Device.type |
 | Device.specialization | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Device.specialization |

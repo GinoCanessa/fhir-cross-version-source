@@ -20,7 +20,7 @@
 | MedicationAdministration.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.subject |
 | MedicationAdministration.context | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.context |
 | MedicationAdministration.supportingInformation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.supportingInformation |
-| MedicationAdministration.effective[x] | UseElementSameName | MedicationAdministration.effectiveTime[x] |
+| MedicationAdministration.effective[x] | UseElementRenamed | MedicationAdministration.effectiveTime[x] |
 | MedicationAdministration.performer | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.performer |
 | MedicationAdministration.performer.id | UseExtensionFromAncestor | - |
 | MedicationAdministration.performer.extension | UseExtensionFromAncestor | - |
@@ -37,9 +37,9 @@
 | MedicationAdministration.dosage.extension | UseElementSameName | MedicationAdministration.dosage.extension |
 | MedicationAdministration.dosage.modifierExtension | UseElementSameName | MedicationAdministration.dosage.modifierExtension |
 | MedicationAdministration.dosage.text | UseElementSameName | MedicationAdministration.dosage.text |
-| MedicationAdministration.dosage.site | UseElementSameName | MedicationAdministration.dosage.site[x] |
+| MedicationAdministration.dosage.site | UseElementRenamed | MedicationAdministration.dosage.site[x] |
 | MedicationAdministration.dosage.route | UseElementSameName | MedicationAdministration.dosage.route |
 | MedicationAdministration.dosage.method | UseElementSameName | MedicationAdministration.dosage.method |
-| MedicationAdministration.dosage.dose | UseElementSameName | MedicationAdministration.dosage.quantity |
+| MedicationAdministration.dosage.dose | UseElementRenamed | MedicationAdministration.dosage.quantity |
 | MedicationAdministration.dosage.rate[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.dosage.rate |
 | MedicationAdministration.eventHistory | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.eventHistory |

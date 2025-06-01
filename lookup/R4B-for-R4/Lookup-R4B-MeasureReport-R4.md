@@ -31,7 +31,7 @@
 | MeasureReport.group.population.code | UseElementSameName | MeasureReport.group.population.code |
 | MeasureReport.group.population.count | UseElementSameName | MeasureReport.group.population.count |
 | MeasureReport.group.population.subjectResults | UseElementSameName | MeasureReport.group.population.subjectResults |
-| MeasureReport.group.measureScore | UseElementRenamed | MeasureReport.group.measureScore |
+| MeasureReport.group.measureScore | UseElementSameName | MeasureReport.group.measureScore |
 | MeasureReport.group.stratifier | UseElementSameName | MeasureReport.group.stratifier |
 | MeasureReport.group.stratifier.id | UseElementSameName | MeasureReport.group.stratifier.id |
 | MeasureReport.group.stratifier.extension | UseElementSameName | MeasureReport.group.stratifier.extension |
@@ -41,13 +41,13 @@
 | MeasureReport.group.stratifier.stratum.id | UseElementSameName | MeasureReport.group.stratifier.stratum.id |
 | MeasureReport.group.stratifier.stratum.extension | UseElementSameName | MeasureReport.group.stratifier.stratum.extension |
 | MeasureReport.group.stratifier.stratum.modifierExtension | UseElementSameName | MeasureReport.group.stratifier.stratum.modifierExtension |
-| MeasureReport.group.stratifier.stratum.value | UseElementRenamed | MeasureReport.group.stratifier.stratum.value |
+| MeasureReport.group.stratifier.stratum.value | UseElementSameName | MeasureReport.group.stratifier.stratum.value |
 | MeasureReport.group.stratifier.stratum.component | UseElementSameName | MeasureReport.group.stratifier.stratum.component |
 | MeasureReport.group.stratifier.stratum.component.id | UseElementSameName | MeasureReport.group.stratifier.stratum.component.id |
 | MeasureReport.group.stratifier.stratum.component.extension | UseElementSameName | MeasureReport.group.stratifier.stratum.component.extension |
 | MeasureReport.group.stratifier.stratum.component.modifierExtension | UseElementSameName | MeasureReport.group.stratifier.stratum.component.modifierExtension |
 | MeasureReport.group.stratifier.stratum.component.code | UseElementSameName | MeasureReport.group.stratifier.stratum.component.code |
-| MeasureReport.group.stratifier.stratum.component.value | UseElementRenamed | MeasureReport.group.stratifier.stratum.component.value |
+| MeasureReport.group.stratifier.stratum.component.value | UseElementSameName | MeasureReport.group.stratifier.stratum.component.value |
 | MeasureReport.group.stratifier.stratum.population | UseElementSameName | MeasureReport.group.stratifier.stratum.population |
 | MeasureReport.group.stratifier.stratum.population.id | UseElementSameName | MeasureReport.group.stratifier.stratum.population.id |
 | MeasureReport.group.stratifier.stratum.population.extension | UseElementSameName | MeasureReport.group.stratifier.stratum.population.extension |
@@ -55,5 +55,5 @@
 | MeasureReport.group.stratifier.stratum.population.code | UseElementSameName | MeasureReport.group.stratifier.stratum.population.code |
 | MeasureReport.group.stratifier.stratum.population.count | UseElementSameName | MeasureReport.group.stratifier.stratum.population.count |
 | MeasureReport.group.stratifier.stratum.population.subjectResults | UseElementSameName | MeasureReport.group.stratifier.stratum.population.subjectResults |
-| MeasureReport.group.stratifier.stratum.measureScore | UseElementRenamed | MeasureReport.group.stratifier.stratum.measureScore |
+| MeasureReport.group.stratifier.stratum.measureScore | UseElementSameName | MeasureReport.group.stratifier.stratum.measureScore |
 | MeasureReport.evaluatedResource | UseElementSameName | MeasureReport.evaluatedResource |

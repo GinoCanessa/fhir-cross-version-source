@@ -13,7 +13,7 @@
 | AdverseEvent.identifier | UseElementSameName | AdverseEvent.identifier |
 | AdverseEvent.actuality | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.actuality |
 | AdverseEvent.category | UseElementSameName | AdverseEvent.category |
-| AdverseEvent.event | UseElementSameName | AdverseEvent.type |
+| AdverseEvent.event | UseElementRenamed | AdverseEvent.type |
 | AdverseEvent.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.subject |
 | AdverseEvent.encounter | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.encounter |
 | AdverseEvent.date | UseElementSameName | AdverseEvent.date |
@@ -35,10 +35,10 @@
 | AdverseEvent.suspectEntity.causality.id | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.id |
 | AdverseEvent.suspectEntity.causality.extension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.extension |
 | AdverseEvent.suspectEntity.causality.modifierExtension | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.modifierExtension |
-| AdverseEvent.suspectEntity.causality.assessment | UseElementSameName | AdverseEvent.suspectEntity.causalityAssessment |
-| AdverseEvent.suspectEntity.causality.productRelatedness | UseElementSameName | AdverseEvent.suspectEntity.causalityProductRelatedness |
+| AdverseEvent.suspectEntity.causality.assessment | UseElementRenamed | AdverseEvent.suspectEntity.causalityAssessment |
+| AdverseEvent.suspectEntity.causality.productRelatedness | UseElementRenamed | AdverseEvent.suspectEntity.causalityProductRelatedness |
 | AdverseEvent.suspectEntity.causality.author | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.author |
-| AdverseEvent.suspectEntity.causality.method | UseElementSameName | AdverseEvent.suspectEntity.causalityMethod |
+| AdverseEvent.suspectEntity.causality.method | UseElementRenamed | AdverseEvent.suspectEntity.causalityMethod |
 | AdverseEvent.subjectMedicalHistory | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.subjectMedicalHistory |
 | AdverseEvent.referenceDocument | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.referenceDocument |
 | AdverseEvent.study | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.study |

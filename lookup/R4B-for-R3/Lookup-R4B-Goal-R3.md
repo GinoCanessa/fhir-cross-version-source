@@ -12,7 +12,7 @@
 | Goal.modifierExtension | UseElementSameName | Goal.modifierExtension |
 | Goal.identifier | UseElementSameName | Goal.identifier |
 | Goal.lifecycleStatus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Goal.lifecycleStatus |
-| Goal.achievementStatus | UseElementSameName | Goal.status |
+| Goal.achievementStatus | UseElementRenamed | Goal.status |
 | Goal.category | UseElementSameName | Goal.category |
 | Goal.priority | UseElementSameName | Goal.priority |
 | Goal.description | UseElementSameName | Goal.description |

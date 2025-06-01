@@ -15,9 +15,9 @@
 | HealthcareService.providedBy | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-HealthcareService.providedBy |
 | HealthcareService.category | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-HealthcareService.category |
 | HealthcareService.type | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-HealthcareService.type |
-| HealthcareService.specialty | UseElementSameName | HealthcareService.serviceType.specialty |
+| HealthcareService.specialty | UseElementRenamed | HealthcareService.serviceType.specialty |
 | HealthcareService.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-HealthcareService.location |
-| HealthcareService.name | UseElementSameName | HealthcareService.serviceName |
+| HealthcareService.name | UseElementRenamed | HealthcareService.serviceName |
 | HealthcareService.comment | UseElementSameName | HealthcareService.comment |
 | HealthcareService.extraDetails | UseElementSameName | HealthcareService.extraDetails |
 | HealthcareService.photo | UseElementSameName | HealthcareService.photo |

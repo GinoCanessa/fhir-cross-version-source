@@ -66,7 +66,7 @@
 | ElementDefinition.constraint.severity | UseElementSameName | ElementDefinition.constraint.severity |
 | ElementDefinition.constraint.human | UseElementSameName | ElementDefinition.constraint.human |
 | ElementDefinition.constraint.expression | UseElementSameName | ElementDefinition.constraint.expression |
-| ElementDefinition.constraint.xpath | UseElementRenamed | ElementDefinition.constraint.xpath |
+| ElementDefinition.constraint.xpath | UseElementSameName | ElementDefinition.constraint.xpath |
 | ElementDefinition.constraint.source | UseElementSameName | ElementDefinition.constraint.source |
 | ElementDefinition.mustSupport | UseElementSameName | ElementDefinition.mustSupport |
 | ElementDefinition.isModifier | UseElementSameName | ElementDefinition.isModifier |

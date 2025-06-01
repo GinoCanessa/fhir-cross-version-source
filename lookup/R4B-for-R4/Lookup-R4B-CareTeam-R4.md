@@ -15,7 +15,7 @@
 | CareTeam.category | UseElementSameName | CareTeam.category |
 | CareTeam.name | UseElementSameName | CareTeam.name |
 | CareTeam.subject | UseElementSameName | CareTeam.subject |
-| CareTeam.encounter | UseElementRenamed | CareTeam.encounter |
+| CareTeam.encounter | UseElementSameName | CareTeam.encounter |
 | CareTeam.period | UseElementSameName | CareTeam.period |
 | CareTeam.participant | UseElementSameName | CareTeam.participant |
 | CareTeam.participant.id | UseElementSameName | CareTeam.participant.id |
@@ -24,9 +24,9 @@
 | CareTeam.participant.role | UseElementSameName | CareTeam.participant.role |
 | CareTeam.participant.member | UseElementSameName | CareTeam.participant.member |
 | CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
-| CareTeam.participant.period | UseElementRenamed | CareTeam.participant.period |
-| CareTeam.reasonCode | UseElementRenamed | CareTeam.reasonCode |
-| CareTeam.reasonReference | UseElementRenamed | CareTeam.reasonReference |
+| CareTeam.participant.period | UseElementSameName | CareTeam.participant.period |
+| CareTeam.reasonCode | UseElementSameName | CareTeam.reasonCode |
+| CareTeam.reasonReference | UseElementSameName | CareTeam.reasonReference |
 | CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
 | CareTeam.telecom | UseElementSameName | CareTeam.telecom |
 | CareTeam.note | UseElementSameName | CareTeam.note |

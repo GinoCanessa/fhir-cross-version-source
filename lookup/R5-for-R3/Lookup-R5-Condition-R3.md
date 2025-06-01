@@ -21,7 +21,7 @@
 | Condition.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.encounter |
 | Condition.onset[x] | UseElementSameName | Condition.onset[x] |
 | Condition.abatement[x] | UseElementSameName | Condition.abatement[x] |
-| Condition.recordedDate | UseElementSameName | Condition.assertedDate |
+| Condition.recordedDate | UseElementRenamed | Condition.assertedDate |
 | Condition.participant | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.participant |
 | Condition.participant.id | UseExtensionFromAncestor | - |
 | Condition.participant.extension | UseExtensionFromAncestor | - |

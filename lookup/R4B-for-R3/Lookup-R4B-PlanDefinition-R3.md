@@ -60,7 +60,7 @@
 | PlanDefinition.action.id | UseElementSameName | PlanDefinition.action.id |
 | PlanDefinition.action.extension | UseElementSameName | PlanDefinition.action.extension |
 | PlanDefinition.action.modifierExtension | UseElementSameName | PlanDefinition.action.modifierExtension |
-| PlanDefinition.action.prefix | UseElementSameName | PlanDefinition.action.label |
+| PlanDefinition.action.prefix | UseElementRenamed | PlanDefinition.action.label |
 | PlanDefinition.action.title | UseElementSameName | PlanDefinition.action.title |
 | PlanDefinition.action.description | UseElementSameName | PlanDefinition.action.description |
 | PlanDefinition.action.textEquivalent | UseElementSameName | PlanDefinition.action.textEquivalent |

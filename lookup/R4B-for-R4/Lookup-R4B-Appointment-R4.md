@@ -12,13 +12,13 @@
 | Appointment.modifierExtension | UseElementSameName | Appointment.modifierExtension |
 | Appointment.identifier | UseElementSameName | Appointment.identifier |
 | Appointment.status | UseElementSameName | Appointment.status |
-| Appointment.cancelationReason | UseElementRenamed | Appointment.cancelationReason |
+| Appointment.cancelationReason | UseElementSameName | Appointment.cancelationReason |
 | Appointment.serviceCategory | UseElementSameName | Appointment.serviceCategory |
 | Appointment.serviceType | UseElementSameName | Appointment.serviceType |
 | Appointment.specialty | UseElementSameName | Appointment.specialty |
 | Appointment.appointmentType | UseElementSameName | Appointment.appointmentType |
-| Appointment.reasonCode | UseElementRenamed | Appointment.reasonCode |
-| Appointment.reasonReference | UseElementRenamed | Appointment.reasonReference |
+| Appointment.reasonCode | UseElementSameName | Appointment.reasonCode |
+| Appointment.reasonReference | UseElementSameName | Appointment.reasonReference |
 | Appointment.priority | UseElementSameName | Appointment.priority |
 | Appointment.description | UseElementSameName | Appointment.description |
 | Appointment.supportingInformation | UseElementSameName | Appointment.supportingInformation |
@@ -27,7 +27,7 @@
 | Appointment.minutesDuration | UseElementSameName | Appointment.minutesDuration |
 | Appointment.slot | UseElementSameName | Appointment.slot |
 | Appointment.created | UseElementSameName | Appointment.created |
-| Appointment.comment | UseElementRenamed | Appointment.comment |
+| Appointment.comment | UseElementSameName | Appointment.comment |
 | Appointment.patientInstruction | UseElementSameName | Appointment.patientInstruction |
 | Appointment.basedOn | UseElementSameName | Appointment.basedOn |
 | Appointment.participant | UseElementSameName | Appointment.participant |

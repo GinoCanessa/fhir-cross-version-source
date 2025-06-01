@@ -30,11 +30,11 @@
 | Task.authoredOn | UseElementSameName | Task.authoredOn |
 | Task.lastModified | UseElementSameName | Task.lastModified |
 | Task.requester | UseElementSameName | Task.requester |
-| Task.performerType | UseElementRenamed | Task.performerType |
+| Task.performerType | UseElementSameName | Task.performerType |
 | Task.owner | UseElementSameName | Task.owner |
 | Task.location | UseElementSameName | Task.location |
-| Task.reasonCode | UseElementRenamed | Task.reasonCode |
-| Task.reasonReference | UseElementRenamed | Task.reasonReference |
+| Task.reasonCode | UseElementSameName | Task.reasonCode |
+| Task.reasonReference | UseElementSameName | Task.reasonReference |
 | Task.insurance | UseElementSameName | Task.insurance |
 | Task.note | UseElementSameName | Task.note |
 | Task.relevantHistory | UseElementSameName | Task.relevantHistory |

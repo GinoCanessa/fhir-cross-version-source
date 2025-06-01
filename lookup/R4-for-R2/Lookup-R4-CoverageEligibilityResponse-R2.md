@@ -2,24 +2,24 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| CoverageEligibilityResponse.id | UseElementSameName | EligibilityResponse.id |
+| CoverageEligibilityResponse.id | UseElementRenamed | EligibilityResponse.id |
 | CoverageEligibilityResponse.meta | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.meta |
-| CoverageEligibilityResponse.implicitRules | UseElementSameName | EligibilityResponse.implicitRules |
-| CoverageEligibilityResponse.language | UseElementSameName | EligibilityResponse.language |
-| CoverageEligibilityResponse.text | UseElementSameName | EligibilityResponse.text |
-| CoverageEligibilityResponse.contained | UseElementSameName | EligibilityResponse.contained |
-| CoverageEligibilityResponse.extension | UseElementSameName | EligibilityResponse.extension |
-| CoverageEligibilityResponse.modifierExtension | UseElementSameName | EligibilityResponse.modifierExtension |
-| CoverageEligibilityResponse.identifier | UseElementSameName | EligibilityResponse.identifier |
+| CoverageEligibilityResponse.implicitRules | UseElementRenamed | EligibilityResponse.implicitRules |
+| CoverageEligibilityResponse.language | UseElementRenamed | EligibilityResponse.language |
+| CoverageEligibilityResponse.text | UseElementRenamed | EligibilityResponse.text |
+| CoverageEligibilityResponse.contained | UseElementRenamed | EligibilityResponse.contained |
+| CoverageEligibilityResponse.extension | UseElementRenamed | EligibilityResponse.extension |
+| CoverageEligibilityResponse.modifierExtension | UseElementRenamed | EligibilityResponse.modifierExtension |
+| CoverageEligibilityResponse.identifier | UseElementRenamed | EligibilityResponse.identifier |
 | CoverageEligibilityResponse.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.status |
 | CoverageEligibilityResponse.purpose | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.purpose |
 | CoverageEligibilityResponse.patient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.patient |
 | CoverageEligibilityResponse.serviced[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.serviced |
-| CoverageEligibilityResponse.created | UseElementSameName | EligibilityResponse.created |
+| CoverageEligibilityResponse.created | UseElementRenamed | EligibilityResponse.created |
 | CoverageEligibilityResponse.requestor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.requestor |
 | CoverageEligibilityResponse.request | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.request |
 | CoverageEligibilityResponse.outcome | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.outcome |
-| CoverageEligibilityResponse.disposition | UseElementSameName | EligibilityResponse.disposition |
+| CoverageEligibilityResponse.disposition | UseElementRenamed | EligibilityResponse.disposition |
 | CoverageEligibilityResponse.insurer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurer |
 | CoverageEligibilityResponse.insurance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CoverageEligibilityResponse.insurance |
 | CoverageEligibilityResponse.insurance.id | UseExtensionFromAncestor | - |

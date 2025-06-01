@@ -2,17 +2,17 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| ProdCharacteristic.id | UseElementRenamed | ProdCharacteristic.id |
-| ProdCharacteristic.extension | UseElementRenamed | ProdCharacteristic.extension |
-| ProdCharacteristic.modifierExtension | UseElementRenamed | ProdCharacteristic.modifierExtension |
-| ProdCharacteristic.height | UseElementRenamed | ProdCharacteristic.height |
-| ProdCharacteristic.width | UseElementRenamed | ProdCharacteristic.width |
-| ProdCharacteristic.depth | UseElementRenamed | ProdCharacteristic.depth |
-| ProdCharacteristic.weight | UseElementRenamed | ProdCharacteristic.weight |
-| ProdCharacteristic.nominalVolume | UseElementRenamed | ProdCharacteristic.nominalVolume |
-| ProdCharacteristic.externalDiameter | UseElementRenamed | ProdCharacteristic.externalDiameter |
-| ProdCharacteristic.shape | UseElementRenamed | ProdCharacteristic.shape |
-| ProdCharacteristic.color | UseElementRenamed | ProdCharacteristic.color |
-| ProdCharacteristic.imprint | UseElementRenamed | ProdCharacteristic.imprint |
-| ProdCharacteristic.image | UseElementRenamed | ProdCharacteristic.image |
-| ProdCharacteristic.scoring | UseElementRenamed | ProdCharacteristic.scoring |
+| ProdCharacteristic.id | UseElementSameName | ProdCharacteristic.id |
+| ProdCharacteristic.extension | UseElementSameName | ProdCharacteristic.extension |
+| ProdCharacteristic.modifierExtension | UseElementSameName | ProdCharacteristic.modifierExtension |
+| ProdCharacteristic.height | UseElementSameName | ProdCharacteristic.height |
+| ProdCharacteristic.width | UseElementSameName | ProdCharacteristic.width |
+| ProdCharacteristic.depth | UseElementSameName | ProdCharacteristic.depth |
+| ProdCharacteristic.weight | UseElementSameName | ProdCharacteristic.weight |
+| ProdCharacteristic.nominalVolume | UseElementSameName | ProdCharacteristic.nominalVolume |
+| ProdCharacteristic.externalDiameter | UseElementSameName | ProdCharacteristic.externalDiameter |
+| ProdCharacteristic.shape | UseElementSameName | ProdCharacteristic.shape |
+| ProdCharacteristic.color | UseElementSameName | ProdCharacteristic.color |
+| ProdCharacteristic.imprint | UseElementSameName | ProdCharacteristic.imprint |
+| ProdCharacteristic.image | UseElementSameName | ProdCharacteristic.image |
+| ProdCharacteristic.scoring | UseElementSameName | ProdCharacteristic.scoring |

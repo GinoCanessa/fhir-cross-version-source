@@ -33,12 +33,12 @@
 | Consent.verification.verified | UseExtensionFromAncestor | - |
 | Consent.verification.verifiedWith | UseExtensionFromAncestor | - |
 | Consent.verification.verificationDate | UseExtensionFromAncestor | - |
-| Consent.provision | UseElementSameName | Consent.except |
+| Consent.provision | UseElementRenamed | Consent.except |
 | Consent.provision.id | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.id |
 | Consent.provision.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.extension |
 | Consent.provision.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.modifierExtension |
-| Consent.provision.type | UseElementSameName | Consent.except.type |
-| Consent.provision.period | UseElementSameName | Consent.except.period |
+| Consent.provision.type | UseElementRenamed | Consent.except.type |
+| Consent.provision.period | UseElementRenamed | Consent.except.period |
 | Consent.provision.actor | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.actor |
 | Consent.provision.actor.id | UseExtensionFromAncestor | - |
 | Consent.provision.actor.extension | UseExtensionFromAncestor | - |
@@ -48,7 +48,7 @@
 | Consent.provision.action | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.action |
 | Consent.provision.securityLabel | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.securityLabel |
 | Consent.provision.purpose | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.purpose |
-| Consent.provision.class | UseElementSameName | Consent.except.class |
+| Consent.provision.class | UseElementRenamed | Consent.except.class |
 | Consent.provision.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.code |
 | Consent.provision.dataPeriod | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.dataPeriod |
 | Consent.provision.data | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.data |

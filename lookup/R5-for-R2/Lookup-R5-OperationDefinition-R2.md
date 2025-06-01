@@ -25,12 +25,12 @@
 | OperationDefinition.description | UseElementSameName | OperationDefinition.description |
 | OperationDefinition.useContext | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.useContext |
 | OperationDefinition.jurisdiction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.jurisdiction |
-| OperationDefinition.purpose | UseElementSameName | OperationDefinition.requirements |
+| OperationDefinition.purpose | UseElementRenamed | OperationDefinition.requirements |
 | OperationDefinition.copyright | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.copyright |
 | OperationDefinition.copyrightLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.copyrightLabel |
-| OperationDefinition.affectsState | UseElementSameName | OperationDefinition.idempotent |
+| OperationDefinition.affectsState | UseElementRenamed | OperationDefinition.idempotent |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
-| OperationDefinition.comment | UseElementSameName | OperationDefinition.notes |
+| OperationDefinition.comment | UseElementRenamed | OperationDefinition.notes |
 | OperationDefinition.base | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.base |
 | OperationDefinition.resource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-OperationDefinition.resource |
 | OperationDefinition.system | UseElementSameName | OperationDefinition.system |

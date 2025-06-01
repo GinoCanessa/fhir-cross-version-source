@@ -31,7 +31,7 @@
 | RequestGroup.action.id | UseElementSameName | RequestGroup.action.id |
 | RequestGroup.action.extension | UseElementSameName | RequestGroup.action.extension |
 | RequestGroup.action.modifierExtension | UseElementSameName | RequestGroup.action.modifierExtension |
-| RequestGroup.action.prefix | UseElementSameName | RequestGroup.action.label |
+| RequestGroup.action.prefix | UseElementRenamed | RequestGroup.action.label |
 | RequestGroup.action.title | UseElementSameName | RequestGroup.action.title |
 | RequestGroup.action.description | UseElementSameName | RequestGroup.action.description |
 | RequestGroup.action.textEquivalent | UseElementSameName | RequestGroup.action.textEquivalent |

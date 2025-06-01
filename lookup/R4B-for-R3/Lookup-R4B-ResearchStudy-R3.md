@@ -23,7 +23,7 @@
 | ResearchStudy.contact | UseElementSameName | ResearchStudy.contact |
 | ResearchStudy.relatedArtifact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.relatedArtifact |
 | ResearchStudy.keyword | UseElementSameName | ResearchStudy.keyword |
-| ResearchStudy.location | UseElementSameName | ResearchStudy.jurisdiction |
+| ResearchStudy.location | UseElementRenamed | ResearchStudy.jurisdiction |
 | ResearchStudy.description | UseElementSameName | ResearchStudy.description |
 | ResearchStudy.enrollment | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.enrollment |
 | ResearchStudy.period | UseElementSameName | ResearchStudy.period |
@@ -37,7 +37,7 @@
 | ResearchStudy.arm.extension | UseElementSameName | ResearchStudy.arm.extension |
 | ResearchStudy.arm.modifierExtension | UseElementSameName | ResearchStudy.arm.modifierExtension |
 | ResearchStudy.arm.name | UseElementSameName | ResearchStudy.arm.name |
-| ResearchStudy.arm.type | UseElementSameName | ResearchStudy.arm.code |
+| ResearchStudy.arm.type | UseElementRenamed | ResearchStudy.arm.code |
 | ResearchStudy.arm.description | UseElementSameName | ResearchStudy.arm.description |
 | ResearchStudy.objective | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.objective |
 | ResearchStudy.objective.id | UseExtensionFromAncestor | - |

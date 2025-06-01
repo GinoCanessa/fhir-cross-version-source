@@ -13,8 +13,8 @@
 | Medication.identifier | UseElementSameName | Medication.identifier |
 | Medication.code | UseElementSameName | Medication.code |
 | Medication.status | UseElementSameName | Medication.status |
-| Medication.marketingAuthorizationHolder | UseElementSameName | Medication.manufacturer |
-| Medication.doseForm | UseElementSameName | Medication.form |
+| Medication.marketingAuthorizationHolder | UseElementRenamed | Medication.manufacturer |
+| Medication.doseForm | UseElementRenamed | Medication.form |
 | Medication.totalVolume | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Medication.totalVolume |
 | Medication.ingredient | UseElementSameName | Medication.ingredient |
 | Medication.ingredient.id | UseElementSameName | Medication.ingredient.id |

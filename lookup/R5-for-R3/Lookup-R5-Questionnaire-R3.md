@@ -58,7 +58,7 @@
 | Questionnaire.item.maxLength | UseElementSameName | Questionnaire.item.maxLength |
 | Questionnaire.item.answerConstraint | UseElementRenamed | Questionnaire.item.type |
 | Questionnaire.item.answerValueSet | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerValueSet |
-| Questionnaire.item.answerOption | UseElementSameName | Questionnaire.item.option |
+| Questionnaire.item.answerOption | UseElementRenamed | Questionnaire.item.option |
 | Questionnaire.item.answerOption.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerOption.id |
 | Questionnaire.item.answerOption.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerOption.extension |
 | Questionnaire.item.answerOption.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.answerOption.modifierExtension |

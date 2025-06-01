@@ -2,21 +2,21 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| MolecularSequence.id | UseElementRenamed | MolecularSequence.id |
-| MolecularSequence.meta | UseElementRenamed | MolecularSequence.meta |
-| MolecularSequence.implicitRules | UseElementRenamed | MolecularSequence.implicitRules |
-| MolecularSequence.language | UseElementRenamed | MolecularSequence.language |
-| MolecularSequence.text | UseElementRenamed | MolecularSequence.text |
-| MolecularSequence.contained | UseElementRenamed | MolecularSequence.contained |
-| MolecularSequence.extension | UseElementRenamed | MolecularSequence.extension |
-| MolecularSequence.modifierExtension | UseElementRenamed | MolecularSequence.modifierExtension |
-| MolecularSequence.identifier | UseElementRenamed | MolecularSequence.identifier |
-| MolecularSequence.type | UseElementRenamed | MolecularSequence.type |
+| MolecularSequence.id | UseElementSameName | MolecularSequence.id |
+| MolecularSequence.meta | UseElementSameName | MolecularSequence.meta |
+| MolecularSequence.implicitRules | UseElementSameName | MolecularSequence.implicitRules |
+| MolecularSequence.language | UseElementSameName | MolecularSequence.language |
+| MolecularSequence.text | UseElementSameName | MolecularSequence.text |
+| MolecularSequence.contained | UseElementSameName | MolecularSequence.contained |
+| MolecularSequence.extension | UseElementSameName | MolecularSequence.extension |
+| MolecularSequence.modifierExtension | UseElementSameName | MolecularSequence.modifierExtension |
+| MolecularSequence.identifier | UseElementSameName | MolecularSequence.identifier |
+| MolecularSequence.type | UseElementSameName | MolecularSequence.type |
 | MolecularSequence.subject | UseElementRenamed | MolecularSequence.patient |
 | MolecularSequence.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.focus |
-| MolecularSequence.specimen | UseElementRenamed | MolecularSequence.specimen |
-| MolecularSequence.device | UseElementRenamed | MolecularSequence.device |
-| MolecularSequence.performer | UseElementRenamed | MolecularSequence.performer |
+| MolecularSequence.specimen | UseElementSameName | MolecularSequence.specimen |
+| MolecularSequence.device | UseElementSameName | MolecularSequence.device |
+| MolecularSequence.performer | UseElementSameName | MolecularSequence.performer |
 | MolecularSequence.literal | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.literal |
 | MolecularSequence.formatted | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.formatted |
 | MolecularSequence.relative | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative |

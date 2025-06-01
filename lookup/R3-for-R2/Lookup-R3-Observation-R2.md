@@ -38,11 +38,11 @@
 | Observation.referenceRange.appliesTo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.referenceRange.appliesTo |
 | Observation.referenceRange.age | UseElementSameName | Observation.referenceRange.age |
 | Observation.referenceRange.text | UseElementSameName | Observation.referenceRange.text |
-| Observation.related | UseElementRenamed | Observation.related |
-| Observation.related.id | UseElementRenamed | Observation.related.id |
-| Observation.related.extension | UseElementRenamed | Observation.related.extension |
-| Observation.related.modifierExtension | UseElementRenamed | Observation.related.modifierExtension |
-| Observation.related.type | UseElementRenamed | Observation.related.type |
+| Observation.related | UseElementSameName | Observation.related |
+| Observation.related.id | UseElementSameName | Observation.related.id |
+| Observation.related.extension | UseElementSameName | Observation.related.extension |
+| Observation.related.modifierExtension | UseElementSameName | Observation.related.modifierExtension |
+| Observation.related.type | UseElementSameName | Observation.related.type |
 | Observation.related.target | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Observation.related.target |
 | Observation.component | UseElementSameName | Observation.component |
 | Observation.component.id | UseElementSameName | Observation.component.id |

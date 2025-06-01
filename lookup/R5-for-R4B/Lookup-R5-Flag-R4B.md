@@ -2,19 +2,19 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Flag.id | UseElementRenamed | Flag.id |
-| Flag.meta | UseElementRenamed | Flag.meta |
-| Flag.implicitRules | UseElementRenamed | Flag.implicitRules |
-| Flag.language | UseElementRenamed | Flag.language |
-| Flag.text | UseElementRenamed | Flag.text |
-| Flag.contained | UseElementRenamed | Flag.contained |
-| Flag.extension | UseElementRenamed | Flag.extension |
-| Flag.modifierExtension | UseElementRenamed | Flag.modifierExtension |
-| Flag.identifier | UseElementRenamed | Flag.identifier |
-| Flag.status | UseElementRenamed | Flag.status |
-| Flag.category | UseElementRenamed | Flag.category |
-| Flag.code | UseElementRenamed | Flag.code |
-| Flag.subject | UseElementRenamed | Flag.subject |
-| Flag.period | UseElementRenamed | Flag.period |
-| Flag.encounter | UseElementRenamed | Flag.encounter |
-| Flag.author | UseElementRenamed | Flag.author |
+| Flag.id | UseElementSameName | Flag.id |
+| Flag.meta | UseElementSameName | Flag.meta |
+| Flag.implicitRules | UseElementSameName | Flag.implicitRules |
+| Flag.language | UseElementSameName | Flag.language |
+| Flag.text | UseElementSameName | Flag.text |
+| Flag.contained | UseElementSameName | Flag.contained |
+| Flag.extension | UseElementSameName | Flag.extension |
+| Flag.modifierExtension | UseElementSameName | Flag.modifierExtension |
+| Flag.identifier | UseElementSameName | Flag.identifier |
+| Flag.status | UseElementSameName | Flag.status |
+| Flag.category | UseElementSameName | Flag.category |
+| Flag.code | UseElementSameName | Flag.code |
+| Flag.subject | UseElementSameName | Flag.subject |
+| Flag.period | UseElementSameName | Flag.period |
+| Flag.encounter | UseElementSameName | Flag.encounter |
+| Flag.author | UseElementSameName | Flag.author |

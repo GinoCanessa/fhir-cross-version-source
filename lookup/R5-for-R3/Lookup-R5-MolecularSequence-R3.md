@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| MolecularSequence.id | UseElementSameName | Sequence.id |
+| MolecularSequence.id | UseElementRenamed | Sequence.id |
 | MolecularSequence.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.meta |
-| MolecularSequence.implicitRules | UseElementSameName | Sequence.implicitRules |
-| MolecularSequence.language | UseElementSameName | Sequence.language |
-| MolecularSequence.text | UseElementSameName | Sequence.text |
-| MolecularSequence.contained | UseElementSameName | Sequence.contained |
-| MolecularSequence.extension | UseElementSameName | Sequence.extension |
-| MolecularSequence.modifierExtension | UseElementSameName | Sequence.modifierExtension |
-| MolecularSequence.identifier | UseElementSameName | Sequence.identifier |
+| MolecularSequence.implicitRules | UseElementRenamed | Sequence.implicitRules |
+| MolecularSequence.language | UseElementRenamed | Sequence.language |
+| MolecularSequence.text | UseElementRenamed | Sequence.text |
+| MolecularSequence.contained | UseElementRenamed | Sequence.contained |
+| MolecularSequence.extension | UseElementRenamed | Sequence.extension |
+| MolecularSequence.modifierExtension | UseElementRenamed | Sequence.modifierExtension |
+| MolecularSequence.identifier | UseElementRenamed | Sequence.identifier |
 | MolecularSequence.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.type |
 | MolecularSequence.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.subject |
 | MolecularSequence.focus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.focus |

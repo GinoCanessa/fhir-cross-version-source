@@ -20,7 +20,7 @@
 | SearchParameter.contact | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-SearchParameter.contact |
 | SearchParameter.useContext | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-SearchParameter.useContext |
 | SearchParameter.jurisdiction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-SearchParameter.jurisdiction |
-| SearchParameter.purpose | UseElementSameName | SearchParameter.requirements |
+| SearchParameter.purpose | UseElementRenamed | SearchParameter.requirements |
 | SearchParameter.code | UseElementSameName | SearchParameter.code |
 | SearchParameter.base | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-SearchParameter.base |
 | SearchParameter.type | UseElementSameName | SearchParameter.type |

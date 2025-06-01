@@ -13,7 +13,7 @@
 | Group.identifier | UseElementSameName | Group.identifier |
 | Group.active | UseElementSameName | Group.active |
 | Group.type | UseElementSameName | Group.type |
-| Group.actual | UseElementRenamed | Group.actual |
+| Group.actual | UseElementSameName | Group.actual |
 | Group.code | UseElementSameName | Group.code |
 | Group.name | UseElementSameName | Group.name |
 | Group.quantity | UseElementSameName | Group.quantity |

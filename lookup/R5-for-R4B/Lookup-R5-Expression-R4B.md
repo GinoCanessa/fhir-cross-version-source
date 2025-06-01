@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Expression.id | UseElementRenamed | Expression.id |
-| Expression.extension | UseElementRenamed | Expression.extension |
-| Expression.description | UseElementRenamed | Expression.description |
+| Expression.id | UseElementSameName | Expression.id |
+| Expression.extension | UseElementSameName | Expression.extension |
+| Expression.description | UseElementSameName | Expression.description |
 | Expression.name | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Expression.name |
-| Expression.language | UseElementRenamed | Expression.language |
-| Expression.expression | UseElementRenamed | Expression.expression |
-| Expression.reference | UseElementRenamed | Expression.reference |
+| Expression.language | UseElementSameName | Expression.language |
+| Expression.expression | UseElementSameName | Expression.expression |
+| Expression.reference | UseElementSameName | Expression.reference |

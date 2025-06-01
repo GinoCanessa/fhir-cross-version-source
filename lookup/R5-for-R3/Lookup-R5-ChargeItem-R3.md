@@ -11,7 +11,7 @@
 | ChargeItem.extension | UseElementSameName | ChargeItem.extension |
 | ChargeItem.modifierExtension | UseElementSameName | ChargeItem.modifierExtension |
 | ChargeItem.identifier | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.identifier |
-| ChargeItem.definitionUri | UseElementSameName | ChargeItem.definition |
+| ChargeItem.definitionUri | UseElementRenamed | ChargeItem.definition |
 | ChargeItem.definitionCanonical | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.definitionCanonical |
 | ChargeItem.status | UseElementSameName | ChargeItem.status |
 | ChargeItem.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.partOf |
@@ -19,11 +19,11 @@
 | ChargeItem.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.subject |
 | ChargeItem.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.encounter |
 | ChargeItem.occurrence[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.occurrence |
-| ChargeItem.performer | UseElementSameName | ChargeItem.participant |
+| ChargeItem.performer | UseElementRenamed | ChargeItem.participant |
 | ChargeItem.performer.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performer.id |
 | ChargeItem.performer.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performer.extension |
 | ChargeItem.performer.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performer.modifierExtension |
-| ChargeItem.performer.function | UseElementSameName | ChargeItem.participant.role |
+| ChargeItem.performer.function | UseElementRenamed | ChargeItem.participant.role |
 | ChargeItem.performer.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performer.actor |
 | ChargeItem.performingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.performingOrganization |
 | ChargeItem.requestingOrganization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ChargeItem.requestingOrganization |

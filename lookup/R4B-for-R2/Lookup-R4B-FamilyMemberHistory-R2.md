@@ -19,7 +19,7 @@
 | FamilyMemberHistory.date | UseElementSameName | FamilyMemberHistory.date |
 | FamilyMemberHistory.name | UseElementSameName | FamilyMemberHistory.name |
 | FamilyMemberHistory.relationship | UseElementSameName | FamilyMemberHistory.relationship |
-| FamilyMemberHistory.sex | UseElementSameName | FamilyMemberHistory.gender |
+| FamilyMemberHistory.sex | UseElementRenamed | FamilyMemberHistory.gender |
 | FamilyMemberHistory.born[x] | UseElementSameName | FamilyMemberHistory.born[x] |
 | FamilyMemberHistory.age[x] | UseElementSameName | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-FamilyMemberHistory.estimatedAge |

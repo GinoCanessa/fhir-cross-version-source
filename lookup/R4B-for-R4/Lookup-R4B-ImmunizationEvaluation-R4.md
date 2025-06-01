@@ -21,5 +21,5 @@
 | ImmunizationEvaluation.doseStatusReason | UseElementSameName | ImmunizationEvaluation.doseStatusReason |
 | ImmunizationEvaluation.description | UseElementSameName | ImmunizationEvaluation.description |
 | ImmunizationEvaluation.series | UseElementSameName | ImmunizationEvaluation.series |
-| ImmunizationEvaluation.doseNumber[x] | UseElementRenamed | ImmunizationEvaluation.doseNumber[x] |
-| ImmunizationEvaluation.seriesDoses[x] | UseElementRenamed | ImmunizationEvaluation.seriesDoses[x] |
+| ImmunizationEvaluation.doseNumber[x] | UseElementSameName | ImmunizationEvaluation.doseNumber[x] |
+| ImmunizationEvaluation.seriesDoses[x] | UseElementSameName | ImmunizationEvaluation.seriesDoses[x] |

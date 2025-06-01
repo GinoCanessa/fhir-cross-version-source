@@ -24,12 +24,12 @@
 | EpisodeOfCare.diagnosis.extension | UseElementSameName | EpisodeOfCare.diagnosis.extension |
 | EpisodeOfCare.diagnosis.modifierExtension | UseElementSameName | EpisodeOfCare.diagnosis.modifierExtension |
 | EpisodeOfCare.diagnosis.condition | UseElementSameName | EpisodeOfCare.diagnosis.condition |
-| EpisodeOfCare.diagnosis.role | UseElementRenamed | EpisodeOfCare.diagnosis.role |
-| EpisodeOfCare.diagnosis.rank | UseElementRenamed | EpisodeOfCare.diagnosis.rank |
+| EpisodeOfCare.diagnosis.role | UseElementSameName | EpisodeOfCare.diagnosis.role |
+| EpisodeOfCare.diagnosis.rank | UseElementSameName | EpisodeOfCare.diagnosis.rank |
 | EpisodeOfCare.patient | UseElementSameName | EpisodeOfCare.patient |
 | EpisodeOfCare.managingOrganization | UseElementSameName | EpisodeOfCare.managingOrganization |
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseElementSameName | EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseElementSameName | EpisodeOfCare.careManager |
-| EpisodeOfCare.team | UseElementRenamed | EpisodeOfCare.team |
+| EpisodeOfCare.team | UseElementSameName | EpisodeOfCare.team |
 | EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

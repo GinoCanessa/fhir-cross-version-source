@@ -32,7 +32,7 @@
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.authoredOn |
 | CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseElementSameName | CommunicationRequest.recipient |
-| CommunicationRequest.sender | UseElementRenamed | CommunicationRequest.sender |
-| CommunicationRequest.reasonCode | UseElementRenamed | CommunicationRequest.reasonCode |
-| CommunicationRequest.reasonReference | UseElementRenamed | CommunicationRequest.reasonReference |
+| CommunicationRequest.sender | UseElementSameName | CommunicationRequest.sender |
+| CommunicationRequest.reasonCode | UseElementSameName | CommunicationRequest.reasonCode |
+| CommunicationRequest.reasonReference | UseElementSameName | CommunicationRequest.reasonReference |
 | CommunicationRequest.note | UseElementSameName | CommunicationRequest.note |

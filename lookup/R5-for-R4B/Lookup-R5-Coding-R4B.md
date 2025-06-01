@@ -2,10 +2,10 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Coding.id | UseElementRenamed | Coding.id |
-| Coding.extension | UseElementRenamed | Coding.extension |
-| Coding.system | UseElementRenamed | Coding.system |
-| Coding.version | UseElementRenamed | Coding.version |
-| Coding.code | UseElementRenamed | Coding.code |
-| Coding.display | UseElementRenamed | Coding.display |
-| Coding.userSelected | UseElementRenamed | Coding.userSelected |
+| Coding.id | UseElementSameName | Coding.id |
+| Coding.extension | UseElementSameName | Coding.extension |
+| Coding.system | UseElementSameName | Coding.system |
+| Coding.version | UseElementSameName | Coding.version |
+| Coding.code | UseElementSameName | Coding.code |
+| Coding.display | UseElementSameName | Coding.display |
+| Coding.userSelected | UseElementSameName | Coding.userSelected |

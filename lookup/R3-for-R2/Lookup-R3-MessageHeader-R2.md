@@ -10,7 +10,7 @@
 | MessageHeader.contained | UseElementSameName | MessageHeader.contained |
 | MessageHeader.extension | UseElementSameName | MessageHeader.extension |
 | MessageHeader.modifierExtension | UseElementSameName | MessageHeader.modifierExtension |
-| MessageHeader.event | UseElementRenamed | MessageHeader.event |
+| MessageHeader.event | UseElementSameName | MessageHeader.event |
 | MessageHeader.destination | UseElementSameName | MessageHeader.destination |
 | MessageHeader.destination.id | UseElementSameName | MessageHeader.destination.id |
 | MessageHeader.destination.extension | UseElementSameName | MessageHeader.destination.extension |
@@ -20,7 +20,7 @@
 | MessageHeader.destination.endpoint | UseElementSameName | MessageHeader.destination.endpoint |
 | MessageHeader.receiver | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.receiver |
 | MessageHeader.sender | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.sender |
-| MessageHeader.timestamp | UseElementRenamed | MessageHeader.timestamp |
+| MessageHeader.timestamp | UseElementSameName | MessageHeader.timestamp |
 | MessageHeader.enterer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.enterer |
 | MessageHeader.author | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MessageHeader.author |
 | MessageHeader.source | UseElementSameName | MessageHeader.source |

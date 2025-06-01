@@ -23,7 +23,7 @@
 | PaymentReconciliation.requestor | UseElementSameName | PaymentReconciliation.requestor |
 | PaymentReconciliation.outcome | UseElementSameName | PaymentReconciliation.outcome |
 | PaymentReconciliation.disposition | UseElementSameName | PaymentReconciliation.disposition |
-| PaymentReconciliation.date | UseElementSameName | PaymentReconciliation.paymentDate |
+| PaymentReconciliation.date | UseElementRenamed | PaymentReconciliation.paymentDate |
 | PaymentReconciliation.location | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.location |
 | PaymentReconciliation.method | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.method |
 | PaymentReconciliation.cardBrand | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.cardBrand |
@@ -34,7 +34,7 @@
 | PaymentReconciliation.authorization | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.authorization |
 | PaymentReconciliation.tenderedAmount | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.tenderedAmount |
 | PaymentReconciliation.returnedAmount | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.returnedAmount |
-| PaymentReconciliation.amount | UseElementSameName | PaymentReconciliation.paymentAmount |
+| PaymentReconciliation.amount | UseElementRenamed | PaymentReconciliation.paymentAmount |
 | PaymentReconciliation.paymentIdentifier | UseElementSameName | PaymentReconciliation.paymentIdentifier |
 | PaymentReconciliation.allocation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.allocation |
 | PaymentReconciliation.allocation.id | UseExtensionFromAncestor | - |

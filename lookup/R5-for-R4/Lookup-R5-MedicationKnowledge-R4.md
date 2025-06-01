@@ -15,7 +15,7 @@
 | MedicationKnowledge.status | UseElementSameName | MedicationKnowledge.status |
 | MedicationKnowledge.author | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.author |
 | MedicationKnowledge.intendedJurisdiction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.intendedJurisdiction |
-| MedicationKnowledge.name | UseElementSameName | MedicationKnowledge.synonym |
+| MedicationKnowledge.name | UseElementRenamed | MedicationKnowledge.synonym |
 | MedicationKnowledge.relatedMedicationKnowledge | UseElementSameName | MedicationKnowledge.relatedMedicationKnowledge |
 | MedicationKnowledge.relatedMedicationKnowledge.id | UseElementSameName | MedicationKnowledge.relatedMedicationKnowledge.id |
 | MedicationKnowledge.relatedMedicationKnowledge.extension | UseElementSameName | MedicationKnowledge.relatedMedicationKnowledge.extension |

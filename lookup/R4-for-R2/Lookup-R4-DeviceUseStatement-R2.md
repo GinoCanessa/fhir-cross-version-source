@@ -19,7 +19,7 @@
 | DeviceUseStatement.recordedOn | UseElementSameName | DeviceUseStatement.recordedOn |
 | DeviceUseStatement.source | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.source |
 | DeviceUseStatement.device | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.device |
-| DeviceUseStatement.reasonCode | UseElementSameName | DeviceUseStatement.indication |
+| DeviceUseStatement.reasonCode | UseElementRenamed | DeviceUseStatement.indication |
 | DeviceUseStatement.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.reasonReference |
-| DeviceUseStatement.bodySite | UseElementSameName | DeviceUseStatement.bodySite[x] |
+| DeviceUseStatement.bodySite | UseElementRenamed | DeviceUseStatement.bodySite[x] |
 | DeviceUseStatement.note | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.note |

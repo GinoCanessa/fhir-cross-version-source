@@ -53,10 +53,10 @@
 | PaymentReconciliation.allocation.responsible | UseExtensionFromAncestor | - |
 | PaymentReconciliation.allocation.payee | UseExtensionFromAncestor | - |
 | PaymentReconciliation.allocation.amount | UseExtensionFromAncestor | - |
-| PaymentReconciliation.formCode | UseElementSameName | PaymentReconciliation.form |
-| PaymentReconciliation.processNote | UseElementSameName | PaymentReconciliation.note |
+| PaymentReconciliation.formCode | UseElementRenamed | PaymentReconciliation.form |
+| PaymentReconciliation.processNote | UseElementRenamed | PaymentReconciliation.note |
 | PaymentReconciliation.processNote.id | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.processNote.id |
 | PaymentReconciliation.processNote.extension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.processNote.extension |
 | PaymentReconciliation.processNote.modifierExtension | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.processNote.modifierExtension |
 | PaymentReconciliation.processNote.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.processNote.type |
-| PaymentReconciliation.processNote.text | UseElementSameName | PaymentReconciliation.note.text |
+| PaymentReconciliation.processNote.text | UseElementRenamed | PaymentReconciliation.note.text |

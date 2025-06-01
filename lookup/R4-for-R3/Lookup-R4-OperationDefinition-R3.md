@@ -24,7 +24,7 @@
 | OperationDefinition.useContext | UseElementSameName | OperationDefinition.useContext |
 | OperationDefinition.jurisdiction | UseElementSameName | OperationDefinition.jurisdiction |
 | OperationDefinition.purpose | UseElementSameName | OperationDefinition.purpose |
-| OperationDefinition.affectsState | UseElementSameName | OperationDefinition.idempotent |
+| OperationDefinition.affectsState | UseElementRenamed | OperationDefinition.idempotent |
 | OperationDefinition.code | UseElementSameName | OperationDefinition.code |
 | OperationDefinition.comment | UseElementSameName | OperationDefinition.comment |
 | OperationDefinition.base | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.base |
@@ -51,7 +51,7 @@
 | OperationDefinition.parameter.binding.extension | UseElementSameName | OperationDefinition.parameter.binding.extension |
 | OperationDefinition.parameter.binding.modifierExtension | UseElementSameName | OperationDefinition.parameter.binding.modifierExtension |
 | OperationDefinition.parameter.binding.strength | UseElementSameName | OperationDefinition.parameter.binding.strength |
-| OperationDefinition.parameter.binding.valueSet | UseElementSameName | OperationDefinition.parameter.binding.valueSet[x] |
+| OperationDefinition.parameter.binding.valueSet | UseElementRenamed | OperationDefinition.parameter.binding.valueSet[x] |
 | OperationDefinition.parameter.referencedFrom | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-OperationDefinition.parameter.referencedFrom |
 | OperationDefinition.parameter.referencedFrom.id | UseExtensionFromAncestor | - |
 | OperationDefinition.parameter.referencedFrom.extension | UseExtensionFromAncestor | - |

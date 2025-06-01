@@ -18,7 +18,7 @@
 | ClinicalImpression.encounter | UseElementSameName | ClinicalImpression.encounter |
 | ClinicalImpression.effective[x] | UseElementSameName | ClinicalImpression.effective[x] |
 | ClinicalImpression.date | UseElementSameName | ClinicalImpression.date |
-| ClinicalImpression.performer | UseElementSameName | ClinicalImpression.assessor |
+| ClinicalImpression.performer | UseElementRenamed | ClinicalImpression.assessor |
 | ClinicalImpression.previous | UseElementSameName | ClinicalImpression.previous |
 | ClinicalImpression.problem | UseElementSameName | ClinicalImpression.problem |
 | ClinicalImpression.changePattern | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.changePattern |

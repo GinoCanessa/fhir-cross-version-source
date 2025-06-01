@@ -22,8 +22,8 @@
 | TestScript.contact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-TestScript.contact |
 | TestScript.description | UseElementSameName | TestScript.description |
 | TestScript.useContext | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-TestScript.useContext |
-| TestScript.jurisdiction | UseElementSameName | TestScript.useContext |
-| TestScript.purpose | UseElementSameName | TestScript.requirements |
+| TestScript.jurisdiction | UseElementRenamed | TestScript.useContext |
+| TestScript.purpose | UseElementRenamed | TestScript.requirements |
 | TestScript.copyright | UseElementSameName | TestScript.copyright |
 | TestScript.origin | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-TestScript.origin |
 | TestScript.origin.id | UseExtensionFromAncestor | - |

@@ -65,7 +65,7 @@
 | ExplanationOfBenefit.careTeam.provider | UseElementSameName | ExplanationOfBenefit.careTeam.provider |
 | ExplanationOfBenefit.careTeam.responsible | UseElementSameName | ExplanationOfBenefit.careTeam.responsible |
 | ExplanationOfBenefit.careTeam.role | UseElementSameName | ExplanationOfBenefit.careTeam.role |
-| ExplanationOfBenefit.careTeam.specialty | UseElementSameName | ExplanationOfBenefit.careTeam.qualification |
+| ExplanationOfBenefit.careTeam.specialty | UseElementRenamed | ExplanationOfBenefit.careTeam.qualification |
 | ExplanationOfBenefit.supportingInfo | UseElementSameName | ExplanationOfBenefit.supportingInfo |
 | ExplanationOfBenefit.supportingInfo.id | UseElementSameName | ExplanationOfBenefit.supportingInfo.id |
 | ExplanationOfBenefit.supportingInfo.extension | UseElementSameName | ExplanationOfBenefit.supportingInfo.extension |

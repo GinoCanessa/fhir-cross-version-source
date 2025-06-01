@@ -77,7 +77,7 @@
 | PlanDefinition.action.extension | UseElementSameName | PlanDefinition.action.extension |
 | PlanDefinition.action.modifierExtension | UseElementSameName | PlanDefinition.action.modifierExtension |
 | PlanDefinition.action.linkId | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.action.linkId |
-| PlanDefinition.action.prefix | UseElementSameName | PlanDefinition.action.label |
+| PlanDefinition.action.prefix | UseElementRenamed | PlanDefinition.action.label |
 | PlanDefinition.action.title | UseElementSameName | PlanDefinition.action.title |
 | PlanDefinition.action.description | UseElementSameName | PlanDefinition.action.description |
 | PlanDefinition.action.textEquivalent | UseElementSameName | PlanDefinition.action.textEquivalent |

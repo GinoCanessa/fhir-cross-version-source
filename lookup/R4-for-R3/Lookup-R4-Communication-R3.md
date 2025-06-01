@@ -17,7 +17,7 @@
 | Communication.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Communication.partOf |
 | Communication.inResponseTo | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Communication.inResponseTo |
 | Communication.status | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Communication.status |
-| Communication.statusReason | UseElementSameName | Communication.notDoneReason |
+| Communication.statusReason | UseElementRenamed | Communication.notDoneReason |
 | Communication.category | UseElementSameName | Communication.category |
 | Communication.priority | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Communication.priority |
 | Communication.medium | UseElementSameName | Communication.medium |

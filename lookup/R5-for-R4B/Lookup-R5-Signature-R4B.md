@@ -2,12 +2,12 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Signature.id | UseElementRenamed | Signature.id |
-| Signature.extension | UseElementRenamed | Signature.extension |
-| Signature.type | UseElementRenamed | Signature.type |
-| Signature.when | UseElementRenamed | Signature.when |
-| Signature.who | UseElementRenamed | Signature.who |
-| Signature.onBehalfOf | UseElementRenamed | Signature.onBehalfOf |
-| Signature.targetFormat | UseElementRenamed | Signature.targetFormat |
-| Signature.sigFormat | UseElementRenamed | Signature.sigFormat |
-| Signature.data | UseElementRenamed | Signature.data |
+| Signature.id | UseElementSameName | Signature.id |
+| Signature.extension | UseElementSameName | Signature.extension |
+| Signature.type | UseElementSameName | Signature.type |
+| Signature.when | UseElementSameName | Signature.when |
+| Signature.who | UseElementSameName | Signature.who |
+| Signature.onBehalfOf | UseElementSameName | Signature.onBehalfOf |
+| Signature.targetFormat | UseElementSameName | Signature.targetFormat |
+| Signature.sigFormat | UseElementSameName | Signature.sigFormat |
+| Signature.data | UseElementSameName | Signature.data |

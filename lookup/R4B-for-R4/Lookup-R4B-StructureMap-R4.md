@@ -63,7 +63,7 @@
 | StructureMap.group.rule.source.min | UseElementSameName | StructureMap.group.rule.source.min |
 | StructureMap.group.rule.source.max | UseElementSameName | StructureMap.group.rule.source.max |
 | StructureMap.group.rule.source.type | UseElementSameName | StructureMap.group.rule.source.type |
-| StructureMap.group.rule.source.defaultValue[x] | UseElementRenamed | StructureMap.group.rule.source.defaultValue[x] |
+| StructureMap.group.rule.source.defaultValue[x] | UseElementSameName | StructureMap.group.rule.source.defaultValue[x] |
 | StructureMap.group.rule.source.element | UseElementSameName | StructureMap.group.rule.source.element |
 | StructureMap.group.rule.source.listMode | UseElementSameName | StructureMap.group.rule.source.listMode |
 | StructureMap.group.rule.source.variable | UseElementSameName | StructureMap.group.rule.source.variable |
@@ -75,7 +75,7 @@
 | StructureMap.group.rule.target.extension | UseElementSameName | StructureMap.group.rule.target.extension |
 | StructureMap.group.rule.target.modifierExtension | UseElementSameName | StructureMap.group.rule.target.modifierExtension |
 | StructureMap.group.rule.target.context | UseElementSameName | StructureMap.group.rule.target.context |
-| StructureMap.group.rule.target.contextType | UseElementRenamed | StructureMap.group.rule.target.contextType |
+| StructureMap.group.rule.target.contextType | UseElementSameName | StructureMap.group.rule.target.contextType |
 | StructureMap.group.rule.target.element | UseElementSameName | StructureMap.group.rule.target.element |
 | StructureMap.group.rule.target.variable | UseElementSameName | StructureMap.group.rule.target.variable |
 | StructureMap.group.rule.target.listMode | UseElementSameName | StructureMap.group.rule.target.listMode |
@@ -92,5 +92,5 @@
 | StructureMap.group.rule.dependent.extension | UseElementSameName | StructureMap.group.rule.dependent.extension |
 | StructureMap.group.rule.dependent.modifierExtension | UseElementSameName | StructureMap.group.rule.dependent.modifierExtension |
 | StructureMap.group.rule.dependent.name | UseElementSameName | StructureMap.group.rule.dependent.name |
-| StructureMap.group.rule.dependent.variable | UseElementRenamed | StructureMap.group.rule.dependent.variable |
+| StructureMap.group.rule.dependent.variable | UseElementSameName | StructureMap.group.rule.dependent.variable |
 | StructureMap.group.rule.documentation | UseElementSameName | StructureMap.group.rule.documentation |

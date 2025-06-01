@@ -13,8 +13,8 @@
 | BodyStructure.identifier | UseElementSameName | BodyStructure.identifier |
 | BodyStructure.active | UseElementSameName | BodyStructure.active |
 | BodyStructure.morphology | UseElementSameName | BodyStructure.morphology |
-| BodyStructure.location | UseElementRenamed | BodyStructure.location |
-| BodyStructure.locationQualifier | UseElementRenamed | BodyStructure.locationQualifier |
+| BodyStructure.location | UseElementSameName | BodyStructure.location |
+| BodyStructure.locationQualifier | UseElementSameName | BodyStructure.locationQualifier |
 | BodyStructure.description | UseElementSameName | BodyStructure.description |
 | BodyStructure.image | UseElementSameName | BodyStructure.image |
 | BodyStructure.patient | UseElementSameName | BodyStructure.patient |

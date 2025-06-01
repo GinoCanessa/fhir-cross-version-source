@@ -17,7 +17,7 @@
 | DocumentReference.type | UseElementSameName | DocumentReference.type |
 | DocumentReference.category | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.category |
 | DocumentReference.subject | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.subject |
-| DocumentReference.date | UseElementSameName | DocumentReference.indexed |
+| DocumentReference.date | UseElementRenamed | DocumentReference.indexed |
 | DocumentReference.author | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.author |
 | DocumentReference.authenticator | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.authenticator |
 | DocumentReference.custodian | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-DocumentReference.custodian |

@@ -21,8 +21,8 @@
 | RiskAssessment.occurrence[x] | UseElementSameName | RiskAssessment.occurrence[x] |
 | RiskAssessment.condition | UseElementSameName | RiskAssessment.condition |
 | RiskAssessment.performer | UseElementSameName | RiskAssessment.performer |
-| RiskAssessment.reasonCode | UseElementRenamed | RiskAssessment.reasonCode |
-| RiskAssessment.reasonReference | UseElementRenamed | RiskAssessment.reasonReference |
+| RiskAssessment.reasonCode | UseElementSameName | RiskAssessment.reasonCode |
+| RiskAssessment.reasonReference | UseElementSameName | RiskAssessment.reasonReference |
 | RiskAssessment.basis | UseElementSameName | RiskAssessment.basis |
 | RiskAssessment.prediction | UseElementSameName | RiskAssessment.prediction |
 | RiskAssessment.prediction.id | UseElementSameName | RiskAssessment.prediction.id |

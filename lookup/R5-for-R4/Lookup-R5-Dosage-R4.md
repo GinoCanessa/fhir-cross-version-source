@@ -10,7 +10,7 @@
 | Dosage.additionalInstruction | UseElementSameName | Dosage.additionalInstruction |
 | Dosage.patientInstruction | UseElementSameName | Dosage.patientInstruction |
 | Dosage.timing | UseElementSameName | Dosage.timing |
-| Dosage.asNeeded | UseElementSameName | Dosage.asNeeded[x] |
+| Dosage.asNeeded | UseElementRenamed | Dosage.asNeeded[x] |
 | Dosage.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.asNeededFor |
 | Dosage.site | UseElementSameName | Dosage.site |
 | Dosage.route | UseElementSameName | Dosage.route |

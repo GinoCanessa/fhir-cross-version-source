@@ -20,7 +20,7 @@
 | Location.type | UseElementSameName | Location.type |
 | Location.contact | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Location.contact |
 | Location.address | UseElementSameName | Location.address |
-| Location.form | UseElementSameName | Location.physicalType |
+| Location.form | UseElementRenamed | Location.physicalType |
 | Location.position | UseElementSameName | Location.position |
 | Location.position.id | UseElementSameName | Location.position.id |
 | Location.position.extension | UseElementSameName | Location.position.extension |

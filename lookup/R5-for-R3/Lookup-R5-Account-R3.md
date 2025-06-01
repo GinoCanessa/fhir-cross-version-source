@@ -16,7 +16,7 @@
 | Account.type | UseElementSameName | Account.type |
 | Account.name | UseElementSameName | Account.name |
 | Account.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.subject |
-| Account.servicePeriod | UseElementSameName | Account.period |
+| Account.servicePeriod | UseElementRenamed | Account.period |
 | Account.coverage | UseElementSameName | Account.coverage |
 | Account.coverage.id | UseElementSameName | Account.coverage.id |
 | Account.coverage.extension | UseElementSameName | Account.coverage.extension |
