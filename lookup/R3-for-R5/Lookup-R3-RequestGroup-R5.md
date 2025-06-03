@@ -58,4 +58,4 @@
 | RequestGroup.action.precheckBehavior | UseElementRenamed | RequestOrchestration.action.precheckBehavior |
 | RequestGroup.action.cardinalityBehavior | UseElementRenamed | RequestOrchestration.action.cardinalityBehavior |
 | RequestGroup.action.resource | UseElementRenamed | RequestOrchestration.action.resource |
-| RequestGroup.action.action | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-RequestGroup.action.action |
+| RequestGroup.action.action | UseElementRenamed | RequestOrchestration.action.action |

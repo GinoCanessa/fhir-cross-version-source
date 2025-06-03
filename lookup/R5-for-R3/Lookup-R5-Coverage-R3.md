@@ -10,7 +10,7 @@
 | Coverage.contained | UseElementSameName | Coverage.contained |
 | Coverage.extension | UseElementSameName | Coverage.extension |
 | Coverage.modifierExtension | UseElementSameName | Coverage.modifierExtension |
-| Coverage.identifier | UseElementSameName | Coverage.identifier |
+| Coverage.identifier | UseOneOfElements | Coverage.identifier,Coverage.identifier |
 | Coverage.status | UseElementSameName | Coverage.status |
 | Coverage.kind | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.kind |
 | Coverage.paymentBy | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Coverage.paymentBy |

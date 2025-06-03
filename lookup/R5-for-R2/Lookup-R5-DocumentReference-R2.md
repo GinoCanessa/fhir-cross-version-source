@@ -2,21 +2,21 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| DocumentReference.id | UseElementSameName | DocumentReference.id |
+| DocumentReference.id | UseOneOfElements | DocumentReference.id,Media.id |
 | DocumentReference.meta | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.meta |
-| DocumentReference.implicitRules | UseElementSameName | DocumentReference.implicitRules |
-| DocumentReference.language | UseElementSameName | DocumentReference.language |
-| DocumentReference.text | UseElementSameName | DocumentReference.text |
-| DocumentReference.contained | UseElementSameName | DocumentReference.contained |
-| DocumentReference.extension | UseElementSameName | DocumentReference.extension |
-| DocumentReference.modifierExtension | UseElementSameName | DocumentReference.modifierExtension |
-| DocumentReference.identifier | UseElementRenamed | DocumentReference.masterIdentifier |
+| DocumentReference.implicitRules | UseOneOfElements | DocumentReference.implicitRules,Media.implicitRules |
+| DocumentReference.language | UseOneOfElements | DocumentReference.language,Media.language |
+| DocumentReference.text | UseOneOfElements | DocumentReference.text,Media.text |
+| DocumentReference.contained | UseOneOfElements | DocumentReference.contained,Media.contained |
+| DocumentReference.extension | UseOneOfElements | DocumentReference.extension,Media.extension |
+| DocumentReference.modifierExtension | UseOneOfElements | DocumentReference.modifierExtension,Media.modifierExtension |
+| DocumentReference.identifier | UseOneOfElements | DocumentReference.masterIdentifier,DocumentReference.identifier,Media.identifier |
 | DocumentReference.version | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version |
 | DocumentReference.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.basedOn |
 | DocumentReference.status | UseElementSameName | DocumentReference.status |
 | DocumentReference.docStatus | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.docStatus |
 | DocumentReference.modality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.modality |
-| DocumentReference.type | UseElementSameName | DocumentReference.type |
+| DocumentReference.type | UseOneOfElements | DocumentReference.type,Media.type |
 | DocumentReference.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.category |
 | DocumentReference.subject | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.subject |
 | DocumentReference.context | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.context |
@@ -43,7 +43,7 @@
 | DocumentReference.relatesTo.target | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.relatesTo.target |
 | DocumentReference.description | UseElementSameName | DocumentReference.description |
 | DocumentReference.securityLabel | UseElementSameName | DocumentReference.securityLabel |
-| DocumentReference.content | UseElementSameName | DocumentReference.content |
+| DocumentReference.content | UseOneOfElements | DocumentReference.content,Media.content |
 | DocumentReference.content.id | UseElementSameName | DocumentReference.content.id |
 | DocumentReference.content.extension | UseElementSameName | DocumentReference.content.extension |
 | DocumentReference.content.modifierExtension | UseElementSameName | DocumentReference.content.modifierExtension |

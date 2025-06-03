@@ -58,7 +58,7 @@
 | ClaimResponse.addItem.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.addItem.category |
 | ClaimResponse.addItem.service | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.addItem.service |
 | ClaimResponse.addItem.modifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.addItem.modifier |
-| ClaimResponse.addItem.fee | UseElementSameName | ClaimResponse.addItem.fee |
+| ClaimResponse.addItem.fee | UseOneOfElements | ClaimResponse.addItem.fee,ClaimResponse.addItem.fee |
 | ClaimResponse.addItem.noteNumber | UseElementRenamed | ClaimResponse.addItem.noteNumberLinkId |
 | ClaimResponse.addItem.adjudication | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.addItem.adjudication |
 | ClaimResponse.addItem.detail | UseElementSameName | ClaimResponse.addItem.detail |
@@ -94,7 +94,7 @@
 | ClaimResponse.payment.amount | UseExtensionFromAncestor | - |
 | ClaimResponse.payment.identifier | UseExtensionFromAncestor | - |
 | ClaimResponse.reserved | UseElementSameName | ClaimResponse.reserved |
-| ClaimResponse.form | UseElementSameName | ClaimResponse.form |
+| ClaimResponse.form | UseOneOfElements | ClaimResponse.form,ClaimResponse.form |
 | ClaimResponse.processNote | UseElementRenamed | ClaimResponse.note |
 | ClaimResponse.processNote.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.processNote.id |
 | ClaimResponse.processNote.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.processNote.extension |

@@ -16,7 +16,7 @@
 | Communication.basedOn | UseElementSameName | Communication.basedOn |
 | Communication.partOf | UseElementSameName | Communication.partOf |
 | Communication.inResponseTo | UseElementSameName | Communication.inResponseTo |
-| Communication.status | UseElementSameName | Communication.status |
+| Communication.status | UseOneOfElements | Communication.status,Communication.status |
 | Communication.statusReason | UseElementSameName | Communication.statusReason |
 | Communication.category | UseElementSameName | Communication.category |
 | Communication.priority | UseElementSameName | Communication.priority |

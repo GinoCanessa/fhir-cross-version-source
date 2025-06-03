@@ -18,7 +18,7 @@
 | GuidanceResponse.encounter | UseElementSameName | GuidanceResponse.encounter |
 | GuidanceResponse.occurrenceDateTime | UseElementSameName | GuidanceResponse.occurrenceDateTime |
 | GuidanceResponse.performer | UseElementSameName | GuidanceResponse.performer |
-| GuidanceResponse.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-GuidanceResponse.reason |
+| GuidanceResponse.reason | UseOneOfElements | GuidanceResponse.reasonCode,GuidanceResponse.reasonReference |
 | GuidanceResponse.note | UseElementSameName | GuidanceResponse.note |
 | GuidanceResponse.evaluationMessage | UseElementSameName | GuidanceResponse.evaluationMessage |
 | GuidanceResponse.outputParameters | UseElementSameName | GuidanceResponse.outputParameters |

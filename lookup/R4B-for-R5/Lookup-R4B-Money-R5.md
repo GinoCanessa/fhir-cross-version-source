@@ -5,4 +5,4 @@
 | Money.id | UseElementSameName | Money.id |
 | Money.extension | UseElementSameName | Money.extension |
 | Money.value | UseElementSameName | Money.value |
-| Money.currency | UseElementSameName | Money.currency |
+| Money.currency | UseOneOfElements | Money.currency,Money.currency |

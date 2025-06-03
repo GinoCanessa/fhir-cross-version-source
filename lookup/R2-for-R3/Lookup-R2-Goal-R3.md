@@ -16,7 +16,7 @@
 | Goal.target[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.target |
 | Goal.category | UseElementSameName | Goal.category |
 | Goal.description | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.description |
-| Goal.status | UseElementSameName | Goal.status |
+| Goal.status | UseOneOfElements | Goal.status,Goal.status |
 | Goal.statusDate | UseElementSameName | Goal.statusDate |
 | Goal.statusReason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Goal.statusReason |
 | Goal.author | UseElementRenamed | Goal.expressedBy |

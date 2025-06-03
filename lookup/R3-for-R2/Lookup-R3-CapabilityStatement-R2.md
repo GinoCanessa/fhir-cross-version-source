@@ -102,7 +102,7 @@
 | CapabilityStatement.rest.interaction.code | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.interaction.code |
 | CapabilityStatement.rest.interaction.documentation | UseElementRenamed | Conformance.rest.interaction.documentation |
 | CapabilityStatement.rest.searchParam | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.searchParam |
-| CapabilityStatement.rest.operation | UseElementRenamed | Conformance.rest.operation |
+| CapabilityStatement.rest.operation | UseOneOfElements | Conformance.rest.operation,Conformance.rest.operation |
 | CapabilityStatement.rest.operation.id | UseElementRenamed | Conformance.rest.operation.id |
 | CapabilityStatement.rest.operation.extension | UseElementRenamed | Conformance.rest.operation.extension |
 | CapabilityStatement.rest.operation.modifierExtension | UseElementRenamed | Conformance.rest.operation.modifierExtension |

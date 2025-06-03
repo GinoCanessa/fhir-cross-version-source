@@ -23,7 +23,7 @@
 | MedicationRequest.encounter | UseElementSameName | MedicationRequest.encounter |
 | MedicationRequest.supportingInformation | UseElementSameName | MedicationRequest.supportingInformation |
 | MedicationRequest.authoredOn | UseElementSameName | MedicationRequest.authoredOn |
-| MedicationRequest.requester | UseElementSameName | MedicationRequest.requester |
+| MedicationRequest.requester | UseOneOfElements | MedicationRequest.requester,MedicationRequest.requester |
 | MedicationRequest.performer | UseElementSameName | MedicationRequest.performer |
 | MedicationRequest.performerType | UseElementSameName | MedicationRequest.performerType |
 | MedicationRequest.recorder | UseElementSameName | MedicationRequest.recorder |

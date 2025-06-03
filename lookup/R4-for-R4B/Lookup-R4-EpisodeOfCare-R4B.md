@@ -31,5 +31,5 @@
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseElementSameName | EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseElementSameName | EpisodeOfCare.careManager |
-| EpisodeOfCare.team | UseElementSameName | EpisodeOfCare.team |
+| EpisodeOfCare.team | UseOneOfElements | EpisodeOfCare.team,EpisodeOfCare.team |
 | EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

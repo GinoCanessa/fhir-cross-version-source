@@ -25,8 +25,8 @@
 | CareTeam.participant.member | UseElementSameName | CareTeam.participant.member |
 | CareTeam.participant.onBehalfOf | UseElementSameName | CareTeam.participant.onBehalfOf |
 | CareTeam.participant.period | UseElementRenamed | CareTeam.participant.coverage[x] |
-| CareTeam.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.reasonCode |
-| CareTeam.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CareTeam.reasonReference |
+| CareTeam.reasonCode | UseElementRenamed | CareTeam.reason |
+| CareTeam.reasonReference | UseElementRenamed | CareTeam.reason |
 | CareTeam.managingOrganization | UseElementSameName | CareTeam.managingOrganization |
 | CareTeam.telecom | UseElementSameName | CareTeam.telecom |
 | CareTeam.note | UseElementSameName | CareTeam.note |

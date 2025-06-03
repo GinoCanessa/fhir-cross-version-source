@@ -13,7 +13,7 @@
 | ImagingStudy.uid | UseElementSameName | ImagingStudy.uid |
 | ImagingStudy.accession | UseElementSameName | ImagingStudy.accession |
 | ImagingStudy.identifier | UseElementSameName | ImagingStudy.identifier |
-| ImagingStudy.availability | UseElementSameName | ImagingStudy.availability |
+| ImagingStudy.availability | UseOneOfElements | ImagingStudy.availability,ImagingStudy.availability |
 | ImagingStudy.modalityList | UseElementSameName | ImagingStudy.modalityList |
 | ImagingStudy.patient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.patient |
 | ImagingStudy.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.context |

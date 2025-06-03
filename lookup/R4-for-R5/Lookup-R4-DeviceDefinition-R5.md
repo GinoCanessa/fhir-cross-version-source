@@ -33,7 +33,7 @@
 | DeviceDefinition.specialization.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceDefinition.specialization.modifierExtension |
 | DeviceDefinition.specialization.systemType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceDefinition.specialization.systemType |
 | DeviceDefinition.specialization.version | UseElementRenamed | DeviceDefinition.conformsTo.version |
-| DeviceDefinition.version | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceDefinition.version |
+| DeviceDefinition.version | UseElementSameName | DeviceDefinition.version |
 | DeviceDefinition.safety | UseElementSameName | DeviceDefinition.safety |
 | DeviceDefinition.shelfLifeStorage | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceDefinition.shelfLifeStorage |
 | DeviceDefinition.physicalCharacteristics | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceDefinition.physicalCharacteristics |

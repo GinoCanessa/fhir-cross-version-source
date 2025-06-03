@@ -19,7 +19,7 @@
 | DocumentReference.custodian | UseElementSameName | DocumentReference.custodian |
 | DocumentReference.authenticator | UseElementSameName | DocumentReference.authenticator |
 | DocumentReference.created | UseElementSameName | DocumentReference.created |
-| DocumentReference.indexed | UseElementSameName | DocumentReference.indexed |
+| DocumentReference.indexed | UseOneOfElements | DocumentReference.indexed,DocumentReference.indexed |
 | DocumentReference.status | UseElementSameName | DocumentReference.status |
 | DocumentReference.docStatus | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DocumentReference.docStatus |
 | DocumentReference.relatesTo | UseElementSameName | DocumentReference.relatesTo |

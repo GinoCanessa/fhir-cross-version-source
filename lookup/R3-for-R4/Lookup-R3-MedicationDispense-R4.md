@@ -12,7 +12,7 @@
 | MedicationDispense.modifierExtension | UseElementSameName | MedicationDispense.modifierExtension |
 | MedicationDispense.identifier | UseElementSameName | MedicationDispense.identifier |
 | MedicationDispense.partOf | UseElementSameName | MedicationDispense.partOf |
-| MedicationDispense.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.status |
+| MedicationDispense.status | UseElementSameName | MedicationDispense.status |
 | MedicationDispense.category | UseElementSameName | MedicationDispense.category |
 | MedicationDispense.medication[x] | UseElementSameName | MedicationDispense.medication[x] |
 | MedicationDispense.subject | UseElementSameName | MedicationDispense.subject |

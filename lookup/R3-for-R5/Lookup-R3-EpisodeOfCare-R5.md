@@ -23,7 +23,7 @@
 | EpisodeOfCare.diagnosis.id | UseElementSameName | EpisodeOfCare.diagnosis.id |
 | EpisodeOfCare.diagnosis.extension | UseElementSameName | EpisodeOfCare.diagnosis.extension |
 | EpisodeOfCare.diagnosis.modifierExtension | UseElementSameName | EpisodeOfCare.diagnosis.modifierExtension |
-| EpisodeOfCare.diagnosis.condition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.condition |
+| EpisodeOfCare.diagnosis.condition | UseElementSameName | EpisodeOfCare.diagnosis.condition |
 | EpisodeOfCare.diagnosis.role | UseElementRenamed | EpisodeOfCare.diagnosis.use |
 | EpisodeOfCare.diagnosis.rank | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.diagnosis.rank |
 | EpisodeOfCare.patient | UseElementSameName | EpisodeOfCare.patient |
@@ -31,5 +31,5 @@
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.careManager |
-| EpisodeOfCare.team | UseElementRenamed | EpisodeOfCare.careTeam |
+| EpisodeOfCare.team | UseOneOfElements | EpisodeOfCare.careTeam,EpisodeOfCare.careTeam |
 | EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

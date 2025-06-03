@@ -19,7 +19,7 @@
 | MedicationStatement.reasonNotTaken | UseElementSameName | MedicationStatement.reasonNotTaken |
 | MedicationStatement.reasonForUse[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.reasonForUse |
 | MedicationStatement.effective[x] | UseElementSameName | MedicationStatement.effective[x] |
-| MedicationStatement.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.note |
+| MedicationStatement.note | UseElementSameName | MedicationStatement.note |
 | MedicationStatement.supportingInformation | UseElementRenamed | MedicationStatement.derivedFrom |
 | MedicationStatement.medication[x] | UseElementSameName | MedicationStatement.medication[x] |
 | MedicationStatement.dosage | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.dosage |

@@ -35,5 +35,5 @@
 | Condition.stage.summary | UseElementSameName | Condition.stage.summary |
 | Condition.stage.assessment | UseElementSameName | Condition.stage.assessment |
 | Condition.stage.type | UseElementSameName | Condition.stage.type |
-| Condition.evidence | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.evidence |
+| Condition.evidence | UseElementSameName | Condition.evidence |
 | Condition.note | UseElementSameName | Condition.note |

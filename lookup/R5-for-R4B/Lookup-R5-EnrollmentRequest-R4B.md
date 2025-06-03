@@ -14,6 +14,6 @@
 | EnrollmentRequest.status | UseElementSameName | EnrollmentRequest.status |
 | EnrollmentRequest.created | UseElementSameName | EnrollmentRequest.created |
 | EnrollmentRequest.insurer | UseElementSameName | EnrollmentRequest.insurer |
-| EnrollmentRequest.provider | UseElementSameName | EnrollmentRequest.provider |
+| EnrollmentRequest.provider | UseOneOfElements | EnrollmentRequest.provider,EnrollmentRequest.provider |
 | EnrollmentRequest.candidate | UseElementSameName | EnrollmentRequest.candidate |
 | EnrollmentRequest.coverage | UseElementSameName | EnrollmentRequest.coverage |

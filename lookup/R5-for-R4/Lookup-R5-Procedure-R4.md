@@ -15,7 +15,7 @@
 | Procedure.instantiatesUri | UseElementSameName | Procedure.instantiatesUri |
 | Procedure.basedOn | UseElementSameName | Procedure.basedOn |
 | Procedure.partOf | UseElementSameName | Procedure.partOf |
-| Procedure.status | UseElementSameName | Procedure.status |
+| Procedure.status | UseOneOfElements | Procedure.status,Procedure.status |
 | Procedure.statusReason | UseElementSameName | Procedure.statusReason |
 | Procedure.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
@@ -35,7 +35,7 @@
 | Procedure.performer.onBehalfOf | UseElementSameName | Procedure.performer.onBehalfOf |
 | Procedure.performer.period | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.performer.period |
 | Procedure.location | UseElementSameName | Procedure.location |
-| Procedure.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.reason |
+| Procedure.reason | UseOneOfElements | Procedure.reasonCode,Procedure.reasonCode,Procedure.reasonReference |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |
 | Procedure.report | UseElementSameName | Procedure.report |
@@ -48,5 +48,5 @@
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
 | Procedure.focalDevice.action | UseElementSameName | Procedure.focalDevice.action |
 | Procedure.focalDevice.manipulated | UseElementSameName | Procedure.focalDevice.manipulated |
-| Procedure.used | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.used |
+| Procedure.used | UseOneOfElements | Procedure.usedReference,Procedure.usedCode |
 | Procedure.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.supportingInfo |

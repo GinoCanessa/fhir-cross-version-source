@@ -28,7 +28,7 @@
 | Provenance.agent.relatedAgent.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.agent.relatedAgent.id |
 | Provenance.agent.relatedAgent.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.agent.relatedAgent.extension |
 | Provenance.agent.relatedAgent.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.agent.relatedAgent.modifierExtension |
-| Provenance.agent.relatedAgent.type | UseElementRenamed | Provenance.agent.relatedAgentType |
+| Provenance.agent.relatedAgent.type | UseOneOfElements | Provenance.agent.relatedAgentType,Provenance.agent.relatedAgentType |
 | Provenance.agent.relatedAgent.target | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.agent.relatedAgent.target |
 | Provenance.entity | UseElementSameName | Provenance.entity |
 | Provenance.entity.id | UseElementSameName | Provenance.entity.id |

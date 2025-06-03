@@ -18,7 +18,7 @@
 | ImagingStudy.order | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingStudy.order |
 | ImagingStudy.modalityList | UseElementSameName | ImagingStudy.modalityList |
 | ImagingStudy.referrer | UseElementSameName | ImagingStudy.referrer |
-| ImagingStudy.availability | UseElementSameName | ImagingStudy.availability |
+| ImagingStudy.availability | UseOneOfElements | ImagingStudy.availability,ImagingStudy.availability |
 | ImagingStudy.url | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingStudy.url |
 | ImagingStudy.numberOfSeries | UseElementSameName | ImagingStudy.numberOfSeries |
 | ImagingStudy.numberOfInstances | UseElementSameName | ImagingStudy.numberOfInstances |

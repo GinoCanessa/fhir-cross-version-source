@@ -12,7 +12,7 @@
 | Immunization.modifierExtension | UseElementSameName | Immunization.modifierExtension |
 | Immunization.identifier | UseElementSameName | Immunization.identifier |
 | Immunization.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn |
-| Immunization.status | UseElementSameName | Immunization.status |
+| Immunization.status | UseOneOfElements | Immunization.status,Immunization.status |
 | Immunization.statusReason | UseElementSameName | Immunization.statusReason |
 | Immunization.vaccineCode | UseElementSameName | Immunization.vaccineCode |
 | Immunization.administeredProduct | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct |
@@ -34,9 +34,9 @@
 | Immunization.performer.extension | UseElementSameName | Immunization.performer.extension |
 | Immunization.performer.modifierExtension | UseElementSameName | Immunization.performer.modifierExtension |
 | Immunization.performer.function | UseElementSameName | Immunization.performer.function |
-| Immunization.performer.actor | UseElementSameName | Immunization.performer.actor |
+| Immunization.performer.actor | UseOneOfElements | Immunization.performer.actor,Immunization.performer.actor |
 | Immunization.note | UseElementSameName | Immunization.note |
-| Immunization.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reason |
+| Immunization.reason | UseOneOfElements | Immunization.reasonCode,Immunization.reasonCode,Immunization.reasonReference |
 | Immunization.isSubpotent | UseElementSameName | Immunization.isSubpotent |
 | Immunization.subpotentReason | UseElementSameName | Immunization.subpotentReason |
 | Immunization.programEligibility | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.programEligibility |

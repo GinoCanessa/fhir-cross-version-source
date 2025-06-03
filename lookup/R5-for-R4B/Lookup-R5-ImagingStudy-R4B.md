@@ -10,7 +10,7 @@
 | ImagingStudy.contained | UseElementSameName | ImagingStudy.contained |
 | ImagingStudy.extension | UseElementSameName | ImagingStudy.extension |
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
-| ImagingStudy.identifier | UseElementSameName | ImagingStudy.identifier |
+| ImagingStudy.identifier | UseOneOfElements | ImagingStudy.identifier,ImagingStudy.identifier,ImagingStudy.identifier |
 | ImagingStudy.status | UseElementSameName | ImagingStudy.status |
 | ImagingStudy.modality | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.modality |
 | ImagingStudy.subject | UseElementSameName | ImagingStudy.subject |
@@ -46,7 +46,7 @@
 | ImagingStudy.series.performer.extension | UseElementSameName | ImagingStudy.series.performer.extension |
 | ImagingStudy.series.performer.modifierExtension | UseElementSameName | ImagingStudy.series.performer.modifierExtension |
 | ImagingStudy.series.performer.function | UseElementSameName | ImagingStudy.series.performer.function |
-| ImagingStudy.series.performer.actor | UseElementSameName | ImagingStudy.series.performer.actor |
+| ImagingStudy.series.performer.actor | UseOneOfElements | ImagingStudy.series.performer.actor,ImagingStudy.series.performer.actor |
 | ImagingStudy.series.instance | UseElementSameName | ImagingStudy.series.instance |
 | ImagingStudy.series.instance.id | UseElementSameName | ImagingStudy.series.instance.id |
 | ImagingStudy.series.instance.extension | UseElementSameName | ImagingStudy.series.instance.extension |

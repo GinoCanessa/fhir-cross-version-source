@@ -12,7 +12,7 @@
 | ProcedureRequest.modifierExtension | UseElementRenamed | ServiceRequest.modifierExtension |
 | ProcedureRequest.identifier | UseElementRenamed | ServiceRequest.identifier |
 | ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.subject |
-| ProcedureRequest.code | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.code |
+| ProcedureRequest.code | UseElementRenamed | ServiceRequest.code |
 | ProcedureRequest.bodySite | UseElementRenamed | ServiceRequest.bodySite |
 | ProcedureRequest.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.reason |
 | ProcedureRequest.scheduled[x] | UseElementRenamed | ServiceRequest.occurrence[x] |

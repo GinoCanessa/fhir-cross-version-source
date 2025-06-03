@@ -55,7 +55,7 @@
 | ConceptMap.group.element.target.dependsOn.modifierExtension | UseElementSameName | ConceptMap.group.element.target.dependsOn.modifierExtension |
 | ConceptMap.group.element.target.dependsOn.property | UseElementSameName | ConceptMap.group.element.target.dependsOn.property |
 | ConceptMap.group.element.target.dependsOn.system | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ConceptMap.group.element.target.dependsOn.system |
-| ConceptMap.group.element.target.dependsOn.code | UseElementRenamed | ConceptMap.group.element.target.dependsOn.value |
+| ConceptMap.group.element.target.dependsOn.code | UseOneOfElements | ConceptMap.group.element.target.dependsOn.value,ConceptMap.group.element.target.dependsOn.value |
 | ConceptMap.group.element.target.dependsOn.display | UseElementSameName | ConceptMap.group.element.target.dependsOn.display |
 | ConceptMap.group.element.target.product | UseElementSameName | ConceptMap.group.element.target.product |
 | ConceptMap.group.unmapped | UseElementSameName | ConceptMap.group.unmapped |

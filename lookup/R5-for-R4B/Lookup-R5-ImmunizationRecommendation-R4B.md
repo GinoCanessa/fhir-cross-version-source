@@ -14,7 +14,7 @@
 | ImmunizationRecommendation.patient | UseElementSameName | ImmunizationRecommendation.patient |
 | ImmunizationRecommendation.date | UseElementSameName | ImmunizationRecommendation.date |
 | ImmunizationRecommendation.authority | UseElementSameName | ImmunizationRecommendation.authority |
-| ImmunizationRecommendation.recommendation | UseElementSameName | ImmunizationRecommendation.recommendation |
+| ImmunizationRecommendation.recommendation | UseOneOfElements | ImmunizationRecommendation.recommendation,ImmunizationRecommendation.recommendation |
 | ImmunizationRecommendation.recommendation.id | UseElementSameName | ImmunizationRecommendation.recommendation.id |
 | ImmunizationRecommendation.recommendation.extension | UseElementSameName | ImmunizationRecommendation.recommendation.extension |
 | ImmunizationRecommendation.recommendation.modifierExtension | UseElementSameName | ImmunizationRecommendation.recommendation.modifierExtension |

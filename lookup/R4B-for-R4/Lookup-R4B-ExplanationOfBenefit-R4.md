@@ -20,7 +20,7 @@
 | ExplanationOfBenefit.created | UseElementSameName | ExplanationOfBenefit.created |
 | ExplanationOfBenefit.enterer | UseElementSameName | ExplanationOfBenefit.enterer |
 | ExplanationOfBenefit.insurer | UseElementSameName | ExplanationOfBenefit.insurer |
-| ExplanationOfBenefit.provider | UseElementSameName | ExplanationOfBenefit.provider |
+| ExplanationOfBenefit.provider | UseOneOfElements | ExplanationOfBenefit.provider,ExplanationOfBenefit.provider |
 | ExplanationOfBenefit.priority | UseElementSameName | ExplanationOfBenefit.priority |
 | ExplanationOfBenefit.fundsReserveRequested | UseElementSameName | ExplanationOfBenefit.fundsReserveRequested |
 | ExplanationOfBenefit.fundsReserve | UseElementSameName | ExplanationOfBenefit.fundsReserve |
@@ -217,7 +217,7 @@
 | ExplanationOfBenefit.total.extension | UseElementSameName | ExplanationOfBenefit.total.extension |
 | ExplanationOfBenefit.total.modifierExtension | UseElementSameName | ExplanationOfBenefit.total.modifierExtension |
 | ExplanationOfBenefit.total.category | UseElementSameName | ExplanationOfBenefit.total.category |
-| ExplanationOfBenefit.total.amount | UseElementSameName | ExplanationOfBenefit.total.amount |
+| ExplanationOfBenefit.total.amount | UseOneOfElements | ExplanationOfBenefit.total.amount,ExplanationOfBenefit.total.amount |
 | ExplanationOfBenefit.payment | UseElementSameName | ExplanationOfBenefit.payment |
 | ExplanationOfBenefit.payment.id | UseElementSameName | ExplanationOfBenefit.payment.id |
 | ExplanationOfBenefit.payment.extension | UseElementSameName | ExplanationOfBenefit.payment.extension |

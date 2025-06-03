@@ -24,6 +24,6 @@
 | Communication.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Communication.encounter |
 | Communication.sent | UseElementSameName | Communication.sent |
 | Communication.received | UseElementSameName | Communication.received |
-| Communication.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Communication.reason |
+| Communication.reason | UseElementSameName | Communication.reason |
 | Communication.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Communication.subject |
 | Communication.requestDetail | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Communication.requestDetail |

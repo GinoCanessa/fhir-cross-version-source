@@ -24,7 +24,7 @@
 | FamilyMemberHistory.age[x] | UseElementSameName | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseElementSameName | FamilyMemberHistory.estimatedAge |
 | FamilyMemberHistory.deceased[x] | UseElementSameName | FamilyMemberHistory.deceased[x] |
-| FamilyMemberHistory.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.reasonCode |
+| FamilyMemberHistory.reasonCode | UseElementRenamed | FamilyMemberHistory.reason |
 | FamilyMemberHistory.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-FamilyMemberHistory.reasonReference |
 | FamilyMemberHistory.note | UseElementSameName | FamilyMemberHistory.note |
 | FamilyMemberHistory.condition | UseElementSameName | FamilyMemberHistory.condition |

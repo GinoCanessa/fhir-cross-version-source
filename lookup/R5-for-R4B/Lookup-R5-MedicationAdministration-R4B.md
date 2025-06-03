@@ -16,7 +16,7 @@
 | MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
 | MedicationAdministration.statusReason | UseElementSameName | MedicationAdministration.statusReason |
 | MedicationAdministration.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.category |
-| MedicationAdministration.medication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.medication |
+| MedicationAdministration.medication | UseElementRenamed | MedicationAdministration.medication[x] |
 | MedicationAdministration.subject | UseElementSameName | MedicationAdministration.subject |
 | MedicationAdministration.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.encounter |
 | MedicationAdministration.supportingInformation | UseElementSameName | MedicationAdministration.supportingInformation |
@@ -29,7 +29,7 @@
 | MedicationAdministration.performer.extension | UseElementSameName | MedicationAdministration.performer.extension |
 | MedicationAdministration.performer.modifierExtension | UseElementSameName | MedicationAdministration.performer.modifierExtension |
 | MedicationAdministration.performer.function | UseElementSameName | MedicationAdministration.performer.function |
-| MedicationAdministration.performer.actor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.performer.actor |
+| MedicationAdministration.performer.actor | UseOneOfElements | MedicationAdministration.performer.actor,MedicationAdministration.performer.actor |
 | MedicationAdministration.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.reason |
 | MedicationAdministration.request | UseElementSameName | MedicationAdministration.request |
 | MedicationAdministration.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationAdministration.device |

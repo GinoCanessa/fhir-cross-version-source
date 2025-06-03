@@ -30,7 +30,7 @@
 | Procedure.location | UseElementSameName | Procedure.location |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |
 | Procedure.report | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.report |
-| Procedure.complication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.complication |
+| Procedure.complication | UseElementSameName | Procedure.complication |
 | Procedure.followUp | UseElementSameName | Procedure.followUp |
 | Procedure.request | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.request |
 | Procedure.notes | UseElementRenamed | Procedure.note |
@@ -40,4 +40,4 @@
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
 | Procedure.focalDevice.action | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.focalDevice.action |
 | Procedure.focalDevice.manipulated | UseElementSameName | Procedure.focalDevice.manipulated |
-| Procedure.used | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.used |
+| Procedure.used | UseElementSameName | Procedure.used |

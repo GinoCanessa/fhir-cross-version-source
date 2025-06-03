@@ -40,7 +40,7 @@
 | Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementSameName | Encounter.period |
 | Encounter.length | UseElementSameName | Encounter.length |
-| Encounter.reason | UseElementRenamed | Encounter.reasonCode |
+| Encounter.reason | UseOneOfElements | Encounter.reasonCode,Encounter.reasonCode |
 | Encounter.diagnosis | UseElementSameName | Encounter.diagnosis |
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |
 | Encounter.diagnosis.extension | UseElementSameName | Encounter.diagnosis.extension |

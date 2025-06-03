@@ -14,14 +14,14 @@
 | MedicationStatement.partOf | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.partOf |
 | MedicationStatement.status | UseElementSameName | MedicationStatement.status |
 | MedicationStatement.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.category |
-| MedicationStatement.medication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.medication |
+| MedicationStatement.medication | UseElementRenamed | MedicationStatement.medication[x] |
 | MedicationStatement.subject | UseElementSameName | MedicationStatement.subject |
 | MedicationStatement.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.encounter |
 | MedicationStatement.effective[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.effective |
 | MedicationStatement.dateAsserted | UseElementSameName | MedicationStatement.dateAsserted |
 | MedicationStatement.informationSource | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.informationSource |
 | MedicationStatement.derivedFrom | UseElementSameName | MedicationStatement.derivedFrom |
-| MedicationStatement.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.reason |
+| MedicationStatement.reason | UseOneOfElements | MedicationStatement.reasonCode,MedicationStatement.reasonCode,MedicationStatement.reasonReference |
 | MedicationStatement.note | UseElementSameName | MedicationStatement.note |
 | MedicationStatement.relatedClinicalInformation | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.relatedClinicalInformation |
 | MedicationStatement.renderedDosageInstruction | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.renderedDosageInstruction |

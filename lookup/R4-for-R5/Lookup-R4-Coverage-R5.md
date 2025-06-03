@@ -10,7 +10,7 @@
 | Coverage.contained | UseElementSameName | Coverage.contained |
 | Coverage.extension | UseElementSameName | Coverage.extension |
 | Coverage.modifierExtension | UseElementSameName | Coverage.modifierExtension |
-| Coverage.identifier | UseElementSameName | Coverage.identifier |
+| Coverage.identifier | UseOneOfElements | Coverage.identifier,Coverage.identifier |
 | Coverage.status | UseElementSameName | Coverage.status |
 | Coverage.type | UseElementSameName | Coverage.type |
 | Coverage.policyHolder | UseElementSameName | Coverage.policyHolder |

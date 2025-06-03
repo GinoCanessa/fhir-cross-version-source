@@ -43,7 +43,7 @@
 | RequestGroup.action.condition.extension | UseElementSameName | RequestGroup.action.condition.extension |
 | RequestGroup.action.condition.modifierExtension | UseElementSameName | RequestGroup.action.condition.modifierExtension |
 | RequestGroup.action.condition.kind | UseElementSameName | RequestGroup.action.condition.kind |
-| RequestGroup.action.condition.expression | UseElementSameName | RequestGroup.action.condition.expression |
+| RequestGroup.action.condition.expression | UseOneOfElements | RequestGroup.action.condition.expression,RequestGroup.action.condition.expression,RequestGroup.action.condition.expression |
 | RequestGroup.action.relatedAction | UseElementSameName | RequestGroup.action.relatedAction |
 | RequestGroup.action.relatedAction.id | UseElementSameName | RequestGroup.action.relatedAction.id |
 | RequestGroup.action.relatedAction.extension | UseElementSameName | RequestGroup.action.relatedAction.extension |

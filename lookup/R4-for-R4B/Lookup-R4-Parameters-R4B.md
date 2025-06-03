@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Parameters.id | UseElementSameName | Parameters.id |
-| Parameters.meta | UseElementSameName | Parameters.meta |
-| Parameters.implicitRules | UseElementSameName | Parameters.implicitRules |
-| Parameters.language | UseElementSameName | Parameters.language |
-| Parameters.parameter | UseElementSameName | Parameters.parameter |
-| Parameters.parameter.id | UseElementSameName | Parameters.parameter.id |
-| Parameters.parameter.extension | UseElementSameName | Parameters.parameter.extension |
-| Parameters.parameter.modifierExtension | UseElementSameName | Parameters.parameter.modifierExtension |
-| Parameters.parameter.name | UseElementSameName | Parameters.parameter.name |
-| Parameters.parameter.value[x] | UseElementSameName | Parameters.parameter.value[x] |
-| Parameters.parameter.resource | UseElementSameName | Parameters.parameter.resource |
-| Parameters.parameter.part | UseElementSameName | Parameters.parameter.part |
+| Parameters.id | UseOneOfElements | Parameters.id,Parameters.id |
+| Parameters.meta | UseOneOfElements | Parameters.meta,Parameters.meta |
+| Parameters.implicitRules | UseOneOfElements | Parameters.implicitRules,Parameters.implicitRules |
+| Parameters.language | UseOneOfElements | Parameters.language,Parameters.language |
+| Parameters.parameter | UseOneOfElements | Parameters.parameter,Parameters.parameter |
+| Parameters.parameter.id | UseOneOfElements | Parameters.parameter.id,Parameters.parameter.id |
+| Parameters.parameter.extension | UseOneOfElements | Parameters.parameter.extension,Parameters.parameter.extension |
+| Parameters.parameter.modifierExtension | UseOneOfElements | Parameters.parameter.modifierExtension,Parameters.parameter.modifierExtension |
+| Parameters.parameter.name | UseOneOfElements | Parameters.parameter.name,Parameters.parameter.name |
+| Parameters.parameter.value[x] | UseOneOfElements | Parameters.parameter.value[x],Parameters.parameter.value[x] |
+| Parameters.parameter.resource | UseOneOfElements | Parameters.parameter.resource,Parameters.parameter.resource |
+| Parameters.parameter.part | UseOneOfElements | Parameters.parameter.part,Parameters.parameter.part |

@@ -25,7 +25,7 @@
 | ConceptMap.contact.telecom | UseExtensionFromAncestor | - |
 | ConceptMap.date | UseElementSameName | ConceptMap.date |
 | ConceptMap.description | UseElementSameName | ConceptMap.description |
-| ConceptMap.useContext | UseElementSameName | ConceptMap.useContext |
+| ConceptMap.useContext | UseOneOfElements | ConceptMap.useContext,ConceptMap.jurisdiction |
 | ConceptMap.requirements | UseElementRenamed | ConceptMap.purpose |
 | ConceptMap.copyright | UseElementSameName | ConceptMap.copyright |
 | ConceptMap.source[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.source |

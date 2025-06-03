@@ -33,7 +33,7 @@
 | MedicationDispense.destination | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.destination |
 | MedicationDispense.receiver | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.receiver |
 | MedicationDispense.note | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.note |
-| MedicationDispense.dosageInstruction | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.dosageInstruction |
+| MedicationDispense.dosageInstruction | UseElementSameName | MedicationDispense.dosageInstruction |
 | MedicationDispense.substitution | UseElementSameName | MedicationDispense.substitution |
 | MedicationDispense.substitution.id | UseElementSameName | MedicationDispense.substitution.id |
 | MedicationDispense.substitution.extension | UseElementSameName | MedicationDispense.substitution.extension |

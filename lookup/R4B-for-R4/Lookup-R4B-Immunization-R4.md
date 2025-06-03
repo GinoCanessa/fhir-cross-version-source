@@ -11,7 +11,7 @@
 | Immunization.extension | UseElementSameName | Immunization.extension |
 | Immunization.modifierExtension | UseElementSameName | Immunization.modifierExtension |
 | Immunization.identifier | UseElementSameName | Immunization.identifier |
-| Immunization.status | UseElementSameName | Immunization.status |
+| Immunization.status | UseOneOfElements | Immunization.status,Immunization.status |
 | Immunization.statusReason | UseElementSameName | Immunization.statusReason |
 | Immunization.vaccineCode | UseElementSameName | Immunization.vaccineCode |
 | Immunization.patient | UseElementSameName | Immunization.patient |
@@ -32,9 +32,9 @@
 | Immunization.performer.extension | UseElementSameName | Immunization.performer.extension |
 | Immunization.performer.modifierExtension | UseElementSameName | Immunization.performer.modifierExtension |
 | Immunization.performer.function | UseElementSameName | Immunization.performer.function |
-| Immunization.performer.actor | UseElementSameName | Immunization.performer.actor |
+| Immunization.performer.actor | UseOneOfElements | Immunization.performer.actor,Immunization.performer.actor |
 | Immunization.note | UseElementSameName | Immunization.note |
-| Immunization.reasonCode | UseElementSameName | Immunization.reasonCode |
+| Immunization.reasonCode | UseOneOfElements | Immunization.reasonCode,Immunization.reasonCode |
 | Immunization.reasonReference | UseElementSameName | Immunization.reasonReference |
 | Immunization.isSubpotent | UseElementSameName | Immunization.isSubpotent |
 | Immunization.subpotentReason | UseElementSameName | Immunization.subpotentReason |

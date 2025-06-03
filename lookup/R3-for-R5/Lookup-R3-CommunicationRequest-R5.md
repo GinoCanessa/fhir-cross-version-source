@@ -36,6 +36,6 @@
 | CommunicationRequest.requester.modifierExtension | UseExtensionFromAncestor | - |
 | CommunicationRequest.requester.agent | UseExtensionFromAncestor | - |
 | CommunicationRequest.requester.onBehalfOf | UseExtensionFromAncestor | - |
-| CommunicationRequest.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.reasonCode |
+| CommunicationRequest.reasonCode | UseElementRenamed | CommunicationRequest.reason |
 | CommunicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CommunicationRequest.reasonReference |
 | CommunicationRequest.note | UseElementSameName | CommunicationRequest.note |

@@ -26,8 +26,8 @@
 | MedicationAdministration.performer.extension | UseElementSameName | MedicationAdministration.performer.extension |
 | MedicationAdministration.performer.modifierExtension | UseElementSameName | MedicationAdministration.performer.modifierExtension |
 | MedicationAdministration.performer.function | UseElementSameName | MedicationAdministration.performer.function |
-| MedicationAdministration.performer.actor | UseElementSameName | MedicationAdministration.performer.actor |
-| MedicationAdministration.reasonCode | UseElementSameName | MedicationAdministration.reasonCode |
+| MedicationAdministration.performer.actor | UseOneOfElements | MedicationAdministration.performer.actor,MedicationAdministration.performer.actor |
+| MedicationAdministration.reasonCode | UseOneOfElements | MedicationAdministration.reasonCode,MedicationAdministration.reasonCode |
 | MedicationAdministration.reasonReference | UseElementSameName | MedicationAdministration.reasonReference |
 | MedicationAdministration.request | UseElementSameName | MedicationAdministration.request |
 | MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |

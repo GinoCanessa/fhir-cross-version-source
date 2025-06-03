@@ -32,9 +32,9 @@
 | ReferralRequest.requester.onBehalfOf | UseExtensionFromAncestor | - |
 | ReferralRequest.specialty | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.specialty |
 | ReferralRequest.recipient | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.recipient |
-| ReferralRequest.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.reasonCode |
+| ReferralRequest.reasonCode | UseElementRenamed | ServiceRequest.reason |
 | ReferralRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.reasonReference |
 | ReferralRequest.description | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.description |
-| ReferralRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ReferralRequest.supportingInfo |
+| ReferralRequest.supportingInfo | UseElementRenamed | ServiceRequest.supportingInfo |
 | ReferralRequest.note | UseElementRenamed | ServiceRequest.note |
 | ReferralRequest.relevantHistory | UseElementRenamed | ServiceRequest.relevantHistory |

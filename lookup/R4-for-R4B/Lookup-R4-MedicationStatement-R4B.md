@@ -23,7 +23,7 @@
 | MedicationStatement.dateAsserted | UseElementSameName | MedicationStatement.dateAsserted |
 | MedicationStatement.informationSource | UseElementSameName | MedicationStatement.informationSource |
 | MedicationStatement.derivedFrom | UseElementSameName | MedicationStatement.derivedFrom |
-| MedicationStatement.reasonCode | UseElementSameName | MedicationStatement.reasonCode |
+| MedicationStatement.reasonCode | UseOneOfElements | MedicationStatement.reasonCode,MedicationStatement.reasonCode |
 | MedicationStatement.reasonReference | UseElementSameName | MedicationStatement.reasonReference |
 | MedicationStatement.note | UseElementSameName | MedicationStatement.note |
 | MedicationStatement.dosage | UseElementSameName | MedicationStatement.dosage |

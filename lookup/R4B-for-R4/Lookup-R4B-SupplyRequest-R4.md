@@ -24,7 +24,7 @@
 | SupplyRequest.parameter.value[x] | UseElementSameName | SupplyRequest.parameter.value[x] |
 | SupplyRequest.occurrence[x] | UseElementSameName | SupplyRequest.occurrence[x] |
 | SupplyRequest.authoredOn | UseElementSameName | SupplyRequest.authoredOn |
-| SupplyRequest.requester | UseElementSameName | SupplyRequest.requester |
+| SupplyRequest.requester | UseOneOfElements | SupplyRequest.requester,SupplyRequest.requester |
 | SupplyRequest.supplier | UseElementSameName | SupplyRequest.supplier |
 | SupplyRequest.reasonCode | UseElementSameName | SupplyRequest.reasonCode |
 | SupplyRequest.reasonReference | UseElementSameName | SupplyRequest.reasonReference |

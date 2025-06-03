@@ -198,7 +198,7 @@
 | ExplanationOfBenefit.payment.date | UseElementSameName | ExplanationOfBenefit.payment.date |
 | ExplanationOfBenefit.payment.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.payment.amount |
 | ExplanationOfBenefit.payment.identifier | UseElementSameName | ExplanationOfBenefit.payment.identifier |
-| ExplanationOfBenefit.form | UseElementRenamed | ExplanationOfBenefit.formCode |
+| ExplanationOfBenefit.form | UseOneOfElements | ExplanationOfBenefit.formCode,ExplanationOfBenefit.form |
 | ExplanationOfBenefit.processNote | UseElementSameName | ExplanationOfBenefit.processNote |
 | ExplanationOfBenefit.processNote.id | UseElementSameName | ExplanationOfBenefit.processNote.id |
 | ExplanationOfBenefit.processNote.extension | UseElementSameName | ExplanationOfBenefit.processNote.extension |

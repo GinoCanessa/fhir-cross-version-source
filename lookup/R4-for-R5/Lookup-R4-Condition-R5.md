@@ -31,10 +31,10 @@
 | Condition.stage.summary | UseElementSameName | Condition.stage.summary |
 | Condition.stage.assessment | UseElementSameName | Condition.stage.assessment |
 | Condition.stage.type | UseElementSameName | Condition.stage.type |
-| Condition.evidence | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence |
-| Condition.evidence.id | UseExtensionFromAncestor | - |
-| Condition.evidence.extension | UseExtensionFromAncestor | - |
-| Condition.evidence.modifierExtension | UseExtensionFromAncestor | - |
-| Condition.evidence.code | UseExtensionFromAncestor | - |
-| Condition.evidence.detail | UseExtensionFromAncestor | - |
+| Condition.evidence | UseElementSameName | Condition.evidence |
+| Condition.evidence.id | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence.id |
+| Condition.evidence.extension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence.extension |
+| Condition.evidence.modifierExtension | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence.modifierExtension |
+| Condition.evidence.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence.code |
+| Condition.evidence.detail | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Condition.evidence.detail |
 | Condition.note | UseElementSameName | Condition.note |

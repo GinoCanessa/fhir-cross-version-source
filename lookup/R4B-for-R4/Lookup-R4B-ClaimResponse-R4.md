@@ -18,7 +18,7 @@
 | ClaimResponse.patient | UseElementSameName | ClaimResponse.patient |
 | ClaimResponse.created | UseElementSameName | ClaimResponse.created |
 | ClaimResponse.insurer | UseElementSameName | ClaimResponse.insurer |
-| ClaimResponse.requestor | UseElementSameName | ClaimResponse.requestor |
+| ClaimResponse.requestor | UseOneOfElements | ClaimResponse.requestor,ClaimResponse.requestor |
 | ClaimResponse.request | UseElementSameName | ClaimResponse.request |
 | ClaimResponse.outcome | UseElementSameName | ClaimResponse.outcome |
 | ClaimResponse.disposition | UseElementSameName | ClaimResponse.disposition |
@@ -104,7 +104,7 @@
 | ClaimResponse.total.extension | UseElementSameName | ClaimResponse.total.extension |
 | ClaimResponse.total.modifierExtension | UseElementSameName | ClaimResponse.total.modifierExtension |
 | ClaimResponse.total.category | UseElementSameName | ClaimResponse.total.category |
-| ClaimResponse.total.amount | UseElementSameName | ClaimResponse.total.amount |
+| ClaimResponse.total.amount | UseOneOfElements | ClaimResponse.total.amount,ClaimResponse.total.amount |
 | ClaimResponse.payment | UseElementSameName | ClaimResponse.payment |
 | ClaimResponse.payment.id | UseElementSameName | ClaimResponse.payment.id |
 | ClaimResponse.payment.extension | UseElementSameName | ClaimResponse.payment.extension |

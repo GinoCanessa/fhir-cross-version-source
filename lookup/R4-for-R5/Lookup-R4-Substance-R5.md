@@ -13,7 +13,7 @@
 | Substance.identifier | UseElementSameName | Substance.identifier |
 | Substance.status | UseElementSameName | Substance.status |
 | Substance.category | UseElementSameName | Substance.category |
-| Substance.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Substance.code |
+| Substance.code | UseElementSameName | Substance.code |
 | Substance.description | UseElementSameName | Substance.description |
 | Substance.instance | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Substance.instance |
 | Substance.instance.id | UseExtensionFromAncestor | - |

@@ -94,7 +94,7 @@
 | ClaimResponse.payment.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.payment.amount |
 | ClaimResponse.payment.identifier | UseElementSameName | ClaimResponse.payment.identifier |
 | ClaimResponse.reserved | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.reserved |
-| ClaimResponse.form | UseElementRenamed | ClaimResponse.formCode |
+| ClaimResponse.form | UseOneOfElements | ClaimResponse.formCode,ClaimResponse.form |
 | ClaimResponse.processNote | UseElementSameName | ClaimResponse.processNote |
 | ClaimResponse.processNote.id | UseElementSameName | ClaimResponse.processNote.id |
 | ClaimResponse.processNote.extension | UseElementSameName | ClaimResponse.processNote.extension |

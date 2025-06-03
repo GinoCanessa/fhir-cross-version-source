@@ -21,7 +21,7 @@
 | DeviceRequest.code[x] | UseElementSameName | DeviceRequest.code[x] |
 | DeviceRequest.subject | UseElementSameName | DeviceRequest.subject |
 | DeviceRequest.context | UseElementRenamed | DeviceRequest.encounter |
-| DeviceRequest.occurrence[x] | UseElementSameName | DeviceRequest.occurrence[x] |
+| DeviceRequest.occurrence[x] | UseOneOfElements | DeviceRequest.occurrence[x],DeviceRequest.occurrence[x] |
 | DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
 | DeviceRequest.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DeviceRequest.requester |
 | DeviceRequest.requester.id | UseExtensionFromAncestor | - |

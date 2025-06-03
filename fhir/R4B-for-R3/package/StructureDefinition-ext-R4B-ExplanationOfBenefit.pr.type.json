@@ -1,21 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ext-R4B-ExplanationOfBenefit.pr.type",
-  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.processNote.type",
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.procedure.type",
   "version": "0.0.1-snapshot-1",
   "name": "ext_R4B_ExplanationOfBenefit_pr_type",
-  "title": "Cross-version Extension for R4B.ExplanationOfBenefit.processNote.type for use in FHIR R3",
+  "title": "Cross-version Extension for R4B.ExplanationOfBenefit.procedure.type for use in FHIR R3",
   "status": "draft",
   "experimental": false,
-  "date": "2025-06-01T22:10:04.7570674+02:00",
-  "description": "This cross-version extension represents ExplanationOfBenefit.processNote.type from http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit|4.3.0 for use in FHIR R3.",
+  "date": "2025-06-03T03:14:00.7975152+02:00",
+  "description": "This cross-version extension represents ExplanationOfBenefit.procedure.type from http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit|4.3.0 for use in FHIR R3.",
   "fhirVersion": "3.0.2",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "ExplanationOfBenefit.processNote.type"
+      "expression": "ExplanationOfBenefit.procedure"
     }
   ],
   "type": "Extension",
@@ -26,11 +26,11 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "display | print | printoper",
-        "definition": "The business purpose of the note text.",
-        "comment": "`ExplanationOfBenefit.processNote.type` maps to R3 `ExplanationOfBenefit.processNote.type`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "short": "Category of Procedure",
+        "definition": "When the condition was observed or the relative ranking.",
+        "comment": "`ExplanationOfBenefit.procedure.type` has no related element in R3:ExplanationOfBenefit",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "Extension",
           "min": 0,
@@ -166,7 +166,7 @@
             "code": "http://hl7.org/fhirpath/System.String"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.processNote.type",
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.procedure.type",
         "mapping": [
           {
             "identity": "rim",
@@ -177,9 +177,9 @@
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "display | print | printoper",
-        "definition": "The business purpose of the note text.",
-        "comment": "`ExplanationOfBenefit.processNote.type` maps to R3 `ExplanationOfBenefit.processNote.type`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "short": "Category of Procedure",
+        "definition": "When the condition was observed or the relative ranking.",
+        "comment": "`ExplanationOfBenefit.procedure.type` has no related element in R3:ExplanationOfBenefit",
         "min": 0,
         "max": "1",
         "base": {
@@ -189,13 +189,13 @@
         },
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ],
         "binding": {
-          "strength": "required",
-          "description": "The presentation types of notes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/note-type|4.3.0"
+          "strength": "example",
+          "description": "Example procedure type codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ex-procedure-type"
         },
         "mapping": [
           {
@@ -214,7 +214,7 @@
           "min": 1,
           "max": "1"
         },
-        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.processNote.type"
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.procedure.type"
       }
     ]
   },
@@ -223,31 +223,31 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "display | print | printoper",
-        "definition": "The business purpose of the note text.",
-        "comment": "`ExplanationOfBenefit.processNote.type` maps to R3 `ExplanationOfBenefit.processNote.type`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "short": "Category of Procedure",
+        "definition": "When the condition was observed or the relative ranking.",
+        "comment": "`ExplanationOfBenefit.procedure.type` has no related element in R3:ExplanationOfBenefit",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "isModifier": false
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "display | print | printoper",
-        "definition": "The business purpose of the note text.",
-        "comment": "`ExplanationOfBenefit.processNote.type` maps to R3 `ExplanationOfBenefit.processNote.type`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "short": "Category of Procedure",
+        "definition": "When the condition was observed or the relative ranking.",
+        "comment": "`ExplanationOfBenefit.procedure.type` has no related element in R3:ExplanationOfBenefit",
         "base": {
           "path": "Extension.value[x]"
         },
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ],
         "binding": {
-          "strength": "required",
-          "description": "The presentation types of notes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/note-type|4.3.0"
+          "strength": "example",
+          "description": "Example procedure type codes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/ex-procedure-type"
         }
       },
       {
@@ -255,7 +255,7 @@
         "path": "Extension.url",
         "min": 1,
         "max": "1",
-        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.processNote.type"
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.procedure.type"
       }
     ]
   }

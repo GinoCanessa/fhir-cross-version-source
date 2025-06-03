@@ -114,7 +114,7 @@
 | ExplanationOfBenefit.item.factor | UseElementSameName | ExplanationOfBenefit.item.factor |
 | ExplanationOfBenefit.item.net | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.net |
 | ExplanationOfBenefit.item.udi | UseElementSameName | ExplanationOfBenefit.item.udi |
-| ExplanationOfBenefit.item.bodySite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.bodySite |
+| ExplanationOfBenefit.item.bodySite | UseElementRenamed | ExplanationOfBenefit.item.bodySite.site |
 | ExplanationOfBenefit.item.subSite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.subSite |
 | ExplanationOfBenefit.item.encounter | UseElementSameName | ExplanationOfBenefit.item.encounter |
 | ExplanationOfBenefit.item.noteNumber | UseElementSameName | ExplanationOfBenefit.item.noteNumber |
@@ -125,7 +125,7 @@
 | ExplanationOfBenefit.item.adjudication.category | UseElementSameName | ExplanationOfBenefit.item.adjudication.category |
 | ExplanationOfBenefit.item.adjudication.reason | UseElementSameName | ExplanationOfBenefit.item.adjudication.reason |
 | ExplanationOfBenefit.item.adjudication.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.amount |
-| ExplanationOfBenefit.item.adjudication.value | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value |
+| ExplanationOfBenefit.item.adjudication.value | UseElementRenamed | ExplanationOfBenefit.item.adjudication.quantity |
 | ExplanationOfBenefit.item.detail | UseElementSameName | ExplanationOfBenefit.item.detail |
 | ExplanationOfBenefit.item.detail.id | UseElementSameName | ExplanationOfBenefit.item.detail.id |
 | ExplanationOfBenefit.item.detail.extension | UseElementSameName | ExplanationOfBenefit.item.detail.extension |
@@ -198,7 +198,7 @@
 | ExplanationOfBenefit.payment.date | UseElementSameName | ExplanationOfBenefit.payment.date |
 | ExplanationOfBenefit.payment.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.payment.amount |
 | ExplanationOfBenefit.payment.identifier | UseElementSameName | ExplanationOfBenefit.payment.identifier |
-| ExplanationOfBenefit.form | UseElementRenamed | ExplanationOfBenefit.formCode |
+| ExplanationOfBenefit.form | UseOneOfElements | ExplanationOfBenefit.formCode,ExplanationOfBenefit.form |
 | ExplanationOfBenefit.processNote | UseElementSameName | ExplanationOfBenefit.processNote |
 | ExplanationOfBenefit.processNote.id | UseElementSameName | ExplanationOfBenefit.processNote.id |
 | ExplanationOfBenefit.processNote.extension | UseElementSameName | ExplanationOfBenefit.processNote.extension |

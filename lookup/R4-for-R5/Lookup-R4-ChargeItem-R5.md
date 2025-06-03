@@ -32,12 +32,12 @@
 | ChargeItem.bodysite | UseElementSameName | ChargeItem.bodysite |
 | ChargeItem.factorOverride | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ChargeItem.factorOverride |
 | ChargeItem.priceOverride | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ChargeItem.priceOverride |
-| ChargeItem.overrideReason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ChargeItem.overrideReason |
+| ChargeItem.overrideReason | UseElementSameName | ChargeItem.overrideReason |
 | ChargeItem.enterer | UseElementSameName | ChargeItem.enterer |
 | ChargeItem.enteredDate | UseElementSameName | ChargeItem.enteredDate |
 | ChargeItem.reason | UseElementSameName | ChargeItem.reason |
-| ChargeItem.service | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ChargeItem.service |
-| ChargeItem.product[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ChargeItem.product |
+| ChargeItem.service | UseElementSameName | ChargeItem.service |
+| ChargeItem.product[x] | UseElementRenamed | ChargeItem.product |
 | ChargeItem.account | UseElementSameName | ChargeItem.account |
 | ChargeItem.note | UseElementSameName | ChargeItem.note |
 | ChargeItem.supportingInformation | UseElementSameName | ChargeItem.supportingInformation |

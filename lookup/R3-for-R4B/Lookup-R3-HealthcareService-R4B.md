@@ -24,7 +24,7 @@
 | HealthcareService.telecom | UseElementSameName | HealthcareService.telecom |
 | HealthcareService.coverageArea | UseElementSameName | HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |
-| HealthcareService.eligibility | UseElementSameName | HealthcareService.eligibility |
+| HealthcareService.eligibility | UseOneOfElements | HealthcareService.eligibility,HealthcareService.eligibility.code |
 | HealthcareService.eligibilityNote | UseElementRenamed | HealthcareService.eligibility.comment |
 | HealthcareService.programName | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-HealthcareService.programName |
 | HealthcareService.characteristic | UseElementSameName | HealthcareService.characteristic |

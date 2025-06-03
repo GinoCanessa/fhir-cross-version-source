@@ -14,7 +14,7 @@
 | FamilyMemberHistory.instantiatesCanonical | UseElementSameName | FamilyMemberHistory.instantiatesCanonical |
 | FamilyMemberHistory.instantiatesUri | UseElementSameName | FamilyMemberHistory.instantiatesUri |
 | FamilyMemberHistory.status | UseElementSameName | FamilyMemberHistory.status |
-| FamilyMemberHistory.dataAbsentReason | UseElementSameName | FamilyMemberHistory.dataAbsentReason |
+| FamilyMemberHistory.dataAbsentReason | UseOneOfElements | FamilyMemberHistory.dataAbsentReason,FamilyMemberHistory.dataAbsentReason |
 | FamilyMemberHistory.patient | UseElementSameName | FamilyMemberHistory.patient |
 | FamilyMemberHistory.date | UseElementSameName | FamilyMemberHistory.date |
 | FamilyMemberHistory.name | UseElementSameName | FamilyMemberHistory.name |

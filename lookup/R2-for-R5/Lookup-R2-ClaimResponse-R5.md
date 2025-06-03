@@ -33,7 +33,7 @@
 | ClaimResponse.item.adjudication.modifierExtension | UseElementSameName | ClaimResponse.item.adjudication.modifierExtension |
 | ClaimResponse.item.adjudication.code | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClaimResponse.item.adjudication.code |
 | ClaimResponse.item.adjudication.amount | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.value | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClaimResponse.item.adjudication.value |
+| ClaimResponse.item.adjudication.value | UseElementRenamed | ClaimResponse.item.adjudication.quantity |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |

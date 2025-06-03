@@ -20,7 +20,7 @@
 | Immunization.performer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.performer |
 | Immunization.requester | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.requester |
 | Immunization.encounter | UseElementSameName | Immunization.encounter |
-| Immunization.manufacturer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.manufacturer |
+| Immunization.manufacturer | UseElementSameName | Immunization.manufacturer |
 | Immunization.location | UseElementSameName | Immunization.location |
 | Immunization.lotNumber | UseElementSameName | Immunization.lotNumber |
 | Immunization.expirationDate | UseElementSameName | Immunization.expirationDate |
@@ -39,7 +39,7 @@
 | Immunization.reaction.extension | UseElementSameName | Immunization.reaction.extension |
 | Immunization.reaction.modifierExtension | UseElementSameName | Immunization.reaction.modifierExtension |
 | Immunization.reaction.date | UseElementSameName | Immunization.reaction.date |
-| Immunization.reaction.detail | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.reaction.detail |
+| Immunization.reaction.detail | UseElementRenamed | Immunization.reaction.manifestation |
 | Immunization.reaction.reported | UseElementSameName | Immunization.reaction.reported |
 | Immunization.vaccinationProtocol | UseElementRenamed | Immunization.protocolApplied |
 | Immunization.vaccinationProtocol.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.vaccinationProtocol.id |

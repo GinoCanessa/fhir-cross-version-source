@@ -68,7 +68,7 @@
 | Conformance.rest.resource.extension | UseElementRenamed | CapabilityStatement.rest.resource.extension |
 | Conformance.rest.resource.modifierExtension | UseElementRenamed | CapabilityStatement.rest.resource.modifierExtension |
 | Conformance.rest.resource.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.resource.type |
-| Conformance.rest.resource.profile | UseElementRenamed | CapabilityStatement.rest.resource.profile |
+| Conformance.rest.resource.profile | UseOneOfElements | CapabilityStatement.rest.resource.profile,CapabilityStatement.rest.resource.supportedProfile |
 | Conformance.rest.resource.interaction | UseElementRenamed | CapabilityStatement.rest.resource.interaction |
 | Conformance.rest.resource.interaction.id | UseElementRenamed | CapabilityStatement.rest.resource.interaction.id |
 | Conformance.rest.resource.interaction.extension | UseElementRenamed | CapabilityStatement.rest.resource.interaction.extension |
@@ -102,7 +102,7 @@
 | Conformance.rest.interaction.documentation | UseElementRenamed | CapabilityStatement.rest.interaction.documentation |
 | Conformance.rest.transactionMode | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.transactionMode |
 | Conformance.rest.searchParam | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.searchParam |
-| Conformance.rest.operation | UseElementRenamed | CapabilityStatement.rest.resource.operation |
+| Conformance.rest.operation | UseOneOfElements | CapabilityStatement.rest.resource.operation,CapabilityStatement.rest.operation |
 | Conformance.rest.operation.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.operation.id |
 | Conformance.rest.operation.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.operation.extension |
 | Conformance.rest.operation.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.operation.modifierExtension |

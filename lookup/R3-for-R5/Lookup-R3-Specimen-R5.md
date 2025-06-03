@@ -26,7 +26,7 @@
 | Specimen.collection.collected[x] | UseElementSameName | Specimen.collection.collected[x] |
 | Specimen.collection.quantity | UseElementSameName | Specimen.collection.quantity |
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
-| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
 | Specimen.processing | UseElementSameName | Specimen.processing |
 | Specimen.processing.id | UseElementSameName | Specimen.processing.id |
 | Specimen.processing.extension | UseElementSameName | Specimen.processing.extension |

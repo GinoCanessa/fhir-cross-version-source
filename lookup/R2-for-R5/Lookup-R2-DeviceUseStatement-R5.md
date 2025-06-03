@@ -12,7 +12,7 @@
 | DeviceUseStatement.modifierExtension | UseElementRenamed | DeviceUsage.modifierExtension |
 | DeviceUseStatement.bodySite[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseStatement.bodySite |
 | DeviceUseStatement.whenUsed | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseStatement.whenUsed |
-| DeviceUseStatement.device | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseStatement.device |
+| DeviceUseStatement.device | UseElementRenamed | DeviceUsage.device |
 | DeviceUseStatement.identifier | UseElementRenamed | DeviceUsage.identifier |
 | DeviceUseStatement.indication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseStatement.indication |
 | DeviceUseStatement.notes | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseStatement.notes |

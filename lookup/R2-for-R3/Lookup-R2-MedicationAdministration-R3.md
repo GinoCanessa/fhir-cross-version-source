@@ -13,7 +13,7 @@
 | MedicationAdministration.identifier | UseElementSameName | MedicationAdministration.identifier |
 | MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
 | MedicationAdministration.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.patient |
-| MedicationAdministration.practitioner | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.practitioner |
+| MedicationAdministration.practitioner | UseElementRenamed | MedicationAdministration.performer.actor |
 | MedicationAdministration.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.encounter |
 | MedicationAdministration.prescription | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.prescription |
 | MedicationAdministration.wasNotGiven | UseElementRenamed | MedicationAdministration.notGiven |
@@ -22,7 +22,7 @@
 | MedicationAdministration.effectiveTime[x] | UseElementRenamed | MedicationAdministration.effective[x] |
 | MedicationAdministration.medication[x] | UseElementSameName | MedicationAdministration.medication[x] |
 | MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |
-| MedicationAdministration.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.note |
+| MedicationAdministration.note | UseElementSameName | MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
 | MedicationAdministration.dosage.id | UseElementSameName | MedicationAdministration.dosage.id |
 | MedicationAdministration.dosage.extension | UseElementSameName | MedicationAdministration.dosage.extension |

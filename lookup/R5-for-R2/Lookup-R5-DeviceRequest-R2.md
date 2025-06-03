@@ -34,7 +34,7 @@
 | DeviceRequest.authoredOn | UseElementRenamed | DeviceUseRequest.recordedOn |
 | DeviceRequest.requester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.requester |
 | DeviceRequest.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.performer |
-| DeviceRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.reason |
+| DeviceRequest.reason | UseElementRenamed | DeviceUseRequest.indication |
 | DeviceRequest.asNeeded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeeded |
 | DeviceRequest.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeededFor |
 | DeviceRequest.insurance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.insurance |

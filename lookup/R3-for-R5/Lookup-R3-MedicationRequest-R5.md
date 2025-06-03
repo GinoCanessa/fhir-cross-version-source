@@ -14,11 +14,11 @@
 | MedicationRequest.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.definition |
 | MedicationRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.basedOn |
 | MedicationRequest.groupIdentifier | UseElementSameName | MedicationRequest.groupIdentifier |
-| MedicationRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.status |
+| MedicationRequest.status | UseElementSameName | MedicationRequest.status |
 | MedicationRequest.intent | UseElementSameName | MedicationRequest.intent |
 | MedicationRequest.category | UseElementSameName | MedicationRequest.category |
 | MedicationRequest.priority | UseElementSameName | MedicationRequest.priority |
-| MedicationRequest.medication[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.medication |
+| MedicationRequest.medication[x] | UseElementRenamed | MedicationRequest.medication |
 | MedicationRequest.subject | UseElementSameName | MedicationRequest.subject |
 | MedicationRequest.context | UseElementRenamed | MedicationRequest.encounter |
 | MedicationRequest.supportingInformation | UseElementSameName | MedicationRequest.supportingInformation |
@@ -30,8 +30,8 @@
 | MedicationRequest.requester.agent | UseExtensionFromAncestor | - |
 | MedicationRequest.requester.onBehalfOf | UseExtensionFromAncestor | - |
 | MedicationRequest.recorder | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.recorder |
-| MedicationRequest.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.reasonCode |
-| MedicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.reasonReference |
+| MedicationRequest.reasonCode | UseElementRenamed | MedicationRequest.reason |
+| MedicationRequest.reasonReference | UseElementRenamed | MedicationRequest.reason |
 | MedicationRequest.note | UseElementSameName | MedicationRequest.note |
 | MedicationRequest.dosageInstruction | UseElementSameName | MedicationRequest.dosageInstruction |
 | MedicationRequest.dispenseRequest | UseElementSameName | MedicationRequest.dispenseRequest |

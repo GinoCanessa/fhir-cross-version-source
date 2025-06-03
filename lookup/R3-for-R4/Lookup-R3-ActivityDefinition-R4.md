@@ -28,7 +28,7 @@
 | ActivityDefinition.useContext | UseElementSameName | ActivityDefinition.useContext |
 | ActivityDefinition.jurisdiction | UseElementSameName | ActivityDefinition.jurisdiction |
 | ActivityDefinition.topic | UseElementSameName | ActivityDefinition.topic |
-| ActivityDefinition.contributor | UseElementRenamed | ActivityDefinition.author |
+| ActivityDefinition.contributor | UseOneOfElements | ActivityDefinition.author,ActivityDefinition.editor,ActivityDefinition.reviewer,ActivityDefinition.endorser |
 | ActivityDefinition.contact | UseElementSameName | ActivityDefinition.contact |
 | ActivityDefinition.copyright | UseElementSameName | ActivityDefinition.copyright |
 | ActivityDefinition.relatedArtifact | UseElementSameName | ActivityDefinition.relatedArtifact |

@@ -15,7 +15,7 @@
 | Procedure.instantiatesUri | UseElementSameName | Procedure.instantiatesUri |
 | Procedure.basedOn | UseElementSameName | Procedure.basedOn |
 | Procedure.partOf | UseElementSameName | Procedure.partOf |
-| Procedure.status | UseElementSameName | Procedure.status |
+| Procedure.status | UseOneOfElements | Procedure.status,Procedure.status |
 | Procedure.statusReason | UseElementSameName | Procedure.statusReason |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
@@ -32,7 +32,7 @@
 | Procedure.performer.actor | UseElementSameName | Procedure.performer.actor |
 | Procedure.performer.onBehalfOf | UseElementSameName | Procedure.performer.onBehalfOf |
 | Procedure.location | UseElementSameName | Procedure.location |
-| Procedure.reasonCode | UseElementSameName | Procedure.reasonCode |
+| Procedure.reasonCode | UseOneOfElements | Procedure.reasonCode,Procedure.reasonCode |
 | Procedure.reasonReference | UseElementSameName | Procedure.reasonReference |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |

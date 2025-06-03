@@ -13,9 +13,9 @@
 | MedicationDispense.identifier | UseElementSameName | MedicationDispense.identifier |
 | MedicationDispense.partOf | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicationDispense.partOf |
 | MedicationDispense.status | UseElementSameName | MedicationDispense.status |
-| MedicationDispense.statusReason[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicationDispense.statusReason |
+| MedicationDispense.statusReason[x] | UseElementRenamed | MedicationDispense.notPerformedReason |
 | MedicationDispense.category | UseElementSameName | MedicationDispense.category |
-| MedicationDispense.medication[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicationDispense.medication |
+| MedicationDispense.medication[x] | UseElementRenamed | MedicationDispense.medication |
 | MedicationDispense.subject | UseElementSameName | MedicationDispense.subject |
 | MedicationDispense.context | UseElementRenamed | MedicationDispense.encounter |
 | MedicationDispense.supportingInformation | UseElementSameName | MedicationDispense.supportingInformation |

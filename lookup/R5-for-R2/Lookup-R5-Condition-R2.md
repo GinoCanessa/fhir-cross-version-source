@@ -35,5 +35,5 @@
 | Condition.stage.summary | UseExtensionFromAncestor | - |
 | Condition.stage.assessment | UseExtensionFromAncestor | - |
 | Condition.stage.type | UseExtensionFromAncestor | - |
-| Condition.evidence | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.evidence |
+| Condition.evidence | UseElementSameName | Condition.evidence |
 | Condition.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Condition.note |

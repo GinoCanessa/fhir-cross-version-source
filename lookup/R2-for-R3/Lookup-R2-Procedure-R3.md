@@ -15,7 +15,7 @@
 | Procedure.status | UseElementSameName | Procedure.status |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
-| Procedure.notPerformed | UseElementRenamed | Procedure.notDone |
+| Procedure.notPerformed | UseOneOfElements | Procedure.notDone,Procedure.notDone |
 | Procedure.reasonNotPerformed | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.reasonNotPerformed |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Procedure.reason |

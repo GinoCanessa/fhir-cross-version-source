@@ -2,7 +2,7 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| StructureDefinition.id | UseElementSameName | StructureDefinition.id |
+| StructureDefinition.id | UseOneOfElements | StructureDefinition.id,StructureDefinition.type |
 | StructureDefinition.meta | UseElementSameName | StructureDefinition.meta |
 | StructureDefinition.implicitRules | UseElementSameName | StructureDefinition.implicitRules |
 | StructureDefinition.language | UseElementSameName | StructureDefinition.language |
@@ -26,7 +26,7 @@
 | StructureDefinition.contact.telecom | UseExtensionFromAncestor | - |
 | StructureDefinition.date | UseElementSameName | StructureDefinition.date |
 | StructureDefinition.description | UseElementSameName | StructureDefinition.description |
-| StructureDefinition.useContext | UseElementSameName | StructureDefinition.useContext |
+| StructureDefinition.useContext | UseOneOfElements | StructureDefinition.useContext,StructureDefinition.jurisdiction |
 | StructureDefinition.requirements | UseElementRenamed | StructureDefinition.purpose |
 | StructureDefinition.copyright | UseElementSameName | StructureDefinition.copyright |
 | StructureDefinition.code | UseElementRenamed | StructureDefinition.keyword |

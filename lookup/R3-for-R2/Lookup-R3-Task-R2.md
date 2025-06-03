@@ -2,15 +2,15 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| Task.id | UseElementRenamed | Order.id |
-| Task.meta | UseElementRenamed | Order.meta |
-| Task.implicitRules | UseElementRenamed | Order.implicitRules |
-| Task.language | UseElementRenamed | Order.language |
-| Task.text | UseElementRenamed | Order.text |
-| Task.contained | UseElementRenamed | Order.contained |
-| Task.extension | UseElementRenamed | Order.extension |
-| Task.modifierExtension | UseElementRenamed | Order.modifierExtension |
-| Task.identifier | UseElementRenamed | Order.identifier |
+| Task.id | UseOneOfElements | Order.id,OrderResponse.id |
+| Task.meta | UseOneOfElements | Order.meta,OrderResponse.meta |
+| Task.implicitRules | UseOneOfElements | Order.implicitRules,OrderResponse.implicitRules |
+| Task.language | UseOneOfElements | Order.language,OrderResponse.language |
+| Task.text | UseOneOfElements | Order.text,OrderResponse.text |
+| Task.contained | UseOneOfElements | Order.contained,OrderResponse.contained |
+| Task.extension | UseOneOfElements | Order.extension,OrderResponse.extension |
+| Task.modifierExtension | UseOneOfElements | Order.modifierExtension,OrderResponse.modifierExtension |
+| Task.identifier | UseOneOfElements | Order.identifier,OrderResponse.identifier |
 | Task.definition[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.definition |
 | Task.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.basedOn |
 | Task.groupIdentifier | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.groupIdentifier |
@@ -26,7 +26,7 @@
 | Task.for | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.for |
 | Task.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.context |
 | Task.executionPeriod | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.executionPeriod |
-| Task.authoredOn | UseElementRenamed | Order.date |
+| Task.authoredOn | UseOneOfElements | Order.date,OrderResponse.date |
 | Task.lastModified | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.lastModified |
 | Task.requester | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Task.requester |
 | Task.requester.id | UseExtensionFromAncestor | - |

@@ -29,7 +29,7 @@
 | PlanDefinition.useContext | UseElementSameName | PlanDefinition.useContext |
 | PlanDefinition.jurisdiction | UseElementSameName | PlanDefinition.jurisdiction |
 | PlanDefinition.topic | UseElementSameName | PlanDefinition.topic |
-| PlanDefinition.contributor | UseElementRenamed | PlanDefinition.author |
+| PlanDefinition.contributor | UseOneOfElements | PlanDefinition.author,PlanDefinition.editor,PlanDefinition.reviewer,PlanDefinition.endorser |
 | PlanDefinition.contact | UseElementSameName | PlanDefinition.contact |
 | PlanDefinition.copyright | UseElementSameName | PlanDefinition.copyright |
 | PlanDefinition.relatedArtifact | UseElementSameName | PlanDefinition.relatedArtifact |
@@ -52,7 +52,7 @@
 | PlanDefinition.goal.target.detail[x] | UseElementSameName | PlanDefinition.goal.target.detail[x] |
 | PlanDefinition.goal.target.due | UseElementSameName | PlanDefinition.goal.target.due |
 | PlanDefinition.action | UseElementSameName | PlanDefinition.action |
-| PlanDefinition.action.id | UseElementSameName | PlanDefinition.action.id |
+| PlanDefinition.action.id | UseOneOfElements | PlanDefinition.action.id,PlanDefinition.action.id |
 | PlanDefinition.action.extension | UseElementSameName | PlanDefinition.action.extension |
 | PlanDefinition.action.modifierExtension | UseElementSameName | PlanDefinition.action.modifierExtension |
 | PlanDefinition.action.label | UseElementRenamed | PlanDefinition.action.prefix |
@@ -79,7 +79,7 @@
 | PlanDefinition.action.relatedAction.extension | UseElementSameName | PlanDefinition.action.relatedAction.extension |
 | PlanDefinition.action.relatedAction.modifierExtension | UseElementSameName | PlanDefinition.action.relatedAction.modifierExtension |
 | PlanDefinition.action.relatedAction.actionId | UseElementSameName | PlanDefinition.action.relatedAction.actionId |
-| PlanDefinition.action.relatedAction.relationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
+| PlanDefinition.action.relatedAction.relationship | UseOneOfElements | PlanDefinition.action.relatedAction.relationship,PlanDefinition.action.relatedAction.relationship |
 | PlanDefinition.action.relatedAction.offset[x] | UseElementSameName | PlanDefinition.action.relatedAction.offset[x] |
 | PlanDefinition.action.timing[x] | UseElementSameName | PlanDefinition.action.timing[x] |
 | PlanDefinition.action.participant | UseElementSameName | PlanDefinition.action.participant |

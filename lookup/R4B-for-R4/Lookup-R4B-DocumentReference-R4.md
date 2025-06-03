@@ -45,4 +45,4 @@
 | DocumentReference.context.facilityType | UseElementSameName | DocumentReference.context.facilityType |
 | DocumentReference.context.practiceSetting | UseElementSameName | DocumentReference.context.practiceSetting |
 | DocumentReference.context.sourcePatientInfo | UseElementSameName | DocumentReference.context.sourcePatientInfo |
-| DocumentReference.context.related | UseElementSameName | DocumentReference.context.related |
+| DocumentReference.context.related | UseOneOfElements | DocumentReference.context.related,DocumentReference.context.related |

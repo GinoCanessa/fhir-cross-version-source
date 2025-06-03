@@ -113,7 +113,7 @@
 | Claim.item.location[x] | UseElementSameName | Claim.item.location[x] |
 | Claim.item.quantity | UseElementSameName | Claim.item.quantity |
 | Claim.item.unitPrice | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.unitPrice |
-| Claim.item.factor | UseElementSameName | Claim.item.factor |
+| Claim.item.factor | UseOneOfElements | Claim.item.factor,Claim.item.factor |
 | Claim.item.net | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.net |
 | Claim.item.udi | UseElementSameName | Claim.item.udi |
 | Claim.item.bodySite | UseElementSameName | Claim.item.bodySite |
@@ -131,7 +131,7 @@
 | Claim.item.detail.programCode | UseElementSameName | Claim.item.detail.programCode |
 | Claim.item.detail.quantity | UseElementSameName | Claim.item.detail.quantity |
 | Claim.item.detail.unitPrice | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.detail.unitPrice |
-| Claim.item.detail.factor | UseElementSameName | Claim.item.detail.factor |
+| Claim.item.detail.factor | UseOneOfElements | Claim.item.detail.factor,Claim.item.detail.factor |
 | Claim.item.detail.net | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.detail.net |
 | Claim.item.detail.udi | UseElementSameName | Claim.item.detail.udi |
 | Claim.item.detail.subDetail | UseElementSameName | Claim.item.detail.subDetail |
@@ -146,7 +146,7 @@
 | Claim.item.detail.subDetail.programCode | UseElementSameName | Claim.item.detail.subDetail.programCode |
 | Claim.item.detail.subDetail.quantity | UseElementSameName | Claim.item.detail.subDetail.quantity |
 | Claim.item.detail.subDetail.unitPrice | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.detail.subDetail.unitPrice |
-| Claim.item.detail.subDetail.factor | UseElementSameName | Claim.item.detail.subDetail.factor |
+| Claim.item.detail.subDetail.factor | UseOneOfElements | Claim.item.detail.subDetail.factor,Claim.item.detail.subDetail.factor |
 | Claim.item.detail.subDetail.net | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.item.detail.subDetail.net |
 | Claim.item.detail.subDetail.udi | UseElementSameName | Claim.item.detail.subDetail.udi |
 | Claim.total | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Claim.total |

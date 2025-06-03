@@ -32,7 +32,7 @@
 | AuditEvent.agent.modifierExtension | UseElementSameName | AuditEvent.agent.modifierExtension |
 | AuditEvent.agent.type | UseElementSameName | AuditEvent.agent.type |
 | AuditEvent.agent.role | UseElementSameName | AuditEvent.agent.role |
-| AuditEvent.agent.who | UseElementSameName | AuditEvent.agent.who |
+| AuditEvent.agent.who | UseOneOfElements | AuditEvent.agent.who,AuditEvent.agent.who |
 | AuditEvent.agent.requestor | UseElementSameName | AuditEvent.agent.requestor |
 | AuditEvent.agent.location | UseElementSameName | AuditEvent.agent.location |
 | AuditEvent.agent.policy | UseElementSameName | AuditEvent.agent.policy |
@@ -49,7 +49,7 @@
 | AuditEvent.entity.id | UseElementSameName | AuditEvent.entity.id |
 | AuditEvent.entity.extension | UseElementSameName | AuditEvent.entity.extension |
 | AuditEvent.entity.modifierExtension | UseElementSameName | AuditEvent.entity.modifierExtension |
-| AuditEvent.entity.what | UseElementSameName | AuditEvent.entity.what |
+| AuditEvent.entity.what | UseOneOfElements | AuditEvent.entity.what,AuditEvent.entity.what |
 | AuditEvent.entity.role | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.entity.role |
 | AuditEvent.entity.securityLabel | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-AuditEvent.entity.securityLabel |
 | AuditEvent.entity.query | UseElementSameName | AuditEvent.entity.query |

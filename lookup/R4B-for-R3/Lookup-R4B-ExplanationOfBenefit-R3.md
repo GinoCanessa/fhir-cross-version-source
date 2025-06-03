@@ -235,7 +235,7 @@
 | ExplanationOfBenefit.processNote.extension | UseElementSameName | ExplanationOfBenefit.processNote.extension |
 | ExplanationOfBenefit.processNote.modifierExtension | UseElementSameName | ExplanationOfBenefit.processNote.modifierExtension |
 | ExplanationOfBenefit.processNote.number | UseElementSameName | ExplanationOfBenefit.processNote.number |
-| ExplanationOfBenefit.processNote.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.processNote.type |
+| ExplanationOfBenefit.processNote.type | UseElementSameName | ExplanationOfBenefit.processNote.type |
 | ExplanationOfBenefit.processNote.text | UseElementSameName | ExplanationOfBenefit.processNote.text |
 | ExplanationOfBenefit.processNote.language | UseElementSameName | ExplanationOfBenefit.processNote.language |
 | ExplanationOfBenefit.benefitPeriod | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ExplanationOfBenefit.benefitPeriod |

@@ -24,7 +24,7 @@
 | CoverageEligibilityRequest.serviced[x] | UseElementSameName | CoverageEligibilityRequest.serviced[x] |
 | CoverageEligibilityRequest.created | UseElementSameName | CoverageEligibilityRequest.created |
 | CoverageEligibilityRequest.enterer | UseElementSameName | CoverageEligibilityRequest.enterer |
-| CoverageEligibilityRequest.provider | UseElementSameName | CoverageEligibilityRequest.provider |
+| CoverageEligibilityRequest.provider | UseOneOfElements | CoverageEligibilityRequest.provider,CoverageEligibilityRequest.provider |
 | CoverageEligibilityRequest.insurer | UseElementSameName | CoverageEligibilityRequest.insurer |
 | CoverageEligibilityRequest.facility | UseElementSameName | CoverageEligibilityRequest.facility |
 | CoverageEligibilityRequest.supportingInfo | UseElementSameName | CoverageEligibilityRequest.supportingInfo |

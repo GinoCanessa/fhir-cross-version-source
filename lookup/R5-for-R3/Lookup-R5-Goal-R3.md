@@ -31,4 +31,4 @@
 | Goal.source | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.source |
 | Goal.addresses | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.addresses |
 | Goal.note | UseElementSameName | Goal.note |
-| Goal.outcome | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Goal.outcome |
+| Goal.outcome | UseElementRenamed | Goal.outcomeCode |

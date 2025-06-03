@@ -30,7 +30,7 @@
 | ClinicalImpression.finding.id | UseElementSameName | ClinicalImpression.finding.id |
 | ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
 | ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
-| ClinicalImpression.finding.item | UseElementRenamed | ClinicalImpression.finding.item[x] |
+| ClinicalImpression.finding.item | UseOneOfElements | ClinicalImpression.finding.item[x],ClinicalImpression.finding.item[x] |
 | ClinicalImpression.finding.cause | UseElementRenamed | ClinicalImpression.finding.basis |
 | ClinicalImpression.resolved | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.resolved |
 | ClinicalImpression.ruledOut | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ClinicalImpression.ruledOut |

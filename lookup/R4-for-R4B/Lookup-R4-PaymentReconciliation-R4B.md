@@ -16,7 +16,7 @@
 | PaymentReconciliation.created | UseElementSameName | PaymentReconciliation.created |
 | PaymentReconciliation.paymentIssuer | UseElementSameName | PaymentReconciliation.paymentIssuer |
 | PaymentReconciliation.request | UseElementSameName | PaymentReconciliation.request |
-| PaymentReconciliation.requestor | UseElementSameName | PaymentReconciliation.requestor |
+| PaymentReconciliation.requestor | UseOneOfElements | PaymentReconciliation.requestor,PaymentReconciliation.requestor |
 | PaymentReconciliation.outcome | UseElementSameName | PaymentReconciliation.outcome |
 | PaymentReconciliation.disposition | UseElementSameName | PaymentReconciliation.disposition |
 | PaymentReconciliation.paymentDate | UseElementSameName | PaymentReconciliation.paymentDate |

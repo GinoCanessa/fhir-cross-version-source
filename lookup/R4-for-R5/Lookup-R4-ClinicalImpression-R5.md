@@ -35,7 +35,7 @@
 | ClinicalImpression.finding.extension | UseElementSameName | ClinicalImpression.finding.extension |
 | ClinicalImpression.finding.modifierExtension | UseElementSameName | ClinicalImpression.finding.modifierExtension |
 | ClinicalImpression.finding.itemCodeableConcept | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClinicalImpression.finding.itemCodeableConcept |
-| ClinicalImpression.finding.itemReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClinicalImpression.finding.itemReference |
+| ClinicalImpression.finding.itemReference | UseElementRenamed | ClinicalImpression.finding.item |
 | ClinicalImpression.finding.basis | UseElementSameName | ClinicalImpression.finding.basis |
 | ClinicalImpression.prognosisCodeableConcept | UseElementSameName | ClinicalImpression.prognosisCodeableConcept |
 | ClinicalImpression.prognosisReference | UseElementSameName | ClinicalImpression.prognosisReference |

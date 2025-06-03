@@ -34,5 +34,5 @@
 | CommunicationRequest.requester | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.recipient |
 | CommunicationRequest.informationProvider | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.informationProvider |
-| CommunicationRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.reason |
+| CommunicationRequest.reason | UseElementSameName | CommunicationRequest.reason |
 | CommunicationRequest.note | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.note |

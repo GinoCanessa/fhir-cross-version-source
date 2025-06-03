@@ -10,9 +10,9 @@
 | ImagingStudy.contained | UseElementSameName | ImagingStudy.contained |
 | ImagingStudy.extension | UseElementSameName | ImagingStudy.extension |
 | ImagingStudy.modifierExtension | UseElementSameName | ImagingStudy.modifierExtension |
-| ImagingStudy.identifier | UseElementSameName | ImagingStudy.identifier |
+| ImagingStudy.identifier | UseOneOfElements | ImagingStudy.identifier,ImagingStudy.identifier,ImagingStudy.identifier |
 | ImagingStudy.status | UseElementSameName | ImagingStudy.status |
-| ImagingStudy.modality | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.modality |
+| ImagingStudy.modality | UseElementSameName | ImagingStudy.modality |
 | ImagingStudy.subject | UseElementSameName | ImagingStudy.subject |
 | ImagingStudy.encounter | UseElementSameName | ImagingStudy.encounter |
 | ImagingStudy.started | UseElementSameName | ImagingStudy.started |
@@ -35,12 +35,12 @@
 | ImagingStudy.series.modifierExtension | UseElementSameName | ImagingStudy.series.modifierExtension |
 | ImagingStudy.series.uid | UseElementSameName | ImagingStudy.series.uid |
 | ImagingStudy.series.number | UseElementSameName | ImagingStudy.series.number |
-| ImagingStudy.series.modality | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.modality |
+| ImagingStudy.series.modality | UseElementSameName | ImagingStudy.series.modality |
 | ImagingStudy.series.description | UseElementSameName | ImagingStudy.series.description |
 | ImagingStudy.series.numberOfInstances | UseElementSameName | ImagingStudy.series.numberOfInstances |
 | ImagingStudy.series.endpoint | UseElementSameName | ImagingStudy.series.endpoint |
-| ImagingStudy.series.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.bodySite |
-| ImagingStudy.series.laterality | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ImagingStudy.series.laterality |
+| ImagingStudy.series.bodySite | UseElementSameName | ImagingStudy.series.bodySite |
+| ImagingStudy.series.laterality | UseElementSameName | ImagingStudy.series.laterality |
 | ImagingStudy.series.specimen | UseElementSameName | ImagingStudy.series.specimen |
 | ImagingStudy.series.started | UseElementSameName | ImagingStudy.series.started |
 | ImagingStudy.series.performer | UseElementSameName | ImagingStudy.series.performer |

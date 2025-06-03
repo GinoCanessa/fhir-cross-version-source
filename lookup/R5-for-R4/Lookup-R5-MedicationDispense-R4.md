@@ -14,10 +14,10 @@
 | MedicationDispense.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.basedOn |
 | MedicationDispense.partOf | UseElementSameName | MedicationDispense.partOf |
 | MedicationDispense.status | UseElementSameName | MedicationDispense.status |
-| MedicationDispense.notPerformedReason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.notPerformedReason |
+| MedicationDispense.notPerformedReason | UseElementRenamed | MedicationDispense.statusReason[x] |
 | MedicationDispense.statusChanged | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.statusChanged |
 | MedicationDispense.category | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.category |
-| MedicationDispense.medication | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.medication |
+| MedicationDispense.medication | UseElementRenamed | MedicationDispense.medication[x] |
 | MedicationDispense.subject | UseElementSameName | MedicationDispense.subject |
 | MedicationDispense.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationDispense.encounter |
 | MedicationDispense.supportingInformation | UseElementSameName | MedicationDispense.supportingInformation |

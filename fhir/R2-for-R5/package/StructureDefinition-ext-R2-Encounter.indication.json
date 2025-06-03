@@ -7,7 +7,7 @@
   "title": "Cross-version Extension for R2.Encounter.indication for use in FHIR R5",
   "status": "draft",
   "experimental": false,
-  "date": "2025-06-01T22:07:46.8529557+02:00",
+  "date": "2025-06-03T03:11:42.8689618+02:00",
   "description": "This cross-version extension represents Encounter.indication from http://hl7.org/fhir/StructureDefinition/Encounter|1.0.2 for use in FHIR R5.",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
@@ -15,7 +15,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Encounter.reason"
+      "expression": "Encounter.reason.value"
     }
   ],
   "type": "Extension",
@@ -28,7 +28,7 @@
         "path": "Extension",
         "short": "Reason the encounter takes place (resource)",
         "definition": "Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Encounter.reasonCode` maps to R5 `Encounter.reason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "`Encounter.reasonCode` and `Encounter.reasonReference` map to R5 `Encounter.reason.value`.",
         "min": 0,
         "max": "*",
         "base": {
@@ -197,7 +197,7 @@
         "path": "Extension.value[x]",
         "short": "Reason the encounter takes place (resource)",
         "definition": "Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Encounter.reasonCode` maps to R5 `Encounter.reason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "`Encounter.reasonCode` and `Encounter.reasonReference` map to R5 `Encounter.reason.value`.",
         "min": 0,
         "max": "1",
         "base": {
@@ -256,7 +256,7 @@
         "path": "Extension",
         "short": "Reason the encounter takes place (resource)",
         "definition": "Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Encounter.reasonCode` maps to R5 `Encounter.reason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "`Encounter.reasonCode` and `Encounter.reasonReference` map to R5 `Encounter.reason.value`.",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -266,7 +266,7 @@
         "path": "Extension.value[x]",
         "short": "Reason the encounter takes place (resource)",
         "definition": "Reason the encounter takes place, as specified using information from another resource. For admissions, this is the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Encounter.reasonCode` maps to R5 `Encounter.reason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "`Encounter.reasonCode` and `Encounter.reasonReference` map to R5 `Encounter.reason.value`.",
         "base": {
           "path": "Extension.value[x]"
         },

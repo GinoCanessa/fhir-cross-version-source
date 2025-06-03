@@ -18,7 +18,7 @@
 | ResearchStudy.primaryPurposeType | UseElementSameName | ResearchStudy.primaryPurposeType |
 | ResearchStudy.phase | UseElementSameName | ResearchStudy.phase |
 | ResearchStudy.category | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.category |
-| ResearchStudy.focus | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.focus |
+| ResearchStudy.focus | UseElementSameName | ResearchStudy.focus |
 | ResearchStudy.condition | UseElementSameName | ResearchStudy.condition |
 | ResearchStudy.contact | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchStudy.contact |
 | ResearchStudy.relatedArtifact | UseElementSameName | ResearchStudy.relatedArtifact |

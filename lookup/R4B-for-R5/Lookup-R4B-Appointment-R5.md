@@ -14,11 +14,11 @@
 | Appointment.status | UseElementSameName | Appointment.status |
 | Appointment.cancelationReason | UseElementRenamed | Appointment.cancellationReason |
 | Appointment.serviceCategory | UseElementSameName | Appointment.serviceCategory |
-| Appointment.serviceType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.serviceType |
+| Appointment.serviceType | UseElementSameName | Appointment.serviceType |
 | Appointment.specialty | UseElementSameName | Appointment.specialty |
 | Appointment.appointmentType | UseElementSameName | Appointment.appointmentType |
-| Appointment.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.reasonCode |
-| Appointment.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.reasonReference |
+| Appointment.reasonCode | UseElementRenamed | Appointment.reason |
+| Appointment.reasonReference | UseElementRenamed | Appointment.reason |
 | Appointment.priority | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.priority |
 | Appointment.description | UseElementSameName | Appointment.description |
 | Appointment.supportingInformation | UseElementSameName | Appointment.supportingInformation |
@@ -27,8 +27,8 @@
 | Appointment.minutesDuration | UseElementSameName | Appointment.minutesDuration |
 | Appointment.slot | UseElementSameName | Appointment.slot |
 | Appointment.created | UseElementSameName | Appointment.created |
-| Appointment.comment | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.comment |
-| Appointment.patientInstruction | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.patientInstruction |
+| Appointment.comment | UseElementRenamed | Appointment.note |
+| Appointment.patientInstruction | UseElementSameName | Appointment.patientInstruction |
 | Appointment.basedOn | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Appointment.basedOn |
 | Appointment.participant | UseElementSameName | Appointment.participant |
 | Appointment.participant.id | UseElementSameName | Appointment.participant.id |

@@ -20,9 +20,9 @@
 | MedicationAdministration.reasonNotGiven | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.reasonNotGiven |
 | MedicationAdministration.reasonGiven | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.reasonGiven |
 | MedicationAdministration.effectiveTime[x] | UseElementRenamed | MedicationAdministration.occurence[x] |
-| MedicationAdministration.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.medication |
-| MedicationAdministration.device | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.device |
-| MedicationAdministration.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.note |
+| MedicationAdministration.medication[x] | UseElementRenamed | MedicationAdministration.medication |
+| MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |
+| MedicationAdministration.note | UseElementSameName | MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
 | MedicationAdministration.dosage.id | UseElementSameName | MedicationAdministration.dosage.id |
 | MedicationAdministration.dosage.extension | UseElementSameName | MedicationAdministration.dosage.extension |

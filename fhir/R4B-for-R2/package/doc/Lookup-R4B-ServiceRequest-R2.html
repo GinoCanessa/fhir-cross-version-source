@@ -2,15 +2,15 @@
 
 <table border="1">
 <tr><th>Source Element</th><th>Usage</th><th>Target</th></tr>
-<tr><td>ServiceRequest.id</td><td>UseElementRenamed</td><td>DiagnosticOrder.id</td></tr>
+<tr><td>ServiceRequest.id</td><td>UseOneOfElements</td><td>DiagnosticOrder.id,ProcedureRequest.id,ReferralRequest.id</td></tr>
 <tr><td>ServiceRequest.meta</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.meta</td></tr>
-<tr><td>ServiceRequest.implicitRules</td><td>UseElementRenamed</td><td>DiagnosticOrder.implicitRules</td></tr>
-<tr><td>ServiceRequest.language</td><td>UseElementRenamed</td><td>DiagnosticOrder.language</td></tr>
-<tr><td>ServiceRequest.text</td><td>UseElementRenamed</td><td>DiagnosticOrder.text</td></tr>
-<tr><td>ServiceRequest.contained</td><td>UseElementRenamed</td><td>DiagnosticOrder.contained</td></tr>
-<tr><td>ServiceRequest.extension</td><td>UseElementRenamed</td><td>DiagnosticOrder.extension</td></tr>
-<tr><td>ServiceRequest.modifierExtension</td><td>UseElementRenamed</td><td>DiagnosticOrder.modifierExtension</td></tr>
-<tr><td>ServiceRequest.identifier</td><td>UseElementRenamed</td><td>DiagnosticOrder.identifier</td></tr>
+<tr><td>ServiceRequest.implicitRules</td><td>UseOneOfElements</td><td>DiagnosticOrder.implicitRules,ProcedureRequest.implicitRules,ReferralRequest.implicitRules</td></tr>
+<tr><td>ServiceRequest.language</td><td>UseOneOfElements</td><td>DiagnosticOrder.language,ProcedureRequest.language,ReferralRequest.language</td></tr>
+<tr><td>ServiceRequest.text</td><td>UseOneOfElements</td><td>DiagnosticOrder.text,ProcedureRequest.text,ReferralRequest.text</td></tr>
+<tr><td>ServiceRequest.contained</td><td>UseOneOfElements</td><td>DiagnosticOrder.contained,ProcedureRequest.contained,ReferralRequest.contained</td></tr>
+<tr><td>ServiceRequest.extension</td><td>UseOneOfElements</td><td>DiagnosticOrder.extension,ProcedureRequest.extension,ReferralRequest.extension</td></tr>
+<tr><td>ServiceRequest.modifierExtension</td><td>UseOneOfElements</td><td>DiagnosticOrder.modifierExtension,ProcedureRequest.modifierExtension,ReferralRequest.modifierExtension</td></tr>
+<tr><td>ServiceRequest.identifier</td><td>UseOneOfElements</td><td>DiagnosticOrder.identifier,ProcedureRequest.identifier,ReferralRequest.identifier</td></tr>
 <tr><td>ServiceRequest.instantiatesCanonical</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.instantiatesCanonical</td></tr>
 <tr><td>ServiceRequest.instantiatesUri</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.instantiatesUri</td></tr>
 <tr><td>ServiceRequest.basedOn</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.basedOn</td></tr>
@@ -19,16 +19,16 @@
 <tr><td>ServiceRequest.status</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.status</td></tr>
 <tr><td>ServiceRequest.intent</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.intent</td></tr>
 <tr><td>ServiceRequest.category</td><td>UseElementRenamed</td><td>ReferralRequest.type</td></tr>
-<tr><td>ServiceRequest.priority</td><td>UseElementRenamed</td><td>DiagnosticOrder.priority</td></tr>
+<tr><td>ServiceRequest.priority</td><td>UseOneOfElements</td><td>DiagnosticOrder.priority,ProcedureRequest.priority</td></tr>
 <tr><td>ServiceRequest.doNotPerform</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.doNotPerform</td></tr>
-<tr><td>ServiceRequest.code</td><td>UseElementRenamed</td><td>DiagnosticOrder.item.code</td></tr>
+<tr><td>ServiceRequest.code</td><td>UseOneOfElements</td><td>DiagnosticOrder.item.code,ProcedureRequest.code,ReferralRequest.serviceRequested</td></tr>
 <tr><td>ServiceRequest.orderDetail</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.orderDetail</td></tr>
 <tr><td>ServiceRequest.quantity[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.quantity</td></tr>
 <tr><td>ServiceRequest.subject</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.subject</td></tr>
 <tr><td>ServiceRequest.encounter</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.encounter</td></tr>
 <tr><td>ServiceRequest.occurrence[x]</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.occurrence</td></tr>
 <tr><td>ServiceRequest.asNeeded[x]</td><td>UseElementRenamed</td><td>ProcedureRequest.asNeeded[x]</td></tr>
-<tr><td>ServiceRequest.authoredOn</td><td>UseElementRenamed</td><td>ProcedureRequest.orderedOn</td></tr>
+<tr><td>ServiceRequest.authoredOn</td><td>UseOneOfElements</td><td>ProcedureRequest.orderedOn,ReferralRequest.date</td></tr>
 <tr><td>ServiceRequest.requester</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.requester</td></tr>
 <tr><td>ServiceRequest.performerType</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.performerType</td></tr>
 <tr><td>ServiceRequest.performer</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.performer</td></tr>
@@ -40,7 +40,7 @@
 <tr><td>ServiceRequest.supportingInfo</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.supportingInfo</td></tr>
 <tr><td>ServiceRequest.specimen</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.specimen</td></tr>
 <tr><td>ServiceRequest.bodySite</td><td>UseElementRenamed</td><td>ProcedureRequest.bodySite</td></tr>
-<tr><td>ServiceRequest.note</td><td>UseElementRenamed</td><td>DiagnosticOrder.note</td></tr>
+<tr><td>ServiceRequest.note</td><td>UseOneOfElements</td><td>DiagnosticOrder.note,ProcedureRequest.notes</td></tr>
 <tr><td>ServiceRequest.patientInstruction</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.patientInstruction</td></tr>
 <tr><td>ServiceRequest.relevantHistory</td><td>UseExtension</td><td>http://hl7.org/fhir/4.3/StructureDefinition/extension-ServiceRequest.relevantHistory</td></tr>
 </table>

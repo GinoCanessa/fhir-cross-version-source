@@ -15,7 +15,7 @@
 | Medication.status | UseElementSameName | Medication.status |
 | Medication.manufacturer | UseElementSameName | Medication.manufacturer |
 | Medication.form | UseElementSameName | Medication.form |
-| Medication.amount | UseElementSameName | Medication.amount |
+| Medication.amount | UseOneOfElements | Medication.amount,Medication.amount |
 | Medication.ingredient | UseElementSameName | Medication.ingredient |
 | Medication.ingredient.id | UseElementSameName | Medication.ingredient.id |
 | Medication.ingredient.extension | UseElementSameName | Medication.ingredient.extension |

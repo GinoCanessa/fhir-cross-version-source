@@ -27,7 +27,7 @@
 | Specimen.collection.duration | UseElementSameName | Specimen.collection.duration |
 | Specimen.collection.quantity | UseElementSameName | Specimen.collection.quantity |
 | Specimen.collection.method | UseElementSameName | Specimen.collection.method |
-| Specimen.collection.bodySite | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Specimen.collection.bodySite |
+| Specimen.collection.bodySite | UseElementSameName | Specimen.collection.bodySite |
 | Specimen.collection.fastingStatus[x] | UseElementSameName | Specimen.collection.fastingStatus[x] |
 | Specimen.processing | UseElementSameName | Specimen.processing |
 | Specimen.processing.id | UseElementSameName | Specimen.processing.id |

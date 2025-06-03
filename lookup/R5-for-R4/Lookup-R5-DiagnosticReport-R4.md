@@ -19,7 +19,7 @@
 | DiagnosticReport.encounter | UseElementSameName | DiagnosticReport.encounter |
 | DiagnosticReport.effective[x] | UseElementSameName | DiagnosticReport.effective[x] |
 | DiagnosticReport.issued | UseElementSameName | DiagnosticReport.issued |
-| DiagnosticReport.performer | UseElementSameName | DiagnosticReport.performer |
+| DiagnosticReport.performer | UseOneOfElements | DiagnosticReport.performer,DiagnosticReport.performer |
 | DiagnosticReport.resultsInterpreter | UseElementSameName | DiagnosticReport.resultsInterpreter |
 | DiagnosticReport.specimen | UseElementSameName | DiagnosticReport.specimen |
 | DiagnosticReport.result | UseElementSameName | DiagnosticReport.result |

@@ -27,7 +27,7 @@
 | HealthcareService.telecom | UseElementSameName | HealthcareService.telecom |
 | HealthcareService.coverageArea | UseElementSameName | HealthcareService.coverageArea |
 | HealthcareService.serviceProvisionCode | UseElementSameName | HealthcareService.serviceProvisionCode |
-| HealthcareService.eligibility | UseElementSameName | HealthcareService.eligibility |
+| HealthcareService.eligibility | UseOneOfElements | HealthcareService.eligibility,HealthcareService.eligibility |
 | HealthcareService.eligibilityNote | UseElementSameName | HealthcareService.eligibilityNote |
 | HealthcareService.programName | UseElementSameName | HealthcareService.programName |
 | HealthcareService.characteristic | UseElementSameName | HealthcareService.characteristic |

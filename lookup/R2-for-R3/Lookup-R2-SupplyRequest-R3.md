@@ -18,7 +18,7 @@
 | SupplyRequest.kind | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-SupplyRequest.kind |
 | SupplyRequest.orderedItem | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-SupplyRequest.orderedItem |
 | SupplyRequest.supplier | UseElementSameName | SupplyRequest.supplier |
-| SupplyRequest.reason[x] | UseElementSameName | SupplyRequest.reason[x] |
+| SupplyRequest.reason[x] | UseOneOfElements | SupplyRequest.reason[x],SupplyRequest.reason[x] |
 | SupplyRequest.when | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-SupplyRequest.when |
 | SupplyRequest.when.id | UseExtensionFromAncestor | - |
 | SupplyRequest.when.extension | UseExtensionFromAncestor | - |

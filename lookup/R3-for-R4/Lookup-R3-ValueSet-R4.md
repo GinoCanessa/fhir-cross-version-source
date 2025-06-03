@@ -9,7 +9,7 @@
 | ValueSet.text | UseElementSameName | ValueSet.text |
 | ValueSet.contained | UseElementSameName | ValueSet.contained |
 | ValueSet.extension | UseElementSameName | ValueSet.extension |
-| ValueSet.modifierExtension | UseElementSameName | ValueSet.modifierExtension |
+| ValueSet.modifierExtension | UseOneOfElements | ValueSet.modifierExtension,ValueSet.modifierExtension |
 | ValueSet.url | UseElementSameName | ValueSet.url |
 | ValueSet.identifier | UseElementSameName | ValueSet.identifier |
 | ValueSet.version | UseElementSameName | ValueSet.version |
@@ -36,7 +36,7 @@
 | ValueSet.compose.include | UseElementSameName | ValueSet.compose.include |
 | ValueSet.compose.include.id | UseElementSameName | ValueSet.compose.include.id |
 | ValueSet.compose.include.extension | UseElementSameName | ValueSet.compose.include.extension |
-| ValueSet.compose.include.modifierExtension | UseElementSameName | ValueSet.compose.include.modifierExtension |
+| ValueSet.compose.include.modifierExtension | UseOneOfElements | ValueSet.compose.include.modifierExtension,ValueSet.compose.include.modifierExtension |
 | ValueSet.compose.include.system | UseElementSameName | ValueSet.compose.include.system |
 | ValueSet.compose.include.version | UseElementSameName | ValueSet.compose.include.version |
 | ValueSet.compose.include.concept | UseElementSameName | ValueSet.compose.include.concept |

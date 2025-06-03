@@ -7,7 +7,7 @@
   "title": "Cross-version Extension for R5.MedicationAdministration.performer for use in FHIR R2",
   "status": "draft",
   "experimental": false,
-  "date": "2025-06-01T22:11:11.7019051+02:00",
+  "date": "2025-06-03T03:15:03.0025322+02:00",
   "description": "This cross-version extension represents MedicationAdministration.performer from http://hl7.org/fhir/StructureDefinition/MedicationAdministration|5.0.0 for use in FHIR R2.",
   "fhirVersion": "1.0.2",
   "kind": "complex-type",
@@ -15,7 +15,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "MedicationAdministration.practitioner"
+      "expression": "MedicationAdministration"
     }
   ],
   "type": "Extension",
@@ -28,7 +28,6 @@
         "path": "Extension",
         "short": "Who or what performed the medication administration and what type of performance they did",
         "definition": "The performer of the medication treatment.  For devices this is the device that performed the administration of the medication.  An IV Pump would be an example of a device that is performing the administration. Both the IV Pump and the practitioner that set the rate or bolus on the pump can be listed as performers.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "*",
         "base": {
@@ -127,7 +126,7 @@
         "sliceName": "function",
         "short": "Type of performance",
         "definition": "Distinguishes the type of involvement of the performer in the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
           "extensions",
           "user content"
@@ -254,7 +253,6 @@
         "path": "Extension.extension.value[x]",
         "short": "Type of performance",
         "definition": "Distinguishes the type of involvement of the performer in the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "base": {
@@ -285,7 +283,7 @@
         "sliceName": "actor",
         "short": "Who or what performed the medication administration",
         "definition": "Indicates who or what performed the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
           "extensions",
           "user content"
@@ -544,7 +542,7 @@
         "sliceName": "concept",
         "short": "Reference to a concept (by class)",
         "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
           "extensions",
           "user content"
@@ -671,7 +669,6 @@
         "path": "Extension.extension.extension.value[x]",
         "short": "Reference to a concept (by class)",
         "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "base": {
@@ -697,7 +694,7 @@
         "sliceName": "reference",
         "short": "Reference to a resource (by instance)",
         "definition": "A reference to a resource the provides exact details about the information being referenced.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
         "alias": [
           "extensions",
           "user content"
@@ -824,7 +821,6 @@
         "path": "Extension.extension.extension.value[x]",
         "short": "Reference to a resource (by instance)",
         "definition": "A reference to a resource the provides exact details about the information being referenced.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "base": {
@@ -1163,7 +1159,6 @@
         "path": "Extension",
         "short": "Who or what performed the medication administration and what type of performance they did",
         "definition": "The performer of the medication treatment.  For devices this is the device that performed the administration of the medication.  An IV Pump would be an example of a device that is performing the administration. Both the IV Pump and the practitioner that set the rate or bolus on the pump can be listed as performers.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -1190,7 +1185,6 @@
         "sliceName": "function",
         "short": "Type of performance",
         "definition": "Distinguishes the type of involvement of the performer in the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -1200,7 +1194,6 @@
         "path": "Extension.extension.value[x]",
         "short": "Type of performance",
         "definition": "Distinguishes the type of involvement of the performer in the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "base": {
           "path": "Extension.value[x]"
         },
@@ -1221,7 +1214,6 @@
         "sliceName": "actor",
         "short": "Who or what performed the medication administration",
         "definition": "Indicates who or what performed the medication administration.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 1,
         "max": "1",
         "isModifier": false
@@ -1265,7 +1257,6 @@
         "sliceName": "concept",
         "short": "Reference to a concept (by class)",
         "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -1275,7 +1266,6 @@
         "path": "Extension.extension.extension.value[x]",
         "short": "Reference to a concept (by class)",
         "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "base": {
           "path": "Extension.value[x]"
         },
@@ -1291,7 +1281,6 @@
         "sliceName": "reference",
         "short": "Reference to a resource (by instance)",
         "definition": "A reference to a resource the provides exact details about the information being referenced.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "min": 0,
         "max": "1",
         "isModifier": false
@@ -1301,7 +1290,6 @@
         "path": "Extension.extension.extension.value[x]",
         "short": "Reference to a resource (by instance)",
         "definition": "A reference to a resource the provides exact details about the information being referenced.",
-        "comment": "`MedicationAdministration.performer` maps to R2 `MedicationAdministration.practitioner`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
         "base": {
           "path": "Extension.value[x]"
         },

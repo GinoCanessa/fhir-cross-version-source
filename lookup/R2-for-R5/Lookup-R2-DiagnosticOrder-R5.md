@@ -14,7 +14,7 @@
 | DiagnosticOrder.orderer | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.orderer |
 | DiagnosticOrder.identifier | UseElementRenamed | ServiceRequest.identifier |
 | DiagnosticOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.encounter |
-| DiagnosticOrder.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.reason |
+| DiagnosticOrder.reason | UseElementRenamed | ServiceRequest.reason |
 | DiagnosticOrder.supportingInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.supportingInformation |
 | DiagnosticOrder.specimen | UseElementRenamed | ServiceRequest.specimen |
 | DiagnosticOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.status |

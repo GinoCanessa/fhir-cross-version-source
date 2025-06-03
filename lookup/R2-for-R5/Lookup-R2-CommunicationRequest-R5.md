@@ -24,7 +24,7 @@
 | CommunicationRequest.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CommunicationRequest.status |
 | CommunicationRequest.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CommunicationRequest.encounter |
 | CommunicationRequest.scheduled[x] | UseElementRenamed | CommunicationRequest.occurrence[x] |
-| CommunicationRequest.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CommunicationRequest.reason |
+| CommunicationRequest.reason | UseElementSameName | CommunicationRequest.reason |
 | CommunicationRequest.requestedOn | UseElementRenamed | CommunicationRequest.authoredOn |
 | CommunicationRequest.subject | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CommunicationRequest.subject |
 | CommunicationRequest.priority | UseElementSameName | CommunicationRequest.priority |

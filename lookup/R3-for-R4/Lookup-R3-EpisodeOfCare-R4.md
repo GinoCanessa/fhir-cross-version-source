@@ -31,5 +31,5 @@
 | EpisodeOfCare.period | UseElementSameName | EpisodeOfCare.period |
 | EpisodeOfCare.referralRequest | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.referralRequest |
 | EpisodeOfCare.careManager | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-EpisodeOfCare.careManager |
-| EpisodeOfCare.team | UseElementSameName | EpisodeOfCare.team |
+| EpisodeOfCare.team | UseOneOfElements | EpisodeOfCare.team,EpisodeOfCare.team |
 | EpisodeOfCare.account | UseElementSameName | EpisodeOfCare.account |

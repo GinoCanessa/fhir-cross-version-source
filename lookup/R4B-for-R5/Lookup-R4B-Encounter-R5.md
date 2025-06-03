@@ -26,7 +26,7 @@
 | Encounter.classHistory.class | UseExtensionFromAncestor | - |
 | Encounter.classHistory.period | UseExtensionFromAncestor | - |
 | Encounter.type | UseElementSameName | Encounter.type |
-| Encounter.serviceType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Encounter.serviceType |
+| Encounter.serviceType | UseElementSameName | Encounter.serviceType |
 | Encounter.priority | UseElementSameName | Encounter.priority |
 | Encounter.subject | UseElementSameName | Encounter.subject |
 | Encounter.episodeOfCare | UseElementSameName | Encounter.episodeOfCare |
@@ -41,13 +41,13 @@
 | Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementRenamed | Encounter.actualPeriod |
 | Encounter.length | UseElementSameName | Encounter.length |
-| Encounter.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Encounter.reasonCode |
-| Encounter.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Encounter.reasonReference |
+| Encounter.reasonCode | UseOneOfElements | Encounter.reason.value,Encounter.reason.value |
+| Encounter.reasonReference | UseElementRenamed | Encounter.reason.value |
 | Encounter.diagnosis | UseElementSameName | Encounter.diagnosis |
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |
 | Encounter.diagnosis.extension | UseElementSameName | Encounter.diagnosis.extension |
 | Encounter.diagnosis.modifierExtension | UseElementSameName | Encounter.diagnosis.modifierExtension |
-| Encounter.diagnosis.condition | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Encounter.diagnosis.condition |
+| Encounter.diagnosis.condition | UseElementSameName | Encounter.diagnosis.condition |
 | Encounter.diagnosis.use | UseElementSameName | Encounter.diagnosis.use |
 | Encounter.diagnosis.rank | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Encounter.diagnosis.rank |
 | Encounter.account | UseElementSameName | Encounter.account |

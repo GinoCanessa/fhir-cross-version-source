@@ -68,7 +68,7 @@
 | CapabilityStatement.rest.resource.modifierExtension | UseElementSameName | CapabilityStatement.rest.resource.modifierExtension |
 | CapabilityStatement.rest.resource.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CapabilityStatement.rest.resource.type |
 | CapabilityStatement.rest.resource.profile | UseElementSameName | CapabilityStatement.rest.resource.profile |
-| CapabilityStatement.rest.resource.supportedProfile | UseElementSameName | CapabilityStatement.rest.resource.supportedProfile |
+| CapabilityStatement.rest.resource.supportedProfile | UseOneOfElements | CapabilityStatement.rest.resource.supportedProfile,CapabilityStatement.rest.resource.supportedProfile |
 | CapabilityStatement.rest.resource.documentation | UseElementSameName | CapabilityStatement.rest.resource.documentation |
 | CapabilityStatement.rest.resource.interaction | UseElementSameName | CapabilityStatement.rest.resource.interaction |
 | CapabilityStatement.rest.resource.interaction.id | UseElementSameName | CapabilityStatement.rest.resource.interaction.id |

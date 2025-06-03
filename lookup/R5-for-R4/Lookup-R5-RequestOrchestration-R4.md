@@ -45,7 +45,7 @@
 | RequestOrchestration.action.condition.extension | UseElementRenamed | RequestGroup.action.condition.extension |
 | RequestOrchestration.action.condition.modifierExtension | UseElementRenamed | RequestGroup.action.condition.modifierExtension |
 | RequestOrchestration.action.condition.kind | UseElementRenamed | RequestGroup.action.condition.kind |
-| RequestOrchestration.action.condition.expression | UseElementRenamed | RequestGroup.action.condition.expression |
+| RequestOrchestration.action.condition.expression | UseOneOfElements | RequestGroup.action.condition.expression,RequestGroup.action.condition.expression,RequestGroup.action.condition.expression |
 | RequestOrchestration.action.input | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RequestOrchestration.action.input |
 | RequestOrchestration.action.input.id | UseExtensionFromAncestor | - |
 | RequestOrchestration.action.input.extension | UseExtensionFromAncestor | - |

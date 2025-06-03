@@ -28,7 +28,7 @@
 | Measure.useContext | UseElementSameName | Measure.useContext |
 | Measure.jurisdiction | UseElementSameName | Measure.jurisdiction |
 | Measure.topic | UseElementSameName | Measure.topic |
-| Measure.contributor | UseElementRenamed | Measure.author |
+| Measure.contributor | UseOneOfElements | Measure.author,Measure.editor,Measure.reviewer,Measure.endorser |
 | Measure.contact | UseElementSameName | Measure.contact |
 | Measure.copyright | UseElementSameName | Measure.copyright |
 | Measure.relatedArtifact | UseElementSameName | Measure.relatedArtifact |

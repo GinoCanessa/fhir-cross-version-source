@@ -34,9 +34,9 @@
 | Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementRenamed | Encounter.actualPeriod |
 | Encounter.length | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.length |
-| Encounter.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.reason |
+| Encounter.reason | UseElementRenamed | Encounter.reason.value |
 | Encounter.indication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.indication |
-| Encounter.hospitalization | UseElementRenamed | Encounter.diagnosis |
+| Encounter.hospitalization | UseOneOfElements | Encounter.diagnosis,Encounter.admission |
 | Encounter.hospitalization.id | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.id |
 | Encounter.hospitalization.extension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.extension |
 | Encounter.hospitalization.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.modifierExtension |

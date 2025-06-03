@@ -20,7 +20,7 @@
 <tr><td>ExplanationOfBenefit.created</td><td>UseElementSameName</td><td>ExplanationOfBenefit.created</td></tr>
 <tr><td>ExplanationOfBenefit.enterer</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.enterer</td></tr>
 <tr><td>ExplanationOfBenefit.insurer</td><td>UseElementSameName</td><td>ExplanationOfBenefit.insurer</td></tr>
-<tr><td>ExplanationOfBenefit.provider</td><td>UseElementSameName</td><td>ExplanationOfBenefit.provider</td></tr>
+<tr><td>ExplanationOfBenefit.provider</td><td>UseOneOfElements</td><td>ExplanationOfBenefit.provider,ExplanationOfBenefit.provider</td></tr>
 <tr><td>ExplanationOfBenefit.priority</td><td>UseElementSameName</td><td>ExplanationOfBenefit.priority</td></tr>
 <tr><td>ExplanationOfBenefit.fundsReserveRequested</td><td>UseElementSameName</td><td>ExplanationOfBenefit.fundsReserveRequested</td></tr>
 <tr><td>ExplanationOfBenefit.fundsReserve</td><td>UseElementSameName</td><td>ExplanationOfBenefit.fundsReserve</td></tr>
@@ -120,7 +120,7 @@
 <tr><td>ExplanationOfBenefit.item.factor</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.factor</td></tr>
 <tr><td>ExplanationOfBenefit.item.net</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.net</td></tr>
 <tr><td>ExplanationOfBenefit.item.udi</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.udi</td></tr>
-<tr><td>ExplanationOfBenefit.item.bodySite</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.bodySite</td></tr>
+<tr><td>ExplanationOfBenefit.item.bodySite</td><td>UseElementRenamed</td><td>ExplanationOfBenefit.item.bodySite.site</td></tr>
 <tr><td>ExplanationOfBenefit.item.subSite</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.subSite</td></tr>
 <tr><td>ExplanationOfBenefit.item.encounter</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.encounter</td></tr>
 <tr><td>ExplanationOfBenefit.item.noteNumber</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.noteNumber</td></tr>
@@ -131,7 +131,7 @@
 <tr><td>ExplanationOfBenefit.item.adjudication.category</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.adjudication.category</td></tr>
 <tr><td>ExplanationOfBenefit.item.adjudication.reason</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.adjudication.reason</td></tr>
 <tr><td>ExplanationOfBenefit.item.adjudication.amount</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.adjudication.amount</td></tr>
-<tr><td>ExplanationOfBenefit.item.adjudication.value</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value</td></tr>
+<tr><td>ExplanationOfBenefit.item.adjudication.value</td><td>UseElementRenamed</td><td>ExplanationOfBenefit.item.adjudication.quantity</td></tr>
 <tr><td>ExplanationOfBenefit.item.detail</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.detail</td></tr>
 <tr><td>ExplanationOfBenefit.item.detail.id</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.detail.id</td></tr>
 <tr><td>ExplanationOfBenefit.item.detail.extension</td><td>UseElementSameName</td><td>ExplanationOfBenefit.item.detail.extension</td></tr>
@@ -183,7 +183,7 @@
 <tr><td>ExplanationOfBenefit.addItem.unitPrice</td><td>UseElementSameName</td><td>ExplanationOfBenefit.addItem.unitPrice</td></tr>
 <tr><td>ExplanationOfBenefit.addItem.factor</td><td>UseElementSameName</td><td>ExplanationOfBenefit.addItem.factor</td></tr>
 <tr><td>ExplanationOfBenefit.addItem.net</td><td>UseElementSameName</td><td>ExplanationOfBenefit.addItem.net</td></tr>
-<tr><td>ExplanationOfBenefit.addItem.bodySite</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.addItem.bodySite</td></tr>
+<tr><td>ExplanationOfBenefit.addItem.bodySite</td><td>UseElementRenamed</td><td>ExplanationOfBenefit.addItem.bodySite.site</td></tr>
 <tr><td>ExplanationOfBenefit.addItem.subSite</td><td>UseExtension</td><td>http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.addItem.subSite</td></tr>
 <tr><td>ExplanationOfBenefit.addItem.noteNumber</td><td>UseElementSameName</td><td>ExplanationOfBenefit.addItem.noteNumber</td></tr>
 <tr><td>ExplanationOfBenefit.addItem.adjudication</td><td>UseElementSameName</td><td>ExplanationOfBenefit.addItem.adjudication</td></tr>
@@ -217,7 +217,7 @@
 <tr><td>ExplanationOfBenefit.total.extension</td><td>UseElementSameName</td><td>ExplanationOfBenefit.total.extension</td></tr>
 <tr><td>ExplanationOfBenefit.total.modifierExtension</td><td>UseElementSameName</td><td>ExplanationOfBenefit.total.modifierExtension</td></tr>
 <tr><td>ExplanationOfBenefit.total.category</td><td>UseElementSameName</td><td>ExplanationOfBenefit.total.category</td></tr>
-<tr><td>ExplanationOfBenefit.total.amount</td><td>UseElementSameName</td><td>ExplanationOfBenefit.total.amount</td></tr>
+<tr><td>ExplanationOfBenefit.total.amount</td><td>UseOneOfElements</td><td>ExplanationOfBenefit.total.amount,ExplanationOfBenefit.total.amount</td></tr>
 <tr><td>ExplanationOfBenefit.payment</td><td>UseElementSameName</td><td>ExplanationOfBenefit.payment</td></tr>
 <tr><td>ExplanationOfBenefit.payment.id</td><td>UseElementSameName</td><td>ExplanationOfBenefit.payment.id</td></tr>
 <tr><td>ExplanationOfBenefit.payment.extension</td><td>UseElementSameName</td><td>ExplanationOfBenefit.payment.extension</td></tr>

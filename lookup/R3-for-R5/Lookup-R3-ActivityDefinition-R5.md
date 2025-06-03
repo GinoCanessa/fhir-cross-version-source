@@ -28,7 +28,7 @@
 | ActivityDefinition.useContext | UseElementSameName | ActivityDefinition.useContext |
 | ActivityDefinition.jurisdiction | UseElementSameName | ActivityDefinition.jurisdiction |
 | ActivityDefinition.topic | UseElementSameName | ActivityDefinition.topic |
-| ActivityDefinition.contributor | UseElementRenamed | ActivityDefinition.author |
+| ActivityDefinition.contributor | UseOneOfElements | ActivityDefinition.author,ActivityDefinition.editor,ActivityDefinition.reviewer,ActivityDefinition.endorser |
 | ActivityDefinition.contact | UseElementSameName | ActivityDefinition.contact |
 | ActivityDefinition.copyright | UseElementSameName | ActivityDefinition.copyright |
 | ActivityDefinition.relatedArtifact | UseElementSameName | ActivityDefinition.relatedArtifact |
@@ -36,7 +36,7 @@
 | ActivityDefinition.kind | UseElementSameName | ActivityDefinition.kind |
 | ActivityDefinition.code | UseElementSameName | ActivityDefinition.code |
 | ActivityDefinition.timing[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ActivityDefinition.timing |
-| ActivityDefinition.location | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ActivityDefinition.location |
+| ActivityDefinition.location | UseElementSameName | ActivityDefinition.location |
 | ActivityDefinition.participant | UseElementSameName | ActivityDefinition.participant |
 | ActivityDefinition.participant.id | UseElementSameName | ActivityDefinition.participant.id |
 | ActivityDefinition.participant.extension | UseElementSameName | ActivityDefinition.participant.extension |

@@ -40,12 +40,12 @@
 | Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementRenamed | Encounter.actualPeriod |
 | Encounter.length | UseElementSameName | Encounter.length |
-| Encounter.reason | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.reason |
+| Encounter.reason | UseOneOfElements | Encounter.reason.value,Encounter.reason.value |
 | Encounter.diagnosis | UseElementSameName | Encounter.diagnosis |
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |
 | Encounter.diagnosis.extension | UseElementSameName | Encounter.diagnosis.extension |
 | Encounter.diagnosis.modifierExtension | UseElementSameName | Encounter.diagnosis.modifierExtension |
-| Encounter.diagnosis.condition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.diagnosis.condition |
+| Encounter.diagnosis.condition | UseElementSameName | Encounter.diagnosis.condition |
 | Encounter.diagnosis.role | UseElementRenamed | Encounter.diagnosis.use |
 | Encounter.diagnosis.rank | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Encounter.diagnosis.rank |
 | Encounter.account | UseElementSameName | Encounter.account |

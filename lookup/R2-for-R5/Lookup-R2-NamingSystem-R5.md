@@ -24,7 +24,7 @@
 | NamingSystem.date | UseElementSameName | NamingSystem.date |
 | NamingSystem.type | UseElementSameName | NamingSystem.type |
 | NamingSystem.description | UseElementSameName | NamingSystem.description |
-| NamingSystem.useContext | UseElementSameName | NamingSystem.useContext |
+| NamingSystem.useContext | UseOneOfElements | NamingSystem.useContext,NamingSystem.jurisdiction |
 | NamingSystem.usage | UseElementSameName | NamingSystem.usage |
 | NamingSystem.uniqueId | UseElementSameName | NamingSystem.uniqueId |
 | NamingSystem.uniqueId.id | UseElementSameName | NamingSystem.uniqueId.id |

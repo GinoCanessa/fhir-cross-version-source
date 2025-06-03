@@ -35,7 +35,7 @@
 | CarePlan.activity.id | UseElementSameName | CarePlan.activity.id |
 | CarePlan.activity.extension | UseElementSameName | CarePlan.activity.extension |
 | CarePlan.activity.modifierExtension | UseElementSameName | CarePlan.activity.modifierExtension |
-| CarePlan.activity.performedActivity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.performedActivity |
+| CarePlan.activity.performedActivity | UseElementRenamed | CarePlan.activity.outcomeCodeableConcept |
 | CarePlan.activity.progress | UseElementSameName | CarePlan.activity.progress |
 | CarePlan.activity.plannedActivityReference | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CarePlan.activity.plannedActivityReference |
 | CarePlan.note | UseElementSameName | CarePlan.note |

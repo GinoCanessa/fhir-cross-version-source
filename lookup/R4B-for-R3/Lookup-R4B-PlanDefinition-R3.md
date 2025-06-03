@@ -57,7 +57,7 @@
 | PlanDefinition.goal.target.detail[x] | UseElementSameName | PlanDefinition.goal.target.detail[x] |
 | PlanDefinition.goal.target.due | UseElementSameName | PlanDefinition.goal.target.due |
 | PlanDefinition.action | UseElementSameName | PlanDefinition.action |
-| PlanDefinition.action.id | UseElementSameName | PlanDefinition.action.id |
+| PlanDefinition.action.id | UseOneOfElements | PlanDefinition.action.id,PlanDefinition.action.id |
 | PlanDefinition.action.extension | UseElementSameName | PlanDefinition.action.extension |
 | PlanDefinition.action.modifierExtension | UseElementSameName | PlanDefinition.action.modifierExtension |
 | PlanDefinition.action.prefix | UseElementRenamed | PlanDefinition.action.label |
@@ -84,7 +84,7 @@
 | PlanDefinition.action.relatedAction.extension | UseElementSameName | PlanDefinition.action.relatedAction.extension |
 | PlanDefinition.action.relatedAction.modifierExtension | UseElementSameName | PlanDefinition.action.relatedAction.modifierExtension |
 | PlanDefinition.action.relatedAction.actionId | UseElementSameName | PlanDefinition.action.relatedAction.actionId |
-| PlanDefinition.action.relatedAction.relationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
+| PlanDefinition.action.relatedAction.relationship | UseOneOfElements | PlanDefinition.action.relatedAction.relationship,PlanDefinition.action.relatedAction.relationship |
 | PlanDefinition.action.relatedAction.offset[x] | UseElementSameName | PlanDefinition.action.relatedAction.offset[x] |
 | PlanDefinition.action.timing[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.timing |
 | PlanDefinition.action.participant | UseElementSameName | PlanDefinition.action.participant |

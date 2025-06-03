@@ -30,11 +30,11 @@
 | ChargeItem.bodysite | UseElementSameName | ChargeItem.bodysite |
 | ChargeItem.factorOverride | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ChargeItem.factorOverride |
 | ChargeItem.priceOverride | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ChargeItem.priceOverride |
-| ChargeItem.overrideReason | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ChargeItem.overrideReason |
+| ChargeItem.overrideReason | UseElementSameName | ChargeItem.overrideReason |
 | ChargeItem.enterer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ChargeItem.enterer |
 | ChargeItem.enteredDate | UseElementSameName | ChargeItem.enteredDate |
 | ChargeItem.reason | UseElementSameName | ChargeItem.reason |
-| ChargeItem.service | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ChargeItem.service |
+| ChargeItem.service | UseElementSameName | ChargeItem.service |
 | ChargeItem.account | UseElementSameName | ChargeItem.account |
 | ChargeItem.note | UseElementSameName | ChargeItem.note |
 | ChargeItem.supportingInformation | UseElementSameName | ChargeItem.supportingInformation |

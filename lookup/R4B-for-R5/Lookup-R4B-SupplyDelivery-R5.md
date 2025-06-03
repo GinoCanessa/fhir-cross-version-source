@@ -22,7 +22,7 @@
 | SupplyDelivery.suppliedItem.modifierExtension | UseElementSameName | SupplyDelivery.suppliedItem.modifierExtension |
 | SupplyDelivery.suppliedItem.quantity | UseElementSameName | SupplyDelivery.suppliedItem.quantity |
 | SupplyDelivery.suppliedItem.item[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyDelivery.suppliedItem.item |
-| SupplyDelivery.occurrence[x] | UseElementSameName | SupplyDelivery.occurrence[x] |
+| SupplyDelivery.occurrence[x] | UseOneOfElements | SupplyDelivery.occurrence[x],SupplyDelivery.occurrence[x] |
 | SupplyDelivery.supplier | UseElementSameName | SupplyDelivery.supplier |
 | SupplyDelivery.destination | UseElementSameName | SupplyDelivery.destination |
 | SupplyDelivery.receiver | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-SupplyDelivery.receiver |

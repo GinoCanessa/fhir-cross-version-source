@@ -21,7 +21,7 @@
 | RiskAssessment.occurrence[x] | UseElementSameName | RiskAssessment.occurrence[x] |
 | RiskAssessment.condition | UseElementSameName | RiskAssessment.condition |
 | RiskAssessment.performer | UseElementSameName | RiskAssessment.performer |
-| RiskAssessment.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-RiskAssessment.reason |
+| RiskAssessment.reason | UseOneOfElements | RiskAssessment.reasonCode,RiskAssessment.reasonReference |
 | RiskAssessment.basis | UseElementSameName | RiskAssessment.basis |
 | RiskAssessment.prediction | UseElementSameName | RiskAssessment.prediction |
 | RiskAssessment.prediction.id | UseElementSameName | RiskAssessment.prediction.id |

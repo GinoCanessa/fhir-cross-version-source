@@ -93,7 +93,7 @@
 | PlanDefinition.action.condition.extension | UseElementSameName | PlanDefinition.action.condition.extension |
 | PlanDefinition.action.condition.modifierExtension | UseElementSameName | PlanDefinition.action.condition.modifierExtension |
 | PlanDefinition.action.condition.kind | UseElementSameName | PlanDefinition.action.condition.kind |
-| PlanDefinition.action.condition.expression | UseElementSameName | PlanDefinition.action.condition.expression |
+| PlanDefinition.action.condition.expression | UseOneOfElements | PlanDefinition.action.condition.expression,PlanDefinition.action.condition.expression,PlanDefinition.action.condition.expression |
 | PlanDefinition.action.input | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.action.input |
 | PlanDefinition.action.input.id | UseExtensionFromAncestor | - |
 | PlanDefinition.action.input.extension | UseExtensionFromAncestor | - |
@@ -141,6 +141,6 @@
 | PlanDefinition.action.dynamicValue.extension | UseElementSameName | PlanDefinition.action.dynamicValue.extension |
 | PlanDefinition.action.dynamicValue.modifierExtension | UseElementSameName | PlanDefinition.action.dynamicValue.modifierExtension |
 | PlanDefinition.action.dynamicValue.path | UseElementSameName | PlanDefinition.action.dynamicValue.path |
-| PlanDefinition.action.dynamicValue.expression | UseElementSameName | PlanDefinition.action.dynamicValue.expression |
+| PlanDefinition.action.dynamicValue.expression | UseOneOfElements | PlanDefinition.action.dynamicValue.expression,PlanDefinition.action.dynamicValue.expression,PlanDefinition.action.dynamicValue.expression |
 | PlanDefinition.action.action | UseElementSameName | PlanDefinition.action.action |
 | PlanDefinition.asNeeded[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.asNeeded |

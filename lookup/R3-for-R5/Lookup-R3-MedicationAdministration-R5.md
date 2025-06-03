@@ -15,7 +15,7 @@
 | MedicationAdministration.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.partOf |
 | MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
 | MedicationAdministration.category | UseElementSameName | MedicationAdministration.category |
-| MedicationAdministration.medication[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.medication |
+| MedicationAdministration.medication[x] | UseElementRenamed | MedicationAdministration.medication |
 | MedicationAdministration.subject | UseElementSameName | MedicationAdministration.subject |
 | MedicationAdministration.context | UseElementRenamed | MedicationAdministration.encounter |
 | MedicationAdministration.supportingInformation | UseElementSameName | MedicationAdministration.supportingInformation |
@@ -31,7 +31,7 @@
 | MedicationAdministration.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.reasonCode |
 | MedicationAdministration.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.reasonReference |
 | MedicationAdministration.prescription | UseElementRenamed | MedicationAdministration.request |
-| MedicationAdministration.device | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationAdministration.device |
+| MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |
 | MedicationAdministration.note | UseElementSameName | MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
 | MedicationAdministration.dosage.id | UseElementSameName | MedicationAdministration.dosage.id |

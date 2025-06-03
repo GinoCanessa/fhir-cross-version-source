@@ -21,8 +21,8 @@
 | ReferralRequest.recipient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.recipient |
 | ReferralRequest.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.encounter |
 | ReferralRequest.dateSent | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.dateSent |
-| ReferralRequest.reason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.reason |
+| ReferralRequest.reason | UseElementRenamed | ServiceRequest.reason |
 | ReferralRequest.description | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.description |
 | ReferralRequest.serviceRequested | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.serviceRequested |
-| ReferralRequest.supportingInformation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ReferralRequest.supportingInformation |
+| ReferralRequest.supportingInformation | UseElementRenamed | ServiceRequest.supportingInfo |
 | ReferralRequest.fulfillmentTime | UseElementRenamed | ServiceRequest.occurrence[x] |

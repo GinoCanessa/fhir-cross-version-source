@@ -19,7 +19,7 @@
 | DeviceRequest.status | UseElementSameName | DeviceRequest.status |
 | DeviceRequest.intent | UseElementSameName | DeviceRequest.intent |
 | DeviceRequest.priority | UseElementSameName | DeviceRequest.priority |
-| DeviceRequest.code[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceRequest.code |
+| DeviceRequest.code[x] | UseElementRenamed | DeviceRequest.code |
 | DeviceRequest.parameter | UseElementSameName | DeviceRequest.parameter |
 | DeviceRequest.parameter.id | UseElementSameName | DeviceRequest.parameter.id |
 | DeviceRequest.parameter.extension | UseElementSameName | DeviceRequest.parameter.extension |
@@ -28,13 +28,13 @@
 | DeviceRequest.parameter.value[x] | UseElementSameName | DeviceRequest.parameter.value[x] |
 | DeviceRequest.subject | UseElementSameName | DeviceRequest.subject |
 | DeviceRequest.encounter | UseElementSameName | DeviceRequest.encounter |
-| DeviceRequest.occurrence[x] | UseElementSameName | DeviceRequest.occurrence[x] |
+| DeviceRequest.occurrence[x] | UseOneOfElements | DeviceRequest.occurrence[x],DeviceRequest.occurrence[x] |
 | DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
-| DeviceRequest.requester | UseElementSameName | DeviceRequest.requester |
+| DeviceRequest.requester | UseOneOfElements | DeviceRequest.requester,DeviceRequest.requester |
 | DeviceRequest.performerType | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceRequest.performerType |
-| DeviceRequest.performer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceRequest.performer |
-| DeviceRequest.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceRequest.reasonCode |
-| DeviceRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceRequest.reasonReference |
+| DeviceRequest.performer | UseElementSameName | DeviceRequest.performer |
+| DeviceRequest.reasonCode | UseElementRenamed | DeviceRequest.reason |
+| DeviceRequest.reasonReference | UseElementRenamed | DeviceRequest.reason |
 | DeviceRequest.insurance | UseElementSameName | DeviceRequest.insurance |
 | DeviceRequest.supportingInfo | UseElementSameName | DeviceRequest.supportingInfo |
 | DeviceRequest.note | UseElementSameName | DeviceRequest.note |

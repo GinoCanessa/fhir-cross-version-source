@@ -29,7 +29,7 @@
 | AllergyIntolerance.reaction.modifierExtension | UseElementSameName | AllergyIntolerance.reaction.modifierExtension |
 | AllergyIntolerance.reaction.substance | UseElementSameName | AllergyIntolerance.reaction.substance |
 | AllergyIntolerance.reaction.certainty | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.reaction.certainty |
-| AllergyIntolerance.reaction.manifestation | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.reaction.manifestation |
+| AllergyIntolerance.reaction.manifestation | UseElementSameName | AllergyIntolerance.reaction.manifestation |
 | AllergyIntolerance.reaction.description | UseElementSameName | AllergyIntolerance.reaction.description |
 | AllergyIntolerance.reaction.onset | UseElementSameName | AllergyIntolerance.reaction.onset |
 | AllergyIntolerance.reaction.severity | UseElementSameName | AllergyIntolerance.reaction.severity |

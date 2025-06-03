@@ -7,7 +7,7 @@
   "title": "Cross-version Extension for R3.Appointment.indication for use in FHIR R5",
   "status": "draft",
   "experimental": false,
-  "date": "2025-06-01T22:08:15.0407319+02:00",
+  "date": "2025-06-03T03:12:13.2424726+02:00",
   "description": "This cross-version extension represents Appointment.indication from http://hl7.org/fhir/StructureDefinition/Appointment|3.0.2 for use in FHIR R5.",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
@@ -15,7 +15,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Appointment"
+      "expression": "Appointment.reason"
     }
   ],
   "type": "Extension",
@@ -28,7 +28,7 @@
         "path": "Extension",
         "short": "Reason the appointment is to takes place (resource)",
         "definition": "Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Appointment.reasonReference` has no related element in R5:Appointment",
+        "comment": "`Appointment.reasonReference` and `Appointment.reasonCode` map to R5 `Appointment.reason`.",
         "min": 0,
         "max": "*",
         "base": {
@@ -197,7 +197,7 @@
         "path": "Extension.value[x]",
         "short": "Reason the appointment is to takes place (resource)",
         "definition": "Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Appointment.reasonReference` has no related element in R5:Appointment",
+        "comment": "`Appointment.reasonReference` and `Appointment.reasonCode` map to R5 `Appointment.reason`.",
         "min": 0,
         "max": "1",
         "base": {
@@ -256,7 +256,7 @@
         "path": "Extension",
         "short": "Reason the appointment is to takes place (resource)",
         "definition": "Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Appointment.reasonReference` has no related element in R5:Appointment",
+        "comment": "`Appointment.reasonReference` and `Appointment.reasonCode` map to R5 `Appointment.reason`.",
         "min": 0,
         "max": "*",
         "isModifier": false
@@ -266,7 +266,7 @@
         "path": "Extension.value[x]",
         "short": "Reason the appointment is to takes place (resource)",
         "definition": "Reason the appointment has been scheduled to take place, as specified using information from another resource. When the patient arrives and the encounter begins it may be used as the admission diagnosis. The indication will typically be a Condition (with other resources referenced in the evidence.detail), or a Procedure.",
-        "comment": "`Appointment.reasonReference` has no related element in R5:Appointment",
+        "comment": "`Appointment.reasonReference` and `Appointment.reasonCode` map to R5 `Appointment.reason`.",
         "base": {
           "path": "Extension.value[x]"
         },

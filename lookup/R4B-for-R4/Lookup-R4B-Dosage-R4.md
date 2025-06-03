@@ -10,7 +10,7 @@
 | Dosage.additionalInstruction | UseElementSameName | Dosage.additionalInstruction |
 | Dosage.patientInstruction | UseElementSameName | Dosage.patientInstruction |
 | Dosage.timing | UseElementSameName | Dosage.timing |
-| Dosage.asNeeded[x] | UseElementSameName | Dosage.asNeeded[x] |
+| Dosage.asNeeded[x] | UseOneOfElements | Dosage.asNeeded[x],Dosage.asNeeded[x] |
 | Dosage.site | UseElementSameName | Dosage.site |
 | Dosage.route | UseElementSameName | Dosage.route |
 | Dosage.method | UseElementSameName | Dosage.method |

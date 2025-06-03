@@ -11,7 +11,7 @@
 | Device.extension | UseElementSameName | Device.extension |
 | Device.modifierExtension | UseElementSameName | Device.modifierExtension |
 | Device.identifier | UseElementSameName | Device.identifier |
-| Device.definition | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Device.definition |
+| Device.definition | UseElementSameName | Device.definition |
 | Device.udiCarrier | UseElementSameName | Device.udiCarrier |
 | Device.udiCarrier.id | UseElementSameName | Device.udiCarrier.id |
 | Device.udiCarrier.extension | UseElementSameName | Device.udiCarrier.extension |

@@ -24,7 +24,7 @@
 | AuditEvent.agent.modifierExtension | UseElementSameName | AuditEvent.agent.modifierExtension |
 | AuditEvent.agent.type | UseElementSameName | AuditEvent.agent.type |
 | AuditEvent.agent.role | UseElementSameName | AuditEvent.agent.role |
-| AuditEvent.agent.who | UseElementSameName | AuditEvent.agent.who |
+| AuditEvent.agent.who | UseOneOfElements | AuditEvent.agent.who,AuditEvent.agent.who |
 | AuditEvent.agent.altId | UseElementSameName | AuditEvent.agent.altId |
 | AuditEvent.agent.name | UseElementSameName | AuditEvent.agent.name |
 | AuditEvent.agent.requestor | UseElementSameName | AuditEvent.agent.requestor |
@@ -49,7 +49,7 @@
 | AuditEvent.entity.id | UseElementSameName | AuditEvent.entity.id |
 | AuditEvent.entity.extension | UseElementSameName | AuditEvent.entity.extension |
 | AuditEvent.entity.modifierExtension | UseElementSameName | AuditEvent.entity.modifierExtension |
-| AuditEvent.entity.what | UseElementSameName | AuditEvent.entity.what |
+| AuditEvent.entity.what | UseOneOfElements | AuditEvent.entity.what,AuditEvent.entity.what |
 | AuditEvent.entity.type | UseElementSameName | AuditEvent.entity.type |
 | AuditEvent.entity.role | UseElementSameName | AuditEvent.entity.role |
 | AuditEvent.entity.lifecycle | UseElementSameName | AuditEvent.entity.lifecycle |

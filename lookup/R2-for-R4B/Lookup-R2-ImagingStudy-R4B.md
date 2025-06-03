@@ -45,7 +45,7 @@
 | ImagingStudy.series.instance.modifierExtension | UseElementSameName | ImagingStudy.series.instance.modifierExtension |
 | ImagingStudy.series.instance.number | UseElementSameName | ImagingStudy.series.instance.number |
 | ImagingStudy.series.instance.uid | UseElementSameName | ImagingStudy.series.instance.uid |
-| ImagingStudy.series.instance.sopClass | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingStudy.series.instance.sopClass |
+| ImagingStudy.series.instance.sopClass | UseElementSameName | ImagingStudy.series.instance.sopClass |
 | ImagingStudy.series.instance.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingStudy.series.instance.type |
 | ImagingStudy.series.instance.title | UseElementSameName | ImagingStudy.series.instance.title |
 | ImagingStudy.series.instance.content | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingStudy.series.instance.content |

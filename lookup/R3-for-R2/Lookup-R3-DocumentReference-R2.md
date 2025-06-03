@@ -18,7 +18,7 @@
 | DocumentReference.class | UseElementSameName | DocumentReference.class |
 | DocumentReference.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.subject |
 | DocumentReference.created | UseElementSameName | DocumentReference.created |
-| DocumentReference.indexed | UseElementSameName | DocumentReference.indexed |
+| DocumentReference.indexed | UseOneOfElements | DocumentReference.indexed,DocumentReference.indexed |
 | DocumentReference.author | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.author |
 | DocumentReference.authenticator | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.authenticator |
 | DocumentReference.custodian | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-DocumentReference.custodian |

@@ -25,7 +25,7 @@
 | TestScript.contact.telecom | UseExtensionFromAncestor | - |
 | TestScript.date | UseElementSameName | TestScript.date |
 | TestScript.description | UseElementSameName | TestScript.description |
-| TestScript.useContext | UseElementSameName | TestScript.useContext |
+| TestScript.useContext | UseOneOfElements | TestScript.useContext,TestScript.jurisdiction |
 | TestScript.requirements | UseElementRenamed | TestScript.purpose |
 | TestScript.copyright | UseElementSameName | TestScript.copyright |
 | TestScript.metadata | UseElementSameName | TestScript.metadata |

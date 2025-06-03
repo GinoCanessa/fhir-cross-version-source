@@ -22,7 +22,7 @@
 | CoverageEligibilityResponse.event.when[x] | UseExtensionFromAncestor | - |
 | CoverageEligibilityResponse.serviced[x] | UseElementSameName | CoverageEligibilityResponse.serviced[x] |
 | CoverageEligibilityResponse.created | UseElementSameName | CoverageEligibilityResponse.created |
-| CoverageEligibilityResponse.requestor | UseElementSameName | CoverageEligibilityResponse.requestor |
+| CoverageEligibilityResponse.requestor | UseOneOfElements | CoverageEligibilityResponse.requestor,CoverageEligibilityResponse.requestor |
 | CoverageEligibilityResponse.request | UseElementSameName | CoverageEligibilityResponse.request |
 | CoverageEligibilityResponse.outcome | UseElementSameName | CoverageEligibilityResponse.outcome |
 | CoverageEligibilityResponse.disposition | UseElementSameName | CoverageEligibilityResponse.disposition |

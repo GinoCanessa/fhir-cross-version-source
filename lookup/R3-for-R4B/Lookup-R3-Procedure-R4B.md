@@ -16,7 +16,7 @@
 | Procedure.partOf | UseElementSameName | Procedure.partOf |
 | Procedure.status | UseElementSameName | Procedure.status |
 | Procedure.notDone | UseElementRenamed | Procedure.status |
-| Procedure.notDoneReason | UseElementRenamed | Procedure.statusReason |
+| Procedure.notDoneReason | UseOneOfElements | Procedure.statusReason,Procedure.reasonCode |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
 | Procedure.subject | UseElementSameName | Procedure.subject |

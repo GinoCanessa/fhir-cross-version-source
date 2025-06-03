@@ -40,7 +40,7 @@
 | Composition.event.modifierExtension | UseElementSameName | Composition.event.modifierExtension |
 | Composition.event.code | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.event.code |
 | Composition.event.period | UseElementSameName | Composition.event.period |
-| Composition.event.detail | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.event.detail |
+| Composition.event.detail | UseElementSameName | Composition.event.detail |
 | Composition.section | UseElementSameName | Composition.section |
 | Composition.section.id | UseElementSameName | Composition.section.id |
 | Composition.section.extension | UseElementSameName | Composition.section.extension |

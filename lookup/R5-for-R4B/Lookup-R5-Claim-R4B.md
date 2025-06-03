@@ -38,7 +38,7 @@
 | Claim.payee.extension | UseElementSameName | Claim.payee.extension |
 | Claim.payee.modifierExtension | UseElementSameName | Claim.payee.modifierExtension |
 | Claim.payee.type | UseElementSameName | Claim.payee.type |
-| Claim.payee.party | UseElementSameName | Claim.payee.party |
+| Claim.payee.party | UseOneOfElements | Claim.payee.party,Claim.payee.party,Claim.payee.party |
 | Claim.referral | UseElementSameName | Claim.referral |
 | Claim.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.encounter |
 | Claim.facility | UseElementSameName | Claim.facility |
@@ -126,7 +126,7 @@
 | Claim.item.patientPaid | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.patientPaid |
 | Claim.item.quantity | UseElementSameName | Claim.item.quantity |
 | Claim.item.unitPrice | UseElementSameName | Claim.item.unitPrice |
-| Claim.item.factor | UseElementSameName | Claim.item.factor |
+| Claim.item.factor | UseOneOfElements | Claim.item.factor,Claim.item.factor |
 | Claim.item.tax | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.tax |
 | Claim.item.net | UseElementSameName | Claim.item.net |
 | Claim.item.udi | UseElementSameName | Claim.item.udi |
@@ -152,7 +152,7 @@
 | Claim.item.detail.patientPaid | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.detail.patientPaid |
 | Claim.item.detail.quantity | UseElementSameName | Claim.item.detail.quantity |
 | Claim.item.detail.unitPrice | UseElementSameName | Claim.item.detail.unitPrice |
-| Claim.item.detail.factor | UseElementSameName | Claim.item.detail.factor |
+| Claim.item.detail.factor | UseOneOfElements | Claim.item.detail.factor,Claim.item.detail.factor |
 | Claim.item.detail.tax | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.detail.tax |
 | Claim.item.detail.net | UseElementSameName | Claim.item.detail.net |
 | Claim.item.detail.udi | UseElementSameName | Claim.item.detail.udi |
@@ -171,7 +171,7 @@
 | Claim.item.detail.subDetail.patientPaid | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.detail.subDetail.patientPaid |
 | Claim.item.detail.subDetail.quantity | UseElementSameName | Claim.item.detail.subDetail.quantity |
 | Claim.item.detail.subDetail.unitPrice | UseElementSameName | Claim.item.detail.subDetail.unitPrice |
-| Claim.item.detail.subDetail.factor | UseElementSameName | Claim.item.detail.subDetail.factor |
+| Claim.item.detail.subDetail.factor | UseOneOfElements | Claim.item.detail.subDetail.factor,Claim.item.detail.subDetail.factor |
 | Claim.item.detail.subDetail.tax | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Claim.item.detail.subDetail.tax |
 | Claim.item.detail.subDetail.net | UseElementSameName | Claim.item.detail.subDetail.net |
 | Claim.item.detail.subDetail.udi | UseElementSameName | Claim.item.detail.subDetail.udi |

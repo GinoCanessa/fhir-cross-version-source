@@ -12,9 +12,9 @@
 | MedicationDispense.modifierExtension | UseElementSameName | MedicationDispense.modifierExtension |
 | MedicationDispense.identifier | UseElementSameName | MedicationDispense.identifier |
 | MedicationDispense.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.partOf |
-| MedicationDispense.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.status |
+| MedicationDispense.status | UseElementSameName | MedicationDispense.status |
 | MedicationDispense.category | UseElementSameName | MedicationDispense.category |
-| MedicationDispense.medication[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.medication |
+| MedicationDispense.medication[x] | UseElementRenamed | MedicationDispense.medication |
 | MedicationDispense.subject | UseElementSameName | MedicationDispense.subject |
 | MedicationDispense.context | UseElementRenamed | MedicationDispense.encounter |
 | MedicationDispense.supportingInformation | UseElementSameName | MedicationDispense.supportingInformation |
@@ -44,5 +44,5 @@
 | MedicationDispense.substitution.responsibleParty | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.substitution.responsibleParty |
 | MedicationDispense.detectedIssue | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.detectedIssue |
 | MedicationDispense.notDone | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDone |
-| MedicationDispense.notDoneReason[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.notDoneReason |
+| MedicationDispense.notDoneReason[x] | UseElementRenamed | MedicationDispense.notPerformedReason |
 | MedicationDispense.eventHistory | UseElementSameName | MedicationDispense.eventHistory |

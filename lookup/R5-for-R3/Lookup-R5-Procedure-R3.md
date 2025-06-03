@@ -48,5 +48,5 @@
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
 | Procedure.focalDevice.action | UseElementSameName | Procedure.focalDevice.action |
 | Procedure.focalDevice.manipulated | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.focalDevice.manipulated |
-| Procedure.used | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.used |
+| Procedure.used | UseElementRenamed | Procedure.usedCode |
 | Procedure.supportingInfo | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Procedure.supportingInfo |

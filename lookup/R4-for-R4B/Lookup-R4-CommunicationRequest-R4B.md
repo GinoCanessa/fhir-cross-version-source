@@ -30,7 +30,7 @@
 | CommunicationRequest.payload.content[x] | UseElementSameName | CommunicationRequest.payload.content[x] |
 | CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.occurrence[x] |
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.authoredOn |
-| CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
+| CommunicationRequest.requester | UseOneOfElements | CommunicationRequest.requester,CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseElementSameName | CommunicationRequest.recipient |
 | CommunicationRequest.sender | UseElementSameName | CommunicationRequest.sender |
 | CommunicationRequest.reasonCode | UseElementSameName | CommunicationRequest.reasonCode |

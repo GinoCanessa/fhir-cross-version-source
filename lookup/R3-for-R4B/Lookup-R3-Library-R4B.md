@@ -29,7 +29,7 @@
 | Library.useContext | UseElementSameName | Library.useContext |
 | Library.jurisdiction | UseElementSameName | Library.jurisdiction |
 | Library.topic | UseElementSameName | Library.topic |
-| Library.contributor | UseElementRenamed | Library.author |
+| Library.contributor | UseOneOfElements | Library.author,Library.editor,Library.reviewer,Library.endorser |
 | Library.contact | UseElementSameName | Library.contact |
 | Library.copyright | UseElementSameName | Library.copyright |
 | Library.relatedArtifact | UseElementSameName | Library.relatedArtifact |

@@ -41,7 +41,7 @@
 | Encounter.appointment | UseElementSameName | Encounter.appointment |
 | Encounter.period | UseElementSameName | Encounter.period |
 | Encounter.length | UseElementSameName | Encounter.length |
-| Encounter.reasonCode | UseElementSameName | Encounter.reasonCode |
+| Encounter.reasonCode | UseOneOfElements | Encounter.reasonCode,Encounter.reasonCode |
 | Encounter.reasonReference | UseElementSameName | Encounter.reasonReference |
 | Encounter.diagnosis | UseElementSameName | Encounter.diagnosis |
 | Encounter.diagnosis.id | UseElementSameName | Encounter.diagnosis.id |

@@ -33,15 +33,15 @@
 | Questionnaire.lastReviewDate | UseElementSameName | Questionnaire.lastReviewDate |
 | Questionnaire.effectivePeriod | UseElementSameName | Questionnaire.effectivePeriod |
 | Questionnaire.code | UseElementSameName | Questionnaire.code |
-| Questionnaire.item | UseElementSameName | Questionnaire.item |
+| Questionnaire.item | UseOneOfElements | Questionnaire.item,Questionnaire.item |
 | Questionnaire.item.id | UseElementSameName | Questionnaire.item.id |
 | Questionnaire.item.extension | UseElementSameName | Questionnaire.item.extension |
 | Questionnaire.item.modifierExtension | UseElementSameName | Questionnaire.item.modifierExtension |
-| Questionnaire.item.linkId | UseElementSameName | Questionnaire.item.linkId |
+| Questionnaire.item.linkId | UseOneOfElements | Questionnaire.item.linkId,Questionnaire.item.linkId |
 | Questionnaire.item.definition | UseElementSameName | Questionnaire.item.definition |
-| Questionnaire.item.code | UseElementSameName | Questionnaire.item.code |
+| Questionnaire.item.code | UseOneOfElements | Questionnaire.item.code,Questionnaire.item.code |
 | Questionnaire.item.prefix | UseElementSameName | Questionnaire.item.prefix |
-| Questionnaire.item.text | UseElementSameName | Questionnaire.item.text |
+| Questionnaire.item.text | UseOneOfElements | Questionnaire.item.text,Questionnaire.item.text |
 | Questionnaire.item.type | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.type |
 | Questionnaire.item.enableWhen | UseElementSameName | Questionnaire.item.enableWhen |
 | Questionnaire.item.enableWhen.id | UseElementSameName | Questionnaire.item.enableWhen.id |
@@ -52,8 +52,8 @@
 | Questionnaire.item.enableWhen.answer[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.enableWhen.answer |
 | Questionnaire.item.enableBehavior | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.enableBehavior |
 | Questionnaire.item.disabledDisplay | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Questionnaire.item.disabledDisplay |
-| Questionnaire.item.required | UseElementSameName | Questionnaire.item.required |
-| Questionnaire.item.repeats | UseElementSameName | Questionnaire.item.repeats |
+| Questionnaire.item.required | UseOneOfElements | Questionnaire.item.required,Questionnaire.item.required |
+| Questionnaire.item.repeats | UseOneOfElements | Questionnaire.item.repeats,Questionnaire.item.repeats |
 | Questionnaire.item.readOnly | UseElementSameName | Questionnaire.item.readOnly |
 | Questionnaire.item.maxLength | UseElementSameName | Questionnaire.item.maxLength |
 | Questionnaire.item.answerConstraint | UseElementRenamed | Questionnaire.item.type |
@@ -69,4 +69,4 @@
 | Questionnaire.item.initial.extension | UseExtensionFromAncestor | - |
 | Questionnaire.item.initial.modifierExtension | UseExtensionFromAncestor | - |
 | Questionnaire.item.initial.value[x] | UseExtensionFromAncestor | - |
-| Questionnaire.item.item | UseElementSameName | Questionnaire.item.item |
+| Questionnaire.item.item | UseOneOfElements | Questionnaire.item.item,Questionnaire.item.item |

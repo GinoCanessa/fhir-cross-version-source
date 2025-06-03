@@ -28,9 +28,9 @@
 | DeviceRequest.parameter.value[x] | UseElementSameName | DeviceRequest.parameter.value[x] |
 | DeviceRequest.subject | UseElementSameName | DeviceRequest.subject |
 | DeviceRequest.encounter | UseElementSameName | DeviceRequest.encounter |
-| DeviceRequest.occurrence[x] | UseElementSameName | DeviceRequest.occurrence[x] |
+| DeviceRequest.occurrence[x] | UseOneOfElements | DeviceRequest.occurrence[x],DeviceRequest.occurrence[x] |
 | DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
-| DeviceRequest.requester | UseElementSameName | DeviceRequest.requester |
+| DeviceRequest.requester | UseOneOfElements | DeviceRequest.requester,DeviceRequest.requester |
 | DeviceRequest.performerType | UseElementSameName | DeviceRequest.performerType |
 | DeviceRequest.performer | UseElementSameName | DeviceRequest.performer |
 | DeviceRequest.reasonCode | UseElementSameName | DeviceRequest.reasonCode |

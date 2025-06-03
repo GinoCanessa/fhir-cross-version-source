@@ -30,5 +30,5 @@
 | Goal.expressedBy | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Goal.expressedBy |
 | Goal.addresses | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Goal.addresses |
 | Goal.note | UseElementSameName | Goal.note |
-| Goal.outcomeCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Goal.outcomeCode |
-| Goal.outcomeReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Goal.outcomeReference |
+| Goal.outcomeCode | UseElementRenamed | Goal.outcome |
+| Goal.outcomeReference | UseElementRenamed | Goal.outcome |

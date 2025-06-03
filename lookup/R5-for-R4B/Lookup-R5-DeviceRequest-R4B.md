@@ -20,7 +20,7 @@
 | DeviceRequest.intent | UseElementSameName | DeviceRequest.intent |
 | DeviceRequest.priority | UseElementSameName | DeviceRequest.priority |
 | DeviceRequest.doNotPerform | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.doNotPerform |
-| DeviceRequest.code | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.code |
+| DeviceRequest.code | UseElementRenamed | DeviceRequest.code[x] |
 | DeviceRequest.quantity | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.quantity |
 | DeviceRequest.parameter | UseElementSameName | DeviceRequest.parameter |
 | DeviceRequest.parameter.id | UseElementSameName | DeviceRequest.parameter.id |
@@ -30,11 +30,11 @@
 | DeviceRequest.parameter.value[x] | UseElementSameName | DeviceRequest.parameter.value[x] |
 | DeviceRequest.subject | UseElementSameName | DeviceRequest.subject |
 | DeviceRequest.encounter | UseElementSameName | DeviceRequest.encounter |
-| DeviceRequest.occurrence[x] | UseElementSameName | DeviceRequest.occurrence[x] |
+| DeviceRequest.occurrence[x] | UseOneOfElements | DeviceRequest.occurrence[x],DeviceRequest.occurrence[x] |
 | DeviceRequest.authoredOn | UseElementSameName | DeviceRequest.authoredOn |
-| DeviceRequest.requester | UseElementSameName | DeviceRequest.requester |
+| DeviceRequest.requester | UseOneOfElements | DeviceRequest.requester,DeviceRequest.requester |
 | DeviceRequest.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.performer |
-| DeviceRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.reason |
+| DeviceRequest.reason | UseOneOfElements | DeviceRequest.reasonCode,DeviceRequest.reasonReference |
 | DeviceRequest.asNeeded | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeeded |
 | DeviceRequest.asNeededFor | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceRequest.asNeededFor |
 | DeviceRequest.insurance | UseElementSameName | DeviceRequest.insurance |

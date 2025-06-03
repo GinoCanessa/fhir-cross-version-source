@@ -28,7 +28,7 @@
 | NutritionOrder.oralDiet.extension | UseElementSameName | NutritionOrder.oralDiet.extension |
 | NutritionOrder.oralDiet.modifierExtension | UseElementSameName | NutritionOrder.oralDiet.modifierExtension |
 | NutritionOrder.oralDiet.type | UseElementSameName | NutritionOrder.oralDiet.type |
-| NutritionOrder.oralDiet.schedule | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.oralDiet.schedule |
+| NutritionOrder.oralDiet.schedule | UseElementRenamed | NutritionOrder.oralDiet.schedule.timing |
 | NutritionOrder.oralDiet.nutrient | UseElementSameName | NutritionOrder.oralDiet.nutrient |
 | NutritionOrder.oralDiet.nutrient.id | UseElementSameName | NutritionOrder.oralDiet.nutrient.id |
 | NutritionOrder.oralDiet.nutrient.extension | UseElementSameName | NutritionOrder.oralDiet.nutrient.extension |
@@ -47,16 +47,16 @@
 | NutritionOrder.supplement.id | UseElementSameName | NutritionOrder.supplement.id |
 | NutritionOrder.supplement.extension | UseElementSameName | NutritionOrder.supplement.extension |
 | NutritionOrder.supplement.modifierExtension | UseElementSameName | NutritionOrder.supplement.modifierExtension |
-| NutritionOrder.supplement.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.supplement.type |
+| NutritionOrder.supplement.type | UseElementSameName | NutritionOrder.supplement.type |
 | NutritionOrder.supplement.productName | UseElementSameName | NutritionOrder.supplement.productName |
-| NutritionOrder.supplement.schedule | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.supplement.schedule |
+| NutritionOrder.supplement.schedule | UseElementRenamed | NutritionOrder.supplement.schedule.timing |
 | NutritionOrder.supplement.quantity | UseElementSameName | NutritionOrder.supplement.quantity |
 | NutritionOrder.supplement.instruction | UseElementSameName | NutritionOrder.supplement.instruction |
 | NutritionOrder.enteralFormula | UseElementSameName | NutritionOrder.enteralFormula |
 | NutritionOrder.enteralFormula.id | UseElementSameName | NutritionOrder.enteralFormula.id |
 | NutritionOrder.enteralFormula.extension | UseElementSameName | NutritionOrder.enteralFormula.extension |
 | NutritionOrder.enteralFormula.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.modifierExtension |
-| NutritionOrder.enteralFormula.baseFormulaType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.enteralFormula.baseFormulaType |
+| NutritionOrder.enteralFormula.baseFormulaType | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaType |
 | NutritionOrder.enteralFormula.baseFormulaProductName | UseElementSameName | NutritionOrder.enteralFormula.baseFormulaProductName |
 | NutritionOrder.enteralFormula.additiveType | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.enteralFormula.additiveType |
 | NutritionOrder.enteralFormula.additiveProductName | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.enteralFormula.additiveProductName |
@@ -66,7 +66,7 @@
 | NutritionOrder.enteralFormula.administration.id | UseElementSameName | NutritionOrder.enteralFormula.administration.id |
 | NutritionOrder.enteralFormula.administration.extension | UseElementSameName | NutritionOrder.enteralFormula.administration.extension |
 | NutritionOrder.enteralFormula.administration.modifierExtension | UseElementSameName | NutritionOrder.enteralFormula.administration.modifierExtension |
-| NutritionOrder.enteralFormula.administration.schedule | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-NutritionOrder.enteralFormula.administration.schedule |
+| NutritionOrder.enteralFormula.administration.schedule | UseElementRenamed | NutritionOrder.enteralFormula.administration.schedule.timing |
 | NutritionOrder.enteralFormula.administration.quantity | UseElementSameName | NutritionOrder.enteralFormula.administration.quantity |
 | NutritionOrder.enteralFormula.administration.rate[x] | UseElementSameName | NutritionOrder.enteralFormula.administration.rate[x] |
 | NutritionOrder.enteralFormula.maxVolumeToDeliver | UseElementSameName | NutritionOrder.enteralFormula.maxVolumeToDeliver |

@@ -33,7 +33,7 @@
 | MedicationRequest.performer | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.performer |
 | MedicationRequest.device | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.device |
 | MedicationRequest.recorder | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.recorder |
-| MedicationRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.reason |
+| MedicationRequest.reason | UseElementRenamed | MedicationRequest.reasonCode |
 | MedicationRequest.courseOfTherapyType | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.courseOfTherapyType |
 | MedicationRequest.insurance | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.insurance |
 | MedicationRequest.note | UseElementSameName | MedicationRequest.note |

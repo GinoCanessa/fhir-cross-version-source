@@ -18,7 +18,7 @@
 | ClaimResponse.patient | UseElementSameName | ClaimResponse.patient |
 | ClaimResponse.created | UseElementSameName | ClaimResponse.created |
 | ClaimResponse.insurer | UseElementSameName | ClaimResponse.insurer |
-| ClaimResponse.requestor | UseElementSameName | ClaimResponse.requestor |
+| ClaimResponse.requestor | UseOneOfElements | ClaimResponse.requestor,ClaimResponse.requestor |
 | ClaimResponse.request | UseElementSameName | ClaimResponse.request |
 | ClaimResponse.outcome | UseElementSameName | ClaimResponse.outcome |
 | ClaimResponse.disposition | UseElementSameName | ClaimResponse.disposition |
@@ -38,7 +38,7 @@
 | ClaimResponse.item.adjudication.category | UseElementSameName | ClaimResponse.item.adjudication.category |
 | ClaimResponse.item.adjudication.reason | UseElementSameName | ClaimResponse.item.adjudication.reason |
 | ClaimResponse.item.adjudication.amount | UseElementSameName | ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.value | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.item.adjudication.value |
+| ClaimResponse.item.adjudication.value | UseElementRenamed | ClaimResponse.item.adjudication.quantity |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |
@@ -70,7 +70,7 @@
 | ClaimResponse.addItem.unitPrice | UseElementSameName | ClaimResponse.addItem.unitPrice |
 | ClaimResponse.addItem.factor | UseElementSameName | ClaimResponse.addItem.factor |
 | ClaimResponse.addItem.net | UseElementSameName | ClaimResponse.addItem.net |
-| ClaimResponse.addItem.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.addItem.bodySite |
+| ClaimResponse.addItem.bodySite | UseElementRenamed | ClaimResponse.addItem.bodySite.site |
 | ClaimResponse.addItem.subSite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ClaimResponse.addItem.subSite |
 | ClaimResponse.addItem.noteNumber | UseElementSameName | ClaimResponse.addItem.noteNumber |
 | ClaimResponse.addItem.adjudication | UseElementSameName | ClaimResponse.addItem.adjudication |
@@ -104,7 +104,7 @@
 | ClaimResponse.total.extension | UseElementSameName | ClaimResponse.total.extension |
 | ClaimResponse.total.modifierExtension | UseElementSameName | ClaimResponse.total.modifierExtension |
 | ClaimResponse.total.category | UseElementSameName | ClaimResponse.total.category |
-| ClaimResponse.total.amount | UseElementSameName | ClaimResponse.total.amount |
+| ClaimResponse.total.amount | UseOneOfElements | ClaimResponse.total.amount,ClaimResponse.total.amount |
 | ClaimResponse.payment | UseElementSameName | ClaimResponse.payment |
 | ClaimResponse.payment.id | UseElementSameName | ClaimResponse.payment.id |
 | ClaimResponse.payment.extension | UseElementSameName | ClaimResponse.payment.extension |

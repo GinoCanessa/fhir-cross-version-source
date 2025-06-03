@@ -42,7 +42,7 @@
 | OperationDefinition.parameter.min | UseElementSameName | OperationDefinition.parameter.min |
 | OperationDefinition.parameter.max | UseElementSameName | OperationDefinition.parameter.max |
 | OperationDefinition.parameter.documentation | UseElementSameName | OperationDefinition.parameter.documentation |
-| OperationDefinition.parameter.type | UseElementSameName | OperationDefinition.parameter.type |
+| OperationDefinition.parameter.type | UseOneOfElements | OperationDefinition.parameter.type,OperationDefinition.parameter.searchType |
 | OperationDefinition.parameter.profile | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.parameter.profile |
 | OperationDefinition.parameter.binding | UseElementSameName | OperationDefinition.parameter.binding |
 | OperationDefinition.parameter.binding.id | UseElementSameName | OperationDefinition.parameter.binding.id |

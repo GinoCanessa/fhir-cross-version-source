@@ -14,7 +14,7 @@
 | FamilyMemberHistory.instantiatesCanonical | UseElementSameName | FamilyMemberHistory.instantiatesCanonical |
 | FamilyMemberHistory.instantiatesUri | UseElementSameName | FamilyMemberHistory.instantiatesUri |
 | FamilyMemberHistory.status | UseElementSameName | FamilyMemberHistory.status |
-| FamilyMemberHistory.dataAbsentReason | UseElementSameName | FamilyMemberHistory.dataAbsentReason |
+| FamilyMemberHistory.dataAbsentReason | UseOneOfElements | FamilyMemberHistory.dataAbsentReason,FamilyMemberHistory.dataAbsentReason |
 | FamilyMemberHistory.patient | UseElementSameName | FamilyMemberHistory.patient |
 | FamilyMemberHistory.date | UseElementSameName | FamilyMemberHistory.date |
 | FamilyMemberHistory.participant | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.participant |
@@ -30,7 +30,7 @@
 | FamilyMemberHistory.age[x] | UseElementSameName | FamilyMemberHistory.age[x] |
 | FamilyMemberHistory.estimatedAge | UseElementSameName | FamilyMemberHistory.estimatedAge |
 | FamilyMemberHistory.deceased[x] | UseElementSameName | FamilyMemberHistory.deceased[x] |
-| FamilyMemberHistory.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.reason |
+| FamilyMemberHistory.reason | UseOneOfElements | FamilyMemberHistory.reasonCode,FamilyMemberHistory.reasonReference |
 | FamilyMemberHistory.note | UseElementSameName | FamilyMemberHistory.note |
 | FamilyMemberHistory.condition | UseElementSameName | FamilyMemberHistory.condition |
 | FamilyMemberHistory.condition.id | UseElementSameName | FamilyMemberHistory.condition.id |

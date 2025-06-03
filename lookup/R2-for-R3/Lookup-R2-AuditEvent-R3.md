@@ -27,7 +27,7 @@
 | AuditEvent.participant.modifierExtension | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.participant.modifierExtension |
 | AuditEvent.participant.role | UseElementRenamed | AuditEvent.agent.role |
 | AuditEvent.participant.reference | UseElementRenamed | AuditEvent.agent.reference |
-| AuditEvent.participant.userId | UseElementRenamed | AuditEvent.agent.userId |
+| AuditEvent.participant.userId | UseOneOfElements | AuditEvent.agent.userId,AuditEvent.agent.userId |
 | AuditEvent.participant.altId | UseElementRenamed | AuditEvent.agent.altId |
 | AuditEvent.participant.name | UseElementRenamed | AuditEvent.agent.name |
 | AuditEvent.participant.requestor | UseElementRenamed | AuditEvent.agent.requestor |

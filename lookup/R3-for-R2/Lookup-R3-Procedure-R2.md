@@ -15,8 +15,8 @@
 | Procedure.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.basedOn |
 | Procedure.partOf | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.partOf |
 | Procedure.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.status |
-| Procedure.notDone | UseElementRenamed | Procedure.notPerformed |
-| Procedure.notDoneReason | UseElementRenamed | Procedure.reasonNotPerformed |
+| Procedure.notDone | UseOneOfElements | Procedure.notPerformed,Procedure.notPerformed |
+| Procedure.notDoneReason | UseOneOfElements | Procedure.reasonNotPerformed,Procedure.reasonNotPerformed |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
 | Procedure.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.subject |

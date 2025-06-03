@@ -15,7 +15,7 @@
 | PaymentNotice.request | UseElementSameName | PaymentNotice.request |
 | PaymentNotice.response | UseElementSameName | PaymentNotice.response |
 | PaymentNotice.created | UseElementSameName | PaymentNotice.created |
-| PaymentNotice.reporter | UseElementRenamed | PaymentNotice.provider |
+| PaymentNotice.reporter | UseOneOfElements | PaymentNotice.provider,PaymentNotice.provider |
 | PaymentNotice.payment | UseElementSameName | PaymentNotice.payment |
 | PaymentNotice.paymentDate | UseElementSameName | PaymentNotice.paymentDate |
 | PaymentNotice.payee | UseElementSameName | PaymentNotice.payee |

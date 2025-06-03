@@ -12,10 +12,10 @@
 | DeviceUseRequest.modifierExtension | UseElementRenamed | DeviceRequest.modifierExtension |
 | DeviceUseRequest.bodySite[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.bodySite |
 | DeviceUseRequest.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.status |
-| DeviceUseRequest.device | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.device |
+| DeviceUseRequest.device | UseElementRenamed | DeviceRequest.code |
 | DeviceUseRequest.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.encounter |
 | DeviceUseRequest.identifier | UseElementRenamed | DeviceRequest.identifier |
-| DeviceUseRequest.indication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.indication |
+| DeviceUseRequest.indication | UseElementRenamed | DeviceRequest.reason |
 | DeviceUseRequest.notes | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.notes |
 | DeviceUseRequest.prnReason | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceUseRequest.prnReason |
 | DeviceUseRequest.orderedOn | UseElementRenamed | DeviceRequest.occurrence[x] |

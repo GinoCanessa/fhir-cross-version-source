@@ -11,7 +11,7 @@
 | Schedule.extension | UseElementSameName | Schedule.extension |
 | Schedule.modifierExtension | UseElementSameName | Schedule.modifierExtension |
 | Schedule.identifier | UseElementSameName | Schedule.identifier |
-| Schedule.type | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Schedule.type |
+| Schedule.type | UseElementRenamed | Schedule.serviceType |
 | Schedule.actor | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Schedule.actor |
 | Schedule.planningHorizon | UseElementSameName | Schedule.planningHorizon |
 | Schedule.comment | UseElementSameName | Schedule.comment |

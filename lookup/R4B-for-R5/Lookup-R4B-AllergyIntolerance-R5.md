@@ -30,7 +30,7 @@
 | AllergyIntolerance.reaction.extension | UseElementSameName | AllergyIntolerance.reaction.extension |
 | AllergyIntolerance.reaction.modifierExtension | UseElementSameName | AllergyIntolerance.reaction.modifierExtension |
 | AllergyIntolerance.reaction.substance | UseElementSameName | AllergyIntolerance.reaction.substance |
-| AllergyIntolerance.reaction.manifestation | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AllergyIntolerance.reaction.manifestation |
+| AllergyIntolerance.reaction.manifestation | UseElementSameName | AllergyIntolerance.reaction.manifestation |
 | AllergyIntolerance.reaction.description | UseElementSameName | AllergyIntolerance.reaction.description |
 | AllergyIntolerance.reaction.onset | UseElementSameName | AllergyIntolerance.reaction.onset |
 | AllergyIntolerance.reaction.severity | UseElementSameName | AllergyIntolerance.reaction.severity |

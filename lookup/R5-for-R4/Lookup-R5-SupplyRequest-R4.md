@@ -26,8 +26,8 @@
 | SupplyRequest.parameter.value[x] | UseElementSameName | SupplyRequest.parameter.value[x] |
 | SupplyRequest.occurrence[x] | UseElementSameName | SupplyRequest.occurrence[x] |
 | SupplyRequest.authoredOn | UseElementSameName | SupplyRequest.authoredOn |
-| SupplyRequest.requester | UseElementSameName | SupplyRequest.requester |
+| SupplyRequest.requester | UseOneOfElements | SupplyRequest.requester,SupplyRequest.requester |
 | SupplyRequest.supplier | UseElementSameName | SupplyRequest.supplier |
-| SupplyRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-SupplyRequest.reason |
+| SupplyRequest.reason | UseOneOfElements | SupplyRequest.reasonCode,SupplyRequest.reasonReference |
 | SupplyRequest.deliverFrom | UseElementSameName | SupplyRequest.deliverFrom |
 | SupplyRequest.deliverTo | UseElementSameName | SupplyRequest.deliverTo |

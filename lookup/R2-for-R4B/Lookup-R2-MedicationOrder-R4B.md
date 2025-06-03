@@ -12,14 +12,14 @@
 | MedicationOrder.modifierExtension | UseElementRenamed | MedicationRequest.modifierExtension |
 | MedicationOrder.identifier | UseElementRenamed | MedicationRequest.identifier |
 | MedicationOrder.dateWritten | UseElementRenamed | MedicationRequest.authoredOn |
-| MedicationOrder.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.status |
+| MedicationOrder.status | UseElementRenamed | MedicationRequest.status |
 | MedicationOrder.dateEnded | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dateEnded |
 | MedicationOrder.reasonEnded | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reasonEnded |
 | MedicationOrder.patient | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.patient |
 | MedicationOrder.prescriber | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.prescriber |
 | MedicationOrder.encounter | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.encounter |
 | MedicationOrder.reason[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reason |
-| MedicationOrder.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.note |
+| MedicationOrder.note | UseElementRenamed | MedicationRequest.note |
 | MedicationOrder.medication[x] | UseElementRenamed | MedicationRequest.medication[x] |
 | MedicationOrder.dosageInstruction | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dosageInstruction |
 | MedicationOrder.dosageInstruction.id | UseExtensionFromAncestor | - |

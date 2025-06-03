@@ -20,7 +20,7 @@
 | Provenance.basedOn | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Provenance.basedOn |
 | Provenance.patient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Provenance.patient |
 | Provenance.encounter | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Provenance.encounter |
-| Provenance.agent | UseElementSameName | Provenance.agent |
+| Provenance.agent | UseOneOfElements | Provenance.agent,Provenance.agent |
 | Provenance.agent.id | UseElementSameName | Provenance.agent.id |
 | Provenance.agent.extension | UseElementSameName | Provenance.agent.extension |
 | Provenance.agent.modifierExtension | UseElementSameName | Provenance.agent.modifierExtension |

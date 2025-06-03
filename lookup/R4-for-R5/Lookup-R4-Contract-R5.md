@@ -154,7 +154,7 @@
 | Contract.term.action.performerLinkId | UseElementSameName | Contract.term.action.performerLinkId |
 | Contract.term.action.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reasonCode |
 | Contract.term.action.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reasonReference |
-| Contract.term.action.reason | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Contract.term.action.reason |
+| Contract.term.action.reason | UseElementSameName | Contract.term.action.reason |
 | Contract.term.action.reasonLinkId | UseElementSameName | Contract.term.action.reasonLinkId |
 | Contract.term.action.note | UseElementSameName | Contract.term.action.note |
 | Contract.term.action.securityLabelNumber | UseElementSameName | Contract.term.action.securityLabelNumber |

@@ -26,7 +26,7 @@
 | Communication.sent | UseElementSameName | Communication.sent |
 | Communication.received | UseElementSameName | Communication.received |
 | Communication.sender | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.sender |
-| Communication.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.reasonCode |
+| Communication.reasonCode | UseElementRenamed | Communication.reason |
 | Communication.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Communication.reasonReference |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |

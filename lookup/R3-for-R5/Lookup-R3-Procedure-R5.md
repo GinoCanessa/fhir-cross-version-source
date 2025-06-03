@@ -16,7 +16,7 @@
 | Procedure.partOf | UseElementSameName | Procedure.partOf |
 | Procedure.status | UseElementSameName | Procedure.status |
 | Procedure.notDone | UseElementRenamed | Procedure.status |
-| Procedure.notDoneReason | UseElementRenamed | Procedure.statusReason |
+| Procedure.notDoneReason | UseOneOfElements | Procedure.statusReason,Procedure.reason |
 | Procedure.category | UseElementSameName | Procedure.category |
 | Procedure.code | UseElementSameName | Procedure.code |
 | Procedure.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.subject |
@@ -30,12 +30,12 @@
 | Procedure.performer.actor | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.performer.actor |
 | Procedure.performer.onBehalfOf | UseElementSameName | Procedure.performer.onBehalfOf |
 | Procedure.location | UseElementSameName | Procedure.location |
-| Procedure.reasonCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.reasonCode |
+| Procedure.reasonCode | UseElementRenamed | Procedure.reason |
 | Procedure.reasonReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.reasonReference |
 | Procedure.bodySite | UseElementSameName | Procedure.bodySite |
 | Procedure.outcome | UseElementSameName | Procedure.outcome |
 | Procedure.report | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.report |
-| Procedure.complication | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.complication |
+| Procedure.complication | UseElementSameName | Procedure.complication |
 | Procedure.complicationDetail | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.complicationDetail |
 | Procedure.followUp | UseElementSameName | Procedure.followUp |
 | Procedure.note | UseElementSameName | Procedure.note |
@@ -45,5 +45,5 @@
 | Procedure.focalDevice.modifierExtension | UseElementSameName | Procedure.focalDevice.modifierExtension |
 | Procedure.focalDevice.action | UseElementSameName | Procedure.focalDevice.action |
 | Procedure.focalDevice.manipulated | UseElementSameName | Procedure.focalDevice.manipulated |
-| Procedure.usedReference | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.usedReference |
-| Procedure.usedCode | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.usedCode |
+| Procedure.usedReference | UseElementRenamed | Procedure.used |
+| Procedure.usedCode | UseElementRenamed | Procedure.used |

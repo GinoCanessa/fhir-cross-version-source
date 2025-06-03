@@ -16,7 +16,7 @@
 | Communication.basedOn | UseElementSameName | Communication.basedOn |
 | Communication.partOf | UseElementSameName | Communication.partOf |
 | Communication.inResponseTo | UseElementSameName | Communication.inResponseTo |
-| Communication.status | UseElementSameName | Communication.status |
+| Communication.status | UseOneOfElements | Communication.status,Communication.status |
 | Communication.statusReason | UseElementSameName | Communication.statusReason |
 | Communication.category | UseElementSameName | Communication.category |
 | Communication.priority | UseElementSameName | Communication.priority |
@@ -29,8 +29,8 @@
 | Communication.received | UseElementSameName | Communication.received |
 | Communication.recipient | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.recipient |
 | Communication.sender | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.sender |
-| Communication.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.reasonCode |
-| Communication.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-Communication.reasonReference |
+| Communication.reasonCode | UseElementRenamed | Communication.reason |
+| Communication.reasonReference | UseElementRenamed | Communication.reason |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |
 | Communication.payload.extension | UseElementSameName | Communication.payload.extension |

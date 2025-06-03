@@ -20,7 +20,7 @@
 | ExplanationOfBenefit.created | UseElementSameName | ExplanationOfBenefit.created |
 | ExplanationOfBenefit.enterer | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.enterer |
 | ExplanationOfBenefit.insurer | UseElementSameName | ExplanationOfBenefit.insurer |
-| ExplanationOfBenefit.provider | UseElementSameName | ExplanationOfBenefit.provider |
+| ExplanationOfBenefit.provider | UseOneOfElements | ExplanationOfBenefit.provider,ExplanationOfBenefit.provider |
 | ExplanationOfBenefit.priority | UseElementSameName | ExplanationOfBenefit.priority |
 | ExplanationOfBenefit.fundsReserveRequested | UseElementSameName | ExplanationOfBenefit.fundsReserveRequested |
 | ExplanationOfBenefit.fundsReserve | UseElementSameName | ExplanationOfBenefit.fundsReserve |
@@ -120,7 +120,7 @@
 | ExplanationOfBenefit.item.factor | UseElementSameName | ExplanationOfBenefit.item.factor |
 | ExplanationOfBenefit.item.net | UseElementSameName | ExplanationOfBenefit.item.net |
 | ExplanationOfBenefit.item.udi | UseElementSameName | ExplanationOfBenefit.item.udi |
-| ExplanationOfBenefit.item.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.bodySite |
+| ExplanationOfBenefit.item.bodySite | UseElementRenamed | ExplanationOfBenefit.item.bodySite.site |
 | ExplanationOfBenefit.item.subSite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.subSite |
 | ExplanationOfBenefit.item.encounter | UseElementSameName | ExplanationOfBenefit.item.encounter |
 | ExplanationOfBenefit.item.noteNumber | UseElementSameName | ExplanationOfBenefit.item.noteNumber |
@@ -131,7 +131,7 @@
 | ExplanationOfBenefit.item.adjudication.category | UseElementSameName | ExplanationOfBenefit.item.adjudication.category |
 | ExplanationOfBenefit.item.adjudication.reason | UseElementSameName | ExplanationOfBenefit.item.adjudication.reason |
 | ExplanationOfBenefit.item.adjudication.amount | UseElementSameName | ExplanationOfBenefit.item.adjudication.amount |
-| ExplanationOfBenefit.item.adjudication.value | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value |
+| ExplanationOfBenefit.item.adjudication.value | UseElementRenamed | ExplanationOfBenefit.item.adjudication.quantity |
 | ExplanationOfBenefit.item.detail | UseElementSameName | ExplanationOfBenefit.item.detail |
 | ExplanationOfBenefit.item.detail.id | UseElementSameName | ExplanationOfBenefit.item.detail.id |
 | ExplanationOfBenefit.item.detail.extension | UseElementSameName | ExplanationOfBenefit.item.detail.extension |
@@ -183,7 +183,7 @@
 | ExplanationOfBenefit.addItem.unitPrice | UseElementSameName | ExplanationOfBenefit.addItem.unitPrice |
 | ExplanationOfBenefit.addItem.factor | UseElementSameName | ExplanationOfBenefit.addItem.factor |
 | ExplanationOfBenefit.addItem.net | UseElementSameName | ExplanationOfBenefit.addItem.net |
-| ExplanationOfBenefit.addItem.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.addItem.bodySite |
+| ExplanationOfBenefit.addItem.bodySite | UseElementRenamed | ExplanationOfBenefit.addItem.bodySite.site |
 | ExplanationOfBenefit.addItem.subSite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.addItem.subSite |
 | ExplanationOfBenefit.addItem.noteNumber | UseElementSameName | ExplanationOfBenefit.addItem.noteNumber |
 | ExplanationOfBenefit.addItem.adjudication | UseElementSameName | ExplanationOfBenefit.addItem.adjudication |
@@ -217,7 +217,7 @@
 | ExplanationOfBenefit.total.extension | UseElementSameName | ExplanationOfBenefit.total.extension |
 | ExplanationOfBenefit.total.modifierExtension | UseElementSameName | ExplanationOfBenefit.total.modifierExtension |
 | ExplanationOfBenefit.total.category | UseElementSameName | ExplanationOfBenefit.total.category |
-| ExplanationOfBenefit.total.amount | UseElementSameName | ExplanationOfBenefit.total.amount |
+| ExplanationOfBenefit.total.amount | UseOneOfElements | ExplanationOfBenefit.total.amount,ExplanationOfBenefit.total.amount |
 | ExplanationOfBenefit.payment | UseElementSameName | ExplanationOfBenefit.payment |
 | ExplanationOfBenefit.payment.id | UseElementSameName | ExplanationOfBenefit.payment.id |
 | ExplanationOfBenefit.payment.extension | UseElementSameName | ExplanationOfBenefit.payment.extension |

@@ -29,7 +29,7 @@
 | Communication.received | UseElementSameName | Communication.received |
 | Communication.recipient | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.recipient |
 | Communication.sender | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.sender |
-| Communication.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.reason |
+| Communication.reason | UseElementRenamed | Communication.reasonCode |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |
 | Communication.payload.extension | UseElementSameName | Communication.payload.extension |

@@ -45,7 +45,7 @@
 | ActivityDefinition.priority | UseElementSameName | ActivityDefinition.priority |
 | ActivityDefinition.doNotPerform | UseElementSameName | ActivityDefinition.doNotPerform |
 | ActivityDefinition.timing[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ActivityDefinition.timing |
-| ActivityDefinition.location | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-ActivityDefinition.location |
+| ActivityDefinition.location | UseElementSameName | ActivityDefinition.location |
 | ActivityDefinition.participant | UseElementSameName | ActivityDefinition.participant |
 | ActivityDefinition.participant.id | UseElementSameName | ActivityDefinition.participant.id |
 | ActivityDefinition.participant.extension | UseElementSameName | ActivityDefinition.participant.extension |

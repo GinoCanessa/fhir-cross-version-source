@@ -20,7 +20,7 @@
 | DocumentManifest.recipient | UseElementSameName | DocumentManifest.recipient |
 | DocumentManifest.source | UseElementSameName | DocumentManifest.source |
 | DocumentManifest.description | UseElementSameName | DocumentManifest.description |
-| DocumentManifest.content | UseElementSameName | DocumentManifest.content |
+| DocumentManifest.content | UseOneOfElements | DocumentManifest.content,DocumentManifest.content |
 | DocumentManifest.related | UseElementSameName | DocumentManifest.related |
 | DocumentManifest.related.id | UseElementSameName | DocumentManifest.related.id |
 | DocumentManifest.related.extension | UseElementSameName | DocumentManifest.related.extension |

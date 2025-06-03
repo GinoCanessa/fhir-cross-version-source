@@ -43,7 +43,7 @@
 | RequestGroup.action.condition.extension | UseElementRenamed | RequestOrchestration.action.condition.extension |
 | RequestGroup.action.condition.modifierExtension | UseElementRenamed | RequestOrchestration.action.condition.modifierExtension |
 | RequestGroup.action.condition.kind | UseElementRenamed | RequestOrchestration.action.condition.kind |
-| RequestGroup.action.condition.expression | UseElementRenamed | RequestOrchestration.action.condition.expression |
+| RequestGroup.action.condition.expression | UseOneOfElements | RequestOrchestration.action.condition.expression,RequestOrchestration.action.condition.expression,RequestOrchestration.action.condition.expression |
 | RequestGroup.action.relatedAction | UseElementRenamed | RequestOrchestration.action.relatedAction |
 | RequestGroup.action.relatedAction.id | UseElementRenamed | RequestOrchestration.action.relatedAction.id |
 | RequestGroup.action.relatedAction.extension | UseElementRenamed | RequestOrchestration.action.relatedAction.extension |
@@ -52,7 +52,7 @@
 | RequestGroup.action.relatedAction.relationship | UseElementRenamed | RequestOrchestration.action.relatedAction.relationship |
 | RequestGroup.action.relatedAction.offset[x] | UseElementRenamed | RequestOrchestration.action.relatedAction.offset[x] |
 | RequestGroup.action.timing[x] | UseElementRenamed | RequestOrchestration.action.timing[x] |
-| RequestGroup.action.participant | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RequestGroup.action.participant |
+| RequestGroup.action.participant | UseElementRenamed | RequestOrchestration.action.participant.actor[x] |
 | RequestGroup.action.type | UseElementRenamed | RequestOrchestration.action.type |
 | RequestGroup.action.groupingBehavior | UseElementRenamed | RequestOrchestration.action.groupingBehavior |
 | RequestGroup.action.selectionBehavior | UseElementRenamed | RequestOrchestration.action.selectionBehavior |
@@ -60,4 +60,4 @@
 | RequestGroup.action.precheckBehavior | UseElementRenamed | RequestOrchestration.action.precheckBehavior |
 | RequestGroup.action.cardinalityBehavior | UseElementRenamed | RequestOrchestration.action.cardinalityBehavior |
 | RequestGroup.action.resource | UseElementRenamed | RequestOrchestration.action.resource |
-| RequestGroup.action.action | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-RequestGroup.action.action |
+| RequestGroup.action.action | UseElementRenamed | RequestOrchestration.action.action |

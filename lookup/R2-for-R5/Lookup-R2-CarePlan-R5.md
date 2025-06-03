@@ -19,7 +19,7 @@
 | CarePlan.modified | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.modified |
 | CarePlan.category | UseElementSameName | CarePlan.category |
 | CarePlan.description | UseElementSameName | CarePlan.description |
-| CarePlan.addresses | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.addresses |
+| CarePlan.addresses | UseElementSameName | CarePlan.addresses |
 | CarePlan.support | UseElementRenamed | CarePlan.supportingInfo |
 | CarePlan.relatedPlan | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.relatedPlan |
 | CarePlan.relatedPlan.id | UseExtensionFromAncestor | - |
@@ -38,7 +38,7 @@
 | CarePlan.activity.id | UseElementSameName | CarePlan.activity.id |
 | CarePlan.activity.extension | UseElementSameName | CarePlan.activity.extension |
 | CarePlan.activity.modifierExtension | UseElementSameName | CarePlan.activity.modifierExtension |
-| CarePlan.activity.actionResulting | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.activity.actionResulting |
+| CarePlan.activity.actionResulting | UseElementRenamed | CarePlan.activity.performedActivity |
 | CarePlan.activity.progress | UseElementSameName | CarePlan.activity.progress |
 | CarePlan.activity.reference | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.activity.reference |
 | CarePlan.activity.detail | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.activity.detail |

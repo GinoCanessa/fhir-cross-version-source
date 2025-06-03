@@ -69,7 +69,7 @@
 | CapabilityStatement.rest.resource.extension | UseElementSameName | CapabilityStatement.rest.resource.extension |
 | CapabilityStatement.rest.resource.modifierExtension | UseElementSameName | CapabilityStatement.rest.resource.modifierExtension |
 | CapabilityStatement.rest.resource.type | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.resource.type |
-| CapabilityStatement.rest.resource.profile | UseElementSameName | CapabilityStatement.rest.resource.profile |
+| CapabilityStatement.rest.resource.profile | UseOneOfElements | CapabilityStatement.rest.resource.profile,CapabilityStatement.rest.resource.supportedProfile |
 | CapabilityStatement.rest.resource.documentation | UseElementSameName | CapabilityStatement.rest.resource.documentation |
 | CapabilityStatement.rest.resource.interaction | UseElementSameName | CapabilityStatement.rest.resource.interaction |
 | CapabilityStatement.rest.resource.interaction.id | UseElementSameName | CapabilityStatement.rest.resource.interaction.id |
@@ -102,7 +102,7 @@
 | CapabilityStatement.rest.interaction.code | UseElementSameName | CapabilityStatement.rest.interaction.code |
 | CapabilityStatement.rest.interaction.documentation | UseElementSameName | CapabilityStatement.rest.interaction.documentation |
 | CapabilityStatement.rest.searchParam | UseElementSameName | CapabilityStatement.rest.searchParam |
-| CapabilityStatement.rest.operation | UseElementRenamed | CapabilityStatement.rest.resource.operation |
+| CapabilityStatement.rest.operation | UseOneOfElements | CapabilityStatement.rest.resource.operation,CapabilityStatement.rest.operation |
 | CapabilityStatement.rest.operation.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.id |
 | CapabilityStatement.rest.operation.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.extension |
 | CapabilityStatement.rest.operation.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.rest.operation.modifierExtension |

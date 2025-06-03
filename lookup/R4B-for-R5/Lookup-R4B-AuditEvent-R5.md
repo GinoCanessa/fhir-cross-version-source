@@ -49,7 +49,7 @@
 | AuditEvent.entity.id | UseElementSameName | AuditEvent.entity.id |
 | AuditEvent.entity.extension | UseElementSameName | AuditEvent.entity.extension |
 | AuditEvent.entity.modifierExtension | UseElementSameName | AuditEvent.entity.modifierExtension |
-| AuditEvent.entity.what | UseElementSameName | AuditEvent.entity.what |
+| AuditEvent.entity.what | UseOneOfElements | AuditEvent.entity.what,AuditEvent.entity.what |
 | AuditEvent.entity.type | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.entity.type |
 | AuditEvent.entity.role | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.entity.role |
 | AuditEvent.entity.lifecycle | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-AuditEvent.entity.lifecycle |

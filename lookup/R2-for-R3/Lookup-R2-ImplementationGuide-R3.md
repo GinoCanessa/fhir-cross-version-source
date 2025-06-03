@@ -24,7 +24,7 @@
 | ImplementationGuide.contact.telecom | UseExtensionFromAncestor | - |
 | ImplementationGuide.date | UseElementSameName | ImplementationGuide.date |
 | ImplementationGuide.description | UseElementSameName | ImplementationGuide.description |
-| ImplementationGuide.useContext | UseElementSameName | ImplementationGuide.useContext |
+| ImplementationGuide.useContext | UseOneOfElements | ImplementationGuide.useContext,ImplementationGuide.jurisdiction |
 | ImplementationGuide.copyright | UseElementSameName | ImplementationGuide.copyright |
 | ImplementationGuide.fhirVersion | UseElementSameName | ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependency | UseElementSameName | ImplementationGuide.dependency |
@@ -48,7 +48,7 @@
 | ImplementationGuide.package.resource.description | UseElementSameName | ImplementationGuide.package.resource.description |
 | ImplementationGuide.package.resource.acronym | UseElementSameName | ImplementationGuide.package.resource.acronym |
 | ImplementationGuide.package.resource.source[x] | UseElementSameName | ImplementationGuide.package.resource.source[x] |
-| ImplementationGuide.package.resource.exampleFor | UseElementSameName | ImplementationGuide.package.resource.exampleFor |
+| ImplementationGuide.package.resource.exampleFor | UseOneOfElements | ImplementationGuide.package.resource.exampleFor,ImplementationGuide.package.resource.exampleFor |
 | ImplementationGuide.global | UseElementSameName | ImplementationGuide.global |
 | ImplementationGuide.global.id | UseElementSameName | ImplementationGuide.global.id |
 | ImplementationGuide.global.extension | UseElementSameName | ImplementationGuide.global.extension |

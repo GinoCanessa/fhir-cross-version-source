@@ -20,7 +20,7 @@
 | Medication.ingredient.id | UseElementSameName | Medication.ingredient.id |
 | Medication.ingredient.extension | UseElementSameName | Medication.ingredient.extension |
 | Medication.ingredient.modifierExtension | UseElementSameName | Medication.ingredient.modifierExtension |
-| Medication.ingredient.item[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.ingredient.item |
+| Medication.ingredient.item[x] | UseElementRenamed | Medication.ingredient.item |
 | Medication.ingredient.isActive | UseElementSameName | Medication.ingredient.isActive |
 | Medication.ingredient.amount | UseElementRenamed | Medication.ingredient.strength[x] |
 | Medication.package | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package |

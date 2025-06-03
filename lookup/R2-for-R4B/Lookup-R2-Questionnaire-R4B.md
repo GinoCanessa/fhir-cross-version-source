@@ -35,7 +35,7 @@
 | Questionnaire.group.question.linkId | UseElementRenamed | Questionnaire.item.linkId |
 | Questionnaire.group.question.concept | UseElementRenamed | Questionnaire.item.code |
 | Questionnaire.group.question.text | UseElementRenamed | Questionnaire.item.text |
-| Questionnaire.group.question.type | UseElementRenamed | Questionnaire.item.type |
+| Questionnaire.group.question.type | UseOneOfElements | Questionnaire.item.type,Questionnaire.item.type |
 | Questionnaire.group.question.required | UseElementRenamed | Questionnaire.item.required |
 | Questionnaire.group.question.repeats | UseElementRenamed | Questionnaire.item.repeats |
 | Questionnaire.group.question.options | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Questionnaire.group.question.options |

@@ -17,4 +17,4 @@
 | EnrollmentResponse.disposition | UseElementSameName | EnrollmentResponse.disposition |
 | EnrollmentResponse.created | UseElementSameName | EnrollmentResponse.created |
 | EnrollmentResponse.organization | UseElementSameName | EnrollmentResponse.organization |
-| EnrollmentResponse.requestProvider | UseElementSameName | EnrollmentResponse.requestProvider |
+| EnrollmentResponse.requestProvider | UseOneOfElements | EnrollmentResponse.requestProvider,EnrollmentResponse.requestProvider |

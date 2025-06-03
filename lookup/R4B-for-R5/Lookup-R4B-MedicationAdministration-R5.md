@@ -16,7 +16,7 @@
 | MedicationAdministration.status | UseElementSameName | MedicationAdministration.status |
 | MedicationAdministration.statusReason | UseElementSameName | MedicationAdministration.statusReason |
 | MedicationAdministration.category | UseElementSameName | MedicationAdministration.category |
-| MedicationAdministration.medication[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.medication |
+| MedicationAdministration.medication[x] | UseElementRenamed | MedicationAdministration.medication |
 | MedicationAdministration.subject | UseElementSameName | MedicationAdministration.subject |
 | MedicationAdministration.context | UseElementRenamed | MedicationAdministration.encounter |
 | MedicationAdministration.supportingInformation | UseElementSameName | MedicationAdministration.supportingInformation |
@@ -26,11 +26,11 @@
 | MedicationAdministration.performer.extension | UseElementSameName | MedicationAdministration.performer.extension |
 | MedicationAdministration.performer.modifierExtension | UseElementSameName | MedicationAdministration.performer.modifierExtension |
 | MedicationAdministration.performer.function | UseElementSameName | MedicationAdministration.performer.function |
-| MedicationAdministration.performer.actor | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.performer.actor |
+| MedicationAdministration.performer.actor | UseOneOfElements | MedicationAdministration.performer.actor,MedicationAdministration.performer.actor |
 | MedicationAdministration.reasonCode | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.reasonCode |
 | MedicationAdministration.reasonReference | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.reasonReference |
 | MedicationAdministration.request | UseElementSameName | MedicationAdministration.request |
-| MedicationAdministration.device | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationAdministration.device |
+| MedicationAdministration.device | UseElementSameName | MedicationAdministration.device |
 | MedicationAdministration.note | UseElementSameName | MedicationAdministration.note |
 | MedicationAdministration.dosage | UseElementSameName | MedicationAdministration.dosage |
 | MedicationAdministration.dosage.id | UseElementSameName | MedicationAdministration.dosage.id |

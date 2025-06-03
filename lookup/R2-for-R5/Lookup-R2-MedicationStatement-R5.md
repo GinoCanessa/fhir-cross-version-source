@@ -16,12 +16,12 @@
 | MedicationStatement.dateAsserted | UseElementSameName | MedicationStatement.dateAsserted |
 | MedicationStatement.status | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.status |
 | MedicationStatement.wasNotTaken | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.wasNotTaken |
-| MedicationStatement.reasonNotTaken | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.reasonNotTaken |
+| MedicationStatement.reasonNotTaken | UseElementRenamed | MedicationStatement.reason |
 | MedicationStatement.reasonForUse[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.reasonForUse |
 | MedicationStatement.effective[x] | UseElementSameName | MedicationStatement.effective[x] |
-| MedicationStatement.note | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.note |
+| MedicationStatement.note | UseElementSameName | MedicationStatement.note |
 | MedicationStatement.supportingInformation | UseElementRenamed | MedicationStatement.derivedFrom |
-| MedicationStatement.medication[x] | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.medication |
+| MedicationStatement.medication[x] | UseElementRenamed | MedicationStatement.medication |
 | MedicationStatement.dosage | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationStatement.dosage |
 | MedicationStatement.dosage.id | UseExtensionFromAncestor | - |
 | MedicationStatement.dosage.extension | UseExtensionFromAncestor | - |

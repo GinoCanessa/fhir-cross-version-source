@@ -2,25 +2,25 @@
 
 | Source Element | Usage | Target |
 | -------------- | ----- | ------ |
-| ProcedureRequest.id | UseElementRenamed | DiagnosticOrder.id |
-| ProcedureRequest.meta | UseElementRenamed | DiagnosticOrder.meta |
-| ProcedureRequest.implicitRules | UseElementRenamed | DiagnosticOrder.implicitRules |
-| ProcedureRequest.language | UseElementRenamed | DiagnosticOrder.language |
-| ProcedureRequest.text | UseElementRenamed | DiagnosticOrder.text |
-| ProcedureRequest.contained | UseElementRenamed | DiagnosticOrder.contained |
-| ProcedureRequest.extension | UseElementRenamed | DiagnosticOrder.extension |
-| ProcedureRequest.modifierExtension | UseElementRenamed | DiagnosticOrder.modifierExtension |
-| ProcedureRequest.identifier | UseElementRenamed | DiagnosticOrder.identifier |
+| ProcedureRequest.id | UseOneOfElements | DiagnosticOrder.id,ProcedureRequest.id |
+| ProcedureRequest.meta | UseOneOfElements | DiagnosticOrder.meta,ProcedureRequest.meta |
+| ProcedureRequest.implicitRules | UseOneOfElements | DiagnosticOrder.implicitRules,ProcedureRequest.implicitRules |
+| ProcedureRequest.language | UseOneOfElements | DiagnosticOrder.language,ProcedureRequest.language |
+| ProcedureRequest.text | UseOneOfElements | DiagnosticOrder.text,ProcedureRequest.text |
+| ProcedureRequest.contained | UseOneOfElements | DiagnosticOrder.contained,ProcedureRequest.contained |
+| ProcedureRequest.extension | UseOneOfElements | DiagnosticOrder.extension,ProcedureRequest.extension |
+| ProcedureRequest.modifierExtension | UseOneOfElements | DiagnosticOrder.modifierExtension,ProcedureRequest.modifierExtension |
+| ProcedureRequest.identifier | UseOneOfElements | DiagnosticOrder.identifier,ProcedureRequest.identifier |
 | ProcedureRequest.definition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.definition |
 | ProcedureRequest.basedOn | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.basedOn |
 | ProcedureRequest.replaces | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.replaces |
 | ProcedureRequest.requisition | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.requisition |
 | ProcedureRequest.status | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.status |
 | ProcedureRequest.intent | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.intent |
-| ProcedureRequest.priority | UseElementRenamed | DiagnosticOrder.priority |
+| ProcedureRequest.priority | UseOneOfElements | DiagnosticOrder.priority,ProcedureRequest.priority |
 | ProcedureRequest.doNotPerform | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.doNotPerform |
 | ProcedureRequest.category | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.category |
-| ProcedureRequest.code | UseElementRenamed | DiagnosticOrder.item.code |
+| ProcedureRequest.code | UseOneOfElements | DiagnosticOrder.item.code,ProcedureRequest.code |
 | ProcedureRequest.subject | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.subject |
 | ProcedureRequest.context | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.context |
 | ProcedureRequest.occurrence[x] | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.occurrence |
@@ -39,5 +39,5 @@
 | ProcedureRequest.supportingInfo | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.supportingInfo |
 | ProcedureRequest.specimen | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.specimen |
 | ProcedureRequest.bodySite | UseElementSameName | ProcedureRequest.bodySite |
-| ProcedureRequest.note | UseElementRenamed | DiagnosticOrder.note |
+| ProcedureRequest.note | UseOneOfElements | DiagnosticOrder.note,ProcedureRequest.notes |
 | ProcedureRequest.relevantHistory | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ProcedureRequest.relevantHistory |

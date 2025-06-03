@@ -16,7 +16,7 @@
 | Communication.basedOn | UseElementSameName | Communication.basedOn |
 | Communication.partOf | UseElementSameName | Communication.partOf |
 | Communication.inResponseTo | UseElementSameName | Communication.inResponseTo |
-| Communication.status | UseElementSameName | Communication.status |
+| Communication.status | UseOneOfElements | Communication.status,Communication.status |
 | Communication.statusReason | UseElementSameName | Communication.statusReason |
 | Communication.category | UseElementSameName | Communication.category |
 | Communication.priority | UseElementSameName | Communication.priority |
@@ -29,7 +29,7 @@
 | Communication.received | UseElementSameName | Communication.received |
 | Communication.recipient | UseElementSameName | Communication.recipient |
 | Communication.sender | UseElementSameName | Communication.sender |
-| Communication.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-Communication.reason |
+| Communication.reason | UseOneOfElements | Communication.reasonCode,Communication.reasonReference |
 | Communication.payload | UseElementSameName | Communication.payload |
 | Communication.payload.id | UseElementSameName | Communication.payload.id |
 | Communication.payload.extension | UseElementSameName | Communication.payload.extension |

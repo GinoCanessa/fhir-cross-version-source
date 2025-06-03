@@ -62,7 +62,7 @@
 | ImplementationGuide.definition.resource.fhirVersion | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.resource.fhirVersion |
 | ImplementationGuide.definition.resource.name | UseElementSameName | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.definition.resource.description | UseElementSameName | ImplementationGuide.definition.resource.description |
-| ImplementationGuide.definition.resource.isExample | UseElementRenamed | ImplementationGuide.definition.resource.example[x] |
+| ImplementationGuide.definition.resource.isExample | UseOneOfElements | ImplementationGuide.definition.resource.example[x],ImplementationGuide.definition.resource.example[x] |
 | ImplementationGuide.definition.resource.profile | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-ImplementationGuide.definition.resource.profile |
 | ImplementationGuide.definition.resource.groupingId | UseElementSameName | ImplementationGuide.definition.resource.groupingId |
 | ImplementationGuide.definition.page | UseElementSameName | ImplementationGuide.definition.page |

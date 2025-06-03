@@ -31,8 +31,8 @@
 | CommunicationRequest.payload.content[x] | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.payload.content |
 | CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.occurrence[x] |
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.authoredOn |
-| CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
+| CommunicationRequest.requester | UseOneOfElements | CommunicationRequest.requester,CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseElementSameName | CommunicationRequest.recipient |
 | CommunicationRequest.informationProvider | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.informationProvider |
-| CommunicationRequest.reason | UseExtension | http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.reason |
+| CommunicationRequest.reason | UseOneOfElements | CommunicationRequest.reasonCode,CommunicationRequest.reasonReference |
 | CommunicationRequest.note | UseElementSameName | CommunicationRequest.note |

@@ -6,6 +6,6 @@
 | Money.extension | UseElementRenamed | Quantity.extension |
 | Money.value | UseElementRenamed | Quantity.value |
 | Money.comparator | UseElementRenamed | Quantity.comparator |
-| Money.unit | UseElementRenamed | Quantity.unit |
+| Money.unit | UseOneOfElements | Quantity.unit,Quantity.unit |
 | Money.system | UseElementRenamed | Quantity.system |
 | Money.code | UseElementRenamed | Quantity.code |

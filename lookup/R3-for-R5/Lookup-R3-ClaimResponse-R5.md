@@ -34,7 +34,7 @@
 | ClaimResponse.item.adjudication.category | UseElementSameName | ClaimResponse.item.adjudication.category |
 | ClaimResponse.item.adjudication.reason | UseElementSameName | ClaimResponse.item.adjudication.reason |
 | ClaimResponse.item.adjudication.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.item.adjudication.amount |
-| ClaimResponse.item.adjudication.value | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.item.adjudication.value |
+| ClaimResponse.item.adjudication.value | UseElementRenamed | ClaimResponse.item.adjudication.quantity |
 | ClaimResponse.item.detail | UseElementSameName | ClaimResponse.item.detail |
 | ClaimResponse.item.detail.id | UseElementSameName | ClaimResponse.item.detail.id |
 | ClaimResponse.item.detail.extension | UseElementSameName | ClaimResponse.item.detail.extension |
@@ -94,7 +94,7 @@
 | ClaimResponse.payment.amount | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.payment.amount |
 | ClaimResponse.payment.identifier | UseElementSameName | ClaimResponse.payment.identifier |
 | ClaimResponse.reserved | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ClaimResponse.reserved |
-| ClaimResponse.form | UseElementRenamed | ClaimResponse.formCode |
+| ClaimResponse.form | UseOneOfElements | ClaimResponse.formCode,ClaimResponse.form |
 | ClaimResponse.processNote | UseElementSameName | ClaimResponse.processNote |
 | ClaimResponse.processNote.id | UseElementSameName | ClaimResponse.processNote.id |
 | ClaimResponse.processNote.extension | UseElementSameName | ClaimResponse.processNote.extension |

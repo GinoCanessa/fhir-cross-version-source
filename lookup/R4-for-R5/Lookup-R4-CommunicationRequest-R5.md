@@ -30,9 +30,9 @@
 | CommunicationRequest.payload.content[x] | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.payload.content |
 | CommunicationRequest.occurrence[x] | UseElementSameName | CommunicationRequest.occurrence[x] |
 | CommunicationRequest.authoredOn | UseElementSameName | CommunicationRequest.authoredOn |
-| CommunicationRequest.requester | UseElementSameName | CommunicationRequest.requester |
+| CommunicationRequest.requester | UseOneOfElements | CommunicationRequest.requester,CommunicationRequest.requester |
 | CommunicationRequest.recipient | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.recipient |
 | CommunicationRequest.sender | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.sender |
-| CommunicationRequest.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.reasonCode |
-| CommunicationRequest.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-CommunicationRequest.reasonReference |
+| CommunicationRequest.reasonCode | UseElementRenamed | CommunicationRequest.reason |
+| CommunicationRequest.reasonReference | UseElementRenamed | CommunicationRequest.reason |
 | CommunicationRequest.note | UseElementSameName | CommunicationRequest.note |

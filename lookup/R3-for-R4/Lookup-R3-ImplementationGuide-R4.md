@@ -39,7 +39,7 @@
 | ImplementationGuide.package.resource.id | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.id |
 | ImplementationGuide.package.resource.extension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.extension |
 | ImplementationGuide.package.resource.modifierExtension | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.modifierExtension |
-| ImplementationGuide.package.resource.example | UseElementRenamed | ImplementationGuide.definition.resource.example[x] |
+| ImplementationGuide.package.resource.example | UseOneOfElements | ImplementationGuide.definition.resource.example[x],ImplementationGuide.definition.resource.example[x] |
 | ImplementationGuide.package.resource.name | UseElementRenamed | ImplementationGuide.definition.resource.name |
 | ImplementationGuide.package.resource.description | UseElementRenamed | ImplementationGuide.definition.resource.description |
 | ImplementationGuide.package.resource.acronym | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImplementationGuide.package.resource.acronym |

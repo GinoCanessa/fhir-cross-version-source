@@ -18,8 +18,8 @@
 | DeviceUseStatement.timing[x] | UseElementRenamed | DeviceUsage.timing[x] |
 | DeviceUseStatement.recordedOn | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.recordedOn |
 | DeviceUseStatement.source | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.source |
-| DeviceUseStatement.device | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.device |
+| DeviceUseStatement.device | UseElementRenamed | DeviceUsage.device |
 | DeviceUseStatement.reasonCode | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.reasonCode |
 | DeviceUseStatement.reasonReference | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.reasonReference |
-| DeviceUseStatement.bodySite | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-DeviceUseStatement.bodySite |
+| DeviceUseStatement.bodySite | UseElementRenamed | DeviceUsage.bodySite |
 | DeviceUseStatement.note | UseElementRenamed | DeviceUsage.note |

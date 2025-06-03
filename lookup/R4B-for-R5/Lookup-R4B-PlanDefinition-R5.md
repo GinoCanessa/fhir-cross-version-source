@@ -57,7 +57,7 @@
 | PlanDefinition.goal.target.detail[x] | UseElementSameName | PlanDefinition.goal.target.detail[x] |
 | PlanDefinition.goal.target.due | UseElementSameName | PlanDefinition.goal.target.due |
 | PlanDefinition.action | UseElementSameName | PlanDefinition.action |
-| PlanDefinition.action.id | UseElementSameName | PlanDefinition.action.id |
+| PlanDefinition.action.id | UseOneOfElements | PlanDefinition.action.id,PlanDefinition.action.linkId |
 | PlanDefinition.action.extension | UseElementSameName | PlanDefinition.action.extension |
 | PlanDefinition.action.modifierExtension | UseElementSameName | PlanDefinition.action.modifierExtension |
 | PlanDefinition.action.prefix | UseElementSameName | PlanDefinition.action.prefix |
@@ -76,15 +76,15 @@
 | PlanDefinition.action.condition.extension | UseElementSameName | PlanDefinition.action.condition.extension |
 | PlanDefinition.action.condition.modifierExtension | UseElementSameName | PlanDefinition.action.condition.modifierExtension |
 | PlanDefinition.action.condition.kind | UseElementSameName | PlanDefinition.action.condition.kind |
-| PlanDefinition.action.condition.expression | UseElementSameName | PlanDefinition.action.condition.expression |
-| PlanDefinition.action.input | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.input |
-| PlanDefinition.action.output | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.output |
+| PlanDefinition.action.condition.expression | UseOneOfElements | PlanDefinition.action.condition.expression,PlanDefinition.action.condition.expression,PlanDefinition.action.condition.expression |
+| PlanDefinition.action.input | UseElementRenamed | PlanDefinition.action.input.requirement |
+| PlanDefinition.action.output | UseElementRenamed | PlanDefinition.action.output.requirement |
 | PlanDefinition.action.relatedAction | UseElementSameName | PlanDefinition.action.relatedAction |
 | PlanDefinition.action.relatedAction.id | UseElementSameName | PlanDefinition.action.relatedAction.id |
 | PlanDefinition.action.relatedAction.extension | UseElementSameName | PlanDefinition.action.relatedAction.extension |
 | PlanDefinition.action.relatedAction.modifierExtension | UseElementSameName | PlanDefinition.action.relatedAction.modifierExtension |
 | PlanDefinition.action.relatedAction.actionId | UseElementRenamed | PlanDefinition.action.relatedAction.targetId |
-| PlanDefinition.action.relatedAction.relationship | UseElementSameName | PlanDefinition.action.relatedAction.relationship |
+| PlanDefinition.action.relatedAction.relationship | UseOneOfElements | PlanDefinition.action.relatedAction.relationship,PlanDefinition.action.relatedAction.endRelationship |
 | PlanDefinition.action.relatedAction.offset[x] | UseElementSameName | PlanDefinition.action.relatedAction.offset[x] |
 | PlanDefinition.action.timing[x] | UseExtension | http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.timing |
 | PlanDefinition.action.participant | UseElementSameName | PlanDefinition.action.participant |
@@ -106,5 +106,5 @@
 | PlanDefinition.action.dynamicValue.extension | UseElementSameName | PlanDefinition.action.dynamicValue.extension |
 | PlanDefinition.action.dynamicValue.modifierExtension | UseElementSameName | PlanDefinition.action.dynamicValue.modifierExtension |
 | PlanDefinition.action.dynamicValue.path | UseElementSameName | PlanDefinition.action.dynamicValue.path |
-| PlanDefinition.action.dynamicValue.expression | UseElementSameName | PlanDefinition.action.dynamicValue.expression |
+| PlanDefinition.action.dynamicValue.expression | UseOneOfElements | PlanDefinition.action.dynamicValue.expression,PlanDefinition.action.dynamicValue.expression,PlanDefinition.action.dynamicValue.expression |
 | PlanDefinition.action.action | UseElementSameName | PlanDefinition.action.action |

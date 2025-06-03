@@ -48,7 +48,7 @@
 | Consent.provision.action | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.action |
 | Consent.provision.securityLabel | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.securityLabel |
 | Consent.provision.purpose | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.purpose |
-| Consent.provision.class | UseElementRenamed | Consent.except.class |
+| Consent.provision.class | UseOneOfElements | Consent.except.class,Consent.except.class |
 | Consent.provision.code | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.code |
 | Consent.provision.dataPeriod | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.dataPeriod |
 | Consent.provision.data | UseExtension | http://hl7.org/fhir/4.0/StructureDefinition/extension-Consent.provision.data |

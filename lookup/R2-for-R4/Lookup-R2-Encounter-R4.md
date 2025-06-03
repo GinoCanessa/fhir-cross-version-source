@@ -36,7 +36,7 @@
 | Encounter.length | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.length |
 | Encounter.reason | UseElementRenamed | Encounter.reasonCode |
 | Encounter.indication | UseExtension | http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.indication |
-| Encounter.hospitalization | UseElementRenamed | Encounter.diagnosis |
+| Encounter.hospitalization | UseOneOfElements | Encounter.diagnosis,Encounter.hospitalization |
 | Encounter.hospitalization.id | UseElementSameName | Encounter.hospitalization.id |
 | Encounter.hospitalization.extension | UseElementSameName | Encounter.hospitalization.extension |
 | Encounter.hospitalization.modifierExtension | UseElementSameName | Encounter.hospitalization.modifierExtension |

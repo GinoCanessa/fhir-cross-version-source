@@ -42,12 +42,12 @@
 | ImagingStudy.series.bodySite | UseElementSameName | ImagingStudy.series.bodySite |
 | ImagingStudy.series.laterality | UseElementSameName | ImagingStudy.series.laterality |
 | ImagingStudy.series.started | UseElementSameName | ImagingStudy.series.started |
-| ImagingStudy.series.performer | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.performer |
+| ImagingStudy.series.performer | UseElementRenamed | ImagingStudy.series.performer.actor |
 | ImagingStudy.series.instance | UseElementSameName | ImagingStudy.series.instance |
 | ImagingStudy.series.instance.id | UseElementSameName | ImagingStudy.series.instance.id |
 | ImagingStudy.series.instance.extension | UseElementSameName | ImagingStudy.series.instance.extension |
 | ImagingStudy.series.instance.modifierExtension | UseElementSameName | ImagingStudy.series.instance.modifierExtension |
 | ImagingStudy.series.instance.uid | UseElementSameName | ImagingStudy.series.instance.uid |
 | ImagingStudy.series.instance.number | UseElementSameName | ImagingStudy.series.instance.number |
-| ImagingStudy.series.instance.sopClass | UseExtension | http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.instance.sopClass |
+| ImagingStudy.series.instance.sopClass | UseElementSameName | ImagingStudy.series.instance.sopClass |
 | ImagingStudy.series.instance.title | UseElementSameName | ImagingStudy.series.instance.title |

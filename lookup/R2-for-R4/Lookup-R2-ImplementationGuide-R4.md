@@ -24,7 +24,7 @@
 | ImplementationGuide.contact.telecom | UseExtensionFromAncestor | - |
 | ImplementationGuide.date | UseElementSameName | ImplementationGuide.date |
 | ImplementationGuide.description | UseElementSameName | ImplementationGuide.description |
-| ImplementationGuide.useContext | UseElementSameName | ImplementationGuide.useContext |
+| ImplementationGuide.useContext | UseOneOfElements | ImplementationGuide.useContext,ImplementationGuide.jurisdiction |
 | ImplementationGuide.copyright | UseElementSameName | ImplementationGuide.copyright |
 | ImplementationGuide.fhirVersion | UseElementSameName | ImplementationGuide.fhirVersion |
 | ImplementationGuide.dependency | UseElementRenamed | ImplementationGuide.dependsOn |
