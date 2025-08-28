@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ResearchStudy.focus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.focus",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ResearchStudy_focus",
+  "title": "Cross-version Extension for R5.ResearchStudy.focus for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.8880586-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ResearchStudy.focus from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy.focus"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Drugs, devices, etc. under study",
+        "definition": "The medication(s), food(s), therapy(ies), device(s) or other concerns or interventions that the study is seeking to gain more information about.",
+        "comment": "`ResearchStudy.focus` maps to R4B `ResearchStudy.focus`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.focus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Drugs, devices, etc. under study",
+        "definition": "The medication(s), food(s), therapy(ies), device(s) or other concerns or interventions that the study is seeking to gain more information about.",
+        "comment": "`ResearchStudy.focus` maps to R4B `ResearchStudy.focus`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Common codes of research study focus",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-research-study-focus-type-for-R4B"
+        }
+      }
+    ]
+  }
+}

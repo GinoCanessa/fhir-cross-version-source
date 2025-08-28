@@ -1,0 +1,47 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [EvidenceReport](https://hl7.org/fhir/R4B/EvidenceReport.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [EvidenceReport.meta](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.meta](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.implicitRules](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.implicitRules](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.language](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.language](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.text](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.text](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.contained](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.contained](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.url](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.url](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.status](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.status](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.useContext](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.useContext](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.identifier](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.identifier](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.relatedIdentifier](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.relatedIdentifier](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.citeAs[x]](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.citeAs[x]](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.type](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.type](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.note](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.note](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.relatedArtifact](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.relatedArtifact](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.characteristic](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.characteristic](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.characteristic.code](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.characteristic.code](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.characteristic.value[x]](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.characteristic.value[x]](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.characteristic.exclude](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.characteristic.exclude](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.characteristic.period](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.characteristic.period](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.subject.note](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.subject.note](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.publisher](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.publisher](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.contact](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.contact](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.author](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.author](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.editor](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.editor](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.reviewer](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.reviewer](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.endorser](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.endorser](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.relatesTo](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.relatesTo](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.relatesTo.code](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.relatesTo.code](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.relatesTo.target[x]](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceReport.relatesTo.target](StructureDefinition-ext-R4B-EvidenceReport.re.target.html) |
+| [EvidenceReport.section](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.title](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.title](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.focus](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.focus](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.focusReference](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.focusReference](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.author](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceReport.section.author](StructureDefinition-ext-R4B-EvidenceReport.se.author.html) |
+| [EvidenceReport.section.text](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.text](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.mode](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.mode](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.orderedBy](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.orderedBy](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.entryClassifier](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.entryClassifier](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.entryReference](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.entryReference](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.entryQuantity](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.entryQuantity](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.emptyReason](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.emptyReason](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |
+| [EvidenceReport.section.section](https://hl7.org/fhir/R4B/EvidenceReport.html#resource) | `UseElementSameName` | [EvidenceReport.section.section](https://hl7.org/fhir/R5/EvidenceReport.html#resource) |

@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-EvidenceVariable.approvalDate",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-EvidenceVariable.approvalDate",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_EvidenceVariable_approvalDate",
+  "title": "Cross-version Extension for R4.EvidenceVariable.approvalDate for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:42.3632703-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents EvidenceVariable.approvalDate from http://hl7.org/fhir/StructureDefinition/EvidenceVariable|4.0.1 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "EvidenceVariable"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "When the evidence variable was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "comment": "`EvidenceVariable.approvalDate` has no related element in R4B:EvidenceVariable",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-EvidenceVariable.approvalDate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "When the evidence variable was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "comment": "`EvidenceVariable.approvalDate` has no related element in R4B:EvidenceVariable",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

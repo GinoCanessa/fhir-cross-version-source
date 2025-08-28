@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-HealthcareService.serviceType",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-HealthcareService.serviceType",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_HealthcareService_serviceType",
+  "title": "Cross-version Extension for R2.HealthcareService.serviceType for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.2821685-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents HealthcareService.serviceType from http://hl7.org/fhir/StructureDefinition/HealthcareService|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Specific service delivered or performed",
+        "definition": "A specific type of service that may be delivered or performed.",
+        "comment": "`HealthcareService` maps to R5 `HealthcareService`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Type of service delivered or performed",
+        "definition": "The specific type of service being delivered or performed.",
+        "comment": "`HealthcareService` maps to R5 `HealthcareService`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of service delivered or performed",
+        "definition": "The specific type of service being delivered or performed.",
+        "comment": "`HealthcareService` maps to R5 `HealthcareService`.  So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Additional details about where the content was created (e.g. clinical specialty).",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-c80-practice-codes-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:specialty",
+        "path": "Extension.extension",
+        "sliceName": "specialty",
+        "short": "Specialties handled by the Service Site",
+        "definition": "Collection of specialties handled by the service site. This is more of a medical term.",
+        "comment": "`HealthcareService` maps to R5 `HealthcareService`.  So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialty.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialty"
+      },
+      {
+        "id": "Extension.extension:specialty.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Specialties handled by the Service Site",
+        "definition": "Collection of specialties handled by the service site. This is more of a medical term.",
+        "comment": "`HealthcareService` maps to R5 `HealthcareService`.  So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-HealthcareService.serviceType"
+      }
+    ]
+  }
+}

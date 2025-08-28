@@ -1,0 +1,44 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [ImagingStudy](https://hl7.org/fhir/STU3/ImagingStudy.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ImagingStudy.meta](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.meta](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.implicitRules](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.implicitRules](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.language](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.language](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.text](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.text](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.contained](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.contained](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.uid](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.uid](StructureDefinition-ext-R3-ImagingStudy.uid.html) |
+| [ImagingStudy.accession](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementRenamed` | [ImagingStudy.identifier](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.identifier](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.identifier](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.availability](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementRenamed` | [ImagingStudy.status](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.modalityList](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.modalityList](StructureDefinition-ext-R3-ImagingStudy.modalityList.html) |
+| [ImagingStudy.patient](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementRenamed` | [ImagingStudy.subject](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.context](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.context](StructureDefinition-ext-R3-ImagingStudy.context.html) |
+| [ImagingStudy.started](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.started](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.basedOn](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.basedOn](StructureDefinition-ext-R3-ImagingStudy.basedOn.html) |
+| [ImagingStudy.referrer](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.referrer](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.interpreter](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.interpreter](StructureDefinition-ext-R3-ImagingStudy.interpreter.html) |
+| [ImagingStudy.endpoint](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.endpoint](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.numberOfSeries](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.numberOfSeries](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.numberOfInstances](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.numberOfInstances](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.procedureReference](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.procedureReference](StructureDefinition-ext-R3-ImagingStudy.procedureReference.html) |
+| [ImagingStudy.procedureCode](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.procedureCode](StructureDefinition-ext-R3-ImagingStudy.procedureCode.html) |
+| [ImagingStudy.reason](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.reason](StructureDefinition-ext-R3-ImagingStudy.reason.html) |
+| [ImagingStudy.description](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.description](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.uid](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.uid](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.number](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.number](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.modality](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.modality](StructureDefinition-ext-R3-ImagingStudy.se.modality.html) |
+| [ImagingStudy.series.description](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.description](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.numberOfInstances](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.numberOfInstances](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.availability](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.availability](StructureDefinition-ext-R3-ImagingStudy.se.availability.html) |
+| [ImagingStudy.series.endpoint](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.endpoint](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.bodySite](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.bodySite](StructureDefinition-ext-R3-ImagingStudy.se.bodySite.html) |
+| [ImagingStudy.series.laterality](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.laterality](StructureDefinition-ext-R3-ImagingStudy.se.laterality.html) |
+| [ImagingStudy.series.started](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.started](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.performer](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.performer](StructureDefinition-ext-R3-ImagingStudy.se.performer.html) |
+| [ImagingStudy.series.instance](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.instance](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.instance.uid](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.instance.uid](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.instance.number](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.instance.number](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |
+| [ImagingStudy.series.instance.sopClass](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.series.instance.sopClass](StructureDefinition-ext-R3-ImagingStudy.se.in.sopClass.html) |
+| [ImagingStudy.series.instance.title](https://hl7.org/fhir/STU3/ImagingStudy.html#resource) | `UseElementSameName` | [ImagingStudy.series.instance.title](https://hl7.org/fhir/R5/ImagingStudy.html#resource) |

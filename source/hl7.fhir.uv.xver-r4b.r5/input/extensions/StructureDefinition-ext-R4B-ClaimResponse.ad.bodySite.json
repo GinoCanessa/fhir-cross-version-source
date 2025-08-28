@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-ClaimResponse.ad.bodySite",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ClaimResponse.addItem.bodySite",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_ClaimResponse_ad_bodySite",
+  "title": "Cross-version Extension for R4B.ClaimResponse.addItem.bodySite for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:09.302283-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ClaimResponse.addItem.bodySite from http://hl7.org/fhir/StructureDefinition/ClaimResponse|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ClaimResponse.addItem.bodySite"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Anatomical location",
+        "definition": "Physical service site on the patient (limb, tooth, etc.).",
+        "comment": "`ClaimResponse.addItem.bodySite` maps to R5 `ClaimResponse.addItem.bodySite`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ClaimResponse.addItem.bodySite"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Anatomical location",
+        "definition": "Physical service site on the patient (limb, tooth, etc.).",
+        "comment": "`ClaimResponse.addItem.bodySite` maps to R5 `ClaimResponse.addItem.bodySite`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The code for the teeth, quadrant, sextant and arch.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/tooth|5.0.0"
+        }
+      }
+    ]
+  }
+}

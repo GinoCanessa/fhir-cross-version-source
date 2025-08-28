@@ -1,0 +1,284 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Account.balance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.balance",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Account_balance",
+  "title": "Cross-version Extension for R5.Account.balance for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:48.4725516-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Account.balance from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Account"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Calculated account balance(s)",
+        "definition": "The calculated account balances - these are calculated and processed by the finance system.\r\rThe balances with a `term` that is not current are usually generated/updated by an invoicing or similar process.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:aggregate",
+        "path": "Extension.extension",
+        "sliceName": "aggregate",
+        "short": "Who is expected to pay this part of the balance",
+        "definition": "This cross-version extension represents Account.balance.aggregate from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:aggregate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "aggregate"
+      },
+      {
+        "id": "Extension.extension:aggregate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who is expected to pay this part of the balance",
+        "definition": "This cross-version extension represents Account.balance.aggregate from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the balance was outstanding at the given age.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-account-aggregate-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:term",
+        "path": "Extension.extension",
+        "sliceName": "term",
+        "short": "current | 30 | 60 | 90 | 120",
+        "definition": "The term of the account balances - The balance value is the amount that was outstanding for this age.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:term.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "term"
+      },
+      {
+        "id": "Extension.extension:term.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "current | 30 | 60 | 90 | 120",
+        "definition": "The term of the account balances - The balance value is the amount that was outstanding for this age.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Indicates the balance was outstanding at the given age.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-account-balance-term-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:estimate",
+        "path": "Extension.extension",
+        "sliceName": "estimate",
+        "short": "Estimated balance",
+        "definition": "The amount is only an estimated value - this is likely common for `current` term balances, but not with known terms (that were generated by a backend process).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:estimate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "estimate"
+      },
+      {
+        "id": "Extension.extension:estimate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Estimated balance",
+        "definition": "The amount is only an estimated value - this is likely common for `current` term balances, but not with known terms (that were generated by a backend process).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "short": "Calculated amount",
+        "definition": "The actual balance value calculated for the age defined in the term property.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Calculated amount",
+        "definition": "The actual balance value calculated for the age defined in the term property.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.balance"
+      }
+    ]
+  }
+}

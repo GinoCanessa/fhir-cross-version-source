@@ -1,0 +1,902 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductManufactured",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductManufactured",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductManufactured",
+  "title": "Cross-version Extension for R4.MedicinalProductManufactured for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:45.04361-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductManufactured from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The manufactured item as contained in the packaged medicinal product",
+        "definition": "This cross-version extension represents MedicinalProductManufactured from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturedDoseForm",
+        "path": "Extension.extension",
+        "sliceName": "manufacturedDoseForm",
+        "short": "Dose form as manufactured and before any transformation into the pharmaceutical product",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.manufacturedDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturedDoseForm.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturedDoseForm"
+      },
+      {
+        "id": "Extension.extension:manufacturedDoseForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Dose form as manufactured and before any transformation into the pharmaceutical product",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.manufacturedDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation",
+        "path": "Extension.extension",
+        "sliceName": "unitOfPresentation",
+        "short": "The “real world” units in which the quantity of the manufactured item is described",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.unitOfPresentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "unitOfPresentation"
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The “real world” units in which the quantity of the manufactured item is described",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.unitOfPresentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "The quantity or \"count number\" of the manufactured item",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.quantity from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The quantity or \"count number\" of the manufactured item",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.quantity from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer of the item (Note that this should be named \"manufacturer\" but it currently causes technical issues)",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Manufacturer of the item (Note that this should be named \"manufacturer\" but it currently causes technical issues)",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.ingredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:ingredient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.ingredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics",
+        "path": "Extension.extension",
+        "sliceName": "physicalCharacteristics",
+        "short": "Dimensions, color etc.",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.physicalCharacteristics from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:height",
+        "path": "Extension.extension.extension",
+        "sliceName": "height",
+        "short": "Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.height from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:height.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "height"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:height.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.height from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:width",
+        "path": "Extension.extension.extension",
+        "sliceName": "width",
+        "short": "Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.width from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:width.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "width"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:width.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.width from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:depth",
+        "path": "Extension.extension.extension",
+        "sliceName": "depth",
+        "short": "Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.depth from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:depth.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "depth"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:depth.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.depth from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:weight",
+        "path": "Extension.extension.extension",
+        "sliceName": "weight",
+        "short": "Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.weight from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:weight.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "weight"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:weight.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.weight from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:nominalVolume",
+        "path": "Extension.extension.extension",
+        "sliceName": "nominalVolume",
+        "short": "Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.nominalVolume from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:nominalVolume.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "nominalVolume"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:nominalVolume.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.nominalVolume from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:externalDiameter",
+        "path": "Extension.extension.extension",
+        "sliceName": "externalDiameter",
+        "short": "Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.externalDiameter from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:externalDiameter.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "externalDiameter"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:externalDiameter.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.externalDiameter from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:shape",
+        "path": "Extension.extension.extension",
+        "sliceName": "shape",
+        "short": "Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.shape from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:shape.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "shape"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:shape.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.shape from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:color",
+        "path": "Extension.extension.extension",
+        "sliceName": "color",
+        "short": "Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.color from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:color.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "color"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:color.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.color from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:imprint",
+        "path": "Extension.extension.extension",
+        "sliceName": "imprint",
+        "short": "Where applicable, the imprint can be specified as text",
+        "definition": "This cross-version extension represents ProdCharacteristic.imprint from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:imprint.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "imprint"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:imprint.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the imprint can be specified as text",
+        "definition": "This cross-version extension represents ProdCharacteristic.imprint from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:image",
+        "path": "Extension.extension.extension",
+        "sliceName": "image",
+        "short": "Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations",
+        "definition": "This cross-version extension represents ProdCharacteristic.image from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:image.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "image"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:image.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations",
+        "definition": "This cross-version extension represents ProdCharacteristic.image from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:scoring",
+        "path": "Extension.extension.extension",
+        "sliceName": "scoring",
+        "short": "Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.scoring from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:scoring.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "scoring"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:scoring.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.scoring from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for MedicinalProductManufactured.physicalCharacteristics from FHIR R4",
+        "definition": "Data type name for MedicinalProductManufactured.physicalCharacteristics from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: ProdCharacteristic",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ProdCharacteristic"
+      },
+      {
+        "id": "Extension.extension:physicalCharacteristics.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "physicalCharacteristics"
+      },
+      {
+        "id": "Extension.extension:otherCharacteristics",
+        "path": "Extension.extension",
+        "sliceName": "otherCharacteristics",
+        "short": "Other codeable characteristics",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.otherCharacteristics from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:otherCharacteristics.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "otherCharacteristics"
+      },
+      {
+        "id": "Extension.extension:otherCharacteristics.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Other codeable characteristics",
+        "definition": "This cross-version extension represents MedicinalProductManufactured.otherCharacteristics from http://hl7.org/fhir/StructureDefinition/MedicinalProductManufactured|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductManufactured"
+      }
+    ]
+  }
+}

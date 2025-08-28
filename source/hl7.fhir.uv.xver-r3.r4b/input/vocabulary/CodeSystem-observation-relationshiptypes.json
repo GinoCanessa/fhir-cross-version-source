@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "observation-relationshiptypes",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    }
+  ],
+  "url": "http://hl7.org/fhir/observation-relationshiptypes",
+  "version": "3.0.2",
+  "name": "ObservationRelationshipType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Orders and Observations",
+  "contact": [
+    {
+      "name": "Orders and Observations",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "Codes specifying how two observations are related.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/observation-relationshiptypes",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "has-member",
+      "display": "Has Member",
+      "definition": "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group."
+    },
+    {
+      "code": "derived-from",
+      "display": "Derived From",
+      "definition": "The target resource (Observation or QuestionnaireResponse) is part of the information from which this observation value is derived. (e.g. calculated anion gap, Apgar score)  NOTE:  \"derived-from\" is the only logical choice when referencing QuestionnaireResponse."
+    },
+    {
+      "code": "sequel-to",
+      "display": "Sequel To",
+      "definition": "This observation follows the target observation (e.g. timed tests such as Glucose Tolerance Test)."
+    },
+    {
+      "code": "replaces",
+      "display": "Replaces",
+      "definition": "This observation replaces a previous observation (i.e. a revised value). The target observation is now obsolete."
+    },
+    {
+      "code": "qualified-by",
+      "display": "Qualified By",
+      "definition": "The value of the target observation qualifies (refines) the semantics of the source observation (e.g. a lipemia measure target from a plasma measure)."
+    },
+    {
+      "code": "interfered-by",
+      "display": "Interfered By",
+      "definition": "The value of the target observation interferes (degrades quality, or prevents valid observation) with the semantics of the source observation (e.g. a hemolysis measure target from a plasma potassium measure, which has no value)."
+    }
+  ]
+}

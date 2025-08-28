@@ -1,0 +1,1413 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-InventoryItem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-InventoryItem",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_InventoryItem",
+  "title": "Cross-version Extension for R5.InventoryItem for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:54.880682-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents InventoryItem from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A functional description of an inventory item used in inventory and supply-related workflows",
+        "definition": "This cross-version extension represents InventoryItem from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "active | inactive | entered-in-error | unknown",
+        "definition": "Status of the item entry.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "active | inactive | entered-in-error | unknown",
+        "definition": "Status of the item entry.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Status of the inventory item.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-inventoryitem-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "Category or class of the item",
+        "definition": "This cross-version extension represents InventoryItem.category from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Category or class of the item",
+        "definition": "This cross-version extension represents InventoryItem.category from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "The item name(s) - the brand name, or common name, functional name, generic name or others",
+        "definition": "The item name(s) - the brand name, or common name, functional name, generic name.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:nameType",
+        "path": "Extension.extension.extension",
+        "sliceName": "nameType",
+        "short": "The type of name e.g. 'brand-name', 'functional-name', 'common-name'",
+        "definition": "This cross-version extension represents InventoryItem.name.nameType from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:nameType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "nameType"
+      },
+      {
+        "id": "Extension.extension:name.extension:nameType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of name e.g. 'brand-name', 'functional-name', 'common-name'",
+        "definition": "This cross-version extension represents InventoryItem.name.nameType from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Name types.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-inventoryitem-nametype-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "short": "The language used to express the item name",
+        "definition": "The language that the item name is expressed in.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:name.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The language used to express the item name",
+        "definition": "The language that the item name is expressed in.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Name languages.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-languages-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "The name or designation of the item",
+        "definition": "The name or designation that the item is given.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The name or designation of the item",
+        "definition": "The name or designation that the item is given.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization",
+        "path": "Extension.extension",
+        "sliceName": "responsibleOrganization",
+        "short": "Organization(s) responsible for the product",
+        "definition": "This cross-version extension represents InventoryItem.responsibleOrganization from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "The role of the organization e.g. manufacturer, distributor, or other",
+        "definition": "The role of the organization e.g. manufacturer, distributor, etc.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The role of the organization e.g. manufacturer, distributor, or other",
+        "definition": "The role of the organization e.g. manufacturer, distributor, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:organization",
+        "path": "Extension.extension.extension",
+        "sliceName": "organization",
+        "short": "An organization that is associated with the item",
+        "definition": "An organization that has an association with the item, e.g. manufacturer, distributor, responsible, etc.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:organization.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "organization"
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.extension:organization.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An organization that is associated with the item",
+        "definition": "An organization that has an association with the item, e.g. manufacturer, distributor, responsible, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsibleOrganization.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "responsibleOrganization"
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Descriptive characteristics of the item",
+        "definition": "The descriptive characteristics of the inventory item.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "short": "The language that is used in the item description",
+        "definition": "The language for the item description, when an item must be described in different languages and those languages may be authoritative and not translations of a 'main' language.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:description.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The language that is used in the item description",
+        "definition": "The language for the item description, when an item must be described in different languages and those languages may be authoritative and not translations of a 'main' language.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Description languages.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-languages-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:description.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Textual description of the item",
+        "definition": "This cross-version extension represents InventoryItem.description.description from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Textual description of the item",
+        "definition": "This cross-version extension represents InventoryItem.description.description from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:inventoryStatus",
+        "path": "Extension.extension",
+        "sliceName": "inventoryStatus",
+        "short": "The usage status like recalled, in use, discarded",
+        "definition": "The usage status e.g. recalled, in use, discarded... This can be used to indicate that the items have been taken out of inventory, or are in use, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:inventoryStatus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "inventoryStatus"
+      },
+      {
+        "id": "Extension.extension:inventoryStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The usage status like recalled, in use, discarded",
+        "definition": "The usage status e.g. recalled, in use, discarded... This can be used to indicate that the items have been taken out of inventory, or are in use, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:baseUnit",
+        "path": "Extension.extension",
+        "sliceName": "baseUnit",
+        "short": "The base unit of measure - the unit in which the product is used or counted",
+        "definition": "This cross-version extension represents InventoryItem.baseUnit from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:baseUnit.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "baseUnit"
+      },
+      {
+        "id": "Extension.extension:baseUnit.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The base unit of measure - the unit in which the product is used or counted",
+        "definition": "This cross-version extension represents InventoryItem.baseUnit from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:netContent",
+        "path": "Extension.extension",
+        "sliceName": "netContent",
+        "short": "Net content or amount present in the item",
+        "definition": "This cross-version extension represents InventoryItem.netContent from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:netContent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "netContent"
+      },
+      {
+        "id": "Extension.extension:netContent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Net content or amount present in the item",
+        "definition": "This cross-version extension represents InventoryItem.netContent from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:association",
+        "path": "Extension.extension",
+        "sliceName": "association",
+        "short": "Association with other items or products",
+        "definition": "This cross-version extension represents InventoryItem.association from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:association.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:association.extension:associationType",
+        "path": "Extension.extension.extension",
+        "sliceName": "associationType",
+        "short": "The type of association between the device and the other item",
+        "definition": "This attribute defined the type of association when establishing associations or relations between items, e.g. 'packaged within' or 'used with' or 'to be mixed with.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:association.extension:associationType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "associationType"
+      },
+      {
+        "id": "Extension.extension:association.extension:associationType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of association between the device and the other item",
+        "definition": "This attribute defined the type of association when establishing associations or relations between items, e.g. 'packaged within' or 'used with' or 'to be mixed with.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:association.extension:relatedItem",
+        "path": "Extension.extension.extension",
+        "sliceName": "relatedItem",
+        "short": "The related item or product",
+        "definition": "This cross-version extension represents InventoryItem.association.relatedItem from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:association.extension:relatedItem.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relatedItem"
+      },
+      {
+        "id": "Extension.extension:association.extension:relatedItem.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The related item or product",
+        "definition": "This cross-version extension represents InventoryItem.association.relatedItem from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:association.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "The quantity of the product in this product",
+        "definition": "The quantity of the related product in this product - Numerator is the quantity of the related product. Denominator is the quantity of the present product. For example a value of 20 means that this product contains 20 units of the related product; a value of 1:20 means the inverse - that the contained product contains 20 units of the present product.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:association.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:association.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The quantity of the product in this product",
+        "definition": "The quantity of the related product in this product - Numerator is the quantity of the related product. Denominator is the quantity of the present product. For example a value of 20 means that this product contains 20 units of the related product; a value of 1:20 means the inverse - that the contained product contains 20 units of the present product.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:association.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "association"
+      },
+      {
+        "id": "Extension.extension:characteristic",
+        "path": "Extension.extension",
+        "sliceName": "characteristic",
+        "short": "Characteristic of the item",
+        "definition": "The descriptive or identifying characteristics of the item.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:characteristicType",
+        "path": "Extension.extension.extension",
+        "sliceName": "characteristicType",
+        "short": "The characteristic that is being defined",
+        "definition": "The type of characteristic that is being defined.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:characteristicType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "characteristicType"
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:characteristicType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The characteristic that is being defined",
+        "definition": "The type of characteristic that is being defined.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "The value of the attribute",
+        "definition": "This cross-version extension represents InventoryItem.characteristic.value[x] from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The value of the attribute",
+        "definition": "This cross-version extension represents InventoryItem.characteristic.value[x] from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "characteristic"
+      },
+      {
+        "id": "Extension.extension:instance",
+        "path": "Extension.extension",
+        "sliceName": "instance",
+        "short": "Instances or occurrences of the product",
+        "definition": "This cross-version extension represents InventoryItem.instance from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "The identifier for the physical instance, typically a serial number",
+        "definition": "This cross-version extension represents InventoryItem.instance.identifier from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The identifier for the physical instance, typically a serial number",
+        "definition": "This cross-version extension represents InventoryItem.instance.identifier from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "lotNumber",
+        "short": "The lot or batch number of the item",
+        "definition": "This cross-version extension represents InventoryItem.instance.lotNumber from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lotNumber"
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The lot or batch number of the item",
+        "definition": "This cross-version extension represents InventoryItem.instance.lotNumber from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry",
+        "path": "Extension.extension.extension",
+        "sliceName": "expiry",
+        "short": "The expiry date or date and time for the product",
+        "definition": "This cross-version extension represents InventoryItem.instance.expiry from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expiry"
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The expiry date or date and time for the product",
+        "definition": "This cross-version extension represents InventoryItem.instance.expiry from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:subject",
+        "path": "Extension.extension.extension",
+        "sliceName": "subject",
+        "short": "The subject that the item is associated with",
+        "definition": "This cross-version extension represents InventoryItem.instance.subject from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:subject.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subject"
+      },
+      {
+        "id": "Extension.extension:instance.extension:subject.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The subject that the item is associated with",
+        "definition": "This cross-version extension represents InventoryItem.instance.subject from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:location",
+        "path": "Extension.extension.extension",
+        "sliceName": "location",
+        "short": "The location that the item is associated with",
+        "definition": "This cross-version extension represents InventoryItem.instance.location from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:location.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:instance.extension:location.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The location that the item is associated with",
+        "definition": "This cross-version extension represents InventoryItem.instance.location from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:productReference",
+        "path": "Extension.extension",
+        "sliceName": "productReference",
+        "short": "Link to a product resource used in clinical workflows",
+        "definition": "This cross-version extension represents InventoryItem.productReference from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productReference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productReference"
+      },
+      {
+        "id": "Extension.extension:productReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Link to a product resource used in clinical workflows",
+        "definition": "This cross-version extension represents InventoryItem.productReference from http://hl7.org/fhir/StructureDefinition/InventoryItem|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-InventoryItem"
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ValueSet.co.in.co.designation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ValueSet.compose.include.concept.designation",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ValueSet_co_in_co_designation",
+  "title": "Cross-version Extension for R2.ValueSet.compose.include.concept.designation for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:55.8061646-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ValueSet.compose.include.concept.designation from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem"
+    },
+    {
+      "type": "element",
+      "expression": "ValueSet.compose.include.concept.designation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional representations for this valueset",
+        "definition": "Additional representations for this concept when used in this value set - other languages, aliases, specialized purposes, used for particular purposes, etc.",
+        "comment": "`ValueSet.compose.include.concept.designation` maps to R4 `ValueSet.compose.include.concept.designation`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:_datatype",
+        "path": "Extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ValueSet.compose.include.concept.designation from FHIR R2",
+        "definition": "Data type name for ValueSet.compose.include.concept.designation from FHIR R2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:_datatype.value[x]",
+        "path": "Extension.extension.value[x]",
+        "comment": "Must be: ValueSet.codeSystem.concept.designation",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ValueSet.codeSystem.concept.designation"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ValueSet.compose.include.concept.designation"
+      }
+    ]
+  }
+}

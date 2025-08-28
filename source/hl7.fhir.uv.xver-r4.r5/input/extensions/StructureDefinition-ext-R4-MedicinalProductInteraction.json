@@ -1,0 +1,408 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductInteraction",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductInteraction",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductInteraction",
+  "title": "Cross-version Extension for R4.MedicinalProductInteraction for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:45.0352429-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductInteraction from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MedicinalProductInteraction",
+        "definition": "The interactions of the medicinal product with other medicinal products, or other forms of interactions.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "The interaction described",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.description from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The interaction described",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.description from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:interactant",
+        "path": "Extension.extension",
+        "sliceName": "interactant",
+        "short": "The specific medication, food or laboratory test that interacts",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.interactant from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interactant.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interactant.extension:item[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "item[x]",
+        "short": "The specific medication, food or laboratory test that interacts",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.interactant.item[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interactant.extension:item[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item[x]"
+      },
+      {
+        "id": "Extension.extension:interactant.extension:item[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The specific medication, food or laboratory test that interacts",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.interactant.item[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:interactant.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "interactant"
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.type from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.type from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:effect",
+        "path": "Extension.extension",
+        "sliceName": "effect",
+        "short": "The effect of the interaction, for example \"reduced gastric absorption of primary medication\"",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.effect from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:effect.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "effect"
+      },
+      {
+        "id": "Extension.extension:effect.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The effect of the interaction, for example \"reduced gastric absorption of primary medication\"",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.effect from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:incidence",
+        "path": "Extension.extension",
+        "sliceName": "incidence",
+        "short": "The incidence of the interaction, e.g. theoretical, observed",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.incidence from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:incidence.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "incidence"
+      },
+      {
+        "id": "Extension.extension:incidence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The incidence of the interaction, e.g. theoretical, observed",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.incidence from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:management",
+        "path": "Extension.extension",
+        "sliceName": "management",
+        "short": "Actions for managing the interaction",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.management from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:management.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "management"
+      },
+      {
+        "id": "Extension.extension:management.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Actions for managing the interaction",
+        "definition": "This cross-version extension represents MedicinalProductInteraction.management from http://hl7.org/fhir/StructureDefinition/MedicinalProductInteraction|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductInteraction"
+      }
+    ]
+  }
+}

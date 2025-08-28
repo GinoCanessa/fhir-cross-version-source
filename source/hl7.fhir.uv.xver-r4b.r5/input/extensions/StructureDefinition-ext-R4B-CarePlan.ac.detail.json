@@ -1,0 +1,895 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-CarePlan.ac.detail",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-CarePlan.activity.detail",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_CarePlan_ac_detail",
+  "title": "Cross-version Extension for R4B.CarePlan.activity.detail for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:08.6051381-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents CarePlan.activity.detail from http://hl7.org/fhir/StructureDefinition/CarePlan|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CarePlan.activity"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "In-line definition of activity",
+        "definition": "A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know about specific resources such as procedure etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:kind",
+        "path": "Extension.extension",
+        "sliceName": "kind",
+        "short": "Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription",
+        "definition": "A description of the kind of resource the in-line definition of a care plan activity is representing.  The CarePlan.activity.detail is an in-line definition when a resource is not referenced using CarePlan.activity.reference.  For example, a MedicationRequest, a ServiceRequest, or a CommunicationRequest.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:kind.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "kind"
+      },
+      {
+        "id": "Extension.extension:kind.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Appointment | CommunicationRequest | DeviceRequest | MedicationRequest | NutritionOrder | Task | ServiceRequest | VisionPrescription",
+        "definition": "A description of the kind of resource the in-line definition of a care plan activity is representing.  The CarePlan.activity.detail is an in-line definition when a resource is not referenced using CarePlan.activity.reference.  For example, a MedicationRequest, a ServiceRequest, or a CommunicationRequest.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-care-plan-activity-kind-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesCanonical",
+        "short": "Instantiates FHIR protocol or definition",
+        "definition": "The URL pointing to a FHIR-defined protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Instantiates FHIR protocol or definition",
+        "definition": "The URL pointing to a FHIR-defined protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instantiatesUri",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesUri",
+        "short": "Instantiates external protocol or definition",
+        "definition": "The URL pointing to an externally maintained protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Instantiates external protocol or definition",
+        "definition": "The URL pointing to an externally maintained protocol, guideline, questionnaire or other definition that is adhered to in whole or in part by this CarePlan activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Detail type of activity",
+        "definition": "Detailed description of the type of planned activity; e.g. what lab test, what procedure, what kind of encounter.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Detail type of activity",
+        "definition": "Detailed description of the type of planned activity; e.g. what lab test, what procedure, what kind of encounter.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Detailed description of the type of activity; e.g. What lab test, what procedure, what kind of encounter.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-procedure-code-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonCode",
+        "path": "Extension.extension",
+        "sliceName": "reasonCode",
+        "short": "Why activity should be done or why activity was prohibited",
+        "definition": "Provides the rationale that drove the inclusion of this particular activity as part of the plan or the reason why the activity was prohibited.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonCode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reasonCode"
+      },
+      {
+        "id": "Extension.extension:reasonCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why activity should be done or why activity was prohibited",
+        "definition": "Provides the rationale that drove the inclusion of this particular activity as part of the plan or the reason why the activity was prohibited.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Identifies why a care plan activity is needed.  Can include any health condition codes as well as such concepts as \"general wellness\", prophylaxis, surgical preparation, etc.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-clinical-findings-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonReference",
+        "path": "Extension.extension",
+        "sliceName": "reasonReference",
+        "short": "Why activity is needed",
+        "definition": "Indicates another resource, such as the health condition(s), whose existence justifies this request and drove the inclusion of this particular activity as part of the plan.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonReference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reasonReference"
+      },
+      {
+        "id": "Extension.extension:reasonReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why activity is needed",
+        "definition": "Indicates another resource, such as the health condition(s), whose existence justifies this request and drove the inclusion of this particular activity as part of the plan.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:goal",
+        "path": "Extension.extension",
+        "sliceName": "goal",
+        "short": "Goals this activity relates to",
+        "definition": "Internal reference that identifies the goals that this activity is intended to contribute towards meeting.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:goal.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "goal"
+      },
+      {
+        "id": "Extension.extension:goal.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Goals this activity relates to",
+        "definition": "Internal reference that identifies the goals that this activity is intended to contribute towards meeting.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error",
+        "definition": "Identifies what progress is being made for the specific activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error",
+        "definition": "Identifies what progress is being made for the specific activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-care-plan-activity-status-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension",
+        "sliceName": "statusReason",
+        "short": "Reason for current status",
+        "definition": "Provides reason why the activity isn't yet started, is on hold, was cancelled, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statusReason"
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reason for current status",
+        "definition": "Provides reason why the activity isn't yet started, is on hold, was cancelled, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:doNotPerform",
+        "path": "Extension.extension",
+        "sliceName": "doNotPerform",
+        "short": "If true, activity is prohibiting action",
+        "definition": "If true, indicates that the described activity is one that must NOT be engaged in when following the plan.  If false, or missing, indicates that the described activity is one that should be engaged in when following the plan.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:doNotPerform.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "doNotPerform"
+      },
+      {
+        "id": "Extension.extension:doNotPerform.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If true, activity is prohibiting action",
+        "definition": "If true, indicates that the described activity is one that must NOT be engaged in when following the plan.  If false, or missing, indicates that the described activity is one that should be engaged in when following the plan.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:scheduled[x]",
+        "path": "Extension.extension",
+        "sliceName": "scheduled[x]",
+        "short": "When activity is to occur",
+        "definition": "The period, timing or frequency upon which the described activity is to occur.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:scheduled[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "scheduled[x]"
+      },
+      {
+        "id": "Extension.extension:scheduled[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When activity is to occur",
+        "definition": "The period, timing or frequency upon which the described activity is to occur.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "short": "Where it should happen",
+        "definition": "Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where it should happen",
+        "definition": "Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performer",
+        "path": "Extension.extension",
+        "sliceName": "performer",
+        "short": "Who will be responsible?",
+        "definition": "Identifies who's expected to be involved in the activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:performer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "performer"
+      },
+      {
+        "id": "Extension.extension:performer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who will be responsible?",
+        "definition": "Identifies who's expected to be involved in the activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:product[x]",
+        "path": "Extension.extension",
+        "sliceName": "product[x]",
+        "short": "What is to be administered/supplied",
+        "definition": "Identifies the food, drug or other product to be consumed or supplied in the activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:product[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "product[x]"
+      },
+      {
+        "id": "Extension.extension:product[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "What is to be administered/supplied",
+        "definition": "Identifies the food, drug or other product to be consumed or supplied in the activity.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A product supplied or administered as part of a care plan activity.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-medication-codes-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:dailyAmount",
+        "path": "Extension.extension",
+        "sliceName": "dailyAmount",
+        "short": "How to consume/day?",
+        "definition": "Identifies the quantity expected to be consumed in a given day.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dailyAmount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dailyAmount"
+      },
+      {
+        "id": "Extension.extension:dailyAmount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How to consume/day?",
+        "definition": "Identifies the quantity expected to be consumed in a given day.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "How much to administer/supply/consume",
+        "definition": "Identifies the quantity expected to be supplied, administered or consumed by the subject.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How much to administer/supply/consume",
+        "definition": "Identifies the quantity expected to be supplied, administered or consumed by the subject.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Extra info describing activity to perform",
+        "definition": "This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Extra info describing activity to perform",
+        "definition": "This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.",
+        "comment": "`CarePlan.activity.detail` has no related element in R5:CarePlan",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-CarePlan.activity.detail"
+      }
+    ]
+  }
+}

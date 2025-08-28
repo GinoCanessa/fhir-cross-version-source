@@ -1,0 +1,138 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "observation-relationshiptypes",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.220"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/observation-relationshiptypes",
+  "version": "1.0.2",
+  "name": "observation-relationshiptypes",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "has-member",
+      "display": "Has Member",
+      "definition": "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group."
+    },
+    {
+      "code": "derived-from",
+      "display": "Derived From",
+      "definition": "The target resource (Observation or QuestionnaireResponse) is part of the information from which this observation value is derived. (e.g. calculated anion gap, Apgar score)  NOTE:  \"derived-from\" is only logical choice when referencing QuestionnaireResponse."
+    },
+    {
+      "code": "sequel-to",
+      "display": "Sequel To",
+      "definition": "This observation follows the target observation (e.g. timed tests such as Glucose Tolerance Test)."
+    },
+    {
+      "code": "replaces",
+      "display": "Replaces",
+      "definition": "This observation replaces a previous observation (i.e. a revised value). The target observation is now obsolete."
+    },
+    {
+      "code": "qualified-by",
+      "display": "Qualified By",
+      "definition": "The value of the target observation qualifies (refines) the semantics of the source observation (e.g. a lipemia measure target from a plasma measure)."
+    },
+    {
+      "code": "interfered-by",
+      "display": "Interfered By",
+      "definition": "The value of the target observation interferes (degrades quality, or prevents valid observation) with the semantics of the source observation (e.g. a hemolysis measure target from a plasma potassium measure which has no value)."
+    }
+  ]
+}

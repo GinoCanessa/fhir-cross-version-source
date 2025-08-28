@@ -1,0 +1,168 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-AcknowledgementDetailType",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.1082"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/AcknowledgementDetailType",
+  "version": "1.0.2",
+  "name": "v3-AcknowledgementDetailType",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "E",
+      "display": "Error",
+      "definition": "Definition:An issue which has prevented, or will prevent (unless a management is provided for the issue by the sender), the successful processing of an interaction.  Response interactions which include an issue which is an Error are a 'rejection', indicating that the request was not successfully processed.                                                       Example:Unable to find specified patient.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "display": "Information",
+      "definition": "Definition: The message relates to an issue which has no bearing on the successful processing of the request.  Information issues cannot be overridden by specifying a management.                                                      Example: A Patient's coverage will expire in 5 days.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "W",
+      "display": "Warning",
+      "definition": "Definition: The message relates to an issue which cannot prevent the successful processing of a request, but which could result in the processing not having the ideal or intended effect.  Managing a warning issue is not required for successful processing, but will suppress the warning from being raised.                                                       Example:                                                   Unexpected additional repetitions of phone number have been ignored.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "ERR",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "INFO",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "WARN",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

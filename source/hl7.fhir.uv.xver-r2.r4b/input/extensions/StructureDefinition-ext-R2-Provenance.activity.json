@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Provenance.activity",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.activity",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Provenance_activity",
+  "title": "Cross-version Extension for R2.Provenance.activity for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:54.9874706-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Provenance.activity from http://hl7.org/fhir/StructureDefinition/Provenance|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Provenance.activity"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Activity that occurred",
+        "definition": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "comment": "`Provenance.activity` maps to R4B `Provenance.activity`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Provenance.activity"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Activity that occurred",
+        "definition": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "comment": "`Provenance.activity` maps to R4B `Provenance.activity`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The activity that took place.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-v3-ProvenanceEventCurrentState-for-R4B"
+        }
+      }
+    ]
+  }
+}

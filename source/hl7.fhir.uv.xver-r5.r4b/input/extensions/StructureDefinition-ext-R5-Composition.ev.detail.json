@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Composition.ev.detail",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.event.detail",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Composition_ev_detail",
+  "title": "Cross-version Extension for R5.Composition.event.detail for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:51.1977955-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Composition.event.detail from http://hl7.org/fhir/StructureDefinition/Composition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition.event.detail"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The event(s) being documented, as code(s), reference(s), or both",
+        "definition": "Represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a \"History and Physical Report\" in which case the procedure being documented is necessarily a \"History and Physical\" act. The events may be included as a code or as a reference to an other resource.",
+        "comment": "`Composition.event.detail` maps to R4B `Composition.event.detail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.event.detail"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "The event(s) being documented, as code(s), reference(s), or both",
+        "definition": "Represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a \"History and Physical Report\" in which case the procedure being documented is necessarily a \"History and Physical\" act. The events may be included as a code or as a reference to an other resource.",
+        "comment": "`Composition.event.detail` maps to R4B `Composition.event.detail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This list of codes represents the main clinical acts being documented.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-v3-ActCode-for-R4B"
+        }
+      }
+    ]
+  }
+}

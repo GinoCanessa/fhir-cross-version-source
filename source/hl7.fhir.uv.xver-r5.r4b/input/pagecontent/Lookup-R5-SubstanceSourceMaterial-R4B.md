@@ -1,0 +1,46 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [SubstanceSourceMaterial](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [SubstanceSourceMaterial](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceSourceMaterial](StructureDefinition-ext-R5-SubstanceSourceMaterial.html) |
+| [SubstanceSourceMaterial.meta](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [SubstanceSourceMaterial.implicitRules](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [SubstanceSourceMaterial.language](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [SubstanceSourceMaterial.text](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [SubstanceSourceMaterial.contained](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [SubstanceSourceMaterial.sourceMaterialClass](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.sourceMaterialType](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.sourceMaterialState](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organismId](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organismName](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.parentSubstanceId](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.parentSubstanceName](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.countryOfOrigin](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.geographicalLocation](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.developmentStage](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.fractionDescription](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.fractionDescription.fraction](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.fractionDescription.materialType](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.family](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.genus](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.species](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.intraspecificType](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.intraspecificDescription](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.author](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.author.authorType](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.author.authorDescription](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid.maternalOrganismId](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid.maternalOrganismName](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid.paternalOrganismId](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid.paternalOrganismName](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.hybrid.hybridType](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.organismGeneral](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.organismGeneral.kingdom](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.organismGeneral.phylum](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.organismGeneral.class](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.organism.organismGeneral.order](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.partDescription](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.partDescription.part](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstanceSourceMaterial.partDescription.partLocation](https://hl7.org/fhir/R5/SubstanceSourceMaterial.html#resource) | `UseExtensionFromAncestor` | - |

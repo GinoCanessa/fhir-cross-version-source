@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R5-substance-codes-for-R4B",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/ValueSet/R5-substance-codes-for-R4B",
+  "version": "0.0.1-snapshot-2",
+  "name": "R5_substance_codes_for_R4B",
+  "title": "Cross-version VS for R5.SNOMEDCTSubstanceCodes for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:30.3220934-05:00",
+  "publisher": "Biomedical Research and Regulation",
+  "contact": [
+    {
+      "name": "Biomedical Research and Regulation",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/rcrim"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/substance-codes|5.0.0 for use in FHIR R4B. Concepts not present here have direct `equivalent` mappings crossing all versions from R5 to R4B.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "105590001"
+          }
+        ]
+      }
+    ]
+  }
+}

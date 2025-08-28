@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-TC.co.content",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TerminologyCapabilities.codeSystem.content",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_TC_co_content",
+  "title": "Cross-version Extension for R5.TerminologyCapabilities.codeSystem.content for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:02.7117327-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents TerminologyCapabilities.codeSystem.content from http://hl7.org/fhir/StructureDefinition/TerminologyCapabilities|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "TerminologyCapabilities.codeSystem"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "not-present | example | fragment | complete | supplement",
+        "definition": "The extent of the content of the code system (the concepts and codes it defines) are represented in this resource instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TerminologyCapabilities.codeSystem.content"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "not-present | example | fragment | complete | supplement",
+        "definition": "The extent of the content of the code system (the concepts and codes it defines) are represented in this resource instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The extent of the content of the code system (the concepts and codes it defines) are represented in a code system resource.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/codesystem-content-mode|4.0.1"
+        }
+      }
+    ]
+  }
+}

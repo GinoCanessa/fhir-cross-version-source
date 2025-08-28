@@ -1,0 +1,107 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DocumentReference.subject",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.subject",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DocumentReference_subject",
+  "title": "Cross-version Extension for R5.DocumentReference.subject for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.4209405-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DocumentReference.subject from http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference.subject"
+    },
+    {
+      "type": "element",
+      "expression": "Media.subject"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Who/what is the subject of the document",
+        "definition": "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
+        "comment": "`DocumentReference.subject` maps to R4B `DocumentReference.subject`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `DocumentReference.subject` maps to R4B `Media.subject`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.subject"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Who/what is the subject of the document",
+        "definition": "Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of farm animals, or a set of patients that share a common exposure).",
+        "comment": "`DocumentReference.subject` maps to R4B `DocumentReference.subject`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `DocumentReference.subject` maps to R4B `Media.subject`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

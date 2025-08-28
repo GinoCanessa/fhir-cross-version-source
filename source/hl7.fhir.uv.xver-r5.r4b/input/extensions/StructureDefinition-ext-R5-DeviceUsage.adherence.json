@@ -1,0 +1,205 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceUsage.adherence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.adherence",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceUsage_adherence",
+  "title": "Cross-version Extension for R5.DeviceUsage.adherence for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.2520207-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceUsage.adherence from http://hl7.org/fhir/StructureDefinition/DeviceUsage|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceUseStatement"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "How device is being used",
+        "definition": "This indicates how or if the device is being used.",
+        "comment": "`DeviceUsage.adherence` has no related element in R4B:DeviceUseStatement",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "always | never | sometimes",
+        "definition": "Type of adherence.",
+        "comment": "`DeviceUsage.adherence` has no related element in R4B:DeviceUseStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "always | never | sometimes",
+        "definition": "Type of adherence.",
+        "comment": "`DeviceUsage.adherence` has no related element in R4B:DeviceUseStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for adherence",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-deviceusage-adherence-code-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "short": "lost | stolen | prescribed | broken | burned | forgot",
+        "definition": "Reason for adherence type.",
+        "comment": "`DeviceUsage.adherence` has no related element in R4B:DeviceUseStatement",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "lost | stolen | prescribed | broken | burned | forgot",
+        "definition": "Reason for adherence type.",
+        "comment": "`DeviceUsage.adherence` has no related element in R4B:DeviceUseStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for adherence reason",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-deviceusage-adherence-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceUsage.adherence"
+      }
+    ]
+  }
+}

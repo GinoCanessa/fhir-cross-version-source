@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Task.performer",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.performer",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Task_performer",
+  "title": "Cross-version Extension for R5.Task.performer for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:02.3231455-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Task.performer from http://hl7.org/fhir/StructureDefinition/Task|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Task"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Who or what performed the task",
+        "definition": "The entity who performed the requested task.",
+        "comment": "`Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:function",
+        "path": "Extension.extension",
+        "sliceName": "function",
+        "short": "Type of performance",
+        "definition": "A code or description of the performer of the task.",
+        "comment": "`Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:function.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:function.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of performance",
+        "definition": "A code or description of the performer of the task.",
+        "comment": "`Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actor",
+        "path": "Extension.extension",
+        "sliceName": "actor",
+        "short": "Who performed the task",
+        "definition": "The actor or entity who performed the task.",
+        "comment": "`Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:actor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who performed the task",
+        "definition": "The actor or entity who performed the task.",
+        "comment": "`Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task `Task.performer` has no related element in R4B:Task",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Task.performer"
+      }
+    ]
+  }
+}

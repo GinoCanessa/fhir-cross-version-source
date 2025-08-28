@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-MedicationAdministration.status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.status",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_MedicationAdministration_status",
+  "title": "Cross-version Extension for R2.MedicationAdministration.status for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.767548-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationAdministration.status from http://hl7.org/fhir/StructureDefinition/MedicationAdministration|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationAdministration.extension"
+    },
+    {
+      "type": "element",
+      "expression": "MedicationAdministration.status"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "in-progress | on-hold | completed | entered-in-error | stopped",
+        "definition": "Will generally be set to show that the administration has been completed.  For some long running administrations such as infusions it is possible for an administration to be started but not completed or it may be paused while some other process is under way.",
+        "comment": "`MedicationAdministration.extension` maps to R5 `MedicationAdministration.extension`. So is mapped as Equivalent. `MedicationAdministration.status` maps to R5 `MedicationAdministration.status`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element MedicationAdministration.status is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "in-progress | on-hold | completed | entered-in-error | stopped",
+        "definition": "Will generally be set to show that the administration has been completed.  For some long running administrations such as infusions it is possible for an administration to be started but not completed or it may be paused while some other process is under way.",
+        "comment": "`MedicationAdministration.extension` maps to R5 `MedicationAdministration.extension`. So is mapped as Equivalent. `MedicationAdministration.status` maps to R5 `MedicationAdministration.status`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A set of codes indicating the current status of a MedicationAdministration.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-medication-admin-status-for-R5"
+        }
+      }
+    ]
+  }
+}

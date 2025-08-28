@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Subscription.channel",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Subscription.channel",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Subscription_channel",
+  "title": "Cross-version Extension for R3.Subscription.channel for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:19.8397706-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Subscription.channel from http://hl7.org/fhir/StructureDefinition/Subscription|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Subscription"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The channel on which to report matches to the criteria",
+        "definition": "Details where to send notifications when resources are received that meet the criteria.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "rest-hook | websocket | email | sms | message",
+        "definition": "The type of channel to send notifications on.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "rest-hook | websocket | email | sms | message",
+        "definition": "The type of channel to send notifications on.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of method used to execute a subscription.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-subscription-channel-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:endpoint",
+        "path": "Extension.extension",
+        "sliceName": "endpoint",
+        "short": "Where the channel points to",
+        "definition": "The uri that describes the actual end-point to send messages to.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:endpoint.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "endpoint"
+      },
+      {
+        "id": "Extension.extension:endpoint.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where the channel points to",
+        "definition": "The uri that describes the actual end-point to send messages to.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:payload",
+        "path": "Extension.extension",
+        "sliceName": "payload",
+        "short": "Mimetype to send, or omit for no payload",
+        "definition": "The mime type to send the payload in - either application/fhir+xml, or application/fhir+json. If the payload is not present, then there is no payload in the notification, just a notification.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:payload.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "payload"
+      },
+      {
+        "id": "Extension.extension:payload.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Mimetype to send, or omit for no payload",
+        "definition": "The mime type to send the payload in - either application/fhir+xml, or application/fhir+json. If the payload is not present, then there is no payload in the notification, just a notification.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:header",
+        "path": "Extension.extension",
+        "sliceName": "header",
+        "short": "Usage depends on the channel type",
+        "definition": "Additional headers / information to send as part of the notification.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:header.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "header"
+      },
+      {
+        "id": "Extension.extension:header.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Usage depends on the channel type",
+        "definition": "Additional headers / information to send as part of the notification.",
+        "comment": "`Subscription.channel` has no related element in R5:Subscription",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Subscription.channel"
+      }
+    ]
+  }
+}

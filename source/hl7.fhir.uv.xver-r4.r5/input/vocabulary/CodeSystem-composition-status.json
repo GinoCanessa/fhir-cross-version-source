@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "composition-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "sd"
+    }
+  ],
+  "url": "http://hl7.org/fhir/composition-status",
+  "version": "4.0.1",
+  "name": "CompositionStatus",
+  "title": "CompositionStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "Structured Documents",
+  "contact": [
+    {
+      "name": "Structured Documents",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/structure"
+        }
+      ]
+    }
+  ],
+  "description": "The workflow/clinical status of the composition.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/composition-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "preliminary",
+      "display": "Preliminary",
+      "definition": "This is a preliminary composition or document (also known as initial or interim). The content may be incomplete or unverified."
+    },
+    {
+      "code": "final",
+      "display": "Final",
+      "definition": "This version of the composition is complete and verified by an appropriate person and no further work is planned. Any subsequent updates would be on a new version of the composition."
+    },
+    {
+      "code": "amended",
+      "display": "Amended",
+      "definition": "The composition content or the referenced resources have been modified (edited or added to) subsequent to being released as \"final\" and the composition is complete and verified by an authorized person."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The composition or document was originally created/issued in error, and this is an amendment that marks that the entire series should not be considered as valid."
+    }
+  ]
+}

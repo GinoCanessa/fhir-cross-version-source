@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Consent.policy",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.policy",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Consent_policy",
+  "title": "Cross-version Extension for R3.Consent.policy for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:13.371506-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Consent.policy from http://hl7.org/fhir/StructureDefinition/Consent|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Consent.policyBasis"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Policies covered by this consent",
+        "definition": "The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law.",
+        "comment": "`Consent.policy` maps to R5 `Consent.policyBasis`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:authority",
+        "path": "Extension.extension",
+        "sliceName": "authority",
+        "short": "Enforcement source for policy",
+        "definition": "Entity or Organization having regulatory jurisdiction or accountability for  enforcing policies pertaining to Consent Directives.",
+        "comment": "`Consent.policy` maps to R5 `Consent.policyBasis`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:authority.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authority"
+      },
+      {
+        "id": "Extension.extension:authority.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Enforcement source for policy",
+        "definition": "Entity or Organization having regulatory jurisdiction or accountability for  enforcing policies pertaining to Consent Directives.",
+        "comment": "`Consent.policy` maps to R5 `Consent.policyBasis`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:uri",
+        "path": "Extension.extension",
+        "sliceName": "uri",
+        "short": "Specific policy covered by this consent",
+        "definition": "The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law.",
+        "comment": "`Consent.policy` maps to R5 `Consent.policyBasis`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:uri.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uri"
+      },
+      {
+        "id": "Extension.extension:uri.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Specific policy covered by this consent",
+        "definition": "The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law.",
+        "comment": "`Consent.policy` maps to R5 `Consent.policyBasis`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.policy"
+      }
+    ]
+  }
+}

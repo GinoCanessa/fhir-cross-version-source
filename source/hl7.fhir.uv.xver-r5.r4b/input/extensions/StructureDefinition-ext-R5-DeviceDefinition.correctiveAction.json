@@ -1,0 +1,241 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceDefinition.correctiveAction",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.correctiveAction",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceDefinition_correctiveAction",
+  "title": "Cross-version Extension for R5.DeviceDefinition.correctiveAction for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.1065743-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceDefinition.correctiveAction from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Tracking of latest field safety corrective action",
+        "definition": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:recall",
+        "path": "Extension.extension",
+        "sliceName": "recall",
+        "short": "Whether the corrective action was a recall",
+        "definition": "Whether the last corrective action known for this device was a recall.",
+        "comment": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:recall.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "recall"
+      },
+      {
+        "id": "Extension.extension:recall.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether the corrective action was a recall",
+        "definition": "Whether the last corrective action known for this device was a recall.",
+        "comment": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:scope",
+        "path": "Extension.extension",
+        "sliceName": "scope",
+        "short": "model | lot-numbers | serial-numbers",
+        "definition": "The scope of the corrective action - whether the action targeted all units of a given device model, or only a specific set of batches identified by lot numbers, or individually identified devices identified by the serial name.",
+        "comment": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:scope.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "scope"
+      },
+      {
+        "id": "Extension.extension:scope.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "model | lot-numbers | serial-numbers",
+        "definition": "The scope of the corrective action - whether the action targeted all units of a given device model, or only a specific set of batches identified by lot numbers, or individually identified devices identified by the serial name.",
+        "comment": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type or scope of the corrective action.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-device-correctiveactionscope-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "Start and end dates of the  corrective action",
+        "definition": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Start and end dates of the  corrective action",
+        "definition": "`DeviceDefinition.correctiveAction` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.correctiveAction"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R3-nutrient-code-for-R4",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/ValueSet/R3-nutrient-code-for-R4",
+  "version": "0.0.1-snapshot-2",
+  "name": "R3_nutrient_code_for_R4",
+  "title": "Cross-version VS for R3.Nutrient Modifier Codes for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:01.4599487-05:00",
+  "publisher": "Orders and Observations",
+  "contact": [
+    {
+      "name": "Orders and Observations",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/orders"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/nutrient-code|3.0.2 for use in FHIR R4. Concepts not present here have direct `equivalent` mappings crossing all versions from R3 to R4.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "33463005",
+            "display": "Fluid"
+          },
+          {
+            "code": "39972003",
+            "display": "Sodium"
+          },
+          {
+            "code": "88480006",
+            "display": "Potassium"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "226355009"
+          }
+        ]
+      }
+    ]
+  }
+}

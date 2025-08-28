@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "unknown-content-code",
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/unknown-content-code",
+  "version": "4.0.1",
+  "name": "UnknownContentCode",
+  "title": "UnknownContentCode",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "A code that indicates whether an application accepts unknown elements or extensions when reading resources.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/unknown-content-code",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "no",
+      "display": "Neither Elements or Extensions",
+      "definition": "The application does not accept either unknown elements or extensions."
+    },
+    {
+      "code": "extensions",
+      "display": "Unknown Extensions",
+      "definition": "The application accepts unknown extensions, but not unknown elements."
+    },
+    {
+      "code": "elements",
+      "display": "Unknown Elements",
+      "definition": "The application accepts unknown elements, but not unknown extensions."
+    },
+    {
+      "code": "both",
+      "display": "Unknown Elements and Extensions",
+      "definition": "The application accepts unknown elements and extensions."
+    }
+  ]
+}

@@ -1,0 +1,3290 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-SubstanceDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SubstanceDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_SubstanceDefinition",
+  "title": "Cross-version Extension for R4B.SubstanceDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:20.3656776-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubstanceDefinition from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The detailed description of a substance, typically at a level beyond what is used for prescribing",
+        "definition": "This cross-version extension represents SubstanceDefinition from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "A business level version identifier of the substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.version from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A business level version identifier of the substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.version from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "Status of substance within the catalogue e.g. active, retired",
+        "definition": "This cross-version extension represents SubstanceDefinition.status from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Status of substance within the catalogue e.g. active, retired",
+        "definition": "This cross-version extension represents SubstanceDefinition.status from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension",
+        "sliceName": "classification",
+        "short": "A categorization, high level e.g. polymer or nucleic acid, or food, chemical, biological, or lower e.g. polymer linear or branch chain, or type of impurity",
+        "definition": "A high level categorization, e.g. polymer or nucleic acid, or food, chemical, biological, or a lower level such as the general types of polymer (linear or branch chain) or type of impurity (process related or contaminant).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:classification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "classification"
+      },
+      {
+        "id": "Extension.extension:classification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A categorization, high level e.g. polymer or nucleic acid, or food, chemical, biological, or lower e.g. polymer linear or branch chain, or type of impurity",
+        "definition": "A high level categorization, e.g. polymer or nucleic acid, or food, chemical, biological, or a lower level such as the general types of polymer (linear or branch chain) or type of impurity (process related or contaminant).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:domain",
+        "path": "Extension.extension",
+        "sliceName": "domain",
+        "short": "If the substance applies to human or veterinary use",
+        "definition": "This cross-version extension represents SubstanceDefinition.domain from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:domain.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "domain"
+      },
+      {
+        "id": "Extension.extension:domain.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If the substance applies to human or veterinary use",
+        "definition": "This cross-version extension represents SubstanceDefinition.domain from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Applicable domain for this product (e.g. human, veterinary).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-medicinal-product-domain-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:grade",
+        "path": "Extension.extension",
+        "sliceName": "grade",
+        "short": "The quality standard, established benchmark, to which substance complies (e.g. USP/NF, BP)",
+        "definition": "The quality standard, established benchmark, to which substance complies (e.g. USP/NF, Ph. Eur, JP, BP, Company Standard).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:grade.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "grade"
+      },
+      {
+        "id": "Extension.extension:grade.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The quality standard, established benchmark, to which substance complies (e.g. USP/NF, BP)",
+        "definition": "The quality standard, established benchmark, to which substance complies (e.g. USP/NF, Ph. Eur, JP, BP, Company Standard).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The quality standard, established benchmark, to which a substance complies",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-grade-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Textual description of the substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.description from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Textual description of the substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.description from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:informationSource",
+        "path": "Extension.extension",
+        "sliceName": "informationSource",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.informationSource from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:informationSource.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "informationSource"
+      },
+      {
+        "id": "Extension.extension:informationSource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.informationSource from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Textual comment about the substance's catalogue or registry record",
+        "definition": "This cross-version extension represents SubstanceDefinition.note from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Textual comment about the substance's catalogue or registry record",
+        "definition": "This cross-version extension represents SubstanceDefinition.note from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "The entity that creates, makes, produces or fabricates the substance",
+        "definition": "The entity that creates, makes, produces or fabricates the substance. This is a set of potential manufacturers but is not necessarily comprehensive.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The entity that creates, makes, produces or fabricates the substance",
+        "definition": "The entity that creates, makes, produces or fabricates the substance. This is a set of potential manufacturers but is not necessarily comprehensive.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supplier",
+        "path": "Extension.extension",
+        "sliceName": "supplier",
+        "short": "An entity that is the source for the substance. It may be different from the manufacturer",
+        "definition": "An entity that is the source for the substance. It may be different from the manufacturer. Supplier is synonymous to a distributor.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:supplier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "supplier"
+      },
+      {
+        "id": "Extension.extension:supplier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "An entity that is the source for the substance. It may be different from the manufacturer",
+        "definition": "An entity that is the source for the substance. It may be different from the manufacturer. Supplier is synonymous to a distributor.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety",
+        "path": "Extension.extension",
+        "sliceName": "moiety",
+        "short": "Moiety, for structural modifications",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "Role that the moiety is playing",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.role from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Role that the moiety is playing",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.role from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "Identifier by which this moiety substance is known",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Identifier by which this moiety substance is known",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "Textual name for this moiety substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.name from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Textual name for this moiety substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.name from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety.extension:stereochemistry",
+        "path": "Extension.extension.extension",
+        "sliceName": "stereochemistry",
+        "short": "Stereochemistry type",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.stereochemistry from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:stereochemistry.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "stereochemistry"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:stereochemistry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Stereochemistry type",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.stereochemistry from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The optical rotation type of a substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-stereochemistry-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:opticalActivity",
+        "path": "Extension.extension.extension",
+        "sliceName": "opticalActivity",
+        "short": "Optical activity type",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.opticalActivity from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:opticalActivity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "opticalActivity"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:opticalActivity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Optical activity type",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.opticalActivity from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The optical rotation type of a substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-optical-activity-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:molecularFormula",
+        "path": "Extension.extension.extension",
+        "sliceName": "molecularFormula",
+        "short": "Molecular formula for this moiety (e.g. with the Hill system)",
+        "definition": "Molecular formula for this moiety of this substance, typically using the Hill system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:molecularFormula.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "molecularFormula"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:molecularFormula.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Molecular formula for this moiety (e.g. with the Hill system)",
+        "definition": "Molecular formula for this moiety of this substance, typically using the Hill system.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety.extension:amount[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount[x]",
+        "short": "Quantitative value for this moiety",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.amount[x] from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:amount[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount[x]"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:amount[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Quantitative value for this moiety",
+        "definition": "This cross-version extension represents SubstanceDefinition.moiety.amount[x] from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:moiety.extension:measurementType",
+        "path": "Extension.extension.extension",
+        "sliceName": "measurementType",
+        "short": "The measurement type of the quantitative value",
+        "definition": "The measurement type of the quantitative value. In capturing the actual relative amounts of substances or molecular fragments it may be necessary to indicate whether the amount refers to, for example, a mole ratio or weight ratio.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.extension:measurementType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementType"
+      },
+      {
+        "id": "Extension.extension:moiety.extension:measurementType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The measurement type of the quantitative value",
+        "definition": "The measurement type of the quantitative value. In capturing the actual relative amounts of substances or molecular fragments it may be necessary to indicate whether the amount refers to, for example, a mole ratio or weight ratio.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The relationship between two substance types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-amount-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:moiety.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "moiety"
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "short": "General specifications for this substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.property from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "A code expressing the type of property",
+        "definition": "This cross-version extension represents SubstanceDefinition.property.type from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A code expressing the type of property",
+        "definition": "This cross-version extension represents SubstanceDefinition.property.type from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "A value for the property",
+        "definition": "This cross-version extension represents SubstanceDefinition.property.value[x] from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A value for the property",
+        "definition": "This cross-version extension represents SubstanceDefinition.property.value[x] from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:molecularWeight",
+        "path": "Extension.extension",
+        "sliceName": "molecularWeight",
+        "short": "The molecular weight or weight range",
+        "definition": "The molecular weight or weight range (for proteins, polymers or nucleic acids).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:method",
+        "path": "Extension.extension.extension",
+        "sliceName": "method",
+        "short": "The method by which the weight was determined",
+        "definition": "The method by which the molecular weight was determined.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:method.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:method.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The method by which the weight was determined",
+        "definition": "The method by which the molecular weight was determined.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The method by which the substance weight was measured.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-weight-method-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Type of molecular weight e.g. exact, average, weight average",
+        "definition": "Type of molecular weight such as exact, average (also known as. number average), weight average.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Type of molecular weight e.g. exact, average, weight average",
+        "definition": "Type of molecular weight such as exact, average (also known as. number average), weight average.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The type of substance weight measurement.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-weight-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "Used to capture quantitative values for a variety of elements",
+        "definition": "Used to capture quantitative values for a variety of elements. If only limits are given, the arithmetic mean would be the average. If only a single definite value for a given element is given, it would be captured in this field.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:molecularWeight.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Used to capture quantitative values for a variety of elements",
+        "definition": "Used to capture quantitative values for a variety of elements. If only limits are given, the arithmetic mean would be the average. If only a single definite value for a given element is given, it would be captured in this field.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:molecularWeight.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "molecularWeight"
+      },
+      {
+        "id": "Extension.extension:structure",
+        "path": "Extension.extension",
+        "sliceName": "structure",
+        "short": "Structural information",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:stereochemistry",
+        "path": "Extension.extension.extension",
+        "sliceName": "stereochemistry",
+        "short": "Stereochemistry type",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.stereochemistry from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:stereochemistry.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "stereochemistry"
+      },
+      {
+        "id": "Extension.extension:structure.extension:stereochemistry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Stereochemistry type",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.stereochemistry from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The optical rotation type of a substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-stereochemistry-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:opticalActivity",
+        "path": "Extension.extension.extension",
+        "sliceName": "opticalActivity",
+        "short": "Optical activity type",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.opticalActivity from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:opticalActivity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "opticalActivity"
+      },
+      {
+        "id": "Extension.extension:structure.extension:opticalActivity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Optical activity type",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.opticalActivity from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The optical rotation type of a substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-optical-activity-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormula",
+        "path": "Extension.extension.extension",
+        "sliceName": "molecularFormula",
+        "short": "Molecular formula (e.g. using the Hill system)",
+        "definition": "Molecular formula of this substance, typically using the Hill system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormula.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "molecularFormula"
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormula.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Molecular formula (e.g. using the Hill system)",
+        "definition": "Molecular formula of this substance, typically using the Hill system.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormulaByMoiety",
+        "path": "Extension.extension.extension",
+        "sliceName": "molecularFormulaByMoiety",
+        "short": "Specified per moiety according to the Hill system",
+        "definition": "Specified per moiety according to the Hill system, i.e. first C, then H, then alphabetical, each moiety separated by a dot.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormulaByMoiety.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "molecularFormulaByMoiety"
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularFormulaByMoiety.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Specified per moiety according to the Hill system",
+        "definition": "Specified per moiety according to the Hill system, i.e. first C, then H, then alphabetical, each moiety separated by a dot.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularWeight",
+        "path": "Extension.extension.extension",
+        "sliceName": "molecularWeight",
+        "short": "The molecular weight or weight range",
+        "definition": "The molecular weight or weight range (for proteins, polymers or nucleic acids).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularWeight.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularWeight.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for SubstanceDefinition.structure.molecularWeight from FHIR R4B",
+        "definition": "Data type name for SubstanceDefinition.structure.molecularWeight from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularWeight.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: SubstanceDefinition.molecularWeight",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "SubstanceDefinition.molecularWeight"
+      },
+      {
+        "id": "Extension.extension:structure.extension:molecularWeight.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "molecularWeight"
+      },
+      {
+        "id": "Extension.extension:structure.extension:technique",
+        "path": "Extension.extension.extension",
+        "sliceName": "technique",
+        "short": "The method used to find the structure e.g. X-ray, NMR",
+        "definition": "The method used to elucidate the structure or characterization of the drug substance. Examples: X-ray, HPLC, NMR, Peptide mapping, Ligand binding assay.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:technique.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "technique"
+      },
+      {
+        "id": "Extension.extension:structure.extension:technique.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The method used to find the structure e.g. X-ray, NMR",
+        "definition": "The method used to elucidate the structure or characterization of the drug substance. Examples: X-ray, HPLC, NMR, Peptide mapping, Ligand binding assay.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The method used to elucidate the structure or characterization of the drug substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-structure-technique-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:sourceDocument",
+        "path": "Extension.extension.extension",
+        "sliceName": "sourceDocument",
+        "short": "Source of information for the structure",
+        "definition": "The source of information about the structure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:sourceDocument.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sourceDocument"
+      },
+      {
+        "id": "Extension.extension:structure.extension:sourceDocument.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Source of information for the structure",
+        "definition": "The source of information about the structure.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation",
+        "path": "Extension.extension.extension",
+        "sliceName": "representation",
+        "short": "A depiction of the structure or characterization of the substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.representation from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "The kind of structural representation (e.g. full, partial)",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.representation.type from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The kind of structural representation (e.g. full, partial)",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.representation.type from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A format of a substance representation.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-representation-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:representation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "representation",
+        "short": "The structural representation or characterization as a text string in a standard format",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.representation.representation from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:representation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:representation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The structural representation or characterization as a text string in a standard format",
+        "definition": "This cross-version extension represents SubstanceDefinition.structure.representation.representation from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:format",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "format",
+        "short": "The format of the representation e.g. InChI, SMILES, MOLFILE (note: not the physical file format)",
+        "definition": "The format of the representation e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF. The logical content type rather than the physical file format of a document.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:format.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "format"
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:format.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The format of the representation e.g. InChI, SMILES, MOLFILE (note: not the physical file format)",
+        "definition": "The format of the representation e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF. The logical content type rather than the physical file format of a document.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A format of a substance representation.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-representation-format-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:document",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "document",
+        "short": "An attachment with the structural representation e.g. a structure graphic or AnIML file",
+        "definition": "An attached file with the structural representation or characterization e.g. a molecular structure graphic of the substance, a JCAMP or AnIML file.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:document.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "document"
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.extension:document.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "An attachment with the structural representation e.g. a structure graphic or AnIML file",
+        "definition": "An attached file with the structural representation or characterization e.g. a molecular structure graphic of the substance, a JCAMP or AnIML file.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:structure.extension:representation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:structure.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "structure"
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Names applicable to this substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.name from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "The actual name",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.name from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual name",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.name from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Name type e.g. 'systematic',  'scientific, 'brand'",
+        "definition": "Name type, for example 'systematic',  'scientific, 'brand'.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:name.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Name type e.g. 'systematic',  'scientific, 'brand'",
+        "definition": "Name type, for example 'systematic',  'scientific, 'brand'.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The type of a name given to a substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-name-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "The status of the name e.g. 'current', 'proposed'",
+        "definition": "The status of the name, for example 'current', 'proposed'.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:name.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The status of the name e.g. 'current', 'proposed'",
+        "definition": "The status of the name, for example 'current', 'proposed'.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:preferred",
+        "path": "Extension.extension.extension",
+        "sliceName": "preferred",
+        "short": "If this is the preferred name for this substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.preferred from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:preferred.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "preferred"
+      },
+      {
+        "id": "Extension.extension:name.extension:preferred.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "If this is the preferred name for this substance",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.preferred from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:language",
+        "path": "Extension.extension.extension",
+        "sliceName": "language",
+        "short": "Human language that the name is written in",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.language from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:language.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:name.extension:language.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Human language that the name is written in",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.language from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:domain",
+        "path": "Extension.extension.extension",
+        "sliceName": "domain",
+        "short": "The use context of this name e.g. as an active ingredient or as a food colour additive",
+        "definition": "The use context of this name for example if there is a different name a drug active ingredient as opposed to a food colour additive.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:domain.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "domain"
+      },
+      {
+        "id": "Extension.extension:name.extension:domain.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The use context of this name e.g. as an active ingredient or as a food colour additive",
+        "definition": "The use context of this name for example if there is a different name a drug active ingredient as opposed to a food colour additive.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The use context of a substance name for example if there is a different name when used as a drug active ingredient as opposed to a food colour additive.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-name-domain-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "The jurisdiction where this name applies",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.jurisdiction from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:name.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The jurisdiction where this name applies",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.jurisdiction from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-jurisdiction-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:synonym",
+        "path": "Extension.extension.extension",
+        "sliceName": "synonym",
+        "short": "A synonym of this particular name, by which the substance is also known",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.synonym from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:synonym.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:synonym.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for SubstanceDefinition.name.synonym from FHIR R4B",
+        "definition": "Data type name for SubstanceDefinition.name.synonym from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:synonym.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: SubstanceDefinition.name",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "SubstanceDefinition.name"
+      },
+      {
+        "id": "Extension.extension:name.extension:synonym.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "synonym"
+      },
+      {
+        "id": "Extension.extension:name.extension:translation",
+        "path": "Extension.extension.extension",
+        "sliceName": "translation",
+        "short": "A translation for this name into another human language",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.translation from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:translation.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:translation.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for SubstanceDefinition.name.translation from FHIR R4B",
+        "definition": "Data type name for SubstanceDefinition.name.translation from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:translation.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: SubstanceDefinition.name",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "SubstanceDefinition.name"
+      },
+      {
+        "id": "Extension.extension:name.extension:translation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "translation"
+      },
+      {
+        "id": "Extension.extension:name.extension:official",
+        "path": "Extension.extension.extension",
+        "sliceName": "official",
+        "short": "Details of the official nature of this name",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.official from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:authority",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "authority",
+        "short": "Which authority uses this official name",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.official.authority from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:authority.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authority"
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:authority.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Which authority uses this official name",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.official.authority from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "An authority that officates substance names.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-name-authority-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:status",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "status",
+        "short": "The status of the official name, for example 'draft', 'active'",
+        "definition": "The status of the official name, for example 'draft', 'active', 'retired'.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:status.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:status.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The status of the official name, for example 'draft', 'active'",
+        "definition": "The status of the official name, for example 'draft', 'active', 'retired'.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:date",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "date",
+        "short": "Date of official name change",
+        "definition": "Date of the official name change.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:date.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:name.extension:official.extension:date.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Date of official name change",
+        "definition": "Date of the official name change.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:official.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "official"
+      },
+      {
+        "id": "Extension.extension:name.extension:source",
+        "path": "Extension.extension.extension",
+        "sliceName": "source",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.source from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:source.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:name.extension:source.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.name.source from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:relationship",
+        "path": "Extension.extension",
+        "sliceName": "relationship",
+        "short": "A link between this substance and another",
+        "definition": "A link between this substance and another, with details of the relationship.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:substanceDefinition[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "substanceDefinition[x]",
+        "short": "A pointer to another substance, as a resource or a representational code",
+        "definition": "A pointer to another substance, as a resource or just a representational code.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:substanceDefinition[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "substanceDefinition[x]"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:substanceDefinition[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A pointer to another substance, as a resource or a representational code",
+        "definition": "A pointer to another substance, as a resource or just a representational code.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "For example \"salt to parent\", \"active moiety\"",
+        "definition": "For example \"salt to parent\", \"active moiety\", \"starting material\", \"polymorph\", \"impurity of\".",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "For example \"salt to parent\", \"active moiety\"",
+        "definition": "For example \"salt to parent\", \"active moiety\", \"starting material\", \"polymorph\", \"impurity of\".",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The relationship between two substance types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-relationship-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:isDefining",
+        "path": "Extension.extension.extension",
+        "sliceName": "isDefining",
+        "short": "For example where an enzyme strongly bonds with a particular substance, this is a defining relationship for that enzyme, out of several possible relationships",
+        "definition": "For example where an enzyme strongly bonds with a particular substance, this is a defining relationship for that enzyme, out of several possible substance relationships.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:isDefining.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "isDefining"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:isDefining.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "For example where an enzyme strongly bonds with a particular substance, this is a defining relationship for that enzyme, out of several possible relationships",
+        "definition": "For example where an enzyme strongly bonds with a particular substance, this is a defining relationship for that enzyme, out of several possible substance relationships.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship.extension:amount[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount[x]",
+        "short": "A numeric factor for the relationship, e.g. that a substance salt has some percentage of active substance in relation to some other",
+        "definition": "A numeric factor for the relationship, for instance to express that the salt of a substance has some percentage of the active substance in relation to some other.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:amount[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount[x]"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:amount[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A numeric factor for the relationship, e.g. that a substance salt has some percentage of active substance in relation to some other",
+        "definition": "A numeric factor for the relationship, for instance to express that the salt of a substance has some percentage of the active substance in relation to some other.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship.extension:ratioHighLimitAmount",
+        "path": "Extension.extension.extension",
+        "sliceName": "ratioHighLimitAmount",
+        "short": "For use when the numeric has an uncertain range",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.ratioHighLimitAmount from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:ratioHighLimitAmount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ratioHighLimitAmount"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:ratioHighLimitAmount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "For use when the numeric has an uncertain range",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.ratioHighLimitAmount from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship.extension:comparator",
+        "path": "Extension.extension.extension",
+        "sliceName": "comparator",
+        "short": "An operator for the amount, for example \"average\", \"approximately\", \"less than\"",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.comparator from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:comparator.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "comparator"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:comparator.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An operator for the amount, for example \"average\", \"approximately\", \"less than\"",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.comparator from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The relationship between two substance types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-amount-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:source",
+        "path": "Extension.extension.extension",
+        "sliceName": "source",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.source from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.extension:source.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:relationship.extension:source.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Supporting literature",
+        "definition": "This cross-version extension represents SubstanceDefinition.relationship.source from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relationship.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relationship"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial",
+        "path": "Extension.extension",
+        "sliceName": "sourceMaterial",
+        "short": "Material or taxonomic/anatomical source",
+        "definition": "Material or taxonomic/anatomical source for the substance.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Classification of the origin of the raw material. e.g. cat hair is an Animal source type",
+        "definition": "A classification that provides the origin of the raw material. Example: cat hair would be an Animal source type.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Classification of the origin of the raw material. e.g. cat hair is an Animal source type",
+        "definition": "A classification that provides the origin of the raw material. Example: cat hair would be an Animal source type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A classification that provides the origin of the substance raw material.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-source-material-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:genus",
+        "path": "Extension.extension.extension",
+        "sliceName": "genus",
+        "short": "The genus of an organism e.g. the Latin epithet of the plant/animal scientific name",
+        "definition": "The genus of an organism, typically referring to the Latin epithet of the genus element of the plant/animal scientific name.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:genus.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "genus"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:genus.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The genus of an organism e.g. the Latin epithet of the plant/animal scientific name",
+        "definition": "The genus of an organism, typically referring to the Latin epithet of the genus element of the plant/animal scientific name.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The genus of an organism, typically referring to the Latin epithet of the genus element of the plant/animal scientific name.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-source-material-genus-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:species",
+        "path": "Extension.extension.extension",
+        "sliceName": "species",
+        "short": "The species of an organism e.g. the Latin epithet of the species of the plant/animal",
+        "definition": "The species of an organism, typically referring to the Latin epithet of the species of the plant/animal.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:species.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "species"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:species.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The species of an organism e.g. the Latin epithet of the species of the plant/animal",
+        "definition": "The species of an organism, typically referring to the Latin epithet of the species of the plant/animal.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A species of origin a substance raw material.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-source-material-species-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:part",
+        "path": "Extension.extension.extension",
+        "sliceName": "part",
+        "short": "An anatomical origin of the source material within an organism",
+        "definition": "This cross-version extension represents SubstanceDefinition.sourceMaterial.part from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:part.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:part.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An anatomical origin of the source material within an organism",
+        "definition": "This cross-version extension represents SubstanceDefinition.sourceMaterial.part from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "An anatomical origin of the source material within an organism.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-substance-source-material-part-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:countryOfOrigin",
+        "path": "Extension.extension.extension",
+        "sliceName": "countryOfOrigin",
+        "short": "The country or countries where the material is harvested",
+        "definition": "This cross-version extension represents SubstanceDefinition.sourceMaterial.countryOfOrigin from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:countryOfOrigin.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "countryOfOrigin"
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.extension:countryOfOrigin.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The country or countries where the material is harvested",
+        "definition": "This cross-version extension represents SubstanceDefinition.sourceMaterial.countryOfOrigin from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-country-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:sourceMaterial.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sourceMaterial"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SubstanceDefinition"
+      }
+    ]
+  }
+}

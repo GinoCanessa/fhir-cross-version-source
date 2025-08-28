@@ -1,0 +1,41 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [NutritionIntake](https://hl7.org/fhir/R5/NutritionIntake.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [NutritionIntake](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionIntake](StructureDefinition-ext-R5-NutritionIntake.html) |
+| [NutritionIntake.meta](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.implicitRules](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.language](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.text](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.contained](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.identifier](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.instantiatesCanonical](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.instantiatesUri](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.basedOn](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.partOf](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.status](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.statusReason](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.code](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.code](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.subject](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseBasicElement` | [Basic.subject](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [NutritionIntake.encounter](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.occurrence[x]](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.recorded](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.reported[x]](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.type](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.nutritionProduct](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.schedule](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.amount](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.rate](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.notConsumed](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.consumedItem.notConsumedReason](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.ingredientLabel](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.ingredientLabel.nutrient](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.ingredientLabel.amount](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.performer](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.performer.function](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.performer.actor](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.location](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.derivedFrom](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.reason](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |
+| [NutritionIntake.note](https://hl7.org/fhir/R5/NutritionIntake.html#resource) | `UseExtensionFromAncestor` | - |

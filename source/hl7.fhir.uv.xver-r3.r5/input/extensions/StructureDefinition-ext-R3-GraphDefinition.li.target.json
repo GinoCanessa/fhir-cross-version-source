@@ -1,0 +1,504 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-GraphDefinition.li.target",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-GraphDefinition.link.target",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_GraphDefinition_li_target",
+  "title": "Cross-version Extension for R3.GraphDefinition.link.target for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:15.6694499-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents GraphDefinition.link.target from http://hl7.org/fhir/StructureDefinition/GraphDefinition|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "GraphDefinition.link"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Potential target for the link",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Type of resource this link refers to",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of resource this link refers to",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of FHIR.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-resource-types-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:profile",
+        "path": "Extension.extension",
+        "sliceName": "profile",
+        "short": "Profile for the target resource",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:profile.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:profile.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Profile for the target resource",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:compartment",
+        "path": "Extension.extension",
+        "sliceName": "compartment",
+        "short": "Compartment Consistency Rules",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Identifies the compartment",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:compartment.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Identifies the compartment",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Identifies a compartment",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-compartment-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:rule",
+        "path": "Extension.extension.extension",
+        "sliceName": "rule",
+        "short": "identical | matching | different | custom",
+        "definition": "identical | matching | different | no-rule | custom.",
+        "comment": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:rule.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "rule"
+      },
+      {
+        "id": "Extension.extension:compartment.extension:rule.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "identical | matching | different | custom",
+        "definition": "identical | matching | different | no-rule | custom.",
+        "comment": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How a compartment must be linked",
+          "valueSet": "http://hl7.org/fhir/ValueSet/graph-compartment-rule|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:expression",
+        "path": "Extension.extension.extension",
+        "sliceName": "expression",
+        "short": "Custom rule, as a FHIRPath expression",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:expression.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:compartment.extension:expression.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Custom rule, as a FHIRPath expression",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:compartment.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Documentation for FHIRPath expression",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:compartment.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:compartment.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Documentation for FHIRPath expression",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:compartment.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "compartment"
+      },
+      {
+        "id": "Extension.extension:link",
+        "path": "Extension.extension",
+        "sliceName": "link",
+        "short": "Additional links from target resource",
+        "definition": "`GraphDefinition.link.target` has no related element in R5:GraphDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:link.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:link.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for GraphDefinition.link.target.link from FHIR R3",
+        "definition": "Data type name for GraphDefinition.link.target.link from FHIR R3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:link.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: GraphDefinition.link",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "GraphDefinition.link"
+      },
+      {
+        "id": "Extension.extension:link.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "link"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-GraphDefinition.link.target"
+      }
+    ]
+  }
+}

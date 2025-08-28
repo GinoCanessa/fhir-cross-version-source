@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-VisionPrescription.di.product",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.product",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_VisionPrescription_di_product",
+  "title": "Cross-version Extension for R2.VisionPrescription.dispense.product for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:55.8534697-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents VisionPrescription.dispense.product from http://hl7.org/fhir/StructureDefinition/VisionPrescription|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "VisionPrescription.lensSpecification.product"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Product to be supplied",
+        "definition": "Identifies the type of vision correction product which is required for the patient.",
+        "comment": "`VisionPrescription.lensSpecification.product` maps to R4B `VisionPrescription.lensSpecification.product`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-VisionPrescription.dispense.product"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Product to be supplied",
+        "definition": "Identifies the type of vision correction product which is required for the patient.",
+        "comment": "`VisionPrescription.lensSpecification.product` maps to R4B `VisionPrescription.lensSpecification.product`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept describing the vision products.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/vision-product|4.3.0"
+        }
+      }
+    ]
+  }
+}

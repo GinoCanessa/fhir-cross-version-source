@@ -1,0 +1,24 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [EligibilityRequest](https://hl7.org/fhir/STU3/EligibilityRequest.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [EligibilityRequest.meta](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.meta](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.implicitRules](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.implicitRules](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.language](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.language](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.text](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.text](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.contained](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.contained](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.identifier](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.identifier](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.status](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.status](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.priority](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.priority](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.patient](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.patient](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.serviced[x]](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.serviced[x]](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.created](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.created](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.enterer](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.enterer](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.provider](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.provider](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.organization](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.provider](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.insurer](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.insurer](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.facility](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.facility](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.coverage](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.insurance.coverage](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.businessArrangement](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseElementRenamed` | [CoverageEligibilityRequest.insurance.businessArrangement](https://hl7.org/fhir/R5/CoverageEligibilityRequest.html#resource) |
+| [EligibilityRequest.benefitCategory](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.benefitCategory](StructureDefinition-ext-R3-EligibilityRequest.benefitCategory.html) |
+| [EligibilityRequest.benefitSubCategory](https://hl7.org/fhir/STU3/EligibilityRequest.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-EligibilityRequest.benefitSubCategory](StructureDefinition-ext-R3-EligibilityRequest.benefitSubCategory.html) |

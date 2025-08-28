@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-ExplanationOfBenefit.it.ad.value",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_ExplanationOfBenefit_it_ad_value",
+  "title": "Cross-version Extension for R4.ExplanationOfBenefit.item.adjudication.value for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:42.7116559-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ExplanationOfBenefit.item.adjudication.value from http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ExplanationOfBenefit.item.adjudication.quantity"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Non-monitary value",
+        "definition": "A non-monetary value associated with the category. Mutually exclusive to the amount element above.",
+        "comment": "`ExplanationOfBenefit.item.adjudication.value` maps to R5 `ExplanationOfBenefit.item.adjudication.quantity`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ExplanationOfBenefit.item.adjudication.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Non-monitary value",
+        "definition": "A non-monetary value associated with the category. Mutually exclusive to the amount element above.",
+        "comment": "`ExplanationOfBenefit.item.adjudication.value` maps to R5 `ExplanationOfBenefit.item.adjudication.quantity`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      }
+    ]
+  }
+}

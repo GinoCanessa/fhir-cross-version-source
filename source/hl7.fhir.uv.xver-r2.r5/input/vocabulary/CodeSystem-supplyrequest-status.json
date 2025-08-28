@@ -1,0 +1,128 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "supplyrequest-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.354"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/supplyrequest-status",
+  "version": "1.0.2",
+  "name": "supplyrequest-status",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "requested",
+      "display": "Requested",
+      "definition": "Supply has been requested, but not dispensed."
+    },
+    {
+      "code": "completed",
+      "display": "Received",
+      "definition": "Supply has been received by the requestor."
+    },
+    {
+      "code": "failed",
+      "display": "Failed",
+      "definition": "The supply will not be completed because the supplier was unable or unwilling to supply the item."
+    },
+    {
+      "code": "cancelled",
+      "display": "Cancelled",
+      "definition": "The orderer of the supply cancelled the request."
+    }
+  ]
+}

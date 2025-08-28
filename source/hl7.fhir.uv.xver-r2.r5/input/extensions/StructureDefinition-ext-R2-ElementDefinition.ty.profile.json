@@ -1,0 +1,107 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ElementDefinition.ty.profile",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ElementDefinition.type.profile",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ElementDefinition_ty_profile",
+  "title": "Cross-version Extension for R2.ElementDefinition.type.profile for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:49.8824333-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ElementDefinition.type.profile from http://hl7.org/fhir/StructureDefinition/ElementDefinition|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ElementDefinition.type.profile"
+    },
+    {
+      "type": "element",
+      "expression": "ElementDefinition.type.targetProfile"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Profile (StructureDefinition) to apply (or IG)",
+        "definition": "Identifies a profile structure or implementation Guide that SHALL hold for resources or datatypes referenced as the type of this element. Can be a local reference - to another structure in this profile, or a reference to a structure in another profile. When more than one profile is specified, the content must conform to all of them. When an implementation guide is specified, the resource SHALL conform to at least one profile defined in the implementation guide.",
+        "comment": "`ElementDefinition.type.profile` maps to R5 `ElementDefinition.type.profile`. So is mapped as Equivalent. `ElementDefinition.type.targetProfile` maps to R5 `ElementDefinition.type.targetProfile`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ElementDefinition.type.profile"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Profile (StructureDefinition) to apply (or IG)",
+        "definition": "Identifies a profile structure or implementation Guide that SHALL hold for resources or datatypes referenced as the type of this element. Can be a local reference - to another structure in this profile, or a reference to a structure in another profile. When more than one profile is specified, the content must conform to all of them. When an implementation guide is specified, the resource SHALL conform to at least one profile defined in the implementation guide.",
+        "comment": "`ElementDefinition.type.profile` maps to R5 `ElementDefinition.type.profile`. So is mapped as Equivalent. `ElementDefinition.type.targetProfile` maps to R5 `ElementDefinition.type.targetProfile`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}

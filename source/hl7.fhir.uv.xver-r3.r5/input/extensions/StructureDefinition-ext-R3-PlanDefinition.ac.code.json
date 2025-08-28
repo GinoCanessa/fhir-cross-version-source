@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-PlanDefinition.ac.code",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-PlanDefinition.action.code",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_PlanDefinition_ac_code",
+  "title": "Cross-version Extension for R3.PlanDefinition.action.code for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:17.6971139-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PlanDefinition.action.code from http://hl7.org/fhir/StructureDefinition/PlanDefinition|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition.action.code"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Code representing the meaning of the action or sub-actions",
+        "definition": "A code that provides meaning for the action or action group. For example, a section may have a LOINC code for a the section of a documentation template.",
+        "comment": "`PlanDefinition.action.code` maps to R5 `PlanDefinition.action.code`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-PlanDefinition.action.code"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Code representing the meaning of the action or sub-actions",
+        "definition": "A code that provides meaning for the action or action group. For example, a section may have a LOINC code for a the section of a documentation template.",
+        "comment": "`PlanDefinition.action.code` maps to R5 `PlanDefinition.action.code`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

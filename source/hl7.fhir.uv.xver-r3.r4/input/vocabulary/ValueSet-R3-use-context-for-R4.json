@@ -1,0 +1,120 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R3-use-context-for-R4",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/ValueSet/R3-use-context-for-R4",
+  "version": "0.0.1-snapshot-2",
+  "name": "R3_use_context_for_R4",
+  "title": "Cross-version VS for R3.Context of Use ValueSet for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:03.0564299-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/use-context|3.0.2 for use in FHIR R4. Concepts not present here have direct `equivalent` mappings crossing all versions from R3 to R4.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/usps-state"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/practitioner-specialty"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "394733009"
+          }
+        ]
+      },
+      {
+        "system": "urn:iso:std:iso:3166"
+      },
+      {
+        "system": "urn:iso:std:iso:3166"
+      },
+      {
+        "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "filter": [
+          {
+            "property": "class",
+            "op": "=",
+            "value": "region"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "387961004"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/administrative-gender"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/condition-code"
+        ]
+      },
+      {
+        "system": "http://nucc.org/provider-taxonomy"
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/v3-ActTaskCode"
+        ]
+      }
+    ]
+  }
+}

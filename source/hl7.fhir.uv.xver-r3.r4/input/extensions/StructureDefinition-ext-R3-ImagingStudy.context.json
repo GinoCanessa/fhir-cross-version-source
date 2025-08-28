@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ImagingStudy.context",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.context",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ImagingStudy_context",
+  "title": "Cross-version Extension for R3.ImagingStudy.context for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:15.8712644-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ImagingStudy.context from http://hl7.org/fhir/StructureDefinition/ImagingStudy|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Originating context",
+        "definition": "The encounter or episode at which the request is initiated.",
+        "comment": "`ImagingStudy.context` maps to R4 `ImagingStudy.encounter`. Type `Reference(http://hl7.org/fhir/StructureDefinition/EpisodeOfCare)` has no mapping So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingStudy.context"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Originating context",
+        "definition": "The encounter or episode at which the request is initiated.",
+        "comment": "`ImagingStudy.context` maps to R4 `ImagingStudy.encounter`. Type `Reference(http://hl7.org/fhir/StructureDefinition/EpisodeOfCare)` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

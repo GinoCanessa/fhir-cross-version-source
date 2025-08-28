@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Contract.agent",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Contract.agent",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Contract_agent",
+  "title": "Cross-version Extension for R3.Contract.agent for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:13.5611693-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Contract.agent from http://hl7.org/fhir/StructureDefinition/Contract|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Contract"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Entity being ascribed responsibility",
+        "definition": "An actor taking a role in an activity for which it can be assigned some degree of responsibility for the activity taking place.",
+        "comment": "`Contract.agent` maps to R4 `Contract`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor",
+        "path": "Extension.extension",
+        "sliceName": "actor",
+        "short": "Contract Agent Type",
+        "definition": "Who or what parties are assigned roles in this Contract.",
+        "comment": "`Contract.agent` maps to R4 `Contract`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:actor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contract Agent Type",
+        "definition": "Who or what parties are assigned roles in this Contract.",
+        "comment": "`Contract.agent` maps to R4 `Contract`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "Role type of the agent",
+        "definition": "Role type of agent assigned roles in this Contract.",
+        "comment": "`Contract.agent` maps to R4 `Contract`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Role type of the agent",
+        "definition": "Role type of agent assigned roles in this Contract.",
+        "comment": "`Contract.agent` maps to R4 `Contract`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Detailed codes for the contract actor role.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-contract-actorrole-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Contract.agent"
+      }
+    ]
+  }
+}

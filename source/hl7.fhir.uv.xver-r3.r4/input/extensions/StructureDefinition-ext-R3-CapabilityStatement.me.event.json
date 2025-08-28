@@ -1,0 +1,435 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-CapabilityStatement.me.event",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.messaging.event",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_CapabilityStatement_me_event",
+  "title": "Cross-version Extension for R3.CapabilityStatement.messaging.event for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:11.7239724-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents CapabilityStatement.messaging.event from http://hl7.org/fhir/StructureDefinition/CapabilityStatement|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CapabilityStatement.messaging"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Declare support for this event",
+        "definition": "A description of the solution's support for an event at this end-point.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 5,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Event type",
+        "definition": "A coded identifier of a supported messaging event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Event type",
+        "definition": "A coded identifier of a supported messaging event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "One of the message events defined as part of FHIR.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-message-events-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "Consequence | Currency | Notification",
+        "definition": "The impact of the content of the message.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Consequence | Currency | Notification",
+        "definition": "The impact of the content of the message.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The impact of the content of a message.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/message-significance-category|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:mode",
+        "path": "Extension.extension",
+        "sliceName": "mode",
+        "short": "sender | receiver",
+        "definition": "The mode of this event declaration - whether an application is a sender or receiver.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:mode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "mode"
+      },
+      {
+        "id": "Extension.extension:mode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "sender | receiver",
+        "definition": "The mode of this event declaration - whether an application is a sender or receiver.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The mode of a message capability statement.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/event-capability-mode|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:focus",
+        "path": "Extension.extension",
+        "sliceName": "focus",
+        "short": "Resource that's focus of message",
+        "definition": "A resource associated with the event.  This is the resource that defines the event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:focus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "focus"
+      },
+      {
+        "id": "Extension.extension:focus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Resource that's focus of message",
+        "definition": "A resource associated with the event.  This is the resource that defines the event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of FHIR.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-resource-types-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:request",
+        "path": "Extension.extension",
+        "sliceName": "request",
+        "short": "Profile that describes the request",
+        "definition": "Information about the request for this event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:request.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "request"
+      },
+      {
+        "id": "Extension.extension:request.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Profile that describes the request",
+        "definition": "Information about the request for this event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:response",
+        "path": "Extension.extension",
+        "sliceName": "response",
+        "short": "Profile that describes the response",
+        "definition": "Information about the response for this event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:response.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "response"
+      },
+      {
+        "id": "Extension.extension:response.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Profile that describes the response",
+        "definition": "Information about the response for this event.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:documentation",
+        "path": "Extension.extension",
+        "sliceName": "documentation",
+        "short": "Endpoint-specific event documentation",
+        "definition": "Guidance on how this event is handled, such as internal system trigger points, business rules, etc.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:documentation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "documentation"
+      },
+      {
+        "id": "Extension.extension:documentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Endpoint-specific event documentation",
+        "definition": "Guidance on how this event is handled, such as internal system trigger points, business rules, etc.",
+        "comment": "`CapabilityStatement.messaging.event` has no related element in R4:CapabilityStatement",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-CapabilityStatement.messaging.event"
+      }
+    ]
+  }
+}

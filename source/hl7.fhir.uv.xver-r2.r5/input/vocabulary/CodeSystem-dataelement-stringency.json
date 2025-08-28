@@ -1,0 +1,142 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "dataelement-stringency",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.244"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/dataelement-stringency",
+  "version": "1.0.2",
+  "name": "dataelement-stringency",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "comparable",
+      "display": "Comparable",
+      "definition": "The data element is sufficiently well-constrained that multiple pieces of data captured according to the constraints of the data element will be comparable (though in some cases, a degree of automated conversion/normalization may be required).",
+      "concept": [
+        {
+          "code": "fully-specified",
+          "display": "Fully Specified",
+          "definition": "The data element is fully specified down to a single value set, single unit of measure, single data type, etc.  Multiple pieces of data associated with this data element are fully comparable."
+        },
+        {
+          "code": "equivalent",
+          "display": "Equivalent",
+          "definition": "The data element allows multiple units of measure having equivalent meaning; e.g. \"cc\" (cubic centimeter) and \"mL\" (milliliter)."
+        },
+        {
+          "code": "convertable",
+          "display": "Convertable",
+          "definition": "The data element allows multiple units of measure that are convertable between each other (e.g. inches and centimeters) and/or allows data to be captured in multiple value sets for which a known mapping exists allowing conversion of meaning.",
+          "concept": [
+            {
+              "code": "scaleable",
+              "display": "Scaleable",
+              "definition": "A convertable data element where unit conversions are different only by a power of 10; e.g. g, mg, kg."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "flexible",
+      "display": "Flexible",
+      "definition": "The data element is unconstrained in units, choice of data types and/or choice of vocabulary such that automated comparison of data captured using the data element is not possible."
+    }
+  ]
+}

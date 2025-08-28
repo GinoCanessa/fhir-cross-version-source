@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "R4-ResearchElementDefinition-for-R5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/R4-ResearchElementDefinition-for-R5",
+  "version": "0.0.1-snapshot-2",
+  "name": "R4_ResearchElementDefinition_for_R5",
+  "title": "Cross-version Profile for R4.ResearchElementDefinition for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:47.7117478-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version profile on the R5.Basic resource can be used to represent a FHIR R4.ResearchElementDefinition resource.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Basic",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Basic.extension",
+        "path": "Basic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Basic.extension:ResearchElementDefinition",
+        "path": "Basic.extension",
+        "sliceName": "ResearchElementDefinition",
+        "short": "Cross-version extension for ResearchElementDefinition from R4 for use in FHIR R5",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/4.0/StructureDefinition/extension-ResearchElementDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Basic.code",
+        "path": "Basic.code",
+        "base": {
+          "path": "Basic.code",
+          "min": 1,
+          "max": "*"
+        },
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/fhir-types",
+              "code": "ResearchElementDefinition"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

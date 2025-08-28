@@ -1,0 +1,39 @@
+### Lookup for [FHIR R4](https://hl7.org/fhir/R4/) [MedicationDispense](https://hl7.org/fhir/R4/MedicationDispense.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R4) | Usage | Target |
+| -------------- | ----- | ------ |
+| [MedicationDispense.meta](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.meta](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.implicitRules](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.implicitRules](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.language](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.language](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.text](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.text](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.contained](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.contained](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.identifier](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.identifier](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.partOf](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.partOf](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.status](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.status](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.statusReason[x]](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.statusReason[x]](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.category](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.category](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.medication[x]](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.medication[x]](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.subject](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.subject](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.context](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.context](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.supportingInformation](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.supportingInformation](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.performer](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.performer](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.performer.function](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.performer.function](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.performer.actor](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.performer.actor](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.location](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.location](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.authorizingPrescription](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.authorizingPrescription](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.type](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.type](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.quantity](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.quantity](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.daysSupply](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.daysSupply](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.whenPrepared](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.whenPrepared](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.whenHandedOver](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.whenHandedOver](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.destination](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.destination](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.receiver](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.receiver](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.note](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.note](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.dosageInstruction](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.dosageInstruction](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.substitution](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.substitution](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.substitution.wasSubstituted](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.substitution.wasSubstituted](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.substitution.type](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.substitution.type](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.substitution.reason](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.substitution.reason](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.substitution.responsibleParty](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.substitution.responsibleParty](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.detectedIssue](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.detectedIssue](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |
+| [MedicationDispense.eventHistory](https://hl7.org/fhir/R4/MedicationDispense.html#resource) | `UseElementSameName` | [MedicationDispense.eventHistory](https://hl7.org/fhir/R4B/MedicationDispense.html#resource) |

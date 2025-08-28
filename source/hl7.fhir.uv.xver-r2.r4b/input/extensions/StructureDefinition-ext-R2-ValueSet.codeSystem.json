@@ -1,0 +1,716 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ValueSet.codeSystem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ValueSet.codeSystem",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ValueSet_codeSystem",
+  "title": "Cross-version Extension for R2.ValueSet.codeSystem for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:55.7986161-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ValueSet.codeSystem from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CodeSystem"
+    },
+    {
+      "type": "element",
+      "expression": "ValueSet"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "An inline code system, which is part of this value set",
+        "definition": "A definition of a code system, inlined into the value set (as a packaging convenience). Note that the inline code system may be used from other value sets by referring to its (codeSystem.system) directly.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:system",
+        "path": "Extension.extension",
+        "sliceName": "system",
+        "short": "URI to identify the code system (e.g. in Coding.system)",
+        "definition": "An absolute URI that is used to reference this code system, including in [Coding]{datatypes.html#Coding}.system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:system.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "system"
+      },
+      {
+        "id": "Extension.extension:system.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "URI to identify the code system (e.g. in Coding.system)",
+        "definition": "An absolute URI that is used to reference this code system, including in [Coding]{datatypes.html#Coding}.system.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "Version (for use in Coding.version)",
+        "definition": "The version of this code system that defines the codes. Note that the version is optional because a well maintained code system does not suffer from versioning, and therefore the version does not need to be maintained. However many code systems are not well maintained, and the version needs to be defined and tracked.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Version (for use in Coding.version)",
+        "definition": "The version of this code system that defines the codes. Note that the version is optional because a well maintained code system does not suffer from versioning, and therefore the version does not need to be maintained. However many code systems are not well maintained, and the version needs to be defined and tracked.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:caseSensitive",
+        "path": "Extension.extension",
+        "sliceName": "caseSensitive",
+        "short": "If code comparison is case sensitive",
+        "definition": "If code comparison is case sensitive when codes within this system are compared to each other.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:caseSensitive.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "caseSensitive"
+      },
+      {
+        "id": "Extension.extension:caseSensitive.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If code comparison is case sensitive",
+        "definition": "If code comparison is case sensitive when codes within this system are compared to each other.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept",
+        "path": "Extension.extension",
+        "sliceName": "concept",
+        "short": "Concepts in the code system",
+        "definition": "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Code that identifies concept",
+        "definition": "A code - a text symbol - that uniquely identifies the concept within the code system.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:concept.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code that identifies concept",
+        "definition": "A code - a text symbol - that uniquely identifies the concept within the code system.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:abstract",
+        "path": "Extension.extension.extension",
+        "sliceName": "abstract",
+        "short": "If this code is not for use as a real concept",
+        "definition": "This cross-version extension represents ValueSet.codeSystem.concept.abstract from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:abstract.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "abstract"
+      },
+      {
+        "id": "Extension.extension:concept.extension:abstract.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "If this code is not for use as a real concept",
+        "definition": "This cross-version extension represents ValueSet.codeSystem.concept.abstract from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:display",
+        "path": "Extension.extension.extension",
+        "sliceName": "display",
+        "short": "Text to display to the user",
+        "definition": "A human readable string that is the recommended default way to present this concept to a user.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:display.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "display"
+      },
+      {
+        "id": "Extension.extension:concept.extension:display.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Text to display to the user",
+        "definition": "A human readable string that is the recommended default way to present this concept to a user.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:definition",
+        "path": "Extension.extension.extension",
+        "sliceName": "definition",
+        "short": "Formal definition",
+        "definition": "The formal definition of the concept. The value set resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:definition.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:concept.extension:definition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Formal definition",
+        "definition": "The formal definition of the concept. The value set resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation",
+        "path": "Extension.extension.extension",
+        "sliceName": "designation",
+        "short": "Additional representations for the concept",
+        "definition": "Additional representations for the concept - other languages, aliases, specialized purposes, used for particular purposes, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:language",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "language",
+        "short": "Human language of the designation",
+        "definition": "The language this designation is defined for.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:language.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Human language of the designation",
+        "definition": "The language this designation is defined for.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:use",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "use",
+        "short": "Details how this designation would be used",
+        "definition": "A code that details how this designation would be used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:use.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:use.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Details how this designation would be used",
+        "definition": "A code that details how this designation would be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Details of how a designation would be used.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-designation-use-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "short": "The text value for this designation",
+        "definition": "This cross-version extension represents ValueSet.codeSystem.concept.designation.value from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The text value for this designation",
+        "definition": "This cross-version extension represents ValueSet.codeSystem.concept.designation.value from http://hl7.org/fhir/StructureDefinition/ValueSet|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:designation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "designation"
+      },
+      {
+        "id": "Extension.extension:concept.extension:concept",
+        "path": "Extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Child Concepts (is-a/contains/categorizes)",
+        "definition": "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) and can only be determined by examining the definitions of the concepts.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:concept.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:concept.extension:concept.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ValueSet.codeSystem.concept.concept from FHIR R2",
+        "definition": "Data type name for ValueSet.codeSystem.concept.concept from FHIR R2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:concept.extension:concept.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: ValueSet.codeSystem.concept",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ValueSet.codeSystem.concept"
+      },
+      {
+        "id": "Extension.extension:concept.extension:concept.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:concept.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ValueSet.codeSystem"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [RegulatedAuthorization](https://hl7.org/fhir/R4B/RegulatedAuthorization.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [RegulatedAuthorization.meta](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.meta](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.implicitRules](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.implicitRules](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.language](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.language](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.text](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.text](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.contained](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.contained](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.identifier](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.identifier](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.subject](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.subject](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.type](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.type](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.description](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.description](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.region](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.region](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.status](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.status](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.statusDate](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.statusDate](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.validityPeriod](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.validityPeriod](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.indication](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.indication](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.intendedUse](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.intendedUse](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.basis](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.basis](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.holder](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.holder](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.regulator](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.regulator](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case.identifier](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case.identifier](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case.type](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case.type](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case.status](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case.status](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case.date[x]](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case.date[x]](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |
+| [RegulatedAuthorization.case.application](https://hl7.org/fhir/R4B/RegulatedAuthorization.html#resource) | `UseElementSameName` | [RegulatedAuthorization.case.application](https://hl7.org/fhir/R5/RegulatedAuthorization.html#resource) |

@@ -1,0 +1,732 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-BodyStructure.includedStructure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_BodyStructure_includedStructure",
+  "title": "Cross-version Extension for R5.BodyStructure.includedStructure for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:49.3419776-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents BodyStructure.includedStructure from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "BodyStructure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Included anatomic location(s)",
+        "definition": "The anatomical location(s) or region(s) of the specimen, lesion, or body structure.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure",
+        "path": "Extension.extension",
+        "sliceName": "structure",
+        "short": "Code that represents the included structure",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.structure from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:structure.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "structure"
+      },
+      {
+        "id": "Extension.extension:structure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Code that represents the included structure",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.structure from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "SNOMED CT Body site concepts",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-body-site-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:laterality",
+        "path": "Extension.extension",
+        "sliceName": "laterality",
+        "short": "Code that represents the included structure laterality",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.laterality from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:laterality.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "laterality"
+      },
+      {
+        "id": "Extension.extension:laterality.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Code that represents the included structure laterality",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.laterality from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Concepts modifying the anatomic location.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-bodystructure-relative-location-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation",
+        "path": "Extension.extension",
+        "sliceName": "bodyLandmarkOrientation",
+        "short": "Landmark relative location",
+        "definition": "Body locations in relation to a specific body landmark (tatoo, scar, other body structure).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription",
+        "path": "Extension.extension.extension",
+        "sliceName": "landmarkDescription",
+        "short": "Body ]andmark description",
+        "definition": "A description of a landmark on the body used as a reference to locate something else.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "landmarkDescription"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:landmarkDescription.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Body ]andmark description",
+        "definition": "A description of a landmark on the body used as a reference to locate something else.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Select SNOMED code system values. Values used in a podiatry setting to decsribe landmarks on the body.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-body-site-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition",
+        "path": "Extension.extension.extension",
+        "sliceName": "clockFacePosition",
+        "short": "Clockface orientation",
+        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "clockFacePosition"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:clockFacePosition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Clockface orientation",
+        "definition": "An description of the direction away from a landmark something is located based on a radial clock dial.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Select SNOMED CT codes. A set of codes that describe a things orientation based on a hourly positions of a clock face.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-bodystructure-bodylandmarkorientation-clockface-position-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark",
+        "path": "Extension.extension.extension",
+        "sliceName": "distanceFromLandmark",
+        "short": "Landmark relative location",
+        "definition": "The distance in centimeters a certain observation is made from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "device",
+        "short": "Measurement device",
+        "definition": "An instrument, tool, analyzer, etc. used in the measurement.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:concept",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device from FHIR R5",
+        "definition": "Data type name for BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:device.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Measured distance from body landmark",
+        "definition": "The measured distance (e.g., in cm) from a body landmark.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:distanceFromLandmark.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "distanceFromLandmark"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation",
+        "path": "Extension.extension.extension",
+        "sliceName": "surfaceOrientation",
+        "short": "Relative landmark surface orientation",
+        "definition": "The surface area a body location is in relation to a landmark.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "surfaceOrientation"
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.extension:surfaceOrientation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Relative landmark surface orientation",
+        "definition": "The surface area a body location is in relation to a landmark.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Select SNOMED code system values. The surface area a body location is in relation to a landmark.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-bodystructure-relative-location-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyLandmarkOrientation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "bodyLandmarkOrientation"
+      },
+      {
+        "id": "Extension.extension:spatialReference",
+        "path": "Extension.extension",
+        "sliceName": "spatialReference",
+        "short": "Cartesian reference for structure",
+        "definition": "XY or XYZ-coordinate orientation for structure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:spatialReference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "spatialReference"
+      },
+      {
+        "id": "Extension.extension:spatialReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Cartesian reference for structure",
+        "definition": "XY or XYZ-coordinate orientation for structure.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:qualifier",
+        "path": "Extension.extension",
+        "sliceName": "qualifier",
+        "short": "Code that represents the included structure qualifier",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.qualifier from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:qualifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "qualifier"
+      },
+      {
+        "id": "Extension.extension:qualifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Code that represents the included structure qualifier",
+        "definition": "This cross-version extension represents BodyStructure.includedStructure.qualifier from http://hl7.org/fhir/StructureDefinition/BodyStructure|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Concepts modifying the anatomic location.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-bodystructure-relative-location-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+      }
+    ]
+  }
+}

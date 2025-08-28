@@ -1,0 +1,277 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-Population",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Population",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_Population",
+  "title": "Cross-version Extension for R4.Population for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:38.5684859-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Population from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A definition of a set of people that apply to some clinically related context, for example people contraindicated for a certain medication",
+        "definition": "A populatioof people with some set of grouping criteria.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:age[x]",
+        "path": "Extension.extension",
+        "sliceName": "age[x]",
+        "short": "The age of the specific population",
+        "definition": "This cross-version extension represents Population.age[x] from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:age[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "age[x]"
+      },
+      {
+        "id": "Extension.extension:age[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The age of the specific population",
+        "definition": "This cross-version extension represents Population.age[x] from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gender",
+        "path": "Extension.extension",
+        "sliceName": "gender",
+        "short": "The gender of the specific population",
+        "definition": "This cross-version extension represents Population.gender from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gender.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gender"
+      },
+      {
+        "id": "Extension.extension:gender.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The gender of the specific population",
+        "definition": "This cross-version extension represents Population.gender from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:race",
+        "path": "Extension.extension",
+        "sliceName": "race",
+        "short": "Race of the specific population",
+        "definition": "This cross-version extension represents Population.race from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:race.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "race"
+      },
+      {
+        "id": "Extension.extension:race.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Race of the specific population",
+        "definition": "This cross-version extension represents Population.race from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:physiologicalCondition",
+        "path": "Extension.extension",
+        "sliceName": "physiologicalCondition",
+        "short": "The existing physiological conditions of the specific population to which this applies",
+        "definition": "This cross-version extension represents Population.physiologicalCondition from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:physiologicalCondition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "physiologicalCondition"
+      },
+      {
+        "id": "Extension.extension:physiologicalCondition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The existing physiological conditions of the specific population to which this applies",
+        "definition": "This cross-version extension represents Population.physiologicalCondition from http://hl7.org/fhir/StructureDefinition/Population|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Population"
+      }
+    ]
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ManufacturedItemDefinition.component",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.component",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ManufacturedItemDefinition_component",
+  "title": "Cross-version Extension for R5.ManufacturedItemDefinition.component for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:55.197834-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ManufacturedItemDefinition.component from http://hl7.org/fhir/StructureDefinition/ManufacturedItemDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ManufacturedItemDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Physical parts of the manufactured item, that it is intrisically made from. This is distinct from the ingredients that are part of its chemical makeup",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Defining type of the component e.g. shell, layer, ink",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Defining type of the component e.g. shell, layer, ink",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:function",
+        "path": "Extension.extension",
+        "sliceName": "function",
+        "short": "The function of this component within the item e.g. delivers active ingredient, masks taste",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:function.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:function.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The function of this component within the item e.g. delivers active ingredient, masks taste",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "short": "The measurable amount of total quantity of all substances in the component, expressable in different ways (e.g. by mass or volume)",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The measurable amount of total quantity of all substances in the component, expressable in different ways (e.g. by mass or volume)",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:constituent",
+        "path": "Extension.extension",
+        "sliceName": "constituent",
+        "short": "A reference to a constituent of the manufactured item as a whole, linked here so that its component location within the item can be indicated. This not where the item's ingredient are primarily stated (for which see Ingredient.for or ManufacturedItemDefinition.ingredient)",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "The measurable amount of the substance, expressable in different ways (e.g. by mass or volume)",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:constituent.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The measurable amount of the substance, expressable in different ways (e.g. by mass or volume)",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:constituent.extension:location",
+        "path": "Extension.extension.extension",
+        "sliceName": "location",
+        "short": "The physical location of the constituent/ingredient within the component",
+        "definition": "The physical location of the constituent/ingredient within the component. Example – if the component is the bead in the capsule, then the location would be where the ingredient resides within the product part – intragranular, extra-granular, etc.",
+        "comment": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension:location.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:constituent.extension:location.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The physical location of the constituent/ingredient within the component",
+        "definition": "The physical location of the constituent/ingredient within the component. Example – if the component is the bead in the capsule, then the location would be where the ingredient resides within the product part – intragranular, extra-granular, etc.",
+        "comment": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:constituent.extension:function",
+        "path": "Extension.extension.extension",
+        "sliceName": "function",
+        "short": "The function of this constituent within the component e.g. binder",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension:function.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:constituent.extension:function.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The function of this constituent within the component e.g. binder",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:constituent.extension:hasIngredient",
+        "path": "Extension.extension.extension",
+        "sliceName": "hasIngredient",
+        "short": "The ingredient that is the constituent of the given component",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:constituent.extension:hasIngredient.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "hasIngredient"
+      },
+      {
+        "id": "Extension.extension:constituent.extension:hasIngredient.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The ingredient that is the constituent of the given component",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:constituent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "constituent"
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "short": "General characteristics of this component",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ManufacturedItemDefinition.component.property from FHIR R5",
+        "definition": "Data type name for ManufacturedItemDefinition.component.property from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: ManufacturedItemDefinition.property",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ManufacturedItemDefinition.property"
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:component",
+        "path": "Extension.extension",
+        "sliceName": "component",
+        "short": "A component that this component contains or is made from",
+        "definition": "`ManufacturedItemDefinition.component` has no related element in R4B:ManufacturedItemDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:component.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:component.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ManufacturedItemDefinition.component.component from FHIR R5",
+        "definition": "Data type name for ManufacturedItemDefinition.component.component from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:component.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: ManufacturedItemDefinition.component",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ManufacturedItemDefinition.component"
+      },
+      {
+        "id": "Extension.extension:component.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "component"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ManufacturedItemDefinition.component"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1095 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Permission",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Permission",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Permission",
+  "title": "Cross-version Extension for R5.Permission for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:57.6314416-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Permission from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Access Rules",
+        "definition": "Permission resource holds access rules for a given data and context.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "active | entered-in-error | draft | rejected",
+        "definition": "Status.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "active | entered-in-error | draft | rejected",
+        "definition": "Status.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes identifying the lifecycle stage of a product.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-permission-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:asserter",
+        "path": "Extension.extension",
+        "sliceName": "asserter",
+        "short": "The person or entity that asserts the permission",
+        "definition": "This cross-version extension represents Permission.asserter from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:asserter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "asserter"
+      },
+      {
+        "id": "Extension.extension:asserter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The person or entity that asserts the permission",
+        "definition": "This cross-version extension represents Permission.asserter from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "The date that permission was asserted",
+        "definition": "This cross-version extension represents Permission.date from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date that permission was asserted",
+        "definition": "This cross-version extension represents Permission.date from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:validity",
+        "path": "Extension.extension",
+        "sliceName": "validity",
+        "short": "The period in which the permission is active",
+        "definition": "This cross-version extension represents Permission.validity from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:validity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "validity"
+      },
+      {
+        "id": "Extension.extension:validity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The period in which the permission is active",
+        "definition": "This cross-version extension represents Permission.validity from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:justification",
+        "path": "Extension.extension",
+        "sliceName": "justification",
+        "short": "The asserted justification for using the data",
+        "definition": "This cross-version extension represents Permission.justification from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:justification.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:justification.extension:basis",
+        "path": "Extension.extension.extension",
+        "sliceName": "basis",
+        "short": "The regulatory grounds upon which this Permission builds",
+        "definition": "This would be a codeableconcept, or a coding, which can be constrained to , for example, the 6 grounds for processing in GDPR.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:justification.extension:basis.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "basis"
+      },
+      {
+        "id": "Extension.extension:justification.extension:basis.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The regulatory grounds upon which this Permission builds",
+        "definition": "This would be a codeableconcept, or a coding, which can be constrained to , for example, the 6 grounds for processing in GDPR.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Regulatory policy examples",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-consent-policy-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:justification.extension:evidence",
+        "path": "Extension.extension.extension",
+        "sliceName": "evidence",
+        "short": "Justifing rational",
+        "definition": "This cross-version extension represents Permission.justification.evidence from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:justification.extension:evidence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "evidence"
+      },
+      {
+        "id": "Extension.extension:justification.extension:evidence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Justifing rational",
+        "definition": "This cross-version extension represents Permission.justification.evidence from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:justification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "justification"
+      },
+      {
+        "id": "Extension.extension:combining",
+        "path": "Extension.extension",
+        "sliceName": "combining",
+        "short": "deny-overrides | permit-overrides | ordered-deny-overrides | ordered-permit-overrides | deny-unless-permit | permit-unless-deny",
+        "definition": "Defines a procedure for arriving at an access decision given the set of rules.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:combining.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "combining"
+      },
+      {
+        "id": "Extension.extension:combining.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "deny-overrides | permit-overrides | ordered-deny-overrides | ordered-permit-overrides | deny-unless-permit | permit-unless-deny",
+        "definition": "Defines a procedure for arriving at an access decision given the set of rules.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How the rules are to be combined.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-permission-rule-combining-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:rule",
+        "path": "Extension.extension",
+        "sliceName": "rule",
+        "short": "Constraints to the Permission",
+        "definition": "A set of rules.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "deny | permit",
+        "definition": "This cross-version extension represents Permission.rule.type from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:rule.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "deny | permit",
+        "definition": "This cross-version extension represents Permission.rule.type from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How a rule statement is applied.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-consent-provision-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data",
+        "path": "Extension.extension.extension",
+        "sliceName": "data",
+        "short": "The selection criteria to identify data that is within scope of this provision",
+        "definition": "A description or definition of which activities are allowed to be done on the data.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "resource",
+        "short": "Explicit FHIR Resource references",
+        "definition": "This cross-version extension represents Permission.rule.data.resource from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:meaning",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "meaning",
+        "short": "instance | related | dependents | authoredby",
+        "definition": "How the resource reference is interpreted when testing consent restrictions.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:meaning.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "meaning"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:meaning.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "instance | related | dependents | authoredby",
+        "definition": "How the resource reference is interpreted when testing consent restrictions.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How a resource reference is interpreted when testing consent restrictions.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-data-meaning|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "The actual data reference",
+        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The actual data reference",
+        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:resource.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:security",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "security",
+        "short": "Security tag code on .meta.security",
+        "definition": "The data in scope are those with the given codes present in that data .meta.security element.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:security.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "security"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:security.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Security tag code on .meta.security",
+        "definition": "The data in scope are those with the given codes present in that data .meta.security element.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:period",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "period",
+        "short": "Timeframe encompasing data create/update",
+        "definition": "Clinical or Operational Relevant period of time that bounds the data controlled by this rule.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:period.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:period.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Timeframe encompasing data create/update",
+        "definition": "Clinical or Operational Relevant period of time that bounds the data controlled by this rule.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:expression",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "expression",
+        "short": "Expression identifying the data",
+        "definition": "Used when other data selection elements are insufficient.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:expression.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expression"
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.extension:expression.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Expression identifying the data",
+        "definition": "Used when other data selection elements are insufficient.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:data.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "data"
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity",
+        "path": "Extension.extension.extension",
+        "sliceName": "activity",
+        "short": "A description or definition of which activities are allowed to be done on the data",
+        "definition": "This cross-version extension represents Permission.rule.activity from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:actor",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "actor",
+        "short": "Authorized actor(s)",
+        "definition": "The actor(s) authorized for the defined activity.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:actor.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:actor.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Authorized actor(s)",
+        "definition": "The actor(s) authorized for the defined activity.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:action",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "action",
+        "short": "Actions controlled by this rule",
+        "definition": "Actions controlled by this Rule.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:action.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "action"
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:action.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Actions controlled by this rule",
+        "definition": "Actions controlled by this Rule.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Detailed codes for the action.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-consent-action-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:purpose",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "purpose",
+        "short": "The purpose for which the permission is given",
+        "definition": "This cross-version extension represents Permission.rule.activity.purpose from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:purpose.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.extension:purpose.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The purpose for which the permission is given",
+        "definition": "This cross-version extension represents Permission.rule.activity.purpose from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:activity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "activity"
+      },
+      {
+        "id": "Extension.extension:rule.extension:limit",
+        "path": "Extension.extension.extension",
+        "sliceName": "limit",
+        "short": "What limits apply to the use of the data",
+        "definition": "This cross-version extension represents Permission.rule.limit from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:limit.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "limit"
+      },
+      {
+        "id": "Extension.extension:rule.extension:limit.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "What limits apply to the use of the data",
+        "definition": "This cross-version extension represents Permission.rule.limit from http://hl7.org/fhir/StructureDefinition/Permission|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Obligations and Refrains",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-security-label-event-examples-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "rule"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Permission"
+      }
+    ]
+  }
+}

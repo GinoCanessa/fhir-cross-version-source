@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-OperationDefinition.pa.bi.valueSet",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.parameter.binding.valueSet",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_OperationDefinition_pa_bi_valueSet",
+  "title": "Cross-version Extension for R2.OperationDefinition.parameter.binding.valueSet[x] for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:54.2577104-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents OperationDefinition.parameter.binding.valueSet[x] from http://hl7.org/fhir/StructureDefinition/OperationDefinition|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "OperationDefinition.parameter.binding.valueSet"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Source of value set",
+        "definition": "Points to the value set or external definition (e.g. implicit value set) that identifies the set of codes to be used.",
+        "comment": "`OperationDefinition.parameter.binding.valueSet` maps to R4B `OperationDefinition.parameter.binding.valueSet`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-OperationDefinition.parameter.binding.valueSet"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Source of value set",
+        "definition": "Points to the value set or external definition (e.g. implicit value set) that identifies the set of codes to be used.",
+        "comment": "`OperationDefinition.parameter.binding.valueSet` maps to R4B `OperationDefinition.parameter.binding.valueSet`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

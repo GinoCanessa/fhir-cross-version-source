@@ -1,0 +1,44 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [MedicationOrder](https://hl7.org/fhir/DSTU2/MedicationOrder.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [MedicationOrder.meta](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.meta](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.implicitRules](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.implicitRules](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.language](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.language](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.text](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.text](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.contained](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.contained](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.identifier](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.identifier](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dateWritten](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.authoredOn](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.status](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.status](StructureDefinition-ext-R2-MedicationOrder.status.html) |
+| [MedicationOrder.dateEnded](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dateEnded](StructureDefinition-ext-R2-MedicationOrder.dateEnded.html) |
+| [MedicationOrder.reasonEnded](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reasonEnded](StructureDefinition-ext-R2-MedicationOrder.reasonEnded.html) |
+| [MedicationOrder.patient](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.subject](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.prescriber](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.requester](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.encounter](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.encounter](StructureDefinition-ext-R2-MedicationOrder.encounter.html) |
+| [MedicationOrder.reason[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.reason](StructureDefinition-ext-R2-MedicationOrder.reason.html) |
+| [MedicationOrder.note](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.note](StructureDefinition-ext-R2-MedicationOrder.note.html) |
+| [MedicationOrder.medication[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.medication[x]](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dosageInstruction](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dosageInstruction](StructureDefinition-ext-R2-MedicationOrder.dosageInstruction.html) |
+| [MedicationOrder.dosageInstruction.id](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.text](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.additionalInstructions](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.timing](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.asNeeded[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.site[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.route](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.method](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.dose[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.rate[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dosageInstruction.maxDosePerPeriod](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationOrder.dispenseRequest](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.dispenseRequest](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dispenseRequest.id](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.dispenseRequest.id](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dispenseRequest.medication[x]](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dispenseRequest.medication](StructureDefinition-ext-R2-MedicationOrder.di.medication.html) |
+| [MedicationOrder.dispenseRequest.validityPeriod](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.dispenseRequest.validityPeriod](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dispenseRequest.numberOfRepeatsAllowed](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.dispenseRequest.numberOfRepeatsAllowed](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dispenseRequest.quantity](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.dispenseRequest.quantity](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.dispenseRequest.expectedSupplyDuration](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.dispenseRequest.expectedSupplyDuration](StructureDefinition-ext-R2-MedicationOrder.di.eMO.html) |
+| [MedicationOrder.substitution](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.substitution](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.substitution.id](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.substitution.id](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.substitution.type](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.substitution.type](StructureDefinition-ext-R2-MedicationOrder.su.type.html) |
+| [MedicationOrder.substitution.reason](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseElementRenamed` | [MedicationRequest.substitution.reason](https://hl7.org/fhir/R4/MedicationRequest.html#resource) |
+| [MedicationOrder.priorPrescription](https://hl7.org/fhir/DSTU2/MedicationOrder.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationOrder.priorPrescription](StructureDefinition-ext-R2-MedicationOrder.priorPrescription.html) |

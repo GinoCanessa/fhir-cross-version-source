@@ -1,0 +1,33 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [BiologicallyDerivedProduct](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [BiologicallyDerivedProduct.meta](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.meta](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.implicitRules](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.implicitRules](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.language](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.language](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.text](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.text](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.contained](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.contained](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.identifier](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.identifier](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.productCategory](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.productCategory](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.productCategory.html) |
+| [BiologicallyDerivedProduct.productCode](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.productCode](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.status](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.status](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.status.html) |
+| [BiologicallyDerivedProduct.request](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.request](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.quantity](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.quantity](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.quantity.html) |
+| [BiologicallyDerivedProduct.parent](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.parent](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.collection](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.collection](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.collection.collector](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.collection.collector](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.collection.source](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.collection.source](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.collection.collected[x]](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseElementSameName` | [BiologicallyDerivedProduct.collection.collected[x]](https://hl7.org/fhir/R5/BiologicallyDerivedProduct.html#resource) |
+| [BiologicallyDerivedProduct.processing](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.processing](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.processing.html) |
+| [BiologicallyDerivedProduct.processing.description](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.processing.procedure](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.processing.additive](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.processing.time[x]](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.manipulation](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.manipulation](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.manipulation.html) |
+| [BiologicallyDerivedProduct.manipulation.description](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.manipulation.time[x]](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.storage](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-BiologicallyDerivedProduct.storage](StructureDefinition-ext-R4B-BiologicallyDerivedProduct.storage.html) |
+| [BiologicallyDerivedProduct.storage.description](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.storage.temperature](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.storage.scale](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |
+| [BiologicallyDerivedProduct.storage.duration](https://hl7.org/fhir/R4B/BiologicallyDerivedProduct.html#resource) | `UseExtensionFromAncestor` | - |

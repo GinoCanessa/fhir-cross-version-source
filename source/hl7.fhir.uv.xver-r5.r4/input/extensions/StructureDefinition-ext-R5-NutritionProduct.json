@@ -1,0 +1,1458 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-NutritionProduct",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_NutritionProduct",
+  "title": "Cross-version Extension for R5.NutritionProduct for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.6535858-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents NutritionProduct from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A product used for nutritional purposes (i.e. food or supplement)",
+        "definition": "A food or supplement that is consumed by patients.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "active | inactive | entered-in-error",
+        "definition": "The current state of the product.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "active | inactive | entered-in-error",
+        "definition": "The current state of the product.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes identifying the lifecycle stage of a product.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-nutritionproduct-status-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "Broad product groups or categories used to classify the product, such as Legume and Legume Products, Beverages, or Beef Products",
+        "definition": "Nutrition products can have different classifications - according to its nutritional properties, preparation methods, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Broad product groups or categories used to classify the product, such as Legume and Legume Products, Beverages, or Beef Products",
+        "definition": "Nutrition products can have different classifications - according to its nutritional properties, preparation methods, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes identifying classes of nutrition products.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-nutrition-product-category-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer, representative or officially responsible for the product",
+        "definition": "The organisation (manufacturer, representative or legal authorization holder) that is responsible for the device.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Manufacturer, representative or officially responsible for the product",
+        "definition": "The organisation (manufacturer, representative or legal authorization holder) that is responsible for the device.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient",
+        "path": "Extension.extension",
+        "sliceName": "nutrient",
+        "short": "The product's nutritional information expressed by the nutrients",
+        "definition": "This cross-version extension represents NutritionProduct.nutrient from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "The (relevant) nutrients in the product",
+        "definition": "This cross-version extension represents NutritionProduct.nutrient.item from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for NutritionProduct.nutrient.item from FHIR R5",
+        "definition": "Data type name for NutritionProduct.nutrient.item from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "The amount of nutrient expressed in one or more units: X per pack / per serving / per dose",
+        "definition": "This cross-version extension represents NutritionProduct.nutrient.amount from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:nutrient.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The amount of nutrient expressed in one or more units: X per pack / per serving / per dose",
+        "definition": "This cross-version extension represents NutritionProduct.nutrient.amount from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nutrient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "nutrient"
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "Ingredients contained in this product",
+        "definition": "This cross-version extension represents NutritionProduct.ingredient from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "The ingredient contained in the product",
+        "definition": "This cross-version extension represents NutritionProduct.ingredient.item from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for NutritionProduct.ingredient.item from FHIR R5",
+        "definition": "Data type name for NutritionProduct.ingredient.item from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "The amount of ingredient that is in the product",
+        "definition": "This cross-version extension represents NutritionProduct.ingredient.amount from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The amount of ingredient that is in the product",
+        "definition": "This cross-version extension represents NutritionProduct.ingredient.amount from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:knownAllergen",
+        "path": "Extension.extension",
+        "sliceName": "knownAllergen",
+        "short": "Known or suspected allergens that are a part of this product",
+        "definition": "Allergens that are known or suspected to be a part of this nutrition product.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:concept",
+        "path": "Extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:concept.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:concept.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for NutritionProduct.knownAllergen from FHIR R5",
+        "definition": "Data type name for NutritionProduct.knownAllergen from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:knownAllergen.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:knownAllergen.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "knownAllergen"
+      },
+      {
+        "id": "Extension.extension:characteristic",
+        "path": "Extension.extension",
+        "sliceName": "characteristic",
+        "short": "Specifies descriptive properties of the nutrition product",
+        "definition": "This cross-version extension represents NutritionProduct.characteristic from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Code specifying the type of characteristic",
+        "definition": "A code specifying which characteristic of the product is being described (for example, colour, shape).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code specifying the type of characteristic",
+        "definition": "A code specifying which characteristic of the product is being described (for example, colour, shape).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes that identify properties that can be measured.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-measurement-property-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "The value of the characteristic",
+        "definition": "The actual characteristic value corresponding to the type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The value of the characteristic",
+        "definition": "The actual characteristic value corresponding to the type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          },
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "characteristic"
+      },
+      {
+        "id": "Extension.extension:instance",
+        "path": "Extension.extension",
+        "sliceName": "instance",
+        "short": "One or several physical instances or occurrences of the nutrition product",
+        "definition": "Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "The amount of items or instances",
+        "definition": "The amount of items or instances that the resource considers, for instance when referring to 2 identical units together.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:instance.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The amount of items or instances",
+        "definition": "The amount of items or instances that the resource considers, for instance when referring to 2 identical units together.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "The identifier for the physical instance, typically a serial number or manufacturer number",
+        "definition": "This cross-version extension represents NutritionProduct.instance.identifier from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:instance.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The identifier for the physical instance, typically a serial number or manufacturer number",
+        "definition": "This cross-version extension represents NutritionProduct.instance.identifier from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "The name for the specific product",
+        "definition": "This cross-version extension represents NutritionProduct.instance.name from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:instance.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The name for the specific product",
+        "definition": "This cross-version extension represents NutritionProduct.instance.name from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "lotNumber",
+        "short": "The identification of the batch or lot of the product",
+        "definition": "This cross-version extension represents NutritionProduct.instance.lotNumber from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lotNumber"
+      },
+      {
+        "id": "Extension.extension:instance.extension:lotNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The identification of the batch or lot of the product",
+        "definition": "This cross-version extension represents NutritionProduct.instance.lotNumber from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry",
+        "path": "Extension.extension.extension",
+        "sliceName": "expiry",
+        "short": "The expiry date or date and time for the product",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expiry"
+      },
+      {
+        "id": "Extension.extension:instance.extension:expiry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The expiry date or date and time for the product",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:useBy",
+        "path": "Extension.extension.extension",
+        "sliceName": "useBy",
+        "short": "The date until which the product is expected to be good for consumption",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:useBy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useBy"
+      },
+      {
+        "id": "Extension.extension:instance.extension:useBy.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The date until which the product is expected to be good for consumption",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.extension:biologicalSourceEvent",
+        "path": "Extension.extension.extension",
+        "sliceName": "biologicalSourceEvent",
+        "short": "An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled",
+        "definition": "This cross-version extension represents NutritionProduct.instance.biologicalSourceEvent from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instance.extension:biologicalSourceEvent.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "biologicalSourceEvent"
+      },
+      {
+        "id": "Extension.extension:instance.extension:biologicalSourceEvent.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled",
+        "definition": "This cross-version extension represents NutritionProduct.instance.biologicalSourceEvent from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Comments made about the product",
+        "definition": "This cross-version extension represents NutritionProduct.note from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Comments made about the product",
+        "definition": "This cross-version extension represents NutritionProduct.note from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct"
+      }
+    ]
+  }
+}

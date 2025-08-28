@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicationRequest.reported",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicationRequest.reported",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicationRequest_reported",
+  "title": "Cross-version Extension for R4.MedicationRequest.reported[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:44.807427-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationRequest.reported[x] from http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest.reported"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reported rather than primary record",
+        "definition": "Indicates if this record was captured as a secondary 'reported' record rather than as an original primary source-of-truth record.  It may also indicate the source of the report.",
+        "comment": "`MedicationRequest.reported[x]` maps to R5 `MedicationRequest.reported`. Type `Reference(http://hl7.org/fhir/StructureDefinition/Patient)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/Practitioner)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/PractitionerRole)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/RelatedPerson)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/Organization)` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicationRequest.reported"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reported rather than primary record",
+        "definition": "Indicates if this record was captured as a secondary 'reported' record rather than as an original primary source-of-truth record.  It may also indicate the source of the report.",
+        "comment": "`MedicationRequest.reported[x]` maps to R5 `MedicationRequest.reported`. Type `Reference(http://hl7.org/fhir/StructureDefinition/Patient)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/Practitioner)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/PractitionerRole)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/RelatedPerson)` has no mapping Type `Reference(http://hl7.org/fhir/StructureDefinition/Organization)` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

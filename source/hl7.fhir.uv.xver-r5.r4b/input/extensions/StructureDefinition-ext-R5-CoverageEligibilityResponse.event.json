@@ -1,0 +1,202 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-CoverageEligibilityResponse.event",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityResponse.event",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_CoverageEligibilityResponse_event",
+  "title": "Cross-version Extension for R5.CoverageEligibilityResponse.event for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:51.9079873-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents CoverageEligibilityResponse.event from http://hl7.org/fhir/StructureDefinition/CoverageEligibilityResponse|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CoverageEligibilityResponse"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Event information",
+        "definition": "Information code for an event with a corresponding date or period.",
+        "comment": "`CoverageEligibilityResponse.event` has no related element in R4B:CoverageEligibilityResponse",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Specific event",
+        "definition": "A coded event such as when a service is expected or a card printed.",
+        "comment": "`CoverageEligibilityResponse.event` has no related element in R4B:CoverageEligibilityResponse",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Specific event",
+        "definition": "A coded event such as when a service is expected or a card printed.",
+        "comment": "`CoverageEligibilityResponse.event` has no related element in R4B:CoverageEligibilityResponse",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-datestype-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:when[x]",
+        "path": "Extension.extension",
+        "sliceName": "when[x]",
+        "short": "Occurance date or period",
+        "definition": "A date or period in the past or future indicating when the event occurred or is expectd to occur.",
+        "comment": "`CoverageEligibilityResponse.event` has no related element in R4B:CoverageEligibilityResponse",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:when[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "when[x]"
+      },
+      {
+        "id": "Extension.extension:when[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Occurance date or period",
+        "definition": "A date or period in the past or future indicating when the event occurred or is expectd to occur.",
+        "comment": "`CoverageEligibilityResponse.event` has no related element in R4B:CoverageEligibilityResponse",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-CoverageEligibilityResponse.event"
+      }
+    ]
+  }
+}

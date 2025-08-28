@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R3-digital-media-subtype-for-R4B",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/ValueSet/R3-digital-media-subtype-for-R4B",
+  "version": "0.0.1-snapshot-2",
+  "name": "R3_digital_media_subtype_for_R4B",
+  "title": "Cross-version VS for R3.Media SubType for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:00.602081-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/digital-media-subtype|3.0.2 for use in FHIR R4B. Concepts not present here have direct `equivalent` mappings crossing all versions from R3 to R4B.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/dicom-cid29"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "363679005"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/media-subtype"
+      }
+    ]
+  }
+}

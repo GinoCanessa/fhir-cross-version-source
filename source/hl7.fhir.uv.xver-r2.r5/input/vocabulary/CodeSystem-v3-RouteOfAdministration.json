@@ -1,0 +1,4426 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-RouteOfAdministration",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.112"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/RouteOfAdministration",
+  "version": "1.0.2",
+  "name": "v3-RouteOfAdministration",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "_RouteByMethod",
+      "display": "RouteByMethod",
+      "definition": "Route of substance administration classified by administration method.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "SOAK",
+          "display": "Immersion (soak)",
+          "definition": "Immersion (soak)",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SHAMPOO",
+          "display": "Shampoo",
+          "definition": "Shampoo",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "TRNSLING",
+          "display": "Translingual",
+          "definition": "Translingual",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PO",
+          "display": "Swallow, oral",
+          "definition": "Swallow, oral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "GARGLE",
+          "display": "Gargle",
+          "definition": "Gargle",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SUCK",
+          "display": "Suck, oromucosal",
+          "definition": "Suck, oromucosal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "_Chew",
+          "display": "Chew",
+          "definition": "Chew",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "CHEW",
+              "display": "Chew, oral",
+              "definition": "Chew, oral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Diffusion",
+          "display": "Diffusion",
+          "definition": "Diffusion",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "EXTCORPDIF",
+              "display": "Diffusion, extracorporeal",
+              "definition": "Diffusion, extracorporeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "HEMODIFF",
+              "display": "Diffusion, hemodialysis",
+              "definition": "Diffusion, hemodialysis",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TRNSDERMD",
+              "display": "Diffusion, transdermal",
+              "definition": "Diffusion, transdermal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Dissolve",
+          "display": "Dissolve",
+          "definition": "Dissolve",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "DISSOLVE",
+              "display": "Dissolve, oral",
+              "definition": "Dissolve, oral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SL",
+              "display": "Dissolve, sublingual",
+              "definition": "Dissolve, sublingual",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Douche",
+          "display": "Douche",
+          "definition": "Douche",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "DOUCHE",
+              "display": "Douche, vaginal",
+              "definition": "Douche, vaginal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_ElectroOsmosisRoute",
+          "display": "ElectroOsmosisRoute",
+          "definition": "Electro-osmosis",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "ELECTOSMOS",
+              "display": "Electro-osmosis",
+              "definition": "Electro-osmosis",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Enema",
+          "display": "Enema",
+          "definition": "Enema",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "ENEMA",
+              "display": "Enema, rectal",
+              "definition": "Enema, rectal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RETENEMA",
+              "display": "Enema, rectal retention",
+              "definition": "Enema, rectal retention",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Flush",
+          "display": "Flush",
+          "definition": "Flush",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IVFLUSH",
+              "display": "Flush, intravenous catheter",
+              "definition": "Flush, intravenous catheter",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Implantation",
+          "display": "Implantation",
+          "definition": "Implantation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IDIMPLNT",
+              "display": "Implantation, intradermal",
+              "definition": "Implantation, intradermal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IVITIMPLNT",
+              "display": "Implantation, intravitreal",
+              "definition": "Implantation, intravitreal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SQIMPLNT",
+              "display": "Implantation, subcutaneous",
+              "definition": "Implantation, subcutaneous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Infusion",
+          "display": "Infusion",
+          "definition": "Infusion",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "EPI",
+              "display": "Infusion, epidural",
+              "definition": "Infusion, epidural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IA",
+              "display": "Infusion, intraarterial catheter",
+              "definition": "Infusion, intraarterial catheter",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IC",
+              "display": "Infusion, intracardiac",
+              "definition": "Infusion, intracardiac",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICOR",
+              "display": "Infusion, intracoronary",
+              "definition": "Infusion, intracoronary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOSSC",
+              "display": "Infusion, intraosseous, continuous",
+              "definition": "Infusion, intraosseous, continuous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IT",
+              "display": "Infusion, intrathecal",
+              "definition": "Infusion, intrathecal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IV",
+              "display": "Infusion, intravenous",
+              "definition": "Infusion, intravenous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "IVC",
+                  "display": "Infusion, intravenous catheter",
+                  "definition": "Infusion, intravenous catheter",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IVCC",
+                  "display": "Infusion, intravenous catheter, continuous",
+                  "definition": "Infusion, intravenous catheter, continuous",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IVCI",
+                  "display": "Infusion, intravenous catheter, intermittent",
+                  "definition": "Infusion, intravenous catheter, intermittent",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "PCA",
+                  "display": "Infusion, intravenous catheter, pca pump",
+                  "definition": "Infusion, intravenous catheter, pca pump",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "IVASCINFUS",
+              "display": "Infusion, intravascular",
+              "definition": "Infusion, intravascular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SQINFUS",
+              "display": "Infusion, subcutaneous",
+              "definition": "Infusion, subcutaneous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Inhalation",
+          "display": "Inhalation",
+          "definition": "Inhalation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IPINHL",
+              "display": "Inhalation, respiratory",
+              "definition": "Inhalation, oral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "ORIFINHL",
+                  "display": "Inhalation, oral intermittent flow",
+                  "definition": "Inhalation, oral intermittent flow",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "REBREATH",
+                  "display": "Inhalation, oral rebreather mask",
+                  "definition": "Inhalation, oral rebreather mask",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "IPPB",
+              "display": "Inhalation, intermittent positive pressure breathing (ippb)",
+              "definition": "Inhalation, intermittent positive pressure breathing (ippb)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NASINHL",
+              "display": "Inhalation, nasal",
+              "definition": "Inhalation, nasal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "NASINHLC",
+                  "display": "Inhalation, nasal cannula",
+                  "definition": "Inhalation, nasal, prongs",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "NEB",
+              "display": "Inhalation, nebulization",
+              "definition": "Inhalation, nebulization",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "NASNEB",
+                  "display": "Inhalation, nebulization, nasal",
+                  "definition": "Inhalation, nebulization, nasal",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ORNEB",
+                  "display": "Inhalation, nebulization, oral",
+                  "definition": "Inhalation, nebulization, oral",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "TRACH",
+              "display": "Inhalation, tracheostomy",
+              "definition": "Inhalation, tracheostomy",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "VENT",
+              "display": "Inhalation, ventilator",
+              "definition": "Inhalation, ventilator",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "VENTMASK",
+              "display": "Inhalation, ventimask",
+              "definition": "Inhalation, ventimask",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Injection",
+          "display": "Injection",
+          "definition": "Injection",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "AMNINJ",
+              "display": "Injection, amniotic fluid",
+              "definition": "Injection, amniotic fluid",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "BILINJ",
+              "display": "Injection, biliary tract",
+              "definition": "Injection, biliary tract",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CHOLINJ",
+              "display": "Injection, for cholangiography",
+              "definition": "Injection, for cholangiography",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CERVINJ",
+              "display": "Injection, cervical",
+              "definition": "Injection, cervical",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EPIDURINJ",
+              "display": "Injection, epidural",
+              "definition": "Injection, epidural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EPIINJ",
+              "display": "Injection, epidural, push",
+              "definition": "Injection, epidural, push",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EPINJSP",
+              "display": "Injection, epidural, slow push",
+              "definition": "Injection, epidural, slow push",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EXTRAMNINJ",
+              "display": "Injection, extra-amniotic",
+              "definition": "Injection, extra-amniotic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EXTCORPINJ",
+              "display": "Injection, extracorporeal",
+              "definition": "Injection, extracorporeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "GBINJ",
+              "display": "Injection, gastric button",
+              "definition": "Injection, gastric button",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "GINGINJ",
+              "display": "Injection, gingival",
+              "definition": "Injection, gingival",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "BLADINJ",
+              "display": "Injection, urinary bladder",
+              "definition": "Injection, urinary bladder",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ENDOSININJ",
+              "display": "Injection, endosinusial",
+              "definition": "Injection, endosinusial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "HEMOPORT",
+              "display": "Injection, hemodialysis port",
+              "definition": "Injection, hemodialysis port",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IABDINJ",
+              "display": "Injection, intra-abdominal",
+              "definition": "Injection, intra-abdominal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IAINJ",
+              "display": "Injection, intraarterial",
+              "definition": "Injection, intraarterial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "IAINJP",
+                  "display": "Injection, intraarterial, push",
+                  "definition": "Injection, intraarterial, push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IAINJSP",
+                  "display": "Injection, intraarterial, slow push",
+                  "definition": "Injection, intraarterial, slow push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "IARTINJ",
+              "display": "Injection, intraarticular",
+              "definition": "Injection, intraarticular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IBURSINJ",
+              "display": "Injection, intrabursal",
+              "definition": "Injection, intrabursal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICARDINJ",
+              "display": "Injection, intracardiac",
+              "definition": "Injection, intracardiac",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "ICARDINJRP",
+                  "display": "Injection, intracardiac, rapid push",
+                  "definition": "Injection, intracardiac, rapid push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ICARDINJSP",
+                  "display": "Injection, intracardiac, slow push",
+                  "definition": "Injection, intracardiac, slow push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ICARINJP",
+                  "display": "Injection, intracardiac, push",
+                  "definition": "Injection, intracardiac, push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "ICARTINJ",
+              "display": "Injection, intracartilaginous",
+              "definition": "Injection, intracartilaginous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICAUDINJ",
+              "display": "Injection, intracaudal",
+              "definition": "Injection, intracaudal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICAVINJ",
+              "display": "Injection, intracavernous",
+              "definition": "Injection, intracavernous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICAVITINJ",
+              "display": "Injection, intracavitary",
+              "definition": "Injection, intracavitary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICEREBINJ",
+              "display": "Injection, intracerebral",
+              "definition": "Injection, intracerebral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICISTERNINJ",
+              "display": "Injection, intracisternal",
+              "definition": "Injection, intracisternal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICORONINJ",
+              "display": "Injection, intracoronary",
+              "definition": "Injection, intracoronary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "ICORONINJP",
+                  "display": "Injection, intracoronary, push",
+                  "definition": "Injection, intracoronary, push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "ICORPCAVINJ",
+              "display": "Injection, intracorpus cavernosum",
+              "definition": "Injection, intracorpus cavernosum",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IDINJ",
+              "display": "Injection, intradermal",
+              "definition": "Injection, intradermal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IDISCINJ",
+              "display": "Injection, intradiscal",
+              "definition": "Injection, intradiscal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IDUCTINJ",
+              "display": "Injection, intraductal",
+              "definition": "Injection, intraductal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IDURINJ",
+              "display": "Injection, intradural",
+              "definition": "Injection, intradural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IEPIDINJ",
+              "display": "Injection, intraepidermal",
+              "definition": "Injection, intraepidermal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IEPITHINJ",
+              "display": "Injection, intraepithelial",
+              "definition": "Injection, intraepithelial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILESINJ",
+              "display": "Injection, intralesional",
+              "definition": "Injection, intralesional",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILUMINJ",
+              "display": "Injection, intraluminal",
+              "definition": "Injection, intraluminal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILYMPJINJ",
+              "display": "Injection, intralymphatic",
+              "definition": "Injection, intralymphatic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IM",
+              "display": "Injection, intramuscular",
+              "definition": "Injection, intramuscular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "IMD",
+                  "display": "Injection, intramuscular, deep",
+                  "definition": "Injection, intramuscular, deep",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IMZ",
+                  "display": "Injection, intramuscular, z track",
+                  "definition": "Injection, intramuscular, z track",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "IMEDULINJ",
+              "display": "Injection, intramedullary",
+              "definition": "Injection, intramedullary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "INTERMENINJ",
+              "display": "Injection, interameningeal",
+              "definition": "Injection, interameningeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "INTERSTITINJ",
+              "display": "Injection, interstitial",
+              "definition": "Injection, interstitial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOINJ",
+              "display": "Injection, intraocular",
+              "definition": "Injection, intraocular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOSSINJ",
+              "display": "Injection, intraosseous",
+              "definition": "Injection, intraosseous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOVARINJ",
+              "display": "Injection, intraovarian",
+              "definition": "Injection, intraovarian",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPCARDINJ",
+              "display": "Injection, intrapericardial",
+              "definition": "Injection, intrapericardial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPERINJ",
+              "display": "Injection, intraperitoneal",
+              "definition": "Injection, intraperitoneal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPINJ",
+              "display": "Injection, intrapulmonary",
+              "definition": "Injection, intrapulmonary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPLRINJ",
+              "display": "Injection, intrapleural",
+              "definition": "Injection, intrapleural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPROSTINJ",
+              "display": "Injection, intraprostatic",
+              "definition": "Injection, intraprostatic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IPUMPINJ",
+              "display": "Injection, insulin pump",
+              "definition": "Injection, insulin pump",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ISINJ",
+              "display": "Injection, intraspinal",
+              "definition": "Injection, intraspinal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ISTERINJ",
+              "display": "Injection, intrasternal",
+              "definition": "Injection, intrasternal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ISYNINJ",
+              "display": "Injection, intrasynovial",
+              "definition": "Injection, intrasynovial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITENDINJ",
+              "display": "Injection, intratendinous",
+              "definition": "Injection, intratendinous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITESTINJ",
+              "display": "Injection, intratesticular",
+              "definition": "Injection, intratesticular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITHORINJ",
+              "display": "Injection, intrathoracic",
+              "definition": "Injection, intrathoracic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITINJ",
+              "display": "Injection, intrathecal",
+              "definition": "Injection, intrathecal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITUBINJ",
+              "display": "Injection, intratubular",
+              "definition": "Injection, intratubular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITUMINJ",
+              "display": "Injection, intratumor",
+              "definition": "Injection, intratumor",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITYMPINJ",
+              "display": "Injection, intratympanic",
+              "definition": "Injection, intratympanic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IUINJ",
+              "display": "Injection, intrauterine",
+              "definition": "Injection, intracervical (uterus)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IUINJC",
+              "display": "Injection, intracervical (uterus)",
+              "definition": "Injection, intracervical (uterus)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IURETINJ",
+              "display": "Injection, intraureteral, retrograde",
+              "definition": "Injection, intraureteral, retrograde",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IVASCINJ",
+              "display": "Injection, intravascular",
+              "definition": "Injection, intravascular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IVENTINJ",
+              "display": "Injection, intraventricular (heart)",
+              "definition": "Injection, intraventricular (heart)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IVESINJ",
+              "display": "Injection, intravesicle",
+              "definition": "Injection, intravesicle",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IVINJ",
+              "display": "Injection, intravenous",
+              "definition": "Injection, intravenous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "IVINJBOL",
+                  "display": "Injection, intravenous, bolus",
+                  "definition": "Injection, intravenous, bolus",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IVPUSH",
+                  "display": "Injection, intravenous, push",
+                  "definition": "Injection, intravenous, push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IVRPUSH",
+                  "display": "Injection, intravenous, rapid push",
+                  "definition": "Injection, intravenous, rapid push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "IVSPUSH",
+                  "display": "Injection, intravenous, slow push",
+                  "definition": "Injection, intravenous, slow push",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "IVITINJ",
+              "display": "Injection, intravitreal",
+              "definition": "Injection, intravitreal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PAINJ",
+              "display": "Injection, periarticular",
+              "definition": "Injection, periarticular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PARENTINJ",
+              "display": "Injection, parenteral",
+              "definition": "Injection, parenteral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PDONTINJ",
+              "display": "Injection, periodontal",
+              "definition": "Injection, periodontal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PDPINJ",
+              "display": "Injection, peritoneal dialysis port",
+              "definition": "Injection, peritoneal dialysis port",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PDURINJ",
+              "display": "Injection, peridural",
+              "definition": "Injection, peridural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PNINJ",
+              "display": "Injection, perineural",
+              "definition": "Injection, perineural",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PNSINJ",
+              "display": "Injection, paranasal sinuses",
+              "definition": "Injection, paranasal sinuses",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RBINJ",
+              "display": "Injection, retrobulbar",
+              "definition": "Injection, retrobulbar",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SCINJ",
+              "display": "Injection, subconjunctival",
+              "definition": "Injection, subconjunctival",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SLESINJ",
+              "display": "Injection, sublesional",
+              "definition": "Injection, sublesional",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SOFTISINJ",
+              "display": "Injection, soft tissue",
+              "definition": "Injection, soft tissue",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SQ",
+              "display": "Injection, subcutaneous",
+              "definition": "Injection, subcutaneous",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SUBARACHINJ",
+              "display": "Injection, subarachnoid",
+              "definition": "Injection, subarachnoid",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SUBMUCINJ",
+              "display": "Injection, submucosal",
+              "definition": "Injection, submucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TRPLACINJ",
+              "display": "Injection, transplacental",
+              "definition": "Injection, transplacental",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TRTRACHINJ",
+              "display": "Injection, transtracheal",
+              "definition": "Injection, transtracheal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "URETHINJ",
+              "display": "Injection, urethral",
+              "definition": "Injection, urethral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "URETINJ",
+              "display": "Injection, ureteral",
+              "definition": "Injection, ureteral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Insertion",
+          "display": "Insertion",
+          "definition": "Insertion",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "CERVINS",
+              "display": "Insertion, cervical (uterine)",
+              "definition": "Insertion, cervical (uterine)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOSURGINS",
+              "display": "Insertion, intraocular, surgical",
+              "definition": "Insertion, intraocular, surgical",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IU",
+              "display": "Insertion, intrauterine",
+              "definition": "Insertion, intrauterine",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "LPINS",
+              "display": "Insertion, lacrimal puncta",
+              "definition": "Insertion, lacrimal puncta",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PR",
+              "display": "Insertion, rectal",
+              "definition": "Insertion, rectal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SQSURGINS",
+              "display": "Insertion, subcutaneous, surgical",
+              "definition": "Insertion, subcutaneous, surgical",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "URETHINS",
+              "display": "Insertion, urethral",
+              "definition": "Insertion, urethral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "VAGINSI",
+              "display": "Insertion, vaginal",
+              "definition": "Insertion, vaginal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Instillation",
+          "display": "Instillation",
+          "definition": "Instillation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "CECINSTL",
+              "display": "Instillation, cecostomy",
+              "definition": "Instillation, cecostomy",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "EFT",
+              "display": "Instillation, enteral feeding tube",
+              "definition": "Instillation, enteral feeding tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ENTINSTL",
+              "display": "Instillation, enteral",
+              "definition": "Instillation, enteral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "GT",
+              "display": "Instillation, gastrostomy tube",
+              "definition": "Instillation, gastrostomy tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NGT",
+              "display": "Instillation, nasogastric tube",
+              "definition": "Instillation, nasogastric tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OGT",
+              "display": "Instillation, orogastric tube",
+              "definition": "Instillation, orogastric tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "BLADINSTL",
+              "display": "Instillation, urinary catheter",
+              "definition": "Instillation, urinary catheter",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CAPDINSTL",
+              "display": "Instillation, continuous ambulatory peritoneal dialysis port",
+              "definition": "Instillation, continuous ambulatory peritoneal dialysis port",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CTINSTL",
+              "display": "Instillation, chest tube",
+              "definition": "Instillation, chest tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ETINSTL",
+              "display": "Instillation, endotracheal tube",
+              "definition": "Instillation, endotracheal tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "GJT",
+              "display": "Instillation, gastro-jejunostomy tube",
+              "definition": "Instillation, gastro-jejunostomy tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IBRONCHINSTIL",
+              "display": "Instillation, intrabronchial",
+              "definition": "Instillation, intrabronchial",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IDUODINSTIL",
+              "display": "Instillation, intraduodenal",
+              "definition": "Instillation, intraduodenal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IESOPHINSTIL",
+              "display": "Instillation, intraesophageal",
+              "definition": "Instillation, intraesophageal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IGASTINSTIL",
+              "display": "Instillation, intragastric",
+              "definition": "Instillation, intragastric",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IILEALINJ",
+              "display": "Instillation, intraileal",
+              "definition": "Instillation, intraileal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOINSTL",
+              "display": "Instillation, intraocular",
+              "definition": "Instillation, intraocular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ISININSTIL",
+              "display": "Instillation, intrasinal",
+              "definition": "Instillation, intrasinal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITRACHINSTIL",
+              "display": "Instillation, intratracheal",
+              "definition": "Instillation, intratracheal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IUINSTL",
+              "display": "Instillation, intrauterine",
+              "definition": "Instillation, intrauterine",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "JJTINSTL",
+              "display": "Instillation, jejunostomy tube",
+              "definition": "Instillation, jejunostomy tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "LARYNGINSTIL",
+              "display": "Instillation, laryngeal",
+              "definition": "Instillation, laryngeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NASALINSTIL",
+              "display": "Instillation, nasal",
+              "definition": "Instillation, nasal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NASOGASINSTIL",
+              "display": "Instillation, nasogastric",
+              "definition": "Instillation, nasogastric",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NTT",
+              "display": "Instillation, nasotracheal tube",
+              "definition": "Instillation, nasotracheal tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OJJ",
+              "display": "Instillation, orojejunum tube",
+              "definition": "Instillation, orojejunum tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OT",
+              "display": "Instillation, otic",
+              "definition": "Instillation, otic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PDPINSTL",
+              "display": "Instillation, peritoneal dialysis port",
+              "definition": "Instillation, peritoneal dialysis port",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PNSINSTL",
+              "display": "Instillation, paranasal sinuses",
+              "definition": "Instillation, paranasal sinuses",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RECINSTL",
+              "display": "Instillation, rectal",
+              "definition": "Instillation, rectal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "RECTINSTL",
+                  "display": "Instillation, rectal tube",
+                  "definition": "Instillation, rectal tube",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "SININSTIL",
+              "display": "Instillation, sinus, unspecified",
+              "definition": "Instillation, sinus, unspecified",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SOFTISINSTIL",
+              "display": "Instillation, soft tissue",
+              "definition": "Instillation, soft tissue",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TRACHINSTL",
+              "display": "Instillation, tracheostomy",
+              "definition": "Instillation, tracheostomy",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TRTYMPINSTIL",
+              "display": "Instillation, transtympanic",
+              "definition": "Instillation, transtympanic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "URETHINSTL",
+              "display": "instillation, urethral",
+              "definition": "Instillation, urethral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_IontophoresisRoute",
+          "display": "IontophoresisRoute",
+          "definition": "Iontophoresis",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IONTO",
+              "display": "Topical application, iontophoresis",
+              "definition": "Topical application, iontophoresis",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Irrigation",
+          "display": "Irrigation",
+          "definition": "Irrigation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "GUIRR",
+              "display": "Irrigation, genitourinary",
+              "definition": "Irrigation, genitourinary",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IGASTIRR",
+              "display": "Irrigation, intragastric",
+              "definition": "Irrigation, intragastric",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILESIRR",
+              "display": "Irrigation, intralesional",
+              "definition": "Irrigation, intralesional",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOIRR",
+              "display": "Irrigation, intraocular",
+              "definition": "Irrigation, intraocular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "BLADIRR",
+              "display": "Irrigation, urinary bladder",
+              "definition": "Irrigation, urinary bladder",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "BLADIRRC",
+                  "display": "Irrigation, urinary bladder, continuous",
+                  "definition": "Irrigation, urinary bladder, continuous",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "BLADIRRT",
+                  "display": "Irrigation, urinary bladder, tidal",
+                  "definition": "Irrigation, urinary bladder, tidal",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "RECIRR",
+              "display": "Irrigation, rectal",
+              "definition": "Irrigation, rectal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_LavageRoute",
+          "display": "LavageRoute",
+          "definition": "Lavage",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IGASTLAV",
+              "display": "Lavage, intragastric",
+              "definition": "Lavage, intragastric",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_MucosalAbsorptionRoute",
+          "display": "MucosalAbsorptionRoute",
+          "definition": "Mucosal absorption",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IDOUDMAB",
+              "display": "Mucosal absorption, intraduodenal",
+              "definition": "Mucosal absorption, intraduodenal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ITRACHMAB",
+              "display": "Mucosal absorption, intratracheal",
+              "definition": "Mucosal absorption, intratracheal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SMUCMAB",
+              "display": "Mucosal absorption, submucosal",
+              "definition": "Mucosal absorption, submucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Nebulization",
+          "display": "Nebulization",
+          "definition": "Nebulization",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "ETNEB",
+              "display": "Nebulization, endotracheal tube",
+              "definition": "Nebulization, endotracheal tube",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Rinse",
+          "display": "Rinse",
+          "definition": "Rinse",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "DENRINSE",
+              "display": "Rinse, dental",
+              "definition": "Rinse, dental",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ORRINSE",
+              "display": "Rinse, oral",
+              "definition": "Rinse, oral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_SuppositoryRoute",
+          "display": "SuppositoryRoute",
+          "definition": "Suppository",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "URETHSUP",
+              "display": "Suppository, urethral",
+              "definition": "Suppository, urethral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_Swish",
+          "display": "Swish",
+          "definition": "Swish",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "SWISHSPIT",
+              "display": "Swish and spit out, oromucosal",
+              "definition": "Swish and spit out, oromucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SWISHSWAL",
+              "display": "Swish and swallow, oromucosal",
+              "definition": "Swish and swallow, oromucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_TopicalAbsorptionRoute",
+          "display": "TopicalAbsorptionRoute",
+          "definition": "Topical absorption",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "TTYMPTABSORP",
+              "display": "Topical absorption, transtympanic",
+              "definition": "Topical absorption, transtympanic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_TopicalApplication",
+          "display": "TopicalApplication",
+          "definition": "Topical application",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "DRESS",
+              "display": "Topical application, soaked dressing",
+              "definition": "Topical application, soaked dressing",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SWAB",
+              "display": "Topical application, swab",
+              "definition": "Topical application, swab",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TOPICAL",
+              "display": "Topical",
+              "definition": "Topical",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "BUC",
+              "display": "Topical application, buccal",
+              "definition": "Topical application, buccal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CERV",
+              "display": "Topical application, cervical",
+              "definition": "Topical application, cervical",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "DEN",
+              "display": "Topical application, dental",
+              "definition": "Topical application, dental",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "GIN",
+              "display": "Topical application, gingival",
+              "definition": "Topical application, gingival",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "HAIR",
+              "display": "Topical application, hair",
+              "definition": "Topical application, hair",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICORNTA",
+              "display": "Topical application, intracorneal",
+              "definition": "Topical application, intracorneal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ICORONTA",
+              "display": "Topical application, intracoronal (dental)",
+              "definition": "Topical application, intracoronal (dental)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IESOPHTA",
+              "display": "Topical application, intraesophageal",
+              "definition": "Topical application, intraesophageal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IILEALTA",
+              "display": "Topical application, intraileal",
+              "definition": "Topical application, intraileal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILTOP",
+              "display": "Topical application, intralesional",
+              "definition": "Topical application, intralesional",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ILUMTA",
+              "display": "Topical application, intraluminal",
+              "definition": "Topical application, intraluminal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "IOTOP",
+              "display": "Topical application, intraocular",
+              "definition": "Topical application, intraocular",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "LARYNGTA",
+              "display": "Topical application, laryngeal",
+              "definition": "Topical application, laryngeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "MUC",
+              "display": "Topical application, mucous membrane",
+              "definition": "Topical application, mucous membrane",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NAIL",
+              "display": "Topical application, nail",
+              "definition": "Topical application, nail",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NASAL",
+              "display": "Topical application, nasal",
+              "definition": "Topical application, nasal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OPTHALTA",
+              "display": "Topical application, ophthalmic",
+              "definition": "Topical application, ophthalmic",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ORALTA",
+              "display": "Topical application, oral",
+              "definition": "Topical application, oral",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ORMUC",
+              "display": "Topical application, oromucosal",
+              "definition": "Topical application, oromucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OROPHARTA",
+              "display": "Topical application, oropharyngeal",
+              "definition": "Topical application, oropharyngeal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PERIANAL",
+              "display": "Topical application, perianal",
+              "definition": "Topical application, perianal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PERINEAL",
+              "display": "Topical application, perineal",
+              "definition": "Topical application, perineal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PDONTTA",
+              "display": "Topical application, periodontal",
+              "definition": "Topical application, periodontal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RECTAL",
+              "display": "Topical application, rectal",
+              "definition": "Topical application, rectal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SCALP",
+              "display": "Topical application, scalp",
+              "definition": "Topical application, scalp",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OCDRESTA",
+              "display": "Occlusive dressing technique",
+              "definition": "Occlusive dressing technique",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SKIN",
+              "display": "Topical application, skin",
+              "definition": "Topical application, skin",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SUBCONJTA",
+              "display": "Subconjunctival",
+              "definition": "Subconjunctival",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TMUCTA",
+              "display": "Topical application, transmucosal",
+              "definition": "Topical application, transmucosal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "VAGINS",
+              "display": "Topical application, vaginal",
+              "definition": "Insertion, vaginal",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "INSUF",
+          "display": "Insufflation",
+          "definition": "Insufflation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "TRNSDERM",
+          "display": "Transdermal",
+          "definition": "Transdermal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_RouteBySite",
+      "display": "RouteBySite",
+      "definition": "Route of substance administration classified by site.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "_AmnioticFluidSacRoute",
+          "display": "AmnioticFluidSacRoute",
+          "definition": "Amniotic fluid sac",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_BiliaryRoute",
+          "display": "BiliaryRoute",
+          "definition": "Biliary tract",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_BodySurfaceRoute",
+          "display": "BodySurfaceRoute",
+          "definition": "Body surface",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_BuccalMucosaRoute",
+          "display": "BuccalMucosaRoute",
+          "definition": "Buccal mucosa",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_CecostomyRoute",
+          "display": "CecostomyRoute",
+          "definition": "Cecostomy",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_CervicalRoute",
+          "display": "CervicalRoute",
+          "definition": "Cervix of the uterus",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_EndocervicalRoute",
+          "display": "EndocervicalRoute",
+          "definition": "Endocervical",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_EnteralRoute",
+          "display": "EnteralRoute",
+          "definition": "Enteral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_EpiduralRoute",
+          "display": "EpiduralRoute",
+          "definition": "Epidural",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_ExtraAmnioticRoute",
+          "display": "ExtraAmnioticRoute",
+          "definition": "Extra-amniotic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_ExtracorporealCirculationRoute",
+          "display": "ExtracorporealCirculationRoute",
+          "definition": "Extracorporeal circulation",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_GastricRoute",
+          "display": "GastricRoute",
+          "definition": "Gastric",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_GenitourinaryRoute",
+          "display": "GenitourinaryRoute",
+          "definition": "Genitourinary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_GingivalRoute",
+          "display": "GingivalRoute",
+          "definition": "Gingival",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_HairRoute",
+          "display": "HairRoute",
+          "definition": "Hair",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_InterameningealRoute",
+          "display": "InterameningealRoute",
+          "definition": "Interameningeal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_InterstitialRoute",
+          "display": "InterstitialRoute",
+          "definition": "Interstitial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraabdominalRoute",
+          "display": "IntraabdominalRoute",
+          "definition": "Intra-abdominal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraarterialRoute",
+          "display": "IntraarterialRoute",
+          "definition": "Intra-arterial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraarticularRoute",
+          "display": "IntraarticularRoute",
+          "definition": "Intraarticular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrabronchialRoute",
+          "display": "IntrabronchialRoute",
+          "definition": "Intrabronchial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrabursalRoute",
+          "display": "IntrabursalRoute",
+          "definition": "Intrabursal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracardiacRoute",
+          "display": "IntracardiacRoute",
+          "definition": "Intracardiac",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracartilaginousRoute",
+          "display": "IntracartilaginousRoute",
+          "definition": "Intracartilaginous",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracaudalRoute",
+          "display": "IntracaudalRoute",
+          "definition": "Intracaudal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracavernosalRoute",
+          "display": "IntracavernosalRoute",
+          "definition": "Intracavernosal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracavitaryRoute",
+          "display": "IntracavitaryRoute",
+          "definition": "Intracavitary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracerebralRoute",
+          "display": "IntracerebralRoute",
+          "definition": "Intracerebral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracervicalRoute",
+          "display": "IntracervicalRoute",
+          "definition": "Intracervical",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracisternalRoute",
+          "display": "IntracisternalRoute",
+          "definition": "Intracisternal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracornealRoute",
+          "display": "IntracornealRoute",
+          "definition": "Intracorneal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracoronalRoute",
+          "display": "IntracoronalRoute",
+          "definition": "Intracoronal (dental)",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracoronaryRoute",
+          "display": "IntracoronaryRoute",
+          "definition": "Intracoronary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntracorpusCavernosumRoute",
+          "display": "IntracorpusCavernosumRoute",
+          "definition": "Intracorpus cavernosum",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntradermalRoute",
+          "display": "IntradermalRoute",
+          "definition": "Intradermal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntradiscalRoute",
+          "display": "IntradiscalRoute",
+          "definition": "Intradiscal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraductalRoute",
+          "display": "IntraductalRoute",
+          "definition": "Intraductal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraduodenalRoute",
+          "display": "IntraduodenalRoute",
+          "definition": "Intraduodenal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraduralRoute",
+          "display": "IntraduralRoute",
+          "definition": "Intradural",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraepidermalRoute",
+          "display": "IntraepidermalRoute",
+          "definition": "Intraepidermal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraepithelialRoute",
+          "display": "IntraepithelialRoute",
+          "definition": "Intraepithelial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraesophagealRoute",
+          "display": "IntraesophagealRoute",
+          "definition": "Intraesophageal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntragastricRoute",
+          "display": "IntragastricRoute",
+          "definition": "Intragastric",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrailealRoute",
+          "display": "IntrailealRoute",
+          "definition": "Intraileal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntralesionalRoute",
+          "display": "IntralesionalRoute",
+          "definition": "Intralesional",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraluminalRoute",
+          "display": "IntraluminalRoute",
+          "definition": "Intraluminal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntralymphaticRoute",
+          "display": "IntralymphaticRoute",
+          "definition": "Intralymphatic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntramedullaryRoute",
+          "display": "IntramedullaryRoute",
+          "definition": "Intramedullary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntramuscularRoute",
+          "display": "IntramuscularRoute",
+          "definition": "Intramuscular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraocularRoute",
+          "display": "IntraocularRoute",
+          "definition": "Intraocular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraosseousRoute",
+          "display": "IntraosseousRoute",
+          "definition": "Intraosseous",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraovarianRoute",
+          "display": "IntraovarianRoute",
+          "definition": "Intraovarian",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrapericardialRoute",
+          "display": "IntrapericardialRoute",
+          "definition": "Intrapericardial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraperitonealRoute",
+          "display": "IntraperitonealRoute",
+          "definition": "Intraperitoneal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrapleuralRoute",
+          "display": "IntrapleuralRoute",
+          "definition": "Intrapleural",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraprostaticRoute",
+          "display": "IntraprostaticRoute",
+          "definition": "Intraprostatic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrapulmonaryRoute",
+          "display": "IntrapulmonaryRoute",
+          "definition": "Intrapulmonary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrasinalRoute",
+          "display": "IntrasinalRoute",
+          "definition": "Intrasinal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraspinalRoute",
+          "display": "IntraspinalRoute",
+          "definition": "Intraspinal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrasternalRoute",
+          "display": "IntrasternalRoute",
+          "definition": "Intrasternal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrasynovialRoute",
+          "display": "IntrasynovialRoute",
+          "definition": "Intrasynovial",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratendinousRoute",
+          "display": "IntratendinousRoute",
+          "definition": "Intratendinous",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratesticularRoute",
+          "display": "IntratesticularRoute",
+          "definition": "Intratesticular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrathecalRoute",
+          "display": "IntrathecalRoute",
+          "definition": "Intrathecal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrathoracicRoute",
+          "display": "IntrathoracicRoute",
+          "definition": "Intrathoracic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratrachealRoute",
+          "display": "IntratrachealRoute",
+          "definition": "Intratracheal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratubularRoute",
+          "display": "IntratubularRoute",
+          "definition": "Intratubular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratumorRoute",
+          "display": "IntratumorRoute",
+          "definition": "Intratumor",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntratympanicRoute",
+          "display": "IntratympanicRoute",
+          "definition": "Intratympanic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntrauterineRoute",
+          "display": "IntrauterineRoute",
+          "definition": "Intrauterine",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntravascularRoute",
+          "display": "IntravascularRoute",
+          "definition": "Intravascular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntravenousRoute",
+          "display": "IntravenousRoute",
+          "definition": "Intravenous",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntraventricularRoute",
+          "display": "IntraventricularRoute",
+          "definition": "Intraventricular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntravesicleRoute",
+          "display": "IntravesicleRoute",
+          "definition": "Intravesicle",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_IntravitrealRoute",
+          "display": "IntravitrealRoute",
+          "definition": "Intravitreal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_JejunumRoute",
+          "display": "JejunumRoute",
+          "definition": "Jejunum",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_LacrimalPunctaRoute",
+          "display": "LacrimalPunctaRoute",
+          "definition": "Lacrimal puncta",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_LaryngealRoute",
+          "display": "LaryngealRoute",
+          "definition": "Laryngeal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_LingualRoute",
+          "display": "LingualRoute",
+          "definition": "Lingual",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_MucousMembraneRoute",
+          "display": "MucousMembraneRoute",
+          "definition": "Mucous membrane",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_NailRoute",
+          "display": "NailRoute",
+          "definition": "Nail",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_NasalRoute",
+          "display": "NasalRoute",
+          "definition": "Nasal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_OphthalmicRoute",
+          "display": "OphthalmicRoute",
+          "definition": "Ophthalmic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_OralRoute",
+          "display": "OralRoute",
+          "definition": "Oral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_OromucosalRoute",
+          "display": "OromucosalRoute",
+          "definition": "Oromucosal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_OropharyngealRoute",
+          "display": "OropharyngealRoute",
+          "definition": "Oropharyngeal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_OticRoute",
+          "display": "OticRoute",
+          "definition": "Otic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_ParanasalSinusesRoute",
+          "display": "ParanasalSinusesRoute",
+          "definition": "Paranasal sinuses",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_ParenteralRoute",
+          "display": "ParenteralRoute",
+          "definition": "Parenteral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PerianalRoute",
+          "display": "PerianalRoute",
+          "definition": "Perianal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PeriarticularRoute",
+          "display": "PeriarticularRoute",
+          "definition": "Periarticular",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PeriduralRoute",
+          "display": "PeriduralRoute",
+          "definition": "Peridural",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PerinealRoute",
+          "display": "PerinealRoute",
+          "definition": "Perineal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PerineuralRoute",
+          "display": "PerineuralRoute",
+          "definition": "Perineural",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PeriodontalRoute",
+          "display": "PeriodontalRoute",
+          "definition": "Periodontal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_PulmonaryRoute",
+          "display": "PulmonaryRoute",
+          "definition": "Pulmonary",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_RectalRoute",
+          "display": "RectalRoute",
+          "definition": "Rectal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_RespiratoryTractRoute",
+          "display": "RespiratoryTractRoute",
+          "definition": "Respiratory tract",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_RetrobulbarRoute",
+          "display": "RetrobulbarRoute",
+          "definition": "Retrobulbar",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_ScalpRoute",
+          "display": "ScalpRoute",
+          "definition": "Scalp",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SinusUnspecifiedRoute",
+          "display": "SinusUnspecifiedRoute",
+          "definition": "Sinus, unspecified",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SkinRoute",
+          "display": "SkinRoute",
+          "definition": "Skin",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SoftTissueRoute",
+          "display": "SoftTissueRoute",
+          "definition": "Soft tissue",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SubarachnoidRoute",
+          "display": "SubarachnoidRoute",
+          "definition": "Subarachnoid",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SubconjunctivalRoute",
+          "display": "SubconjunctivalRoute",
+          "definition": "Subconjunctival",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SubcutaneousRoute",
+          "display": "SubcutaneousRoute",
+          "definition": "Subcutaneous",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SublesionalRoute",
+          "display": "SublesionalRoute",
+          "definition": "Sublesional",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SublingualRoute",
+          "display": "SublingualRoute",
+          "definition": "Sublingual",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_SubmucosalRoute",
+          "display": "SubmucosalRoute",
+          "definition": "Submucosal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_TracheostomyRoute",
+          "display": "TracheostomyRoute",
+          "definition": "Tracheostomy",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_TransmucosalRoute",
+          "display": "TransmucosalRoute",
+          "definition": "Transmucosal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_TransplacentalRoute",
+          "display": "TransplacentalRoute",
+          "definition": "Transplacental",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_TranstrachealRoute",
+          "display": "TranstrachealRoute",
+          "definition": "Transtracheal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_TranstympanicRoute",
+          "display": "TranstympanicRoute",
+          "definition": "Transtympanic",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_UreteralRoute",
+          "display": "UreteralRoute",
+          "definition": "Ureteral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_UrethralRoute",
+          "display": "UrethralRoute",
+          "definition": "Urethral",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_UrinaryBladderRoute",
+          "display": "UrinaryBladderRoute",
+          "definition": "Urinary bladder",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_UrinaryTractRoute",
+          "display": "UrinaryTractRoute",
+          "definition": "Urinary tract",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_VaginalRoute",
+          "display": "VaginalRoute",
+          "definition": "Vaginal",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        },
+        {
+          "code": "_VitreousHumourRoute",
+          "display": "VitreousHumourRoute",
+          "definition": "Vitreous humour",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

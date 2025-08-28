@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "linkage-type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "http://hl7.org/fhir/linkage-type",
+  "version": "3.0.2",
+  "name": "LinkageType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Patient Care",
+  "contact": [
+    {
+      "name": "Patient Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "description": "Used to distinguish different roles a resource can play within a set of linked resources",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/linkage-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "source",
+      "display": "Source of truth",
+      "definition": "The record represents the \"source of truth\" (from the perspective of this Linkage resource) for the underlying event/condition/etc."
+    },
+    {
+      "code": "alternate",
+      "display": "Alternate record",
+      "definition": "The record represents the alternative view of the underlying event/condition/etc.  The record may still be actively maintained, even though it is not considered to be the source of truth."
+    },
+    {
+      "code": "historical",
+      "display": "Historical/obsolete record",
+      "definition": "The record represents an obsolete record of the underlyng event/condition/etc.  It is not expected to be actively maintained."
+    }
+  ]
+}

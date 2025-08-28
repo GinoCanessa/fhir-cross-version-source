@@ -1,0 +1,376 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Sequence.repository",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.repository",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Sequence_repository",
+  "title": "Cross-version Extension for R3.Sequence.repository for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:19.0399247-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Sequence.repository from http://hl7.org/fhir/StructureDefinition/Sequence|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MolecularSequence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "External repository which contains detailed report related with observedSeq in this resource",
+        "definition": "Configurations of the external repository. The repository shall store target's observedSeq or records related with target's observedSeq.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "directlink | openapi | login | oauth | other",
+        "definition": "Click and see / RESTful API / Need login to see / RESTful API with authentication / Other ways to see resource.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "directlink | openapi | login | oauth | other",
+        "definition": "Click and see / RESTful API / Need login to see / RESTful API with authentication / Other ways to see resource.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type for access of external URI",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-repository-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension",
+        "sliceName": "url",
+        "short": "URI of the repository",
+        "definition": "URI of an external repository which contains further details about the genetics data.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:url.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "URI of the repository",
+        "definition": "URI of an external repository which contains further details about the genetics data.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Repository's name",
+        "definition": "URI of an external repository which contains further details about the genetics data.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Repository's name",
+        "definition": "URI of an external repository which contains further details about the genetics data.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:datasetId",
+        "path": "Extension.extension",
+        "sliceName": "datasetId",
+        "short": "Id of the dataset that used to call for dataset in repository",
+        "definition": "Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:datasetId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "datasetId"
+      },
+      {
+        "id": "Extension.extension:datasetId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Id of the dataset that used to call for dataset in repository",
+        "definition": "Id of the variant in this external repository. The server will understand how to use this id to call for more info about datasets in external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:variantsetId",
+        "path": "Extension.extension",
+        "sliceName": "variantsetId",
+        "short": "Id of the variantset that used to call for variantset in repository",
+        "definition": "Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:variantsetId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "variantsetId"
+      },
+      {
+        "id": "Extension.extension:variantsetId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Id of the variantset that used to call for variantset in repository",
+        "definition": "Id of the variantset in this external repository. The server will understand how to use this id to call for more info about variantsets in external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:readsetId",
+        "path": "Extension.extension",
+        "sliceName": "readsetId",
+        "short": "Id of the read",
+        "definition": "Id of the read in this external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:readsetId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "readsetId"
+      },
+      {
+        "id": "Extension.extension:readsetId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Id of the read",
+        "definition": "Id of the read in this external repository.",
+        "comment": "`MolecularSequence.repository` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.repository"
+      }
+    ]
+  }
+}

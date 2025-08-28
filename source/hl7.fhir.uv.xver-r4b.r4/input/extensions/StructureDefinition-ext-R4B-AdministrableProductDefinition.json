@@ -1,0 +1,1191 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-AdministrableProductDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdministrableProductDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_AdministrableProductDefinition",
+  "title": "Cross-version Extension for R4B.AdministrableProductDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:07.8318266-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AdministrableProductDefinition from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A medicinal product in the final form, suitable for administration - after any mixing of multiple components",
+        "definition": "A medicinal product in the final form which is suitable for administering to a patient (after any mixing of multiple components, dissolution etc. has been performed).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this administrable product. Enables tracking the life-cycle of the content.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this administrable product. Enables tracking the life-cycle of the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:formOf",
+        "path": "Extension.extension",
+        "sliceName": "formOf",
+        "short": "References a product from which one or more of the constituent parts of that product can be prepared and used as described by this administrable product",
+        "definition": "References a product from which one or more of the constituent parts of that product can be prepared and used as described by this administrable product.  If this administrable product describes the administration of a crushed tablet, the 'formOf' would be the product representing a distribution containing tablets and possibly also a cream.  This is distinct from the 'producedFrom' which refers to the specific components of the product that are used in this preparation, rather than the product as a whole.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:formOf.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "formOf"
+      },
+      {
+        "id": "Extension.extension:formOf.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "References a product from which one or more of the constituent parts of that product can be prepared and used as described by this administrable product",
+        "definition": "References a product from which one or more of the constituent parts of that product can be prepared and used as described by this administrable product.  If this administrable product describes the administration of a crushed tablet, the 'formOf' would be the product representing a distribution containing tablets and possibly also a cream.  This is distinct from the 'producedFrom' which refers to the specific components of the product that are used in this preparation, rather than the product as a whole.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm",
+        "path": "Extension.extension",
+        "sliceName": "administrableDoseForm",
+        "short": "The dose form of the final product after necessary reconstitution or processing",
+        "definition": "The dose form of the final product after necessary reconstitution or processing. Contrasts to the manufactured dose form (see ManufacturedItemDefinition). If the manufactured form was 'powder for solution for injection', the administrable dose form could be 'solution for injection' (once mixed with another item having manufactured form 'solvent for solution for injection').",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "administrableDoseForm"
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The dose form of the final product after necessary reconstitution or processing",
+        "definition": "The dose form of the final product after necessary reconstitution or processing. Contrasts to the manufactured dose form (see ManufacturedItemDefinition). If the manufactured form was 'powder for solution for injection', the administrable dose form could be 'solution for injection' (once mixed with another item having manufactured form 'solvent for solution for injection').",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Dose form for a medication, in the form suitable for administering to the patient, after mixing, where necessary.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-administrable-dose-form-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation",
+        "path": "Extension.extension",
+        "sliceName": "unitOfPresentation",
+        "short": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'",
+        "definition": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff' (as in 'contains 100 mcg per puff'), or for a liquid - 'vial' (as in 'contains 5 ml per vial').",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "unitOfPresentation"
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff'",
+        "definition": "The presentation type in which this item is given to a patient. e.g. for a spray - 'puff' (as in 'contains 100 mcg per puff'), or for a liquid - 'vial' (as in 'contains 5 ml per vial').",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The presentation type in which an administrable medicinal product is given to a patient.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-unit-of-presentation-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:producedFrom",
+        "path": "Extension.extension",
+        "sliceName": "producedFrom",
+        "short": "Indicates the specific manufactured items that are part of the 'formOf' product that are used in the preparation of this specific administrable form",
+        "definition": "Indicates the specific manufactured items that are part of the 'formOf' product that are used in the preparation of this specific administrable form.  In some cases, an administrable form might use all of the items from the overall product (or there might only be one item), while in other cases, an administrable form might use only a subset of the items available in the overall product.  For example, an administrable form might involve combining a liquid and a powder available as part of an overall product, but not involve applying the also supplied cream.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:producedFrom.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "producedFrom"
+      },
+      {
+        "id": "Extension.extension:producedFrom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Indicates the specific manufactured items that are part of the 'formOf' product that are used in the preparation of this specific administrable form",
+        "definition": "Indicates the specific manufactured items that are part of the 'formOf' product that are used in the preparation of this specific administrable form.  In some cases, an administrable form might use all of the items from the overall product (or there might only be one item), while in other cases, an administrable form might use only a subset of the items available in the overall product.  For example, an administrable form might involve combining a liquid and a powder available as part of an overall product, but not involve applying the also supplied cream.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "The ingredients of this administrable medicinal product. This is only needed if the ingredients are not specified either using ManufacturedItemDefiniton, or using by incoming references from the Ingredient resource",
+        "definition": "The ingredients of this administrable medicinal product. This is only needed if the ingredients are not specified either using ManufacturedItemDefiniton (via AdministrableProductDefinition.producedFrom) to state which component items are used to make this, or using by incoming references from the Ingredient resource, to state in detail which substances exist within this. This element allows a basic coded ingredient to be used.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:ingredient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The ingredients of this administrable medicinal product. This is only needed if the ingredients are not specified either using ManufacturedItemDefiniton, or using by incoming references from the Ingredient resource",
+        "definition": "The ingredients of this administrable medicinal product. This is only needed if the ingredients are not specified either using ManufacturedItemDefiniton (via AdministrableProductDefinition.producedFrom) to state which component items are used to make this, or using by incoming references from the Ingredient resource, to state in detail which substances exist within this. This element allows a basic coded ingredient to be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This value set includes all substance codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "short": "A device that is integral to the medicinal product, in effect being considered as an \"ingredient\" of the medicinal product",
+        "definition": "A device that is integral to the medicinal product, in effect being considered as an \"ingredient\" of the medicinal product. This is not intended for devices that are just co-packaged.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A device that is integral to the medicinal product, in effect being considered as an \"ingredient\" of the medicinal product",
+        "definition": "A device that is integral to the medicinal product, in effect being considered as an \"ingredient\" of the medicinal product. This is not intended for devices that are just co-packaged.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "short": "Characteristics e.g. a product's onset of action",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "A code expressing the type of characteristic",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.type from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A code expressing the type of characteristic",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.type from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "A value for the characteristic",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.value[x] from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A value for the characteristic",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.value[x] from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "The status of characteristic e.g. assigned or pending",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.status from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:property.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The status of characteristic e.g. assigned or pending",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.property.status from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration",
+        "path": "Extension.extension",
+        "sliceName": "routeOfAdministration",
+        "short": "The path by which the product is taken into or makes contact with the body",
+        "definition": "The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route. RouteOfAdministration cannot be used when the 'formOf' product already uses MedicinalProductDefinition.route (and vice versa).",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Coded expression for the route",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.code from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Coded expression for the route",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.code from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A code specifying the route or physiological path of administration of a therapeutic agent into or onto a patient's body.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-route-codes-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose",
+        "path": "Extension.extension.extension",
+        "sliceName": "firstDose",
+        "short": "The first dose (dose quantity) administered can be specified for the product",
+        "definition": "The first dose (dose quantity) administered can be specified for the product, using a numerical value and its unit of measurement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "firstDose"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The first dose (dose quantity) administered can be specified for the product",
+        "definition": "The first dose (dose quantity) administered can be specified for the product, using a numerical value and its unit of measurement.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxSingleDose",
+        "short": "The maximum single dose that can be administered",
+        "definition": "The maximum single dose that can be administered, specified using a numerical value and its unit of measurement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxSingleDose"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum single dose that can be administered",
+        "definition": "The maximum single dose that can be administered, specified using a numerical value and its unit of measurement.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerDay",
+        "short": "The maximum dose quantity to be administered in any one 24-h period",
+        "definition": "The maximum dose per day (maximum dose quantity to be administered in any one 24-h period) that can be administered.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxDosePerDay"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum dose quantity to be administered in any one 24-h period",
+        "definition": "The maximum dose per day (maximum dose quantity to be administered in any one 24-h period) that can be administered.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerTreatmentPeriod",
+        "short": "The maximum dose per treatment period that can be administered",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.maxDosePerTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxDosePerTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum dose per treatment period that can be administered",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.maxDosePerTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxTreatmentPeriod",
+        "short": "The maximum treatment period during which the product can be administered",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.maxTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum treatment period during which the product can be administered",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.maxTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies",
+        "path": "Extension.extension.extension",
+        "sliceName": "targetSpecies",
+        "short": "A species for which this route applies",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "code",
+        "short": "Coded expression for the species",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.code from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Coded expression for the species",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.code from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A tissue type of an animal.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-target-species-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "withdrawalPeriod",
+        "short": "A species specific time during which consumption of animal product is not appropriate",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "tissue",
+        "short": "The type of tissue for which the withdrawal period applies, e.g. meat, milk",
+        "definition": "Coded expression for the type of tissue for which the withdrawal period applies, e.g. meat, milk.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "tissue"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The type of tissue for which the withdrawal period applies, e.g. meat, milk",
+        "definition": "Coded expression for the type of tissue for which the withdrawal period applies, e.g. meat, milk.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A tissue type of an animal.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-animal-tissue-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "short": "A value for the time",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.value from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "A value for the time",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.value from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "supportingInformation",
+        "short": "Extra information about the withdrawal period",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "supportingInformation"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Extra information about the withdrawal period",
+        "definition": "This cross-version extension represents AdministrableProductDefinition.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation from http://hl7.org/fhir/StructureDefinition/AdministrableProductDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "withdrawalPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "targetSpecies"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "routeOfAdministration"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdministrableProductDefinition"
+      }
+    ]
+  }
+}

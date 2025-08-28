@@ -1,0 +1,738 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Sequence.quality",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.quality",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Sequence_quality",
+  "title": "Cross-version Extension for R3.Sequence.quality for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:19.0393701-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Sequence.quality from http://hl7.org/fhir/StructureDefinition/Sequence|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MolecularSequence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "An set of value as quality of sequence",
+        "definition": "An experimental feature attribute that defines the quality of the feature in a quantitative way, such as a phred quality score ([SO:0001686](http://www.sequenceontology.org/browser/current_svn/term/SO:0001686)).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "indel | snp | unknown",
+        "definition": "INDEL / SNP / Undefined variant.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "indel | snp | unknown",
+        "definition": "INDEL / SNP / Undefined variant.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type for quality report",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-quality-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:standardSequence",
+        "path": "Extension.extension",
+        "sliceName": "standardSequence",
+        "short": "Standard sequence for comparison",
+        "definition": "Gold standard sequence used for comparing against.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:standardSequence.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "standardSequence"
+      },
+      {
+        "id": "Extension.extension:standardSequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Standard sequence for comparison",
+        "definition": "Gold standard sequence used for comparing against.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Reference identifier of the sequence that used to mark the quality of tested samples.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-sequence-quality-standardSequence-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:start",
+        "path": "Extension.extension",
+        "sliceName": "start",
+        "short": "Start position of the sequence",
+        "definition": "Start position of the sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:start.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "start"
+      },
+      {
+        "id": "Extension.extension:start.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Start position of the sequence",
+        "definition": "Start position of the sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:end",
+        "path": "Extension.extension",
+        "sliceName": "end",
+        "short": "End position of the sequence",
+        "definition": "End position of the sequence.If the coordinate system is 0-based then end is is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:end.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "end"
+      },
+      {
+        "id": "Extension.extension:end.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "End position of the sequence",
+        "definition": "End position of the sequence.If the coordinate system is 0-based then end is is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:score",
+        "path": "Extension.extension",
+        "sliceName": "score",
+        "short": "Quality score for the comparison",
+        "definition": "The score of an experimentally derived feature such as a p-value ([SO:0001685](http://www.sequenceontology.org/browser/current_svn/term/SO:0001685)).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:score.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "score"
+      },
+      {
+        "id": "Extension.extension:score.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Quality score for the comparison",
+        "definition": "The score of an experimentally derived feature such as a p-value ([SO:0001685](http://www.sequenceontology.org/browser/current_svn/term/SO:0001685)).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:method",
+        "path": "Extension.extension",
+        "sliceName": "method",
+        "short": "Method to get quality",
+        "definition": "Which method is used to get sequence quality.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:method.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:method.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Method to get quality",
+        "definition": "Which method is used to get sequence quality.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The method used to evaluate the numerical quality of the observed sequence.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-sequence-quality-method-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:truthTP",
+        "path": "Extension.extension",
+        "sliceName": "truthTP",
+        "short": "True positives from the perspective of the truth data",
+        "definition": "True positives, from the perspective of the truth data, i.e. the number of sites in the Truth Call Set for which there are paths through the Query Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:truthTP.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "truthTP"
+      },
+      {
+        "id": "Extension.extension:truthTP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "True positives from the perspective of the truth data",
+        "definition": "True positives, from the perspective of the truth data, i.e. the number of sites in the Truth Call Set for which there are paths through the Query Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryTP",
+        "path": "Extension.extension",
+        "sliceName": "queryTP",
+        "short": "True positives from the perspective of the query data",
+        "definition": "True positives, from the perspective of the query data, i.e. the number of sites in the Query Call Set for which there are paths through the Truth Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:queryTP.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "queryTP"
+      },
+      {
+        "id": "Extension.extension:queryTP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "True positives from the perspective of the query data",
+        "definition": "True positives, from the perspective of the query data, i.e. the number of sites in the Query Call Set for which there are paths through the Truth Call Set that are consistent with all of the alleles at this site, and for which there is an accurate genotype call for the event.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:truthFN",
+        "path": "Extension.extension",
+        "sliceName": "truthFN",
+        "short": "False negatives",
+        "definition": "False negatives, i.e. the number of sites in the Truth Call Set for which there is no path through the Query Call Set that is consistent with all of the alleles at this site, or sites for which there is an inaccurate genotype call for the event. Sites with correct variant but incorrect genotype are counted here.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:truthFN.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "truthFN"
+      },
+      {
+        "id": "Extension.extension:truthFN.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "False negatives",
+        "definition": "False negatives, i.e. the number of sites in the Truth Call Set for which there is no path through the Query Call Set that is consistent with all of the alleles at this site, or sites for which there is an inaccurate genotype call for the event. Sites with correct variant but incorrect genotype are counted here.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:queryFP",
+        "path": "Extension.extension",
+        "sliceName": "queryFP",
+        "short": "False positives",
+        "definition": "False positives, i.e. the number of sites in the Query Call Set for which there is no path through the Truth Call Set that is consistent with this site. Sites with correct variant but incorrect genotype are counted here.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:queryFP.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "queryFP"
+      },
+      {
+        "id": "Extension.extension:queryFP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "False positives",
+        "definition": "False positives, i.e. the number of sites in the Query Call Set for which there is no path through the Truth Call Set that is consistent with this site. Sites with correct variant but incorrect genotype are counted here.",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gtFP",
+        "path": "Extension.extension",
+        "sliceName": "gtFP",
+        "short": "False positives where the non-REF alleles in the Truth and Query Call Sets match",
+        "definition": "The number of false positives where the non-REF alleles in the Truth and Query Call Sets match (i.e. cases where the truth is 1/1 and the query is 0/1 or similar).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gtFP.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gtFP"
+      },
+      {
+        "id": "Extension.extension:gtFP.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "False positives where the non-REF alleles in the Truth and Query Call Sets match",
+        "definition": "The number of false positives where the non-REF alleles in the Truth and Query Call Sets match (i.e. cases where the truth is 1/1 and the query is 0/1 or similar).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:precision",
+        "path": "Extension.extension",
+        "sliceName": "precision",
+        "short": "Precision of comparison",
+        "definition": "QUERY.TP / (QUERY.TP + QUERY.FP).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precision.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "precision"
+      },
+      {
+        "id": "Extension.extension:precision.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Precision of comparison",
+        "definition": "QUERY.TP / (QUERY.TP + QUERY.FP).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recall",
+        "path": "Extension.extension",
+        "sliceName": "recall",
+        "short": "Recall of comparison",
+        "definition": "TRUTH.TP / (TRUTH.TP + TRUTH.FN).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:recall.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "recall"
+      },
+      {
+        "id": "Extension.extension:recall.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Recall of comparison",
+        "definition": "TRUTH.TP / (TRUTH.TP + TRUTH.FN).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:fScore",
+        "path": "Extension.extension",
+        "sliceName": "fScore",
+        "short": "F-score",
+        "definition": "Harmonic mean of Recall and Precision, computed as: 2 * precision * recall / (precision + recall).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:fScore.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "fScore"
+      },
+      {
+        "id": "Extension.extension:fScore.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "F-score",
+        "definition": "Harmonic mean of Recall and Precision, computed as: 2 * precision * recall / (precision + recall).",
+        "comment": "`MolecularSequence.quality` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.quality"
+      }
+    ]
+  }
+}

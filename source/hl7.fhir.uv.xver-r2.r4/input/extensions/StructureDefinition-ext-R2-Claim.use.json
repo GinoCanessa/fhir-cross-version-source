@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Claim.use",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Claim.use",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Claim_use",
+  "title": "Cross-version Extension for R2.Claim.use for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.8190987-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Claim.use from http://hl7.org/fhir/StructureDefinition/Claim|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Claim.use"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "complete | proposed | exploratory | other",
+        "definition": "Complete (Bill or Claim), Proposed (Pre-Authorization), Exploratory (Pre-determination).",
+        "comment": "`Claim.use` maps to R4 `Claim.use`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Claim.use"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "complete | proposed | exploratory | other",
+        "definition": "Complete (Bill or Claim), Proposed (Pre-Authorization), Exploratory (Pre-determination).",
+        "comment": "`Claim.use` maps to R4 `Claim.use`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Complete, proposed, exploratory, other.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-claim-use-link-for-R4"
+        }
+      }
+    ]
+  }
+}

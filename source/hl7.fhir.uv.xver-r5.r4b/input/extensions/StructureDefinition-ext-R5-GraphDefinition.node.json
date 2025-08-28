@@ -1,0 +1,283 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-GraphDefinition.node",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.node",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_GraphDefinition_node",
+  "title": "Cross-version Extension for R5.GraphDefinition.node for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:54.0786012-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents GraphDefinition.node from http://hl7.org/fhir/StructureDefinition/GraphDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "GraphDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Potential target for the link",
+        "definition": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nodeId",
+        "path": "Extension.extension",
+        "sliceName": "nodeId",
+        "short": "Internal ID - target for link references",
+        "definition": "Internal ID of node - target for link references.",
+        "comment": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nodeId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "nodeId"
+      },
+      {
+        "id": "Extension.extension:nodeId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Internal ID - target for link references",
+        "definition": "Internal ID of node - target for link references.",
+        "comment": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Why this node is specified",
+        "definition": "Information about why this node is of interest in this graph definition.",
+        "comment": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why this node is specified",
+        "definition": "Information about why this node is of interest in this graph definition.",
+        "comment": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Type of resource this link refers to",
+        "definition": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of resource this link refers to",
+        "definition": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A type of resource, or a Reference (from all versions)",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-version-independent-all-resource-types-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:profile",
+        "path": "Extension.extension",
+        "sliceName": "profile",
+        "short": "Profile for the target resource",
+        "definition": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:profile.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:profile.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Profile for the target resource",
+        "definition": "`GraphDefinition.node` has no related element in R4B:GraphDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-GraphDefinition.node"
+      }
+    ]
+  }
+}

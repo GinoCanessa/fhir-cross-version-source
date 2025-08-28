@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "graph-compartment-rule",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/graph-compartment-rule",
+  "version": "3.0.2",
+  "name": "GraphCompartmentRule",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "How a compartment must be linked",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/graph-compartment-rule",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "identical",
+      "display": "Identical",
+      "definition": "The compartment must be identical (the same literal reference)"
+    },
+    {
+      "code": "matching",
+      "display": "Matching",
+      "definition": "The compartment must be the same - the record must be about the same patient, but the reference may be different"
+    },
+    {
+      "code": "different",
+      "display": "Different",
+      "definition": "The compartment must be different"
+    },
+    {
+      "code": "custom",
+      "display": "Custom",
+      "definition": "The compartment rule is defined in the accompanying FHIRPath expression"
+    }
+  ]
+}

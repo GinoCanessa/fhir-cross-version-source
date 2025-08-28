@@ -1,0 +1,153 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "bundle-type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.327"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/bundle-type",
+  "version": "1.0.2",
+  "name": "bundle-type",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "document",
+      "display": "Document",
+      "definition": "The bundle is a document. The first resource is a Composition."
+    },
+    {
+      "code": "message",
+      "display": "Message",
+      "definition": "The bundle is a message. The first resource is a MessageHeader."
+    },
+    {
+      "code": "transaction",
+      "display": "Transaction",
+      "definition": "The bundle is a transaction - intended to be processed by a server as an atomic commit."
+    },
+    {
+      "code": "transaction-response",
+      "display": "Transaction Response",
+      "definition": "The bundle is a transaction response. Because the response is a transaction response, the transactionhas succeeded, and all responses are error free."
+    },
+    {
+      "code": "batch",
+      "display": "Batch",
+      "definition": "The bundle is a transaction - intended to be processed by a server as a group of actions."
+    },
+    {
+      "code": "batch-response",
+      "display": "Batch Response",
+      "definition": "The bundle is a batch response. Note that as a batch, some responses may indicate failure and others success."
+    },
+    {
+      "code": "history",
+      "display": "History List",
+      "definition": "The bundle is a list of resources from a history interaction on a server."
+    },
+    {
+      "code": "searchset",
+      "display": "Search Results",
+      "definition": "The bundle is a list of resources returned as a result of a search/query interaction, operation, or message."
+    },
+    {
+      "code": "collection",
+      "display": "Collection",
+      "definition": "The bundle is a set of resources collected into a single document for ease of distribution."
+    }
+  ]
+}

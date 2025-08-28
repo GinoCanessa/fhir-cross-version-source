@@ -1,0 +1,240 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-MedicationKnowledge.kinetics",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationKnowledge.kinetics",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_MedicationKnowledge_kinetics",
+  "title": "Cross-version Extension for R4B.MedicationKnowledge.kinetics for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:14.2626601-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationKnowledge.kinetics from http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The time course of drug absorption, distribution, metabolism and excretion of a medication from the body",
+        "definition": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:areaUnderCurve",
+        "path": "Extension.extension",
+        "sliceName": "areaUnderCurve",
+        "short": "The drug concentration measured at certain discrete points in time",
+        "definition": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:areaUnderCurve.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "areaUnderCurve"
+      },
+      {
+        "id": "Extension.extension:areaUnderCurve.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The drug concentration measured at certain discrete points in time",
+        "definition": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lethalDose50",
+        "path": "Extension.extension",
+        "sliceName": "lethalDose50",
+        "short": "The median lethal dose of a drug",
+        "definition": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lethalDose50.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lethalDose50"
+      },
+      {
+        "id": "Extension.extension:lethalDose50.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The median lethal dose of a drug",
+        "definition": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:halfLifePeriod",
+        "path": "Extension.extension",
+        "sliceName": "halfLifePeriod",
+        "short": "Time required for concentration in the body to decrease by half",
+        "definition": "The time required for any specified property (e.g., the concentration of a substance in the body) to decrease by half.",
+        "comment": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:halfLifePeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "halfLifePeriod"
+      },
+      {
+        "id": "Extension.extension:halfLifePeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Time required for concentration in the body to decrease by half",
+        "definition": "The time required for any specified property (e.g., the concentration of a substance in the body) to decrease by half.",
+        "comment": "`MedicationKnowledge.kinetics` has no related element in R5:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationKnowledge.kinetics"
+      }
+    ]
+  }
+}

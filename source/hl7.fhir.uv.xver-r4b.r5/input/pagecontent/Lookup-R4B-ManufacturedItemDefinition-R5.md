@@ -1,0 +1,18 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [ManufacturedItemDefinition](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ManufacturedItemDefinition.meta](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.meta](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.implicitRules](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.implicitRules](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.language](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.language](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.text](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.text](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.contained](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.contained](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.identifier](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.identifier](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.status](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.status](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.manufacturedDoseForm](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.manufacturedDoseForm](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.unitOfPresentation](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.unitOfPresentation](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.manufacturer](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.manufacturer](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.ingredient](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.ingredient](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.property](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.property](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.property.type](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.property.type](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |
+| [ManufacturedItemDefinition.property.value[x]](https://hl7.org/fhir/R4B/ManufacturedItemDefinition.html#resource) | `UseElementSameName` | [ManufacturedItemDefinition.property.value[x]](https://hl7.org/fhir/R5/ManufacturedItemDefinition.html#resource) |

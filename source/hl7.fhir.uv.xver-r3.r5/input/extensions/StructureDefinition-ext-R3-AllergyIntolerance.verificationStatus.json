@@ -1,0 +1,109 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-AllergyIntolerance.verificationStatus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-AllergyIntolerance.verificationStatus",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_AllergyIntolerance_verificationStatus",
+  "title": "Cross-version Extension for R3.AllergyIntolerance.verificationStatus for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:11.2649681-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AllergyIntolerance.verificationStatus from http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance.verificationStatus"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "unconfirmed | confirmed | refuted | entered-in-error",
+        "definition": "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).",
+        "comment": "`AllergyIntolerance.verificationStatus` maps to R5 `AllergyIntolerance.verificationStatus`. So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element AllergyIntolerance.verificationStatus is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-AllergyIntolerance.verificationStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "unconfirmed | confirmed | refuted | entered-in-error",
+        "definition": "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).",
+        "comment": "`AllergyIntolerance.verificationStatus` maps to R5 `AllergyIntolerance.verificationStatus`. So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Assertion about certainty associated with a propensity, or potential risk, of a reaction to the identified substance.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-allergy-verification-status-for-R5"
+        }
+      }
+    ]
+  }
+}

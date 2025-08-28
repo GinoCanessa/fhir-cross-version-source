@@ -1,0 +1,3844 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Transport",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Transport",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Transport",
+  "title": "Cross-version Extension for R5.Transport for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:03.0375058-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Transport from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Delivery of item",
+        "definition": "Record of transport of item.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesCanonical",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to a *FHIR*-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instantiatesCanonical"
+      },
+      {
+        "id": "Extension.extension:instantiatesCanonical.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to a *FHIR*-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:instantiatesUri",
+        "path": "Extension.extension",
+        "sliceName": "instantiatesUri",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to an *externally* maintained  protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instantiatesUri"
+      },
+      {
+        "id": "Extension.extension:instantiatesUri.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Formal definition of transport",
+        "definition": "The URL pointing to an *externally* maintained  protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:basedOn",
+        "path": "Extension.extension",
+        "sliceName": "basedOn",
+        "short": "Request fulfilled by this transport",
+        "definition": "BasedOn refers to a higher-level authorization that triggered the creation of the transport.  It references a \"request\" resource such as a ServiceRequest or Transport, which is distinct from the \"request\" resource the Transport is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a transport is created to fulfill a procedureRequest ( = FocusOn ) to transport a specimen to the lab.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:basedOn.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "basedOn"
+      },
+      {
+        "id": "Extension.extension:basedOn.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Request fulfilled by this transport",
+        "definition": "BasedOn refers to a higher-level authorization that triggered the creation of the transport.  It references a \"request\" resource such as a ServiceRequest or Transport, which is distinct from the \"request\" resource the Transport is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a transport is created to fulfill a procedureRequest ( = FocusOn ) to transport a specimen to the lab.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:groupIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "groupIdentifier",
+        "short": "Requisition or grouper id",
+        "definition": "A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:groupIdentifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "groupIdentifier"
+      },
+      {
+        "id": "Extension.extension:groupIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Requisition or grouper id",
+        "definition": "A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:partOf",
+        "path": "Extension.extension",
+        "sliceName": "partOf",
+        "short": "Part of referenced event",
+        "definition": "A larger event of which this particular event is a component or step.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:partOf.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "partOf"
+      },
+      {
+        "id": "Extension.extension:partOf.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Part of referenced event",
+        "definition": "A larger event of which this particular event is a component or step.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "in-progress | completed | abandoned | cancelled | planned | entered-in-error",
+        "definition": "A code specifying the state of the transport event.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "in-progress | completed | abandoned | cancelled | planned | entered-in-error",
+        "definition": "A code specifying the state of the transport event.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Status of the transport.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-transport-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension",
+        "sliceName": "statusReason",
+        "short": "Reason for current status",
+        "definition": "An explanation as to why this transport is held, failed, was refused, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statusReason"
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reason for current status",
+        "definition": "An explanation as to why this transport is held, failed, was refused, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes to identify the reason for current status.  These will typically be specific to a particular workflow.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-transport-status-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:intent",
+        "path": "Extension.extension",
+        "sliceName": "intent",
+        "short": "unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
+        "definition": "Indicates the \"level\" of actionability associated with the Transport, i.e. i+R[9]Cs this a proposed transport, a planned transport, an actionable transport, etc.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:intent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intent"
+      },
+      {
+        "id": "Extension.extension:intent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option",
+        "definition": "Indicates the \"level\" of actionability associated with the Transport, i.e. i+R[9]Cs this a proposed transport, a planned transport, an actionable transport, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Distinguishes whether the transport is a proposal, plan or full order.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-transport-intent-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:priority",
+        "path": "Extension.extension",
+        "sliceName": "priority",
+        "short": "routine | urgent | asap | stat",
+        "definition": "Indicates how quickly the Transport should be addressed with respect to other requests.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:priority.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "priority"
+      },
+      {
+        "id": "Extension.extension:priority.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "routine | urgent | asap | stat",
+        "definition": "Indicates how quickly the Transport should be addressed with respect to other requests.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The priority of a transport (may affect service level applied to the transport).",
+          "valueSet": "http://hl7.org/fhir/ValueSet/request-priority|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Human-readable explanation of transport",
+        "definition": "A free-text description of what is to be performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Human-readable explanation of transport",
+        "definition": "A free-text description of what is to be performed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:focus",
+        "path": "Extension.extension",
+        "sliceName": "focus",
+        "short": "What transport is acting on",
+        "definition": "The request being actioned or the resource being manipulated by this transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:focus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "focus"
+      },
+      {
+        "id": "Extension.extension:focus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "What transport is acting on",
+        "definition": "The request being actioned or the resource being manipulated by this transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:for",
+        "path": "Extension.extension",
+        "sliceName": "for",
+        "short": "Beneficiary of the Transport",
+        "definition": "The entity who benefits from the performance of the service specified in the transport (e.g., the patient).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:for.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "for"
+      },
+      {
+        "id": "Extension.extension:for.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Beneficiary of the Transport",
+        "definition": "The entity who benefits from the performance of the service specified in the transport (e.g., the patient).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension",
+        "sliceName": "encounter",
+        "short": "Healthcare event during which this transport originated",
+        "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this transport was created.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:encounter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "encounter"
+      },
+      {
+        "id": "Extension.extension:encounter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Healthcare event during which this transport originated",
+        "definition": "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this transport was created.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:completionTime",
+        "path": "Extension.extension",
+        "sliceName": "completionTime",
+        "short": "Completion time of the event (the occurrence)",
+        "definition": "Identifies the completion time of the event (the occurrence).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:completionTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "completionTime"
+      },
+      {
+        "id": "Extension.extension:completionTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Completion time of the event (the occurrence)",
+        "definition": "Identifies the completion time of the event (the occurrence).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:authoredOn",
+        "path": "Extension.extension",
+        "sliceName": "authoredOn",
+        "short": "Transport Creation Date",
+        "definition": "The date and time this transport was created.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:authoredOn.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authoredOn"
+      },
+      {
+        "id": "Extension.extension:authoredOn.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Transport Creation Date",
+        "definition": "The date and time this transport was created.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastModified",
+        "path": "Extension.extension",
+        "sliceName": "lastModified",
+        "short": "Transport Last Modified Date",
+        "definition": "The date and time of last modification to this transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lastModified.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastModified"
+      },
+      {
+        "id": "Extension.extension:lastModified.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Transport Last Modified Date",
+        "definition": "The date and time of last modification to this transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:requester",
+        "path": "Extension.extension",
+        "sliceName": "requester",
+        "short": "Who is asking for transport to be done",
+        "definition": "The creator of the transport.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:requester.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "requester"
+      },
+      {
+        "id": "Extension.extension:requester.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who is asking for transport to be done",
+        "definition": "The creator of the transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performerType",
+        "path": "Extension.extension",
+        "sliceName": "performerType",
+        "short": "Requested performer",
+        "definition": "The kind of participant that should perform the transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:performerType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "performerType"
+      },
+      {
+        "id": "Extension.extension:performerType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Requested performer",
+        "definition": "The kind of participant that should perform the transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The type(s) of transport performers allowed.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-performer-role-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:owner",
+        "path": "Extension.extension",
+        "sliceName": "owner",
+        "short": "Responsible individual",
+        "definition": "Individual organization or Device currently responsible for transport execution.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:owner.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "owner"
+      },
+      {
+        "id": "Extension.extension:owner.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Responsible individual",
+        "definition": "Individual organization or Device currently responsible for transport execution.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "short": "Where transport occurs",
+        "definition": "Principal physical location where this transport is performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where transport occurs",
+        "definition": "Principal physical location where this transport is performed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:insurance",
+        "path": "Extension.extension",
+        "sliceName": "insurance",
+        "short": "Associated insurance coverage",
+        "definition": "Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:insurance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "insurance"
+      },
+      {
+        "id": "Extension.extension:insurance.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Associated insurance coverage",
+        "definition": "Insurance plans, coverage extensions, pre-authorizations and/or pre-determinations that may be relevant to the Transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Comments made about the transport",
+        "definition": "Free-text information captured about the transport as it progresses.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Comments made about the transport",
+        "definition": "Free-text information captured about the transport as it progresses.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:relevantHistory",
+        "path": "Extension.extension",
+        "sliceName": "relevantHistory",
+        "short": "Key events in history of the Transport",
+        "definition": "Links to Provenance records for past versions of this Transport that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relevantHistory.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relevantHistory"
+      },
+      {
+        "id": "Extension.extension:relevantHistory.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Key events in history of the Transport",
+        "definition": "Links to Provenance records for past versions of this Transport that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:restriction",
+        "path": "Extension.extension",
+        "sliceName": "restriction",
+        "short": "Constraints on fulfillment transports",
+        "definition": "If the Transport.focus is a request resource and the transport is seeking fulfillment (i.e. is asking for the request to be actioned), this element identifies any limitations on what parts of the referenced request should be actioned.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restriction.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restriction.extension:repetitions",
+        "path": "Extension.extension.extension",
+        "sliceName": "repetitions",
+        "short": "How many times to repeat",
+        "definition": "Indicates the number of times the requested action should occur.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restriction.extension:repetitions.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "repetitions"
+      },
+      {
+        "id": "Extension.extension:restriction.extension:repetitions.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "How many times to repeat",
+        "definition": "Indicates the number of times the requested action should occur.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:restriction.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "short": "When fulfillment sought",
+        "definition": "Over what time-period is fulfillment sought.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restriction.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:restriction.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "When fulfillment sought",
+        "definition": "Over what time-period is fulfillment sought.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:restriction.extension:recipient",
+        "path": "Extension.extension.extension",
+        "sliceName": "recipient",
+        "short": "For whom is fulfillment sought?",
+        "definition": "For requests that are targeted to more than one potential recipient/target, to identify who is fulfillment is sought for.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restriction.extension:recipient.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "recipient"
+      },
+      {
+        "id": "Extension.extension:restriction.extension:recipient.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "For whom is fulfillment sought?",
+        "definition": "For requests that are targeted to more than one potential recipient/target, to identify who is fulfillment is sought for.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:restriction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "restriction"
+      },
+      {
+        "id": "Extension.extension:input",
+        "path": "Extension.extension",
+        "sliceName": "input",
+        "short": "Information used to perform transport",
+        "definition": "Additional information that may be needed in the execution of the transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Label for the input",
+        "definition": "A code or description indicating how the input is intended to be used as part of the transport execution.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:input.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Label for the input",
+        "definition": "A code or description indicating how the input is intended to be used as part of the transport execution.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "Content to use in performing the transport",
+        "definition": "The value of the input parameter as a basic type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "availableTime",
+        "short": "Times the {item} is available",
+        "definition": "This cross-version extension represents Availability.availableTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:daysOfWeek",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:daysOfWeek.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:daysOfWeek.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:allDay",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:allDay.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allDay"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:allDay.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableStartTime",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableStartTime.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableStartTime.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableEndTime",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableEndTime.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.extension:availableEndTime.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:availableTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableTime"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "notAvailableTime",
+        "short": "Not available during this time due to provided reason",
+        "definition": "This cross-version extension represents Availability.notAvailableTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:description",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:description.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:during",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "during",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:during.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "during"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.extension:during.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:notAvailableTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "notAvailableTime"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:purpose",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "purpose",
+        "short": "The type of contact",
+        "definition": "The purpose/type of contact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:purpose.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:purpose.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The type of contact",
+        "definition": "The purpose/type of contact.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-contactentity-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:name",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "name",
+        "short": "Name of an individual to contact",
+        "definition": "The name of an individual to contact, some types of contact detail are usually blank.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:name.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Name of an individual to contact",
+        "definition": "The name of an individual to contact, some types of contact detail are usually blank.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:telecom",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "telecom",
+        "short": "Contact details (e.g.phone/fax/url)",
+        "definition": "The contact details application for the purpose defined.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:telecom.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "telecom"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:telecom.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Contact details (e.g.phone/fax/url)",
+        "definition": "The contact details application for the purpose defined.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:address",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "address",
+        "short": "Address for the contact",
+        "definition": "This cross-version extension represents ExtendedContactDetail.address from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:address.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "address"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:address.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Address for the contact",
+        "definition": "This cross-version extension represents ExtendedContactDetail.address from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:organization",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "organization",
+        "short": "This contact detail is handled/monitored by a specific organization",
+        "definition": "This contact detail is handled/monitored by a specific organization. If the name is provided in the contact, then it is referring to the named individual within this organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:organization.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "organization"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:organization.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "This contact detail is handled/monitored by a specific organization",
+        "definition": "This contact detail is handled/monitored by a specific organization. If the name is provided in the contact, then it is referring to the named individual within this organization.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:period",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "period",
+        "short": "Period that this contact was valid for usage",
+        "definition": "This cross-version extension represents ExtendedContactDetail.period from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:period.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:period.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Period that this contact was valid for usage",
+        "definition": "This cross-version extension represents ExtendedContactDetail.period from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:versionId",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "versionId",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:versionId.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "versionId"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:versionId.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:lastUpdated",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "lastUpdated",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:lastUpdated.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastUpdated"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:lastUpdated.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:source",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "source",
+        "short": "Identifies where the resource comes from",
+        "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](https://hl7.org/fhir/p.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:source.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:source.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Identifies where the resource comes from",
+        "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](https://hl7.org/fhir/p.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:profile",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "profile",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](https://hl7.org/fhir/s.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](https://hl7.org/fhir/structuredefinition-defi.html#StructureDefinition.url).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:profile.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:profile.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](https://hl7.org/fhir/s.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](https://hl7.org/fhir/structuredefinition-defi.html#StructureDefinition.url).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:security",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "security",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:security.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "security"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:security.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Security Labels from the Healthcare Privacy and Security Classification System.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-security-labels-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:tag",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "tag",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:tag.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "tag"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:tag.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-common-tags-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Transport.input.value[x] from FHIR R5",
+        "definition": "Data type name for Transport.input.value[x] from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: Availability|ExtendedContactDetail|Meta|integer64",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:input.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Content to use in performing the transport",
+        "definition": "The value of the input parameter as a basic type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:input.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "input"
+      },
+      {
+        "id": "Extension.extension:output",
+        "path": "Extension.extension",
+        "sliceName": "output",
+        "short": "Information produced as part of transport",
+        "definition": "Outputs produced by the Transport.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Label for output",
+        "definition": "The name of the Output parameter.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:output.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Label for output",
+        "definition": "The name of the Output parameter.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "Result of output",
+        "definition": "The value of the Output parameter as a basic type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "availableTime",
+        "short": "Times the {item} is available",
+        "definition": "This cross-version extension represents Availability.availableTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:daysOfWeek",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:daysOfWeek.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:daysOfWeek.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:allDay",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:allDay.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allDay"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:allDay.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableStartTime",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableStartTime.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableStartTime.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableEndTime",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableEndTime.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.extension:availableEndTime.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:availableTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableTime"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "notAvailableTime",
+        "short": "Not available during this time due to provided reason",
+        "definition": "This cross-version extension represents Availability.notAvailableTime from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:description",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:description.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:description.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:during",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "during",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:during.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "during"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.extension:during.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:notAvailableTime.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "notAvailableTime"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:purpose",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "purpose",
+        "short": "The type of contact",
+        "definition": "The purpose/type of contact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:purpose.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:purpose.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The type of contact",
+        "definition": "The purpose/type of contact.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-contactentity-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:name",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "name",
+        "short": "Name of an individual to contact",
+        "definition": "The name of an individual to contact, some types of contact detail are usually blank.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:name.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Name of an individual to contact",
+        "definition": "The name of an individual to contact, some types of contact detail are usually blank.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:telecom",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "telecom",
+        "short": "Contact details (e.g.phone/fax/url)",
+        "definition": "The contact details application for the purpose defined.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:telecom.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "telecom"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:telecom.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Contact details (e.g.phone/fax/url)",
+        "definition": "The contact details application for the purpose defined.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactPoint"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:address",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "address",
+        "short": "Address for the contact",
+        "definition": "This cross-version extension represents ExtendedContactDetail.address from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:address.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "address"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:address.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Address for the contact",
+        "definition": "This cross-version extension represents ExtendedContactDetail.address from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:organization",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "organization",
+        "short": "This contact detail is handled/monitored by a specific organization",
+        "definition": "This contact detail is handled/monitored by a specific organization. If the name is provided in the contact, then it is referring to the named individual within this organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:organization.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "organization"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:organization.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "This contact detail is handled/monitored by a specific organization",
+        "definition": "This contact detail is handled/monitored by a specific organization. If the name is provided in the contact, then it is referring to the named individual within this organization.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:period",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "period",
+        "short": "Period that this contact was valid for usage",
+        "definition": "This cross-version extension represents ExtendedContactDetail.period from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:period.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:period.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Period that this contact was valid for usage",
+        "definition": "This cross-version extension represents ExtendedContactDetail.period from http://hl7.org/fhir/StructureDefinition/Transport|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:versionId",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "versionId",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:versionId.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "versionId"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:versionId.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This value changes when the resource is created, updated, or deleted.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:lastUpdated",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "lastUpdated",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:lastUpdated.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastUpdated"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:lastUpdated.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:source",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "source",
+        "short": "Identifies where the resource comes from",
+        "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](https://hl7.org/fhir/p.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:source.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:source.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Identifies where the resource comes from",
+        "definition": "A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](https://hl7.org/fhir/p.html#) information that can be used to track or differentiate the source of information in the resource. The source may identify another FHIR server, document, message, database, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:profile",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "profile",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](https://hl7.org/fhir/s.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](https://hl7.org/fhir/structuredefinition-defi.html#StructureDefinition.url).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:profile.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "profile"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:profile.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](https://hl7.org/fhir/s.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](https://hl7.org/fhir/structuredefinition-defi.html#StructureDefinition.url).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:security",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "security",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:security.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "security"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:security.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Security Labels from the Healthcare Privacy and Security Classification System.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-security-labels-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:tag",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "tag",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:tag.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "tag"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:tag.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\".",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-common-tags-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Transport.output.value[x] from FHIR R5",
+        "definition": "Data type name for Transport.output.value[x] from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: Availability|ExtendedContactDetail|Meta|integer64",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:output.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Result of output",
+        "definition": "The value of the Output parameter as a basic type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "CodeableReference"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "RatioRange"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:output.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "output"
+      },
+      {
+        "id": "Extension.extension:requestedLocation",
+        "path": "Extension.extension",
+        "sliceName": "requestedLocation",
+        "short": "The desired location",
+        "definition": "The desired or final location for the transport.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:requestedLocation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "requestedLocation"
+      },
+      {
+        "id": "Extension.extension:requestedLocation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The desired location",
+        "definition": "The desired or final location for the transport.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:currentLocation",
+        "path": "Extension.extension",
+        "sliceName": "currentLocation",
+        "short": "The entity current location",
+        "definition": "The current location for the entity to be transported.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:currentLocation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "currentLocation"
+      },
+      {
+        "id": "Extension.extension:currentLocation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The entity current location",
+        "definition": "The current location for the entity to be transported.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "short": "Why transport is needed",
+        "definition": "A resource reference indicating why this transport needs to be performed.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why transport is needed",
+        "definition": "A resource reference indicating why this transport needs to be performed.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:history",
+        "path": "Extension.extension",
+        "sliceName": "history",
+        "short": "Parent (or preceding) transport",
+        "definition": "The transport event prior to this one.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:history.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "history"
+      },
+      {
+        "id": "Extension.extension:history.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Parent (or preceding) transport",
+        "definition": "The transport event prior to this one.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Transport"
+      }
+    ]
+  }
+}

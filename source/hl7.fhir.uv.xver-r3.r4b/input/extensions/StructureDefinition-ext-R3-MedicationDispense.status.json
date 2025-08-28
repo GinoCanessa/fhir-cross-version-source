@@ -1,0 +1,109 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-MedicationDispense.status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.status",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_MedicationDispense_status",
+  "title": "Cross-version Extension for R3.MedicationDispense.status for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:16.5842466-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationDispense.status from http://hl7.org/fhir/StructureDefinition/MedicationDispense|3.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationDispense.status"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "preparation | in-progress | on-hold | completed | entered-in-error | stopped",
+        "definition": "A code specifying the state of the set of dispense events.",
+        "comment": "`MedicationDispense.status` maps to R4B `MedicationDispense.status`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element MedicationDispense.status is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationDispense.status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "preparation | in-progress | on-hold | completed | entered-in-error | stopped",
+        "definition": "A code specifying the state of the set of dispense events.",
+        "comment": "`MedicationDispense.status` maps to R4B `MedicationDispense.status`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A coded concept specifying the state of the dispense event.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-medication-dispense-status-for-R4B"
+        }
+      }
+    ]
+  }
+}

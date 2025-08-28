@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ImplementationGuide.pa.type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ImplementationGuide.page.type",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ImplementationGuide_pa_type",
+  "title": "Cross-version Extension for R2.ImplementationGuide.page.type for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.5439975-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ImplementationGuide.page.type from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImplementationGuide.manifest.page"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Kind of resource to include in the list",
+        "definition": "For constructed pages, what kind of resources to include in the list.",
+        "comment": "Mapping of FHIR R3:ImplementationGuide element `ImplementationGuide.page.type` to R4:ImplementationGuide element ``",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ImplementationGuide.page.type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Kind of resource to include in the list",
+        "definition": "For constructed pages, what kind of resources to include in the list.",
+        "comment": "Mapping of FHIR R3:ImplementationGuide element `ImplementationGuide.page.type` to R4:ImplementationGuide element ``",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of FHIR.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-resource-types-for-R4"
+        }
+      }
+    ]
+  }
+}

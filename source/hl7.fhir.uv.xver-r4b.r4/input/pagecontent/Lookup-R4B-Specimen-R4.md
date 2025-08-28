@@ -1,0 +1,39 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [Specimen](https://hl7.org/fhir/R4B/Specimen.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Specimen.meta](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.meta](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.implicitRules](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.implicitRules](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.language](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.language](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.text](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.text](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.contained](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.contained](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.identifier](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.identifier](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.accessionIdentifier](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.accessionIdentifier](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.status](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.status](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.type](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.type](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.subject](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.subject](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.receivedTime](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.receivedTime](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.parent](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.parent](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.request](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.request](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.collector](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.collector](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.collected[x]](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.collected[x]](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.duration](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.duration](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.quantity](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.quantity](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.method](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.method](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.bodySite](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.bodySite](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.collection.fastingStatus[x]](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.collection.fastingStatus[x]](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.processing](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.processing](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.processing.description](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.processing.description](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.processing.procedure](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.processing.procedure](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.processing.additive](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.processing.additive](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.processing.time[x]](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.processing.time[x]](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.identifier](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.identifier](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.description](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.description](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.type](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.type](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.capacity](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.capacity](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.specimenQuantity](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.specimenQuantity](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.container.additive[x]](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.container.additive[x]](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.condition](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.condition](https://hl7.org/fhir/R4/Specimen.html#resource) |
+| [Specimen.note](https://hl7.org/fhir/R4B/Specimen.html#resource) | `UseElementSameName` | [Specimen.note](https://hl7.org/fhir/R4/Specimen.html#resource) |

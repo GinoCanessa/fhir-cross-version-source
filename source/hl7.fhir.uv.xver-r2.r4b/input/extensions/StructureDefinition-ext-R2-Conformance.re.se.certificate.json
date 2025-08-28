@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Conformance.re.se.certificate",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.security.certificate",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Conformance_re_se_certificate",
+  "title": "Cross-version Extension for R2.Conformance.rest.security.certificate for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:51.4958872-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Conformance.rest.security.certificate from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CapabilityStatement.rest.security"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Certificates associated with security profiles",
+        "definition": "This cross-version extension represents Conformance.rest.security.certificate from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Mime type for certificate",
+        "definition": "This cross-version extension represents Conformance.rest.security.certificate.type from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Mime type for certificate",
+        "definition": "This cross-version extension represents Conformance.rest.security.certificate.type from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The mime type of an attachment. Any valid mime type is allowed.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:blob",
+        "path": "Extension.extension",
+        "sliceName": "blob",
+        "short": "Actual certificate",
+        "definition": "This cross-version extension represents Conformance.rest.security.certificate.blob from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:blob.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "blob"
+      },
+      {
+        "id": "Extension.extension:blob.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Actual certificate",
+        "definition": "This cross-version extension represents Conformance.rest.security.certificate.blob from http://hl7.org/fhir/StructureDefinition/Conformance|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Conformance.rest.security.certificate"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-RelatedPerson.relationship",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-RelatedPerson.relationship",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_RelatedPerson_relationship",
+  "title": "Cross-version Extension for R2.RelatedPerson.relationship for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:55.1798856-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents RelatedPerson.relationship from http://hl7.org/fhir/StructureDefinition/RelatedPerson|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "RelatedPerson.relationship"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The nature of the relationship",
+        "definition": "The nature of the relationship between a patient and the related person.",
+        "comment": "`RelatedPerson.relationship` maps to R4 `RelatedPerson.relationship`. Changed from a single value to an array (max cardinality from 1 to *). So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-RelatedPerson.relationship"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "The nature of the relationship",
+        "definition": "The nature of the relationship between a patient and the related person.",
+        "comment": "`RelatedPerson.relationship` maps to R4 `RelatedPerson.relationship`. Changed from a single value to an array (max cardinality from 1 to *). So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The nature of the relationship between a patient and the related person",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-relatedperson-relationshiptype-for-R4"
+        }
+      }
+    ]
+  }
+}

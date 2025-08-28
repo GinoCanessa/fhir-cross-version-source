@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "history-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "http://hl7.org/fhir/history-status",
+  "version": "4.0.1",
+  "name": "FamilyHistoryStatus",
+  "title": "FamilyHistoryStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "Patient Care",
+  "contact": [
+    {
+      "name": "Patient Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "description": "A code that identifies the status of the family history record.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/history-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "partial",
+      "display": "Partial",
+      "definition": "Some health information is known and captured, but not complete - see notes for details."
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "All available related health information is captured as of the date (and possibly time) when the family member history was taken."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "This instance should not have been part of this patient's medical record."
+    },
+    {
+      "code": "health-unknown",
+      "display": "Health Unknown",
+      "definition": "Health information for this family member is unavailable/unknown."
+    }
+  ]
+}

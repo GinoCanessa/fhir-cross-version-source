@@ -1,0 +1,174 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-hl7V3Conformance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.1125"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/hl7V3Conformance",
+  "version": "1.0.2",
+  "name": "v3-hl7V3Conformance",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "I",
+      "display": "ignored",
+      "definition": "Description: Implementers receiving this property must not raise an error if the data is received, but will not perform any useful function with the data.  This conformance level is not used in profiles or other artifacts that are specific to the \"sender\" or \"initiator\" of a communication.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "NP",
+      "display": "not permitted",
+      "definition": "Description: All implementers are prohibited from transmitting this content, and may raise an error if they receive it.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "display": "required",
+      "definition": "Description: All implementers must support this property.  I.e. they must be able to transmit, or to receive and usefully handle the concept.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "RC",
+      "display": "required for consumer",
+      "definition": "Description: The element is considered \"required\" (i.e. must be supported) from the perspective of systems that consume  instances, but is \"undetermined\" for systems that generate instances.  Used only as part of specifications that define both initiator and consumer expectations.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "RI",
+      "display": "required for initiator",
+      "definition": "Description: The element is considered \"required\" (i.e. must be supported) from the perspective of systems that generate instances, but is \"undetermined\" for systems that consume instances.  Used only as part of specifications that define both initiator and consumer expectations.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "U",
+      "display": "undetermined",
+      "definition": "Description: The conformance expectations for this element have not yet been determined.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

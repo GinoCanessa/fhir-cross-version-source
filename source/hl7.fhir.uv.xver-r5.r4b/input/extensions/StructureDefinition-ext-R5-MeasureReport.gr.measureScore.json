@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-MeasureReport.gr.measureScore",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.measureScore",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_MeasureReport_gr_measureScore",
+  "title": "Cross-version Extension for R5.MeasureReport.group.measureScore[x] for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:55.5105156-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MeasureReport.group.measureScore[x] from http://hl7.org/fhir/StructureDefinition/MeasureReport|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MeasureReport.group.measureScore"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What score this group achieved",
+        "definition": "The measure score for this population group, calculated as appropriate for the measure type and scoring method, and based on the contents of the populations defined in the group.",
+        "comment": "`MeasureReport.group.measureScore[x]` maps to R4B `MeasureReport.group.measureScore`. Type `dateTime` has no mapping Type `CodeableConcept` has no mapping Type `Period` has no mapping Type `Range` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MeasureReport.group.measureScore"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "What score this group achieved",
+        "definition": "The measure score for this population group, calculated as appropriate for the measure type and scoring method, and based on the contents of the populations defined in the group.",
+        "comment": "`MeasureReport.group.measureScore[x]` maps to R4B `MeasureReport.group.measureScore`. Type `dateTime` has no mapping Type `CodeableConcept` has no mapping Type `Period` has no mapping Type `Range` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Duration"
+          }
+        ]
+      }
+    ]
+  }
+}

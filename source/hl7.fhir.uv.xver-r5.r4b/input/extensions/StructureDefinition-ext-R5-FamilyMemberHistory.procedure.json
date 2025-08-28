@@ -1,0 +1,349 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-FamilyMemberHistory.procedure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.procedure",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_FamilyMemberHistory_procedure",
+  "title": "Cross-version Extension for R5.FamilyMemberHistory.procedure for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:53.9009277-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents FamilyMemberHistory.procedure from http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "FamilyMemberHistory"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Procedures that the related person had",
+        "definition": "The significant Procedures (or procedure) that the family member had. This is a repeating section to allow a system to represent more than one procedure per resource, though there is nothing stopping multiple resources - one per procedure.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Procedures performed on the related person",
+        "definition": "The actual procedure specified. Could be a coded procedure or a less specific string depending on how much is known about the procedure and the capabilities of the creating system.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Procedures performed on the related person",
+        "definition": "The actual procedure specified. Could be a coded procedure or a less specific string depending on how much is known about the procedure and the capabilities of the creating system.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A code to identify a specific procedure.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-procedure-code-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:outcome",
+        "path": "Extension.extension",
+        "sliceName": "outcome",
+        "short": "What happened following the procedure",
+        "definition": "Indicates what happened following the procedure. If the procedure resulted in death, deceased date is captured on the relation.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:outcome.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "outcome"
+      },
+      {
+        "id": "Extension.extension:outcome.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "What happened following the procedure",
+        "definition": "Indicates what happened following the procedure. If the procedure resulted in death, deceased date is captured on the relation.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The result of the procedure; e.g. death, permanent disability, temporary disability, etc.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-clinical-findings-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:contributedToDeath",
+        "path": "Extension.extension",
+        "sliceName": "contributedToDeath",
+        "short": "Whether the procedure contributed to the cause of death",
+        "definition": "This procedure contributed to the cause of death of the related person. If contributedToDeath is not populated, then it is unknown.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contributedToDeath.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contributedToDeath"
+      },
+      {
+        "id": "Extension.extension:contributedToDeath.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether the procedure contributed to the cause of death",
+        "definition": "This procedure contributed to the cause of death of the related person. If contributedToDeath is not populated, then it is unknown.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performed[x]",
+        "path": "Extension.extension",
+        "sliceName": "performed[x]",
+        "short": "When the procedure was performed",
+        "definition": "Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:performed[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "performed[x]"
+      },
+      {
+        "id": "Extension.extension:performed[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When the procedure was performed",
+        "definition": "Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Extra information about the procedure",
+        "definition": "An area where general notes can be placed about this specific procedure.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Extra information about the procedure",
+        "definition": "An area where general notes can be placed about this specific procedure.",
+        "comment": "`FamilyMemberHistory.procedure` has no related element in R4B:FamilyMemberHistory",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.procedure"
+      }
+    ]
+  }
+}

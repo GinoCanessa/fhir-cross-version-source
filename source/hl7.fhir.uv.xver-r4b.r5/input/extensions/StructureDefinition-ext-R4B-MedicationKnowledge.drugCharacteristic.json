@@ -1,0 +1,210 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-MedicationKnowledge.drugCharacteristic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationKnowledge.drugCharacteristic",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_MedicationKnowledge_drugCharacteristic",
+  "title": "Cross-version Extension for R4B.MedicationKnowledge.drugCharacteristic for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:14.2484552-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationKnowledge.drugCharacteristic from http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Specifies descriptive properties of the medicine",
+        "definition": "Specifies descriptive properties of the medicine, such as color, shape, imprints, etc.",
+        "comment": "`MedicationKnowledge.drugCharacteristic` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Code specifying the type of characteristic of medication",
+        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
+        "comment": "`MedicationKnowledge.drugCharacteristic` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Code specifying the type of characteristic of medication",
+        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
+        "comment": "`MedicationKnowledge.drugCharacteristic` has no related element in R5:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept defining the characteristic types of a medication.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medicationknowledge-characteristic|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:value[x]",
+        "path": "Extension.extension",
+        "sliceName": "value[x]",
+        "short": "Description of the characteristic",
+        "definition": "`MedicationKnowledge.drugCharacteristic` has no related element in R5:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:value[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:value[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description of the characteristic",
+        "definition": "`MedicationKnowledge.drugCharacteristic` has no related element in R5:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          },
+          {
+            "code": "base64Binary"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationKnowledge.drugCharacteristic"
+      }
+    ]
+  }
+}

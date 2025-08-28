@@ -1,0 +1,309 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ServiceRequest.orderDetail",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.orderDetail",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ServiceRequest_orderDetail",
+  "title": "Cross-version Extension for R5.ServiceRequest.orderDetail for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:59.2285703-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ServiceRequest.orderDetail from http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest.orderDetail"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional order information",
+        "definition": "Additional details and instructions about the how the services are to be delivered.   For example, and order for a urinary catheter may have an order detail for an external or indwelling catheter, or an order for a bandage may require additional instructions specifying how the bandage should be applied.",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameterFocus",
+        "path": "Extension.extension",
+        "sliceName": "parameterFocus",
+        "short": "The context of the order details by reference",
+        "definition": "Indicates the context of the order details by reference.",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameterFocus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "parameterFocus"
+      },
+      {
+        "id": "Extension.extension:parameterFocus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The context of the order details by reference",
+        "definition": "Indicates the context of the order details by reference.",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameter",
+        "path": "Extension.extension",
+        "sliceName": "parameter",
+        "short": "The parameter details for the service being requested",
+        "definition": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "The detail of the order being requested",
+        "definition": "A value representing the additional detail or instructions for the order (e.g., catheter insertion, body elevation, descriptive device configuration and/or setting instructions).",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The detail of the order being requested",
+        "definition": "A value representing the additional detail or instructions for the order (e.g., catheter insertion, body elevation, descriptive device configuration and/or setting instructions).",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for order detail parameters.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-servicerequest-orderdetail-parameter-code-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "The value for the order detail",
+        "definition": "Indicates a value for the order detail.",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:parameter.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The value for the order detail",
+        "definition": "Indicates a value for the order detail.",
+        "comment": "`ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.orderDetail` maps to R4B `ServiceRequest.orderDetail`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "parameter"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.orderDetail"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-SearchParameter.modifier",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.modifier",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_SearchParameter_modifier",
+  "title": "Cross-version Extension for R4B.SearchParameter.modifier for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:17.7326973-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SearchParameter.modifier from http://hl7.org/fhir/StructureDefinition/SearchParameter|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "SearchParameter.modifier"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "missing | exact | contains | not | text | in | not-in | below | above | type | identifier | ofType",
+        "definition": "A modifier supported for the search parameter.",
+        "comment": "`SearchParameter.modifier` maps to R5 `SearchParameter.modifier`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SearchParameter.modifier"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "missing | exact | contains | not | text | in | not-in | below | above | type | identifier | ofType",
+        "definition": "A modifier supported for the search parameter.",
+        "comment": "`SearchParameter.modifier` maps to R5 `SearchParameter.modifier`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A supported modifier for a search parameter.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-search-modifier-code-for-R5"
+        }
+      }
+    ]
+  }
+}

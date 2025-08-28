@@ -1,0 +1,546 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceAssociation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceAssociation",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceAssociation",
+  "title": "Cross-version Extension for R5.DeviceAssociation for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.03149-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceAssociation from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A record of association or dissociation of a device with a patient",
+        "definition": "This cross-version extension represents DeviceAssociation from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "short": "Reference to the devices associated with the patient or group",
+        "definition": "This cross-version extension represents DeviceAssociation.device from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to the devices associated with the patient or group",
+        "definition": "This cross-version extension represents DeviceAssociation.device from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "Describes the relationship between the device and subject",
+        "definition": "This cross-version extension represents DeviceAssociation.category from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Describes the relationship between the device and subject",
+        "definition": "This cross-version extension represents DeviceAssociation.category from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "implanted | explanted | attached | entered-in-error | unknown",
+        "definition": "Indicates the state of the Device association.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "implanted | explanted | attached | entered-in-error | unknown",
+        "definition": "Indicates the state of the Device association.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Describes the lifecycle of the association.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-deviceassociation-status-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension",
+        "sliceName": "statusReason",
+        "short": "The reasons given for the current association status",
+        "definition": "This cross-version extension represents DeviceAssociation.statusReason from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statusReason"
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The reasons given for the current association status",
+        "definition": "This cross-version extension represents DeviceAssociation.statusReason from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Describes the reason for changing the status of the association.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-deviceassociation-status-reason-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyStructure",
+        "path": "Extension.extension",
+        "sliceName": "bodyStructure",
+        "short": "Current anatomical location of the device in/on subject",
+        "definition": "This cross-version extension represents DeviceAssociation.bodyStructure from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodyStructure.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "bodyStructure"
+      },
+      {
+        "id": "Extension.extension:bodyStructure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Current anatomical location of the device in/on subject",
+        "definition": "This cross-version extension represents DeviceAssociation.bodyStructure from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "Begin and end dates and times for the device association",
+        "definition": "This cross-version extension represents DeviceAssociation.period from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Begin and end dates and times for the device association",
+        "definition": "This cross-version extension represents DeviceAssociation.period from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation",
+        "path": "Extension.extension",
+        "sliceName": "operation",
+        "short": "The details about the device when it is in use to describe its operation",
+        "definition": "This cross-version extension represents DeviceAssociation.operation from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "Device operational condition",
+        "definition": "Device operational condition corresponding to the association.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:operation.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Device operational condition",
+        "definition": "Device operational condition corresponding to the association.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Describes the the status of the association operation.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-deviceassociation-operationstatus-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:operator",
+        "path": "Extension.extension.extension",
+        "sliceName": "operator",
+        "short": "The individual performing the action enabled by the device",
+        "definition": "This cross-version extension represents DeviceAssociation.operation.operator from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:operator.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "operator"
+      },
+      {
+        "id": "Extension.extension:operation.extension:operator.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The individual performing the action enabled by the device",
+        "definition": "This cross-version extension represents DeviceAssociation.operation.operator from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.extension:period",
+        "path": "Extension.extension.extension",
+        "sliceName": "period",
+        "short": "Begin and end dates and times for the device's operation",
+        "definition": "This cross-version extension represents DeviceAssociation.operation.period from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operation.extension:period.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:operation.extension:period.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Begin and end dates and times for the device's operation",
+        "definition": "This cross-version extension represents DeviceAssociation.operation.period from http://hl7.org/fhir/StructureDefinition/DeviceAssociation|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "operation"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceAssociation"
+      }
+    ]
+  }
+}

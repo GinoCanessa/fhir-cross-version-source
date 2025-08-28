@@ -1,0 +1,167 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-EntityDeterminer",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.30"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/EntityDeterminer",
+  "version": "1.0.2",
+  "name": "v3-EntityDeterminer",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "INSTANCE",
+      "display": "specific",
+      "definition": "Description:A determiner that specifies that the Entity object represents a particular physical thing (as opposed to a universal, kind, or class of physical thing).                                                      Discussion: It does not matter whether an INSTANCE still exists as a whole at the point in time (or process) when we mention it, for example, a drug product lot is an INSTANCE even though it has been portioned out for retail purpose.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "GROUP",
+          "display": "specific group",
+          "definition": "A determiner that specifies that the Entity object represents a particular collection of physical things (as opposed to a universal, kind, or class of physical thing).  While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "KIND",
+      "display": "described",
+      "definition": "Description:A determiner that specifies that the Entity object represents a universal, kind or class of physical thing (as opposed to a particular thing).",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "GROUPKIND",
+          "display": "described group",
+          "definition": "A determiner that specifies that the Entity object represents a universal, kind or class of collections physical things.  While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "QUANTIFIED_KIND",
+          "display": "described quantified",
+          "definition": "The described quantified determiner indicates that the given Entity is taken as a general description of a specific amount of a thing. For example, QUANTIFIED_KIND of syringe (quantity = 3,) stands for exactly three syringes.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

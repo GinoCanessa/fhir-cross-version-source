@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ImagingStudy.procedure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.procedure",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ImagingStudy_procedure",
+  "title": "Cross-version Extension for R5.ImagingStudy.procedure for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:54.457195-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ImagingStudy.procedure from http://hl7.org/fhir/StructureDefinition/ImagingStudy|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ImagingStudy.procedureCode"
+    },
+    {
+      "type": "element",
+      "expression": "ImagingStudy.procedureReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The performed procedure or code",
+        "definition": "This field corresponds to the DICOM Procedure Code Sequence (0008,1032). This is different from the FHIR Procedure resource that may include the ImagingStudy.",
+        "comment": "`ImagingStudy.procedure` maps to R4B `ImagingStudy.procedureReference`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget. `ImagingStudy.procedure` maps to R4B `ImagingStudy.procedureCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingStudy.procedure"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "The performed procedure or code",
+        "definition": "This field corresponds to the DICOM Procedure Code Sequence (0008,1032). This is different from the FHIR Procedure resource that may include the ImagingStudy.",
+        "comment": "`ImagingStudy.procedure` maps to R4B `ImagingStudy.procedureReference`. Has no type mapping Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget. `ImagingStudy.procedure` maps to R4B `ImagingStudy.procedureCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Use of RadLex is preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      }
+    ]
+  }
+}

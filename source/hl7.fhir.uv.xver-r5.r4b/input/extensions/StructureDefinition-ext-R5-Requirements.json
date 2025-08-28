@@ -1,0 +1,1392 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Requirements",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Requirements",
+  "title": "Cross-version Extension for R5.Requirements for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.8226814-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Requirements from http://hl7.org/fhir/StructureDefinition/Requirements|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A set of requirements - features of systems that are necessary",
+        "definition": "A set of requirements - a list of features or behaviors of designed systems that are necessary to achieve organizational or regulatory goals.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension",
+        "sliceName": "url",
+        "short": "Canonical identifier for this Requirements, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this Requirements when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this Requirements is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the Requirements is stored on different servers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:url.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Canonical identifier for this Requirements, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this Requirements when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this Requirements is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the Requirements is stored on different servers.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "Business version of the Requirements",
+        "definition": "The identifier that is used to identify this version of the Requirements when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Requirements author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business version of the Requirements",
+        "definition": "The identifier that is used to identify this version of the Requirements when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Requirements author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x]",
+        "path": "Extension.extension",
+        "sliceName": "versionAlgorithm[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "versionAlgorithm[x]"
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-version-algorithm-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Name for this Requirements (computer friendly)",
+        "definition": "A natural language name identifying the Requirements. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name for this Requirements (computer friendly)",
+        "definition": "A natural language name identifying the Requirements. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "Name for this Requirements (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the Requirements.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name for this Requirements (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the Requirements.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this Requirements. Enables tracking the life-cycle of the content.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this Requirements. Enables tracking the life-cycle of the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-publication-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental",
+        "path": "Extension.extension",
+        "sliceName": "experimental",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this Requirements is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "experimental"
+      },
+      {
+        "id": "Extension.extension:experimental.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this Requirements is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the Requirements was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the Requirements changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the Requirements was published. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the Requirements changes.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publisher",
+        "path": "Extension.extension",
+        "sliceName": "publisher",
+        "short": "Name of the publisher/steward (organization or individual)",
+        "definition": "The name of the organization or individual responsible for the release and ongoing maintenance of the Requirements.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:publisher.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "publisher"
+      },
+      {
+        "id": "Extension.extension:publisher.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name of the publisher/steward (organization or individual)",
+        "definition": "The name of the organization or individual responsible for the release and ongoing maintenance of the Requirements.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension",
+        "sliceName": "contact",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contact.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contact"
+      },
+      {
+        "id": "Extension.extension:contact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Natural language description of the requirements",
+        "definition": "A free text natural language description of the requirements.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Natural language description of the requirements",
+        "definition": "A free text natural language description of the requirements.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useContext",
+        "path": "Extension.extension",
+        "sliceName": "useContext",
+        "short": "The context that the content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate Requirements instances.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:useContext.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useContext"
+      },
+      {
+        "id": "Extension.extension:useContext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The context that the content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate Requirements instances.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "UsageContext"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Intended jurisdiction for Requirements (if applicable)",
+        "definition": "A legal or geographic region in which the Requirements is intended to be used.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Intended jurisdiction for Requirements (if applicable)",
+        "definition": "A legal or geographic region in which the Requirements is intended to be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Countries and regions within which this artifact is targeted for use.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-jurisdiction-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose",
+        "path": "Extension.extension",
+        "sliceName": "purpose",
+        "short": "Why this Requirements is defined",
+        "definition": "Explanation of why this Requirements is needed and why it has been designed as it has.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:purpose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why this Requirements is defined",
+        "definition": "Explanation of why this Requirements is needed and why it has been designed as it has.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:copyright",
+        "path": "Extension.extension",
+        "sliceName": "copyright",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the Requirements and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Requirements.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copyright.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:copyright.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the Requirements and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Requirements.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:copyrightLabel",
+        "path": "Extension.extension",
+        "sliceName": "copyrightLabel",
+        "short": "Copyright holder and year(s)",
+        "definition": "A short string (<50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved').",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copyrightLabel.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copyrightLabel"
+      },
+      {
+        "id": "Extension.extension:copyrightLabel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Copyright holder and year(s)",
+        "definition": "A short string (<50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved').",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:derivedFrom",
+        "path": "Extension.extension",
+        "sliceName": "derivedFrom",
+        "short": "Other set of Requirements this builds on",
+        "definition": "Another set of Requirements that this set of Requirements builds on and updates.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:derivedFrom.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "id": "Extension.extension:derivedFrom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Other set of Requirements this builds on",
+        "definition": "Another set of Requirements that this set of Requirements builds on and updates.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension",
+        "sliceName": "reference",
+        "short": "External artifact (rule/document etc. that) created this set of requirements",
+        "definition": "A reference to another artifact that created this set of requirements. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:reference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "External artifact (rule/document etc. that) created this set of requirements",
+        "definition": "A reference to another artifact that created this set of requirements. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actor",
+        "path": "Extension.extension",
+        "sliceName": "actor",
+        "short": "Actor for these requirements",
+        "definition": "An actor these requirements are in regard to.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:actor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Actor for these requirements",
+        "definition": "An actor these requirements are in regard to.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement",
+        "path": "Extension.extension",
+        "sliceName": "statement",
+        "short": "Actual statement as markdown",
+        "definition": "The actual statement of requirement, in markdown format.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:key",
+        "path": "Extension.extension.extension",
+        "sliceName": "key",
+        "short": "Key that identifies this statement",
+        "definition": "Key that identifies this statement (unique within this resource).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:key.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "key"
+      },
+      {
+        "id": "Extension.extension:statement.extension:key.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Key that identifies this statement",
+        "definition": "Key that identifies this statement (unique within this resource).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:label",
+        "path": "Extension.extension.extension",
+        "sliceName": "label",
+        "short": "Short Human label for this statement",
+        "definition": "A short human usable label for this statement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:label.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "label"
+      },
+      {
+        "id": "Extension.extension:statement.extension:label.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Short Human label for this statement",
+        "definition": "A short human usable label for this statement.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:conformance",
+        "path": "Extension.extension.extension",
+        "sliceName": "conformance",
+        "short": "SHALL | SHOULD | MAY | SHOULD-NOT",
+        "definition": "A short human usable label for this statement.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:conformance.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "conformance"
+      },
+      {
+        "id": "Extension.extension:statement.extension:conformance.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "SHALL | SHOULD | MAY | SHOULD-NOT",
+        "definition": "A short human usable label for this statement.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-conformance-expectation-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:conditionality",
+        "path": "Extension.extension.extension",
+        "sliceName": "conditionality",
+        "short": "Set to true if requirements statement is conditional",
+        "definition": "This boolean flag is set to true of the text of the requirement is conditional on something e.g. it includes lanauage like 'if x then y'. This conditionality flag is introduced for purposes of filtering and colour highlighting etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:conditionality.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "conditionality"
+      },
+      {
+        "id": "Extension.extension:statement.extension:conditionality.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Set to true if requirements statement is conditional",
+        "definition": "This boolean flag is set to true of the text of the requirement is conditional on something e.g. it includes lanauage like 'if x then y'. This conditionality flag is introduced for purposes of filtering and colour highlighting etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:requirement",
+        "path": "Extension.extension.extension",
+        "sliceName": "requirement",
+        "short": "The actual requirement",
+        "definition": "The actual requirement for human consumption.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:requirement.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "requirement"
+      },
+      {
+        "id": "Extension.extension:statement.extension:requirement.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual requirement",
+        "definition": "The actual requirement for human consumption.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:derivedFrom",
+        "path": "Extension.extension.extension",
+        "sliceName": "derivedFrom",
+        "short": "Another statement this clarifies/restricts ([url#]key)",
+        "definition": "Another statement on one of the requirements that this requirement clarifies or restricts.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:derivedFrom.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "id": "Extension.extension:statement.extension:derivedFrom.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Another statement this clarifies/restricts ([url#]key)",
+        "definition": "Another statement on one of the requirements that this requirement clarifies or restricts.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:parent",
+        "path": "Extension.extension.extension",
+        "sliceName": "parent",
+        "short": "A larger requirement that this requirement helps to refine and enable",
+        "definition": "This cross-version extension represents Requirements.statement.parent from http://hl7.org/fhir/StructureDefinition/Requirements|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:parent.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "parent"
+      },
+      {
+        "id": "Extension.extension:statement.extension:parent.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A larger requirement that this requirement helps to refine and enable",
+        "definition": "This cross-version extension represents Requirements.statement.parent from http://hl7.org/fhir/StructureDefinition/Requirements|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:satisfiedBy",
+        "path": "Extension.extension.extension",
+        "sliceName": "satisfiedBy",
+        "short": "Design artifact that satisfies this requirement",
+        "definition": "A reference to another artifact that satisfies this requirement. This could be a Profile, extension, or an element in one of those, or a CapabilityStatement, OperationDefinition, SearchParameter, CodeSystem(/code), ValueSet, Libary etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:satisfiedBy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "satisfiedBy"
+      },
+      {
+        "id": "Extension.extension:statement.extension:satisfiedBy.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Design artifact that satisfies this requirement",
+        "definition": "A reference to another artifact that satisfies this requirement. This could be a Profile, extension, or an element in one of those, or a CapabilityStatement, OperationDefinition, SearchParameter, CodeSystem(/code), ValueSet, Libary etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "External artifact (rule/document etc. that) created this requirement",
+        "definition": "A reference to another artifact that created this requirement. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:statement.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "External artifact (rule/document etc. that) created this requirement",
+        "definition": "A reference to another artifact that created this requirement. This could be a Profile, etc., or external regulation, or business requirements expressed elsewhere.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "url"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.extension:source",
+        "path": "Extension.extension.extension",
+        "sliceName": "source",
+        "short": "Who asked for this statement",
+        "definition": "Who asked for this statement to be a requirement. By default, it's assumed that the publisher knows who it is if it matters.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statement.extension:source.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:statement.extension:source.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Who asked for this statement",
+        "definition": "Who asked for this statement to be a requirement. By default, it's assumed that the publisher knows who it is if it matters.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statement.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statement"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements"
+      }
+    ]
+  }
+}

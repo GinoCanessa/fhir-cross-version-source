@@ -1,0 +1,80 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "slotstatus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    }
+  ],
+  "url": "http://hl7.org/fhir/slotstatus",
+  "version": "3.0.2",
+  "name": "SlotStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Patient Administration",
+  "contact": [
+    {
+      "name": "Patient Administration",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pafm"
+        }
+      ]
+    }
+  ],
+  "description": "The free/busy status of the slot.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/slotstatus",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "busy",
+      "display": "Busy",
+      "definition": "Indicates that the time interval is busy because one  or more events have been scheduled for that interval."
+    },
+    {
+      "code": "free",
+      "display": "Free",
+      "definition": "Indicates that the time interval is free for scheduling."
+    },
+    {
+      "code": "busy-unavailable",
+      "display": "Busy (Unavailable)",
+      "definition": "Indicates that the time interval is busy and that the interval can not be scheduled."
+    },
+    {
+      "code": "busy-tentative",
+      "display": "Busy (Tentative)",
+      "definition": "Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in error",
+      "definition": "This instance should not have been part of this patient's medical record."
+    }
+  ]
+}

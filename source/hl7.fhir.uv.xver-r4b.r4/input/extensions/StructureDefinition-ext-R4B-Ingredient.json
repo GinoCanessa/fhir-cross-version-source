@@ -1,0 +1,1901 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-Ingredient",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Ingredient",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_Ingredient",
+  "title": "Cross-version Extension for R4B.Ingredient for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:12.9311778-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Ingredient from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "An ingredient of a manufactured item or pharmaceutical product",
+        "definition": "This cross-version extension represents Ingredient from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this ingredient. Enables tracking the life-cycle of the content.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this ingredient. Enables tracking the life-cycle of the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:for",
+        "path": "Extension.extension",
+        "sliceName": "for",
+        "short": "The product which this ingredient is a constituent part of",
+        "definition": "This cross-version extension represents Ingredient.for from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:for.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "for"
+      },
+      {
+        "id": "Extension.extension:for.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The product which this ingredient is a constituent part of",
+        "definition": "This cross-version extension represents Ingredient.for from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "Purpose of the ingredient within the product, e.g. active, inactive",
+        "definition": "A classification of the ingredient identifying its purpose within the product, e.g. active, inactive.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Purpose of the ingredient within the product, e.g. active, inactive",
+        "definition": "A classification of the ingredient identifying its purpose within the product, e.g. active, inactive.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A classification of the ingredient identifying its purpose within the product, e.g. active, inactive.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-ingredient-role-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:function",
+        "path": "Extension.extension",
+        "sliceName": "function",
+        "short": "Precise action within the drug product, e.g. antioxidant, alkalizing agent",
+        "definition": "A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:function.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:function.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Precise action within the drug product, e.g. antioxidant, alkalizing agent",
+        "definition": "A classification of the ingredient identifying its precise purpose(s) in the drug product. This extends the Ingredient.role to add more detail. Example: antioxidant, alkalizing agent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A classification of the ingredient identifying its precise purpose(s) in the drug product (beyond e.g. active/inactive).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-ingredient-function-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator",
+        "path": "Extension.extension",
+        "sliceName": "allergenicIndicator",
+        "short": "If the ingredient is a known or suspected allergen",
+        "definition": "If the ingredient is a known or suspected allergen. Note that this is a property of the substance, so if a reference to a SubstanceDefinition is used to decribe that (rather than just a code), the allergen information should go there, not here.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allergenicIndicator"
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If the ingredient is a known or suspected allergen",
+        "definition": "If the ingredient is a known or suspected allergen. Note that this is a property of the substance, so if a reference to a SubstanceDefinition is used to decribe that (rather than just a code), the allergen information should go there, not here.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "An organization that manufactures this ingredient",
+        "definition": "The organization(s) that manufacture this ingredient. Can be used to indicate:         1) Organizations we are aware of that manufacture this ingredient         2) Specific Manufacturer(s) currently being used         3) Set of organisations allowed to manufacture this ingredient for this product         Users must be clear on the application of context relevant to their use case.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "allowed | possible | actual",
+        "definition": "The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "allowed | possible | actual",
+        "definition": "The way in which this manufacturer is associated with the ingredient. For example whether it is a possible one (others allowed), or an exclusive authorized one for this ingredient. Note that this is not the manufacturing process role.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The way in which this manufacturer is associated with the ingredient.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-ingredient-manufacturer-role-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:manufacturer",
+        "path": "Extension.extension.extension",
+        "sliceName": "manufacturer",
+        "short": "An organization that manufactures this ingredient",
+        "definition": "This cross-version extension represents Ingredient.manufacturer.manufacturer from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:manufacturer.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.extension:manufacturer.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An organization that manufactures this ingredient",
+        "definition": "This cross-version extension represents Ingredient.manufacturer.manufacturer from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:substance",
+        "path": "Extension.extension",
+        "sliceName": "substance",
+        "short": "The substance that comprises this ingredient",
+        "definition": "This cross-version extension represents Ingredient.substance from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "A code or full resource that represents the ingredient substance",
+        "definition": "A code or full resource that represents the ingredient's substance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Ingredient.substance.code from FHIR R4B",
+        "definition": "Data type name for Ingredient.substance.code from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength",
+        "path": "Extension.extension.extension",
+        "sliceName": "strength",
+        "short": "The quantity of substance, per presentation, or per volume or mass, and type of quantity",
+        "definition": "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item. The allowed repetitions do not represent different strengths, but are different representations - mathematically equivalent - of a single strength.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "presentation[x]",
+        "short": "The quantity of substance in the unit of presentation",
+        "definition": "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item. Unit of presentation refers to the quantity that the item occurs in e.g. a strength per tablet size, perhaps 'per 20mg' (the size of the tablet). It is not generally normalized as a unitary unit, which would be 'per mg').",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:lowNumerator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "lowNumerator",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:lowNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lowNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:lowNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:highNumerator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "highNumerator",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:highNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "highNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:highNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:denominator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "denominator",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:denominator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "denominator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:denominator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Ingredient.substance.strength.presentation[x] from FHIR R4B",
+        "definition": "Data type name for Ingredient.substance.strength.presentation[x] from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: RatioRange",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "RatioRange"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "presentation[x]"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:presentation[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The quantity of substance in the unit of presentation",
+        "definition": "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item. Unit of presentation refers to the quantity that the item occurs in e.g. a strength per tablet size, perhaps 'per 20mg' (the size of the tablet). It is not generally normalized as a unitary unit, which would be 'per mg').",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textPresentation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "textPresentation",
+        "short": "Text of either the whole presentation strength or a part of it (rest being in Strength.presentation as a ratio)",
+        "definition": "A textual represention of either the whole of the presentation strength or a part of it - with the rest being in Strength.presentation as a ratio.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textPresentation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "textPresentation"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textPresentation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Text of either the whole presentation strength or a part of it (rest being in Strength.presentation as a ratio)",
+        "definition": "A textual represention of either the whole of the presentation strength or a part of it - with the rest being in Strength.presentation as a ratio.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concentration[x]",
+        "short": "The strength per unitary volume (or mass)",
+        "definition": "This cross-version extension represents Ingredient.substance.strength.concentration[x] from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:lowNumerator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "lowNumerator",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:lowNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lowNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:lowNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:highNumerator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "highNumerator",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:highNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "highNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:highNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:denominator",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "denominator",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:denominator.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "denominator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:denominator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Ingredient.substance.strength.concentration[x] from FHIR R4B",
+        "definition": "Data type name for Ingredient.substance.strength.concentration[x] from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: RatioRange",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "RatioRange"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concentration[x]"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:concentration[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The strength per unitary volume (or mass)",
+        "definition": "This cross-version extension represents Ingredient.substance.strength.concentration[x] from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textConcentration",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "textConcentration",
+        "short": "Text of either the whole concentration strength or a part of it (rest being in Strength.concentration as a ratio)",
+        "definition": "A textual represention of either the whole of the concentration strength or a part of it - with the rest being in Strength.concentration as a ratio.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textConcentration.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "textConcentration"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:textConcentration.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Text of either the whole concentration strength or a part of it (rest being in Strength.concentration as a ratio)",
+        "definition": "A textual represention of either the whole of the concentration strength or a part of it - with the rest being in Strength.concentration as a ratio.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:measurementPoint",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "short": "When strength is measured at a particular point or distance",
+        "definition": "For when strength is measured at a particular point or distance. There are products where strength is measured at a particular point. For example, the strength of the ingredient in some inhalers is measured at a particular position relative to the point of aerosolization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "When strength is measured at a particular point or distance",
+        "definition": "For when strength is measured at a particular point or distance. There are products where strength is measured at a particular point. For example, the strength of the ingredient in some inhalers is measured at a particular position relative to the point of aerosolization.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:country",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "country",
+        "short": "Where the strength range applies",
+        "definition": "The country or countries for which the strength range applies.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:country.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Where the strength range applies",
+        "definition": "The country or countries for which the strength range applies.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-country-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "referenceStrength",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "Strength expressed in terms of a reference substance. For when the ingredient strength is additionally expressed as equivalent to the strength of some other closely related substance (e.g. salt vs. base). Reference strength represents the strength (quantitative composition) of the active moiety of the active substance. There are situations when the active substance and active moiety are different, therefore both a strength and a reference strength are needed.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "substance",
+        "short": "Relevant reference substance",
+        "definition": "This cross-version extension represents Ingredient.substance.strength.referenceStrength.substance from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:concept",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:reference",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Ingredient.substance.strength.referenceStrength.substance from FHIR R4B",
+        "definition": "Data type name for Ingredient.substance.strength.referenceStrength.substance from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:substance.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "substance"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x]",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "strength[x]",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents Ingredient.substance.strength.referenceStrength.strength[x] from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:lowNumerator",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "lowNumerator",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:lowNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lowNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:lowNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Low Numerator limit",
+        "definition": "The value of the low limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:highNumerator",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "highNumerator",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:highNumerator.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "highNumerator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:highNumerator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "High Numerator limit",
+        "definition": "The value of the high limit numerator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:denominator",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "denominator",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:denominator.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "denominator"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:denominator.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Denominator value",
+        "definition": "The value of the denominator.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Ingredient.substance.strength.referenceStrength.strength[x] from FHIR R4B",
+        "definition": "Data type name for Ingredient.substance.strength.referenceStrength.strength[x] from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: RatioRange",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "RatioRange"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength[x]"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:strength[x].value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents Ingredient.substance.strength.referenceStrength.strength[x] from http://hl7.org/fhir/StructureDefinition/Ingredient|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:measurementPoint",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "short": "When strength is measured at a particular point or distance",
+        "definition": "For when strength is measured at a particular point or distance.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "When strength is measured at a particular point or distance",
+        "definition": "For when strength is measured at a particular point or distance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:country",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "country",
+        "short": "Where the strength range applies",
+        "definition": "The country or countries for which the strength range applies.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:country.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Where the strength range applies",
+        "definition": "The country or countries for which the strength range applies.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-country-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:referenceStrength.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "referenceStrength"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:substance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "substance"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Ingredient"
+      }
+    ]
+  }
+}

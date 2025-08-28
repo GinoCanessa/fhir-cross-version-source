@@ -1,0 +1,922 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-PackagedProductDefinition.package",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.package",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_PackagedProductDefinition_package",
+  "title": "Cross-version Extension for R4B.PackagedProductDefinition.package for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:15.7648705-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PackagedProductDefinition.package from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PackagedProductDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap",
+        "definition": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap (which is not a device or a medication manufactured item).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "short": "An identifier that is specific to this particular part of the packaging. Including possibly a Data Carrier Identifier",
+        "definition": "An identifier that is specific to this particular part of the packaging. Including possibly Data Carrier Identifier (a GS1 barcode).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "An identifier that is specific to this particular part of the packaging. Including possibly a Data Carrier Identifier",
+        "definition": "An identifier that is specific to this particular part of the packaging. Including possibly Data Carrier Identifier (a GS1 barcode).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "The physical type of the container of the items",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The physical type of the container of the items",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A high level categorisation of a package.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/packaging-type|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "The quantity of this level of packaging in the package that contains it (with the outermost level being 1)",
+        "definition": "The quantity of this level of packaging in the package that contains it. If specified, the outermost level is always 1.",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The quantity of this level of packaging in the package that contains it (with the outermost level being 1)",
+        "definition": "The quantity of this level of packaging in the package that contains it. If specified, the outermost level is always 1.",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:material",
+        "path": "Extension.extension",
+        "sliceName": "material",
+        "short": "Material type of the package item",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:material.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "material"
+      },
+      {
+        "id": "Extension.extension:material.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Material type of the package item",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:alternateMaterial",
+        "path": "Extension.extension",
+        "sliceName": "alternateMaterial",
+        "short": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material",
+        "definition": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material (e.g. different types of plastic for a blister sleeve).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:alternateMaterial.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "alternateMaterial"
+      },
+      {
+        "id": "Extension.extension:alternateMaterial.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material",
+        "definition": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material (e.g. different types of plastic for a blister sleeve).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/package-material|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage",
+        "path": "Extension.extension",
+        "sliceName": "shelfLifeStorage",
+        "short": "Shelf Life and storage information",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "This describes the shelf life, taking into account various scenarios such as shelf life of the packaged Medicinal Product itself, shelf life after transformation where necessary and shelf life after the first opening of a bottle, etc. The shelf life type shall be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "This describes the shelf life, taking into account various scenarios such as shelf life of the packaged Medicinal Product itself, shelf life after transformation where necessary and shelf life after the first opening of a bottle, etc. The shelf life type shall be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:period[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "period[x]",
+        "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:period[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period[x]"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:period[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:specialPrecautionsForStorage",
+        "path": "Extension.extension.extension",
+        "sliceName": "specialPrecautionsForStorage",
+        "short": "Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary. The controlled term and the controlled term identifier shall be specified",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:specialPrecautionsForStorage.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialPrecautionsForStorage"
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.extension:specialPrecautionsForStorage.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary. The controlled term and the controlled term identifier shall be specified",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shelfLifeStorage.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "shelfLifeStorage"
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer of this package Item (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package Item. When there are multiple it means these are all possible manufacturers.",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Manufacturer of this package Item (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package Item. When there are multiple it means these are all possible manufacturers.",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property",
+        "path": "Extension.extension",
+        "sliceName": "property",
+        "short": "General characteristics of this item",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "A code expressing the type of characteristic",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:property.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A code expressing the type of characteristic",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/product-characteristic-codes|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "A value for the characteristic",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:property.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A value for the characteristic",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:property.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:containedItem",
+        "path": "Extension.extension",
+        "sliceName": "containedItem",
+        "short": "The item(s) within the packaging",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItem.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "The actual item(s) of medication, as manufactured, or a device, or other medically related item (food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package",
+        "definition": "The actual item(s) of medication, as manufactured, or a device (typically, but not necessarily, a co-packaged one), or other medically related item (such as food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package. This also allows another whole packaged product to be included, which is solely for the case where a package of other entire packages is wanted - such as a wholesale or distribution pack (for layers within one package, use PackagedProductDefinition.package.package).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:item.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual item(s) of medication, as manufactured, or a device, or other medically related item (food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package",
+        "definition": "The actual item(s) of medication, as manufactured, or a device (typically, but not necessarily, a co-packaged one), or other medically related item (such as food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package. This also allows another whole packaged product to be included, which is solely for the case where a package of other entire packages is wanted - such as a wholesale or distribution pack (for layers within one package, use PackagedProductDefinition.package.package).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "The number of this type of item within this packaging",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:containedItem.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The number of this type of item within this packaging",
+        "definition": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItem.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "containedItem"
+      },
+      {
+        "id": "Extension.extension:package",
+        "path": "Extension.extension",
+        "sliceName": "package",
+        "short": "Allows containers (and parts of containers) within containers, still a single packaged product",
+        "definition": "Allows containers (and parts of containers) parwithin containers, still a single packaged product.  See also PackagedProductDefinition.package.containedItem.item(PackagedProductDefinition).",
+        "comment": "`PackagedProductDefinition.package` has no related element in R5:PackagedProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:package.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:package.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.package.package from FHIR R4B",
+        "definition": "Data type name for PackagedProductDefinition.package.package from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:package.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: PackagedProductDefinition.package",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "PackagedProductDefinition.package"
+      },
+      {
+        "id": "Extension.extension:package.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "package"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.package"
+      }
+    ]
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-SubstanceDefinition.characterization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.characterization",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_SubstanceDefinition_characterization",
+  "title": "Cross-version Extension for R5.SubstanceDefinition.characterization for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:01.9158128-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubstanceDefinition.characterization from http://hl7.org/fhir/StructureDefinition/SubstanceDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "SubstanceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "General specifications for this substance",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:technique",
+        "path": "Extension.extension",
+        "sliceName": "technique",
+        "short": "The method used to find the characterization e.g. HPLC",
+        "definition": "The method used to elucidate the characterization of the drug substance. Example: HPLC.",
+        "comment": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:technique.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "technique"
+      },
+      {
+        "id": "Extension.extension:technique.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The method used to find the characterization e.g. HPLC",
+        "definition": "The method used to elucidate the characterization of the drug substance. Example: HPLC.",
+        "comment": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The method used to elucidate the characterization of the drug substance.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/substance-structure-technique|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:form",
+        "path": "Extension.extension",
+        "sliceName": "form",
+        "short": "Describes the nature of the chemical entity and explains, for instance, whether this is a base or a salt form",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:form.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "form"
+      },
+      {
+        "id": "Extension.extension:form.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Describes the nature of the chemical entity and explains, for instance, whether this is a base or a salt form",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-substance-form-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "The description or justification in support of the interpretation of the data file",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The description or justification in support of the interpretation of the data file",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:file",
+        "path": "Extension.extension",
+        "sliceName": "file",
+        "short": "The data produced by the analytical instrument or a pictorial representation of that data. Examples: a JCAMP, JDX, or ADX file, or a chromatogram or spectrum analysis",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:file.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "file"
+      },
+      {
+        "id": "Extension.extension:file.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The data produced by the analytical instrument or a pictorial representation of that data. Examples: a JCAMP, JDX, or ADX file, or a chromatogram or spectrum analysis",
+        "definition": "`SubstanceDefinition.characterization` has no related element in R4B:SubstanceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstanceDefinition.characterization"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Dosage.asNeeded",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Dosage.asNeeded",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Dosage_asNeeded",
+  "title": "Cross-version Extension for R3.Dosage.asNeeded[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:10.4015578-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Dosage.asNeeded[x] from http://hl7.org/fhir/StructureDefinition/Dosage|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Dosage.asNeeded"
+    },
+    {
+      "type": "element",
+      "expression": "Dosage.asNeededFor"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Take \"as needed\" (for x)",
+        "definition": "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).",
+        "comment": "`Dosage.asNeeded[x]` maps to R5 `Dosage.asNeeded`. To multiple elements in Dosage: (`Dosage.asNeeded`, `Dosage.asNeededFor`). Type `CodeableConcept` has no mapping So is mapped as SourceIsBroaderThanTarget. `Dosage.asNeeded[x]` maps to R5 `Dosage.asNeededFor`. To multiple elements in Dosage: (`Dosage.asNeeded`, `Dosage.asNeededFor`). Type `boolean` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Dosage.asNeeded"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Take \"as needed\" (for x)",
+        "definition": "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).",
+        "comment": "`Dosage.asNeeded[x]` maps to R5 `Dosage.asNeeded`. To multiple elements in Dosage: (`Dosage.asNeeded`, `Dosage.asNeededFor`). Type `CodeableConcept` has no mapping So is mapped as SourceIsBroaderThanTarget. `Dosage.asNeeded[x]` maps to R5 `Dosage.asNeededFor`. To multiple elements in Dosage: (`Dosage.asNeeded`, `Dosage.asNeededFor`). Type `boolean` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example \"pain\", \"30 minutes prior to sexual intercourse\", \"on flare-up\" etc.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-medication-as-needed-reason-for-R5"
+        }
+      }
+    ]
+  }
+}

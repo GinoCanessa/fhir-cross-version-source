@@ -1,0 +1,771 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Consent.except",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.except",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Consent_except",
+  "title": "Cross-version Extension for R3.Consent.except for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:13.3718143-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Consent.except from http://hl7.org/fhir/StructureDefinition/Consent|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Consent.provision"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional rule -  addition or removal of permissions",
+        "definition": "An exception to the base policy of this consent. An exception can be an addition or removal of access permissions.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "deny | permit",
+        "definition": "Action  to take - permit or deny - when the exception conditions are met.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "deny | permit",
+        "definition": "Action  to take - permit or deny - when the exception conditions are met.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How an exception statement is applied, such as adding additional consent or removing consent",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-provision-type|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "Timeframe for this exception",
+        "definition": "The timeframe in this exception is valid.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Timeframe for this exception",
+        "definition": "The timeframe in this exception is valid.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actor",
+        "path": "Extension.extension",
+        "sliceName": "actor",
+        "short": "Who|what controlled by this exception (or group, by role)",
+        "definition": "Who or what is controlled by this Exception. Use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "How the actor is involved",
+        "definition": "How the individual is involved in the resources content that is described in the exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:actor.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "How the actor is involved",
+        "definition": "How the individual is involved in the resources content that is described in the exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "How an actor is involved in the consent considerations",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-security-role-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Resource for the actor (or group, by role)",
+        "definition": "The resource that identifies the actor. To identify a actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actor.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:actor.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Resource for the actor (or group, by role)",
+        "definition": "The resource that identifies the actor. To identify a actors by type, use group to identify a set of actors by some property they share (e.g. 'admitting officers').",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actor"
+      },
+      {
+        "id": "Extension.extension:action",
+        "path": "Extension.extension",
+        "sliceName": "action",
+        "short": "Actions controlled by this exception",
+        "definition": "Actions controlled by this Exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:action.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "action"
+      },
+      {
+        "id": "Extension.extension:action.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Actions controlled by this exception",
+        "definition": "Actions controlled by this Exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Detailed codes for the consent action.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-consent-action-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:securityLabel",
+        "path": "Extension.extension",
+        "sliceName": "securityLabel",
+        "short": "Security Labels that define affected resources",
+        "definition": "A set of security labels that define which resources are controlled by this exception. If more than one label is specified, all resources must have all the specified labels.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:securityLabel.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "securityLabel"
+      },
+      {
+        "id": "Extension.extension:securityLabel.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Security Labels that define affected resources",
+        "definition": "A set of security labels that define which resources are controlled by this exception. If more than one label is specified, all resources must have all the specified labels.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Security Labels from the Healthcare Privacy and Security Classification System.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-security-labels-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose",
+        "path": "Extension.extension",
+        "sliceName": "purpose",
+        "short": "Context of activities covered by this exception",
+        "definition": "The context of the activities a user is taking - why the user is accessing the data - that are controlled by this exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:purpose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Context of activities covered by this exception",
+        "definition": "The context of the activities a user is taking - why the user is accessing the data - that are controlled by this exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "What purposes of use are controlled by this exception. If more than one label is specified, operations must have all the specified labels",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2014-03-26"
+        }
+      },
+      {
+        "id": "Extension.extension:class",
+        "path": "Extension.extension",
+        "sliceName": "class",
+        "short": "e.g. Resource Type, Profile, or CDA etc",
+        "definition": "The class of information covered by this exception. The type can be a FHIR resource type, a profile on a type, or a CDA document, or some other type that indicates what sort of information the consent relates to.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:class.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "class"
+      },
+      {
+        "id": "Extension.extension:class.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "e.g. Resource Type, Profile, or CDA etc",
+        "definition": "The class of information covered by this exception. The type can be a FHIR resource type, a profile on a type, or a CDA document, or some other type that indicates what sort of information the consent relates to.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The class (type) of information a consent rule covers",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-consent-content-class-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "e.g. LOINC or SNOMED CT code, etc in the content",
+        "definition": "If this code is found in an instance, then the exception applies.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "e.g. LOINC or SNOMED CT code, etc in the content",
+        "definition": "If this code is found in an instance, then the exception applies.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "If this code is found in an instance, then the exception applies",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-consent-content-code-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:dataPeriod",
+        "path": "Extension.extension",
+        "sliceName": "dataPeriod",
+        "short": "Timeframe for data controlled by this exception",
+        "definition": "Clinical or Operational Relevant period of time that bounds the data controlled by this exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dataPeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dataPeriod"
+      },
+      {
+        "id": "Extension.extension:dataPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Timeframe for data controlled by this exception",
+        "definition": "Clinical or Operational Relevant period of time that bounds the data controlled by this exception.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:data",
+        "path": "Extension.extension",
+        "sliceName": "data",
+        "short": "Data controlled by this exception",
+        "definition": "The resources controlled by this exception, if specific resources are referenced.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:data.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:data.extension:meaning",
+        "path": "Extension.extension.extension",
+        "sliceName": "meaning",
+        "short": "instance | related | dependents | authoredby",
+        "definition": "How the resource reference is interpreted when testing consent restrictions.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:data.extension:meaning.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "meaning"
+      },
+      {
+        "id": "Extension.extension:data.extension:meaning.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "instance | related | dependents | authoredby",
+        "definition": "How the resource reference is interpreted when testing consent restrictions.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How a resource reference is interpreted when testing consent restrictions",
+          "valueSet": "http://hl7.org/fhir/ValueSet/consent-data-meaning|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:data.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "The actual data reference",
+        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:data.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:data.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual data reference",
+        "definition": "A reference to a specific resource that defines which resources are covered by this consent.",
+        "comment": "`Consent.except` maps to R4 `Consent.provision`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:data.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "data"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.except"
+      }
+    ]
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-Evidence.variableDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Evidence.variableDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_Evidence_variableDefinition",
+  "title": "Cross-version Extension for R4B.Evidence.variableDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:11.3460986-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Evidence.variableDefinition from http://hl7.org/fhir/StructureDefinition/Evidence|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Evidence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Evidence variable such as population, exposure, or outcome",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "A text description or summary of the variable",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A text description or summary of the variable",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Footnotes and/or explanatory notes",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Footnotes and/or explanatory notes",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:variableRole",
+        "path": "Extension.extension",
+        "sliceName": "variableRole",
+        "short": "population | subpopulation | exposure | referenceExposure | measuredVariable | confounder",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:variableRole.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "variableRole"
+      },
+      {
+        "id": "Extension.extension:variableRole.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "population | subpopulation | exposure | referenceExposure | measuredVariable | confounder",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The role that the assertion variable plays.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-variable-role-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:observed",
+        "path": "Extension.extension",
+        "sliceName": "observed",
+        "short": "Definition of the actual variable related to the statistic(s)",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observed.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "observed"
+      },
+      {
+        "id": "Extension.extension:observed.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Definition of the actual variable related to the statistic(s)",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intended",
+        "path": "Extension.extension",
+        "sliceName": "intended",
+        "short": "Definition of the intended variable related to the Evidence",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:intended.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intended"
+      },
+      {
+        "id": "Extension.extension:intended.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Definition of the intended variable related to the Evidence",
+        "definition": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:directnessMatch",
+        "path": "Extension.extension",
+        "sliceName": "directnessMatch",
+        "short": "low | moderate | high | exact",
+        "definition": "Indication of quality of match between intended variable to actual variable.",
+        "comment": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:directnessMatch.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "directnessMatch"
+      },
+      {
+        "id": "Extension.extension:directnessMatch.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "low | moderate | high | exact",
+        "definition": "Indication of quality of match between intended variable to actual variable.",
+        "comment": "`Evidence.variableDefinition` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The quality of how direct the match is.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-directness-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Evidence.variableDefinition"
+      }
+    ]
+  }
+}

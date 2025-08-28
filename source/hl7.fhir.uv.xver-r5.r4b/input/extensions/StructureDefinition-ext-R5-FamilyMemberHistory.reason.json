@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-FamilyMemberHistory.reason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.reason",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_FamilyMemberHistory_reason",
+  "title": "Cross-version Extension for R5.FamilyMemberHistory.reason for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:53.8981175-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents FamilyMemberHistory.reason from http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "FamilyMemberHistory.reasonCode"
+    },
+    {
+      "type": "element",
+      "expression": "FamilyMemberHistory.reasonReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Why was family member history performed?",
+        "definition": "Describes why the family member history occurred in coded or textual form, or Indicates a Condition, Observation, AllergyIntolerance, or QuestionnaireResponse that justifies this family member history event.",
+        "comment": "`FamilyMemberHistory.reason` maps to R4B `FamilyMemberHistory.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `FamilyMemberHistory.reason` maps to R4B `FamilyMemberHistory.reasonReference`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-FamilyMemberHistory.reason"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Why was family member history performed?",
+        "definition": "Describes why the family member history occurred in coded or textual form, or Indicates a Condition, Observation, AllergyIntolerance, or QuestionnaireResponse that justifies this family member history event.",
+        "comment": "`FamilyMemberHistory.reason` maps to R4B `FamilyMemberHistory.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `FamilyMemberHistory.reason` maps to R4B `FamilyMemberHistory.reasonReference`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes indicating why the family member history was done.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-clinical-findings-for-R4B"
+        }
+      }
+    ]
+  }
+}

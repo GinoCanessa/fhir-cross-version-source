@@ -1,0 +1,284 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-AdverseEvent.su.causality",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_AdverseEvent_su_causality",
+  "title": "Cross-version Extension for R4B.AdverseEvent.suspectEntity.causality for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:07.9518363-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AdverseEvent.suspectEntity.causality from http://hl7.org/fhir/StructureDefinition/AdverseEvent|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AdverseEvent.suspectEntity.causality"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Information on the possible cause of the event",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:assessment",
+        "path": "Extension.extension",
+        "sliceName": "assessment",
+        "short": "Assessment of if the entity caused the event",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:assessment.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "assessment"
+      },
+      {
+        "id": "Extension.extension:assessment.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Assessment of if the entity caused the event",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for the assessment of whether the entity caused the event.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-adverse-event-causality-assess-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:productRelatedness",
+        "path": "Extension.extension",
+        "sliceName": "productRelatedness",
+        "short": "AdverseEvent.suspectEntity.causalityProductRelatedness",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productRelatedness.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productRelatedness"
+      },
+      {
+        "id": "Extension.extension:productRelatedness.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "AdverseEvent.suspectEntity.causalityProductRelatedness",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:author",
+        "path": "Extension.extension",
+        "sliceName": "author",
+        "short": "AdverseEvent.suspectEntity.causalityAuthor",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:author.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "author"
+      },
+      {
+        "id": "Extension.extension:author.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "AdverseEvent.suspectEntity.causalityAuthor",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:method",
+        "path": "Extension.extension",
+        "sliceName": "method",
+        "short": "ProbabilityScale | Bayesian | Checklist",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:method.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "method"
+      },
+      {
+        "id": "Extension.extension:method.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "ProbabilityScale | Bayesian | Checklist",
+        "definition": "`AdverseEvent.suspectEntity.causality` maps to R5 `AdverseEvent.suspectEntity.causality`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "TODO.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-adverse-event-causality-method-for-R5"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.suspectEntity.causality"
+      }
+    ]
+  }
+}

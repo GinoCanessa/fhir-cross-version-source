@@ -1,0 +1,44 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [ResearchDefinition](https://hl7.org/fhir/R4B/ResearchDefinition.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ResearchDefinition](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-ResearchDefinition](StructureDefinition-ext-R4B-ResearchDefinition.html) |
+| [ResearchDefinition.meta](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [Resource.meta](https://hl7.org/fhir/R5/Resource.html#resource) |
+| [ResearchDefinition.implicitRules](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [Resource.implicitRules](https://hl7.org/fhir/R5/Resource.html#resource) |
+| [ResearchDefinition.language](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [Resource.language](https://hl7.org/fhir/R5/Resource.html#resource) |
+| [ResearchDefinition.text](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [DomainResource.text](https://hl7.org/fhir/R5/DomainResource.html#resource) |
+| [ResearchDefinition.contained](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [DomainResource.contained](https://hl7.org/fhir/R5/DomainResource.html#resource) |
+| [ResearchDefinition.url](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.identifier](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R5/Basic.html#resource) |
+| [ResearchDefinition.version](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.name](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.title](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.shortTitle](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.subtitle](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.status](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.experimental](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.subject[x]](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.date](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.publisher](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.contact](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.description](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.comment](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.useContext](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.jurisdiction](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.purpose](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.usage](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.copyright](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.approvalDate](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.lastReviewDate](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.effectivePeriod](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.topic](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.author](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseBasicElement` | [Basic.author](https://hl7.org/fhir/R5/Basic.html#resource) |
+| [ResearchDefinition.editor](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.reviewer](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.endorser](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.relatedArtifact](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.library](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.population](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.exposure](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.exposureAlternative](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [ResearchDefinition.outcome](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseExtensionFromAncestor` | - |

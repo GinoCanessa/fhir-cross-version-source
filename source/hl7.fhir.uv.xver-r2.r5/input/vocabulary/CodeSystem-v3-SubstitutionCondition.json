@@ -1,0 +1,165 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-SubstitutionCondition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.1071"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/SubstitutionCondition",
+  "version": "1.0.2",
+  "name": "v3-SubstitutionCondition",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "_Conditional",
+      "display": "Conditional",
+      "definition": "Some conditions may be attached to an allowable substitution.  An allowable substitution is based on a match to any other attributes that may be specified.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "CONFIRM",
+          "display": "Confirm first",
+          "definition": "Confirmation with Contact Person prior to making any substitutions has or will occur.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "NOTIFY",
+          "display": "Notify first",
+          "definition": "Notification to the Contact Person, prior to substitution and through normal institutional procedures, has or will be made.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "NOSUB",
+      "display": "No substitution",
+      "definition": "Substitution is not permitted.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "UNCOND",
+      "display": "Unconditional",
+      "definition": "No conditions are required.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-AdverseEvent.outcome",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.outcome",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_AdverseEvent_outcome",
+  "title": "Cross-version Extension for R4B.AdverseEvent.outcome for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:07.9498579-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AdverseEvent.outcome from http://hl7.org/fhir/StructureDefinition/AdverseEvent|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AdverseEvent.outcome"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown",
+        "definition": "Describes the type of outcome from the adverse event.",
+        "comment": "`AdverseEvent.outcome` maps to R5 `AdverseEvent.outcome`. Changed from a single value to an array (max cardinality from 1 to *). `outcome` removed the required value set binding to `http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.3.0`. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-AdverseEvent.outcome"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown",
+        "definition": "Describes the type of outcome from the adverse event.",
+        "comment": "`AdverseEvent.outcome` maps to R5 `AdverseEvent.outcome`. Changed from a single value to an array (max cardinality from 1 to *). `outcome` removed the required value set binding to `http://hl7.org/fhir/ValueSet/adverse-event-outcome|4.3.0`. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "TODO (and should this be required?).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-adverse-event-outcome-for-R5"
+        }
+      }
+    ]
+  }
+}

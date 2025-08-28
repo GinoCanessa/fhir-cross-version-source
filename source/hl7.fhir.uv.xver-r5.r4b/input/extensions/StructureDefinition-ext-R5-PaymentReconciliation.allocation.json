@@ -1,0 +1,689 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-PaymentReconciliation.allocation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.allocation",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_PaymentReconciliation_allocation",
+  "title": "Cross-version Extension for R5.PaymentReconciliation.allocation for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:57.549669-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PaymentReconciliation.allocation from http://hl7.org/fhir/StructureDefinition/PaymentReconciliation|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PaymentReconciliation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Settlement particulars",
+        "definition": "Distribution of the payment amount for a previously acknowledged payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "short": "Business identifier of the payment detail",
+        "definition": "Unique identifier for the current payment item for the referenced payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business identifier of the payment detail",
+        "definition": "Unique identifier for the current payment item for the referenced payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:predecessor",
+        "path": "Extension.extension",
+        "sliceName": "predecessor",
+        "short": "Business identifier of the prior payment detail",
+        "definition": "Unique identifier for the prior payment item for the referenced payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:predecessor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "predecessor"
+      },
+      {
+        "id": "Extension.extension:predecessor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business identifier of the prior payment detail",
+        "definition": "Unique identifier for the prior payment item for the referenced payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:target",
+        "path": "Extension.extension",
+        "sliceName": "target",
+        "short": "Subject of the payment",
+        "definition": "Specific resource to which the payment/adjustment/advance applies.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:target.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "target"
+      },
+      {
+        "id": "Extension.extension:target.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Subject of the payment",
+        "definition": "Specific resource to which the payment/adjustment/advance applies.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:targetItem[x]",
+        "path": "Extension.extension",
+        "sliceName": "targetItem[x]",
+        "short": "Sub-element of the subject",
+        "definition": "Identifies the claim line item, encounter or other sub-element being paid. Note payment may be partial, that is not match the then outstanding balance or amount incurred.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:targetItem[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "targetItem[x]"
+      },
+      {
+        "id": "Extension.extension:targetItem[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Sub-element of the subject",
+        "definition": "Identifies the claim line item, encounter or other sub-element being paid. Note payment may be partial, that is not match the then outstanding balance or amount incurred.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension",
+        "sliceName": "encounter",
+        "short": "Applied-to encounter",
+        "definition": "The Encounter to which this payment applies, may be completed by the receiver, used for search.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:encounter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "encounter"
+      },
+      {
+        "id": "Extension.extension:encounter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applied-to encounter",
+        "definition": "The Encounter to which this payment applies, may be completed by the receiver, used for search.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:account",
+        "path": "Extension.extension",
+        "sliceName": "account",
+        "short": "Applied-to account",
+        "definition": "The Account to which this payment applies, may be completed by the receiver, used for search.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:account.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "account"
+      },
+      {
+        "id": "Extension.extension:account.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applied-to account",
+        "definition": "The Account to which this payment applies, may be completed by the receiver, used for search.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Category of payment",
+        "definition": "Code to indicate the nature of the payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Category of payment",
+        "definition": "Code to indicate the nature of the payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/payment-type|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:submitter",
+        "path": "Extension.extension",
+        "sliceName": "submitter",
+        "short": "Submitter of the request",
+        "definition": "The party which submitted the claim or financial transaction.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:submitter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "submitter"
+      },
+      {
+        "id": "Extension.extension:submitter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Submitter of the request",
+        "definition": "The party which submitted the claim or financial transaction.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:response",
+        "path": "Extension.extension",
+        "sliceName": "response",
+        "short": "Response committing to a payment",
+        "definition": "A resource, such as a ClaimResponse, which contains a commitment to payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:response.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "response"
+      },
+      {
+        "id": "Extension.extension:response.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Response committing to a payment",
+        "definition": "A resource, such as a ClaimResponse, which contains a commitment to payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date of commitment to pay",
+        "definition": "The date from the response resource containing a commitment to pay.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date of commitment to pay",
+        "definition": "The date from the response resource containing a commitment to pay.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responsible",
+        "path": "Extension.extension",
+        "sliceName": "responsible",
+        "short": "Contact for the response",
+        "definition": "A reference to the individual who is responsible for inquiries regarding the response and its payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responsible.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "responsible"
+      },
+      {
+        "id": "Extension.extension:responsible.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contact for the response",
+        "definition": "A reference to the individual who is responsible for inquiries regarding the response and its payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:payee",
+        "path": "Extension.extension",
+        "sliceName": "payee",
+        "short": "Recipient of the payment",
+        "definition": "The party which is receiving the payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:payee.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "payee"
+      },
+      {
+        "id": "Extension.extension:payee.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Recipient of the payment",
+        "definition": "The party which is receiving the payment.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "short": "Amount allocated to this payable",
+        "definition": "The monetary amount allocated from the total payment to the payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Amount allocated to this payable",
+        "definition": "The monetary amount allocated from the total payment to the payable.",
+        "comment": "`PaymentReconciliation.allocation` has no related element in R4B:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PaymentReconciliation.allocation"
+      }
+    ]
+  }
+}

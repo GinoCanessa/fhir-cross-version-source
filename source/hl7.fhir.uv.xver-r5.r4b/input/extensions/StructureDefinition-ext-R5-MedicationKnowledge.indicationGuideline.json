@@ -1,0 +1,562 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-MedicationKnowledge.indicationGuideline",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.indicationGuideline",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_MedicationKnowledge_indicationGuideline",
+  "title": "Cross-version Extension for R5.MedicationKnowledge.indicationGuideline for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:55.8138075-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationKnowledge.indicationGuideline from http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Guidelines or protocols for administration of the medication for an indication",
+        "definition": "Guidelines or protocols that are applicable for the administration of the medication based on indication.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication",
+        "path": "Extension.extension",
+        "sliceName": "indication",
+        "short": "Indication for use that applies to the specific administration guideline",
+        "definition": "Indication or reason for use of the medication that applies to the specific administration guideline.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "indication"
+      },
+      {
+        "id": "Extension.extension:indication.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Indication for use that applies to the specific administration guideline",
+        "definition": "Indication or reason for use of the medication that applies to the specific administration guideline.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline",
+        "path": "Extension.extension",
+        "sliceName": "dosingGuideline",
+        "short": "Guidelines for dosage of the medication",
+        "definition": "The guidelines for the dosage of the medication for the indication.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:treatmentIntent",
+        "path": "Extension.extension.extension",
+        "sliceName": "treatmentIntent",
+        "short": "Intention of the treatment",
+        "definition": "The overall intention of the treatment, for example, prophylactic, supporative, curative, etc.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:treatmentIntent.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "treatmentIntent"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:treatmentIntent.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Intention of the treatment",
+        "definition": "The overall intention of the treatment, for example, prophylactic, supporative, curative, etc.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage",
+        "path": "Extension.extension.extension",
+        "sliceName": "dosage",
+        "short": "Dosage for the medication for the specific guidelines",
+        "definition": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "Category of dosage for a medication",
+        "definition": "The type or category of dosage for a given medication (for example, prophylaxis, maintenance, therapeutic, etc.).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Category of dosage for a medication",
+        "definition": "The type or category of dosage for a given medication (for example, prophylaxis, maintenance, therapeutic, etc.).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:dosage",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "dosage",
+        "short": "Dosage for the medication for the specific guidelines",
+        "definition": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:dosage.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dosage"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.extension:dosage.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Dosage for the medication for the specific guidelines",
+        "definition": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Dosage"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:dosage.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dosage"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:administrationTreatment",
+        "path": "Extension.extension.extension",
+        "sliceName": "administrationTreatment",
+        "short": "Type of treatment the guideline applies to",
+        "definition": "The type of the treatment that the guideline applies to, for example, long term therapy, first line treatment, etc.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:administrationTreatment.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "administrationTreatment"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:administrationTreatment.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Type of treatment the guideline applies to",
+        "definition": "The type of the treatment that the guideline applies to, for example, long term therapy, first line treatment, etc.",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic",
+        "path": "Extension.extension.extension",
+        "sliceName": "patientCharacteristic",
+        "short": "Characteristics of the patient that are relevant to the administration guidelines",
+        "definition": "Characteristics of the patient that are relevant to the administration guidelines (for example, height, weight, gender, etc.).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "Categorization of specific characteristic that is relevant to the administration guideline",
+        "definition": "The categorization of the specific characteristic that is relevant to the administration guideline (e.g. height, weight, gender).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Categorization of specific characteristic that is relevant to the administration guideline",
+        "definition": "The categorization of the specific characteristic that is relevant to the administration guideline (e.g. height, weight, gender).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:value[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "The specific characteristic",
+        "definition": "The specific characteristic (e.g. height, weight, gender, etc.).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:value[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The specific characteristic",
+        "definition": "The specific characteristic (e.g. height, weight, gender, etc.).",
+        "comment": "`MedicationKnowledge.indicationGuideline` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.extension:patientCharacteristic.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "patientCharacteristic"
+      },
+      {
+        "id": "Extension.extension:dosingGuideline.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dosingGuideline"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.indicationGuideline"
+      }
+    ]
+  }
+}

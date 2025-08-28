@@ -1,0 +1,141 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-QR.it.an.value",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.item.answer.value",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_QR_it_an_value",
+  "title": "Cross-version Extension for R4.QuestionnaireResponse.item.answer.value[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:47.1785867-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents QuestionnaireResponse.item.answer.value[x] from http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "QuestionnaireResponse.item.answer.value[x]"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Single-valued answer to the question",
+        "definition": "The answer (or one of the answers) provided by the respondent to the question.",
+        "comment": "`QuestionnaireResponse.item.answer.value[x]` maps to R5 `QuestionnaireResponse.item.answer.value[x]`. Type `Quantity` has no mapping So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-QuestionnaireResponse.item.answer.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Single-valued answer to the question",
+        "definition": "The answer (or one of the answers) provided by the respondent to the question.",
+        "comment": "`QuestionnaireResponse.item.answer.value[x]` maps to R5 `QuestionnaireResponse.item.answer.value[x]`. Type `Quantity` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Code indicating the response provided for a question.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-questionnaire-answers-for-R5"
+        }
+      }
+    ]
+  }
+}

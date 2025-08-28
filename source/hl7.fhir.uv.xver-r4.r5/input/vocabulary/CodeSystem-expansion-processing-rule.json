@@ -1,0 +1,63 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "expansion-processing-rule",
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://terminology.hl7.org/CodeSystem/expansion-processing-rule",
+  "version": "4.0.1",
+  "name": "ExpansionProcessingRule",
+  "title": "ExpansionProcessingRule",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Defines how concepts are processed into the expansion when it's for UI presentation.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/expansion-processing-rule",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "all-codes",
+      "display": "All Codes",
+      "definition": "The expansion (when in UI mode) includes all codes *and* any defined groups (in extensions)."
+    },
+    {
+      "code": "ungrouped",
+      "display": "Groups + Ungrouped codes",
+      "definition": "The expanion (when in UI mode) lists the groups, and then any codes that have not been included in a group."
+    },
+    {
+      "code": "groups-only",
+      "display": "Groups Only",
+      "definition": "The expansion (when in UI mode) only includes the defined groups."
+    }
+  ]
+}

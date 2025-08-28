@@ -1,0 +1,202 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-SupplyRequest.orderedItem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-SupplyRequest.orderedItem",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_SupplyRequest_orderedItem",
+  "title": "Cross-version Extension for R3.SupplyRequest.orderedItem for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:19.9504391-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SupplyRequest.orderedItem from http://hl7.org/fhir/StructureDefinition/SupplyRequest|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "SupplyRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The item being requested",
+        "definition": "`SupplyRequest.orderedItem` maps to R4 `SupplyRequest`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "The requested amount of the item indicated",
+        "definition": "The amount that is being ordered of the indicated item.",
+        "comment": "`SupplyRequest.orderedItem` maps to R4 `SupplyRequest`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The requested amount of the item indicated",
+        "definition": "The amount that is being ordered of the indicated item.",
+        "comment": "`SupplyRequest.orderedItem` maps to R4 `SupplyRequest`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:item[x]",
+        "path": "Extension.extension",
+        "sliceName": "item[x]",
+        "short": "Medication, Substance, or Device requested to be supplied",
+        "definition": "The item that is requested to be supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.",
+        "comment": "`SupplyRequest.orderedItem` maps to R4 `SupplyRequest`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:item[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item[x]"
+      },
+      {
+        "id": "Extension.extension:item[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Medication, Substance, or Device requested to be supplied",
+        "definition": "The item that is requested to be supplied. This is either a link to a resource representing the details of the item or a code that identifies the item from a known list.",
+        "comment": "`SupplyRequest.orderedItem` maps to R4 `SupplyRequest`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The item that was requested",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-supply-item-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-SupplyRequest.orderedItem"
+      }
+    ]
+  }
+}

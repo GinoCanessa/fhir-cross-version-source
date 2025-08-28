@@ -1,0 +1,46 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [NamingSystem](https://hl7.org/fhir/R5/NamingSystem.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [NamingSystem.meta](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.meta](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.implicitRules](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.implicitRules](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.language](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.language](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.text](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.text](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.contained](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.contained](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.url](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url](StructureDefinition-ext-R5-NamingSystem.url.html) |
+| [NamingSystem.identifier](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.identifier](StructureDefinition-ext-R5-NamingSystem.identifier.html) |
+| [NamingSystem.version](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version](StructureDefinition-ext-R5-NamingSystem.version.html) |
+| [NamingSystem.versionAlgorithm[x]](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.versionAlgorithm](StructureDefinition-ext-R5-NamingSystem.versionAlgorithm.html) |
+| [NamingSystem.name](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.name](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.title](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.title](StructureDefinition-ext-R5-NamingSystem.title.html) |
+| [NamingSystem.status](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.status](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.kind](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.kind](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.experimental](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.experimental](StructureDefinition-ext-R5-NamingSystem.experimental.html) |
+| [NamingSystem.date](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.date](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.publisher](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.publisher](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.contact](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.contact](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.responsible](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.responsible](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.type](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.type](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.description](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.description](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.useContext](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.useContext](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.jurisdiction](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.jurisdiction](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.purpose](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.purpose](StructureDefinition-ext-R5-NamingSystem.purpose.html) |
+| [NamingSystem.copyright](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.copyright](StructureDefinition-ext-R5-NamingSystem.copyright.html) |
+| [NamingSystem.copyrightLabel](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.copyrightLabel](StructureDefinition-ext-R5-NamingSystem.copyrightLabel.html) |
+| [NamingSystem.approvalDate](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.approvalDate](StructureDefinition-ext-R5-NamingSystem.approvalDate.html) |
+| [NamingSystem.lastReviewDate](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.lastReviewDate](StructureDefinition-ext-R5-NamingSystem.lastReviewDate.html) |
+| [NamingSystem.effectivePeriod](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.effectivePeriod](StructureDefinition-ext-R5-NamingSystem.effectivePeriod.html) |
+| [NamingSystem.topic](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.topic](StructureDefinition-ext-R5-NamingSystem.topic.html) |
+| [NamingSystem.author](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.author](StructureDefinition-ext-R5-NamingSystem.author.html) |
+| [NamingSystem.editor](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.editor](StructureDefinition-ext-R5-NamingSystem.editor.html) |
+| [NamingSystem.reviewer](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.reviewer](StructureDefinition-ext-R5-NamingSystem.reviewer.html) |
+| [NamingSystem.endorser](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.endorser](StructureDefinition-ext-R5-NamingSystem.endorser.html) |
+| [NamingSystem.relatedArtifact](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.relatedArtifact](StructureDefinition-ext-R5-NamingSystem.relatedArtifact.html) |
+| [NamingSystem.usage](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.usage](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.uniqueId](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId.type](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.uniqueId.type](StructureDefinition-ext-R5-NamingSystem.un.type.html) |
+| [NamingSystem.uniqueId.value](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.uniqueId.value](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId.preferred](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.uniqueId.preferred](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId.comment](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.uniqueId.comment](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId.period](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseElementSameName` | [NamingSystem.uniqueId.period](https://hl7.org/fhir/R4/NamingSystem.html#resource) |
+| [NamingSystem.uniqueId.authoritative](https://hl7.org/fhir/R5/NamingSystem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.uniqueId.authoritative](StructureDefinition-ext-R5-NamingSystem.un.authoritative.html) |

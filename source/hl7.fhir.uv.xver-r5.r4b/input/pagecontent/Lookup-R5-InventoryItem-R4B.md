@@ -1,0 +1,41 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [InventoryItem](https://hl7.org/fhir/R5/InventoryItem.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [InventoryItem](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-InventoryItem](StructureDefinition-ext-R5-InventoryItem.html) |
+| [InventoryItem.meta](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.implicitRules](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.language](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.text](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.contained](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.identifier](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.status](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.category](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.code](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseBasicElement` | [Basic.code](https://hl7.org/fhir/R4B/Basic.html#resource) |
+| [InventoryItem.name](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.name.nameType](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.name.language](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.name.name](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.responsibleOrganization](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.responsibleOrganization.role](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.responsibleOrganization.organization](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.description](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.description.language](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.description.description](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.inventoryStatus](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.baseUnit](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.netContent](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.association](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.association.associationType](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.association.relatedItem](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.association.quantity](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.characteristic](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.characteristic.characteristicType](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.characteristic.value[x]](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance.identifier](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance.lotNumber](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance.expiry](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance.subject](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.instance.location](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |
+| [InventoryItem.productReference](https://hl7.org/fhir/R5/InventoryItem.html#resource) | `UseExtensionFromAncestor` | - |

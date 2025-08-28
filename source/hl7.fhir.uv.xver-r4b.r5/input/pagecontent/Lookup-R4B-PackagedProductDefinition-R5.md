@@ -1,0 +1,42 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [PackagedProductDefinition](https://hl7.org/fhir/R4B/PackagedProductDefinition.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [PackagedProductDefinition.meta](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.meta](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.implicitRules](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.implicitRules](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.language](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.language](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.text](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.text](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.contained](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.contained](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.identifier](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.identifier](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.name](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.name](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.type](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.type](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.packageFor](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.packageFor](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.status](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.status](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.statusDate](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.statusDate](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.containedItemQuantity](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.containedItemQuantity](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.description](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.description](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.legalStatusOfSupply](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.legalStatusOfSupply](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.legalStatusOfSupply.code](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.legalStatusOfSupply.code](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.legalStatusOfSupply.jurisdiction](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.legalStatusOfSupply.jurisdiction](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.marketingStatus](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.marketingStatus](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.characteristic](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.characteristic](StructureDefinition-ext-R4B-PackagedProductDefinition.characteristic.html) |
+| [PackagedProductDefinition.copackagedIndicator](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.copackagedIndicator](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.manufacturer](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseElementSameName` | [PackagedProductDefinition.manufacturer](https://hl7.org/fhir/R5/PackagedProductDefinition.html#resource) |
+| [PackagedProductDefinition.package](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-PackagedProductDefinition.package](StructureDefinition-ext-R4B-PackagedProductDefinition.package.html) |
+| [PackagedProductDefinition.package.identifier](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.type](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.quantity](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.material](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.alternateMaterial](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.shelfLifeStorage](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.shelfLifeStorage.type](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.shelfLifeStorage.period[x]](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.shelfLifeStorage.specialPrecautionsForStorage](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.manufacturer](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.property](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.property.type](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.property.value[x]](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.containedItem](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.containedItem.item](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.containedItem.amount](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |
+| [PackagedProductDefinition.package.package](https://hl7.org/fhir/R4B/PackagedProductDefinition.html#resource) | `UseExtensionFromAncestor` | - |

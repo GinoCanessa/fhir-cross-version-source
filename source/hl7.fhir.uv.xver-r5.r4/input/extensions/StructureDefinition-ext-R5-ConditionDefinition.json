@@ -1,0 +1,1797 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ConditionDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConditionDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ConditionDefinition",
+  "title": "Cross-version Extension for R5.ConditionDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:51.3833102-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ConditionDefinition from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A definition of a condition",
+        "definition": "A definition of a condition and information relevant to managing it.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension",
+        "sliceName": "url",
+        "short": "Canonical identifier for this condition definition, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this condition definition when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this condition definition is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the condition definition is stored on different servers.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:url.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Canonical identifier for this condition definition, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this condition definition when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this condition definition is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the condition definition is stored on different servers.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "Business version of the condition definition",
+        "definition": "The identifier that is used to identify this version of the condition definition when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the condition definition author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business version of the condition definition",
+        "definition": "The identifier that is used to identify this version of the condition definition when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the condition definition author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x]",
+        "path": "Extension.extension",
+        "sliceName": "versionAlgorithm[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "versionAlgorithm[x]"
+      },
+      {
+        "id": "Extension.extension:versionAlgorithm[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How to compare versions",
+        "definition": "Indicates the mechanism used to compare versions to determine which is more current.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-version-algorithm-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Name for this condition definition (computer friendly)",
+        "definition": "A natural language name identifying the condition definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name for this condition definition (computer friendly)",
+        "definition": "A natural language name identifying the condition definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "Name for this condition definition (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the condition definition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name for this condition definition (human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the condition definition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subtitle",
+        "path": "Extension.extension",
+        "sliceName": "subtitle",
+        "short": "Subordinate title of the event definition",
+        "definition": "An explanatory or alternate title for the event definition giving additional information about its content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subtitle.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subtitle"
+      },
+      {
+        "id": "Extension.extension:subtitle.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Subordinate title of the event definition",
+        "definition": "An explanatory or alternate title for the event definition giving additional information about its content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this condition definition. Enables tracking the life-cycle of the content.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "draft | active | retired | unknown",
+        "definition": "The status of this condition definition. Enables tracking the life-cycle of the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-publication-status-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental",
+        "path": "Extension.extension",
+        "sliceName": "experimental",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this condition definition is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "experimental"
+      },
+      {
+        "id": "Extension.extension:experimental.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "For testing purposes, not real usage",
+        "definition": "A Boolean value to indicate that this condition definition is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the condition definition was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the condition definition changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the condition definition was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the condition definition changes.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publisher",
+        "path": "Extension.extension",
+        "sliceName": "publisher",
+        "short": "Name of the publisher/steward (organization or individual)",
+        "definition": "The name of the organization or individual responsible for the release and ongoing maintenance of the condition definition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:publisher.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "publisher"
+      },
+      {
+        "id": "Extension.extension:publisher.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name of the publisher/steward (organization or individual)",
+        "definition": "The name of the organization or individual responsible for the release and ongoing maintenance of the condition definition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension",
+        "sliceName": "contact",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contact.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contact"
+      },
+      {
+        "id": "Extension.extension:contact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Natural language description of the condition definition",
+        "definition": "A free text natural language description of the condition definition from a consumer's perspective.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Natural language description of the condition definition",
+        "definition": "A free text natural language description of the condition definition from a consumer's perspective.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useContext",
+        "path": "Extension.extension",
+        "sliceName": "useContext",
+        "short": "The context that the content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate condition definition instances.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:useContext.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useContext"
+      },
+      {
+        "id": "Extension.extension:useContext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The context that the content is intended to support",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate condition definition instances.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "UsageContext"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Intended jurisdiction for condition definition (if applicable)",
+        "definition": "A legal or geographic region in which the condition definition is intended to be used.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Intended jurisdiction for condition definition (if applicable)",
+        "definition": "A legal or geographic region in which the condition definition is intended to be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Countries and regions within which this artifact is targeted for use.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-jurisdiction-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:severity",
+        "path": "Extension.extension",
+        "sliceName": "severity",
+        "short": "Subjective severity of condition",
+        "definition": "A subjective assessment of the severity of the condition as evaluated by the clinician.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:severity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "severity"
+      },
+      {
+        "id": "Extension.extension:severity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Subjective severity of condition",
+        "definition": "A subjective assessment of the severity of the condition as evaluated by the clinician.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "A subjective assessment of the severity of the condition as evaluated by the clinician.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-condition-severity-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:bodySite",
+        "path": "Extension.extension",
+        "sliceName": "bodySite",
+        "short": "Anatomical location, if relevant",
+        "definition": "The anatomical location where this condition manifests itself.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodySite.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "bodySite"
+      },
+      {
+        "id": "Extension.extension:bodySite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Anatomical location, if relevant",
+        "definition": "The anatomical location where this condition manifests itself.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "SNOMED CT Body site concepts",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-body-site-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:stage",
+        "path": "Extension.extension",
+        "sliceName": "stage",
+        "short": "Stage/grade, usually assessed formally",
+        "definition": "Clinical stage or grade of a condition. May include formal severity assessments.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:stage.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "stage"
+      },
+      {
+        "id": "Extension.extension:stage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Stage/grade, usually assessed formally",
+        "definition": "Clinical stage or grade of a condition. May include formal severity assessments.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes describing condition stages (e.g. Cancer stages).",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-condition-stage-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:hasSeverity",
+        "path": "Extension.extension",
+        "sliceName": "hasSeverity",
+        "short": "Whether Severity is appropriate",
+        "definition": "Whether Severity is appropriate to collect for this condition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:hasSeverity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "hasSeverity"
+      },
+      {
+        "id": "Extension.extension:hasSeverity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether Severity is appropriate",
+        "definition": "Whether Severity is appropriate to collect for this condition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hasBodySite",
+        "path": "Extension.extension",
+        "sliceName": "hasBodySite",
+        "short": "Whether bodySite is appropriate",
+        "definition": "Whether bodySite is appropriate to collect for this condition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:hasBodySite.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "hasBodySite"
+      },
+      {
+        "id": "Extension.extension:hasBodySite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether bodySite is appropriate",
+        "definition": "Whether bodySite is appropriate to collect for this condition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:hasStage",
+        "path": "Extension.extension",
+        "sliceName": "hasStage",
+        "short": "Whether stage is appropriate",
+        "definition": "Whether stage is appropriate to collect for this condition.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:hasStage.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "hasStage"
+      },
+      {
+        "id": "Extension.extension:hasStage.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether stage is appropriate",
+        "definition": "Whether stage is appropriate to collect for this condition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:definition",
+        "path": "Extension.extension",
+        "sliceName": "definition",
+        "short": "Formal Definition for the condition",
+        "definition": "Formal definitions of the condition. These may be references to ontologies, published clinical protocols or research papers.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:definition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:definition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Formal Definition for the condition",
+        "definition": "Formal definitions of the condition. These may be references to ontologies, published clinical protocols or research papers.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:observation",
+        "path": "Extension.extension",
+        "sliceName": "observation",
+        "short": "Observations particularly relevant to this condition",
+        "definition": "This cross-version extension represents ConditionDefinition.observation from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.extension:category",
+        "path": "Extension.extension.extension",
+        "sliceName": "category",
+        "short": "Category that is relevant",
+        "definition": "This cross-version extension represents ConditionDefinition.observation.category from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.extension:category.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:observation.extension:category.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Category that is relevant",
+        "definition": "This cross-version extension represents ConditionDefinition.observation.category from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Codes for high level observation categories.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-category|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Code for relevant Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.observation.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:observation.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code for relevant Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.observation.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes identifying names of simple observations.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-observation-codes-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "observation"
+      },
+      {
+        "id": "Extension.extension:medication",
+        "path": "Extension.extension",
+        "sliceName": "medication",
+        "short": "Medications particularly relevant for this condition",
+        "definition": "This cross-version extension represents ConditionDefinition.medication from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.extension:category",
+        "path": "Extension.extension.extension",
+        "sliceName": "category",
+        "short": "Category that is relevant",
+        "definition": "This cross-version extension represents ConditionDefinition.medication.category from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.extension:category.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:medication.extension:category.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Category that is relevant",
+        "definition": "This cross-version extension represents ConditionDefinition.medication.category from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying the category of medication request.  For example, where the medication is to be consumed or administered, or the type of medication treatment.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/medicationrequest-category|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Code for relevant Medication",
+        "definition": "This cross-version extension represents ConditionDefinition.medication.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:medication.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code for relevant Medication",
+        "definition": "This cross-version extension represents ConditionDefinition.medication.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying substance or product that can be ordered.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-medication-codes-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:medication.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "medication"
+      },
+      {
+        "id": "Extension.extension:precondition",
+        "path": "Extension.extension",
+        "sliceName": "precondition",
+        "short": "Observation that suggets this condition",
+        "definition": "An observation that suggests that this condition applies.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "sensitive | specific",
+        "definition": "Kind of pre-condition.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:precondition.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "sensitive | specific",
+        "definition": "Kind of pre-condition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Kind of precondition for the condition.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-condition-precondition-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Code for relevant Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.precondition.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:precondition.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code for relevant Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.precondition.code from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes identifying names of simple observations.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-observation-codes-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "Value of Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.precondition.value[x] from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:precondition.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:precondition.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Value of Observation",
+        "definition": "This cross-version extension represents ConditionDefinition.precondition.value[x] from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:precondition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "precondition"
+      },
+      {
+        "id": "Extension.extension:team",
+        "path": "Extension.extension",
+        "sliceName": "team",
+        "short": "Appropriate team for this condition",
+        "definition": "This cross-version extension represents ConditionDefinition.team from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:team.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "team"
+      },
+      {
+        "id": "Extension.extension:team.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Appropriate team for this condition",
+        "definition": "This cross-version extension represents ConditionDefinition.team from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:questionnaire",
+        "path": "Extension.extension",
+        "sliceName": "questionnaire",
+        "short": "Questionnaire for this condition",
+        "definition": "This cross-version extension represents ConditionDefinition.questionnaire from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:purpose",
+        "path": "Extension.extension.extension",
+        "sliceName": "purpose",
+        "short": "preadmit | diff-diagnosis | outcome",
+        "definition": "Use of the questionnaire.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:purpose.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:purpose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "preadmit | diff-diagnosis | outcome",
+        "definition": "Use of the questionnaire.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The use of a questionnaire.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-condition-questionnaire-purpose-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Specific Questionnaire",
+        "definition": "This cross-version extension represents ConditionDefinition.questionnaire.reference from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:questionnaire.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Specific Questionnaire",
+        "definition": "This cross-version extension represents ConditionDefinition.questionnaire.reference from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:questionnaire.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "questionnaire"
+      },
+      {
+        "id": "Extension.extension:plan",
+        "path": "Extension.extension",
+        "sliceName": "plan",
+        "short": "Plan that is appropriate",
+        "definition": "This cross-version extension represents ConditionDefinition.plan from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:plan.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:plan.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "Use for the plan",
+        "definition": "This cross-version extension represents ConditionDefinition.plan.role from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:plan.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:plan.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Use for the plan",
+        "definition": "This cross-version extension represents ConditionDefinition.plan.role from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:plan.extension:reference",
+        "path": "Extension.extension.extension",
+        "sliceName": "reference",
+        "short": "The actual plan",
+        "definition": "This cross-version extension represents ConditionDefinition.plan.reference from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:plan.extension:reference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:plan.extension:reference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual plan",
+        "definition": "This cross-version extension represents ConditionDefinition.plan.reference from http://hl7.org/fhir/StructureDefinition/ConditionDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:plan.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "plan"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConditionDefinition"
+      }
+    ]
+  }
+}

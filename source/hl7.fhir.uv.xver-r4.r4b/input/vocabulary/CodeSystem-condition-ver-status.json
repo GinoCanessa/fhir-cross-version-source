@@ -1,0 +1,88 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "condition-ver-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+  "version": "4.0.1",
+  "name": "ConditionVerificationStatus",
+  "title": "ConditionVerificationStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "Patient Care",
+  "contact": [
+    {
+      "name": "Patient Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "description": "The verification status to support or decline the clinical status of the condition or diagnosis.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/condition-ver-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "display": "Unconfirmed",
+      "definition": "There is not sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.",
+      "concept": [
+        {
+          "code": "provisional",
+          "display": "Provisional",
+          "definition": "This is a tentative diagnosis - still a candidate that is under consideration."
+        },
+        {
+          "code": "differential",
+          "display": "Differential",
+          "definition": "One of a set of potential (and typically mutually exclusive) diagnoses asserted to further guide the diagnostic process and preliminary treatment."
+        }
+      ]
+    },
+    {
+      "code": "confirmed",
+      "display": "Confirmed",
+      "definition": "There is sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition."
+    },
+    {
+      "code": "refuted",
+      "display": "Refuted",
+      "definition": "This condition has been ruled out by diagnostic and clinical evidence."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The statement was entered in error and is not valid."
+    }
+  ]
+}

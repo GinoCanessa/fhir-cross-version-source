@@ -1,0 +1,111 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-MA.do.site",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.dosage.site",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_MA_do_site",
+  "title": "Cross-version Extension for R2.MedicationAdministration.dosage.site[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.7716574-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationAdministration.dosage.site[x] from http://hl7.org/fhir/StructureDefinition/MedicationAdministration|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationAdministration.dosage.site"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Body site administered to",
+        "definition": "A coded specification of the anatomic site where the medication first entered the body.  For example, \"left arm\".",
+        "comment": "`MedicationAdministration.dosage.site` maps to R5 `MedicationAdministration.dosage.site`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-MedicationAdministration.dosage.site"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Body site administered to",
+        "definition": "A coded specification of the anatomic site where the medication first entered the body.  For example, \"left arm\".",
+        "comment": "`MedicationAdministration.dosage.site` maps to R5 `MedicationAdministration.dosage.site`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept describing the site location the medicine enters into or onto the body.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-approach-site-codes-for-R5"
+        }
+      }
+    ]
+  }
+}

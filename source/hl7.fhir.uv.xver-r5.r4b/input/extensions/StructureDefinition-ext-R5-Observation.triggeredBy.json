@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Observation.triggeredBy",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Observation_triggeredBy",
+  "title": "Cross-version Extension for R5.Observation.triggeredBy for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.7264523-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Observation.triggeredBy from http://hl7.org/fhir/StructureDefinition/Observation|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Triggering observation(s)",
+        "definition": "Identifies the observation(s) that triggered the performance of this observation.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation",
+        "path": "Extension.extension",
+        "sliceName": "observation",
+        "short": "Triggering observation",
+        "definition": "Reference to the triggering observation.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "observation"
+      },
+      {
+        "id": "Extension.extension:observation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Triggering observation",
+        "definition": "Reference to the triggering observation.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "reflex | repeat | re-run",
+        "definition": "The type of trigger.\nReflex | Repeat | Re-run.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "reflex | repeat | re-run",
+        "definition": "The type of trigger.\nReflex | Repeat | Re-run.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of TriggeredBy Observation.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-observation-triggeredbytype-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "short": "Reason that the observation was triggered",
+        "definition": "Provides the reason why this observation was performed as a result of the observation(s) referenced.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reason that the observation was triggered",
+        "definition": "Provides the reason why this observation was performed as a result of the observation(s) referenced.",
+        "comment": "`Observation.triggeredBy` has no related element in R4B:Observation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.triggeredBy"
+      }
+    ]
+  }
+}

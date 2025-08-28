@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R3-clinical-findings-for-R5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/ValueSet/R3-clinical-findings-for-R5",
+  "version": "0.0.1-snapshot-2",
+  "name": "R3_clinical_findings_for_R5",
+  "title": "Cross-version VS for R3.SNOMED CT Clinical Findings for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:00.3729003-05:00",
+  "publisher": "Patient Care",
+  "contact": [
+    {
+      "name": "Patient Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/clinical-findings|3.0.2 for use in FHIR R5. Concepts not present here have direct `equivalent` mappings crossing all versions from R3 to R5.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "404684003"
+          }
+        ]
+      }
+    ]
+  }
+}

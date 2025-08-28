@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ElementDefinition.sl.di.type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.slicing.discriminator.type",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ElementDefinition_sl_di_type",
+  "title": "Cross-version Extension for R5.ElementDefinition.slicing.discriminator.type for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:47.1441052-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ElementDefinition.slicing.discriminator.type from http://hl7.org/fhir/StructureDefinition/ElementDefinition|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ElementDefinition.slicing.discriminator.type"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "value | exists | type | profile | position",
+        "definition": "How the element value is interpreted when discrimination is evaluated.",
+        "comment": "`ElementDefinition.slicing.discriminator.type` maps to R4 `ElementDefinition.slicing.discriminator.type`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.slicing.discriminator.type"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "value | exists | type | profile | position",
+        "definition": "How the element value is interpreted when discrimination is evaluated.",
+        "comment": "`ElementDefinition.slicing.discriminator.type` maps to R4 `ElementDefinition.slicing.discriminator.type`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How an element value is interpreted when discrimination is evaluated.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-discriminator-type-for-R4"
+        }
+      }
+    ]
+  }
+}

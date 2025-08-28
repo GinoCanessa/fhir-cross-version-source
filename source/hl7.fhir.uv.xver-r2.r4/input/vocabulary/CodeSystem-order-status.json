@@ -1,0 +1,155 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "order-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.227"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/order-status",
+  "version": "1.0.2",
+  "name": "order-status",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "pending",
+      "display": "Pending",
+      "definition": "The order is known, but no processing has occurred at this time"
+    },
+    {
+      "code": "review",
+      "display": "Review",
+      "definition": "The order is undergoing initial processing to determine whether it will be accepted (usually this involves human review)"
+    },
+    {
+      "code": "rejected",
+      "display": "Rejected",
+      "definition": "The order was rejected because of a workflow/business logic reason"
+    },
+    {
+      "code": "error",
+      "display": "Error",
+      "definition": "The order was unable to be processed because of a technical error (i.e. unexpected error)"
+    },
+    {
+      "code": "accepted",
+      "display": "Accepted",
+      "definition": "The order has been accepted, and work is in progress."
+    },
+    {
+      "code": "cancelled",
+      "display": "Cancelled",
+      "definition": "Processing the order was halted at the initiators request.",
+      "concept": [
+        {
+          "code": "replaced",
+          "display": "Replaced",
+          "definition": "The order has been cancelled and replaced by another."
+        }
+      ]
+    },
+    {
+      "code": "aborted",
+      "display": "Aborted",
+      "definition": "Processing the order was stopped because of some workflow/business logic reason."
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "The order has been completed."
+    }
+  ]
+}

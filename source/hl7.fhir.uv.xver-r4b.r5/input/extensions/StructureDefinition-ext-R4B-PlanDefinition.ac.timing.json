@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-PlanDefinition.ac.timing",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.timing",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_PlanDefinition_ac_timing",
+  "title": "Cross-version Extension for R4B.PlanDefinition.action.timing[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:16.481844-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PlanDefinition.action.timing[x] from http://hl7.org/fhir/StructureDefinition/PlanDefinition|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition.action.timing[x]"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "When the action should take place",
+        "definition": "An optional value describing when the action should be performed.",
+        "comment": "`PlanDefinition.action.timing[x]` maps to R5 `PlanDefinition.action.timing[x]`. Type `dateTime` has no mapping Type `Period` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-PlanDefinition.action.timing"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "When the action should take place",
+        "definition": "An optional value describing when the action should be performed.",
+        "comment": "`PlanDefinition.action.timing[x]` maps to R5 `PlanDefinition.action.timing[x]`. Type `dateTime` has no mapping Type `Period` has no mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Timing"
+          }
+        ]
+      }
+    ]
+  }
+}

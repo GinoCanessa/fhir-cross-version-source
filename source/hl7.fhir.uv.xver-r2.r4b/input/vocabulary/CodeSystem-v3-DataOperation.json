@@ -1,0 +1,334 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-DataOperation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.1123"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/DataOperation",
+  "version": "1.0.2",
+  "name": "v3-DataOperation",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "OPERATE",
+      "display": "operate",
+      "definition": "Description:Act on an object or objects.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "CREATE",
+          "display": "create",
+          "definition": "Description:Fundamental operation in an Information System (IS) that results only in the act of bringing an object into existence. Note: The preceding definition is taken from the HL7 RBAC specification.  There is no restriction on how the operation is invoked, e.g. via a user interface. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "DELETE",
+          "display": "delete",
+          "definition": "Description:Fundamental operation in an Information System (IS) that results only in the removal of information about an object from memory or storage. Note: The preceding definition is taken from the HL7 RBAC specification.  There is no restriction on how the operation is invoked, e.g. via a user interface.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "EXECUTE",
+          "display": "execute",
+          "definition": "Description:Fundamental operation in an IS that results only in initiating performance of a single or set of programs (i.e., software objects). Note: The preceding definition is taken from the HL7 RBAC specification.  There is no restriction on how the operation is invoked, e.g. via a user interface.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "READ",
+          "display": "read",
+          "definition": "Description:Fundamental operation in an Information System (IS) that results only in the flow of information about an object to a subject. Note: The preceding definition is taken from the HL7 RBAC specification.  There is no restriction on how the operation is invoked, e.g. via a user interface.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "UPDATE",
+          "display": "revise",
+          "definition": "Definition:Fundamental operation in an Information System (IS) that results only in the revision or alteration of an object. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g. via a user interface.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ],
+          "concept": [
+            {
+              "code": "APPEND",
+              "display": "append",
+              "definition": "Description:Fundamental operation in an Information System (IS) that results only in the addition of information to an object already in existence. Note: The preceding definition is taken from the HL7 RBAC specification.  There is no restriction on how the operation is invoked, e.g. via a user interface.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "MODIFYSTATUS",
+              "display": "modify status",
+              "definition": "Description:Change the status of an object representing an Act.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "ABORT",
+                  "display": "abort",
+                  "definition": "Description:Change the status of an object representing an Act to \"aborted\", i.e., terminated prior to the originally intended completion. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ACTIVATE",
+                  "display": "activate",
+                  "definition": "Description:Change the status of an object representing an Act to \"active\", i.e., so it can be performed or is being performed, for the first time. (Contrast with REACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "CANCEL",
+                  "display": "cancel",
+                  "definition": "Description:Change the status of an object representing an Act to \"cancelled\", i.e., abandoned before activation. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "COMPLETE",
+                  "display": "complete",
+                  "definition": "Description:Change the status of an object representing an Act to \"completed\", i.e., terminated normally after all of its constituents have been performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "HOLD",
+                  "display": "hold",
+                  "definition": "Description:Change the status of an object representing an Act to \"held\", i.e., put aside an Act that is still in preparatory stages.  No action can occur until the Act is released. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "JUMP",
+                  "display": "jump",
+                  "definition": "Description:Change the status of an object representing an Act to a normal state. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "NULLIFY",
+                  "display": "nullify",
+                  "definition": "Description:Change the status of an object representing an Act to \"nullified\", i.e., treat as though it never existed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "OBSOLETE",
+                  "display": "obsolete",
+                  "definition": "Description:Change the status of an object representing an Act to \"obsolete\" when it has been replaced by a new instance. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "REACTIVATE",
+                  "display": "reactivate",
+                  "definition": "Description:Change the status of a formerly active object representing an Act to \"active\", i.e., so it can again be performed or is being performed. (Contrast with ACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "RELEASE",
+                  "display": "release",
+                  "definition": "Description:Change the status of an object representing an Act so it is no longer \"held\", i.e., allow action to occur. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "RESUME",
+                  "display": "resume",
+                  "definition": "Description:Change the status of a suspended object representing an Act to \"active\", i.e., so it can be performed or is being performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "SUSPEND",
+                  "display": "suspend",
+                  "definition": "Definition:Change the status of an object representing an Act to suspended, i.e., so it is temporarily not in service.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

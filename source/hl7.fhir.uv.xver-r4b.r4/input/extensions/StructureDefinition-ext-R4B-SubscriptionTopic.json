@@ -1,0 +1,1950 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-SubscriptionTopic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionTopic",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_SubscriptionTopic",
+  "title": "Cross-version Extension for R4B.SubscriptionTopic for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:20.2611983-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubscriptionTopic from http://hl7.org/fhir/StructureDefinition/SubscriptionTopic|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The definition of a specific topic for triggering events within the Subscriptions framework",
+        "definition": "Describes a stream of resource state changes or events and annotated with labels useful to filter projections from this topic.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url",
+        "path": "Extension.extension",
+        "sliceName": "url",
+        "short": "Canonical identifier for this subscription topic definition, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this subscription topic when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which at which an authoritative instance of this subscription topic is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the subscription topic is stored on different servers.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:url.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:url.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Canonical identifier for this subscription topic definition, represented as a URI (globally unique)",
+        "definition": "An absolute URI that is used to identify this subscription topic when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which at which an authoritative instance of this subscription topic is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the subscription topic is stored on different servers.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "Business version of the subscription topic",
+        "definition": "The identifier that is used to identify this version of the subscription topic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business version of the subscription topic",
+        "definition": "The identifier that is used to identify this version of the subscription topic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "Name for this subscription topic (Human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the SubscriptionTopic, for example, \"admission\".",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Name for this subscription topic (Human friendly)",
+        "definition": "A short, descriptive, user-friendly title for the SubscriptionTopic, for example, \"admission\".",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:derivedFrom",
+        "path": "Extension.extension",
+        "sliceName": "derivedFrom",
+        "short": "Based on FHIR protocol or definition",
+        "definition": "The canonical URL pointing to another FHIR-defined SubscriptionTopic that is adhered to in whole or in part by this SubscriptionTopic.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:derivedFrom.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "derivedFrom"
+      },
+      {
+        "id": "Extension.extension:derivedFrom.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Based on FHIR protocol or definition",
+        "definition": "The canonical URL pointing to another FHIR-defined SubscriptionTopic that is adhered to in whole or in part by this SubscriptionTopic.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "draft | active | retired | unknown",
+        "definition": "The current state of the SubscriptionTopic.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "draft | active | retired | unknown",
+        "definition": "The current state of the SubscriptionTopic.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental",
+        "path": "Extension.extension",
+        "sliceName": "experimental",
+        "short": "If for testing purposes, not real usage",
+        "definition": "A flag to indicate that this TopSubscriptionTopicic is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:experimental.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "experimental"
+      },
+      {
+        "id": "Extension.extension:experimental.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If for testing purposes, not real usage",
+        "definition": "A flag to indicate that this TopSubscriptionTopicic is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date status first applied",
+        "definition": "For draft definitions, indicates the date of initial creation.  For active definitions, represents the date of activation.  For withdrawn definitions, indicates the date of withdrawal.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date status first applied",
+        "definition": "For draft definitions, indicates the date of initial creation.  For active definitions, represents the date of activation.  For withdrawn definitions, indicates the date of withdrawal.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publisher",
+        "path": "Extension.extension",
+        "sliceName": "publisher",
+        "short": "The name of the individual or organization that published the SubscriptionTopic",
+        "definition": "Helps establish the \"authority/credibility\" of the SubscriptionTopic.  May also allow for contact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:publisher.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "publisher"
+      },
+      {
+        "id": "Extension.extension:publisher.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The name of the individual or organization that published the SubscriptionTopic",
+        "definition": "Helps establish the \"authority/credibility\" of the SubscriptionTopic.  May also allow for contact.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension",
+        "sliceName": "contact",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contact.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contact"
+      },
+      {
+        "id": "Extension.extension:contact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contact details for the publisher",
+        "definition": "Contact details to assist a user in finding and communicating with the publisher.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Natural language description of the SubscriptionTopic",
+        "definition": "A free text natural language description of the Topic from the consumer's perspective.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Natural language description of the SubscriptionTopic",
+        "definition": "A free text natural language description of the Topic from the consumer's perspective.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useContext",
+        "path": "Extension.extension",
+        "sliceName": "useContext",
+        "short": "Content intends to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of code system definitions.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:useContext.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useContext"
+      },
+      {
+        "id": "Extension.extension:useContext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Content intends to support these contexts",
+        "definition": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of code system definitions.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "UsageContext"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Intended jurisdiction of the SubscriptionTopic (if applicable)",
+        "definition": "A jurisdiction in which the Topic is intended to be used.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Intended jurisdiction of the SubscriptionTopic (if applicable)",
+        "definition": "A jurisdiction in which the Topic is intended to be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Countries and regions within which this artifact is targeted for use.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-jurisdiction-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose",
+        "path": "Extension.extension",
+        "sliceName": "purpose",
+        "short": "Why this SubscriptionTopic is defined",
+        "definition": "Explains why this Topic is needed and why it has been designed as it has.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:purpose.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purpose"
+      },
+      {
+        "id": "Extension.extension:purpose.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why this SubscriptionTopic is defined",
+        "definition": "Explains why this Topic is needed and why it has been designed as it has.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:copyright",
+        "path": "Extension.extension",
+        "sliceName": "copyright",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the SubscriptionTopic and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the SubscriptionTopic.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copyright.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:copyright.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the SubscriptionTopic and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the SubscriptionTopic.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:approvalDate",
+        "path": "Extension.extension",
+        "sliceName": "approvalDate",
+        "short": "When SubscriptionTopic is/was approved by publisher",
+        "definition": "The date on which the asset content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:approvalDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "approvalDate"
+      },
+      {
+        "id": "Extension.extension:approvalDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When SubscriptionTopic is/was approved by publisher",
+        "definition": "The date on which the asset content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastReviewDate",
+        "path": "Extension.extension",
+        "sliceName": "lastReviewDate",
+        "short": "Date the Subscription Topic was last reviewed by the publisher",
+        "definition": "The date on which the asset content was last reviewed. Review happens periodically after that, but doesn't change the original approval date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lastReviewDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastReviewDate"
+      },
+      {
+        "id": "Extension.extension:lastReviewDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date the Subscription Topic was last reviewed by the publisher",
+        "definition": "The date on which the asset content was last reviewed. Review happens periodically after that, but doesn't change the original approval date.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:effectivePeriod",
+        "path": "Extension.extension",
+        "sliceName": "effectivePeriod",
+        "short": "The effective date range for the SubscriptionTopic",
+        "definition": "The period during which the SubscriptionTopic content was or is planned to be effective.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:effectivePeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "effectivePeriod"
+      },
+      {
+        "id": "Extension.extension:effectivePeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The effective date range for the SubscriptionTopic",
+        "definition": "The period during which the SubscriptionTopic content was or is planned to be effective.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger",
+        "path": "Extension.extension",
+        "sliceName": "resourceTrigger",
+        "short": "Definition of a resource-based trigger for the subscription topic",
+        "definition": "A definition of a resource-based event that triggers a notification based on the SubscriptionTopic. The criteria may be just a human readable description and/or a full FHIR search string or FHIRPath expression. Multiple triggers are considered OR joined (e.g., a resource update matching ANY of the definitions will trigger a notification).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Text representation of the resource trigger",
+        "definition": "The human readable description of this resource trigger for the SubscriptionTopic -  for example, \"An Encounter enters the 'in-progress' state\".",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Text representation of the resource trigger",
+        "definition": "The human readable description of this resource trigger for the SubscriptionTopic -  for example, \"An Encounter enters the 'in-progress' state\".",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:resource",
+        "path": "Extension.extension.extension",
+        "sliceName": "resource",
+        "short": "Data Type or Resource (reference to definition) for this trigger definition",
+        "definition": "URL of the Resource that is the type used in this resource trigger.  Relative URLs are relative to the StructureDefinition root of the implemented FHIR version (e.g., http://hl7.org/fhir/StructureDefinition). For example, \"Patient\" maps to http://hl7.org/fhir/StructureDefinition/Patient.  For more information, see [ElementDefinition.type.code](https://hl7.org/fhir/elementdefinition-definition.html#ElementDefinition.type.code).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:resource.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:resource.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Data Type or Resource (reference to definition) for this trigger definition",
+        "definition": "URL of the Resource that is the type used in this resource trigger.  Relative URLs are relative to the StructureDefinition root of the implemented FHIR version (e.g., http://hl7.org/fhir/StructureDefinition). For example, \"Patient\" maps to http://hl7.org/fhir/StructureDefinition/Patient.  For more information, see [ElementDefinition.type.code](https://hl7.org/fhir/elementdefinition-definition.html#ElementDefinition.type.code).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Either a resource or a data type, including logical model types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-defined-types-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:supportedInteraction",
+        "path": "Extension.extension.extension",
+        "sliceName": "supportedInteraction",
+        "short": "create | update | delete",
+        "definition": "The FHIR RESTful interaction which can be used to trigger a notification for the SubscriptionTopic. Multiple values are considered OR joined (e.g., CREATE or UPDATE).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:supportedInteraction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "supportedInteraction"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:supportedInteraction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "create | update | delete",
+        "definition": "The FHIR RESTful interaction which can be used to trigger a notification for the SubscriptionTopic. Multiple values are considered OR joined (e.g., CREATE or UPDATE).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "FHIR RESTful interaction used to filter a resource-based SubscriptionTopic trigger.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-interaction-trigger-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria",
+        "path": "Extension.extension.extension",
+        "sliceName": "queryCriteria",
+        "short": "Query based trigger rule",
+        "definition": "The FHIR query based rules that the server should use to determine when to trigger a notification for this subscription topic.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:previous",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "previous",
+        "short": "Rule applied to previous resource state",
+        "definition": "The FHIR query based rules are applied to the previous resource state (e.g., state before an update).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:previous.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "previous"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:previous.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Rule applied to previous resource state",
+        "definition": "The FHIR query based rules are applied to the previous resource state (e.g., state before an update).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForCreate",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "resultForCreate",
+        "short": "test-passes | test-fails",
+        "definition": "For \"create\" interactions, should the \"previous\" criteria count as an automatic pass or an automatic fail.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForCreate.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resultForCreate"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForCreate.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "test-passes | test-fails",
+        "definition": "For \"create\" interactions, should the \"previous\" criteria count as an automatic pass or an automatic fail.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Behavior a server can exhibit when a criteria state does not exist (e.g., state prior to a create or after a delete).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-subscriptiontopic-cr-behavior-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:current",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "current",
+        "short": "Rule applied to current resource state",
+        "definition": "The FHIR query based rules are applied to the current resource state (e.g., state after an update).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:current.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "current"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:current.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Rule applied to current resource state",
+        "definition": "The FHIR query based rules are applied to the current resource state (e.g., state after an update).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForDelete",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "resultForDelete",
+        "short": "test-passes | test-fails",
+        "definition": "For \"delete\" interactions, should the \"current\" criteria count as an automatic pass or an automatic fail.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForDelete.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resultForDelete"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:resultForDelete.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "test-passes | test-fails",
+        "definition": "For \"delete\" interactions, should the \"current\" criteria count as an automatic pass or an automatic fail.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Behavior a server can exhibit when a criteria state does not exist (e.g., state prior to a create or after a delete).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-subscriptiontopic-cr-behavior-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:requireBoth",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "requireBoth",
+        "short": "Both must be true flag",
+        "definition": "If set to true, both current and previous criteria must evaluate true to  trigger a notification for this topic.  Otherwise a notification for this topic will be triggered if either one evaluates to true.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:requireBoth.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "requireBoth"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.extension:requireBoth.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Both must be true flag",
+        "definition": "If set to true, both current and previous criteria must evaluate true to  trigger a notification for this topic.  Otherwise a notification for this topic will be triggered if either one evaluates to true.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:queryCriteria.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "queryCriteria"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:fhirPathCriteria",
+        "path": "Extension.extension.extension",
+        "sliceName": "fhirPathCriteria",
+        "short": "FHIRPath based trigger rule",
+        "definition": "The FHIRPath based rules that the server should use to determine when to trigger a notification for this topic.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:fhirPathCriteria.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "fhirPathCriteria"
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.extension:fhirPathCriteria.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "FHIRPath based trigger rule",
+        "definition": "The FHIRPath based rules that the server should use to determine when to trigger a notification for this topic.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:resourceTrigger.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resourceTrigger"
+      },
+      {
+        "id": "Extension.extension:eventTrigger",
+        "path": "Extension.extension",
+        "sliceName": "eventTrigger",
+        "short": "Event definitions the SubscriptionTopic",
+        "definition": "Event definition which can be used to trigger the SubscriptionTopic.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Text representation of the event trigger",
+        "definition": "The human readable description of an event to trigger a notification for the SubscriptionTopic - for example, \"Patient Admission, as defined in HL7v2 via message ADT^A01\". Multiple values are considered OR joined (e.g., matching any single event listed).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Text representation of the event trigger",
+        "definition": "The human readable description of an event to trigger a notification for the SubscriptionTopic - for example, \"Patient Admission, as defined in HL7v2 via message ADT^A01\". Multiple values are considered OR joined (e.g., matching any single event listed).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:event",
+        "path": "Extension.extension.extension",
+        "sliceName": "event",
+        "short": "Event which can trigger a notification from the SubscriptionTopic",
+        "definition": "A well-defined event which can be used to trigger notifications from the SubscriptionTopic.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:event.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "event"
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:event.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Event which can trigger a notification from the SubscriptionTopic",
+        "definition": "A well-defined event which can be used to trigger notifications from the SubscriptionTopic.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "FHIR Value set/code system definition for HL7 v2 table 0003 (EVENT TYPE CODE).",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-v2-0003-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:resource",
+        "path": "Extension.extension.extension",
+        "sliceName": "resource",
+        "short": "Data Type or Resource (reference to definition) for this trigger definition",
+        "definition": "URL of the Resource that is the focus type used in this event trigger.  Relative URLs are relative to the StructureDefinition root of the implemented FHIR version (e.g., http://hl7.org/fhir/StructureDefinition). For example, \"Patient\" maps to http://hl7.org/fhir/StructureDefinition/Patient.  For more information, see [ElementDefinition.type.code](https://hl7.org/fhir/elementdefinition-definition.html#ElementDefinition.type.code).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:resource.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:eventTrigger.extension:resource.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Data Type or Resource (reference to definition) for this trigger definition",
+        "definition": "URL of the Resource that is the focus type used in this event trigger.  Relative URLs are relative to the StructureDefinition root of the implemented FHIR version (e.g., http://hl7.org/fhir/StructureDefinition). For example, \"Patient\" maps to http://hl7.org/fhir/StructureDefinition/Patient.  For more information, see [ElementDefinition.type.code](https://hl7.org/fhir/elementdefinition-definition.html#ElementDefinition.type.code).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Either a resource or a data type, including logical model types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-defined-types-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:eventTrigger.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "eventTrigger"
+      },
+      {
+        "id": "Extension.extension:canFilterBy",
+        "path": "Extension.extension",
+        "sliceName": "canFilterBy",
+        "short": "Properties by which a Subscription can filter notifications from the SubscriptionTopic",
+        "definition": "List of properties by which Subscriptions on the SubscriptionTopic can be filtered. May be defined Search Parameters (e.g., Encounter.patient) or parameters defined within this SubscriptionTopic context (e.g., hub.event).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Description of this filter parameter",
+        "definition": "Description of how this filtering parameter is intended to be used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Description of this filter parameter",
+        "definition": "Description of how this filtering parameter is intended to be used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:resource",
+        "path": "Extension.extension.extension",
+        "sliceName": "resource",
+        "short": "URL of the triggering Resource that this filter applies to",
+        "definition": "URL of the Resource that is the type used in this filter. This is the \"focus\" of the topic (or one of them if there are more than one). It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:resource.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:resource.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "URL of the triggering Resource that this filter applies to",
+        "definition": "URL of the Resource that is the type used in this filter. This is the \"focus\" of the topic (or one of them if there are more than one). It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Either a resource or a data type, including logical model types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-defined-types-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterParameter",
+        "path": "Extension.extension.extension",
+        "sliceName": "filterParameter",
+        "short": "Human-readable and computation-friendly name for a filter parameter usable by subscriptions on this topic, via Subscription.filterBy.filterParameter",
+        "definition": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or topic-defined parameter (like \"hub.event\") which is a label for the filter.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterParameter.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "filterParameter"
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterParameter.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Human-readable and computation-friendly name for a filter parameter usable by subscriptions on this topic, via Subscription.filterBy.filterParameter",
+        "definition": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or topic-defined parameter (like \"hub.event\") which is a label for the filter.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterDefinition",
+        "path": "Extension.extension.extension",
+        "sliceName": "filterDefinition",
+        "short": "Canonical URL for a filterParameter definition",
+        "definition": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or the officially-defined URI for a shared filter concept (like \"http://example.org/concepts/shared-common-event\").",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterDefinition.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "filterDefinition"
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:filterDefinition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Canonical URL for a filterParameter definition",
+        "definition": "Either the canonical URL to a search parameter (like \"http://hl7.org/fhir/SearchParameter/encounter-patient\") or the officially-defined URI for a shared filter concept (like \"http://example.org/concepts/shared-common-event\").",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:modifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "modifier",
+        "short": "= | eq | ne | gt | lt | ge | le | sa | eb | ap | above | below | in | not-in | of-type",
+        "definition": "Allowable operators to apply when determining matches (Search Modifiers).  If the filterParameter is a SearchParameter, this list of modifiers SHALL be a strict subset of the modifiers defined on that SearchParameter.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:modifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "modifier"
+      },
+      {
+        "id": "Extension.extension:canFilterBy.extension:modifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "= | eq | ne | gt | lt | ge | le | sa | eb | ap | above | below | in | not-in | of-type",
+        "definition": "Allowable operators to apply when determining matches (Search Modifiers).  If the filterParameter is a SearchParameter, this list of modifiers SHALL be a strict subset of the modifiers defined on that SearchParameter.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Operator to apply to filter label.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-subscription-search-modifier-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:canFilterBy.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "canFilterBy"
+      },
+      {
+        "id": "Extension.extension:notificationShape",
+        "path": "Extension.extension",
+        "sliceName": "notificationShape",
+        "short": "Properties for describing the shape of notifications generated by this topic",
+        "definition": "List of properties to describe the shape (e.g., resources) included in notifications from this Subscription Topic.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:resource",
+        "path": "Extension.extension.extension",
+        "sliceName": "resource",
+        "short": "URL of the Resource that is the focus (main) resource in a notification shape",
+        "definition": "URL of the Resource that is the type used in this shape. This is the \"focus\" of the topic (or one of them if there are more than one) and the root resource for this shape definition. It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:resource.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:resource.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "URL of the Resource that is the focus (main) resource in a notification shape",
+        "definition": "URL of the Resource that is the type used in this shape. This is the \"focus\" of the topic (or one of them if there are more than one) and the root resource for this shape definition. It will be the same, a generality, or a specificity of SubscriptionTopic.resourceTrigger.resource or SubscriptionTopic.eventTrigger.resource when they are present.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Either a resource or a data type, including logical model types.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-defined-types-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:include",
+        "path": "Extension.extension.extension",
+        "sliceName": "include",
+        "short": "Include directives, rooted in the resource for this shape",
+        "definition": "Search-style _include directives, rooted in the resource for this shape. Servers SHOULD include resources listed here, if they exist and the user is authorized to receive them.  Clients SHOULD be prepared to receive these additional resources, but SHALL function properly without them.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:include.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "include"
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:include.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Include directives, rooted in the resource for this shape",
+        "definition": "Search-style _include directives, rooted in the resource for this shape. Servers SHOULD include resources listed here, if they exist and the user is authorized to receive them.  Clients SHOULD be prepared to receive these additional resources, but SHALL function properly without them.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:revInclude",
+        "path": "Extension.extension.extension",
+        "sliceName": "revInclude",
+        "short": "Reverse include directives, rooted in the resource for this shape",
+        "definition": "Search-style _revinclude directives, rooted in the resource for this shape. Servers SHOULD include resources listed here, if they exist and the user is authorized to receive them.  Clients SHOULD be prepared to receive these additional resources, but SHALL function properly without them.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:revInclude.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "revInclude"
+      },
+      {
+        "id": "Extension.extension:notificationShape.extension:revInclude.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reverse include directives, rooted in the resource for this shape",
+        "definition": "Search-style _revinclude directives, rooted in the resource for this shape. Servers SHOULD include resources listed here, if they exist and the user is authorized to receive them.  Clients SHOULD be prepared to receive these additional resources, but SHALL function properly without them.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationShape.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "notificationShape"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-SubscriptionTopic"
+      }
+    ]
+  }
+}

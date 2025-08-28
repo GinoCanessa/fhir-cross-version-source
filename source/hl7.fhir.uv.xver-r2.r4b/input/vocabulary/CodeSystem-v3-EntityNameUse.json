@@ -1,0 +1,281 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-EntityNameUse",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.45"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/EntityNameUse",
+  "version": "1.0.2",
+  "name": "v3-EntityNameUse",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "_NameRepresentationUse",
+      "display": "NameRepresentationUse",
+      "definition": "Identifies the different representations of a name.  The representation may affect how the name is used.  (E.g. use of Ideographic for formal communications.)",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ABC",
+          "display": "Alphabetic",
+          "definition": "Alphabetic transcription of name (Japanese: romaji)",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "IDE",
+          "display": "Ideographic",
+          "definition": "Ideographic representation of name (e.g. Japanese kanji, Chinese characters)",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SYL",
+          "display": "Syllabic",
+          "definition": "Syllabic transcription of name (e.g. Japanese kana, Korean hangul)",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "ASGN",
+      "display": "assigned",
+      "definition": "A name assigned to a person. Reasons some organizations assign alternate names may include not knowing the person's name, or to maintain anonymity. Some, but not necessarily all, of the name types that people call \"alias\" may fit into this category.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "display": "License",
+      "definition": "As recorded on a license, record, certificate, etc. (only if different from legal name)",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "I",
+      "display": "Indigenous/Tribal",
+      "definition": "e.g. Chief Red Cloud",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "L",
+      "display": "Legal",
+      "definition": "Known as/conventional/the one you use",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "OR",
+          "display": "official registry",
+          "definition": "Definition:The formal name as registered in an official (government) registry, but which name might not be commonly used. Particularly used in countries with a law system based on Napoleonic law.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "P",
+      "display": "pseudonym",
+      "definition": "A self asserted name that the person is using or has used.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "A",
+          "display": "Artist/Stage",
+          "definition": "Includes writer's pseudonym, stage name, etc.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R",
+      "display": "Religious",
+      "definition": "e.g. Sister Mary Francis, Brother John",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "SRCH",
+      "display": "search",
+      "definition": "A name intended for use in searching or matching.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "PHON",
+          "display": "phonetic",
+          "definition": "A name spelled phonetically.                          There are a variety of phonetic spelling algorithms. This code value does not distinguish between these.Discussion:",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SNDX",
+          "display": "Soundex",
+          "definition": "A name spelled according to the SoundEx algorithm.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

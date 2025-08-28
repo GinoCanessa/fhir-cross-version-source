@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-AllergyIntolerance.re.certainty",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.reaction.certainty",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_AllergyIntolerance_re_certainty",
+  "title": "Cross-version Extension for R2.AllergyIntolerance.reaction.certainty for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.2622104-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AllergyIntolerance.reaction.certainty from http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance.reaction"
+    },
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance.reaction.extension"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "unlikely | likely | confirmed - clinical certainty about the specific substance",
+        "definition": "Statement about the degree of clinical certainty that the specific substance was the cause of the manifestation in this reaction event.",
+        "comment": "`AllergyIntolerance.reaction.extension` maps to R4B `AllergyIntolerance.reaction.extension`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.reaction.certainty"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "unlikely | likely | confirmed - clinical certainty about the specific substance",
+        "definition": "Statement about the degree of clinical certainty that the specific substance was the cause of the manifestation in this reaction event.",
+        "comment": "`AllergyIntolerance.reaction.extension` maps to R4B `AllergyIntolerance.reaction.extension`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Statement about the degree of clinical certainty that a Specific Substance was the cause of the Manifestation in an reaction event.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-reaction-event-certainty-for-R4B"
+        }
+      }
+    ]
+  }
+}

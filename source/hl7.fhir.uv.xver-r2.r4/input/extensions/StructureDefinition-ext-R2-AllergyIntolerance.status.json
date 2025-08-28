@@ -1,0 +1,107 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-AllergyIntolerance.status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.status",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_AllergyIntolerance_status",
+  "title": "Cross-version Extension for R2.AllergyIntolerance.status for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.2617936-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AllergyIntolerance.status from http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AllergyIntolerance"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "active | unconfirmed | confirmed | inactive | resolved | refuted | entered-in-error",
+        "definition": "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified Substance.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element AllergyIntolerance.status is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AllergyIntolerance.status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "active | unconfirmed | confirmed | inactive | resolved | refuted | entered-in-error",
+        "definition": "Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified Substance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Assertion about certainty associated with a propensity, or potential risk, of a reaction to the identified Substance.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-allergy-intolerance-status-for-R4"
+        }
+      }
+    ]
+  }
+}

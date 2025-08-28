@@ -1,0 +1,154 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-TestScript.se.ac.as.requirement",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.assert.requirement",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_TestScript_se_ac_as_requirement",
+  "title": "Cross-version Extension for R5.TestScript.setup.action.assert.requirement for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:03.0293674-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents TestScript.setup.action.assert.requirement from http://hl7.org/fhir/StructureDefinition/TestScript|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "TestScript.setup.action.assert"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Links or references to the testing requirements",
+        "definition": "Links or references providing traceability to the testing requirements for this assert.",
+        "comment": "`TestScript.setup.action.assert.requirement` has no related element in R4B:TestScript",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:link[x]",
+        "path": "Extension.extension",
+        "sliceName": "link[x]",
+        "short": "Link or reference to the testing requirement",
+        "definition": "Link or reference providing traceability to the testing requirement for this test.",
+        "comment": "`TestScript.setup.action.assert.requirement` has no related element in R4B:TestScript",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:link[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "link[x]"
+      },
+      {
+        "id": "Extension.extension:link[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Link or reference to the testing requirement",
+        "definition": "Link or reference providing traceability to the testing requirement for this test.",
+        "comment": "`TestScript.setup.action.assert.requirement` has no related element in R4B:TestScript",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          },
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-TestScript.setup.action.assert.requirement"
+      }
+    ]
+  }
+}

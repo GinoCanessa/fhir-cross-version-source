@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "messageheader-response-request",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/messageheader-response-request",
+  "version": "3.0.2",
+  "name": "messageheader-response-request",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "HL7-defined table of codes which identify conditions under which acknowledgments are required to be returned in response to a message.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/messageheader-response-request",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "always",
+      "display": "Always",
+      "definition": "initiator expects a response for this message"
+    },
+    {
+      "code": "on-error",
+      "display": "Error/reject conditions only",
+      "definition": "initiator expects a response only if in error"
+    },
+    {
+      "code": "never",
+      "display": "Never",
+      "definition": "initiator does not expect a response"
+    },
+    {
+      "code": "on-success",
+      "display": "Successful completion only",
+      "definition": "initiator expects a response only if successful"
+    }
+  ]
+}

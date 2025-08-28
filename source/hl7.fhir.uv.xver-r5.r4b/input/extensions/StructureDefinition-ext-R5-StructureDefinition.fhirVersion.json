@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-StructureDefinition.fhirVersion",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.fhirVersion",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_StructureDefinition_fhirVersion",
+  "title": "Cross-version Extension for R5.StructureDefinition.fhirVersion for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:59.6346545-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents StructureDefinition.fhirVersion from http://hl7.org/fhir/StructureDefinition/StructureDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "StructureDefinition.fhirVersion"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "FHIR Version this StructureDefinition targets",
+        "definition": "The version of the FHIR specification on which this StructureDefinition is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 4.6.0. for this version.",
+        "comment": "`StructureDefinition.fhirVersion` maps to R4B `StructureDefinition.fhirVersion`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget. `StructureDefinition.fhirVersion` maps to R4B `StructureDefinition.fhirVersion`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-StructureDefinition.fhirVersion"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "FHIR Version this StructureDefinition targets",
+        "definition": "The version of the FHIR specification on which this StructureDefinition is based - this is the formal version of the specification, without the revision number, e.g. [publication].[major].[minor], which is 4.6.0. for this version.",
+        "comment": "`StructureDefinition.fhirVersion` maps to R4B `StructureDefinition.fhirVersion`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget. `StructureDefinition.fhirVersion` maps to R4B `StructureDefinition.fhirVersion`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "All published FHIR Versions.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-FHIR-version-for-R4B"
+        }
+      }
+    ]
+  }
+}

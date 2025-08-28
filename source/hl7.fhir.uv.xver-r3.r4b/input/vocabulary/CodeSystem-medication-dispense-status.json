@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-dispense-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    }
+  ],
+  "url": "http://hl7.org/fhir/medication-dispense-status",
+  "version": "3.0.2",
+  "name": "MedicationDispenseStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Pharmacy",
+  "contact": [
+    {
+      "name": "Pharmacy",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication"
+        }
+      ]
+    }
+  ],
+  "description": "A coded concept specifying the state of the dispense event.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-dispense-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "preparation",
+      "display": "Preparation",
+      "definition": "The core event has not started yet, but some staging activities have begun (e.g. initial compounding or packaging of medication). Preparation stages may be tracked for billing purposes."
+    },
+    {
+      "code": "in-progress",
+      "display": "In Progress",
+      "definition": "The dispense has started but has not yet completed."
+    },
+    {
+      "code": "on-hold",
+      "display": "On Hold",
+      "definition": "Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called \"suspended\""
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "All actions that are implied by the dispense have occurred."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in-Error",
+      "definition": "The dispense was entered in error and therefore nullified."
+    },
+    {
+      "code": "stopped",
+      "display": "Stopped",
+      "definition": "Actions implied by the dispense have been permanently halted, before all of them occurred."
+    }
+  ]
+}

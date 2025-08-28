@@ -1,0 +1,369 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Account.procedure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.procedure",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Account_procedure",
+  "title": "Cross-version Extension for R5.Account.procedure for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:48.4565816-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Account.procedure from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Account"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The list of procedures relevant to this account",
+        "definition": "When using an account for billing a specific Encounter the set of procedures that are relevant for billing are stored here on the account where they are able to be sequenced appropriately prior to processing to produce claim(s).",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sequence",
+        "path": "Extension.extension",
+        "sliceName": "sequence",
+        "short": "Ranking of the procedure (for each type)",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sequence.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:sequence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Ranking of the procedure (for each type)",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "The procedure relevant to the account",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The procedure relevant to the account",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-procedure-code-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfService",
+        "path": "Extension.extension",
+        "sliceName": "dateOfService",
+        "short": "Date of the procedure (when coded procedure)",
+        "definition": "Date of the procedure when using a coded procedure. If using a reference to a procedure, then the date on the procedure should be used.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfService.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateOfService"
+      },
+      {
+        "id": "Extension.extension:dateOfService.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date of the procedure (when coded procedure)",
+        "definition": "Date of the procedure when using a coded procedure. If using a reference to a procedure, then the date on the procedure should be used.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "How this procedure value should be used in charging the account",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How this procedure value should be used in charging the account",
+        "definition": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packageCode",
+        "path": "Extension.extension",
+        "sliceName": "packageCode",
+        "short": "Package Code specific for billing",
+        "definition": "The package code can be used to group procedures that may be priced or delivered as a single product. Such as DRGs.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packageCode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packageCode"
+      },
+      {
+        "id": "Extension.extension:packageCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Package Code specific for billing",
+        "definition": "The package code can be used to group procedures that may be priced or delivered as a single product. Such as DRGs.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "short": "Any devices that were associated with the procedure",
+        "definition": "Any devices that were associated with the procedure relevant to the account.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Any devices that were associated with the procedure",
+        "definition": "Any devices that were associated with the procedure relevant to the account.",
+        "comment": "`Account.procedure` has no related element in R4B:Account",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.procedure"
+      }
+    ]
+  }
+}

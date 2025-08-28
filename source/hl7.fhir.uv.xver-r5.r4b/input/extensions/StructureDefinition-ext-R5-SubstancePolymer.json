@@ -1,0 +1,1312 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-SubstancePolymer",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_SubstancePolymer",
+  "title": "Cross-version Extension for R5.SubstancePolymer for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:01.9494874-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubstancePolymer from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Properties of a substance specific to it being a polymer",
+        "definition": "This cross-version extension represents SubstancePolymer from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:class",
+        "path": "Extension.extension",
+        "sliceName": "class",
+        "short": "Overall type of the polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.class from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:class.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "class"
+      },
+      {
+        "id": "Extension.extension:class.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Overall type of the polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.class from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:geometry",
+        "path": "Extension.extension",
+        "sliceName": "geometry",
+        "short": "Polymer geometry, e.g. linear, branched, cross-linked, network or dendritic",
+        "definition": "This cross-version extension represents SubstancePolymer.geometry from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:geometry.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "geometry"
+      },
+      {
+        "id": "Extension.extension:geometry.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Polymer geometry, e.g. linear, branched, cross-linked, network or dendritic",
+        "definition": "This cross-version extension represents SubstancePolymer.geometry from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:copolymerConnectivity",
+        "path": "Extension.extension",
+        "sliceName": "copolymerConnectivity",
+        "short": "Descrtibes the copolymer sequence type (polymer connectivity)",
+        "definition": "This cross-version extension represents SubstancePolymer.copolymerConnectivity from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copolymerConnectivity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copolymerConnectivity"
+      },
+      {
+        "id": "Extension.extension:copolymerConnectivity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Descrtibes the copolymer sequence type (polymer connectivity)",
+        "definition": "This cross-version extension represents SubstancePolymer.copolymerConnectivity from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modification",
+        "path": "Extension.extension",
+        "sliceName": "modification",
+        "short": "Todo - this is intended to connect to a repeating full modification structure, also used by Protein and Nucleic Acid . String is just a placeholder",
+        "definition": "This cross-version extension represents SubstancePolymer.modification from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "modification"
+      },
+      {
+        "id": "Extension.extension:modification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Todo - this is intended to connect to a repeating full modification structure, also used by Protein and Nucleic Acid . String is just a placeholder",
+        "definition": "This cross-version extension represents SubstancePolymer.modification from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet",
+        "path": "Extension.extension",
+        "sliceName": "monomerSet",
+        "short": "Todo",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:ratioType",
+        "path": "Extension.extension.extension",
+        "sliceName": "ratioType",
+        "short": "Captures the type of ratio to the entire polymer, e.g. Monomer/Polymer ratio, SRU/Polymer Ratio",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.ratioType from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:ratioType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ratioType"
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:ratioType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Captures the type of ratio to the entire polymer, e.g. Monomer/Polymer ratio, SRU/Polymer Ratio",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.ratioType from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial",
+        "path": "Extension.extension.extension",
+        "sliceName": "startingMaterial",
+        "short": "The starting materials - monomer(s) used in the synthesis of the polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:code",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "code",
+        "short": "The type of substance for this starting material",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.code from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:code.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The type of substance for this starting material",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.code from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:category",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "category",
+        "short": "Substance high level category, e.g. chemical substance",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.category from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:category.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:category.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Substance high level category, e.g. chemical substance",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.category from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:isDefining",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "isDefining",
+        "short": "Used to specify whether the attribute described is a defining element for the unique identification of the polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.isDefining from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:isDefining.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "isDefining"
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:isDefining.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Used to specify whether the attribute described is a defining element for the unique identification of the polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.isDefining from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:amount",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "amount",
+        "short": "A percentage",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.amount from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:amount.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.extension:amount.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A percentage",
+        "definition": "This cross-version extension represents SubstancePolymer.monomerSet.startingMaterial.amount from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monomerSet.extension:startingMaterial.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "startingMaterial"
+      },
+      {
+        "id": "Extension.extension:monomerSet.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "monomerSet"
+      },
+      {
+        "id": "Extension.extension:repeat",
+        "path": "Extension.extension",
+        "sliceName": "repeat",
+        "short": "Specifies and quantifies the repeated units and their configuration",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:averageMolecularFormula",
+        "path": "Extension.extension.extension",
+        "sliceName": "averageMolecularFormula",
+        "short": "A representation of an (average) molecular formula from a polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.averageMolecularFormula from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:averageMolecularFormula.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "averageMolecularFormula"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:averageMolecularFormula.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A representation of an (average) molecular formula from a polymer",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.averageMolecularFormula from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnitAmountType",
+        "path": "Extension.extension.extension",
+        "sliceName": "repeatUnitAmountType",
+        "short": "How the quantitative amount of Structural Repeat Units is captured (e.g. Exact, Numeric, Average)",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnitAmountType from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnitAmountType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "repeatUnitAmountType"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnitAmountType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "How the quantitative amount of Structural Repeat Units is captured (e.g. Exact, Numeric, Average)",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnitAmountType from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit",
+        "path": "Extension.extension.extension",
+        "sliceName": "repeatUnit",
+        "short": "An SRU - Structural Repeat Unit",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:unit",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "unit",
+        "short": "Structural repeat units are essential elements for defining polymers",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.unit from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:unit.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "unit"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:unit.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Structural repeat units are essential elements for defining polymers",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.unit from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:orientation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "orientation",
+        "short": "The orientation of the polymerisation, e.g. head-tail, head-head, random",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.orientation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:orientation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "orientation"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:orientation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The orientation of the polymerisation, e.g. head-tail, head-head, random",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.orientation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:amount",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "amount",
+        "short": "Number of repeats of this unit",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.amount from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:amount.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:amount.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Number of repeats of this unit",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.amount from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "degreeOfPolymerisation",
+        "short": "Applies to homopolymer and block co-polymers where the degree of polymerisation within a block can be described",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "The type of the degree of polymerisation shall be described, e.g. SRU/Polymer Ratio",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The type of the degree of polymerisation shall be described, e.g. SRU/Polymer Ratio",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "average",
+        "short": "An average amount of polymerisation",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "average"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:average.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "An average amount of polymerisation",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "low",
+        "short": "A low expected limit of the amount",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "low"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:low.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "A low expected limit of the amount",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "high",
+        "short": "A high expected limit of the amount",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "high"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.extension:high.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "A high expected limit of the amount",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:degreeOfPolymerisation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "degreeOfPolymerisation"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "structuralRepresentation",
+        "short": "A graphical structure for this SRU",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:type",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "The type of structure (e.g. Full, Partial, Representative)",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:type.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The type of structure (e.g. Full, Partial, Representative)",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:representation",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "representation",
+        "short": "The structural representation as text string in a standard format e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:representation.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "representation"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:representation.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The structural representation as text string in a standard format e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:format",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "format",
+        "short": "The format of the representation e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.format from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:format.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "format"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:format.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The format of the representation e.g. InChI, SMILES, MOLFILE, CDX, SDF, PDB, mmCIF",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.format from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:attachment",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "attachment",
+        "short": "An attached file with the structural representation",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.attachment from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:attachment.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attachment"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.extension:attachment.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "An attached file with the structural representation",
+        "definition": "This cross-version extension represents SubstancePolymer.repeat.repeatUnit.structuralRepresentation.attachment from http://hl7.org/fhir/StructureDefinition/SubstancePolymer|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.extension:structuralRepresentation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "structuralRepresentation"
+      },
+      {
+        "id": "Extension.extension:repeat.extension:repeatUnit.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "repeatUnit"
+      },
+      {
+        "id": "Extension.extension:repeat.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "repeat"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer"
+      }
+    ]
+  }
+}

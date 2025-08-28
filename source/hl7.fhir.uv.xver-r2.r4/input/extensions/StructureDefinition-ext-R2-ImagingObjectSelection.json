@@ -1,0 +1,929 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ImagingObjectSelection",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ImagingObjectSelection",
+  "title": "Cross-version Extension for R2.ImagingObjectSelection for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.294729-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ImagingObjectSelection from http://hl7.org/fhir/StructureDefinition/ImagingObjectSelection|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Key Object Selection",
+        "definition": "A manifest of a set of DICOM Service-Object Pair Instances (SOP Instances).  The referenced SOP Instances (images or other content) are for a single patient, and may be from one or more studies. The referenced SOP Instances have been selected for a purpose, such as quality assurance, conference, or consult. Reflecting that range of purposes, typical ImagingObjectSelection resources may include all SOP Instances in a study (perhaps for sharing through a Health Information Exchange); key images from multiple studies (for reference by a referring or treating physician); a multi-frame ultrasound instance (\"cine\" video clip) and a set of measurements taken from that instance (for inclusion in a teaching file); and so on.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 4,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:uid",
+        "path": "Extension.extension",
+        "sliceName": "uid",
+        "short": "Instance UID",
+        "definition": "Instance UID of the DICOM KOS SOP Instances represented in this resource.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:uid.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:uid.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Instance UID",
+        "definition": "Instance UID of the DICOM KOS SOP Instances represented in this resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:patient",
+        "path": "Extension.extension",
+        "sliceName": "patient",
+        "short": "Patient of the selected objects",
+        "definition": "A patient resource reference which is the patient subject of all DICOM SOP Instances in this ImagingObjectSelection.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:patient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "patient"
+      },
+      {
+        "id": "Extension.extension:patient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Patient of the selected objects",
+        "definition": "A patient resource reference which is the patient subject of all DICOM SOP Instances in this ImagingObjectSelection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "Reason for selection",
+        "definition": "The reason for, or significance of, the selection of objects referenced in the resource.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reason for selection",
+        "definition": "The reason for, or significance of, the selection of objects referenced in the resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The document title code of key object selection",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-kos-title-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Description text",
+        "definition": "Text description of the DICOM SOP instances selected in the ImagingObjectSelection. This should be aligned with the content of the title element, and can provide further explanation of the SOP instances in the selection.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description text",
+        "definition": "Text description of the DICOM SOP instances selected in the ImagingObjectSelection. This should be aligned with the content of the title element, and can provide further explanation of the SOP instances in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:authoringTime",
+        "path": "Extension.extension",
+        "sliceName": "authoringTime",
+        "short": "Authoring time of the selection",
+        "definition": "Date and time when the selection of the referenced instances were made. It is (typically) different from the creation date of the selection resource, and from dates associated with the referenced instances (e.g. capture time of the referenced image).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:authoringTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authoringTime"
+      },
+      {
+        "id": "Extension.extension:authoringTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Authoring time of the selection",
+        "definition": "Date and time when the selection of the referenced instances were made. It is (typically) different from the creation date of the selection resource, and from dates associated with the referenced instances (e.g. capture time of the referenced image).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study",
+        "path": "Extension.extension",
+        "sliceName": "study",
+        "short": "Study identity of the selected instances",
+        "definition": "Study identity and locating information of the DICOM SOP instances in the selection.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:uid",
+        "path": "Extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Study instance UID",
+        "definition": "Study instance UID of the SOP instances in the selection.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:uid.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:uid.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Study instance UID",
+        "definition": "Study instance UID of the SOP instances in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:url",
+        "path": "Extension.extension.extension",
+        "sliceName": "url",
+        "short": "Retrieve study URL",
+        "definition": "WADO-RS URL to retrieve the study. Note that this URL retrieves all SOP instances of the study, not only those in the selection.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:url.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:study.extension:url.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Retrieve study URL",
+        "definition": "WADO-RS URL to retrieve the study. Note that this URL retrieves all SOP instances of the study, not only those in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy",
+        "path": "Extension.extension.extension",
+        "sliceName": "imagingStudy",
+        "short": "Reference to ImagingStudy",
+        "definition": "Reference to the Imaging Study in FHIR form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "imagingStudy"
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reference to ImagingStudy",
+        "definition": "Reference to the Imaging Study in FHIR form.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series",
+        "path": "Extension.extension.extension",
+        "sliceName": "series",
+        "short": "Series identity of the selected instances",
+        "definition": "Series identity and locating information of the DICOM SOP instances in the selection.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Series instance UID",
+        "definition": "Series instance UID of the SOP instances in the selection.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Series instance UID",
+        "definition": "Series instance UID of the SOP instances in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:url",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "url",
+        "short": "Retrieve series URL",
+        "definition": "WADO-RS URL to retrieve the series. Note that this URL retrieves all SOP instances of the series not only those in the selection.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:url.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:url.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Retrieve series URL",
+        "definition": "WADO-RS URL to retrieve the series. Note that this URL retrieves all SOP instances of the series not only those in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "instance",
+        "short": "The selected instance",
+        "definition": "Identity and locating information of the selected DICOM SOP instances.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "sopClass",
+        "short": "SOP class UID of instance",
+        "definition": "SOP class UID of the selected instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sopClass"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "SOP class UID of instance",
+        "definition": "SOP class UID of the selected instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Selected instance UID",
+        "definition": "SOP Instance UID of the selected instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Selected instance UID",
+        "definition": "SOP Instance UID of the selected instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:url",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "url",
+        "short": "Retrieve instance URL",
+        "definition": "WADO-RS URL to retrieve the DICOM SOP Instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:url.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:url.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Retrieve instance URL",
+        "definition": "WADO-RS URL to retrieve the DICOM SOP Instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "frames",
+        "short": "The frame set",
+        "definition": "Identity and location information of the frames in the selected instance.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:frameNumbers",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "frameNumbers",
+        "short": "Frame numbers",
+        "definition": "The frame numbers in the frame set.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:frameNumbers.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "frameNumbers"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:frameNumbers.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Frame numbers",
+        "definition": "The frame numbers in the frame set.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:url",
+        "path": "Extension.extension.extension.extension.extension.extension",
+        "sliceName": "url",
+        "short": "Retrieve frame URL",
+        "definition": "WADO-RS URL to retrieve the DICOM frames.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:url.url",
+        "path": "Extension.extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "url"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.extension:url.value[x]",
+        "path": "Extension.extension.extension.extension.extension.extension.value[x]",
+        "short": "Retrieve frame URL",
+        "definition": "WADO-RS URL to retrieve the DICOM frames.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:frames.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "frames"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "series"
+      },
+      {
+        "id": "Extension.extension:study.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "study"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ImagingObjectSelection"
+      }
+    ]
+  }
+}

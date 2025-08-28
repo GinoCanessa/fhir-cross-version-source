@@ -1,0 +1,202 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-EpisodeOfCare.reason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.reason",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_EpisodeOfCare_reason",
+  "title": "Cross-version Extension for R5.EpisodeOfCare.reason for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.8348342-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents EpisodeOfCare.reason from http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "EpisodeOfCare"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The list of medical reasons that are expected to be addressed during the episode of care",
+        "definition": "`EpisodeOfCare.reason` has no related element in R4B:EpisodeOfCare",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:use",
+        "path": "Extension.extension",
+        "sliceName": "use",
+        "short": "What the reason value should be used for/as",
+        "definition": "What the reason value should be used as e.g. Chief Complaint, Health Concern, Health Maintenance (including screening).",
+        "comment": "`EpisodeOfCare.reason` has no related element in R4B:EpisodeOfCare",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:use.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:use.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "What the reason value should be used for/as",
+        "definition": "What the reason value should be used as e.g. Chief Complaint, Health Concern, Health Maintenance (including screening).",
+        "comment": "`EpisodeOfCare.reason` has no related element in R4B:EpisodeOfCare",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-encounter-reason-use-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension",
+        "sliceName": "value",
+        "short": "Medical reason to be addressed",
+        "definition": "The medical reason that is expected to be addressed during the episode of care, expressed as a text, code or a reference to another resource.",
+        "comment": "`EpisodeOfCare.reason` has no related element in R4B:EpisodeOfCare",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:value.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:value.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Medical reason to be addressed",
+        "definition": "The medical reason that is expected to be addressed during the episode of care, expressed as a text, code or a reference to another resource.",
+        "comment": "`EpisodeOfCare.reason` has no related element in R4B:EpisodeOfCare",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-encounter-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-EpisodeOfCare.reason"
+      }
+    ]
+  }
+}

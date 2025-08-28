@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-admin-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    }
+  ],
+  "url": "http://hl7.org/fhir/medication-admin-status",
+  "version": "3.0.2",
+  "name": "MedicationAdministrationStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Pharmacy",
+  "contact": [
+    {
+      "name": "Pharmacy",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes indicating the current status of a MedicationAdministration.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-admin-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "in-progress",
+      "display": "In Progress",
+      "definition": "The administration has started but has not yet completed."
+    },
+    {
+      "code": "on-hold",
+      "display": "On Hold",
+      "definition": "Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called \"suspended\"."
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "All actions that are implied by the administration have occurred."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The administration was entered in error and therefore nullified."
+    },
+    {
+      "code": "stopped",
+      "display": "Stopped",
+      "definition": "Actions implied by the administration have been permanently halted, before all of them occurred."
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown",
+      "definition": "The authoring system does not know which of the status values currently applies for this request. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, it's just not known which one."
+    }
+  ]
+}

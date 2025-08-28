@@ -1,0 +1,107 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "data-absent-reason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/data-absent-reason",
+  "version": "3.0.2",
+  "name": "DataAbsentReason",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Used to specify why the normally expected content of the data element is missing.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unknown",
+      "display": "Unknown",
+      "definition": "The value is not known."
+    },
+    {
+      "code": "asked",
+      "display": "Asked",
+      "definition": "The source human does not know the value."
+    },
+    {
+      "code": "temp",
+      "display": "Temp",
+      "definition": "There is reason to expect (from the workflow) that the value may become known."
+    },
+    {
+      "code": "not-asked",
+      "display": "Not Asked",
+      "definition": "The workflow didn't lead to this value being known."
+    },
+    {
+      "code": "masked",
+      "display": "Masked",
+      "definition": "The information is not available due to security, privacy or related reasons."
+    },
+    {
+      "code": "unsupported",
+      "display": "Unsupported",
+      "definition": "The source system wasn't capable of supporting this element."
+    },
+    {
+      "code": "astext",
+      "display": "As Text",
+      "definition": "The content of the data is represented in the resource narrative."
+    },
+    {
+      "code": "error",
+      "display": "Error",
+      "definition": "Some system or workflow process error means that the information is not available.",
+      "concept": [
+        {
+          "code": "NaN",
+          "display": "Not a Number",
+          "definition": "NaN, standing for not a number, is a numeric data type value representing an undefined or unrepresentable value."
+        }
+      ]
+    },
+    {
+      "code": "not-performed",
+      "display": "Not Performed",
+      "definition": "The value is not available because the observation procedure (test, etc.) was not performed."
+    }
+  ]
+}

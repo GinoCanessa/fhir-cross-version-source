@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-AdverseEvent.su.ca.entityRelatedness",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.entityRelatedness",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_AdverseEvent_su_ca_entityRelatedness",
+  "title": "Cross-version Extension for R5.AdverseEvent.suspectEntity.causality.entityRelatedness for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:48.7367259-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AdverseEvent.suspectEntity.causality.entityRelatedness from http://hl7.org/fhir/StructureDefinition/AdverseEvent|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AdverseEvent.suspectEntity.causality.productRelatedness"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Result of the assessment regarding the relatedness of the suspected entity to the event",
+        "definition": "The result of the assessment regarding the relatedness of the suspected entity to the event.",
+        "comment": "`AdverseEvent.suspectEntity.causality.productRelatedness` maps to R4 `AdverseEvent.suspectEntity.causality.productRelatedness`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.entityRelatedness"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Result of the assessment regarding the relatedness of the suspected entity to the event",
+        "definition": "The result of the assessment regarding the relatedness of the suspected entity to the event.",
+        "comment": "`AdverseEvent.suspectEntity.causality.productRelatedness` maps to R4 `AdverseEvent.suspectEntity.causality.productRelatedness`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for the assessment of whether the entity caused the event.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-adverse-event-causality-assess-for-R4"
+        }
+      }
+    ]
+  }
+}

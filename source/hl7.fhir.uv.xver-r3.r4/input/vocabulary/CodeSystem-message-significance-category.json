@@ -1,0 +1,70 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "message-significance-category",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "inm"
+    }
+  ],
+  "url": "http://hl7.org/fhir/message-significance-category",
+  "version": "3.0.2",
+  "name": "MessageSignificanceCategory",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Infrastructure And Messaging",
+  "contact": [
+    {
+      "name": "Infrastructure And Messaging",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/inm"
+        }
+      ]
+    }
+  ],
+  "description": "The impact of the content of a message.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/message-significance-category",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Consequence",
+      "display": "Consequence",
+      "definition": "The message represents/requests a change that should not be processed more than once; e.g., making a booking for an appointment."
+    },
+    {
+      "code": "Currency",
+      "display": "Currency",
+      "definition": "The message represents a response to query for current information. Retrospective processing is wrong and/or wasteful."
+    },
+    {
+      "code": "Notification",
+      "display": "Notification",
+      "definition": "The content is not necessarily intended to be current, and it can be reprocessed, though there may be version issues created by processing old notifications."
+    }
+  ]
+}

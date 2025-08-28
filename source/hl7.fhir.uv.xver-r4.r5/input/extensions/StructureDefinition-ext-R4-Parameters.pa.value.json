@@ -1,0 +1,440 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-Parameters.pa.value",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Parameters.parameter.value",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_Parameters_pa_value",
+  "title": "Cross-version Extension for R4.Parameters.parameter.value[x] for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:46.09676-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Parameters.parameter.value[x] from http://hl7.org/fhir/StructureDefinition/Parameters|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Parameters.parameter.value[x]"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "author | editor | reviewer | endorser",
+        "definition": "The type of contributor.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "author | editor | reviewer | endorser",
+        "definition": "The type of contributor.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of contributor.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-contributor-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Who contributed the content",
+        "definition": "The name of the individual or organization responsible for the contribution.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who contributed the content",
+        "definition": "The name of the individual or organization responsible for the contribution.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension",
+        "sliceName": "contact",
+        "short": "Contact details of the contributor",
+        "definition": "Contact details to assist a user in finding and communicating with the contributor.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contact.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contact"
+      },
+      {
+        "id": "Extension.extension:contact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Contact details of the contributor",
+        "definition": "Contact details to assist a user in finding and communicating with the contributor.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "ContactDetail"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:_datatype",
+        "path": "Extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Parameters.parameter.value[x] from FHIR R4",
+        "definition": "Data type name for Parameters.parameter.value[x] from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:_datatype.value[x]",
+        "path": "Extension.extension.value[x]",
+        "comment": "Must be: Contributor",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "Contributor"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Parameters.parameter.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "comment": "`Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo. `Parameters.parameter.value[x]` maps to R5 `Parameters.parameter.value[x]`. Type `Contributor` has no mapping So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "code"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "instant"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "oid"
+          },
+          {
+            "code": "positiveInt"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "time"
+          },
+          {
+            "code": "unsignedInt"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Address"
+          },
+          {
+            "code": "Age"
+          },
+          {
+            "code": "Annotation"
+          },
+          {
+            "code": "Attachment"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "ContactPoint"
+          },
+          {
+            "code": "Count"
+          },
+          {
+            "code": "Distance"
+          },
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "HumanName"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Money"
+          },
+          {
+            "code": "Period"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "SampledData"
+          },
+          {
+            "code": "Signature"
+          },
+          {
+            "code": "Timing"
+          },
+          {
+            "code": "ContactDetail"
+          },
+          {
+            "code": "DataRequirement"
+          },
+          {
+            "code": "Expression"
+          },
+          {
+            "code": "ParameterDefinition"
+          },
+          {
+            "code": "RelatedArtifact"
+          },
+          {
+            "code": "TriggerDefinition"
+          },
+          {
+            "code": "UsageContext"
+          },
+          {
+            "code": "Dosage"
+          },
+          {
+            "code": "Meta"
+          }
+        ]
+      }
+    ]
+  }
+}

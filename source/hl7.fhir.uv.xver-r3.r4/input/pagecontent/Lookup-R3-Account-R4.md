@@ -1,0 +1,26 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [Account](https://hl7.org/fhir/STU3/Account.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Account.meta](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.meta](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.implicitRules](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.implicitRules](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.language](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.language](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.text](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.text](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.contained](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.contained](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.identifier](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.identifier](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.status](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.status](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.type](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.type](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.name](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.name](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.subject](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.subject](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.period](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementRenamed` | [Account.servicePeriod](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.active](https://hl7.org/fhir/STU3/Account.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Account.active](StructureDefinition-ext-R3-Account.active.html) |
+| [Account.balance](https://hl7.org/fhir/STU3/Account.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Account.balance](StructureDefinition-ext-R3-Account.balance.html) |
+| [Account.coverage](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.coverage](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.coverage.coverage](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.coverage.coverage](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.coverage.priority](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.coverage.priority](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.owner](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.owner](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.description](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.description](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.guarantor](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.guarantor](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.guarantor.party](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.guarantor.party](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.guarantor.onHold](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.guarantor.onHold](https://hl7.org/fhir/R4/Account.html#resource) |
+| [Account.guarantor.period](https://hl7.org/fhir/STU3/Account.html#resource) | `UseElementSameName` | [Account.guarantor.period](https://hl7.org/fhir/R4/Account.html#resource) |

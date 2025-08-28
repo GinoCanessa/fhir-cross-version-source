@@ -1,0 +1,966 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductPharmaceutical",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductPharmaceutical",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductPharmaceutical",
+  "title": "Cross-version Extension for R4.MedicinalProductPharmaceutical for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:45.0862223-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductPharmaceutical from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A pharmaceutical product described in terms of its composition and dose form",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm",
+        "path": "Extension.extension",
+        "sliceName": "administrableDoseForm",
+        "short": "The administrable dose form, after necessary reconstitution",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.administrableDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "administrableDoseForm"
+      },
+      {
+        "id": "Extension.extension:administrableDoseForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The administrable dose form, after necessary reconstitution",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.administrableDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation",
+        "path": "Extension.extension",
+        "sliceName": "unitOfPresentation",
+        "short": "Todo",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.unitOfPresentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "unitOfPresentation"
+      },
+      {
+        "id": "Extension.extension:unitOfPresentation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Todo",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.unitOfPresentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.ingredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:ingredient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.ingredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:device",
+        "path": "Extension.extension",
+        "sliceName": "device",
+        "short": "Accompanying device",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.device from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:device.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "device"
+      },
+      {
+        "id": "Extension.extension:device.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Accompanying device",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.device from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristics",
+        "path": "Extension.extension",
+        "sliceName": "characteristics",
+        "short": "Characteristics e.g. a products onset of action",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.characteristics from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristics.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "A coded characteristic",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.characteristics.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A coded characteristic",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.characteristics.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "The status of characteristic e.g. assigned or pending",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.characteristics.status from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:characteristics.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The status of characteristic e.g. assigned or pending",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.characteristics.status from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristics.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "characteristics"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration",
+        "path": "Extension.extension",
+        "sliceName": "routeOfAdministration",
+        "short": "The path by which the pharmaceutical product is taken into or makes contact with the body",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Coded expression for the route",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Coded expression for the route",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose",
+        "path": "Extension.extension.extension",
+        "sliceName": "firstDose",
+        "short": "The first dose (dose quantity) administered in humans can be specified, for a product under investigation, using a numerical value and its unit of measurement",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.firstDose from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "firstDose"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:firstDose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The first dose (dose quantity) administered in humans can be specified, for a product under investigation, using a numerical value and its unit of measurement",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.firstDose from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxSingleDose",
+        "short": "The maximum single dose that can be administered as per the protocol of a clinical trial can be specified using a numerical value and its unit of measurement",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxSingleDose from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxSingleDose"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxSingleDose.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum single dose that can be administered as per the protocol of a clinical trial can be specified using a numerical value and its unit of measurement",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxSingleDose from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerDay",
+        "short": "The maximum dose per day (maximum dose quantity to be administered in any one 24-h period) that can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxDosePerDay from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxDosePerDay"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerDay.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum dose per day (maximum dose quantity to be administered in any one 24-h period) that can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxDosePerDay from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxDosePerTreatmentPeriod",
+        "short": "The maximum dose per treatment period that can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxDosePerTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxDosePerTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxDosePerTreatmentPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum dose per treatment period that can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxDosePerTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "maxTreatmentPeriod",
+        "short": "The maximum treatment period during which an Investigational Medicinal Product can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "maxTreatmentPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:maxTreatmentPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The maximum treatment period during which an Investigational Medicinal Product can be administered as per the protocol referenced in the clinical trial authorisation",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.maxTreatmentPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies",
+        "path": "Extension.extension.extension",
+        "sliceName": "targetSpecies",
+        "short": "A species for which this route applies",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "code",
+        "short": "Coded expression for the species",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:code.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Coded expression for the species",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "withdrawalPeriod",
+        "short": "A species specific time during which consumption of animal product is not appropriate",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "tissue",
+        "short": "Coded expression for the type of tissue for which the withdrawal period applues, e.g. meat, milk",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.tissue from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "tissue"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:tissue.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Coded expression for the type of tissue for which the withdrawal period applues, e.g. meat, milk",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.tissue from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "value",
+        "short": "A value for the time",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.value from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "A value for the time",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.value from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "supportingInformation",
+        "short": "Extra information about the withdrawal period",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "supportingInformation"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.extension:supportingInformation.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Extra information about the withdrawal period",
+        "definition": "This cross-version extension represents MedicinalProductPharmaceutical.routeOfAdministration.targetSpecies.withdrawalPeriod.supportingInformation from http://hl7.org/fhir/StructureDefinition/MedicinalProductPharmaceutical|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.extension:withdrawalPeriod.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "withdrawalPeriod"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.extension:targetSpecies.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "targetSpecies"
+      },
+      {
+        "id": "Extension.extension:routeOfAdministration.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "routeOfAdministration"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductPharmaceutical"
+      }
+    ]
+  }
+}

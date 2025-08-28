@@ -1,0 +1,282 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceDefinition.regulatoryIdentifier",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.regulatoryIdentifier",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceDefinition_regulatoryIdentifier",
+  "title": "Cross-version Extension for R5.DeviceDefinition.regulatoryIdentifier for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.102083-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceDefinition.regulatoryIdentifier from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Regulatory identifier(s) associated with this device",
+        "definition": "Identifier associated with the regulatory documentation (certificates, technical documentation, post-market surveillance documentation and reports) of a set of device models sharing the same intended purpose, risk class and essential design and manufacturing characteristics. One example is the Basic UDI-DI in Europe.",
+        "comment": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 4,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "basic | master | license",
+        "definition": "The type of identifier itself.",
+        "comment": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "basic | master | license",
+        "definition": "The type of identifier itself.",
+        "comment": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Device regulatory identifier type.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-devicedefinition-regulatory-identifier-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "deviceIdentifier",
+        "short": "The identifier itself",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "deviceIdentifier"
+      },
+      {
+        "id": "Extension.extension:deviceIdentifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The identifier itself",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:issuer",
+        "path": "Extension.extension",
+        "sliceName": "issuer",
+        "short": "The organization that issued this identifier",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:issuer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "issuer"
+      },
+      {
+        "id": "Extension.extension:issuer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The organization that issued this identifier",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "The jurisdiction to which the deviceIdentifier applies",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The jurisdiction to which the deviceIdentifier applies",
+        "definition": "`DeviceDefinition.regulatoryIdentifier` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.regulatoryIdentifier"
+      }
+    ]
+  }
+}

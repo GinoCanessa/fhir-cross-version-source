@@ -1,0 +1,44 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [AdverseEvent](https://hl7.org/fhir/R5/AdverseEvent.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [AdverseEvent.meta](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.meta](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.implicitRules](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.implicitRules](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.language](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.language](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.text](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.text](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.contained](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.contained](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.identifier](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.identifier](StructureDefinition-ext-R5-AdverseEvent.identifier.html) |
+| [AdverseEvent.status](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.status](StructureDefinition-ext-R5-AdverseEvent.status.html) |
+| [AdverseEvent.actuality](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.actuality](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.category](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.category](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.code](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementRenamed` | [AdverseEvent.event](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.subject](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.subject](StructureDefinition-ext-R5-AdverseEvent.subject.html) |
+| [AdverseEvent.encounter](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.encounter](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.occurrence[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.occurrence](StructureDefinition-ext-R5-AdverseEvent.occurrence.html) |
+| [AdverseEvent.detected](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.detected](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.recordedDate](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.recordedDate](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.resultingEffect](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.resultingEffect](StructureDefinition-ext-R5-AdverseEvent.resultingEffect.html) |
+| [AdverseEvent.location](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.location](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.seriousness](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.seriousness](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.outcome](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.outcome](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.recorder](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.recorder](StructureDefinition-ext-R5-AdverseEvent.recorder.html) |
+| [AdverseEvent.participant](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.participant](StructureDefinition-ext-R5-AdverseEvent.participant.html) |
+| [AdverseEvent.participant.function](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.participant.actor](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.study](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.study](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.expectedInResearchStudy](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.expectedInResearchStudy](StructureDefinition-ext-R5-AdverseEvent.expectedInResearchStudy.html) |
+| [AdverseEvent.suspectEntity](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.suspectEntity](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.suspectEntity.instance[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.instance](StructureDefinition-ext-R5-AdverseEvent.su.instance.html) |
+| [AdverseEvent.suspectEntity.causality](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementSameName` | [AdverseEvent.suspectEntity.causality](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.suspectEntity.causality.assessmentMethod](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseElementRenamed` | [AdverseEvent.suspectEntity.causality.assessment](https://hl7.org/fhir/R4/AdverseEvent.html#resource) |
+| [AdverseEvent.suspectEntity.causality.entityRelatedness](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.entityRelatedness](StructureDefinition-ext-R5-AdverseEvent.su.ca.entityRelatedness.html) |
+| [AdverseEvent.suspectEntity.causality.author](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.suspectEntity.causality.author](StructureDefinition-ext-R5-AdverseEvent.su.ca.author.html) |
+| [AdverseEvent.contributingFactor](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.contributingFactor](StructureDefinition-ext-R5-AdverseEvent.contributingFactor.html) |
+| [AdverseEvent.contributingFactor.item[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.preventiveAction](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.preventiveAction](StructureDefinition-ext-R5-AdverseEvent.preventiveAction.html) |
+| [AdverseEvent.preventiveAction.item[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.mitigatingAction](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.mitigatingAction](StructureDefinition-ext-R5-AdverseEvent.mitigatingAction.html) |
+| [AdverseEvent.mitigatingAction.item[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.supportingInfo](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.supportingInfo](StructureDefinition-ext-R5-AdverseEvent.supportingInfo.html) |
+| [AdverseEvent.supportingInfo.item[x]](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtensionFromAncestor` | - |
+| [AdverseEvent.note](https://hl7.org/fhir/R5/AdverseEvent.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-AdverseEvent.note](StructureDefinition-ext-R5-AdverseEvent.note.html) |

@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "versioning-policy",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/versioning-policy",
+  "version": "4.0.1",
+  "name": "ResourceVersionPolicy",
+  "title": "ResourceVersionPolicy",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "How the system supports versioning for a resource.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/versioning-policy",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "no-version",
+      "display": "No VersionId Support",
+      "definition": "VersionId meta-property is not supported (server) or used (client)."
+    },
+    {
+      "code": "versioned",
+      "display": "Versioned",
+      "definition": "VersionId meta-property is supported (server) or used (client)."
+    },
+    {
+      "code": "versioned-update",
+      "display": "VersionId tracked fully",
+      "definition": "VersionId must be correct for updates (server) or will be specified (If-match header) for updates (client)."
+    }
+  ]
+}

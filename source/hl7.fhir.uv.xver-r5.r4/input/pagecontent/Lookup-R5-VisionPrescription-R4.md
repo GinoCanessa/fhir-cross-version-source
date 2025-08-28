@@ -1,0 +1,33 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [VisionPrescription](https://hl7.org/fhir/R5/VisionPrescription.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [VisionPrescription.meta](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.meta](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.implicitRules](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.implicitRules](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.language](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.language](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.text](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.text](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.contained](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.contained](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.identifier](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.identifier](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.status](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.status](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.created](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.created](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.patient](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.patient](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.encounter](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.encounter](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.dateWritten](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.dateWritten](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.prescriber](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.prescriber](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.product](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.product](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.eye](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.eye](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.sphere](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.sphere](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.cylinder](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.cylinder](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.axis](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.axis](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.prism](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.prism](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.prism.amount](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.prism.amount](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.prism.base](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.prism.base](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.add](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.add](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.power](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.power](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.backCurve](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.backCurve](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.diameter](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.diameter](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.duration](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.duration](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.color](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.color](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.brand](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.brand](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |
+| [VisionPrescription.lensSpecification.note](https://hl7.org/fhir/R5/VisionPrescription.html#resource) | `UseElementSameName` | [VisionPrescription.lensSpecification.note](https://hl7.org/fhir/R4/VisionPrescription.html#resource) |

@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ServiceRequest.code",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.code",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ServiceRequest_code",
+  "title": "Cross-version Extension for R5.ServiceRequest.code for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:59.2272703-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ServiceRequest.code from http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest.code"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What is being requested/ordered",
+        "definition": "A code or reference that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.",
+        "comment": "`ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.code"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "What is being requested/ordered",
+        "definition": "A code or reference that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.",
+        "comment": "`ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `ServiceRequest.code` maps to R4B `ServiceRequest.code`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  [preferred](terminologies.html#preferred) and a valueset using LOINC Order codes is available [here](valueset-diagnostic-requests.html).",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-procedure-code-for-R4B"
+        }
+      }
+    ]
+  }
+}

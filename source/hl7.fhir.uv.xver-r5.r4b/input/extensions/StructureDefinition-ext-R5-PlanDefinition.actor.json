@@ -1,0 +1,428 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-PlanDefinition.actor",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_PlanDefinition_actor",
+  "title": "Cross-version Extension for R5.PlanDefinition.actor for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:57.9364671-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PlanDefinition.actor from http://hl7.org/fhir/StructureDefinition/PlanDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Actors within the plan",
+        "definition": "Actors represent the individuals or groups involved in the execution of the defined set of activities.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "User-visible title",
+        "definition": "A descriptive label for the actor.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "User-visible title",
+        "definition": "A descriptive label for the actor.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Describes the actor",
+        "definition": "A description of how the actor fits into the overall actions of the plan definition.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Describes the actor",
+        "definition": "A description of how the actor fits into the overall actions of the plan definition.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:option",
+        "path": "Extension.extension",
+        "sliceName": "option",
+        "short": "Who or what can be this actor",
+        "definition": "The characteristics of the candidates that could serve as the actor.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "careteam | device | group | healthcareservice | location | organization | patient | practitioner | practitionerrole | relatedperson",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:option.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "careteam | device | group | healthcareservice | location | organization | patient | practitioner | practitionerrole | relatedperson",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of participant in the activity.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-action-participant-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:typeCanonical",
+        "path": "Extension.extension.extension",
+        "sliceName": "typeCanonical",
+        "short": "Who or what can participate",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:typeCanonical.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "typeCanonical"
+      },
+      {
+        "id": "Extension.extension:option.extension:typeCanonical.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Who or what can participate",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:option.extension:typeReference",
+        "path": "Extension.extension.extension",
+        "sliceName": "typeReference",
+        "short": "Who or what can participate",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:typeReference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "typeReference"
+      },
+      {
+        "id": "Extension.extension:option.extension:typeReference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Who or what can participate",
+        "definition": "The type of participant in the action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:option.extension:role",
+        "path": "Extension.extension.extension",
+        "sliceName": "role",
+        "short": "E.g. Nurse, Surgeon, Parent",
+        "definition": "The role the participant should play in performing the described action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:option.extension:role.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:option.extension:role.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "E.g. Nurse, Surgeon, Parent",
+        "definition": "The role the participant should play in performing the described action.",
+        "comment": "`PlanDefinition.actor` has no related element in R4B:PlanDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-action-participant-role-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:option.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "option"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PlanDefinition.actor"
+      }
+    ]
+  }
+}

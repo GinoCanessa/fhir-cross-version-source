@@ -1,0 +1,370 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ResearchStudy.comparisonGroup",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ResearchStudy_comparisonGroup",
+  "title": "Cross-version Extension for R5.ResearchStudy.comparisonGroup for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.9193476-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ResearchStudy.comparisonGroup from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Defined path through the study for a subject",
+        "definition": "Describes an expected event or sequence of events for one of the subjects of a study. E.g. for a living subject: exposure to drug A, wash-out, exposure to drug B, wash-out, follow-up. E.g. for a stability study: {store sample from lot A at 25 degrees for 1 month}, {store sample from lot A at 40 degrees for 1 month}.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:linkId",
+        "path": "Extension.extension",
+        "sliceName": "linkId",
+        "short": "Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:linkId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "linkId"
+      },
+      {
+        "id": "Extension.extension:linkId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "Label for study comparisonGroup",
+        "definition": "Unique, human-readable label for this comparisonGroup of the study.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Label for study comparisonGroup",
+        "definition": "Unique, human-readable label for this comparisonGroup of the study.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Categorization of study comparisonGroup",
+        "definition": "Categorization of study comparisonGroup, e.g. experimental, active comparator, placebo comparater.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Categorization of study comparisonGroup",
+        "definition": "Categorization of study comparisonGroup, e.g. experimental, active comparator, placebo comparater.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "desc.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-research-study-arm-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Short explanation of study path",
+        "definition": "A succinct description of the path through the study that would be followed by a subject adhering to this comparisonGroup.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Short explanation of study path",
+        "definition": "A succinct description of the path through the study that would be followed by a subject adhering to this comparisonGroup.",
+        "comment": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:intendedExposure",
+        "path": "Extension.extension",
+        "sliceName": "intendedExposure",
+        "short": "Interventions or exposures in this comparisonGroup or cohort",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:intendedExposure.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intendedExposure"
+      },
+      {
+        "id": "Extension.extension:intendedExposure.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Interventions or exposures in this comparisonGroup or cohort",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:observedGroup",
+        "path": "Extension.extension",
+        "sliceName": "observedGroup",
+        "short": "Group of participants who were enrolled in study comparisonGroup",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:observedGroup.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "observedGroup"
+      },
+      {
+        "id": "Extension.extension:observedGroup.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Group of participants who were enrolled in study comparisonGroup",
+        "definition": "`ResearchStudy.comparisonGroup` has no related element in R4B:ResearchStudy",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.comparisonGroup"
+      }
+    ]
+  }
+}

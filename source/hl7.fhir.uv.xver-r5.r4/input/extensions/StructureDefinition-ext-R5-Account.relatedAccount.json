@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Account.relatedAccount",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.relatedAccount",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Account_relatedAccount",
+  "title": "Cross-version Extension for R5.Account.relatedAccount for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:48.4602432-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Account.relatedAccount from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Account"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Other associated accounts related to this account",
+        "definition": "This cross-version extension represents Account.relatedAccount from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship",
+        "path": "Extension.extension",
+        "sliceName": "relationship",
+        "short": "Relationship of the associated Account",
+        "definition": "This cross-version extension represents Account.relatedAccount.relationship from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:relationship.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relationship"
+      },
+      {
+        "id": "Extension.extension:relationship.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Relationship of the associated Account",
+        "definition": "This cross-version extension represents Account.relatedAccount.relationship from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Indicates the relationship between the accounts",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-account-relationship-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:account",
+        "path": "Extension.extension",
+        "sliceName": "account",
+        "short": "Reference to an associated Account",
+        "definition": "This cross-version extension represents Account.relatedAccount.account from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:account.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "account"
+      },
+      {
+        "id": "Extension.extension:account.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to an associated Account",
+        "definition": "This cross-version extension represents Account.relatedAccount.account from http://hl7.org/fhir/StructureDefinition/Account|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Account.relatedAccount"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [BodySite](https://hl7.org/fhir/DSTU2/BodySite.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [BodySite.meta](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.meta](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.implicitRules](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.implicitRules](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.language](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.language](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.text](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.text](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.contained](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.contained](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.patient](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.patient](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.identifier](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.identifier](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.code](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.location](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.modifier](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.locationQualifier](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.description](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.description](https://hl7.org/fhir/R4/BodyStructure.html#resource) |
+| [BodySite.image](https://hl7.org/fhir/DSTU2/BodySite.html#resource) | `UseElementRenamed` | [BodyStructure.image](https://hl7.org/fhir/R4/BodyStructure.html#resource) |

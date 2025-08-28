@@ -1,0 +1,840 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-MolecularSequence.relative",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_MolecularSequence_relative",
+  "title": "Cross-version Extension for R5.MolecularSequence.relative for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.2579638-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MolecularSequence.relative from http://hl7.org/fhir/StructureDefinition/MolecularSequence|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MolecularSequence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A sequence defined relative to another sequence",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:coordinateSystem",
+        "path": "Extension.extension",
+        "sliceName": "coordinateSystem",
+        "short": "Ways of identifying nucleotides or amino acids within a sequence",
+        "definition": "These are different ways of identifying nucleotides or amino acids within a sequence. Different databases and file types may use different systems. For detail definitions, see https://loinc.org/92822-6/ for more detail.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:coordinateSystem.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "coordinateSystem"
+      },
+      {
+        "id": "Extension.extension:coordinateSystem.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Ways of identifying nucleotides or amino acids within a sequence",
+        "definition": "These are different ways of identifying nucleotides or amino acids within a sequence. Different databases and file types may use different systems. For detail definitions, see https://loinc.org/92822-6/ for more detail.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Genomic coordinate system.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:ordinalPosition",
+        "path": "Extension.extension",
+        "sliceName": "ordinalPosition",
+        "short": "Indicates the order in which the sequence should be considered when putting multiple 'relative' elements together",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ordinalPosition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ordinalPosition"
+      },
+      {
+        "id": "Extension.extension:ordinalPosition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Indicates the order in which the sequence should be considered when putting multiple 'relative' elements together",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sequenceRange",
+        "path": "Extension.extension",
+        "sliceName": "sequenceRange",
+        "short": "Indicates the nucleotide range in the composed sequence when multiple 'relative' elements are used together",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sequenceRange.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequenceRange"
+      },
+      {
+        "id": "Extension.extension:sequenceRange.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Indicates the nucleotide range in the composed sequence when multiple 'relative' elements are used together",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence",
+        "path": "Extension.extension",
+        "sliceName": "startingSequence",
+        "short": "A sequence used as starting sequence",
+        "definition": "A sequence that is used as a starting sequence to describe variants that are present in a sequence analyzed.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly",
+        "path": "Extension.extension.extension",
+        "sliceName": "genomeAssembly",
+        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "genomeAssembly"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:genomeAssembly.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The genome assembly used for starting sequence, e.g. GRCh38",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Human reference sequence NCBI build ID.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome",
+        "path": "Extension.extension.extension",
+        "sliceName": "chromosome",
+        "short": "Chromosome Identifier",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "chromosome"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:chromosome.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Chromosome Identifier",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The chromosome containing the sequence.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "sequence[x]",
+        "short": "The reference sequence that represents the starting sequence",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequence[x]"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:sequence[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The reference sequence that represents the starting sequence",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart",
+        "path": "Extension.extension.extension",
+        "sliceName": "windowStart",
+        "short": "Start position of the window on the starting sequence",
+        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "windowStart"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowStart.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Start position of the window on the starting sequence",
+        "definition": "Start position of the window on the starting sequence. This value should honor the rules of the coordinateSystem.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd",
+        "path": "Extension.extension.extension",
+        "sliceName": "windowEnd",
+        "short": "End position of the window on the starting sequence",
+        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "windowEnd"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:windowEnd.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "End position of the window on the starting sequence",
+        "definition": "End position of the window on the starting sequence. This value should honor the rules of the  coordinateSystem.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation",
+        "path": "Extension.extension.extension",
+        "sliceName": "orientation",
+        "short": "sense | antisense",
+        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "orientation"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:orientation.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "sense | antisense",
+        "definition": "A relative reference to a DNA strand based on gene orientation. The strand that contains the open reading frame of the gene is the \"sense\" strand, and the opposite complementary strand is the \"antisense\" strand.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type for orientation",
+          "valueSet": "http://hl7.org/fhir/ValueSet/orientation-type|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand",
+        "path": "Extension.extension.extension",
+        "sliceName": "strand",
+        "short": "watson | crick",
+        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strand"
+      },
+      {
+        "id": "Extension.extension:startingSequence.extension:strand.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "watson | crick",
+        "definition": "An absolute reference to a strand. The Watson strand is the strand whose 5'-end is on the short arm of the chromosome, and the Crick strand as the one whose 5'-end is on the long arm.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Type for strand",
+          "valueSet": "http://hl7.org/fhir/ValueSet/strand-type|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:startingSequence.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "startingSequence"
+      },
+      {
+        "id": "Extension.extension:edit",
+        "path": "Extension.extension",
+        "sliceName": "edit",
+        "short": "Changes in sequence from the starting sequence",
+        "definition": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension:start",
+        "path": "Extension.extension.extension",
+        "sliceName": "start",
+        "short": "Start position of the edit on the starting sequence",
+        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension:start.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "start"
+      },
+      {
+        "id": "Extension.extension:edit.extension:start.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Start position of the edit on the starting sequence",
+        "definition": "Start position of the edit on the starting sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:end",
+        "path": "Extension.extension.extension",
+        "sliceName": "end",
+        "short": "End position of the edit on the starting sequence",
+        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension:end.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "end"
+      },
+      {
+        "id": "Extension.extension:edit.extension:end.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "End position of the edit on the starting sequence",
+        "definition": "End position of the edit on the starting sequence. If the coordinate system is 0-based then end is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "replacementSequence",
+        "short": "Allele that was observed",
+        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "replacementSequence"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacementSequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Allele that was observed",
+        "definition": "Allele that was observed. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the observed sequence. When the sequence type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "replacedSequence",
+        "short": "Allele in the starting sequence",
+        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "replacedSequence"
+      },
+      {
+        "id": "Extension.extension:edit.extension:replacedSequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Allele in the starting sequence",
+        "definition": "Allele in the starting sequence. Nucleotide(s)/amino acids from start position of sequence to stop position of sequence on the positive (+) strand of the starting sequence. When the sequence  type is DNA, it should be the sequence on the positive (+) strand. This will lay in the range between variant.start and variant.end.",
+        "comment": "`MolecularSequence.relative` has no related element in R4B:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:edit.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "edit"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MolecularSequence.relative"
+      }
+    ]
+  }
+}

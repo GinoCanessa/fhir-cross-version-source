@@ -1,0 +1,46 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [DeviceDefinition](https://hl7.org/fhir/R4B/DeviceDefinition.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [DeviceDefinition.meta](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.meta](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.implicitRules](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.implicitRules](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.language](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.language](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.text](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.text](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.contained](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.contained](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.identifier](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.identifier](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.udiDeviceIdentifier](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.udiDeviceIdentifier](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.udiDeviceIdentifier.deviceIdentifier](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.udiDeviceIdentifier.deviceIdentifier](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.udiDeviceIdentifier.issuer](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.udiDeviceIdentifier.issuer](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.udiDeviceIdentifier.jurisdiction](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.udiDeviceIdentifier.jurisdiction](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.manufacturer[x]](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.manufacturer[x]](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.deviceName](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.deviceName](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.deviceName.name](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.deviceName.name](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.deviceName.type](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.deviceName.type](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.modelNumber](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.modelNumber](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.type](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.type](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.specialization](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.specialization](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.specialization.systemType](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.specialization.systemType](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.specialization.version](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.specialization.version](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.version](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.version](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.safety](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.safety](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.shelfLifeStorage](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.shelfLifeStorage](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.physicalCharacteristics](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.physicalCharacteristics](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.languageCode](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.languageCode](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.capability](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.capability](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.capability.type](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.capability.type](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.capability.description](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.capability.description](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.property](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.property](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.property.type](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.property.type](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.property.valueQuantity](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.property.valueQuantity](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.property.valueCode](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.property.valueCode](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.owner](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.owner](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.contact](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.contact](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.url](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.url](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.onlineInformation](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.onlineInformation](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.note](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.note](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.quantity](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.quantity](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.parentDevice](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.parentDevice](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.material](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.material](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.material.substance](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.material.substance](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.material.alternate](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.material.alternate](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |
+| [DeviceDefinition.material.allergenicIndicator](https://hl7.org/fhir/R4B/DeviceDefinition.html#resource) | `UseElementSameName` | [DeviceDefinition.material.allergenicIndicator](https://hl7.org/fhir/R4/DeviceDefinition.html#resource) |

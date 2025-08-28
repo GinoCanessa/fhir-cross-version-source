@@ -1,0 +1,2910 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-ClinicalUseDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalUseDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_ClinicalUseDefinition",
+  "title": "Cross-version Extension for R4B.ClinicalUseDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:09.437712-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ClinicalUseDefinition from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A single issue - either an indication, contraindication, interaction or an undesirable effect for a medicinal product, medication, device or procedure",
+        "definition": "This cross-version extension represents ClinicalUseDefinition from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "indication | contraindication | interaction | undesirable-effect | warning",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.type from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "indication | contraindication | interaction | undesirable-effect | warning",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.type from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Overall defining type of this clinical use definition.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-clinical-use-definition-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy\", \"Overdose\"",
+        "definition": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\".",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy\", \"Overdose\"",
+        "definition": "A categorisation of the issue, primarily for dividing warnings into subject heading areas such as \"Pregnancy and Lactation\", \"Overdose\", \"Effects on Ability to Drive and Use Machines\".",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "A categorisation for a clinical use information item.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-clinical-use-definition-category-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "Whether this is a current issue or one that has been retired etc",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.status from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether this is a current issue or one that has been retired etc",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.status from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication",
+        "path": "Extension.extension",
+        "sliceName": "contraindication",
+        "short": "Specifics for when this is a contraindication",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.contraindication from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure",
+        "path": "Extension.extension.extension",
+        "sliceName": "diseaseSymptomProcedure",
+        "short": "The situation that is being documented as contraindicating against this item",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.contraindication.diseaseSymptomProcedure from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.contraindication.diseaseSymptomProcedure from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.contraindication.diseaseSymptomProcedure from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseSymptomProcedure.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "diseaseSymptomProcedure"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus",
+        "path": "Extension.extension.extension",
+        "sliceName": "diseaseStatus",
+        "short": "The status of the disease or symptom for the contraindication",
+        "definition": "The status of the disease or symptom for the contraindication, for example \"chronic\" or \"metastatic\".",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.contraindication.diseaseStatus from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.contraindication.diseaseStatus from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:diseaseStatus.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "diseaseStatus"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity",
+        "path": "Extension.extension.extension",
+        "sliceName": "comorbidity",
+        "short": "A comorbidity (concurrent condition) or coinfection",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.contraindication.comorbidity from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.contraindication.comorbidity from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.contraindication.comorbidity from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:comorbidity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "comorbidity"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:indication",
+        "path": "Extension.extension.extension",
+        "sliceName": "indication",
+        "short": "The indication which this is a contraidication for",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.contraindication.indication from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:indication.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "indication"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:indication.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The indication which this is a contraidication for",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.contraindication.indication from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy",
+        "path": "Extension.extension.extension",
+        "sliceName": "otherTherapy",
+        "short": "Information about use of the product in relation to other therapies described as part of the contraindication",
+        "definition": "Information about the use of the medicinal product in relation to other therapies described as part of the contraindication.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "relationshipType",
+        "short": "The type of relationship between the product indication/contraindication and another therapy",
+        "definition": "The type of relationship between the medicinal product indication or contraindication and another therapy.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relationshipType"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:relationshipType.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The type of relationship between the product indication/contraindication and another therapy",
+        "definition": "The type of relationship between the medicinal product indication or contraindication and another therapy.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Classification of relationship between a therapy and a contraindication or an indication.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-therapy-relationship-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "therapy",
+        "short": "Reference to a specific medication as part of an indication or contraindication",
+        "definition": "Reference to a specific medication (active substance, medicinal product or class of products) as part of an indication or contraindication.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:concept",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.contraindication.otherTherapy.therapy from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.contraindication.otherTherapy.therapy from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.extension:therapy.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "therapy"
+      },
+      {
+        "id": "Extension.extension:contraindication.extension:otherTherapy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "otherTherapy"
+      },
+      {
+        "id": "Extension.extension:contraindication.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contraindication"
+      },
+      {
+        "id": "Extension.extension:indication",
+        "path": "Extension.extension",
+        "sliceName": "indication",
+        "short": "Specifics for when this is an indication",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.indication from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure",
+        "path": "Extension.extension.extension",
+        "sliceName": "diseaseSymptomProcedure",
+        "short": "The situation that is being documented as an indicaton for this item",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.indication.diseaseSymptomProcedure from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.indication.diseaseSymptomProcedure from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.indication.diseaseSymptomProcedure from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseSymptomProcedure.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "diseaseSymptomProcedure"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus",
+        "path": "Extension.extension.extension",
+        "sliceName": "diseaseStatus",
+        "short": "The status of the disease or symptom for the indication",
+        "definition": "The status of the disease or symptom for the indication, for example \"chronic\" or \"metastatic\".",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.indication.diseaseStatus from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.indication.diseaseStatus from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:diseaseStatus.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "diseaseStatus"
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity",
+        "path": "Extension.extension.extension",
+        "sliceName": "comorbidity",
+        "short": "A comorbidity or coinfection as part of the indication",
+        "definition": "A comorbidity (concurrent condition) or coinfection as part of the indication.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.indication.comorbidity from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.indication.comorbidity from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:comorbidity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "comorbidity"
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect",
+        "path": "Extension.extension.extension",
+        "sliceName": "intendedEffect",
+        "short": "The intended effect, aim or strategy to be achieved",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.indication.intendedEffect from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.indication.intendedEffect from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.indication.intendedEffect from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:indication.extension:intendedEffect.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intendedEffect"
+      },
+      {
+        "id": "Extension.extension:indication.extension:duration[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "duration[x]",
+        "short": "Timing or duration information",
+        "definition": "Timing or duration information, that may be associated with use with the indicated condition e.g. Adult patients suffering from myocardial infarction (from a few days until less than 35 days), ischaemic stroke (from 7 days until less than 6 months).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:duration[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "duration[x]"
+      },
+      {
+        "id": "Extension.extension:indication.extension:duration[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Timing or duration information",
+        "definition": "Timing or duration information, that may be associated with use with the indicated condition e.g. Adult patients suffering from myocardial infarction (from a few days until less than 35 days), ischaemic stroke (from 7 days until less than 6 months).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:undesirableEffect",
+        "path": "Extension.extension.extension",
+        "sliceName": "undesirableEffect",
+        "short": "An unwanted side effect or negative outcome of the subject of this resource when being used for this indication",
+        "definition": "An unwanted side effect or negative outcome that may happen if you use the drug (or other subject of this resource) for this indication.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:undesirableEffect.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "undesirableEffect"
+      },
+      {
+        "id": "Extension.extension:indication.extension:undesirableEffect.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An unwanted side effect or negative outcome of the subject of this resource when being used for this indication",
+        "definition": "An unwanted side effect or negative outcome that may happen if you use the drug (or other subject of this resource) for this indication.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:otherTherapy",
+        "path": "Extension.extension.extension",
+        "sliceName": "otherTherapy",
+        "short": "The use of the medicinal product in relation to other therapies described as part of the indication",
+        "definition": "Information about the use of the medicinal product in relation to other therapies described as part of the indication.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:otherTherapy.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:indication.extension:otherTherapy.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.indication.otherTherapy from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.indication.otherTherapy from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:indication.extension:otherTherapy.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: ClinicalUseDefinition.contraindication.otherTherapy",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ClinicalUseDefinition.contraindication.otherTherapy"
+      },
+      {
+        "id": "Extension.extension:indication.extension:otherTherapy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "otherTherapy"
+      },
+      {
+        "id": "Extension.extension:indication.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "indication"
+      },
+      {
+        "id": "Extension.extension:interaction",
+        "path": "Extension.extension",
+        "sliceName": "interaction",
+        "short": "Specifics for when this is an interaction",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant",
+        "path": "Extension.extension.extension",
+        "sliceName": "interactant",
+        "short": "The specific medication, food, substance or laboratory test that interacts",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.interactant from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant.extension:item[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "item[x]",
+        "short": "The specific medication, food or laboratory test that interacts",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.interactant.item[x] from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant.extension:item[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item[x]"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant.extension:item[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The specific medication, food or laboratory test that interacts",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.interactant.item[x] from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "An interactant - a substance that may have an clinically significant effect on another.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-interactant-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:interactant.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "interactant"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "The type of the interaction e.g. drug-drug interaction, drug-lab test interaction",
+        "definition": "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of the interaction e.g. drug-drug interaction, drug-lab test interaction",
+        "definition": "The type of the interaction e.g. drug-drug interaction, drug-food interaction, drug-lab test interaction.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A categorisation for an interaction between two substances.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-interaction-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect",
+        "path": "Extension.extension.extension",
+        "sliceName": "effect",
+        "short": "The effect of the interaction, for example \"reduced gastric absorption of primary medication\"",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.effect from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.interaction.effect from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.interaction.effect from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:effect.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "effect"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:incidence",
+        "path": "Extension.extension.extension",
+        "sliceName": "incidence",
+        "short": "The incidence of the interaction, e.g. theoretical, observed",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.incidence from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:incidence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "incidence"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:incidence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The incidence of the interaction, e.g. theoretical, observed",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.incidence from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A categorisation for incidence of occurence of an interaction.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-interaction-incidence-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:management",
+        "path": "Extension.extension.extension",
+        "sliceName": "management",
+        "short": "Actions for managing the interaction",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.management from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.extension:management.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "management"
+      },
+      {
+        "id": "Extension.extension:interaction.extension:management.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Actions for managing the interaction",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.interaction.management from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A type of management for an interaction of a medication or other substance.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-interaction-management-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:interaction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "interaction"
+      },
+      {
+        "id": "Extension.extension:population",
+        "path": "Extension.extension",
+        "sliceName": "population",
+        "short": "The population group to which this applies",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.population from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "population"
+      },
+      {
+        "id": "Extension.extension:population.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The population group to which this applies",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.population from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:undesirableEffect",
+        "path": "Extension.extension",
+        "sliceName": "undesirableEffect",
+        "short": "A possible negative outcome from the use of this treatment",
+        "definition": "Describe the possible undesirable effects (negative outcomes) from the use of the medicinal product as treatment.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect",
+        "path": "Extension.extension.extension",
+        "sliceName": "symptomConditionEffect",
+        "short": "The situation in which the undesirable effect may manifest",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.undesirableEffect.symptomConditionEffect from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ClinicalUseDefinition.undesirableEffect.symptomConditionEffect from FHIR R4B",
+        "definition": "Data type name for ClinicalUseDefinition.undesirableEffect.symptomConditionEffect from FHIR R4B",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:symptomConditionEffect.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "symptomConditionEffect"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:classification",
+        "path": "Extension.extension.extension",
+        "sliceName": "classification",
+        "short": "High level classification of the effect",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.undesirableEffect.classification from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:classification.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "classification"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:classification.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "High level classification of the effect",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.undesirableEffect.classification from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A categorisation for an undesirable effect.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-undesirable-effect-classification-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence",
+        "path": "Extension.extension.extension",
+        "sliceName": "frequencyOfOccurrence",
+        "short": "How often the effect is seen",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "frequencyOfOccurrence"
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.extension:frequencyOfOccurrence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "How often the effect is seen",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.undesirableEffect.frequencyOfOccurrence from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A categorisation for a frequency of occurence of an undesirable effect.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-undesirable-effect-frequency-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:undesirableEffect.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "undesirableEffect"
+      },
+      {
+        "id": "Extension.extension:warning",
+        "path": "Extension.extension",
+        "sliceName": "warning",
+        "short": "Critical environmental, health or physical risks or hazards. For example 'Do not operate heavy machinery', 'May cause drowsiness'",
+        "definition": "A critical piece of information about environmental, health or physical risks or hazards that serve as caution to the user. For example 'Do not operate heavy machinery', 'May cause drowsiness', or 'Get medical advice/attention if you feel unwell'.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:warning.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:warning.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "A textual definition of this warning, with formatting",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.warning.description from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:warning.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:warning.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A textual definition of this warning, with formatting",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.warning.description from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:warning.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "A coded or unformatted textual definition of this warning",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.warning.code from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:warning.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:warning.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A coded or unformatted textual definition of this warning",
+        "definition": "This cross-version extension represents ClinicalUseDefinition.warning.code from http://hl7.org/fhir/StructureDefinition/ClinicalUseDefinition|4.3.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Classification of warning type.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-warning-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:warning.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "warning"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ClinicalUseDefinition"
+      }
+    ]
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Sequence.referenceSeq",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.referenceSeq",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Sequence_referenceSeq",
+  "title": "Cross-version Extension for R3.Sequence.referenceSeq for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:19.0375868-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Sequence.referenceSeq from http://hl7.org/fhir/StructureDefinition/Sequence|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MolecularSequence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A sequence used as reference",
+        "definition": "A sequence that is used as a reference to describe variants that are present in a sequence analyzed.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:chromosome",
+        "path": "Extension.extension",
+        "sliceName": "chromosome",
+        "short": "Chromosome containing genetic finding",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:chromosome.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "chromosome"
+      },
+      {
+        "id": "Extension.extension:chromosome.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Chromosome containing genetic finding",
+        "definition": "Structural unit composed of a nucleic acid molecule which controls its own replication through the interaction of specific proteins at one or more origins of replication ([SO:0000340](http://www.sequenceontology.org/browser/current_svn/term/SO:0000340)).",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Chromosome number for human",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-chromosome-human-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:genomeBuild",
+        "path": "Extension.extension",
+        "sliceName": "genomeBuild",
+        "short": "The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'",
+        "definition": "The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'.  Version number must be included if a versioned release of a primary build was used.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:genomeBuild.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "genomeBuild"
+      },
+      {
+        "id": "Extension.extension:genomeBuild.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'",
+        "definition": "The Genome Build used for reference, following GRCh build versions e.g. 'GRCh 37'.  Version number must be included if a versioned release of a primary build was used.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:referenceSeqId",
+        "path": "Extension.extension",
+        "sliceName": "referenceSeqId",
+        "short": "Reference identifier",
+        "definition": "Reference identifier of reference sequence submitted to NCBI. It must match the type in the Sequence.type field. For example, the prefix, “NG_” identifies reference sequence for genes, “NM_” for messenger RNA transcripts, and “NP_” for amino acid sequences.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:referenceSeqId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "referenceSeqId"
+      },
+      {
+        "id": "Extension.extension:referenceSeqId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference identifier",
+        "definition": "Reference identifier of reference sequence submitted to NCBI. It must match the type in the Sequence.type field. For example, the prefix, “NG_” identifies reference sequence for genes, “NM_” for messenger RNA transcripts, and “NP_” for amino acid sequences.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Reference identifier",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-sequence-referenceSeq-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:referenceSeqPointer",
+        "path": "Extension.extension",
+        "sliceName": "referenceSeqPointer",
+        "short": "A Pointer to another Sequence entity as reference sequence",
+        "definition": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:referenceSeqPointer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "referenceSeqPointer"
+      },
+      {
+        "id": "Extension.extension:referenceSeqPointer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A Pointer to another Sequence entity as reference sequence",
+        "definition": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:referenceSeqString",
+        "path": "Extension.extension",
+        "sliceName": "referenceSeqString",
+        "short": "A string to represent reference sequence",
+        "definition": "A string like \"ACGT\".",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:referenceSeqString.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "referenceSeqString"
+      },
+      {
+        "id": "Extension.extension:referenceSeqString.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A string to represent reference sequence",
+        "definition": "A string like \"ACGT\".",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strand",
+        "path": "Extension.extension",
+        "sliceName": "strand",
+        "short": "Directionality of DNA ( +1/-1)",
+        "definition": "Directionality of DNA sequence. Available values are \"1\" for the plus strand (5' to 3')/Watson/Sense/positive  and \"-1\" for the minus strand(3' to 5')/Crick/Antisense/negative.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:strand.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strand"
+      },
+      {
+        "id": "Extension.extension:strand.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Directionality of DNA ( +1/-1)",
+        "definition": "Directionality of DNA sequence. Available values are \"1\" for the plus strand (5' to 3')/Watson/Sense/positive  and \"-1\" for the minus strand(3' to 5')/Crick/Antisense/negative.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:windowStart",
+        "path": "Extension.extension",
+        "sliceName": "windowStart",
+        "short": "Start position of the window on the  reference sequence",
+        "definition": "Start position of the window on the reference sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:windowStart.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "windowStart"
+      },
+      {
+        "id": "Extension.extension:windowStart.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Start position of the window on the  reference sequence",
+        "definition": "Start position of the window on the reference sequence. If the coordinate system is either 0-based or 1-based, then start position is inclusive.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:windowEnd",
+        "path": "Extension.extension",
+        "sliceName": "windowEnd",
+        "short": "End position of the window on the reference sequence",
+        "definition": "End position of the window on the reference sequence. If the coordinate system is 0-based then end is is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:windowEnd.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "windowEnd"
+      },
+      {
+        "id": "Extension.extension:windowEnd.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "End position of the window on the reference sequence",
+        "definition": "End position of the window on the reference sequence. If the coordinate system is 0-based then end is is exclusive and does not include the last position. If the coordinate system is 1-base, then end is inclusive and includes the last position.",
+        "comment": "`MolecularSequence.referenceSeq` has no related element in R5:MolecularSequence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Sequence.referenceSeq"
+      }
+    ]
+  }
+}

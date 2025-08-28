@@ -1,0 +1,372 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Practitioner.practitionerRole",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Practitioner.practitionerRole",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Practitioner_practitionerRole",
+  "title": "Cross-version Extension for R2.Practitioner.practitionerRole for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:54.6913678-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Practitioner.practitionerRole from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    },
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Roles/organizations the practitioner is associated with",
+        "definition": "The list of roles/organizations that the practitioner is associated with.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:managingOrganization",
+        "path": "Extension.extension",
+        "sliceName": "managingOrganization",
+        "short": "Organization where the roles are performed",
+        "definition": "The organization where the Practitioner performs the roles associated.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:managingOrganization.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "managingOrganization"
+      },
+      {
+        "id": "Extension.extension:managingOrganization.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Organization where the roles are performed",
+        "definition": "The organization where the Practitioner performs the roles associated.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "Roles which this practitioner may perform",
+        "definition": "Roles which this practitioner is authorized to perform for the organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Roles which this practitioner may perform",
+        "definition": "Roles which this practitioner is authorized to perform for the organization.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The role a person plays representing an organization",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-practitioner-role-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:specialty",
+        "path": "Extension.extension",
+        "sliceName": "specialty",
+        "short": "Specific specialty of the practitioner",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.specialty from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialty.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialty"
+      },
+      {
+        "id": "Extension.extension:specialty.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Specific specialty of the practitioner",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.specialty from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Specific specialty associated with the agency",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-practitioner-specialty-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "The period during which the practitioner is authorized to perform in these role(s)",
+        "definition": "The period during which the person is authorized to act as a practitioner in these role(s) for the organization.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The period during which the practitioner is authorized to perform in these role(s)",
+        "definition": "The period during which the person is authorized to act as a practitioner in these role(s) for the organization.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "short": "The location(s) at which this practitioner provides care",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.location from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The location(s) at which this practitioner provides care",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.location from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:healthcareService",
+        "path": "Extension.extension",
+        "sliceName": "healthcareService",
+        "short": "The list of healthcare services that this worker provides for this role's Organization/Location(s)",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.healthcareService from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:healthcareService.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "healthcareService"
+      },
+      {
+        "id": "Extension.extension:healthcareService.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The list of healthcare services that this worker provides for this role's Organization/Location(s)",
+        "definition": "This cross-version extension represents Practitioner.practitionerRole.healthcareService from http://hl7.org/fhir/StructureDefinition/Practitioner|1.0.2 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Practitioner.practitionerRole"
+      }
+    ]
+  }
+}

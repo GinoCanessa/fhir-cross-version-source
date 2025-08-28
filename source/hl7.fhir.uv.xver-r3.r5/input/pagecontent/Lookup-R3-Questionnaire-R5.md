@@ -1,0 +1,49 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [Questionnaire](https://hl7.org/fhir/STU3/Questionnaire.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Questionnaire.meta](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.meta](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.implicitRules](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.implicitRules](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.language](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.language](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.text](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.text](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.contained](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.contained](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.url](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.url](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.identifier](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.identifier](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.version](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.version](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.name](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.name](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.title](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.title](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.status](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.status](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.experimental](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.experimental](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.date](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.date](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.publisher](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.publisher](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.description](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.description](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.purpose](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.purpose](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.approvalDate](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.approvalDate](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.lastReviewDate](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.lastReviewDate](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.effectivePeriod](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.effectivePeriod](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.useContext](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.useContext](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.jurisdiction](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.jurisdiction](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.contact](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.contact](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.copyright](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.copyright](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.code](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.code](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.subjectType](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.subjectType](StructureDefinition-ext-R3-Questionnaire.subjectType.html) |
+| [Questionnaire.item](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.linkId](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.linkId](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.linkId](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.definition](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.definition](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.code](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.code](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.code](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.prefix](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.prefix](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.text](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.text](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.text](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.type](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.type](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.enableWhen](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.enableWhen](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.enableWhen.question](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.enableWhen.question](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.enableWhen.hasAnswer](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.enableWhen.operator](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.enableWhen.answer[x]](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.enableWhen.answer[x]](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementRenamed` | [Questionnaire.item.enableWhen.operator](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.required](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.required](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.required](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.repeats](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.repeats](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.repeats](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.readOnly](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.readOnly](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.maxLength](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementSameName` | [Questionnaire.item.maxLength](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.options](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.options](StructureDefinition-ext-R3-Questionnaire.it.options.html) |
+| [Questionnaire.item.option](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementRenamed` | [Questionnaire.item.answerOption](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.option.value[x]](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseElementRenamed` | [Questionnaire.item.answerOption.value[x]](https://hl7.org/fhir/R5/Questionnaire.html#resource) |
+| [Questionnaire.item.initial[x]](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Questionnaire.item.initial](StructureDefinition-ext-R3-Questionnaire.it.initial.html) |
+| [Questionnaire.item.item](https://hl7.org/fhir/STU3/Questionnaire.html#resource) | `UseOneOf` | [Questionnaire.item.item](https://hl7.org/fhir/R5/Questionnaire.html#resource)<br />[Questionnaire.item.item](https://hl7.org/fhir/R5/Questionnaire.html#resource) |

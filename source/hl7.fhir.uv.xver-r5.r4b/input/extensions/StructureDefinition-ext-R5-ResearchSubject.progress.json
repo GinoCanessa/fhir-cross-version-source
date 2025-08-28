@@ -1,0 +1,391 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ResearchSubject.progress",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.progress",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ResearchSubject_progress",
+  "title": "Cross-version Extension for R5.ResearchSubject.progress for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.9760685-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ResearchSubject.progress from http://hl7.org/fhir/StructureDefinition/ResearchSubject|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchSubject"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Subject status",
+        "definition": "The current state (status) of the subject and resons for status change where appropriate.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "state | milestone",
+        "definition": "Identifies the aspect of the subject's journey that the state refers to.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "state | milestone",
+        "definition": "Identifies the aspect of the subject's journey that the state refers to.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Identifies the kind of state being refered to.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-research-subject-state-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:subjectState",
+        "path": "Extension.extension",
+        "sliceName": "subjectState",
+        "short": "candidate | eligible | follow-up | ineligible | not-registered | off-study | on-study | on-study-intervention | on-study-observation | pending-on-study | potential-candidate | screening | withdrawn",
+        "definition": "The current state of the subject.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subjectState.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subjectState"
+      },
+      {
+        "id": "Extension.extension:subjectState.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "candidate | eligible | follow-up | ineligible | not-registered | off-study | on-study | on-study-intervention | on-study-observation | pending-on-study | potential-candidate | screening | withdrawn",
+        "definition": "The current state of the subject.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Indicates the progression of a study subject through a study.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-research-subject-state-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:milestone",
+        "path": "Extension.extension",
+        "sliceName": "milestone",
+        "short": "SignedUp | Screened | Randomized",
+        "definition": "The milestones the subject has passed through.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:milestone.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "milestone"
+      },
+      {
+        "id": "Extension.extension:milestone.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "SignedUp | Screened | Randomized",
+        "definition": "The milestones the subject has passed through.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Indicates the progression of a study subject through the study milestones.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-research-subject-milestone-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "short": "State change reason",
+        "definition": "The reason for the state change.  If coded it should follow the formal subject state model.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "State change reason",
+        "definition": "The reason for the state change.  If coded it should follow the formal subject state model.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Indicates why the state of the subject changed.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-state-change-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:startDate",
+        "path": "Extension.extension",
+        "sliceName": "startDate",
+        "short": "State change date",
+        "definition": "The date when the new status started.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:startDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "startDate"
+      },
+      {
+        "id": "Extension.extension:startDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "State change date",
+        "definition": "The date when the new status started.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:endDate",
+        "path": "Extension.extension",
+        "sliceName": "endDate",
+        "short": "State change date",
+        "definition": "The date when the state ended.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:endDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "endDate"
+      },
+      {
+        "id": "Extension.extension:endDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "State change date",
+        "definition": "The date when the state ended.",
+        "comment": "`ResearchSubject.progress` has no related element in R4B:ResearchSubject",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchSubject.progress"
+      }
+    ]
+  }
+}

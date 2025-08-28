@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ExplanationOfBenefit.it.bodySite",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.bodySite",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ExplanationOfBenefit_it_bodySite",
+  "title": "Cross-version Extension for R3.ExplanationOfBenefit.item.bodySite for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:15.302786-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ExplanationOfBenefit.item.bodySite from http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ExplanationOfBenefit.item.bodySite"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Service Location",
+        "definition": "Physical service site on the patient (limb, tooth, etc).",
+        "comment": "`ExplanationOfBenefit.item.bodySite` maps to R5 `ExplanationOfBenefit.item.bodySite`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExplanationOfBenefit.item.bodySite"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Service Location",
+        "definition": "Physical service site on the patient (limb, tooth, etc).",
+        "comment": "`ExplanationOfBenefit.item.bodySite` maps to R5 `ExplanationOfBenefit.item.bodySite`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The code for the teeth, quadrant, sextant and arch",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-tooth-for-R5"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceDefinition.chargeItem",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.chargeItem",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceDefinition_chargeItem",
+  "title": "Cross-version Extension for R5.DeviceDefinition.chargeItem for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.1068638-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceDefinition.chargeItem from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Billing code or reference associated with the device",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:chargeItemCode",
+        "path": "Extension.extension",
+        "sliceName": "chargeItemCode",
+        "short": "The code or reference for the charge item",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:chargeItemCode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "chargeItemCode"
+      },
+      {
+        "id": "Extension.extension:chargeItemCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The code or reference for the charge item",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:count",
+        "path": "Extension.extension",
+        "sliceName": "count",
+        "short": "Coefficient applicable to the billing code",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:count.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "count"
+      },
+      {
+        "id": "Extension.extension:count.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Coefficient applicable to the billing code",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:effectivePeriod",
+        "path": "Extension.extension",
+        "sliceName": "effectivePeriod",
+        "short": "A specific time period in which this charge item applies",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:effectivePeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "effectivePeriod"
+      },
+      {
+        "id": "Extension.extension:effectivePeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A specific time period in which this charge item applies",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useContext",
+        "path": "Extension.extension",
+        "sliceName": "useContext",
+        "short": "The context to which this charge item applies",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:useContext.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useContext"
+      },
+      {
+        "id": "Extension.extension:useContext.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The context to which this charge item applies",
+        "definition": "`DeviceDefinition.chargeItem` has no related element in R4B:DeviceDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "UsageContext"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.chargeItem"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [EvidenceVariable](https://hl7.org/fhir/R4B/EvidenceVariable.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [EvidenceVariable.meta](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.meta](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.implicitRules](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.implicitRules](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.language](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.language](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.text](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.text](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.contained](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.contained](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.url](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.url](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.identifier](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.identifier](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.version](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.version](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.name](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.name](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.title](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.title](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.shortTitle](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.shortTitle](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.subtitle](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.subtitle](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.status](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.status](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.date](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.date](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.description](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.description](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.note](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.note](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.useContext](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.useContext](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.publisher](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.publisher](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.contact](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.contact](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.author](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.author](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.editor](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.editor](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.reviewer](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.reviewer](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.endorser](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.endorser](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.relatedArtifact](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.relatedArtifact](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.actual](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.actual](StructureDefinition-ext-R4B-EvidenceVariable.actual.html) |
+| [EvidenceVariable.characteristicCombination](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristicCombination](StructureDefinition-ext-R4B-EvidenceVariable.characteristicCombination.html) |
+| [EvidenceVariable.characteristic](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.characteristic](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.characteristic.description](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.characteristic.description](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.characteristic.definition[x]](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.definition](StructureDefinition-ext-R4B-EvidenceVariable.ch.definition.html) |
+| [EvidenceVariable.characteristic.method](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.method](StructureDefinition-ext-R4B-EvidenceVariable.ch.method.html) |
+| [EvidenceVariable.characteristic.device](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.device](StructureDefinition-ext-R4B-EvidenceVariable.ch.device.html) |
+| [EvidenceVariable.characteristic.exclude](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.characteristic.exclude](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.characteristic.timeFromStart](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.characteristic.timeFromStart](StructureDefinition-ext-R4B-EvidenceVariable.ch.timeFromStart.html) |
+| [EvidenceVariable.characteristic.timeFromStart.description](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |
+| [EvidenceVariable.characteristic.timeFromStart.quantity](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |
+| [EvidenceVariable.characteristic.timeFromStart.range](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |
+| [EvidenceVariable.characteristic.timeFromStart.note](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |
+| [EvidenceVariable.characteristic.groupMeasure](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseElementSameName` | [EvidenceVariable.characteristic.groupMeasure](https://hl7.org/fhir/R4/EvidenceVariable.html#resource) |
+| [EvidenceVariable.handling](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.handling](StructureDefinition-ext-R4B-EvidenceVariable.handling.html) |
+| [EvidenceVariable.category](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-EvidenceVariable.category](StructureDefinition-ext-R4B-EvidenceVariable.category.html) |
+| [EvidenceVariable.category.name](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |
+| [EvidenceVariable.category.value[x]](https://hl7.org/fhir/R4B/EvidenceVariable.html#resource) | `UseExtensionFromAncestor` | - |

@@ -1,0 +1,154 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ServiceRequest.patientInstruction",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.patientInstruction",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ServiceRequest_patientInstruction",
+  "title": "Cross-version Extension for R5.ServiceRequest.patientInstruction for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:59.2558837-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ServiceRequest.patientInstruction from http://hl7.org/fhir/StructureDefinition/ServiceRequest|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest.patientInstruction"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient or consumer-oriented instructions",
+        "definition": "Instructions in terms that are understood by the patient or consumer.",
+        "comment": "`ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instruction[x]",
+        "path": "Extension.extension",
+        "sliceName": "instruction[x]",
+        "short": "Patient or consumer-oriented instructions",
+        "definition": "Instructions in terms that are understood by the patient or consumer.",
+        "comment": "`ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:instruction[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instruction[x]"
+      },
+      {
+        "id": "Extension.extension:instruction[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Patient or consumer-oriented instructions",
+        "definition": "Instructions in terms that are understood by the patient or consumer.",
+        "comment": "`ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent. `ServiceRequest.patientInstruction` maps to R4 `ServiceRequest.patientInstruction`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ServiceRequest.patientInstruction"
+      }
+    ]
+  }
+}

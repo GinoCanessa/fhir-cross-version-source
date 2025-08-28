@@ -1,0 +1,195 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-MedicationRequest.requester",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_MedicationRequest_requester",
+  "title": "Cross-version Extension for R3.MedicationRequest.requester for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:16.6620336-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationRequest.requester from http://hl7.org/fhir/StructureDefinition/MedicationRequest|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest.requester"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Who/What requested the Request",
+        "definition": "The individual, organization or device that initiated the request and has responsibility for its activation.",
+        "comment": "`MedicationRequest.requester` maps to R4 `MedicationRequest.requester`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:agent",
+        "path": "Extension.extension",
+        "sliceName": "agent",
+        "short": "Who ordered the initial medication(s)",
+        "definition": "The healthcare professional responsible for authorizing the initial prescription.",
+        "comment": "`MedicationRequest.requester` maps to R4 `MedicationRequest.requester`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:agent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "agent"
+      },
+      {
+        "id": "Extension.extension:agent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who ordered the initial medication(s)",
+        "definition": "The healthcare professional responsible for authorizing the initial prescription.",
+        "comment": "`MedicationRequest.requester` maps to R4 `MedicationRequest.requester`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:onBehalfOf",
+        "path": "Extension.extension",
+        "sliceName": "onBehalfOf",
+        "short": "Organization agent is acting for",
+        "definition": "The organization the device or practitioner was acting on behalf of.",
+        "comment": "`MedicationRequest.requester` maps to R4 `MedicationRequest.requester`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:onBehalfOf.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "onBehalfOf"
+      },
+      {
+        "id": "Extension.extension:onBehalfOf.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Organization agent is acting for",
+        "definition": "The organization the device or practitioner was acting on behalf of.",
+        "comment": "`MedicationRequest.requester` maps to R4 `MedicationRequest.requester`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester"
+      }
+    ]
+  }
+}

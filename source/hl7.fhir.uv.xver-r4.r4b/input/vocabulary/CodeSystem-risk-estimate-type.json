@@ -1,0 +1,86 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "risk-estimate-type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    }
+  ],
+  "url": "http://terminology.hl7.org/CodeSystem/risk-estimate-type",
+  "version": "4.0.1",
+  "name": "RiskEstimateType",
+  "title": "RiskEstimateType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "Clinical Decision Support",
+  "contact": [
+    {
+      "name": "Clinical Decision Support",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "description": "Whether the risk estimate is dichotomous, continuous or qualitative and the specific type of risk estimate (eg proportion or median).",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/risk-estimate-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "proportion",
+      "display": "proportion",
+      "definition": "dichotomous measure (present or absent) reported as a ratio compared to the denominator of 1 (A percentage is a proportion with denominator of 100)."
+    },
+    {
+      "code": "derivedProportion",
+      "display": "derivedProportion",
+      "definition": "A special use case where the proportion is derived from a formula rather than derived from summary evidence."
+    },
+    {
+      "code": "mean",
+      "display": "mean",
+      "definition": "continuous numerical measure reported as an average."
+    },
+    {
+      "code": "median",
+      "display": "median",
+      "definition": "continuous numerical measure reported as the middle of the range."
+    },
+    {
+      "code": "count",
+      "display": "count",
+      "definition": "descriptive measure reported as total number of items."
+    },
+    {
+      "code": "descriptive",
+      "display": "descriptive",
+      "definition": "descriptive measure reported as narrative."
+    }
+  ]
+}

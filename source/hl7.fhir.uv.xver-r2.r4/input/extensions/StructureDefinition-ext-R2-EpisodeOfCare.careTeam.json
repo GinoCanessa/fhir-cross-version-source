@@ -1,0 +1,242 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-EpisodeOfCare.careTeam",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-EpisodeOfCare.careTeam",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_EpisodeOfCare_careTeam",
+  "title": "Cross-version Extension for R2.EpisodeOfCare.careTeam for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:52.9845214-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents EpisodeOfCare.careTeam from http://hl7.org/fhir/StructureDefinition/EpisodeOfCare|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "EpisodeOfCare.team"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Other practitioners facilitating this episode of care",
+        "definition": "The list of practitioners that may be facilitating this episode of care for specific purposes.",
+        "comment": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "Role taken by this team member",
+        "definition": "The role this team member is taking within this episode of care.",
+        "comment": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Role taken by this team member",
+        "definition": "The role this team member is taking within this episode of care.",
+        "comment": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Type of participation expected by a team member.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-participant-role-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "Period of time for this role",
+        "definition": "The period of time this practitioner is performing some role within the episode of care.",
+        "comment": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Period of time for this role",
+        "definition": "The period of time this practitioner is performing some role within the episode of care.",
+        "comment": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:member",
+        "path": "Extension.extension",
+        "sliceName": "member",
+        "short": "The practitioner (or Organization) within the team",
+        "definition": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:member.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "member"
+      },
+      {
+        "id": "Extension.extension:member.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The practitioner (or Organization) within the team",
+        "definition": "`EpisodeOfCare.team` maps to R4 `EpisodeOfCare.team`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-EpisodeOfCare.careTeam"
+      }
+    ]
+  }
+}

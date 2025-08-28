@@ -1,0 +1,40 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [Procedure](https://hl7.org/fhir/STU3/Procedure.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Procedure.meta](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.meta](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.implicitRules](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.implicitRules](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.language](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.language](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.text](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.text](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.contained](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.contained](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.identifier](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.identifier](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.definition](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.definition](StructureDefinition-ext-R3-Procedure.definition.html) |
+| [Procedure.basedOn](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.basedOn](StructureDefinition-ext-R3-Procedure.basedOn.html) |
+| [Procedure.partOf](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.partOf](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.status](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.status](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.notDone](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementRenamed` | [Procedure.status](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.notDoneReason](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseOneOf` | [Procedure.statusReason](https://hl7.org/fhir/R4B/Procedure.html#resource)<br />[Procedure.reasonCode](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.category](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.category](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.code](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.code](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.subject](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.subject](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.context](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Procedure.context](StructureDefinition-ext-R3-Procedure.context.html) |
+| [Procedure.performed[x]](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.performed[x]](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.performer](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.performer](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.performer.role](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementRenamed` | [Procedure.performer.function](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.performer.actor](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.performer.actor](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.performer.onBehalfOf](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.performer.onBehalfOf](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.location](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.location](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.reasonCode](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.reasonCode](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.reasonReference](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.reasonReference](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.bodySite](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.bodySite](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.outcome](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.outcome](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.report](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.report](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.complication](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.complication](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.complicationDetail](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.complicationDetail](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.followUp](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.followUp](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.note](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.note](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.focalDevice](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.focalDevice](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.focalDevice.action](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.focalDevice.action](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.focalDevice.manipulated](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.focalDevice.manipulated](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.usedReference](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.usedReference](https://hl7.org/fhir/R4B/Procedure.html#resource) |
+| [Procedure.usedCode](https://hl7.org/fhir/STU3/Procedure.html#resource) | `UseElementSameName` | [Procedure.usedCode](https://hl7.org/fhir/R4B/Procedure.html#resource) |

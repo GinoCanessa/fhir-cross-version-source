@@ -1,0 +1,3074 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-ActReason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.5.8"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/ActReason",
+  "version": "1.0.2",
+  "name": "v3-ActReason",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    },
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "type": "boolean"
+    },
+    {
+      "code": "effectiveDate",
+      "uri": "http://hl7.org/fhir/concept-properties#effectiveDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "notSelectable",
+      "uri": "http://hl7.org/fhir/concept-properties#notSelectable",
+      "type": "boolean"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "type": "code"
+    },
+    {
+      "code": "partOf",
+      "uri": "http://hl7.org/fhir/concept-properties#partOf",
+      "type": "code"
+    },
+    {
+      "code": "synonym",
+      "uri": "http://hl7.org/fhir/concept-properties#synonym",
+      "type": "code"
+    },
+    {
+      "code": "comment",
+      "uri": "http://hl7.org/fhir/concept-properties#comment",
+      "type": "string"
+    },
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "type": "decimal"
+    }
+  ],
+  "concept": [
+    {
+      "code": "_ActAccommodationReason",
+      "display": "ActAccommodationReason",
+      "definition": "Identifies the reason the patient is assigned to this accommodation type",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ACCREQNA",
+          "display": "Accommodation Requested Not Available",
+          "definition": "Accommodation requested is not available.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FLRCNV",
+          "display": "Floor Convenience",
+          "definition": "Accommodation is assigned for floor convenience.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "MEDNEC",
+          "display": "Medical Necessity",
+          "definition": "Required for medical reasons(s).",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PAT",
+          "display": "Patient request",
+          "definition": "The Patient requested the action",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActCoverageReason",
+      "display": "ActCoverageReason",
+      "definition": "Description:Codes used to specify reasons or criteria relating to coverage provided under a policy or program.  May be used to convey reasons pertaining to coverage contractual provisions, including criteria for eligibility, coverage limitations, coverage maximums, or financial participation required of covered parties.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "_EligibilityActReasonCode",
+          "display": "EligibilityActReasonCode",
+          "definition": "Identifies the reason or rational for why a person is eligibile for benefits under an insurance policy or progam.                                                       Examples:  A person is a claimant under an automobile insurance policy are client deceased & adopted client has been given a new policy identifier.  A new employee is eligible for health insurance as an employment benefit.  A person meets a government program eligibility criteria for financial, age or health status.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "_ActIneligibilityReason",
+              "display": "ActIneligibilityReason",
+              "definition": "Identifies the reason or rational for why a person is not eligibile for benefits under an insurance policy.                          Examples are client deceased & adopted client has been given a new policy identifier.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": true
+                }
+              ],
+              "concept": [
+                {
+                  "code": "COVSUS",
+                  "display": "coverage suspended",
+                  "definition": "When a client has no contact with the health system for an extended period, coverage is suspended.  Client will be reinstated to original start date upon proof of identification, residency etc.                          Example: Coverage may be suspended during a strike situation, when employer benefits for employees are not covered (i.e. not in effect).",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "DECSD",
+                  "display": "deceased",
+                  "definition": "Client deceased.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "REGERR",
+                  "display": "registered in error",
+                  "definition": "Client was registered in error.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "_CoverageEligibilityReason",
+              "display": "CoverageEligibilityReason",
+              "definition": "Definition: Identifies the reason or rational for why a person is eligibile for benefits under an insurance policy or progam.                                                       Examples:  A person is a claimant under an automobile insurance policy are client deceased & adopted client has been given a new policy identifier.  A new employee is eligible for health insurance as an employment benefit.  A person meets a government program eligibility criteria for financial, age or health status.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": true
+                }
+              ],
+              "concept": [
+                {
+                  "code": "AGE",
+                  "display": "age eligibility",
+                  "definition": "A person becomes eligible for a program based on age.                                                      Example:  In the U.S., a person who is 65 years of age or older is eligible for Medicare.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "CRIME",
+                  "display": "crime victim",
+                  "definition": "A person becomes eligible for insurance or a program because of crime related health condition or injury.                                                       Example:  A person is a claimant under the U.S. Crime Victims Compensation program.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "DIS",
+                  "display": "disability",
+                  "definition": "A person becomes a claimant under a disability income insurance policy or a disability rehabilitation program because of a health condition or injury which limits the person's ability to earn an income or function without institutionalization.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "EMPLOY",
+                  "display": "employment benefit",
+                  "definition": "A person becomes eligible for insurance provided as an employment benefit based on employment status.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "FINAN",
+                  "display": "financial eligibility",
+                  "definition": "A person becomes eligible for a program based on financial criteria.                                                      Example:  A person whose family income is below a financial threshold for eligibility for Medicaid or SCHIP.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "HEALTH",
+                  "display": "health status",
+                  "definition": "A person becomes eligible for a program because of a qualifying health condition or injury.                                                       Examples:  A person is determined to have a qualifying health conditions include pregnancy, HIV/AIDs, tuberculosis, end stage renal disease, breast or cervical cancer, or other condition requiring specialized health services, hospice, institutional or community based care provided under a program",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "MULTI",
+                  "display": "multiple criteria eligibility",
+                  "definition": "A person becomes eligible for a program based on more than one criterion.                                                      Examples:  In the U.S., a child whose familiy income meets Medicaid financial thresholds and whose age is less than 18 is eligible for the Early and Periodic Screening, Diagnostic, and Treatment program (EPSDT).  A person whose family income meets Medicaid financial thresholds and whose age is 65 years or older is eligible for Medicaid and Medicare, and are referred to as dual eligibles.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "PNC",
+                  "display": "property and casualty condition",
+                  "definition": "A person becomes a claimant under a property and casualty insurance policy because of a related health condition or injury resulting from a circumstance covered under the terms of the policy.                                                       Example:  A person is a claimant under a homeowners insurance policy because of an injury sustained on the policyholderaTMs premises.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "STATUTORY",
+                  "display": "statutory eligibility",
+                  "definition": "A person becomes eligible for a program based on statutory criteria.                                                      Examples:  A person is a member of an indigenous group, a veteran of military service, or  in the U.S., a recipient of adoption assistance and foster care under Title IV-E of the Social Security.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "VEHIC",
+                  "display": "motor vehicle accident victim",
+                  "definition": "A person becomes a claimant under a motor vehicle accident insurance because of a motor vehicle accident related health condition or injury.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "WORK",
+                  "display": "work related",
+                  "definition": "A person becomes eligible for insurance or a program because of a work related health condition or injury.                                                       Example:  A person is a claimant under the U.S. Black Lung Program.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActInformationManagementReason",
+      "display": "ActInformationManagementReason",
+      "definition": "Description:The rationale or purpose for an act relating to information management, such as archiving information for the purpose of complying with an enterprise data retention policy.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "_ActHealthInformationManagementReason",
+          "display": "ActHealthInformationManagementReason",
+          "definition": "Description:The rationale or purpose for an act relating to health information management, such as archiving information for the purpose of complying with an organization policy or jurisdictional law relating to  data retention.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "_ActConsentInformationAccessOverrideReason",
+              "display": "ActConsentInformationAccessOverrideReason",
+              "definition": "To perform one or more operations on information to which the patient has not consented as deemed necessary by authorized entities for providing care in the best interest of the patient; providing immediately needed health care for an emergent condition;  or for protecting public or third party safety.                                                      Usage Notes: Used to convey the reason that a provider or other entity may or has accessed personal healthcare information.  Typically, this involves overriding the subject's consent directives.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": true
+                }
+              ],
+              "concept": [
+                {
+                  "code": "OVRER",
+                  "display": "emergency treatment override",
+                  "definition": "To perform one or more operations on information to which the patient has not consented by authorized entities for treating a condition which poses an immediate threat to the patient's health and which requires immediate medical intervention.                                                      Usage Notes: The patient is unable to provide consent, but the provider determines they have an urgent healthcare related reason to access the record.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "OVRPJ",
+                  "display": "professional judgment override",
+                  "definition": "To perform one or more operations on information to which the patient declined to consent for providing health care.                                                      Usage Notes: The patient, while able to give consent, has not.  However the provider believes it is in the patient's interest to access the record without patient consent.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "OVRPS",
+                  "display": "public safety override",
+                  "definition": "To perform one or more operations on information to which the patient has not consented for public safety reasons.                                                      Usage Notes: The patient, while able to give consent, has not.  However, the provider believes that access to masked patient information is justified because of concerns related to public safety.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "OVRTPS",
+                  "display": "third party safety override",
+                  "definition": "To perform one or more operations on information to which the patient has not consented for third party safety.                                                        Usage Notes: The patient, while able to give consent, has not.  However, the provider believes that access to masked patient information is justified because of concerns related to the health and safety of one or more third parties.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "PurposeOfUse",
+              "display": "purpose of use",
+              "definition": "Reason for performing one or more operations on information, which may be permitted by source system's security policy in accordance with one or more privacy policies and consent directives.                                                      Usage Notes: The rationale or purpose for an act relating to the management of personal health information, such as collecting personal health information for research or public health purposes.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "HMARKT",
+                  "display": "healthcare marketing",
+                  "definition": "To perform one or more operations on information for marketing services and products related to health care.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "HOPERAT",
+                  "display": "healthcare operations",
+                  "definition": "To perform one or more operations on information used for conducting administrative and contractual activities related to the provision of health care.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "DONAT",
+                      "display": "donation",
+                      "definition": "To perform one or more operations on information used for cadaveric organ, eye or tissue donation.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "FRAUD",
+                      "display": "fraud",
+                      "definition": "To perform one or more operations on information used for fraud detection and prevention processes.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "GOV",
+                      "display": "government",
+                      "definition": "To perform one or more operations on information used within government processes.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HACCRED",
+                      "display": "health accreditation",
+                      "definition": "To perform one or more operations on information for conducting activities related to meeting accreditation criteria.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HCOMPL",
+                      "display": "health compliance",
+                      "definition": "To perform one or more operations on information used for conducting activities required to meet a mandate.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HDECD",
+                      "display": "decedent",
+                      "definition": "To perform one or more operations on information used for handling deceased patient matters.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HDIRECT",
+                      "display": "directory",
+                      "definition": "To perform one or more operation operations on information used to manage a patient directory.                                                      Examples:                                                                                facility                            enterprise                            payer                            health information exchange patient directory",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HLEGAL",
+                      "display": "legal",
+                      "definition": "To perform one or more operations on information for conducting activities required by legal proceeding.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HOUTCOMS",
+                      "display": "health outcome measure",
+                      "definition": "To perform one or more operations on information used for assessing results and comparative effectiveness achieved by health care practices and interventions.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HPRGRP",
+                      "display": "health program reporting",
+                      "definition": "To perform one or more operations on information used for conducting activities to meet program accounting requirements.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HQUALIMP",
+                      "display": "health quality improvement",
+                      "definition": "To perform one or more operations on information used for conducting administrative activities to improve health care quality.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "HSYSADMIN",
+                      "display": "health system administration",
+                      "definition": "To perform one or more operations on information to administer the electronic systems used for the delivery of health care.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "MEMADMIN",
+                      "display": "member administration",
+                      "definition": "To perform one or more operations on information to administer health care coverage to an enrollee under a policy or program.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "PATADMIN",
+                      "display": "patient administration",
+                      "definition": "To perform one or more operations on information used for operational activities conducted to administer the delivery of health care to a patient.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "PATSFTY",
+                      "display": "patient safety",
+                      "definition": "To perform one or more operations on information in processes related to ensuring the safety of health care.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "PERFMSR",
+                      "display": "performance measure",
+                      "definition": "To perform one or more operations on information used for monitoring performance of recommended health care practices and interventions.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "RECORDMGT",
+                      "display": "records management",
+                      "definition": "To perform one or more operations on information used within the health records management process.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "TRAIN",
+                      "display": "training",
+                      "definition": "To perform one or more operations on information used in training and education.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "HPAYMT",
+                  "display": "healthcare payment",
+                  "definition": "To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "CLMATTCH",
+                      "display": "claim attachment",
+                      "definition": "To perform one or more operations on information for provision of additional clinical evidence in support of a request for coverage or payment for health services.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "COVAUTH",
+                      "display": "coverage authorization",
+                      "definition": "To perform one or more operations on information for conducting prior authorization or predetermination of coverage for services.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "COVERAGE",
+                      "display": "coverage under policy or program",
+                      "definition": "To perform one or more operations on information for conducting activities related to coverage under a program or policy.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ],
+                      "concept": [
+                        {
+                          "code": "ELIGDTRM",
+                          "display": "eligibility determination",
+                          "definition": "To perform one or more operations on information used for conducting eligibility determination for coverage in a program or policy.  May entail review of financial status or disability assessment.",
+                          "property": [
+                            {
+                              "code": "notSelectable",
+                              "valueBoolean": false
+                            }
+                          ]
+                        },
+                        {
+                          "code": "ELIGVER",
+                          "display": "eligibility verification",
+                          "definition": "To perform one or more operations on information used for conducting eligibility verification of coverage in a program or policy.  May entail provider contacting coverage source (e.g. government health program such as workers compensation or health plan) for confirmation of enrollment, eligibility for specific services, and any applicable copays.",
+                          "property": [
+                            {
+                              "code": "notSelectable",
+                              "valueBoolean": false
+                            }
+                          ]
+                        },
+                        {
+                          "code": "ENROLLM",
+                          "display": "enrollment",
+                          "definition": "To perform one or more operations on information used for enrolling a covered party in a program or policy.  May entail recording of covered party's and any dependent's demographic information and benefit choices.",
+                          "property": [
+                            {
+                              "code": "notSelectable",
+                              "valueBoolean": false
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "code": "REMITADV",
+                      "display": "remittance advice",
+                      "definition": "To perform one or more operations on information about the amount remitted for a health care claim.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "HRESCH",
+                  "display": "healthcare research",
+                  "definition": "To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "CLINTRCH",
+                      "display": "clinical trial research",
+                      "definition": "To perform one or more operations on information for conducting scientific investigations in accordance with clinical trial protocols to obtain health care knowledge.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "PATRQT",
+                  "display": "patient requested",
+                  "definition": "To perform one or more operations on information in response to a patient's request.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "FAMRQT",
+                      "display": "family requested",
+                      "definition": "To perform one or more operations on information in response to a request by a family member authorized by the patient.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "PWATRNY",
+                      "display": "power of attorney",
+                      "definition": "To perform one or more operations on information in response to a request by a person appointed as the patient's legal representative.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "SUPNWK",
+                      "display": "support network",
+                      "definition": "To perform one or more operations on information in response to a request by a person authorized by the patient.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "PUBHLTH",
+                  "display": "public health",
+                  "definition": "To perform one or more operations on information for conducting public health activities, such as the reporting of notifiable conditions.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "DISASTER",
+                      "display": "disaster",
+                      "definition": "To perform one or more operations on information used for provision of immediately needed health care to a population of living subjects located in a disaster zone.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "THREAT",
+                      "display": "threat",
+                      "definition": "To perform one or more operations on information used to prevent injury or disease to living subjects who may be the target of violence.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "code": "TREAT",
+                  "display": "treatment",
+                  "definition": "To perform one or more operations on information for provision of health care.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ],
+                  "concept": [
+                    {
+                      "code": "CAREMGT",
+                      "display": "Care Management",
+                      "definition": "To perform one or more operations on information for provision of health care coordination.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "CLINTRL",
+                      "display": "clinical trial",
+                      "definition": "To perform health care as part of the clinical trial protocol.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "ETREAT",
+                      "display": "Emergency Treatment",
+                      "definition": "To perform one or more operations on information for provision of immediately needed health care for an emergent condition.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    },
+                    {
+                      "code": "POPHLTH",
+                      "display": "population health",
+                      "definition": "To perform one or more operations on information for provision of health care to a population of living subjects, e.g. needle exchange program.",
+                      "property": [
+                        {
+                          "code": "notSelectable",
+                          "valueBoolean": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_ActInformationPrivacyReason",
+          "display": "ActInformationPrivacyReason",
+          "definition": "Description:The rationale or purpose for an act relating to the management of personal information, such as disclosing personal tax information for the purpose of complying with a court order.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "MARKT",
+              "display": "marketing",
+              "definition": "Description:",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OPERAT",
+              "display": "operations",
+              "definition": "Description:Administrative and contractual processes required to support an activity, product, or service",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "LEGAL",
+                  "display": "subpoena",
+                  "definition": "Definition:To provide information as a result of a subpoena.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ACCRED",
+                  "display": "accreditation",
+                  "definition": "Description:Operational activities conducted for the purposes of meeting of criteria defined by an accrediting entity for an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "COMPL",
+                  "display": "compliance",
+                  "definition": "Description:Operational activities required to meet a mandate related to an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "ENADMIN",
+                  "display": "entity administration",
+                  "definition": "Description:Operational activities conducted to administer information relating to entities involves with an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "OUTCOMS",
+                  "display": "outcome measure",
+                  "definition": "Description:Operational activities conducted for the purposes of assessing the results of an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "PRGRPT",
+                  "display": "program reporting",
+                  "definition": "Description:Operational activities conducted to meet program accounting requirements related to an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "QUALIMP",
+                  "display": "quality improvement",
+                  "definition": "Description:Operational activities conducted for the purposes of improving the quality of an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                },
+                {
+                  "code": "SYSADMN",
+                  "display": "system administration",
+                  "definition": "Description:Operational activities conducted to administer the electronic systems used for an activity, product, or service",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "PAYMT",
+              "display": "payment",
+              "definition": "Description:Administrative, financial, and contractual processes related to payment for an activity, product, or service",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RESCH",
+              "display": "research",
+              "definition": "Description:Investigative activities conducted for the purposes of obtaining knowledge",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "SRVC",
+              "display": "service",
+              "definition": "Description:Provision of a service, product, or capability to an individual or organization",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActInvalidReason",
+      "display": "ActInvalidReason",
+      "definition": "Description: Types of reasons why a substance is invalid for use.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "ADVSTORAGE",
+          "display": "adverse storage condition",
+          "definition": "Description: Storage conditions caused the substance to be ineffective.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ],
+          "concept": [
+            {
+              "code": "COLDCHNBRK",
+              "display": "cold chain break",
+              "definition": "Description: Cold chain was not maintained for the substance.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EXPLOT",
+          "display": "expired lot",
+          "definition": "Description: The lot from which the substance was drawn was expired.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "OUTSIDESCHED",
+          "display": "administered outside recommended schedule or practice",
+          "definition": "The substance was administered outside of the recommended schedule or practice.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PRODRECALL",
+          "display": "product recall",
+          "definition": "Description: The substance was recalled by the manufacturer.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActInvoiceCancelReason",
+      "display": "ActInvoiceCancelReason",
+      "definition": "Domain specifies the codes used to describe reasons why a Provider is cancelling an Invoice or Invoice Grouping.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "INCCOVPTY",
+          "display": "incorrect covered party as patient",
+          "definition": "The covered party (patient) specified with the Invoice is not correct.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "INCINVOICE",
+          "display": "incorrect billing",
+          "definition": "The billing information, specified in the Invoice Elements, is not correct.  This could include incorrect costing for items included in the Invoice.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "INCPOLICY",
+          "display": "incorrect policy",
+          "definition": "The policy specified with the Invoice is not correct.  For example, it may belong to another Adjudicator or Covered Party.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "INCPROV",
+          "display": "incorrect provider",
+          "definition": "The provider specified with the Invoice is not correct.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActNoImmunizationReason",
+      "display": "ActNoImmunizationReason",
+      "definition": "A coded description of the reason for why a patient did not receive a scheduled immunization.                          (important for public health strategy",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "IMMUNE",
+          "display": "immunity",
+          "definition": "Definition:Testing has shown that the patient already has immunity to the agent targeted by the immunization.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "MEDPREC",
+          "display": "medical precaution",
+          "definition": "Definition:The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "OSTOCK",
+          "display": "product out of stock",
+          "definition": "Definition:There was no supply of the product on hand to perform the service.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PATOBJ",
+          "display": "patient objection",
+          "definition": "Definition:The patient or their guardian objects to receiving the vaccine.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PHILISOP",
+          "display": "philosophical objection",
+          "definition": "Definition:The patient or their guardian objects to receiving the vaccine because of philosophical beliefs.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "RELIG",
+          "display": "religious objection",
+          "definition": "Definition:The patient or their guardian objects to receiving the vaccine on religious grounds.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "VACEFF",
+          "display": "vaccine efficacy concerns",
+          "definition": "Definition:The intended vaccine has expired or is otherwise believed to no longer be effective.                                                      Example:Due to temperature exposure.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "VACSAF",
+          "display": "vaccine safety concerns",
+          "definition": "Definition:The patient or their guardian objects to receiving the vaccine because of concerns over its safety.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActSupplyFulfillmentRefusalReason",
+      "display": "ActSupplyFulfillmentRefusalReason",
+      "definition": "Indicates why a fulfiller refused to fulfill a supply order, and considered it important to notify other providers of their decision; e.g. \"Suspect fraud\", \"Possible abuse\", \"Contraindicated\".                          (used when capturing 'refusal to fill' annotations)",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "FRR01",
+          "display": "order stopped",
+          "definition": "Definition:The order has been stopped by the prescriber but this fact has not necessarily captured electronically.                                                      Example:A verbal stop, a fax, etc.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FRR02",
+          "display": "stale-dated order",
+          "definition": "Definition:Order has not been fulfilled within a reasonable amount of time, and may not be current.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FRR03",
+          "display": "incomplete data",
+          "definition": "Definition:Data needed to safely act on the order which was expected to become available independent of the order is not yet available                                                      Example:Lab results, diagnostic imaging, etc.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FRR04",
+          "display": "product unavailable",
+          "definition": "Definition:Product not available or manufactured. Cannot supply.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FRR05",
+          "display": "ethical/religious",
+          "definition": "Definition:The dispenser has ethical, religious or moral objections to fulfilling the order/dispensing the product.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FRR06",
+          "display": "unable to provide care",
+          "definition": "Definition:Fulfiller not able to provide appropriate care associated with fulfilling the order.                                                      Example:Therapy requires ongoing monitoring by fulfiller and fulfiller will be ending practice, leaving town, unable to schedule necessary time, etc.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ClinicalResearchEventReason",
+      "display": "ClinicalResearchEventReason",
+      "definition": "Definition:Specifies the reason that an event occurred in a clinical research study.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "RET",
+          "display": "retest",
+          "definition": "Definition:The event occurred so that a test or observation performed at a prior event could be performed again due to conditions set forth in the protocol.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SCH",
+          "display": "scheduled",
+          "definition": "Definition:The event occurred due to it being scheduled in the research protocol.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "TRM",
+          "display": "termination",
+          "definition": "Definition:The event occurred in order to terminate the subject's participation in the study.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "UNS",
+          "display": "unscheduled",
+          "definition": "Definition:The event that occurred was initiated by a study participant (e.g. the subject or the investigator), and did not occur for protocol reasons.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ClinicalResearchObservationReason",
+      "display": "ClinicalResearchObservationReason",
+      "definition": "Definition:SSpecifies the reason that a test was performed or observation collected in a clinical research study.                                                      Note:This set of codes are not strictly reasons, but are used in the currently Normative standard.  Future revisions of the specification will model these as ActRelationships and thes codes may subsequently be retired.  Thus, these codes should not be used for new specifications.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "NPT",
+          "display": "non-protocol",
+          "definition": "Definition:The observation or test was neither defined or scheduled in the study protocol.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PPT",
+          "display": "per protocol",
+          "definition": "Definition:The observation or test occurred due to it being defined in the research protocol, and during an activity or event that was scheduled in the protocol.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "UPT",
+          "display": "per definition",
+          "definition": ":The observation or test occurred as defined in the research protocol, but at a point in time not specified in the study protocol.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_CombinedPharmacyOrderSuspendReasonCode",
+      "display": "CombinedPharmacyOrderSuspendReasonCode",
+      "definition": "Description:Indicates why the prescription should be suspended.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ALTCHOICE",
+          "display": "try another treatment first",
+          "definition": "Description:This therapy has been ordered as a backup to a preferred therapy.  This order will be released when and if the preferred therapy is unsuccessful.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "CLARIF",
+          "display": "prescription requires clarification",
+          "definition": "Description:Clarification is required before the order can be acted upon.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "DRUGHIGH",
+          "display": "drug level too high",
+          "definition": "Description:The current level of the medication in the patient's system is too high.  The medication is suspended to allow the level to subside to a safer level.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "HOSPADM",
+          "display": "admission to hospital",
+          "definition": "Description:The patient has been admitted to a care facility and their community medications are suspended until hospital discharge.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "LABINT",
+          "display": "lab interference issues",
+          "definition": "Description:The therapy would interfere with a planned lab test and the therapy is being withdrawn until the test is completed.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "NON-AVAIL",
+          "display": "patient not-available",
+          "definition": "Description:Patient not available for a period of time due to a scheduled therapy, leave of absence or other reason.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PREG",
+          "display": "parent is pregnant/breast feeding",
+          "definition": "Description:The patient is pregnant or breast feeding.  The therapy will be resumed when the pregnancy is complete and the patient is no longer breastfeeding.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SALG",
+          "display": "allergy",
+          "definition": "Description:The patient is believed to be allergic to a substance that is part of the therapy and the therapy is being temporarily withdrawn to confirm.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SDDI",
+          "display": "drug interacts with another drug",
+          "definition": "Description:The drug interacts with a short-term treatment that is more urgently required.  This order will be resumed when the short-term treatment is complete.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SDUPTHER",
+          "display": "duplicate therapy",
+          "definition": "Description:Another short-term co-occurring therapy fulfills the same purpose as this therapy.  This therapy will be resumed when the co-occuring therapy is complete.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SINTOL",
+          "display": "suspected intolerance",
+          "definition": "Description:The patient is believed to have an intolerance to a substance that is part of the therapy and the therapy is being temporarily withdrawn to confirm.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "SURG",
+          "display": "patient scheduled for surgery",
+          "definition": "Description:The drug is contraindicated for patients receiving surgery and the patient is scheduled to be admitted for surgery in the near future.  The drug will be resumed when the patient has sufficiently recovered from the surgery.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "WASHOUT",
+          "display": "waiting for old drug to wash out",
+          "definition": "Description:The patient was previously receiving a medication contraindicated with the current medication.  The current medication will remain on hold until the prior medication has been cleansed from their system.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ControlActNullificationReasonCode",
+      "display": "ControlActNullificationReasonCode",
+      "definition": "Description:Identifies reasons for nullifying (retracting) a particular control act.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "ALTD",
+          "display": "altered decision",
+          "definition": "Description:The decision on which the recorded information was based was changed before the decision had an effect.                                                      Example:Aborted prescription before patient left office, released prescription before suspend took effect.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "EIE",
+          "display": "entered in error",
+          "definition": "Description:The information was recorded incorrectly or was recorded in the wrong record.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "NORECMTCH",
+          "display": "no record match",
+          "definition": "Description: There is no match for the record in the database.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ControlActNullificationRefusalReasonType",
+      "display": "ControlActNullificationRefusalReasonType",
+      "definition": "Description: Reasons to refuse a transaction to be undone.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "INRQSTATE",
+          "display": "in requested state",
+          "definition": "The record is already in the requested state.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "NOMATCH",
+          "display": "no match",
+          "definition": "Description: There is no match.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ],
+          "concept": [
+            {
+              "code": "NOPRODMTCH",
+              "display": "no product match",
+              "definition": "Description: There is no match for the product in the master file repository.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOSERMTCH",
+              "display": "no service match",
+              "definition": "Description: There is no match for the service in the master file repository.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOVERMTCH",
+              "display": "no version match",
+              "definition": "Description: There is no match for the record and version.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "NOPERM",
+          "display": "no permission",
+          "definition": "Description: There is no permission.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ],
+          "concept": [
+            {
+              "code": "NOUSERPERM",
+              "display": "no user permission",
+              "definition": "Definition:The user does not have permission",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOAGNTPERM",
+              "display": "no agent permission",
+              "definition": "Description: The agent does not have permission.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOUSRPERM",
+              "display": "no user permission",
+              "definition": "Description: The user does not have permission.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "WRNGVER",
+          "display": "wrong version",
+          "definition": "Description: The record and version requested to update is not the current version.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ControlActReason",
+      "display": "ControlActReason",
+      "definition": "Identifies why a specific query, request, or other trigger event occurred.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "_MedicationOrderAbortReasonCode",
+          "display": "medication order abort reason",
+          "definition": "Description:Indicates the reason the medication order should be aborted.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "DISCONT",
+              "display": "product discontinued",
+              "definition": "Description:The medication is no longer being manufactured or is otherwise no longer available.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "INEFFECT",
+              "display": "ineffective",
+              "definition": "Description:The therapy has been found to not have the desired therapeutic benefit on the patient.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "MONIT",
+              "display": "response to monitoring",
+              "definition": "Description:Monitoring the patient while taking the medication, the decision has been made that the therapy is no longer appropriate.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOREQ",
+              "display": "no longer required for treatment",
+              "definition": "Description:The underlying condition has been resolved or has evolved such that a different treatment is no longer needed.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOTCOVER",
+              "display": "not covered",
+              "definition": "Description:The product does not have (or no longer has) coverage under the patientaTMs insurance policy.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PREFUS",
+              "display": "patient refuse",
+              "definition": "Description:The patient refused to take the product.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "RECALL",
+              "display": "product recalled",
+              "definition": "Description:The manufacturer or other agency has requested that stocks of a medication be removed from circulation.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "REPLACE",
+              "display": "change in order",
+              "definition": "Description:Item in current order is no longer in use as requested and a new one has/will be created to replace it.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ],
+              "concept": [
+                {
+                  "code": "DOSECHG",
+                  "display": "change in medication/dose",
+                  "definition": "Description:The medication is being re-prescribed at a different dosage.",
+                  "property": [
+                    {
+                      "code": "notSelectable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "REPLACEFIX",
+              "display": "error in order",
+              "definition": "Description:Current order was issued with incorrect data and a new order has/will be created to replace it.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "UNABLE",
+              "display": "unable to use",
+              "definition": "Description:<The patient is not (or is no longer) able to use the medication in a manner prescribed.                                                      Example:CanaTMt swallow.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_MedicationOrderReleaseReasonCode",
+          "display": "medication order release reason",
+          "definition": "Definition:A collection of concepts that indicate why the prescription should be released from suspended state.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "HOLDDONE",
+              "display": "suspend reason no longer applies",
+              "definition": "Definition:The original reason for suspending the medication has ended.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "HOLDINAP",
+              "display": "suspend reason inappropriate",
+              "definition": "Definition:",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_ModifyPrescriptionReasonType",
+          "display": "ModifyPrescriptionReasonType",
+          "definition": "Types of reason why a prescription is being changed.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "ADMINERROR",
+              "display": "administrative error in order",
+              "definition": "Order was created with incorrect data and is changed to reflect the intended accuracy of the order.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "CLINMOD",
+              "display": "clinical modification",
+              "definition": "Order is changed based on a clinical reason.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_PharmacySupplyEventAbortReason",
+          "display": "PharmacySupplyEventAbortReason",
+          "definition": "Definition:Identifies why the dispense event was not completed.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ],
+          "concept": [
+            {
+              "code": "CONTRA",
+              "display": "contraindication",
+              "definition": "Definition:Contraindication identified",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "FOABORT",
+              "display": "order aborted",
+              "definition": "Definition:Order to be fulfilled was aborted",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "FOSUSP",
+              "display": "order suspended",
+              "definition": "Definition:Order to be fulfilled was suspended",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOPICK",
+              "display": "not picked up",
+              "definition": "Definition:Patient did not come to get medication",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PATDEC",
+              "display": "patient changed mind",
+              "definition": "Definition:Patient changed their mind regarding obtaining medication",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "QUANTCHG",
+              "display": "change supply quantity",
+              "definition": "Definition:Patient requested a revised quantity of medication",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_PharmacySupplyEventStockReasonCode",
+          "display": "pharmacy supply event stock reason",
+          "definition": "Definition:A collection of concepts that indicates the reason for a \"bulk supply\" of medication.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "FLRSTCK",
+              "display": "floor stock",
+              "definition": "Definition:The bulk supply is issued to replenish a ward for local dispensing.  (Includes both mobile and fixed-location ward stocks.)",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "LTC",
+              "display": "long term care use",
+              "definition": "Definition:The bulk supply will be administered within a long term care facility.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "OFFICE",
+              "display": "office use",
+              "definition": "Definition:The bulk supply is intended for general clinician office use.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PHARM",
+              "display": "pharmacy transfer",
+              "definition": "Definition:The bulk supply is being transferred to another dispensing facility to.                                                      Example:Alleviate a temporary shortage.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PROG",
+              "display": "program use",
+              "definition": "Definition:The bulk supply is intended for dispensing according to a specific program.                                                      Example:Mass immunization.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_PharmacySupplyRequestRenewalRefusalReasonCode",
+          "display": "pharmacy supply request renewal refusal reason",
+          "definition": "Definition:A collection of concepts that identifies why a renewal prescription has been refused.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "ALREADYRX",
+              "display": "new prescription exists",
+              "definition": "Definition:Patient has already been given a new (renewal) prescription.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "FAMPHYS",
+              "display": "family physician must authorize further fills",
+              "definition": "Definition:Request for further authorization must be done through patient's family physician.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "MODIFY",
+              "display": "modified prescription exists",
+              "definition": "Definition:Therapy has been changed and new prescription issued",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NEEDAPMT",
+              "display": "patient must make appointment",
+              "definition": "Definition:Patient must see prescriber prior to further fills.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOTAVAIL",
+              "display": "prescriber not available",
+              "definition": "Definition:Original prescriber is no longer available to prescribe and no other prescriber has taken responsibility for the patient.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NOTPAT",
+              "display": "patient no longer in this practice",
+              "definition": "Definition:Patient no longer or has never been under this prescribers care.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "ONHOLD",
+              "display": "medication on hold",
+              "definition": "Definition:This medication is on hold.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "PRNA",
+              "display": "product not available",
+              "definition": "Description:This product is not available or manufactured.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "STOPMED",
+              "display": "prescriber stopped medication for patient",
+              "definition": "Renewing or original prescriber informed patient to stop using the medication.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "TOOEARLY",
+              "display": "too early",
+              "definition": "Definition:The patient should have medication remaining.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "_SupplyOrderAbortReasonCode",
+          "display": "supply order abort reason",
+          "definition": "Definition:A collection of concepts that indicates why the prescription should no longer be allowed to be dispensed (but can still administer what is already being dispensed).",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ],
+          "concept": [
+            {
+              "code": "IMPROV",
+              "display": "condition improved",
+              "definition": "Definition:The patient's medical condition has nearly abated.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "INTOL",
+              "display": "intolerance",
+              "definition": "Description:The patient has an intolerance to the medication.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NEWSTR",
+              "display": "new strength",
+              "definition": "Definition:The current medication will be replaced by a new strength of the same medication.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            },
+            {
+              "code": "NEWTHER",
+              "display": "new therapy",
+              "definition": "Definition:A new therapy will be commenced when current supply exhausted.",
+              "property": [
+                {
+                  "code": "notSelectable",
+                  "valueBoolean": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_GenericUpdateReasonCode",
+      "display": "GenericUpdateReasonCode",
+      "definition": "Description:Identifies why a change is being made to a  record.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "CHGDATA",
+          "display": "information change",
+          "definition": "Description:Information has changed since the record was created.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FIXDATA",
+          "display": "error correction",
+          "definition": "Description:Previously recorded information was erroneous and is being corrected.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "MDATA",
+          "display": "merge data",
+          "definition": "Information is combined into the record.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "NEWDATA",
+          "display": "new information",
+          "definition": "Description:New information has become available to supplement the record.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "UMDATA",
+          "display": "unmerge data",
+          "definition": "Information is separated from the record.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_PatientProfileQueryReasonCode",
+      "display": "patient profile query reason",
+      "definition": "Definition:A collection of concepts identifying why the patient's profile is being queried.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ADMREV",
+          "display": "administrative review",
+          "definition": "Definition: To evaluate for service authorization, payment, reporting, or performance/outcome measures.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PATCAR",
+          "display": "patient care",
+          "definition": "Definition:To obtain records as part of patient care.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PATREQ",
+          "display": "patient request query",
+          "definition": "Definition:Patient requests information from their profile.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PRCREV",
+          "display": "practice review",
+          "definition": "Definition:To evaluate the provider's current practice for professional-improvement reasons.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "REGUL",
+          "display": "regulatory review",
+          "definition": "Description:Review for the purpose of regulatory compliance.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "RSRCH",
+          "display": "research",
+          "definition": "Definition:To provide research data, as authorized by the patient.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "VALIDATION",
+          "display": "validation review",
+          "definition": "Description:To validate the patient's record.                                                      Example:Merging or unmerging records.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode",
+      "display": "PharmacySupplyRequestFulfillerRevisionRefusalReasonCode",
+      "definition": "Definition:Indicates why the request to transfer a prescription from one dispensing facility to another has been refused.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "LOCKED",
+          "display": "locked",
+          "definition": "Definition:The prescription may not be reassigned from the original pharmacy.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "UNKWNTARGET",
+          "display": "unknown target",
+          "definition": "Definition:The target facility does not recognize the dispensing facility.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_RefusalReasonCode",
+      "display": "RefusalReasonCode",
+      "definition": "Description: Identifies why a request to add (or activate) a record is being refused.  Examples include the receiving system not able to match the identifier and find that record in the receiving system, having no permission, or a detected issue exists which precludes the requested action.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "_SchedulingActReason",
+      "display": "SchedulingActReason",
+      "definition": "Reasons for cancelling or rescheduling an Appointment",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "BLK",
+          "display": "Unexpected Block (of Schedule)",
+          "definition": "The time slots previously allocated are now blocked and no longer available for booking Appointments",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "DEC",
+          "display": "Patient Deceased",
+          "definition": "The Patient is deceased",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FIN",
+          "display": "No Financial Backing",
+          "definition": "Patient unable to pay and not covered by insurance",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "MED",
+          "display": "Medical Status Altered",
+          "definition": "The medical condition of the Patient has changed",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "MTG",
+          "display": "In an outside meeting",
+          "definition": "The Physician is in a meeting.  For example, he/she may request administrative time to talk to family after appointment",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PHY",
+          "display": "Physician request",
+          "definition": "The Physician requested the action",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_StatusRevisionRefusalReasonCode",
+      "display": "StatusRevisionRefusalReasonCode",
+      "definition": "Indicates why the act revision (status update) is being refused.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "FILLED",
+          "display": "fully filled",
+          "definition": "Ordered quantity has already been completely fulfilled.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_SubstanceAdministrationPermissionRefusalReasonCode",
+      "display": "SubstanceAdministrationPermissionRefusalReasonCode",
+      "definition": "Definition:Indicates why the requested authorization to prescribe or dispense a medication has been refused.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ],
+      "concept": [
+        {
+          "code": "PATINELIG",
+          "display": "patient not eligible",
+          "definition": "Definition:Patient not eligible for drug",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PROTUNMET",
+          "display": "protocol not met",
+          "definition": "Definition:Patient does not meet required protocol",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "PROVUNAUTH",
+          "display": "provider not authorized",
+          "definition": "Definition:Provider is not authorized to prescribe or dispense",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_SubstanceAdminSubstitutionNotAllowedReason",
+      "display": "SubstanceAdminSubstitutionNotAllowedReason",
+      "definition": "Reasons why substitution of a substance administration request is not permitted.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ALGINT",
+          "display": "allergy intolerance",
+          "definition": "Definition: Patient has had a prior allergic intolerance response to alternate product or one of its components.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "COMPCON",
+          "display": "compliance concern",
+          "definition": "Definition: Patient has compliance issues with medication such as differing appearance, flavor, size, shape or consistency.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "THERCHAR",
+          "display": "therapeutic characteristics",
+          "definition": "The prescribed product has specific clinical release or other therapeutic characteristics not shared by other substitutable medications.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "TRIAL",
+          "display": "clinical trial drug",
+          "definition": "Definition: The specific manufactured drug is part of a clinical trial.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_SubstanceAdminSubstitutionReason",
+      "display": "SubstanceAdminSubstitutionReason",
+      "definition": "SubstanceAdminSubstitutionReason",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "CT",
+          "display": "continuing therapy",
+          "definition": "Indicates that the decision to substitute or to not substitute was driven by a desire to maintain consistency with a pre-existing therapy.  I.e. The performer provided the same item/service as had been previously provided rather than providing exactly what was ordered, or rather than substituting with a lower-cost equivalent.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "FP",
+          "display": "formulary policy",
+          "definition": "Indicates that the decision to substitute or to not substitute was driven by a policy expressed within the formulary.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "OS",
+          "display": "out of stock",
+          "definition": "In the case of 'substitution', indicates that the substitution occurred because the ordered item was not in stock.  In the case of 'no substitution', indicates that a cheaper equivalent was not substituted because it was not in stock.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "RR",
+          "display": "regulatory requirement",
+          "definition": "Indicates that the decision to substitute or to not substitute was driven by a jurisdictional regulatory requirement mandating or prohibiting substitution.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_TransferActReason",
+      "display": "TransferActReason",
+      "definition": "The explanation for why a patient is moved from one location to another within the organization",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "ER",
+          "display": "Error",
+          "definition": "Moved to an error in placing the patient in the original location.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        },
+        {
+          "code": "RQ",
+          "display": "Request",
+          "definition": "Moved at the request of the patient.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "_ActBillableServiceReason",
+      "display": "ActBillableServiceReason",
+      "definition": "Definition: This domain is used to document reasons for providing a billable service; the billable services may include both clinical services and social services.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": true
+        }
+      ],
+      "concept": [
+        {
+          "code": "_ActBillableClinicalServiceReason",
+          "display": "ActBillableClinicalServiceReason",
+          "definition": "Reason for Clinical Service being performed.                          This domain excludes reasons specified by diagnosed conditions.                          Examples of values from this domain include duplicate therapy and fraudulent prescription.",
+          "property": [
+            {
+              "code": "notSelectable",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "BONUS",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "CHD",
+      "display": "Children only",
+      "definition": "Description:The level of coverage under the policy or program is available only to children",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "DEP",
+      "display": "Dependents only",
+      "definition": "Description:The level of coverage under the policy or program is available only to a subscriber's dependents.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "ECH",
+      "display": "Employee and children",
+      "definition": "Description:The level of coverage under the policy or program is available to an employee and his or her children.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "EDU",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "EMP",
+      "display": "Employee only",
+      "definition": "Description:The level of coverage under the policy or program is available only to an employee.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "ESP",
+      "display": "Employee and spouse",
+      "definition": "Description:The level of coverage under the policy or program is available to an employee and his or her spouse.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "FAM",
+      "display": "Family",
+      "definition": "Description:The level of coverage under the policy or program is available to a subscriber's family.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "IND",
+      "display": "Individual",
+      "definition": "Description:The level of coverage under the policy or program is available to an individual.",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "INVOICE",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "PROA",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "RECOV",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "RETRO",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "SPC",
+      "display": "Spouse and children",
+      "definition": "Description:The level of coverage under the policy or program is available to a subscriber's spouse and children",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "SPO",
+      "display": "Spouse only",
+      "definition": "Description:The level of coverage under the policy or program is available only to a subscribers spouse",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "code": "TRAN",
+      "property": [
+        {
+          "code": "notSelectable",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

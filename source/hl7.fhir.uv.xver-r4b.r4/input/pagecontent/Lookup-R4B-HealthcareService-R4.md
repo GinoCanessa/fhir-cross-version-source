@@ -1,0 +1,41 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [HealthcareService](https://hl7.org/fhir/R4B/HealthcareService.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [HealthcareService.meta](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.meta](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.implicitRules](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.implicitRules](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.language](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.language](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.text](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.text](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.contained](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.contained](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.identifier](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.identifier](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.active](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.active](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.providedBy](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.providedBy](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.category](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.category](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.type](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.type](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.specialty](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.specialty](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.location](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.location](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.name](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.name](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.comment](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.comment](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.extraDetails](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.extraDetails](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.photo](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.photo](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.telecom](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.telecom](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.coverageArea](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.coverageArea](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.serviceProvisionCode](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.serviceProvisionCode](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.eligibility](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.eligibility](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.eligibility.code](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.eligibility.code](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.eligibility.comment](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.eligibility.comment](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.program](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.program](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.characteristic](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.characteristic](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.communication](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.communication](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.referralMethod](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.referralMethod](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.appointmentRequired](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.appointmentRequired](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availableTime](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availableTime](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availableTime.daysOfWeek](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availableTime.daysOfWeek](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availableTime.allDay](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availableTime.allDay](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availableTime.availableStartTime](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availableTime.availableStartTime](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availableTime.availableEndTime](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availableTime.availableEndTime](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.notAvailable](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.notAvailable](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.notAvailable.description](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.notAvailable.description](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.notAvailable.during](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.notAvailable.during](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.availabilityExceptions](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.availabilityExceptions](https://hl7.org/fhir/R4/HealthcareService.html#resource) |
+| [HealthcareService.endpoint](https://hl7.org/fhir/R4B/HealthcareService.html#resource) | `UseElementSameName` | [HealthcareService.endpoint](https://hl7.org/fhir/R4/HealthcareService.html#resource) |

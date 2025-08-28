@@ -1,0 +1,961 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-SubstanceNucleicAcid",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-SubstanceNucleicAcid",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_SubstanceNucleicAcid",
+  "title": "Cross-version Extension for R4.SubstanceNucleicAcid for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:50.5587339-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubstanceNucleicAcid from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Nucleic acids are defined by three distinct elements: the base, sugar and linkage. Individual substance/moiety IDs will be created for each of these elements. The nucleotide sequence will be always entered in the 5’-3’ direction",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sequenceType",
+        "path": "Extension.extension",
+        "sliceName": "sequenceType",
+        "short": "The type of the sequence shall be specified based on a controlled vocabulary",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.sequenceType from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sequenceType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequenceType"
+      },
+      {
+        "id": "Extension.extension:sequenceType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The type of the sequence shall be specified based on a controlled vocabulary",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.sequenceType from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberOfSubunits",
+        "path": "Extension.extension",
+        "sliceName": "numberOfSubunits",
+        "short": "The number of linear sequences of nucleotides linked through phosphodiester bonds shall be described. Subunits would be strands of nucleic acids that are tightly associated typically through Watson-Crick base pairing. NOTE: If not specified in the reference source, the assumption is that there is 1 subunit",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.numberOfSubunits from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:numberOfSubunits.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "numberOfSubunits"
+      },
+      {
+        "id": "Extension.extension:numberOfSubunits.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The number of linear sequences of nucleotides linked through phosphodiester bonds shall be described. Subunits would be strands of nucleic acids that are tightly associated typically through Watson-Crick base pairing. NOTE: If not specified in the reference source, the assumption is that there is 1 subunit",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.numberOfSubunits from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:areaOfHybridisation",
+        "path": "Extension.extension",
+        "sliceName": "areaOfHybridisation",
+        "short": "The area of hybridisation shall be described if applicable for double stranded RNA or DNA. The number associated with the subunit followed by the number associated to the residue shall be specified in increasing order. The underscore “” shall be used as separator as follows: “Subunitnumber Residue”",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.areaOfHybridisation from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:areaOfHybridisation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "areaOfHybridisation"
+      },
+      {
+        "id": "Extension.extension:areaOfHybridisation.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The area of hybridisation shall be described if applicable for double stranded RNA or DNA. The number associated with the subunit followed by the number associated to the residue shall be specified in increasing order. The underscore “” shall be used as separator as follows: “Subunitnumber Residue”",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.areaOfHybridisation from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:oligoNucleotideType",
+        "path": "Extension.extension",
+        "sliceName": "oligoNucleotideType",
+        "short": "(TBC)",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.oligoNucleotideType from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:oligoNucleotideType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "oligoNucleotideType"
+      },
+      {
+        "id": "Extension.extension:oligoNucleotideType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "(TBC)",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.oligoNucleotideType from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit",
+        "path": "Extension.extension",
+        "sliceName": "subunit",
+        "short": "Subunits are listed in order of decreasing length; sequences of the same length will be ordered by molecular weight; subunits that have identical sequences will be repeated multiple times",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:subunit",
+        "path": "Extension.extension.extension",
+        "sliceName": "subunit",
+        "short": "Index of linear sequences of nucleic acids in order of decreasing length. Sequences of the same length will be ordered by molecular weight. Subunits that have identical sequences will be repeated and have sequential subscripts",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.subunit from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:subunit.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subunit"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:subunit.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Index of linear sequences of nucleic acids in order of decreasing length. Sequences of the same length will be ordered by molecular weight. Subunits that have identical sequences will be repeated and have sequential subscripts",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.subunit from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequence",
+        "path": "Extension.extension.extension",
+        "sliceName": "sequence",
+        "short": "Actual nucleotide sequence notation from 5' to 3' end using standard single letter codes. In addition to the base sequence, sugar and type of phosphate or non-phosphate linkage should also be captured",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sequence from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequence.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequence"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequence.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Actual nucleotide sequence notation from 5' to 3' end using standard single letter codes. In addition to the base sequence, sugar and type of phosphate or non-phosphate linkage should also be captured",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sequence from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:length",
+        "path": "Extension.extension.extension",
+        "sliceName": "length",
+        "short": "The length of the sequence shall be captured",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.length from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:length.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "length"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:length.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The length of the sequence shall be captured",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.length from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequenceAttachment",
+        "path": "Extension.extension.extension",
+        "sliceName": "sequenceAttachment",
+        "short": "(TBC)",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sequenceAttachment from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequenceAttachment.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sequenceAttachment"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sequenceAttachment.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "(TBC)",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sequenceAttachment from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:fivePrime",
+        "path": "Extension.extension.extension",
+        "sliceName": "fivePrime",
+        "short": "The nucleotide present at the 5’ terminal shall be specified based on a controlled vocabulary. Since the sequence is represented from the 5' to the 3' end, the 5’ prime nucleotide is the letter at the first position in the sequence. A separate representation would be redundant",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.fivePrime from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:fivePrime.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "fivePrime"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:fivePrime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The nucleotide present at the 5’ terminal shall be specified based on a controlled vocabulary. Since the sequence is represented from the 5' to the 3' end, the 5’ prime nucleotide is the letter at the first position in the sequence. A separate representation would be redundant",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.fivePrime from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:threePrime",
+        "path": "Extension.extension.extension",
+        "sliceName": "threePrime",
+        "short": "The nucleotide present at the 3’ terminal shall be specified based on a controlled vocabulary. Since the sequence is represented from the 5' to the 3' end, the 5’ prime nucleotide is the letter at the last position in the sequence. A separate representation would be redundant",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.threePrime from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:threePrime.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "threePrime"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:threePrime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The nucleotide present at the 3’ terminal shall be specified based on a controlled vocabulary. Since the sequence is represented from the 5' to the 3' end, the 5’ prime nucleotide is the letter at the last position in the sequence. A separate representation would be redundant",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.threePrime from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage",
+        "path": "Extension.extension.extension",
+        "sliceName": "linkage",
+        "short": "The linkages between sugar residues will also be captured",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:connectivity",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "connectivity",
+        "short": "The entity that links the sugar residues together should also be captured for nearly all naturally occurring nucleic acid the linkage is a phosphate group. For many synthetic oligonucleotides phosphorothioate linkages are often seen. Linkage connectivity is assumed to be 3’-5’. If the linkage is either 3’-3’ or 5’-5’ this should be specified",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.connectivity from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:connectivity.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "connectivity"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:connectivity.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The entity that links the sugar residues together should also be captured for nearly all naturally occurring nucleic acid the linkage is a phosphate group. For many synthetic oligonucleotides phosphorothioate linkages are often seen. Linkage connectivity is assumed to be 3’-5’. If the linkage is either 3’-3’ or 5’-5’ this should be specified",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.connectivity from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:identifier",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "Each linkage will be registered as a fragment and have an ID",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:identifier.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Each linkage will be registered as a fragment and have an ID",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:name",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "name",
+        "short": "Each linkage will be registered as a fragment and have at least one name. A single name shall be assigned to each linkage",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.name from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:name.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Each linkage will be registered as a fragment and have at least one name. A single name shall be assigned to each linkage",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.name from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:residueSite",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "residueSite",
+        "short": "Residues shall be captured as described in 5.3.6.8.3",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.residueSite from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:residueSite.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "residueSite"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.extension:residueSite.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Residues shall be captured as described in 5.3.6.8.3",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.linkage.residueSite from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:linkage.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "linkage"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar",
+        "path": "Extension.extension.extension",
+        "sliceName": "sugar",
+        "short": "5.3.6.8.1 Sugar ID (Mandatory)",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:identifier",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "The Substance ID of the sugar or sugar-like component that make up the nucleotide",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:identifier.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The Substance ID of the sugar or sugar-like component that make up the nucleotide",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.identifier from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:name",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "name",
+        "short": "The name of the sugar or sugar-like component that make up the nucleotide",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.name from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:name.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The name of the sugar or sugar-like component that make up the nucleotide",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.name from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:residueSite",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "residueSite",
+        "short": "The residues that contain a given sugar will be captured. The order of given residues will be captured in the 5‘-3‘direction consistent with the base sequences listed above",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.residueSite from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:residueSite.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "residueSite"
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.extension:residueSite.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The residues that contain a given sugar will be captured. The order of given residues will be captured in the 5‘-3‘direction consistent with the base sequences listed above",
+        "definition": "This cross-version extension represents SubstanceNucleicAcid.subunit.sugar.residueSite from http://hl7.org/fhir/StructureDefinition/SubstanceNucleicAcid|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:subunit.extension:sugar.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sugar"
+      },
+      {
+        "id": "Extension.extension:subunit.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subunit"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-SubstanceNucleicAcid"
+      }
+    ]
+  }
+}

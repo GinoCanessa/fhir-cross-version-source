@@ -1,0 +1,430 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-DocumentReference.context",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-DocumentReference.context",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_DocumentReference_context",
+  "title": "Cross-version Extension for R4.DocumentReference.context for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:41.7140634-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DocumentReference.context from http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference.context"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Clinical context of document",
+        "definition": "The clinical context in which the document was prepared.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:encounter",
+        "path": "Extension.extension",
+        "sliceName": "encounter",
+        "short": "Context of the document  content",
+        "definition": "Describes the clinical encounter or type of care that the document content is associated with.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:encounter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "encounter"
+      },
+      {
+        "id": "Extension.extension:encounter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Context of the document  content",
+        "definition": "Describes the clinical encounter or type of care that the document content is associated with.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:event",
+        "path": "Extension.extension",
+        "sliceName": "event",
+        "short": "Main clinical acts documented",
+        "definition": "This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the type Code, such as a \"History and Physical Report\" in which the procedure being documented is necessarily a \"History and Physical\" act.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:event.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "event"
+      },
+      {
+        "id": "Extension.extension:event.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Main clinical acts documented",
+        "definition": "This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the type Code, such as a \"History and Physical Report\" in which the procedure being documented is necessarily a \"History and Physical\" act.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This list of codes represents the main clinical acts being documented.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-v3-ActCode-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "short": "Time of service that is being documented",
+        "definition": "The time period over which the service that is described by the document was provided.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Time of service that is being documented",
+        "definition": "The time period over which the service that is described by the document was provided.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:facilityType",
+        "path": "Extension.extension",
+        "sliceName": "facilityType",
+        "short": "Kind of facility where patient was seen",
+        "definition": "The kind of facility where the patient was seen.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:facilityType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "facilityType"
+      },
+      {
+        "id": "Extension.extension:facilityType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Kind of facility where patient was seen",
+        "definition": "The kind of facility where the patient was seen.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "XDS Facility Type.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-c80-facilitycodes-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:practiceSetting",
+        "path": "Extension.extension",
+        "sliceName": "practiceSetting",
+        "short": "Additional details about where the content was created (e.g. clinical specialty)",
+        "definition": "This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:practiceSetting.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "practiceSetting"
+      },
+      {
+        "id": "Extension.extension:practiceSetting.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Additional details about where the content was created (e.g. clinical specialty)",
+        "definition": "This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Additional details about where the content was created (e.g. clinical specialty).",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-c80-practice-codes-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:sourcePatientInfo",
+        "path": "Extension.extension",
+        "sliceName": "sourcePatientInfo",
+        "short": "Patient demographics from source",
+        "definition": "The Patient Information as known when the document was published. May be a reference to a version specific, or contained.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sourcePatientInfo.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sourcePatientInfo"
+      },
+      {
+        "id": "Extension.extension:sourcePatientInfo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Patient demographics from source",
+        "definition": "The Patient Information as known when the document was published. May be a reference to a version specific, or contained.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:related",
+        "path": "Extension.extension",
+        "sliceName": "related",
+        "short": "Related identifiers or resources",
+        "definition": "Related identifiers or resources associated with the DocumentReference.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:related.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "related"
+      },
+      {
+        "id": "Extension.extension:related.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Related identifiers or resources",
+        "definition": "Related identifiers or resources associated with the DocumentReference.",
+        "comment": "`DocumentReference.context` maps to R5 `DocumentReference.context`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-DocumentReference.context"
+      }
+    ]
+  }
+}

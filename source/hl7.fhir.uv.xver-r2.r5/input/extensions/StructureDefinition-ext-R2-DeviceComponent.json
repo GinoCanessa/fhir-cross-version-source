@@ -1,0 +1,630 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-DeviceComponent",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceComponent",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_DeviceComponent",
+  "title": "Cross-version Extension for R2.DeviceComponent for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:52.3776321-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceComponent from http://hl7.org/fhir/StructureDefinition/DeviceComponent|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "An instance of a medical-related component of a medical device",
+        "definition": "Describes the characteristics, operational status and capabilities of a medical-related component of a medical device.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "What kind of component it is",
+        "definition": "Describes the specific component type as defined in the object-oriented or metric nomenclature partition.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "What kind of component it is",
+        "definition": "Describes the specific component type as defined in the object-oriented or metric nomenclature partition.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Describes the type of the component.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:lastSystemChange",
+        "path": "Extension.extension",
+        "sliceName": "lastSystemChange",
+        "short": "Recent system change timestamp",
+        "definition": "Describes the timestamp for the most recent system change which includes device configuration or setting change.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lastSystemChange.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastSystemChange"
+      },
+      {
+        "id": "Extension.extension:lastSystemChange.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Recent system change timestamp",
+        "definition": "Describes the timestamp for the most recent system change which includes device configuration or setting change.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:source",
+        "path": "Extension.extension",
+        "sliceName": "source",
+        "short": "A source device of this component",
+        "definition": "Describes the link to the source Device that contains administrative device information such as manufacture, serial number, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:source.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "source"
+      },
+      {
+        "id": "Extension.extension:source.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A source device of this component",
+        "definition": "Describes the link to the source Device that contains administrative device information such as manufacture, serial number, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parent",
+        "path": "Extension.extension",
+        "sliceName": "parent",
+        "short": "Parent resource link",
+        "definition": "Describes the link to the parent resource. For example: Channel is linked to its VMD parent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "parent"
+      },
+      {
+        "id": "Extension.extension:parent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Parent resource link",
+        "definition": "Describes the link to the parent resource. For example: Channel is linked to its VMD parent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operationalStatus",
+        "path": "Extension.extension",
+        "sliceName": "operationalStatus",
+        "short": "Component operational status",
+        "definition": "Indicates current operational status of the device. For example: On, Off, Standby, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:operationalStatus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "operationalStatus"
+      },
+      {
+        "id": "Extension.extension:operationalStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Component operational status",
+        "definition": "Indicates current operational status of the device. For example: On, Off, Standby, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:parameterGroup",
+        "path": "Extension.extension",
+        "sliceName": "parameterGroup",
+        "short": "Current supported parameter group",
+        "definition": "Describes the parameter group supported by the current device component that is based on some nomenclature, e.g. cardiovascular.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:parameterGroup.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "parameterGroup"
+      },
+      {
+        "id": "Extension.extension:parameterGroup.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Current supported parameter group",
+        "definition": "Describes the parameter group supported by the current device component that is based on some nomenclature, e.g. cardiovascular.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:measurementPrinciple",
+        "path": "Extension.extension",
+        "sliceName": "measurementPrinciple",
+        "short": "other | chemical | electrical | impedance | nuclear | optical | thermal | biological | mechanical | acoustical | manual+",
+        "definition": "Describes the physical principle of the measurement. For example: thermal, chemical, acoustical, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:measurementPrinciple.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementPrinciple"
+      },
+      {
+        "id": "Extension.extension:measurementPrinciple.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "other | chemical | electrical | impedance | nuclear | optical | thermal | biological | mechanical | acoustical | manual+",
+        "definition": "Describes the physical principle of the measurement. For example: thermal, chemical, acoustical, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Different measurement principle supported by the device.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-measurement-principle-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification",
+        "path": "Extension.extension",
+        "sliceName": "productionSpecification",
+        "short": "Production specification of the component",
+        "definition": "Describes the production specification such as component revision, serial number, etc.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:specType",
+        "path": "Extension.extension.extension",
+        "sliceName": "specType",
+        "short": "Specification type",
+        "definition": "Describes the specification type, such as, serial number, part number, hardware revision, software revision, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:specType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specType"
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:specType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Specification type",
+        "definition": "Describes the specification type, such as, serial number, part number, hardware revision, software revision, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:componentId",
+        "path": "Extension.extension.extension",
+        "sliceName": "componentId",
+        "short": "Internal component unique identification",
+        "definition": "Describes the internal component unique identification. This is a provision for manufacture specific standard components using a private OID. 11073-10101 has a partition for private OID semantic that the manufacture can make use of.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:componentId.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "componentId"
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:componentId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Internal component unique identification",
+        "definition": "Describes the internal component unique identification. This is a provision for manufacture specific standard components using a private OID. 11073-10101 has a partition for private OID semantic that the manufacture can make use of.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:productionSpec",
+        "path": "Extension.extension.extension",
+        "sliceName": "productionSpec",
+        "short": "A printable string defining the component",
+        "definition": "Describes the printable string defining the component.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:productionSpec.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productionSpec"
+      },
+      {
+        "id": "Extension.extension:productionSpecification.extension:productionSpec.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A printable string defining the component",
+        "definition": "Describes the printable string defining the component.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productionSpecification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productionSpecification"
+      },
+      {
+        "id": "Extension.extension:languageCode",
+        "path": "Extension.extension",
+        "sliceName": "languageCode",
+        "short": "Language code for the human-readable text strings produced by the device",
+        "definition": "Describes the language code for the human-readable text string produced by the device. This language code will follow the IETF language tag. Example: en-US.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:languageCode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "languageCode"
+      },
+      {
+        "id": "Extension.extension:languageCode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Language code for the human-readable text strings produced by the device",
+        "definition": "Describes the language code for the human-readable text string produced by the device. This language code will follow the IETF language tag. Example: en-US.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/account-status|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-DeviceComponent"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1555 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Evidence.statistic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.statistic",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Evidence_statistic",
+  "title": "Cross-version Extension for R5.Evidence.statistic for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.9841279-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Evidence.statistic from http://hl7.org/fhir/StructureDefinition/Evidence|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Evidence"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Values and parameters for a single statistic",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Description of content",
+        "definition": "A description of the content value of the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description of content",
+        "definition": "A description of the content value of the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:note",
+        "path": "Extension.extension",
+        "sliceName": "note",
+        "short": "Footnotes and/or explanatory notes",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:note.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:note.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Footnotes and/or explanatory notes",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statisticType",
+        "path": "Extension.extension",
+        "sliceName": "statisticType",
+        "short": "Type of statistic, e.g., relative risk",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statisticType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statisticType"
+      },
+      {
+        "id": "Extension.extension:statisticType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of statistic, e.g., relative risk",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-statistic-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "Associated category for categorical variable",
+        "definition": "When the measured variable is handled categorically, the category element is used to define which category the statistic is reporting.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Associated category for categorical variable",
+        "definition": "When the measured variable is handled categorically, the category element is used to define which category the statistic is reporting.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "Statistic value",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Statistic value",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberOfEvents",
+        "path": "Extension.extension",
+        "sliceName": "numberOfEvents",
+        "short": "The number of events associated with the statistic",
+        "definition": "The number of events associated with the statistic, where the unit of analysis is different from numberAffected, sampleSize.knownDataCount and sampleSize.numberOfParticipants.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:numberOfEvents.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "numberOfEvents"
+      },
+      {
+        "id": "Extension.extension:numberOfEvents.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The number of events associated with the statistic",
+        "definition": "The number of events associated with the statistic, where the unit of analysis is different from numberAffected, sampleSize.knownDataCount and sampleSize.numberOfParticipants.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:numberAffected",
+        "path": "Extension.extension",
+        "sliceName": "numberAffected",
+        "short": "The number of participants affected",
+        "definition": "The number of participants affected where the unit of analysis is the same as sampleSize.knownDataCount and sampleSize.numberOfParticipants.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:numberAffected.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "numberAffected"
+      },
+      {
+        "id": "Extension.extension:numberAffected.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The number of participants affected",
+        "definition": "The number of participants affected where the unit of analysis is the same as sampleSize.knownDataCount and sampleSize.numberOfParticipants.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize",
+        "path": "Extension.extension",
+        "sliceName": "sampleSize",
+        "short": "Number of samples in the statistic",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Textual description of sample size for statistic",
+        "definition": "Human-readable summary of population sample size.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Textual description of sample size for statistic",
+        "definition": "Human-readable summary of population sample size.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note",
+        "path": "Extension.extension.extension",
+        "sliceName": "note",
+        "short": "Footnote or explanatory note about the sample size",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:note.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Footnote or explanatory note about the sample size",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies",
+        "path": "Extension.extension.extension",
+        "sliceName": "numberOfStudies",
+        "short": "Number of contributing studies",
+        "definition": "Number of participants in the population.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "numberOfStudies"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfStudies.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Number of contributing studies",
+        "definition": "Number of participants in the population.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants",
+        "path": "Extension.extension.extension",
+        "sliceName": "numberOfParticipants",
+        "short": "Cumulative number of participants",
+        "definition": "A human-readable string to clarify or explain concepts about the sample size.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "numberOfParticipants"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:numberOfParticipants.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Cumulative number of participants",
+        "definition": "A human-readable string to clarify or explain concepts about the sample size.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount",
+        "path": "Extension.extension.extension",
+        "sliceName": "knownDataCount",
+        "short": "Number of participants with known results for measured variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "knownDataCount"
+      },
+      {
+        "id": "Extension.extension:sampleSize.extension:knownDataCount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Number of participants with known results for measured variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:sampleSize.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sampleSize"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate",
+        "path": "Extension.extension",
+        "sliceName": "attributeEstimate",
+        "short": "An attribute of the Statistic",
+        "definition": "A statistical attribute of the statistic such as a measure of heterogeneity.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Textual description of the attribute estimate",
+        "definition": "Human-readable summary of the estimate.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Textual description of the attribute estimate",
+        "definition": "Human-readable summary of the estimate.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note",
+        "path": "Extension.extension.extension",
+        "sliceName": "note",
+        "short": "Footnote or explanatory note about the estimate",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "note"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:note.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Footnote or explanatory note about the estimate",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "The type of attribute estimate, e.g., confidence interval or p value",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of attribute estimate, e.g., confidence interval or p value",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-attribute-estimate-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "The singular quantity of the attribute estimate, for attribute estimates represented as single values; also used to report unit of measure",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The singular quantity of the attribute estimate, for attribute estimates represented as single values; also used to report unit of measure",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level",
+        "path": "Extension.extension.extension",
+        "sliceName": "level",
+        "short": "Level of confidence interval, e.g., 0.95 for 95% confidence interval",
+        "definition": "Use 95 for a 95% confidence interval.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "level"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:level.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Level of confidence interval, e.g., 0.95 for 95% confidence interval",
+        "definition": "Use 95 for a 95% confidence interval.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range",
+        "path": "Extension.extension.extension",
+        "sliceName": "range",
+        "short": "Lower and upper bound values of the attribute estimate",
+        "definition": "Lower bound of confidence interval.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "range"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:range.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Lower and upper bound values of the attribute estimate",
+        "definition": "Lower bound of confidence interval.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:attributeEstimate",
+        "path": "Extension.extension.extension",
+        "sliceName": "attributeEstimate",
+        "short": "A nested attribute estimate; which is the attribute estimate of an attribute estimate",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:attributeEstimate.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:attributeEstimate.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Evidence.statistic.attributeEstimate.attributeEstimate from FHIR R5",
+        "definition": "Data type name for Evidence.statistic.attributeEstimate.attributeEstimate from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:attributeEstimate.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: Evidence.statistic.attributeEstimate",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "Evidence.statistic.attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.extension:attributeEstimate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:attributeEstimate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic",
+        "path": "Extension.extension",
+        "sliceName": "modelCharacteristic",
+        "short": "An aspect of the statistical model",
+        "definition": "A component of the method to generate the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "Model specification",
+        "definition": "Description of a component of the method to generate the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Model specification",
+        "definition": "Description of a component of the method to generate the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-statistic-model-code-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "short": "Numerical value to complete model specification",
+        "definition": "Further specification of the quantified value of the component of the method to generate the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Numerical value to complete model specification",
+        "definition": "Further specification of the quantified value of the component of the method to generate the statistic.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable",
+        "path": "Extension.extension.extension",
+        "sliceName": "variable",
+        "short": "A variable adjusted for in the adjusted analysis",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "variableDefinition",
+        "short": "Description of the variable",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "variableDefinition"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:variableDefinition.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Description of the variable",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "handling",
+        "short": "continuous | dichotomous | ordinal | polychotomous",
+        "definition": "How the variable is classified for use in adjusted analysis.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "handling"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:handling.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "continuous | dichotomous | ordinal | polychotomous",
+        "definition": "How the variable is classified for use in adjusted analysis.",
+        "comment": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-variable-handling-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueCategory",
+        "short": "Description for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "valueCategory"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueCategory.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Description for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueQuantity",
+        "short": "Discrete value for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "valueQuantity"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueQuantity.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Discrete value for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "valueRange",
+        "short": "Range of values for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "valueRange"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.extension:valueRange.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Range of values for grouping of ordinal or polychotomous variables",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:variable.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "variable"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:attributeEstimate",
+        "path": "Extension.extension.extension",
+        "sliceName": "attributeEstimate",
+        "short": "An attribute of the statistic used as a model characteristic",
+        "definition": "`Evidence.statistic` has no related element in R4:Evidence",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:attributeEstimate.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:attributeEstimate.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for Evidence.statistic.modelCharacteristic.attributeEstimate from FHIR R5",
+        "definition": "Data type name for Evidence.statistic.modelCharacteristic.attributeEstimate from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:attributeEstimate.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: Evidence.statistic.attributeEstimate",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "Evidence.statistic.attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.extension:attributeEstimate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attributeEstimate"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "modelCharacteristic"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Evidence.statistic"
+      }
+    ]
+  }
+}

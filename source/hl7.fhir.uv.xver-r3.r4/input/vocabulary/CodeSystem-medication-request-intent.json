@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-request-intent",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    }
+  ],
+  "url": "http://hl7.org/fhir/medication-request-intent",
+  "version": "3.0.2",
+  "name": "MedicationRequestIntent",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Pharmacy",
+  "contact": [
+    {
+      "name": "Pharmacy",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication"
+        }
+      ]
+    }
+  ],
+  "description": "The kind of medication order",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-request-intent",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "proposal",
+      "display": "Proposal",
+      "definition": "The request is a suggestion made by someone/something that doesn't have an intention to ensure it occurs and without providing an authorization to act"
+    },
+    {
+      "code": "plan",
+      "display": "Plan",
+      "definition": "The request represents an intension to ensure something occurs without providing an authorization for others to act"
+    },
+    {
+      "code": "order",
+      "display": "Order",
+      "definition": "The request represents a request/demand and authorization for action"
+    },
+    {
+      "code": "instance-order",
+      "display": "Instance Order",
+      "definition": "The request represents an instance for the particular order, for example a medication administration record."
+    }
+  ]
+}

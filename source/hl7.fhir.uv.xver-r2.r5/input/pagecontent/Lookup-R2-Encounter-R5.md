@@ -1,0 +1,51 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [Encounter](https://hl7.org/fhir/DSTU2/Encounter.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Encounter.meta](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.meta](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.implicitRules](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.implicitRules](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.language](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.language](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.text](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.text](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.contained](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.contained](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.identifier](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.identifier](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.status](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.status](StructureDefinition-ext-R2-Encounter.status.html) |
+| [Encounter.statusHistory](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.statusHistory](StructureDefinition-ext-R2-Encounter.statusHistory.html) |
+| [Encounter.statusHistory.id](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtensionFromAncestor` | - |
+| [Encounter.statusHistory.status](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtensionFromAncestor` | - |
+| [Encounter.statusHistory.period](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtensionFromAncestor` | - |
+| [Encounter.class](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.class](StructureDefinition-ext-R2-Encounter.class.html) |
+| [Encounter.type](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.type](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.priority](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.priority](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.patient](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.subject](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.episodeOfCare](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.episodeOfCare](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.incomingReferral](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.incomingReferral](StructureDefinition-ext-R2-Encounter.incomingReferral.html) |
+| [Encounter.participant](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.participant.id](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.id](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.participant.type](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.type](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.participant.period](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.period](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.participant.individual](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.participant.actor](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.appointment](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.appointment](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.period](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.actualPeriod](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.length](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.length](StructureDefinition-ext-R2-Encounter.length.html) |
+| [Encounter.reason](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.reason](StructureDefinition-ext-R2-Encounter.reason.html) |
+| [Encounter.indication](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.indication](StructureDefinition-ext-R2-Encounter.indication.html) |
+| [Encounter.hospitalization](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseOneOf` | [Encounter.diagnosis](https://hl7.org/fhir/R5/Encounter.html#resource)<br />[Encounter.admission](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.id](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.id](StructureDefinition-ext-R2-Encounter.ho.id.html) |
+| [Encounter.hospitalization.preAdmissionIdentifier](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.preAdmissionIdentifier](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.origin](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.origin](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.admitSource](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.admitSource](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.admittingDiagnosis](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.admittingDiagnosis](StructureDefinition-ext-R2-Encounter.ho.admittingDiagnosis.html) |
+| [Encounter.hospitalization.reAdmission](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.reAdmission](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.dietPreference](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.dietPreference](StructureDefinition-ext-R2-Encounter.ho.dietPreference.html) |
+| [Encounter.hospitalization.specialCourtesy](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.specialCourtesy](StructureDefinition-ext-R2-Encounter.ho.specialCourtesy.html) |
+| [Encounter.hospitalization.specialArrangement](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.specialArrangement](StructureDefinition-ext-R2-Encounter.ho.specialArrangement.html) |
+| [Encounter.hospitalization.destination](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.destination](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.dischargeDisposition](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementRenamed` | [Encounter.admission.dischargeDisposition](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.hospitalization.dischargeDiagnosis](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Encounter.hospitalization.dischargeDiagnosis](StructureDefinition-ext-R2-Encounter.ho.dischargeDiagnosis.html) |
+| [Encounter.location](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.location](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.location.id](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.id](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.location.location](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.location](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.location.status](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.status](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.location.period](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.period](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.serviceProvider](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.serviceProvider](https://hl7.org/fhir/R5/Encounter.html#resource) |
+| [Encounter.partOf](https://hl7.org/fhir/DSTU2/Encounter.html#resource) | `UseElementSameName` | [Encounter.partOf](https://hl7.org/fhir/R5/Encounter.html#resource) |

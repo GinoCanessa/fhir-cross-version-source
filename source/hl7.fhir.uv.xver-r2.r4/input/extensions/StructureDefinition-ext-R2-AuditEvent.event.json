@@ -1,0 +1,440 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-AuditEvent.event",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.event",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_AuditEvent_event",
+  "title": "Cross-version Extension for R2.AuditEvent.event for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.4459814-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents AuditEvent.event from http://hl7.org/fhir/StructureDefinition/AuditEvent|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "AuditEvent"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "What was done",
+        "definition": "Identifies the name, action type, time, and disposition of the audited event.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Type/identifier of event",
+        "definition": "Identifier for a family of the event.  For example, a menu item, program, rule, policy, function code, application name or URL. It identifies the performed function.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type/identifier of event",
+        "definition": "Identifier for a family of the event.  For example, a menu item, program, rule, policy, function code, application name or URL. It identifies the performed function.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Type of event.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-audit-event-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:subtype",
+        "path": "Extension.extension",
+        "sliceName": "subtype",
+        "short": "More specific type/id for the event",
+        "definition": "Identifier for the category of event.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subtype.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subtype"
+      },
+      {
+        "id": "Extension.extension:subtype.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "More specific type/id for the event",
+        "definition": "Identifier for the category of event.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Sub-type of event.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-audit-event-sub-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:action",
+        "path": "Extension.extension",
+        "sliceName": "action",
+        "short": "Type of action performed during the event",
+        "definition": "Indicator for type of action performed during the event that generated the audit.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:action.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "action"
+      },
+      {
+        "id": "Extension.extension:action.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type of action performed during the event",
+        "definition": "Indicator for type of action performed during the event that generated the audit.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Indicator for type of action performed during the event that generated the audit.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/audit-event-action|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:dateTime",
+        "path": "Extension.extension",
+        "sliceName": "dateTime",
+        "short": "Time when the event occurred on source",
+        "definition": "The time when the event occurred on the source.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateTime"
+      },
+      {
+        "id": "Extension.extension:dateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Time when the event occurred on source",
+        "definition": "The time when the event occurred on the source.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:outcome",
+        "path": "Extension.extension",
+        "sliceName": "outcome",
+        "short": "Whether the event succeeded or failed",
+        "definition": "Indicates whether the event succeeded or failed.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:outcome.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "outcome"
+      },
+      {
+        "id": "Extension.extension:outcome.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether the event succeeded or failed",
+        "definition": "Indicates whether the event succeeded or failed.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Indicates whether the event succeeded or failed",
+          "valueSet": "http://hl7.org/fhir/ValueSet/audit-event-outcome|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:outcomeDesc",
+        "path": "Extension.extension",
+        "sliceName": "outcomeDesc",
+        "short": "Description of the event outcome",
+        "definition": "A free text description of the outcome of the event.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:outcomeDesc.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "outcomeDesc"
+      },
+      {
+        "id": "Extension.extension:outcomeDesc.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description of the event outcome",
+        "definition": "A free text description of the outcome of the event.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:purposeOfEvent",
+        "path": "Extension.extension",
+        "sliceName": "purposeOfEvent",
+        "short": "The purposeOfUse of the event",
+        "definition": "The purposeOfUse (reason) that was used during the event being recorded.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:purposeOfEvent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "purposeOfEvent"
+      },
+      {
+        "id": "Extension.extension:purposeOfEvent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The purposeOfUse of the event",
+        "definition": "The purposeOfUse (reason) that was used during the event being recorded.",
+        "comment": "`AuditEvent` maps to R4 `AuditEvent`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The reason the activity took place.",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2014-03-26"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-AuditEvent.event"
+      }
+    ]
+  }
+}

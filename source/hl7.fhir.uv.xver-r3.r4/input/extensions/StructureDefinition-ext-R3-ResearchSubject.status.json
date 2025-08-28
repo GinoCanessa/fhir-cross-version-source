@@ -1,0 +1,109 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ResearchSubject.status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchSubject.status",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ResearchSubject_status",
+  "title": "Cross-version Extension for R3.ResearchSubject.status for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:18.8496228-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ResearchSubject.status from http://hl7.org/fhir/StructureDefinition/ResearchSubject|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchSubject.status"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "candidate | enrolled | active | suspended | withdrawn | completed",
+        "definition": "The current state of the subject.",
+        "comment": "`ResearchSubject.status` maps to R4 `ResearchSubject.status`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element ResearchSubject.status is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ResearchSubject.status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "candidate | enrolled | active | suspended | withdrawn | completed",
+        "definition": "The current state of the subject.",
+        "comment": "`ResearchSubject.status` maps to R4 `ResearchSubject.status`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Indicates the progression of a study subject through a study",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-research-subject-status-for-R4"
+        }
+      }
+    ]
+  }
+}

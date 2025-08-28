@@ -1,0 +1,434 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Medication.package",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Medication_package",
+  "title": "Cross-version Extension for R3.Medication.package for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:16.4485343-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Medication.package from http://hl7.org/fhir/StructureDefinition/Medication|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Medication"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Details about packaged medications",
+        "definition": "Information that only applies to packages (not products).",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:container",
+        "path": "Extension.extension",
+        "sliceName": "container",
+        "short": "E.g. box, vial, blister-pack",
+        "definition": "The kind of container that this package comes as.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:container.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "container"
+      },
+      {
+        "id": "Extension.extension:container.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "E.g. box, vial, blister-pack",
+        "definition": "The kind of container that this package comes as.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept defining the kind of container a medication package is packaged in",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-medication-package-form-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:content",
+        "path": "Extension.extension",
+        "sliceName": "content",
+        "short": "What is  in the package",
+        "definition": "A set of components that go to make up the described item.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:item[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "item[x]",
+        "short": "The item in the package",
+        "definition": "Identifies one of the items in the package.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:item[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item[x]"
+      },
+      {
+        "id": "Extension.extension:content.extension:item[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The item in the package",
+        "definition": "Identifies one of the items in the package.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "Quantity present in the package",
+        "definition": "The amount of the product that is in the package.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:content.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Quantity present in the package",
+        "definition": "The amount of the product that is in the package.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "content"
+      },
+      {
+        "id": "Extension.extension:batch",
+        "path": "Extension.extension",
+        "sliceName": "batch",
+        "short": "Identifies a single production run",
+        "definition": "Information about a group of medication produced or packaged from one production run.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "lotNumber",
+        "short": "Identifier assigned to batch",
+        "definition": "The assigned lot number of a batch of the specified product.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lotNumber"
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Identifier assigned to batch",
+        "definition": "The assigned lot number of a batch of the specified product.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "expirationDate",
+        "short": "When batch will expire",
+        "definition": "When this specific batch of product will expire.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expirationDate"
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "When batch will expire",
+        "definition": "When this specific batch of product will expire.",
+        "comment": "`Medication.package` has no related element in R4:Medication",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:batch.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "batch"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Medication.package"
+      }
+    ]
+  }
+}

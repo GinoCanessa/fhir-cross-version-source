@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-Questionnaire.subjectType",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Questionnaire.subjectType",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_Questionnaire_subjectType",
+  "title": "Cross-version Extension for R4.Questionnaire.subjectType for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:47.1191578-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Questionnaire.subjectType from http://hl7.org/fhir/StructureDefinition/Questionnaire|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Questionnaire.subjectType"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Resource that can be subject of QuestionnaireResponse",
+        "definition": "The types of subjects that can be the subject of responses created for the questionnaire.",
+        "comment": "`Questionnaire.subjectType` maps to R5 `Questionnaire.subjectType`. The value set relationship of  is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Questionnaire.subjectType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Resource that can be subject of QuestionnaireResponse",
+        "definition": "The types of subjects that can be the subject of responses created for the questionnaire.",
+        "comment": "`Questionnaire.subjectType` maps to R5 `Questionnaire.subjectType`. The value set relationship of  is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "One of the resource types defined as part of this version of FHIR.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-resource-types-for-R5"
+        }
+      }
+    ]
+  }
+}

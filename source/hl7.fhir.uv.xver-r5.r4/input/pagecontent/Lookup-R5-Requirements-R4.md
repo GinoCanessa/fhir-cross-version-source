@@ -1,0 +1,41 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [Requirements](https://hl7.org/fhir/R5/Requirements.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Requirements](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements](StructureDefinition-ext-R5-Requirements.html) |
+| [Requirements.meta](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.implicitRules](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.language](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.text](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.contained](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.url](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.identifier](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [Requirements.version](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.versionAlgorithm[x]](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.name](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.title](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.status](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.experimental](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.date](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.publisher](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.contact](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.description](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.useContext](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.jurisdiction](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.purpose](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.copyright](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.copyrightLabel](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.derivedFrom](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.reference](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.actor](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.key](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.label](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.conformance](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.conditionality](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.requirement](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.derivedFrom](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.parent](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.satisfiedBy](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.reference](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |
+| [Requirements.statement.source](https://hl7.org/fhir/R5/Requirements.html#resource) | `UseExtensionFromAncestor` | - |

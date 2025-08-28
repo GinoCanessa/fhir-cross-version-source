@@ -1,0 +1,592 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-MedicationKnowledge.definitional",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.definitional",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_MedicationKnowledge_definitional",
+  "title": "Cross-version Extension for R5.MedicationKnowledge.definitional for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:55.8170084-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicationKnowledge.definitional from http://hl7.org/fhir/StructureDefinition/MedicationKnowledge|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Minimal definition information about the medication",
+        "definition": "Along with the link to a Medicinal Product Definition resource, this information provides common definitional elements that are needed to understand the specific medication that is being described.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:definition",
+        "path": "Extension.extension",
+        "sliceName": "definition",
+        "short": "Definitional resources that provide more information about this medication",
+        "definition": "Associated definitions for this medication.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:definition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "definition"
+      },
+      {
+        "id": "Extension.extension:definition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Definitional resources that provide more information about this medication",
+        "definition": "Associated definitions for this medication.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:doseForm",
+        "path": "Extension.extension",
+        "sliceName": "doseForm",
+        "short": "powder | tablets | capsule +",
+        "definition": "Describes the form of the item.  Powder; tablets; capsule.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:doseForm.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "doseForm"
+      },
+      {
+        "id": "Extension.extension:doseForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "powder | tablets | capsule +",
+        "definition": "Describes the form of the item.  Powder; tablets; capsule.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-medication-form-codes-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:intendedRoute",
+        "path": "Extension.extension",
+        "sliceName": "intendedRoute",
+        "short": "The intended or approved route of administration",
+        "definition": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:intendedRoute.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intendedRoute"
+      },
+      {
+        "id": "Extension.extension:intendedRoute.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The intended or approved route of administration",
+        "definition": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-route-codes-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "Active or inactive ingredient",
+        "definition": "Identifies a particular constituent of interest in the product.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "Substances contained in the medication",
+        "definition": "A reference to the resource that provides information about the ingredient.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Substances contained in the medication",
+        "definition": "A reference to the resource that provides information about the ingredient.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "A code that defines the type of ingredient, active, base, etc",
+        "definition": "Indication of whether this ingredient affects the therapeutic action of the drug.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A code that defines the type of ingredient, active, base, etc",
+        "definition": "Indication of whether this ingredient affects the therapeutic action of the drug.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-v3-RoleClassIngredientEntity-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:strength[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "strength[x]",
+        "short": "Quantity of ingredient present",
+        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet but can also be expressed a quantity when the denominator is assumed to be 1 tablet.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:strength[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength[x]"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:strength[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Quantity of ingredient present",
+        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet but can also be expressed a quantity when the denominator is assumed to be 1 tablet.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-medication-ingredientstrength-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic",
+        "path": "Extension.extension",
+        "sliceName": "drugCharacteristic",
+        "short": "Specifies descriptive properties of the medicine",
+        "definition": "Specifies descriptive properties of the medicine, such as color, shape, imprints, etc.",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Code specifying the type of characteristic of medication",
+        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Code specifying the type of characteristic of medication",
+        "definition": "A code specifying which characteristic of the medicine is being described (for example, colour, shape, imprint).",
+        "comment": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-medicationknowledge-characteristic-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:value[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "Description of the characteristic",
+        "definition": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:value[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Description of the characteristic",
+        "definition": "`MedicationKnowledge.definitional` has no related element in R4B:MedicationKnowledge",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          },
+          {
+            "code": "base64Binary"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:drugCharacteristic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "drugCharacteristic"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationKnowledge.definitional"
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-MPD.na.countryLanguage",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicinalProductDefinition.name.countryLanguage",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_MPD_na_countryLanguage",
+  "title": "Cross-version Extension for R4B.MedicinalProductDefinition.name.countryLanguage for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:14.6070637-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductDefinition.name.countryLanguage from http://hl7.org/fhir/StructureDefinition/MedicinalProductDefinition|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicinalProductDefinition.name"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Country and jurisdiction where the name applies",
+        "definition": "Country and jurisdiction where the name applies, and associated language.",
+        "comment": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:country",
+        "path": "Extension.extension",
+        "sliceName": "country",
+        "short": "Country code for where this name applies",
+        "definition": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:country.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:country.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Country code for where this name applies",
+        "definition": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-country-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Jurisdiction code for where this name applies",
+        "definition": "Jurisdiction code for where this name applies. A jurisdiction may be a sub- or supra-national entity (e.g. a state or a geographic region).",
+        "comment": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Jurisdiction code for where this name applies",
+        "definition": "Jurisdiction code for where this name applies. A jurisdiction may be a sub- or supra-national entity (e.g. a state or a geographic region).",
+        "comment": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-jurisdiction-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:language",
+        "path": "Extension.extension",
+        "sliceName": "language",
+        "short": "Language code for this name",
+        "definition": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:language.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:language.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Language code for this name",
+        "definition": "`MedicinalProductDefinition.name.countryLanguage` has no related element in R5:MedicinalProductDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicinalProductDefinition.name.countryLanguage"
+      }
+    ]
+  }
+}

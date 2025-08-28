@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ExpansionProfile.fixedVersion",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.fixedVersion",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ExpansionProfile_fixedVersion",
+  "title": "Cross-version Extension for R3.ExpansionProfile.fixedVersion for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:14.8235808-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ExpansionProfile.fixedVersion from http://hl7.org/fhir/StructureDefinition/ExpansionProfile|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Parameters"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Fix use of a code system to a particular version",
+        "definition": "Fix use of a particular code system to a particular version.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:system",
+        "path": "Extension.extension",
+        "sliceName": "system",
+        "short": "System to have its version fixed",
+        "definition": "The specific system for which to fix the version.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:system.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "system"
+      },
+      {
+        "id": "Extension.extension:system.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "System to have its version fixed",
+        "definition": "The specific system for which to fix the version.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:version",
+        "path": "Extension.extension",
+        "sliceName": "version",
+        "short": "Specific version of the code system referred to",
+        "definition": "The version of the code system from which codes in the expansion should be included.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:version.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "version"
+      },
+      {
+        "id": "Extension.extension:version.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Specific version of the code system referred to",
+        "definition": "The version of the code system from which codes in the expansion should be included.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:mode",
+        "path": "Extension.extension",
+        "sliceName": "mode",
+        "short": "default | check | override",
+        "definition": "How to manage the intersection between a fixed version in a value set, and this fixed version of the system in the expansion profile.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:mode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "mode"
+      },
+      {
+        "id": "Extension.extension:mode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "default | check | override",
+        "definition": "How to manage the intersection between a fixed version in a value set, and this fixed version of the system in the expansion profile.",
+        "comment": "`ExpansionProfile.fixedVersion` has no related element in R4:Parameters",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How to manage the intersection between a fixed version in a value set, and a fixed version of the system in the expansion profile",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-system-version-processing-mode-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.fixedVersion"
+      }
+    ]
+  }
+}

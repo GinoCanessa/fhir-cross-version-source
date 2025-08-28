@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-Provenance.en.role",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.entity.role",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_Provenance_en_role",
+  "title": "Cross-version Extension for R4.Provenance.entity.role for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:47.0607454-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Provenance.entity.role from http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Provenance.entity.role"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "derivation | revision | quotation | source | removal",
+        "definition": "How the entity was used during the activity.",
+        "comment": "`Provenance.entity.role` maps to R5 `Provenance.entity.role`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-Provenance.entity.role"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "derivation | revision | quotation | source | removal",
+        "definition": "How the entity was used during the activity.",
+        "comment": "`Provenance.entity.role` maps to R5 `Provenance.entity.role`. The value set relationship of SourceIsBroaderThanTarget is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "How an entity was used in an activity.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-provenance-entity-role-for-R5"
+        }
+      }
+    ]
+  }
+}

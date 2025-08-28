@@ -1,0 +1,283 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-Immunization.education",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.education",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_Immunization_education",
+  "title": "Cross-version Extension for R4B.Immunization.education for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:12.7416399-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Immunization.education from http://hl7.org/fhir/StructureDefinition/Immunization|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Immunization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Educational material presented to patient",
+        "definition": "Educational material presented to the patient (or guardian) at the time of vaccine administration.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:documentType",
+        "path": "Extension.extension",
+        "sliceName": "documentType",
+        "short": "Educational material document identifier",
+        "definition": "Identifier of the material presented to the patient.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:documentType.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "documentType"
+      },
+      {
+        "id": "Extension.extension:documentType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Educational material document identifier",
+        "definition": "Identifier of the material presented to the patient.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reference",
+        "path": "Extension.extension",
+        "sliceName": "reference",
+        "short": "Educational material reference pointer",
+        "definition": "Reference pointer to the educational material given to the patient if the information was on line.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:reference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Educational material reference pointer",
+        "definition": "Reference pointer to the educational material given to the patient if the information was on line.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publicationDate",
+        "path": "Extension.extension",
+        "sliceName": "publicationDate",
+        "short": "Educational material publication date",
+        "definition": "Date the educational material was published.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:publicationDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "publicationDate"
+      },
+      {
+        "id": "Extension.extension:publicationDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Educational material publication date",
+        "definition": "Date the educational material was published.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:presentationDate",
+        "path": "Extension.extension",
+        "sliceName": "presentationDate",
+        "short": "Educational material presentation date",
+        "definition": "Date the educational material was given to the patient.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:presentationDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "presentationDate"
+      },
+      {
+        "id": "Extension.extension:presentationDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Educational material presentation date",
+        "definition": "Date the educational material was given to the patient.",
+        "comment": "`Immunization.education` has no related element in R5:Immunization",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Immunization.education"
+      }
+    ]
+  }
+}

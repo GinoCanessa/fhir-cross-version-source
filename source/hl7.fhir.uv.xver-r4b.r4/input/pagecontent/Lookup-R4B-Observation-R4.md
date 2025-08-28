@@ -1,0 +1,44 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [Observation](https://hl7.org/fhir/R4B/Observation.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Observation.meta](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.meta](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.implicitRules](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.implicitRules](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.language](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.language](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.text](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.text](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.contained](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.contained](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.identifier](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.identifier](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.basedOn](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.basedOn](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.partOf](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.partOf](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.status](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.status](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.category](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.category](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.code](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.code](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.subject](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-Observation.subject](StructureDefinition-ext-R4B-Observation.subject.html) |
+| [Observation.focus](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.focus](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.encounter](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.encounter](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.effective[x]](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.effective[x]](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.issued](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.issued](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.performer](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.performer](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.value[x]](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.value[x]](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.dataAbsentReason](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.dataAbsentReason](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.interpretation](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.interpretation](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.note](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.note](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.bodySite](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.bodySite](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.method](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.method](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.specimen](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.specimen](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.device](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.device](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.low](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.low](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.high](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.high](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.type](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.type](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.appliesTo](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.appliesTo](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.age](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.age](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.referenceRange.text](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.referenceRange.text](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.hasMember](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.hasMember](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.derivedFrom](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.derivedFrom](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component.code](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component.code](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component.value[x]](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component.value[x]](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component.dataAbsentReason](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component.dataAbsentReason](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component.interpretation](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component.interpretation](https://hl7.org/fhir/R4/Observation.html#resource) |
+| [Observation.component.referenceRange](https://hl7.org/fhir/R4B/Observation.html#resource) | `UseElementSameName` | [Observation.component.referenceRange](https://hl7.org/fhir/R4/Observation.html#resource) |

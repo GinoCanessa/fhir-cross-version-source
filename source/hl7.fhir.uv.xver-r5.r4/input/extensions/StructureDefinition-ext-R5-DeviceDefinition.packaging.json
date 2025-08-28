@@ -1,0 +1,527 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceDefinition.packaging",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.packaging",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceDefinition_packaging",
+  "title": "Cross-version Extension for R5.DeviceDefinition.packaging for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.104317-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceDefinition.packaging from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Information about the packaging of the device, i.e. how the device is packaged",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "short": "Business identifier of the packaged medication",
+        "definition": "The business identifier of the packaged medication.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Business identifier of the packaged medication",
+        "definition": "The business identifier of the packaged medication.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "A code that defines the specific type of packaging",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.type from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A code that defines the specific type of packaging",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.type from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:count",
+        "path": "Extension.extension",
+        "sliceName": "count",
+        "short": "The number of items contained in the package (devices or sub-packages)",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.count from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:count.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "count"
+      },
+      {
+        "id": "Extension.extension:count.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The number of items contained in the package (devices or sub-packages)",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.count from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:distributor",
+        "path": "Extension.extension",
+        "sliceName": "distributor",
+        "short": "An organization that distributes the packaged device",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.distributor from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:distributor.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:distributor.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "Distributor's human-readable name",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.distributor.name from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:distributor.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:distributor.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Distributor's human-readable name",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.distributor.name from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:distributor.extension:organizationReference",
+        "path": "Extension.extension.extension",
+        "sliceName": "organizationReference",
+        "short": "Distributor as an Organization resource",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.distributor.organizationReference from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:distributor.extension:organizationReference.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "organizationReference"
+      },
+      {
+        "id": "Extension.extension:distributor.extension:organizationReference.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Distributor as an Organization resource",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.distributor.organizationReference from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:distributor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "distributor"
+      },
+      {
+        "id": "Extension.extension:udiDeviceIdentifier",
+        "path": "Extension.extension",
+        "sliceName": "udiDeviceIdentifier",
+        "short": "Unique Device Identifier (UDI) Barcode string on the packaging",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.udiDeviceIdentifier from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:udiDeviceIdentifier.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:udiDeviceIdentifier.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for DeviceDefinition.packaging.udiDeviceIdentifier from FHIR R5",
+        "definition": "Data type name for DeviceDefinition.packaging.udiDeviceIdentifier from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:udiDeviceIdentifier.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: DeviceDefinition.udiDeviceIdentifier",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "DeviceDefinition.udiDeviceIdentifier"
+      },
+      {
+        "id": "Extension.extension:udiDeviceIdentifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "udiDeviceIdentifier"
+      },
+      {
+        "id": "Extension.extension:packaging",
+        "path": "Extension.extension",
+        "sliceName": "packaging",
+        "short": "Allows packages within packages",
+        "definition": "This cross-version extension represents DeviceDefinition.packaging.packaging from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for DeviceDefinition.packaging.packaging from FHIR R5",
+        "definition": "Data type name for DeviceDefinition.packaging.packaging from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: DeviceDefinition.packaging",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "DeviceDefinition.packaging"
+      },
+      {
+        "id": "Extension.extension:packaging.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packaging"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.packaging"
+      }
+    ]
+  }
+}

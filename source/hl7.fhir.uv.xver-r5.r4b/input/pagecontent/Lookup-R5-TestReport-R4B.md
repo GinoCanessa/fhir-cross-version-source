@@ -1,0 +1,42 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [TestReport](https://hl7.org/fhir/R5/TestReport.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [TestReport.meta](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.meta](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.implicitRules](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.implicitRules](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.language](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.language](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.text](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.text](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.contained](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.contained](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.identifier](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.identifier](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.name](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.name](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.status](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.status](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.testScript](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-TestReport.testScript](StructureDefinition-ext-R5-TestReport.testScript.html) |
+| [TestReport.result](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.result](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.score](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.score](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.tester](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.tester](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.issued](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.issued](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.participant](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.participant](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.participant.type](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.participant.type](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.participant.uri](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.participant.uri](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.participant.display](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.participant.display](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.operation](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.operation](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.operation.result](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.operation.result](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.operation.message](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.operation.message](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.operation.detail](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.operation.detail](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.assert](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.assert](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.assert.result](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.assert.result](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.assert.message](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.assert.message](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.assert.detail](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.setup.action.assert.detail](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.setup.action.assert.requirement](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-TestReport.setup.action.assert.requirement](StructureDefinition-ext-R5-TestReport.se.ac.as.requirement.html) |
+| [TestReport.setup.action.assert.requirement.link[x]](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseExtensionFromAncestor` | - |
+| [TestReport.test](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.test.name](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test.name](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.test.description](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test.description](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.test.action](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test.action](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.test.action.operation](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test.action.operation](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.test.action.assert](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.test.action.assert](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.teardown](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.teardown](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.teardown.action](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.teardown.action](https://hl7.org/fhir/R4B/TestReport.html#resource) |
+| [TestReport.teardown.action.operation](https://hl7.org/fhir/R5/TestReport.html#resource) | `UseElementSameName` | [TestReport.teardown.action.operation](https://hl7.org/fhir/R4B/TestReport.html#resource) |

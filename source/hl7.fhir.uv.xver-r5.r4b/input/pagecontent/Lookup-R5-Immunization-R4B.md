@@ -1,0 +1,49 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [Immunization](https://hl7.org/fhir/R5/Immunization.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Immunization.meta](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.meta](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.implicitRules](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.implicitRules](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.language](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.language](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.text](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.text](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.contained](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.contained](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.identifier](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.identifier](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.basedOn](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.basedOn](StructureDefinition-ext-R5-Immunization.basedOn.html) |
+| [Immunization.status](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseOneOf` | [Immunization.status](https://hl7.org/fhir/R4B/Immunization.html#resource)<br />[Immunization.status](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.statusReason](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.statusReason](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.vaccineCode](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.vaccineCode](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.administeredProduct](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.administeredProduct](StructureDefinition-ext-R5-Immunization.administeredProduct.html) |
+| [Immunization.manufacturer](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.manufacturer](StructureDefinition-ext-R5-Immunization.manufacturer.html) |
+| [Immunization.lotNumber](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.lotNumber](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.expirationDate](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.expirationDate](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.patient](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.patient](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.encounter](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.encounter](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.supportingInformation](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.supportingInformation](StructureDefinition-ext-R5-Immunization.supportingInformation.html) |
+| [Immunization.occurrence[x]](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.occurrence[x]](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.primarySource](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.primarySource](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.informationSource](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.informationSource](StructureDefinition-ext-R5-Immunization.informationSource.html) |
+| [Immunization.location](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.location](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.site](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.site](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.route](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.route](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.doseQuantity](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.doseQuantity](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.performer](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.performer](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.performer.function](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.performer.function](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.performer.actor](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.performer.actor](StructureDefinition-ext-R5-Immunization.pe.actor.html) |
+| [Immunization.note](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.note](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.reason](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reason](StructureDefinition-ext-R5-Immunization.reason.html) |
+| [Immunization.isSubpotent](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.isSubpotent](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.subpotentReason](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.subpotentReason](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.programEligibility](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.programEligibility](StructureDefinition-ext-R5-Immunization.programEligibility.html) |
+| [Immunization.programEligibility.program](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtensionFromAncestor` | - |
+| [Immunization.programEligibility.programStatus](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtensionFromAncestor` | - |
+| [Immunization.fundingSource](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.fundingSource](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.reaction](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.reaction](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.reaction.date](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.reaction.date](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.reaction.manifestation](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reaction.manifestation](StructureDefinition-ext-R5-Immunization.re.manifestation.html) |
+| [Immunization.reaction.reported](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.reaction.reported](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.protocolApplied](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied.series](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.protocolApplied.series](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied.authority](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.protocolApplied.authority](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied.targetDisease](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementSameName` | [Immunization.protocolApplied.targetDisease](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied.doseNumber](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementRenamed` | [Immunization.protocolApplied.doseNumber[x]](https://hl7.org/fhir/R4B/Immunization.html#resource) |
+| [Immunization.protocolApplied.seriesDoses](https://hl7.org/fhir/R5/Immunization.html#resource) | `UseElementRenamed` | [Immunization.protocolApplied.seriesDoses[x]](https://hl7.org/fhir/R4B/Immunization.html#resource) |

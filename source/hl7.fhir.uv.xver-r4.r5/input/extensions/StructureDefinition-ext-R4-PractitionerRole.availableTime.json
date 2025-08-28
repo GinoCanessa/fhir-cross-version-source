@@ -1,0 +1,288 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-PractitionerRole.availableTime",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.availableTime",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_PractitionerRole_availableTime",
+  "title": "Cross-version Extension for R4.PractitionerRole.availableTime for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:46.9108979-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PractitionerRole.availableTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Times the Service Site is available",
+        "definition": "A collection of times the practitioner is available or performing this role at the location and/or healthcareservice.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:daysOfWeek",
+        "path": "Extension.extension",
+        "sliceName": "daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "Indicates which days of the week are available between the start and end Times.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:daysOfWeek.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "id": "Extension.extension:daysOfWeek.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "Indicates which days of the week are available between the start and end Times.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The days of the week.",
+          "valueSet": "http://hl7.org/fhir/4.0/ValueSet/R4-days-of-week-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:allDay",
+        "path": "Extension.extension",
+        "sliceName": "allDay",
+        "short": "Always available? e.g. 24 hour service",
+        "definition": "Is this always available? (hence times are irrelevant) e.g. 24 hour service.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:allDay.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allDay"
+      },
+      {
+        "id": "Extension.extension:allDay.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Always available? e.g. 24 hour service",
+        "definition": "Is this always available? (hence times are irrelevant) e.g. 24 hour service.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableStartTime",
+        "path": "Extension.extension",
+        "sliceName": "availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "The opening time of day. Note: If the AllDay flag is set, then this time is ignored.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableStartTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "id": "Extension.extension:availableStartTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "The opening time of day. Note: If the AllDay flag is set, then this time is ignored.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableEndTime",
+        "path": "Extension.extension",
+        "sliceName": "availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "The closing time of day. Note: If the AllDay flag is set, then this time is ignored.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableEndTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "id": "Extension.extension:availableEndTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "The closing time of day. Note: If the AllDay flag is set, then this time is ignored.",
+        "comment": "`PractitionerRole.availableTime` has no related element in R5:PractitionerRole",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-PractitionerRole.availableTime"
+      }
+    ]
+  }
+}

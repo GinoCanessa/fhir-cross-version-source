@@ -1,0 +1,55 @@
+### Lookup for [FHIR R4](https://hl7.org/fhir/R4/) [Encounter](https://hl7.org/fhir/R4/Encounter.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R4) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Encounter.meta](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.meta](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.implicitRules](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.implicitRules](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.language](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.language](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.text](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.text](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.contained](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.contained](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.identifier](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.identifier](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.status](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.status](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.statusHistory](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.statusHistory](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.statusHistory.status](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.statusHistory.status](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.statusHistory.period](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.statusHistory.period](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.class](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.class](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.classHistory](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.classHistory](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.classHistory.class](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.classHistory.class](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.classHistory.period](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.classHistory.period](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.type](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.type](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.serviceType](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.serviceType](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.priority](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.priority](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.subject](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.subject](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.episodeOfCare](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.episodeOfCare](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.basedOn](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.basedOn](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.participant](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.participant.type](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.type](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.participant.period](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.period](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.participant.individual](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.participant.individual](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.appointment](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.appointment](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.period](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.period](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.length](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.length](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.reasonCode](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseOneOf` | [Encounter.reasonCode](https://hl7.org/fhir/R4B/Encounter.html#resource)<br />[Encounter.reasonCode](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.reasonReference](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.reasonReference](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.diagnosis](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.diagnosis](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.diagnosis.condition](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.diagnosis.condition](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.diagnosis.use](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.diagnosis.use](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.diagnosis.rank](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.diagnosis.rank](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.account](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.account](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.preAdmissionIdentifier](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.preAdmissionIdentifier](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.origin](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.origin](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.admitSource](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.admitSource](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.reAdmission](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.reAdmission](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.dietPreference](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.dietPreference](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.specialCourtesy](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.specialCourtesy](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.specialArrangement](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.specialArrangement](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.destination](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.destination](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.hospitalization.dischargeDisposition](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.hospitalization.dischargeDisposition](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.location](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.location](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.location.location](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.location](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.location.status](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.status](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.location.physicalType](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.physicalType](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.location.period](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.location.period](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.serviceProvider](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.serviceProvider](https://hl7.org/fhir/R4B/Encounter.html#resource) |
+| [Encounter.partOf](https://hl7.org/fhir/R4/Encounter.html#resource) | `UseElementSameName` | [Encounter.partOf](https://hl7.org/fhir/R4B/Encounter.html#resource) |

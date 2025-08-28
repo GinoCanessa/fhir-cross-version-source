@@ -1,0 +1,19 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [ExplanationOfBenefit](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ExplanationOfBenefit.meta](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.meta](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.implicitRules](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.implicitRules](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.language](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.language](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.text](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.text](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.contained](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.contained](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.identifier](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.identifier](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.request](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-ExplanationOfBenefit.request](StructureDefinition-ext-R2-ExplanationOfBenefit.request.html) |
+| [ExplanationOfBenefit.outcome](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-ExplanationOfBenefit.outcome](StructureDefinition-ext-R2-ExplanationOfBenefit.outcome.html) |
+| [ExplanationOfBenefit.disposition](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.disposition](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.ruleset](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-ExplanationOfBenefit.ruleset](StructureDefinition-ext-R2-ExplanationOfBenefit.ruleset.html) |
+| [ExplanationOfBenefit.originalRuleset](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-ExplanationOfBenefit.originalRuleset](StructureDefinition-ext-R2-ExplanationOfBenefit.originalRuleset.html) |
+| [ExplanationOfBenefit.created](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementSameName` | [ExplanationOfBenefit.created](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.organization](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementRenamed` | [ExplanationOfBenefit.provider](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.requestProvider](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseElementRenamed` | [ExplanationOfBenefit.provider](https://hl7.org/fhir/R4B/ExplanationOfBenefit.html#resource) |
+| [ExplanationOfBenefit.requestOrganization](https://hl7.org/fhir/DSTU2/ExplanationOfBenefit.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-ExplanationOfBenefit.requestOrganization](StructureDefinition-ext-R2-ExplanationOfBenefit.requestOrganization.html) |

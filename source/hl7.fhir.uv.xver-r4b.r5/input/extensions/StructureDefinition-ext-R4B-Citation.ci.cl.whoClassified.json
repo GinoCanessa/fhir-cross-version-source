@@ -1,0 +1,316 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-Citation.ci.cl.whoClassified",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.classification.whoClassified",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_Citation_ci_cl_whoClassified",
+  "title": "Cross-version Extension for R4B.Citation.citedArtifact.classification.whoClassified for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:08.9291674-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Citation.citedArtifact.classification.whoClassified from http://hl7.org/fhir/StructureDefinition/Citation|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Citation.citedArtifact.classification"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Provenance and copyright of classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:person",
+        "path": "Extension.extension",
+        "sliceName": "person",
+        "short": "Person who created the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:person.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "person"
+      },
+      {
+        "id": "Extension.extension:person.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Person who created the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:organization",
+        "path": "Extension.extension",
+        "sliceName": "organization",
+        "short": "Organization who created the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:organization.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "organization"
+      },
+      {
+        "id": "Extension.extension:organization.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Organization who created the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:publisher",
+        "path": "Extension.extension",
+        "sliceName": "publisher",
+        "short": "The publisher of the classification, not the publisher of the article or artifact being cited",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:publisher.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "publisher"
+      },
+      {
+        "id": "Extension.extension:publisher.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The publisher of the classification, not the publisher of the article or artifact being cited",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classifierCopyright",
+        "path": "Extension.extension",
+        "sliceName": "classifierCopyright",
+        "short": "Rights management statement for the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:classifierCopyright.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "classifierCopyright"
+      },
+      {
+        "id": "Extension.extension:classifierCopyright.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Rights management statement for the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:freeToShare",
+        "path": "Extension.extension",
+        "sliceName": "freeToShare",
+        "short": "Acceptable to re-use the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:freeToShare.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "freeToShare"
+      },
+      {
+        "id": "Extension.extension:freeToShare.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Acceptable to re-use the classification",
+        "definition": "`Citation.citedArtifact.classification.whoClassified` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.classification.whoClassified"
+      }
+    ]
+  }
+}

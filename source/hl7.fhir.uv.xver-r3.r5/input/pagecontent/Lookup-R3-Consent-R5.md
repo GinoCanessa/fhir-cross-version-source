@@ -1,0 +1,47 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [Consent](https://hl7.org/fhir/STU3/Consent.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Consent.meta](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.meta](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.implicitRules](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.implicitRules](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.language](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.language](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.text](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.text](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.contained](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.contained](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.identifier](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.identifier](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.status](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.status](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.category](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementSameName` | [Consent.category](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.patient](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.subject](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.period](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.period](StructureDefinition-ext-R3-Consent.period.html) |
+| [Consent.dateTime](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.dateTime](StructureDefinition-ext-R3-Consent.dateTime.html) |
+| [Consent.consentingParty](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.grantee](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.actor](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.actor](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.actor.role](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.actor.role](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.actor.reference](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.actor.reference](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.action](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.action](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.organization](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.organization](StructureDefinition-ext-R3-Consent.organization.html) |
+| [Consent.source[x]](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.source](StructureDefinition-ext-R3-Consent.source.html) |
+| [Consent.policy](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.policy](StructureDefinition-ext-R3-Consent.policy.html) |
+| [Consent.policy.authority](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.policy.uri](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.policyRule](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.policyRule](StructureDefinition-ext-R3-Consent.policyRule.html) |
+| [Consent.securityLabel](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.securityLabel](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.purpose](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.purpose](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.dataPeriod](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.dataPeriod](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.data](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.data](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.data.meaning](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.data.meaning](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.data.reference](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseElementRenamed` | [Consent.provision.data.reference](https://hl7.org/fhir/R5/Consent.html#resource) |
+| [Consent.except](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-Consent.except](StructureDefinition-ext-R3-Consent.except.html) |
+| [Consent.except.type](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.period](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.actor](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.actor.role](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.actor.reference](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.action](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.securityLabel](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.purpose](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.class](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.code](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.dataPeriod](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.data](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.data.meaning](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |
+| [Consent.except.data.reference](https://hl7.org/fhir/STU3/Consent.html#resource) | `UseExtensionFromAncestor` | - |

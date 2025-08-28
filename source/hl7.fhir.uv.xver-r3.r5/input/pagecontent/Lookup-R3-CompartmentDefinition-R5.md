@@ -1,0 +1,27 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [CompartmentDefinition](https://hl7.org/fhir/STU3/CompartmentDefinition.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [CompartmentDefinition.meta](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.meta](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.implicitRules](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.implicitRules](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.language](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.language](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.text](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.text](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.contained](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.contained](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.url](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.url](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.name](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.name](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.title](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-CompartmentDefinition.title](StructureDefinition-ext-R3-CompartmentDefinition.title.html) |
+| [CompartmentDefinition.status](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.status](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.experimental](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.experimental](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.date](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.date](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.publisher](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.publisher](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.contact](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.contact](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.description](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.description](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.purpose](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.purpose](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.useContext](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.useContext](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.jurisdiction](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-CompartmentDefinition.jurisdiction](StructureDefinition-ext-R3-CompartmentDefinition.jurisdiction.html) |
+| [CompartmentDefinition.code](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.code](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.search](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.search](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.resource](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.resource](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.resource.code](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-CompartmentDefinition.resource.code](StructureDefinition-ext-R3-CD.re.code.html) |
+| [CompartmentDefinition.resource.param](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.resource.param](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |
+| [CompartmentDefinition.resource.documentation](https://hl7.org/fhir/STU3/CompartmentDefinition.html#resource) | `UseElementSameName` | [CompartmentDefinition.resource.documentation](https://hl7.org/fhir/R5/CompartmentDefinition.html#resource) |

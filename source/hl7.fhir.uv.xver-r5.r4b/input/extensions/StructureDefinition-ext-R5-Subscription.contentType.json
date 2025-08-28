@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Subscription.contentType",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.contentType",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Subscription_contentType",
+  "title": "Cross-version Extension for R5.Subscription.contentType for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:01.6522535-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Subscription.contentType from http://hl7.org/fhir/StructureDefinition/Subscription|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Subscription"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MIME type to send, or omit for no payload",
+        "definition": "The MIME type to send the payload in - e.g., `application/fhir+xml` or `application/fhir+json`. Note that:\n\n* clients may request notifications in a specific FHIR version by using the [FHIR Version Parameter](https://hl7.org/fhir/http.html#version-.html#version-parameter) - e.g., `application/fhir+json; fhirVersion=4.0`.\n\n* additional MIME types can be allowed by channels - e.g., `text/plain` and `text/html` are defined by the Email channel.",
+        "comment": "`Subscription.contentType` has no related element in R4B:Subscription",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Subscription.contentType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "MIME type to send, or omit for no payload",
+        "definition": "The MIME type to send the payload in - e.g., `application/fhir+xml` or `application/fhir+json`. Note that:\n\n* clients may request notifications in a specific FHIR version by using the [FHIR Version Parameter](https://hl7.org/fhir/http.html#version-.html#version-parameter) - e.g., `application/fhir+json; fhirVersion=4.0`.\n\n* additional MIME types can be allowed by channels - e.g., `text/plain` and `text/html` are defined by the Email channel.",
+        "comment": "`Subscription.contentType` has no related element in R4B:Subscription",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "BCP 13 (RFCs 2045, 2046, 2047, 4288, 4289 and 2049)",
+          "valueSet": "http://hl7.org/fhir/ValueSet/mimetypes|4.3.0"
+        }
+      }
+    ]
+  }
+}

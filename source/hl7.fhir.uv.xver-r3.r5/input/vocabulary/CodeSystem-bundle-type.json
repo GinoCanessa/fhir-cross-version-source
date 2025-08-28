@@ -1,0 +1,100 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "bundle-type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/bundle-type",
+  "version": "3.0.2",
+  "name": "BundleType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates the purpose of a bundle - how it was intended to be used.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/bundle-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "document",
+      "display": "Document",
+      "definition": "The bundle is a document. The first resource is a Composition."
+    },
+    {
+      "code": "message",
+      "display": "Message",
+      "definition": "The bundle is a message. The first resource is a MessageHeader."
+    },
+    {
+      "code": "transaction",
+      "display": "Transaction",
+      "definition": "The bundle is a transaction - intended to be processed by a server as an atomic commit."
+    },
+    {
+      "code": "transaction-response",
+      "display": "Transaction Response",
+      "definition": "The bundle is a transaction response. Because the response is a transaction response, the transaction has succeeded, and all responses are error free."
+    },
+    {
+      "code": "batch",
+      "display": "Batch",
+      "definition": "The bundle is a transaction - intended to be processed by a server as a group of actions."
+    },
+    {
+      "code": "batch-response",
+      "display": "Batch Response",
+      "definition": "The bundle is a batch response. Note that as a batch, some responses may indicate failure and others success."
+    },
+    {
+      "code": "history",
+      "display": "History List",
+      "definition": "The bundle is a list of resources from a history interaction on a server."
+    },
+    {
+      "code": "searchset",
+      "display": "Search Results",
+      "definition": "The bundle is a list of resources returned as a result of a search/query interaction, operation, or message."
+    },
+    {
+      "code": "collection",
+      "display": "Collection",
+      "definition": "The bundle is a set of resources collected into a single package for ease of distribution."
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Immunization.explanation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.explanation",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Immunization_explanation",
+  "title": "Cross-version Extension for R2.Immunization.explanation for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.4338718-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Immunization.explanation from http://hl7.org/fhir/StructureDefinition/Immunization|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Immunization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Administration/non-administration reasons",
+        "definition": "Reasons why a vaccine was or was not administered.",
+        "comment": "`Immunization` maps to R4B `Immunization`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "short": "Why immunization occurred",
+        "definition": "Reasons why a vaccine was administered.",
+        "comment": "`Immunization` maps to R4B `Immunization`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why immunization occurred",
+        "definition": "Reasons why a vaccine was administered.",
+        "comment": "`Immunization` maps to R4B `Immunization`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The reason why a vaccine was administered",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-immunization-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonNotGiven",
+        "path": "Extension.extension",
+        "sliceName": "reasonNotGiven",
+        "short": "Why immunization did not occur",
+        "definition": "Reason why a vaccine was not administered.",
+        "comment": "`Immunization` maps to R4B `Immunization`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:reasonNotGiven.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reasonNotGiven"
+      },
+      {
+        "id": "Extension.extension:reasonNotGiven.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Why immunization did not occur",
+        "definition": "Reason why a vaccine was not administered.",
+        "comment": "`Immunization` maps to R4B `Immunization`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The reason why a vaccine was not administered",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-no-immunization-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Immunization.explanation"
+      }
+    ]
+  }
+}

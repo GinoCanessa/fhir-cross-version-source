@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "flag-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "http://hl7.org/fhir/flag-status",
+  "version": "4.0.1",
+  "name": "FlagStatus",
+  "title": "FlagStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "Patient Care",
+  "contact": [
+    {
+      "name": "Patient Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates whether this flag is active and needs to be displayed to a user, or whether it is no longer needed or was entered in error.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/flag-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "active",
+      "display": "Active",
+      "definition": "A current flag that should be displayed to a user. A system may use the category to determine which user roles should view the flag."
+    },
+    {
+      "code": "inactive",
+      "display": "Inactive",
+      "definition": "The flag no longer needs to be displayed."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The flag was added in error and should no longer be displayed."
+    }
+  ]
+}

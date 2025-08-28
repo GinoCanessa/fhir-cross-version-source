@@ -1,0 +1,479 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-ObservationDefinition.qualifiedInterval",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.qualifiedInterval",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_ObservationDefinition_qualifiedInterval",
+  "title": "Cross-version Extension for R4B.ObservationDefinition.qualifiedInterval for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:15.3986446-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ObservationDefinition.qualifiedInterval from http://hl7.org/fhir/StructureDefinition/ObservationDefinition|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ObservationDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Qualified range for continuous and ordinal observation results",
+        "definition": "Multiple  ranges of results qualified by different contexts for ordinal or continuous observations conforming to this ObservationDefinition.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category",
+        "path": "Extension.extension",
+        "sliceName": "category",
+        "short": "reference | critical | absolute",
+        "definition": "The category of interval of values for continuous or ordinal observations conforming to this ObservationDefinition.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:category.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:category.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "reference | critical | absolute",
+        "definition": "The category of interval of values for continuous or ordinal observations conforming to this ObservationDefinition.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Codes identifying the category of observation range.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-range-category|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:range",
+        "path": "Extension.extension",
+        "sliceName": "range",
+        "short": "The interval itself, for continuous or ordinal observations",
+        "definition": "The low and high values determining the interval. There may be only one of the two.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:range.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "range"
+      },
+      {
+        "id": "Extension.extension:range.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The interval itself, for continuous or ordinal observations",
+        "definition": "The low and high values determining the interval. There may be only one of the two.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:context",
+        "path": "Extension.extension",
+        "sliceName": "context",
+        "short": "Range context qualifier",
+        "definition": "Codes to indicate the health context the range applies to. For example, the normal or therapeutic range.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:context.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "context"
+      },
+      {
+        "id": "Extension.extension:context.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Range context qualifier",
+        "definition": "Codes to indicate the health context the range applies to. For example, the normal or therapeutic range.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Code identifying the health context of a range.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:appliesTo",
+        "path": "Extension.extension",
+        "sliceName": "appliesTo",
+        "short": "Targetted population of the range",
+        "definition": "Codes to indicate the target population this reference range applies to.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:appliesTo.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "appliesTo"
+      },
+      {
+        "id": "Extension.extension:appliesTo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Targetted population of the range",
+        "definition": "Codes to indicate the target population this reference range applies to.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes identifying the population the reference range applies to.",
+          "valueSet": "http://hl7.org/fhir/4.3/ValueSet/R4B-referencerange-appliesto-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:gender",
+        "path": "Extension.extension",
+        "sliceName": "gender",
+        "short": "male | female | other | unknown",
+        "definition": "Sex of the population the range applies to.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gender.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gender"
+      },
+      {
+        "id": "Extension.extension:gender.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "male | female | other | unknown",
+        "definition": "Sex of the population the range applies to.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The gender of a person used for administrative purposes.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:age",
+        "path": "Extension.extension",
+        "sliceName": "age",
+        "short": "Applicable age range, if relevant",
+        "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:age.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "age"
+      },
+      {
+        "id": "Extension.extension:age.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applicable age range, if relevant",
+        "definition": "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gestationalAge",
+        "path": "Extension.extension",
+        "sliceName": "gestationalAge",
+        "short": "Applicable gestational age range, if relevant",
+        "definition": "The gestational age to which this reference range is applicable, in the context of pregnancy.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gestationalAge.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gestationalAge"
+      },
+      {
+        "id": "Extension.extension:gestationalAge.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applicable gestational age range, if relevant",
+        "definition": "The gestational age to which this reference range is applicable, in the context of pregnancy.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:condition",
+        "path": "Extension.extension",
+        "sliceName": "condition",
+        "short": "Condition associated with the reference range",
+        "definition": "Text based condition for which the reference range is valid.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:condition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "condition"
+      },
+      {
+        "id": "Extension.extension:condition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Condition associated with the reference range",
+        "definition": "Text based condition for which the reference range is valid.",
+        "comment": "`ObservationDefinition.qualifiedInterval` has no related element in R5:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-ObservationDefinition.qualifiedInterval"
+      }
+    ]
+  }
+}

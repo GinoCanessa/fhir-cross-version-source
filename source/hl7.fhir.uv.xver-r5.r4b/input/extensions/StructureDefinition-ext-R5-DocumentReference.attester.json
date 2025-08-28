@@ -1,0 +1,248 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DocumentReference.attester",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DocumentReference_attester",
+  "title": "Cross-version Extension for R5.DocumentReference.attester for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.4321096-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DocumentReference.attester from http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    },
+    {
+      "type": "element",
+      "expression": "Media"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Attests to accuracy of the document",
+        "definition": "A participant who has authenticated the accuracy of the document.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:mode",
+        "path": "Extension.extension",
+        "sliceName": "mode",
+        "short": "personal | professional | legal | official",
+        "definition": "The type of attestation the authenticator offers.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:mode.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "mode"
+      },
+      {
+        "id": "Extension.extension:mode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "personal | professional | legal | official",
+        "definition": "The type of attestation the authenticator offers.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The way in which a person authenticated a document.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-composition-attestation-mode-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:time",
+        "path": "Extension.extension",
+        "sliceName": "time",
+        "short": "When the document was attested",
+        "definition": "When the document was attested by the party.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:time.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "time"
+      },
+      {
+        "id": "Extension.extension:time.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When the document was attested",
+        "definition": "When the document was attested by the party.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:party",
+        "path": "Extension.extension",
+        "sliceName": "party",
+        "short": "Who attested the document",
+        "definition": "Who attested the document in the specified way.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:party.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "party"
+      },
+      {
+        "id": "Extension.extension:party.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Who attested the document",
+        "definition": "Who attested the document in the specified way.",
+        "comment": "`DocumentReference.attester` has no related element in R4B:DocumentReference `DocumentReference.attester` has no related element in R4B:Media",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+      }
+    ]
+  }
+}

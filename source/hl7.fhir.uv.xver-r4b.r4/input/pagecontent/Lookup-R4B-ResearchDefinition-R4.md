@@ -1,0 +1,43 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [ResearchDefinition](https://hl7.org/fhir/R4B/ResearchDefinition.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ResearchDefinition.meta](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.meta](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.implicitRules](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.implicitRules](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.language](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.language](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.text](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.text](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.contained](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.contained](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.url](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.url](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.identifier](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.identifier](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.version](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.version](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.name](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.name](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.title](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.title](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.shortTitle](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.shortTitle](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.subtitle](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.subtitle](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.status](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.status](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.experimental](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.experimental](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.subject[x]](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.subject[x]](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.date](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.date](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.publisher](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.publisher](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.contact](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.contact](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.description](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.description](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.comment](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.comment](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.useContext](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.useContext](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.jurisdiction](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.jurisdiction](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.purpose](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.purpose](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.usage](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.usage](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.copyright](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.copyright](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.approvalDate](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.approvalDate](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.lastReviewDate](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.lastReviewDate](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.effectivePeriod](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.effectivePeriod](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.topic](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.topic](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.author](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.author](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.editor](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.editor](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.reviewer](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.reviewer](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.endorser](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.endorser](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.relatedArtifact](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.relatedArtifact](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.library](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.library](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.population](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.population](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.exposure](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.exposure](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.exposureAlternative](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.exposureAlternative](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |
+| [ResearchDefinition.outcome](https://hl7.org/fhir/R4B/ResearchDefinition.html#resource) | `UseElementSameName` | [ResearchDefinition.outcome](https://hl7.org/fhir/R4/ResearchDefinition.html#resource) |

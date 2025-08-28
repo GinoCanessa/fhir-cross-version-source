@@ -1,0 +1,287 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-TestScript.rule",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.rule",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_TestScript_rule",
+  "title": "Cross-version Extension for R3.TestScript.rule for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:20.3712834-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents TestScript.rule from http://hl7.org/fhir/StructureDefinition/TestScript|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "TestScript"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Assert rule used within the test script",
+        "definition": "Assert rule to be used in one or more asserts within the test script.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resource",
+        "path": "Extension.extension",
+        "sliceName": "resource",
+        "short": "Assert rule resource reference",
+        "definition": "Reference to the resource (containing the contents of the rule needed for assertions).",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:resource.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "resource"
+      },
+      {
+        "id": "Extension.extension:resource.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Assert rule resource reference",
+        "definition": "Reference to the resource (containing the contents of the rule needed for assertions).",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:param",
+        "path": "Extension.extension",
+        "sliceName": "param",
+        "short": "Rule parameter template",
+        "definition": "Each rule template can take one or more parameters for rule evaluation.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:param.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:param.extension:name",
+        "path": "Extension.extension.extension",
+        "sliceName": "name",
+        "short": "Parameter name matching external assert rule parameter",
+        "definition": "Descriptive name for this parameter that matches the external assert rule parameter name.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:param.extension:name.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:param.extension:name.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Parameter name matching external assert rule parameter",
+        "definition": "Descriptive name for this parameter that matches the external assert rule parameter name.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:param.extension:value",
+        "path": "Extension.extension.extension",
+        "sliceName": "value",
+        "short": "Parameter value defined either explicitly or dynamically",
+        "definition": "The explicit or dynamic value for the parameter that will be passed on to the external rule template.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:param.extension:value.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:param.extension:value.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Parameter value defined either explicitly or dynamically",
+        "definition": "The explicit or dynamic value for the parameter that will be passed on to the external rule template.",
+        "comment": "`TestScript.rule` has no related element in R4:TestScript",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:param.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "param"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.rule"
+      }
+    ]
+  }
+}

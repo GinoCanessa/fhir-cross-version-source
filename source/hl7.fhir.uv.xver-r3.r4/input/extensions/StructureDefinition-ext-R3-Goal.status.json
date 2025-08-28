@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Goal.status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Goal.status",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Goal_status",
+  "title": "Cross-version Extension for R3.Goal.status for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:15.6071418-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Goal.status from http://hl7.org/fhir/StructureDefinition/Goal|3.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Goal.achievementStatus"
+    },
+    {
+      "type": "element",
+      "expression": "Goal.lifecycleStatus"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "proposed | accepted | planned | in-progress | on-target | ahead-of-target | behind-target | sustaining | achieved | on-hold | cancelled | entered-in-error | rejected",
+        "definition": "Indicates whether the goal has been reached and is still considered relevant.",
+        "comment": "`Goal.status` maps to R4 `Goal.lifecycleStatus`. To multiple elements in Goal: (`Goal.lifecycleStatus`, `Goal.achievementStatus`). The value set relationship of RelatedTo is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as RelatedTo. `Goal.status` maps to R4 `Goal.achievementStatus`. To multiple elements in Goal: (`Goal.lifecycleStatus`, `Goal.achievementStatus`). Has no type mapping `achievementStatus` removed the required value set binding to `http://hl7.org/fhir/ValueSet/goal-status`. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": true,
+        "isModifierReason": "This extension is a modifier because the target element Goal.status is flagged IsModifier"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Goal.status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "proposed | accepted | planned | in-progress | on-target | ahead-of-target | behind-target | sustaining | achieved | on-hold | cancelled | entered-in-error | rejected",
+        "definition": "Indicates whether the goal has been reached and is still considered relevant.",
+        "comment": "`Goal.status` maps to R4 `Goal.lifecycleStatus`. To multiple elements in Goal: (`Goal.lifecycleStatus`, `Goal.achievementStatus`). The value set relationship of RelatedTo is INCOMPATIBLE for a required binding on a `code` type in this direction. So is mapped as RelatedTo. `Goal.status` maps to R4 `Goal.achievementStatus`. To multiple elements in Goal: (`Goal.lifecycleStatus`, `Goal.achievementStatus`). Has no type mapping `achievementStatus` removed the required value set binding to `http://hl7.org/fhir/ValueSet/goal-status`. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Indicates whether the goal has been met and is still being targeted",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-goal-status-for-R4"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [ExpansionProfile](https://hl7.org/fhir/STU3/ExpansionProfile.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ExpansionProfile.meta](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseElementRenamed` | [Parameters.meta](https://hl7.org/fhir/R4/Parameters.html#resource) |
+| [ExpansionProfile.implicitRules](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseElementRenamed` | [Parameters.implicitRules](https://hl7.org/fhir/R4/Parameters.html#resource) |
+| [ExpansionProfile.language](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseElementRenamed` | [Parameters.language](https://hl7.org/fhir/R4/Parameters.html#resource) |
+| [ExpansionProfile.text](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.text](StructureDefinition-ext-R3-ExpansionProfile.text.html) |
+| [ExpansionProfile.contained](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.contained](StructureDefinition-ext-R3-ExpansionProfile.contained.html) |
+| [ExpansionProfile.url](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.url](StructureDefinition-ext-R3-ExpansionProfile.url.html) |
+| [ExpansionProfile.identifier](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.identifier](StructureDefinition-ext-R3-ExpansionProfile.identifier.html) |
+| [ExpansionProfile.version](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.version](StructureDefinition-ext-R3-ExpansionProfile.version.html) |
+| [ExpansionProfile.name](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.name](StructureDefinition-ext-R3-ExpansionProfile.name.html) |
+| [ExpansionProfile.status](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.status](StructureDefinition-ext-R3-ExpansionProfile.status.html) |
+| [ExpansionProfile.experimental](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.experimental](StructureDefinition-ext-R3-ExpansionProfile.experimental.html) |
+| [ExpansionProfile.date](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.date](StructureDefinition-ext-R3-ExpansionProfile.date.html) |
+| [ExpansionProfile.publisher](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.publisher](StructureDefinition-ext-R3-ExpansionProfile.publisher.html) |
+| [ExpansionProfile.contact](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.contact](StructureDefinition-ext-R3-ExpansionProfile.contact.html) |
+| [ExpansionProfile.description](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.description](StructureDefinition-ext-R3-ExpansionProfile.description.html) |
+| [ExpansionProfile.useContext](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.useContext](StructureDefinition-ext-R3-ExpansionProfile.useContext.html) |
+| [ExpansionProfile.jurisdiction](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.jurisdiction](StructureDefinition-ext-R3-ExpansionProfile.jurisdiction.html) |
+| [ExpansionProfile.fixedVersion](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.fixedVersion](StructureDefinition-ext-R3-ExpansionProfile.fixedVersion.html) |
+| [ExpansionProfile.fixedVersion.system](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.fixedVersion.version](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.fixedVersion.mode](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.excludedSystem](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.excludedSystem](StructureDefinition-ext-R3-ExpansionProfile.excludedSystem.html) |
+| [ExpansionProfile.excludedSystem.system](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.excludedSystem.version](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.includeDesignations](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.includeDesignations](StructureDefinition-ext-R3-ExpansionProfile.includeDesignations.html) |
+| [ExpansionProfile.designation](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.designation](StructureDefinition-ext-R3-ExpansionProfile.designation.html) |
+| [ExpansionProfile.designation.include](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.include.designation](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.include.designation.language](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.include.designation.use](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.exclude](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.exclude.designation](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.exclude.designation.language](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.designation.exclude.designation.use](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtensionFromAncestor` | - |
+| [ExpansionProfile.includeDefinition](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.includeDefinition](StructureDefinition-ext-R3-ExpansionProfile.includeDefinition.html) |
+| [ExpansionProfile.activeOnly](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.activeOnly](StructureDefinition-ext-R3-ExpansionProfile.activeOnly.html) |
+| [ExpansionProfile.excludeNested](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.excludeNested](StructureDefinition-ext-R3-ExpansionProfile.excludeNested.html) |
+| [ExpansionProfile.excludeNotForUI](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.excludeNotForUI](StructureDefinition-ext-R3-ExpansionProfile.excludeNotForUI.html) |
+| [ExpansionProfile.excludePostCoordinated](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.excludePostCoordinated](StructureDefinition-ext-R3-ExpansionProfile.excludePostCoordinated.html) |
+| [ExpansionProfile.displayLanguage](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.displayLanguage](StructureDefinition-ext-R3-ExpansionProfile.displayLanguage.html) |
+| [ExpansionProfile.limitedExpansion](https://hl7.org/fhir/STU3/ExpansionProfile.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.limitedExpansion](StructureDefinition-ext-R3-ExpansionProfile.limitedExpansion.html) |

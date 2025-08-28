@@ -1,0 +1,40 @@
+### Lookup for [FHIR R4](https://hl7.org/fhir/R4/) [Library](https://hl7.org/fhir/R4/Library.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R4) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Library.meta](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.meta](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.implicitRules](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.implicitRules](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.language](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.language](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.text](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.text](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.contained](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.contained](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.url](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.url](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.identifier](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.identifier](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.version](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.version](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.name](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.name](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.title](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.title](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.subtitle](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.subtitle](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.status](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.status](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.experimental](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.experimental](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.type](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.type](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.subject[x]](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.subject[x]](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.date](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.date](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.publisher](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.publisher](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.contact](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.contact](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.description](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.description](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.useContext](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.useContext](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.jurisdiction](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.jurisdiction](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.purpose](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.purpose](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.usage](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.usage](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.copyright](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.copyright](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.approvalDate](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.approvalDate](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.lastReviewDate](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.lastReviewDate](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.effectivePeriod](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.effectivePeriod](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.topic](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.topic](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.author](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.author](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.editor](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.editor](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.reviewer](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.reviewer](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.endorser](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.endorser](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.relatedArtifact](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.relatedArtifact](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.parameter](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.parameter](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.dataRequirement](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.dataRequirement](https://hl7.org/fhir/R4B/Library.html#resource) |
+| [Library.content](https://hl7.org/fhir/R4/Library.html#resource) | `UseElementSameName` | [Library.content](https://hl7.org/fhir/R4B/Library.html#resource) |

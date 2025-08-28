@@ -1,0 +1,539 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4B-Citation.ci.pu.periodicRelease",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.publicationForm.periodicRelease",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4B_Citation_ci_pu_periodicRelease",
+  "title": "Cross-version Extension for R4B.Citation.citedArtifact.publicationForm.periodicRelease for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:08.9166004-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Citation.citedArtifact.publicationForm.periodicRelease from http://hl7.org/fhir/StructureDefinition/Citation|4.3.0 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Citation.citedArtifact.publicationForm"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The specific issue in which the cited article resides",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:citedMedium",
+        "path": "Extension.extension",
+        "sliceName": "citedMedium",
+        "short": "Internet or Print",
+        "definition": "Describes the form of the medium cited. Common codes are \"Internet\" or \"Print\".",
+        "comment": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:citedMedium.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "citedMedium"
+      },
+      {
+        "id": "Extension.extension:citedMedium.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Internet or Print",
+        "definition": "Describes the form of the medium cited. Common codes are \"Internet\" or \"Print\".",
+        "comment": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/cited-medium|5.0.0"
+        }
+      },
+      {
+        "id": "Extension.extension:volume",
+        "path": "Extension.extension",
+        "sliceName": "volume",
+        "short": "Volume number of journal in which the article is published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:volume.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "volume"
+      },
+      {
+        "id": "Extension.extension:volume.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Volume number of journal in which the article is published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:issue",
+        "path": "Extension.extension",
+        "sliceName": "issue",
+        "short": "Issue, part or supplement of journal in which the article is published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:issue.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "issue"
+      },
+      {
+        "id": "Extension.extension:issue.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Issue, part or supplement of journal in which the article is published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication",
+        "path": "Extension.extension",
+        "sliceName": "dateOfPublication",
+        "short": "Defining the date on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:date",
+        "path": "Extension.extension.extension",
+        "sliceName": "date",
+        "short": "Date on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:date.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:date.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Date on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:year",
+        "path": "Extension.extension.extension",
+        "sliceName": "year",
+        "short": "Year on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:year.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "year"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:year.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Year on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:month",
+        "path": "Extension.extension.extension",
+        "sliceName": "month",
+        "short": "Month on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:month.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "month"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:month.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Month on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:day",
+        "path": "Extension.extension.extension",
+        "sliceName": "day",
+        "short": "Day on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:day.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "day"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:day.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Day on which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:season",
+        "path": "Extension.extension.extension",
+        "sliceName": "season",
+        "short": "Season on which the issue of the journal was published",
+        "definition": "Spring, Summer, Fall/Autumn, Winter.",
+        "comment": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:season.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "season"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:season.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Season on which the issue of the journal was published",
+        "definition": "Spring, Summer, Fall/Autumn, Winter.",
+        "comment": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:text",
+        "path": "Extension.extension.extension",
+        "sliceName": "text",
+        "short": "Text representation of the date of which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:text.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "text"
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.extension:text.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Text representation of the date of which the issue of the journal was published",
+        "definition": "`Citation.citedArtifact.publicationForm.periodicRelease` has no related element in R5:Citation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfPublication.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateOfPublication"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.3/StructureDefinition/extension-Citation.citedArtifact.publicationForm.periodicRelease"
+      }
+    ]
+  }
+}

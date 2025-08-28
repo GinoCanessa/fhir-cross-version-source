@@ -1,0 +1,39 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [SubstancePolymer](https://hl7.org/fhir/R5/SubstancePolymer.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [SubstancePolymer](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-SubstancePolymer](StructureDefinition-ext-R5-SubstancePolymer.html) |
+| [SubstancePolymer.meta](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.implicitRules](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.language](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.text](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.contained](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.identifier](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [SubstancePolymer.class](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.geometry](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.copolymerConnectivity](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.modification](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.ratioType](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.startingMaterial](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.startingMaterial.code](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.startingMaterial.category](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.startingMaterial.isDefining](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.monomerSet.startingMaterial.amount](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.averageMolecularFormula](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnitAmountType](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.unit](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.orientation](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.amount](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.type](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.average](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.low](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.degreeOfPolymerisation.high](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.structuralRepresentation](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.structuralRepresentation.type](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.structuralRepresentation.representation](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.structuralRepresentation.format](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |
+| [SubstancePolymer.repeat.repeatUnit.structuralRepresentation.attachment](https://hl7.org/fhir/R5/SubstancePolymer.html#resource) | `UseExtensionFromAncestor` | - |

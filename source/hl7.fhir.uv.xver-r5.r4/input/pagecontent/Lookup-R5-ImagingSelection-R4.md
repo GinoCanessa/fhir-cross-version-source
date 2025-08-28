@@ -1,0 +1,39 @@
+### Lookup for [FHIR R5](https://hl7.org/fhir/R5/) [ImagingSelection](https://hl7.org/fhir/R5/ImagingSelection.html) for use in [FHIR R4](https://hl7.org/fhir/R4/)
+
+| Source Element (FHIR R5) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ImagingSelection](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtension` | [http://hl7.org/fhir/5.0/StructureDefinition/extension-ImagingSelection](StructureDefinition-ext-R5-ImagingSelection.html) |
+| [ImagingSelection.meta](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.meta](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.implicitRules](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.implicitRules](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.language](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.language](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.text](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.text](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.contained](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.contained](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.identifier](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.identifier](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.status](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.subject](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.subject](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.issued](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.performer](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.performer.function](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.performer.actor](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.basedOn](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.category](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.code](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseBasicElement` | [Basic.code](https://hl7.org/fhir/R4/Basic.html#resource) |
+| [ImagingSelection.studyUid](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.derivedFrom](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.endpoint](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.seriesUid](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.seriesNumber](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.frameOfReferenceUid](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.bodySite](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.focus](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.uid](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.number](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.sopClass](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.subset](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion2D](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion2D.regionType](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion2D.coordinate](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion3D](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion3D.regionType](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |
+| [ImagingSelection.instance.imageRegion3D.coordinate](https://hl7.org/fhir/R5/ImagingSelection.html#resource) | `UseExtensionFromAncestor` | - |

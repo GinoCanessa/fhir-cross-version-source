@@ -1,0 +1,368 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-TestScript.se.ac.as.ruleset",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.ruleset",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_TestScript_se_ac_as_ruleset",
+  "title": "Cross-version Extension for R3.TestScript.setup.action.assert.ruleset for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:20.3967747-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents TestScript.setup.action.assert.ruleset from http://hl7.org/fhir/StructureDefinition/TestScript|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "TestScript.setup.action.assert"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The reference to a TestScript.ruleset",
+        "definition": "The TestScript.ruleset this assert will evaluate.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rulesetId",
+        "path": "Extension.extension",
+        "sliceName": "rulesetId",
+        "short": "Id of the TestScript.ruleset",
+        "definition": "The TestScript.ruleset id value this assert will evaluate.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rulesetId.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "rulesetId"
+      },
+      {
+        "id": "Extension.extension:rulesetId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Id of the TestScript.ruleset",
+        "definition": "The TestScript.ruleset id value this assert will evaluate.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule",
+        "path": "Extension.extension",
+        "sliceName": "rule",
+        "short": "The referenced rule within the ruleset",
+        "definition": "The referenced rule within the external ruleset template.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:ruleId",
+        "path": "Extension.extension.extension",
+        "sliceName": "ruleId",
+        "short": "Id of referenced rule within the ruleset",
+        "definition": "Id of the referenced rule within the external ruleset template.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:ruleId.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ruleId"
+      },
+      {
+        "id": "Extension.extension:rule.extension:ruleId.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Id of referenced rule within the ruleset",
+        "definition": "Id of the referenced rule within the external ruleset template.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:param",
+        "path": "Extension.extension.extension",
+        "sliceName": "param",
+        "short": "Rule parameter template",
+        "definition": "Each rule template can take one or more parameters for rule evaluation.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:name",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "name",
+        "short": "Parameter name matching external assert ruleset rule parameter",
+        "definition": "Descriptive name for this parameter that matches the external assert ruleset rule parameter name.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:name.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:name.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Parameter name matching external assert ruleset rule parameter",
+        "definition": "Descriptive name for this parameter that matches the external assert ruleset rule parameter name.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:value",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value",
+        "short": "Parameter value defined either explicitly or dynamically",
+        "definition": "The value for the parameter that will be passed on to the external ruleset rule template.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:value.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.extension:value.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Parameter value defined either explicitly or dynamically",
+        "definition": "The value for the parameter that will be passed on to the external ruleset rule template.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rule.extension:param.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "param"
+      },
+      {
+        "id": "Extension.extension:rule.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "rule"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-TestScript.setup.action.assert.ruleset"
+      }
+    ]
+  }
+}

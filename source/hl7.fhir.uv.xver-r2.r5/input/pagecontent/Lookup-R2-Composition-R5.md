@@ -1,0 +1,40 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [Composition](https://hl7.org/fhir/DSTU2/Composition.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [Composition.meta](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.meta](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.implicitRules](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.implicitRules](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.language](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.language](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.text](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.text](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.contained](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.contained](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.identifier](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.identifier](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.date](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.date](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.type](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.type](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.class](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementRenamed` | [Composition.category](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.title](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.title](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.status](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.status](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.confidentiality](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Composition.confidentiality](StructureDefinition-ext-R2-Composition.confidentiality.html) |
+| [Composition.subject](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.subject](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.author](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.author](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.attester](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.attester](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.attester.id](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.attester.id](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.attester.mode](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Composition.attester.mode](StructureDefinition-ext-R2-Composition.at.mode.html) |
+| [Composition.attester.time](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.attester.time](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.attester.party](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.attester.party](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.custodian](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.custodian](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.event](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.event](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.event.id](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.event.id](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.event.code](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Composition.event.code](StructureDefinition-ext-R2-Composition.ev.code.html) |
+| [Composition.event.period](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.event.period](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.event.detail](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Composition.event.detail](StructureDefinition-ext-R2-Composition.ev.detail.html) |
+| [Composition.encounter](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.encounter](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.id](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.id](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.title](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.title](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.code](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.code](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.text](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.text](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.mode](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-Composition.section.mode](StructureDefinition-ext-R2-Composition.se.mode.html) |
+| [Composition.section.orderedBy](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.orderedBy](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.entry](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.entry](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.emptyReason](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.emptyReason](https://hl7.org/fhir/R5/Composition.html#resource) |
+| [Composition.section.section](https://hl7.org/fhir/DSTU2/Composition.html#resource) | `UseElementSameName` | [Composition.section.section](https://hl7.org/fhir/R5/Composition.html#resource) |

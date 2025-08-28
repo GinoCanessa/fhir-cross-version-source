@@ -1,0 +1,26 @@
+### Lookup for [FHIR R4B](https://hl7.org/fhir/R4B/) [MedicationStatement](https://hl7.org/fhir/R4B/MedicationStatement.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R4B) | Usage | Target |
+| -------------- | ----- | ------ |
+| [MedicationStatement.meta](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.meta](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.implicitRules](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.implicitRules](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.language](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.language](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.text](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.text](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.contained](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.contained](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.identifier](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.identifier](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.basedOn](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.basedOn](StructureDefinition-ext-R4B-MedicationStatement.basedOn.html) |
+| [MedicationStatement.partOf](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.partOf](StructureDefinition-ext-R4B-MedicationStatement.partOf.html) |
+| [MedicationStatement.status](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.status](StructureDefinition-ext-R4B-MedicationStatement.status.html) |
+| [MedicationStatement.statusReason](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.statusReason](StructureDefinition-ext-R4B-MedicationStatement.statusReason.html) |
+| [MedicationStatement.category](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.category](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.medication[x]](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.medication](StructureDefinition-ext-R4B-MedicationStatement.medication.html) |
+| [MedicationStatement.subject](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.subject](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.context](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.context](StructureDefinition-ext-R4B-MedicationStatement.context.html) |
+| [MedicationStatement.effective[x]](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.effective[x]](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.dateAsserted](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.dateAsserted](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.informationSource](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.informationSource](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.derivedFrom](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.derivedFrom](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.reasonCode](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.reasonCode](StructureDefinition-ext-R4B-MedicationStatement.reasonCode.html) |
+| [MedicationStatement.reasonReference](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseExtension` | [http://hl7.org/fhir/4.3/StructureDefinition/extension-MedicationStatement.reasonReference](StructureDefinition-ext-R4B-MedicationStatement.reasonReference.html) |
+| [MedicationStatement.note](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.note](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |
+| [MedicationStatement.dosage](https://hl7.org/fhir/R4B/MedicationStatement.html#resource) | `UseElementSameName` | [MedicationStatement.dosage](https://hl7.org/fhir/R5/MedicationStatement.html#resource) |

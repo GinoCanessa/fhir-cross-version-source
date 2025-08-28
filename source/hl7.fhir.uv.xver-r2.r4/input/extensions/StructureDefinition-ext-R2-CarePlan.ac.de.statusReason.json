@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-CarePlan.ac.de.statusReason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.activity.detail.statusReason",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_CarePlan_ac_de_statusReason",
+  "title": "Cross-version Extension for R2.CarePlan.activity.detail.statusReason for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.6752426-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents CarePlan.activity.detail.statusReason from http://hl7.org/fhir/StructureDefinition/CarePlan|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "CarePlan.activity.detail.statusReason"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reason for current status",
+        "definition": "Provides reason why the activity isn't yet started, is on hold, was cancelled, etc.",
+        "comment": "`CarePlan.activity.detail.statusReason` maps to R4 `CarePlan.activity.detail.statusReason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-CarePlan.activity.detail.statusReason"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reason for current status",
+        "definition": "Provides reason why the activity isn't yet started, is on hold, was cancelled, etc.",
+        "comment": "`CarePlan.activity.detail.statusReason` maps to R4 `CarePlan.activity.detail.statusReason`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Describes why the current activity has the status it does; e.g. \"Recovering from injury\" as a reason for non-started or on-hold, \"Patient does not enjoy activity\" as a reason for cancelling a planned activity.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-goal-status-reason-for-R4"
+        }
+      }
+    ]
+  }
+}

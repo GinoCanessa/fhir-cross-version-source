@@ -1,0 +1,50 @@
+### Lookup for [FHIR R4](https://hl7.org/fhir/R4/) [ConceptMap](https://hl7.org/fhir/R4/ConceptMap.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R4) | Usage | Target |
+| -------------- | ----- | ------ |
+| [ConceptMap.meta](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.meta](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.implicitRules](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.implicitRules](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.language](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.language](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.text](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.text](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.contained](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.contained](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.url](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.url](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.identifier](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.identifier](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.version](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.version](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.name](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.name](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.title](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.title](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.status](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.status](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.experimental](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.experimental](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.date](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.date](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.publisher](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.publisher](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.contact](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.contact](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.description](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.description](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.useContext](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.useContext](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.jurisdiction](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.jurisdiction](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.purpose](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.purpose](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.copyright](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.copyright](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.source[x]](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.source[x]](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.target[x]](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.target[x]](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.source](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.source](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.sourceVersion](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.sourceVersion](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.target](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.target](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.targetVersion](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.targetVersion](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.code](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.code](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.display](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.display](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.code](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.code](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.display](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.display](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.equivalence](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.equivalence](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.comment](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.comment](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.dependsOn](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.dependsOn](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.dependsOn.property](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.dependsOn.property](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.dependsOn.system](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.dependsOn.system](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.dependsOn.value](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseOneOf` | [ConceptMap.group.element.target.dependsOn.value](https://hl7.org/fhir/R4B/ConceptMap.html#resource)<br />[ConceptMap.group.element.target.dependsOn.value](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.dependsOn.display](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.dependsOn.display](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.element.target.product](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.element.target.product](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.unmapped](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.unmapped](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.unmapped.mode](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.unmapped.mode](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.unmapped.code](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.unmapped.code](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.unmapped.display](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.unmapped.display](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |
+| [ConceptMap.group.unmapped.url](https://hl7.org/fhir/R4/ConceptMap.html#resource) | `UseElementSameName` | [ConceptMap.group.unmapped.url](https://hl7.org/fhir/R4B/ConceptMap.html#resource) |

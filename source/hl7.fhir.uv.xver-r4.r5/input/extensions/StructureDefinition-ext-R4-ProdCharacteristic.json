@@ -1,0 +1,568 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-ProdCharacteristic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ProdCharacteristic",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_ProdCharacteristic",
+  "title": "Cross-version Extension for R4.ProdCharacteristic for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:38.5851911-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ProdCharacteristic from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The marketing status describes the date when a medicinal product is actually put on the market or the date as of which it is no longer available",
+        "definition": "This cross-version extension represents ProdCharacteristic from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:height",
+        "path": "Extension.extension",
+        "sliceName": "height",
+        "short": "Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.height from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:height.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "height"
+      },
+      {
+        "id": "Extension.extension:height.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.height from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:width",
+        "path": "Extension.extension",
+        "sliceName": "width",
+        "short": "Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.width from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:width.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "width"
+      },
+      {
+        "id": "Extension.extension:width.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.width from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:depth",
+        "path": "Extension.extension",
+        "sliceName": "depth",
+        "short": "Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.depth from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:depth.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "depth"
+      },
+      {
+        "id": "Extension.extension:depth.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.depth from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:weight",
+        "path": "Extension.extension",
+        "sliceName": "weight",
+        "short": "Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.weight from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:weight.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "weight"
+      },
+      {
+        "id": "Extension.extension:weight.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.weight from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nominalVolume",
+        "path": "Extension.extension",
+        "sliceName": "nominalVolume",
+        "short": "Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.nominalVolume from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:nominalVolume.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "nominalVolume"
+      },
+      {
+        "id": "Extension.extension:nominalVolume.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.nominalVolume from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:externalDiameter",
+        "path": "Extension.extension",
+        "sliceName": "externalDiameter",
+        "short": "Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.externalDiameter from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:externalDiameter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "externalDiameter"
+      },
+      {
+        "id": "Extension.extension:externalDiameter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.externalDiameter from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:shape",
+        "path": "Extension.extension",
+        "sliceName": "shape",
+        "short": "Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.shape from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:shape.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "shape"
+      },
+      {
+        "id": "Extension.extension:shape.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.shape from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:color",
+        "path": "Extension.extension",
+        "sliceName": "color",
+        "short": "Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.color from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:color.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "color"
+      },
+      {
+        "id": "Extension.extension:color.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.color from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:imprint",
+        "path": "Extension.extension",
+        "sliceName": "imprint",
+        "short": "Where applicable, the imprint can be specified as text",
+        "definition": "This cross-version extension represents ProdCharacteristic.imprint from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:imprint.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "imprint"
+      },
+      {
+        "id": "Extension.extension:imprint.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the imprint can be specified as text",
+        "definition": "This cross-version extension represents ProdCharacteristic.imprint from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:image",
+        "path": "Extension.extension",
+        "sliceName": "image",
+        "short": "Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations",
+        "definition": "This cross-version extension represents ProdCharacteristic.image from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:image.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "image"
+      },
+      {
+        "id": "Extension.extension:image.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations",
+        "definition": "This cross-version extension represents ProdCharacteristic.image from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:scoring",
+        "path": "Extension.extension",
+        "sliceName": "scoring",
+        "short": "Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.scoring from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:scoring.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "scoring"
+      },
+      {
+        "id": "Extension.extension:scoring.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used",
+        "definition": "This cross-version extension represents ProdCharacteristic.scoring from http://hl7.org/fhir/StructureDefinition/ProdCharacteristic|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-ProdCharacteristic"
+      }
+    ]
+  }
+}

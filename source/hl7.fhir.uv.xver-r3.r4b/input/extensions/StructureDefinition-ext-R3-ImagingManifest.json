@@ -1,0 +1,667 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ImagingManifest",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingManifest",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ImagingManifest",
+  "title": "Cross-version Extension for R3.ImagingManifest for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:15.8154933-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ImagingManifest from http://hl7.org/fhir/StructureDefinition/ImagingManifest|3.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Key Object Selection",
+        "definition": "A text description of the DICOM SOP instances selected in the ImagingManifest; or the reason for, or significance of, the selection.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:patient",
+        "path": "Extension.extension",
+        "sliceName": "patient",
+        "short": "Patient of the selected objects",
+        "definition": "A patient resource reference which is the patient subject of all DICOM SOP Instances in this ImagingManifest.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:patient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "patient"
+      },
+      {
+        "id": "Extension.extension:patient.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Patient of the selected objects",
+        "definition": "A patient resource reference which is the patient subject of all DICOM SOP Instances in this ImagingManifest.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:authoringTime",
+        "path": "Extension.extension",
+        "sliceName": "authoringTime",
+        "short": "Time when the selection of instances was made",
+        "definition": "Date and time when the selection of the referenced instances were made. It is (typically) different from the creation date of the selection resource, and from dates associated with the referenced instances (e.g. capture time of the referenced image).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:authoringTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authoringTime"
+      },
+      {
+        "id": "Extension.extension:authoringTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Time when the selection of instances was made",
+        "definition": "Date and time when the selection of the referenced instances were made. It is (typically) different from the creation date of the selection resource, and from dates associated with the referenced instances (e.g. capture time of the referenced image).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Description text",
+        "definition": "Free text narrative description of the ImagingManifest.  \nThe value may be derived from the DICOM Standard Part 16, CID-7010 descriptions (e.g. Best in Set, Complete Study Content). Note that those values cover the wide range of uses of the DICOM Key Object Selection object, several of which are not supported by ImagingManifest. Specifically, there is no expected behavior associated with descriptions that suggest referenced images be removed or not used.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Description text",
+        "definition": "Free text narrative description of the ImagingManifest.  \nThe value may be derived from the DICOM Standard Part 16, CID-7010 descriptions (e.g. Best in Set, Complete Study Content). Note that those values cover the wide range of uses of the DICOM Key Object Selection object, several of which are not supported by ImagingManifest. Specifically, there is no expected behavior associated with descriptions that suggest referenced images be removed or not used.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study",
+        "path": "Extension.extension",
+        "sliceName": "study",
+        "short": "Study identity of the selected instances",
+        "definition": "Study identity and locating information of the DICOM SOP instances in the selection.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:uid",
+        "path": "Extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Study instance UID",
+        "definition": "Study instance UID of the SOP instances in the selection.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:uid.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:uid.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Study instance UID",
+        "definition": "Study instance UID of the SOP instances in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy",
+        "path": "Extension.extension.extension",
+        "sliceName": "imagingStudy",
+        "short": "Reference to ImagingStudy",
+        "definition": "Reference to the Imaging Study in FHIR form.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "imagingStudy"
+      },
+      {
+        "id": "Extension.extension:study.extension:imagingStudy.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reference to ImagingStudy",
+        "definition": "Reference to the Imaging Study in FHIR form.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:endpoint",
+        "path": "Extension.extension.extension",
+        "sliceName": "endpoint",
+        "short": "Study access service endpoint",
+        "definition": "The network service providing access (e.g., query, view, or retrieval) for the study. See implementation notes for information about using DICOM endpoints. A study-level endpoint applies to each series in the study, unless overridden by a series-level endpoint with the same Endpoint.type.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:endpoint.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "endpoint"
+      },
+      {
+        "id": "Extension.extension:study.extension:endpoint.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Study access service endpoint",
+        "definition": "The network service providing access (e.g., query, view, or retrieval) for the study. See implementation notes for information about using DICOM endpoints. A study-level endpoint applies to each series in the study, unless overridden by a series-level endpoint with the same Endpoint.type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series",
+        "path": "Extension.extension.extension",
+        "sliceName": "series",
+        "short": "Series identity of the selected instances",
+        "definition": "Series identity and locating information of the DICOM SOP instances in the selection.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Series instance UID",
+        "definition": "Series instance UID of the SOP instances in the selection.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:uid.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Series instance UID",
+        "definition": "Series instance UID of the SOP instances in the selection.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:endpoint",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "endpoint",
+        "short": "Series access endpoint",
+        "definition": "The network service providing access (e.g., query, view, or retrieval) for this series. See implementation notes for information about using DICOM endpoints. A series-level endpoint, if present, has precedence over a study-level endpoint with the same Endpoint.type.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:endpoint.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "endpoint"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:endpoint.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Series access endpoint",
+        "definition": "The network service providing access (e.g., query, view, or retrieval) for this series. See implementation notes for information about using DICOM endpoints. A series-level endpoint, if present, has precedence over a study-level endpoint with the same Endpoint.type.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "instance",
+        "short": "The selected instance",
+        "definition": "Identity and locating information of the selected DICOM SOP instances.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "sopClass",
+        "short": "SOP class UID of instance",
+        "definition": "SOP class UID of the selected instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "sopClass"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:sopClass.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "SOP class UID of instance",
+        "definition": "SOP class UID of the selected instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "uid",
+        "short": "Selected instance UID",
+        "definition": "SOP Instance UID of the selected instance.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "uid"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.extension:uid.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Selected instance UID",
+        "definition": "SOP Instance UID of the selected instance.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "oid"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:study.extension:series.extension:instance.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "instance"
+      },
+      {
+        "id": "Extension.extension:study.extension:series.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "series"
+      },
+      {
+        "id": "Extension.extension:study.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "study"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ImagingManifest"
+      }
+    ]
+  }
+}

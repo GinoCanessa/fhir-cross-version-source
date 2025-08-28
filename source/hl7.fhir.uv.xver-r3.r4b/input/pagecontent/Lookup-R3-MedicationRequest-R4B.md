@@ -1,0 +1,42 @@
+### Lookup for [FHIR R3](https://hl7.org/fhir/STU3/) [MedicationRequest](https://hl7.org/fhir/STU3/MedicationRequest.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R3) | Usage | Target |
+| -------------- | ----- | ------ |
+| [MedicationRequest.meta](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.meta](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.implicitRules](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.implicitRules](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.language](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.language](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.text](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.text](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.contained](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.contained](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.identifier](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.identifier](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.definition](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementRenamed` | [MedicationRequest.instantiatesCanonical](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.basedOn](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.basedOn](StructureDefinition-ext-R3-MedicationRequest.basedOn.html) |
+| [MedicationRequest.groupIdentifier](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.groupIdentifier](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.status](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.status](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.intent](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.intent](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.category](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.category](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.priority](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.priority](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.medication[x]](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.medication[x]](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.subject](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.subject](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.context](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.context](StructureDefinition-ext-R3-MedicationRequest.context.html) |
+| [MedicationRequest.supportingInformation](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.supportingInformation](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.authoredOn](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.authoredOn](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.requester](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseExtension` | [http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationRequest.requester](StructureDefinition-ext-R3-MedicationRequest.requester.html) |
+| [MedicationRequest.requester.agent](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationRequest.requester.onBehalfOf](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseExtensionFromAncestor` | - |
+| [MedicationRequest.recorder](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.recorder](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.reasonCode](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.reasonCode](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.reasonReference](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.reasonReference](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.note](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.note](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dosageInstruction](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dosageInstruction](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest.validityPeriod](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest.validityPeriod](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest.numberOfRepeatsAllowed](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest.numberOfRepeatsAllowed](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest.quantity](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest.quantity](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest.expectedSupplyDuration](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest.expectedSupplyDuration](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.dispenseRequest.performer](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.dispenseRequest.performer](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.substitution](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.substitution](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.substitution.allowed](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementRenamed` | [MedicationRequest.substitution.allowed[x]](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.substitution.reason](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.substitution.reason](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.priorPrescription](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.priorPrescription](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.detectedIssue](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.detectedIssue](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |
+| [MedicationRequest.eventHistory](https://hl7.org/fhir/STU3/MedicationRequest.html#resource) | `UseElementSameName` | [MedicationRequest.eventHistory](https://hl7.org/fhir/R4B/MedicationRequest.html#resource) |

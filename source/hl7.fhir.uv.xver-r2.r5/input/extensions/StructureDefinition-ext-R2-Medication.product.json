@@ -1,0 +1,423 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Medication.product",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.product",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Medication_product",
+  "title": "Cross-version Extension for R2.Medication.product for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:53.7123629-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Medication.product from http://hl7.org/fhir/StructureDefinition/Medication|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Medication"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Administrable medication details",
+        "definition": "Information that only applies to products (not packages).",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:form",
+        "path": "Extension.extension",
+        "sliceName": "form",
+        "short": "powder | tablets | carton +",
+        "definition": "Describes the form of the item.  Powder; tablets; carton.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:form.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "form"
+      },
+      {
+        "id": "Extension.extension:form.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "powder | tablets | carton +",
+        "definition": "Describes the form of the item.  Powder; tablets; carton.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The form of a medication",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-medication-form-codes-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient",
+        "path": "Extension.extension",
+        "sliceName": "ingredient",
+        "short": "Active or inactive ingredient",
+        "definition": "Identifies a particular constituent of interest in the product.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "The product contained",
+        "definition": "The actual ingredient - either a substance (simple ingredient) or another medication.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:item.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The product contained",
+        "definition": "The actual ingredient - either a substance (simple ingredient) or another medication.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount",
+        "path": "Extension.extension.extension",
+        "sliceName": "amount",
+        "short": "Quantity of ingredient present",
+        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:ingredient.extension:amount.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Quantity of ingredient present",
+        "definition": "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.",
+        "comment": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ingredient.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "ingredient"
+      },
+      {
+        "id": "Extension.extension:batch",
+        "path": "Extension.extension",
+        "sliceName": "batch",
+        "short": "Information about a group of medication produced or packaged from one production run.",
+        "definition": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "lotNumber",
+        "short": "The assigned lot number of a batch of the specified product.",
+        "definition": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lotNumber"
+      },
+      {
+        "id": "Extension.extension:batch.extension:lotNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The assigned lot number of a batch of the specified product.",
+        "definition": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "expirationDate",
+        "short": "When this specific batch of product will expire.",
+        "definition": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expirationDate"
+      },
+      {
+        "id": "Extension.extension:batch.extension:expirationDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "When this specific batch of product will expire.",
+        "definition": "`Medication` maps to R5 `Medication`.  So is mapped as SourceIsNarrowerThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:batch.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "batch"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Medication.product"
+      }
+    ]
+  }
+}

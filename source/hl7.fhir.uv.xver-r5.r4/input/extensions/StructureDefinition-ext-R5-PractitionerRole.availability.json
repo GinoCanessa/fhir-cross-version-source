@@ -1,0 +1,492 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-PractitionerRole.availability",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.availability",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_PractitionerRole_availability",
+  "title": "Cross-version Extension for R5.PractitionerRole.availability for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.1893555-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PractitionerRole.availability from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Times the Practitioner is available at this location and/or healthcare service (including exceptions)",
+        "definition": "A collection of times the practitioner is available or performing this role at the location and/or healthcareservice.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime",
+        "path": "Extension.extension",
+        "sliceName": "availableTime",
+        "short": "Times the {item} is available",
+        "definition": "This cross-version extension represents Availability.availableTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:daysOfWeek",
+        "path": "Extension.extension.extension",
+        "sliceName": "daysOfWeek",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:daysOfWeek.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "daysOfWeek"
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:daysOfWeek.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "mon | tue | wed | thu | fri | sat | sun",
+        "definition": "This cross-version extension represents Availability.availableTime.daysOfWeek from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The purpose for which an extended contact detail should be used.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/days-of-week|4.0.1"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:allDay",
+        "path": "Extension.extension.extension",
+        "sliceName": "allDay",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:allDay.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allDay"
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:allDay.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Always available? i.e. 24 hour service",
+        "definition": "This cross-version extension represents Availability.availableTime.allDay from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableStartTime",
+        "path": "Extension.extension.extension",
+        "sliceName": "availableStartTime",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableStartTime.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableStartTime"
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableStartTime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Opening time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableStartTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableEndTime",
+        "path": "Extension.extension.extension",
+        "sliceName": "availableEndTime",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableEndTime.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableEndTime"
+      },
+      {
+        "id": "Extension.extension:availableTime.extension:availableEndTime.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Closing time of day (ignored if allDay = true)",
+        "definition": "This cross-version extension represents Availability.availableTime.availableEndTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "time"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availableTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "availableTime"
+      },
+      {
+        "id": "Extension.extension:notAvailableTime",
+        "path": "Extension.extension",
+        "sliceName": "notAvailableTime",
+        "short": "Not available during this time due to provided reason",
+        "definition": "This cross-version extension represents Availability.notAvailableTime from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:description",
+        "path": "Extension.extension.extension",
+        "sliceName": "description",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:description.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:description.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reason presented to the user explaining why time not available",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.description from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:during",
+        "path": "Extension.extension.extension",
+        "sliceName": "during",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:during.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "during"
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.extension:during.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Service not available during this period",
+        "definition": "This cross-version extension represents Availability.notAvailableTime.during from http://hl7.org/fhir/StructureDefinition/PractitionerRole|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notAvailableTime.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "notAvailableTime"
+      },
+      {
+        "id": "Extension.extension:_datatype",
+        "path": "Extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PractitionerRole.availability from FHIR R5",
+        "definition": "Data type name for PractitionerRole.availability from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:_datatype.value[x]",
+        "path": "Extension.extension.value[x]",
+        "comment": "Must be: Availability",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "Availability"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PractitionerRole.availability"
+      }
+    ]
+  }
+}

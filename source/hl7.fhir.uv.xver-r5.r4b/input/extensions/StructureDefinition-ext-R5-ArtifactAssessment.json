@@ -1,0 +1,1020 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ArtifactAssessment",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ArtifactAssessment",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ArtifactAssessment",
+  "title": "Cross-version Extension for R5.ArtifactAssessment for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:49.0745223-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ArtifactAssessment from http://hl7.org/fhir/StructureDefinition/ArtifactAssessment|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Adds metadata-supported comments, classifiers or ratings related to a Resource",
+        "definition": "This Resource provides one or more comments, classifiers or ratings about a Resource and supports attribution and rights management metadata for the added content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "A short title for the assessment for use in displaying and selecting",
+        "definition": "This cross-version extension represents ArtifactAssessment.title from http://hl7.org/fhir/StructureDefinition/ArtifactAssessment|5.0.0 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A short title for the assessment for use in displaying and selecting",
+        "definition": "This cross-version extension represents ArtifactAssessment.title from http://hl7.org/fhir/StructureDefinition/ArtifactAssessment|5.0.0 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:citeAs[x]",
+        "path": "Extension.extension",
+        "sliceName": "citeAs[x]",
+        "short": "How to cite the comment or rating",
+        "definition": "Display of or reference to the bibliographic citation of the comment, classifier, or rating.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:citeAs[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "citeAs[x]"
+      },
+      {
+        "id": "Extension.extension:citeAs[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "How to cite the comment or rating",
+        "definition": "Display of or reference to the bibliographic citation of the comment, classifier, or rating.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the artifact assessment was published. The date must change when the disposition changes and it must change if the workflow status code changes. In addition, it should change when the substantive content of the artifact assessment changes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date last changed",
+        "definition": "The date  (and optionally time) when the artifact assessment was published. The date must change when the disposition changes and it must change if the workflow status code changes. In addition, it should change when the substantive content of the artifact assessment changes.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:copyright",
+        "path": "Extension.extension",
+        "sliceName": "copyright",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the artifact assessment and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the artifact assessment.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copyright.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copyright"
+      },
+      {
+        "id": "Extension.extension:copyright.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Use and/or publishing restrictions",
+        "definition": "A copyright statement relating to the artifact assessment and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the artifact assessment.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:approvalDate",
+        "path": "Extension.extension",
+        "sliceName": "approvalDate",
+        "short": "When the artifact assessment was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:approvalDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "approvalDate"
+      },
+      {
+        "id": "Extension.extension:approvalDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When the artifact assessment was approved by publisher",
+        "definition": "The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lastReviewDate",
+        "path": "Extension.extension",
+        "sliceName": "lastReviewDate",
+        "short": "When the artifact assessment was last reviewed by the publisher",
+        "definition": "The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lastReviewDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lastReviewDate"
+      },
+      {
+        "id": "Extension.extension:lastReviewDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "When the artifact assessment was last reviewed by the publisher",
+        "definition": "The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:artifact[x]",
+        "path": "Extension.extension",
+        "sliceName": "artifact[x]",
+        "short": "The artifact assessed, commented upon or rated",
+        "definition": "A reference to a resource, canonical resource, or non-FHIR resource which the comment or assessment is about.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:artifact[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "artifact[x]"
+      },
+      {
+        "id": "Extension.extension:artifact[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The artifact assessed, commented upon or rated",
+        "definition": "A reference to a resource, canonical resource, or non-FHIR resource which the comment or assessment is about.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          },
+          {
+            "code": "canonical"
+          },
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content",
+        "path": "Extension.extension",
+        "sliceName": "content",
+        "short": "Comment, classifier, or rating content",
+        "definition": "A component comment, classifier, or rating of the artifact.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:informationType",
+        "path": "Extension.extension.extension",
+        "sliceName": "informationType",
+        "short": "comment | classifier | rating | container | response | change-request",
+        "definition": "The type of information this component of the content represents.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:informationType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "informationType"
+      },
+      {
+        "id": "Extension.extension:content.extension:informationType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "comment | classifier | rating | container | response | change-request",
+        "definition": "The type of information this component of the content represents.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-artifactassessment-information-type-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:summary",
+        "path": "Extension.extension.extension",
+        "sliceName": "summary",
+        "short": "Brief summary of the content",
+        "definition": "A brief summary of the content of this component.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:summary.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "summary"
+      },
+      {
+        "id": "Extension.extension:content.extension:summary.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Brief summary of the content",
+        "definition": "A brief summary of the content of this component.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "What type of content",
+        "definition": "Indicates what type of content this component represents.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:content.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "What type of content",
+        "definition": "Indicates what type of content this component represents.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-type|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:classifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "classifier",
+        "short": "Rating, classifier, or assessment",
+        "definition": "Represents a rating, classifier, or assessment of the artifact.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:classifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "classifier"
+      },
+      {
+        "id": "Extension.extension:content.extension:classifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Rating, classifier, or assessment",
+        "definition": "Represents a rating, classifier, or assessment of the artifact.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/ValueSet/certainty-rating|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "Quantitative rating",
+        "definition": "A quantitative rating of the artifact.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:content.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Quantitative rating",
+        "definition": "A quantitative rating of the artifact.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:author",
+        "path": "Extension.extension.extension",
+        "sliceName": "author",
+        "short": "Who authored the content",
+        "definition": "Indicates who or what authored the content.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:author.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "author"
+      },
+      {
+        "id": "Extension.extension:content.extension:author.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Who authored the content",
+        "definition": "Indicates who or what authored the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:path",
+        "path": "Extension.extension.extension",
+        "sliceName": "path",
+        "short": "What the comment is directed to",
+        "definition": "A URI that points to what the comment is about, such as a line of text in the CQL, or a specific element in a resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:path.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "path"
+      },
+      {
+        "id": "Extension.extension:content.extension:path.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "What the comment is directed to",
+        "definition": "A URI that points to what the comment is about, such as a line of text in the CQL, or a specific element in a resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:relatedArtifact",
+        "path": "Extension.extension.extension",
+        "sliceName": "relatedArtifact",
+        "short": "Additional information",
+        "definition": "Additional related artifacts that provide supporting documentation, additional evidence, or further information related to the content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:relatedArtifact.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "relatedArtifact"
+      },
+      {
+        "id": "Extension.extension:content.extension:relatedArtifact.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Additional information",
+        "definition": "Additional related artifacts that provide supporting documentation, additional evidence, or further information related to the content.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "RelatedArtifact"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:freeToShare",
+        "path": "Extension.extension.extension",
+        "sliceName": "freeToShare",
+        "short": "Acceptable to publicly share the resource content",
+        "definition": "Acceptable to publicly share the comment, classifier or rating.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:freeToShare.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "freeToShare"
+      },
+      {
+        "id": "Extension.extension:content.extension:freeToShare.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Acceptable to publicly share the resource content",
+        "definition": "Acceptable to publicly share the comment, classifier or rating.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:component",
+        "path": "Extension.extension.extension",
+        "sliceName": "component",
+        "short": "Contained content",
+        "definition": "If the informationType is container, the components of the content.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:component.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:content.extension:component.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for ArtifactAssessment.content.component from FHIR R5",
+        "definition": "Data type name for ArtifactAssessment.content.component from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:content.extension:component.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: ArtifactAssessment.content",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ArtifactAssessment.content"
+      },
+      {
+        "id": "Extension.extension:content.extension:component.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "component"
+      },
+      {
+        "id": "Extension.extension:content.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "content"
+      },
+      {
+        "id": "Extension.extension:workflowStatus",
+        "path": "Extension.extension",
+        "sliceName": "workflowStatus",
+        "short": "submitted | triaged | waiting-for-input | resolved-no-change | resolved-change-required | deferred | duplicate | applied | published | entered-in-error",
+        "definition": "Indicates the workflow status of the comment or change request.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:workflowStatus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "workflowStatus"
+      },
+      {
+        "id": "Extension.extension:workflowStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "submitted | triaged | waiting-for-input | resolved-no-change | resolved-change-required | deferred | duplicate | applied | published | entered-in-error",
+        "definition": "Indicates the workflow status of the comment or change request.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-artifactassessment-workflow-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:disposition",
+        "path": "Extension.extension",
+        "sliceName": "disposition",
+        "short": "unresolved | not-persuasive | persuasive | persuasive-with-modification | not-persuasive-with-modification",
+        "definition": "Indicates the disposition of the responsible party to the comment or change request.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:disposition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "disposition"
+      },
+      {
+        "id": "Extension.extension:disposition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "unresolved | not-persuasive | persuasive | persuasive-with-modification | not-persuasive-with-modification",
+        "definition": "Indicates the disposition of the responsible party to the comment or change request.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-artifactassessment-disposition-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ArtifactAssessment"
+      }
+    ]
+  }
+}

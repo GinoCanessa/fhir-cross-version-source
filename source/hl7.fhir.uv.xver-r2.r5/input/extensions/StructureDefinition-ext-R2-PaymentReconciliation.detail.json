@@ -1,0 +1,420 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-PaymentReconciliation.detail",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.detail",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_PaymentReconciliation_detail",
+  "title": "Cross-version Extension for R2.PaymentReconciliation.detail for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:54.5631779-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PaymentReconciliation.detail from http://hl7.org/fhir/StructureDefinition/PaymentReconciliation|1.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PaymentReconciliation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Details",
+        "definition": "List of individual settlement amounts and the corresponding transaction.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Type code",
+        "definition": "Code to indicate the nature of the payment, adjustment, funds advance, etc.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Type code",
+        "definition": "Code to indicate the nature of the payment, adjustment, funds advance, etc.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The reason for the amount: payment, adjustment, advance.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-payment-type-for-R5"
+        }
+      },
+      {
+        "id": "Extension.extension:request",
+        "path": "Extension.extension",
+        "sliceName": "request",
+        "short": "Claim",
+        "definition": "The claim or financial resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:request.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "request"
+      },
+      {
+        "id": "Extension.extension:request.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Claim",
+        "definition": "The claim or financial resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:responce",
+        "path": "Extension.extension",
+        "sliceName": "responce",
+        "short": "Claim Response",
+        "definition": "The claim response resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:responce.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "responce"
+      },
+      {
+        "id": "Extension.extension:responce.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Claim Response",
+        "definition": "The claim response resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:submitter",
+        "path": "Extension.extension",
+        "sliceName": "submitter",
+        "short": "Submitter",
+        "definition": "The Organization which submitted the invoice or financial transaction.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:submitter.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "submitter"
+      },
+      {
+        "id": "Extension.extension:submitter.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Submitter",
+        "definition": "The Organization which submitted the invoice or financial transaction.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:payee",
+        "path": "Extension.extension",
+        "sliceName": "payee",
+        "short": "Payee",
+        "definition": "The organization which is receiving the payment.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:payee.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "payee"
+      },
+      {
+        "id": "Extension.extension:payee.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Payee",
+        "definition": "The organization which is receiving the payment.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date",
+        "path": "Extension.extension",
+        "sliceName": "date",
+        "short": "Invoice date",
+        "definition": "The date of the invoice or financial resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:date.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:date.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Invoice date",
+        "definition": "The date of the invoice or financial resource.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "short": "Detail amount",
+        "definition": "Amount paid for this detail.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Detail amount",
+        "definition": "Amount paid for this detail.",
+        "comment": "`PaymentReconciliation.detail` has no related element in R5:PaymentReconciliation",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-PaymentReconciliation.detail"
+      }
+    ]
+  }
+}

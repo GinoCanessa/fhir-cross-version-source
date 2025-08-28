@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-NutritionOrder.su.schedule",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_NutritionOrder_su_schedule",
+  "title": "Cross-version Extension for R5.NutritionOrder.supplement.schedule for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.589425-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents NutritionOrder.supplement.schedule from http://hl7.org/fhir/StructureDefinition/NutritionOrder|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "NutritionOrder.supplement.schedule"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Scheduling information for supplements",
+        "definition": "Schedule information for a supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:timing",
+        "path": "Extension.extension",
+        "sliceName": "timing",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:timing.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "timing"
+      },
+      {
+        "id": "Extension.extension:timing.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Scheduled frequency of diet",
+        "definition": "The time period and frequency at which the supplement should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeeded",
+        "path": "Extension.extension",
+        "sliceName": "asNeeded",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:asNeeded.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "asNeeded"
+      },
+      {
+        "id": "Extension.extension:asNeeded.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed'",
+        "definition": "Indicates whether the supplement is only taken when needed within a specific dosing schedule.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:asNeededFor",
+        "path": "Extension.extension",
+        "sliceName": "asNeededFor",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:asNeededFor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "asNeededFor"
+      },
+      {
+        "id": "Extension.extension:asNeededFor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Take 'as needed' for x",
+        "definition": "Indicates whether the supplement is only taken based on a precondition for taking the supplement.",
+        "comment": "`NutritionOrder.supplement.schedule` maps to R4B `NutritionOrder.supplement.schedule`. Has no type mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A coded concept identifying the precondition that should be met or evaluated prior to       consuming a supplement.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-medication-as-needed-reason-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionOrder.supplement.schedule"
+      }
+    ]
+  }
+}

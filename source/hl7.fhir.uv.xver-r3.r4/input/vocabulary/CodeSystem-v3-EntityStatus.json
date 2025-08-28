@@ -1,0 +1,97 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "v3-EntityStatus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "External"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/v3/EntityStatus",
+  "version": "2016-11-11",
+  "name": "v3 Code System EntityStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2016-11-10T07:00:00-06:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Codes representing the defined possible states of an Entity, as defined by the Entity class state machine.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/v3-EntityStatus",
+  "hierarchyMeaning": "is-a",
+  "content": "complete",
+  "property": [
+    {
+      "code": "inactive",
+      "uri": "http://hl7.org/fhir/concept-properties#inactive",
+      "description": "True if the concept is not considered active - e.g. not a valid concept any more",
+      "type": "boolean"
+    }
+  ],
+  "concept": [
+    {
+      "code": "normal",
+      "display": "normal",
+      "definition": "The 'typical' state. Excludes \"nullified\" which represents the termination state of an Entity record instance that was created in error.",
+      "concept": [
+        {
+          "code": "active",
+          "display": "active",
+          "definition": "The state representing the fact that the Entity record is currently active."
+        },
+        {
+          "code": "inactive",
+          "display": "inactive",
+          "definition": "Definition: The state representing the fact that the entity is inactive."
+        },
+        {
+          "code": "terminated",
+          "display": "terminated",
+          "definition": "The state representing the normal termination of an Entity record.",
+          "property": [
+            {
+              "code": "inactive",
+              "valueBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "nullified",
+      "display": "nullified",
+      "definition": "The state representing the termination of an Entity record instance that was created in error."
+    }
+  ]
+}

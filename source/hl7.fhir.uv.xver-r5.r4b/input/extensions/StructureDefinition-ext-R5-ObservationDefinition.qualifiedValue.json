@@ -1,0 +1,651 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ObservationDefinition.qualifiedValue",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.qualifiedValue",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ObservationDefinition_qualifiedValue",
+  "title": "Cross-version Extension for R5.ObservationDefinition.qualifiedValue for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.8941592-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ObservationDefinition.qualifiedValue from http://hl7.org/fhir/StructureDefinition/ObservationDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ObservationDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Set of qualified values for observation results",
+        "definition": "A set of qualified values associated with a context and a set of conditions -  provides a range for quantitative and ordinal observations and a collection of value sets for qualitative observations.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:context",
+        "path": "Extension.extension",
+        "sliceName": "context",
+        "short": "Context qualifier for the set of qualified values",
+        "definition": "A concept defining the context for this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:context.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "context"
+      },
+      {
+        "id": "Extension.extension:context.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Context qualifier for the set of qualified values",
+        "definition": "A concept defining the context for this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/referencerange-meaning|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:appliesTo",
+        "path": "Extension.extension",
+        "sliceName": "appliesTo",
+        "short": "Targetted population for the set of qualified values",
+        "definition": "The target population this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:appliesTo.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "appliesTo"
+      },
+      {
+        "id": "Extension.extension:appliesTo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Targetted population for the set of qualified values",
+        "definition": "The target population this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-referencerange-appliesto-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:gender",
+        "path": "Extension.extension",
+        "sliceName": "gender",
+        "short": "male | female | other | unknown",
+        "definition": "The gender this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gender.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gender"
+      },
+      {
+        "id": "Extension.extension:gender.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "male | female | other | unknown",
+        "definition": "The gender this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:age",
+        "path": "Extension.extension",
+        "sliceName": "age",
+        "short": "Applicable age range for the set of qualified values",
+        "definition": "The age range this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:age.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "age"
+      },
+      {
+        "id": "Extension.extension:age.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applicable age range for the set of qualified values",
+        "definition": "The age range this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gestationalAge",
+        "path": "Extension.extension",
+        "sliceName": "gestationalAge",
+        "short": "Applicable gestational age range for the set of qualified values",
+        "definition": "The gestational age this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:gestationalAge.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gestationalAge"
+      },
+      {
+        "id": "Extension.extension:gestationalAge.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Applicable gestational age range for the set of qualified values",
+        "definition": "The gestational age this  set of qualified values applies to.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:condition",
+        "path": "Extension.extension",
+        "sliceName": "condition",
+        "short": "Condition associated with the set of qualified values",
+        "definition": "Text based condition for which the the set of qualified values is valid.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:condition.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "condition"
+      },
+      {
+        "id": "Extension.extension:condition.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Condition associated with the set of qualified values",
+        "definition": "Text based condition for which the the set of qualified values is valid.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rangeCategory",
+        "path": "Extension.extension",
+        "sliceName": "rangeCategory",
+        "short": "reference | critical | absolute",
+        "definition": "The category of range of values for continuous or ordinal observations that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:rangeCategory.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "rangeCategory"
+      },
+      {
+        "id": "Extension.extension:rangeCategory.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "reference | critical | absolute",
+        "definition": "The category of range of values for continuous or ordinal observations that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/observation-range-category|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:range",
+        "path": "Extension.extension",
+        "sliceName": "range",
+        "short": "The range for continuous or ordinal observations",
+        "definition": "The range of values defined for continuous or ordinal observations that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:range.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "range"
+      },
+      {
+        "id": "Extension.extension:range.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The range for continuous or ordinal observations",
+        "definition": "The range of values defined for continuous or ordinal observations that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:validCodedValueSet",
+        "path": "Extension.extension",
+        "sliceName": "validCodedValueSet",
+        "short": "Value set of valid coded values as part of this set of qualified values",
+        "definition": "The set of valid coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:validCodedValueSet.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "validCodedValueSet"
+      },
+      {
+        "id": "Extension.extension:validCodedValueSet.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Value set of valid coded values as part of this set of qualified values",
+        "definition": "The set of valid coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:normalCodedValueSet",
+        "path": "Extension.extension",
+        "sliceName": "normalCodedValueSet",
+        "short": "Value set of normal coded values as part of this set of qualified values",
+        "definition": "The set of normal coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:normalCodedValueSet.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "normalCodedValueSet"
+      },
+      {
+        "id": "Extension.extension:normalCodedValueSet.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Value set of normal coded values as part of this set of qualified values",
+        "definition": "The set of normal coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:abnormalCodedValueSet",
+        "path": "Extension.extension",
+        "sliceName": "abnormalCodedValueSet",
+        "short": "Value set of abnormal coded values as part of this set of qualified values",
+        "definition": "The set of abnormal coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:abnormalCodedValueSet.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "abnormalCodedValueSet"
+      },
+      {
+        "id": "Extension.extension:abnormalCodedValueSet.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Value set of abnormal coded values as part of this set of qualified values",
+        "definition": "The set of abnormal coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:criticalCodedValueSet",
+        "path": "Extension.extension",
+        "sliceName": "criticalCodedValueSet",
+        "short": "Value set of critical coded values as part of this set of qualified values",
+        "definition": "The set of critical coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:criticalCodedValueSet.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "criticalCodedValueSet"
+      },
+      {
+        "id": "Extension.extension:criticalCodedValueSet.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Value set of critical coded values as part of this set of qualified values",
+        "definition": "The set of critical coded results for qualitative observations  that match the criteria of this set of qualified values.",
+        "comment": "`ObservationDefinition.qualifiedValue` has no related element in R4B:ObservationDefinition",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ObservationDefinition.qualifiedValue"
+      }
+    ]
+  }
+}

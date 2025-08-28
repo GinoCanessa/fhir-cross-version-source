@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-Immunization.reason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reason",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_Immunization_reason",
+  "title": "Cross-version Extension for R5.Immunization.reason for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:54.5991932-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Immunization.reason from http://hl7.org/fhir/StructureDefinition/Immunization|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Immunization.reasonCode"
+    },
+    {
+      "type": "element",
+      "expression": "Immunization.reasonReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Why immunization occurred",
+        "definition": "Describes why the immunization occurred in coded or textual form, or Indicates another resource (Condition, Observation or DiagnosticReport) whose existence justifies this immunization.",
+        "comment": "`Immunization.reason` maps to R4B `Immunization.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `Immunization.reason` maps to R4B `Immunization.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `Immunization.reason` maps to R4B `Immunization.reasonReference`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Immunization.reason"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Why immunization occurred",
+        "definition": "Describes why the immunization occurred in coded or textual form, or Indicates another resource (Condition, Observation or DiagnosticReport) whose existence justifies this immunization.",
+        "comment": "`Immunization.reason` maps to R4B `Immunization.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `Immunization.reason` maps to R4B `Immunization.reasonCode`. Has no type mapping So is mapped as SourceIsBroaderThanTarget. `Immunization.reason` maps to R4B `Immunization.reasonReference`. Has no type mapping So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableReference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "x",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-immunization-reason-for-R4B"
+        }
+      }
+    ]
+  }
+}

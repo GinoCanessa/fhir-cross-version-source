@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R4B-reason-medication-status-codes-for-R5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4b.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.3/ValueSet/R4B-reason-medication-status-codes-for-R5",
+  "version": "0.0.1-snapshot-2",
+  "name": "R4B_reason_medication_status_codes_for_R5",
+  "title": "Cross-version VS for R4B.SNOMEDCTDrugTherapyStatusCodes for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:01.0619363-05:00",
+  "publisher": "Pharmacy",
+  "contact": [
+    {
+      "name": "Pharmacy",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/reason-medication-status-codes|4.3.0 for use in FHIR R5. Concepts not present here have direct `equivalent` mappings crossing all versions from R4B to R5.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "266710000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "410684002"
+          }
+        ]
+      }
+    ]
+  }
+}

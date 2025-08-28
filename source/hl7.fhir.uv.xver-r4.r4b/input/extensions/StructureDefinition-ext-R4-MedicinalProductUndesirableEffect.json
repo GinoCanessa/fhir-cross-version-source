@@ -1,0 +1,485 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductUndesirableEffect",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductUndesirableEffect",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductUndesirableEffect",
+  "title": "Cross-version Extension for R4.MedicinalProductUndesirableEffect for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:45.1118165-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductUndesirableEffect from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MedicinalProductUndesirableEffect",
+        "definition": "Describe the undesirable effects of the medicinal product.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect",
+        "path": "Extension.extension",
+        "sliceName": "symptomConditionEffect",
+        "short": "The symptom, condition or undesirable effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.symptomConditionEffect from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "symptomConditionEffect"
+      },
+      {
+        "id": "Extension.extension:symptomConditionEffect.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The symptom, condition or undesirable effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.symptomConditionEffect from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:classification",
+        "path": "Extension.extension",
+        "sliceName": "classification",
+        "short": "Classification of the effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.classification from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:classification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "classification"
+      },
+      {
+        "id": "Extension.extension:classification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Classification of the effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.classification from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence",
+        "path": "Extension.extension",
+        "sliceName": "frequencyOfOccurrence",
+        "short": "The frequency of occurrence of the effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.frequencyOfOccurrence from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "frequencyOfOccurrence"
+      },
+      {
+        "id": "Extension.extension:frequencyOfOccurrence.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The frequency of occurrence of the effect",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.frequencyOfOccurrence from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population",
+        "path": "Extension.extension",
+        "sliceName": "population",
+        "short": "The population group to which this applies",
+        "definition": "This cross-version extension represents MedicinalProductUndesirableEffect.population from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:age[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "age[x]",
+        "short": "The age of the specific population",
+        "definition": "This cross-version extension represents Population.age[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:age[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "age[x]"
+      },
+      {
+        "id": "Extension.extension:population.extension:age[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The age of the specific population",
+        "definition": "This cross-version extension represents Population.age[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Range"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:gender",
+        "path": "Extension.extension.extension",
+        "sliceName": "gender",
+        "short": "The gender of the specific population",
+        "definition": "This cross-version extension represents Population.gender from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:gender.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "gender"
+      },
+      {
+        "id": "Extension.extension:population.extension:gender.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The gender of the specific population",
+        "definition": "This cross-version extension represents Population.gender from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:race",
+        "path": "Extension.extension.extension",
+        "sliceName": "race",
+        "short": "Race of the specific population",
+        "definition": "This cross-version extension represents Population.race from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:race.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "race"
+      },
+      {
+        "id": "Extension.extension:population.extension:race.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Race of the specific population",
+        "definition": "This cross-version extension represents Population.race from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:physiologicalCondition",
+        "path": "Extension.extension.extension",
+        "sliceName": "physiologicalCondition",
+        "short": "The existing physiological conditions of the specific population to which this applies",
+        "definition": "This cross-version extension represents Population.physiologicalCondition from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:population.extension:physiologicalCondition.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "physiologicalCondition"
+      },
+      {
+        "id": "Extension.extension:population.extension:physiologicalCondition.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The existing physiological conditions of the specific population to which this applies",
+        "definition": "This cross-version extension represents Population.physiologicalCondition from http://hl7.org/fhir/StructureDefinition/MedicinalProductUndesirableEffect|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for MedicinalProductUndesirableEffect.population from FHIR R4",
+        "definition": "Data type name for MedicinalProductUndesirableEffect.population from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:population.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: Population",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "Population"
+      },
+      {
+        "id": "Extension.extension:population.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "population"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductUndesirableEffect"
+      }
+    ]
+  }
+}

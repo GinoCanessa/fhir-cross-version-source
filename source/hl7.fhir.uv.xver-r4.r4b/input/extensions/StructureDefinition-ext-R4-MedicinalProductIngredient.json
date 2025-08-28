@@ -1,0 +1,1132 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductIngredient",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductIngredient",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductIngredient",
+  "title": "Cross-version Extension for R4.MedicinalProductIngredient for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:45.0115766-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductIngredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "An ingredient of a manufactured item or pharmaceutical product",
+        "definition": "This cross-version extension represents MedicinalProductIngredient from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "Ingredient role e.g. Active ingredient, excipient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.role from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Ingredient role e.g. Active ingredient, excipient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.role from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator",
+        "path": "Extension.extension",
+        "sliceName": "allergenicIndicator",
+        "short": "If the ingredient is a known or suspected allergen",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.allergenicIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "allergenicIndicator"
+      },
+      {
+        "id": "Extension.extension:allergenicIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If the ingredient is a known or suspected allergen",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.allergenicIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer of this Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Manufacturer of this Ingredient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance",
+        "path": "Extension.extension",
+        "sliceName": "specifiedSubstance",
+        "short": "A specified substance that comprises this ingredient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "The specified substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The specified substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:group",
+        "path": "Extension.extension.extension",
+        "sliceName": "group",
+        "short": "The group of specified substance, e.g. group 1 to 4",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.group from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:group.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "group"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:group.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The group of specified substance, e.g. group 1 to 4",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.group from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:confidentiality",
+        "path": "Extension.extension.extension",
+        "sliceName": "confidentiality",
+        "short": "Confidentiality level of the specified substance as the ingredient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.confidentiality from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:confidentiality.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "confidentiality"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:confidentiality.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Confidentiality level of the specified substance as the ingredient",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.confidentiality from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength",
+        "path": "Extension.extension.extension",
+        "sliceName": "strength",
+        "short": "Quantity of the substance or specified substance present in the manufactured item or pharmaceutical product",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentation",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "presentation",
+        "short": "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.presentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentation.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "presentation"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentation.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The quantity of substance in the unit of presentation, or in the volume (or mass) of the single pharmaceutical product or manufactured item",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.presentation from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentationLowLimit",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "presentationLowLimit",
+        "short": "A lower limit for the quantity of substance in the unit of presentation. For use when there is a range of strengths, this is the lower limit, with the presentation attribute becoming the upper limit",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.presentationLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentationLowLimit.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "presentationLowLimit"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:presentationLowLimit.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A lower limit for the quantity of substance in the unit of presentation. For use when there is a range of strengths, this is the lower limit, with the presentation attribute becoming the upper limit",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.presentationLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentration",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concentration",
+        "short": "The strength per unitary volume (or mass)",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.concentration from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentration.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concentration"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentration.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The strength per unitary volume (or mass)",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.concentration from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentrationLowLimit",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concentrationLowLimit",
+        "short": "A lower limit for the strength per unitary volume (or mass), for when there is a range. The concentration attribute then becomes the upper limit",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.concentrationLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentrationLowLimit.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concentrationLowLimit"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:concentrationLowLimit.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A lower limit for the strength per unitary volume (or mass), for when there is a range. The concentration attribute then becomes the upper limit",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.concentrationLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:measurementPoint",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "short": "For when strength is measured at a particular point or distance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.measurementPoint from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "For when strength is measured at a particular point or distance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.measurementPoint from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:country",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "country",
+        "short": "The country or countries for which the strength range applies",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:country.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The country or countries for which the strength range applies",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "referenceStrength",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:substance",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "substance",
+        "short": "Relevant reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.substance from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:substance.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "substance"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:substance.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Relevant reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.substance from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strength",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "strength",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.strength from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strength.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strength.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.strength from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strengthLowLimit",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "strengthLowLimit",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.strengthLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strengthLowLimit.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strengthLowLimit"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:strengthLowLimit.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Strength expressed in terms of a reference substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.strengthLowLimit from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:measurementPoint",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "measurementPoint",
+        "short": "For when strength is measured at a particular point or distance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.measurementPoint from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:measurementPoint.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "measurementPoint"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:measurementPoint.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "For when strength is measured at a particular point or distance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.measurementPoint from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:country",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "country",
+        "short": "The country or countries for which the strength range applies",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:country.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "The country or countries for which the strength range applies",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.specifiedSubstance.strength.referenceStrength.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.extension:referenceStrength.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "referenceStrength"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.extension:strength.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:specifiedSubstance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specifiedSubstance"
+      },
+      {
+        "id": "Extension.extension:substance",
+        "path": "Extension.extension",
+        "sliceName": "substance",
+        "short": "The ingredient substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.substance from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "The ingredient substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.substance.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:substance.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The ingredient substance",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.substance.code from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength",
+        "path": "Extension.extension.extension",
+        "sliceName": "strength",
+        "short": "Quantity of the substance or specified substance present in the manufactured item or pharmaceutical product",
+        "definition": "This cross-version extension represents MedicinalProductIngredient.substance.strength from http://hl7.org/fhir/StructureDefinition/MedicinalProductIngredient|4.0.1 for use in FHIR R4B.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for MedicinalProductIngredient.substance.strength from FHIR R4",
+        "definition": "Data type name for MedicinalProductIngredient.substance.strength from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: MedicinalProductIngredient.specifiedSubstance.strength",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "MedicinalProductIngredient.specifiedSubstance.strength"
+      },
+      {
+        "id": "Extension.extension:substance.extension:strength.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "strength"
+      },
+      {
+        "id": "Extension.extension:substance.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "substance"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductIngredient"
+      }
+    ]
+  }
+}

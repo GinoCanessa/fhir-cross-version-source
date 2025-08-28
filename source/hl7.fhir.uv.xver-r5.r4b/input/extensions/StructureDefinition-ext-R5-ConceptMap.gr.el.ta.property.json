@@ -1,0 +1,213 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ConceptMap.gr.el.ta.property",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.element.target.property",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ConceptMap_gr_el_ta_property",
+  "title": "Cross-version Extension for R5.ConceptMap.group.element.target.property for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:51.2857865-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ConceptMap.group.element.target.property from http://hl7.org/fhir/StructureDefinition/ConceptMap|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ConceptMap.group.element.target"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Property value for the source -> target mapping",
+        "definition": "A property value for this source -> target mapping.",
+        "comment": "`ConceptMap.group.element.target.property` has no related element in R4B:ConceptMap",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Reference to ConceptMap.property.code",
+        "definition": "A reference to a mapping property defined in ConceptMap.property.",
+        "comment": "`ConceptMap.group.element.target.property` has no related element in R4B:ConceptMap",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to ConceptMap.property.code",
+        "definition": "A reference to a mapping property defined in ConceptMap.property.",
+        "comment": "`ConceptMap.group.element.target.property` has no related element in R4B:ConceptMap",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:value[x]",
+        "path": "Extension.extension",
+        "sliceName": "value[x]",
+        "short": "Value of the property for this concept",
+        "definition": "The value of this property. If the type chosen for this element is 'code', then the property SHALL be defined in a ConceptMap.property element.",
+        "comment": "`ConceptMap.group.element.target.property` has no related element in R4B:ConceptMap",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:value[x].url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:value[x].value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Value of the property for this concept",
+        "definition": "The value of this property. If the type chosen for this element is 'code', then the property SHALL be defined in a ConceptMap.property element.",
+        "comment": "`ConceptMap.group.element.target.property` has no related element in R4B:ConceptMap",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "dateTime"
+          },
+          {
+            "code": "decimal"
+          },
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ConceptMap.group.element.target.property"
+      }
+    ]
+  }
+}

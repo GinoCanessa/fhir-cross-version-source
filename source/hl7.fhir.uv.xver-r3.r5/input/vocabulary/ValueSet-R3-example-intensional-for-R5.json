@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "R3-example-intensional-for-R5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/ValueSet/R3-example-intensional-for-R5",
+  "version": "0.0.1-snapshot-2",
+  "name": "R3_example_intensional_for_R5",
+  "title": "Cross-version VS for R3.LOINC Codes for Cholesterol in Serum/Plasma for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:00.7301144-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version ValueSet represents concepts from http://hl7.org/fhir/ValueSet/example-intensional|20150622 for use in FHIR R5. Concepts not present here have direct `equivalent` mappings crossing all versions from R3 to R5.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "parent",
+            "op": "=",
+            "value": "LP43571-6"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "5932-9",
+            "display": "Cholesterol [Presence] in Blood by Test strip"
+          }
+        ]
+      }
+    ]
+  }
+}

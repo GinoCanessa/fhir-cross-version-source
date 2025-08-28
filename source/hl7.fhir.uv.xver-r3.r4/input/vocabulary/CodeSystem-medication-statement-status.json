@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "medication-statement-status",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "phx"
+    }
+  ],
+  "url": "http://hl7.org/fhir/medication-statement-status",
+  "version": "3.0.2",
+  "name": "MedicationStatementStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Pharmacy",
+  "contact": [
+    {
+      "name": "Pharmacy",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/medication"
+        }
+      ]
+    }
+  ],
+  "description": "A coded concept indicating the current status of a MedicationStatement.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/medication-statement-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "active",
+      "display": "Active",
+      "definition": "The medication is still being taken."
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "The medication is no longer being taken."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The statement was recorded incorrectly."
+    },
+    {
+      "code": "intended",
+      "display": "Intended",
+      "definition": "The medication may be taken at some time in the future."
+    },
+    {
+      "code": "stopped",
+      "display": "Stopped",
+      "definition": "Actions implied by the statement have been permanently halted, before all of them occurred."
+    },
+    {
+      "code": "on-hold",
+      "display": "On Hold",
+      "definition": "Actions implied by the statement have been temporarily halted, but are expected to continue later. May also be called \"suspended\"."
+    }
+  ]
+}

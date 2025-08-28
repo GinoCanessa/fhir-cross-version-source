@@ -1,0 +1,274 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-ResearchStudy.recruitment",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.recruitment",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_ResearchStudy_recruitment",
+  "title": "Cross-version Extension for R5.ResearchStudy.recruitment for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:58.9182364-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ResearchStudy.recruitment from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ResearchStudy"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Target or actual group of participants enrolled in study",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:targetNumber",
+        "path": "Extension.extension",
+        "sliceName": "targetNumber",
+        "short": "Estimated total number of participants to be enrolled",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.targetNumber from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:targetNumber.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "targetNumber"
+      },
+      {
+        "id": "Extension.extension:targetNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Estimated total number of participants to be enrolled",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.targetNumber from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualNumber",
+        "path": "Extension.extension",
+        "sliceName": "actualNumber",
+        "short": "Actual total number of participants enrolled in study",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.actualNumber from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actualNumber.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actualNumber"
+      },
+      {
+        "id": "Extension.extension:actualNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Actual total number of participants enrolled in study",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.actualNumber from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eligibility",
+        "path": "Extension.extension",
+        "sliceName": "eligibility",
+        "short": "Inclusion and exclusion criteria",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.eligibility from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eligibility.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "eligibility"
+      },
+      {
+        "id": "Extension.extension:eligibility.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Inclusion and exclusion criteria",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.eligibility from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actualGroup",
+        "path": "Extension.extension",
+        "sliceName": "actualGroup",
+        "short": "Group of participants who were enrolled in study",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.actualGroup from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:actualGroup.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "actualGroup"
+      },
+      {
+        "id": "Extension.extension:actualGroup.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Group of participants who were enrolled in study",
+        "definition": "This cross-version extension represents ResearchStudy.recruitment.actualGroup from http://hl7.org/fhir/StructureDefinition/ResearchStudy|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.recruitment"
+      }
+    ]
+  }
+}

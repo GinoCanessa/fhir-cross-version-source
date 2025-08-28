@@ -1,0 +1,480 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-ExpansionProfile.designation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.designation",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_ExpansionProfile_designation",
+  "title": "Cross-version Extension for R3.ExpansionProfile.designation for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:14.8412919-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ExpansionProfile.designation from http://hl7.org/fhir/StructureDefinition/ExpansionProfile|3.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Parameters"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "When the expansion profile imposes designation contraints",
+        "definition": "A set of criteria that provide the constraints imposed on the value set expansion by including or excluding designations.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include",
+        "path": "Extension.extension",
+        "sliceName": "include",
+        "short": "Designations to be included",
+        "definition": "This cross-version extension represents ExpansionProfile.designation.include from http://hl7.org/fhir/StructureDefinition/ExpansionProfile|3.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation",
+        "path": "Extension.extension.extension",
+        "sliceName": "designation",
+        "short": "The designation to be included",
+        "definition": "A data group for each designation to be included.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:language",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "language",
+        "short": "Human language of the designation to be included",
+        "definition": "The language this designation is defined for.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:language.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Human language of the designation to be included",
+        "definition": "The language this designation is defined for.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:use",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "use",
+        "short": "What kind of Designation to include",
+        "definition": "Which kinds of designation to include in the expansion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:use.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.extension:use.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "What kind of Designation to include",
+        "definition": "Which kinds of designation to include in the expansion.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Details of how a designation would be used.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-designation-use-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:include.extension:designation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "designation"
+      },
+      {
+        "id": "Extension.extension:include.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "include"
+      },
+      {
+        "id": "Extension.extension:exclude",
+        "path": "Extension.extension",
+        "sliceName": "exclude",
+        "short": "Designations to be excluded",
+        "definition": "This cross-version extension represents ExpansionProfile.designation.exclude from http://hl7.org/fhir/StructureDefinition/ExpansionProfile|3.0.2 for use in FHIR R4B.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation",
+        "path": "Extension.extension.extension",
+        "sliceName": "designation",
+        "short": "The designation to be excluded",
+        "definition": "A data group for each designation to be excluded.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:language",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "language",
+        "short": "Human language of the designation to be excluded",
+        "definition": "The language this designation is defined for.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:language.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Human language of the designation to be excluded",
+        "definition": "The language this designation is defined for.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/all-languages|4.3.0"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:use",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "use",
+        "short": "What kind of Designation to exclude",
+        "definition": "Which kinds of designation to exclude from the expansion.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:use.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "use"
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.extension:use.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "What kind of Designation to exclude",
+        "definition": "Which kinds of designation to exclude from the expansion.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "Details of how a designation would be used.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-designation-use-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:exclude.extension:designation.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "designation"
+      },
+      {
+        "id": "Extension.extension:exclude.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "exclude"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-ExpansionProfile.designation"
+      }
+    ]
+  }
+}

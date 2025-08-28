@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ProcedureRequest.reason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.reason",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ProcedureRequest_reason",
+  "title": "Cross-version Extension for R2.ProcedureRequest.reason[x] for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:54.7959023-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ProcedureRequest.reason[x] from http://hl7.org/fhir/StructureDefinition/ProcedureRequest|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest.reasonCode"
+    },
+    {
+      "type": "element",
+      "expression": "ServiceRequest.reasonReference"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Why procedure should occur",
+        "definition": "The reason why the procedure is being proposed or ordered. This procedure request may be motivated by a Condition for instance.",
+        "comment": "`ServiceRequest.reasonCode` maps to R4B `ServiceRequest.reasonCode`. So is mapped as Equivalent. `ServiceRequest.reasonReference` maps to R4B `ServiceRequest.reasonReference`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ProcedureRequest.reason"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Why procedure should occur",
+        "definition": "The reason why the procedure is being proposed or ordered. This procedure request may be motivated by a Condition for instance.",
+        "comment": "`ServiceRequest.reasonCode` maps to R4B `ServiceRequest.reasonCode`. So is mapped as Equivalent. `ServiceRequest.reasonReference` maps to R4B `ServiceRequest.reasonReference`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A code that explains the reason why a procedure is  required.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-procedure-reason-for-R4B"
+        }
+      }
+    ]
+  }
+}

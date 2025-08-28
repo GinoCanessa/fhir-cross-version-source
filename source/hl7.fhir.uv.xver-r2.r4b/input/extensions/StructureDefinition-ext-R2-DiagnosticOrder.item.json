@@ -1,0 +1,381 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-DiagnosticOrder.item",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.item",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_DiagnosticOrder_item",
+  "title": "Cross-version Extension for R2.DiagnosticOrder.item for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:52.541678-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DiagnosticOrder.item from http://hl7.org/fhir/StructureDefinition/DiagnosticOrder|1.0.2 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The items the orderer requested",
+        "definition": "The specific diagnostic investigations that are requested as part of this request. Sometimes, there can only be one item per request, but in most contexts, more than one investigation can be requested.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Code to indicate the item (test or panel) being ordered",
+        "definition": "A code that identifies a particular diagnostic investigation, or panel of investigations, that have been requested.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Code to indicate the item (test or panel) being ordered",
+        "definition": "A code that identifies a particular diagnostic investigation, or panel of investigations, that have been requested.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Codes for tests/services that can be performed by diagnostic services.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-diagnostic-requests-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:specimen",
+        "path": "Extension.extension",
+        "sliceName": "specimen",
+        "short": "If this item relates to specific specimens",
+        "definition": "If the item is related to a specific specimen.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specimen.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specimen"
+      },
+      {
+        "id": "Extension.extension:specimen.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If this item relates to specific specimens",
+        "definition": "If the item is related to a specific specimen.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:bodySite",
+        "path": "Extension.extension",
+        "sliceName": "bodySite",
+        "short": "Location of requested test (if applicable)",
+        "definition": "Anatomical location where the request test should be performed.  This is the target site.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:bodySite.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "bodySite"
+      },
+      {
+        "id": "Extension.extension:bodySite.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Location of requested test (if applicable)",
+        "definition": "Anatomical location where the request test should be performed.  This is the target site.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes describing anatomical locations. May include laterality.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-body-site-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "proposed | draft | planned | requested | received | accepted | in-progress | review | completed | cancelled | suspended | rejected | failed",
+        "definition": "The status of this individual item within the order.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "proposed | draft | planned | requested | received | accepted | in-progress | review | completed | cancelled | suspended | rejected | failed",
+        "definition": "The status of this individual item within the order.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The status of a diagnostic order.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-diagnostic-order-status-for-R4B"
+        }
+      },
+      {
+        "id": "Extension.extension:event",
+        "path": "Extension.extension",
+        "sliceName": "event",
+        "short": "Events specific to this item",
+        "definition": "A summary of the events of interest that have occurred as this item of the request is processed.",
+        "comment": "`ServiceRequest` maps to R4B `ServiceRequest`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:event.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:event.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for DiagnosticOrder.item.event from FHIR R2",
+        "definition": "Data type name for DiagnosticOrder.item.event from FHIR R2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:event.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: DiagnosticOrder.event",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "DiagnosticOrder.event"
+      },
+      {
+        "id": "Extension.extension:event.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "event"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-DiagnosticOrder.item"
+      }
+    ]
+  }
+}

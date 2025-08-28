@@ -1,0 +1,19 @@
+### Lookup for [FHIR R2](https://hl7.org/fhir/DSTU2/) [EligibilityResponse](https://hl7.org/fhir/DSTU2/EligibilityResponse.html) for use in [FHIR R5](https://hl7.org/fhir/R5/)
+
+| Source Element (FHIR R2) | Usage | Target |
+| -------------- | ----- | ------ |
+| [EligibilityResponse.meta](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.meta](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.implicitRules](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.implicitRules](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.language](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.language](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.text](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.text](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.contained](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.contained](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.identifier](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.identifier](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.request](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityResponse.request](StructureDefinition-ext-R2-EligibilityResponse.request.html) |
+| [EligibilityResponse.outcome](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.outcome](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.disposition](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.disposition](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.ruleset](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityResponse.ruleset](StructureDefinition-ext-R2-EligibilityResponse.ruleset.html) |
+| [EligibilityResponse.originalRuleset](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseExtension` | [http://hl7.org/fhir/1.0/StructureDefinition/extension-EligibilityResponse.originalRuleset](StructureDefinition-ext-R2-EligibilityResponse.originalRuleset.html) |
+| [EligibilityResponse.created](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.created](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.organization](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.insurer](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.requestProvider](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.requestor](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |
+| [EligibilityResponse.requestOrganization](https://hl7.org/fhir/DSTU2/EligibilityResponse.html#resource) | `UseElementRenamed` | [CoverageEligibilityResponse.requestor](https://hl7.org/fhir/R5/CoverageEligibilityResponse.html#resource) |

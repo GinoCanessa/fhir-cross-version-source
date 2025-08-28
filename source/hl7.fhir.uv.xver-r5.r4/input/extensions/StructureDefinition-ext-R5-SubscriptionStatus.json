@@ -1,0 +1,700 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-SubscriptionStatus",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionStatus",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_SubscriptionStatus",
+  "title": "Cross-version Extension for R5.SubscriptionStatus for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:04:01.7112355-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents SubscriptionStatus from http://hl7.org/fhir/StructureDefinition/SubscriptionStatus|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Status information about a Subscription provided during event notification",
+        "definition": "The SubscriptionStatus resource describes the state of a Subscription during notifications.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "requested | active | error | off | entered-in-error",
+        "definition": "The status of the subscription, which marks the server state for managing the subscription.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "requested | active | error | off | entered-in-error",
+        "definition": "The status of the subscription, which marks the server state for managing the subscription.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The status of a subscription at the time this notification was generated.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-subscription-status-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "handshake | heartbeat | event-notification | query-status | query-event",
+        "definition": "The type of event being conveyed with this notification.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "handshake | heartbeat | event-notification | query-status | query-event",
+        "definition": "The type of event being conveyed with this notification.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of notification represented by the status message.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-subscription-notification-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart",
+        "path": "Extension.extension",
+        "sliceName": "eventsSinceSubscriptionStart",
+        "short": "Events since the Subscription was created",
+        "definition": "The total number of actual events which have been generated since the Subscription was created (inclusive of this notification) - regardless of how many have been successfully communicated.  This number is NOT incremented for handshake and heartbeat notifications.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for SubscriptionStatus.eventsSinceSubscriptionStart from FHIR R5",
+        "definition": "Data type name for SubscriptionStatus.eventsSinceSubscriptionStart from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: integer64",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "integer64"
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "eventsSinceSubscriptionStart"
+      },
+      {
+        "id": "Extension.extension:eventsSinceSubscriptionStart.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Events since the Subscription was created",
+        "definition": "The total number of actual events which have been generated since the Subscription was created (inclusive of this notification) - regardless of how many have been successfully communicated.  This number is NOT incremented for handshake and heartbeat notifications.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent",
+        "path": "Extension.extension",
+        "sliceName": "notificationEvent",
+        "short": "Detailed information about any events relevant to this notification",
+        "definition": "Detailed information about events relevant to this subscription notification.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "eventNumber",
+        "short": "Sequencing index of this event",
+        "definition": "Either the sequential number of this event in this subscription context or a relative event number for this notification.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for SubscriptionStatus.notificationEvent.eventNumber from FHIR R5",
+        "definition": "Data type name for SubscriptionStatus.notificationEvent.eventNumber from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: integer64",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "integer64"
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "eventNumber"
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:eventNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Sequencing index of this event",
+        "definition": "Either the sequential number of this event in this subscription context or a relative event number for this notification.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:timestamp",
+        "path": "Extension.extension.extension",
+        "sliceName": "timestamp",
+        "short": "The instant this event occurred",
+        "definition": "The actual time this event occurred on the server.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:timestamp.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "timestamp"
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:timestamp.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The instant this event occurred",
+        "definition": "The actual time this event occurred on the server.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:focus",
+        "path": "Extension.extension.extension",
+        "sliceName": "focus",
+        "short": "Reference to the primary resource or information of this event",
+        "definition": "The focus of this event. While this will usually be a reference to the focus resource of the event, it MAY contain a reference to a non-FHIR object.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:focus.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "focus"
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:focus.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Reference to the primary resource or information of this event",
+        "definition": "The focus of this event. While this will usually be a reference to the focus resource of the event, it MAY contain a reference to a non-FHIR object.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:additionalContext",
+        "path": "Extension.extension.extension",
+        "sliceName": "additionalContext",
+        "short": "References related to the focus resource and/or context of this event",
+        "definition": "Additional context information for this event. Generally, this will contain references to additional resources included with the event (e.g., the Patient relevant to an Encounter), however it MAY refer to non-FHIR objects.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:additionalContext.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "additionalContext"
+      },
+      {
+        "id": "Extension.extension:notificationEvent.extension:additionalContext.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "References related to the focus resource and/or context of this event",
+        "definition": "Additional context information for this event. Generally, this will contain references to additional resources included with the event (e.g., the Patient relevant to an Encounter), however it MAY refer to non-FHIR objects.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:notificationEvent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "notificationEvent"
+      },
+      {
+        "id": "Extension.extension:subscription",
+        "path": "Extension.extension",
+        "sliceName": "subscription",
+        "short": "Reference to the Subscription responsible for this notification",
+        "definition": "The reference to the Subscription which generated this notification.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:subscription.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "subscription"
+      },
+      {
+        "id": "Extension.extension:subscription.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to the Subscription responsible for this notification",
+        "definition": "The reference to the Subscription which generated this notification.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:topic",
+        "path": "Extension.extension",
+        "sliceName": "topic",
+        "short": "Reference to the SubscriptionTopic this notification relates to",
+        "definition": "The reference to the SubscriptionTopic for the Subscription which generated this notification.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:topic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "topic"
+      },
+      {
+        "id": "Extension.extension:topic.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to the SubscriptionTopic this notification relates to",
+        "definition": "The reference to the SubscriptionTopic for the Subscription which generated this notification.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:error",
+        "path": "Extension.extension",
+        "sliceName": "error",
+        "short": "List of errors on the subscription",
+        "definition": "A record of errors that occurred when the server processed a notification.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:error.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "error"
+      },
+      {
+        "id": "Extension.extension:error.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "List of errors on the subscription",
+        "definition": "A record of errors that occurred when the server processed a notification.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Codes to represent subscription error details.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-subscription-error-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionStatus"
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "search-entry-mode",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "url": "http://hl7.org/fhir/search-entry-mode",
+  "version": "4.0.1",
+  "name": "SearchEntryMode",
+  "title": "SearchEntryMode",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-10-31T17:29:23-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/search-entry-mode",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "match",
+      "display": "Match",
+      "definition": "This resource matched the search specification."
+    },
+    {
+      "code": "include",
+      "display": "Include",
+      "definition": "This resource is returned because it is referred to from another resource in the search set."
+    },
+    {
+      "code": "outcome",
+      "display": "Outcome",
+      "definition": "An OperationOutcome that provides additional information about the processing of a search."
+    }
+  ]
+}

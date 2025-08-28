@@ -1,0 +1,51 @@
+### Lookup for [FHIR R4](https://hl7.org/fhir/R4/) [RequestGroup](https://hl7.org/fhir/R4/RequestGroup.html) for use in [FHIR R4B](https://hl7.org/fhir/R4B/)
+
+| Source Element (FHIR R4) | Usage | Target |
+| -------------- | ----- | ------ |
+| [RequestGroup.meta](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.meta](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.implicitRules](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.implicitRules](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.language](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.language](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.text](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.text](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.contained](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.contained](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.identifier](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.identifier](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.instantiatesCanonical](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.instantiatesCanonical](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.instantiatesUri](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.instantiatesUri](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.basedOn](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.basedOn](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.replaces](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.replaces](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.groupIdentifier](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.groupIdentifier](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.status](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.status](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.intent](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.intent](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.priority](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.priority](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.code](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.code](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.subject](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.subject](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.encounter](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.encounter](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.authoredOn](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.authoredOn](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.author](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.author](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.reasonCode](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.reasonCode](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.reasonReference](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.reasonReference](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.note](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.note](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.prefix](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.prefix](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.title](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.title](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.description](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.description](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.textEquivalent](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.textEquivalent](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.priority](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.priority](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.code](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.code](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.documentation](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.documentation](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.condition](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.condition](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.condition.kind](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.condition.kind](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.condition.expression](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseOneOf` | [RequestGroup.action.condition.expression](https://hl7.org/fhir/R4B/RequestGroup.html#resource)<br />[RequestGroup.action.condition.expression](https://hl7.org/fhir/R4B/RequestGroup.html#resource)<br />[RequestGroup.action.condition.expression](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.relatedAction](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.relatedAction](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.relatedAction.actionId](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.relatedAction.actionId](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.relatedAction.relationship](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.relatedAction.relationship](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.relatedAction.offset[x]](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.relatedAction.offset[x]](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.timing[x]](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.timing[x]](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.participant](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.participant](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.type](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.type](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.groupingBehavior](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.groupingBehavior](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.selectionBehavior](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.selectionBehavior](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.requiredBehavior](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.requiredBehavior](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.precheckBehavior](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.precheckBehavior](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.cardinalityBehavior](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.cardinalityBehavior](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.resource](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.resource](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |
+| [RequestGroup.action.action](https://hl7.org/fhir/R4/RequestGroup.html#resource) | `UseElementSameName` | [RequestGroup.action.action](https://hl7.org/fhir/R4B/RequestGroup.html#resource) |

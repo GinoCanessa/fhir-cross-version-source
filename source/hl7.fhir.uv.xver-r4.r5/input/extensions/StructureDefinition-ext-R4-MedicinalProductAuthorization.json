@@ -1,0 +1,1125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProductAuthorization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductAuthorization",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProductAuthorization",
+  "title": "Cross-version Extension for R4.MedicinalProductAuthorization for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:44.9640851-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProductAuthorization from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "The regulatory authorization of a medicinal product",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:country",
+        "path": "Extension.extension",
+        "sliceName": "country",
+        "short": "The country in which the marketing authorization has been granted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:country.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:country.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The country in which the marketing authorization has been granted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdiction",
+        "path": "Extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Jurisdiction within a country",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdiction.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Jurisdiction within a country",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "The status of the marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.status from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The status of the marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.status from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension",
+        "sliceName": "statusDate",
+        "short": "The date at which the given status has become applicable",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.statusDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statusDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statusDate"
+      },
+      {
+        "id": "Extension.extension:statusDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date at which the given status has become applicable",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.statusDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:restoreDate",
+        "path": "Extension.extension",
+        "sliceName": "restoreDate",
+        "short": "The date when a suspended the marketing or the marketing authorization of the product is anticipated to be restored",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.restoreDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:restoreDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "restoreDate"
+      },
+      {
+        "id": "Extension.extension:restoreDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date when a suspended the marketing or the marketing authorization of the product is anticipated to be restored",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.restoreDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:validityPeriod",
+        "path": "Extension.extension",
+        "sliceName": "validityPeriod",
+        "short": "The beginning of the time period in which the marketing authorization is in the specific status shall be specified A complete date consisting of day, month and year shall be specified using the ISO 8601 date format",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.validityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:validityPeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "validityPeriod"
+      },
+      {
+        "id": "Extension.extension:validityPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The beginning of the time period in which the marketing authorization is in the specific status shall be specified A complete date consisting of day, month and year shall be specified using the ISO 8601 date format",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.validityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dataExclusivityPeriod",
+        "path": "Extension.extension",
+        "sliceName": "dataExclusivityPeriod",
+        "short": "A period of time after authorization before generic product applicatiosn can be submitted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.dataExclusivityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dataExclusivityPeriod.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dataExclusivityPeriod"
+      },
+      {
+        "id": "Extension.extension:dataExclusivityPeriod.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A period of time after authorization before generic product applicatiosn can be submitted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.dataExclusivityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:dateOfFirstAuthorization",
+        "path": "Extension.extension",
+        "sliceName": "dateOfFirstAuthorization",
+        "short": "The date when the first authorization was granted by a Medicines Regulatory Agency",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.dateOfFirstAuthorization from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:dateOfFirstAuthorization.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateOfFirstAuthorization"
+      },
+      {
+        "id": "Extension.extension:dateOfFirstAuthorization.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date when the first authorization was granted by a Medicines Regulatory Agency",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.dateOfFirstAuthorization from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:internationalBirthDate",
+        "path": "Extension.extension",
+        "sliceName": "internationalBirthDate",
+        "short": "Date of first marketing authorization for a company's new medicinal product in any country in the World",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.internationalBirthDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:internationalBirthDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "internationalBirthDate"
+      },
+      {
+        "id": "Extension.extension:internationalBirthDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Date of first marketing authorization for a company's new medicinal product in any country in the World",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.internationalBirthDate from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalBasis",
+        "path": "Extension.extension",
+        "sliceName": "legalBasis",
+        "short": "The legal framework against which this authorization is granted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.legalBasis from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalBasis.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "legalBasis"
+      },
+      {
+        "id": "Extension.extension:legalBasis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The legal framework against which this authorization is granted",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.legalBasis from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization",
+        "path": "Extension.extension",
+        "sliceName": "jurisdictionalAuthorization",
+        "short": "Authorization in areas within a country",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "The assigned number for the marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The assigned number for the marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "short": "Country of authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Country of authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.country from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Jurisdiction within a country",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Jurisdiction within a country",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:legalStatusOfSupply",
+        "path": "Extension.extension.extension",
+        "sliceName": "legalStatusOfSupply",
+        "short": "The legal status of supply in a jurisdiction or region",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.legalStatusOfSupply from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:legalStatusOfSupply.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "legalStatusOfSupply"
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:legalStatusOfSupply.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The legal status of supply in a jurisdiction or region",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.legalStatusOfSupply from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:validityPeriod",
+        "path": "Extension.extension.extension",
+        "sliceName": "validityPeriod",
+        "short": "The start and expected end date of the authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.validityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:validityPeriod.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "validityPeriod"
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.extension:validityPeriod.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The start and expected end date of the authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.jurisdictionalAuthorization.validityPeriod from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:jurisdictionalAuthorization.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdictionalAuthorization"
+      },
+      {
+        "id": "Extension.extension:holder",
+        "path": "Extension.extension",
+        "sliceName": "holder",
+        "short": "Marketing Authorization Holder",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.holder from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:holder.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "holder"
+      },
+      {
+        "id": "Extension.extension:holder.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Marketing Authorization Holder",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.holder from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:regulator",
+        "path": "Extension.extension",
+        "sliceName": "regulator",
+        "short": "Medicines Regulatory Agency",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.regulator from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:regulator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "regulator"
+      },
+      {
+        "id": "Extension.extension:regulator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Medicines Regulatory Agency",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.regulator from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure",
+        "path": "Extension.extension",
+        "sliceName": "procedure",
+        "short": "The regulatory procedure for granting or amending a marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "Identifier for this procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:procedure.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Identifier for this procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "Type of procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.type from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:procedure.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Type of procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.type from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure.extension:date[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "date[x]",
+        "short": "Date of procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.date[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:date[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date[x]"
+      },
+      {
+        "id": "Extension.extension:procedure.extension:date[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Date of procedure",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.date[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure.extension:application",
+        "path": "Extension.extension.extension",
+        "sliceName": "application",
+        "short": "Applcations submitted to obtain a marketing authorization",
+        "definition": "This cross-version extension represents MedicinalProductAuthorization.procedure.application from http://hl7.org/fhir/StructureDefinition/MedicinalProductAuthorization|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:application.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:procedure.extension:application.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for MedicinalProductAuthorization.procedure.application from FHIR R4",
+        "definition": "Data type name for MedicinalProductAuthorization.procedure.application from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:procedure.extension:application.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: MedicinalProductAuthorization.procedure",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "MedicinalProductAuthorization.procedure"
+      },
+      {
+        "id": "Extension.extension:procedure.extension:application.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "application"
+      },
+      {
+        "id": "Extension.extension:procedure.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "procedure"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProductAuthorization"
+      }
+    ]
+  }
+}

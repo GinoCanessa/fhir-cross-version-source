@@ -1,0 +1,108 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R3-Composition.at.mode",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.attester.mode",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R3_Composition_at_mode",
+  "title": "Cross-version Extension for R3.Composition.attester.mode for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:12.8645452-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Composition.attester.mode from http://hl7.org/fhir/StructureDefinition/Composition|3.0.2 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition.attester.mode"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "personal | professional | legal | official",
+        "definition": "The type of attestation the authenticator offers.",
+        "comment": "`Composition.attester.mode` maps to R5 `Composition.attester.mode`. Has no type mapping `mode` removed the required value set binding to `http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.3.0`. So is mapped as SourceIsBroaderThanTarget.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/3.0/StructureDefinition/extension-Composition.attester.mode"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "personal | professional | legal | official",
+        "definition": "The type of attestation the authenticator offers.",
+        "comment": "`Composition.attester.mode` maps to R5 `Composition.attester.mode`. Has no type mapping `mode` removed the required value set binding to `http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.3.0`. So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The way in which a person authenticated a composition.",
+          "valueSet": "http://hl7.org/fhir/3.0/ValueSet/R3-composition-attestation-mode-for-R5"
+        }
+      }
+    ]
+  }
+}

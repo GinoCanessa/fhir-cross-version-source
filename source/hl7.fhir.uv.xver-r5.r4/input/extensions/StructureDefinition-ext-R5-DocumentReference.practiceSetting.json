@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DocumentReference.practiceSetting",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.practiceSetting",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DocumentReference_practiceSetting",
+  "title": "Cross-version Extension for R5.DocumentReference.practiceSetting for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.4282221-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DocumentReference.practiceSetting from http://hl7.org/fhir/StructureDefinition/DocumentReference|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DocumentReference"
+    },
+    {
+      "type": "element",
+      "expression": "Media"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Additional details about where the content was created (e.g. clinical specialty)",
+        "definition": "This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.practiceSetting"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Additional details about where the content was created (e.g. clinical specialty)",
+        "definition": "This property may convey specifics about the practice setting where the content was created, often reflecting the clinical specialty.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Additional details about where the content was created (e.g. clinical specialty).",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-c80-practice-codes-for-R4"
+        }
+      }
+    ]
+  }
+}

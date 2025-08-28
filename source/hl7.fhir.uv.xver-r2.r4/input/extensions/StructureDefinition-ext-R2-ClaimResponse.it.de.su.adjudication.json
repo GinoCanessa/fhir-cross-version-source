@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-ClaimResponse.it.de.su.adjudication",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.adjudication",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_ClaimResponse_it_de_su_adjudication",
+  "title": "Cross-version Extension for R2.ClaimResponse.item.detail.subDetail.adjudication for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:51.0367384-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents ClaimResponse.item.detail.subDetail.adjudication from http://hl7.org/fhir/StructureDefinition/ClaimResponse|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ClaimResponse.item.detail.subDetail.adjudication"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Subdetail adjudication",
+        "definition": "The adjudications results.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "short": "Adjudication category such as co-pay, eligible, benefit, etc.",
+        "definition": "Code indicating: Co-Pay, deductible, eligible, benefit, tax, etc.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Adjudication category such as co-pay, eligible, benefit, etc.",
+        "definition": "Code indicating: Co-Pay, deductible, eligible, benefit, tax, etc.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "The adjudication codes.",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-adjudication-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:amount",
+        "path": "Extension.extension",
+        "sliceName": "amount",
+        "short": "Monetary amount",
+        "definition": "Monetary amount associated with the code.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:amount.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:amount.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Monetary amount",
+        "definition": "Monetary amount associated with the code.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Money"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension",
+        "sliceName": "value",
+        "short": "Non-monetary value",
+        "definition": "A non-monetary value for example a percentage. Mutually exclusive to the amount element above.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:value.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:value.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Non-monetary value",
+        "definition": "A non-monetary value for example a percentage. Mutually exclusive to the amount element above.",
+        "comment": "`ClaimResponse.item.detail.subDetail.adjudication` maps to R4 `ClaimResponse.item.detail.subDetail.adjudication`. So is mapped as Equivalent.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ClaimResponse.item.detail.subDetail.adjudication"
+      }
+    ]
+  }
+}

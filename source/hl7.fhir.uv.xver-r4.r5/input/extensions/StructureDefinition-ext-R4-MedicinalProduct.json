@@ -1,0 +1,2064 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R4-MedicinalProduct",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r4.r5"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProduct",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R4_MedicinalProduct",
+  "title": "Cross-version Extension for R4.MedicinalProduct for use in FHIR R5",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:02:44.9398663-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents MedicinalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Detailed definition of a medicinal product, typically for uses other than direct patient care (e.g. regulatory use)",
+        "definition": "This cross-version extension represents MedicinalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "Regulatory type, e.g. Investigational or Authorized",
+        "definition": "This cross-version extension represents MedicinalProduct.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Regulatory type, e.g. Investigational or Authorized",
+        "definition": "This cross-version extension represents MedicinalProduct.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:domain",
+        "path": "Extension.extension",
+        "sliceName": "domain",
+        "short": "If this medicine applies to human or veterinary uses",
+        "definition": "This cross-version extension represents MedicinalProduct.domain from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:domain.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "domain"
+      },
+      {
+        "id": "Extension.extension:domain.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If this medicine applies to human or veterinary uses",
+        "definition": "This cross-version extension represents MedicinalProduct.domain from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:combinedPharmaceuticalDoseForm",
+        "path": "Extension.extension",
+        "sliceName": "combinedPharmaceuticalDoseForm",
+        "short": "The dose form for a single part product, or combined form of a multiple part product",
+        "definition": "This cross-version extension represents MedicinalProduct.combinedPharmaceuticalDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:combinedPharmaceuticalDoseForm.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "combinedPharmaceuticalDoseForm"
+      },
+      {
+        "id": "Extension.extension:combinedPharmaceuticalDoseForm.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The dose form for a single part product, or combined form of a multiple part product",
+        "definition": "This cross-version extension represents MedicinalProduct.combinedPharmaceuticalDoseForm from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply",
+        "path": "Extension.extension",
+        "sliceName": "legalStatusOfSupply",
+        "short": "The legal status of supply of the medicinal product as classified by the regulator",
+        "definition": "This cross-version extension represents MedicinalProduct.legalStatusOfSupply from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "legalStatusOfSupply"
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The legal status of supply of the medicinal product as classified by the regulator",
+        "definition": "This cross-version extension represents MedicinalProduct.legalStatusOfSupply from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:additionalMonitoringIndicator",
+        "path": "Extension.extension",
+        "sliceName": "additionalMonitoringIndicator",
+        "short": "Whether the Medicinal Product is subject to additional monitoring for regulatory reasons",
+        "definition": "This cross-version extension represents MedicinalProduct.additionalMonitoringIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:additionalMonitoringIndicator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "additionalMonitoringIndicator"
+      },
+      {
+        "id": "Extension.extension:additionalMonitoringIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether the Medicinal Product is subject to additional monitoring for regulatory reasons",
+        "definition": "This cross-version extension represents MedicinalProduct.additionalMonitoringIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialMeasures",
+        "path": "Extension.extension",
+        "sliceName": "specialMeasures",
+        "short": "Whether the Medicinal Product is subject to special measures for regulatory reasons",
+        "definition": "This cross-version extension represents MedicinalProduct.specialMeasures from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialMeasures.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialMeasures"
+      },
+      {
+        "id": "Extension.extension:specialMeasures.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Whether the Medicinal Product is subject to special measures for regulatory reasons",
+        "definition": "This cross-version extension represents MedicinalProduct.specialMeasures from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:paediatricUseIndicator",
+        "path": "Extension.extension",
+        "sliceName": "paediatricUseIndicator",
+        "short": "If authorised for use in children",
+        "definition": "This cross-version extension represents MedicinalProduct.paediatricUseIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:paediatricUseIndicator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "paediatricUseIndicator"
+      },
+      {
+        "id": "Extension.extension:paediatricUseIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "If authorised for use in children",
+        "definition": "This cross-version extension represents MedicinalProduct.paediatricUseIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:productClassification",
+        "path": "Extension.extension",
+        "sliceName": "productClassification",
+        "short": "Allows the product to be classified by various systems",
+        "definition": "This cross-version extension represents MedicinalProduct.productClassification from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:productClassification.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productClassification"
+      },
+      {
+        "id": "Extension.extension:productClassification.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Allows the product to be classified by various systems",
+        "definition": "This cross-version extension represents MedicinalProduct.productClassification from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus",
+        "path": "Extension.extension",
+        "sliceName": "marketingStatus",
+        "short": "Marketing status of the medicinal product, in contrast to marketing authorizaton",
+        "definition": "This cross-version extension represents MedicinalProduct.marketingStatus from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 3,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "short": "The country in which the marketing authorisation has been granted shall be specified It should be specified using the ISO 3166 ‑ 1 alpha-2 code elements",
+        "definition": "This cross-version extension represents MarketingStatus.country from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The country in which the marketing authorisation has been granted shall be specified It should be specified using the ISO 3166 ‑ 1 alpha-2 code elements",
+        "definition": "This cross-version extension represents MarketingStatus.country from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Where a Medicines Regulatory Agency has granted a marketing authorisation for which specific provisions within a jurisdiction apply, the jurisdiction can be specified using an appropriate controlled terminology The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents MarketingStatus.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where a Medicines Regulatory Agency has granted a marketing authorisation for which specific provisions within a jurisdiction apply, the jurisdiction can be specified using an appropriate controlled terminology The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents MarketingStatus.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "This attribute provides information on the status of the marketing of the medicinal product See ISO/TS 20443 for more information and examples",
+        "definition": "This cross-version extension represents MarketingStatus.status from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "This attribute provides information on the status of the marketing of the medicinal product See ISO/TS 20443 for more information and examples",
+        "definition": "This cross-version extension represents MarketingStatus.status from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange",
+        "path": "Extension.extension.extension",
+        "sliceName": "dateRange",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorisation Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.dateRange from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateRange"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorisation Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.dateRange from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "restoreDate",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorisation Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.restoreDate from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "restoreDate"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorisation Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.restoreDate from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for MedicinalProduct.marketingStatus from FHIR R4",
+        "definition": "Data type name for MedicinalProduct.marketingStatus from FHIR R4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: MarketingStatus",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "MarketingStatus"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "marketingStatus"
+      },
+      {
+        "id": "Extension.extension:pharmaceuticalProduct",
+        "path": "Extension.extension",
+        "sliceName": "pharmaceuticalProduct",
+        "short": "Pharmaceutical aspects of product",
+        "definition": "This cross-version extension represents MedicinalProduct.pharmaceuticalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:pharmaceuticalProduct.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "pharmaceuticalProduct"
+      },
+      {
+        "id": "Extension.extension:pharmaceuticalProduct.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Pharmaceutical aspects of product",
+        "definition": "This cross-version extension represents MedicinalProduct.pharmaceuticalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packagedMedicinalProduct",
+        "path": "Extension.extension",
+        "sliceName": "packagedMedicinalProduct",
+        "short": "Package representation for the product",
+        "definition": "This cross-version extension represents MedicinalProduct.packagedMedicinalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packagedMedicinalProduct.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packagedMedicinalProduct"
+      },
+      {
+        "id": "Extension.extension:packagedMedicinalProduct.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Package representation for the product",
+        "definition": "This cross-version extension represents MedicinalProduct.packagedMedicinalProduct from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attachedDocument",
+        "path": "Extension.extension",
+        "sliceName": "attachedDocument",
+        "short": "Supporting documentation, typically for regulatory submission",
+        "definition": "This cross-version extension represents MedicinalProduct.attachedDocument from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attachedDocument.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attachedDocument"
+      },
+      {
+        "id": "Extension.extension:attachedDocument.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Supporting documentation, typically for regulatory submission",
+        "definition": "This cross-version extension represents MedicinalProduct.attachedDocument from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:masterFile",
+        "path": "Extension.extension",
+        "sliceName": "masterFile",
+        "short": "A master file for to the medicinal product (e.g. Pharmacovigilance System Master File)",
+        "definition": "This cross-version extension represents MedicinalProduct.masterFile from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:masterFile.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "masterFile"
+      },
+      {
+        "id": "Extension.extension:masterFile.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A master file for to the medicinal product (e.g. Pharmacovigilance System Master File)",
+        "definition": "This cross-version extension represents MedicinalProduct.masterFile from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:contact",
+        "path": "Extension.extension",
+        "sliceName": "contact",
+        "short": "A product specific contact, person (in a role), or an organization",
+        "definition": "This cross-version extension represents MedicinalProduct.contact from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:contact.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "contact"
+      },
+      {
+        "id": "Extension.extension:contact.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A product specific contact, person (in a role), or an organization",
+        "definition": "This cross-version extension represents MedicinalProduct.contact from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:clinicalTrial",
+        "path": "Extension.extension",
+        "sliceName": "clinicalTrial",
+        "short": "Clinical trials or studies that this product is involved in",
+        "definition": "This cross-version extension represents MedicinalProduct.clinicalTrial from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:clinicalTrial.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "clinicalTrial"
+      },
+      {
+        "id": "Extension.extension:clinicalTrial.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Clinical trials or studies that this product is involved in",
+        "definition": "This cross-version extension represents MedicinalProduct.clinicalTrial from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "The product's name, including full name and possibly coded parts",
+        "definition": "This cross-version extension represents MedicinalProduct.name from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:productName",
+        "path": "Extension.extension.extension",
+        "sliceName": "productName",
+        "short": "The full product name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.productName from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:productName.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "productName"
+      },
+      {
+        "id": "Extension.extension:name.extension:productName.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The full product name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.productName from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart",
+        "path": "Extension.extension.extension",
+        "sliceName": "namePart",
+        "short": "Coding words or phrases of the name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.namePart from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:part",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "part",
+        "short": "A fragment of a product name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.namePart.part from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:part.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "part"
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:part.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A fragment of a product name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.namePart.part from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "Idenifying type for this part of the name (e.g. strength part)",
+        "definition": "This cross-version extension represents MedicinalProduct.name.namePart.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Idenifying type for this part of the name (e.g. strength part)",
+        "definition": "This cross-version extension represents MedicinalProduct.name.namePart.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:namePart.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "namePart"
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage",
+        "path": "Extension.extension.extension",
+        "sliceName": "countryLanguage",
+        "short": "Country where the name applies",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 2,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:country",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "country",
+        "short": "Country code for where this name applies",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.country from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:country.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:country.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Country code for where this name applies",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.country from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:jurisdiction",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Jurisdiction code for where this name applies",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Jurisdiction code for where this name applies",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.jurisdiction from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:language",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "language",
+        "short": "Language code for this name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.language from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:language.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "language"
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.extension:language.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Language code for this name",
+        "definition": "This cross-version extension represents MedicinalProduct.name.countryLanguage.language from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name.extension:countryLanguage.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "countryLanguage"
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:crossReference",
+        "path": "Extension.extension",
+        "sliceName": "crossReference",
+        "short": "Reference to another product, e.g. for linking authorised to investigational product",
+        "definition": "This cross-version extension represents MedicinalProduct.crossReference from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:crossReference.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "crossReference"
+      },
+      {
+        "id": "Extension.extension:crossReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Reference to another product, e.g. for linking authorised to investigational product",
+        "definition": "This cross-version extension represents MedicinalProduct.crossReference from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation",
+        "path": "Extension.extension",
+        "sliceName": "manufacturingBusinessOperation",
+        "short": "An operation applied to the product, for manufacturing or adminsitrative purpose",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:operationType",
+        "path": "Extension.extension.extension",
+        "sliceName": "operationType",
+        "short": "The type of manufacturing operation",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.operationType from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:operationType.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "operationType"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:operationType.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of manufacturing operation",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.operationType from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:authorisationReferenceNumber",
+        "path": "Extension.extension.extension",
+        "sliceName": "authorisationReferenceNumber",
+        "short": "Regulatory authorization reference number",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.authorisationReferenceNumber from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:authorisationReferenceNumber.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "authorisationReferenceNumber"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:authorisationReferenceNumber.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Regulatory authorization reference number",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.authorisationReferenceNumber from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:effectiveDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "effectiveDate",
+        "short": "Regulatory authorization date",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.effectiveDate from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:effectiveDate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "effectiveDate"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:effectiveDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Regulatory authorization date",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.effectiveDate from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:confidentialityIndicator",
+        "path": "Extension.extension.extension",
+        "sliceName": "confidentialityIndicator",
+        "short": "To indicate if this proces is commercially confidential",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.confidentialityIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:confidentialityIndicator.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "confidentialityIndicator"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:confidentialityIndicator.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "To indicate if this proces is commercially confidential",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.confidentialityIndicator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:manufacturer",
+        "path": "Extension.extension.extension",
+        "sliceName": "manufacturer",
+        "short": "The manufacturer or establishment associated with the process",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:manufacturer.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:manufacturer.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The manufacturer or establishment associated with the process",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.manufacturer from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:regulator",
+        "path": "Extension.extension.extension",
+        "sliceName": "regulator",
+        "short": "A regulator which oversees the operation",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.regulator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:regulator.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "regulator"
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.extension:regulator.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A regulator which oversees the operation",
+        "definition": "This cross-version extension represents MedicinalProduct.manufacturingBusinessOperation.regulator from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturingBusinessOperation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturingBusinessOperation"
+      },
+      {
+        "id": "Extension.extension:specialDesignation",
+        "path": "Extension.extension",
+        "sliceName": "specialDesignation",
+        "short": "Indicates if the medicinal product has an orphan designation for the treatment of a rare disease",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "Identifier for the designation, or procedure number",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Identifier for the designation, or procedure number",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.identifier from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "The type of special designation, e.g. orphan drug, minor use",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The type of special designation, e.g. orphan drug, minor use",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.type from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:intendedUse",
+        "path": "Extension.extension.extension",
+        "sliceName": "intendedUse",
+        "short": "The intended use of the product, e.g. prevention, treatment",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.intendedUse from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:intendedUse.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "intendedUse"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:intendedUse.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The intended use of the product, e.g. prevention, treatment",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.intendedUse from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:indication[x]",
+        "path": "Extension.extension.extension",
+        "sliceName": "indication[x]",
+        "short": "Condition for which the medicinal use applies",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.indication[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:indication[x].url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "indication[x]"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:indication[x].value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Condition for which the medicinal use applies",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.indication[x] from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "For example granted, pending, expired or withdrawn",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.status from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "For example granted, pending, expired or withdrawn",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.status from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:date",
+        "path": "Extension.extension.extension",
+        "sliceName": "date",
+        "short": "Date when the designation was granted",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.date from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:date.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "date"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:date.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Date when the designation was granted",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.date from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:species",
+        "path": "Extension.extension.extension",
+        "sliceName": "species",
+        "short": "Animal species for which this applies",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.species from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:species.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "species"
+      },
+      {
+        "id": "Extension.extension:specialDesignation.extension:species.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Animal species for which this applies",
+        "definition": "This cross-version extension represents MedicinalProduct.specialDesignation.species from http://hl7.org/fhir/StructureDefinition/MedicinalProduct|4.0.1 for use in FHIR R5.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:specialDesignation.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialDesignation"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/4.0/StructureDefinition/extension-MedicinalProduct"
+      }
+    ]
+  }
+}

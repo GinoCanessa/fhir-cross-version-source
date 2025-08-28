@@ -1,0 +1,2103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-PackagedProductDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_PackagedProductDefinition",
+  "title": "Cross-version Extension for R5.PackagedProductDefinition for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:57.1775559-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents PackagedProductDefinition from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "A medically related item or items, in a container or package",
+        "definition": "This cross-version extension represents PackagedProductDefinition from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "A name for this package. Typically as listed in a drug formulary, catalogue, inventory etc",
+        "definition": "A name for this package. Typically what it would be listed as in a drug formulary or catalogue, inventory etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A name for this package. Typically as listed in a drug formulary, catalogue, inventory etc",
+        "definition": "A name for this package. Typically what it would be listed as in a drug formulary or catalogue, inventory etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "A high level category e.g. medicinal product, raw material, shipping container etc",
+        "definition": "A high level category e.g. medicinal product, raw material, shipping/transport container, etc.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A high level category e.g. medicinal product, raw material, shipping container etc",
+        "definition": "A high level category e.g. medicinal product, raw material, shipping/transport container, etc.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A high level categorisation of a package.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-package-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:packageFor",
+        "path": "Extension.extension",
+        "sliceName": "packageFor",
+        "short": "The product that this is a pack for",
+        "definition": "The product this package model relates to, not the contents of the package (for which see package.containedItem).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packageFor.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packageFor"
+      },
+      {
+        "id": "Extension.extension:packageFor.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The product that this is a pack for",
+        "definition": "The product this package model relates to, not the contents of the package (for which see package.containedItem).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "short": "The status within the lifecycle of this item. High level - not intended to duplicate details elsewhere e.g. legal status, or authorization/marketing status",
+        "definition": "The status within the lifecycle of this item. A high level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization or marketing status.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The status within the lifecycle of this item. High level - not intended to duplicate details elsewhere e.g. legal status, or authorization/marketing status",
+        "definition": "The status within the lifecycle of this item. A high level status, this is not intended to duplicate details carried elsewhere such as legal status, or authorization or marketing status.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "The lifecycle status of an artifact.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-publication-status-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:statusDate",
+        "path": "Extension.extension",
+        "sliceName": "statusDate",
+        "short": "The date at which the given status became applicable",
+        "definition": "This cross-version extension represents PackagedProductDefinition.statusDate from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:statusDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "statusDate"
+      },
+      {
+        "id": "Extension.extension:statusDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date at which the given status became applicable",
+        "definition": "This cross-version extension represents PackagedProductDefinition.statusDate from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:containedItemQuantity",
+        "path": "Extension.extension",
+        "sliceName": "containedItemQuantity",
+        "short": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. See also packaging.containedItem.amount (especially the long definition)",
+        "definition": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. This attribute differs from containedItem.amount in that it can give a single aggregated count of all tablet types in a pack, even when these are different manufactured items. For example a pill pack of 21 tablets plus 7 sugar tablets, can be denoted here as '28 tablets'. This attribute is repeatable so that the different item types in one pack type can be counted (e.g. a count of vials and count of syringes). Each repeat must have different units, so that it is clear what the different sets of counted items are, and it is not intended to allow different counts of similar items (e.g. not '2 tubes and 3 tubes'). Repeats are not to be used to represent different pack sizes (e.g. 20 pack vs. 50 pack) - which would be different instances of this resource.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:containedItemQuantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "containedItemQuantity"
+      },
+      {
+        "id": "Extension.extension:containedItemQuantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. See also packaging.containedItem.amount (especially the long definition)",
+        "definition": "A total of the complete count of contained items of a particular type/form, independent of sub-packaging or organization. This can be considered as the pack size. This attribute differs from containedItem.amount in that it can give a single aggregated count of all tablet types in a pack, even when these are different manufactured items. For example a pill pack of 21 tablets plus 7 sugar tablets, can be denoted here as '28 tablets'. This attribute is repeatable so that the different item types in one pack type can be counted (e.g. a count of vials and count of syringes). Each repeat must have different units, so that it is clear what the different sets of counted items are, and it is not intended to allow different counts of similar items (e.g. not '2 tubes and 3 tubes'). Repeats are not to be used to represent different pack sizes (e.g. 20 pack vs. 50 pack) - which would be different instances of this resource.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:description",
+        "path": "Extension.extension",
+        "sliceName": "description",
+        "short": "Textual description. Note that this is not the name of the package or product",
+        "definition": "This cross-version extension represents PackagedProductDefinition.description from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:description.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "description"
+      },
+      {
+        "id": "Extension.extension:description.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Textual description. Note that this is not the name of the package or product",
+        "definition": "This cross-version extension represents PackagedProductDefinition.description from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "markdown"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply",
+        "path": "Extension.extension",
+        "sliceName": "legalStatusOfSupply",
+        "short": "The legal status of supply of the packaged item as classified by the regulator",
+        "definition": "This cross-version extension represents PackagedProductDefinition.legalStatusOfSupply from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:code",
+        "path": "Extension.extension.extension",
+        "sliceName": "code",
+        "short": "The actual status of supply. In what situation this package type may be supplied for use",
+        "definition": "The actual status of supply. Conveys in what situation this package type may be supplied for use.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:code.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:code.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The actual status of supply. In what situation this package type may be supplied for use",
+        "definition": "The actual status of supply. Conveys in what situation this package type may be supplied for use.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The prescription supply types appropriate to a medicinal product",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-legal-status-of-supply-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "The place where the legal status of supply applies",
+        "definition": "The place where the legal status of supply applies. When not specified, this indicates it is unknown in this context.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The place where the legal status of supply applies",
+        "definition": "The place where the legal status of supply applies. When not specified, this indicates it is unknown in this context.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Jurisdiction codes",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-jurisdiction-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:legalStatusOfSupply.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "legalStatusOfSupply"
+      },
+      {
+        "id": "Extension.extension:marketingStatus",
+        "path": "Extension.extension",
+        "sliceName": "marketingStatus",
+        "short": "Allows specifying that an item is on the market for sale, or that it is not available, and the dates and locations associated",
+        "definition": "This cross-version extension represents PackagedProductDefinition.marketingStatus from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country",
+        "path": "Extension.extension.extension",
+        "sliceName": "country",
+        "short": "The country in which the marketing authorization has been granted shall be specified It should be specified using the ISO 3166 ‑ 1 alpha-2 code elements",
+        "definition": "This cross-version extension represents MarketingStatus.country from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "country"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:country.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The country in which the marketing authorization has been granted shall be specified It should be specified using the ISO 3166 ‑ 1 alpha-2 code elements",
+        "definition": "This cross-version extension represents MarketingStatus.country from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction",
+        "path": "Extension.extension.extension",
+        "sliceName": "jurisdiction",
+        "short": "Where a Medicines Regulatory Agency has granted a marketing authorization for which specific provisions within a jurisdiction apply, the jurisdiction can be specified using an appropriate controlled terminology The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents MarketingStatus.jurisdiction from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "jurisdiction"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:jurisdiction.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Where a Medicines Regulatory Agency has granted a marketing authorization for which specific provisions within a jurisdiction apply, the jurisdiction can be specified using an appropriate controlled terminology The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents MarketingStatus.jurisdiction from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status",
+        "path": "Extension.extension.extension",
+        "sliceName": "status",
+        "short": "This attribute provides information on the status of the marketing of the medicinal product See ISO/TS 20443 for more information and examples",
+        "definition": "This cross-version extension represents MarketingStatus.status from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:status.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "This attribute provides information on the status of the marketing of the medicinal product See ISO/TS 20443 for more information and examples",
+        "definition": "This cross-version extension represents MarketingStatus.status from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange",
+        "path": "Extension.extension.extension",
+        "sliceName": "dateRange",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorization Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.dateRange from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "dateRange"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:dateRange.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorization Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.dateRange from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "restoreDate",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorization Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.restoreDate from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "restoreDate"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:restoreDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The date when the Medicinal Product is placed on the market by the Marketing Authorization Holder (or where applicable, the manufacturer/distributor) in a country and/or jurisdiction shall be provided A complete date consisting of day, month and year shall be specified using the ISO 8601 date format NOTE “Placed on the market” refers to the release of the Medicinal Product into the distribution chain",
+        "definition": "This cross-version extension represents MarketingStatus.restoreDate from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.marketingStatus from FHIR R5",
+        "definition": "Data type name for PackagedProductDefinition.marketingStatus from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:marketingStatus.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: MarketingStatus",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "MarketingStatus"
+      },
+      {
+        "id": "Extension.extension:marketingStatus.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "marketingStatus"
+      },
+      {
+        "id": "Extension.extension:copackagedIndicator",
+        "path": "Extension.extension",
+        "sliceName": "copackagedIndicator",
+        "short": "Identifies if the drug product is supplied with another item such as a diluent or adjuvant",
+        "definition": "Identifies if the package contains different items, such as when a drug product is supplied with another item e.g. a diluent or adjuvant.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:copackagedIndicator.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "copackagedIndicator"
+      },
+      {
+        "id": "Extension.extension:copackagedIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Identifies if the drug product is supplied with another item such as a diluent or adjuvant",
+        "definition": "Identifies if the package contains different items, such as when a drug product is supplied with another item e.g. a diluent or adjuvant.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:manufacturer",
+        "path": "Extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer of this package type (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package type. When there are multiple it means these are all possible manufacturers.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:manufacturer.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:manufacturer.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Manufacturer of this package type (multiple means these are all possible manufacturers)",
+        "definition": "Manufacturer of this package type. When there are multiple it means these are all possible manufacturers.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attachedDocument",
+        "path": "Extension.extension",
+        "sliceName": "attachedDocument",
+        "short": "Additional information or supporting documentation about the packaged product",
+        "definition": "This cross-version extension represents PackagedProductDefinition.attachedDocument from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:attachedDocument.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "attachedDocument"
+      },
+      {
+        "id": "Extension.extension:attachedDocument.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Additional information or supporting documentation about the packaged product",
+        "definition": "This cross-version extension represents PackagedProductDefinition.attachedDocument from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging",
+        "path": "Extension.extension",
+        "sliceName": "packaging",
+        "short": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap",
+        "definition": "A packaging item, as a container for medically related items, possibly with other packaging items within, or a packaging component, such as bottle cap (which is not a device or a medication manufactured item).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:identifier",
+        "path": "Extension.extension.extension",
+        "sliceName": "identifier",
+        "short": "An identifier that is specific to this particular part of the packaging. Including possibly a Data Carrier Identifier",
+        "definition": "A business identifier that is specific to this particular part of the packaging, often assigned by the manufacturer. Including possibly Data Carrier Identifier (a GS1 barcode).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:identifier.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:identifier.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "An identifier that is specific to this particular part of the packaging. Including possibly a Data Carrier Identifier",
+        "definition": "A business identifier that is specific to this particular part of the packaging, often assigned by the manufacturer. Including possibly Data Carrier Identifier (a GS1 barcode).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:type",
+        "path": "Extension.extension.extension",
+        "sliceName": "type",
+        "short": "The physical type of the container of the items",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:type.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:type.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The physical type of the container of the items",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A high level categorisation of a package.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-packaging-type-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:componentPart",
+        "path": "Extension.extension.extension",
+        "sliceName": "componentPart",
+        "short": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial)",
+        "definition": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial). The latter type are designed be a container, but the former are not.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:componentPart.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "componentPart"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:componentPart.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial)",
+        "definition": "Is this a part of the packaging (e.g. a cap or bottle stopper), rather than the packaging itself (e.g. a bottle or vial). The latter type are designed be a container, but the former are not.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "The quantity of this level of packaging in the package that contains it (with the outermost level being 1)",
+        "definition": "The quantity of packaging items contained at this layer of the package. This does not relate to the number of contained items but relates solely to the number of packaging items. When looking at the outermost layer it is always 1. If there are two boxes within, at the next layer it would be 2.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "The quantity of this level of packaging in the package that contains it (with the outermost level being 1)",
+        "definition": "The quantity of packaging items contained at this layer of the package. This does not relate to the number of contained items but relates solely to the number of packaging items. When looking at the outermost layer it is always 1. If there are two boxes within, at the next layer it would be 2.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:material",
+        "path": "Extension.extension.extension",
+        "sliceName": "material",
+        "short": "Material type of the package item",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.material from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:material.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "material"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:material.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Material type of the package item",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.material from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-package-material-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:alternateMaterial",
+        "path": "Extension.extension.extension",
+        "sliceName": "alternateMaterial",
+        "short": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material",
+        "definition": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material (e.g. different types of plastic for a blister sleeve).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:alternateMaterial.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "alternateMaterial"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:alternateMaterial.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material",
+        "definition": "A possible alternate material for this part of the packaging, that is allowed to be used instead of the usual material (e.g. different types of plastic for a blister sleeve).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "A material used in the construction of packages and their components.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-package-material-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage",
+        "path": "Extension.extension.extension",
+        "sliceName": "shelfLifeStorage",
+        "short": "Shelf Life and storage information",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.shelfLifeStorage from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "This describes the shelf life, taking into account various scenarios such as shelf life of the packaged Medicinal Product itself, shelf life after transformation where necessary and shelf life after the first opening of a bottle, etc. The shelf life type shall be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents ProductShelfLife.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "This describes the shelf life, taking into account various scenarios such as shelf life of the packaged Medicinal Product itself, shelf life after transformation where necessary and shelf life after the first opening of a bottle, etc. The shelf life type shall be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents ProductShelfLife.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:period[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "period[x]",
+        "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProductShelfLife.period[x] from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:period[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "period[x]"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:period[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used",
+        "definition": "This cross-version extension represents ProductShelfLife.period[x] from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Duration"
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:specialPrecautionsForStorage",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "specialPrecautionsForStorage",
+        "short": "Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents ProductShelfLife.specialPrecautionsForStorage from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:specialPrecautionsForStorage.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "specialPrecautionsForStorage"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:specialPrecautionsForStorage.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified",
+        "definition": "This cross-version extension represents ProductShelfLife.specialPrecautionsForStorage from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.packaging.shelfLifeStorage from FHIR R5",
+        "definition": "Data type name for PackagedProductDefinition.packaging.shelfLifeStorage from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: ProductShelfLife",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "ProductShelfLife"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:shelfLifeStorage.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "shelfLifeStorage"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:manufacturer",
+        "path": "Extension.extension.extension",
+        "sliceName": "manufacturer",
+        "short": "Manufacturer of this packaging item (multiple means these are all potential manufacturers)",
+        "definition": "Manufacturer of this packaging item. When there are multiple values each one is a potential manufacturer of this packaging item.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:manufacturer.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "manufacturer"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:manufacturer.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "short": "Manufacturer of this packaging item (multiple means these are all potential manufacturers)",
+        "definition": "Manufacturer of this packaging item. When there are multiple values each one is a potential manufacturer of this packaging item.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property",
+        "path": "Extension.extension.extension",
+        "sliceName": "property",
+        "short": "General characteristics of this item",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.property from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:type",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "type",
+        "short": "A code expressing the type of characteristic",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.property.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:type.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:type.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A code expressing the type of characteristic",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.property.type from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "This value set includes all observable entity codes from SNOMED CT - provided as an exemplar value set.",
+          "valueSet": "http://hl7.org/fhir/5.0/ValueSet/R5-product-characteristic-codes-for-R4"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:value[x]",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "value[x]",
+        "short": "A value for the characteristic",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.property.value[x] from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:value[x].url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "value[x]"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.extension:value[x].value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "A value for the characteristic",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.property.value[x] from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "date"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:property.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "property"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem",
+        "path": "Extension.extension.extension",
+        "sliceName": "containedItem",
+        "short": "The item(s) within the packaging",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.containedItem from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "item",
+        "short": "The actual item(s) of medication, as manufactured, or a device, or other medically related item (food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package",
+        "definition": "The actual item(s) of medication, as manufactured, or a device (typically, but not necessarily, a co-packaged one), or other medically related item (such as food, biologicals, raw materials, medical fluids, gases etc.), as contained in the package. This also allows another whole packaged product to be included, which is solely for the case where a package of other entire packages is wanted - such as a wholesale or distribution pack (for layers within one package, use PackagedProductDefinition.packaging.packaging).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension",
+        "path": "Extension.extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:concept",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "concept",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:concept.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a concept (by class)",
+        "definition": "A reference to a concept - e.g. the information is identified by its general class to the degree of precision found in the terminology.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:reference",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "reference",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:reference.url",
+        "path": "Extension.extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "short": "Reference to a resource (by instance)",
+        "definition": "A reference to a resource the provides exact details about the information being referenced.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:_datatype",
+        "path": "Extension.extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.packaging.containedItem.item from FHIR R5",
+        "definition": "Data type name for PackagedProductDefinition.packaging.containedItem.item from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.extension.value[x]",
+        "comment": "Must be: CodeableReference",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "CodeableReference"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:item.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:amount",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "amount",
+        "short": "The number of this type of item within this packaging or for continuous items such as liquids it is the quantity (for example 25ml). See also PackagedProductDefinition.containedItemQuantity (especially the long definition)",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.containedItem.amount from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:amount.url",
+        "path": "Extension.extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "amount"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.extension:amount.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "short": "The number of this type of item within this packaging or for continuous items such as liquids it is the quantity (for example 25ml). See also PackagedProductDefinition.containedItemQuantity (especially the long definition)",
+        "definition": "This cross-version extension represents PackagedProductDefinition.packaging.containedItem.amount from http://hl7.org/fhir/StructureDefinition/PackagedProductDefinition|5.0.0 for use in FHIR R4.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:containedItem.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "containedItem"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:packaging",
+        "path": "Extension.extension.extension",
+        "sliceName": "packaging",
+        "short": "Allows containers (and parts of containers) within containers, still as a part of single packaged product",
+        "definition": "Allows containers (and parts of containers) within containers, still as a part of a single packaged product. See also PackagedProductDefinition.packaging.containedItem.item(PackagedProductDefinition).",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:packaging.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:packaging.extension:packaging.extension:_datatype",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.packaging.packaging from FHIR R5",
+        "definition": "Data type name for PackagedProductDefinition.packaging.packaging from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:packaging.extension:packaging.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "comment": "Must be: PackagedProductDefinition.packaging",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "PackagedProductDefinition.packaging"
+      },
+      {
+        "id": "Extension.extension:packaging.extension:packaging.url",
+        "path": "Extension.extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packaging"
+      },
+      {
+        "id": "Extension.extension:packaging.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "packaging"
+      },
+      {
+        "id": "Extension.extension:characteristic",
+        "path": "Extension.extension",
+        "sliceName": "characteristic",
+        "short": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\"",
+        "definition": "Allows the key features to be recorded, such as \"hospital pack\", \"nurse prescribable\", \"calendar pack\".",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:_datatype",
+        "path": "Extension.extension.extension",
+        "sliceName": "_datatype",
+        "short": "Data type name for PackagedProductDefinition.characteristic from FHIR R5",
+        "definition": "Data type name for PackagedProductDefinition.characteristic from FHIR R5",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/_datatype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:characteristic.extension:_datatype.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "comment": "Must be: PackagedProductDefinition.packaging.property",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "fixedString": "PackagedProductDefinition.packaging.property"
+      },
+      {
+        "id": "Extension.extension:characteristic.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "characteristic"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-PackagedProductDefinition"
+      }
+    ]
+  }
+}

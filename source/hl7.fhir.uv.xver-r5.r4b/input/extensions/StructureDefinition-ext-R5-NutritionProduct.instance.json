@@ -1,0 +1,410 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-NutritionProduct.instance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct.instance",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_NutritionProduct_instance",
+  "title": "Cross-version Extension for R5.NutritionProduct.instance for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:56.6762344-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents NutritionProduct.instance from http://hl7.org/fhir/StructureDefinition/NutritionProduct|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "NutritionProduct.instance"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "One or several physical instances or occurrences of the nutrition product",
+        "definition": "Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity",
+        "path": "Extension.extension",
+        "sliceName": "quantity",
+        "short": "The amount of items or instances",
+        "definition": "The amount of items or instances that the resource considers, for instance when referring to 2 identical units together.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:quantity.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:quantity.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The amount of items or instances",
+        "definition": "The amount of items or instances that the resource considers, for instance when referring to 2 identical units together.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:identifier",
+        "path": "Extension.extension",
+        "sliceName": "identifier",
+        "short": "The identifier for the physical instance, typically a serial number or manufacturer number",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:identifier.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "identifier"
+      },
+      {
+        "id": "Extension.extension:identifier.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The identifier for the physical instance, typically a serial number or manufacturer number",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:name",
+        "path": "Extension.extension",
+        "sliceName": "name",
+        "short": "The name for the specific product",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:name.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "name"
+      },
+      {
+        "id": "Extension.extension:name.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The name for the specific product",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:lotNumber",
+        "path": "Extension.extension",
+        "sliceName": "lotNumber",
+        "short": "The identification of the batch or lot of the product",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:lotNumber.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "lotNumber"
+      },
+      {
+        "id": "Extension.extension:lotNumber.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The identification of the batch or lot of the product",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:expiry",
+        "path": "Extension.extension",
+        "sliceName": "expiry",
+        "short": "The expiry date or date and time for the product",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:expiry.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "expiry"
+      },
+      {
+        "id": "Extension.extension:expiry.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The expiry date or date and time for the product",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:useBy",
+        "path": "Extension.extension",
+        "sliceName": "useBy",
+        "short": "The date until which the product is expected to be good for consumption",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:useBy.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "useBy"
+      },
+      {
+        "id": "Extension.extension:useBy.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The date until which the product is expected to be good for consumption",
+        "definition": "The time after which the product is no longer expected to be in proper condition, or its use is not advised or not allowed.",
+        "comment": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:biologicalSourceEvent",
+        "path": "Extension.extension",
+        "sliceName": "biologicalSourceEvent",
+        "short": "An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:biologicalSourceEvent.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "biologicalSourceEvent"
+      },
+      {
+        "id": "Extension.extension:biologicalSourceEvent.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "An identifier that supports traceability to the event during which material in this product from one or more biological entities was obtained or pooled",
+        "definition": "`NutritionProduct.instance` maps to R4B `NutritionProduct.instance`. Changed from an array to a single value (max cardinality from * to 1). So is mapped as SourceIsBroaderThanTarget.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NutritionProduct.instance"
+      }
+    ]
+  }
+}

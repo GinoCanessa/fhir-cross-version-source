@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R2-Claim.it.prosthesis",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r2.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Claim.item.prosthesis",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R2_Claim_it_prosthesis",
+  "title": "Cross-version Extension for R2.Claim.item.prosthesis for use in FHIR R4",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:01:50.9062451-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents Claim.item.prosthesis from http://hl7.org/fhir/StructureDefinition/Claim|1.0.2 for use in FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Claim.item"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Prosthetic details",
+        "definition": "The materials and placement date of prior fixed prosthesis.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        },
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:initial",
+        "path": "Extension.extension",
+        "sliceName": "initial",
+        "short": "Is this the initial service",
+        "definition": "Indicates whether this is the initial placement of a fixed prosthesis.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:initial.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "initial"
+      },
+      {
+        "id": "Extension.extension:initial.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Is this the initial service",
+        "definition": "Indicates whether this is the initial placement of a fixed prosthesis.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:priorDate",
+        "path": "Extension.extension",
+        "sliceName": "priorDate",
+        "short": "Initial service Date",
+        "definition": "Date of the initial placement.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:priorDate.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "priorDate"
+      },
+      {
+        "id": "Extension.extension:priorDate.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Initial service Date",
+        "definition": "Date of the initial placement.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:priorMaterial",
+        "path": "Extension.extension",
+        "sliceName": "priorMaterial",
+        "short": "Prosthetic Material",
+        "definition": "Material of the prior denture or bridge prosthesis. (Oral).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.extension",
+          "min": 0,
+          "max": "*"
+        }
+      },
+      {
+        "id": "Extension.extension:priorMaterial.url",
+        "path": "Extension.extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "priorMaterial"
+      },
+      {
+        "id": "Extension.extension:priorMaterial.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Prosthetic Material",
+        "definition": "Material of the prior denture or bridge prosthesis. (Oral).",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Material of the prior denture or bridge prosthesis. (Oral)",
+          "valueSet": "http://hl7.org/fhir/1.0/ValueSet/R2-oral-prosthodontic-material-for-R4"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/1.0/StructureDefinition/extension-Claim.item.prosthesis"
+      }
+    ]
+  }
+}

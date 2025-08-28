@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ext-R5-DeviceDefinition.pr.value",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r5.r4b"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    }
+  ],
+  "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.property.value",
+  "version": "0.0.1-snapshot-2",
+  "name": "Ext_R5_DeviceDefinition_pr_value",
+  "title": "Cross-version Extension for R5.DeviceDefinition.property.value[x] for use in FHIR R4B",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-27T10:03:52.1051352-05:00",
+  "publisher": "FHIR Infrastructure",
+  "contact": [
+    {
+      "name": "FHIR Infrastructure",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "This cross-version extension represents DeviceDefinition.property.value[x] from http://hl7.org/fhir/StructureDefinition/DeviceDefinition|5.0.0 for use in FHIR R4B.",
+  "fhirVersion": "4.3.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "DeviceDefinition.property.valueCode"
+    },
+    {
+      "type": "element",
+      "expression": "DeviceDefinition.property.valueQuantity"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Value of the property",
+        "definition": "The value of the property specified by the associated property.type code.",
+        "comment": "`DeviceDefinition.property.value[x]` maps to R4B `DeviceDefinition.property.valueQuantity`. Type `CodeableConcept` has no mapping Type `string` has no mapping Type `boolean` has no mapping Type `integer` has no mapping Type `Range` has no mapping Type `Attachment` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo. `DeviceDefinition.property.value[x]` maps to R4B `DeviceDefinition.property.valueCode`. Type `Quantity` has no mapping Type `string` has no mapping Type `boolean` has no mapping Type `integer` has no mapping Type `Range` has no mapping Type `Attachment` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "fixedUri": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DeviceDefinition.property.value"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Value of the property",
+        "definition": "The value of the property specified by the associated property.type code.",
+        "comment": "`DeviceDefinition.property.value[x]` maps to R4B `DeviceDefinition.property.valueQuantity`. Type `CodeableConcept` has no mapping Type `string` has no mapping Type `boolean` has no mapping Type `integer` has no mapping Type `Range` has no mapping Type `Attachment` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo. `DeviceDefinition.property.value[x]` maps to R4B `DeviceDefinition.property.valueCode`. Type `Quantity` has no mapping Type `string` has no mapping Type `boolean` has no mapping Type `integer` has no mapping Type `Range` has no mapping Type `Attachment` has no mapping Changed from a single value to an array (max cardinality from 1 to *). So is mapped as RelatedTo.",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "boolean"
+          },
+          {
+            "code": "integer"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Attachment"
+          }
+        ]
+      }
+    ]
+  }
+}

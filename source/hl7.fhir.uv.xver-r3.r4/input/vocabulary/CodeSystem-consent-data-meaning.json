@@ -1,0 +1,75 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "consent-data-meaning",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "hl7.fhir.uv.xver-r3.r4"
+        },
+        {
+          "url": "version",
+          "valueString": "0.0.1-snapshot-2"
+        }
+      ],
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cbcc"
+    }
+  ],
+  "url": "http://hl7.org/fhir/consent-data-meaning",
+  "version": "3.0.2",
+  "name": "ConsentDataMeaning",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-10-23T19:53:00-05:00",
+  "publisher": "Community Based Collaborative Care",
+  "contact": [
+    {
+      "name": "Community Based Collaborative Care",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cbcc"
+        }
+      ]
+    }
+  ],
+  "description": "How a resource reference is interpreted when testing consent restrictions",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/consent-data-meaning",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "instance",
+      "display": "Instance",
+      "definition": "The consent applies directly to the instance of the resource"
+    },
+    {
+      "code": "related",
+      "display": "Related",
+      "definition": "The consent applies directly to the instance of the resource and instances it refers to"
+    },
+    {
+      "code": "dependents",
+      "display": "Dependents",
+      "definition": "The consent applies directly to the instance of the resource and instances that refer to it"
+    },
+    {
+      "code": "authoredby",
+      "display": "AuthoredBy",
+      "definition": "The consent applies to instances of resources that are authored by"
+    }
+  ]
+}
